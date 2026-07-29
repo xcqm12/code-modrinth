@@ -163,7 +163,7 @@ onMounted(() => {
 						Modrinth Team
 					</nuxt-link>
 				</template>
-				<span class="hidden md:block">â€?/span>
+				<span class="hidden md:block">Â·</span>
 				<span class="hidden md:block"> {{ formatDate(dayjsDate.toDate()) }}</span>
 			</div>
 			<span class="text-sm text-secondary sm:text-base md:hidden">
