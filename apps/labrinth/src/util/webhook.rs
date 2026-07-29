@@ -241,7 +241,7 @@ pub async fn send_slack_payout_source_alert_webhook(
                     "elements": [
                         {
                             "type": "mrkdwn",
-                            "text": format!("via labrinth â€?<!date^{}^{{date_short_pretty}} at {{time}}|Unknown date>", Utc::now().timestamp())
+                            "text": format!("via labrinth <!date^{}^{{date_short_pretty}} at {{time}}|Unknown date>", Utc::now().timestamp())
                         }
                     ]
                 }
@@ -350,7 +350,7 @@ pub async fn send_slack_project_webhook(
                     },
                     {
                         "type": "mrkdwn",
-                        "text": format!("{} on Modrinth â€?<!date^{}^{{date_short_pretty}} at {{time}}|Unknown date>", metadata.display_project_type, Utc::now().timestamp())
+                        "text": format!("{} on Modrinth ï¿½?<!date^{}^{{date_short_pretty}} at {{time}}|Unknown date>", metadata.display_project_type, Utc::now().timestamp())
                     }
                 ]
             })
