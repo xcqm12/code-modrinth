@@ -42,6 +42,9 @@ preflight() {
         fi
     fi
 
+    # Always use the deploy-specific compose file, not the root docker-compose.yml
+    export COMPOSE_FILE="$SCRIPT_DIR/docker-compose.yml"
+
     log_ok "Docker $(docker --version | cut -d' ' -f3 | cut -d',' -f1) found"
     log_ok "$($DOCKER_COMPOSE version)"
 
@@ -149,6 +152,14 @@ setup_ssl() {
     if command -v certbot >/dev/null 2>&1; then
         local domain
         domain=$(grep -oP '^DOMAIN=\K.*' "$SCRIPT_DIR/.env" 2>/dev/null || echo "bbsmc.org.cn")
+
+        # Stop any Docker services that may be using port 80
+        log_info "Stopping existing Docker services to free port 80 ..."
+        $DOCKER_COMPOSE down --remove-orphans 2>/dev/null || true
+
+        # Also stop any system web server on port 80 (nginx/apache2)
+        sudo systemctl stop nginx 2>/dev/null || true
+        sudo systemctl stop apache2 2>/dev/null || true
 
         log_info "Obtaining Let's Encrypt certificate for $domain ..."
         sudo certbot certonly --standalone -d "$domain" --non-interactive --agree-tos -m "admin@$domain" || {
