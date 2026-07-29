@@ -7,7 +7,9 @@ import svgLoader from 'vite-svg-loader'
 import { GenericModrinthClient, type Labrinth } from '../../packages/api-client/src/index.ts'
 
 const STAGING_API_URL = 'https://staging-api.bbsmc.org.cn/v2/'
+const PROD_API_URL = 'https://api.bbsmc.org.cn/v2/'
 const STAGING_SHARED_INSTANCES_API_URL = 'https://staging-shared-instances.bbsmc.org.cn'
+const PROD_SHARED_INSTANCES_API_URL = 'https://shared-instances.bbsmc.org.cn'
 const API_CLIENT_SOURCE = fileURLToPath(
 	new URL('../../packages/api-client/src/index.ts', import.meta.url),
 )
@@ -353,11 +355,23 @@ export default defineNuxtConfig({
 })
 
 function getApiUrl() {
+	if (process.env.NODE_ENV === 'production') {
+		// @ts-ignore
+		return process.env.BROWSER_BASE_URL ?? globalThis.BROWSER_BASE_URL ?? PROD_API_URL
+	}
 	// @ts-ignore
 	return process.env.BROWSER_BASE_URL ?? globalThis.BROWSER_BASE_URL ?? STAGING_API_URL
 }
 
 function getSharedInstancesApiUrl() {
+	if (process.env.NODE_ENV === 'production') {
+		return (
+			process.env.SHARED_INSTANCES_API_BASE_URL ??
+			// @ts-ignore
+			globalThis.SHARED_INSTANCES_API_BASE_URL ??
+			PROD_SHARED_INSTANCES_API_URL
+		)
+	}
 	return (
 		process.env.SHARED_INSTANCES_API_BASE_URL ??
 		// @ts-ignore
