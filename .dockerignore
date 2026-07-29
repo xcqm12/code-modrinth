@@ -15,23 +15,6 @@ dist/
 LICENSE
 COPYING.md
 
-pnpm-lock.yaml
-pnpm-workspace.yaml
-turbo.jsonc
-
-apps/app-frontend/
-apps/app-playground/
-apps/docs/
-apps/frontend/
-
-packages/api-client/
-packages/assets/
-packages/blog/
-packages/moderation/
-packages/tooling-config/
-packages/ui/
-packages/utils/
-
 scripts/
 standards/
 .github/
