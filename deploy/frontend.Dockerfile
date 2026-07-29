@@ -18,6 +18,7 @@ RUN pnpm install --frozen-lockfile
 ENV NODE_OPTIONS="--max-old-space-size=8192"
 ENV NITRO_PRESET=node_server
 ENV BUILD_ENV=production
+ENV PREVIEW=true
 
 RUN pnpm --filter @modrinth/frontend build
 
