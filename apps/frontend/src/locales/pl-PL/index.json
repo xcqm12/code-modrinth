@@ -1,4 +1,4 @@
-{
+﻿{
   "action.cancel": {
     "message": "Anuluj"
   },
@@ -12,7 +12,7 @@
     "message": "Zaakceptuj wszystko"
   },
   "ads-consent.body": {
-    "message": "Reklamy pozwalają na dalsze działanie Modrinth i finansują dochody dla twórców. Nasi partnerzy mogą gromadzić i uzyskiwać dostęp do plików cookies w celu personalizacji reklam i mierzenia skuteczności‿"
+    "message": "Reklamy pozwalają na dalsze działanie Modrinth i finansują dochody dla twórców. Nasi partnerzy mogą gromadzić i uzyskiwać dostęp do plików cookies w celu personalizacji reklam i mierzenia skuteczności?"
   },
   "ads-consent.manage": {
     "message": "Zarządzaj preferencjami"
@@ -648,10 +648,10 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "∿MB"
+    "message": "?MB"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
-    "message": "∿× ∿MB"
+    "message": "?× ?MB"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MB"
@@ -705,7 +705,7 @@
     "message": "które kiedykolwiek użyłeś(-aś)"
   },
   "app-marketing.hero.app-screenshot-alt": {
-    "message": "Zrzut ekranu z Modrinth App z otwartą instancją Cobblemon na stronie „Treść‿"
+    "message": "Zrzut ekranu z Modrinth App z otwartą instancją Cobblemon na stronie „Treść?"
   },
   "app-marketing.hero.description": {
     "message": "Modrinth App to wyjątkowy, otwarto-źrodłowy launcher, który pozwala grać w Twoje ulubione mody i utrzymywać je na bieżąco, wszystko w jednym poręcznym pakiecie."
@@ -1752,7 +1752,7 @@
     "message": "Dostępne niższe opłaty"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-message": {
-    "message": "Wybrano walutę USD w opcji międzynarodowej PayPal. <direct-paypal-link>Przełącz się na bezpośredni PayPal</direct-paypal-link> dla niższych opłat (≿% zamiast ≿%)."
+    "message": "Wybrano walutę USD w opcji międzynarodowej PayPal. <direct-paypal-link>Przełącz się na bezpośredni PayPal</direct-paypal-link> dla niższych opłat (?% zamiast ?%)."
   },
   "dashboard.creator-withdraw-modal.tremendous-details.withdrawal-amount-min-max": {
     "message": "Minimalnie {min}, maksymalnie {max} możliwe do odebrania."
@@ -3714,7 +3714,7 @@
     "message": "Projekt zaktualizowany"
   },
   "project.settings.general.name.description": {
-    "message": "Unikaj przedrostków, przyrostków, wtrąceń lub dodatkowych opisów ‿używaj tylko rzeczywistej nazwy projektu."
+    "message": "Unikaj przedrostków, przyrostków, wtrąceń lub dodatkowych opisów ?używaj tylko rzeczywistej nazwy projektu."
   },
   "project.settings.general.name.placeholder.1": {
     "message": "np. Nether Overhaul 2"
@@ -4347,13 +4347,13 @@
     "message": "Brak powiadomień"
   },
   "servers.plan.large.description": {
-    "message": "Idealny dla 15‿5 graczy, paczek modów lub dużej ilości modów."
+    "message": "Idealny dla 15?5 graczy, paczek modów lub dużej ilości modów."
   },
   "servers.plan.medium.description": {
-    "message": "Świetny wybór dla 6‿5 graczy i wielu modów."
+    "message": "Świetny wybór dla 6?5 graczy i wielu modów."
   },
   "servers.plan.small.description": {
-    "message": "Idealny dla 1‿ przyjaciół z kilkoma lekkimi modami."
+    "message": "Idealny dla 1? przyjaciół z kilkoma lekkimi modami."
   },
   "servers.purchase.step.plan.most-popular": {
     "message": "Najbardziej popularny"
@@ -5112,7 +5112,7 @@
     "message": "{count, plural, one {# osoba już dołączyła} other {# osób już dołączyło}}"
   },
   "shared-instance.invite.loading": {
-    "message": "Ładowanie zaproszenia‿
+    "message": "Ładowanie zaproszenia?"
   },
   "shared-instance.invite.title": {
     "message": "Użytkownik {name} zaprosił Cię do grania w"

@@ -636,10 +636,10 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "∿MB"
+    "message": "?MB"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
-    "message": "∿× ∿MB"
+    "message": "?× ?MB"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MB"
@@ -693,7 +693,7 @@
     "message": "hiç bir başlatıcıya benzemez"
   },
   "app-marketing.hero.app-screenshot-alt": {
-    "message": "Cobblemon kurulumunun ‘İçerik‿sayfasında olduğu Modrinth App ekran görüntüsü."
+    "message": "Cobblemon kurulumunun ‘İçerik?sayfasında olduğu Modrinth App ekran görüntüsü."
   },
   "app-marketing.hero.description": {
     "message": "Modrinth App, favori modlarınızı güncel şekilde oynayabileceğiniz özgün ve açık kaynaklı bir başlatıcıdır."
@@ -1557,7 +1557,7 @@
     "message": "Daha düşük ücretler mevcut"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-message": {
-    "message": "PayPal International için USD seçtiniz. Daha iyi ücretler için <direct-paypal-link>doğrudan PayPal'a geçin</direct-paypal-link> (≿6 yerine ≿2)."
+    "message": "PayPal International için USD seçtiniz. Daha iyi ücretler için <direct-paypal-link>doğrudan PayPal'a geçin</direct-paypal-link> (?6 yerine ?2)."
   },
   "dashboard.creator-withdraw-modal.withdraw-button": {
     "message": "Para Çek"
@@ -3861,13 +3861,13 @@
     "message": "Bildiriler yok"
   },
   "servers.plan.large.description": {
-    "message": "15‿5 oyuncu, mod paketleri veya ağır modlu sunucu için ideal."
+    "message": "15?5 oyuncu, mod paketleri veya ağır modlu sunucu için ideal."
   },
   "servers.plan.medium.description": {
-    "message": "6‿5 oyuncu ve birden fazla mod için iyi."
+    "message": "6?5 oyuncu ve birden fazla mod için iyi."
   },
   "servers.plan.small.description": {
-    "message": "1‿ arkadaş ve birkaç hafif mod için mükemmel."
+    "message": "1? arkadaş ve birkaç hafif mod için mükemmel."
   },
   "settings.account.button.complete-setup": {
     "message": "Kurulumu tamamla"

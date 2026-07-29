@@ -1,4 +1,4 @@
-{
+﻿{
   "action.cancel": {
     "message": "Annuller"
   },
@@ -351,7 +351,7 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "∿MB"
+    "message": "?MB"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MB"
@@ -408,7 +408,7 @@
     "message": "Skærmbillede af Modrinth App med en Cobblemon-instans åbnet på siden 'Indhold'."
   },
   "app-marketing.hero.description": {
-    "message": "Modrinth App er en unik, open source-launcher, der giver dig mulighed for at spille dine yndlingsmods og holde dem opdateret ‿alt samlet i én praktisk pakke."
+    "message": "Modrinth App er en unik, open source-launcher, der giver dig mulighed for at spille dine yndlingsmods og holde dem opdateret ?alt samlet i én praktisk pakke."
   },
   "app-marketing.hero.download-button": {
     "message": "Hent Modrinth Appen"
@@ -3237,7 +3237,7 @@
     "message": "{count, plural, one {# person har} other {# personer har}} allerede tilsluttet sig"
   },
   "shared-instance.invite.loading": {
-    "message": "Indlæser inviation‿
+    "message": "Indlæser inviation?"
   },
   "shared-instance.invite.title": {
     "message": "{name} har inviteret dig til at spille"

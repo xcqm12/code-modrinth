@@ -636,10 +636,10 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "∿MB"
+    "message": "?MB"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
-    "message": "∿× ∿MB"
+    "message": "?× ?MB"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MB"
@@ -1557,7 +1557,7 @@
     "message": "Tarifas más bajas disponibles"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-message": {
-    "message": "Has seleccionado USD para PayPal Internacional. <direct-paypal-link>Cambia a PayPal directo</direct-paypal-link> para obtener mejores tarifas (≿ % en lugar de ≿ %)."
+    "message": "Has seleccionado USD para PayPal Internacional. <direct-paypal-link>Cambia a PayPal directo</direct-paypal-link> para obtener mejores tarifas (? % en lugar de ? %)."
   },
   "dashboard.creator-withdraw-modal.withdraw-button": {
     "message": "Retirar"
@@ -3915,13 +3915,13 @@
     "message": "Sin avisos"
   },
   "servers.plan.large.description": {
-    "message": "Ideal para 15‿5 jugadores, modpacks o uso intensivo de mods."
+    "message": "Ideal para 15?5 jugadores, modpacks o uso intensivo de mods."
   },
   "servers.plan.medium.description": {
-    "message": "Ideal para 6‿5 jugadores y múltiples mods."
+    "message": "Ideal para 6?5 jugadores y múltiples mods."
   },
   "servers.plan.small.description": {
-    "message": "Perfecto para 1‿ amigos con algunos mods ligeros."
+    "message": "Perfecto para 1? amigos con algunos mods ligeros."
   },
   "settings.account.button.complete-setup": {
     "message": "Finalizar configuración"

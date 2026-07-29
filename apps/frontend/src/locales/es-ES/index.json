@@ -633,10 +633,10 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "∿MB"
+    "message": "?MB"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
-    "message": "∿× ∿MB"
+    "message": "?× ?MB"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MB"
@@ -3639,13 +3639,13 @@
     "message": "Sin avisos"
   },
   "servers.plan.large.description": {
-    "message": "Ideal para 15‿5 jugadores, paquetes de mods o modding intensivo."
+    "message": "Ideal para 15?5 jugadores, paquetes de mods o modding intensivo."
   },
   "servers.plan.medium.description": {
-    "message": "Ideal para 6‿5 jugadores y múltiples mods."
+    "message": "Ideal para 6?5 jugadores y múltiples mods."
   },
   "servers.plan.small.description": {
-    "message": "Perfecto para 1‿ amigos con algunas modificaciones ligeras."
+    "message": "Perfecto para 1? amigos con algunas modificaciones ligeras."
   },
   "settings.account.button.complete-setup": {
     "message": "Configuración completa"

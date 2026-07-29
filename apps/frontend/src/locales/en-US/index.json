@@ -1,4 +1,4 @@
-{
+﻿{
   "action.cancel": {
     "message": "Cancel"
   },
@@ -654,10 +654,10 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "∿MB"
+    "message": "?MB"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
-    "message": "∿× ∿MB"
+    "message": "?× ?MB"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MB"
@@ -1758,7 +1758,7 @@
     "message": "Lower fees available"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-message": {
-    "message": "You selected USD for PayPal International. <direct-paypal-link>Switch to direct PayPal</direct-paypal-link> for better fees (≿% instead of ≿%)."
+    "message": "You selected USD for PayPal International. <direct-paypal-link>Switch to direct PayPal</direct-paypal-link> for better fees (?% instead of ?%)."
   },
   "dashboard.creator-withdraw-modal.tremendous-details.withdrawal-amount-min-max": {
     "message": "{min} min, {max} max withdrawal amount."
@@ -3690,7 +3690,7 @@
     "message": "You can still modify your project, it won't affect your position in the queue."
   },
   "project.moderation.admonition.under-review.body.4": {
-    "message": "We aim to review submissions in 24‿8 hours, but some projects may face delays. This does not reflect an issue with your submission."
+    "message": "We aim to review submissions in 24?8 hours, but some projects may face delays. This does not reflect an issue with your submission."
   },
   "project.moderation.admonition.under-review.body.4.alt-week": {
     "message": "We aim to review submissions within a week, but some projects may face delays. This does not reflect an issue with your submission."
@@ -4431,13 +4431,13 @@
     "message": "No notices"
   },
   "servers.plan.large.description": {
-    "message": "Ideal for 15‿5 players, modpacks, or heavy modding."
+    "message": "Ideal for 15?5 players, modpacks, or heavy modding."
   },
   "servers.plan.medium.description": {
-    "message": "Great for 6‿5 players and multiple mods."
+    "message": "Great for 6?5 players and multiple mods."
   },
   "servers.plan.small.description": {
-    "message": "Perfect for 1‿ friends with a few light mods."
+    "message": "Perfect for 1? friends with a few light mods."
   },
   "servers.purchase.step.plan.most-popular": {
     "message": "Most popular"
@@ -5214,7 +5214,7 @@
     "message": "{count, plural, one {# person has} other {# people have}} already joined"
   },
   "shared-instance.invite.loading": {
-    "message": "Loading invite‿
+    "message": "Loading invite?"
   },
   "shared-instance.invite.title": {
     "message": "{name} has invited you to play"

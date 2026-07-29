@@ -1,4 +1,4 @@
-{
+﻿{
   "action.cancel": {
     "message": "Annulla"
   },
@@ -648,10 +648,10 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "∿MB"
+    "message": "?MB"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
-    "message": "∿× ∿MB"
+    "message": "?× ?MB"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MB"
@@ -1752,7 +1752,7 @@
     "message": "Commissioni inferiori disponibili"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-message": {
-    "message": "Hai selezionato USD per PayPal internazionale. <direct-paypal-link>Passa a PayPal diretto</direct-paypal-link> per commissioni migliori (≿% invece di ≿%)."
+    "message": "Hai selezionato USD per PayPal internazionale. <direct-paypal-link>Passa a PayPal diretto</direct-paypal-link> per commissioni migliori (?% invece di ?%)."
   },
   "dashboard.creator-withdraw-modal.tremendous-details.withdrawal-amount-min-max": {
     "message": "Importo minimo di prelievo: {min}, massimo: {max}."
@@ -3681,7 +3681,7 @@
     "message": "Puoi ancora modificare il progetto; non influirà sulla tua posizione in coda."
   },
   "project.moderation.admonition.under-review.body.4": {
-    "message": "Puntiamo a revisionare i progetti entro le 24‿8 ore, ma potrebbero esserci dei ritardi; Ciò non vuol dire che abbiamo trovato un problema."
+    "message": "Puntiamo a revisionare i progetti entro le 24?8 ore, ma potrebbero esserci dei ritardi; Ciò non vuol dire che abbiamo trovato un problema."
   },
   "project.moderation.admonition.under-review.body.4.alt-week": {
     "message": "Puntiamo a revisionare i progetti entro una settimana, ma potrebbero esserci dei ritardi. Ciò non vuol dire che abbiamo trovato un problema."
@@ -4389,13 +4389,13 @@
     "message": "Nessun avviso"
   },
   "servers.plan.large.description": {
-    "message": "Ideale per 15‿5 giocatori, pacchetti di mod o modding intenso."
+    "message": "Ideale per 15?5 giocatori, pacchetti di mod o modding intenso."
   },
   "servers.plan.medium.description": {
-    "message": "Ottimo per 6‿5 giocatori e più mod."
+    "message": "Ottimo per 6?5 giocatori e più mod."
   },
   "servers.plan.small.description": {
-    "message": "Perfetto per 1‿ giocatori e qualche mod leggera."
+    "message": "Perfetto per 1? giocatori e qualche mod leggera."
   },
   "servers.purchase.step.plan.most-popular": {
     "message": "Il più scelto"
@@ -5157,7 +5157,7 @@
     "message": "{count, plural, one {# persona è già entrata} other {# persone sono già entrate}}"
   },
   "shared-instance.invite.loading": {
-    "message": "Caricamento invito‿
+    "message": "Caricamento invito?"
   },
   "shared-instance.invite.title": {
     "message": "{name} ti ha invitato a giocare"
