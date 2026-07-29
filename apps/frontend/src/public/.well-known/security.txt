@@ -1,0 +1,6 @@
+Contact: mailto:support@bbsmc.org.cn
+Expires: 2026-12-31T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://bbsmc.org.cn/.well-known/security.txt
+Policy: https://bbsmc.org.cn/legal/security
+Hiring: https://careers.bbsmc.org.cn/
