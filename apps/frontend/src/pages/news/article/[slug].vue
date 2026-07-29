@@ -167,8 +167,8 @@ onMounted(() => {
 				<span class="hidden md:block"> {{ formatDate(dayjsDate.toDate()) }}</span>
 			</div>
 			<span class="text-sm text-secondary sm:text-base md:hidden">
-				Posted on {{ formatDate(dayjsDate.toDate()) }}</span
-			>
+				Posted on {{ formatDate(dayjsDate.toDate()) }}
+			</span>
 			<ShareArticleButtons :title="article.title" :url="articleUrl" />
 			<img
 				:src="article.thumbnail"
