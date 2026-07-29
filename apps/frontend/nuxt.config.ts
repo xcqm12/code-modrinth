@@ -171,12 +171,20 @@ export default defineNuxtConfig({
 				return
 			}
 
-			const client = new GenericModrinthClient({
-				labrinthBaseUrl: API_URL.replace('/v2/', ''),
-				userAgent: 'Knossos generator (support@bbsmc.org.cn)',
-			})
+			let generatedState: Labrinth.State.GeneratedState & Record<string, any> = { errors: [] } as any
 
-			const generatedState = await client.labrinth.state.build()
+			try {
+				const client = new GenericModrinthClient({
+					labrinthBaseUrl: API_URL.replace('/v2/', ''),
+					userAgent: 'Knossos generator (support@bbsmc.org.cn)',
+					timeout: 5000,
+				})
+
+				generatedState = await client.labrinth.state.build()
+			} catch (e) {
+				console.warn('State generation skipped (API unavailable):', (e as Error).message)
+			}
+
 			state.lastGenerated = new Date().toISOString()
 			state.apiUrl = API_URL
 			state = {
