@@ -290,11 +290,11 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '2'
-          memory: 2G
+          cpus: '4'
+          memory: 8G
         reservations:
           cpus: '1'
-          memory: 1G
+          memory: 2G
 
   nginx:
     image: nginx:alpine
