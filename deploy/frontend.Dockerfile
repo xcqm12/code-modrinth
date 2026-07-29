@@ -13,12 +13,19 @@ COPY packages/tooling-config packages/tooling-config
 COPY patches patches
 COPY apps/frontend apps/frontend
 
+# 使用生产环境配置
+RUN cp apps/frontend/.env.prod apps/frontend/.env
+
 RUN pnpm install --frozen-lockfile
 
 ENV NODE_OPTIONS="--max-old-space-size=8192"
 ENV NITRO_PRESET=node_server
 ENV BUILD_ENV=production
 ENV PREVIEW=true
+ENV BASE_URL=https://bbsmc.org.cn/api/v2/
+ENV BROWSER_BASE_URL=https://bbsmc.org.cn/api/v2/
+ENV PYRO_BASE_URL=https://archon.bbsmc.org.cn
+ENV SHARED_INSTANCES_API_BASE_URL=https://shared-instances.bbsmc.org.cn
 
 RUN pnpm --filter @modrinth/frontend build
 
@@ -34,5 +41,9 @@ EXPOSE 3000
 ENV NODE_ENV=production
 ENV HOST=0.0.0.0
 ENV PORT=3000
+ENV BASE_URL=https://bbsmc.org.cn/api/v2/
+ENV BROWSER_BASE_URL=https://bbsmc.org.cn/api/v2/
+ENV PYRO_BASE_URL=https://archon.bbsmc.org.cn
+ENV SHARED_INSTANCES_API_BASE_URL=https://shared-instances.bbsmc.org.cn
 
 CMD ["node", ".output/server/index.mjs"]
