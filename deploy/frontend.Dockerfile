@@ -10,11 +10,10 @@ COPY packages/moderation packages/moderation
 COPY packages/ui packages/ui
 COPY packages/utils packages/utils
 COPY packages/tooling-config packages/tooling-config
+COPY patches patches
 COPY apps/frontend apps/frontend
 
 RUN pnpm install --frozen-lockfile
-
-COPY patches patches
 
 ENV NODE_OPTIONS="--max-old-space-size=8192"
 ENV NITRO_PRESET=node_server
