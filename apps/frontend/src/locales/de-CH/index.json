@@ -654,10 +654,10 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "�?MB"
+    "message": "∿MB"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
-    "message": "�?× �?MB"
+    "message": "∿× ∿MB"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MB"
@@ -1758,7 +1758,7 @@
     "message": "Weniger Gebühren verfügbar"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-message": {
-    "message": "Du has USD für PayPal International ausgewählt. <direct-paypal-link>Wechsle zu direktem PayPal</direct-paypal-link> für bessere Gebühren (�?% statt �?%)."
+    "message": "Du has USD für PayPal International ausgewählt. <direct-paypal-link>Wechsle zu direktem PayPal</direct-paypal-link> für bessere Gebühren (≿% statt ≿%)."
   },
   "dashboard.creator-withdraw-modal.tremendous-details.withdrawal-amount-min-max": {
     "message": "{min} min, {max} max Auszahlungsbetrag."
@@ -4578,7 +4578,7 @@
     "message": "Passkey löschen"
   },
   "settings.account.security.passkey.remove.description": {
-    "message": "Dadurch wird der Passkey „{name}�?endgültig gelöscht. Du kannst dich mit ihm nicht mehr anmelden."
+    "message": "Dadurch wird der Passkey „{name}‿endgültig gelöscht. Du kannst dich mit ihm nicht mehr anmelden."
   },
   "settings.account.security.passkey.remove.title": {
     "message": "Möchtest du diesen Passkey wirklich löschen?"
@@ -5169,7 +5169,7 @@
     "message": "{count, plural, one {# Person ist} other {# Personen sind}} bereits beigetreten"
   },
   "shared-instance.invite.loading": {
-    "message": "Einladung wird geladen�?
+    "message": "Einladung wird geladen‿
   },
   "shared-instance.invite.title": {
     "message": "{name} hat dich zum Spielen eingeladen"

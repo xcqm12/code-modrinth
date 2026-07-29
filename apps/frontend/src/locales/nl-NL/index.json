@@ -654,10 +654,10 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "âˆ?MB"
+    "message": "âˆ¿MB"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
-    "message": "âˆ?Ã— âˆ?MB"
+    "message": "âˆ¿Ã— âˆ¿MB"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MB"
@@ -1755,7 +1755,7 @@
     "message": "Lagere kosten beschikbaar"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-message": {
-    "message": "Je hebt USD voor PayPal International geselecteerd. <direct-paypal-link>Switch naar direct PayPal</direct-paypal-link> voor betere tarieven (â‰?% in plaats van â‰?%)."
+    "message": "Je hebt USD voor PayPal International geselecteerd. <direct-paypal-link>Switch naar direct PayPal</direct-paypal-link> voor betere tarieven (â‰¿% in plaats van â‰¿%)."
   },
   "dashboard.creator-withdraw-modal.tremendous-details.withdrawal-amount-min-max": {
     "message": "{min} min., {max} max. opnamebedrag."
@@ -5181,7 +5181,7 @@
     "message": "{count, plural, one {# persoon heeft} other {# mensen hebben}} zich al aangesloten"
   },
   "shared-instance.invite.loading": {
-    "message": "Uitnodiging ladenâ€?
+    "message": "Uitnodiging ladenâ€¿
   },
   "shared-instance.invite.title": {
     "message": "{name} heeft je uitgenodigd om te spelen"

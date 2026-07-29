@@ -633,10 +633,10 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "�?MB"
+    "message": "∿MB"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
-    "message": "�?× �?MB"
+    "message": "∿× ∿MB"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MB"
@@ -1329,7 +1329,7 @@
     "message": "Taxas mais baixas disponíveis"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-message": {
-    "message": "Selecionou USD para PayPal Internacional. <direct-paypal-link>Mude para PayPal direto</direct-paypal-link> para obter taxas melhores (�?% em vez de �?%)."
+    "message": "Selecionou USD para PayPal Internacional. <direct-paypal-link>Mude para PayPal direto</direct-paypal-link> para obter taxas melhores (≿% em vez de ≿%)."
   },
   "dashboard.creator-withdraw-modal.withdraw-button": {
     "message": "Levantar"
@@ -3828,7 +3828,7 @@
     "message": "Nenhum ambiente definido"
   },
   "version.environment.unknown.description": {
-    "message": "O ambiente: “{environment}�?não é reconhecido."
+    "message": "O ambiente: “{environment}‿não é reconhecido."
   },
   "version.environment.unknown.title": {
     "message": "Ambiente desconhecido"

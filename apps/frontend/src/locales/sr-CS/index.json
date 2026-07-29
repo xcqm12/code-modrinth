@@ -507,10 +507,10 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "�?MB"
+    "message": "∿MB"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
-    "message": "�?× �?MB"
+    "message": "∿× ∿MB"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MB"
@@ -894,7 +894,7 @@
     "message": "Kako brzi su serveri od Modrinth Hosting?"
   },
   "hosting-marketing.faq.how-fast.answer.one": {
-    "message": "Modrinth Hosting serveri se pokreću na veoma modernom hardveru visokih performansi, ali je teško precizno reći kako će se to odraziti na brzinu rada tvojeg servera, jer na to utiču brojni faktori �?poput modova, paketa podataka/data packs ili plugina koje koristiš, pa čak i ponašanja samih korisnika."
+    "message": "Modrinth Hosting serveri se pokreću na veoma modernom hardveru visokih performansi, ali je teško precizno reći kako će se to odraziti na brzinu rada tvojeg servera, jer na to utiču brojni faktori ‿poput modova, paketa podataka/data packs ili plugina koje koristiš, pa čak i ponašanja samih korisnika."
   },
   "hosting-marketing.faq.how-fast.answer.two": {
     "message": "Većina problema sa performansama obično nastaje zbog neoptimizovanog modpaka, moda, data-packa ili plugina koji izazivaju lag na serveru. S obzirom na to da su naši serveri vrhunskih karakteristika, ne bi trebalo da imaš većih problema, pod uslovom da odabereš odgovarajući plan za sadržaj koji pokrećeš na serveru."
@@ -969,7 +969,7 @@
     "message": "Postoji server za svakoga"
   },
   "hosting-marketing.why.all-on-modrinth.description": {
-    "message": "Tvoj server, modovi, igrači i još mnogo toga �?sve je na Modrinthu. Nema potrebe za prebacivanjem između platformi."
+    "message": "Tvoj server, modovi, igrači i još mnogo toga ‿sve je na Modrinthu. Nema potrebe za prebacivanjem između platformi."
   },
   "hosting-marketing.why.consistently-fast.description": {
     "message": "Naša infrastruktura nikada nije preopterećena, što znači da svaki server hostovan na Modrinthu uvek radi punim kapacitetom."
@@ -1659,13 +1659,13 @@
     "message": "Nema obaveštenja"
   },
   "servers.plan.large.description": {
-    "message": "Idealno za 15�?5 igrača, modpackove ili intenzivno modovanje."
+    "message": "Idealno za 15‿5 igrača, modpackove ili intenzivno modovanje."
   },
   "servers.plan.medium.description": {
-    "message": "Odlično za 6�?5 igrača i više modova."
+    "message": "Odlično za 6‿5 igrača i više modova."
   },
   "servers.plan.small.description": {
-    "message": "Savršeno za 1�? prijatelja sa nekoliko lakih modova."
+    "message": "Savršeno za 1‿ prijatelja sa nekoliko lakih modova."
   },
   "settings.account.delete.section.description": {
     "message": "Kad obrišeš svoj račun, povratka nema. Brisanjem računa sa naših servera biće uklonjeni svi povezani podaci, izuzev projekata."
@@ -1722,7 +1722,7 @@
     "message": "Ukloni ovaj način plaćanja"
   },
   "settings.billing.modal.delete.description": {
-    "message": "Ovo će zauvek ukloniti ovaj način plaćanja (ozbiljno �?zauvek)."
+    "message": "Ovo će zauvek ukloniti ovaj način plaćanja (ozbiljno ‿zauvek)."
   },
   "settings.billing.modal.delete.title": {
     "message": "Da li si siguran da želiš ukloniti ovaj način plaćanja?"
@@ -1782,7 +1782,7 @@
     "message": "Greška pri ponovnom pretplaćivanju"
   },
   "settings.billing.pyro.resubscribe.request-submitted.text": {
-    "message": "Ako je server trenutno otkazan, podešavanje servera može potrajati 10�?5 minuta."
+    "message": "Ako je server trenutno otkazan, podešavanje servera može potrajati 10‿5 minuta."
   },
   "settings.billing.pyro.resubscribe.request-submitted.title": {
     "message": "Zahtev za ponovnu pretplatu je podnet"
@@ -1947,7 +1947,7 @@
     "message": "Obriši ovaj token"
   },
   "settings.pats.modal.delete.description": {
-    "message": "Ovo će zauvek ukloniti ovaj token (ozbiljno �?zauvek)."
+    "message": "Ovo će zauvek ukloniti ovaj token (ozbiljno ‿zauvek)."
   },
   "settings.pats.modal.delete.title": {
     "message": "Jesi li siguran da želiš obrisati ovaj token?"

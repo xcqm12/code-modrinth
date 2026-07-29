@@ -537,10 +537,10 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "âˆ?MB"
+    "message": "âˆ¿MB"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
-    "message": "âˆ?Ã— âˆ?MB"
+    "message": "âˆ¿Ã— âˆ¿MB"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MB"
@@ -1341,7 +1341,7 @@
     "message": "Yuran lebih rendah tersedia"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-message": {
-    "message": "Anda memilih USD untuk PayPal Antarabangsa. <direct-paypal-link>Tukar kepada PayPal langsung</direct-paypal-link> untuk yuran yang lebih baik (â‰?% dan bukannya â‰?%)."
+    "message": "Anda memilih USD untuk PayPal Antarabangsa. <direct-paypal-link>Tukar kepada PayPal langsung</direct-paypal-link> untuk yuran yang lebih baik (â‰¿% dan bukannya â‰¿%)."
   },
   "dashboard.creator-withdraw-modal.withdraw-button": {
     "message": "Keluarkan"
@@ -3429,13 +3429,13 @@
     "message": "Tiada notis"
   },
   "servers.plan.large.description": {
-    "message": "Sesuai untuk 15â€?5 pemain, pek mod atau pengubahsuaian yang berat."
+    "message": "Sesuai untuk 15â€¿5 pemain, pek mod atau pengubahsuaian yang berat."
   },
   "servers.plan.medium.description": {
-    "message": "Bagus untuk 6â€?5 pemain dan berbilang mod."
+    "message": "Bagus untuk 6â€¿5 pemain dan berbilang mod."
   },
   "servers.plan.small.description": {
-    "message": "Sesuai untuk 1â€? rakan dengan beberapa mod ringan."
+    "message": "Sesuai untuk 1â€¿ rakan dengan beberapa mod ringan."
   },
   "settings.account.button.complete-setup": {
     "message": "Lengkapkan persediaan"

@@ -9,19 +9,19 @@
     "message": "Không tìm thấy người dùng"
   },
   "ads-consent.accept": {
-    "message": "Chấp nhận tất c�?
+    "message": "Chấp nhận tất cế
   },
   "ads-consent.body": {
-    "message": "Quảng cáo giúp Modrinth hoạt động và tài tr�?cho việc thanh toán cho người sáng tạo nội dung. Các đối tác của chúng tôi có th�?lưu tr�?hoặc truy cập cookie trong ứng dụng đ�?cá nhân hóa quảng cáo và đo lường hiệu suất."
+    "message": "Quảng cáo giúp Modrinth hoạt động và tài trỿcho việc thanh toán cho người sáng tạo nội dung. Các đối tác của chúng tôi có thỿlưu trỿhoặc truy cập cookie trong ứng dụng đỿcá nhân hóa quảng cáo và đo lường hiệu suất."
   },
   "ads-consent.manage": {
-    "message": "Quản lý tu�?chọn"
+    "message": "Quản lý tuỿchọn"
   },
   "ads-consent.reject": {
-    "message": "T�?chối tất c�?
+    "message": "Tỿchối tất cế
   },
   "ads-consent.title": {
-    "message": "Quyền riêng tư của bạn và cách quảng cáo h�?tr�?Modrinth"
+    "message": "Quyền riêng tư của bạn và cách quảng cáo hỿtrỿModrinth"
   },
   "analytics.action.add": {
     "message": "Thêm"
@@ -39,10 +39,10 @@
     "message": "Quốc gia"
   },
   "analytics.breakdown.dependent-project-download": {
-    "message": "D�?án ph�?thuộc"
+    "message": "Dỿán phỿthuộc"
   },
   "analytics.breakdown.dependent-project-type": {
-    "message": "Loại d�?án ph�?thuộc"
+    "message": "Loại dỿán phỿthuộc"
   },
   "analytics.breakdown.download-reason": {
     "message": "Lý do tải"
@@ -69,25 +69,25 @@
     "message": "Không phân tích chi tiết"
   },
   "analytics.breakdown.project": {
-    "message": "D�?án"
+    "message": "Dỿán"
   },
   "analytics.breakdown.project-status": {
-    "message": "Trạng thái d�?án"
+    "message": "Trạng thái dỿán"
   },
   "analytics.breakdown.project-version": {
-    "message": "Phiên bản d�?án"
+    "message": "Phiên bản dỿán"
   },
   "analytics.breakdown.selected": {
     "message": "Phân tích qua {breakdown}"
   },
   "analytics.chart.action.show-all": {
-    "message": "Hiển th�?tất c�?
+    "message": "Hiển thỿtất cế
   },
   "analytics.chart.action.show-limited": {
-    "message": "Hiển th�?giới hạn"
+    "message": "Hiển thỿgiới hạn"
   },
   "analytics.chart.action.show-top-eight": {
-    "message": "Hiển th�?8 hạng đầu"
+    "message": "Hiển thỿ8 hạng đầu"
   },
   "analytics.chart.axis.playtime-hours": {
     "message": "{hours} h"
@@ -99,40 +99,40 @@
     "message": "Chú thích"
   },
   "analytics.chart.controls.aria": {
-    "message": "Tùy chọn biểu đ�? {activeCount}"
+    "message": "Tùy chọn biểu đỿ {activeCount}"
   },
   "analytics.chart.controls.button": {
     "message": "Tùy chọn"
   },
   "analytics.chart.controls.dialog-aria": {
-    "message": "Tùy chọn biểu đ�?
+    "message": "Tùy chọn biểu đỿ
   },
   "analytics.chart.controls.display": {
-    "message": "Hiển th�?
+    "message": "Hiển thỿ
   },
   "analytics.chart.controls.modrinth-events": {
-    "message": "S�?kiện Modrinth"
+    "message": "Sỿkiện Modrinth"
   },
   "analytics.chart.controls.no-modrinth-events": {
-    "message": "Không có s�?kiện Modrinth trong biểu đ�?"
+    "message": "Không có sỿkiện Modrinth trong biểu đỿ"
   },
   "analytics.chart.controls.no-project-events": {
-    "message": "Không có s�?kiện d�?án trong biểu đ�?"
+    "message": "Không có sỿkiện dỿán trong biểu đỿ"
   },
   "analytics.chart.controls.previous-period": {
     "message": "Gian đoạn trước"
   },
   "analytics.chart.controls.project-events": {
-    "message": "S�?kiện d�?án"
+    "message": "Sỿkiện dỿán"
   },
   "analytics.chart.controls.ratio": {
-    "message": "T�?l�?
+    "message": "Tỿlỿ
   },
   "analytics.chart.empty.select-table-items": {
-    "message": "Chọn các mục trong bảng dưới đ�?hiển th�?d�?liệu của bạn."
+    "message": "Chọn các mục trong bảng dưới đỿhiển thỿdỿliệu của bạn."
   },
   "analytics.chart.events.count-aria": {
-    "message": "{count, plural, other {# s�?kiện d�?án}}"
+    "message": "{count, plural, other {# sỿkiện dỿán}}"
   },
   "analytics.chart.events.project-title": {
     "message": "<project>{projectName}</project>: {title}"
@@ -144,7 +144,7 @@
     "message": "Xem chi tiết phân tích kiếm tiền"
   },
   "analytics.chart.legend.monetization-details.description": {
-    "message": "Ch�?lượt xem và lượt tải qua Modrinth mới được tính vào doanh thu kiếm tiền, và những lượt tải xuống phải t�?thành viên đã đăng nhập."
+    "message": "Chỿlượt xem và lượt tải qua Modrinth mới được tính vào doanh thu kiếm tiền, và những lượt tải xuống phải tỿthành viên đã đăng nhập."
   },
   "analytics.chart.legend.monetization-details.title": {
     "message": "Chi tiết phân tích kiếm tiền"
@@ -153,28 +153,28 @@
     "message": "{name} (Trc.)"
   },
   "analytics.chart.render-limit.description": {
-    "message": "Hiển th�?tất c�?các mục t�?bảng có th�?gây suy giảm hiệu suất của trang."
+    "message": "Hiển thỿtất cếcác mục tỿbảng có thỿgây suy giảm hiệu suất của trang."
   },
   "analytics.chart.render-limit.header": {
-    "message": "Hiện th�?tất c�?{count} đường trong biểu đ�?"
+    "message": "Hiện thỿtất cế{count} đường trong biểu đỿ"
   },
   "analytics.chart.table-selection.all": {
-    "message": "Đang hiện mọi {itemType, select, project {{count, plural, other {d�?án}}} country {{count, plural, other {quốc gia}}} monetization {{count, plural, other {giá tr�?doanh thu}}} downloadSource {{count, plural, other {nguồn tải}}} downloadReason {{count, plural, other {lý do tải}}} member {{count, plural, other {thành viên}}} projectVersion {{count, plural, other {phiên bản d�?án}}} loader {{count, plural, other {mod loader}}} gameVersion {{count, plural, other {phiên bản trò chơi}}} other {{count, plural, other {vật phẩm}}}} t�?bảng"
+    "message": "Đang hiện mọi {itemType, select, project {{count, plural, other {dỿán}}} country {{count, plural, other {quốc gia}}} monetization {{count, plural, other {giá trỿdoanh thu}}} downloadSource {{count, plural, other {nguồn tải}}} downloadReason {{count, plural, other {lý do tải}}} member {{count, plural, other {thành viên}}} projectVersion {{count, plural, other {phiên bản dỿán}}} loader {{count, plural, other {mod loader}}} gameVersion {{count, plural, other {phiên bản trò chơi}}} other {{count, plural, other {vật phẩm}}}} tỿbảng"
   },
   "analytics.chart.table-selection.count": {
-    "message": "Đang hiện {count} {itemType, select, project {{count, plural, other {d�?án}}} country {{count, plural, other {quốc gia}}} monetization {{count, plural, other {giá tr�?doanh thu}}} downloadSource {{count, plural, other {nguồn tải}}} downloadReason {{count, plural, other {lý do tải}}} member {{count, plural, other {thành viên}}} projectVersion {{count, plural, other {phiên bản d�?án}}} loader {{count, plural, other {mod loader}}} gameVersion {{count, plural, other {phiên bản trò chơi}}} other {{count, plural, other {vật phẩm}}}} t�?bảng"
+    "message": "Đang hiện {count} {itemType, select, project {{count, plural, other {dỿán}}} country {{count, plural, other {quốc gia}}} monetization {{count, plural, other {giá trỿdoanh thu}}} downloadSource {{count, plural, other {nguồn tải}}} downloadReason {{count, plural, other {lý do tải}}} member {{count, plural, other {thành viên}}} projectVersion {{count, plural, other {phiên bản dỿán}}} loader {{count, plural, other {mod loader}}} gameVersion {{count, plural, other {phiên bản trò chơi}}} other {{count, plural, other {vật phẩm}}}} tỿbảng"
   },
   "analytics.chart.table-selection.limited": {
-    "message": "Đang hiện {limit} {itemType, select, project {{limit, plural, one {d�?án} other {d�?án}}} country {{limit, plural, one {quốc gia} other {quốc gia}}} monetization {{limit, plural, one {doanh thu} other {doanh thu}}} downloadSource {{limit, plural, one {nguồn tải} other {nguồn tải}}} downloadReason {{limit, plural, one {lý do tải} other {lý do tải}}} member {{limit, plural, one {thành viên} other {thành viên}}} projectVersion {{limit, plural, one {phiên bản d�?án} other {phiên bản d�?án}}} loader {{limit, plural, one {trình chạy} other {trình chạy}}} gameVersion {{limit, plural, one {phiên bản game} other {phiên bản game}}} other {{limit, plural, one {mục} other {mục}}}} t�?bảng"
+    "message": "Đang hiện {limit} {itemType, select, project {{limit, plural, one {dỿán} other {dỿán}}} country {{limit, plural, one {quốc gia} other {quốc gia}}} monetization {{limit, plural, one {doanh thu} other {doanh thu}}} downloadSource {{limit, plural, one {nguồn tải} other {nguồn tải}}} downloadReason {{limit, plural, one {lý do tải} other {lý do tải}}} member {{limit, plural, one {thành viên} other {thành viên}}} projectVersion {{limit, plural, one {phiên bản dỿán} other {phiên bản dỿán}}} loader {{limit, plural, one {trình chạy} other {trình chạy}}} gameVersion {{limit, plural, one {phiên bản game} other {phiên bản game}}} other {{limit, plural, one {mục} other {mục}}}} tỿbảng"
   },
   "analytics.chart.table-selection.top": {
-    "message": "Đang hiện top {count} {itemType, select, project {{count, plural, one {d�?án} other {d�?án}}} country {{count, plural, one {quốc gia} other {quốc gia}}} monetization {{count, plural, one {doanh thu} other {doanh thu}}} downloadSource {{count, plural, one {nguồn tải} other {nguồn tải}}} downloadReason {{count, plural, one {lý do tải} other {lý do tải}}} member {{count, plural, one {thành viên} other {thành viên}}} projectVersion {{count, plural, one {phiên bản d�?án} other {phiên bản d�?án}}} loader {{count, plural, one {trình chạy} other {trình chạy}}} gameVersion {{count, plural, one {phiên bản game} other {phiên bản game}}} other {{count, plural, one {mục} other {mục}}}} t�?bảng"
+    "message": "Đang hiện top {count} {itemType, select, project {{count, plural, one {dỿán} other {dỿán}}} country {{count, plural, one {quốc gia} other {quốc gia}}} monetization {{count, plural, one {doanh thu} other {doanh thu}}} downloadSource {{count, plural, one {nguồn tải} other {nguồn tải}}} downloadReason {{count, plural, one {lý do tải} other {lý do tải}}} member {{count, plural, one {thành viên} other {thành viên}}} projectVersion {{count, plural, one {phiên bản dỿán} other {phiên bản dỿán}}} loader {{count, plural, one {trình chạy} other {trình chạy}}} gameVersion {{count, plural, one {phiên bản game} other {phiên bản game}}} other {{count, plural, one {mục} other {mục}}}} tỿbảng"
   },
   "analytics.chart.tooltip.dependent-on-project": {
-    "message": "Ph�?thuộc vào {project}"
+    "message": "Phỿthuộc vào {project}"
   },
   "analytics.chart.tooltip.dependent-project-version": {
-    "message": "{dependentProject} ph�?thuộc vào {dependencyProject}, {version}"
+    "message": "{dependentProject} phỿthuộc vào {dependencyProject}, {version}"
   },
   "analytics.chart.tooltip.duration.days": {
     "message": "{count, plural, other {# ngày}}"
@@ -186,10 +186,10 @@
     "message": "{count, plural, other {# phút}}"
   },
   "analytics.chart.tooltip.hide-entry": {
-    "message": "Che {name} trong biểu đ�?
+    "message": "Che {name} trong biểu đỿ
   },
   "analytics.chart.tooltip.pinned": {
-    "message": "Đã ghim chú thích t�?biểu đ�?
+    "message": "Đã ghim chú thích tỿbiểu đỿ
   },
   "analytics.chart.tooltip.pinned-aria": {
     "message": "Đã ghim"
@@ -198,7 +198,7 @@
     "message": "(trc.)"
   },
   "analytics.chart.tooltip.show-entry": {
-    "message": "Hiển th�?{name} trong biểu đ�?
+    "message": "Hiển thỿ{name} trong biểu đỿ
   },
   "analytics.chart.tooltip.total": {
     "message": "Tổng cộng"
@@ -213,13 +213,13 @@
     "message": "Đường"
   },
   "analytics.download-reason.dependency": {
-    "message": "Ph�?thuộc"
+    "message": "Phỿthuộc"
   },
   "analytics.download-reason.modpack": {
     "message": "Modpack"
   },
   "analytics.download-reason.standalone": {
-    "message": "Riêng l�?
+    "message": "Riêng lế
   },
   "analytics.download-reason.update": {
     "message": "Cập nhật"
@@ -234,28 +234,28 @@
     "message": "lượt tải"
   },
   "analytics.empty.no-data": {
-    "message": "Không d�?liệu kh�?dụng"
+    "message": "Không dỿliệu khếdụng"
   },
   "analytics.empty.no-data-for-analytics": {
-    "message": "Không d�?liệu kh�?dụng cho thống kê"
+    "message": "Không dỿliệu khếdụng cho thống kê"
   },
   "analytics.empty.no-projects": {
-    "message": "Không d�?án có sẵn"
+    "message": "Không dỿán có sẵn"
   },
   "analytics.empty.no-projects-for-analytics": {
-    "message": "Không d�?án có sẵn cho thống kê"
+    "message": "Không dỿán có sẵn cho thống kê"
   },
   "analytics.empty.select-project": {
-    "message": "S�?dụng ít nhất một d�?án đ�?xem d�?liệu"
+    "message": "Sỿdụng ít nhất một dỿán đỿxem dỿliệu"
   },
   "analytics.filter.dependent-project-search-failed-title": {
-    "message": "Không th�?tải d�?án ph�?thuộc"
+    "message": "Không thỿtải dỿán phỿthuộc"
   },
   "analytics.filter.game-version-type": {
     "message": "Loại phiên bản game"
   },
   "analytics.filter.game-version-type.all": {
-    "message": "Tất c�?
+    "message": "Tất cế
   },
   "analytics.filter.game-version-type.release": {
     "message": "Release"
@@ -264,7 +264,7 @@
     "message": "Tìm quốc gia..."
   },
   "analytics.filter.search.dependent-projects": {
-    "message": "Tìm d�?án..."
+    "message": "Tìm dỿán..."
   },
   "analytics.filter.search.download-sources": {
     "message": "Tìm nguồn tải..."
@@ -273,7 +273,7 @@
     "message": "Tìm thành viên..."
   },
   "analytics.filter.search.project-versions": {
-    "message": "Tìm phiên bản d�?án..."
+    "message": "Tìm phiên bản dỿán..."
   },
   "analytics.filter.search.versions": {
     "message": "Tìm phiên bản..."
@@ -309,13 +309,13 @@
     "message": "Nhóm theo ngày"
   },
   "analytics.group-by.selected.hour": {
-    "message": "Nhóm theo gi�?
+    "message": "Nhóm theo giỿ
   },
   "analytics.group-by.selected.month": {
     "message": "Nhóm theo tháng"
   },
   "analytics.group-by.selected.six-hours": {
-    "message": "Nhóm theo 6 gi�?
+    "message": "Nhóm theo 6 giỿ
   },
   "analytics.group-by.selected.week": {
     "message": "Nhóm theo tuần"
@@ -330,22 +330,22 @@
     "message": "Năm"
   },
   "analytics.loading.fetching-results": {
-    "message": "Đang lấy kết qu�?.."
+    "message": "Đang lấy kết quế.."
   },
   "analytics.options.loading": {
     "message": "Đang tải..."
   },
   "analytics.project-event.project-approved": {
-    "message": "D�?án đã dược xác nhận"
+    "message": "Dỿán đã dược xác nhận"
   },
   "analytics.project-event.project-private": {
-    "message": "D�?án đã chỉnh sang riêng tư"
+    "message": "Dỿán đã chỉnh sang riêng tư"
   },
   "analytics.project-event.project-status-changed": {
-    "message": "Đã chỉnh trạng thái d�?án"
+    "message": "Đã chỉnh trạng thái dỿán"
   },
   "analytics.project-event.project-unlisted": {
-    "message": "D�?án đã chỉnh sang không công khai"
+    "message": "Dỿán đã chỉnh sang không công khai"
   },
   "analytics.project-event.version-released": {
     "message": "{version} đã phát hành"
@@ -357,7 +357,7 @@
     "message": "Được chấp nhận"
   },
   "analytics.project-status.archived": {
-    "message": "Đã lưu tr�?
+    "message": "Đã lưu trỿ
   },
   "analytics.project-status.draft": {
     "message": "Nháp"
@@ -369,34 +369,34 @@
     "message": "Riêng tư"
   },
   "analytics.project-status.rejected": {
-    "message": "B�?t�?chối"
+    "message": "Bỿtỿchối"
   },
   "analytics.project-status.unlisted": {
     "message": "Không công khai"
   },
   "analytics.project-status.withheld": {
-    "message": "B�?gi�?lại"
+    "message": "Bỿgiỿlại"
   },
   "analytics.project.all": {
-    "message": "Tất c�?d�?án"
+    "message": "Tất cếdỿán"
   },
   "analytics.project.count": {
-    "message": "{count, plural, other {# d�?án}}"
+    "message": "{count, plural, other {# dỿán}}"
   },
   "analytics.project.icon-alt": {
     "message": "Biểu tượng {name}"
   },
   "analytics.project.select": {
-    "message": "Chọn d�?án"
+    "message": "Chọn dỿán"
   },
   "analytics.project.user": {
-    "message": "D�?án của {username}"
+    "message": "Dỿán của {username}"
   },
   "analytics.project.your": {
-    "message": "D�?án của bạn"
+    "message": "Dỿán của bạn"
   },
   "analytics.query.filter.add": {
-    "message": "Thêm b�?lọc"
+    "message": "Thêm bỿlọc"
   },
   "analytics.query.label.breakdown": {
     "message": "Phân tích:"
@@ -405,7 +405,7 @@
     "message": "Được nhóm theo"
   },
   "analytics.query.label.project": {
-    "message": "D�?án:"
+    "message": "Dỿán:"
   },
   "analytics.query.label.timeframe": {
     "message": "Khung thời gian:"
@@ -414,13 +414,13 @@
     "message": "Lượt tải"
   },
   "analytics.stat.monetization-banner.body": {
-    "message": "Ch�?lượt xem và lượt tải qua Modrinth hợp l�?cho việc kiếm tiền và phải vượt qua b�?lọc chống gian lận. Lượt tải t�?Modrinth App yêu cầu người dùng phải đăng nhập. Vì tất c�?các d�?án đều có t�?l�?lượt tải xuống hợp l�?tương đương nhau, doanh thu của bạn cũng không thay đổi đáng k�?ngay c�?khi tính toàn b�?lượt tải."
+    "message": "Chỿlượt xem và lượt tải qua Modrinth hợp lỿcho việc kiếm tiền và phải vượt qua bỿlọc chống gian lận. Lượt tải tỿModrinth App yêu cầu người dùng phải đăng nhập. Vì tất cếcác dỿán đều có tỿlỿlượt tải xuống hợp lỿtương đương nhau, doanh thu của bạn cũng không thay đổi đáng kỿngay cếkhi tính toàn bỿlượt tải."
   },
   "analytics.stat.monetization-banner.learn-more": {
     "message": "Tìm hiểu thêm"
   },
   "analytics.stat.monetization-banner.title": {
-    "message": "Việc kiếm tiền hoạt động như th�?nào?"
+    "message": "Việc kiếm tiền hoạt động như thếnào?"
   },
   "analytics.stat.playtime": {
     "message": "Thời gian chơi"
@@ -444,7 +444,7 @@
     "message": "N/A"
   },
   "analytics.stat.unavailable-tooltip": {
-    "message": "Thống kê không kh�?dụng trong thời điểm hiện tại"
+    "message": "Thống kê không khếdụng trong thời điểm hiện tại"
   },
   "analytics.stat.views": {
     "message": "Lượt xem"
@@ -483,7 +483,7 @@
     "message": "Nhóm theo {groupBy}"
   },
   "analytics.table.pagination.summary": {
-    "message": "Đang hiển th�?{start} đến {end} của {total}"
+    "message": "Đang hiển thỿ{start} đến {end} của {total}"
   },
   "analytics.table.search.placeholder": {
     "message": "Tìm..."
@@ -501,13 +501,13 @@
     "message": "Các phiên bản trên"
   },
   "analytics.threshold.project-downloads-aria": {
-    "message": "Ngưỡng tải của d�?án"
+    "message": "Ngưỡng tải của dỿán"
   },
   "analytics.threshold.project-version-downloads-aria": {
-    "message": "Ngưỡng tải của phiên bản d�?án"
+    "message": "Ngưỡng tải của phiên bản dỿán"
   },
   "analytics.threshold.project-versions-above": {
-    "message": "Các phiên bản d�?án trên"
+    "message": "Các phiên bản dỿán trên"
   },
   "analytics.threshold.projects-above": {
     "message": "Các phiên bản trên"
@@ -522,7 +522,7 @@
     "message": "Không có"
   },
   "analytics.value.no-dependent-tooltip": {
-    "message": "Lượt tải xuống cho những lý do khác ngoài ph�?thuộc"
+    "message": "Lượt tải xuống cho những lý do khác ngoài phỿthuộc"
   },
   "analytics.value.none": {
     "message": "Không có"
@@ -552,19 +552,19 @@
     "message": "Tải bản RPM"
   },
   "app-marketing.download.flathub": {
-    "message": "Tải v�?trên Flathub"
+    "message": "Tải vỿtrên Flathub"
   },
   "app-marketing.download.linux": {
     "message": "Linux"
   },
   "app-marketing.download.linux-disclaimer": {
-    "message": "Các phiên bản Linux của Modrinth App được <issues-link>biết là có vấn đ�?/issues-link> trên một s�?h�?thống và cấu hình nhất định. Nếu Modrinth App không ổn định trên h�?thống của bạn, chúng tôi khuyến khích bạn th�?các ứng dụng khác như <prism-link>Prism Launcher</prism-link> đ�?d�?dàng cài đặt nội dung của Modrinth."
+    "message": "Các phiên bản Linux của Modrinth App được <issues-link>biết là có vấn đỿ/issues-link> trên một sỿhỿthống và cấu hình nhất định. Nếu Modrinth App không ổn định trên hỿthống của bạn, chúng tôi khuyến khích bạn thỿcác ứng dụng khác như <prism-link>Prism Launcher</prism-link> đỿdỿdàng cài đặt nội dung của Modrinth."
   },
   "app-marketing.download.mac": {
     "message": "Mac"
   },
   "app-marketing.download.options-title": {
-    "message": "Tu�?chọn tải v�?
+    "message": "Tuỿchọn tải vỿ
   },
   "app-marketing.download.terms": {
     "message": "Khi bạn tải Modrinth, điều đó có nghĩa là bạn đã đồng ý với<terms-link>Điều khoản</terms-link> và<privacy-link>Chính sách bảo mật</privacy-link> của chúng tôi."
@@ -576,13 +576,13 @@
     "message": "Windows"
   },
   "app-marketing.features.follow.description": {
-    "message": "Lưu nội dung bạn yêu thích và nhận cập nhật ch�?với một cú nhấp chuột."
+    "message": "Lưu nội dung bạn yêu thích và nhận cập nhật chỿvới một cú nhấp chuột."
   },
   "app-marketing.features.follow.title": {
-    "message": "Theo dõi các d�?án"
+    "message": "Theo dõi các dỿán"
   },
   "app-marketing.features.importing.description": {
-    "message": "Nhập tất c�?các h�?sơ yêu thích của bạn t�?trình khởi chạy bạn đã s�?dụng trước đó và bắt đầu với Modrinth App ch�?trong vài giây!"
+    "message": "Nhập tất cếcác hỿsơ yêu thích của bạn tỿtrình khởi chạy bạn đã sỿdụng trước đó và bắt đầu với Modrinth App chỿtrong vài giây!"
   },
   "app-marketing.features.importing.gdlauncher-alt": {
     "message": "GDLauncher"
@@ -591,7 +591,7 @@
     "message": "MultiMC"
   },
   "app-marketing.features.importing.title": {
-    "message": "Nhập h�?sơ"
+    "message": "Nhập hỿsơ"
   },
   "app-marketing.features.mod-management.actions": {
     "message": "Hành động"
@@ -600,7 +600,7 @@
     "message": "bởi {author}"
   },
   "app-marketing.features.mod-management.description": {
-    "message": "Modrinth giúp bạn d�?dàng quản lý tất c�?các mod �?một nơi. Bạn có th�?cài đặt, g�?cài đặt và cập nhật các mod ch�?bằng một cú nhấp chuột."
+    "message": "Modrinth giúp bạn dỿdàng quản lý tất cếcác mod ỿmột nơi. Bạn có thỿcài đặt, gỿcài đặt và cập nhật các mod chỿbằng một cú nhấp chuột."
   },
   "app-marketing.features.mod-management.installed-mods": {
     "message": "Các mod đã cài đặt"
@@ -621,13 +621,13 @@
     "message": "Chơi các mod của bạn, dù bạn có kết nối Internet hay không."
   },
   "app-marketing.features.offline.title": {
-    "message": "Ch�?đ�?ngoại tuyến"
+    "message": "Chếđỿngoại tuyến"
   },
   "app-marketing.features.open-source.description": {
-    "message": "Trình khởi chạy của Modrinth là mã nguồn m�?hoàn toàn. Bạn có th�?xem mã nguồn trên <github-link>GitHub</github-link> của chúng tôi!"
+    "message": "Trình khởi chạy của Modrinth là mã nguồn mỿhoàn toàn. Bạn có thỿxem mã nguồn trên <github-link>GitHub</github-link> của chúng tôi!"
   },
   "app-marketing.features.open-source.title": {
-    "message": "Mã nguồn m�?
+    "message": "Mã nguồn mỿ
   },
   "app-marketing.features.performance.activity-monitor": {
     "message": "Trình giám sát hoạt động"
@@ -636,7 +636,7 @@
     "message": "% CPU"
   },
   "app-marketing.features.performance.description": {
-    "message": "Modrinth hoạt động tốt hơn nhiều trình quản lý mod hàng đầu, ch�?s�?dụng 150 MB RAM!\n"
+    "message": "Modrinth hoạt động tốt hơn nhiều trình quản lý mod hàng đầu, chỿsỿdụng 150 MB RAM!\n"
   },
   "app-marketing.features.performance.discord": {
     "message": "Discord"
@@ -648,7 +648,7 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "�?MB"
+    "message": "∿MB"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
     "message": "cânnặngmẹbạn MB"
@@ -660,7 +660,7 @@
     "message": "Ứng dụng Modrinth"
   },
   "app-marketing.features.performance.one-billion-percent": {
-    "message": "1 t�?%"
+    "message": "1 tỿ%"
   },
   "app-marketing.features.performance.process-name": {
     "message": "Tên tiến trình"
@@ -669,46 +669,46 @@
     "message": "RAM"
   },
   "app-marketing.features.performance.small": {
-    "message": "Nh�?
+    "message": "Nhỿ
   },
   "app-marketing.features.performance.title": {
     "message": "Hiệu năng"
   },
   "app-marketing.features.play.description": {
-    "message": "S�?dụng Modrinth App đ�?tải xuống và chơi với các mod và modpack yêu thích của bạn."
+    "message": "Sỿdụng Modrinth App đỿtải xuống và chơi với các mod và modpack yêu thích của bạn."
   },
   "app-marketing.features.play.title": {
     "message": "Chơi với các mod yêu thích của bạn"
   },
   "app-marketing.features.sharing.description": {
-    "message": "Xây dựng, chia s�?và chơi các modpack với bất k�?mod và modpack nào trong hàng nghìn mod và modpack được lưu tr�?tại Modrinth."
+    "message": "Xây dựng, chia sếvà chơi các modpack với bất kỿmod và modpack nào trong hàng nghìn mod và modpack được lưu trỿtại Modrinth."
   },
   "app-marketing.features.sharing.modpack": {
     "message": "Gói mod"
   },
   "app-marketing.features.sharing.share-button": {
-    "message": "Chia s�?
+    "message": "Chia sế
   },
   "app-marketing.features.sharing.title": {
-    "message": "Chia s�?gói mod"
+    "message": "Chia sếgói mod"
   },
   "app-marketing.features.unlike-any-launcher": {
-    "message": "Khác biệt so với bất k�?launcher nào"
+    "message": "Khác biệt so với bất kỿlauncher nào"
   },
   "app-marketing.features.website.description": {
-    "message": "Modrinth App được tích hợp hoàn toàn với trang web, vì vậy bạn có th�?truy cập tất c�?các d�?án yêu thích của mình ngay t�?ứng dụng!"
+    "message": "Modrinth App được tích hợp hoàn toàn với trang web, vì vậy bạn có thỿtruy cập tất cếcác dỿán yêu thích của mình ngay tỿứng dụng!"
   },
   "app-marketing.features.website.title": {
     "message": "Tích hợp với trang web"
   },
   "app-marketing.features.youve-used-before": {
-    "message": "bạn đã từng s�?dụng trước đây"
+    "message": "bạn đã từng sỿdụng trước đây"
   },
   "app-marketing.hero.app-screenshot-alt": {
-    "message": "Ảnh chụp màn hình Modrinth App với một instance Cobblemon được m�?�?trang \"Nội dung\"."
+    "message": "Ảnh chụp màn hình Modrinth App với một instance Cobblemon được mỿỿtrang \"Nội dung\"."
   },
   "app-marketing.hero.description": {
-    "message": "Modrinth App là một launcher mã nguồn m�?độc đáo, cho phép bạn chơi các mod yêu thích và gi�?chúng luôn được cập nhật, tất c�?gói gọn trong một ứng dụng nh�?gọn."
+    "message": "Modrinth App là một launcher mã nguồn mỿđộc đáo, cho phép bạn chơi các mod yêu thích và giỿchúng luôn được cập nhật, tất cếgói gọn trong một ứng dụng nhỿgọn."
   },
   "app-marketing.hero.download-button": {
     "message": "Tải App Modrinth"
@@ -729,7 +729,7 @@
     "message": "Ẩn các gói cài đặt khác"
   },
   "app-marketing.not-recommended": {
-    "message": "Chúng tôi không khuyên bạn s�?dụng những gói này tr�?kh�?bạn biết bạn đang làm gì."
+    "message": "Chúng tôi không khuyên bạn sỿdụng những gói này trỿkhỿbạn biết bạn đang làm gì."
   },
   "app-marketing.show-other-packages": {
     "message": "Hiện các gói cài đặt khác"
@@ -738,34 +738,34 @@
     "message": "Ủy quyền"
   },
   "auth.authorize.action.decline": {
-    "message": "T�?chối"
+    "message": "Tỿchối"
   },
   "auth.authorize.app-info": {
-    "message": "<strong>{appName}</strong> bởi <creator-link>{creator}</creator-link> s�?có th�?"
+    "message": "<strong>{appName}</strong> bởi <creator-link>{creator}</creator-link> sếcó thỿ"
   },
   "auth.authorize.authorize-app-name": {
     "message": "Ủy quyền {appName}"
   },
   "auth.authorize.error.no-redirect-url": {
-    "message": "Không tìm thấy v�?trí chuyển hướng trong phản hồi"
+    "message": "Không tìm thấy vỿtrí chuyển hướng trong phản hồi"
   },
   "auth.authorize.redirect-url": {
-    "message": "Bạn s�?được chuyển hướng đến <redirect-url>{url}</redirect-url>"
+    "message": "Bạn sếđược chuyển hướng đến <redirect-url>{url}</redirect-url>"
   },
   "auth.reset-password.method-choice.action": {
     "message": "Gửi email khôi phục"
   },
   "auth.reset-password.method-choice.description": {
-    "message": "Điền địa ch�?email bên dưới của bạn và chúng tôi s�?gửi đường dẫn khôi phục đ�?bạn lấy lại tài khoản của mình."
+    "message": "Điền địa chỿemail bên dưới của bạn và chúng tôi sếgửi đường dẫn khôi phục đỿbạn lấy lại tài khoản của mình."
   },
   "auth.reset-password.notification.email-sent.text": {
-    "message": "Một email với hướng dẫn đã được gửi cho bạn nếu địa ch�?email đã lưu vào tài khoản của bạn trước đây."
+    "message": "Một email với hướng dẫn đã được gửi cho bạn nếu địa chỿemail đã lưu vào tài khoản của bạn trước đây."
   },
   "auth.reset-password.notification.email-sent.title": {
     "message": "Đã gửi email"
   },
   "auth.reset-password.notification.password-reset.text": {
-    "message": "Bây gi�?bạn có th�?đăng nhập vào tài khoản của bạn với mật khẩu mới của bạn."
+    "message": "Bây giỿbạn có thỿđăng nhập vào tài khoản của bạn với mật khẩu mới của bạn."
   },
   "auth.reset-password.notification.password-reset.title": {
     "message": "Mật khẩu của bạn đã được đặt lại thành công"
@@ -777,7 +777,7 @@
     "message": "Nhập lại mật khẩu"
   },
   "auth.reset-password.post-challenge.description": {
-    "message": "Nhập mật khẩu mới vào bên dưới đ�?lấy lại tài khoản của bạn."
+    "message": "Nhập mật khẩu mới vào bên dưới đỿlấy lại tài khoản của bạn."
   },
   "auth.reset-password.title": {
     "message": "Đặt lại mật khẩu"
@@ -792,7 +792,7 @@
     "message": "Đăng nhập"
   },
   "auth.sign-up.legal-dislaimer": {
-    "message": "Khi bạn tạo tài khoản, bạn đồng ý với <terms-link>Điều khoản s�?dụng</terms-link> và <privacy-policy-link>Chính sách quyền riêng tư</privacy-policy-link> của Modrinth."
+    "message": "Khi bạn tạo tài khoản, bạn đồng ý với <terms-link>Điều khoản sỿdụng</terms-link> và <privacy-policy-link>Chính sách quyền riêng tư</privacy-policy-link> của Modrinth."
   },
   "auth.sign-up.sign-in-option.title": {
     "message": "Đã có tài khoản rồi à?"
@@ -813,16 +813,16 @@
     "message": "Gửi lại email xác nhận"
   },
   "auth.verify-email.failed-verification.description": {
-    "message": "Chúng tôi không th�?xác minh địa ch�?email của bạn. Hãy th�?gửi lại email xác minh thông qua bảng điều khiển của bạn bằng cách đăng nhập."
+    "message": "Chúng tôi không thỿxác minh địa chỿemail của bạn. Hãy thỿgửi lại email xác minh thông qua bảng điều khiển của bạn bằng cách đăng nhập."
   },
   "auth.verify-email.failed-verification.description.logged-in": {
-    "message": "Chúng tôi không th�?xác minh địa ch�?email của bạn. Hãy th�?gửi lại email xác minh thông qua nút bên dưới."
+    "message": "Chúng tôi không thỿxác minh địa chỿemail của bạn. Hãy thỿgửi lại email xác minh thông qua nút bên dưới."
   },
   "auth.verify-email.failed-verification.title": {
     "message": "Xác minh email thất bại"
   },
   "auth.verify-email.post-verification.description": {
-    "message": "Địa ch�?email của bạn đã được xác minh thành công!"
+    "message": "Địa chỿemail của bạn đã được xác minh thành công!"
   },
   "auth.verify-email.post-verification.title": {
     "message": "Xác minh email"
@@ -837,34 +837,34 @@
     "message": "Xoá biểu tượng"
   },
   "collection.button.remove-project": {
-    "message": "Xoá d�?án"
+    "message": "Xoá dỿán"
   },
   "collection.button.replace-icon": {
-    "message": "Thay th�?biểu tượng"
+    "message": "Thay thếbiểu tượng"
   },
   "collection.button.select-icon": {
     "message": "Chọn biểu tượng"
   },
   "collection.button.unfollow-project": {
-    "message": "B�?theo dõi d�?án"
+    "message": "Bỿtheo dõi dỿán"
   },
   "collection.delete-modal.description": {
-    "message": "Thao tác này s�?xóa vĩnh viễn b�?sưu tập này. Hành động này không th�?hoàn tác."
+    "message": "Thao tác này sếxóa vĩnh viễn bỿsưu tập này. Hành động này không thỿhoàn tác."
   },
   "collection.delete-modal.title": {
-    "message": "Bạn có chắc chắn muốn xóa b�?sưu tập này không?"
+    "message": "Bạn có chắc chắn muốn xóa bỿsưu tập này không?"
   },
   "collection.description": {
-    "message": "{description} - Xem b�?sưu tập {name} của {username} trên Modrinth"
+    "message": "{description} - Xem bỿsưu tập {name} của {username} trên Modrinth"
   },
   "collection.description.following": {
-    "message": "B�?sưu tập được tạo t�?động t�?tất c�?các d�?án bạn đang theo dõi."
+    "message": "Bỿsưu tập được tạo tỿđộng tỿtất cếcác dỿán bạn đang theo dõi."
   },
   "collection.editing": {
-    "message": "Đang chỉnh sửa b�?sưu tập"
+    "message": "Đang chỉnh sửa bỿsưu tập"
   },
   "collection.error.not-found": {
-    "message": "Không tìm thấy b�?sưu tập"
+    "message": "Không tìm thấy bỿsưu tập"
   },
   "collection.label.created-at": {
     "message": "Đã tạo {ago}"
@@ -873,22 +873,22 @@
     "message": "Được tuyển chọn bởi"
   },
   "collection.label.no-projects": {
-    "message": "Chưa có d�?án trong b�?sưu tập"
+    "message": "Chưa có dỿán trong bỿsưu tập"
   },
   "collection.label.projects-count": {
-    "message": "{count, plural, =0 {Chưa có d�?án nào} other {<stat>{count}</stat> {type}}}"
+    "message": "{count, plural, =0 {Chưa có dỿán nào} other {<stat>{count}</stat> {type}}}"
   },
   "collection.label.updated-at": {
     "message": "Đã cập nhật {ago}"
   },
   "collection.return-link.dashboard-collections": {
-    "message": "B�?sưu tập của bạn"
+    "message": "Bỿsưu tập của bạn"
   },
   "collection.return-link.user": {
-    "message": "H�?sơ của {user}"
+    "message": "Hỿsơ của {user}"
   },
   "collection.title": {
-    "message": "{name} - B�?sưu tập"
+    "message": "{name} - Bỿsưu tập"
   },
   "conversation-thread.action.add-private-note": {
     "message": "Thêm ghi chú bí mật"
@@ -906,13 +906,13 @@
     "message": "Đóng với phản hồi"
   },
   "conversation-thread.action.reject": {
-    "message": "T�?chối"
+    "message": "Tỿchối"
   },
   "conversation-thread.action.reject-with-reply": {
-    "message": "T�?chối với phản hồi"
+    "message": "Tỿchối với phản hồi"
   },
   "conversation-thread.action.reopen-thread": {
-    "message": "M�?lại luồng"
+    "message": "Mỿlại luồng"
   },
   "conversation-thread.action.reply": {
     "message": "Phản hồi"
@@ -921,19 +921,19 @@
     "message": "Phản hồi đến luồng"
   },
   "conversation-thread.action.resubmit-for-review": {
-    "message": "Gửi lại đ�?xét duyệt"
+    "message": "Gửi lại đỿxét duyệt"
   },
   "conversation-thread.action.resubmit-for-review-with-reply": {
-    "message": "Gửi lại đ�?xét duyệt kèm phản hồi"
+    "message": "Gửi lại đỿxét duyệt kèm phản hồi"
   },
   "conversation-thread.action.send": {
     "message": "Gửi"
   },
   "conversation-thread.action.send-to-review": {
-    "message": "Gửi đ�?xem xét"
+    "message": "Gửi đỿxem xét"
   },
   "conversation-thread.action.send-to-review-with-reply": {
-    "message": "Gửi đ�?xem xét với phản hồi"
+    "message": "Gửi đỿxem xét với phản hồi"
   },
   "conversation-thread.action.set-to-draft": {
     "message": "Chuyển sang bản nháp"
@@ -948,13 +948,13 @@
     "message": "Thu hồi với phản hồi"
   },
   "conversation-thread.closed-thread.description": {
-    "message": "Luồng này đã b�?đóng và tin nhắn mới không th�?gửi được vào."
+    "message": "Luồng này đã bỿđóng và tin nhắn mới không thỿgửi được vào."
   },
   "conversation-thread.error.closing-report": {
     "message": "Lỗi khi đóng báo cáo"
   },
   "conversation-thread.error.reopening-report": {
-    "message": "Lỗi khi m�?lại báo cáo"
+    "message": "Lỗi khi mỿlại báo cáo"
   },
   "conversation-thread.error.sending-message": {
     "message": "Lỗi khi gửi tin nhắn"
@@ -966,175 +966,175 @@
     "message": "Gửi một tin nhắn..."
   },
   "conversation-thread.reply-modal.confirmation.description": {
-    "message": "Xác nhận bên kiểm duyệt không hay kiểm duyệt ch�?này"
+    "message": "Xác nhận bên kiểm duyệt không hay kiểm duyệt chỿnày"
   },
   "conversation-thread.reply-modal.confirmation.label": {
-    "message": "Tôi đã rõ rằng bên kiểm duyệt không hay kiểm duyệt ch�?này nữa."
+    "message": "Tôi đã rõ rằng bên kiểm duyệt không hay kiểm duyệt chỿnày nữa."
   },
   "conversation-thread.reply-modal.description": {
-    "message": "D�?án của bạn đã được chấp nhận. Vì th�? bên kiểm duyệt s�?không còn kiểm duyệt ch�?này. Tuy nhiên, h�?có th�?s�?xem tin của bạn khi d�?án của bạn có vấn đ�?"
+    "message": "Dỿán của bạn đã được chấp nhận. Vì thế bên kiểm duyệt sếkhông còn kiểm duyệt chỿnày. Tuy nhiên, hỿcó thỿsếxem tin của bạn khi dỿán của bạn có vấn đỿ"
   },
   "conversation-thread.reply-modal.header": {
-    "message": "Phản hồi ch�?đ�?
+    "message": "Phản hồi chỿđỿ
   },
   "conversation-thread.reply-modal.help-center-note": {
-    "message": "Nếu bạn muốn liên lạc với bên kiểm duyệt, hãy s�?dụng trang <help-center-link>Trung Tậm Tr�?giúp Modrinth</help-center-link> và bấm biểu tượng tin nhắn màu xanh �?góc phải dưới đ�?liên lạc bên h�?tr�?"
+    "message": "Nếu bạn muốn liên lạc với bên kiểm duyệt, hãy sỿdụng trang <help-center-link>Trung Tậm Trỿgiúp Modrinth</help-center-link> và bấm biểu tượng tin nhắn màu xanh ỿgóc phải dưới đỿliên lạc bên hỿtrỿ"
   },
   "conversation-thread.resubmit-modal.confirmation.description": {
-    "message": "Chắc chắn rằng tôi đã tr�?lời tin nhắn t�?bên kiểm duyệt"
+    "message": "Chắc chắn rằng tôi đã trếlời tin nhắn tỿbên kiểm duyệt"
   },
   "conversation-thread.resubmit-modal.confirmation.label": {
-    "message": "Tôi đã chắc chắn rằng tôi đã tr�?lời đúng cách các bình luận t�?bên kiểm duyệt."
+    "message": "Tôi đã chắc chắn rằng tôi đã trếlời đúng cách các bình luận tỿbên kiểm duyệt."
   },
   "conversation-thread.resubmit-modal.description": {
-    "message": "Bạn s�?gửi <project-title>{projectTitle}</project-title> đ�?được xem lại t�?bên kiểm duyệt."
+    "message": "Bạn sếgửi <project-title>{projectTitle}</project-title> đỿđược xem lại tỿbên kiểm duyệt."
   },
   "conversation-thread.resubmit-modal.header.resubmitting": {
-    "message": "Gửi lại đ�?kiểm duyệt"
+    "message": "Gửi lại đỿkiểm duyệt"
   },
   "conversation-thread.resubmit-modal.header.submitting": {
-    "message": "Gửi đ�?kiểm duyệt"
+    "message": "Gửi đỿkiểm duyệt"
   },
   "conversation-thread.resubmit-modal.reminder": {
-    "message": "Hãy chắc chắn rằng bạn đã tr�?lời tất c�?các bình luận t�?bên kiểm duyệt."
+    "message": "Hãy chắc chắn rằng bạn đã trếlời tất cếcác bình luận tỿbên kiểm duyệt."
   },
   "conversation-thread.resubmit-modal.warning": {
-    "message": "Gửi lại nhiều lần mà không tr�?lời các bình luận t�?bên kiểm duyệt có th�?đình ch�?tài khoản của bạn."
+    "message": "Gửi lại nhiều lần mà không trếlời các bình luận tỿbên kiểm duyệt có thỿđình chỿtài khoản của bạn."
   },
   "create-project-version.create-modal.stage.add-files.admonition": {
-    "message": "Các tệp b�?tr�?dùng cho các tài nguyên h�?tr�?như mã nguồn, không dùng cho các phiên bản hoặc biến th�?thay th�?"
+    "message": "Các tệp bỿtrỿdùng cho các tài nguyên hỿtrỿnhư mã nguồn, không dùng cho các phiên bản hoặc biến thỿthay thế"
   },
   "create.collection.collection-info": {
-    "message": "B�?sưu tập mới của bạn s�?được tạo dưới dạng b�?sưu tập công khai với {count, plural, =0 {không có d�?án} other {# d�?án}}."
+    "message": "Bỿsưu tập mới của bạn sếđược tạo dưới dạng bỿsưu tập công khai với {count, plural, =0 {không có dỿán} other {# dỿán}}."
   },
   "create.collection.create-collection": {
-    "message": "Tạo b�?sưu tập"
+    "message": "Tạo bỿsưu tập"
   },
   "create.collection.name-label": {
     "message": "Tên"
   },
   "create.collection.name-placeholder": {
-    "message": "Nhập tên b�?sưu tập..."
+    "message": "Nhập tên bỿsưu tập..."
   },
   "create.collection.summary-description": {
-    "message": "Một hoặc hai câu mô t�?b�?sưu tập của bạn."
+    "message": "Một hoặc hai câu mô tếbỿsưu tập của bạn."
   },
   "create.collection.summary-label": {
     "message": "Tóm tắt"
   },
   "create.collection.summary-placeholder": {
-    "message": "Đây là b�?sưu tập..."
+    "message": "Đây là bỿsưu tập..."
   },
   "create.collection.title": {
-    "message": "Tạo b�?sưu tập"
+    "message": "Tạo bỿsưu tập"
   },
   "create.limit-alert.approaching-limit": {
     "message": "Sắp đạt giới hạn {type} ({current}/{max})"
   },
   "create.limit-alert.approaching-limit-description": {
-    "message": "Bạn sắp chạm giới hạn {type}, vui lòng liên h�?h�?tr�?nếu cần hơn {max} {typePlural}."
+    "message": "Bạn sắp chạm giới hạn {type}, vui lòng liên hỿhỿtrỿnếu cần hơn {max} {typePlural}."
   },
   "create.limit-alert.contact-support": {
-    "message": "Liên h�?h�?tr�?
+    "message": "Liên hỿhỿtrỿ
   },
   "create.limit-alert.limit-reached": {
     "message": "Đã đạt giới hạn {type}"
   },
   "create.limit-alert.limit-reached-description": {
-    "message": "Bạn đã đạt giới hạn {type} là {max}. Vui lòng liên h�?h�?tr�?đ�?tăng giới hạn."
+    "message": "Bạn đã đạt giới hạn {type} là {max}. Vui lòng liên hỿhỿtrỿđỿtăng giới hạn."
   },
   "create.limit-alert.type-collection": {
-    "message": "b�?sưu tập"
+    "message": "bỿsưu tập"
   },
   "create.limit-alert.type-organization": {
-    "message": "t�?chức"
+    "message": "tỿchức"
   },
   "create.limit-alert.type-plural-collection": {
-    "message": "b�?sưu tập"
+    "message": "bỿsưu tập"
   },
   "create.limit-alert.type-plural-organization": {
-    "message": "t�?chức"
+    "message": "tỿchức"
   },
   "create.limit-alert.type-plural-project": {
-    "message": "d�?án"
+    "message": "dỿán"
   },
   "create.limit-alert.type-project": {
-    "message": "d�?án"
+    "message": "dỿán"
   },
   "create.organization.create-organization": {
-    "message": "Tạo t�?chức"
+    "message": "Tạo tỿchức"
   },
   "create.organization.name-label": {
     "message": "Tên"
   },
   "create.organization.name-placeholder": {
-    "message": "Nhập tên t�?chức..."
+    "message": "Nhập tên tỿchức..."
   },
   "create.organization.ownership-info": {
-    "message": "Bạn s�?là ch�?của t�?chức này, nhưng bạn có th�?mời các thành viên khác và chuyển quyền s�?hữu bất c�?lúc nào."
+    "message": "Bạn sếlà chỿcủa tỿchức này, nhưng bạn có thỿmời các thành viên khác và chuyển quyền sỿhữu bất cỿlúc nào."
   },
   "create.organization.summary-description": {
-    "message": "Một hoặc hai câu mô t�?t�?chức của bạn."
+    "message": "Một hoặc hai câu mô tếtỿchức của bạn."
   },
   "create.organization.summary-label": {
     "message": "Tóm tắt"
   },
   "create.organization.summary-placeholder": {
-    "message": "Một t�?chức dành cho..."
+    "message": "Một tỿchức dành cho..."
   },
   "create.organization.title": {
-    "message": "Đang tạo t�?chức"
+    "message": "Đang tạo tỿchức"
   },
   "create.organization.url-label": {
     "message": "URL"
   },
   "create.project.create-project": {
-    "message": "Tạo D�?Án"
+    "message": "Tạo DỿÁn"
   },
   "create.project.missing-fields-tooltip": {
-    "message": "Trường thông tin b�?thiếu: {fields}"
+    "message": "Trường thông tin bỿthiếu: {fields}"
   },
   "create.project.name-label": {
     "message": "Tên"
   },
   "create.project.name-placeholder": {
-    "message": "Nhập tên d�?án..."
+    "message": "Nhập tên dỿán..."
   },
   "create.project.owner-description": {
-    "message": "Chọn chính bạn hoặc t�?chức của bạn làm ch�?s�?hữu d�?án."
+    "message": "Chọn chính bạn hoặc tỿchức của bạn làm chỿsỿhữu dỿán."
   },
   "create.project.owner-label": {
-    "message": "Ch�?s�?hữu"
+    "message": "Chỿsỿhữu"
   },
   "create.project.server-project-title": {
-    "message": "Tạo d�?án máy ch�?
+    "message": "Tạo dỿán máy chỿ
   },
   "create.project.summary-description": {
-    "message": "Một hoặc hai câu mô t�?d�?án của bạn."
+    "message": "Một hoặc hai câu mô tếdỿán của bạn."
   },
   "create.project.summary-label": {
     "message": "Tóm tắt"
   },
   "create.project.summary-placeholder": {
-    "message": "D�?án này thêm..."
+    "message": "Dỿán này thêm..."
   },
   "create.project.title": {
-    "message": "Đang tạo d�?án"
+    "message": "Đang tạo dỿán"
   },
   "create.project.type-label": {
     "message": "Loại"
   },
   "create.project.type-project": {
-    "message": "D�?án"
+    "message": "Dỿán"
   },
   "create.project.type-server": {
-    "message": "Máy ch�?
+    "message": "Máy chỿ
   },
   "create.project.url-label": {
     "message": "URL"
   },
   "create.project.visibility-description": {
-    "message": "Kh�?năng hiển th�?của d�?án sau khi được phê duyệt."
+    "message": "Khếnăng hiển thỿcủa dỿán sau khi được phê duyệt."
   },
   "create.project.visibility-private": {
     "message": "Riêng tư"
@@ -1158,7 +1158,7 @@
     "message": "Link affiliate của bạn"
   },
   "dashboard.affiliate-links.revoke-confirm.body": {
-    "message": "Thao tác này s�?vĩnh viễn thu hồi mã affiliate `{id}`. Mọi liên kết hiện có s�?dụng mã này đã được chia s�?s�?không còn hiệu lực."
+    "message": "Thao tác này sếvĩnh viễn thu hồi mã affiliate `{id}`. Mọi liên kết hiện có sỿdụng mã này đã được chia sếsếkhông còn hiệu lực."
   },
   "dashboard.affiliate-links.revoke-confirm.button": {
     "message": "Thu hồi"
@@ -1170,40 +1170,40 @@
     "message": "Tìm kiếm link affiliate..."
   },
   "dashboard.analytics.from-projects": {
-    "message": "t�?{count} {count, plural, other {d�?án}} khác"
+    "message": "tỿ{count} {count, plural, other {dỿán}} khác"
   },
   "dashboard.analytics.total-downloads": {
-    "message": "Tổng s�?lượt tải xuống"
+    "message": "Tổng sỿlượt tải xuống"
   },
   "dashboard.analytics.total-followers": {
-    "message": "Tổng s�?người theo dõi"
+    "message": "Tổng sỿngười theo dõi"
   },
   "dashboard.collections.button.create-new": {
     "message": "Tạo mới"
   },
   "dashboard.collections.empty.get-started-hint": {
-    "message": "Tạo b�?sưu tập đầu tiên đ�?bắt đầu!"
+    "message": "Tạo bỿsưu tập đầu tiên đỿbắt đầu!"
   },
   "dashboard.collections.empty.no-collections": {
-    "message": "Bạn chưa có b�?sưu tập nào c�?
+    "message": "Bạn chưa có bỿsưu tập nào cế
   },
   "dashboard.collections.empty.no-match": {
-    "message": "Không tìm thấy b�?sưu tập nào phù hợp với tìm kiếm của bạn"
+    "message": "Không tìm thấy bỿsưu tập nào phù hợp với tìm kiếm của bạn"
   },
   "dashboard.collections.empty.no-match-hint": {
-    "message": "Hãy th�?thay đổi b�?lọc hoặc cụm t�?tìm kiếm."
+    "message": "Hãy thỿthay đổi bỿlọc hoặc cụm tỿtìm kiếm."
   },
   "dashboard.collections.label.projects-count": {
-    "message": "{count} {countPlural, plural, one {d�?án} other {d�?án}}"
+    "message": "{count} {countPlural, plural, one {dỿán} other {dỿán}}"
   },
   "dashboard.collections.label.search-input": {
-    "message": "Tìm kiếm các b�?sưu tập của bạn"
+    "message": "Tìm kiếm các bỿsưu tập của bạn"
   },
   "dashboard.collections.long-title": {
-    "message": "B�?sưu tập của bạn"
+    "message": "Bỿsưu tập của bạn"
   },
   "dashboard.collections.placeholder.search": {
-    "message": "Tìm kiếm các b�?sưu tập..."
+    "message": "Tìm kiếm các bỿsưu tập..."
   },
   "dashboard.collections.sort.name-ascending": {
     "message": "Tên (A-Z)"
@@ -1218,40 +1218,40 @@
     "message": "Tải xuống {formType}"
   },
   "dashboard.creator-tax-form-modal.confirmation.success": {
-    "message": "Biểu mẫu thu�?{formType} của bạn đã được gửi thành công!"
+    "message": "Biểu mẫu thuế{formType} của bạn đã được gửi thành công!"
   },
   "dashboard.creator-tax-form-modal.confirmation.support-text": {
-    "message": "Bạn hiện có th�?rút tiền t�?do. Nếu bạn có thắc mắc hoặc cần cập nhật thông tin, vui lòng <support-link>liên h�?b�?phận h�?tr�?/support-link>."
+    "message": "Bạn hiện có thỿrút tiền tỿdo. Nếu bạn có thắc mắc hoặc cần cập nhật thông tin, vui lòng <support-link>liên hỿbỿphận hỿtrỿ/support-link>."
   },
   "dashboard.creator-tax-form-modal.confirmation.title": {
     "message": "Bạn đã sẵn sàng! 🎉"
   },
   "dashboard.creator-tax-form-modal.entity.description": {
-    "message": "Thực th�?nước ngoài là một thực th�?kinh doanh được t�?chức ngoài Hoa K�?(như là công ty, hợp danh hoặc LLC không thuộc Hoa K�?."
+    "message": "Thực thỿnước ngoài là một thực thỿkinh doanh được tỿchức ngoài Hoa Kỿ(như là công ty, hợp danh hoặc LLC không thuộc Hoa Kỿ."
   },
   "dashboard.creator-tax-form-modal.entity.foreign-entity": {
-    "message": "Thực th�?nước ngoài"
+    "message": "Thực thỿnước ngoài"
   },
   "dashboard.creator-tax-form-modal.entity.private-individual": {
     "message": "Cá nhân"
   },
   "dashboard.creator-tax-form-modal.entity.question": {
-    "message": "Bạn là cá nhân hay thuộc thực th�?nước ngoài?"
+    "message": "Bạn là cá nhân hay thuộc thực thỿnước ngoài?"
   },
   "dashboard.creator-tax-form-modal.header": {
-    "message": "Biểu mẫu thu�?
+    "message": "Biểu mẫu thuế
   },
   "dashboard.creator-tax-form-modal.security.description": {
-    "message": "Modrinth s�?dụng nhà cung cấp bên th�?ba Track1099 đ�?thu thập và lưu tr�?an toàn các biểu mẫu thu�?của bạn. <security-link>Tìm hiểu thêm tại đây.</security-link>"
+    "message": "Modrinth sỿdụng nhà cung cấp bên thỿba Track1099 đỿthu thập và lưu trỿan toàn các biểu mẫu thuếcủa bạn. <security-link>Tìm hiểu thêm tại đây.</security-link>"
   },
   "dashboard.creator-tax-form-modal.security.header": {
     "message": "Thực hành bảo mật"
   },
   "dashboard.creator-tax-form-modal.us-citizen.question": {
-    "message": "Bạn có phải là công dân M�?không?"
+    "message": "Bạn có phải là công dân Mỿkhông?"
   },
   "dashboard.creator-withdraw-modal.complete-tax-form": {
-    "message": "Hoàn thành biểu mẫu thu�?
+    "message": "Hoàn thành biểu mẫu thuế
   },
   "dashboard.creator-withdraw-modal.continue-with-limit": {
     "message": "Tiếp tục với giới hạn"
@@ -1260,28 +1260,28 @@
     "message": "Chi tiết"
   },
   "dashboard.creator-withdraw-modal.fee-breakdown-amount": {
-    "message": "S�?tiền"
+    "message": "Sỿtiền"
   },
   "dashboard.creator-withdraw-modal.fee-breakdown-exchange-rate": {
-    "message": "T�?giá"
+    "message": "Tỿgiá"
   },
   "dashboard.creator-withdraw-modal.fee-breakdown-fee": {
     "message": "Phí"
   },
   "dashboard.creator-withdraw-modal.fee-breakdown-gift-card-value": {
-    "message": "Giá tr�?th�?quà tặng"
+    "message": "Giá trỿthếquà tặng"
   },
   "dashboard.creator-withdraw-modal.fee-breakdown-net-amount": {
-    "message": "S�?tiền thực nhận"
+    "message": "Sỿtiền thực nhận"
   },
   "dashboard.creator-withdraw-modal.fee-breakdown-usd-equivalent": {
     "message": "Tương đương USD"
   },
   "dashboard.creator-withdraw-modal.kyc.business-entity": {
-    "message": "Thực th�?kinh doanh"
+    "message": "Thực thỿkinh doanh"
   },
   "dashboard.creator-withdraw-modal.kyc.entity-description": {
-    "message": "Thực th�?kinh doanh là một t�?chức đã được đăng ký, như là công ty, hợp danh hoặc LLC."
+    "message": "Thực thỿkinh doanh là một tỿchức đã được đăng ký, như là công ty, hợp danh hoặc LLC."
   },
   "dashboard.creator-withdraw-modal.kyc.entity-question": {
     "message": "Bạn thực hiện rút tiền với tư cách cá nhân hay doanh nghiệp?"
@@ -1296,28 +1296,28 @@
     "message": "Tìm kiếm quốc gia..."
   },
   "dashboard.creator-withdraw-modal.method-selection.error-text": {
-    "message": "Không th�?tải các phương thức thanh toán kh�?dụng. Vui lòng th�?lại sau."
+    "message": "Không thỿtải các phương thức thanh toán khếdụng. Vui lòng thỿlại sau."
   },
   "dashboard.creator-withdraw-modal.method-selection.error-title": {
-    "message": "Không th�?tải các phương thức thanh toán"
+    "message": "Không thỿtải các phương thức thanh toán"
   },
   "dashboard.creator-withdraw-modal.method-selection.region": {
     "message": "Khu vực"
   },
   "dashboard.creator-withdraw-modal.method-selection.region-tooltip": {
-    "message": "Một s�?phương thức thanh toán không kh�?dụng �?một s�?khu vực nhất định."
+    "message": "Một sỿphương thức thanh toán không khếdụng ỿmột sỿkhu vực nhất định."
   },
   "dashboard.creator-withdraw-modal.method-selection.select-method": {
     "message": "Chọn phương thức rút tiền"
   },
   "dashboard.creator-withdraw-modal.method-selection.tax-limit-warning": {
-    "message": "Giới hạn rút tiền của bạn là <b>{amount}</b>, <tax-link>hoàn thành biểu mẫu thu�?/tax-link> đ�?rút thêm tiền."
+    "message": "Giới hạn rút tiền của bạn là <b>{amount}</b>, <tax-link>hoàn thành biểu mẫu thuế/tax-link> đỿrút thêm tiền."
   },
   "dashboard.creator-withdraw-modal.muralpay-details.account-owner": {
-    "message": "Ch�?tài khoản"
+    "message": "Chỿtài khoản"
   },
   "dashboard.creator-withdraw-modal.muralpay-details.bank-account-owner": {
-    "message": "Ch�?tài khoản ngân hàng"
+    "message": "Chỿtài khoản ngân hàng"
   },
   "dashboard.creator-withdraw-modal.muralpay-details.bank-account-owner-description": {
     "message": "Nhập tên người được ủy quyền vận hành tài khoản ngân hàng này thay mặt cho doanh nghiệp."
@@ -1326,43 +1326,43 @@
     "message": "Xu"
   },
   "dashboard.creator-withdraw-modal.muralpay-details.crypto-warning-header": {
-    "message": "Xác nhận địa ch�?ví của bạn"
+    "message": "Xác nhận địa chỿví của bạn"
   },
   "dashboard.creator-withdraw-modal.muralpay-details.document-number-national-id": {
-    "message": "S�?giấy t�?tùy thân"
+    "message": "Sỿgiấy tỿtùy thân"
   },
   "dashboard.creator-withdraw-modal.muralpay-details.document-number-national-id-placeholder": {
-    "message": "Nhập s�?giấy t�?tùy thân"
+    "message": "Nhập sỿgiấy tỿtùy thân"
   },
   "dashboard.creator-withdraw-modal.muralpay-details.document-number-passport": {
-    "message": "S�?h�?chiếu"
+    "message": "Sỿhỿchiếu"
   },
   "dashboard.creator-withdraw-modal.muralpay-details.document-number-passport-placeholder": {
-    "message": "Nhập s�?h�?hiếu"
+    "message": "Nhập sỿhỿhiếu"
   },
   "dashboard.creator-withdraw-modal.muralpay-details.document-number-resident-id": {
-    "message": "S�?th�?cư trú"
+    "message": "Sỿthếcư trú"
   },
   "dashboard.creator-withdraw-modal.muralpay-details.document-number-resident-id-placeholder": {
-    "message": "Nhập s�?th�?cư trú"
+    "message": "Nhập sỿthếcư trú"
   },
   "dashboard.creator-withdraw-modal.muralpay-details.document-number-ruc": {
-    "message": "S�?RUC"
+    "message": "SỿRUC"
   },
   "dashboard.creator-withdraw-modal.muralpay-details.document-number-ruc-placeholder": {
-    "message": "Nhập s�?RUC"
+    "message": "Nhập sỿRUC"
   },
   "dashboard.creator-withdraw-modal.muralpay-details.document-number-tax-id": {
-    "message": "Mã s�?thu�?
+    "message": "Mã sỿthuế
   },
   "dashboard.creator-withdraw-modal.muralpay-details.document-number-tax-id-placeholder": {
-    "message": "Nhập mã s�?thu�?
+    "message": "Nhập mã sỿthuế
   },
   "dashboard.creator-withdraw-modal.muralpay-details.network": {
     "message": "Mạng"
   },
   "dashboard.creator-withdraw-modal.nearing-threshold": {
-    "message": "Bạn sắp chạm đến ngưỡng rút tiền. Bạn có th�?rút <b>{amountRemaining}</b> ngay bây gi�? nhưng cần có biểu mẫu thu�?đ�?rút thêm."
+    "message": "Bạn sắp chạm đến ngưỡng rút tiền. Bạn có thỿrút <b>{amountRemaining}</b> ngay bây giỿ nhưng cần có biểu mẫu thuếđỿrút thêm."
   },
   "dashboard.creator-withdraw-modal.paypal-details.account": {
     "message": "Tài khoản"
@@ -1377,7 +1377,7 @@
     "message": "Tài khoản PayPal"
   },
   "dashboard.creator-withdraw-modal.paypal-details.paypal-auth-description": {
-    "message": "Kết nối tài khoản PayPal của bạn đ�?nhận thanh toán trực tiếp."
+    "message": "Kết nối tài khoản PayPal của bạn đỿnhận thanh toán trực tiếp."
   },
   "dashboard.creator-withdraw-modal.paypal-details.save-success": {
     "message": "Đã lưu thành công tên người dùng Venmo!"
@@ -1386,7 +1386,7 @@
     "message": "Đăng nhập bằng PayPal"
   },
   "dashboard.creator-withdraw-modal.paypal-details.venmo-description": {
-    "message": "Nhập tên người dùng Venmo đ�?nhận thanh toán."
+    "message": "Nhập tên người dùng Venmo đỿnhận thanh toán."
   },
   "dashboard.creator-withdraw-modal.paypal-details.venmo-handle": {
     "message": "Tên người dùng Venmo"
@@ -1401,28 +1401,28 @@
     "message": "Phương thức"
   },
   "dashboard.creator-withdraw-modal.stage.tax-form": {
-    "message": "Biểu mẫu thu�?
+    "message": "Biểu mẫu thuế
   },
   "dashboard.creator-withdraw-modal.tax-form-required.body": {
-    "message": "Đ�?rút toàn b�?s�?dư kh�?dụng <b>{available}</b>, vui lòng hoàn tất biểu mẫu bên dưới. Biểu mẫu này là bắt buộc cho việc khai báo thu�?và ch�?cần thực hiện một lần."
+    "message": "Đỿrút toàn bỿsỿdư khếdụng <b>{available}</b>, vui lòng hoàn tất biểu mẫu bên dưới. Biểu mẫu này là bắt buộc cho việc khai báo thuếvà chỿcần thực hiện một lần."
   },
   "dashboard.creator-withdraw-modal.tax-form-required.body-with-limit": {
-    "message": "Bạn phải hoàn thành biểu mẫu W-9 hoặc W-8 cho h�?sơ thu�?của Modrinth đ�?chúng tôi tuân th�?các quy định v�?thu�?"
+    "message": "Bạn phải hoàn thành biểu mẫu W-9 hoặc W-8 cho hỿsơ thuếcủa Modrinth đỿchúng tôi tuân thỿcác quy định vỿthuế"
   },
   "dashboard.creator-withdraw-modal.tax-form-required.header": {
-    "message": "Yêu cầu biểu mẫu thu�?
+    "message": "Yêu cầu biểu mẫu thuế
   },
   "dashboard.creator-withdraw-modal.tremendous-details.available-denominations-label": {
-    "message": "Mệnh giá kh�?dụng"
+    "message": "Mệnh giá khếdụng"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.balance-worth-hint": {
-    "message": "S�?dư {usdBalance} của bạn hiện có giá tr�?tương đương {localBalance}."
+    "message": "Sỿdư {usdBalance} của bạn hiện có giá trỿtương đương {localBalance}."
   },
   "dashboard.creator-withdraw-modal.tremendous-details.enter-amount-hint": {
-    "message": "Tìm th�?quà tặng có giá tr�?gần mức này."
+    "message": "Tìm thếquà tặng có giá trỿgần mức này."
   },
   "dashboard.creator-withdraw-modal.tremendous-details.enter-denomination-placeholder": {
-    "message": "Nhập s�?tiền"
+    "message": "Nhập sỿtiền"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.payment-method": {
     "message": "Phương thức thanh toán"
@@ -1437,25 +1437,25 @@
     "message": "Các phần thưởng"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.search-amount-label": {
-    "message": "Tìm theo s�?tiền"
+    "message": "Tìm theo sỿtiền"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.select-denomination-hint": {
     "message": "Chọn mệnh giá:"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.select-denomination-required": {
-    "message": "Vui lòng chọn mệnh giá đ�?tiếp tục"
+    "message": "Vui lòng chọn mệnh giá đỿtiếp tục"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.unverified-email-header": {
     "message": "Email chưa được xác minh"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.unverified-email-message": {
-    "message": "Email nhận thưởng bạn đã nhập không được liên kết với tài khoản Modrinth của bạn. Modrinth không th�?khôi phục các phần thưởng được gửi đến địa ch�?email không chính xác."
+    "message": "Email nhận thưởng bạn đã nhập không được liên kết với tài khoản Modrinth của bạn. Modrinth không thỿkhôi phục các phần thưởng được gửi đến địa chỿemail không chính xác."
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-header": {
     "message": "Có tùy chọn phí thấp hơn"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-message": {
-    "message": "Bạn đã chọn USD cho PayPal Quốc t�? <direct-paypal-link>Chuyển sang PayPal trực tiếp</direct-paypal-link> đ�?có mức phí tốt hơn (�?% thay vì �?%)."
+    "message": "Bạn đã chọn USD cho PayPal Quốc tế <direct-paypal-link>Chuyển sang PayPal trực tiếp</direct-paypal-link> đỿcó mức phí tốt hơn (≿% thay vì ≿%)."
   },
   "dashboard.creator-withdraw-modal.withdraw-button": {
     "message": "Rút tiền"
@@ -1464,10 +1464,10 @@
     "message": "Giới hạn rút tiền"
   },
   "dashboard.creator-withdraw-modal.withdraw-limit-used": {
-    "message": "Bạn đã s�?dụng hết giới hạn rút tiền <b>{withdrawLimit}</b>. Bạn cần hoàn thành biểu mẫu thu�?đ�?rút thêm."
+    "message": "Bạn đã sỿdụng hết giới hạn rút tiền <b>{withdrawLimit}</b>. Bạn cần hoàn thành biểu mẫu thuếđỿrút thêm."
   },
   "dashboard.discord-roles.banner.body": {
-    "message": "Bạn đ�?điều kiện cho vai trò {roles}. Hãy liên kết tài khoản Discord với Modrinth và chúng tôi s�?đồng b�?chúng t�?động."
+    "message": "Bạn đỿđiều kiện cho vai trò {roles}. Hãy liên kết tài khoản Discord với Modrinth và chúng tôi sếđồng bỿchúng tỿđộng."
   },
   "dashboard.discord-roles.banner.cta": {
     "message": "Liên kết với Discord"
@@ -1491,58 +1491,58 @@
     "message": "Bạn không có thông báo chưa đọc."
   },
   "dashboard.notifications.link.see-all": {
-    "message": "Xem tất c�?
+    "message": "Xem tất cế
   },
   "dashboard.notifications.link.view-history": {
-    "message": "Xem lịch s�?thông báo"
+    "message": "Xem lịch sỿthông báo"
   },
   "dashboard.notifications.link.view-more": {
     "message": "Xem thêm {extraNotifs} {extraNotifs, plural, one {thông báo} other {thông báo}} khác"
   },
   "dashboard.organizations.button.create": {
-    "message": "Tạo t�?chức"
+    "message": "Tạo tỿchức"
   },
   "dashboard.organizations.empty.cta": {
-    "message": "Tạo một t�?chức!"
+    "message": "Tạo một tỿchức!"
   },
   "dashboard.organizations.error.fetch": {
-    "message": "Không th�?tải t�?chức"
+    "message": "Không thỿtải tỿchức"
   },
   "dashboard.organizations.member-count": {
     "message": "{count} {count, plural,other {thành viên}}"
   },
   "dashboard.organizations.title": {
-    "message": "T�?chức"
+    "message": "Tỿchức"
   },
   "dashboard.overview.notifications.button.mark-all-as-read": {
-    "message": "Đánh dấu đã đọc tất c�?
+    "message": "Đánh dấu đã đọc tất cế
   },
   "dashboard.overview.notifications.button.view-history": {
-    "message": "Xem lịch s�?
+    "message": "Xem lịch sỿ
   },
   "dashboard.overview.notifications.empty.no-unread": {
     "message": "Bạn không có thông báo chưa đọc nào."
   },
   "dashboard.overview.notifications.error.loading": {
-    "message": "Không th�?tải thông báo:"
+    "message": "Không thỿtải thông báo:"
   },
   "dashboard.overview.notifications.history.label": {
-    "message": "Lịch s�?
+    "message": "Lịch sỿ
   },
   "dashboard.overview.notifications.history.title": {
-    "message": "Lịch s�?thông báo"
+    "message": "Lịch sỿthông báo"
   },
   "dashboard.overview.notifications.loading": {
     "message": "Đang tải thông báo..."
   },
   "dashboard.projects.bulk-edit.server-disabled": {
-    "message": "D�?án máy ch�?không h�?tr�?sửa đổi nhiều mục cùng một lúc"
+    "message": "Dỿán máy chỿkhông hỿtrỿsửa đổi nhiều mục cùng một lúc"
   },
   "dashboard.projects.empty": {
-    "message": "Bạn chưa có d�?án nào. Bấm nút màu xanh �?bên đ�?bắt đầu."
+    "message": "Bạn chưa có dỿán nào. Bấm nút màu xanh ỿbên đỿbắt đầu."
   },
   "dashboard.projects.head-title": {
-    "message": "D�?án"
+    "message": "Dỿán"
   },
   "dashboard.projects.links.and-more": {
     "message": "và {count} mục nữa..."
@@ -1554,13 +1554,13 @@
     "message": "Sửa liên kết"
   },
   "dashboard.projects.links.changes-applied": {
-    "message": "<strong>{count}</strong> {count, plural, other {d�?án}} s�?được thay đổi."
+    "message": "<strong>{count}</strong> {count, plural, other {dỿán}} sếđược thay đổi."
   },
   "dashboard.projects.links.description": {
-    "message": "Bất k�?đường liên kết nào bạn nhập �?dưới s�?được ghi đè lên các d�?án được chọn. Mục nào đ�?trống s�?được b�?qua. Bạn có th�?xóa đường liên kết trong tất c�?các d�?án được chọn bằng nút thùng rác."
+    "message": "Bất kỿđường liên kết nào bạn nhập ỿdưới sếđược ghi đè lên các dỿán được chọn. Mục nào đỿtrống sếđược bỿqua. Bạn có thỿxóa đường liên kết trong tất cếcác dỿán được chọn bằng nút thùng rác."
   },
   "dashboard.projects.links.discord-invite.description": {
-    "message": "Đường liên kết đến máy ch�?Discord của bạn."
+    "message": "Đường liên kết đến máy chỿDiscord của bạn."
   },
   "dashboard.projects.links.discord-invite.label": {
     "message": "Lời mời Discord"
@@ -1569,31 +1569,31 @@
     "message": "Chỉnh sửa liên kết"
   },
   "dashboard.projects.links.issue-tracker.description": {
-    "message": "Nơi người dùng báo cáo lỗi, vấn đ�?và s�?lo ngại đối với d�?án của bạn."
+    "message": "Nơi người dùng báo cáo lỗi, vấn đỿvà sỿlo ngại đối với dỿán của bạn."
   },
   "dashboard.projects.links.issue-tracker.label": {
-    "message": "Báo vấn đ�?
+    "message": "Báo vấn đỿ
   },
   "dashboard.projects.links.placeholder.cleared": {
-    "message": "Đường liên kết liên quan s�?b�?xóa"
+    "message": "Đường liên kết liên quan sếbỿxóa"
   },
   "dashboard.projects.links.placeholder.valid-discord-url": {
-    "message": "Nhập URL lời mời máy ch�?Discord"
+    "message": "Nhập URL lời mời máy chỿDiscord"
   },
   "dashboard.projects.links.placeholder.valid-url": {
-    "message": "Nhập URL hợp l�?
+    "message": "Nhập URL hợp lỿ
   },
   "dashboard.projects.links.show-all-projects": {
-    "message": "Hiện th�?mọi d�?án"
+    "message": "Hiện thỿmọi dỿán"
   },
   "dashboard.projects.links.source-code.description": {
-    "message": "Một trang lưu tr�?chứa mã nguồn cho d�?án của bạn"
+    "message": "Một trang lưu trỿchứa mã nguồn cho dỿán của bạn"
   },
   "dashboard.projects.links.source-code.label": {
     "message": "Mã nguồn"
   },
   "dashboard.projects.links.wiki-page.description": {
-    "message": "Một trang chứa thông tin hướng dẫn và tr�?giúp cho d�?án của bạn"
+    "message": "Một trang chứa thông tin hướng dẫn và trỿgiúp cho dỿán của bạn"
   },
   "dashboard.projects.links.wiki-page.label": {
     "message": "Trang wiki"
@@ -1605,10 +1605,10 @@
     "message": "Biểu tượng của {title}"
   },
   "dashboard.projects.project.moderator-message-aria": {
-    "message": "D�?án có tin t�?bên kiểm duyệt. Xem d�?án đ�?xem thêm."
+    "message": "Dỿán có tin tỿbên kiểm duyệt. Xem dỿán đỿxem thêm."
   },
   "dashboard.projects.project.review-environment-metadata": {
-    "message": "Vui lòng xem lại thông tin d�?liệu"
+    "message": "Vui lòng xem lại thông tin dỿliệu"
   },
   "dashboard.projects.table.id": {
     "message": "ID"
@@ -1632,25 +1632,25 @@
     "message": "Báo cáo"
   },
   "dashboard.revenue.available-now": {
-    "message": "Kh�?dụng ngay"
+    "message": "Khếdụng ngay"
   },
   "dashboard.revenue.balance": {
-    "message": "S�?dư"
+    "message": "Sỿdư"
   },
   "dashboard.revenue.estimated-tooltip.msg1": {
-    "message": "Doanh thu ước tính có th�?thay đổi cho đến khi được chuyển sang trạng thái kh�?dụng."
+    "message": "Doanh thu ước tính có thỿthay đổi cho đến khi được chuyển sang trạng thái khếdụng."
   },
   "dashboard.revenue.estimated-tooltip.msg2": {
-    "message": "Nhấp đ�?tìm hiểu cách Modrinth x�?lý doanh thu của bạn."
+    "message": "Nhấp đỿtìm hiểu cách Modrinth xỿlý doanh thu của bạn."
   },
   "dashboard.revenue.estimated-with-date": {
     "message": "Ước tính {date}"
   },
   "dashboard.revenue.processing": {
-    "message": "Đang x�?lý"
+    "message": "Đang xỿlý"
   },
   "dashboard.revenue.processing.tooltip": {
-    "message": "Doanh thu s�?�?trạng thái đang x�?lý cho đến cuối tháng, sau đó s�?tr�?nên kh�?dụng sau 60 ngày."
+    "message": "Doanh thu sếỿtrạng thái đang xỿlý cho đến cuối tháng, sau đó sếtrỿnên khếdụng sau 60 ngày."
   },
   "dashboard.revenue.stats.received": {
     "message": "Đã nhận"
@@ -1662,13 +1662,13 @@
     "message": "Đã rút"
   },
   "dashboard.revenue.tos": {
-    "message": "Bằng việc tải d�?án lên Modrinth và rút tiền t�?tài khoản của bạn, bạn đồng ý với <terms-link>Điều Khoản Chương Trình Phần Thưởng</terms-link>. Tìm hiểu thêm v�?<info-link>Chương Trình Phần Thưởng</info-link>."
+    "message": "Bằng việc tải dỿán lên Modrinth và rút tiền tỿtài khoản của bạn, bạn đồng ý với <terms-link>Điều Khoản Chương Trình Phần Thưởng</terms-link>. Tìm hiểu thêm vỿ<info-link>Chương Trình Phần Thưởng</info-link>."
   },
   "dashboard.revenue.transactions.btn.download-csv": {
     "message": "Tải xuống dưới dạng CSV"
   },
   "dashboard.revenue.transactions.head-title": {
-    "message": "Lịch s�?giao dịch"
+    "message": "Lịch sỿgiao dịch"
   },
   "dashboard.revenue.transactions.header": {
     "message": "Giao dịch"
@@ -1677,7 +1677,7 @@
     "message": "Chưa có giao dịch"
   },
   "dashboard.revenue.transactions.none.desc": {
-    "message": "Các khoản thanh toán và rút tiền của bạn s�?hiển th�?tại đây."
+    "message": "Các khoản thanh toán và rút tiền của bạn sếhiển thỿtại đây."
   },
   "dashboard.revenue.transactions.period.last-month": {
     "message": "Tháng trước"
@@ -1686,16 +1686,16 @@
     "message": "Tháng này"
   },
   "dashboard.revenue.transactions.see-all": {
-    "message": "Xem tất c�?
+    "message": "Xem tất cế
   },
   "dashboard.revenue.transactions.year.all": {
     "message": "Mọi năm"
   },
   "dashboard.revenue.withdraw.blocked-tin-mismatch": {
-    "message": "Việc rút tiền của bạn tạm thời b�?khóa do TIN hoặc SSN không khớp với h�?sơ của IRS. Vui lòng liên h�?h�?tr�?đ�?đặt lại và gửi lại biểu mẫu thu�?của bạn."
+    "message": "Việc rút tiền của bạn tạm thời bỿkhóa do TIN hoặc SSN không khớp với hỿsơ của IRS. Vui lòng liên hỿhỿtrỿđỿđặt lại và gửi lại biểu mẫu thuếcủa bạn."
   },
   "dashboard.revenue.withdraw.card.description": {
-    "message": "Rút tiền t�?s�?dư kh�?dụng của bạn sang bất k�?phương thức thanh toán nào."
+    "message": "Rút tiền tỿsỿdư khếdụng của bạn sang bất kỿphương thức thanh toán nào."
   },
   "dashboard.revenue.withdraw.card.title": {
     "message": "Rút tiền"
@@ -1719,13 +1719,13 @@
     "message": "Thông báo"
   },
   "dashboard.sidebar.label.organizations": {
-    "message": "T�?chức"
+    "message": "Tỿchức"
   },
   "dashboard.sidebar.label.overview": {
     "message": "Tổng quan"
   },
   "dashboard.sidebar.label.projects": {
-    "message": "D�?án"
+    "message": "Dỿán"
   },
   "dashboard.sidebar.label.revenue": {
     "message": "Doanh thu"
@@ -1734,16 +1734,16 @@
     "message": "Tài khoản"
   },
   "dashboard.withdraw.completion.amount": {
-    "message": "S�?tiền"
+    "message": "Sỿtiền"
   },
   "dashboard.withdraw.completion.date": {
     "message": "Ngày"
   },
   "dashboard.withdraw.completion.email-confirmation": {
-    "message": "Bạn s�?nhận được email tại <b>{email}</b> kèm theo hướng dẫn đ�?nhận khoản rút tiền của mình."
+    "message": "Bạn sếnhận được email tại <b>{email}</b> kèm theo hướng dẫn đỿnhận khoản rút tiền của mình."
   },
   "dashboard.withdraw.completion.exchange-rate": {
-    "message": "T�?giá"
+    "message": "Tỿgiá"
   },
   "dashboard.withdraw.completion.fee": {
     "message": "Phí"
@@ -1752,7 +1752,7 @@
     "message": "Phương thức"
   },
   "dashboard.withdraw.completion.net-amount": {
-    "message": "S�?tiền thực nhận"
+    "message": "Sỿtiền thực nhận"
   },
   "dashboard.withdraw.completion.recipient": {
     "message": "Người nhận"
@@ -1779,55 +1779,55 @@
     "message": "Yêu cầu xác minh email"
   },
   "dashboard.withdraw.error.generic.text": {
-    "message": "Chúng tôi không th�?gửi yêu cầu rút tiền của bạn. Vui lòng kiểm tra lại thông tin hoặc liên h�?b�?phận h�?tr�? {error}"
+    "message": "Chúng tôi không thỿgửi yêu cầu rút tiền của bạn. Vui lòng kiểm tra lại thông tin hoặc liên hỿbỿphận hỿtrỿ {error}"
   },
   "dashboard.withdraw.error.generic.title": {
-    "message": "Không th�?rút tiền"
+    "message": "Không thỿrút tiền"
   },
   "dashboard.withdraw.error.insufficient-balance.text": {
-    "message": "Bạn không có đ�?tiền đ�?rút."
+    "message": "Bạn không có đỿtiền đỿrút."
   },
   "dashboard.withdraw.error.insufficient-balance.title": {
-    "message": "Không đ�?s�?dư"
+    "message": "Không đỿsỿdư"
   },
   "dashboard.withdraw.error.invalid-address.text": {
-    "message": "Địa ch�?bạn cung cấp không th�?được xác minh. Vui lòng kiểm tra lại thông tin địa ch�?"
+    "message": "Địa chỿbạn cung cấp không thỿđược xác minh. Vui lòng kiểm tra lại thông tin địa chỿ"
   },
   "dashboard.withdraw.error.invalid-address.title": {
-    "message": "Xác minh địa ch�?thất bại"
+    "message": "Xác minh địa chỿthất bại"
   },
   "dashboard.withdraw.error.invalid-bank.text": {
-    "message": "Thông tin tài khoản ngân hàng bạn cung cấp không hợp l�? Vui lòng xác minh lại thông tin."
+    "message": "Thông tin tài khoản ngân hàng bạn cung cấp không hợp lỿ Vui lòng xác minh lại thông tin."
   },
   "dashboard.withdraw.error.invalid-bank.title": {
-    "message": "Thông tin ngân hàng không hợp l�?
+    "message": "Thông tin ngân hàng không hợp lỿ
   },
   "dashboard.withdraw.error.invalid-wallet.text": {
-    "message": "Địa ch�?ví crypto bạn cung cấp không hợp l�? Vui lòng kiểm tra lại và th�?lại."
+    "message": "Địa chỿví crypto bạn cung cấp không hợp lỿ Vui lòng kiểm tra lại và thỿlại."
   },
   "dashboard.withdraw.error.invalid-wallet.title": {
-    "message": "Địa ch�?ví không hợp l�?
+    "message": "Địa chỿví không hợp lỿ
   },
   "dashboard.withdraw.error.minimum-not-met.text": {
-    "message": "S�?tiền rút (sau phí) không đáp ứng mức tối thiểu. Vui lòng tăng s�?tiền rút."
+    "message": "Sỿtiền rút (sau phí) không đáp ứng mức tối thiểu. Vui lòng tăng sỿtiền rút."
   },
   "dashboard.withdraw.error.minimum-not-met.title": {
-    "message": "S�?tiền quá thấp"
+    "message": "Sỿtiền quá thấp"
   },
   "dashboard.withdraw.error.paypal-country-mismatch.text": {
-    "message": "Xin hãy s�?dụng đúng lựa chọn chuyển tiền của PayPal cho khu vực của bạn (M�?hoặc Quốc t�?."
+    "message": "Xin hãy sỿdụng đúng lựa chọn chuyển tiền của PayPal cho khu vực của bạn (Mỿhoặc Quốc tế."
   },
   "dashboard.withdraw.error.paypal-country-mismatch.title": {
     "message": "Khu vực PayPal không khớp"
   },
   "dashboard.withdraw.error.tax-form.text": {
-    "message": "Bạn cần hoàn thành biểu mẫu thu�?đ�?gửi yêu cầu rút tiền."
+    "message": "Bạn cần hoàn thành biểu mẫu thuếđỿgửi yêu cầu rút tiền."
   },
   "dashboard.withdraw.error.tax-form.title": {
-    "message": "Vui lòng hoàn thành biểu mẫu thu�?
+    "message": "Vui lòng hoàn thành biểu mẫu thuế
   },
   "discover.install.back-to-server": {
-    "message": "Quay lại máy ch�?
+    "message": "Quay lại máy chỿ
   },
   "discover.install.back-to-setup": {
     "message": "Quay lại cài đặt"
@@ -1836,16 +1836,16 @@
     "message": "Hủy cài lại"
   },
   "discover.install.error.no-server-world": {
-    "message": "Không th�?giới máy ch�?có sẵn đ�?tải."
+    "message": "Không thếgiới máy chỿcó sẵn đỿtải."
   },
   "discover.install.error.unsupported-content-type": {
-    "message": "Loại nội dung này không th�?tải t�?trang khám phá vào máy ch�?"
+    "message": "Loại nội dung này không thỿtải tỿtrang khám phá vào máy chỿ"
   },
   "discover.install.heading.reset-modpack": {
-    "message": "Chọn modpack đ�?tải sau khi cài lại"
+    "message": "Chọn modpack đỿtải sau khi cài lại"
   },
   "discover.seo.description": {
-    "message": "Tìm và khám phá hàng nghìn {projectType} của Minecraft trên Modrinth một cách nhánh chóng và chính xác. B�?lọc �?đây có th�?giúp bạn tìm các {projectType} tốt nhất của Minecraft."
+    "message": "Tìm và khám phá hàng nghìn {projectType} của Minecraft trên Modrinth một cách nhánh chóng và chính xác. Bỿlọc ỿđây có thỿgiúp bạn tìm các {projectType} tốt nhất của Minecraft."
   },
   "discover.seo.title": {
     "message": "Tìm kiếm {projectType}"
@@ -1854,19 +1854,19 @@
     "message": "Tìm kiếm {projectType} | {query}"
   },
   "error.collection.404.list_item.1": {
-    "message": "Có th�?bạn đã nhập sai URL của b�?sưu tập."
+    "message": "Có thỿbạn đã nhập sai URL của bỿsưu tập."
   },
   "error.collection.404.list_item.2": {
-    "message": "B�?sưu tập có th�?là riêng tư."
+    "message": "Bỿsưu tập có thỿlà riêng tư."
   },
   "error.collection.404.list_item.3": {
-    "message": "B�?sưu tập có th�?đã b�?g�?xuống bởi đội ngũ kiểm duyệt của Modrinth do vi phạm <tou-link>Điều khoản S�?dụng</tou-link> của chúng tôi."
+    "message": "Bỿsưu tập có thỿđã bỿgỿxuống bởi đội ngũ kiểm duyệt của Modrinth do vi phạm <tou-link>Điều khoản Sỿdụng</tou-link> của chúng tôi."
   },
   "error.collection.404.list_title": {
     "message": "Tại sao?"
   },
   "error.collection.404.title": {
-    "message": "Không tìm thấy b�?sưu tập"
+    "message": "Không tìm thấy bỿsưu tập"
   },
   "error.generic.401.signed-in-as": {
     "message": "Bạn hiện được dăng nhập là:"
@@ -1881,64 +1881,64 @@
     "message": "Không tìm thấy trang"
   },
   "error.generic.451.subtitle": {
-    "message": "Trang này đã b�?chặn vì các lý do pháp lý, chẳng hạn như kiểm duyệt của chính ph�?hoặc các th�?tục pháp lý đang diễn ra."
+    "message": "Trang này đã bỿchặn vì các lý do pháp lý, chẳng hạn như kiểm duyệt của chính phỿhoặc các thỿtục pháp lý đang diễn ra."
   },
   "error.generic.451.title": {
-    "message": "Nội dung không kh�?dụng vì lý do pháp lý"
+    "message": "Nội dung không khếdụng vì lý do pháp lý"
   },
   "error.generic.default.list_item.1": {
-    "message": "Kiểm tra xem Modrinth có đang gặp s�?c�?không trên <status-link>Trang trạng thái</status-link> của chúng tôi."
+    "message": "Kiểm tra xem Modrinth có đang gặp sỿcỿkhông trên <status-link>Trang trạng thái</status-link> của chúng tôi."
   },
   "error.generic.default.list_item.2": {
-    "message": "Nếu điều này tiếp tục xảy ra, bạn có th�?thông báo cho Đội ngũ Modrinth bằng cách tham gia <discord-link>máy ch�?Discord</discord-link> của chúng tôi."
+    "message": "Nếu điều này tiếp tục xảy ra, bạn có thỿthông báo cho Đội ngũ Modrinth bằng cách tham gia <discord-link>máy chỿDiscord</discord-link> của chúng tôi."
   },
   "error.generic.default.list_title": {
-    "message": "Vui lòng th�?lại sau vài phút."
+    "message": "Vui lòng thỿlại sau vài phút."
   },
   "error.generic.default.subtitle": {
-    "message": "Đã xảy ra s�?c�?"
+    "message": "Đã xảy ra sỿcỿ"
   },
   "error.generic.default.title": {
     "message": "Ôi không!"
   },
   "error.organization.404.list_item.1": {
-    "message": "Bạn có th�?đã nhập sai URL của t�?chức."
+    "message": "Bạn có thỿđã nhập sai URL của tỿchức."
   },
   "error.organization.404.list_item.2": {
-    "message": "Ch�?d�?án có th�?đã thay đổi URL, hoặc đã xóa nó."
+    "message": "Chỿdỿán có thỿđã thay đổi URL, hoặc đã xóa nó."
   },
   "error.organization.404.list_item.3": {
-    "message": "T�?chức có th�?đã b�?g�?xuống bởi đội ngũ kiểm duyệt của Modrinth do vi phạm <tou-link>Điều khoản S�?dụng</tou-link> của chúng tôi."
+    "message": "Tỿchức có thỿđã bỿgỿxuống bởi đội ngũ kiểm duyệt của Modrinth do vi phạm <tou-link>Điều khoản Sỿdụng</tou-link> của chúng tôi."
   },
   "error.organization.404.list_title": {
     "message": "Tại sao?"
   },
   "error.organization.404.title": {
-    "message": "Không tìm thấy t�?chức"
+    "message": "Không tìm thấy tỿchức"
   },
   "error.project.404.list_item.1": {
-    "message": "Có th�?bạn đã nhập sai URL của d�?án."
+    "message": "Có thỿbạn đã nhập sai URL của dỿán."
   },
   "error.project.404.list_item.2": {
-    "message": "Ch�?s�?hữu d�?án có th�?đã thay đổi URL, đặt d�?án �?ch�?đ�?riêng tư hoặc đã xóa d�?án."
+    "message": "Chỿsỿhữu dỿán có thỿđã thay đổi URL, đặt dỿán ỿchếđỿriêng tư hoặc đã xóa dỿán."
   },
   "error.project.404.list_item.3": {
-    "message": "D�?án có th�?đã b�?g�?xuống bởi đội ngũ kiểm duyệt của Modrinth do vi phạm <tou-link>Điều khoản S�?dụng</tou-link> của chúng tôi."
+    "message": "Dỿán có thỿđã bỿgỿxuống bởi đội ngũ kiểm duyệt của Modrinth do vi phạm <tou-link>Điều khoản Sỿdụng</tou-link> của chúng tôi."
   },
   "error.project.404.list_title": {
     "message": "Tại sao?"
   },
   "error.project.404.title": {
-    "message": "Không tìm thấy d�?án"
+    "message": "Không tìm thấy dỿán"
   },
   "error.user.404.list_item.1": {
-    "message": "Bạn có th�?đã nhập sai tên người dùng."
+    "message": "Bạn có thỿđã nhập sai tên người dùng."
   },
   "error.user.404.list_item.2": {
-    "message": "Người dùng có th�?đã thay đổi tên người dùng hoặc xóa tài khoản của h�?"
+    "message": "Người dùng có thỿđã thay đổi tên người dùng hoặc xóa tài khoản của hỿ"
   },
   "error.user.404.list_item.3": {
-    "message": "Tài khoản của người dùng có th�?đã b�?chấm dứt do vi phạm <tou-link>Điều khoản S�?dụng</tou-link> của Modrinth."
+    "message": "Tài khoản của người dùng có thỿđã bỿchấm dứt do vi phạm <tou-link>Điều khoản Sỿdụng</tou-link> của Modrinth."
   },
   "error.user.404.list_title": {
     "message": "Tại sao?"
@@ -1947,16 +1947,16 @@
     "message": "Không tìm thấy người dùng"
   },
   "frog": {
-    "message": "Bạn đã b�?ếch ám! 🐸"
+    "message": "Bạn đã bỿếch ám! 🐸"
   },
   "frog.altText": {
-    "message": "Một bức tranh v�?theo phong cách chân thực v�?mê cung hình con ếch"
+    "message": "Một bức tranh vếtheo phong cách chân thực vỿmê cung hình con ếch"
   },
   "frog.title": {
     "message": "Ếch"
   },
   "hosting-marketing.available-locations": {
-    "message": "Có mặt tại Bắc M�? Châu Âu, Đông Nam Á và Úc với đ�?ph�?sóng rộng."
+    "message": "Có mặt tại Bắc Mỿ Châu Âu, Đông Nam Á và Úc với đỿphỿsóng rộng."
   },
   "hosting-marketing.billing.monthly": {
     "message": "Thanh toán hàng tháng"
@@ -1968,7 +1968,7 @@
     "message": "Tiết kiệm 16% với việc thanh toán hàng năm!"
   },
   "hosting-marketing.billing.starting-at": {
-    "message": "Bắt đầu t�?{price}/tháng"
+    "message": "Bắt đầu tỿ{price}/tháng"
   },
   "hosting-marketing.billing.yearly": {
     "message": "Thanh toán hàng năm"
@@ -1977,184 +1977,184 @@
     "message": "\n\n"
   },
   "hosting-marketing.faq.burst-threads.answer": {
-    "message": "Khi máy ch�?của bạn b�?tải nặng, chúng tôi tạm thời cấp cho máy ch�?quyền truy cập vào các luồng CPU b�?sung đ�?giúp giảm thiểu đ�?tr�?tăng đột biến và mất ổn định. Điều này giúp ngăn TPS xuống dưới 20, đảm bảo trải nghiệm mượt mà nhất có th�? Vì các luồng CPU b�?sung đó ch�?có sẵn trong thời gian tải cao nên chúng có th�?không hiển th�?trong báo cáo Spark hoặc các công c�?cấu hình khác."
+    "message": "Khi máy chỿcủa bạn bỿtải nặng, chúng tôi tạm thời cấp cho máy chỿquyền truy cập vào các luồng CPU bỿsung đỿgiúp giảm thiểu đỿtrỿtăng đột biến và mất ổn định. Điều này giúp ngăn TPS xuống dưới 20, đảm bảo trải nghiệm mượt mà nhất có thỿ Vì các luồng CPU bỿsung đó chỿcó sẵn trong thời gian tải cao nên chúng có thỿkhông hiển thỿtrong báo cáo Spark hoặc các công cỿcấu hình khác."
   },
   "hosting-marketing.faq.cpu-kind": {
-    "message": "Những loại CPU nào được s�?dụng trên Modrinth?"
+    "message": "Những loại CPU nào được sỿdụng trên Modrinth?"
   },
   "hosting-marketing.faq.cpu-kind.answer": {
-    "message": "Máy ch�?Modrinth được vận hành bởi dòng CPU tương đương với AMD Ryzen 7900 và 7950X3D với nhịp xung 5+ GHz, cùng với b�?nh�?DDR5."
+    "message": "Máy chỿModrinth được vận hành bởi dòng CPU tương đương với AMD Ryzen 7900 và 7950X3D với nhịp xung 5+ GHz, cùng với bỿnhỿDDR5."
   },
   "hosting-marketing.faq.currency": {
-    "message": "Tiền t�?nào được s�?dụng đ�?liệt kê giá?"
+    "message": "Tiền tỿnào được sỿdụng đỿliệt kê giá?"
   },
   "hosting-marketing.faq.currency.answer": {
-    "message": "Tất c�?giá được liệt kê dưới tiền t�?Đô-la M�?(USD)"
+    "message": "Tất cếgiá được liệt kê dưới tiền tỿĐô-la Mỿ(USD)"
   },
   "hosting-marketing.faq.ddos-protection": {
-    "message": "Modrinth Hosting có h�?tr�?bảo v�?DDoS không?"
+    "message": "Modrinth Hosting có hỿtrỿbảo vỿDDoS không?"
   },
   "hosting-marketing.faq.ddos-protection.answer": {
-    "message": "Vâng. Tất c�?máy ch�?Hosting của Modrinth được trang b�?bảo v�?DDoS, với trọng tải bảo v�?lên đến 17 Tbps �?một s�?khu vực."
+    "message": "Vâng. Tất cếmáy chỿHosting của Modrinth được trang bỿbảo vỿDDoS, với trọng tải bảo vỿlên đến 17 Tbps ỿmột sỿkhu vực."
   },
   "hosting-marketing.faq.heading": {
     "message": "Câu hỏi thường gặp"
   },
   "hosting-marketing.faq.how-fast": {
-    "message": "Máy ch�?Modrinth nhanh c�?nào?"
+    "message": "Máy chỿModrinth nhanh cỿnào?"
   },
   "hosting-marketing.faq.how-fast.answer.one": {
-    "message": "Máy ch�?Modrinth Hosting được lưu tr�?trên phần cứng hiệu suất cao rất hiện đại, nhưng thật khó đ�?nói chính xác điều đó s�?chuyển thành tốc đ�?máy ch�?của bạn s�?chạy như th�?nào vì có rất nhiều yếu t�?ảnh hưởng đến nó, chẳng hạn như mod, gói d�?liệu hoặc plugin bạn đang chạy trên máy ch�?của mình và thậm chí c�?hành vi của người dùng."
+    "message": "Máy chỿModrinth Hosting được lưu trỿtrên phần cứng hiệu suất cao rất hiện đại, nhưng thật khó đỿnói chính xác điều đó sếchuyển thành tốc đỿmáy chỿcủa bạn sếchạy như thếnào vì có rất nhiều yếu tỿảnh hưởng đến nó, chẳng hạn như mod, gói dỿliệu hoặc plugin bạn đang chạy trên máy chỿcủa mình và thậm chí cếhành vi của người dùng."
   },
   "hosting-marketing.faq.how-fast.answer.two": {
-    "message": "Hầu hết các vấn đ�?v�?hiệu suất phát sinh có xu hướng là lỗi của modpack, mod, gói d�?liệu hoặc plugin không được tối ưu hóa khiến máy ch�?b�?lag. Vì các máy ch�?của chúng tôi rất cao cấp, bạn s�?không gặp nhiều rắc rối miễn là bạn chọn một gói phù hợp cho nội dung bạn đang chạy trên máy ch�?"
+    "message": "Hầu hết các vấn đỿvỿhiệu suất phát sinh có xu hướng là lỗi của modpack, mod, gói dỿliệu hoặc plugin không được tối ưu hóa khiến máy chỿbỿlag. Vì các máy chỿcủa chúng tôi rất cao cấp, bạn sếkhông gặp nhiều rắc rối miễn là bạn chọn một gói phù hợp cho nội dung bạn đang chạy trên máy chỿ"
   },
   "hosting-marketing.faq.increase-storage": {
-    "message": "Tôi có th�?tăng dung lượng lưu tr�?trên máy ch�?của tôi được không?"
+    "message": "Tôi có thỿtăng dung lượng lưu trỿtrên máy chỿcủa tôi được không?"
   },
   "hosting-marketing.faq.increase-storage.answer": {
-    "message": "Có, bạn có th�?tăng dung lượng lưu tr�?trên máy ch�?của mình mà không phải tr�?thêm phí. Nếu bạn cần thêm dung lượng lưu tr�? hãy liên h�?với B�?phận h�?tr�?của Modrinth."
+    "message": "Có, bạn có thỿtăng dung lượng lưu trỿtrên máy chỿcủa mình mà không phải trếthêm phí. Nếu bạn cần thêm dung lượng lưu trỿ hãy liên hỿvới Bỿphận hỿtrỿcủa Modrinth."
   },
   "hosting-marketing.faq.location": {
-    "message": "Những máy ch�?Modrinth Hosting được nằm �?đâu? Tôi có th�?chọn khu vực không?"
+    "message": "Những máy chỿModrinth Hosting được nằm ỿđâu? Tôi có thỿchọn khu vực không?"
   },
   "hosting-marketing.faq.location.answer": {
-    "message": "Hiện gi�?chúng tôi có máy ch�?khắp Bắc M�? Châu Âu, Đông Nam Á và Úc mà bạn có th�?chọn khi mua. S�?có thêm khu vực trong tương lai! Nếu bạn muốn đổi khu vực, hãy liên h�?đội h�?tr�?"
+    "message": "Hiện giỿchúng tôi có máy chỿkhắp Bắc Mỿ Châu Âu, Đông Nam Á và Úc mà bạn có thỿchọn khi mua. Sếcó thêm khu vực trong tương lai! Nếu bạn muốn đổi khu vực, hãy liên hỿđội hỿtrỿ"
   },
   "hosting-marketing.faq.versions-loaders": {
-    "message": "Những phiên bản Minecraft và modloader nào có th�?được s�?dụng?"
+    "message": "Những phiên bản Minecraft và modloader nào có thỿđược sỿdụng?"
   },
   "hosting-marketing.faq.versions-loaders.answer.one": {
-    "message": "Các máy ch�?Modrinth Hosting có th�?chạy bất k�?phiên bản Minecraft: Java Edition xuống đến phiên bản 1.2.5, bao gồm c�?những phiên bản th�?nghiệm (snapshot)."
+    "message": "Các máy chỿModrinth Hosting có thỿchạy bất kỿphiên bản Minecraft: Java Edition xuống đến phiên bản 1.2.5, bao gồm cếnhững phiên bản thỿnghiệm (snapshot)."
   },
   "hosting-marketing.faq.versions-loaders.answer.two": {
-    "message": "Chúng tôi cũng có h�?tr�?trình tải mod và plugin, một s�?bao gồm Fabric, Quilt, Forge và NeoForge cho mod, cũng như Purpur và Paper dành cho các plug-in. Tính kh�?dụng tùy thuộc vào việc trình tải mod hoặc plug-in đó h�?tr�?cho phiên bản Minecraft được chọn."
+    "message": "Chúng tôi cũng có hỿtrỿtrình tải mod và plugin, một sỿbao gồm Fabric, Quilt, Forge và NeoForge cho mod, cũng như Purpur và Paper dành cho các plug-in. Tính khếdụng tùy thuộc vào việc trình tải mod hoặc plug-in đó hỿtrỿcho phiên bản Minecraft được chọn."
   },
   "hosting-marketing.get-started": {
     "message": "Bắt đầu"
   },
   "hosting-marketing.hero.button.manage-your-servers": {
-    "message": "Quản lý máy ch�?của bạn"
+    "message": "Quản lý máy chỿcủa bạn"
   },
   "hosting-marketing.hero.button.start-a-new-server": {
-    "message": "Khởi động máy ch�?mới"
+    "message": "Khởi động máy chỿmới"
   },
   "hosting-marketing.hero.button.start-your-server": {
-    "message": "Khởi động máy ch�?của bạn"
+    "message": "Khởi động máy chỿcủa bạn"
   },
   "hosting-marketing.hero.host-with-modrinth": {
-    "message": "Lưu tr�?máy ch�?tiếp theo của bạn với Modrinth Hosting"
+    "message": "Lưu trỿmáy chỿtiếp theo của bạn với Modrinth Hosting"
   },
   "hosting-marketing.hero.hosting-description": {
-    "message": "Modrinth Hosting là cách đơn giản nhất đ�?lưu tr�?máy ch�?Minecraft: Phiên bản Java của bạn. Cài đặt và chơi liền mạch các bản mod và gói mod yêu thích của bạn, tất c�?đều có trong nền tảng Modrinth."
+    "message": "Modrinth Hosting là cách đơn giản nhất đỿlưu trỿmáy chỿMinecraft: Phiên bản Java của bạn. Cài đặt và chơi liền mạch các bản mod và gói mod yêu thích của bạn, tất cếđều có trong nền tảng Modrinth."
   },
   "hosting-marketing.included.advanced-networking": {
     "message": "Quản lý mạng nâng cao"
   },
   "hosting-marketing.included.advanced-networking.description": {
-    "message": "Thêm tên miền của bạn vào máy ch�?của bạn, lên đến 15 cổng cho mod cần nó, và hơn th�?nữa."
+    "message": "Thêm tên miền của bạn vào máy chỿcủa bạn, lên đến 15 cổng cho mod cần nó, và hơn thếnữa."
   },
   "hosting-marketing.included.backups-included": {
     "message": "Bao gồm sao lưu"
   },
   "hosting-marketing.included.backups-included.description": {
-    "message": "Mỗi máy ch�?đi kèm với 15 bản sao lưu được lưu tr�?an toàn bên ngoài."
+    "message": "Mỗi máy chỿđi kèm với 15 bản sao lưu được lưu trỿan toàn bên ngoài."
   },
   "hosting-marketing.included.custom-url": {
     "message": "URL riêng"
   },
   "hosting-marketing.included.custom-url.description": {
-    "message": "Chia s�?máy ch�?của bạn thông qua URL tùy chỉnh <contrast>modrinth.gg</contrast>."
+    "message": "Chia sếmáy chỿcủa bạn thông qua URL tùy chỉnh <contrast>modrinth.gg</contrast>."
   },
   "hosting-marketing.included.description": {
-    "message": "Đi kèm với mỗi máy ch�?là một b�?tính năng được thiết k�?đ�?cung cấp trải nghiệm lưu tr�?mà ch�?Modrinth mới có th�?cung cấp."
+    "message": "Đi kèm với mỗi máy chỿlà một bỿtính năng được thiết kếđỿcung cấp trải nghiệm lưu trỿmà chỿModrinth mới có thỿcung cấp."
   },
   "hosting-marketing.included.file-manager": {
-    "message": "Trình duyệt tập tin d�?s�?dụng"
+    "message": "Trình duyệt tập tin dỿsỿdụng"
   },
   "hosting-marketing.included.file-manager.description": {
-    "message": "Tìm kiếm, quản lý, chỉnh sửa và tải các tập tin trực tiếp lên máy ch�?của bạn một cách d�?dàng."
+    "message": "Tìm kiếm, quản lý, chỉnh sửa và tải các tập tin trực tiếp lên máy chỿcủa bạn một cách dỿdàng."
   },
   "hosting-marketing.included.heading": {
-    "message": "Trang b�?sẵn mọi tính năng mà bạn cần."
+    "message": "Trang bỿsẵn mọi tính năng mà bạn cần."
   },
   "hosting-marketing.included.help": {
-    "message": "Luôn sẵn sàng giúp đ�?khi bạn cần"
+    "message": "Luôn sẵn sàng giúp đỿkhi bạn cần"
   },
   "hosting-marketing.included.help.description": {
-    "message": "Liên h�?đội ngũ Modrinth đ�?được h�?tr�?máy ch�?bất k�?lúc nào."
+    "message": "Liên hỿđội ngũ Modrinth đỿđược hỿtrỿmáy chỿbất kỿlúc nào."
   },
   "hosting-marketing.included.powerful-console": {
-    "message": "Bảng điều khiển quyền năng, b�?quản lý cài đặt server và nhiều tính năng khác"
+    "message": "Bảng điều khiển quyền năng, bỿquản lý cài đặt server và nhiều tính năng khác"
   },
   "hosting-marketing.included.powerful-console.description": {
-    "message": "Modrinth Hosting cung cấp những công c�?mạnh m�?giúp bạn quản lý máy ch�?của mình."
+    "message": "Modrinth Hosting cung cấp những công cỿmạnh mếgiúp bạn quản lý máy chỿcủa mình."
   },
   "hosting-marketing.included.sftp-access": {
     "message": "Truy cập SFTP"
   },
   "hosting-marketing.included.sftp-access.description": {
-    "message": "Truy cập trực tiếp với các tệp tin trên máy ch�?của bạn thông qua phương thức SFTP được cài đặt sẵn vào Modrinth Hosting"
+    "message": "Truy cập trực tiếp với các tệp tin trên máy chỿcủa bạn thông qua phương thức SFTP được cài đặt sẵn vào Modrinth Hosting"
   },
   "hosting-marketing.included.with-your-server": {
-    "message": "Được bao gồm trong máy ch�?của bạn"
+    "message": "Được bao gồm trong máy chỿcủa bạn"
   },
   "hosting-marketing.know-what-you-need": {
     "message": "Biết những gì bạn đang cần?"
   },
   "hosting-marketing.medal.info": {
-    "message": "Dùng th�?máy ch�?<orange>3 GB</orange> miễn phí trong 5 ngày được cung cấp bởi <orange>Medal</orange>"
+    "message": "Dùng thỿmáy chỿ<orange>3 GB</orange> miễn phí trong 5 ngày được cung cấp bởi <orange>Medal</orange>"
   },
   "hosting-marketing.medal.learn-more": {
     "message": "Tìm hiểu thêm"
   },
   "hosting-marketing.medal.text-secondary": {
-    "message": "Ưu đãi có hạn. Không cần th�?thanh toán. Dành cho các máy ch�?M�?"
+    "message": "Ưu đãi có hạn. Không cần thếthanh toán. Dành cho các máy chỿMỿ"
   },
   "hosting-marketing.pick-customized-plan": {
     "message": "Chọn gói tùy chỉnh với đúng những cấu hình bạn cần."
   },
   "hosting-marketing.server-for-everyone": {
-    "message": "Có một máy ch�?cho tất c�?mọi người"
+    "message": "Có một máy chỿcho tất cếmọi người"
   },
   "hosting-marketing.why.all-on-modrinth": {
-    "message": "Quản lý tất c�?trên Modrinth"
+    "message": "Quản lý tất cếtrên Modrinth"
   },
   "hosting-marketing.why.all-on-modrinth.description": {
-    "message": "Máy ch�? mod, người chơi và hơn th�?nữa đều �?trên Modrinth. Không cần chuyển đổi nền tảng."
+    "message": "Máy chỿ mod, người chơi và hơn thếnữa đều ỿtrên Modrinth. Không cần chuyển đổi nền tảng."
   },
   "hosting-marketing.why.consistently-fast": {
     "message": "Luôn nhanh"
   },
   "hosting-marketing.why.consistently-fast.description": {
-    "message": "H�?tầng của chúng tôi chưa bao gi�?quá tải, đó có nghĩa là mỗi máy ch�?được chạy bởi Modrinth luôn luôn được chạy �?hiệu suất tối đa."
+    "message": "Hếtầng của chúng tôi chưa bao giỿquá tải, đó có nghĩa là mỗi máy chỿđược chạy bởi Modrinth luôn luôn được chạy ỿhiệu suất tối đa."
   },
   "hosting-marketing.why.description": {
-    "message": "Lựa chọn t�?hàng ngàn modpack trên Modrinth hoặc t�?tạo bản của riêng bạn. Hãy mời bạn bè khi bạn đã sẵn sàng."
+    "message": "Lựa chọn tỿhàng ngàn modpack trên Modrinth hoặc tỿtạo bản của riêng bạn. Hãy mời bạn bè khi bạn đã sẵn sàng."
   },
   "hosting-marketing.why.heading": {
-    "message": "Chọn modpack. Có ngay máy ch�?"
+    "message": "Chọn modpack. Có ngay máy chỿ"
   },
   "hosting-marketing.why.modern-reliable-hosting": {
-    "message": "Trải nghiệm dịch v�?hosting hiện đại và đáng tin cậy"
+    "message": "Trải nghiệm dịch vỿhosting hiện đại và đáng tin cậy"
   },
   "hosting-marketing.why.modern-reliable-hosting.description": {
-    "message": "Các máy ch�?của Modrinth Hosting được vận hành trên <contrast>CPU AMD hiệu năng cao cùng RAM DDR5</contrast>, chạy trên phần mềm được thiết k�?riêng đ�?đảm bảo máy ch�?của bạn luôn hoạt động mượt mà."
+    "message": "Các máy chỿcủa Modrinth Hosting được vận hành trên <contrast>CPU AMD hiệu năng cao cùng RAM DDR5</contrast>, chạy trên phần mềm được thiết kếriêng đỿđảm bảo máy chỿcủa bạn luôn hoạt động mượt mà."
   },
   "hosting-marketing.why.where-mods-are": {
     "message": "Trải nghiệm trò chơi ngay nơi bạn quản lý mod"
   },
   "hosting-marketing.why.where-mods-are.description": {
-    "message": "Modrinth Hosting tích hợp quy trình cài đặt mod và modpack vào máy ch�?của bạn một cách liền mạch."
+    "message": "Modrinth Hosting tích hợp quy trình cài đặt mod và modpack vào máy chỿcủa bạn một cách liền mạch."
   },
   "hosting-marketing.why.why-modrinth-hosting": {
     "message": "Tại sao lại chọn Modrinth Hosting?"
   },
   "hosting-marketing.why.your-favorite-mods": {
-    "message": "Tất c�?các mod yêu thích của bạn"
+    "message": "Tất cếcác mod yêu thích của bạn"
   },
   "hosting-marketing.why.your-favorite-mods.description": {
-    "message": "Chọn giữa phiên bản gốc (Vanilla), Fabric, Forge, Quilt và NeoForge. Nếu chúng có trên Modrinth, chúng s�?hoạt động trên máy ch�?của bạn."
+    "message": "Chọn giữa phiên bản gốc (Vanilla), Fabric, Forge, Quilt và NeoForge. Nếu chúng có trên Modrinth, chúng sếhoạt động trên máy chỿcủa bạn."
   },
   "hosting.plan.out-of-stock": {
     "message": "Hết hàng"
@@ -2169,67 +2169,67 @@
     "message": "Đi tới bảng điều khiển"
   },
   "landing.creator.feature.constantly-evolving.description": {
-    "message": "Tận hưởng trải nghiệm modding tốt nhất với các bản cập nhật liên tục t�?đội ngũ Modrinth"
+    "message": "Tận hưởng trải nghiệm modding tốt nhất với các bản cập nhật liên tục tỿđội ngũ Modrinth"
   },
   "landing.creator.feature.constantly-evolving.title": {
     "message": "Không ngừng phát triển"
   },
   "landing.creator.feature.data-statistics.description": {
-    "message": "Xem báo cáo chi tiết v�?lượt xem trang, s�?lượt tải và doanh thu"
+    "message": "Xem báo cáo chi tiết vỿlượt xem trang, sỿlượt tải và doanh thu"
   },
   "landing.creator.feature.data-statistics.title": {
-    "message": "D�?liệu và thống kê"
+    "message": "Dỿliệu và thống kê"
   },
   "landing.creator.feature.discovery.description": {
-    "message": "Đưa d�?án của bạn đến với hàng nghìn người dùng thông qua tìm kiếm, trang ch�? máy ch�?Discord và nhiều kênh khác trong tương lai!"
+    "message": "Đưa dỿán của bạn đến với hàng nghìn người dùng thông qua tìm kiếm, trang chỿ máy chỿDiscord và nhiều kênh khác trong tương lai!"
   },
   "landing.creator.feature.discovery.title": {
     "message": "Khám phá"
   },
   "landing.creator.feature.diverse-ecosystem.description": {
-    "message": "Tích hợp với các công c�?build của bạn thông qua Minotaur đ�?t�?động tải lên ngay khi bạn phát hành phiên bản mới"
+    "message": "Tích hợp với các công cỿbuild của bạn thông qua Minotaur đỿtỿđộng tải lên ngay khi bạn phát hành phiên bản mới"
   },
   "landing.creator.feature.diverse-ecosystem.title": {
-    "message": "H�?sinh thái đa dạng"
+    "message": "Hỿsinh thái đa dạng"
   },
   "landing.creator.feature.monetization.description": {
-    "message": "Nhận doanh thu quảng cáo t�?trang d�?án của bạn và rút tiền bất c�?lúc nào"
+    "message": "Nhận doanh thu quảng cáo tỿtrang dỿán của bạn và rút tiền bất cỿlúc nào"
   },
   "landing.creator.feature.monetization.title": {
     "message": "Kiếm tiền"
   },
   "landing.creator.feature.team-management.description": {
-    "message": "Mời đồng đội và quản lý vai trò cũng như quyền hạn một cách d�?dàng"
+    "message": "Mời đồng đội và quản lý vai trò cũng như quyền hạn một cách dỿdàng"
   },
   "landing.creator.feature.team-management.title": {
     "message": "Quản lý đội"
   },
   "landing.error.failedToLoadRandomProjects": {
-    "message": "Không th�?tải d�?án ngẫu nhiên :("
+    "message": "Không thỿtải dỿán ngẫu nhiên :("
   },
   "landing.feature.follow.description": {
-    "message": "Nhận thông báo mỗi khi d�?án yêu thích của bạn được cập nhật và luôn nắm bắt thông tin."
+    "message": "Nhận thông báo mỗi khi dỿán yêu thích của bạn được cập nhật và luôn nắm bắt thông tin."
   },
   "landing.feature.follow.heading": {
-    "message": "Theo dõi những d�?án yêu thích"
+    "message": "Theo dõi những dỿán yêu thích"
   },
   "landing.feature.launcher.description": {
-    "message": "API mã nguồn m�?của Modrinth cho phép các launcher tích hợp sâu với nền tảng này. Bạn có th�?s�?dụng Modrinth thông qua <link>ứng dụng riêng của chúng tôi</link> hoặc các launcher ph�?biến như ATLauncher, MultiMC và Prism Launcher."
+    "message": "API mã nguồn mỿcủa Modrinth cho phép các launcher tích hợp sâu với nền tảng này. Bạn có thỿsỿdụng Modrinth thông qua <link>ứng dụng riêng của chúng tôi</link> hoặc các launcher phỿbiến như ATLauncher, MultiMC và Prism Launcher."
   },
   "landing.feature.launcher.heading": {
     "message": "Chơi bằng launcher yêu thích của bạn"
   },
   "landing.feature.search.description": {
-    "message": "Tìm kiếm siêu nhanh cùng các b�?lọc mạnh m�?của Modrinth giúp bạn tìm đúng th�?mình cần ngay khi đang gõ."
+    "message": "Tìm kiếm siêu nhanh cùng các bỿlọc mạnh mếcủa Modrinth giúp bạn tìm đúng thỿmình cần ngay khi đang gõ."
   },
   "landing.feature.search.heading": {
-    "message": "Tìm th�?bạn muốn, nhanh và d�?dàng"
+    "message": "Tìm thỿbạn muốn, nhanh và dỿdàng"
   },
   "landing.heading.the-place-for-minecraft": {
     "message": "Nơi dành cho {content} Minecraft"
   },
   "landing.heading.the-place-for-minecraft.data-packs": {
-    "message": "gói d�?liệu"
+    "message": "gói dỿliệu"
   },
   "landing.heading.the-place-for-minecraft.modpacks": {
     "message": "modpack"
@@ -2244,7 +2244,7 @@
     "message": "gói tài nguyên"
   },
   "landing.heading.the-place-for-minecraft.servers": {
-    "message": "máy ch�?
+    "message": "máy chỿ
   },
   "landing.heading.the-place-for-minecraft.shaders": {
     "message": "shader"
@@ -2253,7 +2253,7 @@
     "message": "ATLauncher"
   },
   "landing.launcher.graphic-alt": {
-    "message": "Hình minh ho�?đơn giản của một cửa s�?Minecraft, với logo Mojang Studios màu xanh Modrinth."
+    "message": "Hình minh hoếđơn giản của một cửa sỿMinecraft, với logo Mojang Studios màu xanh Modrinth."
   },
   "landing.launcher.modrinth-app-label": {
     "message": "Ứng dụng Modrinth"
@@ -2280,10 +2280,10 @@
     "message": "Dành cho nhà sáng tạo"
   },
   "landing.section.for-creators.tagline": {
-    "message": "Chia s�?nội dung của bạn với th�?giới"
+    "message": "Chia sếnội dung của bạn với thếgiới"
   },
   "landing.section.for-players.description": {
-    "message": "T�?những quần xã k�?ảo đến các hầm ngục b�?nguyền rủa, bạn chắc chắn s�?tìm thấy nội dung giúp nâng tầm trải nghiệm chơi game."
+    "message": "Tỿnhững quần xã kỿảo đến các hầm ngục bỿnguyền rủa, bạn chắc chắn sếtìm thấy nội dung giúp nâng tầm trải nghiệm chơi game."
   },
   "landing.section.for-players.label": {
     "message": "Dành cho người chơi"
@@ -2292,19 +2292,19 @@
     "message": "Khám phá hơn {count, number} bản mod và gói tài nguyên"
   },
   "landing.subheading": {
-    "message": "Khám phá, chơi và chia s�?nội dung Minecraft thông qua nền tảng nguồn m�?được xây dựng cho cộng đồng."
+    "message": "Khám phá, chơi và chia sếnội dung Minecraft thông qua nền tảng nguồn mỿđược xây dựng cho cộng đồng."
   },
   "layout.action.analytics-events": {
-    "message": "S�?kiện phân tích"
+    "message": "Sỿkiện phân tích"
   },
   "layout.action.change-theme": {
-    "message": "Đổi ch�?đ�?
+    "message": "Đổi chỿđỿ
   },
   "layout.action.create-new": {
     "message": "Tạo mới..."
   },
   "layout.action.external-projects": {
-    "message": "D�?án ngoài"
+    "message": "Dỿán ngoài"
   },
   "layout.action.file-lookup": {
     "message": "Tra cứu tệp"
@@ -2316,19 +2316,19 @@
     "message": "Quản lý link affiliate"
   },
   "layout.action.manage-server-notices": {
-    "message": "Quản lý thông báo máy ch�?
+    "message": "Quản lý thông báo máy chỿ
   },
   "layout.action.new-collection": {
-    "message": "B�?sưu tập mới"
+    "message": "Bỿsưu tập mới"
   },
   "layout.action.new-organization": {
-    "message": "T�?chức mới"
+    "message": "Tỿchức mới"
   },
   "layout.action.new-project": {
-    "message": "D�?án mới"
+    "message": "Dỿán mới"
   },
   "layout.action.new-server-project": {
-    "message": "Máy ch�?mới"
+    "message": "Máy chỿmới"
   },
   "layout.action.publish": {
     "message": "Đăng tải"
@@ -2337,10 +2337,10 @@
     "message": "Xem xét báo cáo"
   },
   "layout.action.review-projects": {
-    "message": "Đánh giá d�?án"
+    "message": "Đánh giá dỿán"
   },
   "layout.action.tech-review": {
-    "message": "Đánh giá k�?thuật"
+    "message": "Đánh giá kỿthuật"
   },
   "layout.avatar.alt": {
     "message": "Hình đại diện của bạn"
@@ -2352,28 +2352,28 @@
     "message": "Truy cập cài đặt tài khoản"
   },
   "layout.banner.add-email.description": {
-    "message": "Vì lý do bảo mật, Modrinth yêu cầu bạn đăng ký một địa ch�?email cho tài khoản của mình."
+    "message": "Vì lý do bảo mật, Modrinth yêu cầu bạn đăng ký một địa chỿemail cho tài khoản của mình."
   },
   "layout.banner.build-fail.always-ignore": {
-    "message": "Không hiển th�?lại"
+    "message": "Không hiển thỿlại"
   },
   "layout.banner.build-fail.description": {
-    "message": "Lần triển khai frontend của Modrinth này không th�?tạo trạng thái t�?API. Nguyên nhân có th�?do s�?c�?h�?thống hoặc lỗi cấu hình. Hãy build lại khi API kh�?dụng. Mã lỗi: {errors}; URL API hiện tại: {url}"
+    "message": "Lần triển khai frontend của Modrinth này không thỿtạo trạng thái tỿAPI. Nguyên nhân có thỿdo sỿcỿhỿthống hoặc lỗi cấu hình. Hãy build lại khi API khếdụng. Mã lỗi: {errors}; URL API hiện tại: {url}"
   },
   "layout.banner.build-fail.ignore": {
-    "message": "K�?
+    "message": "Kỿ
   },
   "layout.banner.build-fail.title": {
-    "message": "Lỗi tạo trạng thái t�?API trong quá trình build."
+    "message": "Lỗi tạo trạng thái tỿAPI trong quá trình build."
   },
   "layout.banner.preview.description": {
-    "message": "Nếu bạn muốn truy cập trang Modrinth chính thức, truy cập {url}. Trang xem trước này được s�?dụng bởi Modrinth cho mục đích th�?nghiệm. Được xây qua {ref}."
+    "message": "Nếu bạn muốn truy cập trang Modrinth chính thức, truy cập {url}. Trang xem trước này được sỿdụng bởi Modrinth cho mục đích thỿnghiệm. Được xây qua {ref}."
   },
   "layout.banner.preview.title": {
     "message": "Đây là bản mẫu của trang web Modrinth."
   },
   "layout.banner.staging.description": {
-    "message": "Môi trường staging hoàn toàn tách biệt với cơ s�?d�?liệu Modrinth đang vận hành chính thức. Môi trường này được dùng cho mục đích th�?nghiệm và g�?lỗi, và có th�?đang chạy các phiên bản backend hoặc frontend Modrinth đang phát triển, mới hơn bản production."
+    "message": "Môi trường staging hoàn toàn tách biệt với cơ sỿdỿliệu Modrinth đang vận hành chính thức. Môi trường này được dùng cho mục đích thỿnghiệm và gỿlỗi, và có thỿđang chạy các phiên bản backend hoặc frontend Modrinth đang phát triển, mới hơn bản production."
   },
   "layout.banner.staging.title": {
     "message": "Bạn đang xem môi trường staging của Modrinth"
@@ -2382,34 +2382,34 @@
     "message": "Cập nhật thông tin thanh toán"
   },
   "layout.banner.subscription-payment-failed.description": {
-    "message": "Một hoặc nhiều gói đăng ký không th�?gia hạn. Vui lòng cập nhật phương thức thanh toán đ�?tránh b�?mất quyền truy cập!"
+    "message": "Một hoặc nhiều gói đăng ký không thỿgia hạn. Vui lòng cập nhật phương thức thanh toán đỿtránh bỿmất quyền truy cập!"
   },
   "layout.banner.subscription-payment-failed.title": {
     "message": "Cần thao tác thanh toán."
   },
   "layout.banner.tax.action": {
-    "message": "Hoàn thành biểu mẫu thu�?
+    "message": "Hoàn thành biểu mẫu thuế
   },
   "layout.banner.tax.description": {
-    "message": "Bạn đã rút hơn {threshold} t�?Modrinth trong năm nay. Đ�?tuân th�?các quy định v�?thu�? bạn cần hoàn thành một biểu mẫu thu�? Việc rút tiền của bạn s�?b�?tạm ngưng cho đến khi biểu mẫu này được nộp."
+    "message": "Bạn đã rút hơn {threshold} tỿModrinth trong năm nay. Đỿtuân thỿcác quy định vỿthuế bạn cần hoàn thành một biểu mẫu thuế Việc rút tiền của bạn sếbỿtạm ngưng cho đến khi biểu mẫu này được nộp."
   },
   "layout.banner.tax.title": {
-    "message": "Yêu cầu biểu mẫu thu�?
+    "message": "Yêu cầu biểu mẫu thuế
   },
   "layout.banner.tin-mismatch.action": {
-    "message": "Liên h�?h�?tr�?
+    "message": "Liên hỿhỿtrỿ
   },
   "layout.banner.tin-mismatch.description": {
-    "message": "Việc rút tiền của bạn tạm thời b�?khóa do TIN hoặc SSN không khớp với h�?sơ của IRS. Vui lòng liên h�?h�?tr�?đ�?đặt lại và gửi lại biểu mẫu thu�?"
+    "message": "Việc rút tiền của bạn tạm thời bỿkhóa do TIN hoặc SSN không khớp với hỿsơ của IRS. Vui lòng liên hỿhỿtrỿđỿđặt lại và gửi lại biểu mẫu thuế"
   },
   "layout.banner.tin-mismatch.title": {
-    "message": "Biểu mẫu thu�?không hợp l�?
+    "message": "Biểu mẫu thuếkhông hợp lỿ
   },
   "layout.banner.verify-email.action": {
     "message": "Gửi lại email xác minh"
   },
   "layout.banner.verify-email.description": {
-    "message": "Vì lý do bảo mật, Modrinth yêu cầu bạn xác minh địa ch�?email được liên kết với tài khoản của mình."
+    "message": "Vì lý do bảo mật, Modrinth yêu cầu bạn xác minh địa chỿemail được liên kết với tài khoản của mình."
   },
   "layout.footer.about": {
     "message": "Giới thiệu"
@@ -2433,7 +2433,7 @@
     "message": "Pháp lý"
   },
   "layout.footer.legal-disclaimer": {
-    "message": "KHÔNG PHẢI LÀ DỊCH V�?CHÍNH THỨC CỦA MINECRAFT. KHÔNG ĐƯỢC MOJANG HOẶC MICROSOFT PHÊ DUYỆT HOẶC LIÊN KẾT."
+    "message": "KHÔNG PHẢI LÀ DỊCH VỿCHÍNH THỨC CỦA MINECRAFT. KHÔNG ĐƯỢC MOJANG HOẶC MICROSOFT PHÊ DUYỆT HOẶC LIÊN KẾT."
   },
   "layout.footer.legal.copyright-policy": {
     "message": "Chính sách bản quyền và DMCA"
@@ -2442,19 +2442,19 @@
     "message": "Chính sách quyền riêng tư"
   },
   "layout.footer.legal.rules": {
-    "message": "Quy tắc v�?nội dung"
+    "message": "Quy tắc vỿnội dung"
   },
   "layout.footer.legal.security-notice": {
     "message": "Thông báo bảo mật"
   },
   "layout.footer.legal.terms-of-use": {
-    "message": "Điều khoản s�?dụng"
+    "message": "Điều khoản sỿdụng"
   },
   "layout.footer.modrinth-information": {
     "message": "Thông tin Modrinth"
   },
   "layout.footer.open-source": {
-    "message": "Modrinth là <github-link>mã nguồn m�?/github-link>."
+    "message": "Modrinth là <github-link>mã nguồn mỿ/github-link>."
   },
   "layout.footer.products": {
     "message": "Sản phẩm"
@@ -2475,10 +2475,10 @@
     "message": "Tài liệu API"
   },
   "layout.footer.resources.help-center": {
-    "message": "Trung tâm tr�?giúp"
+    "message": "Trung tâm trỿgiúp"
   },
   "layout.footer.resources.report-issues": {
-    "message": "Báo cáo s�?c�?
+    "message": "Báo cáo sỿcỿ
   },
   "layout.footer.resources.translate": {
     "message": "Dịch thuật"
@@ -2502,7 +2502,7 @@
     "message": "Chuyển đổi menu"
   },
   "layout.meta.description": {
-    "message": "Tải xuống các mod Minecraft, plugin, datapack, shader, gói tài nguyên và modpack trên Modrinth. Khám phá và xuất bản các d�?án trên Modrinth với giao diện và API hiện đại, d�?s�?dụng."
+    "message": "Tải xuống các mod Minecraft, plugin, datapack, shader, gói tài nguyên và modpack trên Modrinth. Khám phá và xuất bản các dỿán trên Modrinth với giao diện và API hiện đại, dỿsỿdụng."
   },
   "layout.meta.og-description": {
     "message": "Khám phá và xuất bản nội dung Minecraft!"
@@ -2511,7 +2511,7 @@
     "message": "Đóng menu"
   },
   "layout.mobile.open-menu": {
-    "message": "M�?menu"
+    "message": "Mỿmenu"
   },
   "layout.nav.active-reports": {
     "message": "Báo cáo hoạt động"
@@ -2523,34 +2523,34 @@
     "message": "Tải ứng dụng Modrinth"
   },
   "layout.nav.home": {
-    "message": "Trang ch�?
+    "message": "Trang chỿ
   },
   "layout.nav.host-a-server": {
-    "message": "Tạo máy ch�?
+    "message": "Tạo máy chỿ
   },
   "layout.nav.modrinth-app": {
     "message": "Ứng dụng Modrinth"
   },
   "layout.nav.modrinth-home-page": {
-    "message": "Trang ch�?Modrinth"
+    "message": "Trang chỿModrinth"
   },
   "layout.nav.my-servers": {
-    "message": "Máy ch�?của tôi"
+    "message": "Máy chỿcủa tôi"
   },
   "layout.nav.organizations": {
-    "message": "T�?chức"
+    "message": "Tỿchức"
   },
   "layout.nav.profile": {
-    "message": "H�?sơ"
+    "message": "Hỿsơ"
   },
   "layout.nav.projects": {
-    "message": "D�?án"
+    "message": "Dỿán"
   },
   "layout.nav.revenue": {
     "message": "Doanh thu"
   },
   "layout.nav.saved-projects": {
-    "message": "D�?án đã lưu"
+    "message": "Dỿán đã lưu"
   },
   "layout.nav.search": {
     "message": "Tìm kiếm"
@@ -2562,16 +2562,16 @@
     "message": "Kiểm duyệt"
   },
   "moderation.page.external-projects": {
-    "message": "D�?án ngoài"
+    "message": "Dỿán ngoài"
   },
   "moderation.page.projects": {
-    "message": "D�?án"
+    "message": "Dỿán"
   },
   "moderation.page.reports": {
     "message": "Báo cáo"
   },
   "moderation.page.technicalReview": {
-    "message": "Đánh giá k�?thuật"
+    "message": "Đánh giá kỿthuật"
   },
   "muralpay.account-type.checking": {
     "message": "Tài khoản thanh toán"
@@ -2583,7 +2583,7 @@
     "message": "Áo"
   },
   "muralpay.country.be": {
-    "message": "B�?
+    "message": "Bỿ
   },
   "muralpay.country.cy": {
     "message": "Síp"
@@ -2628,43 +2628,43 @@
     "message": "Hà Lan"
   },
   "muralpay.country.pt": {
-    "message": "B�?Đào Nha"
+    "message": "BỿĐào Nha"
   },
   "muralpay.country.sk": {
     "message": "Slovakia"
   },
   "muralpay.document-type.national-id": {
-    "message": "S�?định danh quốc gia"
+    "message": "Sỿđịnh danh quốc gia"
   },
   "muralpay.document-type.passport": {
-    "message": "H�?chiếu"
+    "message": "Hỿchiếu"
   },
   "muralpay.document-type.resident-id": {
-    "message": "S�?định danh cư trú"
+    "message": "Sỿđịnh danh cư trú"
   },
   "muralpay.document-type.ruc": {
     "message": "RUC"
   },
   "muralpay.document-type.tax-id": {
-    "message": "Mã s�?thu�?
+    "message": "Mã sỿthuế
   },
   "muralpay.field.account-number": {
-    "message": "S�?tài khoản"
+    "message": "Sỿtài khoản"
   },
   "muralpay.field.account-number-cbu-cvu": {
-    "message": "S�?tài khoản (CBU/CVU)"
+    "message": "Sỿtài khoản (CBU/CVU)"
   },
   "muralpay.field.account-number-cci": {
-    "message": "S�?tài khoản (CCI)"
+    "message": "Sỿtài khoản (CCI)"
   },
   "muralpay.field.account-number-type": {
-    "message": "Loại s�?tài khoản"
+    "message": "Loại sỿtài khoản"
   },
   "muralpay.field.account-type": {
     "message": "Loại tài khoản"
   },
   "muralpay.field.bank-account-number": {
-    "message": "S�?tài khoản"
+    "message": "Sỿtài khoản"
   },
   "muralpay.field.clabe": {
     "message": "CLABE"
@@ -2685,7 +2685,7 @@
     "message": "IBAN"
   },
   "muralpay.field.phone-number": {
-    "message": "S�?điện thoại"
+    "message": "Sỿđiện thoại"
   },
   "muralpay.field.pix-email": {
     "message": "Email PIX"
@@ -2694,19 +2694,19 @@
     "message": "Loại khóa PIX"
   },
   "muralpay.field.pix-phone": {
-    "message": "S�?điện thoại PIX"
+    "message": "Sỿđiện thoại PIX"
   },
   "muralpay.field.random-key": {
     "message": "Khoá ngẫu nhiên"
   },
   "muralpay.field.routing-number": {
-    "message": "S�?routing"
+    "message": "Sỿrouting"
   },
   "muralpay.field.swift-bic": {
     "message": "SWIFT/BIC"
   },
   "muralpay.field.wallet-address": {
-    "message": "Địa ch�?ví"
+    "message": "Địa chỿví"
   },
   "muralpay.help.cbu-cvu": {
     "message": "Clave Bancaria Uniforme hoặc Clave Virtual Uniforme"
@@ -2715,16 +2715,16 @@
     "message": "Código de Cuenta Interbancaria"
   },
   "muralpay.help.clabe": {
-    "message": "Clave Bancaria Estandarizada (s�?tài khoản ngân hàng Mexico)"
+    "message": "Clave Bancaria Estandarizada (sỿtài khoản ngân hàng Mexico)"
   },
   "muralpay.help.cpf-cnpj": {
-    "message": "Mã s�?thu�?Brazil"
+    "message": "Mã sỿthuếBrazil"
   },
   "muralpay.help.cuit-cuil": {
-    "message": "Mã s�?thu�?Argentina"
+    "message": "Mã sỿthuếArgentina"
   },
   "muralpay.help.iban": {
-    "message": "S�?tài khoản ngân hàng quốc t�?
+    "message": "Sỿtài khoản ngân hàng quốc tế
   },
   "muralpay.help.swift-bic": {
     "message": "Mã định danh ngân hàng"
@@ -2739,10 +2739,10 @@
     "message": "Email"
   },
   "muralpay.pix-type.phone": {
-    "message": "S�?điện thoại"
+    "message": "Sỿđiện thoại"
   },
   "muralpay.placeholder.account-number": {
-    "message": "Nhập s�?tài khoản"
+    "message": "Nhập sỿtài khoản"
   },
   "muralpay.placeholder.cbu-cvu": {
     "message": "Nhập CBU hoặc CVU"
@@ -2751,16 +2751,16 @@
     "message": "CBU hoặc CVU"
   },
   "muralpay.placeholder.cci": {
-    "message": "Nhập CCI gồm 20 ch�?s�?
+    "message": "Nhập CCI gồm 20 chỿsỿ
   },
   "muralpay.placeholder.cuit-cuil": {
     "message": "Nhập CUIT hoặc CUIL"
   },
   "muralpay.placeholder.enter-account-number": {
-    "message": "Nhập s�?tài khoản"
+    "message": "Nhập sỿtài khoản"
   },
   "muralpay.placeholder.enter-clabe": {
-    "message": "Nhập mã CLABE gồm 18 ch�?s�?
+    "message": "Nhập mã CLABE gồm 18 chỿsỿ
   },
   "muralpay.placeholder.enter-cpf-cnpj": {
     "message": "Nhập CPF hoặc CNPJ"
@@ -2775,7 +2775,7 @@
     "message": "Nhập khoá ngẫu nhiên"
   },
   "muralpay.placeholder.enter-routing-number": {
-    "message": "Nhập s�?routing gồm 9 ch�?s�?
+    "message": "Nhập sỿrouting gồm 9 chỿsỿ
   },
   "muralpay.placeholder.enter-swift-bic": {
     "message": "Nhập mã SWIFT/BIC"
@@ -2838,28 +2838,28 @@
     "message": "Crypto (USDC)"
   },
   "muralpay.warning.wallet-address": {
-    "message": "Hãy kiểm tra k�?địa ch�?ví. S�?tiền gửi đến địa ch�?không chính xác s�?không th�?khôi phục."
+    "message": "Hãy kiểm tra kỿđịa chỿví. Sỿtiền gửi đến địa chỿkhông chính xác sếkhông thỿkhôi phục."
   },
   "project-member-header.error-decline": {
-    "message": "Không th�?t�?chối lời mời vào nhóm"
+    "message": "Không thỿtỿchối lời mời vào nhóm"
   },
   "project-member-header.error-join": {
-    "message": "Không th�?chấp nhận lời mời vào nhóm"
+    "message": "Không thỿchấp nhận lời mời vào nhóm"
   },
   "project-member-header.invitation-no-role": {
-    "message": "Bạn đã được mời tham gia d�?án này. Vui lòng chấp nhận hoặc t�?chối lời mời."
+    "message": "Bạn đã được mời tham gia dỿán này. Vui lòng chấp nhận hoặc tỿchối lời mời."
   },
   "project-member-header.invitation-title": {
-    "message": "Lời mời tham gia d�?án"
+    "message": "Lời mời tham gia dỿán"
   },
   "project-member-header.invitation-with-role": {
-    "message": "Bạn đã được mời tham gia d�?án này với vai trò “{role}�?"
+    "message": "Bạn đã được mời tham gia dỿán này với vai trò “{role}‿"
   },
   "project-member-header.success-decline": {
-    "message": "Bạn đã t�?chối lời mời vào nhóm"
+    "message": "Bạn đã tỿchối lời mời vào nhóm"
   },
   "project-member-header.success-join": {
-    "message": "Bạn đã tham gia nhóm d�?án"
+    "message": "Bạn đã tham gia nhóm dỿán"
   },
   "project-moderation-nags.publishing-checklist": {
     "message": "Danh sách kiểm tra xuất bản"
@@ -2868,22 +2868,22 @@
     "message": "Bắt buộc"
   },
   "project-moderation-nags.resubmit-for-review": {
-    "message": "Gửi lại đ�?xét duyệt"
+    "message": "Gửi lại đỿxét duyệt"
   },
   "project-moderation-nags.resubmit-for-review-desc": {
-    "message": "D�?án của bạn đã b�?đội ngũ Modrinth {status, select, rejected {t�?chối} withheld {tạm giữ} other {{status}}}.\nTrong hầu hết các trường hợp, bạn có th�?gửi lại đ�?xét duyệt sau khi x�?lý phản hồi t�?đội ngũ."
+    "message": "Dỿán của bạn đã bỿđội ngũ Modrinth {status, select, rejected {tỿchối} withheld {tạm giữ} other {{status}}}.\nTrong hầu hết các trường hợp, bạn có thỿgửi lại đỿxét duyệt sau khi xỿlý phản hồi tỿđội ngũ."
   },
   "project-moderation-nags.submit-checklist-tooltip": {
     "message": "Bạn phải hoàn thành các bước bắt buộc trong danh sách kiểm tra xuất bản!"
   },
   "project-moderation-nags.submit-for-review": {
-    "message": "Gửi đ�?xét duyệt"
+    "message": "Gửi đỿxét duyệt"
   },
   "project-moderation-nags.submit-for-review-button": {
-    "message": "Gửi đ�?xét duyệt"
+    "message": "Gửi đỿxét duyệt"
   },
   "project-moderation-nags.submit-for-review-desc": {
-    "message": "D�?án của bạn hiện ch�?có th�?được xem bởi các thành viên của d�?án. D�?án cần được đội ngũ kiểm duyệt xét duyệt trước khi được xuất bản."
+    "message": "Dỿán của bạn hiện chỿcó thỿđược xem bởi các thành viên của dỿán. Dỿán cần được đội ngũ kiểm duyệt xét duyệt trước khi được xuất bản."
   },
   "project-moderation-nags.suggestion": {
     "message": "Gợi ý"
@@ -2895,22 +2895,22 @@
     "message": "Cảnh báo"
   },
   "project-type.collection.plural": {
-    "message": "B�?sưu tập"
+    "message": "Bỿsưu tập"
   },
   "project-type.collection.singular": {
-    "message": "B�?sưu tập"
+    "message": "Bỿsưu tập"
   },
   "project-type.datapack.plural": {
-    "message": "Gói d�?liệu"
+    "message": "Gói dỿliệu"
   },
   "project-type.datapack.singular": {
-    "message": "Gói d�?liệu"
+    "message": "Gói dỿliệu"
   },
   "project-type.minecraft_java_server.plural": {
-    "message": "Các máy ch�?
+    "message": "Các máy chỿ
   },
   "project-type.minecraft_java_server.singular": {
-    "message": "Máy ch�?
+    "message": "Máy chỿ
   },
   "project-type.mod.plural": {
     "message": "Mod"
@@ -2931,10 +2931,10 @@
     "message": "Plugin"
   },
   "project-type.project.plural": {
-    "message": "D�?án"
+    "message": "Dỿán"
   },
   "project-type.project.singular": {
-    "message": "D�?án"
+    "message": "Dỿán"
   },
   "project-type.resourcepack.plural": {
     "message": "Gói tài nguyên"
@@ -2943,10 +2943,10 @@
     "message": "Gói tài nguyên"
   },
   "project-type.server.plural": {
-    "message": "Các máy ch�?
+    "message": "Các máy chỿ
   },
   "project-type.server.singular": {
-    "message": "Máy ch�?
+    "message": "Máy chỿ
   },
   "project-type.shader.plural": {
     "message": "Shader"
@@ -2955,43 +2955,43 @@
     "message": "Shader"
   },
   "project.actions.create-server": {
-    "message": "Tạo máy ch�?
+    "message": "Tạo máy chỿ
   },
   "project.actions.create-server-tooltip": {
-    "message": "Tạo máy ch�?
+    "message": "Tạo máy chỿ
   },
   "project.actions.dont-show-again": {
-    "message": "Không hiển th�?lại"
+    "message": "Không hiển thỿlại"
   },
   "project.actions.review-project": {
-    "message": "Xem xét d�?án"
+    "message": "Xem xét dỿán"
   },
   "project.actions.servers-promo.description": {
-    "message": "Modrinth Hosting là cách đơn giản nhất đ�?chơi cùng bạn bè mà không gặp rắc rối!"
+    "message": "Modrinth Hosting là cách đơn giản nhất đỿchơi cùng bạn bè mà không gặp rắc rối!"
   },
   "project.actions.servers-promo.pricing": {
-    "message": "Bắt đầu t�?{price}<small> / tháng</small>"
+    "message": "Bắt đầu tỿ{price}<small> / tháng</small>"
   },
   "project.actions.servers-promo.title": {
-    "message": "Tạo máy ch�?
+    "message": "Tạo máy chỿ
   },
   "project.collections.create-new": {
-    "message": "Tạo b�?sưu tập mới"
+    "message": "Tạo bỿsưu tập mới"
   },
   "project.collections.none-found": {
-    "message": "Không tìm thấy b�?sưu tập nào."
+    "message": "Không tìm thấy bỿsưu tập nào."
   },
   "project.description.title": {
-    "message": "Mô t�?
+    "message": "Mô tế
   },
   "project.download.game-version-unsupported-tooltip": {
-    "message": "{title} không h�?tr�?{gameVersion} cho {platform}"
+    "message": "{title} không hỿtrỿ{gameVersion} cho {platform}"
   },
   "project.download.no-app": {
     "message": "Chưa có Ứng dụng Modrinth?"
   },
   "project.download.platform-unsupported-tooltip": {
-    "message": "{title} không h�?tr�?{platform} cho {gameVersion}"
+    "message": "{title} không hỿtrỿ{platform} cho {gameVersion}"
   },
   "project.download.select-game-version": {
     "message": "Chọn phiên bản game"
@@ -3000,22 +3000,22 @@
     "message": "Chọn nền tảng"
   },
   "project.download.show-all-versions": {
-    "message": "Hiển th�?tất c�?các phiên bản"
+    "message": "Hiển thỿtất cếcác phiên bản"
   },
   "project.download.title": {
     "message": "Tải xuống {title}"
   },
   "project.environment.migration-no-permission.message": {
-    "message": "Chúng tôi vừa nâng cấp toàn b�?h�?thống Môi trường trên Modrinth và hiện đã có các tùy chọn mới. Bạn không có quyền chỉnh sửa các cài đặt này, nhưng vui lòng thông báo cho một thành viên khác của d�?án rằng metadata môi trường cần được xác minh."
+    "message": "Chúng tôi vừa nâng cấp toàn bỿhỿthống Môi trường trên Modrinth và hiện đã có các tùy chọn mới. Bạn không có quyền chỉnh sửa các cài đặt này, nhưng vui lòng thông báo cho một thành viên khác của dỿán rằng metadata môi trường cần được xác minh."
   },
   "project.environment.migration-no-permission.title": {
     "message": "Metadata môi trường cần được xem xét"
   },
   "project.environment.migration.learn-more": {
-    "message": "Tìm hiểu thêm v�?thay đổi này"
+    "message": "Tìm hiểu thêm vỿthay đổi này"
   },
   "project.environment.migration.message": {
-    "message": "Chúng tôi vừa nâng cấp toàn b�?h�?thống Môi trường trên Modrinth và hiện đã có các tùy chọn mới. Vui lòng xác minh rằng metadata là chính xác."
+    "message": "Chúng tôi vừa nâng cấp toàn bỿhỿthống Môi trường trên Modrinth và hiện đã có các tùy chọn mới. Vui lòng xác minh rằng metadata là chính xác."
   },
   "project.environment.migration.review-button": {
     "message": "Xem lại cài đặt môi trường"
@@ -3024,67 +3024,67 @@
     "message": "Vui lòng xem xét metadata môi trường"
   },
   "project.error.loading": {
-    "message": "Lỗi khi tải d�?liệu d�?án{message}"
+    "message": "Lỗi khi tải dỿliệu dỿán{message}"
   },
   "project.error.page-not-found": {
-    "message": "Không th�?tìm thấy trang"
+    "message": "Không thỿtìm thấy trang"
   },
   "project.error.project-not-found": {
-    "message": "Không tìm thấy d�?án"
+    "message": "Không tìm thấy dỿán"
   },
   "project.gallery.title": {
     "message": "Thư viện"
   },
   "project.moderation.admonition.approved.body.private": {
-    "message": "D�?án của bạn đang đ�?ch�?đ�?riêng tư, nghĩa là ch�?có bạn và những người khác được mời có th�?truy cập nó."
+    "message": "Dỿán của bạn đang đỿchếđỿriêng tư, nghĩa là chỿcó bạn và những người khác được mời có thỿtruy cập nó."
   },
   "project.moderation.admonition.approved.body.public": {
-    "message": "D�?án của bạn đã được phát hành và công khai trên Modrinth."
+    "message": "Dỿán của bạn đã được phát hành và công khai trên Modrinth."
   },
   "project.moderation.admonition.approved.body.unlisted": {
-    "message": "D�?án của bạn đang đ�?ch�?đ�?không công khai, nghĩa là nó ch�?có th�?được truy cập qua đường liên kết và không được công khai tại Modrinth."
+    "message": "Dỿán của bạn đang đỿchếđỿkhông công khai, nghĩa là nó chỿcó thỿđược truy cập qua đường liên kết và không được công khai tại Modrinth."
   },
   "project.moderation.admonition.approved.body.visibility-message": {
-    "message": "Bạn có th�?tùy chỉnh ch�?đ�?hiển th�?qua <visibility-settings-link>cài đặt hiển th�?/visibility-settings-link> của d�?án."
+    "message": "Bạn có thỿtùy chỉnh chếđỿhiển thỿqua <visibility-settings-link>cài đặt hiển thỿ/visibility-settings-link> của dỿán."
   },
   "project.moderation.admonition.approved.header": {
-    "message": "D�?án được chấp nhận"
+    "message": "Dỿán được chấp nhận"
   },
   "project.moderation.admonition.draft.body": {
-    "message": "Đây là d�?án nháp và không th�?xem bởi người khác đến khi được xem và chấp nhận bởi bên kiểm duyệt của Modrinth."
+    "message": "Đây là dỿán nháp và không thỿxem bởi người khác đến khi được xem và chấp nhận bởi bên kiểm duyệt của Modrinth."
   },
   "project.moderation.admonition.draft.header": {
-    "message": "D�?án nháp"
+    "message": "Dỿán nháp"
   },
   "project.moderation.admonition.draft.submit-for-review": {
-    "message": "Khi bạn đã hoàn thành tất c�?các bước và đã chắc chắn nó tuân th�?<rules-link>Quy Tắc Nội Dung</rules-link> của modrinth, bạn có th�?đăng tải đ�?bên kiểm duyệt xem xét."
+    "message": "Khi bạn đã hoàn thành tất cếcác bước và đã chắc chắn nó tuân thỿ<rules-link>Quy Tắc Nội Dung</rules-link> của modrinth, bạn có thỿđăng tải đỿbên kiểm duyệt xem xét."
   },
   "project.moderation.admonition.rejected.address-all-concerns": {
-    "message": "Vui lòng tr�?lời mối lo ngại t�?bên kiểm duyệt, bao gồm mọi vấn đ�?�?tin dưới, trước khi đăng lại d�?án."
+    "message": "Vui lòng trếlời mối lo ngại tỿbên kiểm duyệt, bao gồm mọi vấn đỿỿtin dưới, trước khi đăng lại dỿán."
   },
   "project.moderation.admonition.rejected.header": {
     "message": "Yêu cầu thay đổi"
   },
   "project.moderation.admonition.rejected.spam-notice": {
-    "message": "Gửi đi gửi lại d�?án của bạn mà không tr�?lời các câu hỏi của bên kiểm duyệt có th�?gây đình ch�?tài khoản."
+    "message": "Gửi đi gửi lại dỿán của bạn mà không trếlời các câu hỏi của bên kiểm duyệt có thỿgây đình chỿtài khoản."
   },
   "project.moderation.admonition.under-review.body.1": {
-    "message": "D�?án của bạn đang trong hàng đ�?được xem xét bởi bên kiểm duyệt của modrinth."
+    "message": "Dỿán của bạn đang trong hàng đỿđược xem xét bởi bên kiểm duyệt của modrinth."
   },
   "project.moderation.admonition.under-review.body.2": {
-    "message": "D�?án của bạn s�?được quét và xem xét bởi người trong bên kiểm duyệt đ�?chắc chắn nó tuân th�?<rules-link>Quy Tắc Nội Dung</rules-link> và <terms-link>Điều khoản S�?dụng</terms-link>."
+    "message": "Dỿán của bạn sếđược quét và xem xét bởi người trong bên kiểm duyệt đỿchắc chắn nó tuân thỿ<rules-link>Quy Tắc Nội Dung</rules-link> và <terms-link>Điều khoản Sỿdụng</terms-link>."
   },
   "project.moderation.admonition.under-review.body.3": {
-    "message": "Bạn có th�?thay đổi d�?án mà không làm ảnh hưởng đến th�?t�?trong hàng của bạn."
+    "message": "Bạn có thỿthay đổi dỿán mà không làm ảnh hưởng đến thỿtỿtrong hàng của bạn."
   },
   "project.moderation.admonition.under-review.body.5": {
-    "message": "<emphasis>Chúng tôi rất cảm ơn s�?kiên nhẫn của bạn trong khi đội ngũ kiểm duyệt chúng tôi đang n�?lực gi�?cho Modrinth an toàn, và mong được h�?tr�?bạn đ�?chia s�?nội dung của mình!💚</emphasis>"
+    "message": "<emphasis>Chúng tôi rất cảm ơn sỿkiên nhẫn của bạn trong khi đội ngũ kiểm duyệt chúng tôi đang nỿlực giỿcho Modrinth an toàn, và mong được hỿtrỿbạn đỿchia sếnội dung của mình!💚</emphasis>"
   },
   "project.moderation.admonition.under-review.header": {
-    "message": "D�?án đang xem xét"
+    "message": "Dỿán đang xem xét"
   },
   "project.moderation.admonition.withheld.body": {
-    "message": "D�?án của bạn s�?ch�?được truy cập trực tiếp qua đường liên kết mà không được công khai hoàn toàn.{requestedStatus, select, unlisted { Dựa trên <visibility-settings-link>cài đặt hiển th�?/visibility-settings-link> của bạn, không cần hành động nào thêm.} other { Vui lòng tr�?lời tin t�?bên kiểm duyệt, bao gồm các tin nhắn �?dưới trước khi đăng lại d�?án này.}}"
+    "message": "Dỿán của bạn sếchỿđược truy cập trực tiếp qua đường liên kết mà không được công khai hoàn toàn.{requestedStatus, select, unlisted { Dựa trên <visibility-settings-link>cài đặt hiển thỿ/visibility-settings-link> của bạn, không cần hành động nào thêm.} other { Vui lòng trếlời tin tỿbên kiểm duyệt, bao gồm các tin nhắn ỿdưới trước khi đăng lại dỿán này.}}"
   },
   "project.moderation.admonition.withheld.header": {
     "message": "Không công khai bởi đội ngũ"
@@ -3093,19 +3093,19 @@
     "message": "Vô quyền"
   },
   "project.moderation.thread.approved-warning": {
-    "message": "Nơi này không được theo dõi thường xuyên, nhưng có th�?được xem lại cho các thông tin v�?d�?án của bạn nếu cần."
+    "message": "Nơi này không được theo dõi thường xuyên, nhưng có thỿđược xem lại cho các thông tin vỿdỿán của bạn nếu cần."
   },
   "project.moderation.thread.help-center-note.1": {
-    "message": "Bên kiểm duyệt không th�?h�?tr�?cho hầu hết các vấn đ�?và các tin nhắn �?đây không thông báo cho bên đội ngũ."
+    "message": "Bên kiểm duyệt không thỿhỿtrỿcho hầu hết các vấn đỿvà các tin nhắn ỿđây không thông báo cho bên đội ngũ."
   },
   "project.moderation.thread.help-center-note.2": {
-    "message": "Nếu bạn cần tr�?giúp hoặc có thắc mắc, vui lòng vào <help-center-link>trung tâm tr�?giúp</help-center-link> và bấm vào nút tin nhắn màu xanh đ�?liên h�?h�?tr�?"
+    "message": "Nếu bạn cần trỿgiúp hoặc có thắc mắc, vui lòng vào <help-center-link>trung tâm trỿgiúp</help-center-link> và bấm vào nút tin nhắn màu xanh đỿliên hỿhỿtrỿ"
   },
   "project.moderation.thread.private-description": {
-    "message": "Đây là nơi hội thoại riêng tư với bên kiểm duyệt của Modrinth. H�?có th�?nhắn cho bạn v�?những vấn đ�?trong d�?án này."
+    "message": "Đây là nơi hội thoại riêng tư với bên kiểm duyệt của Modrinth. Hỿcó thỿnhắn cho bạn vỿnhững vấn đỿtrong dỿán này."
   },
   "project.moderation.thread.title": {
-    "message": "Tin t�?bên kiểm duyệt"
+    "message": "Tin tỿbên kiểm duyệt"
   },
   "project.moderation.title": {
     "message": "Kiểm duyệt"
@@ -3114,19 +3114,19 @@
     "message": "Nhật ký thay đổi"
   },
   "project.notification.icon-updated.message": {
-    "message": "Biểu tượng d�?án của bạn đã được cập nhật."
+    "message": "Biểu tượng dỿán của bạn đã được cập nhật."
   },
   "project.notification.icon-updated.title": {
-    "message": "Biểu tượng d�?án đã được cập nhật"
+    "message": "Biểu tượng dỿán đã được cập nhật"
   },
   "project.notification.updated.message": {
-    "message": "D�?án của bạn đã được cập nhật."
+    "message": "Dỿán của bạn đã được cập nhật."
   },
   "project.notification.updated.title": {
-    "message": "Đã cập nhật d�?án"
+    "message": "Đã cập nhật dỿán"
   },
   "project.settings.general.name.description": {
-    "message": "Tránh dùng tiền t�? hậu t�? nội dung trong ngoặc hoặc mô t�?b�?sung �?ch�?s�?dụng đúng tên thực của d�?án."
+    "message": "Tránh dùng tiền tỿ hậu tỿ nội dung trong ngoặc hoặc mô tếbỿsung ‿chỿsỿdụng đúng tên thực của dỿán."
   },
   "project.settings.general.name.placeholder.1": {
     "message": "vd: Nether Overhaul 2"
@@ -3147,7 +3147,7 @@
     "message": "Tên"
   },
   "project.settings.general.tagline.description": {
-    "message": "Tóm tắt d�?án của bạn trong không quá một câu."
+    "message": "Tóm tắt dỿán của bạn trong không quá một câu."
   },
   "project.settings.general.tagline.placeholder.1": {
     "message": "vd: Overhauls game progression to revolve around the Nether."
@@ -3171,10 +3171,10 @@
     "message": "URL"
   },
   "project.settings.permissions.empty-state.heading": {
-    "message": "Mọi th�?đều sẵn sàng!"
+    "message": "Mọi thỿđều sẵn sàng!"
   },
   "project.settings.permissions.fail.title": {
-    "message": "Một s�?nội dung không th�?bao gồm"
+    "message": "Một sỿnội dung không thỿbao gồm"
   },
   "project.settings.permissions.learn-more": {
     "message": "Tìm hiểu thêm"
@@ -3183,34 +3183,34 @@
     "message": "Cài đặt"
   },
   "project.settings.visit-dashboard": {
-    "message": "Truy cập bảng điều khiển d�?án"
+    "message": "Truy cập bảng điều khiển dỿán"
   },
   "project.status.archived.message": {
-    "message": "{title} đã được lưu tr�? {title} s�?không nhận được bất k�?bản cập nhật nào trong tương lai tr�?khi tác gi�?quyết định hủy lưu tr�?d�?án."
+    "message": "{title} đã được lưu trỿ {title} sếkhông nhận được bất kỿbản cập nhật nào trong tương lai trỿkhi tác giếquyết định hủy lưu trỿdỿán."
   },
   "project.versions.title": {
     "message": "Phiên bản"
   },
   "project.versions.withheld-versions-warning.description": {
-    "message": "{count, plural, other {Những phiên bản này}} b�?gi�?lại và không được công khai. Vui lòng đưa ra bằng chứng rằng bạn có quyền đ�?đăng tải một s�?tệp đưọc bao gồm trong {count, plural, other {các phiên bản}} modpack đó."
+    "message": "{count, plural, other {Những phiên bản này}} bỿgiỿlại và không được công khai. Vui lòng đưa ra bằng chứng rằng bạn có quyền đỿđăng tải một sỿtệp đưọc bao gồm trong {count, plural, other {các phiên bản}} modpack đó."
   },
   "project.versions.withheld-versions-warning.title": {
-    "message": "{count, plural, other{Phiên bản}} b�?gi�?lại do chứa nội dung nhúng không xác định"
+    "message": "{count, plural, other{Phiên bản}} bỿgiỿlại do chứa nội dung nhúng không xác định"
   },
   "report.already-reported": {
     "message": "Bạn đã báo cáo {title}"
   },
   "report.already-reported-description": {
-    "message": "Bạn đã có sẵn một bản báo cáo cho {item}. Bạn có th�?thêm một s�?chi tiết cho bản báo cáo nếu bạn có thêm thông tin."
+    "message": "Bạn đã có sẵn một bản báo cáo cho {item}. Bạn có thỿthêm một sỿchi tiết cho bản báo cáo nếu bạn có thêm thông tin."
   },
   "report.back-to-item": {
     "message": "Quay lại {item}"
   },
   "report.body.description": {
-    "message": "Hãy kèm theo liên kết và hình ảnh nếu có và phù hợp. Các báo cáo trống hoặc không đầy đ�?s�?b�?đóng và b�?qua."
+    "message": "Hãy kèm theo liên kết và hình ảnh nếu có và phù hợp. Các báo cáo trống hoặc không đầy đỿsếbỿđóng và bỿqua."
   },
   "report.body.title": {
-    "message": "Vui lòng cung cấp thêm ng�?cảnh cho báo cáo của bạn"
+    "message": "Vui lòng cung cấp thêm ngỿcảnh cho báo cáo của bạn"
   },
   "report.checking": {
     "message": "Đang tìm {item}..."
@@ -3219,10 +3219,10 @@
     "message": "Không tìm được {item}"
   },
   "report.for.violation": {
-    "message": "Vi phạm <rules-link>Quy định</rules-link> hoặc <terms-link>Điều khoản s�?dụng</terms-link> của Modrinth"
+    "message": "Vi phạm <rules-link>Quy định</rules-link> hoặc <terms-link>Điều khoản sỿdụng</terms-link> của Modrinth"
   },
   "report.for.violation.description": {
-    "message": "Ví d�?bao gồm nội dung độc hại, spam, phản cảm, lừa đảo, gây hiểu nhầm hoặc trái pháp luật."
+    "message": "Ví dỿbao gồm nội dung độc hại, spam, phản cảm, lừa đảo, gây hiểu nhầm hoặc trái pháp luật."
   },
   "report.form-not-for": {
     "message": "Biểu mẫu này không dùng cho:"
@@ -3234,25 +3234,25 @@
     "message": "Báo cáo lỗi"
   },
   "report.not-for.bug-reports.description": {
-    "message": "Bạn có th�?báo cáo lỗi tại <issues-link>trình theo dõi lỗi</issues-link> của d�?án."
+    "message": "Bạn có thỿbáo cáo lỗi tại <issues-link>trình theo dõi lỗi</issues-link> của dỿán."
   },
   "report.not-for.dmca": {
-    "message": "Yêu cầu g�?nội dung theo DMCA"
+    "message": "Yêu cầu gỿnội dung theo DMCA"
   },
   "report.not-for.dmca.description": {
     "message": "Xem <policy-link>Chính sách bản quyền</policy-link> của chúng tôi."
   },
   "report.note.copyright.1": {
-    "message": "Vui lòng lưu ý rằng bạn không đang gửi yêu cầu g�?nội dung theo DMCA, mà là báo cáo nội dung được tải lại."
+    "message": "Vui lòng lưu ý rằng bạn không đang gửi yêu cầu gỿnội dung theo DMCA, mà là báo cáo nội dung được tải lại."
   },
   "report.note.copyright.2": {
-    "message": "Nếu bạn muốn gửi yêu cầu g�?nội dung theo DMCA (một hành động pháp lý), vui lòng xem <copyright-policy-link>Chính sách bản quyền</copyright-policy-link>."
+    "message": "Nếu bạn muốn gửi yêu cầu gỿnội dung theo DMCA (một hành động pháp lý), vui lòng xem <copyright-policy-link>Chính sách bản quyền</copyright-policy-link>."
   },
   "report.note.malicious.1": {
-    "message": "Báo cáo v�?nội dung độc hại hoặc lừa đảo phải kèm theo bằng chứng rõ ràng v�?hành vi đó, chẳng hạn như mẫu mã nguồn."
+    "message": "Báo cáo vỿnội dung độc hại hoặc lừa đảo phải kèm theo bằng chứng rõ ràng vỿhành vi đó, chẳng hạn như mẫu mã nguồn."
   },
   "report.note.malicious.2": {
-    "message": "Các bản tóm tắt t�?Microsoft Defender, VirusTotal hoặc công c�?phát hiện mã độc bằng AI không được coi là bằng chứng đầy đ�?và s�?không được chấp nhận."
+    "message": "Các bản tóm tắt tỿMicrosoft Defender, VirusTotal hoặc công cỿphát hiện mã độc bằng AI không được coi là bằng chứng đầy đỿvà sếkhông được chấp nhận."
   },
   "report.please-report": {
     "message": "Vui lòng báo cáo:"
@@ -3276,7 +3276,7 @@
     "message": "Gửi báo cáo"
   },
   "scopes.analytics.description": {
-    "message": "Truy cập d�?liệu phân tích của bạn"
+    "message": "Truy cập dỿliệu phân tích của bạn"
   },
   "scopes.analytics.label": {
     "message": "Đọc phân tích"
@@ -3285,13 +3285,13 @@
     "message": "Phân tích"
   },
   "scopes.category.collections": {
-    "message": "B�?sưu tập"
+    "message": "Bỿsưu tập"
   },
   "scopes.category.notifications": {
     "message": "Thông báo"
   },
   "scopes.category.organizations": {
-    "message": "T�?chức"
+    "message": "Tỿchức"
   },
   "scopes.category.pats": {
     "message": "PATs"
@@ -3300,7 +3300,7 @@
     "message": "Thanh toán"
   },
   "scopes.category.projects": {
-    "message": "D�?án"
+    "message": "Dỿán"
   },
   "scopes.category.reports": {
     "message": "Báo cáo"
@@ -3318,28 +3318,28 @@
     "message": "Phiên bản"
   },
   "scopes.collectionCreate.description": {
-    "message": "Tạo b�?sưu tập"
+    "message": "Tạo bỿsưu tập"
   },
   "scopes.collectionCreate.label": {
-    "message": "Tạo b�?sưu tập"
+    "message": "Tạo bỿsưu tập"
   },
   "scopes.collectionDelete.description": {
-    "message": "Xoá b�?sưu tập"
+    "message": "Xoá bỿsưu tập"
   },
   "scopes.collectionDelete.label": {
-    "message": "Xoá b�?sưu tập"
+    "message": "Xoá bỿsưu tập"
   },
   "scopes.collectionRead.description": {
-    "message": "Đọc b�?sưu tập"
+    "message": "Đọc bỿsưu tập"
   },
   "scopes.collectionRead.label": {
-    "message": "Đọc b�?sưu tập"
+    "message": "Đọc bỿsưu tập"
   },
   "scopes.collectionWrite.description": {
-    "message": "Ghi vào b�?sưu tập"
+    "message": "Ghi vào bỿsưu tập"
   },
   "scopes.collectionWrite.label": {
-    "message": "Ghi b�?sưu tập"
+    "message": "Ghi bỿsưu tập"
   },
   "scopes.notificationRead.description": {
     "message": "Đọc thông báo của bạn"
@@ -3354,28 +3354,28 @@
     "message": "Viết thông báo"
   },
   "scopes.organizationCreate.description": {
-    "message": "Tạo t�?chức"
+    "message": "Tạo tỿchức"
   },
   "scopes.organizationCreate.label": {
-    "message": "Tạo t�?chức"
+    "message": "Tạo tỿchức"
   },
   "scopes.organizationDelete.description": {
-    "message": "Xoá t�?chức"
+    "message": "Xoá tỿchức"
   },
   "scopes.organizationDelete.label": {
-    "message": "Xoá t�?chức"
+    "message": "Xoá tỿchức"
   },
   "scopes.organizationRead.description": {
-    "message": "Đọc t�?chức"
+    "message": "Đọc tỿchức"
   },
   "scopes.organizationRead.label": {
-    "message": "Đọc t�?chức"
+    "message": "Đọc tỿchức"
   },
   "scopes.organizationWrite.description": {
-    "message": "Ghi vào t�?chức"
+    "message": "Ghi vào tỿchức"
   },
   "scopes.organizationWrite.label": {
-    "message": "Ghi t�?chức"
+    "message": "Ghi tỿchức"
   },
   "scopes.patCreate.description": {
     "message": "Tạo mã truy cập cá nhân"
@@ -3402,7 +3402,7 @@
     "message": "Ghi PAT"
   },
   "scopes.payoutsRead.description": {
-    "message": "Đọc d�?liệu thanh toán của bạn"
+    "message": "Đọc dỿliệu thanh toán của bạn"
   },
   "scopes.payoutsRead.label": {
     "message": "Đọc khoản thanh toán"
@@ -3420,28 +3420,28 @@
     "message": "Thực hiện phân tích"
   },
   "scopes.projectCreate.description": {
-    "message": "Tạo d�?án mới"
+    "message": "Tạo dỿán mới"
   },
   "scopes.projectCreate.label": {
-    "message": "Tạo d�?án"
+    "message": "Tạo dỿán"
   },
   "scopes.projectDelete.description": {
-    "message": "Xoá d�?án của bạn"
+    "message": "Xoá dỿán của bạn"
   },
   "scopes.projectDelete.label": {
-    "message": "Xoá d�?án"
+    "message": "Xoá dỿán"
   },
   "scopes.projectRead.description": {
-    "message": "Đọc toàn b�?d�?án của bạn"
+    "message": "Đọc toàn bỿdỿán của bạn"
   },
   "scopes.projectRead.label": {
-    "message": "Đọc d�?án"
+    "message": "Đọc dỿán"
   },
   "scopes.projectWrite.description": {
-    "message": "Ghi vào d�?liệu d�?án"
+    "message": "Ghi vào dỿliệu dỿán"
   },
   "scopes.projectWrite.label": {
-    "message": "Ghi d�?án"
+    "message": "Ghi dỿán"
   },
   "scopes.reportCreate.description": {
     "message": "Tạo báo cáo"
@@ -3498,10 +3498,10 @@
     "message": "Ghi luồng thảo luận"
   },
   "scopes.userAuthWrite.description": {
-    "message": "Chỉnh sửa d�?liệu xác thực của bạn"
+    "message": "Chỉnh sửa dỿliệu xác thực của bạn"
   },
   "scopes.userAuthWrite.label": {
-    "message": "Ghi d�?liệu xác thực"
+    "message": "Ghi dỿliệu xác thực"
   },
   "scopes.userDelete.description": {
     "message": "Xoá tài khoản của bạn"
@@ -3510,10 +3510,10 @@
     "message": "Xoá tài khoản của bạn"
   },
   "scopes.userRead.description": {
-    "message": "Truy cập thông tin h�?sơ công khai của bạn"
+    "message": "Truy cập thông tin hỿsơ công khai của bạn"
   },
   "scopes.userRead.label": {
-    "message": "Đọc d�?liệu người dùng"
+    "message": "Đọc dỿliệu người dùng"
   },
   "scopes.userReadEmail.description": {
     "message": "Xem email của bạn"
@@ -3522,10 +3522,10 @@
     "message": "Xem email người dùng"
   },
   "scopes.userWrite.description": {
-    "message": "Chỉnh sửa h�?sơ của bạn"
+    "message": "Chỉnh sửa hỿsơ của bạn"
   },
   "scopes.userWrite.label": {
-    "message": "Chỉnh sửa d�?liệu người dùng"
+    "message": "Chỉnh sửa dỿliệu người dùng"
   },
   "scopes.versionCreate.description": {
     "message": "Tạo phiên bản mới"
@@ -3540,31 +3540,31 @@
     "message": "Xóa phiên bản"
   },
   "scopes.versionRead.description": {
-    "message": "Xem tất c�?phiên bản"
+    "message": "Xem tất cếphiên bản"
   },
   "scopes.versionRead.label": {
     "message": "Xem phiên bản"
   },
   "scopes.versionWrite.description": {
-    "message": "Ghi vào d�?liệu phiên bản"
+    "message": "Ghi vào dỿliệu phiên bản"
   },
   "scopes.versionWrite.label": {
     "message": "Chỉnh sửa phiên bản"
   },
   "search.filter.game-version-shader-message": {
-    "message": "Các shader pack dành cho các phiên bản cũ nhiều kh�?năng vẫn s�?hoạt động trên các phiên bản mới hơn và ch�?gặp một vài lỗi nh�?"
+    "message": "Các shader pack dành cho các phiên bản cũ nhiều khếnăng vẫn sếhoạt động trên các phiên bản mới hơn và chỿgặp một vài lỗi nhỿ"
   },
   "search.filter.locked.server": {
     "message": "Provided by the server"
   },
   "search.filter.locked.server-game-version.title": {
-    "message": "Phiên bản trò chơi do máy ch�?cung cấp"
+    "message": "Phiên bản trò chơi do máy chỿcung cấp"
   },
   "search.filter.locked.server-loader.title": {
-    "message": "Loader do máy ch�?cung cấp"
+    "message": "Loader do máy chỿcung cấp"
   },
   "search.filter.locked.server.sync": {
-    "message": "Đồng b�?với máy ch�?
+    "message": "Đồng bỿvới máy chỿ
   },
   "servers.manage.content.title": {
     "message": "{serverName} - Nội dung Modrinth"
@@ -3576,7 +3576,7 @@
     "message": "Bắt đầu"
   },
   "servers.notice.dismissable": {
-    "message": "Có th�?b�?qua"
+    "message": "Có thỿbỿqua"
   },
   "servers.notice.expires": {
     "message": "Hết hạn"
@@ -3585,10 +3585,10 @@
     "message": "ID"
   },
   "servers.notice.level": {
-    "message": "Mức đ�?
+    "message": "Mức đỿ
   },
   "servers.notice.undismissable": {
-    "message": "Không th�?b�?qua"
+    "message": "Không thỿbỿqua"
   },
   "servers.notices.create-notice": {
     "message": "Tạo thông báo"
@@ -3597,13 +3597,13 @@
     "message": "Không có thông báo"
   },
   "servers.plan.large.description": {
-    "message": "Lý tưởng cho 15�?5 người chơi, modpack hoặc mod nặng."
+    "message": "Lý tưởng cho 15‿5 người chơi, modpack hoặc mod nặng."
   },
   "servers.plan.medium.description": {
-    "message": "Phù hợp cho 6�?5 người chơi và nhiều mod."
+    "message": "Phù hợp cho 6‿5 người chơi và nhiều mod."
   },
   "servers.plan.small.description": {
-    "message": "Hoàn hảo cho 1�? người bạn với một vài mod nh�?"
+    "message": "Hoàn hảo cho 1‿ người bạn với một vài mod nhế"
   },
   "settings.account.button.complete-setup": {
     "message": "Hoàn tất thiết lập"
@@ -3618,13 +3618,13 @@
     "message": "Đang tạo bản xuất..."
   },
   "settings.account.data-export.description": {
-    "message": "Yêu cầu một bản sao của tất c�?d�?liệu cá nhân bạn đã tải lên Modrinth. Quá trình này có th�?mất vài phút đ�?hoàn tất."
+    "message": "Yêu cầu một bản sao của tất cếdỿliệu cá nhân bạn đã tải lên Modrinth. Quá trình này có thỿmất vài phút đỿhoàn tất."
   },
   "settings.account.data-export.title": {
-    "message": "Xuất d�?liệu"
+    "message": "Xuất dỿliệu"
   },
   "settings.account.delete.confirm.description": {
-    "message": "Hành động này s�?**ngay lập tức xóa toàn b�?d�?liệu người dùng và các theo dõi của bạn**. Các d�?án của bạn s�?không b�?xóa. Việc xóa tài khoản là không th�?hoàn tác.<br><br>Nếu bạn cần h�?tr�?v�?tài khoản, hãy liên h�?tại [server Discord của Modrinth](https://discord.bbsmc.org.cn)."
+    "message": "Hành động này sế**ngay lập tức xóa toàn bỿdỿliệu người dùng và các theo dõi của bạn**. Các dỿán của bạn sếkhông bỿxóa. Việc xóa tài khoản là không thỿhoàn tác.<br><br>Nếu bạn cần hỿtrỿvỿtài khoản, hãy liên hỿtại [server Discord của Modrinth](https://discord.bbsmc.org.cn)."
   },
   "settings.account.delete.confirm.proceed": {
     "message": "Xoá tài khoản này"
@@ -3636,7 +3636,7 @@
     "message": "Xoá tài khoản"
   },
   "settings.account.delete.section.description": {
-    "message": "Một khi bạn xóa tài khoản, s�?không th�?hoàn tác. Việc xóa tài khoản s�?g�?b�?toàn b�?d�?liệu đính kèm khỏi máy ch�?của chúng tôi, ngoại tr�?các d�?án."
+    "message": "Một khi bạn xóa tài khoản, sếkhông thỿhoàn tác. Việc xóa tài khoản sếgỿbỿtoàn bỿdỿliệu đính kèm khỏi máy chỿcủa chúng tôi, ngoại trỿcác dỿán."
   },
   "settings.account.delete.section.title": {
     "message": "Xoá tài khoản"
@@ -3645,10 +3645,10 @@
     "message": "Lưu email"
   },
   "settings.account.email.field.label": {
-    "message": "Địa ch�?email"
+    "message": "Địa chỿemail"
   },
   "settings.account.email.field.placeholder": {
-    "message": "Nhập địa ch�?email của bạn..."
+    "message": "Nhập địa chỿemail của bạn..."
   },
   "settings.account.email.modal.header.add": {
     "message": "Thêm email"
@@ -3657,7 +3657,7 @@
     "message": "Đổi email"
   },
   "settings.account.email.modal.notice": {
-    "message": "Thông tin tài khoản của bạn s�?không hiển th�?công khai."
+    "message": "Thông tin tài khoản của bạn sếkhông hiển thỿcông khai."
   },
   "settings.account.password.action.remove": {
     "message": "Xoá mật khẩu"
@@ -3669,7 +3669,7 @@
     "message": "Mật khẩu nhập vào không khớp!"
   },
   "settings.account.password.field.confirm-current.description": {
-    "message": "Vui lòng nhập mật khẩu đ�?tiếp tục."
+    "message": "Vui lòng nhập mật khẩu đỿtiếp tục."
   },
   "settings.account.password.field.confirm-current.label": {
     "message": "Xác nhận mật khẩu"
@@ -3735,13 +3735,13 @@
     "message": "Đổi mật khẩu"
   },
   "settings.account.security.password.description.change": {
-    "message": "Thay đổi mật khẩu dùng đ�?đăng nhập vào tài khoản của bạn."
+    "message": "Thay đổi mật khẩu dùng đỿđăng nhập vào tài khoản của bạn."
   },
   "settings.account.security.password.description.change-or-remove": {
-    "message": "Thay đổi hoặc xoá mật khẩu dùng đ�?đăng nhập vào tài khoản của bạn."
+    "message": "Thay đổi hoặc xoá mật khẩu dùng đỿđăng nhập vào tài khoản của bạn."
   },
   "settings.account.security.password.description.set": {
-    "message": "Đặt mật khẩu vĩnh viễn đ�?đăng nhập vào tài khoản của bạn."
+    "message": "Đặt mật khẩu vĩnh viễn đỿđăng nhập vào tài khoản của bạn."
   },
   "settings.account.security.password.title": {
     "message": "Mật khẩu"
@@ -3774,37 +3774,37 @@
     "message": "Thiết lập 2FA"
   },
   "settings.account.security.two-factor.title": {
-    "message": "Xác thực hai yếu t�?
+    "message": "Xác thực hai yếu tỿ
   },
   "settings.account.two-factor.backup.intro": {
-    "message": "Hãy tải xuống và lưu các mã d�?phòng này �?nơi an toàn. Bạn có th�?s�?dụng chúng thay cho mã 2FA nếu bạn mất quyền truy cập vào thiết b�?của mình! Bạn nên bảo v�?những mã này cẩn thận như mật khẩu của mình."
+    "message": "Hãy tải xuống và lưu các mã dỿphòng này ỿnơi an toàn. Bạn có thỿsỿdụng chúng thay cho mã 2FA nếu bạn mất quyền truy cập vào thiết bỿcủa mình! Bạn nên bảo vỿnhững mã này cẩn thận như mật khẩu của mình."
   },
   "settings.account.two-factor.backup.single-use": {
-    "message": "Mã d�?phòng ch�?có th�?s�?dụng một lần."
+    "message": "Mã dỿphòng chỿcó thỿsỿdụng một lần."
   },
   "settings.account.two-factor.error.incorrect-code": {
     "message": "Mã đã nhập không chính xác!"
   },
   "settings.account.two-factor.field.code.description": {
-    "message": "Vui lòng nhập mã xác thực đ�?tiếp tục."
+    "message": "Vui lòng nhập mã xác thực đỿtiếp tục."
   },
   "settings.account.two-factor.field.code.label": {
-    "message": "Nhập mã xác thực hai yếu t�?
+    "message": "Nhập mã xác thực hai yếu tỿ
   },
   "settings.account.two-factor.field.code.placeholder": {
     "message": "Nhập mã..."
   },
   "settings.account.two-factor.setup.intro": {
-    "message": "Xác thực hai yếu t�?giúp bảo mật tài khoản của bạn bằng cách yêu cầu quyền truy cập vào thiết b�?th�?hai đ�?đăng nhập."
+    "message": "Xác thực hai yếu tỿgiúp bảo mật tài khoản của bạn bằng cách yêu cầu quyền truy cập vào thiết bỿthỿhai đỿđăng nhập."
   },
   "settings.account.two-factor.setup.manual-secret": {
-    "message": "Nếu không quét được mã QR, bạn có th�?nhập mã bí mật theo cách th�?công:"
+    "message": "Nếu không quét được mã QR, bạn có thỿnhập mã bí mật theo cách thỿcông:"
   },
   "settings.account.two-factor.setup.scan": {
-    "message": "Quét mã QR bằng <authy-link>Authy</authy-link>, <microsoft-authenticator-link>Microsoft Authenticator</microsoft-authenticator-link> hoặc bất k�?ứng dụng 2FA nào khác đ�?bắt đầu."
+    "message": "Quét mã QR bằng <authy-link>Authy</authy-link>, <microsoft-authenticator-link>Microsoft Authenticator</microsoft-authenticator-link> hoặc bất kỿứng dụng 2FA nào khác đỿbắt đầu."
   },
   "settings.account.two-factor.verify.description": {
-    "message": "Nhập mã xác thực một lần t�?trình xác thực đ�?xác minh quyền truy cập."
+    "message": "Nhập mã xác thực một lần tỿtrình xác thực đỿxác minh quyền truy cập."
   },
   "settings.account.two-factor.verify.label": {
     "message": "Mã xác minh"
@@ -3819,7 +3819,7 @@
     "message": "Thêm URI chuyển hướng"
   },
   "settings.applications.button.cancel": {
-    "message": "Hu�?
+    "message": "Huỿ
   },
   "settings.applications.button.create": {
     "message": "Tạo ứng dụng"
@@ -3852,19 +3852,19 @@
     "message": "Xoá ứng dụng này"
   },
   "settings.applications.delete.confirm.description": {
-    "message": "Thao tác này s�?xóa vĩnh viễn ứng dụng và hủy toàn b�?quyền truy cập của các mã truy cập. (vĩnh viễn!)"
+    "message": "Thao tác này sếxóa vĩnh viễn ứng dụng và hủy toàn bỿquyền truy cập của các mã truy cập. (vĩnh viễn!)"
   },
   "settings.applications.delete.confirm.title": {
     "message": "Bạn có chắc chắn muốn xóa ứng dụng này không?"
   },
   "settings.applications.description.intro": {
-    "message": "Các ứng dụng có th�?được s�?dụng đ�?xác thực người dùng của Modrinth với các sản phẩm của bạn. Đ�?biết thêm thông tin, hãy xem <docs-link>tài liệu API của Modrinth</docs-link>."
+    "message": "Các ứng dụng có thỿđược sỿdụng đỿxác thực người dùng của Modrinth với các sản phẩm của bạn. Đỿbiết thêm thông tin, hãy xem <docs-link>tài liệu API của Modrinth</docs-link>."
   },
   "settings.applications.field.description": {
-    "message": "Mô t�?
+    "message": "Mô tế
   },
   "settings.applications.field.description.placeholder": {
-    "message": "Nhập mô t�?của ứng dụng..."
+    "message": "Nhập mô tếcủa ứng dụng..."
   },
   "settings.applications.field.icon": {
     "message": "Biểu tượng"
@@ -3897,19 +3897,19 @@
     "message": "Thông tin ứng dụng"
   },
   "settings.applications.notification.icon-updated.description": {
-    "message": "Biểu tượng d�?án của bạn đã được cập nhật."
+    "message": "Biểu tượng dỿán của bạn đã được cập nhật."
   },
   "settings.applications.notification.icon-updated.title": {
     "message": "Biểu tượng đã được cập nhật"
   },
   "settings.applications.secret.disclaimer": {
-    "message": "Hãy lưu lại mã bí mật của bạn ngay, nó s�?b�?ẩn sau khi bạn rời khỏi trang này!"
+    "message": "Hãy lưu lại mã bí mật của bạn ngay, nó sếbỿẩn sau khi bạn rời khỏi trang này!"
   },
   "settings.authorizations.about-this-app": {
-    "message": "V�?ứng dụng này"
+    "message": "Vỿứng dụng này"
   },
   "settings.authorizations.description": {
-    "message": "Khi bạn ủy quyền cho một ứng dụng bằng tài khoản Modrinth của mình, bạn đã cấp cho ứng dụng đó quyền truy cập vào tài khoản của bạn. Bạn có th�?quản lý và xem lại quyền truy cập vào tài khoản của mình tại đây bất c�?lúc nào."
+    "message": "Khi bạn ủy quyền cho một ứng dụng bằng tài khoản Modrinth của mình, bạn đã cấp cho ứng dụng đó quyền truy cập vào tài khoản của bạn. Bạn có thỿquản lý và xem lại quyền truy cập vào tài khoản của mình tại đây bất cỿlúc nào."
   },
   "settings.authorizations.head-title": {
     "message": "Quyền hạn"
@@ -3918,16 +3918,16 @@
     "message": "Thu hồi"
   },
   "settings.authorizations.revoke.confirm.description": {
-    "message": "Hành động này s�?thu hồi quyền truy cập của ứng dụng vào tài khoản của bạn. Bạn luôn có th�?cấp lại quyền sau này."
+    "message": "Hành động này sếthu hồi quyền truy cập của ứng dụng vào tài khoản của bạn. Bạn luôn có thỿcấp lại quyền sau này."
   },
   "settings.authorizations.revoke.confirm.title": {
     "message": "Bạn có chắc chắn muốn thu hồi ứng dụng này?"
   },
   "settings.billing.charges.description": {
-    "message": "Tất c�?các khoản thanh toán trước đây cho tài khoản Modrinth của bạn s�?được liệt kê tại đây:"
+    "message": "Tất cếcác khoản thanh toán trước đây cho tài khoản Modrinth của bạn sếđược liệt kê tại đây:"
   },
   "settings.billing.charges.product.medal-trial": {
-    "message": "Máy ch�?dùng th�?Medal"
+    "message": "Máy chỿdùng thỿMedal"
   },
   "settings.billing.charges.product.midas": {
     "message": "Modrinth Plus"
@@ -3954,10 +3954,10 @@
     "message": "Duyệt web không quảng cáo trên bbsmc.org.cn và app Modrinth"
   },
   "settings.billing.midas.benefits.badge": {
-    "message": "Huy hiệu Modrinth+ trên h�?sơ của bạn"
+    "message": "Huy hiệu Modrinth+ trên hỿsơ của bạn"
   },
   "settings.billing.midas.benefits.support": {
-    "message": "Ủng h�?Modrinth và các nhà sáng tạo một cách trực tiếp"
+    "message": "Ủng hỿModrinth và các nhà sáng tạo một cách trực tiếp"
   },
   "settings.billing.midas.benefits.title": {
     "message": "Lợi ích"
@@ -3969,7 +3969,7 @@
     "message": "Bạn đã hủy gói đăng ký của mình."
   },
   "settings.billing.midas.status.cancelled.line2": {
-    "message": "Bạn vẫn s�?gi�?được các đặc quyền của mình cho đến khi kết thúc chu k�?thanh toán hiện tại."
+    "message": "Bạn vẫn sếgiỿđược các đặc quyền của mình cho đến khi kết thúc chu kỿthanh toán hiện tại."
   },
   "settings.billing.midas.status.failed": {
     "message": "Thanh toán gói đăng ký của bạn không thành công. Vui lòng cập nhật phương thức thanh toán."
@@ -3978,16 +3978,16 @@
     "message": "Bạn hiện đang đăng ký:"
   },
   "settings.billing.midas.status.processing": {
-    "message": "Thanh toán của bạn đang được x�?lý. Các đặc quyền s�?được kích hoạt sau khi quá trình thanh toán hoàn tất."
+    "message": "Thanh toán của bạn đang được xỿlý. Các đặc quyền sếđược kích hoạt sau khi quá trình thanh toán hoàn tất."
   },
   "settings.billing.midas.upsell": {
-    "message": "Tr�?thành hội viên Modrinth Plus!"
+    "message": "Trỿthành hội viên Modrinth Plus!"
   },
   "settings.billing.modal.cancel.action": {
     "message": "Hủy gói đăng ký"
   },
   "settings.billing.modal.cancel.description": {
-    "message": "Thao tác này s�?hủy gói đăng ký của bạn. Bạn vẫn được hưởng các quyền lợi cho đến khi kết thúc chu k�?thanh toán hiện tại."
+    "message": "Thao tác này sếhủy gói đăng ký của bạn. Bạn vẫn được hưởng các quyền lợi cho đến khi kết thúc chu kỿthanh toán hiện tại."
   },
   "settings.billing.modal.cancel.title": {
     "message": "Bạn có chắc chắn muốn hủy gói đăng ký không?"
@@ -3996,7 +3996,7 @@
     "message": "Xóa phương thức thanh toán này"
   },
   "settings.billing.modal.delete.description": {
-    "message": "Phương thức thanh toán này s�?b�?xóa vĩnh viễn (thật s�?là vĩnh viễn)."
+    "message": "Phương thức thanh toán này sếbỿxóa vĩnh viễn (thật sỿlà vĩnh viễn)."
   },
   "settings.billing.modal.delete.title": {
     "message": "Bạn có chắc chắn muốn xóa phương thức thanh toán này không?"
@@ -4038,10 +4038,10 @@
     "message": "{shared} CPU dùng chung (Tăng tốc tối đa {bursts} CPU)"
   },
   "settings.billing.pyro.linked-server.not-found": {
-    "message": "Không tìm thấy máy ch�?liên kết nào cho gói đăng ký này. Có một vài lý do giải thích cho việc này. Nếu bạn vừa mới mua máy ch�? đây là điều bình thường. Có th�?mất tới một gi�?đ�?máy ch�?của bạn được cấp phát. Còn không, nếu bạn đã mua máy ch�?này t�?lâu, có kh�?năng nó đã b�?tạm đình ch�? Nếu điều này không đúng với mong đợi của bạn, vui lòng liên h�?Modrinth Support cùng với các thông tin sau:"
+    "message": "Không tìm thấy máy chỿliên kết nào cho gói đăng ký này. Có một vài lý do giải thích cho việc này. Nếu bạn vừa mới mua máy chỿ đây là điều bình thường. Có thỿmất tới một giỿđỿmáy chỿcủa bạn được cấp phát. Còn không, nếu bạn đã mua máy chỿnày tỿlâu, có khếnăng nó đã bỿtạm đình chỿ Nếu điều này không đúng với mong đợi của bạn, vui lòng liên hỿModrinth Support cùng với các thông tin sau:"
   },
   "settings.billing.pyro.linked-server.server-id": {
-    "message": "ID máy ch�? {id}"
+    "message": "ID máy chỿ {id}"
   },
   "settings.billing.pyro.linked-server.stripe-id": {
     "message": "ID Stripe: {id}"
@@ -4050,25 +4050,25 @@
     "message": "{gb} GB RAM"
   },
   "settings.billing.pyro.resubscribe.error.text": {
-    "message": "Đã xảy ra lỗi khi đăng ký lại máy ch�?Modrinth của bạn."
+    "message": "Đã xảy ra lỗi khi đăng ký lại máy chỿModrinth của bạn."
   },
   "settings.billing.pyro.resubscribe.error.title": {
     "message": "Xảy ra lỗi đăng ký lại"
   },
   "settings.billing.pyro.resubscribe.request-submitted.text": {
-    "message": "Nếu máy ch�?đang b�?hủy, có th�?mất 10-15 phút đ�?thiếp lập máy ch�?"
+    "message": "Nếu máy chỿđang bỿhủy, có thỿmất 10-15 phút đỿthiếp lập máy chỿ"
   },
   "settings.billing.pyro.resubscribe.request-submitted.title": {
     "message": "Yêu cầu đăng ký lại đã được gửi"
   },
   "settings.billing.pyro.resubscribe.success.text": {
-    "message": "Gia hạn gói đăng ký máy ch�?thành công"
+    "message": "Gia hạn gói đăng ký máy chỿthành công"
   },
   "settings.billing.pyro.status.failed": {
     "message": "Thanh toán gói đăng ký của bạn không thành công. Vui lòng cập nhật phương thức thanh toán, sau đó hãy đăng ký lại."
   },
   "settings.billing.pyro.status.processing": {
-    "message": "Thanh toán của bạn đang được x�?lý. Máy ch�?của bạn s�?được kích hoạt ngay khi quá trình thanh toán hoàn tất."
+    "message": "Thanh toán của bạn đang được xỿlý. Máy chỿcủa bạn sếđược kích hoạt ngay khi quá trình thanh toán hoàn tất."
   },
   "settings.billing.pyro.storage": {
     "message": "{gb} GB SSD"
@@ -4077,10 +4077,10 @@
     "message": "{gb} GB Swap"
   },
   "settings.billing.pyro_subscription.description": {
-    "message": "Quản lý các gói đăng ký máy ch�?Modrinth của bạn."
+    "message": "Quản lý các gói đăng ký máy chỿModrinth của bạn."
   },
   "settings.billing.pyro_subscription.title": {
-    "message": "Gói đăng ký máy ch�?Modrinth"
+    "message": "Gói đăng ký máy chỿModrinth"
   },
   "settings.billing.renews": {
     "message": "Gia hạn {date}"
@@ -4089,7 +4089,7 @@
     "message": "Đăng ký lại"
   },
   "settings.billing.since": {
-    "message": "T�?{date}"
+    "message": "Tỿ{date}"
   },
   "settings.billing.subscribe": {
     "message": "Đăng ký"
@@ -4107,10 +4107,10 @@
     "message": "Đổi sang hàng {interval, select, monthly {tháng} yearly {năm} other {{interval}}}"
   },
   "settings.billing.switch.tooltip.monthly-additional-per-year": {
-    "message": "Thanh toán hàng tháng s�?tốn thêm {amount} mỗi năm"
+    "message": "Thanh toán hàng tháng sếtốn thêm {amount} mỗi năm"
   },
   "settings.billing.switches-to-billing-on": {
-    "message": "S�?đổi sang hàng {interval, select, monthly {tháng}  yearly {năm} other {{interval}}} vào {date}"
+    "message": "Sếđổi sang hàng {interval, select, monthly {tháng}  yearly {năm} other {{interval}}} vào {date}"
   },
   "settings.billing.update-method": {
     "message": "Cập nhật phương thức"
@@ -4119,28 +4119,28 @@
     "message": "Nâng cấp"
   },
   "settings.display.banner.developer-mode.button": {
-    "message": "Tắt ch�?đ�?nhà phát triển"
+    "message": "Tắt chếđỿnhà phát triển"
   },
   "settings.display.banner.developer-mode.description": {
-    "message": "<strong>Ch�?đ�?nhà phát triển</strong> đang được bật. Ch�?đ�?này cho phép bạn xem các ID nội b�?của nhiều thành phần trên Modrinth, hữu ích nếu bạn là nhà phát triển s�?dụng API của Modrinth. Nhấp vào logo Modrinth �?cuối trang 5 lần đ�?bật hoặc tắt ch�?đ�?nhà phát triển."
+    "message": "<strong>Chếđỿnhà phát triển</strong> đang được bật. Chếđỿnày cho phép bạn xem các ID nội bỿcủa nhiều thành phần trên Modrinth, hữu ích nếu bạn là nhà phát triển sỿdụng API của Modrinth. Nhấp vào logo Modrinth ỿcuối trang 5 lần đỿbật hoặc tắt chếđỿnhà phát triển."
   },
   "settings.display.flags.description": {
-    "message": "Bật hoặc tắt một s�?tính năng trên thiết b�?này."
+    "message": "Bật hoặc tắt một sỿtính năng trên thiết bỿnày."
   },
   "settings.display.flags.title": {
     "message": "Bật / Tắt tính năng"
   },
   "settings.display.notification.developer-mode-deactivated.text": {
-    "message": "Ch�?đ�?nhà phát triển đã b�?tắt"
+    "message": "Chếđỿnhà phát triển đã bỿtắt"
   },
   "settings.display.notification.developer-mode-deactivated.title": {
-    "message": "Ch�?đ�?nhà phát triển đã tắt"
+    "message": "Chếđỿnhà phát triển đã tắt"
   },
   "settings.display.project-list-layouts.datapack": {
-    "message": "Trang Gói d�?liệu"
+    "message": "Trang Gói dỿliệu"
   },
   "settings.display.project-list-layouts.description": {
-    "message": "Chọn b�?cục hiển th�?bạn ưa thích cho từng trang có danh sách d�?án trên thiết b�?này."
+    "message": "Chọn bỿcục hiển thỿbạn ưa thích cho từng trang có danh sách dỿán trên thiết bỿnày."
   },
   "settings.display.project-list-layouts.mod": {
     "message": "Trang mod"
@@ -4164,34 +4164,34 @@
     "message": "Trang gói tài nguyên"
   },
   "settings.display.project-list-layouts.server": {
-    "message": "Trang máy ch�?
+    "message": "Trang máy chỿ
   },
   "settings.display.project-list-layouts.shader": {
     "message": "Trang shader"
   },
   "settings.display.project-list-layouts.title": {
-    "message": "B�?cục danh sách d�?án"
+    "message": "Bỿcục danh sách dỿán"
   },
   "settings.display.project-list-layouts.user": {
-    "message": "Trang h�?sơ người dùng"
+    "message": "Trang hỿsơ người dùng"
   },
   "settings.display.project-list.layouts.collection": {
-    "message": "B�?sưu tập"
+    "message": "Bỿsưu tập"
   },
   "settings.display.sidebar.advanced-rendering.description": {
-    "message": "Bật ch�?đ�?kết xuất nâng cao như hiệu ứng làm m�? có th�?gây vấn đ�?hiệu năng nếu không có tăng tốc phần cứng."
+    "message": "Bật chếđỿkết xuất nâng cao như hiệu ứng làm mỿ có thỿgây vấn đỿhiệu năng nếu không có tăng tốc phần cứng."
   },
   "settings.display.sidebar.advanced-rendering.title": {
     "message": "Kết xuất nâng cao"
   },
   "settings.display.sidebar.external-links-new-tab.description": {
-    "message": "M�?các liên kết dẫn ra ngoài Modrinth trong tab mới. Bất k�?cài đặt này, các liên kết cùng tên miền và trong mô t�?Markdown s�?m�?trong cùng tab, còn các liên kết trong quảng cáo và trang chỉnh sửa s�?m�?trong tab mới."
+    "message": "Mỿcác liên kết dẫn ra ngoài Modrinth trong tab mới. Bất kỿcài đặt này, các liên kết cùng tên miền và trong mô tếMarkdown sếmỿtrong cùng tab, còn các liên kết trong quảng cáo và trang chỉnh sửa sếmỿtrong tab mới."
   },
   "settings.display.sidebar.external-links-new-tab.title": {
-    "message": "M�?liên kết bên ngoài trong tab mới"
+    "message": "Mỿliên kết bên ngoài trong tab mới"
   },
   "settings.display.sidebar.hide-app-promos.description": {
-    "message": "Ẩn các nút “Tải ứng dụng Modrinth�?khỏi thanh điều hướng chính. Trang ứng dụng Modrinth vẫn có th�?được tìm thấy �?trang ch�?hoặc phần chân trang."
+    "message": "Ẩn các nút “Tải ứng dụng Modrinth‿khỏi thanh điều hướng chính. Trang ứng dụng Modrinth vẫn có thỿđược tìm thấy ỿtrang chỿhoặc phần chân trang."
   },
   "settings.display.sidebar.hide-app-promos.title": {
     "message": "Ẩn quảng bá ứng dụng Modrinth"
@@ -4203,25 +4203,25 @@
     "message": "Căn thanh bên sang bên trái nội dung trang."
   },
   "settings.display.sidebar.right-aligned-filters-sidebar.description": {
-    "message": "Căn thanh bên b�?lọc sang bên phải kết qu�?tìm kiếm."
+    "message": "Căn thanh bên bỿlọc sang bên phải kết quếtìm kiếm."
   },
   "settings.display.sidebar.right-aligned-filters-sidebar.title": {
-    "message": "Thanh bên b�?lọc căn phải trên các trang tìm kiếm"
+    "message": "Thanh bên bỿlọc căn phải trên các trang tìm kiếm"
   },
   "settings.display.theme.description": {
-    "message": "Chọn ch�?đ�?màu bạn ưa thích cho Modrinth trên thiết b�?này."
+    "message": "Chọn chỿđỿmàu bạn ưa thích cho Modrinth trên thiết bỿnày."
   },
   "settings.display.theme.title": {
-    "message": "Ch�?đ�?màu"
+    "message": "Chỿđỿmàu"
   },
   "settings.head-title": {
-    "message": "Cài đặt hiển th�?
+    "message": "Cài đặt hiển thỿ
   },
   "settings.pats.action.create": {
     "message": "Tạo PAT"
   },
   "settings.pats.description": {
-    "message": "PAT có th�?được dùng đ�?truy cập API của Modrinth. Chúng có th�?được tạo và thu hồi bất c�?lúc nào. Đ�?biết thêm thông tin, hãy xem <doc-link>tài liệu API của Modrinth</doc-link>."
+    "message": "PAT có thỿđược dùng đỿtruy cập API của Modrinth. Chúng có thỿđược tạo và thu hồi bất cỿlúc nào. Đỿbiết thêm thông tin, hãy xem <doc-link>tài liệu API của Modrinth</doc-link>."
   },
   "settings.pats.modal.create.action": {
     "message": "Tạo PAT"
@@ -4242,7 +4242,7 @@
     "message": "Xoá token này"
   },
   "settings.pats.modal.delete.description": {
-    "message": "Thao tác này s�?xóa vĩnh viễn token này (vĩnh viễn thật s�?."
+    "message": "Thao tác này sếxóa vĩnh viễn token này (vĩnh viễn thật sỿ."
   },
   "settings.pats.modal.delete.title": {
     "message": "Bạn có chắc chắn muốn xoá token này không?"
@@ -4263,10 +4263,10 @@
     "message": "Hết hạn sau {inTime}"
   },
   "settings.pats.token.last-used": {
-    "message": "Lần s�?dụng gần nhất: {ago}"
+    "message": "Lần sỿdụng gần nhất: {ago}"
   },
   "settings.pats.token.never-used": {
-    "message": "Chưa từng s�?dụng"
+    "message": "Chưa từng sỿdụng"
   },
   "settings.sessions.action.revoke-session": {
     "message": "Thu hồi phiên"
@@ -4278,13 +4278,13 @@
     "message": "Phiên hiện tại"
   },
   "settings.sessions.description": {
-    "message": "Dưới đây là tất c�?các thiết b�?hiện đang đăng nhập bằng tài khoản Modrinth của bạn. Bạn có th�?đăng xuất từng thiết b�?riêng l�?\n\nNếu bạn thấy một thiết b�?không quen thuộc, hãy đăng xuất khỏi thiết b�?đó và đổi mật khẩu tài khoản Modrinth ngay lập tức."
+    "message": "Dưới đây là tất cếcác thiết bỿhiện đang đăng nhập bằng tài khoản Modrinth của bạn. Bạn có thỿđăng xuất từng thiết bỿriêng lế\n\nNếu bạn thấy một thiết bỿkhông quen thuộc, hãy đăng xuất khỏi thiết bỿđó và đổi mật khẩu tài khoản Modrinth ngay lập tức."
   },
   "settings.sessions.last-accessed-ago": {
     "message": "Truy cập lần cuối {ago}"
   },
   "settings.sessions.unknown-os": {
-    "message": "H�?điều hành không xác định"
+    "message": "Hỿđiều hành không xác định"
   },
   "settings.sessions.unknown-platform": {
     "message": "Nền tảng không xác định"
@@ -4296,13 +4296,13 @@
     "message": "Nhà phát triển"
   },
   "settings.sidebar.label.display": {
-    "message": "Hiển th�?
+    "message": "Hiển thỿ
   },
   "ui.latest-news-row.latest-news": {
-    "message": "Tin tức mới nhất t�?Modrinth"
+    "message": "Tin tức mới nhất tỿModrinth"
   },
   "ui.latest-news-row.view-all": {
-    "message": "Xem tất c�?tin tức"
+    "message": "Xem tất cếtin tức"
   },
   "ui.newsletter-button.subscribe": {
     "message": "Đăng ký"
@@ -4320,7 +4320,7 @@
     "message": "Chưa đặt môi trường"
   },
   "version.environment.unknown.description": {
-    "message": "Môi trường “{environment}�?không được nhận diện."
+    "message": "Môi trường “{environment}‿không được nhận diện."
   },
   "version.environment.unknown.title": {
     "message": "Môi trường không xác định"
