@@ -1,6 +1,6 @@
 FROM rust:1.95-slim-bookworm AS builder
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    pkg-config libssl-dev libclang-dev clang lld cmake \
+    pkg-config libssl-dev libclang-dev clang lld cmake make \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
