@@ -137,7 +137,7 @@
 							</template>
 							<template v-else>{{ formatMessage(tokenMessages.neverUsed) }}</template>
 						</span>
-						⋯						<span v-tooltip="Date.parse(pat.expires) ? formatDateTime(pat.expires) : null">
+						<span v-tooltip="Date.parse(pat.expires) ? formatDateTime(pat.expires) : null">
 							<template v-if="new Date(pat.expires) > new Date()">
 								{{
 									formatMessage(tokenMessages.expiresIn, {
@@ -153,7 +153,7 @@
 								}}
 							</template>
 						</span>
-						⋯						<span v-tooltip="formatDateTime(pat.created)">
+						<span v-tooltip="formatDateTime(pat.created)">
 							{{
 								formatMessage(commonMessages.createdAgoLabel, {
 									ago: formatRelativeTime(pat.created),

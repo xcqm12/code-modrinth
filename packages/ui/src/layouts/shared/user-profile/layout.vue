@@ -111,7 +111,7 @@
 					<span class="text-lg font-bold text-primary">
 						{{ formatMessage(messages.authProvidersLabel) }}
 					</span>
-					<span>{{ user.auth_providers?.join(', ') || '— }}</span>
+					<span>{{ user.auth_providers?.join(', ') || '—' }}</span>
 				</div>
 
 				<div v-if="isAdminViewing" class="flex flex-col gap-1">
