@@ -111,7 +111,7 @@
 					<span class="text-lg font-bold text-primary">
 						{{ formatMessage(messages.authProvidersLabel) }}
 					</span>
-					<span>{{ user.auth_providers?.join(', ') || 'â€? }}</span>
+					<span>{{ user.auth_providers?.join(', ') || 'â€” }}</span>
 				</div>
 
 				<div v-if="isAdminViewing" class="flex flex-col gap-1">
@@ -133,7 +133,7 @@
 							Venmo ({{ user.payout_data.venmo_handle }})
 						</template>
 						<template v-if="!user.payout_data?.paypal_address && !user.payout_data?.venmo_handle">
-							â€?						</template>
+							â€”						</template>
 					</span>
 				</div>
 

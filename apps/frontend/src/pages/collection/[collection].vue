@@ -176,7 +176,7 @@
 											{{ formatMessage(commonMessages.rejectedLabel) }}
 										</template>
 									</div>
-									<span class="text-secondary">â€?/span>
+									<span class="text-secondary">â€¢</span>
 								</template>
 								<span>
 									<IntlFormatted

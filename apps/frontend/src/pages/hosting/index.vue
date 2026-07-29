@@ -1001,7 +1001,7 @@ const lowestPrice = computed(() => {
 
 const title = 'Modrinth Hosting'
 const description =
-	'Start your own Minecraft server directly on Modrinth. Play your favorite mods, plugins, and datapacks â€?without the hassle of setup.'
+	'Start your own Minecraft server directly on Modrinth. Play your favorite mods, plugins, and datapacks â€”without the hassle of setup.'
 
 useSeoMeta({
 	title,

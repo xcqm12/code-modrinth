@@ -429,7 +429,7 @@ const moderationAdmonition = computed<{
 defineMessage({
 	id: 'project.moderation.admonition.under-review.body.4',
 	defaultMessage:
-		'We aim to review submissions in 24â€?8 hours, but some projects may face delays. This does not reflect an issue with your submission.',
+		'We aim to review submissions in 24â€“8 hours, but some projects may face delays. This does not reflect an issue with your submission.',
 })
 
 const moderatorSeeUserUi = computed<boolean>({
