@@ -52,13 +52,14 @@ services:
     restart: unless-stopped
     volumes:
       - typesense-data:/data
+      - ./healthcheck-typesense.sh:/usr/local/bin/healthcheck.sh:ro
     command: >
       --data-dir=/data
       --api-key=${TYPESENSE_API_KEY:?err}
       --enable-cors
       --listen-port=8108
     healthcheck:
-      test: ['CMD', '/usr/bin/bash', '-c', 'exec 3<>/dev/tcp/127.0.0.1/8108 && echo -e "GET /health HTTP/1.0\r\nHost: localhost\r\n\r\n" >&3 && grep -q "HTTP/1.0 200" <&3']
+      test: ['CMD', '/usr/local/bin/healthcheck.sh']
       interval: 10s
       timeout: 5s
       retries: 5
