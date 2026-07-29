@@ -18,7 +18,7 @@ RUN cp apps/frontend/.env.prod apps/frontend/.env
 
 RUN pnpm install --frozen-lockfile
 
-ENV NODE_OPTIONS="--max-old-space-size=8192"
+ENV NODE_OPTIONS="--max-old-space-size=4096"
 ENV NITRO_PRESET=node_server
 ENV BUILD_ENV=production
 ENV PREVIEW=true
