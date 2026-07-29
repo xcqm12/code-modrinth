@@ -58,7 +58,7 @@ services:
       --enable-cors
       --listen-port=8108
     healthcheck:
-      test: ['CMD-SHELL', 'exec 3<>/dev/tcp/127.0.0.1/8108 || exit 1; echo -e "GET /health HTTP/1.0\r\nHost: localhost\r\n\r\n" >&3 && grep -q OK <&3']
+      test: ['CMD', '/usr/bin/bash', '-c', 'exec 3<>/dev/tcp/127.0.0.1/8108 && echo -e "GET /health HTTP/1.0\r\nHost: localhost\r\n\r\n" >&3 && grep -q "HTTP/1.0 200" <&3']
       interval: 10s
       timeout: 5s
       retries: 5
