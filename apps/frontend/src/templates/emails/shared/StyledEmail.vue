@@ -47,7 +47,7 @@ const socialLinks = Object.freeze<readonly SocialLink[]>([
 		src: 'https://cdn-raw.bbsmc.org.cn/email/youtube.png',
 	},
 	{
-		href: 'https://github.com/modrinth',
+		href: 'https://github.com/xcqm12/code-modrinth',
 		alt: 'GitHub',
 		src: 'https://cdn-raw.bbsmc.org.cn/email/github.png',
 	},

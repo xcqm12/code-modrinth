@@ -19,7 +19,7 @@ import {
 } from '@modrinth/ui'
 import { commonSettingsMessages } from '@modrinth/ui/src/utils/common-messages.js'
 
-import TextLogo from '~/components/brand/TextLogo.vue'
+import qilingmiaoLogo from '~/assets/images/qilingmiao.png'
 
 const flags = useFeatureFlags()
 const { formatMessage } = useVIntl()
@@ -29,16 +29,16 @@ const config = useRuntimeConfig()
 const messages = defineMessages({
 	modrinthInformation: {
 		id: 'layout.footer.modrinth-information',
-		defaultMessage: 'Modrinth information',
+		defaultMessage: 'Site information',
 	},
 	openSource: {
 		id: 'layout.footer.open-source',
-		defaultMessage: 'Modrinth is <github-link>open source</github-link>.',
+		defaultMessage: 'This site is <github-link>open source</github-link> under LGPL.',
 	},
 	legalDisclaimer: {
 		id: 'layout.footer.legal-disclaimer',
 		defaultMessage:
-			'NOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.',
+			'Minecraft and 我的世界 are trademarks of Microsoft Corporation. This site is not affiliated with or endorsed by Microsoft. This site is not affiliated with Modrinth. The website is released under the LGPL license.',
 	},
 	basedOnLabel: {
 		id: 'layout.footer.based-on-label',
@@ -95,7 +95,7 @@ const socialLinks: {
 	},
 	{
 		label: defineMessage({ id: 'layout.footer.social.github', defaultMessage: 'GitHub' }),
-		href: 'https://github.com/modrinth',
+		href: 'https://github.com/xcqm12/code-modrinth',
 		icon: GithubIcon,
 	},
 ]
@@ -173,7 +173,7 @@ const footerLinks: {
 				}),
 			},
 			{
-				href: 'https://github.com/modrinth/code/issues',
+				href: 'https://github.com/xcqm12/code-modrinth/issues',
 				label: defineMessage({
 					id: 'layout.footer.resources.report-issues',
 					defaultMessage: 'Report issues',
@@ -266,9 +266,10 @@ function developerModeIncrement() {
 					:aria-label="formatMessage(messages.modrinthInformation)"
 				>
 					<div class="flex items-center gap-2">
-						<TextLogo
-							aria-hidden="true"
-							class="text-logo button-base h-6 w-auto text-contrast lg:h-8"
+						<img
+							:src="qilingmiaoLogo"
+							alt="Logo"
+							class="button-base h-8 w-auto text-contrast lg:h-10"
 							@click="developerModeIncrement()"
 						/>
 						<ButtonStyled v-if="flags.developerMode" circular type="transparent" color="brand">
@@ -302,7 +303,7 @@ function developerModeIncrement() {
 							<IntlFormatted :message-id="messages.openSource">
 								<template #github-link="{ children }">
 									<a
-										href="https://github.com/modrinth/code"
+										href="https://github.com/xcqm12/code-modrinth"
 										class="text-brand hover:underline"
 										target="_blank"
 										rel="noopener"

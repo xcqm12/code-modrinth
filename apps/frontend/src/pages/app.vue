@@ -872,7 +872,7 @@ useSeoMeta({
 					<div class="description">
 						<IntlFormatted :message-id="messages.openSourceDescription">
 							<template #github-link="{ children }">
-								<a href="https://github.com/modrinth/code" rel="noopener" target="_blank">
+								<a href="https://github.com/xcqm12/code-modrinth" rel="noopener" target="_blank">
 									<component :is="() => children" />
 								</a>
 							</template>
@@ -1180,7 +1180,7 @@ useSeoMeta({
 					<template #issues-link="{ children }">
 						<a
 							class="underline hover:brightness-[--hover-brightness]"
-							href="https://github.com/modrinth/code/issues/3057"
+							href="https://github.com/xcqm12/code-modrinth/issues/3057"
 							target="_blank"
 						>
 							<component :is="() => children" />

@@ -80,9 +80,10 @@
 					:aria-label="formatMessage(messages.modrinthHomePage)"
 					class="group hover:brightness-[--hover-brightness] focus-visible:brightness-[--hover-brightness]"
 				>
-					<TextLogo
-						aria-hidden="true"
-						class="h-7 w-auto text-contrast transition-transform group-active:scale-[0.98]"
+					<img
+						:src="qilingmiaoLogo"
+						alt="Site Logo"
+						class="h-10 w-auto text-contrast transition-transform group-active:scale-[0.98]"
 					/>
 				</NuxtLink>
 			</div>
@@ -792,7 +793,7 @@ import { isAdmin, isStaff, UserBadge } from '@modrinth/utils'
 import { useQuery } from '@tanstack/vue-query'
 
 import { getTaxThreshold } from '@/providers/creator-withdraw.ts'
-import TextLogo from '~/components/brand/TextLogo.vue'
+import qilingmiaoLogo from '~/assets/images/qilingmiao.png'
 import BatchCreditModal from '~/components/ui/admin/BatchCreditModal.vue'
 import GeneratedStateErrorsBanner from '~/components/ui/banner/GeneratedStateErrorsBanner.vue'
 import PreviewBanner from '~/components/ui/banner/PreviewBanner.vue'

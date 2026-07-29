@@ -133,7 +133,7 @@
 		<p>
 			We aim to be as transparent as possible with creator revenue. All of our code is open source,
 			including our
-			<a href="https://github.com/modrinth/code/blob/main/apps/labrinth/src/queue/payouts">
+			<a href="https://github.com/xcqm12/code-modrinth/blob/main/apps/labrinth/src/queue/payouts">
 				revenue distribution system</a
 			>. We also have an
 			<a href="https://api.bbsmc.org.cn/v3/payout/platform_revenue">API route</a>

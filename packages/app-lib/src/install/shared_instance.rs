@@ -25,7 +25,7 @@ use std::collections::{HashMap, HashSet};
 use std::path::PathBuf;
 use uuid::Uuid;
 
-const MAX_SHARED_INSTANCE_EXTERNAL_FILE_SIZE: u64 = 500 * 1024 * 1024;
+const MAX_SHARED_INSTANCE_EXTERNAL_FILE_SIZE: u64 = 1024 * 1024 * 1024;
 const MAX_SHARED_INSTANCE_INITIAL_BUFFER_SIZE: u64 = 8 * 1024 * 1024;
 
 pub(super) async fn attach_pending_shared_instance(
