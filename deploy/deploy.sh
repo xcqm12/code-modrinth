@@ -184,9 +184,93 @@ setup_ssl() {
     fi
 }
 
+# ---- Free port 80/443 for Docker nginx ----
+free_web_ports() {
+    log_info "Freeing ports 80/443 for Docker nginx..."
+
+    local freed_something=false
+
+    # 1. Stop and disable system nginx
+    if systemctl is-active --quiet nginx 2>/dev/null; then
+        log_warn "System nginx is running, stopping and disabling it..."
+        sudo systemctl stop nginx 2>/dev/null || true
+        sudo systemctl disable nginx 2>/dev/null || true
+        log_ok "System nginx stopped and disabled"
+        freed_something=true
+    fi
+
+    # 2. Stop and disable system apache2
+    if systemctl is-active --quiet apache2 2>/dev/null; then
+        log_warn "System apache2 is running, stopping and disabling it..."
+        sudo systemctl stop apache2 2>/dev/null || true
+        sudo systemctl disable apache2 2>/dev/null || true
+        log_ok "System apache2 stopped and disabled"
+        freed_something=true
+    fi
+
+    # 3. Stop and disable httpd (CentOS/RHEL)
+    if systemctl is-active --quiet httpd 2>/dev/null; then
+        log_warn "System httpd is running, stopping and disabling it..."
+        sudo systemctl stop httpd 2>/dev/null || true
+        sudo systemctl disable httpd 2>/dev/null || true
+        log_ok "System httpd stopped and disabled"
+        freed_something=true
+    fi
+
+    # 4. Stop any Docker containers occupying port 80 or 443
+    local pids_80 pids_443
+    pids_80=$(ss -tlnp 2>/dev/null | grep ':80 ' | grep -oP 'pid=\K[0-9]+' || true)
+    pids_443=$(ss -tlnp 2>/dev/null | grep ':443 ' | grep -oP 'pid=\K[0-9]+' || true)
+
+    if [[ -n "$pids_80" ]] || [[ -n "$pids_443" ]]; then
+        log_warn "Found processes still occupying port 80/443, attempting to stop them..."
+
+        # Find and stop Docker containers using these ports
+        for pid in $pids_80 $pids_443; do
+            local container_id
+            container_id=$(docker inspect --format '{{.ID}}' "$(cat /proc/$pid/cgroup 2>/dev/null | grep -oP 'docker[-/]\K[0-9a-f]{12,}' | head -1)" 2>/dev/null || true)
+            if [[ -n "$container_id" ]]; then
+                log_warn "Stopping Docker container $container_id occupying port 80/443..."
+                docker stop "$container_id" 2>/dev/null || true
+                freed_something=true
+            fi
+        done
+
+        # Force kill any remaining processes on port 80/443
+        if command -v fuser >/dev/null 2>&1; then
+            sudo fuser -k 80/tcp 2>/dev/null || true
+            sudo fuser -k 443/tcp 2>/dev/null || true
+            freed_something=true
+        fi
+    fi
+
+    # 5. Final check
+    sleep 2
+    local still_80 still_443
+    still_80=$(ss -tlnp 2>/dev/null | grep ':80 ' || true)
+    still_443=$(ss -tlnp 2>/dev/null | grep ':443 ' || true)
+
+    if [[ -n "$still_80" ]] || [[ -n "$still_443" ]]; then
+        log_error "Port 80/443 is still occupied after cleanup attempt:"
+        [[ -n "$still_80" ]] && echo "  80:  $still_80"
+        [[ -n "$still_443" ]] && echo "  443: $still_443"
+        log_error "Please manually stop the conflicting service and re-run deploy."
+        exit 1
+    fi
+
+    if [[ "$freed_something" == "true" ]]; then
+        log_ok "Ports 80/443 freed successfully"
+    else
+        log_ok "Ports 80/443 are already free"
+    fi
+}
+
 # ---- Build and deploy ----
 deploy() {
     log_info "Starting deployment..."
+
+    # Free ports 80/443 before starting nginx
+    free_web_ports
 
     # Build Docker images
     log_info "Building labrinth (Rust backend) Docker image..."
