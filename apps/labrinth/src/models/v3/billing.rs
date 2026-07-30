@@ -297,6 +297,10 @@ impl ChargeStatus {
 #[derive(Serialize, Deserialize, Debug, Clone, Copy, PartialEq, Eq)]
 pub enum PaymentPlatform {
     Stripe,
+    Alipay,
+    WechatPay,
+    Epay,
+    Mapay,
     None,
 }
 
@@ -304,6 +308,10 @@ impl PaymentPlatform {
     pub fn from_string(string: &str) -> PaymentPlatform {
         match string {
             "stripe" => PaymentPlatform::Stripe,
+            "alipay" => PaymentPlatform::Alipay,
+            "wechatpay" | "wechat" => PaymentPlatform::WechatPay,
+            "epay" => PaymentPlatform::Epay,
+            "mapay" => PaymentPlatform::Mapay,
             "none" => PaymentPlatform::None,
             _ => PaymentPlatform::Stripe,
         }
@@ -312,6 +320,10 @@ impl PaymentPlatform {
     pub fn as_str(&self) -> &'static str {
         match self {
             PaymentPlatform::Stripe => "stripe",
+            PaymentPlatform::Alipay => "alipay",
+            PaymentPlatform::WechatPay => "wechatpay",
+            PaymentPlatform::Epay => "epay",
+            PaymentPlatform::Mapay => "mapay",
             PaymentPlatform::None => "none",
         }
     }

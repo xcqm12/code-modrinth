@@ -287,6 +287,37 @@ vars! {
     PAYPAL_NVP_SIGNATURE: String = "none";
 
     PAYPAL_BALANCE_ALERT_THRESHOLD: u64 = 0u64;
+
+    // Chinese payment gateways
+    // Alipay (支付宝)
+    ALIPAY_APP_ID: String = "none";
+    ALIPAY_PRIVATE_KEY: String = "none";
+    ALIPAY_PUBLIC_KEY: String = "none";
+    ALIPAY_GATEWAY_URL: String = "https://openapi-sandbox.dl.alipaydev.com/gateway.do";
+    ALIPAY_NOTIFY_URL: String = "none";
+    ALIPAY_RETURN_URL: String = "none";
+
+    // WeChat Pay (微信支付)
+    WECHATPAY_APP_ID: String = "none";
+    WECHATPAY_MCH_ID: String = "none";
+    WECHATPAY_API_KEY: String = "none";
+    WECHATPAY_API_V3_KEY: String = "none";
+    WECHATPAY_NOTIFY_URL: String = "none";
+
+    // 易支付 (epay) - Chinese payment aggregation
+    EPAY_API_URL: String = "none";
+    EPAY_PID: String = "none";
+    EPAY_KEY: String = "none";
+    EPAY_NOTIFY_URL: String = "none";
+    EPAY_RETURN_URL: String = "none";
+
+    // 码支付 (mapay) - Chinese payment aggregation
+    MAPAY_API_URL: String = "none";
+    MAPAY_APP_ID: String = "none";
+    MAPAY_APP_SECRET: String = "none";
+    MAPAY_NOTIFY_URL: String = "none";
+    MAPAY_RETURN_URL: String = "none";
+
     BREX_BALANCE_ALERT_THRESHOLD: u64 = 0u64;
     TREMENDOUS_BALANCE_ALERT_THRESHOLD: u64 = 0u64;
     MURAL_BALANCE_ALERT_THRESHOLD: u64 = 0u64;

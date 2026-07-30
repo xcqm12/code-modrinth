@@ -125,6 +125,29 @@ PAYPAL_NVP_PASSWORD=
 PAYPAL_NVP_SIGNATURE=
 PAYPAL_BALANCE_ALERT_THRESHOLD=0
 
+# Chinese payment gateways (fill in your credentials)
+ALIPAY_APP_ID=
+ALIPAY_PRIVATE_KEY=
+ALIPAY_PUBLIC_KEY=
+ALIPAY_GATEWAY_URL=https://openapi-sandbox.dl.alipaydev.com/gateway.do
+ALIPAY_NOTIFY_URL=https://api.bbsmc.org.cn/_internal/payment/notify/alipay
+ALIPAY_RETURN_URL=https://bbsmc.org.cn/billing
+WECHATPAY_APP_ID=
+WECHATPAY_MCH_ID=
+WECHATPAY_API_KEY=
+WECHATPAY_API_V3_KEY=
+WECHATPAY_NOTIFY_URL=https://api.bbsmc.org.cn/_internal/payment/notify/wechatpay
+EPAY_API_URL=
+EPAY_PID=
+EPAY_KEY=
+EPAY_NOTIFY_URL=https://api.bbsmc.org.cn/_internal/payment/notify/epay
+EPAY_RETURN_URL=https://bbsmc.org.cn/billing
+MAPAY_API_URL=
+MAPAY_APP_ID=
+MAPAY_APP_SECRET=
+MAPAY_NOTIFY_URL=https://api.bbsmc.org.cn/_internal/payment/notify/mapay
+MAPAY_RETURN_URL=https://bbsmc.org.cn/billing
+
 STORAGE_BACKEND=local
 ENVEOF
         log_warn "Please edit $SCRIPT_DIR/.env with your production secrets before deploying!"

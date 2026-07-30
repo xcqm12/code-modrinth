@@ -37,6 +37,7 @@ pub mod database;
 pub mod env;
 pub mod file_hosting;
 pub mod models;
+pub mod payment;
 pub mod queue;
 pub mod routes;
 pub mod scheduler;
@@ -76,6 +77,7 @@ pub struct LabrinthConfig {
     pub http_client: web::Data<HttpClient>,
     pub tiltify_client: web::Data<TiltifyClient>,
     pub kafka_client: web::Data<util::kafka::KafkaClientState>,
+    pub payment_registry: web::Data<payment::PaymentGatewayRegistry>,
     pub webauthn: web::Data<Webauthn>,
 }
 
@@ -92,6 +94,7 @@ pub fn app_setup(
     email_queue: EmailQueue,
     gotenberg_client: GotenbergClient,
     kafka_client: web::Data<util::kafka::KafkaClientState>,
+    payment_registry: web::Data<payment::PaymentGatewayRegistry>,
     enable_background_tasks: bool,
 ) -> LabrinthConfig {
     info!("Starting labrinth on {}", &ENV.BIND_ADDR);
@@ -306,6 +309,7 @@ pub fn app_setup(
         http_client,
         tiltify_client,
         kafka_client,
+        payment_registry,
         archon_client: web::Data::new(
             ArchonClient::from_env()
                 .expect("ARCHON_URL and PYRO_API_KEY must be set"),
@@ -362,6 +366,7 @@ pub fn app_data_config(
     .app_data(labrinth_config.rate_limiter.clone())
     .app_data(labrinth_config.kafka_client.clone())
     .app_data(labrinth_config.search_state.clone())
+    .app_data(labrinth_config.payment_registry.clone())
     .app_data(labrinth_config.webauthn.clone());
 }
 

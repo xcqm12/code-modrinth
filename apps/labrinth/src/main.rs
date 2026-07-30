@@ -167,6 +167,73 @@ async fn app() -> std::io::Result<()> {
             .expect("Kafka connection failed"),
     );
 
+    // Initialize Chinese payment gateways
+    let mut payment_registry = labrinth::payment::PaymentGatewayRegistry::new();
+    let http_client = reqwest::Client::new();
+
+    if ENV.ALIPAY_APP_ID != "none" && ENV.ALIPAY_PRIVATE_KEY != "none" {
+        info!("Registering Alipay payment gateway");
+        payment_registry.register(Box::new(
+            labrinth::payment::alipay::AlipayGateway::new(
+                labrinth::payment::alipay::AlipayConfig {
+                    app_id: ENV.ALIPAY_APP_ID.clone(),
+                    private_key: ENV.ALIPAY_PRIVATE_KEY.clone(),
+                    alipay_public_key: ENV.ALIPAY_PUBLIC_KEY.clone(),
+                    gateway_url: ENV.ALIPAY_GATEWAY_URL.clone(),
+                    notify_url: ENV.ALIPAY_NOTIFY_URL.clone(),
+                    return_url: ENV.ALIPAY_RETURN_URL.clone(),
+                    http_client: http_client.clone(),
+                },
+            ),
+        ));
+    }
+
+    if ENV.WECHATPAY_APP_ID != "none" && ENV.WECHATPAY_MCH_ID != "none" {
+        info!("Registering WeChat Pay payment gateway");
+        payment_registry.register(Box::new(
+            labrinth::payment::wechatpay::WechatPayGateway::new(
+                labrinth::payment::wechatpay::WechatPayConfig {
+                    app_id: ENV.WECHATPAY_APP_ID.clone(),
+                    mch_id: ENV.WECHATPAY_MCH_ID.clone(),
+                    api_key: ENV.WECHATPAY_API_KEY.clone(),
+                    api_v3_key: ENV.WECHATPAY_API_V3_KEY.clone(),
+                    cert_path: None,
+                    gateway_url: "https://api.mch.weixin.qq.com".into(),
+                    notify_url: ENV.WECHATPAY_NOTIFY_URL.clone(),
+                    http_client: http_client.clone(),
+                },
+            ),
+        ));
+    }
+
+    if ENV.EPAY_API_URL != "none" && ENV.EPAY_PID != "none" {
+        info!("Registering epay payment gateway");
+        payment_registry.register(Box::new(
+            labrinth::payment::epay::EpayGateway::new(
+                ENV.EPAY_API_URL.clone(),
+                ENV.EPAY_PID.clone(),
+                ENV.EPAY_KEY.clone(),
+                ENV.EPAY_NOTIFY_URL.clone(),
+                ENV.EPAY_RETURN_URL.clone(),
+            ),
+        ));
+    }
+
+    if ENV.MAPAY_API_URL != "none" && ENV.MAPAY_APP_ID != "none" {
+        info!("Registering 码支付 payment gateway");
+        payment_registry.register(Box::new(
+            labrinth::payment::mapay::MapayGateway::new(
+                ENV.MAPAY_API_URL.clone(),
+                ENV.MAPAY_APP_ID.clone(),
+                ENV.MAPAY_APP_SECRET.clone(),
+                ENV.MAPAY_NOTIFY_URL.clone(),
+                ENV.MAPAY_RETURN_URL.clone(),
+            ),
+        ));
+    }
+
+    let payment_registry = actix_web::web::Data::new(payment_registry);
+
     if let Some(task) = args.run_background_task {
         info!("Running task {task:?} and exiting");
         task.run(
@@ -219,6 +286,7 @@ async fn app() -> std::io::Result<()> {
         email_queue,
         gotenberg_client,
         kafka_client,
+        payment_registry,
         !args.no_background_tasks,
     );
 

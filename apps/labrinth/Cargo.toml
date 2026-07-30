@@ -75,7 +75,9 @@ json-patch = { workspace = true }
 lettre = { workspace = true }
 meilisearch-sdk = { workspace = true, features = ["reqwest"] }
 modrinth-content-management = { workspace = true }
+md-5 = { workspace = true }
 modrinth-util = { workspace = true, features = ["decimal", "sentry", "utoipa"] }
+md-5 = { workspace = true }
 muralpay = { workspace = true, features = ["client", "mock", "utoipa"] }
 murmur2 = { workspace = true }
 neverbounce = { workspace = true }
@@ -86,6 +88,7 @@ prometheus = { workspace = true }
 quick-xml = { workspace = true }
 rand = { workspace = true }
 rand_chacha = { workspace = true }
+rsa = { workspace = true }
 rdkafka = { workspace = true }
 redis = { workspace = true, features = [
   "ahash",

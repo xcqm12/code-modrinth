@@ -14,6 +14,7 @@ pub mod medal;
 pub mod moderation;
 pub mod mural;
 pub mod pats;
+pub mod payment;
 pub mod search;
 pub mod server_ping;
 pub mod session;
@@ -49,6 +50,7 @@ pub fn config(cfg: &mut web::ServiceConfig) {
             .configure(gotenberg::config)
             .configure(medal::config)
             .configure(mural::config)
+            .configure(payment::config)
             .configure(statuses::config),
     )
     .service(
