@@ -340,12 +340,16 @@ deploy() {
     # Create temporary swap for build stability on 8G servers
     create_swap 4G
 
-    # Build Docker images
+    # Build Docker images SEQUENTIALLY to avoid OOM (Rust + Node.js together exceed 8G)
+    # Force parallel limit to 1 to ensure true sequential builds
+    export COMPOSE_PARALLEL_LIMIT=1
+    export DOCKER_BUILDKIT=1
+
     log_info "Building labrinth (Rust backend) Docker image..."
-    $DOCKER_COMPOSE build labrinth
+    CARGO_BUILD_JOBS=2 $DOCKER_COMPOSE build --progress=plain labrinth
 
     log_info "Building frontend (Nuxt) Docker image..."
-    $DOCKER_COMPOSE build frontend
+    $DOCKER_COMPOSE build --progress=plain frontend
 
     # Remove temporary swap after build
     remove_swap
@@ -389,12 +393,40 @@ wait_for_services() {
     sleep 15
 }
 
+# ---- Wait for Clickhouse to be ready ----
+# labrinth 启动时需要连接 Clickhouse，但 index-search 用 --no-deps 跳过依赖，
+# 需要显式等待 Clickhouse 健康后再跑索引。
+wait_for_clickhouse() {
+    log_info "Waiting for Clickhouse to become healthy..."
+    local timeout=60
+    local elapsed=0
+
+    # Source the .env to get CLICKHOUSE_PASSWORD
+    set -a; source "$SCRIPT_DIR/.env"; set +a
+
+    while [[ "$elapsed" -lt "$timeout" ]]; do
+        if $DOCKER_COMPOSE exec -T clickhouse \
+            clickhouse-client --password "$CLICKHOUSE_PASSWORD" --query "SELECT 1" 2>/dev/null; then
+            log_ok "Clickhouse is ready"
+            return 0
+        fi
+        sleep 3
+        elapsed=$((elapsed + 3))
+    done
+
+    log_error "Clickhouse not ready after ${timeout}s. Index task will likely fail."
+    return 1
+}
+
 # ---- Initial search index ----
 # labrinth 主进程只把项目变更投递到 Kafka，由 labrinth-indexer 消费写入 Typesense。
 # 但增量索引只处理"新的"变更，首次部署时 Typesense 是空的，所以需要跑一次全量索引，
 # 否则已存在/已审核通过的项目不会出现在搜索和浏览页面。
 initial_search_index() {
     log_info "Running initial full search index (this may take a while)..."
+
+    # Ensure Clickhouse is accepting connections before running the index task
+    wait_for_clickhouse || true
 
     if $DOCKER_COMPOSE run --rm --no-deps labrinth \
         /labrinth/labrinth --run-background-task index-search; then

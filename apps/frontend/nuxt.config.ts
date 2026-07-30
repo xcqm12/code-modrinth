@@ -118,6 +118,7 @@ export default defineNuxtConfig({
 			}),
 		],
 		build: {
+			target: 'es2020',
 			rollupOptions: {
 				external: ['cloudflare:workers'],
 			},
