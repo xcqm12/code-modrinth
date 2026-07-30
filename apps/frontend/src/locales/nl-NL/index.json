@@ -1,4 +1,4 @@
-﻿{
+{
   "action.cancel": {
     "message": "Annuleren"
   },
@@ -654,10 +654,10 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "?MB"
+    "message": "∞ MB"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
-    "message": "?× ?MB"
+    "message": "∞ × ∞ MB"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MB"
@@ -1755,7 +1755,7 @@
     "message": "Lagere kosten beschikbaar"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-message": {
-    "message": "Je hebt USD voor PayPal International geselecteerd. <direct-paypal-link>Switch naar direct PayPal</direct-paypal-link> voor betere tarieven (?% in plaats van ?%)."
+    "message": "Je hebt USD voor PayPal International geselecteerd. <direct-paypal-link>Switch naar direct PayPal</direct-paypal-link> voor betere tarieven (≈2% in plaats van ≈6%)."
   },
   "dashboard.creator-withdraw-modal.tremendous-details.withdrawal-amount-min-max": {
     "message": "{min} min., {max} max. opnamebedrag."
@@ -4706,23 +4706,14 @@
   "settings.applications.button.add-redirect-uri": {
     "message": "Voeg een URI toe"
   },
-  "settings.applications.button.cancel": {
-    "message": "Annuleren"
-  },
   "settings.applications.button.create": {
     "message": "Maak nieuwe"
   },
   "settings.applications.button.delete": {
     "message": "Verwijder"
   },
-  "settings.applications.button.edit": {
-    "message": "Bewerk"
-  },
   "settings.applications.button.new": {
     "message": "Nieuw project"
-  },
-  "settings.applications.button.save-changes": {
-    "message": "Wijzigingen opslaan"
   },
   "settings.applications.button.upload-icon": {
     "message": "Pictogram uploaden"
@@ -5181,7 +5172,7 @@
     "message": "{count, plural, one {# persoon heeft} other {# mensen hebben}} zich al aangesloten"
   },
   "shared-instance.invite.loading": {
-    "message": "Uitnodiging laden?"
+    "message": "Uitnodiging laden…"
   },
   "shared-instance.invite.title": {
     "message": "{name} heeft je uitgenodigd om te spelen"

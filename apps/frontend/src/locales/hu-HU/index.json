@@ -636,10 +636,10 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "?MB"
+    "message": "∞ MB"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
-    "message": "?× ?MB"
+    "message": "∞ × ∞ MB"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MB"
@@ -693,7 +693,7 @@
     "message": "amit eddig használtál"
   },
   "app-marketing.hero.app-screenshot-alt": {
-    "message": "A Modrinth App képernyőképe, amelyen a Cobblemon modcsomag a „Tartalom?oldalon van megnyitva."
+    "message": "A Modrinth App képernyőképe, amelyen a Cobblemon modcsomag a „Tartalom” oldalon van megnyitva."
   },
   "app-marketing.hero.description": {
     "message": "A Modrinth App egy egyedülálló, nyílt forráskódú kliens, amely lehetővé teszi, hogy kedvenc modjaidat játssz, és naprakészen tartsd őket, mindezt egy kis, praktikus csomagban."
@@ -1431,7 +1431,7 @@
     "message": "Készen állsz! 🎉"
   },
   "dashboard.creator-tax-form-modal.entity.description": {
-    "message": "A külföldi jogi személy olyan üzleti egységet jelent, amelyet az Egyesült Államokon kívül hoztak létre (például nem amerikai részvénytársaság, társulás vagy korlátolt felelősségű társaság ?LLC)."
+    "message": "A külföldi jogi személy olyan üzleti egységet jelent, amelyet az Egyesült Államokon kívül hoztak létre (például nem amerikai részvénytársaság, társulás vagy korlátolt felelősségű társaság – LLC)."
   },
   "dashboard.creator-tax-form-modal.entity.foreign-entity": {
     "message": "Külföldi szervezet"
@@ -1485,7 +1485,7 @@
     "message": "Üzleti szervezet"
   },
   "dashboard.creator-withdraw-modal.kyc.entity-description": {
-    "message": "Az „üzleti szervezet?egy olyan regisztrált szervezetre utal, mint egy vállalat, partnerség vagy Kft."
+    "message": "Az „üzleti szervezet” egy olyan regisztrált szervezetre utal, mint egy vállalat, partnerség vagy Kft."
   },
   "dashboard.creator-withdraw-modal.kyc.entity-question": {
     "message": "Szervezetként vagy személyként veszel fel?"
@@ -1662,7 +1662,7 @@
     "message": "Alacsonyabb díjak elérhetőek"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-message": {
-    "message": "A PayPal International szolgáltatáshoz az USD pénznemet választotta. <direct-paypal-link>Váltson át a közvetlen PayPal-re</direct-paypal-link> a kedvezőbb díjakért (?% helyett ?%)."
+    "message": "A PayPal International szolgáltatáshoz az USD pénznemet választotta. <direct-paypal-link>Váltson át a közvetlen PayPal-re</direct-paypal-link> a kedvezőbb díjakért (≈6% helyett ≈2%)."
   },
   "dashboard.creator-withdraw-modal.withdraw-button": {
     "message": "Pénzfelvétel"
@@ -3078,7 +3078,7 @@
     "message": "Meghívtak, hogy csatlakozz a projekthez"
   },
   "project-member-header.invitation-with-role": {
-    "message": "Meghívtak, hogy legyél ennek a projektnek a tagja „{role}?szereppel."
+    "message": "Meghívtak, hogy legyél ennek a projektnek a tagja „{role}” szereppel."
   },
   "project-member-header.success-decline": {
     "message": "Elutasítottad a meghívást"
@@ -3261,7 +3261,7 @@
     "message": "Letöltés"
   },
   "project.download.download-as-zip": {
-    "message": "Letöltés  ?zip? fájlként"
+    "message": "Letöltés  「.zip」  fájlként"
   },
   "project.download.download-version": {
     "message": "{version} letöltése"
@@ -3273,7 +3273,7 @@
     "message": "Letöltés az ajánlottakkal"
   },
   "project.download.download-with-recommended-as-zip": {
-    "message": "Letöltés az ajánlottokkal  ?zip? formátumban"
+    "message": "Letöltés az ajánlottokkal  「.zip」  formátumban"
   },
   "project.download.duplicate-dependencies-hidden": {
     "message": "A duplázott függőségek el vannak rejtve"
@@ -3417,7 +3417,7 @@
     "message": "Projekt frissítve"
   },
   "project.settings.general.name.description": {
-    "message": "Kerüld az előtagokat, utótagokat, zárójeleket vagy hozzáadott leírásokat ?csak a projekt tényleges nevét használd."
+    "message": "Kerüld az előtagokat, utótagokat, zárójeleket vagy hozzáadott leírásokat – csak a projekt tényleges nevét használd."
   },
   "project.settings.general.name.placeholder.1": {
     "message": "pl. Nether Overhaul 2"
@@ -3876,7 +3876,7 @@
     "message": "Szinkronizálás a szerverrel"
   },
   "servers.manage.content.title": {
-    "message": "Tartalom ?{serverName} ?Modrinth"
+    "message": "Tartalom – {serverName} – Modrinth"
   },
   "servers.notice.actions": {
     "message": "Műveletek"
@@ -3906,13 +3906,13 @@
     "message": "Nincsen értesítés"
   },
   "servers.plan.large.description": {
-    "message": "Ideális 15?5 játékos számára, modcsomagokhoz vagy intenzív moddoláshoz."
+    "message": "Ideális 15–25 játékos számára, modcsomagokhoz vagy intenzív moddoláshoz."
   },
   "servers.plan.medium.description": {
-    "message": "Nagyszerű 6?5 játékos számára, többféle moddal."
+    "message": "Nagyszerű 6–15 játékos számára, többféle moddal."
   },
   "servers.plan.small.description": {
-    "message": "Tökéletes 1? barát számára, néhány kisebb moddal."
+    "message": "Tökéletes 1–5 barát számára, néhány kisebb moddal."
   },
   "settings.account.button.complete-setup": {
     "message": "Beállítás befejezése"
@@ -4130,23 +4130,14 @@
   "settings.applications.button.add-redirect-uri": {
     "message": "Átírányítás URI hozzáadása"
   },
-  "settings.applications.button.cancel": {
-    "message": "Mégse"
-  },
   "settings.applications.button.create": {
     "message": "Alkalmazás létrehozása"
   },
   "settings.applications.button.delete": {
     "message": "Törlés"
   },
-  "settings.applications.button.edit": {
-    "message": "Szerkesztés"
-  },
   "settings.applications.button.new": {
     "message": "Új alkalmazás"
-  },
-  "settings.applications.button.save-changes": {
-    "message": "Módosítások mentése"
   },
   "settings.applications.button.upload-icon": {
     "message": "Ikon feltöltése"
@@ -4494,7 +4485,7 @@
     "message": "Külső linkek megnyitása új lapon"
   },
   "settings.display.sidebar.hide-app-promos.description": {
-    "message": "Elrejti a „Szerezd meg a Modrinth Appot?gombokat az elsődleges navigációból. A Modrinth App oldal továbbra is megtalálható a nyitóoldalon vagy a láblécben."
+    "message": "Elrejti a „Szerezd meg a Modrinth Appot” gombokat az elsődleges navigációból. A Modrinth App oldal továbbra is megtalálható a nyitóoldalon vagy a láblécben."
   },
   "settings.display.sidebar.hide-app-promos.title": {
     "message": "Modrinth App promóciók elrejtése"

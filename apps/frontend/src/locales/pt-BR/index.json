@@ -1,4 +1,4 @@
-﻿{
+{
   "action.cancel": {
     "message": "Cancelar"
   },
@@ -654,10 +654,10 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "?MB"
+    "message": "∞ MB"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
-    "message": "?× ?MB"
+    "message": "∞ × ∞ MB"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MB"
@@ -1758,7 +1758,7 @@
     "message": "Taxas mais baixas disponíveis"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-message": {
-    "message": "Você selecionou USD para PayPal Internacional. <direct-paypal-link>Alterne para o PayPal direto</direct-paypal-link> para obter taxas melhores (?% ao invés de ?%)."
+    "message": "Você selecionou USD para PayPal Internacional. <direct-paypal-link>Alterne para o PayPal direto</direct-paypal-link> para obter taxas melhores (≈2% ao invés de ≈6%)."
   },
   "dashboard.creator-withdraw-modal.tremendous-details.withdrawal-amount-min-max": {
     "message": "{min} valor mínimo, {max} valor máximo de saque."
@@ -3690,7 +3690,7 @@
     "message": "Você ainda pode modificar seu projeto, isso não afetará sua posição na fila."
   },
   "project.moderation.admonition.under-review.body.4": {
-    "message": "Buscamos revisar submissões dentro de 24?8 horas, mas alguns projetos talvez sofram atrasos. Isso não significa que há um problema com sua submissão."
+    "message": "Buscamos revisar submissões dentro de 24–48 horas, mas alguns projetos talvez sofram atrasos. Isso não significa que há um problema com sua submissão."
   },
   "project.moderation.admonition.under-review.body.4.alt-week": {
     "message": "Buscamos revisar submissões dentro de uma semana, mas alguns projetos talvez sofram atrasos. Isso não significa que há um problema com sua submissão."
@@ -4431,13 +4431,13 @@
     "message": "Sem avisos"
   },
   "servers.plan.large.description": {
-    "message": "Ideal para 15?5 jogadores, pacotes de mods ou mods pesados."
+    "message": "Ideal para 15–25 jogadores, pacotes de mods ou mods pesados."
   },
   "servers.plan.medium.description": {
-    "message": "Bom para 6?5 jogadores e vários mods."
+    "message": "Bom para 6–15 jogadores e vários mods."
   },
   "servers.plan.small.description": {
-    "message": "Perfeito para 1? amigos e alguns mods leves."
+    "message": "Perfeito para 1–5 amigos e alguns mods leves."
   },
   "servers.purchase.step.plan.most-popular": {
     "message": "Mais popular"
@@ -4709,23 +4709,14 @@
   "settings.applications.button.add-redirect-uri": {
     "message": "Adicionar URI de redirecionamento"
   },
-  "settings.applications.button.cancel": {
-    "message": "Cancelar"
-  },
   "settings.applications.button.create": {
     "message": "Criar app"
   },
   "settings.applications.button.delete": {
     "message": "Excluir"
   },
-  "settings.applications.button.edit": {
-    "message": "Editar"
-  },
   "settings.applications.button.new": {
     "message": "Novo aplicativo"
-  },
-  "settings.applications.button.save-changes": {
-    "message": "Salvar alterações"
   },
   "settings.applications.button.upload-icon": {
     "message": "Enviar ícone"
@@ -4947,7 +4938,7 @@
     "message": "Erro ao reassinar"
   },
   "settings.billing.pyro.resubscribe.request-submitted.text": {
-    "message": "Se o servidor estiver cancelado no momento, a configuração pode levar de 10?5 minutos."
+    "message": "Se o servidor estiver cancelado no momento, a configuração pode levar de 10–15 minutos."
   },
   "settings.billing.pyro.resubscribe.request-submitted.title": {
     "message": "Solicitação de reassinar enviada"
@@ -5199,7 +5190,7 @@
     "message": "{count, plural, one {# pessoa} other {# pessoas}} já entraram"
   },
   "shared-instance.invite.loading": {
-    "message": "Carregando convite?"
+    "message": "Carregando convite…"
   },
   "shared-instance.invite.title": {
     "message": "{name} convidou você para jogar"

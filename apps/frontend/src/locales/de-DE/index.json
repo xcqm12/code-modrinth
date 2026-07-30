@@ -1,4 +1,4 @@
-﻿{
+{
   "action.cancel": {
     "message": "Abbrechen"
   },
@@ -654,10 +654,10 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "?MB"
+    "message": "∞ MB"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
-    "message": "?× ?MB"
+    "message": "∞ × ∞ MB"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MB"
@@ -981,7 +981,7 @@
     "message": "Möchtest du diese Kollektion wirklich löschen?"
   },
   "collection.description": {
-    "message": "{description} ?Schau dir die Kollektion {name} von {username} auf Modrinth an"
+    "message": "{description} – Schau dir die Kollektion {name} von {username} auf Modrinth an"
   },
   "collection.description.following": {
     "message": "Automatisch generierte Kollektion aller Projekte, denen du folgst."
@@ -1428,7 +1428,7 @@
     "message": "Widerrufen"
   },
   "dashboard.affiliate-links.revoke-confirm.title": {
-    "message": "Bist du sicher, dass du deinen Partnerlink „{title}?widerrufen möchtest?"
+    "message": "Bist du sicher, dass du deinen Partnerlink „{title}“ widerrufen möchtest?"
   },
   "dashboard.affiliate-links.search": {
     "message": "Partnerlinks durchsuchen..."
@@ -1758,7 +1758,7 @@
     "message": "Niedrigere Gebühren verfügbar"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-message": {
-    "message": "Du has USD für PayPal International ausgewählt. <direct-paypal-link>Wechsle zu direktem PayPal</direct-paypal-link> für bessere Gebühren (?% statt ?%)."
+    "message": "Du has USD für PayPal International ausgewählt. <direct-paypal-link>Wechsle zu direktem PayPal</direct-paypal-link> für bessere Gebühren (≈2% statt ≈6%)."
   },
   "dashboard.creator-withdraw-modal.tremendous-details.withdrawal-amount-min-max": {
     "message": "{min} min, {max} max Auszahlungsbetrag."
@@ -4401,13 +4401,13 @@
     "message": "Keine Mitteilungen"
   },
   "servers.plan.large.description": {
-    "message": "Ideal für 15?5 Spieler, Modpacks oder intensives Modding."
+    "message": "Ideal für 15–25 Spieler, Modpacks oder intensives Modding."
   },
   "servers.plan.medium.description": {
-    "message": "Geeignet für 6?5 Spieler und mehrere Mods."
+    "message": "Geeignet für 6–15 Spieler und mehrere Mods."
   },
   "servers.plan.small.description": {
-    "message": "Perfekt für 1? Freunde mit ein paar kleinen Mods."
+    "message": "Perfekt für 1–5 Freunde mit ein paar kleinen Mods."
   },
   "servers.purchase.step.plan.most-popular": {
     "message": "Am beliebtesten"
@@ -4578,7 +4578,7 @@
     "message": "Passkey löschen"
   },
   "settings.account.security.passkey.remove.description": {
-    "message": "Dadurch wird der Passkey „{name}?endgültig gelöscht. Du kannst dich mit ihm nicht mehr anmelden."
+    "message": "Dadurch wird der Passkey „{name}“ endgültig gelöscht. Du kannst dich mit ihm nicht mehr anmelden."
   },
   "settings.account.security.passkey.remove.title": {
     "message": "Möchtest du diesen Passkey wirklich löschen?"
@@ -4679,23 +4679,14 @@
   "settings.applications.button.add-redirect-uri": {
     "message": "Weiterleitungs-URI hinzufügen"
   },
-  "settings.applications.button.cancel": {
-    "message": "Abbrechen"
-  },
   "settings.applications.button.create": {
     "message": "Anwendung erstellen"
   },
   "settings.applications.button.delete": {
     "message": "Löschen"
   },
-  "settings.applications.button.edit": {
-    "message": "Bearbeiten"
-  },
   "settings.applications.button.new": {
     "message": "Neue Anwendung"
-  },
-  "settings.applications.button.save-changes": {
-    "message": "Änderungen speichern"
   },
   "settings.applications.button.upload-icon": {
     "message": "Icon hochladen"
@@ -5169,7 +5160,7 @@
     "message": "{count, plural, one {# Person ist} other {# Personen sind}} bereits beigetreten"
   },
   "shared-instance.invite.loading": {
-    "message": "Einladung wird geladen?"
+    "message": "Einladung wird geladen…"
   },
   "shared-instance.invite.title": {
     "message": "{name} hat dich zum Spielen eingeladen"
@@ -5253,7 +5244,7 @@
     "message": "Keine Umgebung festgelegt"
   },
   "version.environment.unknown.description": {
-    "message": "Die Umgebung: „{environment}?wird nicht erkannt."
+    "message": "Die Umgebung: „{environment}“ wird nicht erkannt."
   },
   "version.environment.unknown.title": {
     "message": "Unbekannte Umgebung"

@@ -1,4 +1,4 @@
-﻿{
+{
   "action.cancel": {
     "message": "Avbryt"
   },
@@ -552,10 +552,10 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "?MB"
+    "message": "∞ MB"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
-    "message": "?× ?MB"
+    "message": "∞ × ∞ MB"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MB"
@@ -609,7 +609,7 @@
     "message": "du använt förut"
   },
   "app-marketing.hero.app-screenshot-alt": {
-    "message": "Skärmdump av Modrinth App med en Cobblemon-instans öppen på sidan ”Innehåll?"
+    "message": "Skärmdump av Modrinth App med en Cobblemon-instans öppen på sidan ”Innehåll”."
   },
   "app-marketing.hero.description": {
     "message": "Modrinth App är en unik launcher med öppen källkod som låter dig spela dina favoritmoddar och hålla de uppdaterade, allt i ett smidigt litet paket."
@@ -3084,7 +3084,7 @@
     "message": "Projekt uppdaterat"
   },
   "project.settings.general.name.description": {
-    "message": "Undvik prefix, suffix, parenteser och beskrivningar ?endast projektets riktiga namn."
+    "message": "Undvik prefix, suffix, parenteser och beskrivningar — endast projektets riktiga namn."
   },
   "project.settings.general.name.placeholder.1": {
     "message": "t.ex. Nether Overhaul 2"
@@ -3507,13 +3507,13 @@
     "message": "Nivå"
   },
   "servers.plan.large.description": {
-    "message": "Perfekt för 15?5 spelare, modpaket, eller tungt moddande."
+    "message": "Perfekt för 15–25 spelare, modpaket, eller tungt moddande."
   },
   "servers.plan.medium.description": {
-    "message": "Bra för 6?5 spelare och flera moddar."
+    "message": "Bra för 6–15 spelare och flera moddar."
   },
   "servers.plan.small.description": {
-    "message": "Perfekt för 1? vänner med några få lätta moddar."
+    "message": "Perfekt för 1–5 vänner med några få lätta moddar."
   },
   "servers.purchase.step.plan.most-popular": {
     "message": "Populärast"
@@ -3713,23 +3713,14 @@
   "settings.applications.button.add-more": {
     "message": "Lägg till mer"
   },
-  "settings.applications.button.cancel": {
-    "message": "Avbryt"
-  },
   "settings.applications.button.create": {
     "message": "Skapa app"
   },
   "settings.applications.button.delete": {
     "message": "Ta bort"
   },
-  "settings.applications.button.edit": {
-    "message": "Redigera"
-  },
   "settings.applications.button.new": {
     "message": "Ny applikation"
-  },
-  "settings.applications.button.save-changes": {
-    "message": "Spara ändringar"
   },
   "settings.applications.button.upload-icon": {
     "message": "Ladda upp ikon"
@@ -4158,7 +4149,7 @@
     "message": "En Modrinth-användare"
   },
   "shared-instance.invite.loading": {
-    "message": "Laddar inbjudan?"
+    "message": "Laddar inbjudan…"
   },
   "shared-instance.invite.title": {
     "message": "{name} har bjudit in dig till att spela"

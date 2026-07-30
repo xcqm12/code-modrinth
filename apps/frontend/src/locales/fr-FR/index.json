@@ -1,4 +1,4 @@
-﻿{
+{
   "action.cancel": {
     "message": "Annuler"
   },
@@ -654,10 +654,10 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "?Mo"
+    "message": "∞ Mo"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
-    "message": "?× ?Mo"
+    "message": "∞ × ∞ Mo"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 Mo"
@@ -1752,7 +1752,7 @@
     "message": "Frais réduits disponibles"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-message": {
-    "message": "Vous avez sélectionné USD pour PayPal International. <direct-paypal-link>Passez à PayPal direct</direct-paypal-link> pour des frais plus avantageux (? % au lieu de ? %)."
+    "message": "Vous avez sélectionné USD pour PayPal International. <direct-paypal-link>Passez à PayPal direct</direct-paypal-link> pour des frais plus avantageux (≈2 % au lieu de ≈6 %)."
   },
   "dashboard.creator-withdraw-modal.tremendous-details.withdrawal-amount-min-max": {
     "message": "{min} montant de retrait minimum, {max} montant de retrait maximum."
@@ -1950,7 +1950,7 @@
     "message": "Solde"
   },
   "dashboard.revenue.estimated-tooltip.msg1": {
-    "message": "Les revenus estimés peuvent changer jusqu’?leur disponibilité."
+    "message": "Les revenus estimés peuvent changer jusqu’à leur disponibilité."
   },
   "dashboard.revenue.estimated-tooltip.msg2": {
     "message": "Cliquez pour lire comment Modrinth gère vos revenus."
@@ -2718,7 +2718,7 @@
     "message": "Mettre à jour les informations de facturation"
   },
   "layout.banner.subscription-payment-failed.description": {
-    "message": "Un ou plusieurs abonnements n'ont pas pu être renouvelés. Veuillez mettre à jour votre mode de paiement pour éviter de perdre votre accès?"
+    "message": "Un ou plusieurs abonnements n'ont pas pu être renouvelés. Veuillez mettre à jour votre mode de paiement pour éviter de perdre votre accès !"
   },
   "layout.banner.subscription-payment-failed.title": {
     "message": "Action de facturation requise."
@@ -3354,7 +3354,7 @@
     "message": "Votre projet à été {status, select, rejected {rejeté} withheld {retenue} other {{status}}} par un employé de Modrinth. La plupart des cas vous pouvez renvoyer votre projet pour l'examination après avoir compris et appliqué la consigne du message de l'employé."
   },
   "project-moderation-nags.submit-checklist-tooltip": {
-    "message": "Vous devez compléter les étapes obligatoires dans la liste de contrôle de publication?"
+    "message": "Vous devez compléter les étapes obligatoires dans la liste de contrôle de publication !"
   },
   "project-moderation-nags.submit-for-review": {
     "message": "Soumettre pour examen"
@@ -3453,7 +3453,7 @@
     "message": "Vérifier le projet"
   },
   "project.actions.servers-promo.description": {
-    "message": "Les serveurs Modrinth Hosting sont la solution la plus facile pour jouer entre amis facilement?"
+    "message": "Les serveurs Modrinth Hosting sont la solution la plus facile pour jouer entre amis facilement !"
   },
   "project.actions.servers-promo.pricing": {
     "message": "À partir de {price}<small> / mois</small>"
@@ -4020,7 +4020,7 @@
     "message": "Exemples : contenu malveillant, spam, offensant, trompeur, mensonger ou illégal."
   },
   "report.form-not-for": {
-    "message": "Ce formulaire n’est pas destiné à?"
+    "message": "Ce formulaire n’est pas destiné à :"
   },
   "report.go-to-report": {
     "message": "Aller au signalement"
@@ -4050,13 +4050,13 @@
     "message": "Les résumés de Microsoft Defender, VirusTotal ou la détection de logiciels malveillants par IA ne constituent pas des preuves suffisantes et ne seront pas acceptés."
   },
   "report.please-report": {
-    "message": "Veuillez signaler?"
+    "message": "Veuillez signaler :"
   },
   "report.question.content-id": {
     "message": "Quel est l’ID de {item} ?"
   },
   "report.question.content-type": {
-    "message": "Quel type de contenu signalez-vous?"
+    "message": "Quel type de contenu signalez-vous ?"
   },
   "report.question.report-reason": {
     "message": "Quelle règle de Modrinth {item} viole-t-il ?"
@@ -4392,13 +4392,13 @@
     "message": "Aucun avis"
   },
   "servers.plan.large.description": {
-    "message": "Idéal pour 15?5 joueurs, des modpacks, ou le modding intensif."
+    "message": "Idéal pour 15–25 joueurs, des modpacks, ou le modding intensif."
   },
   "servers.plan.medium.description": {
-    "message": "Parfait pour 6?5 joueurs et plusieurs mods."
+    "message": "Parfait pour 6–15 joueurs et plusieurs mods."
   },
   "servers.plan.small.description": {
-    "message": "Parfait pour 1? amis et quelques mods légers."
+    "message": "Parfait pour 1–5 amis et quelques mods légers."
   },
   "servers.purchase.step.plan.most-popular": {
     "message": "Le plus populaire"
@@ -4464,7 +4464,7 @@
     "message": "Enregistrer le mot de passe"
   },
   "settings.account.password.error.mismatch": {
-    "message": "Les mots de passe saisis ne correspondent pas?"
+    "message": "Les mots de passe saisis ne correspondent pas !"
   },
   "settings.account.password.field.confirm-current.description": {
     "message": "Veuillez saisir votre mot de passe pour continuer."
@@ -4632,7 +4632,7 @@
     "message": "Les codes de secours ne peuvent être utilisés qu’une seule fois."
   },
   "settings.account.two-factor.error.incorrect-code": {
-    "message": "Le code saisi est incorrect?"
+    "message": "Le code saisi est incorrect !"
   },
   "settings.account.two-factor.field.code.description": {
     "message": "Veuillez saisir un code d’authentification à deux facteurs pour continuer."
@@ -4667,23 +4667,14 @@
   "settings.applications.button.add-redirect-uri": {
     "message": "Ajouter une URI de redirection"
   },
-  "settings.applications.button.cancel": {
-    "message": "Annuler"
-  },
   "settings.applications.button.create": {
     "message": "Créer une appli"
   },
   "settings.applications.button.delete": {
     "message": "Supprimer"
   },
-  "settings.applications.button.edit": {
-    "message": "Modifier"
-  },
   "settings.applications.button.new": {
     "message": "Nouvelle application"
-  },
-  "settings.applications.button.save-changes": {
-    "message": "Sauvegarder les changements"
   },
   "settings.applications.button.upload-icon": {
     "message": "Charger une icône"
@@ -4770,7 +4761,7 @@
     "message": "Cela révoquera l’accès de l’application à votre compte. Vous pourrez toujours la réautoriser plus tard."
   },
   "settings.authorizations.revoke.confirm.title": {
-    "message": "Êtes-vous sûr·e de vouloir révoquer cette application?"
+    "message": "Êtes-vous sûr·e de vouloir révoquer cette application ?"
   },
   "settings.billing.charges.description": {
     "message": "Toutes vos transactions passées sur votre compte Modrinth seront affichées ici :"
@@ -4818,7 +4809,7 @@
     "message": "Vous avez annulé votre abonnement."
   },
   "settings.billing.midas.status.cancelled.line2": {
-    "message": "Vous conserverez vos avantages jusqu’?la fin du cycle de facturation en cours."
+    "message": "Vous conserverez vos avantages jusqu’à la fin du cycle de facturation en cours."
   },
   "settings.billing.midas.status.failed": {
     "message": "Le paiement de votre abonnement a échoué. Veuillez mettre à jour votre mode de paiement."
@@ -4836,10 +4827,10 @@
     "message": "Annuler l’abonnement"
   },
   "settings.billing.modal.cancel.description": {
-    "message": "Cela annulera votre abonnement. Vous conserverez vos avantages jusqu’?la fin du cycle de facturation en cours."
+    "message": "Cela annulera votre abonnement. Vous conserverez vos avantages jusqu’à la fin du cycle de facturation en cours."
   },
   "settings.billing.modal.cancel.title": {
-    "message": "Êtes-vous sûr·e de vouloir annuler votre abonnement?"
+    "message": "Êtes-vous sûr·e de vouloir annuler votre abonnement ?"
   },
   "settings.billing.modal.delete.action": {
     "message": "Supprimer ce mode de paiement"
@@ -4884,10 +4875,10 @@
     "message": "{price} / {interval}"
   },
   "settings.billing.pyro.cpu": {
-    "message": "{shared} processeurs partagés (pics jusqu’?{bursts} processeurs)"
+    "message": "{shared} processeurs partagés (pics jusqu’à {bursts} processeurs)"
   },
   "settings.billing.pyro.linked-server.not-found": {
-    "message": "Un serveur lié n’a pas pu être trouvé pour cet abonnement. Il y a plusieurs explications possibles. Si vous venez d’acheter votre serveur, c’est normal. Il peut prendre jusqu’?une heure pour que votre serveur soit provisionné. Sinon, si vous avez acheté ce serveur il y a un certain temps, il a probablement été suspendu depuis. Si ce n’est pas ce à quoi vous vous attendiez, veuillez contacter le support Modrinth avec les informations suivantes :"
+    "message": "Un serveur lié n’a pas pu être trouvé pour cet abonnement. Il y a plusieurs explications possibles. Si vous venez d’acheter votre serveur, c’est normal. Il peut prendre jusqu’à une heure pour que votre serveur soit provisionné. Sinon, si vous avez acheté ce serveur il y a un certain temps, il a probablement été suspendu depuis. Si ce n’est pas ce à quoi vous vous attendiez, veuillez contacter le support Modrinth avec les informations suivantes :"
   },
   "settings.billing.pyro.linked-server.server-id": {
     "message": "ID du serveur : {id}"
@@ -5157,7 +5148,7 @@
     "message": "{count, plural, one {# personne a} other {# personnes ont}} déjà rejoint"
   },
   "shared-instance.invite.loading": {
-    "message": "Chargement de l'invitation?"
+    "message": "Chargement de l'invitation…"
   },
   "shared-instance.invite.title": {
     "message": "{name} vous a invité à jouer"
