@@ -15,7 +15,7 @@ export default defineConfig({
 			social: {
 				github: 'https://github.com/modrinth/code',
 				discord: 'https://discord.bbsmc.org.cn',
-				'x.com': 'https://x.com/modrinth',
+				'x.com': 'https://x.com/xingchenqimiao',
 				mastodon: 'https://floss.social/@modrinth',
 				threads: 'https://threads.net/@modrinth',
 			},

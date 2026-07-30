@@ -90,7 +90,7 @@ const socialLinks: {
 	},
 	{
 		label: defineMessage({ id: 'layout.footer.social.x', defaultMessage: 'X' }),
-		href: 'https://x.com/modrinth',
+		href: 'https://x.com/xingchenqimiao',
 		icon: TwitterIcon,
 	},
 	{

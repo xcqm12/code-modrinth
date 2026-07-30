@@ -32,7 +32,7 @@ const socialLinks = Object.freeze<readonly SocialLink[]>([
 		src: 'https://cdn-raw.bbsmc.org.cn/email/mastodon.png',
 	},
 	{
-		href: 'https://x.com/modrinth',
+		href: 'https://x.com/xingchenqimiao',
 		alt: 'X (Twitter)',
 		src: 'https://cdn-raw.bbsmc.org.cn/email/x.png',
 	},

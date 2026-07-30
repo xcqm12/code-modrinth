@@ -2790,7 +2790,7 @@
     "message": "法律文件"
   },
   "layout.footer.legal-disclaimer": {
-    "message": "非官?Minecraft 产品，未?Mojang ?Microsoft 批准或关联?"
+    "message": "Minecraft 以及 我的世界 为美国微软公司的商标，本站与微软公司没有从属关系。本站与 Modrinth 无从属关系，网站遵循 LGPL 协议开源。"
   },
   "layout.footer.legal.copyright-policy": {
     "message": "版权政策?DMCA"
@@ -2811,7 +2811,7 @@
     "message": "Modrinth 信息"
   },
   "layout.footer.open-source": {
-    "message": "Modrinth 是一?github-link>开源项?/github-link>?"
+    "message": "本站是一个<github-link>开源项目</github-link>"
   },
   "layout.footer.products": {
     "message": "产品"
