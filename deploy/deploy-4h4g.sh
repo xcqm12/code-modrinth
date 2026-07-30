@@ -236,12 +236,12 @@ build_images() {
     # 1. Labrinth (Rust)
     log_info "Building labrinth (Rust, CARGO_BUILD_JOBS=${cargo_jobs})..."
     CARGO_BUILD_JOBS=${cargo_jobs} DOCKER_BUILDKIT=1 \
-        $COMPOSE_CMD build --progress=plain labrinth
+        docker compose --progress plain $COMPOSE_BASE $COMPOSE_4H4G build labrinth
 
     # 2. Frontend (Nuxt) - 使用内部地址构建
     log_info "Building frontend (Nuxt, max-old-space-size=${node_mem})..."
     DOCKER_BUILDKIT=1 \
-        $COMPOSE_CMD build --progress=plain frontend
+        docker compose --progress plain $COMPOSE_BASE $COMPOSE_4H4G build frontend
 
     cleanup_swap
     log_ok "All images built"
