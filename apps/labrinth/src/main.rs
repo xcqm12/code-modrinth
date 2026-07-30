@@ -169,7 +169,6 @@ async fn app() -> std::io::Result<()> {
 
     // Initialize Chinese payment gateways
     let mut payment_registry = labrinth::payment::PaymentGatewayRegistry::new();
-    let http_client = reqwest::Client::new();
 
     if ENV.ALIPAY_APP_ID != "none" && ENV.ALIPAY_PRIVATE_KEY != "none" {
         info!("Registering Alipay payment gateway");
@@ -182,7 +181,6 @@ async fn app() -> std::io::Result<()> {
                     gateway_url: ENV.ALIPAY_GATEWAY_URL.clone(),
                     notify_url: ENV.ALIPAY_NOTIFY_URL.clone(),
                     return_url: ENV.ALIPAY_RETURN_URL.clone(),
-                    http_client: http_client.clone(),
                 },
             ),
         ));
@@ -200,7 +198,6 @@ async fn app() -> std::io::Result<()> {
                     cert_path: None,
                     gateway_url: "https://api.mch.weixin.qq.com".into(),
                     notify_url: ENV.WECHATPAY_NOTIFY_URL.clone(),
-                    http_client: http_client.clone(),
                 },
             ),
         ));
