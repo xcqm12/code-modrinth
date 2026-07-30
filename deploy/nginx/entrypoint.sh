@@ -15,8 +15,9 @@ for domain in $DOMAINS; do
     if [ ! -f "$cert_file" ] || [ ! -f "$key_file" ]; then
         echo "Generating self-signed certificate for $domain..."
         mkdir -p "$cert_dir"
-        openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
-            -keyout "$key_file" \
+        openssl ecparam -genkey -name prime256v1 -out "$key_file" && \
+        openssl req -new -x509 -days 365 \
+            -key "$key_file" \
             -out "$cert_file" \
             -subj "/CN=$domain/O=Self-Signed/OU=Development"
         echo "Done: $domain"
