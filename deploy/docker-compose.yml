@@ -375,7 +375,7 @@ services:
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
       - ./nginx/entrypoint.sh:/entrypoint.sh:ro
-      - ./ssl:/etc/nginx/ssl:ro
+      - ./ssl:/etc/nginx/ssl
       - uploads-data:/data/uploads:ro
     entrypoint: ['/bin/sh', '/entrypoint.sh']
     depends_on:
