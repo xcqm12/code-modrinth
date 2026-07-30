@@ -1176,6 +1176,11 @@ pub async fn user_customer(
     .await?
     .1;
 
+    // If Stripe is not configured, return empty to avoid a crash
+    if ENV.STRIPE_API_KEY == "none" || user.stripe_customer_id.is_none() {
+        return Ok(HttpResponse::NoContent().finish());
+    }
+
     let customer_id = get_or_create_customer(
         user.id,
         user.stripe_customer_id.as_deref(),

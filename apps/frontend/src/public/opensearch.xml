@@ -3,8 +3,8 @@
 	xmlns="http://a9.com/-/spec/opensearch/1.1/"
 	xmlns:moz="http://www.mozilla.org/2006/browser/search/"
 >
-	<ShortName>Modrinth mods</ShortName>
-	<Description>Search for mods on Modrinth, the open source modding platform.</Description>
+	<ShortName>8h8g mods</ShortName>
+	<Description>Search for mods on 8h8g, the open source modding platform.</Description>
 	<InputEncoding>UTF-8</InputEncoding>
 	<Image width="16" height="16" type="image/x-icon">https://bbsmc.org.cn/favicon.ico</Image>
 	<Url
