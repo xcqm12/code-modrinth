@@ -389,6 +389,23 @@ wait_for_services() {
     sleep 15
 }
 
+# ---- Initial search index ----
+# labrinth 主进程只把项目变更投递到 Kafka，由 labrinth-indexer 消费写入 Typesense。
+# 但增量索引只处理"新的"变更，首次部署时 Typesense 是空的，所以需要跑一次全量索引，
+# 否则已存在/已审核通过的项目不会出现在搜索和浏览页面。
+initial_search_index() {
+    log_info "Running initial full search index (this may take a while)..."
+
+    if $DOCKER_COMPOSE run --rm --no-deps labrinth \
+        /labrinth/labrinth --run-background-task index-search; then
+        log_ok "Search index built successfully"
+    else
+        log_warn "Initial search index failed. Projects may not appear in browse/search."
+        log_warn "You can retry manually with:"
+        log_warn "  $DOCKER_COMPOSE run --rm --no-deps labrinth /labrinth/labrinth --run-background-task index-search"
+    fi
+}
+
 # ---- Post-deployment info ----
 show_info() {
     local domain
@@ -415,6 +432,13 @@ show_info() {
     echo -e "    Stop:          ${CYAN}$DOCKER_COMPOSE down${NC}"
     echo -e "    Update:        ${CYAN}git pull && $DOCKER_COMPOSE build && $DOCKER_COMPOSE up -d${NC}"
     echo ""
+    echo -e "  ${YELLOW}━━━ 搜索索引 ━━━${NC}"
+    echo -e "    审核通过的项目由 ${CYAN}labrinth-indexer${NC} 服务写入 Typesense。"
+    echo -e "    若项目未出现在浏览/搜索页，先查看消费者日志:"
+    echo -e "      ${CYAN}$DOCKER_COMPOSE logs -f labrinth-indexer${NC}"
+    echo -e "    手动重建全量索引:"
+    echo -e "      ${CYAN}$DOCKER_COMPOSE run --rm --no-deps labrinth /labrinth/labrinth --run-background-task index-search${NC}"
+    echo ""
     echo -e "  ${YELLOW}━━━ 后续步骤 ━━━${NC}"
     echo -e "    1. 配置 DNS: 将上述子域名 A 记录指向服务器 IP"
     echo -e "    2. 配置 OAuth (GitHub, Discord 等) 在 .env 文件中"
@@ -436,6 +460,7 @@ main() {
     setup_ssl
     deploy
     wait_for_services
+    initial_search_index
     show_info
 }
 

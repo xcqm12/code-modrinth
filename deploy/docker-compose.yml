@@ -174,6 +174,7 @@ services:
     build:
       context: ..
       dockerfile: deploy/labrinth.Dockerfile
+    image: 8h8g-labrinth:latest
     container_name: 8h8g-labrinth
     restart: unless-stopped
     depends_on:
@@ -191,7 +192,7 @@ services:
         condition: service_healthy
     volumes:
       - uploads-data:/data/uploads
-    environment:
+    environment: &labrinth-env
       DEBUG: 'false'
       RUST_LOG: info,sqlx::query=warn
       SENTRY_DSN: ''
@@ -272,6 +273,38 @@ services:
         reservations:
           cpus: '2'
           memory: 2G
+
+  # 搜索增量索引消费者。
+  # labrinth 主进程只把项目变更事件投递到 Kafka，必须由这个独立进程消费并写入
+  # Typesense。不运行它的话，审核通过的项目永远不会出现在搜索/浏览页。
+  labrinth-indexer:
+    # 复用 labrinth 镜像，避免重复编译 Rust
+    image: 8h8g-labrinth:latest
+    container_name: 8h8g-labrinth-indexer
+    restart: unless-stopped
+    command: ['/labrinth/labrinth', '--run-background-task', 'incremental-index-search']
+    depends_on:
+      labrinth:
+        condition: service_started
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      typesense:
+        condition: service_healthy
+      redpanda:
+        condition: service_healthy
+    volumes:
+      - uploads-data:/data/uploads
+    environment: *labrinth-env
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
 
   frontend:
     build:

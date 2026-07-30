@@ -313,7 +313,7 @@ function developerModeIncrement() {
 								</template>
 							</IntlFormatted>
 						</p>
-						<p class="m-0">© {{ state.buildYear ?? '2025' }} Rinth, Inc.</p>
+						<p class="m-0">©{{ state.buildYear ?? '2025' }} SevenZeroMeowTeam</p>
 					</div>
 				</div>
 				<div class="mt-4 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:contents">
