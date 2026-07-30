@@ -142,11 +142,11 @@ EPAY_PID=
 EPAY_KEY=
 EPAY_NOTIFY_URL=https://api.bbsmc.org.cn/_internal/payment/notify/epay
 EPAY_RETURN_URL=https://bbsmc.org.cn/billing
-MAPAY_API_URL=
-MAPAY_APP_ID=
-MAPAY_APP_SECRET=
-MAPAY_NOTIFY_URL=https://api.bbsmc.org.cn/_internal/payment/notify/mapay
-MAPAY_RETURN_URL=https://bbsmc.org.cn/billing
+CODEPAY_API_URL=
+CODEPAY_APP_ID=
+CODEPAY_APP_SECRET=
+CODEPAY_NOTIFY_URL=https://api.bbsmc.org.cn/_internal/payment/notify/codepay
+CODEPAY_RETURN_URL=https://bbsmc.org.cn/billing
 
 STORAGE_BACKEND=local
 ENVEOF

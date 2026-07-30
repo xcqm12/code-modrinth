@@ -311,12 +311,12 @@ vars! {
     EPAY_NOTIFY_URL: String = "none";
     EPAY_RETURN_URL: String = "none";
 
-    // 码支付 (mapay) - Chinese payment aggregation
-    MAPAY_API_URL: String = "none";
-    MAPAY_APP_ID: String = "none";
-    MAPAY_APP_SECRET: String = "none";
-    MAPAY_NOTIFY_URL: String = "none";
-    MAPAY_RETURN_URL: String = "none";
+    // 码支付 (codepay) - Chinese payment aggregation
+    CODEPAY_API_URL: String = "none";
+    CODEPAY_APP_ID: String = "none";
+    CODEPAY_APP_SECRET: String = "none";
+    CODEPAY_NOTIFY_URL: String = "none";
+    CODEPAY_RETURN_URL: String = "none";
 
     BREX_BALANCE_ALERT_THRESHOLD: u64 = 0u64;
     TREMENDOUS_BALANCE_ALERT_THRESHOLD: u64 = 0u64;

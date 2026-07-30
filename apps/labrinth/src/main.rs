@@ -219,15 +219,15 @@ async fn app() -> std::io::Result<()> {
         ));
     }
 
-    if ENV.MAPAY_API_URL != "none" && ENV.MAPAY_APP_ID != "none" {
-        info!("Registering 码支付 payment gateway");
+    if ENV.CODEPAY_API_URL != "none" && ENV.CODEPAY_APP_ID != "none" {
+        info!("Registering codepay payment gateway");
         payment_registry.register(Box::new(
-            labrinth::payment::mapay::MapayGateway::new(
-                ENV.MAPAY_API_URL.clone(),
-                ENV.MAPAY_APP_ID.clone(),
-                ENV.MAPAY_APP_SECRET.clone(),
-                ENV.MAPAY_NOTIFY_URL.clone(),
-                ENV.MAPAY_RETURN_URL.clone(),
+            labrinth::payment::codepay::CodepayGateway::new(
+                ENV.CODEPAY_API_URL.clone(),
+                ENV.CODEPAY_APP_ID.clone(),
+                ENV.CODEPAY_APP_SECRET.clone(),
+                ENV.CODEPAY_NOTIFY_URL.clone(),
+                ENV.CODEPAY_RETURN_URL.clone(),
             ),
         ));
     }

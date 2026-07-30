@@ -300,7 +300,7 @@ pub enum PaymentPlatform {
     Alipay,
     WechatPay,
     Epay,
-    Mapay,
+    Codepay,
     None,
 }
 
@@ -311,7 +311,7 @@ impl PaymentPlatform {
             "alipay" => PaymentPlatform::Alipay,
             "wechatpay" | "wechat" => PaymentPlatform::WechatPay,
             "epay" => PaymentPlatform::Epay,
-            "mapay" => PaymentPlatform::Mapay,
+            "codepay" => PaymentPlatform::Codepay,
             "none" => PaymentPlatform::None,
             _ => PaymentPlatform::Stripe,
         }
@@ -323,7 +323,7 @@ impl PaymentPlatform {
             PaymentPlatform::Alipay => "alipay",
             PaymentPlatform::WechatPay => "wechatpay",
             PaymentPlatform::Epay => "epay",
-            PaymentPlatform::Mapay => "mapay",
+            PaymentPlatform::Codepay => "codepay",
             PaymentPlatform::None => "none",
         }
     }

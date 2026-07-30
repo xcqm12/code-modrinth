@@ -12,7 +12,7 @@ use super::{
 type HmacSha256 = Hmac<Sha256>;
 
 #[derive(Debug, Clone)]
-pub struct MapayGateway {
+pub struct CodepayGateway {
     pub api_url: String,
     pub app_id: String,
     pub app_secret: String,
@@ -21,7 +21,7 @@ pub struct MapayGateway {
     pub http_client: Client,
 }
 
-impl MapayGateway {
+impl CodepayGateway {
     pub fn new(
         api_url: impl Into<String>,
         app_id: impl Into<String>,
@@ -74,7 +74,7 @@ impl MapayGateway {
 }
 
 #[async_trait::async_trait]
-impl PaymentGateway for MapayGateway {
+impl PaymentGateway for CodepayGateway {
     async fn create_order(
         &self,
         order: CreateOrderRequest,
@@ -111,7 +111,7 @@ impl PaymentGateway for MapayGateway {
         if code != 0 {
             let msg = json["msg"]
                 .as_str()
-                .unwrap_or("mapay create_order failed")
+                .unwrap_or("codepay create_order failed")
                 .to_string();
             return Err(PaymentError::Internal(msg));
         }
@@ -281,6 +281,6 @@ impl PaymentGateway for MapayGateway {
     }
 
     fn name(&self) -> &'static str {
-        "mapay"
+        "codepay"
     }
 }

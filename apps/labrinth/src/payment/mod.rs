@@ -8,7 +8,7 @@ use thiserror::Error;
 
 pub mod alipay;
 pub mod epay;
-pub mod mapay;
+pub mod codepay;
 pub mod wechatpay;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
