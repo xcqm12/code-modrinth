@@ -48,6 +48,12 @@ TARGET_ADMIN_KEY = os.getenv("TARGET_ADMIN_KEY", "")
 TARGET_AUTH_TOKEN = os.getenv("TARGET_AUTH_TOKEN", "")
 SYNC_DIR = Path(os.getenv("SYNC_DIR", "/data/sync"))
 
+# Cache and storage limits
+# CACHE_TTL: seconds before re-fetching cached data (default 3 days)
+# MAX_STORAGE: max bytes for downloaded files (default 500MB)
+CACHE_TTL = int(os.getenv("CACHE_TTL", str(3 * 24 * 3600)))
+MAX_STORAGE = int(os.getenv("MAX_STORAGE", str(500 * 1024 * 1024)))
+
 # PostgreSQL connection for admin user creation
 PG_HOST = os.getenv("PG_HOST", "postgres")
 PG_PORT = os.getenv("PG_PORT", "5432")
@@ -152,10 +158,11 @@ def target_post(client: httpx.Client, path: str, data: dict) -> tuple[bool, dict
 
 
 class Syncer:
-    def __init__(self, metadata_only: bool = False):
+    def __init__(self, metadata_only: bool = False, force: bool = False):
         self.client_source = httpx.Client()
         self.client_target = httpx.Client()
         self.metadata_only = metadata_only
+        self.force = force
         self.dirs = {
             "projects": SYNC_DIR / "projects",
             "versions": SYNC_DIR / "versions",
@@ -165,6 +172,30 @@ class Syncer:
             d.mkdir(parents=True, exist_ok=True)
         self.stats = {"projects": 0, "versions": 0, "files": 0,
                       "skipped": 0, "errors": 0}
+
+    # ---- Cache helpers ----
+
+    def _is_fresh(self, path: Path) -> bool:
+        """Check if cached file is newer than CACHE_TTL."""
+        if not path.exists():
+            return False
+        age = time.time() - path.stat().st_mtime
+        return age < CACHE_TTL
+
+    def _check_storage(self):
+        """Remove oldest downloaded files if total exceeds MAX_STORAGE."""
+        files_dir = self.dirs["files"]
+        files = sorted(files_dir.iterdir(), key=lambda p: p.stat().st_mtime)
+        total = sum(f.stat().st_size for f in files_dir.iterdir() if f.is_file())
+        removed = 0
+        while total > MAX_STORAGE and files:
+            oldest = files.pop(0)
+            total -= oldest.stat().st_size
+            oldest.unlink()
+            removed += 1
+        if removed:
+            log.info("  cleaned up %d old file(s), current size: %.1f MB",
+                     removed, total / 1024 / 1024)
 
     def save_json(self, directory: Path, name: str, data: dict | list):
         path = directory / f"{name}.json"
@@ -177,6 +208,13 @@ class Syncer:
         return None
 
     def sync_search_index(self, project_type="", loaders="", limit=100):
+        index_path = SYNC_DIR / "search_index.json"
+        if not self.force and self._is_fresh(index_path):
+            cached = json.loads(index_path.read_text())[:limit]
+            log.info("Using cached search index (%d projects, %.1fh old)",
+                     len(cached), (time.time() - index_path.stat().st_mtime) / 3600)
+            return cached
+
         log.info("Fetching search results (type=%s, limit=%d)",
                  project_type or "*", limit)
         offset = 0
@@ -195,6 +233,14 @@ class Syncer:
         return all_hits
 
     def sync_project(self, project_id: str) -> dict | None:
+        # Check project cache
+        proj_path = self.dirs["projects"] / f"{project_id}.json"
+        if not self.force and self._is_fresh(proj_path):
+            log.info("  %s: cache fresh (%d projects cached)", project_id,
+                     self.stats["projects"])
+            self.stats["skipped"] += 1
+            return json.loads(proj_path.read_text())
+
         project = get_project(self.client_source, project_id)
         if not project:
             log.warning("  project %s not found", project_id)
@@ -222,6 +268,8 @@ class Syncer:
                         filepath = self.dirs["files"] / f"{ver['id']}_{filename}"
                         if filepath.exists():
                             continue
+                        # Check storage before downloading each file
+                        self._check_storage()
                         try:
                             resp = self.client_source.get(url, headers=HEADERS_SOURCE, timeout=120)
                             if resp.status_code == 200:
@@ -235,6 +283,8 @@ class Syncer:
         return project
 
     def report(self):
+        # Final storage check
+        self._check_storage()
         log.info("=" * 50)
         log.info("Sync complete!")
         log.info("  Projects: %d", self.stats["projects"])
@@ -434,6 +484,8 @@ def main():
                         help="Specific project IDs/slugs to sync")
     parser.add_argument("--resume", action="store_true",
                         help="Resume from cached search index")
+    parser.add_argument("--force", action="store_true",
+                        help="Force re-fetch even if cache is fresh")
     parser.add_argument("--import-data", action="store_true",
                         help="Import cached data to local API")
     parser.add_argument("--create-admin", action="store_true",
@@ -453,7 +505,7 @@ def main():
         return
 
     # Default: sync from source
-    syncer = Syncer(metadata_only=args.metadata_only)
+    syncer = Syncer(metadata_only=args.metadata_only, force=args.force)
 
     if args.ids:
         project_ids = args.ids

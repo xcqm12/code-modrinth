@@ -65,6 +65,7 @@ main() {
     export SYNC_DIR="${SYNC_DIR:-$SCRIPT_DIR/sync-data}"
 
     log_info "Starting sync..."
+    log_info "Cache TTL: ${CACHE_TTL:-259200}s (3 days), Max storage: ${MAX_STORAGE:-500M}"
     $PYTHON "$SCRIPT_DIR/sync/sync.py" "$@"
 
     log_ok "Done!"
