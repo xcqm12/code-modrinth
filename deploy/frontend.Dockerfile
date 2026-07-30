@@ -18,12 +18,12 @@ RUN cp apps/frontend/.env.prod apps/frontend/.env
 
 RUN pnpm install --frozen-lockfile
 
-ENV NODE_OPTIONS="--max-old-space-size=4096"
+ENV NODE_OPTIONS="--max-old-space-size=7168"
 ENV NITRO_PRESET=node_server
 ENV BUILD_ENV=production
 ENV PREVIEW=true
-ENV BASE_URL=https://bbsmc.org.cn/api/v2/
-ENV BROWSER_BASE_URL=https://bbsmc.org.cn/api/v2/
+ENV BASE_URL=https://api.bbsmc.org.cn/v2/
+ENV BROWSER_BASE_URL=https://api.bbsmc.org.cn/v2/
 ENV PYRO_BASE_URL=https://archon.bbsmc.org.cn
 ENV SHARED_INSTANCES_API_BASE_URL=https://shared-instances.bbsmc.org.cn
 
@@ -41,8 +41,8 @@ EXPOSE 3000
 ENV NODE_ENV=production
 ENV HOST=0.0.0.0
 ENV PORT=3000
-ENV BASE_URL=https://bbsmc.org.cn/api/v2/
-ENV BROWSER_BASE_URL=https://bbsmc.org.cn/api/v2/
+ENV BASE_URL=https://api.bbsmc.org.cn/v2/
+ENV BROWSER_BASE_URL=https://api.bbsmc.org.cn/v2/
 ENV PYRO_BASE_URL=https://archon.bbsmc.org.cn
 ENV SHARED_INSTANCES_API_BASE_URL=https://shared-instances.bbsmc.org.cn
 
