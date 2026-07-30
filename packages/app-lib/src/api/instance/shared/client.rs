@@ -3,14 +3,14 @@ use super::*;
 
 #[derive(Clone, Copy, Debug)]
 pub(super) enum SharedInstancesRequestAuth {
-    ModrinthSession,
+    BbsmcSession,
     None,
 }
 
 impl SharedInstancesRequestAuth {
     pub(super) fn label(self) -> &'static str {
         match self {
-            Self::ModrinthSession => "modrinth_session",
+            Self::BbsmcSession => "Bbsmc_session",
             Self::None => "none",
         }
     }
@@ -107,7 +107,7 @@ pub(super) enum InstanceInviteManagerResponse {
 pub(super) struct InstanceVersionResponse {
     pub(super) version: i32,
     #[serde(default)]
-    pub(super) modrinth_ids: Vec<String>,
+    pub(super) Bbsmc_ids: Vec<String>,
     pub(super) ready: bool,
     #[serde(default)]
     pub(super) external_files: Vec<ExternalFileResponse>,
@@ -253,7 +253,7 @@ pub(super) async fn get_remote_instance_access(
         SharedInstanceUnavailableReason::from_status(response.status())
     {
         if reason == SharedInstanceUnavailableReason::AccessRevoked
-            && !active_modrinth_session_is_valid(state).await?
+            && !active_Bbsmc_session_is_valid(state).await?
         {
             return Err(crate::ErrorKind::NoCredentialsError.into());
         }
@@ -371,7 +371,7 @@ pub(super) async fn get_latest_remote_version_optional_unavailable(
     get_latest_remote_version_optional_unavailable_with_auth(
         shared_instance_id,
         state,
-        SharedInstancesRequestAuth::ModrinthSession,
+        SharedInstancesRequestAuth::BbsmcSession,
     )
     .await
 }
@@ -460,7 +460,7 @@ pub(super) async fn accept_shared_instance_invite(
         log_path,
         None,
         state,
-        SharedInstancesRequestAuth::ModrinthSession,
+        SharedInstancesRequestAuth::BbsmcSession,
     )
     .await?;
     if response.status().is_success() {
@@ -608,15 +608,15 @@ where
         SharedInstanceUnavailableReason::from_status(response.status())
     {
         if reason == SharedInstanceUnavailableReason::AccessRevoked
-            && matches!(auth, SharedInstancesRequestAuth::ModrinthSession)
-            && !active_modrinth_session_is_valid(state).await?
+            && matches!(auth, SharedInstancesRequestAuth::BbsmcSession)
+            && !active_Bbsmc_session_is_valid(state).await?
         {
             tracing::warn!(
                 operation,
                 method = method.as_str(),
                 path,
                 status = response.status().as_u16(),
-                "Shared instances API returned unauthorized while Modrinth auth is unavailable"
+                "Shared instances API returned unauthorized while Bbsmc auth is unavailable"
             );
             return Err(crate::ErrorKind::NoCredentialsError.into());
         }
@@ -643,11 +643,11 @@ where
         .map(SharedInstanceRemoteResponse::Available)
 }
 
-pub(super) async fn active_modrinth_session_is_valid(
+pub(super) async fn active_Bbsmc_session_is_valid(
     state: &State,
 ) -> crate::Result<bool> {
     let Some(credentials) =
-        ModrinthCredentials::get_and_refresh(&state.pool, &state.api_semaphore)
+        BbsmcCredentials::get_and_refresh(&state.pool, &state.api_semaphore)
             .await?
     else {
         return Ok(false);
@@ -655,13 +655,13 @@ pub(super) async fn active_modrinth_session_is_valid(
 
     let _permit = state.api_semaphore.0.acquire().await?;
     let response = INSECURE_REQWEST_CLIENT
-        .get(concat!(env!("MODRINTH_API_URL"), "user"))
+        .get(concat!(env!("Bbsmc_API_URL"), "user"))
         .header("Authorization", &credentials.session)
         .send()
         .await?;
 
     if response.status() == StatusCode::UNAUTHORIZED {
-        ModrinthCredentials::remove(&credentials.user_id, &state.pool).await?;
+        BbsmcCredentials::remove(&credentials.user_id, &state.pool).await?;
         return Ok(false);
     }
 
@@ -672,15 +672,15 @@ pub(super) async fn active_modrinth_session_is_valid(
     let status = response.status();
     let request_id = response_request_id(&response);
     tracing::warn!(
-        operation = "validate_modrinth_session",
+        operation = "validate_Bbsmc_session",
         method = Method::GET.as_str(),
         path = "/user",
         status = status.as_u16(),
         request_id = request_id.as_deref().unwrap_or("none"),
-        "Modrinth auth validation request failed"
+        "Bbsmc auth validation request failed"
     );
     Err(crate::ErrorKind::OtherError(format!(
-        "Modrinth auth validation failed with status {status}"
+        "Bbsmc auth validation failed with status {status}"
     ))
     .into())
 }
@@ -770,7 +770,7 @@ async fn request_empty_with_log_path(
         log_path,
         body,
         state,
-        SharedInstancesRequestAuth::ModrinthSession,
+        SharedInstancesRequestAuth::BbsmcSession,
     )
     .await?;
     if response.status().is_success() {
@@ -809,7 +809,7 @@ pub(super) async fn send_request(
         path,
         body,
         state,
-        SharedInstancesRequestAuth::ModrinthSession,
+        SharedInstancesRequestAuth::BbsmcSession,
     )
     .await
 }
@@ -856,7 +856,7 @@ pub(super) async fn send_bytes_request_to_url(
     }
 
     let credentials =
-        ModrinthCredentials::get_and_refresh(&state.pool, &state.api_semaphore)
+        BbsmcCredentials::get_and_refresh(&state.pool, &state.api_semaphore)
             .await?
             .ok_or(crate::ErrorKind::NoCredentialsError)?;
     let _permit = state.api_semaphore.0.acquire().await?;
@@ -867,7 +867,7 @@ pub(super) async fn send_bytes_request_to_url(
         path,
         url = %url,
         user_id = credentials.user_id.as_str(),
-        auth = SharedInstancesRequestAuth::ModrinthSession.label(),
+        auth = SharedInstancesRequestAuth::BbsmcSession.label(),
         has_body = true,
         "Sending shared instances API request"
     );
@@ -924,10 +924,10 @@ async fn send_request_with_auth_and_log_path(
     state: &State,
     auth: SharedInstancesRequestAuth,
 ) -> crate::Result<reqwest::Response> {
-    let modrinth_credentials =
-        if matches!(auth, SharedInstancesRequestAuth::ModrinthSession) {
+    let Bbsmc_credentials =
+        if matches!(auth, SharedInstancesRequestAuth::BbsmcSession) {
             Some(
-                ModrinthCredentials::get_and_refresh(
+                BbsmcCredentials::get_and_refresh(
                     &state.pool,
                     &state.api_semaphore,
                 )
@@ -946,9 +946,9 @@ async fn send_request_with_auth_and_log_path(
     let mut user_id = None;
 
     match auth {
-        SharedInstancesRequestAuth::ModrinthSession => {
-            let credentials = modrinth_credentials
-                .expect("Modrinth session credentials were loaded");
+        SharedInstancesRequestAuth::BbsmcSession => {
+            let credentials = Bbsmc_credentials
+                .expect("Bbsmc session credentials were loaded");
             user_id = Some(credentials.user_id);
             request = request.bearer_auth(credentials.session);
         }

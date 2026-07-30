@@ -78,7 +78,7 @@ fn current_loader_manifest_format_version(loader: &str) -> usize {
 }
 
 /// The dummy replace string library names, inheritsFrom, and version names should be replaced with
-pub const DUMMY_REPLACE_STRING: &str = "${modrinth.gameVersion}";
+pub const DUMMY_REPLACE_STRING: &str = "${Bbsmc.gameVersion}";
 
 /// A data variable entry that depends on the side of the installation
 #[derive(Serialize, Deserialize, Debug)]

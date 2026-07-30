@@ -75,7 +75,7 @@ pub struct MavenPom {
 	params(("id" = String, Path)),
 	responses((status = OK, body = String, content_type = "text/xml"))
 )]
-#[get("/maven/modrinth/{id}/maven-metadata.xml")]
+#[get("/maven/Bbsmc/{id}/maven-metadata.xml")]
 pub async fn maven_metadata(
     req: HttpRequest,
     params: web::Path<(String,)>,
@@ -143,7 +143,7 @@ pub async fn maven_metadata(
     let project_id: ProjectId = project.inner.id.into();
 
     let respdata = Metadata {
-        group_id: "maven.modrinth".to_string(),
+        group_id: "maven.Bbsmc".to_string(),
         artifact_id: project_id.to_string(),
         versioning: Versioning {
             latest: new_versions
@@ -297,7 +297,7 @@ fn find_file<'a>(
 	)
 )]
 #[route(
-    "/maven/modrinth/{id}/{versionnum}/{file}",
+    "/maven/Bbsmc/{id}/{versionnum}/{file}",
     method = "GET",
     method = "HEAD"
 )]
@@ -346,7 +346,7 @@ pub async fn version_file(
                     .to_string(),
             xsi: "http://www.w3.org/2001/XMLSchema-instance".to_string(),
             model_version: "4.0.0".to_string(),
-            group_id: "maven.modrinth".to_string(),
+            group_id: "maven.Bbsmc".to_string(),
             artifact_id: project_id,
             version: vnum,
             name: project.inner.name,
@@ -375,7 +375,7 @@ pub async fn version_file(
 	),
 	responses((status = OK, body = String))
 )]
-#[get("/maven/modrinth/{id}/{versionnum}/{file}.sha1")]
+#[get("/maven/Bbsmc/{id}/{versionnum}/{file}.sha1")]
 pub async fn version_file_sha1(
     req: HttpRequest,
     params: web::Path<(String, String, String)>,
@@ -431,7 +431,7 @@ pub async fn version_file_sha1(
 	),
 	responses((status = OK, body = String))
 )]
-#[get("/maven/modrinth/{id}/{versionnum}/{file}.sha512")]
+#[get("/maven/Bbsmc/{id}/{versionnum}/{file}.sha512")]
 pub async fn version_file_sha512(
     req: HttpRequest,
     params: web::Path<(String, String, String)>,

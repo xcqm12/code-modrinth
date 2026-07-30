@@ -136,8 +136,8 @@
 </template>
 
 <script setup lang="ts">
-import { PinIcon } from '@modrinth/assets'
-import { useScrollIndicator, useVIntl } from '@modrinth/ui'
+import { PinIcon } from '@Bbsmc/assets'
+import { useScrollIndicator, useVIntl } from '@Bbsmc/ui'
 
 import { analyticsChartMessages } from '../../analytics-messages'
 
@@ -229,7 +229,7 @@ function formatRangeLabel(
 	if (includeTime) {
 		const startLabel = new Intl.DateTimeFormat(DATE_LOCALE, startOptions).format(start)
 		const endLabel = new Intl.DateTimeFormat(DATE_LOCALE, timeOptions).format(end)
-		const range = `${startLabel}â€“${endLabel}`
+		const range = `${startLabel}â€?{endLabel}`
 
 		if (!showTrailingYear) return range
 
@@ -248,7 +248,7 @@ function formatRangeLabel(
 
 	const startLabel = new Intl.DateTimeFormat(DATE_LOCALE, startOptions).format(start)
 	const endLabel = new Intl.DateTimeFormat(DATE_LOCALE, endOptions).format(end)
-	const range = `${startLabel}â€“${endLabel}`
+	const range = `${startLabel}â€?{endLabel}`
 
 	if (!showTrailingYear) return range
 

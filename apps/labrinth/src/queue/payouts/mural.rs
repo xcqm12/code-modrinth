@@ -2,7 +2,7 @@ use crate::database::PgPool;
 use chrono::Utc;
 use eyre::{Result, eyre};
 use futures::{StreamExt, TryFutureExt, stream::FuturesUnordered};
-use modrinth_util::decimal::Decimal2dp;
+use Bbsmc_util::decimal::Decimal2dp;
 use rust_decimal::{Decimal, prelude::ToPrimitive};
 use serde::{Deserialize, Serialize};
 use tracing::{info, trace, warn};
@@ -79,7 +79,7 @@ impl PayoutsQueue {
 
         // TODO
         // std::fs::write(
-        //     "/tmp/modrinth-payout-statement.pdf",
+        //     "/tmp/Bbsmc-payout-statement.pdf",
         //     base64::Engine::decode(
         //         &base64::engine::general_purpose::STANDARD,
         //         &payment_statement_doc.body,

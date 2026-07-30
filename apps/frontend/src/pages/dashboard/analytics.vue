@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import { commonProjectSettingsMessages, useVIntl } from '@modrinth/ui'
+import { commonProjectSettingsMessages, useVIntl } from '@Bbsmc/ui'
 
 import AnalyticsDashboard from '~/components/analytics-dashboard/index.vue'
 
@@ -14,6 +14,6 @@ definePageMeta({
 })
 
 useHead({
-	title: () => `${formatMessage(commonProjectSettingsMessages.analytics)} - Modrinth`,
+	title: () => `${formatMessage(commonProjectSettingsMessages.analytics)} - Bbsmc`,
 })
 </script>

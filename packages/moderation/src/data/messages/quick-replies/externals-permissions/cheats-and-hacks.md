@@ -1,1 +1,1 @@
-Modrinth does not permit the distribution of external content that violates section 3 of [Modrinth's Content Rules](https://bbsmc.org.cn/legal/rules).
+Bbsmc does not permit the distribution of external content that violates section 3 of [Bbsmc's Content Rules](https://bbsmc.org.cn/legal/rules).

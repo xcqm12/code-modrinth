@@ -24,13 +24,13 @@
     "defaultMessage": "Dodaj szczegóły dotyczące licencji"
   },
   "nags.add-links-server.description": {
-    "defaultMessage": "Dodaj wszelkie odpowiednie linki skierowane poza Modrinth, takie jak strona internetowa projektu, sklep lub zaproszenie Discord."
+    "defaultMessage": "Dodaj wszelkie odpowiednie linki skierowane poza Bbsmc, takie jak strona internetowa projektu, sklep lub zaproszenie Discord."
   },
   "nags.add-links-server.title": {
     "defaultMessage": "Dodaj zewnętrzne linki"
   },
   "nags.add-links.description": {
-    "defaultMessage": "Dodaj wszelkie odpowiednie linki skierowane poza Modrinth, takie jak kod źródłowy, śledzenie problemów lub zaproszenie Discord."
+    "defaultMessage": "Dodaj wszelkie odpowiednie linki skierowane poza Bbsmc, takie jak kod źródłowy, śledzenie problemów lub zaproszenie Discord."
   },
   "nags.add-links.title": {
     "defaultMessage": "Dodaj zewnętrzne linki"

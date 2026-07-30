@@ -1,12 +1,12 @@
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
 
-import { useServerModrinthClient } from '~/server/utils/api-client'
+import { useServerBbsmcClient } from '~/server/utils/api-client'
 
 const CACHE_MAX_AGE = 60 * 10
 
 export default defineCachedEventHandler(
 	async (event) => {
-		const client = useServerModrinthClient({ event })
+		const client = useServerBbsmcClient({ event })
 
 		const response = await client.request<Labrinth.Tags.v2.Category[]>('/tag/category', {
 			api: 'labrinth',

@@ -63,7 +63,7 @@ impl ArchonClient {
 
         let response = self
             .client
-            .post(format!("{}/modrinth/v0/servers/create", self.base_url))
+            .post(format!("{}/Bbsmc/v0/servers/create", self.base_url))
             .header(X_MASTER_KEY, &self.pyro_api_key)
             .json(request)
             .send()

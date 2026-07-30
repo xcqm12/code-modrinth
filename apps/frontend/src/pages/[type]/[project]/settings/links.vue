@@ -284,16 +284,16 @@
 </template>
 
 <script setup>
-import { SaveIcon, TriangleAlertIcon } from '@modrinth/assets'
-import { commonLinkDomains, isCommonUrl, isDiscordUrl, isLinkShortener } from '@modrinth/moderation'
+import { SaveIcon, TriangleAlertIcon } from '@Bbsmc/assets'
+import { commonLinkDomains, isCommonUrl, isDiscordUrl, isLinkShortener } from '@Bbsmc/moderation'
 import {
 	ButtonStyled,
 	DropdownSelect,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	injectProjectPageContext,
 	StyledInput,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 
 const tags = useGeneratedState()
 
@@ -304,7 +304,7 @@ const {
 	patchProject,
 	invalidate,
 } = injectProjectPageContext()
-const { labrinth } = injectModrinthClient()
+const { labrinth } = injectBbsmcClient()
 const { addNotification } = injectNotificationManager()
 
 const issuesUrl = ref(project.value.issues_url)

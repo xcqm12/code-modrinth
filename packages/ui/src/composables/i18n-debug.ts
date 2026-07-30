@@ -26,11 +26,11 @@ export function injectI18nDebug(): I18nDebugContext | null {
 }
 
 export function buildCrowdinUrl(key: string, locale: string): string {
-	return `https://crowdin.com/translate/modrinth-platform/all/en-${locale}?filter=basic&value=0&search_type=identifier&search=${encodeURIComponent(key)}`
+	return `https://crowdin.com/translate/Bbsmc-platform/all/en-${locale}?filter=basic&value=0&search_type=identifier&search=${encodeURIComponent(key)}`
 }
 
 export function initI18nDebugRuntime(context: I18nDebugContext): void {
-	import('@modrinth/assets/styles/i18n-debug.css')
+	import('@Bbsmc/assets/styles/i18n-debug.css')
 	document.body.classList.add('i18n-debug')
 	startMutationObserver(context.registry, context.keyReveal)
 	setupKeyTooltip()

@@ -24,13 +24,13 @@
     "defaultMessage": "Adicionar detalhes da licença"
   },
   "nags.add-links-server.description": {
-    "defaultMessage": "Adicione qualquer link relevante direcionado fora do Modrinth, como um site, loja ou convite do Discord."
+    "defaultMessage": "Adicione qualquer link relevante direcionado fora do Bbsmc, como um site, loja ou convite do Discord."
   },
   "nags.add-links-server.title": {
     "defaultMessage": "Adicione links externos"
   },
   "nags.add-links.description": {
-    "defaultMessage": "Adicione qualquer link relevante direcionado fora do Modrinth, como o código-fonte, um rastreador de erros ou convite do Discord."
+    "defaultMessage": "Adicione qualquer link relevante direcionado fora do Bbsmc, como o código-fonte, um rastreador de erros ou convite do Discord."
   },
   "nags.add-links.title": {
     "defaultMessage": "Adicione links externos"

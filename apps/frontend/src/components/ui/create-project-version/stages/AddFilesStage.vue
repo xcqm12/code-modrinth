@@ -104,8 +104,8 @@ import {
 	Tabs,
 	type TabsTab,
 	useVIntl,
-} from '@modrinth/ui'
-import { acceptFileFromProjectType } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import { acceptFileFromProjectType } from '@Bbsmc/utils'
 
 import { injectManageVersionContext } from '~/providers/version/manage-version-modal'
 

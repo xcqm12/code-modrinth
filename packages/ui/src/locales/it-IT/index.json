@@ -99,7 +99,7 @@
     "defaultMessage": "Nessun risultato trovato!"
   },
   "browse.offline": {
-    "defaultMessage": "Al momento sembri offline. Connettiti a Internet per usare Modrinth!"
+    "defaultMessage": "Al momento sembri offline. Connettiti a Internet per usare Bbsmc!"
   },
   "browse.selected-projects-floating-bar.aria-label": {
     "defaultMessage": "Progetti selezionati"
@@ -224,8 +224,8 @@
   "button.open-in-folder": {
     "defaultMessage": "Apri nella cartella"
   },
-  "button.open-in-modrinth": {
-    "defaultMessage": "Apri su Modrinth"
+  "button.open-in-Bbsmc": {
+    "defaultMessage": "Apri su Bbsmc"
   },
   "button.play": {
     "defaultMessage": "Avvia"
@@ -489,13 +489,13 @@
     "defaultMessage": "{count} rimossi (disabilitati)"
   },
   "content.diff-modal.reviewed-files": {
-    "defaultMessage": "Solo i file pubblicati su Modrinth vengono esaminati, qualunque sia il loro formato (.mrpack inclusi)."
+    "defaultMessage": "Solo i file pubblicati su Bbsmc vengono esaminati, qualunque sia il loro formato (.mrpack inclusi)."
   },
   "content.diff-modal.unknown-content-body": {
     "defaultMessage": "Non è stato possibile analizzare alcuni contenuti sul tuo server, pertanto potrebbero essere toccati da questa modifica."
   },
   "content.diff-modal.unknown-files-description": {
-    "defaultMessage": "L'aggiornamento contiene dei file che non sono su Modrinth. Consigliamo di installare file solo da fonti attendibili."
+    "defaultMessage": "L'aggiornamento contiene dei file che non sono su Bbsmc. Consigliamo di installare file solo da fonti attendibili."
   },
   "content.diff-modal.unknown-files-warning": {
     "defaultMessage": "File sconosciuti"
@@ -891,7 +891,7 @@
     "defaultMessage": "Importa"
   },
   "creation-flow.modal.setup-type.option.modpack-base.description": {
-    "defaultMessage": "Sfoglia i pacchetti su Modrinth o importane uno da un file."
+    "defaultMessage": "Sfoglia i pacchetti su Bbsmc o importane uno da un file."
   },
   "creation-flow.modal.setup-type.option.modpack-base.title": {
     "defaultMessage": "Installa pacchetto"
@@ -1022,8 +1022,8 @@
   "external-files.permissions-card.editor.link-to-work-url-placeholder": {
     "defaultMessage": "link-al-lavoro"
   },
-  "external-files.permissions-card.editor.modrinth-link-to-work": {
-    "defaultMessage": "Questo è un link di Modrinth. Se questo contenuto è disponibile su Modrinth, il pacchetto è probabilmente stato esportato incorrettamente. Se l'hai scaricato da un altro sito, prova a scaricare la versione di Modrinth; può darsi che siano file diversi."
+  "external-files.permissions-card.editor.Bbsmc-link-to-work": {
+    "defaultMessage": "Questo è un link di Bbsmc. Se questo contenuto è disponibile su Bbsmc, il pacchetto è probabilmente stato esportato incorrettamente. Se l'hai scaricato da un altro sito, prova a scaricare la versione di Bbsmc; può darsi che siano file diversi."
   },
   "external-files.permissions-card.editor.notes-label": {
     "defaultMessage": "Note"
@@ -1047,7 +1047,7 @@
     "defaultMessage": "Se si scopre che hai mentito o manipolato le immagini caricate, il progetto e l'account potrebbero venire chiusi."
   },
   "external-files.permissions-card.editor.proof-warning.title": {
-    "defaultMessage": "Lo staff di Modrinth verificherà le prove fornite"
+    "defaultMessage": "Lo staff di Bbsmc verificherà le prove fornite"
   },
   "external-files.permissions-card.editor.save": {
     "defaultMessage": "Salva attribuzione"
@@ -1134,7 +1134,7 @@
     "defaultMessage": "Attribuito automaticamente"
   },
   "external-files.permissions-card.reason.globally-allowed.description": {
-    "defaultMessage": "Abbiamo già visto questo file prima e abbiamo preparato delle attribuzioni per te. Se qualcosa non combacia, contatta l'assistenza di Modrinth dal Centro assistenza"
+    "defaultMessage": "Abbiamo già visto questo file prima e abbiamo preparato delle attribuzioni per te. Se qualcosa non combacia, contatta l'assistenza di Bbsmc dal Centro assistenza"
   },
   "external-files.permissions-card.reason.license": {
     "defaultMessage": "Licenza"
@@ -2049,7 +2049,7 @@
     "defaultMessage": "Esterno"
   },
   "instances.modpack-content-modal.external-content-description": {
-    "defaultMessage": "Questo file non è su Modrinth."
+    "defaultMessage": "Questo file non è su Bbsmc."
   },
   "instances.modpack-content-modal.header": {
     "defaultMessage": "Contenuto del pacchetto"
@@ -2646,16 +2646,16 @@
     "defaultMessage": "Mantieni i file aggiornati coi server"
   },
   "modal.open-in-app.get-app": {
-    "defaultMessage": "Scarica Modrinth App"
+    "defaultMessage": "Scarica Bbsmc App"
   },
   "modal.open-in-app.opening-automatically": {
-    "defaultMessage": "Modrinth App si aprirà automaticamente..."
+    "defaultMessage": "Bbsmc App si aprirà automaticamente..."
   },
   "modal.open-in-app.title": {
-    "defaultMessage": "Aprendo Modrinth App"
+    "defaultMessage": "Aprendo Bbsmc App"
   },
   "modal.open-in-app.why-use": {
-    "defaultMessage": "Perché usare Modrinth App"
+    "defaultMessage": "Perché usare Bbsmc App"
   },
   "notification.error.title": {
     "defaultMessage": "Si è verificato un errore"
@@ -2687,8 +2687,8 @@
   "omorphia.component.badge.label.moderator": {
     "defaultMessage": "Moderatore"
   },
-  "omorphia.component.badge.label.modrinth-team": {
-    "defaultMessage": "Team di Modrinth"
+  "omorphia.component.badge.label.Bbsmc-team": {
+    "defaultMessage": "Team di Bbsmc"
   },
   "omorphia.component.badge.label.pending": {
     "defaultMessage": "In sospeso"
@@ -3126,7 +3126,7 @@
     "defaultMessage": "{count} {countPlural, plural, one {avvio recente} other {avvii recenti}}"
   },
   "project.recent-plays.tooltip": {
-    "defaultMessage": "{count} {countPlural, plural, one {avvio recente} other {avvii recenti}} da Modrinth nelle ultime 2 settimane"
+    "defaultMessage": "{count} {countPlural, plural, one {avvio recente} other {avvii recenti}} da Bbsmc nelle ultime 2 settimane"
   },
   "project.server.customModpackTooltip": {
     "defaultMessage": "Questo progetto usa un pacchetto di mod personalizzato"
@@ -3438,7 +3438,7 @@
     "defaultMessage": "Il tuo progetto supporta più ambienti"
   },
   "project.settings.environment.notice.review-options.description": {
-    "defaultMessage": "Abbiamo appena rivisto il sistema di ambienti su Modrinth e ora sono disponibili nuove opzioni. Si prega di assicurarsi che l'opzione corretta sia selezionata qua sotto e poi di cliccare 'Verifica'!"
+    "defaultMessage": "Abbiamo appena rivisto il sistema di ambienti su Bbsmc e ora sono disponibili nuove opzioni. Si prega di assicurarsi che l'opzione corretta sia selezionata qua sotto e poi di cliccare 'Verifica'!"
   },
   "project.settings.environment.notice.review-options.title": {
     "defaultMessage": "Si prega di rivedere le opzioni sotto"
@@ -3990,7 +3990,7 @@
     "defaultMessage": "In attesa"
   },
   "servers.access-table.unknown-joined-date": {
-    "defaultMessage": "—"
+    "defaultMessage": "�?
   },
   "servers.access-table.user-avatar-alt": {
     "defaultMessage": "Foto profilo di {username}"
@@ -4449,13 +4449,13 @@
     "defaultMessage": "Non usare il loro nome utente di Minecraft."
   },
   "servers.grant-access-modal.target.label": {
-    "defaultMessage": "Nome utente di Modrinth"
+    "defaultMessage": "Nome utente di Bbsmc"
   },
   "servers.grant-access-modal.target.no-suggestions": {
     "defaultMessage": "Nessun utente trovato."
   },
   "servers.grant-access-modal.target.placeholder": {
-    "defaultMessage": "Inserisci il nome utente di Modrinth"
+    "defaultMessage": "Inserisci il nome utente di Bbsmc"
   },
   "servers.grant-access-modal.target.searching": {
     "defaultMessage": "Ricerca in corso..."
@@ -4479,7 +4479,7 @@
     "defaultMessage": "Si è verificato un errore durante l'installazione."
   },
   "servers.installing-banner.error.unsupported-loader-version": {
-    "defaultMessage": "Questa versione di Minecraft o del loader non è ancora supportata da Modrinth Hosting."
+    "defaultMessage": "Questa versione di Minecraft o del loader non è ancora supportata da Bbsmc Hosting."
   },
   "servers.installing-banner.phase.installing-addons": {
     "defaultMessage": "Installando gli addon..."
@@ -4512,16 +4512,16 @@
     "defaultMessage": "Hai già un server?"
   },
   "servers.list-empty.learn-more-link": {
-    "defaultMessage": "Scopri di più su Modrinth Hosting"
+    "defaultMessage": "Scopri di più su Bbsmc Hosting"
   },
-  "servers.list-empty.modrinth-hosting-label": {
-    "defaultMessage": "Modrinth Hosting"
+  "servers.list-empty.Bbsmc-hosting-label": {
+    "defaultMessage": "Bbsmc Hosting"
   },
   "servers.list-empty.new-server-button": {
     "defaultMessage": "Nuovo server"
   },
   "servers.list-empty.no-servers-description": {
-    "defaultMessage": "Crea un server, con o senza mod, e invita chi vuoi tramite la Modrinth App."
+    "defaultMessage": "Crea un server, con o senza mod, e invita chi vuoi tramite la Bbsmc App."
   },
   "servers.list-empty.no-servers-title": {
     "defaultMessage": "Ancora nessun server"
@@ -4533,7 +4533,7 @@
     "defaultMessage": "Installa mod con un clic"
   },
   "servers.list-empty.play-with-friends-description": {
-    "defaultMessage": "Invita chiunque desideri e senza problemi, tutto grazie alla Modrinth App."
+    "defaultMessage": "Invita chiunque desideri e senza problemi, tutto grazie alla Bbsmc App."
   },
   "servers.list-empty.play-with-friends-title": {
     "defaultMessage": "Gioca con chiunque"
@@ -4599,7 +4599,7 @@
     "defaultMessage": "L'abbonamento verrà annullato il <date>{formattedDate}</date>. "
   },
   "servers.listing.notice.suspended": {
-    "defaultMessage": "Il server è stato sospeso. Contatta l'assistenza di Modrinth per maggiori informazioni."
+    "defaultMessage": "Il server è stato sospeso. Contatta l'assistenza di Bbsmc per maggiori informazioni."
   },
   "servers.listing.notice.upgrading": {
     "defaultMessage": "Stiamo migliorando l'hardware del tuo server; dovrebbe tornare online a momenti."
@@ -4644,10 +4644,10 @@
     "defaultMessage": "Dettagli sull'errore:"
   },
   "servers.manage.error.queue-notice": {
-    "defaultMessage": "Se hai acquistato il tuo server Modrinth Hosting di recente, attendi e apparirà qui appena è pronto. <warning>Non acquistarne un altro nell'attesa.</warning>"
+    "defaultMessage": "Se hai acquistato il tuo server Bbsmc Hosting di recente, attendi e apparirà qui appena è pronto. <warning>Non acquistarne un altro nell'attesa.</warning>"
   },
   "servers.manage.error.support-notice": {
-    "defaultMessage": "Se hai bisogno di maggiore supporto riguardo allo stato del tuo server, contatta l'assistenza di Modrinth."
+    "defaultMessage": "Se hai bisogno di maggiore supporto riguardo allo stato del tuo server, contatta l'assistenza di Bbsmc."
   },
   "servers.manage.error.title": {
     "defaultMessage": "Impossibile caricare i server"
@@ -4677,7 +4677,7 @@
     "defaultMessage": "Ricarica"
   },
   "servers.manage.resubscribe-error.text": {
-    "defaultMessage": "Si è verificato un errore nel rinnovo del tuo server Modrinth."
+    "defaultMessage": "Si è verificato un errore nel rinnovo del tuo server Bbsmc."
   },
   "servers.manage.resubscribe-error.title": {
     "defaultMessage": "Errore nel riabbonamento"
@@ -4698,7 +4698,7 @@
     "defaultMessage": "Cerca tra {count} server..."
   },
   "servers.manage.servers-title": {
-    "defaultMessage": "Modrinth Hosting"
+    "defaultMessage": "Bbsmc Hosting"
   },
   "servers.manage.settings-hint.description": {
     "defaultMessage": "Ora le puoi trovare qui!"
@@ -4776,7 +4776,7 @@
     "defaultMessage": "Non ignorabile"
   },
   "servers.purchase.notification.success.text": {
-    "defaultMessage": "L'acquisto su Modrinth Hosting è avvenuto con successo."
+    "defaultMessage": "L'acquisto su Bbsmc Hosting è avvenuto con successo."
   },
   "servers.purchase.notification.success.title": {
     "defaultMessage": "Acquisto riuscito"
@@ -4809,13 +4809,13 @@
     "defaultMessage": "Grande"
   },
   "servers.purchase.step.plan.large.desc": {
-    "defaultMessage": "Ideale per 15–25 giocatori, pacchetti di mod o modding intenso."
+    "defaultMessage": "Ideale per 15�?5 giocatori, pacchetti di mod o modding intenso."
   },
   "servers.purchase.step.plan.medium": {
     "defaultMessage": "Medio"
   },
   "servers.purchase.step.plan.medium.desc": {
-    "defaultMessage": "Ottimo per 6–15 giocatori e più mod."
+    "defaultMessage": "Ottimo per 6�?5 giocatori e più mod."
   },
   "servers.purchase.step.plan.most-popular": {
     "defaultMessage": "Il più scelto"
@@ -4827,7 +4827,7 @@
     "defaultMessage": "Piccolo"
   },
   "servers.purchase.step.plan.small.desc": {
-    "defaultMessage": "Perfetto per 1–5 giocatori e qualche mod leggera."
+    "defaultMessage": "Perfetto per 1�? giocatori e qualche mod leggera."
   },
   "servers.purchase.step.plan.title": {
     "defaultMessage": "Piano"
@@ -4866,7 +4866,7 @@
     "defaultMessage": "Dove vorresti che il tuo server sia situato?"
   },
   "servers.region.region-unsupported": {
-    "defaultMessage": "Regione non in elenco? <link>Facci sapere dove vorresti che espandessimo Modrinth Hosting!</link>"
+    "defaultMessage": "Regione non in elenco? <link>Facci sapere dove vorresti che espandessimo Bbsmc Hosting!</link>"
   },
   "servers.region.southeast-asia": {
     "defaultMessage": "Asia sud-orientale"
@@ -4938,7 +4938,7 @@
     "defaultMessage": "Configura server"
   },
   "servers.setup.onboarding.step.choose.description": {
-    "defaultMessage": "Prendi il pacchetto di mod che preferisci da Modrinth, oppure un loader e le mod che vuoi."
+    "defaultMessage": "Prendi il pacchetto di mod che preferisci da Bbsmc, oppure un loader e le mod che vuoi."
   },
   "servers.setup.onboarding.step.choose.title": {
     "defaultMessage": "Scegli a cosa giocare"
@@ -4965,7 +4965,7 @@
     "defaultMessage": "Il server è pronto. Ecco cosa fare per iniziare a giocare!"
   },
   "servers.setup.onboarding.welcome.title": {
-    "defaultMessage": "Modrinth Hosting ti dà il benvenuto"
+    "defaultMessage": "Bbsmc Hosting ti dà il benvenuto"
   },
   "servers.setup.rate-limit.text": {
     "defaultMessage": "Stai andando troppo veloce. Riprova più tardi."
@@ -5004,7 +5004,7 @@
     "defaultMessage": "Scuro"
   },
   "settings.display.theme.description": {
-    "defaultMessage": "Scegli il tema che Modrinth userà su questo dispositivo."
+    "defaultMessage": "Scegli il tema che Bbsmc userà su questo dispositivo."
   },
   "settings.display.theme.light": {
     "defaultMessage": "Chiaro"
@@ -5133,7 +5133,7 @@
     "defaultMessage": "Salva"
   },
   "sharing.invite-players-modal.search-placeholder": {
-    "defaultMessage": "Inserisci il nome utente di Modrinth"
+    "defaultMessage": "Inserisci il nome utente di Bbsmc"
   },
   "sharing.invite-players-modal.searching": {
     "defaultMessage": "Ricerca in corso..."
@@ -5691,34 +5691,34 @@
     "defaultMessage": "Spesso i malware vengono nascosti nelle mod, poi distribuite su piattaforme come Discord."
   },
   "unknown-file-warning-modal.mod-warning-body": {
-    "defaultMessage": " non è su Modrinth. Consigliamo di installare file solo da fonti attendibili."
+    "defaultMessage": " non è su Bbsmc. Consigliamo di installare file solo da fonti attendibili."
   },
   "unknown-file-warning-modal.mod-warning-title": {
     "defaultMessage": "File sconosciuto"
   },
   "unknown-file-warning-modal.modpack-warning-body": {
-    "defaultMessage": " contiene dei file che non sono su Modrinth. Consigliamo di installare file solo da fonti attendibili."
+    "defaultMessage": " contiene dei file che non sono su Bbsmc. Consigliamo di installare file solo da fonti attendibili."
   },
   "unknown-file-warning-modal.modpack-warning-title": {
     "defaultMessage": "File sconosciuti"
   },
   "unknown-file-warning-modal.reviewed-files": {
-    "defaultMessage": "Solo i file pubblicati su Modrinth vengono esaminati, qualunque sia il loro formato (.mrpack inclusi)."
+    "defaultMessage": "Solo i file pubblicati su Bbsmc vengono esaminati, qualunque sia il loro formato (.mrpack inclusi)."
   },
   "unknown-file-warning-modal.unrecognized-files": {
     "defaultMessage": "File non riconosciuti"
   },
   "user.profile.badge.alpha.about.1": {
-    "defaultMessage": "Quest'utente è qui dai tempi dell'alpha di Modrinth, conclusasi a novembre 2020."
+    "defaultMessage": "Quest'utente è qui dai tempi dell'alpha di Bbsmc, conclusasi a novembre 2020."
   },
   "user.profile.badge.alpha.name": {
     "defaultMessage": "Alpha Tester"
   },
   "user.profile.badge.beta.about.1": {
-    "defaultMessage": "Quest'utente è qui dai tempi della beta di Modrinth, conclusasi a febbraio 2022."
+    "defaultMessage": "Quest'utente è qui dai tempi della beta di Bbsmc, conclusasi a febbraio 2022."
   },
   "user.profile.badge.beta.link": {
-    "defaultMessage": "Clicca per sapere di più sulla beta di Modrinth."
+    "defaultMessage": "Clicca per sapere di più sulla beta di Bbsmc."
   },
   "user.profile.badge.beta.name": {
     "defaultMessage": "Beta Tester"
@@ -5730,64 +5730,64 @@
     "defaultMessage": "{download_sum} Download"
   },
   "user.profile.badge.early-datapack-adopter.about.1": {
-    "defaultMessage": "Quest'utente ha contribuito a testare i pacchetti di dati su Modrinth prima del loro rilascio a gennaio 2023."
+    "defaultMessage": "Quest'utente ha contribuito a testare i pacchetti di dati su Bbsmc prima del loro rilascio a gennaio 2023."
   },
   "user.profile.badge.early-datapack-adopter.name": {
     "defaultMessage": "Primi nell'Adottare i Pacchetti di Dati"
   },
   "user.profile.badge.early-modpack-adopter.about.1": {
-    "defaultMessage": "Quest'utente ha contribuito a testare i pacchetti di mod su Modrinth prima del loro rilascio a maggio 2022."
+    "defaultMessage": "Quest'utente ha contribuito a testare i pacchetti di mod su Bbsmc prima del loro rilascio a maggio 2022."
   },
   "user.profile.badge.early-modpack-adopter.name": {
     "defaultMessage": "Primi nell'Adottare i Pacchetti di Mod"
   },
   "user.profile.badge.early-plugin-adopter.about.1": {
-    "defaultMessage": "Quest'utente ha contribuito a testare i plugin su Modrinth prima del loro rilascio ad agosto 2022."
+    "defaultMessage": "Quest'utente ha contribuito a testare i plugin su Bbsmc prima del loro rilascio ad agosto 2022."
   },
   "user.profile.badge.early-plugin-adopter.name": {
     "defaultMessage": "Primi nell'Adottare i Plugin"
   },
   "user.profile.badge.early-resourcepack-adopter.about.1": {
-    "defaultMessage": "Quest'utente ha contribuito a testare i pacchetti di risorse su Modrinth prima del loro rilascio ad agosto 2022."
+    "defaultMessage": "Quest'utente ha contribuito a testare i pacchetti di risorse su Bbsmc prima del loro rilascio ad agosto 2022."
   },
   "user.profile.badge.early-resourcepack-adopter.name": {
     "defaultMessage": "Primi nell'Adottare i Pacchetti di Risorse"
   },
   "user.profile.badge.early-server-adopter.about.1": {
-    "defaultMessage": "Quest'utente ha contribuito a testare i server su Modrinth prima del loro rilascio a marzo 2026."
+    "defaultMessage": "Quest'utente ha contribuito a testare i server su Bbsmc prima del loro rilascio a marzo 2026."
   },
   "user.profile.badge.early-server-adopter.name": {
     "defaultMessage": "Primi nell'Adottare i Server"
   },
   "user.profile.badge.early-shader-adopter.about.1": {
-    "defaultMessage": "Quest'utente ha contribuito a testare le shader su Modrinth prima del loro rilascio a gennaio 2023."
+    "defaultMessage": "Quest'utente ha contribuito a testare le shader su Bbsmc prima del loro rilascio a gennaio 2023."
   },
   "user.profile.badge.early-shader-adopter.name": {
     "defaultMessage": "Primi nell'Adottare le Shader"
   },
   "user.profile.badge.hosting-alpha.about.1": {
-    "defaultMessage": "Quest'utente ha partecipato al test alpha chiuso di Modrinth Hosting prima del rilascio della beta a novembre 2024."
+    "defaultMessage": "Quest'utente ha partecipato al test alpha chiuso di Bbsmc Hosting prima del rilascio della beta a novembre 2024."
   },
   "user.profile.badge.hosting-alpha.name": {
-    "defaultMessage": "Alpha Tester di Modrinth Hosting"
+    "defaultMessage": "Alpha Tester di Bbsmc Hosting"
   },
   "user.profile.badge.moderator.about.1": {
-    "defaultMessage": "Quest'utente lavora per Modrinth come moderatore dei contenuti."
+    "defaultMessage": "Quest'utente lavora per Bbsmc come moderatore dei contenuti."
   },
   "user.profile.badge.moderator.about.2": {
-    "defaultMessage": "I moderatori dei contenuti revisionano i progetti, gestiscono le segnalazioni e aiutano a mantenere Modrinth sicuro."
+    "defaultMessage": "I moderatori dei contenuti revisionano i progetti, gestiscono le segnalazioni e aiutano a mantenere Bbsmc sicuro."
   },
   "user.profile.badge.moderator.name": {
     "defaultMessage": "Moderatore dei contenuti"
   },
   "user.profile.badge.plus.about.1": {
-    "defaultMessage": "Quest'utente sta facendo di tutto per sostenere Modrinth e i creatori sulla piattaforma."
+    "defaultMessage": "Quest'utente sta facendo di tutto per sostenere Bbsmc e i creatori sulla piattaforma."
   },
   "user.profile.badge.plus.link": {
     "defaultMessage": "Clicca per scoprire come puoi diventare anche tu un membro."
   },
   "user.profile.badge.plus.name": {
-    "defaultMessage": "Iscritto a Modrinth+"
+    "defaultMessage": "Iscritto a Bbsmc+"
   },
   "user.profile.badge.pride.about.1": {
     "defaultMessage": "Quest'utente ha partecipato a una delle nostre raccolte fondi per la comunità LGBTQ+."
@@ -5799,10 +5799,10 @@
     "defaultMessage": "Sostenitore del Pride"
   },
   "user.profile.badge.staff.about.1": {
-    "defaultMessage": "Quest'utente lavora per Modrinth."
+    "defaultMessage": "Quest'utente lavora per Bbsmc."
   },
   "user.profile.badge.staff.name": {
-    "defaultMessage": "Team di Modrinth"
+    "defaultMessage": "Team di Bbsmc"
   },
   "version.content.name": {
     "defaultMessage": "Nome"

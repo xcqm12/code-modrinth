@@ -7,7 +7,7 @@ import {
 	TrashExclamationIcon,
 	TrashIcon,
 	TriangleAlertIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import { useMagicKeys } from '@vueuse/core'
 import { computed, getCurrentInstance, ref } from 'vue'
 import type { RouteLocationRaw } from 'vue-router'

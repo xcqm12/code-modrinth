@@ -7,10 +7,10 @@ import {
 	nodeAuthState,
 	NuxtCircuitBreakerStorage,
 	type NuxtClientConfig,
-	NuxtModrinthClient,
+	NuxtBbsmcClient,
 	PanelVersionFeature,
 	VerboseLoggingFeature,
-} from '@modrinth/api-client'
+} from '@Bbsmc/api-client'
 import type { Ref } from 'vue'
 
 import { useFeatureFlags } from '~/composables/featureFlags.ts'
@@ -27,7 +27,7 @@ async function getRateLimitKeyFromSecretsStore(): Promise<string | undefined> {
 	}
 }
 
-export function createModrinthClient(
+export function createBbsmcClient(
 	auth: Ref<{ token: string | undefined }>,
 	config: {
 		apiBaseUrl: string
@@ -35,7 +35,7 @@ export function createModrinthClient(
 		sharedInstancesBaseUrl: string
 		rateLimitKey?: string
 	},
-): NuxtModrinthClient {
+): NuxtBbsmcClient {
 	const flags = useFeatureFlags()
 	const optionalFeatures = [
 		import.meta.dev ? (new VerboseLoggingFeature() as AbstractFeature) : undefined,
@@ -49,7 +49,7 @@ export function createModrinthClient(
 		archonSentryCapture: () => flags.value.archonSentryCapture,
 		rateLimitKey: config.rateLimitKey || getRateLimitKeyFromSecretsStore,
 		features: [
-			// for modrinth hosting
+			// for Bbsmc hosting
 			// is skipped for normal reqs
 			new NodeAuthFeature({
 				getAuth: () => nodeAuthState.getAuth?.() ?? null,
@@ -72,5 +72,5 @@ export function createModrinthClient(
 		],
 	}
 
-	return new NuxtModrinthClient(clientConfig)
+	return new NuxtBbsmcClient(clientConfig)
 }

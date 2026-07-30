@@ -7,9 +7,9 @@ authors: ['bOHH0P9Z', 'AJfd8YH6']
 
 Hey everyone,
 
-With this release, you can now give other users access to your server! This has been one of the most requested features for Modrinth Hosting and weâ€™re excited to finally get it out.
+With this release, you can now give other users access to your server! This has been one of the most requested features for Bbsmc Hosting and weâ€™re excited to finally get it out.
 
-![The new Access tab in the Modrinth Hosting panel, featuring a list of invited users and their permissions, invite new users, and an activity log to see what changes are being made to your server and by whom.](./server-access.webp)
+![The new Access tab in the Bbsmc Hosting panel, featuring a list of invited users and their permissions, invite new users, and an activity log to see what changes are being made to your server and by whom.](./server-access.webp)
 
 ## TL;DR
 
@@ -19,11 +19,11 @@ With this release, you can now give other users access to your server! This has 
 
 ## Invite your friends
 
-You can now give other users access to your server so they can help manage content, start the server, and more. To invite someone, just enter their Modrinth username and theyâ€™ll receive an invite by email or as a notification in the app if theyâ€™re signed in.
+You can now give other users access to your server so they can help manage content, start the server, and more. To invite someone, just enter their Bbsmc username and theyâ€™ll receive an invite by email or as a notification in the app if theyâ€™re signed in.
 
 Alongside this release, weâ€™ve also improved state syncing between the website panel, app, and other users, so everything should stay up to date in real time.
 
-![A pop-up modal for adding a user to your server. Search by Modrinth username, select their role (editor or limited), and an option to also send them a friend request.](./add-user-modal.webp)
+![A pop-up modal for adding a user to your server. Search by Bbsmc username, select their role (editor or limited), and an option to also send them a friend request.](./add-user-modal.webp)
 
 ## Permission roles
 
@@ -37,16 +37,16 @@ You can find a full permission breakdown below:
 
 | Permission               | Owner | Editor | Limited |
 | ------------------------ | ----- | ------ | ------- |
-| Start / stop server      | âœ…    | âœ…     | âœ…      |
-| Execute commands         | âœ…    | âœ…     | âŒ      |
-| Edit settings            | âœ…    | âœ…     | âŒ      |
-| Edit installation        | âœ…    | âœ…     | âŒ      |
-| Manage content           | âœ…    | âœ…     | âŒ      |
-| Manage files             | âœ…    | âœ…     | âŒ      |
-| Create & restore backups | âœ…    | âœ…     | âŒ      |
-| Invite users             | âœ…    | âŒ     | âŒ      |
-| Reset server             | âœ…    | âŒ     | âŒ      |
-| Manage billing           | âœ…    | âŒ     | âŒ      |
+| Start / stop server      | âœ?   | âœ?    | âœ?     |
+| Execute commands         | âœ?   | âœ?    | â?     |
+| Edit settings            | âœ?   | âœ?    | â?     |
+| Edit installation        | âœ?   | âœ?    | â?     |
+| Manage content           | âœ?   | âœ?    | â?     |
+| Manage files             | âœ?   | âœ?    | â?     |
+| Create & restore backups | âœ?   | âœ?    | â?     |
+| Invite users             | âœ?   | â?    | â?     |
+| Reset server             | âœ?   | â?    | â?     |
+| Manage billing           | âœ?   | â?    | â?     |
 
 ## See what changed
 
@@ -56,6 +56,5 @@ You can select a time timeframe and filter by user or action type if youâ€™re lo
 
 ![The activity log section of the Access tab, where you can see the user that performed an action on the left column, the action that was performed in the center, and the time it happened on the right.](./activity-log.webp)
 
-â€”
-
+â€?
 Thank you for your continued support! ğŸ’š

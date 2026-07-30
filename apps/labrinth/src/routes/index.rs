@@ -3,7 +3,7 @@ use serde_json::json;
 
 fn build_info() -> serde_json::Value {
     json!({
-        "name": "modrinth-labrinth",
+        "name": "Bbsmc-labrinth",
         "version": env!("CARGO_PKG_VERSION"),
         "documentation": "https://docs.bbsmc.org.cn",
         "about": "Welcome traveler!",

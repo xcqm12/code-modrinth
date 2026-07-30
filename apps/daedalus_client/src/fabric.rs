@@ -2,9 +2,9 @@
 //!
 //! Fabric and Quilt both expose loader profiles for a concrete Minecraft
 //! version, but Daedalus publishes templated profiles using
-//! `${modrinth.gameVersion}`. A group is a set of Minecraft versions whose
+//! `${Bbsmc.gameVersion}`. A group is a set of Minecraft versions whose
 //! upstream loader profiles have the same structure after the concrete
-//! Minecraft version is replaced with `${modrinth.gameVersion}`. Fabric uses
+//! Minecraft version is replaced with `${Bbsmc.gameVersion}`. Fabric uses
 //! one universal group, so its public profile paths stay as
 //! `versions/{loader}.json`. Quilt has more than one group: versions before
 //! 26.x include hashed/intermediary libraries, while 26.x versions do not. For
@@ -69,7 +69,7 @@ async fn fetch(
 ) -> Result<FetchResult, Error> {
     let upload_files = DashMap::new();
     let mirror_artifacts = DashMap::<String, MirrorArtifact>::new();
-    let modrinth_manifest = fetch_json::<Manifest>(
+    let Bbsmc_manifest = fetch_json::<Manifest>(
         &format_url(&format!("{mod_loader}/v{format_version}/manifest.json",)),
         &semaphore,
     )
@@ -186,18 +186,18 @@ async fn fetch(
             mirror_artifacts,
         });
     }
-    // We check Modrinth's manifest to find newly added loader versions,
+    // We check Bbsmc's manifest to find newly added loader versions,
     // intermediary/mapping artifacts, and game versions.
     let (
         fetch_fabric_versions,
         fetch_intermediary_versions,
         has_new_game_versions,
-    ) = if let Some(modrinth_manifest) = modrinth_manifest {
+    ) = if let Some(Bbsmc_manifest) = Bbsmc_manifest {
         let (mut fetch_versions, mut fetch_intermediary_versions) =
             (Vec::new(), Vec::new());
 
         for version in &fabric_manifest.loader {
-            if !modrinth_manifest
+            if !Bbsmc_manifest
                 .game_versions
                 .iter()
                 .any(|x| x.loaders.iter().any(|x| x.id == version.version))
@@ -208,7 +208,7 @@ async fn fetch(
         }
 
         for version in &fabric_manifest.intermediary {
-            if !modrinth_manifest
+            if !Bbsmc_manifest
                 .game_versions
                 .iter()
                 .any(|x| x.id == version.version)
@@ -223,7 +223,7 @@ async fn fetch(
 
         let has_new_game_versions =
             fabric_manifest.game.iter().any(|version| {
-                !modrinth_manifest
+                !Bbsmc_manifest
                     .game_versions
                     .iter()
                     .any(|x| x.id == version.version)

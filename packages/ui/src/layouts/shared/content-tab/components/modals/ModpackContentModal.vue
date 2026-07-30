@@ -8,7 +8,7 @@ import {
 	PaintbrushIcon,
 	SearchIcon,
 	SpinnerIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import Fuse from 'fuse.js'
 import { computed, nextTick, ref, watchSyncEffect } from 'vue'
 
@@ -96,7 +96,7 @@ const messages = defineMessages({
 	},
 	externalContentDescription: {
 		id: 'instances.modpack-content-modal.external-content-description',
-		defaultMessage: 'This file is not published on Modrinth.',
+		defaultMessage: 'This file is not published on Bbsmc.',
 	},
 	openInSlicer: {
 		id: 'instances.modpack-content-modal.open-in-slicer',

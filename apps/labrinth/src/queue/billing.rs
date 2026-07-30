@@ -187,7 +187,7 @@ async fn update_tax_amounts(
                             new_tax_amount: tax_amount,
                             product_name: product
                                 .name
-                                .unwrap_or_else(|| "Modrinth".to_owned()),
+                                .unwrap_or_else(|| "Bbsmc".to_owned()),
                         },
                     )
                 };
@@ -913,7 +913,7 @@ async fn unprovision_subscriptions(
 
                 let res = reqwest::Client::new()
                     .post(format!(
-                        "{}/modrinth/v0/servers/{}/suspend",
+                        "{}/Bbsmc/v0/servers/{}/suspend",
                         ENV.ARCHON_URL,
                         server_id
                     ))

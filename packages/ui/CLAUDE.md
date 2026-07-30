@@ -1,6 +1,6 @@
 # Architecture
 
-The shared UI package used by both `apps/frontend` (Nuxt 3) and `apps/app-frontend` (Vue 3 + Tauri). Components here must be platform-agnostic â€” use dependency injection for platform-specific behavior.
+The shared UI package used by both `apps/frontend` (Nuxt 3) and `apps/app-frontend` (Vue 3 + Tauri). Components here must be platform-agnostic â€?use dependency injection for platform-specific behavior.
 
 ## Folder Structure
 
@@ -23,8 +23,8 @@ Each subdirectory under `components/` has an `index.ts` barrel file. All public 
 
 Self-contained page layouts shared across frontends. Split into two categories:
 
-- **`shared/`** â€” Reusable layout modules with their own components, composables, providers, and types. Each module is a self-contained unit (e.g. `shared/content-tab/` contains the content/mods tab layout with its own `layout.vue`, `components/`, `composables/`, `providers/`, and `types.ts`).
-- **`wrapped/`** â€” Page-level Vue components that mirror route structures (e.g. `wrapped/hosting/manage/`). These are full page implementations consumed by both `apps/frontend` and `apps/app-frontend`.
+- **`shared/`** â€?Reusable layout modules with their own components, composables, providers, and types. Each module is a self-contained unit (e.g. `shared/content-tab/` contains the content/mods tab layout with its own `layout.vue`, `components/`, `composables/`, `providers/`, and `types.ts`).
+- **`wrapped/`** â€?Page-level Vue components that mirror route structures (e.g. `wrapped/hosting/manage/`). These are full page implementations consumed by both `apps/frontend` and `apps/app-frontend`.
 
 Files inside `layouts/` use the `#ui/*` import alias (resolved via the `"imports"` field in `package.json`) to reference other `src/` modules like `#ui/components/base/ButtonStyled.vue` or `#ui/composables/i18n`.
 
@@ -35,14 +35,14 @@ Files inside `layouts/` use the `#ui/*` import alias (resolved via the `"imports
 All frontend packages share a Tailwind preset at `packages/tooling-config/tailwind/tailwind-preset.ts`. This package's `tailwind.config.ts` extends it:
 
 ```ts
-import preset from '@modrinth/tooling-config/tailwind/tailwind-preset.ts'
+import preset from '@Bbsmc/tooling-config/tailwind/tailwind-preset.ts'
 ```
 
 CSS custom properties are defined in `packages/assets/styles/variables.scss` with light, dark, and OLED theme variants.
 
 ### Color Usage Rules
 
-**Use `surface-*` variables for backgrounds â€” never aliased `bg-*` color variables:**
+**Use `surface-*` variables for backgrounds â€?never aliased `bg-*` color variables:**
 
 | Token            | Usage                                     |
 | ---------------- | ----------------------------------------- |
@@ -61,12 +61,12 @@ CSS custom properties are defined in `packages/assets/styles/variables.scss` wit
 | `text-primary`   | Default body text                |
 | `text-secondary` | Reduced emphasis, secondary info |
 
-**Brand and semantic colors** not all exposed as Figma variables â€” refer to `packages/assets/styles/variables.scss` for the full set:
+**Brand and semantic colors** not all exposed as Figma variables â€?refer to `packages/assets/styles/variables.scss` for the full set:
 
-- `bg-{color}`, `text-{color}` etc. â€” Primary brand colors
-- `bg-{color}-highlight` â€” 25% opacity semantic highlights
+- `bg-{color}`, `text-{color}` etc. â€?Primary brand colors
+- `bg-{color}-highlight` â€?25% opacity semantic highlights
 
-**Color palette** (each with shades 50â€“950): red, orange, green, blue, purple, gray. Platform-specific colors also exist (fabric, forge, quilt, neoforge, etc.).
+**Color palette** (each with shades 50â€?50): red, orange, green, blue, purple, gray. Platform-specific colors also exist (fabric, forge, quilt, neoforge, etc.).
 
 ## Storybook
 
@@ -78,8 +78,8 @@ This package defines the DI layer using `createContext` from `src/providers/inde
 
 Key providers exported from this package:
 
-- `provideModrinthClient` / `injectModrinthClient` â€” API client
-- `provideNotificationManager` / `injectNotificationManager` â€” Notifications
+- `provideBbsmcClient` / `injectBbsmcClient` â€?API client
+- `provideNotificationManager` / `injectNotificationManager` â€?Notifications
 
 ## Vue Template Rules
 

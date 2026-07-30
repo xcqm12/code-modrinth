@@ -38,9 +38,9 @@ const VERSIONS: VersionEntry[] = [
 - Added a way to see where a shared instance content is coming from when in the Install to play modal, either the linked modpack or if it was added on top. Content which is a part of the linked modpack will show the modpack information underneath it's name.
 - Added user blocking
 - You can block users on their profile page.
-- You can block users when reporting a shared instance. This prevents the user from sending you invites to shared instances and Modrinth Hosting server panels.
-- You can manage who you've blocked in the new Social settings in the app's Settings menu, or on the Modrinth website.
-- Added the ability to edit your Modrinth profile in the app's Settings menu.
+- You can block users when reporting a shared instance. This prevents the user from sending you invites to shared instances and Bbsmc Hosting server panels.
+- You can manage who you've blocked in the new Social settings in the app's Settings menu, or on the Bbsmc website.
+- Added the ability to edit your Bbsmc profile in the app's Settings menu.
 - Added the ability to adjust the amount of quick instances shown in the sidebar by dragging the divider up and down.
 - Added an option to always show "Copy details" on the installation job notifications, rather than just on failed and interrupted instance install jobs.
 - Clicking on friends in the friends list will take you to their profile page.
@@ -48,7 +48,7 @@ const VERSIONS: VersionEntry[] = [
 ## Changed
 
 - More than three instances now show up in the left sidebar's quick instance selection area for larger window sizes.
-- Updated Modrinth App logo to just use the standard Modrinth logo to save space.
+- Updated Bbsmc App logo to just use the standard Bbsmc logo to save space.
 - Updated the design of the back/forward buttons.
 - Limited shared instances to 50 users.
 - Changed the expiry date picker in the shared instance invite edit modal to be a dropdown of common dates, rather than a complicated date picker. You can still use the fine-grained date picker by choosing "Custom"
@@ -57,12 +57,12 @@ const VERSIONS: VersionEntry[] = [
 - Moved out behavioural settings into it's own subpage, rather than being in Appearance settings.
 - Updated "Advanced" toggle filter design to be the same as the other filters, just with only an exclude button as the primary action.
 - Re-aligned the traffic light buttons on macOS with the top bar.
-- Updated translations. Want to help translate the Modrinth App? [Click here](https://translate.bbsmc.org.cn)
-- **Modrinth Hosting:** Updated translations. Want to help translate Modrinth Hosting? [Click here](https://translate.bbsmc.org.cn)
+- Updated translations. Want to help translate the Bbsmc App? [Click here](https://translate.bbsmc.org.cn)
+- **Bbsmc Hosting:** Updated translations. Want to help translate Bbsmc Hosting? [Click here](https://translate.bbsmc.org.cn)
 
 ## Fixed
 
-- **Modrinth Hosting:** Fixed issue where when browsing content for your server panel, when visiting a project page and going back to search, it would reset the page back to one.
+- **Bbsmc Hosting:** Fixed issue where when browsing content for your server panel, when visiting a project page and going back to search, it would reset the page back to one.
 - Fixed issue where when browsing content for an instance, when visiting a project page and going back to search, it would reset the page back to one.
 - Refactored how breadcrumbs work in the app, this should solve many issues you might have encountered using the back and forward navigation buttons in the app header.
 - Fixed error spam when the shared instances API is not accessible, it will cleanly provide feedback that the app cannot connect.`,
@@ -71,13 +71,13 @@ const VERSIONS: VersionEntry[] = [
 		date: `2026-07-28T20:40:11+00:00`,
 		product: 'web',
 		body: `## Added
-	- You can now block users on their profile page. This prevents the user from sending you invites to shared instances and Modrinth Hosting server panels.
-	- Added new social settings page, where you can manage users you have blocked and in the future set who can send you friend requests and invitations to shared instances and Modrinth Hosting server panels.
+	- You can now block users on their profile page. This prevents the user from sending you invites to shared instances and Bbsmc Hosting server panels.
+	- Added new social settings page, where you can manage users you have blocked and in the future set who can send you friend requests and invitations to shared instances and Bbsmc Hosting server panels.
 
 	## Changed
 	- Cleaned up the layout of and renamed the Public profile settings page to Profile settings.
 	- Updated "Advanced" toggle filter design to be the same as the other filters, just with only an exclude button as the primary action.
-	- Updated translations. Want to help translate Modrinth's website? [Click here](https://translate.bbsmc.org.cn)
+	- Updated translations. Want to help translate Bbsmc's website? [Click here](https://translate.bbsmc.org.cn)
 
 	## Fixed
 	- Fixed profile pictures still being deleted after resetting a pending removal in Profile settings.
@@ -91,7 +91,7 @@ const VERSIONS: VersionEntry[] = [
 		date: `2026-07-28T20:40:11+00:00`,
 		product: 'hosting',
 		body: `## Changed
-- Updated translations. Want to help translate Modrinth Hosting? [Click here](https://translate.bbsmc.org.cn)
+- Updated translations. Want to help translate Bbsmc Hosting? [Click here](https://translate.bbsmc.org.cn)
 
 ## Fixed
 - Fixed issue where when browsing content for your server panel, when visiting a project page and going back to search, it would reset the page back to one.`,
@@ -290,7 +290,7 @@ const VERSIONS: VersionEntry[] = [
 ## Changed
 - Enhanced the warning pop-up when installing unknown modpacks to help mitigate ongoing scams.
   - The primary action is now to not install, to force users to actually read the message and not skip through it.
-  - It will no longer pop up for mrpacks that contain all Modrinth content.
+  - It will no longer pop up for mrpacks that contain all Bbsmc content.
   - It will now show the external content so that the user is informed of what exactly they are installing.`,
 	},
 	{
@@ -464,8 +464,8 @@ const VERSIONS: VersionEntry[] = [
 ## Fixed
 - Fixed an issue where sometimes the app would desynchronise from the file system when disabling, enabling or removing mods from the Content tab.
 - Fixed issue where server pinging in the Worlds tab of the instance page would be stuck in a loading state for too long.
-- Fixed the Logs page in Modrinth App overflowing past the window instead of keeping the console contained.
-- Fixed the Modrinth Hosting server panel in Modrinth App overflowing past the window instead of keeping the console contained.
+- Fixed the Logs page in Bbsmc App overflowing past the window instead of keeping the console contained.
+- Fixed the Bbsmc Hosting server panel in Bbsmc App overflowing past the window instead of keeping the console contained.
 - Fixed issue where sometimes disabling linked modpack content would not work. Thanks [@creeperkatze](@creeperkatze)!
 - Fixed issue where unlinking a locally imported mrpack from an instance causes the content to never show up in the content list.`,
 	},
@@ -496,7 +496,7 @@ const VERSIONS: VersionEntry[] = [
 - Added the ability to create desktop shortcuts for your instances.
 
 ## Changed
-- Instance installs in the Modrinth App now show detailed progress for preparing Java, downloading modpack files, downloading content, extracting overrides, and downloading Minecraft.
+- Instance installs in the Bbsmc App now show detailed progress for preparing Java, downloading modpack files, downloading content, extracting overrides, and downloading Minecraft.
 - Java, modpack, content, overrides and Minecraft downloads/extracting now show downloaded/extracted and total size.
 - The Content tabâ€™s "Update all" action now shows live progress while resolving versions, downloading projects, and finishing updates.
 - Changed the visual style of the Delete server/Delete world modal on the Worlds tab of instances to match the Content tab's modals.
@@ -591,7 +591,7 @@ const VERSIONS: VersionEntry[] = [
 
 ## Changed
 - Improved folder filtering when exporting a modpack from an instance.
-- Improved error messages when parts of the Modrinth API are unavailable.
+- Improved error messages when parts of the Bbsmc API are unavailable.
 
 ## Fixed
 - Fixed the Content tab showing updates for installed content when the recommended version used the same file as installed.
@@ -623,7 +623,7 @@ const VERSIONS: VersionEntry[] = [
 - Fixed rate limit issue when adding a skin in the skin selector.
 - Fixed issue with the Skin selector appearing in a broken state when the Minecraft api is unavailable. Now it appears in a read only state, showing the last selected skin or the default skin if it is unable to determine the last selected skin.
 - Fixed issue where skins which had translucency in the outer layer did not correctly render.
-- Fixed issue in Skin selector where the Edit button was not available on skins included within Modrinth App - meaning you could not change the cape of the skin without first applying it.
+- Fixed issue in Skin selector where the Edit button was not available on skins included within Bbsmc App - meaning you could not change the cape of the skin without first applying it.
 - Fixed loading state incorrectly showing briefly in the Skins selector when a saved skin is deleted.`,
 	},
 	{
@@ -654,7 +654,7 @@ const VERSIONS: VersionEntry[] = [
 		body: `## Added
 - Added a new setting to the General tab of instance settings which allows you to control what content versions are considered an update. By default this will be set to release channel only.
 - Fixed drag and drop file upload not working in instances Files tab.
-- Fixed layering issue with the expanded console view in the Logs tab of instances and Modrinth Hosting panels.
+- Fixed layering issue with the expanded console view in the Logs tab of instances and Bbsmc Hosting panels.
 
 ## Changed
 - Moved "Reload to update" button from the bottom left to the top right action bar.
@@ -663,7 +663,7 @@ const VERSIONS: VersionEntry[] = [
 
 ## Fixed
 - Fixed updater restarting the app even if you didn't ask it to.
-- Fixed user pages incorrectly opening in the app when clicking user objects in the Modrinth Hosting`,
+- Fixed user pages incorrectly opening in the app when clicking user objects in the Bbsmc Hosting`,
 	},
 	{
 		date: `2026-06-08T22:54:32+00:00`,
@@ -717,7 +717,7 @@ const VERSIONS: VersionEntry[] = [
 - Updated translations
 
 ## Fixed
-- Fixed importing large .mrpack files in Modrinth App causing OS freezing or crashing.
+- Fixed importing large .mrpack files in Bbsmc App causing OS freezing or crashing.
 - Fixed the content update modal in the Content tab of instances hiding available updates in some cases.
 - Fixed copying full paths from the Files tab using mixed path separators on Windows.`,
 	},
@@ -738,33 +738,33 @@ const VERSIONS: VersionEntry[] = [
 		product: 'app',
 		version: '0.14.2',
 		body: `## Added
-- New Australia region for Modrinth Hosting
+- New Australia region for Bbsmc Hosting
 
 ## Fixed
-- Germany Modrinth hosting region not providing latency data.`,
+- Germany Bbsmc hosting region not providing latency data.`,
 	},
 	{
 		date: `2026-05-31T16:45:15-07:00`,
 		product: 'web',
 		body: `## Added
-- New Australia region for Modrinth Hosting
+- New Australia region for Bbsmc Hosting
 
 ## Fixed
-- Germany Modrinth hosting region not providing latency data.`,
+- Germany Bbsmc hosting region not providing latency data.`,
 	},
 	{
 		date: `2026-05-31T16:45:15+00:00`,
 		product: 'app',
 		version: '0.14.1',
 		body: `## Added
-- Pride Fundraiser 2026 banner in the Modrinth App sidebar with donation progress, supporter count, days remaining, and a donation link.
-- Modrinth Pride Fundraiser supporters can now access exclusive Mr. Pack Pride skins in the Modrinth App Skin selector.
-- Mr. Pack is now available as a default skin in the Modrinth App Skin selector.
+- Pride Fundraiser 2026 banner in the Bbsmc App sidebar with donation progress, supporter count, days remaining, and a donation link.
+- Bbsmc Pride Fundraiser supporters can now access exclusive Mr. Pack Pride skins in the Bbsmc App Skin selector.
+- Mr. Pack is now available as a default skin in the Bbsmc App Skin selector.
 
 ## Changed
 - Updated tooltips from pure black backgrounds to a style consistent with other popovers.
 - Floating tooltips and pop-ups now have stronger shadows.
-- Updated cards across Modrinth with consistent subtle borders.`,
+- Updated cards across Bbsmc with consistent subtle borders.`,
 	},
 	{
 		date: `2026-05-31T16:45:15+00:00`,
@@ -776,9 +776,9 @@ const VERSIONS: VersionEntry[] = [
 
 ## Changed
 - Redesigned user badges.
-- Content Moderators now also have the Modrinth Team badge.
+- Content Moderators now also have the Bbsmc Team badge.
 - Users with the Alpha Tester badge now also have the Beta Tester badge.
-- Updated cards across Modrinth with consistent subtle borders.
+- Updated cards across Bbsmc with consistent subtle borders.
 - Updated tooltips from pure black backgrounds to a style consistent with other popovers.
 - Floating tooltips and pop-ups now have stronger shadows.
 
@@ -829,12 +829,12 @@ const VERSIONS: VersionEntry[] = [
 - Changed cape selection so each saved skin controls its own cape instead of using a separate default cape.
 - Moved cape selection into the Edit skin modal, with a \`None\` option for saving skins without capes.
 - Updated skin previews for more consistent framing across the Skin selector, skin editor, and skin cards.
-- Skin and cape changes made outside Modrinth App are now reflected when the Skin selector refreshes or on app launch safely.
+- Skin and cape changes made outside Bbsmc App are now reflected when the Skin selector refreshes or on app launch safely.
 - Images from \`user-images.githubusercontent.com\` are no longer proxied.
 
 ## Fixed
 - Fixed duplicate saved skin cards appearing when the same texture was saved with different arm or cape settings.
-- Fixed skins equipped outside Modrinth App disappearing from the Skin selector after switching to another skin.
+- Fixed skins equipped outside Bbsmc App disappearing from the Skin selector after switching to another skin.
 - Fixed skin selection hanging when a skin texture download stopped responding.
 - Fixed the hide nametag setting not updating the Skin selector preview until the page refreshed.`,
 	},
@@ -878,7 +878,7 @@ const VERSIONS: VersionEntry[] = [
 		product: 'app',
 		version: '0.13.22',
 		body: `## Added
-- Added log spam detection and line compacting logic to prevent Modrinth App from crashing when viewing large log files.
+- Added log spam detection and line compacting logic to prevent Bbsmc App from crashing when viewing large log files.
 
 ## Changed
 - Increased the default memory for instances from 2GB to 4GB (depending on your system memory).
@@ -924,7 +924,7 @@ const VERSIONS: VersionEntry[] = [
 		product: 'hosting',
 		body: `## Fixed
 - Fixed the support portal bubble appearing in the wrong position in the bottom-right corner of the server panel.
-- Fixed modpack updates in the Content tab not appearing when a newer Modrinth version was available.`,
+- Fixed modpack updates in the Content tab not appearing when a newer Bbsmc version was available.`,
 	},
 	{
 		date: `2026-05-20T19:48:04+00:00`,
@@ -1011,7 +1011,7 @@ const VERSIONS: VersionEntry[] = [
 - Fixed the lack of margin above the pagination links at the bottom of Discover pages.
 - Fixed longstanding issue "Unable to read category tags from any source" that occurs sometimes when the app has cached invalid tags.
 - Fixed Windows app control buttons not being clickable at the exact top right corner.
-- Fixed Modrinth project links opening inside a broken in-app web browser rather than going to the project's page in the app.
+- Fixed Bbsmc project links opening inside a broken in-app web browser rather than going to the project's page in the app.
 - Fixed not being able to hover over project card tooltip items.`,
 	},
 	{
@@ -1083,8 +1083,8 @@ const VERSIONS: VersionEntry[] = [
 		date: `2026-05-09T19:06:18+00:00`,
 		product: 'hosting',
 		body: `## Changed
-- Updated Modrinth Hosting content browsing so multiple projects can be selected before installation.
-- After installing selected content, the Modrinth Hosting content page now reopens immediately and shows pending projects as installing.
+- Updated Bbsmc Hosting content browsing so multiple projects can be selected before installation.
+- After installing selected content, the Bbsmc Hosting content page now reopens immediately and shows pending projects as installing.
 - Project icons now appear in the action bar when selecting multiple projects in the Content tab.
 
 ## Fixed
@@ -1111,7 +1111,7 @@ const VERSIONS: VersionEntry[] = [
 		date: `2026-05-08T02:24:09+00:00`,
 		product: 'hosting',
 		body: `## Fixed
-- Fixed failed \`mrpack\` uploads when uploading via the Modrinth App.
+- Fixed failed \`mrpack\` uploads when uploading via the Bbsmc App.
 - Fixed support bubble being broken when the console is in full screen/expand mode.`,
 	},
 	{
@@ -1176,7 +1176,7 @@ const VERSIONS: VersionEntry[] = [
 		version: '0.13.8',
 		body: `## Fixed
 - Fixed exclude open source filter not working.
-- Fixed Central Europe server region not displaying ping in the Modrinth Hosting region selector.`,
+- Fixed Central Europe server region not displaying ping in the Bbsmc Hosting region selector.`,
 	},
 	{
 		date: `2026-05-02T22:09:01+00:00`,
@@ -1185,7 +1185,7 @@ const VERSIONS: VersionEntry[] = [
 - Fixed exclude open source filter not working.
 - Fixed 404 error when returning to collections dashboard from a collection page.
 - Fixed error loading revenue transfer history page.
-- Fixed Central Europe server region not displaying ping in the Modrinth Hosting region selector.`,
+- Fixed Central Europe server region not displaying ping in the Bbsmc Hosting region selector.`,
 	},
 	{
 		date: `2026-04-29T17:19:44+00:00`,
@@ -1220,7 +1220,7 @@ const VERSIONS: VersionEntry[] = [
 		date: `2026-04-27T19:59:24+00:00`,
 		product: 'app',
 		version: '0.13.6',
-		body: `*Note: Modrinth App v0.13.5's release has been skipped - it's changes have been bundled into 0.13.6.*
+		body: `*Note: Bbsmc App v0.13.5's release has been skipped - it's changes have been bundled into 0.13.6.*
 ## Changed
 - Renamed the Browse page filter from "Hide installed content/added servers" to "Hide already installed content/added servers".
 - Content installed and servers added from an instance now stay visible on the Browse page until the search query or filters change.
@@ -1305,7 +1305,7 @@ const VERSIONS: VersionEntry[] = [
 
 ## Fixed
 - Worlds and servers in the instance Worlds tab now load almost instantly instead of taking one to two seconds.
-- Fixed the Modrinth+ upgrade button and ad banner not staying pinned to the bottom right.
+- Fixed the Bbsmc+ upgrade button and ad banner not staying pinned to the bottom right.
 - Fixed servers in the "Jump back in" section of the home page loading slowly. Thanks to [@Creeperkatze](https://github.com/Creeperkatze)!
 - Fixed several issues with the splash screen.
 - Fixed the cancel button when changing the install directory.
@@ -1324,7 +1324,7 @@ const VERSIONS: VersionEntry[] = [
 
 ## Fixed
 - Fixed slow tab switching in the server panel.
-- Fixed slow loading of the "Manage servers" page in the Modrinth App and slow interactions with it on the website.`,
+- Fixed slow loading of the "Manage servers" page in the Bbsmc App and slow interactions with it on the website.`,
 	},
 	{
 		date: `2026-04-18T19:00:59+00:00`,
@@ -1346,12 +1346,12 @@ const VERSIONS: VersionEntry[] = [
 ## Changed
 - Console search highlighting is clearer and more accurate.
 - When memory is shown as bytes, the max RAM is now displayed alongside it.
-- Consolidated spacing between server and instance pages in the Modrinth App.
+- Consolidated spacing between server and instance pages in the Bbsmc App.
 - Moved the "Kill server" action into a dropdown under the "Restart" button.
 
 ## Fixed
-- The support bubble is now available on hosting pages in the Modrinth App.
-- Paper and Purpur build versions can be selected when resetting a server in the Modrinth App.
+- The support bubble is now available on hosting pages in the Bbsmc App.
+- Paper and Purpur build versions can be selected when resetting a server in the Bbsmc App.
 - Server CPU and memory graphs no longer freeze on the last value after a hard crash or out-of-memory kill.`,
 	},
 	{
@@ -1378,9 +1378,9 @@ const VERSIONS: VersionEntry[] = [
 		product: 'app',
 		version: '0.13.0',
 		body: `## Changed
-- The Logs page has been redesigned, and brought into the same style as the new overview page from Modrinth Hosting.
-- Refactored the Logs page to share its console, filtering, and share-to-mclo.gs functionality with the Modrinth Hosting server panel.
-- Aligned the instance header with the Modrinth Hosting server panel header for a consistent look across the app and web.
+- The Logs page has been redesigned, and brought into the same style as the new overview page from Bbsmc Hosting.
+- Refactored the Logs page to share its console, filtering, and share-to-mclo.gs functionality with the Bbsmc Hosting server panel.
+- Aligned the instance header with the Bbsmc Hosting server panel header for a consistent look across the app and web.
 - Historical log files are now fetched in the background (and stored much more efficiently) when opening the Logs page, so switching between them is instant.
 - Moved live log capture from the frontend to the Rust backend, significantly reducing overhead when an instance produces large volumes of output.`,
 	},
@@ -1448,14 +1448,14 @@ const VERSIONS: VersionEntry[] = [
 ## Changed
 - When updating your game version in the platform settings, incompatible mods are now disabled instead of removed.
 - Better UI for installed custom modpack files.
-- Redesigned the server panel header â€?loader, game version, server address, uptime, and linked project are now shown as clean inline stats with the project icon and a link to the project page, matching instances in the Modrinth App.
+- Redesigned the server panel header â€?loader, game version, server address, uptime, and linked project are now shown as clean inline stats with the project icon and a link to the project page, matching instances in the Bbsmc App.
 - Rebuilt the Files tab with right-click context menus, keyboard shortcuts, drag-and-drop, improved modals for moving items and extracting archives, undo/redo for file moves and renames, and smoother scrolling for large directories, now aligned with the Content tab design.
 - Cleaned up backup progress indicators to be more compact.
 
 ## Fixed
-- The "Change version" and "Re-install modpack" buttons are hidden for custom file modpacks, since there's no Modrinth project to pull versions from
-- The "Switch version" button on individual mods is hidden for content that isn't linked to a Modrinth project, preventing broken lookups
-- Project and version links are no longer generated for content that doesn't exist on Modrinth
+- The "Change version" and "Re-install modpack" buttons are hidden for custom file modpacks, since there's no Bbsmc project to pull versions from
+- The "Switch version" button on individual mods is hidden for content that isn't linked to a Bbsmc project, preventing broken lookups
+- Project and version links are no longer generated for content that doesn't exist on Bbsmc
 - Content type filter labels are now properly translated instead of displaying raw English strings.
 - Fixed a bug with server onboarding/reset flow not passing the correct NeoForge loader version for the selected game version.`,
 	},
@@ -1464,7 +1464,7 @@ const VERSIONS: VersionEntry[] = [
 		product: 'app',
 		version: '0.12.5',
 		body: `## Added
-- Added a Files tab for instances, matching the Modrinth Hosting experience â€?browse, edit, and manage all files in your instance folder without leaving the app, ideal for editing config files, viewing crash reports, and more.
+- Added a Files tab for instances, matching the Bbsmc Hosting experience â€?browse, edit, and manage all files in your instance folder without leaving the app, ideal for editing config files, viewing crash reports, and more.
 - Added new filters to the Worlds tab: Online, Offline, Singleplayer, Modded, and Vanilla, replacing the previous set.
 - Added a "Browse servers" option to the Worlds tab, allowing you to search for compatible servers and quickly play or save them for later.
 - Added an empty state to the Worlds tab aligned with the Content tabs, with options to add or browse for servers.
@@ -1510,7 +1510,7 @@ const VERSIONS: VersionEntry[] = [
 		date: `2026-03-26T07:22:22+00:00`,
 		product: 'hosting',
 		body: `## Fixed
-- Fixed wrong mod being disabled on hosted servers - Disabling a non-Modrinth mod could incorrectly disable a different mod instead
+- Fixed wrong mod being disabled on hosted servers - Disabling a non-Bbsmc mod could incorrectly disable a different mod instead
 - Fixed content list not refreshing after installing mods - Navigating back to the content tab after installing something from Browse would show stale data for up to 10 seconds
 - Fixed copying mod filenames inserting a newline - Copying a filename or version number from the content tab no longer includes a line break in the middle
 - Fixed NeoForge installs sending an empty loader version - Changing to NeoForge on a hosted server could send a blank loader version, resulting in a broken installation`,
@@ -1546,7 +1546,7 @@ const VERSIONS: VersionEntry[] = [
 		date: `2026-03-17T12:15:00-08:00`,
 		product: 'hosting',
 		body: `## [Content Management Overhaul](/news/article/content-management-overhaul)
-- We've overhauled the Content tab and improved parity with Modrinth App. Check out our [blog post](/news/article/content-management-overhaul) to learn more.`,
+- We've overhauled the Content tab and improved parity with Bbsmc App. Check out our [blog post](/news/article/content-management-overhaul) to learn more.`,
 	},
 	{
 		date: `2026-03-13T00:15:00-00:00`,
@@ -1785,7 +1785,7 @@ const VERSIONS: VersionEntry[] = [
 		version: '0.10.27',
 		body: `## Improvements
 - Fixed installing content from Discover refusing to create NeoForge instances.
-- Added circuit-breaker logic to prevent Modrinth App from spamming API requests during downtime.`,
+- Added circuit-breaker logic to prevent Bbsmc App from spamming API requests during downtime.`,
 	},
 	{
 		date: `2026-01-23T12:25:00-08:00`,
@@ -1797,7 +1797,7 @@ const VERSIONS: VersionEntry[] = [
 		date: `2026-01-22T11:40:00-08:00`,
 		product: 'web',
 		body: `## Improvements
-- Updated Flathub to be the official recommended way to download Modrinth App on Linux.`,
+- Updated Flathub to be the official recommended way to download Bbsmc App on Linux.`,
 	},
 	{
 		date: `2026-01-21T14:55:00-08:00`,
@@ -1878,7 +1878,7 @@ const VERSIONS: VersionEntry[] = [
 		date: `2026-01-05T12:35:00-08:00`,
 		product: 'web',
 		body: `## Improvements
-- Fixed an issue when upgrading a Modrinth Hosting server.`,
+- Fixed an issue when upgrading a Bbsmc Hosting server.`,
 	},
 	{
 		date: `2026-01-01T17:25:00-08:00`,
@@ -1975,7 +1975,7 @@ const VERSIONS: VersionEntry[] = [
 		product: 'app',
 		version: '0.10.22',
 		body: `## Improvements
-- Updated Modrinth Servers branding to new Modrinth Hosting branding.
+- Updated Bbsmc Servers branding to new Bbsmc Hosting branding.
 - Fixed server pinging blocking the app from loading.
 - Fixed instance overrides for window and Java settings not being able to be disabled.`,
 	},
@@ -2020,7 +2020,7 @@ const VERSIONS: VersionEntry[] = [
 		date: `2025-12-03T14:45:00-08:00`,
 		product: 'web',
 		body: `## Changes
-- Updated Modrinth Servers branding to new Modrinth Hosting branding.`,
+- Updated Bbsmc Servers branding to new Bbsmc Hosting branding.`,
 	},
 	{
 		date: `2025-11-28T11:45:00-08:00`,
@@ -2036,7 +2036,7 @@ const VERSIONS: VersionEntry[] = [
 		version: '0.10.20',
 		body: `## Improvements
 - Improved contrast, visibility, and consistency of UI elements, especially in light mode.
-- Fixed ads showing up in the loading screen, even when you have Modrinth+.
+- Fixed ads showing up in the loading screen, even when you have Bbsmc+.
 - Added a warning banner when Minecraft's authentication servers are detected to be down.
 - Fixed icon when creating an instance not being saved.`,
 	},
@@ -2164,7 +2164,7 @@ const VERSIONS: VersionEntry[] = [
 		version: '0.10.13',
 		body: `## Improvements
 - Revamped the app sidebar and friends UI to be more straightforward and easier to use.
-- Improved the UI of the Modrinth account button in the bottom left corner. It's now more visually consistent with the other navigation buttons and it has a link to your profile.
+- Improved the UI of the Bbsmc account button in the bottom left corner. It's now more visually consistent with the other navigation buttons and it has a link to your profile.
 - Updated the ad fallback to be green again instead of blue.
 - Fixed 'Open folder' in the instance page context menu having the wrong icon.`,
 	},
@@ -2212,20 +2212,20 @@ const VERSIONS: VersionEntry[] = [
 		product: 'app',
 		version: '0.10.9',
 		body: `### Security fixes
-- Fixed a couple Modrinth Pack (\`.mrpack\`) importing security vulnerabilities.`,
+- Fixed a couple Bbsmc Pack (\`.mrpack\`) importing security vulnerabilities.`,
 	},
 	{
 		date: `2025-10-01T19:05:00-07:00`,
 		product: 'web',
 		body: `### Improvements
-- Added banner informing Russian users of our non-compliance with censorship laws that will lead to Modrinth being blocked in Russia. For more info, see [our news article on it](/news/article/standing-by-our-values).`,
+- Added banner informing Russian users of our non-compliance with censorship laws that will lead to Bbsmc being blocked in Russia. For more info, see [our news article on it](/news/article/standing-by-our-values).`,
 	},
 	{
 		date: `2025-09-29T12:50:00-07:00`,
 		product: 'web',
 		body: `### Improvements
 - Re-enabled the creation of organizations.
-- Added limits for creating content on Modrinth
+- Added limits for creating content on Bbsmc
 	- Up to 256 projects
 	- Up to 16 organizations
 	- Up to 64 collections
@@ -2236,24 +2236,24 @@ const VERSIONS: VersionEntry[] = [
 		product: 'app',
 		version: '0.10.8',
 		body: `### Improvements
-- Overhauled Modrinth App updater to make it easier to stay up-to-date.
+- Overhauled Bbsmc App updater to make it easier to stay up-to-date.
   - Updates will now be downloaded in the background to make a seamless updating experience.
   - When an update is downloaded, it will prompt you to reload the app.
   - If a metered internet connection is detected, it will ask you before downloading the update.
-- Fixed how transparency is handled on the skins page. (Contributed by [Jerozgen](https://github.com/modrinth/code/pull/4373))
+- Fixed how transparency is handled on the skins page. (Contributed by [Jerozgen](https://github.com/Bbsmc/code/pull/4373))
 - Removed the 'Advanced' toggle in the Instance creation interface.
 - Improved version selection when installing content.
 	- Installing versions from the Discover content page will now install a version according to your filters, rather than simply the latest.
 	- Dependencies will now download with the same logic as the content being installed.
 	- Non-mod projects and dependencies will now be installed properly.
-- Fixed window dragging issues with the top bar. (Contributed by [aervxa](https://github.com/modrinth/code/pull/4218))
+- Fixed window dragging issues with the top bar. (Contributed by [aervxa](https://github.com/Bbsmc/code/pull/4218))
 - Fixed an empty servers.dat file being created when one doesn't already exist, preventing certain mods from providing defaults.
 - Fixed long creator names overflowing on project pages.
 - Strings in Markdown descriptions that look like domain names or IP addresses will no longer automatically be converted to links, such as \`README.md\`.
 - When adding friends, unknown users will now show an error.
 - Pressing 'Enter' after typing in a friend's username will now send the friend request.
-- Improved error handling from Modrinth API.
-- Fixed the white flash when the app is opened on certain systems. (Contributed by [aervxa](https://github.com/modrinth/code/pull/4177))`,
+- Improved error handling from Bbsmc API.
+- Fixed the white flash when the app is opened on certain systems. (Contributed by [aervxa](https://github.com/Bbsmc/code/pull/4177))`,
 	},
 	{
 		date: `2025-09-25T19:15:00-07:00`,
@@ -2278,15 +2278,15 @@ const VERSIONS: VersionEntry[] = [
 		date: `2025-09-07T15:55:00-07:00`,
 		product: 'web',
 		body: `### Improvements
-- Fixed Modrinth App sign in redirect when using SSO.`,
+- Fixed Bbsmc App sign in redirect when using SSO.`,
 	},
 	{
 		date: `2025-09-03T15:40:00-07:00`,
 		product: 'web',
 		body: `### Improvements
-- Fixed a number of bugs with the Modrinth App marketing page
-- Added clearer notices about Modrinth App's beta status on marketing page.
-- Added disclaimer about Modrinth App's issues on Linux to marketing page.
+- Fixed a number of bugs with the Bbsmc App marketing page
+- Added clearer notices about Bbsmc App's beta status on marketing page.
+- Added disclaimer about Bbsmc App's issues on Linux to marketing page.
 - Fixed certain icons in settings shrinking size on mobile.
 - In project settings, the description page no longer refers to all projects as mods.
 - Fixed spelling error during sign up.`,
@@ -2345,7 +2345,7 @@ const VERSIONS: VersionEntry[] = [
 		product: 'web',
 		body: `### Improvements
 - Overhauled creator-facing project environment metadata
-	- This is part of a larger project to make environment data across Modrinth more reliable. Read [this blog post](/news/article/new-environments) for more information.
+	- This is part of a larger project to make environment data across Bbsmc more reliable. Read [this blog post](/news/article/new-environments) for more information.
 - Improved performance of project pages.`,
 	},
 	{
@@ -2367,8 +2367,8 @@ const VERSIONS: VersionEntry[] = [
 		date: `2025-08-19T13:56:00-07:00`,
 		product: 'web',
 		body: `### Improvements
-- Fixed Modrinth Servers marketing page requiring auth.
-- Fixed mobile responsiveness of Modrinth Servers Medal collaboration banner.`,
+- Fixed Bbsmc Servers marketing page requiring auth.
+- Fixed mobile responsiveness of Bbsmc Servers Medal collaboration banner.`,
 	},
 	{
 		date: `2025-08-19T11:10:00-07:00`,
@@ -2380,7 +2380,7 @@ const VERSIONS: VersionEntry[] = [
 		date: `2025-08-19T11:10:00-07:00`,
 		product: 'web',
 		body: `### Improvements
-- Added Modrinth Servers free trial promotion in partnership with Medal.
+- Added Bbsmc Servers free trial promotion in partnership with Medal.
 - Fixed typo in revenue page.`,
 	},
 	{
@@ -2421,7 +2421,7 @@ const VERSIONS: VersionEntry[] = [
 		version: '0.10.5',
 		body: `### Improvements
 - On Windows, the app will now install per-user rather than system-wide.
-	- This allows future versions of Modrinth App to update seamlessly if the user is not an administrator.
+	- This allows future versions of Bbsmc App to update seamlessly if the user is not an administrator.
 	- When updating to this version, the app will prompt you for Admin elevation in order to remove the old system-wide installation.
 	- Desktop shortcuts should be migrated automatically to the new installation location.
 - Improvements to the Skins page.
@@ -2432,8 +2432,8 @@ const VERSIONS: VersionEntry[] = [
 	- Tweaked the rendering of the spotlight below the player model.
 - Allow offline servers to still be joined from Worlds tab.
 	- Some servers display as offline as a privacy measure, or only start up once a player attempts to join.
-- Improved Modrinth user account login to use your default web browser.
-- Updated the appearance and functionality of error notifications to match the Modrinth website.
+- Improved Bbsmc user account login to use your default web browser.
+- Updated the appearance and functionality of error notifications to match the Bbsmc website.
 - Fixed search not returning to first page when filters are changed.
 - Fixed modpacks showing up with the "Optimization" tag on Home page even when it's not a featured category on the project.
 - Improved pinging Minecraft servers for older versions in the Worlds tab to more closely match how the client would ping them.
@@ -2447,7 +2447,7 @@ const VERSIONS: VersionEntry[] = [
 - Fixed the back/forward buttons appearing with white icons in light mode.
 - Fixed 'Party Alex' skin not using slim character model.
 - Improved resilience of Minecraft launching on Java 8 under certain circumstances.
-- Added system for showing users surveys to provide feedback on their experience with Modrinth App.
+- Added system for showing users surveys to provide feedback on their experience with Bbsmc App.
 
 **This update was originally launched as 0.10.4, but was pulled due to issues with many functions of the app.**`,
 	},
@@ -2461,16 +2461,16 @@ const VERSIONS: VersionEntry[] = [
 		date: `2025-08-01T21:30:00-04:00`,
 		product: 'web',
 		body: `### Improvements
-- Fixed issues with the newsletter subscription checkbox & buttons on news pages. ([#4072](https://github.com/modrinth/code/pull/4072), [#4073](https://github.com/modrinth/code/pull/4073))
-- You can now access the "Moderation" tab on project pages again even if your project is approved. ([#4067](https://github.com/modrinth/code/pull/4067))
-- Fixed issues with collection visibility. ([#4070](https://github.com/modrinth/code/pull/4070))
-- Fixed text issue on collection icon upload dropdown. ([#4069](https://github.com/modrinth/code/pull/4069))`,
+- Fixed issues with the newsletter subscription checkbox & buttons on news pages. ([#4072](https://github.com/Bbsmc/code/pull/4072), [#4073](https://github.com/Bbsmc/code/pull/4073))
+- You can now access the "Moderation" tab on project pages again even if your project is approved. ([#4067](https://github.com/Bbsmc/code/pull/4067))
+- Fixed issues with collection visibility. ([#4070](https://github.com/Bbsmc/code/pull/4070))
+- Fixed text issue on collection icon upload dropdown. ([#4069](https://github.com/Bbsmc/code/pull/4069))`,
 	},
 	{
 		date: `2025-08-01T21:30:00-04:00`,
 		product: 'hosting',
 		body: `### Improvements
-- Server status information is now correctly displayed in the 'My Servers' page. ([#4071](https://github.com/modrinth/code/pull/4071))
+- Server status information is now correctly displayed in the 'My Servers' page. ([#4071](https://github.com/Bbsmc/code/pull/4071))
 - Fixed an error with displaying startup settings.
 - Improved ratelimit error message.`,
 	},
@@ -2491,14 +2491,14 @@ const VERSIONS: VersionEntry[] = [
 		date: `2025-07-15T13:55:00-07:00`,
 		product: 'web',
 		body: `### Improvements
-- Updated language around DDoS protection of Modrinth Servers products.`,
+- Updated language around DDoS protection of Bbsmc Servers products.`,
 	},
 	{
 		date: `2025-07-15T12:40:00-07:00`,
 		product: 'web',
 		body: `### Improvements
 - Added copyright policy and DMCA links to footer.
-- Updated Modrinth Servers FAQ to include the new UK location.`,
+- Updated Bbsmc Servers FAQ to include the new UK location.`,
 	},
 	{
 		date: `2025-07-15T08:20:00-07:00`,
@@ -2512,13 +2512,13 @@ const VERSIONS: VersionEntry[] = [
 		body: `### Improvements
 - Fixed pasted links being unnecessarily wrapped in Markdown formatting in Markdown editor.
 - Added a security.txt file to the site.
-- Changed the Europe location for Modrinth Servers to show as Central Europe with the flag of Germany to reflect its location better.`,
+- Changed the Europe location for Bbsmc Servers to show as Central Europe with the flag of Germany to reflect its location better.`,
 	},
 	{
 		date: `2025-07-08T14:00:00-07:00`,
 		product: 'web',
 		body: `### Improvements
-- Fixed Modrinth Servers showing as out of stock when navigating to the page directly.`,
+- Fixed Bbsmc Servers showing as out of stock when navigating to the page directly.`,
 	},
 	{
 		date: `2025-07-08T11:10:00-07:00`,
@@ -2601,8 +2601,8 @@ const VERSIONS: VersionEntry[] = [
 		date: `2025-07-04T12:00:00-07:00`,
 		product: 'web',
 		body: `### Changed
-- Changed fallback ad placeholder from promoting Modrinth+ to Modrinth Servers.
-- Fixed news section rendering incorrectly in light mode on landing page and Modrinth App page.`,
+- Changed fallback ad placeholder from promoting Bbsmc+ to Bbsmc Servers.
+- Fixed news section rendering incorrectly in light mode on landing page and Bbsmc App page.`,
 	},
 	{
 		date: `2025-06-30T19:15:00-07:00`,
@@ -2618,7 +2618,7 @@ const VERSIONS: VersionEntry[] = [
 		date: `2025-06-30T19:15:00-07:00`,
 		product: 'hosting',
 		body: `### Improvements
-- Progress will now show when installing Modrinth Pack (.mrpack) files.
+- Progress will now show when installing Bbsmc Pack (.mrpack) files.
 - Fixed storage stats not linking to Files page.
 - Fixed missing icons in some places.`,
 	},
@@ -2640,7 +2640,7 @@ const VERSIONS: VersionEntry[] = [
 		date: `2025-06-26T11:00:00-07:00`,
 		product: 'web',
 		body: `### Added
-- Added a dismissable Modrinth Servers promotion to project Download interface to inform users of the service's availability.
+- Added a dismissable Bbsmc Servers promotion to project Download interface to inform users of the service's availability.
 
 ### Improvements
 - Added colors for the newly added legacy mod loaders
@@ -2680,9 +2680,9 @@ const VERSIONS: VersionEntry[] = [
 		product: 'web',
 		body: `### Improvements
 - Creator analytics charts will now show up to 15 projects in a tooltip instead of 5.
-- Made certain scrollable containers not have a fixed height, and allow them to be smaller if they have fewer items. (Contributed by [Erb3](https://github.com/modrinth/code/pull/2898))
-- Made organizations sort consistently alphabetically. (Contributed by [WorldWidePixel](https://github.com/modrinth/code/pull/3755))
-- Clarified the 'File too large' error message when uploading an image larger than 1MiB in the text editor. (Contributed by [IThundxr](https://github.com/modrinth/code/pull/3774))`,
+- Made certain scrollable containers not have a fixed height, and allow them to be smaller if they have fewer items. (Contributed by [Erb3](https://github.com/Bbsmc/code/pull/2898))
+- Made organizations sort consistently alphabetically. (Contributed by [WorldWidePixel](https://github.com/Bbsmc/code/pull/3755))
+- Clarified the 'File too large' error message when uploading an image larger than 1MiB in the text editor. (Contributed by [IThundxr](https://github.com/Bbsmc/code/pull/3774))`,
 	},
 	{
 		date: `2025-06-03T14:35:00-07:00`,
@@ -2695,7 +2695,7 @@ const VERSIONS: VersionEntry[] = [
 		date: `2025-06-03T14:35:00-07:00`,
 		product: 'web',
 		body: `### Improvements
-- Overhauled Modrinth Servers purchase flow.
+- Overhauled Bbsmc Servers purchase flow.
 - Added the ability to donate creator rewards to charity.`,
 	},
 	{
@@ -2704,27 +2704,27 @@ const VERSIONS: VersionEntry[] = [
 		body: `### Added
 - Added the ability to extract .zip files in the Files page.
 - Added the ability to extract a remote .zip file from a URL, or from a CurseForge modpack version URL.
-- Dependencies will now automatically be installed when installing a mod from Modrinth.`,
+- Dependencies will now automatically be installed when installing a mod from Bbsmc.`,
 	},
 	{
 		date: `2025-05-08T09:00:00-07:00`,
 		product: 'web',
 		body: `### Improvements
 - Fixed game version and loader selection when editing a version only showing up to 6 selected items, making it frustrating to remove a specific version.
-- Fixed organization URLs being case sensitive. (Contributed by [IMB11](https://github.com/modrinth/code/pull/3621))
-- Fixed notifications not loading sometimes. (Contributed by [IMB11](https://github.com/modrinth/code/pull/3624))
-- Fixed marking all notifications as read. (Contributed by [IMB11](https://github.com/modrinth/code/pull/3624))
-- Fixed relative time sometimes having poor rounding, and sometimes showing future dates unexpectedly. (Contributed by [IMB11](https://github.com/modrinth/code/pull/3612))
-- Fixed localized pricing not showing in some cases for Modrinth+. (Contributed by [IMB11](https://github.com/modrinth/code/pull/3623))
-- Fixed Modrinth changelog page link back to the full changelog not being clickable sometimes. (Contributed by [ThatGravyBoat](https://github.com/modrinth/code/pull/3593))
+- Fixed organization URLs being case sensitive. (Contributed by [IMB11](https://github.com/Bbsmc/code/pull/3621))
+- Fixed notifications not loading sometimes. (Contributed by [IMB11](https://github.com/Bbsmc/code/pull/3624))
+- Fixed marking all notifications as read. (Contributed by [IMB11](https://github.com/Bbsmc/code/pull/3624))
+- Fixed relative time sometimes having poor rounding, and sometimes showing future dates unexpectedly. (Contributed by [IMB11](https://github.com/Bbsmc/code/pull/3612))
+- Fixed localized pricing not showing in some cases for Bbsmc+. (Contributed by [IMB11](https://github.com/Bbsmc/code/pull/3623))
+- Fixed Bbsmc changelog page link back to the full changelog not being clickable sometimes. (Contributed by [ThatGravyBoat](https://github.com/Bbsmc/code/pull/3593))
 - Fixed analytics 'Views' tab not having the updated display for 'Other' regions.`,
 	},
 	{
 		date: `2025-05-01T18:30:00-07:00`,
 		product: 'web',
 		body: `### Improvements
-- Added a button to switch Modrinth+ billing between monthly and yearly.
-- Updated Modrinth App marketing page screenshots.`,
+- Added a button to switch Bbsmc+ billing between monthly and yearly.
+- Updated Bbsmc App marketing page screenshots.`,
 	},
 	{
 		date: `2025-05-01T18:10:00-07:00`,
@@ -2767,7 +2767,7 @@ const VERSIONS: VersionEntry[] = [
 		date: `2025-04-28T19:45:00-07:00`,
 		product: 'web',
 		body: `### Improvements
-- Combined Apple Silicon and Intel download links for Modrinth App into one link.
+- Combined Apple Silicon and Intel download links for Bbsmc App into one link.
 - Added an option to copy a permanent link (using IDs instead of changeable slugs) to projects, users, and organizations.
 - Fixed overflow issue with dev-mode Maven coordinates widget, and changed wording.`,
 	},
@@ -2797,14 +2797,14 @@ const VERSIONS: VersionEntry[] = [
 		date: `2025-04-25T19:45:00-07:00`,
 		product: 'web',
 		body: `### Improvements
-- Added feedback survey upon Modrinth Servers cancellation.
-- Added FAQ question about the currency for Modrinth Servers subscription payments.`,
+- Added feedback survey upon Bbsmc Servers cancellation.
+- Added FAQ question about the currency for Bbsmc Servers subscription payments.`,
 	},
 	{
 		date: `2025-04-18T22:30:00-07:00`,
 		product: 'web',
 		body: `### Improvements
-- Updated Modrinth Servers marketing page to be accurate to post-Pyro infrastructure.`,
+- Updated Bbsmc Servers marketing page to be accurate to post-Pyro infrastructure.`,
 	},
 	{
 		date: `2025-04-17T02:25:00-07:00`,
@@ -2843,14 +2843,14 @@ const VERSIONS: VersionEntry[] = [
 		date: `2025-04-01T21:15:00-07:00`,
 		product: 'web',
 		body: `### Added
-- Reverted Modrinth Pizza due to issues in pizza processing leading to users being redirected to [this page](https://bbsmc.org.cn/pizza/error).
+- Reverted Bbsmc Pizza due to issues in pizza processing leading to users being redirected to [this page](https://bbsmc.org.cn/pizza/error).
 - Fixed bug causing theme color to turn orange and corners turn sharp.`,
 	},
 	{
 		date: `2025-04-01T12:00:00`,
 		product: 'web',
 		body: `### Added
-- Added Modrinth Pizza.`,
+- Added Bbsmc Pizza.`,
 	},
 	{
 		date: `2025-04-01T00:00:00`,
@@ -2882,13 +2882,13 @@ const VERSIONS: VersionEntry[] = [
 		date: `2025-03-24T22:30:00-07:00`,
 		product: 'web',
 		body: `### Improvements
-- Improved error handling, especially when the Modrinth API is down.`,
+- Improved error handling, especially when the Bbsmc API is down.`,
 	},
 	{
 		date: `2025-03-13T19:30:00-07:00`,
 		product: 'web',
 		body: `### Improvements
-- Updated Modrinth Servers marketing page, removing Pyro branding.`,
+- Updated Bbsmc Servers marketing page, removing Pyro branding.`,
 	},
 	{
 		date: `2025-03-12T10:15:00-07:00`,
@@ -2897,7 +2897,7 @@ const VERSIONS: VersionEntry[] = [
 - Fixed low-res icons being pixelated.
 - Fixed mobile navbar hiding bottom of footer.
 - Updated CMP info page to correct some incorrect information.
-- Updated CCPA notice with updated information since Modrinth Servers and Modrinth+.
+- Updated CCPA notice with updated information since Bbsmc Servers and Bbsmc+.
 - Fixed review page failing under edge case.`,
 	},
 	{
@@ -2947,16 +2947,16 @@ const VERSIONS: VersionEntry[] = [
 		date: `2025-02-21T13:30:00-08:00`,
 		product: 'web',
 		body: `### Improvements
-- Collections are now sorted by creation date. (Contributed by [worldwidepixel](https://github.com/modrinth/code/pull/3286))
-- Collections are no longer required to have summaries. (Contributed by [Erb3](https://github.com/modrinth/code/pull/3281))
+- Collections are now sorted by creation date. (Contributed by [worldwidepixel](https://github.com/Bbsmc/code/pull/3286))
+- Collections are no longer required to have summaries. (Contributed by [Erb3](https://github.com/Bbsmc/code/pull/3281))
 - Fixed padding issue on revenue page.
-- Fixed last modified date on Rewards Program Info page. (Contributed by [IMB11](https://github.com/modrinth/code/pull/3287))`,
+- Fixed last modified date on Rewards Program Info page. (Contributed by [IMB11](https://github.com/Bbsmc/code/pull/3287))`,
 	},
 	{
 		date: `2025-02-20T18:15:00-08:00`,
 		product: 'web',
 		body: `### Improvements
-- Revenue page has been updated to more clearly display pending revenue and when it will be available to withdraw. (Contributed by [IMB11](https://github.com/modrinth/code/pull/3250))
+- Revenue page has been updated to more clearly display pending revenue and when it will be available to withdraw. (Contributed by [IMB11](https://github.com/Bbsmc/code/pull/3250))
 - Footer will now be forced to the bottom of the page on short pages.
 - Styling fixes to moderation checklist proof form.`,
 	},
@@ -2967,7 +2967,7 @@ const VERSIONS: VersionEntry[] = [
 - All-new site footer with more links, better organization, and a new aesthetic.
 
 ### Improvements
-- Added Dallas location to Modrinth Servers landing page.
+- Added Dallas location to Bbsmc Servers landing page.
 - Updated staff moderation checklist to be more visually consistent and more dynamic.`,
 	},
 	{
@@ -2982,7 +2982,7 @@ const VERSIONS: VersionEntry[] = [
 - Fix a case where opening the platform modal, closing it, and reopening it would cause the loader version to be unselected.
 - Prevents an issue where, if crash log analysis fails, the Overview page would unrender.
 - Suspended server listings now have a copy ID button.
-- Fixed bugs from Modrinth Servers February Release.`,
+- Fixed bugs from Bbsmc Servers February Release.`,
 	},
 	{
 		date: `2025-02-16T19:10:00-08:00`,
@@ -3000,7 +3000,7 @@ const VERSIONS: VersionEntry[] = [
 		date: `2025-02-12T19:10:00-08:00`,
 		product: 'web',
 		body: `### Improvements
-- Servers out of stock link now links to Modrinth Discord instead of support page.`,
+- Servers out of stock link now links to Bbsmc Discord instead of support page.`,
 	},
 	{
 		date: `2025-02-12T19:10:00-08:00`,
@@ -3012,11 +3012,11 @@ const VERSIONS: VersionEntry[] = [
 		date: `2025-02-12T12:10:00-08:00`,
 		product: 'web',
 		body: `### Added
-- Added a 3D globe to visualize node locations to Modrinth Servers marketing page.
+- Added a 3D globe to visualize node locations to Bbsmc Servers marketing page.
 - Added an indicator to show when certain server plans are running low on availability.
 
 ### Improvements
-- Improved out-of-stock notifications on Modrinth Servers page to be more accurate.`,
+- Improved out-of-stock notifications on Bbsmc Servers page to be more accurate.`,
 	},
 	{
 		date: `2025-02-11T13:00:00-08:00`,
@@ -3031,13 +3031,13 @@ const VERSIONS: VersionEntry[] = [
 		date: `2025-02-11T09:00:00-08:00`,
 		product: 'web',
 		body: `### Added
-- Added a changelog page to view recent changes to Modrinth.`,
+- Added a changelog page to view recent changes to Bbsmc.`,
 	},
 	{
 		date: `2025-02-10T14:00:00-08:00`,
 		product: 'web',
 		body: `### Improvements
-- The license selector in project settings has been updated to make selecting a license a clearer process. (Contributed by [Erb3](https://github.com/modrinth/code/pull/3225))`,
+- The license selector in project settings has been updated to make selecting a license a clearer process. (Contributed by [Erb3](https://github.com/Bbsmc/code/pull/3225))`,
 	},
 	{
 		date: `2025-02-10T08:00:00-08:00`,
@@ -3046,7 +3046,7 @@ const VERSIONS: VersionEntry[] = [
 		body: `### Added
 - You can now search and filter through your server's console in the Overview tab, jump to specific results to see the log in context, select them, and copy them.
 - You can now drag and select any number of lines in the console, copy them. and view them formatted.
-- Hide your server's \`.modrinth.gg\` custom URL using the new **Hide subdomain label** toggle in Options > Preferences.
+- Hide your server's \`.Bbsmc.gg\` custom URL using the new **Hide subdomain label** toggle in Options > Preferences.
 - The Content page has been updated to make managing your server's mods and plugins easier than ever. Now, only versions that are available for your server's Minecraft version and platform are shown by default, and you can now show beta and alpha versions in the selector.
 ### Improvements
 - The Overview page loads faster.
@@ -3070,15 +3070,15 @@ const VERSIONS: VersionEntry[] = [
 - Fixed issue importing newer Prism instances.
 - Fixed issue where instances get stuck "Installing" forever when the app is closed during an install.
 - Minecraft profile is now updated every time the user's token is refreshed.
-- Improved ability for package managers to update Modrinth App by skipping the updater at runtime with an environment variable.`,
+- Improved ability for package managers to update Bbsmc App by skipping the updater at runtime with an environment variable.`,
 	},
 	{
 		date: `2025-02-02T14:00:00-08:00`,
 		product: 'web',
 		body: `### Improvements
-- The report form has been updated to walk you through the report process better and clarify some things like that the form is for Modrinth rules and terms violations, not for bug reports or DMCA takedowns.
+- The report form has been updated to walk you through the report process better and clarify some things like that the form is for Bbsmc rules and terms violations, not for bug reports or DMCA takedowns.
 
-![A screenshot of the new report form on Modrinth, using Iris Shaders as an example. The title says "Report Iris Shaders to moderators". Below that, it says "Please report violations of Modrinth Rules or Terms of Use. Examples include malicious, spam, offensive, deceptive, misleading, and illegal content. This form is not for bug reports or DMCA takedowns (See our Copyright Policy)." Then, there is a form that asks "Which of Modrinth's rules is this project violating?" with many options: Spam, Reuploaded work, Inappropriate, Malicious, Name-squatting, Poor description, Invalid metadata, Other. Reuploaded work is selected. Below that, is a note in an orange box with a warning icon: "Please note that you are *not* submitting a DMCA takedown request, but rather a report of reuploaded content. If you meant to file a DMCA takedown request (which is a legal action) instead, please see our Copyright Policy." Then, it asks you to provide additional context, including links and images, with a text editor and a submit button at the bottom.](https://cdn-raw.bbsmc.org.cn/changelog/web/2025-02-02/reports.jpg)`,
+![A screenshot of the new report form on Bbsmc, using Iris Shaders as an example. The title says "Report Iris Shaders to moderators". Below that, it says "Please report violations of Bbsmc Rules or Terms of Use. Examples include malicious, spam, offensive, deceptive, misleading, and illegal content. This form is not for bug reports or DMCA takedowns (See our Copyright Policy)." Then, there is a form that asks "Which of Bbsmc's rules is this project violating?" with many options: Spam, Reuploaded work, Inappropriate, Malicious, Name-squatting, Poor description, Invalid metadata, Other. Reuploaded work is selected. Below that, is a note in an orange box with a warning icon: "Please note that you are *not* submitting a DMCA takedown request, but rather a report of reuploaded content. If you meant to file a DMCA takedown request (which is a legal action) instead, please see our Copyright Policy." Then, it asks you to provide additional context, including links and images, with a text editor and a submit button at the bottom.](https://cdn-raw.bbsmc.org.cn/changelog/web/2025-02-02/reports.jpg)`,
 	},
 	{
 		date: `2025-01-28T19:00:00-08:00`,
@@ -3088,7 +3088,7 @@ const VERSIONS: VersionEntry[] = [
   - "This month" which refers to the current calendar month (Jan 1st - Jan 28th, currently)
   - "Last month" which refers to the previous calendar month (currently, Dec 1st thru Dec 31st)
 
-Contributed by [IMB11](https://github.com/modrinth/code/pull/1301).`,
+Contributed by [IMB11](https://github.com/Bbsmc/code/pull/1301).`,
 	},
 	{
 		date: `2025-01-10T09:00:00-08:00`,
@@ -3117,8 +3117,8 @@ Contributed by [IMB11](https://github.com/modrinth/code/pull/1301).`,
 		date: `2025-01-10T09:00:00-08:00`,
 		product: 'web',
 		body: `### Improvements
-- Tags on project pages are now clickable to view other projects with that tag (Contributed by [Neddo](https://github.com/modrinth/code/pull/3126))
-- You can now send someone a link to the download interface with a specific version and loader selected, like so: https://bbsmc.org.cn/mod/sodium?version=1.21.2&loader=quilt#download (Contributed by [AwakenedRedstone](https://github.com/modrinth/code/pull/3138))`,
+- Tags on project pages are now clickable to view other projects with that tag (Contributed by [Neddo](https://github.com/Bbsmc/code/pull/3126))
+- You can now send someone a link to the download interface with a specific version and loader selected, like so: https://bbsmc.org.cn/mod/sodium?version=1.21.2&loader=quilt#download (Contributed by [AwakenedRedstone](https://github.com/Bbsmc/code/pull/3138))`,
 	},
 	{
 		date: `2024-12-26T22:05:00-08:00`,

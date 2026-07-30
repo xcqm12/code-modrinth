@@ -129,8 +129,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { OrganizationIcon, PlusIcon, XIcon } from '@modrinth/assets'
+import type { Labrinth } from '@Bbsmc/api-client'
+import { OrganizationIcon, PlusIcon, XIcon } from '@Bbsmc/assets'
 import {
 	ButtonStyled,
 	Chips,
@@ -138,12 +138,12 @@ import {
 	type ComboboxOption,
 	commonMessages,
 	defineMessages,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	NewModal,
 	StyledInput,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { computed, defineAsyncComponent, h } from 'vue'
 
 import { generateUrlSlug } from '~/utils/slugs'
@@ -347,7 +347,7 @@ const userOption = computed(() => ({
 		: undefined,
 }))
 
-const { labrinth } = injectModrinthClient()
+const { labrinth } = injectBbsmcClient()
 
 async function fetchOrganizations() {
 	if (!auth.value.user?.id) return

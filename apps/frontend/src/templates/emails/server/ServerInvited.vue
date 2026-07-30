@@ -17,7 +17,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 		<Text class="text-base">Hi <span class="no-auto-link">{user.name}</span>,</Text>
 
 		<Text class="text-base">
-			Modrinth user
+			Bbsmc user
 			<b
 				><VLink href="https://bbsmc.org.cn/user/{inviter.name}" class="text-green underline">
 					{inviter.name}
@@ -25,7 +25,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 			>
 			has invited you to help manage
 			<b>{server.name}</b>
-			on Modrinth Hosting.
+			on Bbsmc Hosting.
 		</Text>
 
 		<Section class="bg-bg-super mb-4 mt-4 rounded-lg border border-divider pb-4 pl-4 pr-4 pt-4">
@@ -49,8 +49,8 @@ import StyledEmail from '../shared/StyledEmail.vue'
 		</VLink>
 
 		<Text class="text-base">
-			To accept or reject this invitation, open your Modrinth notifications and review the invite.
-			If you were not expecting this invitation, contact the server owner or reach out to Modrinth
+			To accept or reject this invitation, open your Bbsmc notifications and review the invite.
+			If you were not expecting this invitation, contact the server owner or reach out to Bbsmc
 			Support
 			<VLink href="https://support.bbsmc.org.cn" class="text-green underline">
 				through the Support Portal</VLink

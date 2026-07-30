@@ -1,5 +1,5 @@
-import type { Labrinth } from '@modrinth/api-client'
-import { ClientIcon, ServerIcon, UserIcon } from '@modrinth/assets'
+import type { Labrinth } from '@Bbsmc/api-client'
+import { ClientIcon, ServerIcon, UserIcon } from '@Bbsmc/assets'
 import type { Component } from 'vue'
 
 import { defineMessage, type MessageDescriptor } from '../../../../composables/i18n'

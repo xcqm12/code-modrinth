@@ -17,7 +17,7 @@ import {
 	removeCachedFriend,
 	upsertCachedFriend,
 } from '@/helpers/friends'
-import type { ModrinthCredentials } from '@/helpers/mr_auth'
+import type { BbsmcCredentials } from '@/helpers/mr_auth'
 
 type FriendsMutationContext = {
 	queryKey: ReturnType<typeof friendsQueryKey>
@@ -37,7 +37,7 @@ type RemoveFriendMutationVariables = {
 
 export function useFriends(options: {
 	currentUserId: MaybeRefOrGetter<string | null | undefined>
-	getCredentials: () => ModrinthCredentials | null | Promise<ModrinthCredentials | null>
+	getCredentials: () => BbsmcCredentials | null | Promise<BbsmcCredentials | null>
 	enabled?: MaybeRefOrGetter<boolean>
 	onError?: (error: Error) => void
 }) {

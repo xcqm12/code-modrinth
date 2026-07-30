@@ -15,7 +15,7 @@ use tokio::sync::Semaphore;
 #[tracing::instrument(skip(semaphore))]
 pub async fn fetch(semaphore: Arc<Semaphore>) -> Result<FetchResult, Error> {
     let upload_files = DashMap::new();
-    let modrinth_manifest = fetch_json::<VersionManifest>(
+    let Bbsmc_manifest = fetch_json::<VersionManifest>(
         &format_url(&format!(
             "minecraft/v{}/manifest.json",
             daedalus::minecraft::CURRENT_FORMAT_VERSION
@@ -30,28 +30,28 @@ pub async fn fetch(semaphore: Arc<Semaphore>) -> Result<FetchResult, Error> {
     // TODO: experimental snapshots: https://github.com/PrismLauncher/meta/blob/main/meta/common/mojang-minecraft-experiments.json
     // TODO: old snapshots: https://github.com/PrismLauncher/meta/blob/main/meta/common/mojang-minecraft-old-snapshots.json
 
-    // We check Modrinth's version manifest and compare if the version 1) exists in Modrinth's database and 2) is unchanged
+    // We check Bbsmc's version manifest and compare if the version 1) exists in Bbsmc's database and 2) is unchanged
     // If they are not, we will fetch them
     let (fetch_versions, existing_versions) =
-        if let Some(mut modrinth_manifest) = modrinth_manifest {
+        if let Some(mut Bbsmc_manifest) = Bbsmc_manifest {
             let (mut fetch_versions, mut existing_versions) =
                 (Vec::new(), Vec::new());
 
             for version in mojang_manifest.versions {
-                if let Some(index) = modrinth_manifest
+                if let Some(index) = Bbsmc_manifest
                     .versions
                     .iter()
                     .position(|x| x.id == version.id)
                 {
-                    let modrinth_version =
-                        modrinth_manifest.versions.remove(index);
+                    let Bbsmc_version =
+                        Bbsmc_manifest.versions.remove(index);
 
-                    if modrinth_version
+                    if Bbsmc_version
                         .original_sha1
                         .as_ref()
                         .is_some_and(|x| x == &version.sha1)
                     {
-                        existing_versions.push(modrinth_version);
+                        existing_versions.push(Bbsmc_version);
                     } else {
                         fetch_versions.push(version);
                     }

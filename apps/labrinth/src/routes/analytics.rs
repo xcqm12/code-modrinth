@@ -26,7 +26,7 @@ use xredis::RedisPool;
 pub const FILTERED_HEADERS: &[&str] = &[
     "authorization",
     "cookie",
-    "modrinth-admin",
+    "Bbsmc-admin",
     // we already retrieve/use these elsewhere- so they are unneeded
     "user-agent",
     "cf-connecting-ip",

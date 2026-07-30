@@ -124,7 +124,7 @@ import {
 	StopCircleIcon,
 	TerminalSquareIcon,
 	UnplugIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	ButtonStyled,
 	defineMessages,
@@ -133,7 +133,7 @@ import {
 	type PopupNotification,
 	type PopupNotificationProgressItem,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { convertFileSrc } from '@tauri-apps/api/core'
 import { Dropdown } from 'floating-vue'
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'

@@ -105,7 +105,7 @@
 							class="block min-w-0 truncate whitespace-nowrap"
 							:class="entry.world ? 'text-primary' : 'text-secondary'"
 						>
-							{{ entry.world?.name ?? 'â€”' }}
+							{{ entry.world?.name ?? 'â€? }}
 						</span>
 					</template>
 
@@ -250,7 +250,7 @@
 </template>
 
 <script setup lang="ts">
-import { IntercomBubbleIcon, UnknownIcon } from '@modrinth/assets'
+import { IntercomBubbleIcon, UnknownIcon } from '@Bbsmc/assets'
 import { Tooltip } from 'floating-vue'
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, useSlots, watch } from 'vue'
 

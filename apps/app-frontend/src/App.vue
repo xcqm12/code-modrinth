@@ -1,13 +1,13 @@
 <script setup>
 import {
 	AuthFeature,
-	ModrinthApiError,
+	BbsmcApiError,
 	NodeAuthFeature,
 	nodeAuthState,
 	PanelVersionFeature,
-	TauriModrinthClient,
+	TauriBbsmcClient,
 	VerboseLoggingFeature,
-} from '@modrinth/api-client'
+} from '@Bbsmc/api-client'
 import {
 	ArrowBigUpDashIcon,
 	ChevronLeftIcon,
@@ -25,7 +25,7 @@ import {
 	SettingsIcon,
 	ShirtIcon,
 	UserIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	Admonition,
 	Avatar,
@@ -43,7 +43,7 @@ import {
 	OverflowMenu,
 	PopupNotificationPanel,
 	provideModalBehavior,
-	provideModrinthClient,
+	provideBbsmcClient,
 	provideNotificationManager,
 	providePageContext,
 	providePopupNotificationManager,
@@ -52,8 +52,8 @@ import {
 	useFormatBytes,
 	useHostingIntercom,
 	useVIntl,
-} from '@modrinth/ui'
-import { renderString } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import { renderString } from '@Bbsmc/utils'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { getVersion } from '@tauri-apps/api/app'
 import { invoke } from '@tauri-apps/api/core'
@@ -77,7 +77,7 @@ import MinecraftRequiredModal from '@/components/ui/minecraft-required-modal/Min
 import AppSettingsModal from '@/components/ui/modal/AppSettingsModal.vue'
 import InstallToPlayModal from '@/components/ui/modal/InstallToPlayModal.vue'
 import ModpackAlreadyInstalledModal from '@/components/ui/modal/ModpackAlreadyInstalledModal.vue'
-import ModrinthAccountRequiredModal from '@/components/ui/modal/ModrinthAccountRequiredModal.vue'
+import BbsmcAccountRequiredModal from '@/components/ui/modal/BbsmcAccountRequiredModal.vue'
 import UpdateToPlayModal from '@/components/ui/modal/UpdateToPlayModal.vue'
 import NavButton from '@/components/ui/NavButton.vue'
 import PrideFundraiserBanner from '@/components/ui/PrideFundraiserBanner.vue'
@@ -104,11 +104,11 @@ import { command_listener, notification_listener, warning_listener } from '@/hel
 import { install_create_modpack_instance, install_get_modpack_preview } from '@/helpers/install'
 import { can_current_user_use_shared_instances, get as getInstance, run } from '@/helpers/instance'
 import { get as getCreds, login, logout } from '@/helpers/mr_auth.ts'
-import { mergeUrlQuery, parseModrinthLink } from '@/helpers/project-links.ts'
+import { mergeUrlQuery, parseBbsmcLink } from '@/helpers/project-links.ts'
 import { get as getSettings, set as setSettings } from '@/helpers/settings.ts'
 import { get_opening_command, initialize_state } from '@/helpers/state'
 import { hasActivePride26Midas, hasMidasBadge } from '@/helpers/user-campaigns.ts'
-import { parse_modrinth_user_link } from '@/helpers/users'
+import { parse_Bbsmc_user_link } from '@/helpers/users'
 import {
 	areUpdatesEnabled,
 	enqueueUpdateForInstallation,
@@ -213,8 +213,8 @@ let adsConsentPopupId = null
 let unlistenAdsConsent
 
 const appVersion = getVersion()
-const tauriApiClient = new TauriModrinthClient({
-	userAgent: async () => `modrinth/theseus/${await appVersion} (support@bbsmc.org.cn)`,
+const tauriApiClient = new TauriBbsmcClient({
+	userAgent: async () => `Bbsmc/theseus/${await appVersion} (support@bbsmc.org.cn)`,
 	labrinthBaseUrl: config.labrinthBaseUrl,
 	archonBaseUrl: config.archonBaseUrl,
 	sharedInstancesBaseUrl: config.sharedInstancesBaseUrl,
@@ -234,8 +234,8 @@ const tauriApiClient = new TauriModrinthClient({
 		new VerboseLoggingFeature(),
 	],
 })
-provideModrinthClient(tauriApiClient)
-const { data: authenticatedModrinthUser } = useQuery({
+provideBbsmcClient(tauriApiClient)
+const { data: authenticatedBbsmcUser } = useQuery({
 	queryKey: computed(() => ['authenticated-user', 'campaigns', credentials.value?.user?.id]),
 	queryFn: () => tauriApiClient.labrinth.users_v3.getAuthenticated(),
 	enabled: () => !!credentials.value?.session,
@@ -255,7 +255,7 @@ const hasPlus = computed(
 	() =>
 		!!credentials.value?.user &&
 		(hasMidasBadge(credentials.value.user) ||
-			hasActivePride26Midas(authenticatedModrinthUser.value?.campaigns?.pride_26)),
+			hasActivePride26Midas(authenticatedBbsmcUser.value?.campaigns?.pride_26)),
 )
 const showAd = computed(
 	() => sidebarVisible.value && !hasPlus.value && credentials.value !== undefined,
@@ -392,12 +392,12 @@ const messages = defineMessages({
 	},
 	adsConsentTitle: {
 		id: 'app.ads-consent.title',
-		defaultMessage: 'Your privacy and how ads support Modrinth',
+		defaultMessage: 'Your privacy and how ads support Bbsmc',
 	},
 	adsConsentBody: {
 		id: 'app.ads-consent.body',
 		defaultMessage:
-			'Ads make Modrinth possible and fund creator payouts. Our partners may store or access cookies in the app to personalize ads and measure performance.',
+			'Ads make Bbsmc possible and fund creator payouts. Our partners may store or access cookies in the app to personalize ads and measure performance.',
 	},
 	adsConsentManage: {
 		id: 'app.ads-consent.manage',
@@ -419,33 +419,33 @@ const messages = defineMessages({
 		id: 'app.nav.library',
 		defaultMessage: 'Library',
 	},
-	modrinthHosting: {
-		id: 'app.nav.modrinth-hosting',
-		defaultMessage: 'Modrinth Hosting',
+	BbsmcHosting: {
+		id: 'app.nav.Bbsmc-hosting',
+		defaultMessage: 'Bbsmc Hosting',
 	},
 	createNewInstance: {
 		id: 'app.nav.create-new-instance',
 		defaultMessage: 'Create new instance',
 	},
-	modrinthAccount: {
-		id: 'app.nav.modrinth-account',
-		defaultMessage: 'Modrinth account',
+	BbsmcAccount: {
+		id: 'app.nav.Bbsmc-account',
+		defaultMessage: 'Bbsmc account',
 	},
 	signedInAs: {
 		id: 'app.nav.signed-in-as',
 		defaultMessage: 'Signed in as <user>{username}</user>',
 	},
-	signInToModrinthAccount: {
-		id: 'app.nav.sign-in-to-modrinth-account',
-		defaultMessage: 'Sign in to a Modrinth account',
+	signInToBbsmcAccount: {
+		id: 'app.nav.sign-in-to-Bbsmc-account',
+		defaultMessage: 'Sign in to a Bbsmc account',
 	},
 	restarting: {
 		id: 'app.restarting',
 		defaultMessage: 'Restarting...',
 	},
-	upgradeToModrinthPlus: {
-		id: 'app.nav.upgrade-to-modrinth-plus',
-		defaultMessage: 'Upgrade to Modrinth+',
+	upgradeToBbsmcPlus: {
+		id: 'app.nav.upgrade-to-Bbsmc-plus',
+		defaultMessage: 'Upgrade to Bbsmc+',
 	},
 	news: {
 		id: 'app.news.title',
@@ -811,7 +811,7 @@ const installToPlayModal = ref()
 const sharedInstanceInviteHandler = ref()
 const updateToPlayModal = ref()
 
-const modrinthLoginModal = ref()
+const BbsmcLoginModal = ref()
 const appSettingsModal = ref()
 provide(appSettingsModalOpenProfileKey, () => appSettingsModal.value?.showProfile())
 
@@ -887,10 +887,10 @@ async function signIn(flow = 'sign-in') {
 }
 
 async function requestSignIn(flow = 'sign-in') {
-	await modrinthLoginModal.value?.showSigningIn(flow)
+	await BbsmcLoginModal.value?.showSigningIn(flow)
 }
 
-async function requestModrinthAuth(flow = 'sign-in') {
+async function requestBbsmcAuth(flow = 'sign-in') {
 	await signIn(flow)
 	return !!credentials.value?.session
 }
@@ -976,7 +976,7 @@ async function markLiveNotificationRead(notification) {
 	try {
 		await tauriApiClient.labrinth.notifications_v2.markAsRead(notification.id)
 	} catch (error) {
-		if (error instanceof ModrinthApiError && error.statusCode === 404) {
+		if (error instanceof BbsmcApiError && error.statusCode === 404) {
 			console.warn(`notification ${notification.id} could not be marked as read`, error)
 			return
 		}
@@ -1151,16 +1151,16 @@ const updatePopupMessages = defineMessages({
 	},
 	meteredBody: {
 		id: 'app.update-popup.body.metered',
-		defaultMessage: `Modrinth App v{version} is available now! Since you're on a metered network, we didn't automatically download it.`,
+		defaultMessage: `Bbsmc App v{version} is available now! Since you're on a metered network, we didn't automatically download it.`,
 	},
 	downloadedBody: {
 		id: 'app.update-popup.body.download-complete',
-		defaultMessage: `Modrinth App v{version} has finished downloading. Reload to update now, or automatically when you close Modrinth App.`,
+		defaultMessage: `Bbsmc App v{version} has finished downloading. Reload to update now, or automatically when you close Bbsmc App.`,
 	},
 	linuxBody: {
 		id: 'app.update-popup.body.linux',
 		defaultMessage:
-			'Modrinth App v{version} is available. Use your package manager to update for the latest features and fixes!',
+			'Bbsmc App v{version} is available. Use your package manager to update for the latest features and fixes!',
 	},
 	reload: {
 		id: 'app.update-popup.reload',
@@ -1427,7 +1427,7 @@ setAppUpdateActions({
 	changelog: () => openUrl('https://bbsmc.org.cn/news/changelog?filter=app'),
 })
 
-async function openModrinthProjectLinkInApp(parsed) {
+async function openBbsmcProjectLinkInApp(parsed) {
 	const { slug, pathSuffix, url } = parsed
 	const loadToken = loading.begin()
 	try {
@@ -1439,7 +1439,7 @@ async function openModrinthProjectLinkInApp(parsed) {
 			hash: url.hash || undefined,
 		})
 	} catch (err) {
-		if (err instanceof ModrinthApiError && err.statusCode === 404) {
+		if (err instanceof BbsmcApiError && err.statusCode === 404) {
 			openUrl(url.href)
 		} else {
 			handleError(err)
@@ -1461,12 +1461,12 @@ function handleClick(e) {
 				!target.href.startsWith('https://tauri.localhost') &&
 				!target.href.startsWith('http://tauri.localhost')
 			) {
-				const userPath = parse_modrinth_user_link(target.href)
-				const parsed = parseModrinthLink(target.href)
+				const userPath = parse_Bbsmc_user_link(target.href)
+				const parsed = parseBbsmcLink(target.href)
 				if (userPath) {
 					void router.push(userPath)
 				} else if (target.target !== '_blank' && parsed) {
-					void openModrinthProjectLinkInApp(parsed)
+					void openBbsmcProjectLinkInApp(parsed)
 				} else {
 					openUrl(target.href)
 				}
@@ -1522,7 +1522,7 @@ provideAppUpdateDownloadProgress(appUpdateDownload)
 			<AppSettingsModal ref="appSettingsModal" />
 		</Suspense>
 		<Suspense>
-			<ModrinthAccountRequiredModal ref="modrinthLoginModal" :request-auth="requestModrinthAuth" />
+			<BbsmcAccountRequiredModal ref="BbsmcLoginModal" :request-auth="requestBbsmcAuth" />
 		</Suspense>
 		<CreationFlowModal
 			ref="installationModal"
@@ -1567,7 +1567,7 @@ provideAppUpdateDownloadProgress(appUpdateDownload)
 				<LibraryIcon />
 			</NavButton>
 			<NavButton
-				v-tooltip.right="formatMessage(messages.modrinthHosting)"
+				v-tooltip.right="formatMessage(messages.BbsmcHosting)"
 				to="/hosting/manage"
 				:is-primary="(r) => r.path === '/hosting/manage' || r.path === '/hosting/manage/'"
 				:is-subpage="(r) => r.path.startsWith('/hosting/manage/') && r.path !== '/hosting/manage/'"
@@ -1593,7 +1593,7 @@ provideAppUpdateDownloadProgress(appUpdateDownload)
 			</NavButton>
 			<OverflowMenu
 				v-if="credentials?.user"
-				v-tooltip.right="formatMessage(messages.modrinthAccount)"
+				v-tooltip.right="formatMessage(messages.BbsmcAccount)"
 				class="w-12 h-12 text-primary rounded-full flex items-center justify-center text-2xl transition-all bg-transparent hover:bg-button-bg hover:text-contrast border-0 cursor-pointer"
 				:options="[
 					{
@@ -1632,7 +1632,7 @@ provideAppUpdateDownloadProgress(appUpdateDownload)
 			</OverflowMenu>
 			<NavButton
 				v-else
-				v-tooltip.right="formatMessage(messages.signInToModrinthAccount)"
+				v-tooltip.right="formatMessage(messages.signInToBbsmcAccount)"
 				:to="() => requestSignIn()"
 			>
 				<LogInIcon class="text-brand" />
@@ -1805,12 +1805,12 @@ provideAppUpdateDownloadProgress(appUpdateDownload)
 			</div>
 			<template v-if="showAd">
 				<a
-					href="https://modrinth.plus?app"
+					href="https://Bbsmc.plus?app"
 					class="absolute bottom-[250px] w-full flex justify-center items-center gap-1 px-4 py-3 text-purple font-medium hover:underline z-10"
 					target="_blank"
 				>
 					<ArrowBigUpDashIcon class="text-2xl" />
-					{{ formatMessage(messages.upgradeToModrinthPlus) }}
+					{{ formatMessage(messages.upgradeToBbsmcPlus) }}
 				</a>
 				<PromotionWrapper />
 			</template>

@@ -17,8 +17,8 @@ import {
 	UpdatedIcon,
 	UserIcon,
 	XIcon,
-} from '@modrinth/assets'
-import type { MessageDescriptor } from '@modrinth/ui'
+} from '@Bbsmc/assets'
+import type { MessageDescriptor } from '@Bbsmc/ui'
 import {
 	Avatar,
 	ButtonStyled,
@@ -32,8 +32,8 @@ import {
 	useFormatNumber,
 	useRelativeTime,
 	useVIntl,
-} from '@modrinth/ui'
-import { getPingLevel } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import { getPingLevel } from '@Bbsmc/utils'
 import { convertFileSrc } from '@tauri-apps/api/core'
 import dayjs from 'dayjs'
 import { Tooltip } from 'floating-vue'
@@ -363,8 +363,7 @@ const messages = defineMessages({
 						<template v-else> {{ formatMessage(messages.notPlayedYet) }} </template>
 					</div>
 					<template v-if="instanceId">
-						â€¢
-						<router-link
+						â€?						<router-link
 							class="flex items-center gap-1 truncate hover:underline text-secondary smart-clickable:allow-pointer-events"
 							:to="`/instance/${instanceId}`"
 						>

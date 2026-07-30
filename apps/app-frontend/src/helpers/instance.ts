@@ -3,8 +3,8 @@
  * So, for example, addDefaultInstance creates a blank instance object, where the Rust struct is serialized,
  *  and deserialized into a usable JS object.
  */
-import type { Labrinth } from '@modrinth/api-client'
-import type { ContentItem, ContentOwner } from '@modrinth/ui'
+import type { Labrinth } from '@Bbsmc/api-client'
+import type { ContentItem, ContentOwner } from '@Bbsmc/ui'
 import { invoke } from '@tauri-apps/api/core'
 
 import type { InstallJobSnapshot, SharedInstanceUpdateDiff } from './install'
@@ -243,8 +243,8 @@ export async function add_project_from_path(
 	})
 }
 
-export async function is_file_on_modrinth(projectPath: string): Promise<boolean> {
-	return await invoke('plugin:instance|instance_is_file_on_modrinth', { projectPath })
+export async function is_file_on_Bbsmc(projectPath: string): Promise<boolean> {
+	return await invoke('plugin:instance|instance_is_file_on_Bbsmc', { projectPath })
 }
 
 // Toggle disabling a project
@@ -265,20 +265,20 @@ export async function remove_project(instanceId: string, projectPath: string): P
 	return await invoke('plugin:instance|instance_remove_project', { instanceId, projectPath })
 }
 
-// Update a managed Modrinth instance to a specific version
-export async function update_managed_modrinth_version(
+// Update a managed Bbsmc instance to a specific version
+export async function update_managed_Bbsmc_version(
 	instanceId: string,
 	versionId: string,
 ): Promise<InstallJobSnapshot> {
-	return await invoke('plugin:instance|instance_update_managed_modrinth_version', {
+	return await invoke('plugin:instance|instance_update_managed_Bbsmc_version', {
 		instanceId,
 		versionId,
 	})
 }
 
-// Repair a managed Modrinth instance
-export async function update_repair_modrinth(instanceId: string): Promise<InstallJobSnapshot> {
-	return await invoke('plugin:instance|instance_repair_managed_modrinth', { instanceId })
+// Repair a managed Bbsmc instance
+export async function update_repair_Bbsmc(instanceId: string): Promise<InstallJobSnapshot> {
+	return await invoke('plugin:instance|instance_repair_managed_Bbsmc', { instanceId })
 }
 
 // Export an instance to .mrpack

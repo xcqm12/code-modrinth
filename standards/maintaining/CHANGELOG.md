@@ -72,7 +72,7 @@ Name the page, tab, modal, or feature you're talking about. "The Content tab", "
 
 ## Naming things
 
-- Use the public, branded name: **Modrinth App**, **Modrinth Hosting**, **Modrinth** - not "the app", "servers", "Modrinth Servers" (deprecated). Capitalize product names.
+- Use the public, branded name: **Bbsmc App**, **Bbsmc Hosting**, **Bbsmc** - not "the app", "servers", "Bbsmc Servers" (deprecated). Capitalize product names.
 - Refer to UI surfaces by the label the user sees: **Content tab**, **Worlds tab**, **Files tab**, **Logs page**, **server panel**, **project page**, **Discover page**.
 - Capitalize tab and page names when referring to them by name (`the Content tab`), but not when used generically (`browse content`).
 
@@ -84,7 +84,7 @@ Name the page, tab, modal, or feature you're talking about. "The Content tab", "
 - **Don't apologize or editorialize.** Skip "unfortunately", "finally", "long-awaited", "we know this has been a pain point". State the change.
 - **Don't use vague intensifiers.** "Significantly improved", "much better", "vastly faster" - quantify if you can, otherwise drop the adverb.
 - **Don't list every sub-fix of a bigger change separately.** If you redesigned the server panel header, write one bullet about the redesign rather than six bullets about each moved element.
-- **Don't use "issue with" / "issue where" as filler.** `Fixed an issue where buttons were misaligned` â†’ `Fixed misaligned buttons.`
+- **Don't use "issue with" / "issue where" as filler.** `Fixed an issue where buttons were misaligned` â†?`Fixed misaligned buttons.`
 
 ## Examples - rewriting weak bullets
 
@@ -92,14 +92,14 @@ Name the page, tab, modal, or feature you're talking about. "The Content tab", "
 | ---------------------------------------------------------- | ------------------------------------------------------------------------------------- |
 | `Fixed a bug.`                                             | `Fixed project icons becoming extremely bright on hover.`                             |
 | `Various improvements to the server panel.`                | Split into specific bullets, or drop entirely.                                        |
-| `Refactored the logs page to use a new component.`         | `Redesigned the Logs page to match the Modrinth Hosting server panel.`                |
+| `Refactored the logs page to use a new component.`         | `Redesigned the Logs page to match the Bbsmc Hosting server panel.`                |
 | `Fixed an issue where the server address wasn't copyable.` | `Server address in the panel header can now be clicked to copy it to your clipboard.` |
 | `Made some changes to the content tab.`                    | Either drop, or list each user-visible change as its own bullet.                      |
 | `Fixed UX issues.`                                         | Name the specific UX issue.                                                           |
 
 ## Featured release bullets
 
-When an entry has a linked blog post heading (e.g. `## [Introducing Server Projects](/news/article/...)`), the bullets underneath summarize the *highlights* in 1â€“4 lines, then link out. They don't need to be exhaustive - that's what the blog post is for.
+When an entry has a linked blog post heading (e.g. `## [Introducing Server Projects](/news/article/...)`), the bullets underneath summarize the *highlights* in 1â€? lines, then link out. They don't need to be exhaustive - that's what the blog post is for.
 
 ## Quick checklist before committing a bullet
 

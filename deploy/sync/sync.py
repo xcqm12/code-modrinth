@@ -1,17 +1,13 @@
 #!/usr/bin/env python3
 """
-Modrinth → 8h8g 数据同步工具
-从 api.modrinth.com 获取项目/版本元数据，同步到本地自建实例。
-
+Bbsmc �?8h8g 数据同步工具
+�?api.Bbsmc.com 获取项目/版本元数据，同步到本地自建实例�?
 用法:
-  # 同步前 100 个热门项目
-  python sync.py --limit 100
+  # 同步�?100 个热门项�?  python sync.py --limit 100
 
-  # 按项目类型和加载器筛选
-  python sync.py --project-type mod --loaders fabric --limit 50
+  # 按项目类型和加载器筛�?  python sync.py --project-type mod --loaders fabric --limit 50
 
-  # 仅同步元数据（不下载文件）
-  python sync.py --limit 200 --metadata-only
+  # 仅同步元数据（不下载文件�?  python sync.py --limit 200 --metadata-only
 
   # 使用 Docker 运行（见下）
 """
@@ -38,7 +34,7 @@ log = logging.getLogger("sync")
 # Config (can override via env vars)
 # ---------------------------------------------------------------------------
 
-SOURCE_API = os.getenv("SOURCE_API", "https://api.modrinth.com/v2")
+SOURCE_API = os.getenv("SOURCE_API", "https://api.Bbsmc.com/v2")
 TARGET_API = os.getenv("TARGET_API", "http://labrinth:8000/v2")
 TARGET_ADMIN_KEY = os.getenv("TARGET_ADMIN_KEY", "")
 TARGET_AUTH_TOKEN = os.getenv("TARGET_AUTH_TOKEN", "")
@@ -47,7 +43,7 @@ SYNC_DIR = Path(os.getenv("SYNC_DIR", "/data/sync"))
 HEADERS_SOURCE = {"User-Agent": "8h8g-syncer/1.0"}
 HEADERS_TARGET = {"User-Agent": "8h8g-syncer/1.0"}
 if TARGET_ADMIN_KEY:
-    HEADERS_TARGET["Modrinth-Admin"] = TARGET_ADMIN_KEY
+    HEADERS_TARGET["Bbsmc-Admin"] = TARGET_ADMIN_KEY
 if TARGET_AUTH_TOKEN:
     HEADERS_TARGET["Authorization"] = f"Bearer {TARGET_AUTH_TOKEN}"
 
@@ -57,7 +53,7 @@ if TARGET_AUTH_TOKEN:
 
 
 def fetch_json(client: httpx.Client, url: str, headers: dict, retries=3) -> dict | list | None:
-    """带重试的 JSON GET 请求。"""
+    """带重试的 JSON GET 请求�?""
     for attempt in range(retries):
         try:
             resp = client.get(url, headers=headers, timeout=30)
@@ -81,7 +77,7 @@ def fetch_json(client: httpx.Client, url: str, headers: dict, retries=3) -> dict
 
 
 def post_json(client: httpx.Client, url: str, data: dict, headers: dict) -> bool:
-    """POST JSON 到目标 API。"""
+    """POST JSON 到目�?API�?""
     try:
         resp = client.post(url, json=data, headers=headers, timeout=60)
         if resp.status_code in (200, 201):
@@ -94,14 +90,14 @@ def post_json(client: httpx.Client, url: str, data: dict, headers: dict) -> bool
 
 
 # ---------------------------------------------------------------------------
-# Modrinth API wrappers
+# Bbsmc API wrappers
 # ---------------------------------------------------------------------------
 
 
 def search_projects(client: httpx.Client, limit: int = 100,
                     project_type: str = "", loaders: str = "",
                     offset: int = 0) -> list[dict]:
-    """从 api.modrinth.com 搜索项目。"""
+    """�?api.Bbsmc.com 搜索项目�?""
     params = {"limit": min(limit, 100), "offset": offset, "index": "downloads"}
     if project_type:
         params["facets"] = f'[["project_type:{project_type}"]]'
@@ -116,18 +112,18 @@ def search_projects(client: httpx.Client, limit: int = 100,
 
 
 def get_project(client: httpx.Client, project_id: str) -> dict | None:
-    """获取单个项目的完整信息。"""
+    """获取单个项目的完整信息�?""
     return fetch_json(client, f"{SOURCE_API}/project/{project_id}", HEADERS_SOURCE)
 
 
 def get_project_versions(client: httpx.Client, project_id: str) -> list[dict]:
-    """获取项目的所有版本。"""
+    """获取项目的所有版本�?""
     data = fetch_json(client, f"{SOURCE_API}/project/{project_id}/version", HEADERS_SOURCE)
     return data if isinstance(data, list) else []
 
 
 def get_version(client: httpx.Client, version_id: str) -> dict | None:
-    """获取单个版本的详细信息。"""
+    """获取单个版本的详细信息�?""
     return fetch_json(client, f"{SOURCE_API}/version/{version_id}", HEADERS_SOURCE)
 
 
@@ -137,12 +133,12 @@ def get_version(client: httpx.Client, version_id: str) -> dict | None:
 
 
 def target_get(client: httpx.Client, path: str) -> dict | list | None:
-    """GET 本地 API。"""
+    """GET 本地 API�?""
     return fetch_json(client, urljoin(TARGET_API, path), HEADERS_TARGET)
 
 
 def target_post(client: httpx.Client, path: str, data: dict) -> bool:
-    """POST 到本地 API。"""
+    """POST 到本�?API�?""
     return post_json(client, urljoin(TARGET_API, path), data, HEADERS_TARGET)
 
 
@@ -166,12 +162,12 @@ class Syncer:
         self.stats = {"projects": 0, "versions": 0, "files": 0, "skipped": 0, "errors": 0}
 
     def save_json(self, directory: Path, name: str, data: dict | list):
-        """保存 JSON 到本地缓存。"""
+        """保存 JSON 到本地缓存�?""
         path = directory / f"{name}.json"
         path.write_text(json.dumps(data, indent=2, default=str))
 
     def load_json(self, directory: Path, name: str) -> dict | None:
-        """从本地缓存加载 JSON。"""
+        """从本地缓存加�?JSON�?""
         path = directory / f"{name}.json"
         if path.exists():
             return json.loads(path.read_text())
@@ -179,7 +175,7 @@ class Syncer:
 
     def sync_search_index(self, project_type: str = "", loaders: str = "",
                           limit: int = 100):
-        """同步热门项目列表。"""
+        """同步热门项目列表�?""
         log.info("Fetching search results (type=%s, loaders=%s, limit=%d)",
                  project_type or "*", loaders or "*", limit)
         offset = 0
@@ -201,7 +197,7 @@ class Syncer:
         return all_hits
 
     def sync_project(self, project_id: str) -> dict | None:
-        """同步单个项目的完整数据。"""
+        """同步单个项目的完整数据�?""
         # Fetch
         project = get_project(self.client_source, project_id)
         if not project:
@@ -246,7 +242,7 @@ class Syncer:
         return project
 
     def report(self):
-        """输出同步统计。"""
+        """输出同步统计�?""
         log.info("=" * 50)
         log.info("Sync complete!")
         log.info("  Projects: %d", self.stats["projects"])
@@ -268,7 +264,7 @@ class Syncer:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Modrinth → 8h8g sync tool")
+    parser = argparse.ArgumentParser(description="Bbsmc �?8h8g sync tool")
     parser.add_argument("--limit", type=int, default=50,
                         help="Number of projects to sync (default: 50)")
     parser.add_argument("--project-type", default="mod",

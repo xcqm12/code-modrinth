@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { DownloadIcon, ExternalIcon, FileIcon, SearchIcon } from '@modrinth/assets'
+import type { Labrinth } from '@Bbsmc/api-client'
+import { DownloadIcon, ExternalIcon, FileIcon, SearchIcon } from '@Bbsmc/assets'
 import {
 	capitalizeString,
 	formatVersionsForDisplay,
 	type GameVersionTag,
 	renderHighlightedString,
-} from '@modrinth/utils'
+} from '@Bbsmc/utils'
 import { useQuery } from '@tanstack/vue-query'
 import { computed, ref } from 'vue'
 
@@ -15,7 +15,7 @@ import { useFormatDateTime } from '#ui/composables/format-date-time.ts'
 import { useCompactNumber, useFormatNumber } from '#ui/composables/format-number.ts'
 import { useRelativeTime } from '#ui/composables/how-ago.ts'
 import { defineMessage, defineMessages, useVIntl } from '#ui/composables/i18n.ts'
-import { injectModrinthClient } from '#ui/providers/api-client.ts'
+import { injectBbsmcClient } from '#ui/providers/api-client.ts'
 import { injectTags } from '#ui/providers/tags.ts'
 import {
 	commonMessages,
@@ -53,7 +53,7 @@ const props = defineProps<{
 	userLinkCreator?: (user: Labrinth.Users.v3.User) => string | undefined
 }>()
 
-const api = injectModrinthClient()
+const api = injectBbsmcClient()
 const tags = injectTags(null)
 
 const gameVersionsToDisplay = computed(() =>
@@ -555,7 +555,7 @@ const authorLink = computed(() =>
 						link-class="hover:underline hover:text-contrast"
 						target="_blank"
 					>
-						{{ row.version ?? 'â€”' }}
+						{{ row.version ?? 'â€? }}
 					</AutoLink>
 				</template>
 			</Table>

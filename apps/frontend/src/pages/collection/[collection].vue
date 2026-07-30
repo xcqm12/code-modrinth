@@ -397,7 +397,7 @@ import {
 	UpdatedIcon,
 	UploadIcon,
 	XIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -410,7 +410,7 @@ import {
 	EmptyState,
 	FileInput,
 	HorizontalRule,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	IntlFormatted,
 	NavTabs,
@@ -428,8 +428,8 @@ import {
 	useRelativeTime,
 	useSavable,
 	useVIntl,
-} from '@modrinth/ui'
-import { isAdmin, renderString } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import { isAdmin, renderString } from '@Bbsmc/utils'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import dayjs from 'dayjs'
 import { onServerPrefetch } from 'vue'
@@ -437,7 +437,7 @@ import { onServerPrefetch } from 'vue'
 import AdPlaceholder from '~/components/ui/AdPlaceholder.vue'
 
 const { handleError } = injectNotificationManager()
-const api = injectModrinthClient()
+const api = injectBbsmcClient()
 const { formatMessage } = useVIntl()
 const formatRelativeTime = useRelativeTime()
 const { formatCompactNumber, formatCompactNumberPlural } = useCompactNumber()
@@ -480,7 +480,7 @@ async function fetchFollowedProjects(userId) {
 const messages = defineMessages({
 	collectionDescription: {
 		id: 'collection.description',
-		defaultMessage: '{description} - View the collection {name} by {username} on Modrinth',
+		defaultMessage: '{description} - View the collection {name} by {username} on Bbsmc',
 	},
 	collectionTitle: {
 		id: 'collection.title',

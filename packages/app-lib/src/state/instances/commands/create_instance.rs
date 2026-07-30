@@ -199,15 +199,15 @@ async fn resolve_icon_path(
 fn content_source_kind(link: &InstanceLink) -> ContentSourceKind {
     match link {
         InstanceLink::Unmanaged => ContentSourceKind::Local,
-        InstanceLink::ModrinthModpack { .. } => {
-            ContentSourceKind::ModrinthModpack
+        InstanceLink::BbsmcModpack { .. } => {
+            ContentSourceKind::BbsmcModpack
         }
         InstanceLink::ServerProject { .. }
         | InstanceLink::ServerProjectModpack { .. } => {
             ContentSourceKind::ServerProject
         }
-        InstanceLink::ModrinthHosting { .. } => {
-            ContentSourceKind::ModrinthHosting
+        InstanceLink::BbsmcHosting { .. } => {
+            ContentSourceKind::BbsmcHosting
         }
         InstanceLink::ImportedModpack { .. } => {
             ContentSourceKind::ImportedModpack

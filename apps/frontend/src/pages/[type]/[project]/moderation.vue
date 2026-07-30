@@ -133,14 +133,14 @@
 	</template>
 </template>
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { IssuesIcon, SpinnerIcon } from '@modrinth/assets'
+import type { Labrinth } from '@Bbsmc/api-client'
+import { IssuesIcon, SpinnerIcon } from '@Bbsmc/assets'
 import {
 	Admonition,
 	commonMessages,
 	defineMessage,
 	defineMessages,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	injectProjectPageContext,
 	IntlFormatted,
@@ -148,8 +148,8 @@ import {
 	normalizeChildren,
 	Toggle,
 	useVIntl,
-} from '@modrinth/ui'
-import { isStaff } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import { isStaff } from '@Bbsmc/utils'
 import { useQueryClient } from '@tanstack/vue-query'
 import dayjs from 'dayjs'
 import { computed, watch } from 'vue'
@@ -185,7 +185,7 @@ const messages = defineMessages({
 	threadPrivateDescription: {
 		id: 'project.moderation.thread.private-description',
 		defaultMessage:
-			'This is a private conversation thread with the Modrinth moderators. They may message you with issues concerning this project.',
+			'This is a private conversation thread with the Bbsmc moderators. They may message you with issues concerning this project.',
 	},
 	threadHelpCenterNote1: {
 		id: 'project.moderation.thread.help-center-note.1',
@@ -195,7 +195,7 @@ const messages = defineMessages({
 	threadHelpCenterNote2: {
 		id: 'project.moderation.thread.help-center-note.2',
 		defaultMessage:
-			'If you need assistance or have additional inquiries, please visit the <help-center-link>Modrinth Help Center</help-center-link> and click the blue bubble to contact support.',
+			'If you need assistance or have additional inquiries, please visit the <help-center-link>Bbsmc Help Center</help-center-link> and click the blue bubble to contact support.',
 	},
 	threadApprovedWarning: {
 		id: 'project.moderation.thread.approved-warning',
@@ -250,13 +250,13 @@ const approvedAdmonitionMessage = computed<MessageDescriptor | null>(() => {
 		case 'archived':
 			return defineMessage({
 				id: 'project.moderation.admonition.approved.body.public',
-				defaultMessage: 'Your project is published and discoverable on Modrinth.',
+				defaultMessage: 'Your project is published and discoverable on Bbsmc.',
 			})
 		case 'unlisted':
 			return defineMessage({
 				id: 'project.moderation.admonition.approved.body.unlisted',
 				defaultMessage:
-					'Your project is unlisted, meaning it can only be accessed with a direct link and is not discoverable on Modrinth.',
+					'Your project is unlisted, meaning it can only be accessed with a direct link and is not discoverable on Bbsmc.',
 			})
 
 		case 'private':
@@ -290,7 +290,7 @@ const moderationAdmonition = computed<{
 					message: defineMessage({
 						id: 'project.moderation.admonition.draft.body',
 						defaultMessage:
-							"This is a draft project that cannot be seen by others until submitted for review and approved by Modrinth's moderation team.",
+							"This is a draft project that cannot be seen by others until submitted for review and approved by Bbsmc's moderation team.",
 					}),
 				},
 				{
@@ -298,7 +298,7 @@ const moderationAdmonition = computed<{
 					message: defineMessage({
 						id: 'project.moderation.admonition.draft.submit-for-review',
 						defaultMessage:
-							"Once you have completed all required steps and ensured your project complies with Modrinth's <rules-link>Content Rules</rules-link> you can submit your project for review.",
+							"Once you have completed all required steps and ensured your project complies with Bbsmc's <rules-link>Content Rules</rules-link> you can submit your project for review.",
 					}),
 				},
 			],
@@ -338,7 +338,7 @@ const moderationAdmonition = computed<{
 					message: defineMessage({
 						id: 'project.moderation.admonition.under-review.body.1',
 						defaultMessage:
-							"Your project is in queue to be reviewed by Modrinth's moderation team.",
+							"Your project is in queue to be reviewed by Bbsmc's moderation team.",
 					}),
 				},
 				{
@@ -347,7 +347,7 @@ const moderationAdmonition = computed<{
 						defineMessage({
 							id: 'project.moderation.admonition.under-review.body.2',
 							defaultMessage:
-								"Your project will be scanned and then reviewed by human moderators to ensure it meets Modrinth's <rules-link>Content Rules</rules-link> and <terms-link>Terms of Use</terms-link>.",
+								"Your project will be scanned and then reviewed by human moderators to ensure it meets Bbsmc's <rules-link>Content Rules</rules-link> and <terms-link>Terms of Use</terms-link>.",
 						}),
 						defineMessage({
 							id: 'project.moderation.admonition.under-review.body.3',
@@ -367,7 +367,7 @@ const moderationAdmonition = computed<{
 					message: defineMessage({
 						id: 'project.moderation.admonition.under-review.body.5',
 						defaultMessage:
-							'<emphasis>We appreciate your patience while our moderators work hard to keep Modrinth safe, and look forward to helping you share your content! 💚</emphasis>',
+							'<emphasis>We appreciate your patience while our moderators work hard to keep Bbsmc safe, and look forward to helping you share your content! 💚</emphasis>',
 					}),
 				},
 			],
@@ -462,7 +462,7 @@ watch(
 )
 
 const auth = await useAuth()
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const queryClient = useQueryClient()
 const pending = computed(() => thread.value === undefined)
 

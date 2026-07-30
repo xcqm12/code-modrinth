@@ -1,6 +1,6 @@
 /**
- * Builds merged app + Modrinth Hosting release notes for GitHub releases and Tauri updates.json.
- * Hosting bullets are folded into each ## section as `- **Modrinth Hosting:** …`.
+ * Builds merged app + Bbsmc Hosting release notes for GitHub releases and Tauri updates.json.
+ * Hosting bullets are folded into each ## section as `- **Bbsmc Hosting:** …`.
  *
  * Hosting-only sections (present in hosting changelog but not app) are appended after app sections,
  * ordered by: added, changed, deprecated, removed, fixed, security, then other titles alphabetically.
@@ -35,7 +35,7 @@ interface HostingSectionAgg {
 	bullets: string[]
 }
 
-// Mirror scripts/collect-changelog.ts — used to order hosting-only sections at the end
+// Mirror scripts/collect-changelog.ts �?used to order hosting-only sections at the end
 const KNOWN_SECTION_ORDER = ['added', 'changed', 'deprecated', 'removed', 'fixed', 'security'] as const
 
 function parseArgs(argv: string[]): { dryRun: boolean; version: string; outFile: string } {
@@ -155,7 +155,7 @@ function extractBulletLines(rawLines: string[]): string[] {
 function toHostingBullet(line: string): string {
 	const m = line.match(/^\s*-\s(.*)$/)
 	const rest = m ? m[1].trim() : line.trim()
-	return `- **Modrinth Hosting:** ${rest}`
+	return `- **Bbsmc Hosting:** ${rest}`
 }
 
 function sortHostingOnlyKeys(keys: string[]): string[] {

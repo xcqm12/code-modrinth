@@ -4,7 +4,7 @@ import { defineNuxtConfig } from 'nuxt/config'
 import { fileURLToPath } from 'url'
 import svgLoader from 'vite-svg-loader'
 
-import { GenericModrinthClient, type Labrinth } from '../../packages/api-client/src/index.ts'
+import { GenericBbsmcClient, type Labrinth } from '../../packages/api-client/src/index.ts'
 
 const STAGING_API_URL = 'https://staging-api.bbsmc.org.cn/v2/'
 const PROD_API_URL = 'https://api.bbsmc.org.cn/v2/'
@@ -27,20 +27,20 @@ const favicons = {
 	'(prefers-color-scheme:dark)': '/favicon.ico',
 }
 
-const PROD_MODRINTH_URL = 'https://bbsmc.org.cn'
-const STAGING_MODRINTH_URL = 'https://staging.bbsmc.org.cn'
+const PROD_Bbsmc_URL = 'https://bbsmc.org.cn'
+const STAGING_Bbsmc_URL = 'https://staging.bbsmc.org.cn'
 
 export default defineNuxtConfig({
 	srcDir: 'src/',
 	alias: {
-		'@modrinth/api-client': API_CLIENT_SOURCE,
+		'@Bbsmc/api-client': API_CLIENT_SOURCE,
 	},
 	app: {
 		head: {
 			htmlAttrs: {
 				lang: 'en',
 			},
-			title: 'Modrinth',
+			title: 'Bbsmc',
 			link: [
 				// The type is necessary because the linter can't always compare this very nested/complex type on itself
 				...preloadedFonts.map((font): object => {
@@ -62,7 +62,7 @@ export default defineNuxtConfig({
 					rel: 'search',
 					type: 'application/opensearchdescription+xml',
 					href: '/opensearch.xml',
-					title: 'Modrinth mods',
+					title: 'Bbsmc mods',
 				},
 			],
 		},
@@ -94,7 +94,7 @@ export default defineNuxtConfig({
 		cacheDir: '../../node_modules/.vite/apps/knossos',
 		resolve: {
 			alias: {
-				'@modrinth/api-client': API_CLIENT_SOURCE,
+				'@Bbsmc/api-client': API_CLIENT_SOURCE,
 			},
 			dedupe: ['vue'],
 		},
@@ -175,7 +175,7 @@ export default defineNuxtConfig({
 			let generatedState: Labrinth.State.GeneratedState & Record<string, any> = { errors: [] } as any
 
 			try {
-				const client = new GenericModrinthClient({
+				const client = new GenericBbsmcClient({
 					labrinthBaseUrl: API_URL.replace('/v2/', ''),
 					userAgent: 'Knossos generator (support@bbsmc.org.cn)',
 					timeout: 5000,
@@ -209,7 +209,7 @@ export default defineNuxtConfig({
 			console.log('Tags generated!')
 
 			const robotsContent =
-				getDomain() === PROD_MODRINTH_URL && process.env.PREVIEW !== 'true'
+				getDomain() === PROD_Bbsmc_URL && process.env.PREVIEW !== 'true'
 					? 'User-agent: *\nDisallow: /_internal/'
 					: 'User-agent: *\nDisallow: /'
 
@@ -243,7 +243,7 @@ export default defineNuxtConfig({
 			preview: process.env.PREVIEW === 'true',
 			featureFlagOverrides: getFeatureFlagOverrides(),
 
-			owner: process.env.VERCEL_GIT_REPO_OWNER || 'modrinth',
+			owner: process.env.VERCEL_GIT_REPO_OWNER || 'Bbsmc',
 			slug: process.env.VERCEL_GIT_REPO_SLUG || 'code',
 			branch:
 				process.env.VERCEL_GIT_COMMIT_REF ||
@@ -404,9 +404,9 @@ function getDomain() {
 		} else if (process.env.VERCEL_URL) {
 			return `https://${process.env.VERCEL_URL}`
 		} else if (getApiUrl() === STAGING_API_URL) {
-			return STAGING_MODRINTH_URL
+			return STAGING_Bbsmc_URL
 		} else {
-			return PROD_MODRINTH_URL
+			return PROD_Bbsmc_URL
 		}
 	} else {
 		const port = process.env.PORT || 3000

@@ -80,7 +80,7 @@
 </template>
 
 <script setup lang="ts">
-import { SpinnerIcon, XIcon } from '@modrinth/assets'
+import { SpinnerIcon, XIcon } from '@Bbsmc/assets'
 import {
 	ButtonStyled,
 	CopyCode,
@@ -90,7 +90,7 @@ import {
 	useFormatDateTime,
 	useRelativeTime,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/vue-query'
 import { computed, ref } from 'vue'
 

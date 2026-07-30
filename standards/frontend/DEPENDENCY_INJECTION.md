@@ -16,14 +16,14 @@
 
 # Dependency Injection
 
-Modrinth uses a lightweight DI layer built on Vue's `provide`/`inject` for sharing platform-specific capabilities and page-level state across shared UI components.
+Bbsmc uses a lightweight DI layer built on Vue's `provide`/`inject` for sharing platform-specific capabilities and page-level state across shared UI components.
 
 ## The `createContext` Factory
 
 All providers are defined using `createContext` from `packages/ui/src/providers/index.ts` (adapted from Reka UI). It produces a typed `[inject, provide]` tuple:
 
 ```ts
-import { createContext } from '@modrinth/ui'
+import { createContext } from '@Bbsmc/ui'
 
 interface MyContext {
 	someValue: Ref<string>
@@ -33,9 +33,9 @@ interface MyContext {
 export const [injectMyContext, provideMyContext] = createContext<MyContext>('MyComponent')
 ```
 
-- **`provideMyContext(value)`** â€” call in a parent component's `setup()`.
-- **`injectMyContext()`** â€” call in any descendant's `setup()`. Throws if never provided.
-- **`injectMyContext(null)`** â€” returns `null` instead of throwing (for optional contexts).
+- **`provideMyContext(value)`** â€?call in a parent component's `setup()`.
+- **`injectMyContext()`** â€?call in any descendant's `setup()`. Throws if never provided.
+- **`injectMyContext(null)`** â€?returns `null` instead of throwing (for optional contexts).
 
 ## When to Use DI
 
@@ -57,7 +57,7 @@ Use DI when:
 
 ### Page-Level Context
 
-Sharing data between a page and deeply nested children â€” e.g. project page data consumed by sidebar, header, and version components.
+Sharing data between a page and deeply nested children â€?e.g. project page data consumed by sidebar, header, and version components.
 
 ## Creating a New Provider
 
@@ -107,7 +107,7 @@ Create a setup function in `apps/app-frontend/src/providers/setup/`:
 ```ts
 // apps/app-frontend/src/providers/setup/my-feature.ts
 import { ref } from 'vue'
-import { provideMyFeature } from '@modrinth/ui'
+import { provideMyFeature } from '@Bbsmc/ui'
 
 export function setupMyFeatureProvider() {
 	const items = ref<Item[]>([])
@@ -150,7 +150,7 @@ In any component across `packages/ui`, `apps/frontend`, or `apps/app-frontend`:
 
 ```vue
 <script setup lang="ts">
-import { injectMyFeature } from '@modrinth/ui'
+import { injectMyFeature } from '@Bbsmc/ui'
 
 const { items, addItem } = injectMyFeature()
 </script>
@@ -163,18 +163,18 @@ const { items, addItem } = injectMyFeature()
 
 ## When NOT to Use DI
 
-Default to props and emits. DI adds indirection â€” only use it with a concrete reason.
+Default to props and emits. DI adds indirection â€?only use it with a concrete reason.
 
-- **Parent to direct child** â€” use props.
-- **Data only exists in one frontend** â€” keep context local to that app, not in `packages/ui`.
-- **Shallow prop drilling (1â€“2 levels)** â€” passing through one intermediate is fine.
-- **Component-local state** â€” use `ref()` / `reactive()` locally.
+- **Parent to direct child** â€?use props.
+- **Data only exists in one frontend** â€?keep context local to that app, not in `packages/ui`.
+- **Shallow prop drilling (1â€? levels)** â€?passing through one intermediate is fine.
+- **Component-local state** â€?use `ref()` / `reactive()` locally.
 
 ## Existing Providers
 
 | Provider                     | File                             | Purpose                        |
 | ---------------------------- | -------------------------------- | ------------------------------ |
-| `provideModrinthClient`      | `providers/api-client.ts`        | API client instance            |
+| `provideBbsmcClient`      | `providers/api-client.ts`        | API client instance            |
 | `provideNotificationManager` | `providers/web-notifications.ts` | Notification management        |
 | `providePageContext`         | `providers/page-context.ts`      | Page config (sidebar, ads)     |
 | `provideProjectPageContext`  | `providers/project-page.ts`      | Project page state + mutations |
@@ -183,8 +183,8 @@ Default to props and emits. DI adds indirection â€” only use it with a concrete 
 
 ## Key Files
 
-- `packages/ui/src/providers/index.ts` â€” `createContext` factory + barrel exports
-- `packages/ui/src/providers/*.ts` â€” Provider definitions
-- `apps/frontend/src/app.vue` â€” Nuxt root provider setup
-- `apps/app-frontend/src/App.vue` â€” Tauri root provider setup
-- `apps/app-frontend/src/providers/setup/` â€” App provider setup functions
+- `packages/ui/src/providers/index.ts` â€?`createContext` factory + barrel exports
+- `packages/ui/src/providers/*.ts` â€?Provider definitions
+- `apps/frontend/src/app.vue` â€?Nuxt root provider setup
+- `apps/app-frontend/src/App.vue` â€?Tauri root provider setup
+- `apps/app-frontend/src/providers/setup/` â€?App provider setup functions

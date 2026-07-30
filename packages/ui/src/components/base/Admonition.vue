@@ -92,7 +92,7 @@
 </template>
 
 <script setup lang="ts">
-import { ClockIcon, XIcon } from '@modrinth/assets'
+import { ClockIcon, XIcon } from '@Bbsmc/assets'
 import { useNow } from '@vueuse/core'
 import { computed } from 'vue'
 

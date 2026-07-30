@@ -1,4 +1,4 @@
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
 
 import { defineMessage, type MessageDescriptor } from '../../composables/i18n'
 
@@ -136,7 +136,7 @@ export const PERMISSION_REASONS: Record<
 		description: defineMessage({
 			id: 'external-files.permissions-card.reason.globally-allowed.description',
 			defaultMessage:
-				"We've seen this file before and have prepared an attribution for you. If something seems wrong, please contact Modrinth Support via the Help Center",
+				"We've seen this file before and have prepared an attribution for you. If something seems wrong, please contact Bbsmc Support via the Help Center",
 		}),
 		notesLabel: null,
 		notesDescription: null,

@@ -86,7 +86,7 @@
 	</div>
 </template>
 <script setup lang="ts">
-import { RightArrowIcon, SettingsIcon } from '@modrinth/assets'
+import { RightArrowIcon, SettingsIcon } from '@Bbsmc/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -94,7 +94,7 @@ import {
 	defineMessages,
 	injectNotificationManager,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import type { LocationQueryValue } from 'vue-router'
 
 interface ApiErrorShape {
@@ -196,7 +196,7 @@ const failedVerificationMessages = defineMessages({
 })
 
 useHead({
-	title: () => `${formatMessage(messages.title)} - Modrinth`,
+	title: () => `${formatMessage(messages.title)} - Bbsmc`,
 })
 
 const auth = await useAuth()

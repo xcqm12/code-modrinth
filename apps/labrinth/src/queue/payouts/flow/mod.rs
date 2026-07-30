@@ -2,7 +2,7 @@
 //! maximum withdraw amounts, and execution logic.
 
 use eyre::eyre;
-use modrinth_util::decimal::Decimal2dp;
+use Bbsmc_util::decimal::Decimal2dp;
 use rust_decimal::Decimal;
 use thiserror::Error;
 

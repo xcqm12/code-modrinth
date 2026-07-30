@@ -9,20 +9,20 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
 import {
 	AccountSocialSettings,
 	commonSettingsMessages,
-	injectModrinthClient,
+	injectBbsmcClient,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 
 definePageMeta({
 	middleware: 'auth',
 })
 
 const auth = await useAuth()
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const { formatMessage } = useVIntl()
 
 function getBlockedUsers(): Promise<Labrinth.BlockedUsers.v3.BlockedUserId[]> {
@@ -38,6 +38,6 @@ function unblockUser(userId: string): Promise<void> {
 }
 
 useHead({
-	title: () => `${formatMessage(commonSettingsMessages.social)} - Modrinth`,
+	title: () => `${formatMessage(commonSettingsMessages.social)} - Bbsmc`,
 })
 </script>

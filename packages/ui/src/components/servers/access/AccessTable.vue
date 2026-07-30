@@ -283,7 +283,7 @@ import {
 	SendIcon,
 	UserXIcon,
 	XIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import { type Component, computed, onMounted, onUnmounted, ref } from 'vue'
 
 import { useFormatDateTime, useRelativeTime } from '../../../composables'
@@ -353,7 +353,7 @@ const messages = defineMessages({
 	},
 	unknownJoinedDate: {
 		id: 'servers.access-table.unknown-joined-date',
-		defaultMessage: 'â€”',
+		defaultMessage: 'â€?,
 	},
 	resendInvite: {
 		id: 'servers.access-table.action.resend-invite',

@@ -1,4 +1,4 @@
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
 
 import { defineMessage, defineMessages, type MessageDescriptor } from '../composables/i18n'
 
@@ -215,9 +215,9 @@ export const commonMessages = defineMessages({
 		id: 'button.open-in-browser',
 		defaultMessage: 'Open in browser',
 	},
-	openInModrinthButton: {
-		id: 'button.open-in-modrinth',
-		defaultMessage: 'Open in Modrinth',
+	openInBbsmcButton: {
+		id: 'button.open-in-Bbsmc',
+		defaultMessage: 'Open in Bbsmc',
 	},
 	orLabel: {
 		id: 'label.or',
@@ -684,7 +684,7 @@ export const commonMessages = defineMessages({
 	projectRecentPlaysTooltip: {
 		id: 'project.recent-plays.tooltip',
 		defaultMessage:
-			'{count} {countPlural, plural, one {recent play} other {recent plays}} from Modrinth in the past 2 weeks',
+			'{count} {countPlural, plural, one {recent play} other {recent plays}} from Bbsmc in the past 2 weeks',
 	},
 })
 

@@ -1,5 +1,5 @@
 use crate::ErrorKind;
-use crate::data::ModrinthCredentials;
+use crate::data::BbsmcCredentials;
 use crate::event::FriendPayload;
 use crate::event::emit::{emit_friend, emit_notification};
 use crate::state::tunnel::InternalTunnelSocket;
@@ -83,12 +83,12 @@ impl FriendsSocket {
         }
 
         let credentials =
-            ModrinthCredentials::get_and_refresh(exec, semaphore).await?;
+            BbsmcCredentials::get_and_refresh(exec, semaphore).await?;
 
         if let Some(credentials) = credentials {
             let mut request = format!(
                 "{}_internal/launcher_socket?code={}",
-                env!("MODRINTH_SOCKET_URL"),
+                env!("Bbsmc_SOCKET_URL"),
                 credentials.session
             )
             .into_client_request()?;
@@ -372,7 +372,7 @@ impl FriendsSocket {
     ) -> crate::Result<Vec<UserFriend>> {
         fetch_json(
             Method::GET,
-            concat!(env!("MODRINTH_API_URL_V3"), "friends"),
+            concat!(env!("Bbsmc_API_URL_V3"), "friends"),
             None,
             None,
             Some("/v3/friends"),
@@ -398,7 +398,7 @@ impl FriendsSocket {
     ) -> crate::Result<()> {
         let result = fetch_advanced(
             Method::POST,
-            &format!("{}friend/{user_id}", env!("MODRINTH_API_URL_V3")),
+            &format!("{}friend/{user_id}", env!("Bbsmc_API_URL_V3")),
             None,
             None,
             None,
@@ -432,7 +432,7 @@ impl FriendsSocket {
     ) -> crate::Result<()> {
         fetch_advanced(
             Method::DELETE,
-            &format!("{}friend/{user_id}", env!("MODRINTH_API_URL_V3")),
+            &format!("{}friend/{user_id}", env!("Bbsmc_API_URL_V3")),
             None,
             None,
             None,

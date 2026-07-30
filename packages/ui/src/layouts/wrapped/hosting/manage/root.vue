@@ -59,7 +59,7 @@
 	>
 		<ErrorInformationCard
 			title="An error occured."
-			description="Please contact Modrinth Support."
+			description="Please contact Bbsmc Support."
 			:icon="TransferIcon"
 			icon-color="orange"
 			:error-details="generalErrorDetails"
@@ -80,7 +80,7 @@
 			<template #description>
 				<div class="text-md space-y-4">
 					<p class="leading-[170%] text-secondary">
-						Your server's node, where your Modrinth Server is physically hosted, is not accessible
+						Your server's node, where your Bbsmc Server is physically hosted, is not accessible
 						at the moment. We are working to resolve the issue as quickly as possible.
 					</p>
 					<p class="leading-[170%] text-secondary">
@@ -88,7 +88,7 @@
 						the issue is resolved.
 					</p>
 					<p class="leading-[170%] text-secondary">
-						If reloading does not work initially, please contact Modrinth Support via the chat
+						If reloading does not work initially, please contact Bbsmc Support via the chat
 						bubble in the bottom right corner and we'll be happy to help.
 					</p>
 				</div>
@@ -153,7 +153,7 @@
 									tooltip="Copy server address"
 									:action="copyServerAddress"
 								>
-									{{ serverData.net.domain }}.modrinth.gg
+									{{ serverData.net.domain }}.Bbsmc.gg
 								</PageHeaderMetadataItem>
 								<PageHeaderMetadataItem v-if="showServerUptime" :icon="TimerIcon">
 									{{ formattedUptime }}
@@ -269,7 +269,7 @@
 										An invalid loader or Minecraft version was specified and could not be installed.
 										<ul class="m-0 mt-4 p-0 pl-4">
 											<li>
-												If this version of Minecraft was released recently, please check if Modrinth
+												If this version of Minecraft was released recently, please check if Bbsmc
 												Hosting supports it.
 											</li>
 											<li>
@@ -281,7 +281,7 @@
 												You can change the loader by clicking the "Change Loader" button.
 											</li>
 											<li>
-												If you're stuck, please contact Modrinth Support with the information below:
+												If you're stuck, please contact Bbsmc Support with the information below:
 											</li>
 										</ul>
 										<ButtonStyled>
@@ -294,16 +294,16 @@
 									</div>
 									<div v-if="errorMessage.toLocaleLowerCase() === 'internal error'">
 										An internal error occurred while installing your server. Don't fret —try
-										reinstalling your server, and if the problem persists, please contact Modrinth
+										reinstalling your server, and if the problem persists, please contact Bbsmc
 										support with your server's debug information.
 									</div>
 									<div
 										v-if="errorMessage.toLocaleLowerCase() === 'this version is not yet supported'"
 									>
-										An error occurred while installing your server because Modrinth Hosting does not
+										An error occurred while installing your server because Bbsmc Hosting does not
 										support the version of Minecraft or the loader you specified. Try reinstalling
 										your server with a different version or loader, and if the problem persists,
-										please contact Modrinth Support with your server's debug information.
+										please contact Bbsmc Support with your server's debug information.
 									</div>
 
 									<div
@@ -398,8 +398,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Archon, Labrinth } from '@modrinth/api-client'
-import { getNodeWebSocketUrl, ModrinthApiError, NuxtModrinthClient } from '@modrinth/api-client'
+import type { Archon, Labrinth } from '@Bbsmc/api-client'
+import { getNodeWebSocketUrl, BbsmcApiError, NuxtBbsmcClient } from '@Bbsmc/api-client'
 import {
 	BoxesIcon,
 	CheckIcon,
@@ -421,7 +421,7 @@ import {
 	TriangleAlertIcon,
 	UsersIcon,
 	XIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { useStorage, useTimeoutFn } from '@vueuse/core'
 import DOMPurify from 'dompurify'
@@ -450,7 +450,7 @@ import {
 	hasServerPermission,
 	useDebugLogger,
 	useLoadingBarToken,
-	useModrinthServersConsole,
+	useBbsmcServersConsole,
 	useReadyState,
 	useServerImage,
 	useServerProject,
@@ -462,7 +462,7 @@ import { useServerPanelSync } from '#ui/composables/server-panel-sync'
 import type { LogLine } from '#ui/layouts/shared/console'
 import type { ServerSettingsTabId } from '#ui/layouts/shared/server-settings'
 import {
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	provideServerSettingsModal,
 } from '#ui/providers'
@@ -562,10 +562,10 @@ const settingsHintMessages = defineMessages({
 const DISABLE_LOADING_ANIM = true
 
 const { addNotification } = injectNotificationManager()
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const constrainWidth = computed(() => props.constrainWidth)
 const containedLayout = computed(() => props.layoutMode === 'contained')
-const isNuxt = computed(() => client instanceof NuxtModrinthClient)
+const isNuxt = computed(() => client instanceof NuxtBbsmcClient)
 const queryClient = useQueryClient()
 const route = useRoute()
 const router = useRouter()
@@ -618,8 +618,8 @@ function updateServerData(patch: Partial<Archon.Servers.v0.Server>) {
 
 const serverError = computed(() => {
 	const err = serverQueryError.value
-	if (err instanceof ModrinthApiError) return err
-	return err ? ModrinthApiError.fromUnknown(err) : null
+	if (err instanceof BbsmcApiError) return err
+	return err ? BbsmcApiError.fromUnknown(err) : null
 })
 
 const { data: serverFull } = useQuery({
@@ -810,7 +810,7 @@ function copyServerAddress() {
 	const domain = serverData.value?.net?.domain
 	if (!domain) return
 
-	void navigator.clipboard.writeText(`${domain}.modrinth.gg`)
+	void navigator.clipboard.writeText(`${domain}.Bbsmc.gg`)
 	addNotification({
 		title: 'Server address copied',
 		text: "Your server's address has been copied to your clipboard.",
@@ -872,7 +872,7 @@ type CachedWsState = {
 	consoleLines: LogLine[]
 }
 
-const modrinthServersConsole = useModrinthServersConsole()
+const BbsmcServersConsole = useBbsmcServersConsole()
 const wsStateCacheKey = ['servers', 'ws-state', props.serverId] as const
 const cachedWsState = queryClient.getQueryData<CachedWsState>(wsStateCacheKey)
 if (cachedWsState) {
@@ -901,7 +901,7 @@ const saveWsStateToCache = () => {
 		ramData: ramData.value,
 		powerState: serverPowerState.value,
 		uptimeSeconds: uptimeSeconds.value,
-		consoleLines: modrinthServersConsole.output.value,
+		consoleLines: BbsmcServersConsole.output.value,
 	} satisfies CachedWsState)
 }
 
@@ -1164,7 +1164,7 @@ const handleInstallationResult = async (data: Archon.Websocket.v0.WSInstallation
 					}
 				}
 				const fileName = files?.items?.find((file) =>
-					file.name.startsWith('modrinth-installation'),
+					file.name.startsWith('Bbsmc-installation'),
 				)?.name
 				errorLogFile.value = fileName ?? ''
 				if (fileName) {
@@ -1213,7 +1213,7 @@ const onReinstall = async (
 	errorTitle.value = 'Error'
 	errorMessage.value = 'An unexpected error occurred.'
 
-	modrinthServersConsole.clear()
+	BbsmcServersConsole.clear()
 
 	debug('[root.vue] onReinstall: triggering immediate invalidation')
 	queryClient.invalidateQueries({ queryKey: ['servers', 'detail', props.serverId] })
@@ -1303,12 +1303,12 @@ const nodeUnavailableDetails = computed(() => [
 
 const suspendedDescription = computed(() => {
 	if (serverData.value?.suspension_reason === 'cancelled') {
-		return 'Your subscription has been cancelled.\nContact Modrinth Support if you believe this is an error.'
+		return 'Your subscription has been cancelled.\nContact Bbsmc Support if you believe this is an error.'
 	}
 	if (serverData.value?.suspension_reason) {
-		return `Your server has been suspended: ${serverData.value.suspension_reason}\nContact Modrinth Support if you believe this is an error.`
+		return `Your server has been suspended: ${serverData.value.suspension_reason}\nContact Bbsmc Support if you believe this is an error.`
 	}
-	return 'Your server has been suspended.\nContact Modrinth Support if you believe this is an error.'
+	return 'Your server has been suspended.\nContact Bbsmc Support if you believe this is an error.'
 })
 
 const generalErrorDetails = computed(() => [
@@ -1508,8 +1508,8 @@ function initializeServer() {
 		})
 			.then((connected) => {
 				if (connected && cachedWsState?.consoleLines?.length) {
-					modrinthServersConsole.clear()
-					modrinthServersConsole.addLines(cachedWsState.consoleLines)
+					BbsmcServersConsole.clear()
+					BbsmcServersConsole.addLines(cachedWsState.consoleLines)
 				}
 			})
 			.finally(() => {

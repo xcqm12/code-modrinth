@@ -1,4 +1,4 @@
-import type { Archon, UploadState } from '@modrinth/api-client'
+import type { Archon, UploadState } from '@Bbsmc/api-client'
 import type { ComputedRef, Ref } from 'vue'
 
 import type { MessageDescriptor } from '#ui/composables/i18n'
@@ -34,7 +34,7 @@ export interface ServerStats {
 	}
 }
 
-export interface ModrinthServerContext {
+export interface BbsmcServerContext {
 	readonly serverId: string
 	readonly worldId: Ref<string | null>
 	readonly server: Ref<Archon.Servers.v0.Server>
@@ -53,7 +53,7 @@ export interface ModrinthServerContext {
 	// Content sync state
 	readonly isSyncingContent: Ref<boolean>
 
-	// Busy state â€” when non-empty, all write operations should be disabled
+	// Busy state â€?when non-empty, all write operations should be disabled
 	readonly busyReasons: ComputedRef<BusyReason[]>
 
 	// Filesystem state
@@ -71,5 +71,5 @@ export interface ModrinthServerContext {
 	dismissOperation: (opId: string, action: 'dismiss' | 'cancel') => Promise<void>
 }
 
-export const [injectModrinthServerContext, provideModrinthServerContext] =
-	createContext<ModrinthServerContext>('[id].vue', 'modrinthServerContext')
+export const [injectBbsmcServerContext, provideBbsmcServerContext] =
+	createContext<BbsmcServerContext>('[id].vue', 'BbsmcServerContext')

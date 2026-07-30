@@ -243,7 +243,7 @@ pub(crate) async fn get_external_files_from_mrpack(
     let mut zip_reader = MrpackZipReader::new(file).await?;
     let Some(manifest_idx) =
         zip_reader.file().entries().iter().position(|entry| {
-            matches!(entry.filename().as_str(), Ok("modrinth.index.json"))
+            matches!(entry.filename().as_str(), Ok("Bbsmc.index.json"))
         })
     else {
         return Err(crate::Error::from(crate::ErrorKind::InputError(
@@ -442,14 +442,14 @@ pub(crate) async fn install_zipped_mrpack_files_with_reporter(
                 .maybe_project_id(project_id.clone())
                 .maybe_version_id(version_id.clone())
                 .source_path(source_path.clone())
-                .entry_path("modrinth.index.json")
+                .entry_path("Bbsmc.index.json")
                 .build(),
         )
         .await?;
 
-    // Extract index of modrinth.index.json
+    // Extract index of Bbsmc.index.json
     let Some(manifest_idx) = zip_reader.file().entries().iter().position(|f| {
-        matches!(f.filename().as_str(), Ok("modrinth.index.json"))
+        matches!(f.filename().as_str(), Ok("Bbsmc.index.json"))
     }) else {
         return Err(crate::Error::from(crate::ErrorKind::InputError(
             "No pack manifest found in mrpack".to_string(),
@@ -510,7 +510,7 @@ pub(crate) async fn install_zipped_mrpack_files_with_reporter(
             .filter_map(|f| f.hashes.get(&PackFileHash::Sha1).cloned())
             .collect();
 
-        // Also hash files from overrides folders (these aren't in modrinth.index.json)
+        // Also hash files from overrides folders (these aren't in Bbsmc.index.json)
         let override_entries: Vec<usize> = zip_reader
             .file()
             .entries()
@@ -1085,7 +1085,7 @@ fn pack_source_path(file: &CreatePackFile) -> String {
 
 fn modpack_source_kind(version_id: Option<&str>) -> ContentSourceKind {
     if version_id.is_some() {
-        ContentSourceKind::ModrinthModpack
+        ContentSourceKind::BbsmcModpack
     } else {
         ContentSourceKind::ImportedModpack
     }
@@ -1100,9 +1100,9 @@ pub async fn remove_all_related_files(
     // Updates can remove files from a locally imported or downloaded pack, so share the same reader path.
     let mut zip_reader = MrpackZipReader::new(&mrpack_file).await?;
 
-    // Extract index of modrinth.index.json
+    // Extract index of Bbsmc.index.json
     let Some(manifest_idx) = zip_reader.file().entries().iter().position(|f| {
-        matches!(f.filename().as_str(), Ok("modrinth.index.json"))
+        matches!(f.filename().as_str(), Ok("Bbsmc.index.json"))
     }) else {
         return Err(crate::Error::from(crate::ErrorKind::InputError(
             "No pack manifest found in mrpack".to_string(),
@@ -1129,9 +1129,9 @@ pub async fn remove_all_related_files(
     )
     .await?;
 
-    // First, remove all modrinth projects by their version hashes
-    // Remove all modrinth projects by their version hashes
-    // We need to do a fetch to get the project ids from Modrinth
+    // First, remove all Bbsmc projects by their version hashes
+    // Remove all Bbsmc projects by their version hashes
+    // We need to do a fetch to get the project ids from Bbsmc
     let state = State::get().await?;
     let metadata =
         crate::api::instance::get(&instance_id)
@@ -1181,8 +1181,8 @@ pub async fn remove_all_related_files(
         }
     }
 
-    // Iterate over all Modrinth project file paths in the json, and remove them
-    // (There should be few, but this removes any files the .mrpack intended as Modrinth projects but were unrecognized)
+    // Iterate over all Bbsmc project file paths in the json, and remove them
+    // (There should be few, but this removes any files the .mrpack intended as Bbsmc projects but were unrecognized)
     for file in pack.files {
         match io::remove_file(instance_full_path.join(file.path.as_str())).await
         {

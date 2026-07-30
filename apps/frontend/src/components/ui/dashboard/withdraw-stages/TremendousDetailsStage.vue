@@ -311,7 +311,7 @@
 </template>
 
 <script setup lang="ts">
-import { SearchIcon } from '@modrinth/assets'
+import { SearchIcon } from '@Bbsmc/assets'
 import {
 	Admonition,
 	Checkbox,
@@ -328,7 +328,7 @@ import {
 	useDebugLogger,
 	useFormatMoney,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { useDebounceFn } from '@vueuse/core'
 import { computed, onMounted, ref, watch } from 'vue'
 
@@ -1082,7 +1082,7 @@ const messages = defineMessages({
 	unverifiedEmailMessage: {
 		id: 'dashboard.creator-withdraw-modal.tremendous-details.unverified-email-message',
 		defaultMessage:
-			'The delivery email you have entered is not associated with your Modrinth account. Modrinth cannot recover rewards sent to an incorrect email address.',
+			'The delivery email you have entered is not associated with your Bbsmc account. Bbsmc cannot recover rewards sent to an incorrect email address.',
 	},
 	paymentMethod: {
 		id: 'dashboard.creator-withdraw-modal.tremendous-details.payment-method',
@@ -1107,7 +1107,7 @@ const messages = defineMessages({
 	usdPaypalWarningMessage: {
 		id: 'dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-message',
 		defaultMessage:
-			'You selected USD for PayPal International. <direct-paypal-link>Switch to direct PayPal</direct-paypal-link> for better fees (â‰ˆ2% instead of â‰ˆ6%).',
+			'You selected USD for PayPal International. <direct-paypal-link>Switch to direct PayPal</direct-paypal-link> for better fees (â‰?% instead of â‰?%).',
 	},
 	enterDenominationPlaceholder: {
 		id: 'dashboard.creator-withdraw-modal.tremendous-details.enter-denomination-placeholder',

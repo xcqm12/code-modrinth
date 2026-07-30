@@ -18,7 +18,7 @@
 						<template v-else-if="charge.status === 'expiring'"> Expiring </template>
 						<template v-else> {{ charge.status }} </template>
 					</span>
-					<span class="text-secondary opacity-50">â€¢</span>
+					<span class="text-secondary opacity-50">â€?/span>
 					<span>
 						<template v-if="charge.type === 'refund'"> Refund </template>
 						<template v-else-if="charge.type === 'subscription'">
@@ -31,7 +31,7 @@
 						<template v-else> {{ charge.status }} </template>
 					</span>
 					<template v-if="charge.status !== 'cancelled'">
-						<span class="text-secondary opacity-50">â€¢</span>
+						<span class="text-secondary opacity-50">â€?/span>
 						{{ formatPrice(charge.amount, charge.currency_code) }}
 					</template>
 				</span>
@@ -42,13 +42,13 @@
 					<span class="font-bold">Product:</span>
 					<span v-if="productMetadata.ram">{{ productMetadata.ram / 1024 }}GB RAM</span>
 					<span v-else>Unknown RAM</span>
-					<span class="text-secondary opacity-50">â€¢</span>
+					<span class="text-secondary opacity-50">â€?/span>
 					<span v-if="productMetadata.cpu">{{ productMetadata.cpu }} vCPU</span>
 					<span v-else>Unknown CPU</span>
-					<span class="text-secondary opacity-50">â€¢</span>
+					<span class="text-secondary opacity-50">â€?/span>
 					<span v-if="productMetadata.storage">{{ productMetadata.storage / 1024 }}GB Storage</span>
 					<span v-else>Unknown Storage</span>
-					<span class="text-secondary opacity-50">â€¢</span>
+					<span class="text-secondary opacity-50">â€?/span>
 					<span v-if="productMetadata.swap">{{ productMetadata.swap }}MB Swap</span>
 					<span v-else>Unknown Swap</span>
 				</span>
@@ -73,15 +73,15 @@
 				</span>
 				<div class="flex w-full items-center gap-1 text-xs text-secondary">
 					{{ charge.status }}
-					<span class="text-secondary opacity-50">â€¢</span>
+					<span class="text-secondary opacity-50">â€?/span>
 					{{ charge.type }}
-					<span class="text-secondary opacity-50">â€¢</span>
+					<span class="text-secondary opacity-50">â€?/span>
 					{{ formatPrice(charge.amount, charge.currency_code) }}
-					<span class="text-secondary opacity-50">â€¢</span>
+					<span class="text-secondary opacity-50">â€?/span>
 
 					{{ formatDateTimeShort(charge.due) }}
 					<template v-if="charge.subscription_interval">
-						<span class="text-secondary opacity-50">â€¢</span>
+						<span class="text-secondary opacity-50">â€?/span>
 						{{ charge.subscription_interval }}
 					</template>
 				</div>
@@ -115,9 +115,9 @@
 	</div>
 </template>
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { CheckIcon, CurrencyIcon } from '@modrinth/assets'
-import { ButtonStyled, useFormatDateTime, useFormatPrice, useRelativeTime } from '@modrinth/ui'
+import type { Labrinth } from '@Bbsmc/api-client'
+import { CheckIcon, CurrencyIcon } from '@Bbsmc/assets'
+import { ButtonStyled, useFormatDateTime, useFormatPrice, useRelativeTime } from '@Bbsmc/ui'
 import dayjs from 'dayjs'
 
 import { products } from '~/generated/state.json'

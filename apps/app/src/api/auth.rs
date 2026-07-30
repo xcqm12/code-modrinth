@@ -50,7 +50,7 @@ pub async fn login<R: Runtime>(
             },
         )?),
     )
-    .title("Sign into Modrinth")
+    .title("Sign into Bbsmc")
     .always_on_top(true)
     .center()
     .build()?;

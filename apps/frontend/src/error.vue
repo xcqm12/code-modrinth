@@ -10,13 +10,13 @@
 				<img
 					v-if="is401"
 					:src="AnnoyedRinthbot"
-					alt="Annoyed Modrinth bot"
+					alt="Annoyed Bbsmc bot"
 					class="error-box__sad-bot"
 				/>
 				<img
 					v-else-if="!is404"
 					:src="SadRinthbot"
-					alt="Sad Modrinth bot"
+					alt="Sad Bbsmc bot"
 					class="error-box__sad-bot"
 				/>
 				<div v-if="!is404" class="error-box__top-glow" />
@@ -89,7 +89,7 @@
 </template>
 
 <script setup>
-import { AnnoyedRinthbot, LogInIcon, SadRinthbot } from '@modrinth/assets'
+import { AnnoyedRinthbot, LogInIcon, SadRinthbot } from '@Bbsmc/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -100,17 +100,17 @@ import {
 	LoadingBar,
 	normalizeChildren,
 	NotificationPanel,
-	provideModrinthClient,
+	provideBbsmcClient,
 	provideNotificationManager,
 	providePageContext,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 
 import Logo404 from '~/assets/images/404.svg'
 import { getSignInRouteObj } from '~/composables/auth.js'
 import { logout } from '~/composables/user.js'
 
-import { createModrinthClient } from './helpers/api.ts'
+import { createBbsmcClient } from './helpers/api.ts'
 import { FrontendNotificationManager } from './providers/frontend-notifications.ts'
 import { setupLoadingStateProvider } from './providers/setup/loading-state.ts'
 
@@ -120,13 +120,13 @@ const config = useRuntimeConfig()
 provideNotificationManager(new FrontendNotificationManager())
 setupLoadingStateProvider()
 
-const client = createModrinthClient(auth.value, {
+const client = createBbsmcClient(auth.value, {
 	apiBaseUrl: config.public.apiBaseUrl.replace('/v2/', '/'),
 	archonBaseUrl: config.public.pyroBaseUrl.replace('/v2/', '/'),
 	sharedInstancesBaseUrl: config.public.sharedInstancesBaseUrl,
 	rateLimitKey: config.rateLimitKey,
 })
-provideModrinthClient(client)
+provideBbsmcClient(client)
 providePageContext({
 	hierarchicalSidebarAvailable: ref(false),
 	showAds: ref(false),
@@ -213,12 +213,12 @@ const messages = {
 		list_items: [
 			defineMessage({
 				id: 'error.generic.default.list_item.1',
-				defaultMessage: 'Check if Modrinth is down on our <status-link>Status page</status-link>.',
+				defaultMessage: 'Check if Bbsmc is down on our <status-link>Status page</status-link>.',
 			}),
 			defineMessage({
 				id: 'error.generic.default.list_item.2',
 				defaultMessage:
-					'If this keeps happening, you may want to let the Modrinth Team know by joining our <discord-link>Discord server</discord-link>.',
+					'If this keeps happening, you may want to let the Bbsmc Team know by joining our <discord-link>Discord server</discord-link>.',
 			}),
 		],
 	},
@@ -260,7 +260,7 @@ const routeMessages = [
 					defineMessage({
 						id: 'error.project.404.list_item.3',
 						defaultMessage:
-							"The project may have been taken down by Modrinth's moderation team for violating our <tou-link>Terms of Use</tou-link>.",
+							"The project may have been taken down by Bbsmc's moderation team for violating our <tou-link>Terms of Use</tou-link>.",
 					}),
 				],
 			},
@@ -290,7 +290,7 @@ const routeMessages = [
 					defineMessage({
 						id: 'error.user.404.list_item.3',
 						defaultMessage:
-							"The user's account may have been terminated for violating Modrinth's <tou-link>Terms of Use</tou-link>.",
+							"The user's account may have been terminated for violating Bbsmc's <tou-link>Terms of Use</tou-link>.",
 					}),
 				],
 			},
@@ -320,7 +320,7 @@ const routeMessages = [
 					defineMessage({
 						id: 'error.organization.404.list_item.3',
 						defaultMessage:
-							"The organization may have been removed by Modrinth's moderation team for violating our <tou-link>Terms of Use</tou-link>.",
+							"The organization may have been removed by Bbsmc's moderation team for violating our <tou-link>Terms of Use</tou-link>.",
 					}),
 				],
 			},
@@ -350,7 +350,7 @@ const routeMessages = [
 					defineMessage({
 						id: 'error.collection.404.list_item.3',
 						defaultMessage:
-							"The collection may have been taken down by Modrinth's moderation team for violating our <tou-link>Terms of Use</tou-link>.",
+							"The collection may have been taken down by Bbsmc's moderation team for violating our <tou-link>Terms of Use</tou-link>.",
 					}),
 				],
 			},

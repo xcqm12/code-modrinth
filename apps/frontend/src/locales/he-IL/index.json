@@ -18,7 +18,7 @@
     "message": "פּרוֹיֶקט"
   },
   "analytics.chart.legend.monetization-details.description": {
-    "message": "רק צפיות והורדות שבוצעו דרך Modrinth נספרות לצורך מונטיזציה, והורדות מחייבות את המשתמשים להיות מחוברים לחשבונם."
+    "message": "רק צפיות והורדות שבוצעו דרך Bbsmc נספרות לצורך מונטיזציה, והורדות מחייבות את המשתמשים להיות מחוברים לחשבונם."
   },
   "analytics.chart.render-limit.header": {
     "message": "להציג את כל {count} הקווים בגרף?"
@@ -54,7 +54,7 @@
     "message": "אפשרויות הורדה"
   },
   "app-marketing.download.terms": {
-    "message": "בעת הורדת אפליקציית Modrinth, הינך מסכים ל<terms-link>תנאי השימוש</terms-link> ול<privacy-link>מדיניות הפרטיות</privacy-link> שלנו."
+    "message": "בעת הורדת אפליקציית Bbsmc, הינך מסכים ל<terms-link>תנאי השימוש</terms-link> ול<privacy-link>מדיניות הפרטיות</privacy-link> שלנו."
   },
   "app-marketing.download.title": {
     "message": "הורד את אפליקציית מודרינת' (בטא)"
@@ -123,7 +123,7 @@
     "message": "% מעבד"
   },
   "app-marketing.features.performance.description": {
-    "message": "אפליקציית Modrinth מציגה ביצועים טובים יותר מרוב מנהלי המודים המובילים, תוך שימוש ב 150 MB של RAM בלבד!"
+    "message": "אפליקציית Bbsmc מציגה ביצועים טובים יותר מרוב מנהלי המודים המובילים, תוך שימוש ב 150 MB של RAM בלבד!"
   },
   "app-marketing.features.performance.discord": {
     "message": "דיסקורד"
@@ -135,13 +135,13 @@
     "message": "גוגל כרום"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "∞ מגה-בייט"
+    "message": "�?מגה-בייט"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "פחות מ-150 מגה-בייט"
   },
-  "app-marketing.features.performance.modrinth-app": {
-    "message": "Modrinth App"
+  "app-marketing.features.performance.Bbsmc-app": {
+    "message": "Bbsmc App"
   },
   "app-marketing.features.performance.one-billion-percent": {
     "message": "1 מיליארד %"
@@ -159,7 +159,7 @@
     "message": "ביצועי"
   },
   "app-marketing.features.play.description": {
-    "message": "השתמש ב-Modrinth App כדי להוריד ולשחק עם המודים וחבילות המודים המועדפים עליך."
+    "message": "השתמש ב-Bbsmc App כדי להוריד ולשחק עם המודים וחבילות המודים המועדפים עליך."
   },
   "app-marketing.features.play.title": {
     "message": "שחק עם המודים האהובים עליך"
@@ -195,13 +195,13 @@
     "message": "אפליקציית מודרינת' היא משגר (launcher) מיוחד, קוד פתוח, שמאפשר לכם לשחק עם המודים שאתם אוהבים, ושומר עליהם מעודכנים. הכל בחבילה אחת, קומפקטית ומסודרת."
   },
   "app-marketing.hero.download-button": {
-    "message": "הורד את Modrinth App"
+    "message": "הורד את Bbsmc App"
   },
-  "app-marketing.hero.download-modrinth-app": {
+  "app-marketing.hero.download-Bbsmc-app": {
     "message": "הורד את אפליקציית מודרינת'"
   },
-  "app-marketing.hero.download-modrinth-app-for-os": {
-    "message": "הורד את Modrinth App עבור {os}"
+  "app-marketing.hero.download-Bbsmc-app-for-os": {
+    "message": "הורד את Bbsmc App עבור {os}"
   },
   "app-marketing.hero.minecraft-screenshot-alt": {
     "message": "תמונה ראשית מהפנורמה של המודפק cobblemon."
@@ -276,7 +276,7 @@
     "message": "הכנס"
   },
   "auth.sign-up.legal-dislaimer": {
-    "message": "כליצור את החשבון, אתם מסכימים ל<terms-link>תנאים</terms-link> ו<privacy-policy-link>מדיניות פרטיות</privacy-policy-link> של Modrinth."
+    "message": "כליצור את החשבון, אתם מסכימים ל<terms-link>תנאים</terms-link> ו<privacy-policy-link>מדיניות פרטיות</privacy-policy-link> של Bbsmc."
   },
   "auth.sign-up.sign-in-option.title": {
     "message": "כבר יש לכם חשבון?"
@@ -591,7 +591,7 @@
     "message": "קובץ מס"
   },
   "dashboard.creator-tax-form-modal.security.description": {
-    "message": "Modrinth משתמשים בגוף החיצוני Track1099 על מנת לאסוף ולשמור בבטיחות את קבצי המס שלך.\n<security-link>עוד מידע כאן.</security-link>"
+    "message": "Bbsmc משתמשים בגוף החיצוני Track1099 על מנת לאסוף ולשמור בבטיחות את קבצי המס שלך.\n<security-link>עוד מידע כאן.</security-link>"
   },
   "dashboard.creator-tax-form-modal.security.header": {
     "message": "הליכים בטחונים"
@@ -756,7 +756,7 @@
     "message": "כדי למשוך את מלוא היתרה הזמינה שלך בסך <b>{available}</b>, עליך למלא את הטופס להלן. הוא נדרש לצורכי דיווח מס ויש לבצע זאת פעם אחת בלבד."
   },
   "dashboard.creator-withdraw-modal.tax-form-required.body-with-limit": {
-    "message": "עליך למלא טופס W-9 או W-8 עבור רישומי המס של Modrinth, כדי שנוכל להישאר בציות לתקנות המס."
+    "message": "עליך למלא טופס W-9 או W-8 עבור רישומי המס של Bbsmc, כדי שנוכל להישאר בציות לתקנות המס."
   },
   "dashboard.creator-withdraw-modal.tax-form-required.header": {
     "message": "נדרש טופס מס"
@@ -798,13 +798,13 @@
     "message": "אימייל לא מאומת"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.unverified-email-message": {
-    "message": "כתובת האימייל למשלוח שהזנת אינה מקושרת לחשבון ה-Modrinth שלך. Modrinth לא תוכל לשחזר פרסים שיישלחו לכתובת אימייל שגויה."
+    "message": "כתובת האימייל למשלוח שהזנת אינה מקושרת לחשבון ה-Bbsmc שלך. Bbsmc לא תוכל לשחזר פרסים שיישלחו לכתובת אימייל שגויה."
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-header": {
     "message": "קיימות עמלות נמוכות יותר"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-message": {
-    "message": "בחרת ב-USD עבור PayPal International. כדאי לך <direct-paypal-link>לעבור ל-PayPal ישיר</direct-paypal-link> כדי לחסוך בעמלות (כ-2%≈ במקום כ-6%≈)."
+    "message": "בחרת ב-USD עבור PayPal International. כדאי לך <direct-paypal-link>לעבור ל-PayPal ישיר</direct-paypal-link> כדי לחסוך בעמלות (כ-2%�?במקום כ-6%�?."
   },
   "dashboard.creator-withdraw-modal.withdraw-button": {
     "message": "למשוך"
@@ -825,7 +825,7 @@
     "message": "ההכנסה המשוערת עשויה להשתנות עד שתהיה זמינה."
   },
   "dashboard.revenue.estimated-tooltip.msg2": {
-    "message": "לחצו כאן כדי לקרוא כיצד Modrinth מנהלת את ההכנסות שלכם."
+    "message": "לחצו כאן כדי לקרוא כיצד Bbsmc מנהלת את ההכנסות שלכם."
   },
   "dashboard.revenue.estimated-with-date": {
     "message": "משוער ל-{date}"
@@ -846,7 +846,7 @@
     "message": "משיכה"
   },
   "dashboard.revenue.tos": {
-    "message": "בהעלאת פרויקטים ל-Modrinth ובמשיכת כספים מחשבונך, הנך מסכים ל<terms-link>תנאי תוכנית התגמולים</terms-link> שלנו. למידע נוסף על <info-link>תוכנית התגמולים</info-link>."
+    "message": "בהעלאת פרויקטים ל-Bbsmc ובמשיכת כספים מחשבונך, הנך מסכים ל<terms-link>תנאי תוכנית התגמולים</terms-link> שלנו. למידע נוסף על <info-link>תוכנית התגמולים</info-link>."
   },
   "dashboard.revenue.transactions.btn.download-csv": {
     "message": "הורד כקובץ CSV"
@@ -978,7 +978,7 @@
     "message": "ייתכן שהאוסף פרטי."
   },
   "error.collection.404.list_item.3": {
-    "message": "יכול להיות שהקובץ שלך נסתר על ידי צוות Modrinth משום שפגע ב<tou-link>תנאי השימוש</tou-link>."
+    "message": "יכול להיות שהקובץ שלך נסתר על ידי צוות Bbsmc משום שפגע ב<tou-link>תנאי השימוש</tou-link>."
   },
   "error.collection.404.list_title": {
     "message": "למה?"
@@ -999,7 +999,7 @@
     "message": "תוכן לא נגיש מסיבות משפטיות"
   },
   "error.generic.default.list_item.1": {
-    "message": "בדוק אם Modrinth אינו זמין ב<status-link>דף הסטטוס</status-link> שלנו."
+    "message": "בדוק אם Bbsmc אינו זמין ב<status-link>דף הסטטוס</status-link> שלנו."
   },
   "error.generic.default.list_title": {
     "message": "נסו שוב בעוד מספר דקות."
@@ -1017,7 +1017,7 @@
     "message": "ייתכן שבעל הארגון שינה את כתובת ה-URL או מחק אותה."
   },
   "error.organization.404.list_item.3": {
-    "message": "ייתכן שצוות הפיקוח והבקרה של Modrinth הסיר את הארגון בשל הפרת <tou-link>תנאי השימוש</tou-link> שלנו."
+    "message": "ייתכן שצוות הפיקוח והבקרה של Bbsmc הסיר את הארגון בשל הפרת <tou-link>תנאי השימוש</tou-link> שלנו."
   },
   "error.organization.404.list_title": {
     "message": "מדוע?"
@@ -1032,7 +1032,7 @@
     "message": "ייתכן שבעל הפרויקט שינה את כתובת ה-URL, הפך את הפרויקט לפרטי או מחק אותו."
   },
   "error.project.404.list_item.3": {
-    "message": "ייתכן שצוות הפיקוח והבקרה של Modrinth הסיר את הארגון בשל הפרת <tou-link>תנאי השימוש</tou-link> שלנו."
+    "message": "ייתכן שצוות הפיקוח והבקרה של Bbsmc הסיר את הארגון בשל הפרת <tou-link>תנאי השימוש</tou-link> שלנו."
   },
   "error.project.404.list_title": {
     "message": "מדוע?"
@@ -1047,7 +1047,7 @@
     "message": "אולי משתמש זה שונה את השם המשתמש או מחק את החשבון."
   },
   "error.user.404.list_item.3": {
-    "message": "אולי חשבון של משתמש זה היה מושעה בגלל <tou-link>תנאי שימוש</tou-link> של Modrinth."
+    "message": "אולי חשבון של משתמש זה היה מושעה בגלל <tou-link>תנאי שימוש</tou-link> של Bbsmc."
   },
   "error.user.404.list_title": {
     "message": "למה?"
@@ -1086,10 +1086,10 @@
     "message": "כאשר השרת שלך נמצא תחת עומס כבד, אנו מעניקים לו באופן זמני גישה ל-threads נוספים של המעבד כדי לסייע במתן קפיצות השהייה וחוסר יציבות. זה עוזר למנוע מה-TPS לרדת מתחת ל-20, מה שמבטיח את החוויה החלקה ביותר האפשרית. מכיוון שה-threads הנוספים של המעבד זמינים רק לזמן קצר בתקופות עומס גבוה, ייתכן שהם לא יופיעו בדוחות Spark או בכלי פרופילציה אחרים."
   },
   "hosting-marketing.faq.cpu-kind": {
-    "message": "על אילו מעבדים (CPUs) רצים השרתים של Modrinth Hosting?"
+    "message": "על אילו מעבדים (CPUs) רצים השרתים של Bbsmc Hosting?"
   },
   "hosting-marketing.faq.cpu-kind.answer": {
-    "message": "שרתי האחסון של Modrinth מבוססים על מעבדי AMD Ryzen 7900 ו-7950X3D (או שווי ערך) במהירות של 5GHz ומעלה, בשילוב עם זיכרון DDR5."
+    "message": "שרתי האחסון של Bbsmc מבוססים על מעבדי AMD Ryzen 7900 ו-7950X3D (או שווי ערך) במהירות של 5GHz ומעלה, בשילוב עם זיכרון DDR5."
   },
   "hosting-marketing.faq.currency": {
     "message": "באיזה מטבע מוצגים המחירים?"
@@ -1098,19 +1098,19 @@
     "message": "כל המחירים נקובים בדולר אמריקאי (USD)."
   },
   "hosting-marketing.faq.ddos-protection": {
-    "message": "האם שרתי האחסון של Modrinth כוללים הגנת DDoS?"
+    "message": "האם שרתי האחסון של Bbsmc כוללים הגנת DDoS?"
   },
   "hosting-marketing.faq.ddos-protection.answer": {
-    "message": "כן. כל שרתי האחסון של Modrinth כוללים הגנת DDoS מובנית, עם קיבולת של עד 17Tbps במיקומים מסוימים."
+    "message": "כן. כל שרתי האחסון של Bbsmc כוללים הגנת DDoS מובנית, עם קיבולת של עד 17Tbps במיקומים מסוימים."
   },
   "hosting-marketing.faq.heading": {
     "message": "שאלות נפוצות"
   },
   "hosting-marketing.faq.how-fast": {
-    "message": "מהי המהירות של שרתי האחסון של Modrinth?"
+    "message": "מהי המהירות של שרתי האחסון של Bbsmc?"
   },
   "hosting-marketing.faq.how-fast.answer.one": {
-    "message": "שרתי Modrinth Hosting מאוחסנים על חומרה מודרנית מאוד בעלת ביצועים גבוהים, אך קשה לומר כיצד בדיוק זה יתורגם למהירות הפעלת השרת שלכם מכיוון שיש כל כך הרבה גורמים שמשפיעים על כך, כמו המודים, חבילות הנתונים או התוספים שאתם מפעילים בשרת שלכם, ואפילו התנהגות המשתמש."
+    "message": "שרתי Bbsmc Hosting מאוחסנים על חומרה מודרנית מאוד בעלת ביצועים גבוהים, אך קשה לומר כיצד בדיוק זה יתורגם למהירות הפעלת השרת שלכם מכיוון שיש כל כך הרבה גורמים שמשפיעים על כך, כמו המודים, חבילות הנתונים או התוספים שאתם מפעילים בשרת שלכם, ואפילו התנהגות המשתמש."
   },
   "hosting-marketing.faq.how-fast.answer.two": {
     "message": "רוב בעיות הביצועים שמתעוררות נובעות בדרך כלל מחבילת מוד, מוד, חבילת נתונים או תוסף לא אופטימליים שגורמים לשרת להשהות. מכיוון שהשרתים שלנו הם מתקדמים מאוד, לא אמורים להיתקל בבעיות גדולות כל עוד תבחרו תוכנית מתאימה לתוכן שאתם מפעילים בשרת."
@@ -1119,16 +1119,16 @@
     "message": "האם ניתן להגדיל את שטח האחסון בשרת שלי?"
   },
   "hosting-marketing.faq.increase-storage.answer": {
-    "message": "כן, ניתן להגדיל את שטח האחסון בשרת שלך ללא עלות נוספת. אם דרוש לך שטח אחסון נוסף, פנה לתמיכה של Modrinth."
+    "message": "כן, ניתן להגדיל את שטח האחסון בשרת שלך ללא עלות נוספת. אם דרוש לך שטח אחסון נוסף, פנה לתמיכה של Bbsmc."
   },
   "hosting-marketing.faq.location": {
-    "message": "היכן ממוקמים שרתי האחסון של Modrinth? האם ניתן לבחור אזור?"
+    "message": "היכן ממוקמים שרתי האחסון של Bbsmc? האם ניתן לבחור אזור?"
   },
   "hosting-marketing.faq.versions-loaders": {
     "message": "באילו גרסאות של מיינקראפט ובאילו Loaders ניתן להשתמש?"
   },
   "hosting-marketing.faq.versions-loaders.answer.one": {
-    "message": "שרתי האחסון של Modrinth יכולים להריץ כל גרסה של Minecraft: Java Edition החל מגרסה 1.2.5 ועד היום, כולל גרסאות Snapshot."
+    "message": "שרתי האחסון של Bbsmc יכולים להריץ כל גרסה של Minecraft: Java Edition החל מגרסה 1.2.5 ועד היום, כולל גרסאות Snapshot."
   },
   "hosting-marketing.faq.versions-loaders.answer.two": {
     "message": "אנו תומכים גם במגוון רחב של טועני מודים ותוספים, כולל Fabric, Quilt, Forge ו-NeoForge עבור מודים, כמו גם Paper ו-Purpur עבור תוספים. הזמינות תלויה בתמיכה של טוען המודים או התוספים בגרסת Minecraft שנבחרה."
@@ -1145,11 +1145,11 @@
   "hosting-marketing.hero.button.start-your-server": {
     "message": "הפעל את השרת שלך"
   },
-  "hosting-marketing.hero.host-with-modrinth": {
-    "message": "אחסנו את השרת הבא שלכם ב-Modrinth Hosting"
+  "hosting-marketing.hero.host-with-Bbsmc": {
+    "message": "אחסנו את השרת הבא שלכם ב-Bbsmc Hosting"
   },
   "hosting-marketing.hero.hosting-description": {
-    "message": "Modrinth Hosting היא הדרך הקלה ביותר לאחסן שרת Minecraft: Java Edition משלכם. התקינו ושחקו במודים ובחבילות המודים האהובים עליכם בצורה חלקה, והכול מתוך הפלטפורמה של Modrinth."
+    "message": "Bbsmc Hosting היא הדרך הקלה ביותר לאחסן שרת Minecraft: Java Edition משלכם. התקינו ושחקו במודים ובחבילות המודים האהובים עליכם בצורה חלקה, והכול מתוך הפלטפורמה של Bbsmc."
   },
   "hosting-marketing.included.advanced-networking": {
     "message": "ניהול רשת מתקדם"
@@ -1167,10 +1167,10 @@
     "message": "כתובת URL מותאמת אישית"
   },
   "hosting-marketing.included.custom-url.description": {
-    "message": "שתפו את השרת שלכם באמצעות כתובת <contrast>modrinth.gg</contrast> מותאמת אישית."
+    "message": "שתפו את השרת שלכם באמצעות כתובת <contrast>Bbsmc.gg</contrast> מותאמת אישית."
   },
   "hosting-marketing.included.description": {
-    "message": "כל שרת מגיע עם חבילת כלים שעוצבה במיוחד כדי להעניק חוויית אחסון שרק Modrinth יכולה להציע."
+    "message": "כל שרת מגיע עם חבילת כלים שעוצבה במיוחד כדי להעניק חוויית אחסון שרק Bbsmc יכולה להציע."
   },
   "hosting-marketing.included.file-manager": {
     "message": "ניהול קבצים קל ונוח"
@@ -1185,19 +1185,19 @@
     "message": "עזרה בדיוק כשצריך"
   },
   "hosting-marketing.included.help.description": {
-    "message": "צרו קשר עם צוות Modrinth לקבלת עזרה בשרת שלכם בכל עת."
+    "message": "צרו קשר עם צוות Bbsmc לקבלת עזרה בשרת שלכם בכל עת."
   },
   "hosting-marketing.included.powerful-console": {
     "message": "קונסול עוצמתי, ניהול הגדרות שרת ועוד"
   },
   "hosting-marketing.included.powerful-console.description": {
-    "message": "Modrinth Hosting כוללת כלים עוצמתיים לניהול השרת שלכם."
+    "message": "Bbsmc Hosting כוללת כלים עוצמתיים לניהול השרת שלכם."
   },
   "hosting-marketing.included.sftp-access": {
     "message": "גישת SFTP"
   },
   "hosting-marketing.included.sftp-access.description": {
-    "message": "גשו לקבצי השרת שלכם ישירות באמצעות גישת SFTP המובנית ב-Modrinth Hosting."
+    "message": "גשו לקבצי השרת שלכם ישירות באמצעות גישת SFTP המובנית ב-Bbsmc Hosting."
   },
   "hosting-marketing.included.with-your-server": {
     "message": "כלול בשרת שלכם"
@@ -1220,20 +1220,20 @@
   "hosting-marketing.server-for-everyone": {
     "message": "יש שרת לכל אחד"
   },
-  "hosting-marketing.why.all-on-modrinth": {
-    "message": "נהלו את הכל ב-Modrinth"
+  "hosting-marketing.why.all-on-Bbsmc": {
+    "message": "נהלו את הכל ב-Bbsmc"
   },
-  "hosting-marketing.why.all-on-modrinth.description": {
-    "message": "השרת, המודים, השחקנים ועוד. כולם נמצאים ב-Modrinth. אין צורך לעבור בין פלטפורמות שונות."
+  "hosting-marketing.why.all-on-Bbsmc.description": {
+    "message": "השרת, המודים, השחקנים ועוד. כולם נמצאים ב-Bbsmc. אין צורך לעבור בין פלטפורמות שונות."
   },
   "hosting-marketing.why.consistently-fast": {
     "message": "מהירות עקבית ויציבה"
   },
   "hosting-marketing.why.consistently-fast.description": {
-    "message": "התשתיות שלנו לעולם אינן עמוסות, מה שאומר שכל שרת ב-Modrinth תמיד פועל בשיא הביצועים שלו."
+    "message": "התשתיות שלנו לעולם אינן עמוסות, מה שאומר שכל שרת ב-Bbsmc תמיד פועל בשיא הביצועים שלו."
   },
   "hosting-marketing.why.description": {
-    "message": "בחרו מתוך אלפי חבילות מודים ב-Modrinth או צרו אחת משלכם. כשתהיו מוכנים לשחק – הזמינו את החברים."
+    "message": "בחרו מתוך אלפי חבילות מודים ב-Bbsmc או צרו אחת משלכם. כשתהיו מוכנים לשחק �?הזמינו את החברים."
   },
   "hosting-marketing.why.heading": {
     "message": "מוצאים מודפאק. וזהו, יש לכם שרת."
@@ -1242,22 +1242,22 @@
     "message": "תחוו אירוח מודרני ואמין"
   },
   "hosting-marketing.why.modern-reliable-hosting.description": {
-    "message": "שרתי Modrinth Hosting מאוחסנים על <contrast>מעבדי AMD בעלי ביצועים גבוהים עם זיכרון DDR5 RAM</contrast>, ופועלים על תוכנה שנבנתה במיוחד כדי להבטיח שהשרת שלכם ירוץ בצורה חלקה."
+    "message": "שרתי Bbsmc Hosting מאוחסנים על <contrast>מעבדי AMD בעלי ביצועים גבוהים עם זיכרון DDR5 RAM</contrast>, ופועלים על תוכנה שנבנתה במיוחד כדי להבטיח שהשרת שלכם ירוץ בצורה חלקה."
   },
   "hosting-marketing.why.where-mods-are": {
     "message": "תשחקו איפה שהמודים שלכם נמצאים"
   },
   "hosting-marketing.why.where-mods-are.description": {
-    "message": "Modrinth Hosting משלב בצורה חלקה את תהליך ההתקנה של מודים וחבילות מודים (modpacks) ישירות בשרת שלך."
+    "message": "Bbsmc Hosting משלב בצורה חלקה את תהליך ההתקנה של מודים וחבילות מודים (modpacks) ישירות בשרת שלך."
   },
-  "hosting-marketing.why.why-modrinth-hosting": {
-    "message": "למה כדאי לך להשתמש ב-Modrinth Hosting?"
+  "hosting-marketing.why.why-Bbsmc-hosting": {
+    "message": "למה כדאי לך להשתמש ב-Bbsmc Hosting?"
   },
   "hosting-marketing.why.your-favorite-mods": {
     "message": "כל המודים האהובים עליכם"
   },
   "hosting-marketing.why.your-favorite-mods.description": {
-    "message": "בחרו בין Vanilla, Fabric, Forge, Quilt ו-NeoForge. אם זה נמצא ב-Modrinth, זה יכול לרוץ על השרת שלכם."
+    "message": "בחרו בין Vanilla, Fabric, Forge, Quilt ו-NeoForge. אם זה נמצא ב-Bbsmc, זה יכול לרוץ על השרת שלכם."
   },
   "hosting.plan.out-of-stock": {
     "message": "אזל מהמלאי"
@@ -1272,7 +1272,7 @@
     "message": "עבור ללוח הבקרה"
   },
   "landing.creator.feature.constantly-evolving.description": {
-    "message": "קבל את חוויית המודים הכי טובה שאפשר עם עדכונים שוטפים מצוות Modrinth"
+    "message": "קבל את חוויית המודים הכי טובה שאפשר עם עדכונים שוטפים מצוות Bbsmc"
   },
   "landing.creator.feature.constantly-evolving.title": {
     "message": "בפיתוח מתמיד"
@@ -1317,13 +1317,13 @@
     "message": "עקבו אחר פרויקטים שאתם אוהבים"
   },
   "landing.feature.launcher.description": {
-    "message": "ה-API הפתוח של Modrinth מאפשר למפעילים לשלב אינטגרציה עמוקה עם Modrinth. ניתן להשתמש ב-Modrinth דרך <link>האפליקציה שלנו</link>, וגם באמצעות כמה מהמפעילים הפופולריים ביותר, כמו ATLauncher, MultiMC ו-Prism Launcher."
+    "message": "ה-API הפתוח של Bbsmc מאפשר למפעילים לשלב אינטגרציה עמוקה עם Bbsmc. ניתן להשתמש ב-Bbsmc דרך <link>האפליקציה שלנו</link>, וגם באמצעות כמה מהמפעילים הפופולריים ביותר, כמו ATLauncher, MultiMC ו-Prism Launcher."
   },
   "landing.feature.launcher.heading": {
     "message": "שחק עם המפעיל האהוב עליך"
   },
   "landing.feature.search.description": {
-    "message": "מערכת החיפוש הזריזה והפילטרים העוצמתיים של Modrinth מאפשרים למצוא את מה שמחפשים בזמן כתיבה."
+    "message": "מערכת החיפוש הזריזה והפילטרים העוצמתיים של Bbsmc מאפשרים למצוא את מה שמחפשים בזמן כתיבה."
   },
   "landing.feature.search.heading": {
     "message": "מצא מה שתרצא, בקלות ובמהירות"
@@ -1356,10 +1356,10 @@
     "message": "ATLauncher"
   },
   "landing.launcher.graphic-alt": {
-    "message": "הצגה של חלון מיינקראפט מופשט, עם לוגו Mojang בצבע ירוק Modrinth."
+    "message": "הצגה של חלון מיינקראפט מופשט, עם לוגו Mojang בצבע ירוק Bbsmc."
   },
-  "landing.launcher.modrinth-app-label": {
-    "message": "Modrinth App"
+  "landing.launcher.Bbsmc-app-label": {
+    "message": "Bbsmc App"
   },
   "landing.launcher.prism-launcher-label": {
     "message": "Prism Launcher"
@@ -1449,22 +1449,22 @@
     "message": "בקר הגדרות חשבון"
   },
   "layout.banner.add-email.description": {
-    "message": "מטעמי אבטחה, Modrinth דורשת ממך לרשום כתובת אימייל בחשבונך."
+    "message": "מטעמי אבטחה, Bbsmc דורשת ממך לרשום כתובת אימייל בחשבונך."
   },
   "layout.banner.build-fail.description": {
-    "message": "פריסה זו של ממשק ה-Frontend של Modrinth נכשלה ביצירת נתונים מהAPI. ייתכן שהדבר נובע מהשבתה או משגיאה בהגדרות. יש לבצע בנייה מחדש כאשר ה-API יהיה זמין. קודי שגיאה: {errors}; כתובת ה-API הנוכחית היא: {url}"
+    "message": "פריסה זו של ממשק ה-Frontend של Bbsmc נכשלה ביצירת נתונים מהAPI. ייתכן שהדבר נובע מהשבתה או משגיאה בהגדרות. יש לבצע בנייה מחדש כאשר ה-API יהיה זמין. קודי שגיאה: {errors}; כתובת ה-API הנוכחית היא: {url}"
   },
   "layout.banner.build-fail.title": {
     "message": "שגיאה ביצירת נתונים מהAPI במהלך הבנייה."
   },
   "layout.banner.preview.title": {
-    "message": "זוהי פריסת תצוגה מקדימה של אתר Modrinth."
+    "message": "זוהי פריסת תצוגה מקדימה של אתר Bbsmc."
   },
   "layout.banner.staging.description": {
-    "message": "סביבת ההפעלה (staging) נפרדת לחלוטין ממסד הנתונים של Modrinth בתקופת הייצור. מסד הנתונים משמש למטרות בדיקה וניפוי שגיאות, וייתכן שהוא מפעיל גרסאות פיתוח של קצה השרת או הקצה הקדמי של Modrinth, חדשות יותר מדגם הייצור."
+    "message": "סביבת ההפעלה (staging) נפרדת לחלוטין ממסד הנתונים של Bbsmc בתקופת הייצור. מסד הנתונים משמש למטרות בדיקה וניפוי שגיאות, וייתכן שהוא מפעיל גרסאות פיתוח של קצה השרת או הקצה הקדמי של Bbsmc, חדשות יותר מדגם הייצור."
   },
   "layout.banner.staging.title": {
-    "message": "אתה צופה בסביבת הבימוי של Modrinth"
+    "message": "אתה צופה בסביבת הבימוי של Bbsmc"
   },
   "layout.banner.subscription-payment-failed.button": {
     "message": "עדכן את פרטי החיוב"
@@ -1479,7 +1479,7 @@
     "message": "השלם את טופס המס"
   },
   "layout.banner.tax.description": {
-    "message": "משכת כבר מעל {threshold} מ-Modrinth השנה. כדי לעמוד בתקנות המס, עליך למלא טופס מס. משיכות הכספים שלך מושהות עד להגשת הטופס."
+    "message": "משכת כבר מעל {threshold} מ-Bbsmc השנה. כדי לעמוד בתקנות המס, עליך למלא טופס מס. משיכות הכספים שלך מושהות עד להגשת הטופס."
   },
   "layout.banner.tax.title": {
     "message": "נדרש טופס מס"
@@ -1529,20 +1529,20 @@
   "layout.footer.legal.terms-of-use": {
     "message": "תנאי שימוש"
   },
-  "layout.footer.modrinth-information": {
-    "message": "מידע על Modrinth"
+  "layout.footer.Bbsmc-information": {
+    "message": "מידע על Bbsmc"
   },
   "layout.footer.open-source": {
-    "message": "Modrinth הוא <github-link>קוד פתוח</github-link>."
+    "message": "Bbsmc הוא <github-link>קוד פתוח</github-link>."
   },
   "layout.footer.products": {
     "message": "מוצרים"
   },
   "layout.footer.products.app": {
-    "message": "Modrinth App"
+    "message": "Bbsmc App"
   },
   "layout.footer.products.plus": {
-    "message": "Modrinth+"
+    "message": "Bbsmc+"
   },
   "layout.footer.resources": {
     "message": "משאבים"
@@ -1580,17 +1580,17 @@
   "layout.nav.discover": {
     "message": "גלה"
   },
-  "layout.nav.get-modrinth-app": {
-    "message": "להוריד אפליקציאת Modrinth"
+  "layout.nav.get-Bbsmc-app": {
+    "message": "להוריד אפליקציאת Bbsmc"
   },
   "layout.nav.home": {
     "message": "דף בית"
   },
-  "layout.nav.modrinth-app": {
-    "message": "Modrinth App"
+  "layout.nav.Bbsmc-app": {
+    "message": "Bbsmc App"
   },
-  "layout.nav.modrinth-home-page": {
-    "message": "דף הבית של Modrinth"
+  "layout.nav.Bbsmc-home-page": {
+    "message": "דף הבית של Bbsmc"
   },
   "layout.nav.my-servers": {
     "message": "השרתים שלי"
@@ -1613,8 +1613,8 @@
   "layout.nav.search": {
     "message": "חיפוש"
   },
-  "layout.nav.upgrade-to-modrinth-plus": {
-    "message": "שדרגו ל-Modrinth+"
+  "layout.nav.upgrade-to-Bbsmc-plus": {
+    "message": "שדרגו ל-Bbsmc+"
   },
   "moderation.page.projects": {
     "message": "פרויקטים"
@@ -1731,7 +1731,7 @@
     "message": "העברה בנקאית (ARS)"
   },
   "muralpay.rail.fiat-brl.name": {
-    "message": "העברת PIX ‏(BRL)"
+    "message": "העברת PIX �?BRL)"
   },
   "muralpay.rail.fiat-clp.name": {
     "message": "העברה בנקאית (CLP)"
@@ -1806,7 +1806,7 @@
     "message": "שלח שוב לבדיקה"
   },
   "project-moderation-nags.resubmit-for-review-desc": {
-    "message": "צוות Modrinth {status, select, rejected {דחה} withheld {עיכב} other {{status}}} את הפרויקט שלך. ברוב המקרים, אפשר לשלוח אותו שוב לבדיקה אחרי שתטפל במה שכתבו לך."
+    "message": "צוות Bbsmc {status, select, rejected {דחה} withheld {עיכב} other {{status}}} את הפרויקט שלך. ברוב המקרים, אפשר לשלוח אותו שוב לבדיקה אחרי שתטפל במה שכתבו לך."
   },
   "project-moderation-nags.submit-checklist-tooltip": {
     "message": "חובה להשלים את שלבי החובה ברשימת הפרסום!"
@@ -1902,7 +1902,7 @@
     "message": "סקירת פרויקט"
   },
   "project.actions.servers-promo.description": {
-    "message": "Modrinth Hosting היא הדרך הקלה ביותר לשחק עם חברים בלי כאב ראש!"
+    "message": "Bbsmc Hosting היא הדרך הקלה ביותר לשחק עם חברים בלי כאב ראש!"
   },
   "project.actions.servers-promo.pricing": {
     "message": "החל מ-{price}<small> לחודש</small>"
@@ -1923,7 +1923,7 @@
     "message": "{title} אינו תומך ב-{gameVersion} עבור {platform}"
   },
   "project.download.no-app": {
-    "message": "אין לכם את אפליקציית Modrinth?"
+    "message": "אין לכם את אפליקציית Bbsmc?"
   },
   "project.download.platform-unsupported-tooltip": {
     "message": "{title} אינו תומך ב-{platform} עבור {gameVersion}"
@@ -1941,7 +1941,7 @@
     "message": "הורדת {title}"
   },
   "project.environment.migration-no-permission.message": {
-    "message": "שדרגנו את מערכת הסביבות (Environments) ב-Modrinth ואפשרויות חדשות זמינות כעת. אין לך הרשאות לעדכן את ההגדרות הללו, אך נשמח אם תעדכן חבר פרויקט אחר שיש לאמת את נתוני הסביבה (Metadata)."
+    "message": "שדרגנו את מערכת הסביבות (Environments) ב-Bbsmc ואפשרויות חדשות זמינות כעת. אין לך הרשאות לעדכן את ההגדרות הללו, אך נשמח אם תעדכן חבר פרויקט אחר שיש לאמת את נתוני הסביבה (Metadata)."
   },
   "project.environment.migration-no-permission.title": {
     "message": "ש לבדוק את נתוני הסביבה"
@@ -1950,7 +1950,7 @@
     "message": "למידע נוסף על השינוי"
   },
   "project.environment.migration.message": {
-    "message": "שדרגנו את מערכת הסביבות ב-Modrinth ואפשרויות חדשות זמינות כעת. אנא ודאו שנתוני הסביבה נכונים."
+    "message": "שדרגנו את מערכת הסביבות ב-Bbsmc ואפשרויות חדשות זמינות כעת. אנא ודאו שנתוני הסביבה נכונים."
   },
   "project.environment.migration.review-button": {
     "message": "בדיקת הגדרות סביבה"
@@ -1986,7 +1986,7 @@
     "message": "סמל הפרויקט שלך עודכן."
   },
   "project.settings.general.name.description": {
-    "message": "הימנע מקידומות, סיומות, סוגריים או תיאורים נוספים — רק שמו האמיתי של הפרויקט."
+    "message": "הימנע מקידומות, סיומות, סוגריים או תיאורים נוספים �?רק שמו האמיתי של הפרויקט."
   },
   "project.settings.general.name.placeholder.1": {
     "message": "למשל: נת'ר אוברהול 2"
@@ -2043,7 +2043,7 @@
     "message": "נשמח לקבל פרטים נוספים על הדיווח שלך"
   },
   "report.for.violation": {
-    "message": "הפרה של <rules-link>חוקי Modrinth</rules-link> או <terms-link>תנאי השימוש</terms-link>"
+    "message": "הפרה של <rules-link>חוקי Bbsmc</rules-link> או <terms-link>תנאי השימוש</terms-link>"
   },
   "report.for.violation.description": {
     "message": "הדוגמאות כוללות תוכן זדוני, ספאם, פוגעני, מטעה או לא חוקי."
@@ -2145,7 +2145,7 @@
     "message": "כתוב דוחות"
   },
   "scopes.sessionAccess.description": {
-    "message": "גישה לחיבורים שהונפקו על ידי Modrinth"
+    "message": "גישה לחיבורים שהונפקו על ידי Bbsmc"
   },
   "scopes.sessionAccess.label": {
     "message": "מפגשי גישה"
@@ -2271,16 +2271,16 @@
     "message": "אין הודעות"
   },
   "servers.plan.large.description": {
-    "message": "אידיאלי עבור 15–25 שחקנים, חבילות מודים (Modpacks) או מודים כבדים."
+    "message": "אידיאלי עבור 15�?5 שחקנים, חבילות מודים (Modpacks) או מודים כבדים."
   },
   "servers.plan.medium.description": {
-    "message": "נהדר עבור 6–15 שחקנים ומספר מודים."
+    "message": "נהדר עבור 6�?5 שחקנים ומספר מודים."
   },
   "servers.plan.small.description": {
-    "message": "מושלם ל‑1–5 חברים עם מספר מועט של מודים קלים."
+    "message": "מושלם ל�?�? חברים עם מספר מועט של מודים קלים."
   },
   "settings.account.data-export.description": {
-    "message": "תבקש עותק של כל הדאטה האישי שהעלית ל-Modrinth. זה יכול לקחת כמה דקות."
+    "message": "תבקש עותק של כל הדאטה האישי שהעלית ל-Bbsmc. זה יכול לקחת כמה דקות."
   },
   "settings.applications.field.name": {
     "message": "שם"
@@ -2295,7 +2295,7 @@
     "message": "https://example.com"
   },
   "settings.display.banner.developer-mode.description": {
-    "message": "<strong> מצב מפתח </strong> פעיל. זה יאפשר לך להציג את המזהים הפנימיים של דברים שונים ברחבי המודרינץ 'שעשויים להועיל אם אתה מפתח המשתמש בממשק ה- API של Modrinth. לחץ על הלוגו של Modrinth בתחתית העמוד 5 פעמים כדי לעבור את מצב המפתח."
+    "message": "<strong> מצב מפתח </strong> פעיל. זה יאפשר לך להציג את המזהים הפנימיים של דברים שונים ברחבי המודרינץ 'שעשויים להועיל אם אתה מפתח המשתמש בממשק ה- API של Bbsmc. לחץ על הלוגו של Bbsmc בתחתית העמוד 5 פעמים כדי לעבור את מצב המפתח."
   },
   "settings.pats.modal.create.expires.label": {
     "message": "פג תוקף"

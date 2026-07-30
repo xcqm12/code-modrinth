@@ -214,7 +214,7 @@ export const formatVersions = (versionArray, gameVersions) => {
 
 	for (const interval of newIntervals) {
 		if (interval.length === 2) {
-			output.push(`${interval[0][0]}â€“${interval[1][0]}`)
+			output.push(`${interval[0][0]}â€?{interval[1][0]}`)
 		} else {
 			output.push(interval[0][0])
 		}
@@ -254,10 +254,10 @@ export const acceptFileFromProjectType = (projectType) => {
 		case 'datapack':
 			return `.jar,.zip,.litemod,application/java-archive,application/x-java-archive,application/zip,${commonTypes}`
 		case 'modpack':
-			return `.mrpack,application/x-modrinth-modpack+zip,application/zip,${commonTypes}`
+			return `.mrpack,application/x-Bbsmc-modpack+zip,application/zip,${commonTypes}`
 		default:
 			// all of the above
-			return `.jar,.zip,.litemod,.mrpack,application/java-archive,application/x-java-archive,application/zip,application/x-modrinth-modpack+zip,${commonTypes}`
+			return `.jar,.zip,.litemod,.mrpack,application/java-archive,application/x-java-archive,application/zip,application/x-Bbsmc-modpack+zip,${commonTypes}`
 	}
 }
 

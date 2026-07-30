@@ -590,8 +590,8 @@
   "omorphia.component.badge.label.moderator": {
     "defaultMessage": "מפקח"
   },
-  "omorphia.component.badge.label.modrinth-team": {
-    "defaultMessage": "צוות Modrinth"
+  "omorphia.component.badge.label.Bbsmc-team": {
+    "defaultMessage": "צוות Bbsmc"
   },
   "omorphia.component.badge.label.pending": {
     "defaultMessage": "בהמתנה"
@@ -1023,7 +1023,7 @@
     "defaultMessage": "אזהרה"
   },
   "servers.notice.undismissable": {
-    "defaultMessage": "חיוני – לא ניתן להתעלם"
+    "defaultMessage": "חיוני �?לא ניתן להתעלם"
   },
   "servers.purchase.step.payment.description": {
     "defaultMessage": "לא תחויב עדיין."
@@ -1041,10 +1041,10 @@
     "defaultMessage": "התחל עכשיו"
   },
   "servers.purchase.step.plan.large.desc": {
-    "defaultMessage": "מתאים ל־15–25 שחקנים, חבילות מודים או מודינג כבד."
+    "defaultMessage": "מתאים ל־15�?5 שחקנים, חבילות מודים או מודינג כבד."
   },
   "servers.purchase.step.plan.medium.desc": {
-    "defaultMessage": "מתאים ל‑6–15 שחקנים ולכמה מודים."
+    "defaultMessage": "מתאים ל�?�?5 שחקנים ולכמה מודים."
   },
   "servers.purchase.step.plan.most-popular": {
     "defaultMessage": "הכי פופולרי"
@@ -1053,7 +1053,7 @@
     "defaultMessage": "בחר תוכנית"
   },
   "servers.purchase.step.plan.small.desc": {
-    "defaultMessage": "מושלם ל‑1–5 חברים עם מספר מועט של מודים קלים."
+    "defaultMessage": "מושלם ל�?�? חברים עם מספר מועט של מודים קלים."
   },
   "servers.purchase.step.plan.title": {
     "defaultMessage": "תוכנית"
@@ -1098,7 +1098,7 @@
     "defaultMessage": "כהה"
   },
   "settings.display.theme.description": {
-    "defaultMessage": "בחר את ערכת הצבעים המועדפת עליך עבור Modrinth במכשיר זה."
+    "defaultMessage": "בחר את ערכת הצבעים המועדפת עליך עבור Bbsmc במכשיר זה."
   },
   "settings.display.theme.light": {
     "defaultMessage": "בהיר"

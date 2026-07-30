@@ -94,7 +94,7 @@
 </template>
 
 <script setup>
-import { BoxIcon, TransferIcon, XIcon } from '@modrinth/assets'
+import { BoxIcon, TransferIcon, XIcon } from '@Bbsmc/assets'
 import {
 	ButtonStyled,
 	Checkbox,
@@ -104,8 +104,8 @@ import {
 	NewModal,
 	Table,
 	useVIntl,
-} from '@modrinth/ui'
-import { formatProjectType } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import { formatProjectType } from '@Bbsmc/utils'
 
 import { getProjectTypeForUrl } from '~/helpers/projects.js'
 

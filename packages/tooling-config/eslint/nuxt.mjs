@@ -15,7 +15,7 @@ export const configurationNuxtToAppend = [
 		},
 	},
 	{
-		name: 'modrinth',
+		name: 'Bbsmc',
 		rules: {
 			'vue/html-self-closing': 'off',
 			'vue/multi-word-component-names': 'off',

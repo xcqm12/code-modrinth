@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { getChangelog, type Product } from '@modrinth/blog'
-import { ChangelogEntry, NavTabs } from '@modrinth/ui'
-import Timeline from '@modrinth/ui/src/components/base/Timeline.vue'
+import { getChangelog, type Product } from '@Bbsmc/blog'
+import { ChangelogEntry, NavTabs } from '@Bbsmc/ui'
+import Timeline from '@Bbsmc/ui/src/components/base/Timeline.vue'
 
 const route = useRoute()
 

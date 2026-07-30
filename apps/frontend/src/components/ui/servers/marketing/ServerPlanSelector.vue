@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type MessageDescriptor, useFormatPrice } from '@modrinth/ui'
+import { type MessageDescriptor, useFormatPrice } from '@Bbsmc/ui'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -7,7 +7,7 @@ import {
 	defineMessages,
 	ServersSpecs,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 
 const { formatMessage } = useVIntl()
 const formatPrice = useFormatPrice()
@@ -56,7 +56,7 @@ const plans: Record<
 		name: commonMessages.planSmallLabel,
 		description: defineMessage({
 			id: 'servers.plan.small.description',
-			defaultMessage: 'Perfect for 1â€“5 friends with a few light mods.',
+			defaultMessage: 'Perfect for 1â€? friends with a few light mods.',
 		}),
 		mostPopular: false,
 	},
@@ -67,7 +67,7 @@ const plans: Record<
 		name: commonMessages.planMediumLabel,
 		description: defineMessage({
 			id: 'servers.plan.medium.description',
-			defaultMessage: 'Great for 6â€“15 players and multiple mods.',
+			defaultMessage: 'Great for 6â€?5 players and multiple mods.',
 		}),
 		mostPopular: true,
 	},
@@ -78,7 +78,7 @@ const plans: Record<
 		name: commonMessages.planLargeLabel,
 		description: defineMessage({
 			id: 'servers.plan.large.description',
-			defaultMessage: 'Ideal for 15â€“25 players, modpacks, or heavy modding.',
+			defaultMessage: 'Ideal for 15â€?5 players, modpacks, or heavy modding.',
 		}),
 		mostPopular: false,
 	},

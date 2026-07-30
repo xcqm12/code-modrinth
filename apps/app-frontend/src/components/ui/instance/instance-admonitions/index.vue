@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import { StackedAdmonitions } from '@modrinth/ui'
+import { StackedAdmonitions } from '@Bbsmc/ui'
 import { computed, ref, watch } from 'vue'
 
 import type { SharedInstanceUnavailableReason } from '@/helpers/install'

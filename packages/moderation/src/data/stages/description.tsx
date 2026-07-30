@@ -1,5 +1,5 @@
-import { LibraryIcon } from '@modrinth/assets'
-import { injectProjectPageContext } from '@modrinth/ui'
+import { LibraryIcon } from '@Bbsmc/assets'
+import { injectProjectPageContext } from '@Bbsmc/ui'
 import { computed } from 'vue'
 
 import { group, markdown, md, stage, toggle } from '../../types/node'

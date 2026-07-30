@@ -74,8 +74,8 @@
   "app.action-bar.install.summary.minecraft-setup-failed": {
     "message": "فشل إعداد Minecraft"
   },
-  "app.action-bar.install.summary.modrinth-unreachable": {
-    "message": "لم أتمكن من الوصول إلى Modrinth"
+  "app.action-bar.install.summary.Bbsmc-unreachable": {
+    "message": "لم أتمكن من الوصول إلى Bbsmc"
   },
   "app.action-bar.install.summary.no-write-permission": {
     "message": "لا يوجد إذن للكتابة"
@@ -141,7 +141,7 @@
     "message": "العرض المتقدم"
   },
   "app.appearance-settings.color-theme.description": {
-    "message": "اختر لون سمتك المفضل من أجل تطبيق Modrinth App."
+    "message": "اختر لون سمتك المفضل من أجل تطبيق Bbsmc App."
   },
   "app.appearance-settings.color-theme.title": {
     "message": "لون السمة"
@@ -201,7 +201,7 @@
     "message": "تبديل الشريط الجانبي"
   },
   "app.appearance-settings.unknown-pack-warning.description": {
-    "message": "إذا حاولت تثبيت ملف Modrinth Pack (.mrpack) غير مستضاف على Modrinth، فسنتأكد من أنك على دراية بالمخاطر قبل تثبيته."
+    "message": "إذا حاولت تثبيت ملف Bbsmc Pack (.mrpack) غير مستضاف على Bbsmc، فسنتأكد من أنك على دراية بالمخاطر قبل تثبيته."
   },
   "app.appearance-settings.unknown-pack-warning.title": {
     "message": "أخبرني قبل تثبيت حزم التعديلات غير المعروفة"
@@ -441,7 +441,7 @@
     "message": "{count, plural, one {# تعديل} other {# تعديلات}}"
   },
   "app.modal.install-to-play.reviewed-files": {
-    "message": "لا يتم مراجعة الملف إلا إذا تم نشره على Modrinth، بغض النظر عن صيغته (بما في ذلك .mrpack)."
+    "message": "لا يتم مراجعة الملف إلا إذا تم نشره على Bbsmc، بغض النظر عن صيغته (بما في ذلك .mrpack)."
   },
   "app.modal.install-to-play.shared-instance": {
     "message": "النماذج المشتركة"
@@ -611,14 +611,14 @@
   "app.skins.section.minecon-earth-2017": {
     "message": "MINECON Earth 2017"
   },
-  "app.skins.section.modrinth": {
-    "message": "Modrinth"
+  "app.skins.section.Bbsmc": {
+    "message": "Bbsmc"
   },
-  "app.skins.section.modrinth-pride": {
-    "message": "فخر Modrinth"
+  "app.skins.section.Bbsmc-pride": {
+    "message": "فخر Bbsmc"
   },
-  "app.skins.section.modrinth-pride.tooltip": {
-    "message": "لقد حصلت على هذه أشكال الشخصيات مقابل تبرعك لحملة جمع التبرعات التي نظمتها Modrinth Pride خلال شهر الفخر."
+  "app.skins.section.Bbsmc-pride.tooltip": {
+    "message": "لقد حصلت على هذه أشكال الشخصيات مقابل تبرعك لحملة جمع التبرعات التي نظمتها Bbsmc Pride خلال شهر الفخر."
   },
   "app.skins.section.mounts-of-mayhem": {
     "message": "جبال الفوضى"
@@ -642,10 +642,10 @@
     "message": "تسجيل الدخول"
   },
   "app.skins.sign-in.description": {
-    "message": "يرجى تسجيل الدخول إلى حسابك في Minecraft لاستخدام ميزات إدارة أشكال الشخصيات في تطبيق Modrinth."
+    "message": "يرجى تسجيل الدخول إلى حسابك في Minecraft لاستخدام ميزات إدارة أشكال الشخصيات في تطبيق Bbsmc."
   },
   "app.skins.sign-in.rinthbot-alt": {
-    "message": "روبوت Modrinth المتحمس"
+    "message": "روبوت Bbsmc المتحمس"
   },
   "app.skins.sign-in.title": {
     "message": "الرجاء تسجيل الدخول"
@@ -660,13 +660,13 @@
     "message": "تشغيل"
   },
   "app.update-popup.body.download-complete": {
-    "message": "انتهى تنزيل تطبيق Modrinth v{version}. أعد التحميل للتحديث الآن، أو تلقائيًا عند إغلاق تطبيق Modrinth."
+    "message": "انتهى تنزيل تطبيق Bbsmc v{version}. أعد التحميل للتحديث الآن، أو تلقائيًا عند إغلاق تطبيق Bbsmc."
   },
   "app.update-popup.body.linux": {
-    "message": "تطبيق Modrinth v {version} متاح. استخدم مدير الحزم الخاص بك للتحديث للحصول على أحدث الميزات والإصلاحات!"
+    "message": "تطبيق Bbsmc v {version} متاح. استخدم مدير الحزم الخاص بك للتحديث للحصول على أحدث الميزات والإصلاحات!"
   },
   "app.update-popup.body.metered": {
-    "message": "تطبيق Modrinth v{version} متاح الآن! وبما أنك متصل بشبكة مقيّدة، لم نقم بتنزيله تلقائيًا."
+    "message": "تطبيق Bbsmc v{version} متاح الآن! وبما أنك متصل بشبكة مقيّدة، لم نقم بتنزيله تلقائيًا."
   },
   "app.update-popup.changelog": {
     "message": "سجل التغيير"
@@ -690,7 +690,7 @@
     "message": "تم تثبيت الإصدار {version} بنجاح!"
   },
   "app.world.server-modal.placeholder-address": {
-    "message": "مثال (example.modrinth.gg)"
+    "message": "مثال (example.Bbsmc.gg)"
   },
   "app.world.server-modal.select-an-option": {
     "message": "حدد خيارا"
@@ -723,10 +723,10 @@
     "message": "قد يختلف عن اسم المستخدم الخاص بهم في ماينكرافت!"
   },
   "friends.add-friend.username.placeholder": {
-    "message": "أدخل اسم مستخدم Modrinth..."
+    "message": "أدخل اسم مستخدم Bbsmc..."
   },
   "friends.add-friend.username.title": {
-    "message": "ما اسم مستخدم صديقك في Modrinth؟"
+    "message": "ما اسم مستخدم صديقك في Bbsmc؟"
   },
   "friends.add-friends-to-share": {
     "message": "<link>أضف أصدقاء</link> لمعرفة ما الذي يلعبونه!"
@@ -759,7 +759,7 @@
     "message": "قيد الانتظار"
   },
   "friends.no-friends-match": {
-    "message": "لا يوجد أصدقاء يطابقون ‎''{query}''‎"
+    "message": "لا يوجد أصدقاء يطابقون �?'{query}''�?
   },
   "friends.search-friends-placeholder": {
     "message": "ابحث عن الأصدقاء..."
@@ -768,7 +768,7 @@
     "message": "{title} - {count}"
   },
   "friends.sign-in-to-add-friends": {
-    "message": "<link>سجّل الدخول إلى حساب Modrinth</link> لإضافة الأصدقاء ومعرفة ما الذي يلعبونه!"
+    "message": "<link>سجّل الدخول إلى حساب Bbsmc</link> لإضافة الأصدقاء ومعرفة ما الذي يلعبونه!"
   },
   "instance.action.create-shortcut": {
     "message": "إنشاء اختصار"
@@ -1071,7 +1071,7 @@
     "message": "يمكنك الدخول مباشرة إلى الخوادم فقط على ماين كرافت Alpha 1.0.5+"
   },
   "instance.worlds.no_singleplayer_quick_play": {
-    "message": "يمكنك الدخول مباشرة إلى عوالم اللعب الفردي فقط على ماين كرافت ‎1.20+‎"
+    "message": "يمكنك الدخول مباشرة إلى عوالم اللعب الفردي فقط على ماين كرافت �?.20+�?
   },
   "instance.worlds.play_instance": {
     "message": "تشغيل النسخة"

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Archon, Labrinth } from '@modrinth/api-client'
+import type { Archon, Labrinth } from '@Bbsmc/api-client'
 import {
 	EditIcon,
 	ExternalIcon,
@@ -9,8 +9,8 @@ import {
 	SignalIcon,
 	SpinnerIcon,
 	XIcon,
-} from '@modrinth/assets'
-import { getPingLevel } from '@modrinth/utils'
+} from '@Bbsmc/assets'
+import { getPingLevel } from '@Bbsmc/utils'
 import dayjs from 'dayjs'
 import type Stripe from 'stripe'
 import { computed } from 'vue'
@@ -22,10 +22,10 @@ import { regionOverrides } from '../../utils/regions'
 import ButtonStyled from '../base/ButtonStyled.vue'
 import Checkbox from '../base/Checkbox.vue'
 import TagItem from '../base/TagItem.vue'
-import ModrinthServersIcon from '../servers/ModrinthServersIcon.vue'
+import BbsmcServersIcon from '../servers/BbsmcServersIcon.vue'
 import ExpandableInvoiceTotal from './ExpandableInvoiceTotal.vue'
 import FormattedPaymentMethod from './FormattedPaymentMethod.vue'
-import type { ServerBillingInterval } from './ModrinthServersPurchaseModal.vue'
+import type { ServerBillingInterval } from './BbsmcServersPurchaseModal.vue'
 import ServersSpecs from './ServersSpecs.vue'
 
 const { formatMessage } = useVIntl()
@@ -181,7 +181,7 @@ function setInterval(newInterval: ServerBillingInterval) {
 	<div class="grid sm:grid-cols-[3fr_2fr] gap-4">
 		<div class="bg-surface-2 p-4 rounded-2xl">
 			<div class="flex items-center gap-2 mb-3">
-				<ModrinthServersIcon class="flex h-5 w-fit" />
+				<BbsmcServersIcon class="flex h-5 w-fit" />
 				<TagItem>{{ planName }}</TagItem>
 			</div>
 			<div>
@@ -210,7 +210,7 @@ function setInterval(newInterval: ServerBillingInterval) {
 					<span>
 						{{ locationSubtitle }}
 					</span>
-					<span v-if="ping !== -1">â€¢</span>
+					<span v-if="ping !== -1">â€?/span>
 				</template>
 				<template v-if="ping !== -1">
 					<SignalIcon
@@ -287,10 +287,10 @@ function setInterval(newInterval: ServerBillingInterval) {
 								{
 									title:
 										isProratedCharge && prorationDays
-											? `Modrinth Hosting (${planName}) â€” prorated for ${prorationDays} day${
+											? `Bbsmc Hosting (${planName}) â€?prorated for ${prorationDays} day${
 													prorationDays === 1 ? '' : 's'
 												}`
-											: `Modrinth Hosting (${planName})`,
+											: `Bbsmc Hosting (${planName})`,
 									amount: total - tax,
 								},
 								{

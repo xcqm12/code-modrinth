@@ -35,9 +35,9 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { XIcon } from '@modrinth/assets'
-import { Avatar, ButtonStyled, TagItem } from '@modrinth/ui'
+import type { Labrinth } from '@Bbsmc/api-client'
+import { XIcon } from '@Bbsmc/assets'
+import { Avatar, ButtonStyled, TagItem } from '@Bbsmc/ui'
 
 const emit = defineEmits<{
 	(e: 'fileTypeChange', type: string): void

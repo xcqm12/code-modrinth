@@ -1,4 +1,4 @@
-import type { TableColumn } from '@modrinth/ui'
+import type { TableColumn } from '@Bbsmc/ui'
 
 import type { AnalyticsDashboardStat } from '~/providers/analytics/analytics'
 

@@ -189,8 +189,8 @@
 
 <script setup lang="ts">
 // TODO this will be moved in with the rest of the xplat settings.
-import type { Labrinth } from '@modrinth/api-client'
-import { LogInIcon, SpinnerIcon, ThinkingRinthbot } from '@modrinth/assets'
+import type { Labrinth } from '@Bbsmc/api-client'
+import { LogInIcon, SpinnerIcon, ThinkingRinthbot } from '@Bbsmc/assets'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { computed, ref } from 'vue'
 
@@ -343,7 +343,7 @@ const messages = defineMessages({
 	},
 	friendRequestsDescription: {
 		id: 'settings.social.friend-requests.description',
-		defaultMessage: 'Control who can send you friend requests on Modrinth.',
+		defaultMessage: 'Control who can send you friend requests on Bbsmc.',
 	},
 	sharedInstanceInvitesTitle: {
 		id: 'settings.social.shared-instance-invites.title',
@@ -352,7 +352,7 @@ const messages = defineMessages({
 	sharedInstanceInvitesDescription: {
 		id: 'settings.social.shared-instance-invites.description',
 		defaultMessage:
-			'Control who can send you invites to shared instances and Modrinth Hosting panels.',
+			'Control who can send you invites to shared instances and Bbsmc Hosting panels.',
 	},
 	everyone: {
 		id: 'settings.social.interaction-source.everyone',
@@ -380,7 +380,7 @@ const messages = defineMessages({
 	},
 	blockedUsersDescription: {
 		id: 'settings.social.blocked-users.description',
-		defaultMessage: 'These are the users you have blocked on Modrinth. They cannot:',
+		defaultMessage: 'These are the users you have blocked on Bbsmc. They cannot:',
 	},
 	friendRequestsRestriction: {
 		id: 'settings.social.blocked-users.restriction.friend-requests',
@@ -392,7 +392,7 @@ const messages = defineMessages({
 	},
 	hostingRestriction: {
 		id: 'settings.social.blocked-users.restriction.hosting',
-		defaultMessage: 'Invite you to manage a Modrinth Hosting server.',
+		defaultMessage: 'Invite you to manage a Bbsmc Hosting server.',
 	},
 	userColumn: {
 		id: 'settings.social.blocked-users.column.user',
@@ -412,7 +412,7 @@ const messages = defineMessages({
 	},
 	loadingBlockedUsers: {
 		id: 'settings.social.blocked-users.loading',
-		defaultMessage: 'Loading blocked usersâ€¦',
+		defaultMessage: 'Loading blocked usersâ€?,
 	},
 	noBlockedUsers: {
 		id: 'settings.social.blocked-users.empty',
@@ -420,12 +420,12 @@ const messages = defineMessages({
 	},
 	signInRequiredTitle: {
 		id: 'settings.social.sign-in-required.title',
-		defaultMessage: 'Modrinth account required',
+		defaultMessage: 'Bbsmc account required',
 	},
 	signInRequiredDescription: {
 		id: 'settings.social.sign-in-required.description',
 		defaultMessage:
-			'You can control who can interact with you, and manage blocked users with a Modrinth Account',
+			'You can control who can interact with you, and manage blocked users with a Bbsmc Account',
 	},
 	loadError: {
 		id: 'settings.social.blocked-users.load-error',

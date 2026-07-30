@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { injectModrinthClient } from '@modrinth/ui'
+import { injectBbsmcClient } from '@Bbsmc/ui'
 
 import { getAuthUrl } from '~/composables/auth.js'
 
@@ -10,7 +10,7 @@ definePageMeta({
 
 const route = useRoute()
 const auth = await useAuth()
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const error = ref<unknown>(null)
 const isLinkedCallback = computed(() => route.query.callback === 'linked')
 
@@ -33,9 +33,9 @@ onMounted(async () => {
 
 <template>
 	<section class="discord-link-container universal-card">
-		<h1>{{ isLinkedCallback ? 'Modrinth account linked' : 'Linking Discord' }}</h1>
-		<p v-if="isLinkedCallback">Your Modrinth account has been linked to the Discord server.</p>
-		<p v-else-if="!error">Connecting your Modrinth account to the Discord server...</p>
+		<h1>{{ isLinkedCallback ? 'Bbsmc account linked' : 'Linking Discord' }}</h1>
+		<p v-if="isLinkedCallback">Your Bbsmc account has been linked to the Discord server.</p>
+		<p v-else-if="!error">Connecting your Bbsmc account to the Discord server...</p>
 		<p v-else>Discord linking failed. Please try again later.</p>
 	</section>
 </template>

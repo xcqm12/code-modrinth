@@ -12,7 +12,7 @@ import type {
 	NodeStateWithChildren,
 	OverrideValue,
 	ValueNodeBuilder,
-} from '@modrinth/moderation'
+} from '@Bbsmc/moderation'
 import {
 	evalSegment,
 	expandVariables,
@@ -24,7 +24,7 @@ import {
 	resolve,
 	resolveChildren,
 	setMessageProject,
-} from '@modrinth/moderation'
+} from '@Bbsmc/moderation'
 import {
 	ButtonStyled,
 	Checkbox,
@@ -32,8 +32,8 @@ import {
 	injectProjectPageContext,
 	MarkdownEditor,
 	StyledInput,
-} from '@modrinth/ui'
-import { renderHighlightedString, renderString } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import { renderHighlightedString, renderString } from '@Bbsmc/utils'
 import { inject, nextTick, onMounted, reactive, watchEffect } from 'vue'
 
 import { NODE_META_KEY, STATE_KEY } from './checklist-context'

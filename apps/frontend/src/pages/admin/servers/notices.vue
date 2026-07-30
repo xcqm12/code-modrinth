@@ -240,8 +240,7 @@
 								servers and
 								{{ notice.assigned.filter((n) => n.kind === 'node').length }} nodes
 							</span>
-							â€¢
-							<button
+							â€?							<button
 								class="m-0 flex items-center gap-1 border-none bg-transparent p-0 text-blue hover:underline hover:brightness-125 active:scale-95 active:brightness-150"
 								@click="() => startEditing(notice, true)"
 							>
@@ -249,8 +248,7 @@
 								Edit assignments
 							</button>
 							<template v-if="notice.dismissed_by.length > 0">
-								â€¢
-								<span> Dismissed by {{ notice.dismissed_by.length }} servers </span>
+								â€?								<span> Dismissed by {{ notice.dismissed_by.length }} servers </span>
 							</template>
 						</div>
 					</div>
@@ -260,15 +258,15 @@
 	</div>
 </template>
 <script setup lang="ts">
-import type { Archon } from '@modrinth/api-client'
-import { EditIcon, PlusIcon, SaveIcon, SettingsIcon, TrashIcon, XIcon } from '@modrinth/assets'
+import type { Archon } from '@Bbsmc/api-client'
+import { EditIcon, PlusIcon, SaveIcon, SettingsIcon, TrashIcon, XIcon } from '@Bbsmc/assets'
 import {
 	ButtonStyled,
 	Combobox,
 	commonMessages,
 	CopyCode,
 	defineMessages,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	NewModal,
 	ServerNotice,
@@ -278,15 +276,15 @@ import {
 	useFormatDateTime,
 	useRelativeTime,
 	useVIntl,
-} from '@modrinth/ui'
-import { NOTICE_LEVELS } from '@modrinth/ui/src/utils/notices.ts'
+} from '@Bbsmc/ui'
+import { NOTICE_LEVELS } from '@Bbsmc/ui/src/utils/notices.ts'
 import dayjs from 'dayjs'
 import { computed } from 'vue'
 
 import AssignNoticeModal from '~/components/ui/admin/AssignNoticeModal.vue'
 
 const { addNotification } = injectNotificationManager()
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const { formatMessage } = useVIntl()
 const formatRelativeTime = useRelativeTime()
 const formatDateTime = useFormatDateTime({

@@ -1,13 +1,13 @@
-import type { AbstractModrinthClient, Labrinth } from '@modrinth/api-client'
+import type { AbstractBbsmcClient, Labrinth } from '@Bbsmc/api-client'
 import {
 	type CdnDownloadReason,
 	createContext,
 	defineMessages,
 	fileTypeMessages,
-	injectModrinthClient,
+	injectBbsmcClient,
 	useVIntl,
-} from '@modrinth/ui'
-import type { DisplayProjectType } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import type { DisplayProjectType } from '@Bbsmc/utils'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { type Component, computed, type ComputedRef } from 'vue'
 
@@ -79,7 +79,7 @@ export const [injectDownloadModalProvider, provideDownloadModalContext] =
 export function provideDownloadModalProvider(
 	options: DownloadModalProviderOptions,
 ): DownloadModalProvider {
-	const client = injectModrinthClient()
+	const client = injectBbsmcClient()
 	const queryClient = useQueryClient()
 	const { createProjectDownloadUrl } = useCdnDownloadContext()
 	const { formatMessage } = useVIntl()
@@ -498,7 +498,7 @@ export function provideDownloadModalProvider(
 }
 
 function dependencyResolutionQueryOptions(
-	client: AbstractModrinthClient,
+	client: AbstractBbsmcClient,
 	project: ComputedRef<DownloadModalProject | null>,
 	selectedVersion: ComputedRef<Labrinth.Versions.v3.Version | null>,
 	preferences: ComputedRef<Labrinth.Content.v3.ResolutionPreferences>,
@@ -525,7 +525,7 @@ function dependencyResolutionQueryOptions(
 }
 
 function dependencyVersionsQueryOptions(
-	client: AbstractModrinthClient,
+	client: AbstractBbsmcClient,
 	versionIds: ComputedRef<string[]>,
 ) {
 	return {
@@ -536,7 +536,7 @@ function dependencyVersionsQueryOptions(
 }
 
 function dependencyProjectsQueryOptions(
-	client: AbstractModrinthClient,
+	client: AbstractBbsmcClient,
 	projectIds: ComputedRef<string[]>,
 ) {
 	return {

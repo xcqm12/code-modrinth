@@ -22,7 +22,7 @@ importers:
       '@formatjs/icu-messageformat-parser':
         specifier: ^2.11.4
         version: 2.11.4
-      '@modrinth/tooling-config':
+      '@Bbsmc/tooling-config':
         specifier: workspace:*
         version: link:packages/tooling-config
       '@tailwindcss/container-queries':
@@ -64,13 +64,13 @@ importers:
 
   apps/app:
     dependencies:
-      '@modrinth/app-frontend':
+      '@Bbsmc/app-frontend':
         specifier: workspace:*
         version: link:../app-frontend
-      '@modrinth/app-lib':
+      '@Bbsmc/app-lib':
         specifier: workspace:*
         version: link:../../packages/app-lib
-      '@modrinth/daedalus':
+      '@Bbsmc/daedalus':
         specifier: workspace:*
         version: link:../../packages/daedalus
     devDependencies:
@@ -80,16 +80,16 @@ importers:
 
   apps/app-frontend:
     dependencies:
-      '@modrinth/api-client':
+      '@Bbsmc/api-client':
         specifier: workspace:^
         version: link:../../packages/api-client
-      '@modrinth/assets':
+      '@Bbsmc/assets':
         specifier: workspace:*
         version: link:../../packages/assets
-      '@modrinth/ui':
+      '@Bbsmc/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-      '@modrinth/utils':
+      '@Bbsmc/utils':
         specifier: workspace:*
         version: link:../../packages/utils
       '@sentry/vue':
@@ -183,7 +183,7 @@ importers:
       '@formatjs/cli':
         specifier: ^6.2.12
         version: 6.12.2(@vue/compiler-core@3.5.27)(vue@3.5.27(typescript@5.9.3))
-      '@modrinth/tooling-config':
+      '@Bbsmc/tooling-config':
         specifier: workspace:*
         version: link:../../packages/tooling-config
       '@nuxt/eslint-config':
@@ -233,7 +233,7 @@ importers:
 
   apps/daedalus_client:
     dependencies:
-      '@modrinth/daedalus':
+      '@Bbsmc/daedalus':
         specifier: workspace:*
         version: link:../../packages/daedalus
 
@@ -245,7 +245,7 @@ importers:
       '@astrojs/starlight':
         specifier: ^0.32.2
         version: 0.32.6(astro@5.17.1(@types/node@24.12.2)(db0@0.3.4)(ioredis@5.9.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.57.1)(sass@1.97.3)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))
-      '@modrinth/assets':
+      '@Bbsmc/assets':
         specifier: workspace:*
         version: link:../../packages/assets
       astro:
@@ -269,22 +269,22 @@ importers:
       '@ltd/j-toml':
         specifier: ^1.38.0
         version: 1.38.0
-      '@modrinth/api-client':
+      '@Bbsmc/api-client':
         specifier: workspace:*
         version: link:../../packages/api-client
-      '@modrinth/assets':
+      '@Bbsmc/assets':
         specifier: workspace:*
         version: link:../../packages/assets
-      '@modrinth/blog':
+      '@Bbsmc/blog':
         specifier: workspace:*
         version: link:../../packages/blog
-      '@modrinth/moderation':
+      '@Bbsmc/moderation':
         specifier: workspace:*
         version: link:../../packages/moderation
-      '@modrinth/ui':
+      '@Bbsmc/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-      '@modrinth/utils':
+      '@Bbsmc/utils':
         specifier: workspace:*
         version: link:../../packages/utils
       '@sentry/nuxt':
@@ -390,7 +390,7 @@ importers:
       '@formatjs/cli':
         specifier: ^6.2.12
         version: 6.12.2(@vue/compiler-core@3.5.27)(vue@3.5.27(typescript@5.9.3))
-      '@modrinth/tooling-config':
+      '@Bbsmc/tooling-config':
         specifier: workspace:*
         version: link:../../packages/tooling-config
       '@types/dompurify':
@@ -459,7 +459,7 @@ importers:
       '@microsoft/api-extractor':
         specifier: ^7.58.9
         version: 7.58.9(@types/node@24.12.2)
-      '@modrinth/tooling-config':
+      '@Bbsmc/tooling-config':
         specifier: workspace:*
         version: link:../tooling-config
       '@tauri-apps/plugin-http':
@@ -479,7 +479,7 @@ importers:
 
   packages/assets:
     devDependencies:
-      '@modrinth/tooling-config':
+      '@Bbsmc/tooling-config':
         specifier: workspace:*
         version: link:../tooling-config
       '@types/node':
@@ -497,7 +497,7 @@ importers:
 
   packages/blog:
     dependencies:
-      '@modrinth/utils':
+      '@Bbsmc/utils':
         specifier: workspace:*
         version: link:../utils
       dayjs:
@@ -519,7 +519,7 @@ importers:
         specifier: ^0.6.2
         version: 0.6.2
     devDependencies:
-      '@modrinth/tooling-config':
+      '@Bbsmc/tooling-config':
         specifier: workspace:*
         version: link:../tooling-config
       '@types/glob':
@@ -542,13 +542,13 @@ importers:
 
   packages/moderation:
     dependencies:
-      '@modrinth/api-client':
+      '@Bbsmc/api-client':
         specifier: workspace:*
         version: link:../api-client
-      '@modrinth/assets':
+      '@Bbsmc/assets':
         specifier: workspace:*
         version: link:../assets
-      '@modrinth/utils':
+      '@Bbsmc/utils':
         specifier: workspace:*
         version: link:../utils
       vue:
@@ -558,10 +558,10 @@ importers:
       '@formatjs/cli':
         specifier: ^6.2.12
         version: 6.12.2(@vue/compiler-core@3.5.27)(vue@3.5.27(typescript@5.9.3))
-      '@modrinth/tooling-config':
+      '@Bbsmc/tooling-config':
         specifier: workspace:*
         version: link:../tooling-config
-      '@modrinth/ui':
+      '@Bbsmc/ui':
         specifier: workspace:*
         version: link:../ui
 
@@ -643,16 +643,16 @@ importers:
       '@intercom/messenger-js-sdk':
         specifier: ^0.0.14
         version: 0.0.14
-      '@modrinth/api-client':
+      '@Bbsmc/api-client':
         specifier: workspace:*
         version: link:../api-client
-      '@modrinth/assets':
+      '@Bbsmc/assets':
         specifier: workspace:*
         version: link:../assets
-      '@modrinth/blog':
+      '@Bbsmc/blog':
         specifier: workspace:*
         version: link:../blog
-      '@modrinth/utils':
+      '@Bbsmc/utils':
         specifier: workspace:*
         version: link:../utils
       '@tanstack/vue-query':
@@ -767,7 +767,7 @@ importers:
       '@formatjs/cli':
         specifier: ^6.2.12
         version: 6.12.2(@vue/compiler-core@3.5.27)(vue@3.5.27(typescript@5.9.3))
-      '@modrinth/tooling-config':
+      '@Bbsmc/tooling-config':
         specifier: workspace:*
         version: link:../tooling-config
       '@storybook/addon-a11y':
@@ -855,8 +855,8 @@ importers:
         specifier: ^11.9.0
         version: 11.11.1
       highlightjs-mcfunction:
-        specifier: github:modrinth/better-highlightjs-mcfunction
-        version: https://codeload.github.com/modrinth/better-highlightjs-mcfunction/tar.gz/aa999b763fd792ffb950d28347eeb6811c83ea8e
+        specifier: github:Bbsmc/better-highlightjs-mcfunction
+        version: https://codeload.github.com/Bbsmc/better-highlightjs-mcfunction/tar.gz/aa999b763fd792ffb950d28347eeb6811c83ea8e
       markdown-it:
         specifier: ^14.1.0
         version: 14.1.0
@@ -870,10 +870,10 @@ importers:
         specifier: ^1.0.14
         version: 1.0.15
     devDependencies:
-      '@modrinth/api-client':
+      '@Bbsmc/api-client':
         specifier: workspace:*
         version: link:../api-client
-      '@modrinth/tooling-config':
+      '@Bbsmc/tooling-config':
         specifier: workspace:*
         version: link:../tooling-config
 
@@ -6650,8 +6650,8 @@ packages:
     resolution: {integrity: sha512-Xwwo44whKBVCYoliBQwaPvtd/2tYFkRQtXDWj1nackaV2JPXx3L0+Jvd8/qCJ2p+ML0/XVkJ2q+Mr+UVdpJK5w==}
     engines: {node: '>=12.0.0'}
 
-  highlightjs-mcfunction@https://codeload.github.com/modrinth/better-highlightjs-mcfunction/tar.gz/aa999b763fd792ffb950d28347eeb6811c83ea8e:
-    resolution: {tarball: https://codeload.github.com/modrinth/better-highlightjs-mcfunction/tar.gz/aa999b763fd792ffb950d28347eeb6811c83ea8e}
+  highlightjs-mcfunction@https://codeload.github.com/Bbsmc/better-highlightjs-mcfunction/tar.gz/aa999b763fd792ffb950d28347eeb6811c83ea8e:
+    resolution: {tarball: https://codeload.github.com/Bbsmc/better-highlightjs-mcfunction/tar.gz/aa999b763fd792ffb950d28347eeb6811c83ea8e}
     version: 1.0.0
 
   hookable@5.5.3:
@@ -16574,7 +16574,7 @@ snapshots:
 
   highlight.js@11.11.1: {}
 
-  highlightjs-mcfunction@https://codeload.github.com/modrinth/better-highlightjs-mcfunction/tar.gz/aa999b763fd792ffb950d28347eeb6811c83ea8e: {}
+  highlightjs-mcfunction@https://codeload.github.com/Bbsmc/better-highlightjs-mcfunction/tar.gz/aa999b763fd792ffb950d28347eeb6811c83ea8e: {}
 
   hookable@5.5.3: {}
 

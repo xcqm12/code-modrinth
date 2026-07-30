@@ -32,9 +32,9 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { ChevronRightIcon, ExternalIcon } from '@modrinth/assets'
-import { Badge, ButtonStyled } from '@modrinth/ui'
+import type { Labrinth } from '@Bbsmc/api-client'
+import { ChevronRightIcon, ExternalIcon } from '@Bbsmc/assets'
+import { Badge, ButtonStyled } from '@Bbsmc/ui'
 
 const props = defineProps<{
 	trace: Labrinth.TechReview.Internal.GlobalIssueDetailTrace

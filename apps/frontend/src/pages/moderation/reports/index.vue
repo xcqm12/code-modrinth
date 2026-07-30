@@ -164,8 +164,7 @@
 			<div>
 				Showing
 				{{ itemsPerPage * (currentPage - 1) + 1 }}
-				â€“
-				{{ itemsPerPage * (currentPage - 1) + Math.min(itemsPerPage, paginatedReports.length) }}
+				â€?				{{ itemsPerPage * (currentPage - 1) + Math.min(itemsPerPage, paginatedReports.length) }}
 				of {{ sortedReports.length }} reports
 			</div>
 			<Pagination :page="currentPage" :count="totalPages" @switch-page="goToPage" />
@@ -192,7 +191,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
 import {
 	BlendIcon,
 	CheckIcon,
@@ -202,32 +201,32 @@ import {
 	SearchIcon,
 	SortAscIcon,
 	SortDescIcon,
-} from '@modrinth/assets'
-import type { ExtendedReport } from '@modrinth/moderation'
+} from '@Bbsmc/assets'
+import type { ExtendedReport } from '@Bbsmc/moderation'
 import {
 	Combobox,
 	type ComboboxOption,
 	commonMessages,
 	FloatingPanel,
-	injectModrinthClient,
+	injectBbsmcClient,
 	MultiSelect,
 	type MultiSelectItem,
 	Pagination,
 	StyledInput,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import Fuse from 'fuse.js'
 
 import ReportCard from '~/components/ui/moderation/ModerationReportCard.vue'
 import { enrichReportBatch } from '~/helpers/moderation.ts'
 
-useHead({ title: 'Reports queue - Modrinth' })
+useHead({ title: 'Reports queue - Bbsmc' })
 
 const { formatMessage } = useVIntl()
 const route = useRoute()
 const router = useRouter()
 const auth = await useAuth()
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 
 const { data: allReports } = await useLazyAsyncData('new-moderation-reports', async () => {
 	const startTime = performance.now()

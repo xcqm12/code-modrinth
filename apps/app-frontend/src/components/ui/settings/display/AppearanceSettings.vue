@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineMessages, ThemeSelector, Toggle, useVIntl } from '@modrinth/ui'
+import { defineMessages, ThemeSelector, Toggle, useVIntl } from '@Bbsmc/ui'
 import { computed, ref, watch } from 'vue'
 
 import { get, set } from '@/helpers/settings.ts'
@@ -17,7 +17,7 @@ const messages = defineMessages({
 	},
 	colorThemeDescription: {
 		id: 'app.appearance-settings.color-theme.description',
-		defaultMessage: 'Choose the color theme used by Modrinth App.',
+		defaultMessage: 'Choose the color theme used by Bbsmc App.',
 	},
 	advancedRenderingTitle: {
 		id: 'app.appearance-settings.advanced-rendering.title',

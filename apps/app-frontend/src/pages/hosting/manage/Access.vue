@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import {
-	injectModrinthClient,
-	injectModrinthServerContext,
+	injectBbsmcClient,
+	injectBbsmcServerContext,
 	ServersManageAccessPage,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 
-const client = injectModrinthClient()
-const { serverId } = injectModrinthServerContext()
+const client = injectBbsmcClient()
+const { serverId } = injectBbsmcServerContext()
 const queryClient = useQueryClient()
 
 try {

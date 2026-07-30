@@ -1,6 +1,6 @@
 {
   "db_name": "SQLite",
-  "query": "\n                UPDATE modrinth_users\n                SET active = FALSE\n                ",
+  "query": "\n                UPDATE Bbsmc_users\n                SET active = FALSE\n                ",
   "describe": {
     "columns": [],
     "parameters": {

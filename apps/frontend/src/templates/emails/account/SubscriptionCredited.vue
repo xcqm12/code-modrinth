@@ -20,6 +20,6 @@ import StyledEmail from '../shared/StyledEmail.vue'
 		</Text>
 
 		<Text class="text-muted text-base">Thank you for supporting us,</Text>
-		<Text class="text-muted text-base">The Modrinth Team</Text>
+		<Text class="text-muted text-base">The Bbsmc Team</Text>
 	</StyledEmail>
 </template>

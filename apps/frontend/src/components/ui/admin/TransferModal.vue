@@ -193,18 +193,18 @@
 </template>
 
 <script setup lang="ts">
-import { PlusIcon, SendIcon, XIcon } from '@modrinth/assets'
+import { PlusIcon, SendIcon, XIcon } from '@Bbsmc/assets'
 import {
 	ButtonStyled,
 	Chips,
 	Combobox,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	NewModal,
 	StyledInput,
 	TagItem,
 	Toggle,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import dayjs from 'dayjs'
 import { computed, ref } from 'vue'
 
@@ -213,7 +213,7 @@ const emit = defineEmits<{
 }>()
 
 const { addNotification } = injectNotificationManager()
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 
 const modal = ref<InstanceType<typeof NewModal>>()
 

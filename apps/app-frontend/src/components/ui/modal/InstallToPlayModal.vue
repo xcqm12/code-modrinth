@@ -161,8 +161,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { BanIcon, DownloadIcon, EyeIcon, ReportIcon, XIcon } from '@modrinth/assets'
+import type { Labrinth } from '@Bbsmc/api-client'
+import { BanIcon, DownloadIcon, EyeIcon, ReportIcon, XIcon } from '@Bbsmc/assets'
 import {
 	Admonition,
 	Avatar,
@@ -177,7 +177,7 @@ import {
 	type TableColumn,
 	useScrollIndicator,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { openUrl } from '@tauri-apps/plugin-opener'
 import { computed, nextTick, ref } from 'vue'
 
@@ -382,7 +382,7 @@ const messages = defineMessages({
 	inviteWarning: {
 		id: 'app.modal.install-to-play.invite-warning',
 		defaultMessage:
-			'This invite was created by another Modrinth user, not Modrinth. Only accept invites from people you trust.',
+			'This invite was created by another Bbsmc user, not Bbsmc. Only accept invites from people you trust.',
 	},
 	sharedInstance: {
 		id: 'app.modal.install-to-play.shared-instance',
@@ -407,7 +407,7 @@ const messages = defineMessages({
 	unknownFilesDescription: {
 		id: 'app.modal.install-to-play.unknown-files-description',
 		defaultMessage:
-			'This server modpack contains files that aren’t published on Modrinth. We strongly recommend only installing files from sources you trust.',
+			'This server modpack contains files that aren’t published on Bbsmc. We strongly recommend only installing files from sources you trust.',
 	},
 	unrecognizedFiles: {
 		id: 'app.modal.install-to-play.unrecognized-files',
@@ -416,7 +416,7 @@ const messages = defineMessages({
 	reviewedFiles: {
 		id: 'app.modal.install-to-play.reviewed-files',
 		defaultMessage:
-			'A file is only reviewed if it’s published to Modrinth, regardless of its file format (including .mrpack).',
+			'A file is only reviewed if it’s published to Bbsmc, regardless of its file format (including .mrpack).',
 	},
 	installAnyway: {
 		id: 'app.modal.install-to-play.install-anyway',

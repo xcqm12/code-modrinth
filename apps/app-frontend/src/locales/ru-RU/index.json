@@ -27,7 +27,7 @@
     "message": "Повторить"
   },
   "app.action-bar.install.summary.app-closing": {
-    "message": "Отменено из‑за закрытия приложения"
+    "message": "Отменено из‑з�?закрытия приложения"
   },
   "app.action-bar.install.summary.bad-modpack-file": {
     "message": "Не удалось прочитать сборку"
@@ -74,8 +74,8 @@
   "app.action-bar.install.summary.minecraft-setup-failed": {
     "message": "Не удалось установить Minecraft"
   },
-  "app.action-bar.install.summary.modrinth-unreachable": {
-    "message": "Не удалось подключиться к Modrinth"
+  "app.action-bar.install.summary.Bbsmc-unreachable": {
+    "message": "Не удалось подключиться к Bbsmc"
   },
   "app.action-bar.install.summary.no-write-permission": {
     "message": "Нет разрешения на запись"
@@ -132,7 +132,7 @@
     "message": "Принять всё"
   },
   "app.ads-consent.body": {
-    "message": "Реклама обеспечивает работу Modrinth и финансирует выплаты авторам. Наши партнёры могут хранить или получать доступ к файлам cookie в приложении для персонализации рекламы и измерения производительности."
+    "message": "Реклама обеспечивает работу Bbsmc и финансирует выплаты авторам. Наши партнёры могут хранить или получать доступ к файлам cookie в приложении для персонализации рекламы и измерения производительности."
   },
   "app.ads-consent.manage": {
     "message": "Настроить предпочтения"
@@ -141,7 +141,7 @@
     "message": "Отклонить всё"
   },
   "app.ads-consent.title": {
-    "message": "Конфиденциальность и как реклама помогает Modrinth"
+    "message": "Конфиденциальность и как реклама помогает Bbsmc"
   },
   "app.appearance-settings.advanced-rendering.description": {
     "message": "Включает продвинутые эффекты вроде размытия, но может снизить производительность на устройствах без аппаратного ускорения."
@@ -150,7 +150,7 @@
     "message": "Расширенные эффекты"
   },
   "app.appearance-settings.color-theme.description": {
-    "message": "Выберите тему для Modrinth App."
+    "message": "Выберите тему для Bbsmc App."
   },
   "app.appearance-settings.color-theme.title": {
     "message": "Тема"
@@ -210,7 +210,7 @@
     "message": "Переключатель боковой панели"
   },
   "app.appearance-settings.unknown-pack-warning.description": {
-    "message": "Предупреждать о рисках перед установкой файлов .mrpack, не размещённых на Modrinth."
+    "message": "Предупреждать о рисках перед установкой файлов .mrpack, не размещённых на Bbsmc."
   },
   "app.appearance-settings.unknown-pack-warning.title": {
     "message": "Предупреждение о сторонних сборках"
@@ -471,7 +471,7 @@
     "message": "Войти как"
   },
   "app.instance.shared-instance-wrong-account.signed-out-header": {
-    "message": "Необходимо войти в Modrinth"
+    "message": "Необходимо войти в Bbsmc"
   },
   "app.instance.shared-instance-wrong-account.user-admonition-body-v2": {
     "message": "для получения обновлений сборки."
@@ -546,7 +546,7 @@
     "message": "Установить"
   },
   "app.modal.install-to-play.invite-warning": {
-    "message": "Это приглашение создано другим пользователем Modrinth. Принимайте приглашения только от тех, кому доверяете."
+    "message": "Это приглашение создано другим пользователем Bbsmc. Принимайте приглашения только от тех, кому доверяете."
   },
   "app.modal.install-to-play.mod-count": {
     "message": "{count, plural, one {# мод} few {# мода} other {# модов}}"
@@ -573,7 +573,7 @@
     "message": "Жалоба отправлена"
   },
   "app.modal.install-to-play.reviewed-files": {
-    "message": "Файл проверяется только если он опубликован на Modrinth, независимо от его формата (включая .mrpack)."
+    "message": "Файл проверяется только если он опубликован на Bbsmc, независимо от его формата (включая .mrpack)."
   },
   "app.modal.install-to-play.shared-instance": {
     "message": "Сборка"
@@ -582,10 +582,10 @@
     "message": "Контент"
   },
   "app.modal.install-to-play.shared-instance-unknown-files-description": {
-    "message": "Сборка содержит файлы, которые не опубликованы на Modrinth. Рекомендуется скачивать файлы только из надёжных источников."
+    "message": "Сборка содержит файлы, которые не опубликованы на Bbsmc. Рекомендуется скачивать файлы только из надёжных источников."
   },
   "app.modal.install-to-play.unknown-files-description": {
-    "message": "Сборка этого сервера содержит файлы, которые не опубликованы на Modrinth. Рекомендуется скачивать файлы только из надёжных источников."
+    "message": "Сборка этого сервера содержит файлы, которые не опубликованы на Bbsmc. Рекомендуется скачивать файлы только из надёжных источников."
   },
   "app.modal.install-to-play.unknown-files-warning": {
     "message": "Предупреждение о неизвестных файлах"
@@ -603,7 +603,7 @@
     "message": "Удалён"
   },
   "app.modal.update-to-play.server-modpack-unknown-files-description": {
-    "message": "Обновление сборки этого сервера содержит файлы, которые не опубликованы на Modrinth. Рекомендуется скачивать файлы только из надёжных источников."
+    "message": "Обновление сборки этого сервера содержит файлы, которые не опубликованы на Bbsmc. Рекомендуется скачивать файлы только из надёжных источников."
   },
   "app.modal.update-to-play.shared-instance-added-label": {
     "message": "Добавлен"
@@ -645,7 +645,7 @@
     "message": "Скачивание версии {version}"
   },
   "app.settings.privacy.ads-consent.intro": {
-    "message": "Реклама обеспечивает работу Modrinth и финансирует выплаты авторам. Наши партнёры могут хранить или получать доступ к файлам cookie в приложении для персонализации рекламы и измерения производительности. Вы можете отказаться или настроить предпочтения ниже."
+    "message": "Реклама обеспечивает работу Bbsmc и финансирует выплаты авторам. Наши партнёры могут хранить или получать доступ к файлам cookie в приложении для персонализации рекламы и измерения производительности. Вы можете отказаться или настроить предпочтения ниже."
   },
   "app.settings.tabs.appearance": {
     "message": "Внешний вид"
@@ -776,14 +776,14 @@
   "app.skins.section.minecon-earth-2017": {
     "message": "MINECON Earth 2017"
   },
-  "app.skins.section.modrinth": {
-    "message": "Modrinth"
+  "app.skins.section.Bbsmc": {
+    "message": "Bbsmc"
   },
-  "app.skins.section.modrinth-pride": {
-    "message": "Modrinth Pride"
+  "app.skins.section.Bbsmc-pride": {
+    "message": "Bbsmc Pride"
   },
-  "app.skins.section.modrinth-pride.tooltip": {
-    "message": "Эти скины получены за участие в сборе средств Modrinth Pride в месяц гордости."
+  "app.skins.section.Bbsmc-pride.tooltip": {
+    "message": "Эти скины получены за участие в сборе средств Bbsmc Pride в месяц гордости."
   },
   "app.skins.section.mounts-of-mayhem": {
     "message": "Mounts of Mayhem"
@@ -807,10 +807,10 @@
     "message": "Войти"
   },
   "app.skins.sign-in.description": {
-    "message": "Пожалуйста, войдите в свой аккаунт Minecraft, чтобы воспользоваться функциями управления скинами в приложении Modrinth."
+    "message": "Пожалуйста, войдите в свой аккаунт Minecraft, чтобы воспользоваться функциями управления скинами в приложении Bbsmc."
   },
   "app.skins.sign-in.rinthbot-alt": {
-    "message": "Восторженный Modrinth Bot"
+    "message": "Восторженный Bbsmc Bot"
   },
   "app.skins.sign-in.title": {
     "message": "Войдите"
@@ -825,13 +825,13 @@
     "message": "Включить"
   },
   "app.update-popup.body.download-complete": {
-    "message": "Скачивание версии Modrinth App {version} завершено. Перезапустите приложение, чтобы обновить его, или оно обновится автоматически после закрытия."
+    "message": "Скачивание версии Bbsmc App {version} завершено. Перезапустите приложение, чтобы обновить его, или оно обновится автоматически после закрытия."
   },
   "app.update-popup.body.linux": {
-    "message": "Доступна версия Modrinth App {version}. Обновите приложение через менеджер пакетов, чтобы получить последние улучшения и исправления!"
+    "message": "Доступна версия Bbsmc App {version}. Обновите приложение через менеджер пакетов, чтобы получить последние улучшения и исправления!"
   },
   "app.update-popup.body.metered": {
-    "message": "Версия Modrinth App {version} доступна для скачивания! Используется сеть с лимитным тарифным планом, поэтому скачивание не началось автоматически."
+    "message": "Версия Bbsmc App {version} доступна для скачивания! Используется сеть с лимитным тарифным планом, поэтому скачивание не началось автоматически."
   },
   "app.update-popup.changelog": {
     "message": "Список изменений"
@@ -855,7 +855,7 @@
     "message": "Версия {version} успешно установлена!"
   },
   "app.world.server-modal.placeholder-address": {
-    "message": "example.modrinth.gg"
+    "message": "example.Bbsmc.gg"
   },
   "app.world.server-modal.select-an-option": {
     "message": "Выберите вариант"
@@ -903,10 +903,10 @@
     "message": "Оно может быть не таким, как в Minecraft!"
   },
   "friends.add-friend.username.placeholder": {
-    "message": "Введите имя с Modrinth..."
+    "message": "Введите имя с Bbsmc..."
   },
   "friends.add-friend.username.title": {
-    "message": "Какое имя у друга на Modrinth?"
+    "message": "Какое имя у друга на Bbsmc?"
   },
   "friends.add-friends-to-share": {
     "message": "<link>Добавьте друзей</link> и следите за ними!"
@@ -945,10 +945,10 @@
     "message": "Поиск по друзьям..."
   },
   "friends.section.heading": {
-    "message": "{title} — {count}"
+    "message": "{title} �?{count}"
   },
   "friends.sign-in-to-add-friends": {
-    "message": "<link>Войдите в аккаунт Modrinth</link>, чтобы добавлять друзей и следить за ними!"
+    "message": "<link>Войдите в аккаунт Bbsmc</link>, чтобы добавлять друзей и следить за ними!"
   },
   "installation-settings.shared-instance.linked-title": {
     "message": "Связанная сборка"
@@ -1074,7 +1074,7 @@
     "message": "Создание копии сборки"
   },
   "instance.settings.tabs.general.duplicate-instance.description": {
-    "message": "Создаёт копию сборки, включая миры, настройки, моды и т. д."
+    "message": "Создаёт копию сборки, включая миры, настройки, моды и т. �?"
   },
   "instance.settings.tabs.general.edit-icon": {
     "message": "Изменить иконку"
@@ -1352,40 +1352,40 @@
   "minecraft-required.sign-in": {
     "message": "Войти в Microsoft"
   },
-  "modal.modrinth-account-required.browser-description": {
+  "modal.Bbsmc-account-required.browser-description": {
     "message": "Открылась вкладка для входа. Завершение вход и вернитесь в приложение."
   },
-  "modal.modrinth-account-required.cancel-button": {
+  "modal.Bbsmc-account-required.cancel-button": {
     "message": "Отмена"
   },
-  "modal.modrinth-account-required.continue-in-browser-heading": {
+  "modal.Bbsmc-account-required.continue-in-browser-heading": {
     "message": "Продолжите в браузере"
   },
-  "modal.modrinth-account-required.create-account-button": {
+  "modal.Bbsmc-account-required.create-account-button": {
     "message": "Создать аккаунт"
   },
-  "modal.modrinth-account-required.description": {
-    "message": "Войдите в аккаунт Modrinth, чтобы использовать эту функцию."
+  "modal.Bbsmc-account-required.description": {
+    "message": "Войдите в аккаунт Bbsmc, чтобы использовать эту функцию."
   },
-  "modal.modrinth-account-required.header": {
+  "modal.Bbsmc-account-required.header": {
     "message": "Требуется аккаунт"
   },
-  "modal.modrinth-account-required.open-browser-again-button": {
+  "modal.Bbsmc-account-required.open-browser-again-button": {
     "message": "Открыть браузер снова"
   },
-  "modal.modrinth-account-required.sign-in-button": {
-    "message": "Войти в Modrinth"
+  "modal.Bbsmc-account-required.sign-in-button": {
+    "message": "Войти в Bbsmc"
   },
-  "modal.modrinth-account-required.sign-in-heading": {
-    "message": "Войдите в аккаунт Modrinth"
+  "modal.Bbsmc-account-required.sign-in-heading": {
+    "message": "Войдите в аккаунт Bbsmc"
   },
-  "modal.modrinth-account-required.signing-in-header": {
+  "modal.Bbsmc-account-required.signing-in-header": {
     "message": "Вход"
   },
-  "modal.modrinth-account-required.support-prompt": {
+  "modal.Bbsmc-account-required.support-prompt": {
     "message": "Проблемы с входом? <support>Обратитесь в поддержку</support>"
   },
-  "modal.modrinth-account-required.waiting-for-browser": {
+  "modal.Bbsmc-account-required.waiting-for-browser": {
     "message": "Ожидание подтверждения браузера..."
   },
   "search.filter.locked.instance": {

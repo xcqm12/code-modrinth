@@ -38,6 +38,6 @@ import StyledEmail from '../shared/StyledEmail.vue'
 			>.
 		</Text>
 
-		<Text class="text-base">Thank you for being a creator on Modrinth!</Text>
+		<Text class="text-base">Thank you for being a creator on Bbsmc!</Text>
 	</StyledEmail>
 </template>

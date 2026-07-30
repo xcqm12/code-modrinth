@@ -1,6 +1,6 @@
 # Cross-Platform Pages
 
-Pages that need to exist in both the Modrinth Website (`apps/frontend`) and the Modrinth App (`apps/app-frontend`) live in `packages/ui/src/layouts/`. There are two categories based on whether the page logic differs between platforms.
+Pages that need to exist in both the Bbsmc Website (`apps/frontend`) and the Bbsmc App (`apps/app-frontend`) live in `packages/ui/src/layouts/`. There are two categories based on whether the page logic differs between platforms.
 
 ## Shared Layouts (`layouts/shared/`)
 
@@ -34,7 +34,7 @@ export interface ContentManagerContext {
 	deleteItem: (item: ContentItem) => Promise<void>
 	refresh: () => Promise<void>
 
-	// Optional capabilities ‚Äî not every platform supports everything
+	// Optional capabilities ‚Ä?not every platform supports everything
 	hasUpdateSupport: boolean
 	updateItem?: (id: string) => void
 	bulkDeleteItems?: (items: ContentItem[]) => Promise<void>
@@ -48,12 +48,12 @@ export const [injectContentManager, provideContentManager] =
 
 ### Platform implementations
 
-**Website** ‚Äî uses `api-client` and TanStack Query:
+**Website** ‚Ä?uses `api-client` and TanStack Query:
 
 ```vue
 <!-- apps/frontend/src/pages/instance/content.vue -->
 <script setup lang="ts">
-import { provideContentManager, ContentPageLayout } from '@modrinth/ui'
+import { provideContentManager, ContentPageLayout } from '@Bbsmc/ui'
 
 const { data: items } = useQuery({
 	queryKey: ['content', instanceId],
@@ -74,12 +74,12 @@ provideContentManager({
 </template>
 ```
 
-**App** ‚Äî uses Tauri `invoke`:
+**App** ‚Ä?uses Tauri `invoke`:
 
 ```vue
 <!-- apps/app-frontend/src/pages/instance/Mods.vue -->
 <script setup lang="ts">
-import { provideContentManager, ContentPageLayout } from '@modrinth/ui'
+import { provideContentManager, ContentPageLayout } from '@Bbsmc/ui'
 import { invoke } from '@tauri-apps/api/core'
 
 const items = ref<ContentItem[]>([])
@@ -116,12 +116,12 @@ v-if="ctx.bulkUpdateItems && hasOutdatedProjects"
 
 | Use       | When                                                                                       |
 | --------- | ------------------------------------------------------------------------------------------ |
-| **DI**    | Data depends on _how_ it's fetched ‚Äî API calls, file operations, navigation (per-platform) |
-| **Props** | Data is the same regardless of platform ‚Äî configuration flags, display options              |
+| **DI**    | Data depends on _how_ it's fetched ‚Ä?API calls, file operations, navigation (per-platform) |
+| **Props** | Data is the same regardless of platform ‚Ä?configuration flags, display options              |
 
 ## Wrapped Pages (`layouts/wrapped/`)
 
-For pages where the **logic is identical** on both platforms ‚Äî same API source, same data fetching, same state management. These are full page-level Vue components that directly implement routes:
+For pages where the **logic is identical** on both platforms ‚Ä?same API source, same data fetching, same state management. These are full page-level Vue components that directly implement routes:
 
 ```
 wrapped/hosting/manage/
@@ -137,7 +137,7 @@ Wrapped pages handle their own data fetching (typically via TanStack Query and `
 ```vue
 <!-- apps/frontend/src/pages/hosting/manage/[id]/content.vue -->
 <script setup lang="ts">
-import { ServersManageContentPage } from '@modrinth/ui'
+import { ServersManageContentPage } from '@Bbsmc/ui'
 </script>
 
 <template>
@@ -149,7 +149,7 @@ import { ServersManageContentPage } from '@modrinth/ui'
 
 #### Wrapped layout: `ReadyTransition` and `useReadyState`
 
-Many wrapped pages wrap the main UI in [`ReadyTransition`](../../packages/ui/src/components/base/ReadyTransition.vue) with `:pending` driven by [`useReadyState`](../../packages/ui/src/composables/use-ready-state.ts) on the **primary** TanStack query (true only on the first load while that query has no cached data yet‚Äîbackground refetches stay ‚Äúready‚Äù). That avoids flashing empty content before data exists.
+Many wrapped pages wrap the main UI in [`ReadyTransition`](../../packages/ui/src/components/base/ReadyTransition.vue) with `:pending` driven by [`useReadyState`](../../packages/ui/src/composables/use-ready-state.ts) on the **primary** TanStack query (true only on the first load while that query has no cached data yet‚Äîbackground refetches stay ‚Äúready‚Ä?. That avoids flashing empty content before data exists.
 
 ```vue
 <!-- Conceptual: inside packages/ui wrapped layout -->
@@ -173,11 +173,11 @@ When a wrapped layout uses that pattern, the **thin platform page** that imports
 **Rule:** For each primary `useQuery` in the wrapped layout that gates first paint (and thus `useReadyState` / `ReadyTransition`), the website and app route shells must call `queryClient.ensureQueryData` with the **same** `queryKey`, `queryFn`, and `staleTime` as that query. Wrap the call in `try/catch` and swallow errors so navigation does not fail during setup; the mounted layout‚Äôs `useQuery` still runs and surfaces errors to the user.
 
 ```ts
-import { injectModrinthClient, injectModrinthServerContext, ServersManageFilesPage } from '@modrinth/ui'
+import { injectBbsmcClient, injectBbsmcServerContext, ServersManageFilesPage } from '@Bbsmc/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 
-const client = injectModrinthClient()
-const { serverId } = injectModrinthServerContext()
+const client = injectBbsmcClient()
+const { serverId } = injectBbsmcServerContext()
 const queryClient = useQueryClient()
 
 try {
@@ -195,13 +195,13 @@ If a route parameter is required for the query (e.g. `worldId`), only call `ensu
 
 Duplicating the query definition in the shell is intentional until a shared query-options module exists; keep keys and fetchers aligned when editing the layout or the shell.
 
-A wrapped page may still compose shared layouts internally ‚Äî for example, the hosting content page uses the shared `content-tab` layout, providing its own `ContentManagerContext` with web API calls.
+A wrapped page may still compose shared layouts internally ‚Ä?for example, the hosting content page uses the shared `content-tab` layout, providing its own `ContentManagerContext` with web API calls.
 
 ## Composables
 
 Reusable stateful logic lives in `packages/ui/src/layouts/shared/*/composables/`. These are consumed internally by the shared layout:
 
-- **Search** ‚Äî Fuse.js fuzzy search over items
-- **Filtering** ‚Äî Dynamic filter pills
-- **Selection** ‚Äî Multi-select with bulk operation support
-- **Bulk operations** ‚Äî Sequential execution with progress tracking
+- **Search** ‚Ä?Fuse.js fuzzy search over items
+- **Filtering** ‚Ä?Dynamic filter pills
+- **Selection** ‚Ä?Multi-select with bulk operation support
+- **Bulk operations** ‚Ä?Sequential execution with progress tracking

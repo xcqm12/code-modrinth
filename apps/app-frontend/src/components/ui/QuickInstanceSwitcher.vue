@@ -1,6 +1,6 @@
 <script setup>
-import { SpinnerIcon } from '@modrinth/assets'
-import { Avatar, defineMessages, injectNotificationManager, useVIntl } from '@modrinth/ui'
+import { SpinnerIcon } from '@Bbsmc/assets'
+import { Avatar, defineMessages, injectNotificationManager, useVIntl } from '@Bbsmc/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 import { convertFileSrc } from '@tauri-apps/api/core'
 import dayjs from 'dayjs'
@@ -12,7 +12,7 @@ import { list } from '@/helpers/instance'
 
 const ITEM_SIZE = 52
 const APPROX_USED_VERTICAL_SPACE = 513 // doesn't need to be exact lol just close enough so there's a little gap and no overflow
-const STORAGE_KEY = 'modrinth-quick-instance-count'
+const STORAGE_KEY = 'Bbsmc-quick-instance-count'
 
 const { handleError } = injectNotificationManager()
 const queryClient = useQueryClient()

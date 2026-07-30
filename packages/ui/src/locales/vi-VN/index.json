@@ -9,10 +9,10 @@
     "defaultMessage": "Tạo mã affiliate mới"
   },
   "affiliate.create.title.description": {
-    "defaultMessage": "Đặt tên cho liên kết affiliate để bạn biết người dùng đến từ đâu!"
+    "defaultMessage": "Đặt tên cho liên kết affiliate đ�?bạn biết người dùng đến t�?đâu!"
   },
   "affiliate.create.title.label": {
-    "defaultMessage": "Tiêu đề liên kết affiliate"
+    "defaultMessage": "Tiêu đ�?liên kết affiliate"
   },
   "affiliate.create.title.placeholder": {
     "defaultMessage": "vd: YouTube"
@@ -36,7 +36,7 @@
     "defaultMessage": "Xem phân tích"
   },
   "app.server-settings.failed-to-load-server": {
-    "defaultMessage": "Không thể tải cài đặt máy chủ"
+    "defaultMessage": "Không th�?tải cài đặt máy ch�?
   },
   "badge.alpha": {
     "defaultMessage": "Alpha"
@@ -54,13 +54,13 @@
     "defaultMessage": "Hủy"
   },
   "billing.resubscribe-modal.cpus": {
-    "defaultMessage": "{sharedCpus} CPU chia sẻ"
+    "defaultMessage": "{sharedCpus} CPU chia s�?
   },
   "billing.resubscribe-modal.description": {
-    "defaultMessage": "Bạn chuẩn bị đăng ký lại <server-name> {serverName} </server-name>. Gói đăng ký của bạn sẽ được kích hoạt lại và máy chủ của bạn sẽ tiếp tục hoạt động."
+    "defaultMessage": "Bạn chuẩn b�?đăng ký lại <server-name> {serverName} </server-name>. Gói đăng ký của bạn s�?được kích hoạt lại và máy ch�?của bạn s�?tiếp tục hoạt động."
   },
   "billing.resubscribe-modal.error.text": {
-    "defaultMessage": "Không thể đăng ký lại, lỗi tải thông tin đăng ký."
+    "defaultMessage": "Không th�?đăng ký lại, lỗi tải thông tin đăng ký."
   },
   "billing.resubscribe-modal.error.title": {
     "defaultMessage": "Lỗi"
@@ -72,7 +72,7 @@
     "defaultMessage": "{intervalOption, select, fiveDays {/5 ngày} monthly {/tháng} quarterly {/ba tháng} yearly {/năm} other {{interval}}}"
   },
   "billing.resubscribe-modal.next-charge": {
-    "defaultMessage": "Lần thanh toán tiếp theo sẽ là vào <charge-date> {date} </charge-date>."
+    "defaultMessage": "Lần thanh toán tiếp theo s�?là vào <charge-date> {date} </charge-date>."
   },
   "billing.resubscribe-modal.plan-label": {
     "defaultMessage": "Gói"
@@ -84,52 +84,52 @@
     "defaultMessage": "Đăng ký lại"
   },
   "billing.resubscribe-modal.storage": {
-    "defaultMessage": "{storageGb} GB bộ nhớ"
+    "defaultMessage": "{storageGb} GB b�?nh�?
   },
   "billing.resubscribe-modal.title": {
-    "defaultMessage": "Đăng ký lại máy chủ"
+    "defaultMessage": "Đăng ký lại máy ch�?
   },
   "browse.filter-results": {
-    "defaultMessage": "Lọc kết quả..."
+    "defaultMessage": "Lọc kết qu�?.."
   },
   "browse.no-results": {
-    "defaultMessage": "Không tìm được thứ bạn đang tìm kiếm!"
+    "defaultMessage": "Không tìm được th�?bạn đang tìm kiếm!"
   },
   "browse.offline": {
-    "defaultMessage": "Bạn đã Mất kết nối. Hãy kết nối mạng để tìm kiếm Modrinth!"
+    "defaultMessage": "Bạn đã Mất kết nối. Hãy kết nối mạng đ�?tìm kiếm Bbsmc!"
   },
   "browse.search.placeholder": {
     "defaultMessage": "Tìm kiếm {projectType}..."
   },
   "browse.selected-projects-floating-bar.aria-label": {
-    "defaultMessage": "Dự án được chọn"
+    "defaultMessage": "D�?án được chọn"
   },
   "browse.selected-projects-floating-bar.install": {
-    "defaultMessage": "Tải {count, plural, other {# dự án}}"
+    "defaultMessage": "Tải {count, plural, other {# d�?án}}"
   },
   "browse.selected-projects-floating-bar.selected-count": {
-    "defaultMessage": "{count, plural, other {# dự án được chọn}}"
+    "defaultMessage": "{count, plural, other {# d�?án được chọn}}"
   },
   "browse.selected-projects-leave-modal.admonition-body": {
-    "defaultMessage": "Bạn đã chọn {count, plural, other {{count} dự án}}. Tải chúng hoặc quay lại mà kệ chúng."
+    "defaultMessage": "Bạn đã chọn {count, plural, other {{count} d�?án}}. Tải chúng hoặc quay lại mà k�?chúng."
   },
   "browse.selected-projects-leave-modal.admonition-header": {
-    "defaultMessage": "Dự án được chọn chưa được cài"
+    "defaultMessage": "D�?án được chọn chưa được cài"
   },
   "browse.selected-projects-leave-modal.discard": {
-    "defaultMessage": "Loại bỏ"
+    "defaultMessage": "Loại b�?
   },
   "browse.selected-projects-leave-modal.header": {
-    "defaultMessage": "Dự án được chọn chưa được cài"
+    "defaultMessage": "D�?án được chọn chưa được cài"
   },
   "browse.view-prefix": {
-    "defaultMessage": "Chế độ xem:"
+    "defaultMessage": "Ch�?đ�?xem:"
   },
   "button.accept": {
     "defaultMessage": "Chấp nhận"
   },
   "button.add-server-to-instance": {
-    "defaultMessage": "Thếm máy chủ"
+    "defaultMessage": "Thếm máy ch�?
   },
   "button.affiliate-links": {
     "defaultMessage": "Liên kết affiliate"
@@ -141,7 +141,7 @@
     "defaultMessage": "Quay lại"
   },
   "button.cancel": {
-    "defaultMessage": "Huỷ"
+    "defaultMessage": "Hu�?
   },
   "button.change-version": {
     "defaultMessage": "Thay đổi phiên bản"
@@ -168,13 +168,13 @@
     "defaultMessage": "Sao chép liên kết"
   },
   "button.copy-permalink": {
-    "defaultMessage": "Sao chép liên kết cố định"
+    "defaultMessage": "Sao chép liên kết c�?định"
   },
   "button.create-a-project": {
-    "defaultMessage": "Tạo dự án"
+    "defaultMessage": "Tạo d�?án"
   },
   "button.decline": {
-    "defaultMessage": "Huỷ bỏ"
+    "defaultMessage": "Hu�?b�?
   },
   "button.disable": {
     "defaultMessage": "Vô hiệu hoá"
@@ -216,13 +216,13 @@
     "defaultMessage": "Tiếp theo"
   },
   "button.open-folder": {
-    "defaultMessage": "Mở thư mục"
+    "defaultMessage": "M�?thư mục"
   },
   "button.open-in-folder": {
-    "defaultMessage": "Mở thư mục"
+    "defaultMessage": "M�?thư mục"
   },
-  "button.open-in-modrinth": {
-    "defaultMessage": "Mở trong trình duyệt"
+  "button.open-in-Bbsmc": {
+    "defaultMessage": "M�?trong trình duyệt"
   },
   "button.play": {
     "defaultMessage": "Chơi"
@@ -252,10 +252,10 @@
     "defaultMessage": "Đặt lại"
   },
   "button.reset-server": {
-    "defaultMessage": "Khởi động lại máy chủ"
+    "defaultMessage": "Khởi động lại máy ch�?
   },
   "button.retry": {
-    "defaultMessage": "Thử lại"
+    "defaultMessage": "Th�?lại"
   },
   "button.save": {
     "defaultMessage": "Lưu"
@@ -267,7 +267,7 @@
     "defaultMessage": "Đang lưu"
   },
   "button.show-all-versions": {
-    "defaultMessage": "Hiển thị tất cả các phiên bản"
+    "defaultMessage": "Hiển th�?tất c�?các phiên bản"
   },
   "button.show-file": {
     "defaultMessage": "Hiện tệp"
@@ -288,10 +288,10 @@
     "defaultMessage": "Đổi phiên bản"
   },
   "button.unfollow": {
-    "defaultMessage": "Bỏ theo dõi"
+    "defaultMessage": "B�?theo dõi"
   },
   "button.unlink-modpack": {
-    "defaultMessage": "Huỷ liên kết modpack"
+    "defaultMessage": "Hu�?liên kết modpack"
   },
   "button.update": {
     "defaultMessage": "Cập nhật"
@@ -324,22 +324,22 @@
     "defaultMessage": "Chọn {project}"
   },
   "content.confirm-bulk-update.admonition-body": {
-    "defaultMessage": "Bạn có chắc chắn muốn cập nhật {count, plural, other {# dự án}} lên phiên bản tương thích mới nhất không? Đề xuất: Bạn nên cập nhật từng cái một."
+    "defaultMessage": "Bạn có chắc chắn muốn cập nhật {count, plural, other {# d�?án}} lên phiên bản tương thích mới nhất không? Đ�?xuất: Bạn nên cập nhật từng cái một."
   },
   "content.confirm-bulk-update.admonition-header": {
     "defaultMessage": "Cảnh báo cập nhật"
   },
   "content.confirm-bulk-update.header": {
-    "defaultMessage": "Cập nhật dự án"
+    "defaultMessage": "Cập nhật d�?án"
   },
   "content.confirm-bulk-update.shift-click-hint": {
-    "defaultMessage": "Nhẫn giữ phím Shift trong khi ấn \"Cập nhật tất cả\" để bỏ qua bước xác nhận."
+    "defaultMessage": "Nhẫn gi�?phím Shift trong khi ấn \"Cập nhật tất cả\" đ�?b�?qua bước xác nhận."
   },
   "content.confirm-bulk-update.update-button": {
-    "defaultMessage": "Cập nhật {count, plural, other {# dự án}}"
+    "defaultMessage": "Cập nhật {count, plural, other {# d�?án}}"
   },
   "content.confirm-deletion.admonition-body": {
-    "defaultMessage": "Việc xóa một bản mod có thể ảnh hưởng vĩnh viễn đến thế giới của bạn, đồng thời có thể gây thiếu hụt nội dung hoặc phát sinh các lỗi không mong muốn khi tải lại thế giới đó."
+    "defaultMessage": "Việc xóa một bản mod có th�?ảnh hưởng vĩnh viễn đến th�?giới của bạn, đồng thời có th�?gây thiếu hụt nội dung hoặc phát sinh các lỗi không mong muốn khi tải lại th�?giới đó."
   },
   "content.confirm-deletion.admonition-header": {
     "defaultMessage": "Cảnh báo trước khi xoá"
@@ -351,43 +351,43 @@
     "defaultMessage": "Xóa {itemType}"
   },
   "content.confirm-modpack-update.admonition-body": {
-    "defaultMessage": "{action, select, downgrade {Việc hạ phiên bản} other {Việc cập nhật}} có thể gây ra lỗi tương thích. Những mod mà bạn thêm vào modpack sẽ được giữ lại nhưng chúng có thể sẽ không tương thích với phiên bản mới của modpack."
+    "defaultMessage": "{action, select, downgrade {Việc h�?phiên bản} other {Việc cập nhật}} có th�?gây ra lỗi tương thích. Những mod mà bạn thêm vào modpack s�?được gi�?lại nhưng chúng có th�?s�?không tương thích với phiên bản mới của modpack."
   },
   "content.confirm-modpack-update.admonition-header": {
-    "defaultMessage": "Cảnh báo {action, select, downgrade {hạ phiên bản} other {cập nhật}}"
+    "defaultMessage": "Cảnh báo {action, select, downgrade {h�?phiên bản} other {cập nhật}}"
   },
   "content.confirm-modpack-update.confirm-button": {
-    "defaultMessage": "{action, select, downgrade {Hạ phiên bản} other {Cập nhật}} modpack"
+    "defaultMessage": "{action, select, downgrade {H�?phiên bản} other {Cập nhật}} modpack"
   },
   "content.confirm-modpack-update.header": {
-    "defaultMessage": "{action, select, downgrade {Hạ phiên bản} other {Cập nhật}} modpack"
+    "defaultMessage": "{action, select, downgrade {H�?phiên bản} other {Cập nhật}} modpack"
   },
   "content.confirm-unlink.admonition-body": {
-    "defaultMessage": "Các bản mod và nội dung sẽ được hợp nhất với những gì bạn đã thêm vào modpack và modpack sẽ ngừng nhận các bản cập nhật."
+    "defaultMessage": "Các bản mod và nội dung s�?được hợp nhất với những gì bạn đã thêm vào modpack và modpack s�?ngừng nhận các bản cập nhật."
   },
   "content.confirm-unlink.admonition-header": {
-    "defaultMessage": "Cảnh báo huỷ liên kết modpack"
+    "defaultMessage": "Cảnh báo hu�?liên kết modpack"
   },
   "content.confirm-unlink.header": {
-    "defaultMessage": "Huỷ liên kết modpack"
+    "defaultMessage": "Hu�?liên kết modpack"
   },
   "content.confirm-unlink.unlink-button": {
-    "defaultMessage": "Huỷ liên kết"
+    "defaultMessage": "Hu�?liên kết"
   },
   "content.dependency-warning.admonition-header": {
-    "defaultMessage": "Nội dung này đang được sử dụng bởi thành phần khác"
+    "defaultMessage": "Nội dung này đang được s�?dụng bởi thành phần khác"
   },
   "content.dependency-warning.affected-dependents-label": {
-    "defaultMessage": "{count, plural, one {project} other {projects}} bị ảnh hưởng"
+    "defaultMessage": "{count, plural, one {project} other {projects}} b�?ảnh hưởng"
   },
   "content.dependency-warning.bulk-admonition-body": {
-    "defaultMessage": "Một số mục bạn chọn là thành phần bắt buộc để chạy các nội dung khác. Nếu xóa chúng, {context} có thể bị lỗi hoặc các nội dung liên quan sẽ không thể hoạt động bình thường."
+    "defaultMessage": "Một s�?mục bạn chọn là thành phần bắt buộc đ�?chạy các nội dung khác. Nếu xóa chúng, {context} có th�?b�?lỗi hoặc các nội dung liên quan s�?không th�?hoạt động bình thường."
   },
   "content.dependency-warning.context.instance": {
     "defaultMessage": "cấu hình"
   },
   "content.dependency-warning.context.server": {
-    "defaultMessage": "máy chủ"
+    "defaultMessage": "máy ch�?
   },
   "content.dependency-warning.delete-anyway-button": {
     "defaultMessage": "Vẫn tiếp tục xoá"
@@ -399,28 +399,28 @@
     "defaultMessage": "Đang xoá"
   },
   "content.dependency-warning.disable-dependents-label": {
-    "defaultMessage": "Vô hiệu hoá nội dung phụ thuộc sau khi xoá"
+    "defaultMessage": "Vô hiệu hoá nội dung ph�?thuộc sau khi xoá"
   },
   "content.dependency-warning.effect-dependent-content": {
-    "defaultMessage": "Nội dung phụ thuộc có thể không tải được hoặc tự vô hiệu hóa"
+    "defaultMessage": "Nội dung ph�?thuộc có th�?không tải được hoặc t�?vô hiệu hóa"
   },
   "content.dependency-warning.effect-instance": {
-    "defaultMessage": "{context} của bạn có thể sập, từ chối khởi động hoặc hoạt động bất thường"
+    "defaultMessage": "{context} của bạn có th�?sập, t�?chối khởi động hoặc hoạt động bất thường"
   },
   "content.dependency-warning.header": {
-    "defaultMessage": "Cảnh báo phụ thuộc"
+    "defaultMessage": "Cảnh báo ph�?thuộc"
   },
   "content.dependency-warning.single-admonition-body": {
-    "defaultMessage": "{project} đang được cài đặt dưới dạng nội dung phụ thuộc. Việc xoá nó có thể khiến {context} hỏng hoặc ngăn nội dung phụ thuộc nó tải đúng cách."
+    "defaultMessage": "{project} đang được cài đặt dưới dạng nội dung ph�?thuộc. Việc xoá nó có th�?khiến {context} hỏng hoặc ngăn nội dung ph�?thuộc nó tải đúng cách."
   },
   "content.dependency-warning.what-happens-label": {
-    "defaultMessage": "Chuyện gì sẽ xảy ra?"
+    "defaultMessage": "Chuyện gì s�?xảy ra?"
   },
   "content.diff-modal.added-count": {
     "defaultMessage": "Đã thêm {count}"
   },
   "content.diff-modal.diff-type.added": {
-    "defaultMessage": "Đã thêm (phụ thuộc)"
+    "defaultMessage": "Đã thêm (ph�?thuộc)"
   },
   "content.diff-modal.diff-type.removed": {
     "defaultMessage": "Đã tắt"
@@ -432,7 +432,7 @@
     "defaultMessage": "Đã xoá {count}"
   },
   "content.diff-modal.unknown-content-body": {
-    "defaultMessage": "Một số nội dung trên máy chủ của bạn không thể phân tích được và có thể bị ảnh hưởng bởi thay đổi này."
+    "defaultMessage": "Một s�?nội dung trên máy ch�?của bạn không th�?phân tích được và có th�?b�?ảnh hưởng bởi thay đổi này."
   },
   "content.diff-modal.updated-count": {
     "defaultMessage": "{count} đã được cập nhật"
@@ -456,13 +456,13 @@
     "defaultMessage": "Bản sao lưu đã được tạo thành công"
   },
   "content.inline-backup.backup-failed": {
-    "defaultMessage": "Tạo bản sao lưu thất bại. Bạn vẫn có thể tiếp tục."
+    "defaultMessage": "Tạo bản sao lưu thất bại. Bạn vẫn có th�?tiếp tục."
   },
   "content.inline-backup.backup-in-progress": {
     "defaultMessage": "Quá trình sao lưu đang diễn ra, bạn nên đợi hoàn tất trước khi thực hiện hành động này."
   },
   "content.inline-backup.backup-takes-a-while": {
-    "defaultMessage": "Việc tạo backup có thể mất vài phút tùy thuộc vào kích thước server của bạn."
+    "defaultMessage": "Việc tạo backup có th�?mất vài phút tùy thuộc vào kích thước server của bạn."
   },
   "content.inline-backup.create-backup": {
     "defaultMessage": "Tạo bản sao lưu"
@@ -471,25 +471,25 @@
     "defaultMessage": "cấu hình"
   },
   "content.inline-backup.shift-click-hint": {
-    "defaultMessage": "Giữ nút Shift khi click để bỏ qua xác nhận."
+    "defaultMessage": "Gi�?nút Shift khi click đ�?b�?qua xác nhận."
   },
   "content.inline-backup.warning-body": {
-    "defaultMessage": "Chúng tôi khuyên bạn nên tạo bản dự phòng trước để khi có gì hỏng thì bạn có thể hoàn tác lại."
+    "defaultMessage": "Chúng tôi khuyên bạn nên tạo bản d�?phòng trước đ�?khi có gì hỏng thì bạn có th�?hoàn tác lại."
   },
   "content.inline-backup.world-label": {
-    "defaultMessage": "thế giới"
+    "defaultMessage": "th�?giới"
   },
   "content.page-layout.additional-content": {
-    "defaultMessage": "Mod bổ sung"
+    "defaultMessage": "Mod b�?sung"
   },
   "content.page-layout.browse-content": {
     "defaultMessage": "Thêm mod"
   },
   "content.page-layout.busy-description": {
-    "defaultMessage": "Vui lòng chờ quá trình xử lý hoàn tất trước khi chỉnh sửa nội dung."
+    "defaultMessage": "Vui lòng ch�?quá trình x�?lý hoàn tất trước khi chỉnh sửa nội dung."
   },
   "content.page-layout.empty.hint": {
-    "defaultMessage": "Thêm hoặc tải lên {contentType} để bắt đầu"
+    "defaultMessage": "Thêm hoặc tải lên {contentType} đ�?bắt đầu"
   },
   "content.page-layout.empty.modpack-hint": {
     "defaultMessage": "Thêm mod vào modpack này"
@@ -498,10 +498,10 @@
     "defaultMessage": "Chưa cài đặt nội dung nào"
   },
   "content.page-layout.empty.no-extra-content-installed": {
-    "defaultMessage": "Chưa cài đặt nội dung bổ sung nào"
+    "defaultMessage": "Chưa cài đặt nội dung b�?sung nào"
   },
   "content.page-layout.failed-to-load": {
-    "defaultMessage": "Không thể tải nội dung"
+    "defaultMessage": "Không th�?tải nội dung"
   },
   "content.page-layout.loading": {
     "defaultMessage": "Đang tải nội dung..."
@@ -510,7 +510,7 @@
     "defaultMessage": "Không có nội dung nào được tìm thấy."
   },
   "content.page-layout.please-wait": {
-    "defaultMessage": "Vui lòng chờ"
+    "defaultMessage": "Vui lòng ch�?
   },
   "content.page-layout.search-placeholder": {
     "defaultMessage": "Tìm trong {count, number} {contentType}..."
@@ -519,19 +519,19 @@
     "defaultMessage": "Tên tệp"
   },
   "content.page-layout.share.label": {
-    "defaultMessage": "Chia sẻ"
+    "defaultMessage": "Chia s�?
   },
   "content.page-layout.share.markdown-links": {
     "defaultMessage": "Đường dẫn Markdown"
   },
   "content.page-layout.share.project-links": {
-    "defaultMessage": "Đường dẫn dự án"
+    "defaultMessage": "Đường dẫn d�?án"
   },
   "content.page-layout.share.project-names": {
-    "defaultMessage": "Tên dự án"
+    "defaultMessage": "Tên d�?án"
   },
   "content.page-layout.sort.alphabetical": {
-    "defaultMessage": "Thứ tự bảng chữ cái"
+    "defaultMessage": "Th�?t�?bảng ch�?cái"
   },
   "content.page-layout.sort.date-added-newest": {
     "defaultMessage": "Mới nhất"
@@ -543,16 +543,16 @@
     "defaultMessage": "Sắp xếp theo {mode}"
   },
   "content.page-layout.update-all": {
-    "defaultMessage": "Cập nhật tất cả"
+    "defaultMessage": "Cập nhật tất c�?
   },
   "content.page-layout.upload-files": {
     "defaultMessage": "Tải tệp lên"
   },
   "content.selection-bar.all-already-disabled": {
-    "defaultMessage": "Tất cả nội dung đã chọn đều đã được tắt"
+    "defaultMessage": "Tất c�?nội dung đã chọn đều đã được tắt"
   },
   "content.selection-bar.all-already-enabled": {
-    "defaultMessage": "Tất cả nội dung đã chọn đều đã được bật"
+    "defaultMessage": "Tất c�?nội dung đã chọn đều đã được bật"
   },
   "content.selection-bar.bulk.deleting": {
     "defaultMessage": "Đang xóa {progress}/{total} {contentType}..."
@@ -588,7 +588,7 @@
     "defaultMessage": "Tạo cấu hình"
   },
   "creation-flow.button.create-world": {
-    "defaultMessage": "Tạo thế giới"
+    "defaultMessage": "Tạo th�?giới"
   },
   "creation-flow.button.finish": {
     "defaultMessage": "Hoàn tất"
@@ -600,16 +600,16 @@
     "defaultMessage": "Nhập {count, plural, other {# cấu hình}}"
   },
   "creation-flow.button.setup-server": {
-    "defaultMessage": "Tạo máy chủ"
+    "defaultMessage": "Tạo máy ch�?
   },
   "creation-flow.modal.custom-setup.build-number.label": {
-    "defaultMessage": "Số bản dựng"
+    "defaultMessage": "S�?bản dựng"
   },
   "creation-flow.modal.custom-setup.build-number.placeholder": {
-    "defaultMessage": "Chọn số bản dựng"
+    "defaultMessage": "Chọn s�?bản dựng"
   },
   "creation-flow.modal.custom-setup.build-number.search-placeholder": {
-    "defaultMessage": "Tìm số bản dựng..."
+    "defaultMessage": "Tìm s�?bản dựng..."
   },
   "creation-flow.modal.custom-setup.content-loader.label": {
     "defaultMessage": "Mod loader"
@@ -654,22 +654,22 @@
     "defaultMessage": "Nhập tên cấu hình"
   },
   "creation-flow.modal.custom-setup.options.no-versions-available": {
-    "defaultMessage": "Không có phiên bản khả dụng"
+    "defaultMessage": "Không có phiên bản kh�?dụng"
   },
   "creation-flow.modal.final-config.additional-settings.title": {
     "defaultMessage": "Lựa chọn khác"
   },
   "creation-flow.modal.final-config.backup.before-reset-server.name": {
-    "defaultMessage": "Trước khi xóa máy chủ"
+    "defaultMessage": "Trước khi xóa máy ch�?
   },
   "creation-flow.modal.final-config.difficulty.easy": {
-    "defaultMessage": "Dễ"
+    "defaultMessage": "D�?
   },
   "creation-flow.modal.final-config.difficulty.hard": {
     "defaultMessage": "Khó"
   },
   "creation-flow.modal.final-config.difficulty.label": {
-    "defaultMessage": "Độ khó"
+    "defaultMessage": "Đ�?khó"
   },
   "creation-flow.modal.final-config.difficulty.normal": {
     "defaultMessage": "Trung bình"
@@ -687,19 +687,19 @@
     "defaultMessage": "Hardcore"
   },
   "creation-flow.modal.final-config.gamemode.label": {
-    "defaultMessage": "Chế độ"
+    "defaultMessage": "Ch�?đ�?
   },
   "creation-flow.modal.final-config.gamemode.survival": {
     "defaultMessage": "Sinh tồn"
   },
   "creation-flow.modal.final-config.generate-structures.description": {
-    "defaultMessage": "Sửa đổi về việc Làng, Cổng The End, hoặc các công trình tương tự được tạo ra hay không."
+    "defaultMessage": "Sửa đổi v�?việc Làng, Cổng The End, hoặc các công trình tương t�?được tạo ra hay không."
   },
   "creation-flow.modal.final-config.generate-structures.label": {
     "defaultMessage": "Tạo Công trình"
   },
   "creation-flow.modal.final-config.generator-settings-json.placeholder": {
-    "defaultMessage": "Nhập dòng cài đặt JSON cho bộ tạo thế giới tại đây"
+    "defaultMessage": "Nhập dòng cài đặt JSON cho b�?tạo th�?giới tại đây"
   },
   "creation-flow.modal.final-config.generator-settings.custom": {
     "defaultMessage": "Tùy chỉnh"
@@ -708,31 +708,31 @@
     "defaultMessage": "Mặc định"
   },
   "creation-flow.modal.final-config.generator-settings.description": {
-    "defaultMessage": "Được sử dụng để tùy chỉnh thế giới như việc tùy chỉnh các lớp khối trong thế giới siêu phẳng."
+    "defaultMessage": "Được s�?dụng đ�?tùy chỉnh th�?giới như việc tùy chỉnh các lớp khối trong th�?giới siêu phẳng."
   },
   "creation-flow.modal.final-config.generator-settings.flat": {
     "defaultMessage": "Phẳng"
   },
   "creation-flow.modal.final-config.generator-settings.label": {
-    "defaultMessage": "Tùy chọn bộ khởi tạo thế giới"
+    "defaultMessage": "Tùy chọn b�?khởi tạo th�?giới"
   },
   "creation-flow.modal.final-config.generator-settings.placeholder": {
-    "defaultMessage": "Chọn chế độ khởi tạo"
+    "defaultMessage": "Chọn ch�?đ�?khởi tạo"
   },
   "creation-flow.modal.final-config.world-name.label": {
-    "defaultMessage": "Tên thế giới"
+    "defaultMessage": "Tên th�?giới"
   },
   "creation-flow.modal.final-config.world-name.placeholder": {
-    "defaultMessage": "Nhập tên thế giới"
+    "defaultMessage": "Nhập tên th�?giới"
   },
   "creation-flow.modal.final-config.world-seed.description": {
-    "defaultMessage": "Để trống cho hạt giống ngẫu nhiên."
+    "defaultMessage": "Đ�?trống cho hạt giống ngẫu nhiên."
   },
   "creation-flow.modal.final-config.world-seed.label-with-optional": {
-    "defaultMessage": "Hạt giống thế giới <optional>(Không bắt buộc)</optional>"
+    "defaultMessage": "Hạt giống th�?giới <optional>(Không bắt buộc)</optional>"
   },
   "creation-flow.modal.final-config.world-seed.placeholder": {
-    "defaultMessage": "Nhập hạt giống thế giới"
+    "defaultMessage": "Nhập hạt giống th�?giới"
   },
   "creation-flow.modal.final-config.world-type.amplified": {
     "defaultMessage": "Khuếch đại"
@@ -741,13 +741,13 @@
     "defaultMessage": "Mặc định"
   },
   "creation-flow.modal.final-config.world-type.label": {
-    "defaultMessage": "Loại thế giới"
+    "defaultMessage": "Loại th�?giới"
   },
   "creation-flow.modal.final-config.world-type.large-biomes": {
     "defaultMessage": "Quần xã lớn"
   },
   "creation-flow.modal.final-config.world-type.placeholder": {
-    "defaultMessage": "Chọn loại thế giới"
+    "defaultMessage": "Chọn loại th�?giới"
   },
   "creation-flow.modal.final-config.world-type.single-biome": {
     "defaultMessage": "Quần xã đơn"
@@ -759,7 +759,7 @@
     "defaultMessage": "Tạo"
   },
   "creation-flow.modal.import-instance.custom-launcher.name": {
-    "defaultMessage": "Tự chọn ({pathName})"
+    "defaultMessage": "T�?chọn ({pathName})"
   },
   "creation-flow.modal.import-instance.detecting-launcher-instances": {
     "defaultMessage": "Đang nhận dạng cấu hình..."
@@ -768,13 +768,13 @@
     "defaultMessage": "Cấu hình trình khởi chạy khác"
   },
   "creation-flow.modal.import-instance.launcher-path.add": {
-    "defaultMessage": "Thêm vị trí trình khởi chạy"
+    "defaultMessage": "Thêm v�?trí trình khởi chạy"
   },
   "creation-flow.modal.import-instance.launcher-path.placeholder": {
-    "defaultMessage": "Vị trí đến trình khởi chạy..."
+    "defaultMessage": "V�?trí đến trình khởi chạy..."
   },
   "creation-flow.modal.import-instance.notification.no-instances-found.text": {
-    "defaultMessage": "Không tìm thấy cấu hình trong vị trí trên."
+    "defaultMessage": "Không tìm thấy cấu hình trong v�?trí trên."
   },
   "creation-flow.modal.import-instance.notification.no-instances-found.title": {
     "defaultMessage": "Không cấu hình được thấy"
@@ -804,19 +804,19 @@
     "defaultMessage": "Cấu hình là một bản cài Minecraft với mod, phiên bản và loader của riêng nó."
   },
   "creation-flow.modal.setup-type.option.custom-setup.description": {
-    "defaultMessage": "Cài từ đầu bằng cách lựa chọn mod loader và phiên bản game."
+    "defaultMessage": "Cài t�?đầu bằng cách lựa chọn mod loader và phiên bản game."
   },
   "creation-flow.modal.setup-type.option.custom-setup.title": {
     "defaultMessage": "Cấu hình tùy chỉnh"
   },
   "creation-flow.modal.setup-type.option.import-instance.description": {
-    "defaultMessage": "Nhập từ Prism, Curseforge, Tlauncher hoặc tương tự."
+    "defaultMessage": "Nhập t�?Prism, Curseforge, Tlauncher hoặc tương t�?"
   },
   "creation-flow.modal.setup-type.option.import-instance.title": {
     "defaultMessage": "Nhập cấu hình"
   },
   "creation-flow.modal.setup-type.option.modpack-base.description": {
-    "defaultMessage": "Duyệt modpack trên Modrinth hoặc nhập từ tệp."
+    "defaultMessage": "Duyệt modpack trên Bbsmc hoặc nhập t�?tệp."
   },
   "creation-flow.modal.setup-type.option.modpack-base.title": {
     "defaultMessage": "Cài modpack"
@@ -834,7 +834,7 @@
     "defaultMessage": "Chọn loại cấu hình"
   },
   "creation-flow.modal.setup-type.title.world": {
-    "defaultMessage": "Chọn loại thế giới"
+    "defaultMessage": "Chọn loại th�?giới"
   },
   "creation-flow.title.choose-modpack": {
     "defaultMessage": "Chọn modpack"
@@ -843,25 +843,25 @@
     "defaultMessage": "Tạo cấu hình"
   },
   "creation-flow.title.create-world": {
-    "defaultMessage": "Tạo thế giới"
+    "defaultMessage": "Tạo th�?giới"
   },
   "creation-flow.title.import-instance": {
     "defaultMessage": "Nhập cấu hình"
   },
   "creation-flow.title.reset-server": {
-    "defaultMessage": "Cài lại máy chủ"
+    "defaultMessage": "Cài lại máy ch�?
   },
   "creation-flow.title.set-up-server": {
-    "defaultMessage": "Tạo máy chủ"
+    "defaultMessage": "Tạo máy ch�?
   },
   "external-project-license-status.no": {
     "defaultMessage": "Không"
   },
   "external-project-license-status.permanent-no": {
-    "defaultMessage": "Không bao giờ"
+    "defaultMessage": "Không bao gi�?
   },
   "external-project-license-status.unidentified": {
-    "defaultMessage": "Không thể xác định"
+    "defaultMessage": "Không th�?xác định"
   },
   "external-project-license-status.with-attribution": {
     "defaultMessage": "Với quy kết"
@@ -879,19 +879,19 @@
     "defaultMessage": "Ghi đè"
   },
   "files.conflict-modal.overwrite-file-label": {
-    "defaultMessage": "<file-path>{path}</file-path> sẽ bị ghi đè"
+    "defaultMessage": "<file-path>{path}</file-path> s�?b�?ghi đè"
   },
   "files.conflict-modal.overwrite-many-warning": {
-    "defaultMessage": "Hơn 100 tệp sẽ bị ghi đè nếu bạn tiếp tục giải nén; dưới đây là một số tệp trong số đó."
+    "defaultMessage": "Hơn 100 tệp s�?b�?ghi đè nếu bạn tiếp tục giải nén; dưới đây là một s�?tệp trong s�?đó."
   },
   "files.conflict-modal.overwrite-warning": {
-    "defaultMessage": "{count} tệp sau đây đã tồn tại trên máy chủ và sẽ bị ghi đè nếu bạn tiếp tục giải nén."
+    "defaultMessage": "{count} tệp sau đây đã tồn tại trên máy ch�?và s�?b�?ghi đè nếu bạn tiếp tục giải nén."
   },
   "files.conflict-modal.overwritten-count": {
-    "defaultMessage": "{count} bị ghi đè"
+    "defaultMessage": "{count} b�?ghi đè"
   },
   "files.conflict-modal.warning-header": {
-    "defaultMessage": "Những tệp sẽ bị ghi đè"
+    "defaultMessage": "Những tệp s�?b�?ghi đè"
   },
   "files.create-modal.create-button": {
     "defaultMessage": "Tạo {type}"
@@ -912,22 +912,22 @@
     "defaultMessage": "Xoá tệp"
   },
   "files.delete-modal.warning.file": {
-    "defaultMessage": "Tệp này sẽ bị xóa vĩnh viễn. Hành động này sẽ không thể bị hoàn tác."
+    "defaultMessage": "Tệp này s�?b�?xóa vĩnh viễn. Hành động này s�?không th�?b�?hoàn tác."
   },
   "files.delete-modal.warning.folder": {
-    "defaultMessage": "Thư mục này và mọi thứ trong nó đều sẽ bị xóa vĩnh viễn. Hành động này sẽ không thể bị hoàn tác."
+    "defaultMessage": "Thư mục này và mọi th�?trong nó đều s�?b�?xóa vĩnh viễn. Hành động này s�?không th�?b�?hoàn tác."
   },
   "files.editor.failed-to-open-text": {
-    "defaultMessage": "Không thể tải nội dung tệp."
+    "defaultMessage": "Không th�?tải nội dung tệp."
   },
   "files.editor.failed-to-open-title": {
-    "defaultMessage": "Không mở tệp được"
+    "defaultMessage": "Không m�?tệp được"
   },
   "files.editor.failed-to-share-text": {
-    "defaultMessage": "Không thể tải lên mclo.gs."
+    "defaultMessage": "Không th�?tải lên mclo.gs."
   },
   "files.editor.failed-to-share-title": {
-    "defaultMessage": "Không chia sẻ tệp được"
+    "defaultMessage": "Không chia s�?tệp được"
   },
   "files.editor.file-saved-text": {
     "defaultMessage": "Tệp của bạn đã được lưu lại."
@@ -948,13 +948,13 @@
     "defaultMessage": "Trận tiếp theo"
   },
   "files.editor.find-no-results": {
-    "defaultMessage": "Không có kết quả"
+    "defaultMessage": "Không có kết qu�?
   },
   "files.editor.find-previous-match": {
-    "defaultMessage": "Những kết quả trước"
+    "defaultMessage": "Những kết qu�?trước"
   },
   "files.editor.find-toggle-replace": {
-    "defaultMessage": "Chuyển đổi thay thế"
+    "defaultMessage": "Chuyển đổi thay th�?
   },
   "files.editor.log-url-copied-text": {
     "defaultMessage": "URL tệp nhật kí của bạn đã được chép vào bảng tạm."
@@ -963,13 +963,13 @@
     "defaultMessage": "Đã chép URL nhật kí"
   },
   "files.editor.replace": {
-    "defaultMessage": "Thay thế"
+    "defaultMessage": "Thay th�?
   },
   "files.editor.replace-all": {
-    "defaultMessage": "Thay thế tất cả"
+    "defaultMessage": "Thay th�?tất c�?
   },
   "files.editor.replace-in-file": {
-    "defaultMessage": "Thay thế"
+    "defaultMessage": "Thay th�?
   },
   "files.editor.save-failed-text": {
     "defaultMessage": "Không lưu tệp này được."
@@ -978,19 +978,19 @@
     "defaultMessage": "Không lưu được"
   },
   "files.error.go-to-home": {
-    "defaultMessage": "Quay về thư mục gốc"
+    "defaultMessage": "Quay v�?thư mục gốc"
   },
   "files.error.try-again": {
-    "defaultMessage": "Thử lại"
+    "defaultMessage": "Th�?lại"
   },
   "files.image_viewer.image_too_large": {
-    "defaultMessage": "Tệp ảnh quá lớn để xem (tối đa {maxDimension}x{maxDimension} pixels)"
+    "defaultMessage": "Tệp ảnh quá lớn đ�?xem (tối đa {maxDimension}x{maxDimension} pixels)"
   },
   "files.image_viewer.invalid_image": {
-    "defaultMessage": "Tệp ảnh rỗng hoặc không hợp lệ."
+    "defaultMessage": "Tệp ảnh rỗng hoặc không hợp l�?"
   },
   "files.image_viewer.load_failed": {
-    "defaultMessage": "Không thể tải ảnh"
+    "defaultMessage": "Không th�?tải ảnh"
   },
   "files.image_viewer.reset_zoom": {
     "defaultMessage": "Đặt lại thu phóng"
@@ -1002,7 +1002,7 @@
     "defaultMessage": "Phóng to"
   },
   "files.image_viewer.zoom_out": {
-    "defaultMessage": "Thu nhỏ"
+    "defaultMessage": "Thu nh�?
   },
   "files.item-type.file": {
     "defaultMessage": "tệp"
@@ -1017,13 +1017,13 @@
     "defaultMessage": "thư mục"
   },
   "files.layout.busy-warning": {
-    "defaultMessage": "Các thao tác với tệp sẽ bị vô hiệu hóa trong khi thao tác đang diễn ra."
+    "defaultMessage": "Các thao tác với tệp s�?b�?vô hiệu hóa trong khi thao tác đang diễn ra."
   },
   "files.layout.dry-run-failed-text": {
-    "defaultMessage": "Lỗi khi chạy thử nghiệm không tải"
+    "defaultMessage": "Lỗi khi chạy th�?nghiệm không tải"
   },
   "files.layout.dry-run-failed-title": {
-    "defaultMessage": "Thử nghiệm không thành công"
+    "defaultMessage": "Th�?nghiệm không thành công"
   },
   "files.layout.empty-folder-description": {
     "defaultMessage": "Không có tệp hoặc thư mục nào."
@@ -1035,7 +1035,7 @@
     "defaultMessage": "Thư mục không tồn tại."
   },
   "files.layout.error-title": {
-    "defaultMessage": "Không thể tải tệp"
+    "defaultMessage": "Không th�?tải tệp"
   },
   "files.layout.extraction-started-title": {
     "defaultMessage": "Quá trình giải nén bắt đầu"
@@ -1047,7 +1047,7 @@
     "defaultMessage": "Bạn có thay đổi chưa được lưu."
   },
   "files.move-modal.current-location": {
-    "defaultMessage": "Vị trí hiện tại"
+    "defaultMessage": "V�?trí hiện tại"
   },
   "files.move-modal.destination-path": {
     "defaultMessage": "Đường dẫn đích"
@@ -1059,7 +1059,7 @@
     "defaultMessage": "Di chuyển {type}"
   },
   "files.navbar.back-to-home": {
-    "defaultMessage": "Quay về trang chủ"
+    "defaultMessage": "Quay v�?trang ch�?
   },
   "files.navbar.breadcrumb-navigation": {
     "defaultMessage": "Điều hướng bằng đường dẫn"
@@ -1074,10 +1074,10 @@
     "defaultMessage": "Tìm trong tệp"
   },
   "files.navbar.home": {
-    "defaultMessage": "Trang chủ"
+    "defaultMessage": "Trang ch�?
   },
   "files.navbar.install-curseforge-pack": {
-    "defaultMessage": "Cài đặt modpack từ CurseForge"
+    "defaultMessage": "Cài đặt modpack t�?CurseForge"
   },
   "files.navbar.new-file": {
     "defaultMessage": "Tệp mới"
@@ -1089,16 +1089,16 @@
     "defaultMessage": "Tìm kiếm tệp tin"
   },
   "files.navbar.share-to-mclogs": {
-    "defaultMessage": "Chia sẻ lên mclo.gs"
+    "defaultMessage": "Chia s�?lên mclo.gs"
   },
   "files.navbar.upload-file": {
     "defaultMessage": "Tải tệp lên"
   },
   "files.navbar.upload-from-zip": {
-    "defaultMessage": "Tải lên từ tệp .zip"
+    "defaultMessage": "Tải lên t�?tệp .zip"
   },
   "files.navbar.upload-from-zip-url": {
-    "defaultMessage": "Tải lên từ URL tệp .zip"
+    "defaultMessage": "Tải lên t�?URL tệp .zip"
   },
   "files.operations.current-file": {
     "defaultMessage": "Tệp hiện tại: {file}"
@@ -1113,10 +1113,10 @@
     "defaultMessage": "Đã hoàn tất trích xuất {source}"
   },
   "files.operations.extracting-failed": {
-    "defaultMessage": "Không thể trích xuất {source}"
+    "defaultMessage": "Không th�?trích xuất {source}"
   },
   "files.operations.modpack-from-url": {
-    "defaultMessage": "modpack từ URL"
+    "defaultMessage": "modpack t�?URL"
   },
   "files.rename-modal.header": {
     "defaultMessage": "Đổi tên {name}"
@@ -1140,16 +1140,16 @@
     "defaultMessage": "Kích thước"
   },
   "files.unsaved-changes-modal.body": {
-    "defaultMessage": "Bạn có các thay đổi chưa được lưu. Chúng sẽ bị mất nếu bạn rời khỏi trang này. Bạn có muốn lưu lại trước không?"
+    "defaultMessage": "Bạn có các thay đổi chưa được lưu. Chúng s�?b�?mất nếu bạn rời khỏi trang này. Bạn có muốn lưu lại trước không?"
   },
   "files.unsaved-changes-modal.discard": {
-    "defaultMessage": "Huỷ bỏ"
+    "defaultMessage": "Hu�?b�?
   },
   "files.unsaved-changes-modal.header": {
     "defaultMessage": "Thay đổi chưa lưu"
   },
   "files.upload-dropdown.cancelled": {
-    "defaultMessage": "Đã huỷ"
+    "defaultMessage": "Đã hu�?
   },
   "files.upload-dropdown.failed-file-exists": {
     "defaultMessage": "Thất bại - Tệp đã tồn tại"
@@ -1179,13 +1179,13 @@
     "defaultMessage": "Còn {count}"
   },
   "files.upload.drag-and-drop.drop-to-upload": {
-    "defaultMessage": "Thả {type} vào đây để tải lên"
+    "defaultMessage": "Th�?{type} vào đây đ�?tải lên"
   },
   "files.validation.name-invalid-directory": {
-    "defaultMessage": "Tên chỉ được bao gồm chữ số, gạch ngang, gạch dưới và dấu cách."
+    "defaultMessage": "Tên ch�?được bao gồm ch�?s�? gạch ngang, gạch dưới và dấu cách."
   },
   "files.validation.name-invalid-file": {
-    "defaultMessage": "Tên chỉ được bao gồm chữ số, gạch ngang, gạch dưới và dấu cách."
+    "defaultMessage": "Tên ch�?được bao gồm ch�?s�? gạch ngang, gạch dưới và dấu cách."
   },
   "files.validation.name-label": {
     "defaultMessage": "Tên"
@@ -1200,10 +1200,10 @@
     "defaultMessage": "Cài đặt một modpack của CurseForge"
   },
   "files.zip-url-modal.cf-not-found-text": {
-    "defaultMessage": "Không thể tìm modpack của CurseForge từ đường dẫn đó."
+    "defaultMessage": "Không th�?tìm modpack của CurseForge t�?đường dẫn đó."
   },
   "files.zip-url-modal.cf-not-found-title": {
-    "defaultMessage": "Không thể tìm thấy modpack từ CurseForge"
+    "defaultMessage": "Không th�?tìm thấy modpack t�?CurseForge"
   },
   "files.zip-url-modal.enter-link": {
     "defaultMessage": "Nhập đường dẫn"
@@ -1212,7 +1212,7 @@
     "defaultMessage": "URL phải là URL phiên bản của gói mod trên CurseForge."
   },
   "files.zip-url-modal.error-url-invalid": {
-    "defaultMessage": "Đường dẫn phải khả dụng."
+    "defaultMessage": "Đường dẫn phải kh�?dụng."
   },
   "files.zip-url-modal.error-url-required": {
     "defaultMessage": "Bắt buộc có đường dẫn."
@@ -1224,19 +1224,19 @@
     "defaultMessage": "Cài đặt thất bại"
   },
   "files.zip-url-modal.step-copy-description": {
-    "defaultMessage": "Sao chép URL trong trang phiên bản và dán ở dưới."
+    "defaultMessage": "Sao chép URL trong trang phiên bản và dán �?dưới."
   },
   "files.zip-url-modal.step-copy-title": {
     "defaultMessage": "Sao chép đường dẫn"
   },
   "files.zip-url-modal.step-find-description": {
-    "defaultMessage": "Tìm và xác định vị trí Modpack Curseforge mà bạn muốn."
+    "defaultMessage": "Tìm và xác định v�?trí Modpack Curseforge mà bạn muốn."
   },
   "files.zip-url-modal.step-find-title": {
     "defaultMessage": "Tìm modpack"
   },
   "files.zip-url-modal.step-select-description": {
-    "defaultMessage": "Vào mục \"Files\" và chọn phiên bản để cài."
+    "defaultMessage": "Vào mục \"Files\" và chọn phiên bản đ�?cài."
   },
   "files.zip-url-modal.step-select-title": {
     "defaultMessage": "Chọn phiên bản"
@@ -1248,16 +1248,16 @@
     "defaultMessage": "Sao chép và dán dường dẫn trực tiếp của tệp .zip."
   },
   "files.zip-url-modal.zip-header": {
-    "defaultMessage": "Đang tải lên nội dung .zip từ đường dẫn"
+    "defaultMessage": "Đang tải lên nội dung .zip t�?đường dẫn"
   },
   "form.label.address-line": {
-    "defaultMessage": "Dòng địa chỉ"
+    "defaultMessage": "Dòng địa ch�?
   },
   "form.label.address-line-2": {
-    "defaultMessage": "Dòng địa chỉ 2 (không bắt buộc)"
+    "defaultMessage": "Dòng địa ch�?2 (không bắt buộc)"
   },
   "form.label.amount": {
-    "defaultMessage": "Số tiền"
+    "defaultMessage": "S�?tiền"
   },
   "form.label.bank-name": {
     "defaultMessage": "Tên ngân hàng"
@@ -1266,7 +1266,7 @@
     "defaultMessage": "Tên doanh nghiệp"
   },
   "form.label.city": {
-    "defaultMessage": "Thành phố"
+    "defaultMessage": "Thành ph�?
   },
   "form.label.country": {
     "defaultMessage": "Quốc gia"
@@ -1281,7 +1281,7 @@
     "defaultMessage": "Tên"
   },
   "form.label.last-name": {
-    "defaultMessage": "Họ"
+    "defaultMessage": "H�?
   },
   "form.label.postal-code": {
     "defaultMessage": "Mã bưu chính/ZIP"
@@ -1290,13 +1290,13 @@
     "defaultMessage": "Bang/tỉnh"
   },
   "form.placeholder.address": {
-    "defaultMessage": "Nhập địa chỉ"
+    "defaultMessage": "Nhập địa ch�?
   },
   "form.placeholder.address-2": {
-    "defaultMessage": "Căn hộ, phòng, v.v."
+    "defaultMessage": "Căn h�? phòng, v.v."
   },
   "form.placeholder.amount": {
-    "defaultMessage": "Nhập số tiền"
+    "defaultMessage": "Nhập s�?tiền"
   },
   "form.placeholder.bank-name": {
     "defaultMessage": "Nhập tên ngân hàng"
@@ -1308,19 +1308,19 @@
     "defaultMessage": "Nhập tên doanh nghiệp"
   },
   "form.placeholder.city": {
-    "defaultMessage": "Nhập thành phố"
+    "defaultMessage": "Nhập thành ph�?
   },
   "form.placeholder.country": {
     "defaultMessage": "Chọn quốc gia"
   },
   "form.placeholder.email": {
-    "defaultMessage": "Nhập địa chỉ email"
+    "defaultMessage": "Nhập địa ch�?email"
   },
   "form.placeholder.first-name": {
     "defaultMessage": "Nhập tên"
   },
   "form.placeholder.last-name": {
-    "defaultMessage": "Nhập họ"
+    "defaultMessage": "Nhập h�?
   },
   "form.placeholder.postal-code": {
     "defaultMessage": "Nhập mã bưu chính"
@@ -1365,31 +1365,31 @@
     "defaultMessage": "Ảnh hưởng hiệu suất"
   },
   "header.category.resolutions": {
-    "defaultMessage": "Độ phân giải"
+    "defaultMessage": "Đ�?phân giải"
   },
   "hosting.content.failed-to-bulk-delete": {
-    "defaultMessage": "Không thể xóa nội dung"
+    "defaultMessage": "Không th�?xóa nội dung"
   },
   "hosting.content.failed-to-bulk-disable": {
-    "defaultMessage": "Không thể tắt nội dung"
+    "defaultMessage": "Không th�?tắt nội dung"
   },
   "hosting.content.failed-to-bulk-enable": {
-    "defaultMessage": "Không thể bật nội dung"
+    "defaultMessage": "Không th�?bật nội dung"
   },
   "hosting.content.failed-to-bulk-update": {
-    "defaultMessage": "Không thể cập nhật nội dung"
+    "defaultMessage": "Không th�?cập nhật nội dung"
   },
   "hosting.content.failed-to-install": {
-    "defaultMessage": "Không thể tải nội dung"
+    "defaultMessage": "Không th�?tải nội dung"
   },
   "hosting.content.failed-to-load-modpack-content": {
-    "defaultMessage": "Không thể tải nội dung của modpack"
+    "defaultMessage": "Không th�?tải nội dung của modpack"
   },
   "hosting.content.failed-to-load-versions": {
     "defaultMessage": "Lỗi load phiên bản"
   },
   "hosting.content.failed-to-remove": {
-    "defaultMessage": "Không thể xóa nội dung"
+    "defaultMessage": "Không th�?xóa nội dung"
   },
   "hosting.content.failed-to-toggle": {
     "defaultMessage": "Lỗi khi chuyển đổi {name}"
@@ -1404,70 +1404,70 @@
     "defaultMessage": "Thất bại trong việc tải file lên"
   },
   "hosting.loader.failed-to-change-version": {
-    "defaultMessage": "Không thể thay đổi phiên bản modpack"
+    "defaultMessage": "Không th�?thay đổi phiên bản modpack"
   },
   "hosting.loader.failed-to-load-versions": {
-    "defaultMessage": "Không thể truy cập được phiên bản"
+    "defaultMessage": "Không th�?truy cập được phiên bản"
   },
   "hosting.loader.failed-to-reinstall": {
-    "defaultMessage": "Không thể cài lại modpack"
+    "defaultMessage": "Không th�?cài lại modpack"
   },
   "hosting.loader.failed-to-repair": {
-    "defaultMessage": "Không thể khắc phục máy chủ"
+    "defaultMessage": "Không th�?khắc phục máy ch�?
   },
   "hosting.loader.failed-to-reset-to-onboarding": {
-    "defaultMessage": "Không thể tải lại máy chủ vào trạng thái khởi đầu"
+    "defaultMessage": "Không th�?tải lại máy ch�?vào trạng thái khởi đầu"
   },
   "hosting.loader.failed-to-save-settings": {
-    "defaultMessage": "Không thể lưu cài đặt"
+    "defaultMessage": "Không th�?lưu cài đặt"
   },
   "hosting.loader.failed-to-unlink": {
-    "defaultMessage": "Không thể ngừng liên kết modpack"
+    "defaultMessage": "Không th�?ngừng liên kết modpack"
   },
   "hosting.loader.loader-version": {
     "defaultMessage": "Phiên bản {loader, select, null {Loader} other {{loader}}}"
   },
   "hosting.loader.repair-started-text": {
-    "defaultMessage": "Máy chủ của bạn đã được khắc phục."
+    "defaultMessage": "Máy ch�?của bạn đã được khắc phục."
   },
   "hosting.loader.repair-started-title": {
     "defaultMessage": "Đã khắc phục"
   },
   "hosting.loader.reset-server": {
-    "defaultMessage": "Cài lại máy chủ"
+    "defaultMessage": "Cài lại máy ch�?
   },
   "hosting.loader.reset-server-description": {
-    "defaultMessage": "Xóa tất cả dữ liệu trong máy chủ, bao gồm thế giới, mod, và tệp cấu hình. Các bản sao lưu vẫn sẽ được giữ nguyên và có thể dùng khôi phục lại."
+    "defaultMessage": "Xóa tất c�?d�?liệu trong máy ch�? bao gồm th�?giới, mod, và tệp cấu hình. Các bản sao lưu vẫn s�?được gi�?nguyên và có th�?dùng khôi phục lại."
   },
   "hosting.loader.reset-to-onboarding-button": {
-    "defaultMessage": "Cài lại về sự khởi đầu"
+    "defaultMessage": "Cài lại v�?s�?khởi đầu"
   },
   "hosting.loader.reset-to-onboarding-modal-description": {
-    "defaultMessage": "Điều này sẽ đưa máy chủ trở lại từ đầu để quá trình cài đặt sẽ được thực hiên lần nữa. Bạn chắc chắn sẽ tiếp tục chứ?"
+    "defaultMessage": "Điều này s�?đưa máy ch�?tr�?lại t�?đầu đ�?quá trình cài đặt s�?được thực hiên lần nữa. Bạn chắc chắn s�?tiếp tục ch�?"
   },
   "hosting.loader.reset-to-onboarding-modal-title": {
-    "defaultMessage": "Cài lại từ đầu"
+    "defaultMessage": "Cài lại t�?đầu"
   },
   "hosting.loader.reset-to-onboarding-success-description": {
-    "defaultMessage": "Máy chủ này đã được đưa về trạng thái khởi đầu."
+    "defaultMessage": "Máy ch�?này đã được đưa v�?trạng thái khởi đầu."
   },
   "hosting.loader.reset-to-onboarding-success-title": {
-    "defaultMessage": "Đã cài lại máy chủ"
+    "defaultMessage": "Đã cài lại máy ch�?
   },
   "hosting.loader.support-options-title": {
-    "defaultMessage": "Cài đặt hỗ trợ"
+    "defaultMessage": "Cài đặt h�?tr�?
   },
   "hosting.specs.burst": {
     "defaultMessage": "Tăng tốc tối đa lên {cpus} CPU"
   },
   "hosting.specs.burst.tooltip": {
-    "defaultMessage": "Tính năng tăng tốc CPU cho phép máy chủ của bạn tạm thời sử dụng thêm các luồng để giúp giảm thiểu hiện tượng tụt TPS. Nhấp để xem chi tiết."
+    "defaultMessage": "Tính năng tăng tốc CPU cho phép máy ch�?của bạn tạm thời s�?dụng thêm các luồng đ�?giúp giảm thiểu hiện tượng tụt TPS. Nhấp đ�?xem chi tiết."
   },
   "hosting.specs.gb-ram": {
     "defaultMessage": "{ram} GB RAM"
   },
   "hosting.specs.gb-storage": {
-    "defaultMessage": "{storage} GB bộ nhớ"
+    "defaultMessage": "{storage} GB b�?nh�?
   },
   "hosting.specs.shared-cpus": {
     "defaultMessage": "{cpus} CPU dùng chung"
@@ -1479,7 +1479,7 @@
     "defaultMessage": "Xoá biểu tượng"
   },
   "icon-select.replace": {
-    "defaultMessage": "Thay thế biểu tượng"
+    "defaultMessage": "Thay th�?biểu tượng"
   },
   "icon-select.select": {
     "defaultMessage": "Chọn biểu tượng"
@@ -1494,13 +1494,13 @@
     "defaultMessage": "Chọn phiên bản"
   },
   "input.view.gallery": {
-    "defaultMessage": "Chế độ xem dạng thư viện"
+    "defaultMessage": "Ch�?đ�?xem dạng thư viện"
   },
   "input.view.grid": {
-    "defaultMessage": "Chế độ xem dạng lưới"
+    "defaultMessage": "Ch�?đ�?xem dạng lưới"
   },
   "input.view.list": {
-    "defaultMessage": "Chế độ xem dạng danh sách"
+    "defaultMessage": "Ch�?đ�?xem dạng danh sách"
   },
   "installation-settings.aria.select-game-version": {
     "defaultMessage": "Chọn phiên bản game"
@@ -1515,7 +1515,7 @@
     "defaultMessage": "Xác nhận"
   },
   "installation-settings.confirm-version-change-description": {
-    "defaultMessage": "Việc thay đổi sang phiên bản {gameVersion} sẽ sửa đổi các nội dung sau trên server của bạn."
+    "defaultMessage": "Việc thay đổi sang phiên bản {gameVersion} s�?sửa đổi các nội dung sau trên server của bạn."
   },
   "installation-settings.confirm-version-change-header": {
     "defaultMessage": "Xem lại thay đổi nội dung"
@@ -1524,13 +1524,13 @@
     "defaultMessage": "Chỉnh sửa cài đặt"
   },
   "installation-settings.edit.warning-instance": {
-    "defaultMessage": "Chúng tôi không khuyến khích bạn chỉnh sửa cài đặt sau khi đã cài đặt nội dung. Nếu bạn muốn thay đổi chúng, hãy cẩn thận vì điều này có thể gây ra lỗi."
+    "defaultMessage": "Chúng tôi không khuyến khích bạn chỉnh sửa cài đặt sau khi đã cài đặt nội dung. Nếu bạn muốn thay đổi chúng, hãy cẩn thận vì điều này có th�?gây ra lỗi."
   },
   "installation-settings.edit.warning-server": {
-    "defaultMessage": "Chúng tôi không khuyến khích chỉnh sửa cài đặt sau khi đã cài đặt nội dung. Nếu bạn muốn thay đổi chúng, hãy khởi động lại máy chủ của mình."
+    "defaultMessage": "Chúng tôi không khuyến khích chỉnh sửa cài đặt sau khi đã cài đặt nội dung. Nếu bạn muốn thay đổi chúng, hãy khởi động lại máy ch�?của mình."
   },
   "installation-settings.incompatible-content.auto-fix-button": {
-    "defaultMessage": "Tự động sửa"
+    "defaultMessage": "T�?động sửa"
   },
   "installation-settings.incompatible-content.change-loader-button": {
     "defaultMessage": "Đổi modloader"
@@ -1539,7 +1539,7 @@
     "defaultMessage": "Vô hiệu quá xung đột"
   },
   "installation-settings.incompatible-content.game-version-warning-body": {
-    "defaultMessage": "Khi đổi phiên bản game, chúng tôi có thể tắt những nội dung không tương thích hoặc cố mà sửa những nội dung đó."
+    "defaultMessage": "Khi đổi phiên bản game, chúng tôi có th�?tắt những nội dung không tương thích hoặc c�?mà sửa những nội dung đó."
   },
   "installation-settings.incompatible-content.game-version-warning-title": {
     "defaultMessage": "Cảnh báo không tương thích"
@@ -1548,7 +1548,7 @@
     "defaultMessage": "Phát hiện nội dung không tương tích"
   },
   "installation-settings.incompatible-content.loader-change-body": {
-    "defaultMessage": "Khi đổi modloader, mọi nội dung được tải sẽ bị tắt. Chúng tôi khuyến khích bạn cài lại máy chủ của bạn hơn."
+    "defaultMessage": "Khi đổi modloader, mọi nội dung được tải s�?b�?tắt. Chúng tôi khuyến khích bạn cài lại máy ch�?của bạn hơn."
   },
   "installation-settings.incompatible-content.loader-change-title": {
     "defaultMessage": "Đổi loader rất hủy hại"
@@ -1560,16 +1560,16 @@
     "defaultMessage": "modpack"
   },
   "installation-settings.linked.server-project": {
-    "defaultMessage": "dự án máy chủ"
+    "defaultMessage": "d�?án máy ch�?
   },
   "installation-settings.loader-version": {
     "defaultMessage": "Phiên bản {loader}"
   },
   "installation-settings.platform-lock-tooltip": {
-    "defaultMessage": "Bạn sẽ cần khởi động lại máy chủ để đổi mod loader."
+    "defaultMessage": "Bạn s�?cần khởi động lại máy ch�?đ�?đổi mod loader."
   },
   "installation-settings.reinstall-modpack.description": {
-    "defaultMessage": "Cài lại modpack sẽ cài lại {type} về trạng thái ban đầu và xóa bỏ tất cả các mod và nội dung bạn đã thêm vào."
+    "defaultMessage": "Cài lại modpack s�?cài lại {type} v�?trạng thái ban đầu và xóa b�?tất c�?các mod và nội dung bạn đã thêm vào."
   },
   "installation-settings.reinstall-modpack.title": {
     "defaultMessage": "Cài đặt lại modpack"
@@ -1581,16 +1581,16 @@
     "defaultMessage": "Đã xoá (không tương thích)"
   },
   "installation-settings.repair.instance-description": {
-    "defaultMessage": "Cài đặt lại các thành phần phụ thuộc của Minecraft và kiểm tra tệp tin lỗi. Việc này có thể khắc phục các sự cố nếu game không khởi chạy được do lỗi liên quan đến launcher."
+    "defaultMessage": "Cài đặt lại các thành phần ph�?thuộc của Minecraft và kiểm tra tệp tin lỗi. Việc này có th�?khắc phục các s�?c�?nếu game không khởi chạy được do lỗi liên quan đến launcher."
   },
   "installation-settings.repair.instance-title": {
     "defaultMessage": "Sửa chữa phiên chơi"
   },
   "installation-settings.repair.server-description": {
-    "defaultMessage": "Cài đặt lại trình nạp và các thành phần phụ thuộc của Minecraft mà không xóa nội dung của bạn. Thao tác này có thể khắc phục các sự cố nếu server của bạn không khởi động đúng cách."
+    "defaultMessage": "Cài đặt lại trình nạp và các thành phần ph�?thuộc của Minecraft mà không xóa nội dung của bạn. Thao tác này có th�?khắc phục các s�?c�?nếu server của bạn không khởi động đúng cách."
   },
   "installation-settings.repair.server-title": {
-    "defaultMessage": "Sửa chữa máy chủ"
+    "defaultMessage": "Sửa chữa máy ch�?
   },
   "installation-settings.saving": {
     "defaultMessage": "Đang lưu..."
@@ -1599,28 +1599,28 @@
     "defaultMessage": "Tìm kiếm phiên bản trò chơi..."
   },
   "installation-settings.type.instance": {
-    "defaultMessage": "hồ sơ cấu hình"
+    "defaultMessage": "h�?sơ cấu hình"
   },
   "installation-settings.type.instance-possessive": {
-    "defaultMessage": "của hồ sơ cấu hình"
+    "defaultMessage": "của h�?sơ cấu hình"
   },
   "installation-settings.type.server": {
-    "defaultMessage": "máy chủ"
+    "defaultMessage": "máy ch�?
   },
   "installation-settings.type.server-possessive": {
-    "defaultMessage": "của máy chủ"
+    "defaultMessage": "của máy ch�?
   },
   "installation-settings.unlink": {
-    "defaultMessage": "Huỷ liên kết"
+    "defaultMessage": "Hu�?liên kết"
   },
   "installation-settings.unlink.description": {
-    "defaultMessage": "Hủy liên kết sẽ ngắt kết nối {type} khỏi dự án {projectType}, bạn sẽ có thể đổi loader và phiên bản Minecraft sau đó, nhưng bạn sẽ không nhận được các bản cập nhật trong tương lai."
+    "defaultMessage": "Hủy liên kết s�?ngắt kết nối {type} khỏi d�?án {projectType}, bạn s�?có th�?đổi loader và phiên bản Minecraft sau đó, nhưng bạn s�?không nhận được các bản cập nhật trong tương lai."
   },
   "installation-settings.verifying": {
     "defaultMessage": "Đang xác minh..."
   },
   "instance.confirm-reinstall.admonition-body": {
-    "defaultMessage": "Việc cài đặt lại sẽ đặt lại toàn bộ nội dung đã cài đặt hoặc đã chỉnh sửa về trạng thái gốc của modpack, đồng thời xóa mọi mod hoặc nội dung bạn đã thêm vào bản cài đặt ban đầu."
+    "defaultMessage": "Việc cài đặt lại s�?đặt lại toàn b�?nội dung đã cài đặt hoặc đã chỉnh sửa v�?trạng thái gốc của modpack, đồng thời xóa mọi mod hoặc nội dung bạn đã thêm vào bản cài đặt ban đầu."
   },
   "instance.confirm-reinstall.admonition-header": {
     "defaultMessage": "Cảnh báo khi cài đặt lại"
@@ -1632,37 +1632,37 @@
     "defaultMessage": "Cài đặt lại modpack"
   },
   "instance.confirm-repair.body.instance": {
-    "defaultMessage": "Sửa chữa sẽ cài lại loader và phần phụ thuộc của Minecraft mà không xóa nội dung của bạn. Điều này có thể khắc phục vấn đề nếu như game không chạy do lỗi trình khởi chạy."
+    "defaultMessage": "Sửa chữa s�?cài lại loader và phần ph�?thuộc của Minecraft mà không xóa nội dung của bạn. Điều này có th�?khắc phục vấn đ�?nếu như game không chạy do lỗi trình khởi chạy."
   },
   "instance.confirm-repair.body.server": {
-    "defaultMessage": "Sửa chữa sẽ cài lại loader và phần phụ thuộc của Minecraft mà không xóa nội dung của bạn. Việc này có thể khắc phục các sự cố nếu máy chủ không khởi chạy không chạy do lỗi trình khởi chạy."
+    "defaultMessage": "Sửa chữa s�?cài lại loader và phần ph�?thuộc của Minecraft mà không xóa nội dung của bạn. Việc này có th�?khắc phục các s�?c�?nếu máy ch�?không khởi chạy không chạy do lỗi trình khởi chạy."
   },
   "instance.confirm-repair.header": {
     "defaultMessage": "Sửa chữa {type}"
   },
   "instance.confirm-repair.instance-label": {
-    "defaultMessage": "hồ sơ cấu hình"
+    "defaultMessage": "h�?sơ cấu hình"
   },
   "instance.confirm-repair.repair-button": {
     "defaultMessage": "Sửa"
   },
   "instance.confirm-repair.server-label": {
-    "defaultMessage": "máy chủ"
+    "defaultMessage": "máy ch�?
   },
   "instance.worlds.game_mode.adventure": {
-    "defaultMessage": "Chế độ phiêu lưu"
+    "defaultMessage": "Ch�?đ�?phiêu lưu"
   },
   "instance.worlds.game_mode.creative": {
-    "defaultMessage": "Chế độ sáng tạo"
+    "defaultMessage": "Ch�?đ�?sáng tạo"
   },
   "instance.worlds.game_mode.spectator": {
-    "defaultMessage": "Chế độ khán giả"
+    "defaultMessage": "Ch�?đ�?khán gi�?
   },
   "instance.worlds.game_mode.survival": {
-    "defaultMessage": "Chế độ sinh tồn"
+    "defaultMessage": "Ch�?đ�?sinh tồn"
   },
   "instance.worlds.game_mode.unknown": {
-    "defaultMessage": "Chế độ chơi không xác định"
+    "defaultMessage": "Ch�?đ�?chơi không xác định"
   },
   "instances.content-install.compatible-count": {
     "defaultMessage": "Tương thích {count} cái với {count, plural, other {instance}}"
@@ -1674,10 +1674,10 @@
     "defaultMessage": "Chọn phiên bản game"
   },
   "instances.content-install.header": {
-    "defaultMessage": "Cài đặt dự án"
+    "defaultMessage": "Cài đặt d�?án"
   },
   "instances.content-install.incompatible-tooltip": {
-    "defaultMessage": "Cấu hình này dùng trình tải hoặc phiên bản khác mà nội dung này hỗ trợ."
+    "defaultMessage": "Cấu hình này dùng trình tải hoặc phiên bản khác mà nội dung này h�?tr�?"
   },
   "instances.content-install.install-button": {
     "defaultMessage": "Cài đặt"
@@ -1713,7 +1713,7 @@
     "defaultMessage": "Chọn biểu tượng"
   },
   "instances.modpack-content-modal.empty-description": {
-    "defaultMessage": "Gói modpack này không bao gồm các nội dung bổ sung nào."
+    "defaultMessage": "Gói modpack này không bao gồm các nội dung b�?sung nào."
   },
   "instances.modpack-content-modal.empty-title": {
     "defaultMessage": "Không có nội dung nào được tìm thấy"
@@ -1725,10 +1725,10 @@
     "defaultMessage": "Đang tải nội dung..."
   },
   "instances.modpack-content-modal.no-results": {
-    "defaultMessage": "Không có dự án nào phù hợp với kết quả tìm kiếm."
+    "defaultMessage": "Không có d�?án nào phù hợp với kết qu�?tìm kiếm."
   },
   "instances.modpack-content-modal.search-placeholder": {
-    "defaultMessage": "Tìm {count, number} {count, plural, other {dự án}}"
+    "defaultMessage": "Tìm {count, number} {count, plural, other {d�?án}}"
   },
   "instances.updater-modal.badge.current": {
     "defaultMessage": "Hiện tại"
@@ -1737,7 +1737,7 @@
     "defaultMessage": "Không tương thích"
   },
   "instances.updater-modal.downgrade-to": {
-    "defaultMessage": "Hạ cấp xuống {version}"
+    "defaultMessage": "H�?cấp xuống {version}"
   },
   "instances.updater-modal.header": {
     "defaultMessage": "Cập nhật phiên bản"
@@ -1752,19 +1752,19 @@
     "defaultMessage": "Ẩn không tương thích"
   },
   "instances.updater-modal.incompatibility-warning": {
-    "defaultMessage": "Phiên bản này được đánh dấu không tương thích với cấu hình này. Các nội dung phụ thuộc sẽ không được cài đặt ự động."
+    "defaultMessage": "Phiên bản này được đánh dấu không tương thích với cấu hình này. Các nội dung ph�?thuộc s�?không được cài đặt �?động."
   },
   "instances.updater-modal.incompatibility-warning-header": {
     "defaultMessage": "Chọn phiên bản"
   },
   "instances.updater-modal.incompatible-update.description": {
-    "defaultMessage": "{version} không được đánh dấu là tương thích với bản cài này. Nó có thể không chạy được hoặc chạy không như mong đợi."
+    "defaultMessage": "{version} không được đánh dấu là tương thích với bản cài này. Nó có th�?không chạy được hoặc chạy không như mong đợi."
   },
   "instances.updater-modal.incompatible-update.header": {
     "defaultMessage": "Cập nhật đến phiên bản không tương thích?"
   },
   "instances.updater-modal.incompatible-update.proceed": {
-    "defaultMessage": "Kệ và cập nhật"
+    "defaultMessage": "K�?và cập nhật"
   },
   "instances.updater-modal.install-anyway": {
     "defaultMessage": "Vẫn cài đặt"
@@ -1785,10 +1785,10 @@
     "defaultMessage": "Tìm phiên bản..."
   },
   "instances.updater-modal.select-version": {
-    "defaultMessage": "Chọn một phiên bản để xem nhật ký thay đổi"
+    "defaultMessage": "Chọn một phiên bản đ�?xem nhật ký thay đổi"
   },
   "instances.updater-modal.show-incompatible": {
-    "defaultMessage": "Hiển thị không tương thích"
+    "defaultMessage": "Hiển th�?không tương thích"
   },
   "instances.updater-modal.switch-to": {
     "defaultMessage": "Chuyển sang {version}"
@@ -1797,16 +1797,16 @@
     "defaultMessage": "Cập nhật lên {version}"
   },
   "instances.updater-modal.warning-app": {
-    "defaultMessage": "Việc cập nhật có thể gây lỗi cho phiên chơi của bạn. Hãy kiểm tra nhật ký thay đổi và sao lưu dữ liệu trước khi thực hiện."
+    "defaultMessage": "Việc cập nhật có th�?gây lỗi cho phiên chơi của bạn. Hãy kiểm tra nhật ký thay đổi và sao lưu d�?liệu trước khi thực hiện."
   },
   "instances.updater-modal.warning-web": {
-    "defaultMessage": "Việc cập nhật có thể gây lỗi cho thế giới của bạn. Hãy kiểm tra nhật ký thay đổi và sao lưu dữ liệu trước khi thực hiện."
+    "defaultMessage": "Việc cập nhật có th�?gây lỗi cho th�?giới của bạn. Hãy kiểm tra nhật ký thay đổi và sao lưu d�?liệu trước khi thực hiện."
   },
   "label.actions": {
     "defaultMessage": "Hành động"
   },
   "label.available": {
-    "defaultMessage": "{amount} khả dụng."
+    "defaultMessage": "{amount} kh�?dụng."
   },
   "label.changelog": {
     "defaultMessage": "Nhật ký thay đổi"
@@ -1815,16 +1815,16 @@
     "defaultMessage": "Đã lưu thay đổi"
   },
   "label.client-depends-warning": {
-    "defaultMessage": "Mod này phụ thuộc vào bản mod cho phía người chơi và có thể gây ra vấn đề khi khơi chạy máy chủ"
+    "defaultMessage": "Mod này ph�?thuộc vào bản mod cho phía người chơi và có th�?gây ra vấn đ�?khi khơi chạy máy ch�?
   },
   "label.client-only-warning": {
-    "defaultMessage": "Đây là mod dành cho phía người chơi và có thể gây ra vấn đề khi đang chạy máy chủ"
+    "defaultMessage": "Đây là mod dành cho phía người chơi và có th�?gây ra vấn đ�?khi đang chạy máy ch�?
   },
   "label.client-retained-warning": {
-    "defaultMessage": "Đây là mod phía máy khách, được cài đặt làm phần phụ thuộc, và có thể gây ra vấn đề khi khởi động máy chủ của bạn"
+    "defaultMessage": "Đây là mod phía máy khách, được cài đặt làm phần ph�?thuộc, và có th�?gây ra vấn đ�?khi khởi động máy ch�?của bạn"
   },
   "label.collections": {
-    "defaultMessage": "Bộ sưu tập"
+    "defaultMessage": "B�?sưu tập"
   },
   "label.confirm-password": {
     "defaultMessage": "Xác nhận mật khẩu"
@@ -1857,7 +1857,7 @@
     "defaultMessage": "Xoá ngay lập tức"
   },
   "label.description": {
-    "defaultMessage": "Mô tả"
+    "defaultMessage": "Mô t�?
   },
   "label.details": {
     "defaultMessage": "Chi tiết"
@@ -1872,7 +1872,7 @@
     "defaultMessage": "Email"
   },
   "label.email-username": {
-    "defaultMessage": "Địa chỉ email hoặc tên đăng nhập"
+    "defaultMessage": "Địa ch�?email hoặc tên đăng nhập"
   },
   "label.error": {
     "defaultMessage": "Lỗi"
@@ -1884,10 +1884,10 @@
     "defaultMessage": "Lọc theo"
   },
   "label.filters": {
-    "defaultMessage": "Bộ lọc"
+    "defaultMessage": "B�?lọc"
   },
   "label.followed-projects": {
-    "defaultMessage": "Dự án đã theo dõi"
+    "defaultMessage": "D�?án đã theo dõi"
   },
   "label.game-version": {
     "defaultMessage": "Phiên bản trò chơi"
@@ -1938,7 +1938,7 @@
     "defaultMessage": "Mật khẩu"
   },
   "label.plan-custom": {
-    "defaultMessage": "Tuỳ chỉnh"
+    "defaultMessage": "Tu�?chỉnh"
   },
   "label.plan-large": {
     "defaultMessage": "Lớn"
@@ -1947,7 +1947,7 @@
     "defaultMessage": "Trung bình"
   },
   "label.plan-small": {
-    "defaultMessage": "Nhỏ"
+    "defaultMessage": "Nh�?
   },
   "label.plan-unknown": {
     "defaultMessage": "Không rõ"
@@ -1959,13 +1959,13 @@
     "defaultMessage": "Đã chơi {ago}"
   },
   "label.project": {
-    "defaultMessage": "Dự án"
+    "defaultMessage": "D�?án"
   },
   "label.public": {
     "defaultMessage": "Công khai"
   },
   "label.rejected": {
-    "defaultMessage": "Bị từ chối"
+    "defaultMessage": "B�?t�?chối"
   },
   "label.rename-failed": {
     "defaultMessage": "Đổi tên không thành công"
@@ -1983,7 +1983,7 @@
     "defaultMessage": "Tìm kiếm"
   },
   "label.select-all": {
-    "defaultMessage": "Chọn tất cả"
+    "defaultMessage": "Chọn tất c�?
   },
   "label.selected": {
     "defaultMessage": "Đã chọn"
@@ -1992,10 +1992,10 @@
     "defaultMessage": "Hành động lựa chọn"
   },
   "label.server": {
-    "defaultMessage": "Máy chủ"
+    "defaultMessage": "Máy ch�?
   },
   "label.servers": {
-    "defaultMessage": "Máy chủ"
+    "defaultMessage": "Máy ch�?
   },
   "label.settings": {
     "defaultMessage": "Cài đặt"
@@ -2010,7 +2010,7 @@
     "defaultMessage": "Thành công"
   },
   "label.title": {
-    "defaultMessage": "Tiêu đề"
+    "defaultMessage": "Tiêu đ�?
   },
   "label.unknown": {
     "defaultMessage": "Không rõ"
@@ -2040,10 +2040,10 @@
     "defaultMessage": "Xem"
   },
   "label.visibility": {
-    "defaultMessage": "Khả năng hiển thị"
+    "defaultMessage": "Kh�?năng hiển th�?
   },
   "label.visit-your-profile": {
-    "defaultMessage": "Xem hồ sơ của bạn"
+    "defaultMessage": "Xem h�?sơ của bạn"
   },
   "label.yes": {
     "defaultMessage": "Có"
@@ -2061,10 +2061,10 @@
     "defaultMessage": "Tiếng Đức (Đức)"
   },
   "locale.en-US": {
-    "defaultMessage": "Tiếng Anh (Hoa Kỳ)"
+    "defaultMessage": "Tiếng Anh (Hoa K�?"
   },
   "locale.es-419": {
-    "defaultMessage": "Tiếng Tây Ban Nha (Mỹ Latinh)"
+    "defaultMessage": "Tiếng Tây Ban Nha (M�?Latinh)"
   },
   "locale.es-ES": {
     "defaultMessage": "Tiếng Tây Ban Nha (Tây Ban Nha)"
@@ -2109,10 +2109,10 @@
     "defaultMessage": "Tiếng Ba Lan"
   },
   "locale.pt-BR": {
-    "defaultMessage": "Tiếng Bồ Đào Nha (Brazil)"
+    "defaultMessage": "Tiếng B�?Đào Nha (Brazil)"
   },
   "locale.pt-PT": {
-    "defaultMessage": "Tiếng Bồ Đào Nha (Bồ Đào Nha)"
+    "defaultMessage": "Tiếng B�?Đào Nha (B�?Đào Nha)"
   },
   "locale.ro-RO": {
     "defaultMessage": "Tiếng Romani"
@@ -2130,7 +2130,7 @@
     "defaultMessage": "Tiếng Thái"
   },
   "locale.tr-TR": {
-    "defaultMessage": "Tiếng Thổ Nhĩ Kỳ"
+    "defaultMessage": "Tiếng Th�?Nhĩ K�?
   },
   "locale.uk-UA": {
     "defaultMessage": "Tiếng Ukraina"
@@ -2139,25 +2139,25 @@
     "defaultMessage": "Tiếng Việt"
   },
   "locale.zh-CN": {
-    "defaultMessage": "Tiếng Trung (Giản thể)"
+    "defaultMessage": "Tiếng Trung (Giản th�?"
   },
   "locale.zh-TW": {
-    "defaultMessage": "Tiếng Trung (Phồn thể)"
+    "defaultMessage": "Tiếng Trung (Phồn th�?"
   },
   "markdown-editor.default-image-alt-text": {
-    "defaultMessage": "Đổi dòng này với dòng miêu tả"
+    "defaultMessage": "Đổi dòng này với dòng miêu t�?
   },
   "markdown-editor.error-label": {
     "defaultMessage": "Lỗi"
   },
   "markdown-editor.image-modal.description-field.description": {
-    "defaultMessage": "Miêu tả hình ảnh này giống với khi bạn miêu tả cho những người không xem được ảnh."
+    "defaultMessage": "Miêu t�?hình ảnh này giống với khi bạn miêu t�?cho những người không xem được ảnh."
   },
   "markdown-editor.image-modal.description-field.placeholder": {
-    "defaultMessage": "Miêu tả ảnh..."
+    "defaultMessage": "Miêu t�?ảnh..."
   },
   "markdown-editor.image-modal.description-field.title": {
-    "defaultMessage": "Miêu tả (văn bản thay thế)"
+    "defaultMessage": "Miêu t�?(văn bản thay th�?"
   },
   "markdown-editor.image-modal.header": {
     "defaultMessage": "Chèn ảnh"
@@ -2172,7 +2172,7 @@
     "defaultMessage": "Tải lên"
   },
   "markdown-editor.image-modal.upload.prompt": {
-    "defaultMessage": "Kéo và thả tệp từ ngoài vào hoặc nhấp vào để chọn tệp"
+    "defaultMessage": "Kéo và th�?tệp t�?ngoài vào hoặc nhấp vào đ�?chọn tệp"
   },
   "markdown-editor.image-modal.url-field.placeholder": {
     "defaultMessage": "Nhập URL ảnh..."
@@ -2193,10 +2193,10 @@
     "defaultMessage": "Nhập URL của đường liên kết..."
   },
   "markdown-editor.markdown-formatting-support": {
-    "defaultMessage": "Trình chỉnh sửa này hỗ trợ <markdown-link>định dạng đánh dấu</markdown-link>."
+    "defaultMessage": "Trình chỉnh sửa này h�?tr�?<markdown-link>định dạng đánh dấu</markdown-link>."
   },
   "markdown-editor.max-length.label": {
-    "defaultMessage": "Giới hạn độ dài:"
+    "defaultMessage": "Giới hạn đ�?dài:"
   },
   "markdown-editor.max-length.unlimited": {
     "defaultMessage": "Vô hạn"
@@ -2223,13 +2223,13 @@
     "defaultMessage": "Mã"
   },
   "markdown-editor.toolbar.heading-1": {
-    "defaultMessage": "Tiêu đề 1"
+    "defaultMessage": "Tiêu đ�?1"
   },
   "markdown-editor.toolbar.heading-2": {
-    "defaultMessage": "Tiêu đề 2"
+    "defaultMessage": "Tiêu đ�?2"
   },
   "markdown-editor.toolbar.heading-3": {
-    "defaultMessage": "Tiêu đề 3"
+    "defaultMessage": "Tiêu đ�?3"
   },
   "markdown-editor.toolbar.image": {
     "defaultMessage": "Hình ảnh"
@@ -2241,7 +2241,7 @@
     "defaultMessage": "Liên kết"
   },
   "markdown-editor.toolbar.ordered-list": {
-    "defaultMessage": "Thứ tự đầu dòng"
+    "defaultMessage": "Th�?t�?đầu dòng"
   },
   "markdown-editor.toolbar.quote": {
     "defaultMessage": "Trích"
@@ -2259,19 +2259,19 @@
     "defaultMessage": "Không có tệp"
   },
   "markdown-editor.upload-error.no-handler": {
-    "defaultMessage": "Không trình xử lý tải ảnh nào được cung cấp"
+    "defaultMessage": "Không trình x�?lý tải ảnh nào được cung cấp"
   },
   "markdown-editor.url-label": {
     "defaultMessage": "URL"
   },
   "markdown-editor.url-validation-error.blocked-domain": {
-    "defaultMessage": "URL không hợp lệ. Tên Miền không được cho phép."
+    "defaultMessage": "URL không hợp l�? Tên Miền không được cho phép."
   },
   "markdown-editor.url-validation-error.malformed": {
-    "defaultMessage": "URL không hợp lệ. Kiểm tra lại URL."
+    "defaultMessage": "URL không hợp l�? Kiểm tra lại URL."
   },
   "markdown-editor.url-validation-error.unsupported-protocol": {
-    "defaultMessage": "Giao thức không được hỗ trợ. Sử dụng http hoặc https."
+    "defaultMessage": "Giao thức không được h�?tr�? S�?dụng http hoặc https."
   },
   "markdown-editor.video-embed.title": {
     "defaultMessage": "Trình phát video YouTube"
@@ -2280,7 +2280,7 @@
     "defaultMessage": "Chèn video YouTube"
   },
   "markdown-editor.video-modal.url-field.description": {
-    "defaultMessage": "Nhập vào đường liên kết video YouTube hợp lệ."
+    "defaultMessage": "Nhập vào đường liên kết video YouTube hợp l�?"
   },
   "markdown-editor.video-modal.url-field.placeholder": {
     "defaultMessage": "Nhập URL video trên YouTube"
@@ -2295,7 +2295,7 @@
     "defaultMessage": "Đang thêm phương thức thanh toán"
   },
   "modal.open-in-app.benefit.install": {
-    "defaultMessage": "Tự động cài đặt các nội dung cần thiết"
+    "defaultMessage": "T�?động cài đặt các nội dung cần thiết"
   },
   "modal.open-in-app.benefit.launch": {
     "defaultMessage": "Đâm thẳng vào server khi khởi động game"
@@ -2304,16 +2304,16 @@
     "defaultMessage": "Luôn cập nhật các file khi server thay đổi"
   },
   "modal.open-in-app.get-app": {
-    "defaultMessage": "Tải Modrinth App"
+    "defaultMessage": "Tải Bbsmc App"
   },
   "modal.open-in-app.opening-automatically": {
-    "defaultMessage": "Modrinth App sẽ được tự động mở..."
+    "defaultMessage": "Bbsmc App s�?được t�?động m�?.."
   },
   "modal.open-in-app.title": {
-    "defaultMessage": "Mở Modrinth App"
+    "defaultMessage": "M�?Bbsmc App"
   },
   "modal.open-in-app.why-use": {
-    "defaultMessage": "Tại sao nên sử dụng Modrinth App"
+    "defaultMessage": "Tại sao nên s�?dụng Bbsmc App"
   },
   "notification.error.title": {
     "defaultMessage": "Đã xảy ra lỗi"
@@ -2325,13 +2325,13 @@
     "defaultMessage": "Đã phê duyệt"
   },
   "omorphia.component.badge.label.archived": {
-    "defaultMessage": "Đã lưu trữ"
+    "defaultMessage": "Đã lưu tr�?
   },
   "omorphia.component.badge.label.closed": {
     "defaultMessage": "Đã đóng"
   },
   "omorphia.component.badge.label.creator": {
-    "defaultMessage": "Tác giả"
+    "defaultMessage": "Tác gi�?
   },
   "omorphia.component.badge.label.draft": {
     "defaultMessage": "Nháp"
@@ -2345,23 +2345,23 @@
   "omorphia.component.badge.label.moderator": {
     "defaultMessage": "Kiểm duyệt viên"
   },
-  "omorphia.component.badge.label.modrinth-team": {
-    "defaultMessage": "Đội Ngũ Modrinth"
+  "omorphia.component.badge.label.Bbsmc-team": {
+    "defaultMessage": "Đội Ngũ Bbsmc"
   },
   "omorphia.component.badge.label.pending": {
-    "defaultMessage": "Đang chờ"
+    "defaultMessage": "Đang ch�?
   },
   "omorphia.component.badge.label.private": {
     "defaultMessage": "Riêng tư"
   },
   "omorphia.component.badge.label.processed": {
-    "defaultMessage": "Đã xử lý"
+    "defaultMessage": "Đã x�?lý"
   },
   "omorphia.component.badge.label.rejected": {
-    "defaultMessage": "Bị từ chối"
+    "defaultMessage": "B�?t�?chối"
   },
   "omorphia.component.badge.label.returned": {
-    "defaultMessage": "Đã trả lại"
+    "defaultMessage": "Đã tr�?lại"
   },
   "omorphia.component.badge.label.safe": {
     "defaultMessage": "Đạt"
@@ -2382,7 +2382,7 @@
     "defaultMessage": "Không công khai bởi cộng tác viên"
   },
   "omorphia.component.copy.action.copy": {
-    "defaultMessage": "Sao chép mã vào bảng nhớ tạm"
+    "defaultMessage": "Sao chép mã vào bảng nh�?tạm"
   },
   "omorphia.component.environment-indicator.label.client": {
     "defaultMessage": "Client"
@@ -2394,13 +2394,13 @@
     "defaultMessage": "Client hoặc server"
   },
   "omorphia.component.environment-indicator.label.server": {
-    "defaultMessage": "Máy chủ"
+    "defaultMessage": "Máy ch�?
   },
   "omorphia.component.environment-indicator.label.type": {
     "defaultMessage": "{type}"
   },
   "omorphia.component.environment-indicator.label.unsupported": {
-    "defaultMessage": "Không được hỗ trợ"
+    "defaultMessage": "Không được h�?tr�?
   },
   "payment-method.amazon_pay": {
     "defaultMessage": "Amazon Pay"
@@ -2415,10 +2415,10 @@
     "defaultMessage": "Cash App"
   },
   "payment-method.charity": {
-    "defaultMessage": "Từ thiện"
+    "defaultMessage": "T�?thiện"
   },
   "payment-method.charity-plural": {
-    "defaultMessage": "Từ thiện"
+    "defaultMessage": "T�?thiện"
   },
   "payment-method.diners": {
     "defaultMessage": "Diners Club"
@@ -2430,10 +2430,10 @@
     "defaultMessage": "EFTPOS"
   },
   "payment-method.gift-card": {
-    "defaultMessage": "Thẻ quà tặng"
+    "defaultMessage": "Th�?quà tặng"
   },
   "payment-method.gift-card-plural": {
-    "defaultMessage": "Thẻ quà tặng"
+    "defaultMessage": "Th�?quà tặng"
   },
   "payment-method.jcb": {
     "defaultMessage": "JCB"
@@ -2445,7 +2445,7 @@
     "defaultMessage": "PayPal"
   },
   "payment-method.paypal_international": {
-    "defaultMessage": "PayPal Quốc Tế"
+    "defaultMessage": "PayPal Quốc T�?
   },
   "payment-method.unionpay": {
     "defaultMessage": "UnionPay"
@@ -2478,25 +2478,25 @@
     "defaultMessage": "Máy khách"
   },
   "project-card.environment.client-and-server": {
-    "defaultMessage": "Máy khách và máy chủ"
+    "defaultMessage": "Máy khách và máy ch�?
   },
   "project-card.environment.client-or-server": {
-    "defaultMessage": "Máy khách hoặc máy chủ"
+    "defaultMessage": "Máy khách hoặc máy ch�?
   },
   "project-card.environment.server": {
-    "defaultMessage": "Máy chủ"
+    "defaultMessage": "Máy ch�?
   },
   "project-type.all": {
-    "defaultMessage": "Tất cả"
+    "defaultMessage": "Tất c�?
   },
   "project-type.datapack.capital": {
-    "defaultMessage": "{count, plural, other {Gói dữ liệu}}"
+    "defaultMessage": "{count, plural, other {Gói d�?liệu}}"
   },
   "project-type.datapack.category": {
-    "defaultMessage": "Gói dữ liệu"
+    "defaultMessage": "Gói d�?liệu"
   },
   "project-type.datapack.lowercase": {
-    "defaultMessage": "{count, plural, other {gói dữ liệu}}"
+    "defaultMessage": "{count, plural, other {gói d�?liệu}}"
   },
   "project-type.mod.capital": {
     "defaultMessage": "{count, plural, other {Mod}}"
@@ -2526,13 +2526,13 @@
     "defaultMessage": "{count, plural, other {plugin}}"
   },
   "project-type.project.capital": {
-    "defaultMessage": "{count, plural, other {Dự án}}"
+    "defaultMessage": "{count, plural, other {D�?án}}"
   },
   "project-type.project.category": {
-    "defaultMessage": "Dự án"
+    "defaultMessage": "D�?án"
   },
   "project-type.project.lowercase": {
-    "defaultMessage": "{count, plural, other {dự án}}"
+    "defaultMessage": "{count, plural, other {d�?án}}"
   },
   "project-type.resourcepack.capital": {
     "defaultMessage": "{count, plural, other {Gói tài nguyên}}"
@@ -2547,7 +2547,7 @@
     "defaultMessage": "{count, plural, other {Máy chủ}}"
   },
   "project-type.server.category": {
-    "defaultMessage": "Máy chủ"
+    "defaultMessage": "Máy ch�?
   },
   "project-type.server.lowercase": {
     "defaultMessage": "{count, plural, other {máy chủ}}"
@@ -2562,25 +2562,25 @@
     "defaultMessage": "{count, plural, other {shader}}"
   },
   "project.about.compatibility.environments": {
-    "defaultMessage": "Môi trường được hỗ trợ"
+    "defaultMessage": "Môi trường được h�?tr�?
   },
   "project.about.compatibility.environments.client-and-server": {
-    "defaultMessage": "Máy khách và máy chủ"
+    "defaultMessage": "Máy khách và máy ch�?
   },
   "project.about.compatibility.environments.client-side": {
     "defaultMessage": "Phía máy khách"
   },
   "project.about.compatibility.environments.dedicated-servers-only": {
-    "defaultMessage": "Chỉ máy chủ chuyên dụng"
+    "defaultMessage": "Ch�?máy ch�?chuyên dụng"
   },
   "project.about.compatibility.environments.server-side": {
-    "defaultMessage": "Phía máy chủ"
+    "defaultMessage": "Phía máy ch�?
   },
   "project.about.compatibility.environments.singleplayer": {
     "defaultMessage": "Chơi đơn"
   },
   "project.about.compatibility.environments.singleplayer-only": {
-    "defaultMessage": "Chỉ chơi đơn"
+    "defaultMessage": "Ch�?chơi đơn"
   },
   "project.about.compatibility.game.minecraftJava": {
     "defaultMessage": "Minecraft: Java Edition"
@@ -2592,10 +2592,10 @@
     "defaultMessage": "Tương thích"
   },
   "project.about.creators.organization": {
-    "defaultMessage": "Tổ chức"
+    "defaultMessage": "T�?chức"
   },
   "project.about.creators.owner": {
-    "defaultMessage": "Chủ dự án"
+    "defaultMessage": "Ch�?d�?án"
   },
   "project.about.creators.title": {
     "defaultMessage": "Người tạo"
@@ -2616,25 +2616,25 @@
     "defaultMessage": "Cập nhật ngày {date}"
   },
   "project.about.links.discord": {
-    "defaultMessage": "Tham gia máy chủ Discord"
+    "defaultMessage": "Tham gia máy ch�?Discord"
   },
   "project.about.links.donate.bmac": {
     "defaultMessage": "Buy Me a Coffee"
   },
   "project.about.links.donate.generic": {
-    "defaultMessage": "Ủng hộ"
+    "defaultMessage": "Ủng h�?
   },
   "project.about.links.donate.github": {
-    "defaultMessage": "Tài trợ trên GitHub"
+    "defaultMessage": "Tài tr�?trên GitHub"
   },
   "project.about.links.donate.kofi": {
-    "defaultMessage": "Ủng hộ trên Ko-fi"
+    "defaultMessage": "Ủng h�?trên Ko-fi"
   },
   "project.about.links.donate.patreon": {
-    "defaultMessage": "Ủng hộ trên Patreon"
+    "defaultMessage": "Ủng h�?trên Patreon"
   },
   "project.about.links.donate.paypal": {
-    "defaultMessage": "Ủng hộ trên PayPal"
+    "defaultMessage": "Ủng h�?trên PayPal"
   },
   "project.about.links.issues": {
     "defaultMessage": "Báo cáo lỗi"
@@ -2655,22 +2655,22 @@
     "defaultMessage": "Xem wiki"
   },
   "project.about.server.address.tooltip": {
-    "defaultMessage": "Sao chép địa chỉ máy chủ Java"
+    "defaultMessage": "Sao chép địa ch�?máy ch�?Java"
   },
   "project.about.server.copied": {
     "defaultMessage": "Đã sao chép!"
   },
   "project.about.server.copiedText": {
-    "defaultMessage": "Đã sao chép địa chỉ máy chủ vào bộ nhớ tạm"
+    "defaultMessage": "Đã sao chép địa ch�?máy ch�?vào b�?nh�?tạm"
   },
   "project.about.server.downloadModpack": {
     "defaultMessage": "Tải modpack"
   },
   "project.about.server.languages": {
-    "defaultMessage": "Ngôn ngữ"
+    "defaultMessage": "Ngôn ng�?
   },
   "project.about.server.recommendedVersion": {
-    "defaultMessage": "(Đề xuất)"
+    "defaultMessage": "(Đ�?xuất)"
   },
   "project.about.server.region": {
     "defaultMessage": "Khu vực"
@@ -2679,67 +2679,67 @@
     "defaultMessage": "Nội dung bắt buộc"
   },
   "project.about.server.title": {
-    "defaultMessage": "Chi tiết máy chủ"
+    "defaultMessage": "Chi tiết máy ch�?
   },
   "project.about.tags.title": {
-    "defaultMessage": "Thẻ"
+    "defaultMessage": "Th�?
   },
   "project.download-count-tooltip": {
     "defaultMessage": "{count, number} {count, plural, other {lượt tải xuống}}"
   },
   "project.environment.client-and-server.description": {
-    "defaultMessage": "Yêu cầu cài đặt trên cả máy khách và máy chủ."
+    "defaultMessage": "Yêu cầu cài đặt trên c�?máy khách và máy ch�?"
   },
   "project.environment.client-and-server.title": {
-    "defaultMessage": "Máy khách và máy chủ, yêu cầu ở cả hai bên"
+    "defaultMessage": "Máy khách và máy ch�? yêu cầu �?c�?hai bên"
   },
   "project.environment.client-only-server-optional.description": {
-    "defaultMessage": "Phần lớn các tính năng đều nằm ở phía máy khách, nhưng việc cài đặt trên máy chủ sẽ mở khóa thêm các chức năng nâng cao."
+    "defaultMessage": "Phần lớn các tính năng đều nằm �?phía máy khách, nhưng việc cài đặt trên máy ch�?s�?m�?khóa thêm các chức năng nâng cao."
   },
   "project.environment.client-only-server-optional.title": {
-    "defaultMessage": "Máy khách và máy chủ, tùy chọn trên máy chủ"
+    "defaultMessage": "Máy khách và máy ch�? tùy chọn trên máy ch�?
   },
   "project.environment.client-only.description": {
     "defaultMessage": "Mọi chức năng đều chạy phía client và tương thích với server vanilla."
   },
   "project.environment.client-only.title": {
-    "defaultMessage": "Chỉ phía client"
+    "defaultMessage": "Ch�?phía client"
   },
   "project.environment.client-or-server-prefers-both.description": {
-    "defaultMessage": "Có một số tính năng hoạt động trên cả máy khách và máy chủ, dù có thể chỉ là một phần. Việc cài đặt trên cả hai phía sẽ mang lại trải nghiệm tốt nhất."
+    "defaultMessage": "Có một s�?tính năng hoạt động trên c�?máy khách và máy ch�? dù có th�?ch�?là một phần. Việc cài đặt trên c�?hai phía s�?mang lại trải nghiệm tốt nhất."
   },
   "project.environment.client-or-server-prefers-both.title": {
-    "defaultMessage": "Máy khách và máy chủ, hoạt động tốt nhất khi được cài trên cả hai bên"
+    "defaultMessage": "Máy khách và máy ch�? hoạt động tốt nhất khi được cài trên c�?hai bên"
   },
   "project.environment.client-or-server.description": {
-    "defaultMessage": "Có một số chức năng hoạt động trên cả client và server, dù chỉ ở mức độ một phần."
+    "defaultMessage": "Có một s�?chức năng hoạt động trên c�?client và server, dù ch�?�?mức đ�?một phần."
   },
   "project.environment.client-or-server.title": {
-    "defaultMessage": "Máy khách và máy chủ, không bắt buộc trên cả hai"
+    "defaultMessage": "Máy khách và máy ch�? không bắt buộc trên c�?hai"
   },
   "project.environment.dedicated-server-only.description": {
-    "defaultMessage": "Mọi tính năng đều được xử lý ở phía máy chủ và tương thích với các máy khách vanilla (bản gốc). Chỉ hoạt động trên các máy chủ chuyên dụng."
+    "defaultMessage": "Mọi tính năng đều được x�?lý �?phía máy ch�?và tương thích với các máy khách vanilla (bản gốc). Ch�?hoạt động trên các máy ch�?chuyên dụng."
   },
   "project.environment.dedicated-server-only.title": {
-    "defaultMessage": "Chỉ phía máy chủ"
+    "defaultMessage": "Ch�?phía máy ch�?
   },
   "project.environment.server-only-client-optional.description": {
-    "defaultMessage": "Phần lớn chức năng hoạt động trên máy chủ, nhưng cài đặt trên máy khách sẽ giúp tăng cường trải nghiệm và tính năng."
+    "defaultMessage": "Phần lớn chức năng hoạt động trên máy ch�? nhưng cài đặt trên máy khách s�?giúp tăng cường trải nghiệm và tính năng."
   },
   "project.environment.server-only-client-optional.title": {
-    "defaultMessage": "Máy khách và máy chủ, không bắt buộc trên máy khách"
+    "defaultMessage": "Máy khách và máy ch�? không bắt buộc trên máy khách"
   },
   "project.environment.server-only.description": {
-    "defaultMessage": "Mọi tính năng đều được xử lý ở phía máy chủ và tương thích hoàn toàn với các máy khách vanilla (bản gốc). Ngoài ra, mod cũng hoạt động trên máy chủ nội bộ ở chế độ chơi đơn."
+    "defaultMessage": "Mọi tính năng đều được x�?lý �?phía máy ch�?và tương thích hoàn toàn với các máy khách vanilla (bản gốc). Ngoài ra, mod cũng hoạt động trên máy ch�?nội b�?�?ch�?đ�?chơi đơn."
   },
   "project.environment.server-only.title": {
-    "defaultMessage": "Chỉ máy chủ, cũng hoạt động trong chế độ chơi đơn"
+    "defaultMessage": "Ch�?máy ch�? cũng hoạt động trong ch�?đ�?chơi đơn"
   },
   "project.environment.singleplayer-only.description": {
-    "defaultMessage": "Chức năng này chỉ hoạt động trong chế độ chơi đơn hoặc khi không kết nối với máy chủ nhiều người chơi."
+    "defaultMessage": "Chức năng này ch�?hoạt động trong ch�?đ�?chơi đơn hoặc khi không kết nối với máy ch�?nhiều người chơi."
   },
   "project.environment.singleplayer-only.title": {
-    "defaultMessage": "Chỉ chơi đơn"
+    "defaultMessage": "Ch�?chơi đơn"
   },
   "project.environment.tag.not-applicable": {
     "defaultMessage": "N/A"
@@ -2766,10 +2766,10 @@
     "defaultMessage": "{count} {countPlural, plural, one {lượt chơi gần đây} other {lượt chơi gần đây}}"
   },
   "project.recent-plays.tooltip": {
-    "defaultMessage": "{count} {countPlural, plural, one {lượt chơi gần đây} other {lượt chơi gần đây}} từ Modrinth trong 2 tuần vừa qua"
+    "defaultMessage": "{count} {countPlural, plural, one {lượt chơi gần đây} other {lượt chơi gần đây}} t�?Bbsmc trong 2 tuần vừa qua"
   },
   "project.server.customModpackTooltip": {
-    "defaultMessage": "Dự án này có sử dụng modpack tuỳ chỉnh"
+    "defaultMessage": "D�?án này có s�?dụng modpack tu�?chỉnh"
   },
   "project.server.language.af": {
     "defaultMessage": "Tiếng Nam Phi"
@@ -2778,7 +2778,7 @@
     "defaultMessage": "Tiếng Amharic"
   },
   "project.server.language.ar": {
-    "defaultMessage": "Tiếng Ả Rập"
+    "defaultMessage": "Tiếng �?Rập"
   },
   "project.server.language.az": {
     "defaultMessage": "Tiếng Azeri"
@@ -2814,7 +2814,7 @@
     "defaultMessage": "Tiếng Anh"
   },
   "project.server.language.eo": {
-    "defaultMessage": "Quốc tế ngữ"
+    "defaultMessage": "Quốc t�?ng�?
   },
   "project.server.language.es": {
     "defaultMessage": "Tiếng Tây Ban Nha"
@@ -2865,7 +2865,7 @@
     "defaultMessage": "Italian"
   },
   "project.server.language.ja": {
-    "defaultMessage": "日本語"
+    "defaultMessage": "日本�?
   },
   "project.server.language.ka": {
     "defaultMessage": "Georgian"
@@ -2925,7 +2925,7 @@
     "defaultMessage": "Tiếng Ba Lan"
   },
   "project.server.language.pt": {
-    "defaultMessage": "Tiếng Bồ Đào Nha"
+    "defaultMessage": "Tiếng B�?Đào Nha"
   },
   "project.server.language.ro": {
     "defaultMessage": "Tiếng Romani"
@@ -2967,7 +2967,7 @@
     "defaultMessage": "Tiếng Philippines"
   },
   "project.server.language.tr": {
-    "defaultMessage": "Tiếng Thổ Nhĩ Kỳ"
+    "defaultMessage": "Tiếng Th�?Nhĩ K�?
   },
   "project.server.language.uk": {
     "defaultMessage": "Tiếng Ukraina"
@@ -3009,22 +3009,22 @@
     "defaultMessage": "Nga"
   },
   "project.server.region.south_america": {
-    "defaultMessage": "Nam Mỹ"
+    "defaultMessage": "Nam M�?
   },
   "project.server.region.tooltip": {
-    "defaultMessage": "Máy chủ được đặt tại {regionName}"
+    "defaultMessage": "Máy ch�?được đặt tại {regionName}"
   },
   "project.server.region.us_east": {
-    "defaultMessage": "Phía Đông Hoa Kỳ"
+    "defaultMessage": "Phía Đông Hoa K�?
   },
   "project.server.region.us_west": {
-    "defaultMessage": "Phía Tây Hoa Kỳ"
+    "defaultMessage": "Phía Tây Hoa K�?
   },
   "project.server.status.offline": {
     "defaultMessage": "Ngoại tuyến"
   },
   "project.server.status.offline.tooltip": {
-    "defaultMessage": "Máy chủ đang ngoại tuyến"
+    "defaultMessage": "Máy ch�?đang ngoại tuyến"
   },
   "project.server.status.online": {
     "defaultMessage": "Trực tuyến"
@@ -3036,25 +3036,25 @@
     "defaultMessage": "Nội dung"
   },
   "project.settings.description.title": {
-    "defaultMessage": "Mô tả"
+    "defaultMessage": "Mô t�?
   },
   "project.settings.environment.client_and_server.description": {
-    "defaultMessage": "Có một số chức năng hoạt động trên cả client và server, dù chỉ ở mức độ một phần."
+    "defaultMessage": "Có một s�?chức năng hoạt động trên c�?client và server, dù ch�?�?mức đ�?một phần."
   },
   "project.settings.environment.client_and_server.optional_both.title": {
-    "defaultMessage": "Không bắt buộc cài trên cả hai, hoạt động như nhau nếu được cài đặt ở bất kỳ bên nào"
+    "defaultMessage": "Không bắt buộc cài trên c�?hai, hoạt động như nhau nếu được cài đặt �?bất k�?bên nào"
   },
   "project.settings.environment.client_and_server.optional_both_prefers_both.title": {
-    "defaultMessage": "Không bắt buộc cho cả hai bên, nhưng hoạt động tốt nhất khi được cài đặt ở cả hai phía"
+    "defaultMessage": "Không bắt buộc cho c�?hai bên, nhưng hoạt động tốt nhất khi được cài đặt �?c�?hai phía"
   },
   "project.settings.environment.client_and_server.optional_client.title": {
     "defaultMessage": "Tùy chọn trên máy khách"
   },
   "project.settings.environment.client_and_server.optional_server.title": {
-    "defaultMessage": "Tùy chọn trên máy chủ"
+    "defaultMessage": "Tùy chọn trên máy ch�?
   },
   "project.settings.environment.client_and_server.required_both.title": {
-    "defaultMessage": "Yêu cầu trên cả hai"
+    "defaultMessage": "Yêu cầu trên c�?hai"
   },
   "project.settings.environment.client_and_server.title": {
     "defaultMessage": "Client và server"
@@ -3063,55 +3063,55 @@
     "defaultMessage": "Mọi chức năng đều chạy phía client và tương thích với server vanilla."
   },
   "project.settings.environment.client_only.title": {
-    "defaultMessage": "Chỉ phía client"
+    "defaultMessage": "Ch�?phía client"
   },
   "project.settings.environment.notice.missing-env.description": {
-    "defaultMessage": "Dự án của bạn đang thiếu thông tin về môi trường, vui lòng chọn tùy chọn phù hợp dưới đây."
+    "defaultMessage": "D�?án của bạn đang thiếu thông tin v�?môi trường, vui lòng chọn tùy chọn phù hợp dưới đây."
   },
   "project.settings.environment.notice.missing-env.title": {
-    "defaultMessage": "Vui lòng chọn một môi trường cho dự án của bạn"
+    "defaultMessage": "Vui lòng chọn một môi trường cho d�?án của bạn"
   },
   "project.settings.environment.notice.multiple-environments.description": {
-    "defaultMessage": "Các phiên bản khác nhau trong dự án của bạn đang được thiết lập các môi trường khác nhau, vì vậy bạn không thể chỉnh sửa chúng một cách đồng loạt vào lúc này."
+    "defaultMessage": "Các phiên bản khác nhau trong d�?án của bạn đang được thiết lập các môi trường khác nhau, vì vậy bạn không th�?chỉnh sửa chúng một cách đồng loạt vào lúc này."
   },
   "project.settings.environment.notice.multiple-environments.title": {
     "defaultMessage": "Project của bạn có nhiều biến môi trường"
   },
   "project.settings.environment.notice.review-options.description": {
-    "defaultMessage": "Chúng tôi vừa nâng cấp hệ thống Môi trường trên Modrinth và hiện đã có thêm các tùy chọn mới. Vui lòng đảm bảo bạn đã chọn đúng tùy chọn bên dưới và sau đó nhấp vào 'Xác nhận' khi hoàn tất!"
+    "defaultMessage": "Chúng tôi vừa nâng cấp h�?thống Môi trường trên Bbsmc và hiện đã có thêm các tùy chọn mới. Vui lòng đảm bảo bạn đã chọn đúng tùy chọn bên dưới và sau đó nhấp vào 'Xác nhận' khi hoàn tất!"
   },
   "project.settings.environment.notice.review-options.title": {
     "defaultMessage": "Xin hãy xem lại các lựa chọn bên dưới"
   },
   "project.settings.environment.notice.wrong-project-type.description": {
-    "defaultMessage": "Chỉ các dự án mod hoặc modpack mới có thể có siêu dữ liệu về môi trường."
+    "defaultMessage": "Ch�?các d�?án mod hoặc modpack mới có th�?có siêu d�?liệu v�?môi trường."
   },
   "project.settings.environment.notice.wrong-project-type.title": {
-    "defaultMessage": "Loại dự án này không hỗ trợ siêu dữ liệu về môi trường"
+    "defaultMessage": "Loại d�?án này không h�?tr�?siêu d�?liệu v�?môi trường"
   },
   "project.settings.environment.server_only.dedicated_only.title": {
-    "defaultMessage": "Chỉ máy chủ chuyên dụng"
+    "defaultMessage": "Ch�?máy ch�?chuyên dụng"
   },
   "project.settings.environment.server_only.description": {
-    "defaultMessage": "Tất cả chức năng đều được thực hiện ở phía máy chủ và tương thích với các máy khách vanilla."
+    "defaultMessage": "Tất c�?chức năng đều được thực hiện �?phía máy ch�?và tương thích với các máy khách vanilla."
   },
   "project.settings.environment.server_only.supports_singleplayer.title": {
-    "defaultMessage": "Cũng hoạt động được trong chế độ chơi đơn"
+    "defaultMessage": "Cũng hoạt động được trong ch�?đ�?chơi đơn"
   },
   "project.settings.environment.server_only.title": {
-    "defaultMessage": "Chỉ dành cho phía máy chủ"
+    "defaultMessage": "Ch�?dành cho phía máy ch�?
   },
   "project.settings.environment.singleplayer.description": {
-    "defaultMessage": "Chức năng này chỉ hoạt động trong chế độ chơi đơn hoặc khi không kết nối với máy chủ nhiều người chơi."
+    "defaultMessage": "Chức năng này ch�?hoạt động trong ch�?đ�?chơi đơn hoặc khi không kết nối với máy ch�?nhiều người chơi."
   },
   "project.settings.environment.singleplayer.title": {
-    "defaultMessage": "Chỉ dành cho chơi đơn"
+    "defaultMessage": "Ch�?dành cho chơi đơn"
   },
   "project.settings.environment.suboption.accessibility-option-label": {
     "defaultMessage": "{title}: {description}"
   },
   "project.settings.environment.suboption.accessibility-suboption-group-label": {
-    "defaultMessage": "Tuỳ chọn con của {option}"
+    "defaultMessage": "Tu�?chọn con của {option}"
   },
   "project.settings.environment.title": {
     "defaultMessage": "Môi trường"
@@ -3120,7 +3120,7 @@
     "defaultMessage": "Xác nhận"
   },
   "project.settings.environment.verification.verify-text": {
-    "defaultMessage": "Xác minh thiết lập môi trường cho dự án này."
+    "defaultMessage": "Xác minh thiết lập môi trường cho d�?án này."
   },
   "project.settings.gallery.title": {
     "defaultMessage": "Thư viện"
@@ -3144,10 +3144,10 @@
     "defaultMessage": "Không có quyền"
   },
   "project.settings.server.title": {
-    "defaultMessage": "Máy chủ"
+    "defaultMessage": "Máy ch�?
   },
   "project.settings.tags.title": {
-    "defaultMessage": "Thẻ"
+    "defaultMessage": "Th�?
   },
   "project.settings.upload.title": {
     "defaultMessage": "Tải lên"
@@ -3171,7 +3171,7 @@
     "defaultMessage": "R"
   },
   "project.visibility.archived": {
-    "defaultMessage": "Đã lưu trữ"
+    "defaultMessage": "Đã lưu tr�?
   },
   "project.visibility.draft": {
     "defaultMessage": "Nháp"
@@ -3183,7 +3183,7 @@
     "defaultMessage": "Công khai"
   },
   "project.visibility.rejected": {
-    "defaultMessage": "Bị từ chối"
+    "defaultMessage": "B�?t�?chối"
   },
   "project.visibility.scheduled": {
     "defaultMessage": "Đã lên lịch"
@@ -3198,13 +3198,13 @@
     "defaultMessage": "Không công khai"
   },
   "project.visibility.unlisted-by-staff": {
-    "defaultMessage": "Đã bị ẩn bởi đội ngũ Modrinth"
+    "defaultMessage": "Đã b�?ẩn bởi đội ngũ Bbsmc"
   },
   "report.item-type.content": {
     "defaultMessage": "nội dung"
   },
   "report.item-type.project": {
-    "defaultMessage": "dự án"
+    "defaultMessage": "d�?án"
   },
   "report.item-type.user": {
     "defaultMessage": "người dùng"
@@ -3213,25 +3213,25 @@
     "defaultMessage": "phiên bản"
   },
   "s.bg": {
-    "defaultMessage": "Đang chạy tác vụ nền"
+    "defaultMessage": "Đang chạy tác v�?nền"
   },
   "search.filter.locked.default": {
     "defaultMessage": "Içime cin girdi"
   },
   "search.filter.locked.default.description": {
-    "defaultMessage": "Việc mở khóa bộ lọc này có thể cho phép bạn cài đặt các nội dung không tương thích."
+    "defaultMessage": "Việc m�?khóa b�?lọc này có th�?cho phép bạn cài đặt các nội dung không tương thích."
   },
   "search.filter.locked.default.sync": {
     "defaultMessage": "Sao lưu thư mục"
   },
   "search.filter.locked.default.title": {
-    "defaultMessage": "{type} đã bị khóa"
+    "defaultMessage": "{type} đã b�?khóa"
   },
   "search.filter.locked.default.unlock": {
-    "defaultMessage": "Mở khoá bộ lọc"
+    "defaultMessage": "M�?khoá b�?lọc"
   },
   "search.filter.option.exclusion.add.tooltip": {
-    "defaultMessage": "Trừ"
+    "defaultMessage": "Tr�?
   },
   "search.filter.option.search.clear.aria_label": {
     "defaultMessage": "Xóa tìm kiếm"
@@ -3240,10 +3240,10 @@
     "defaultMessage": "Tìm..."
   },
   "search.filter.option.show_fewer": {
-    "defaultMessage": "Hiển thị ít hơn"
+    "defaultMessage": "Hiển th�?ít hơn"
   },
   "search.filter.option.show_more": {
-    "defaultMessage": "Hiển thị nhiều hơn"
+    "defaultMessage": "Hiển th�?nhiều hơn"
   },
   "search.filter_type.environment": {
     "defaultMessage": "Môi trường"
@@ -3252,19 +3252,19 @@
     "defaultMessage": "Máy khách"
   },
   "search.filter_type.environment.server": {
-    "defaultMessage": "Máy chủ"
+    "defaultMessage": "Máy ch�?
   },
   "search.filter_type.game_version": {
     "defaultMessage": "Phiên bản trò chơi"
   },
   "search.filter_type.game_version.all_versions": {
-    "defaultMessage": "Hiện tất cả phiên bản"
+    "defaultMessage": "Hiện tất c�?phiên bản"
   },
   "search.filter_type.license": {
     "defaultMessage": "Giấy phép"
   },
   "search.filter_type.license.open_source": {
-    "defaultMessage": "Mã nguồn mở"
+    "defaultMessage": "Mã nguồn m�?
   },
   "search.filter_type.mod_loader": {
     "defaultMessage": "Trình nạp"
@@ -3279,13 +3279,13 @@
     "defaultMessage": "Nền tảng"
   },
   "search.filter_type.project_id": {
-    "defaultMessage": "ID dự án"
+    "defaultMessage": "ID d�?án"
   },
   "search.filter_type.server_content_type": {
     "defaultMessage": "Loại"
   },
   "search.filter_type.server_language": {
-    "defaultMessage": "Ngôn ngữ"
+    "defaultMessage": "Ngôn ng�?
   },
   "search.filter_type.server_region": {
     "defaultMessage": "Khu vực"
@@ -3315,7 +3315,7 @@
     "defaultMessage": "Nguồn và bảng điều khiển"
   },
   "servers.access-page.activity-log-filter.action-group.server": {
-    "defaultMessage": "Máy chủ"
+    "defaultMessage": "Máy ch�?
   },
   "servers.access-page.activity-log-filter.action-group.settings": {
     "defaultMessage": "Cài đặt và môi trường chạy"
@@ -3333,10 +3333,10 @@
     "defaultMessage": "Nội dung đã được thêm"
   },
   "servers.access-page.activity-log-filter.action.addon-deleted": {
-    "defaultMessage": "Nội dung đã bị xoá"
+    "defaultMessage": "Nội dung đã b�?xoá"
   },
   "servers.access-page.activity-log-filter.action.addon-disabled": {
-    "defaultMessage": "Nội dung bị vô hiệu hoá"
+    "defaultMessage": "Nội dung b�?vô hiệu hoá"
   },
   "servers.access-page.activity-log-filter.action.addon-enabled": {
     "defaultMessage": "Nội dung đã bật"
@@ -3351,118 +3351,118 @@
     "defaultMessage": "Bản sao lưu đã tạo"
   },
   "servers.access-page.activity-log-filter.action.backup-deleted": {
-    "defaultMessage": "Bản sao lưu đã bị xoá"
+    "defaultMessage": "Bản sao lưu đã b�?xoá"
   },
   "servers.access-page.activity-log-filter.action.backup-renamed": {
-    "defaultMessage": "Bản sao lưu đã bị đổi tên"
+    "defaultMessage": "Bản sao lưu đã b�?đổi tên"
   },
   "servers.access-page.activity-log-filter.action.backup-restored": {
     "defaultMessage": "Bảo sao lưu đã được khôi phục"
   },
   "servers.access-page.activity-log-filter.action.changed-server-name": {
-    "defaultMessage": "Tên máy chủ bị đổi"
+    "defaultMessage": "Tên máy ch�?b�?đổi"
   },
   "servers.access-page.activity-log-filter.action.changed-server-subdomain": {
-    "defaultMessage": "Tên miền máy chủ bị đổi"
+    "defaultMessage": "Tên miền máy ch�?b�?đổi"
   },
   "servers.access-page.activity-log-filter.action.console-cleared": {
-    "defaultMessage": "Nhật ký bảng điều khiển bị xoá"
+    "defaultMessage": "Nhật ký bảng điều khiển b�?xoá"
   },
   "servers.access-page.activity-log-filter.action.console-command-executed": {
     "defaultMessage": "Lệnh bảng điều khiển được chạy"
   },
   "servers.access-page.activity-log-filter.action.file-deleted": {
-    "defaultMessage": "Tệp tin đã bị xoá"
+    "defaultMessage": "Tệp tin đã b�?xoá"
   },
   "servers.access-page.activity-log-filter.action.file-edited": {
-    "defaultMessage": "Tệp tin đã bị chỉnh sửa"
+    "defaultMessage": "Tệp tin đã b�?chỉnh sửa"
   },
   "servers.access-page.activity-log-filter.action.file-renamed": {
-    "defaultMessage": "Tệp tin đã bị đổi tên"
+    "defaultMessage": "Tệp tin đã b�?đổi tên"
   },
   "servers.access-page.activity-log-filter.action.file-uploaded": {
     "defaultMessage": "Tệp tin đã được tải lên"
   },
   "servers.access-page.activity-log-filter.action.game-version-edited": {
-    "defaultMessage": "Phiên bản Minecraft bị đổi"
+    "defaultMessage": "Phiên bản Minecraft b�?đổi"
   },
   "servers.access-page.activity-log-filter.action.java-runtime-modified": {
-    "defaultMessage": "Môi trường chạy Java bị đổi"
+    "defaultMessage": "Môi trường chạy Java b�?đổi"
   },
   "servers.access-page.activity-log-filter.action.java-version-modified": {
-    "defaultMessage": "Phiên bản Java bị đổi"
+    "defaultMessage": "Phiên bản Java b�?đổi"
   },
   "servers.access-page.activity-log-filter.action.loader-version-edited": {
-    "defaultMessage": "Phiên bản trình chạy bị đổi"
+    "defaultMessage": "Phiên bản trình chạy b�?đổi"
   },
   "servers.access-page.activity-log-filter.action.modpack-changed": {
-    "defaultMessage": "Modpack bị đổi"
+    "defaultMessage": "Modpack b�?đổi"
   },
   "servers.access-page.activity-log-filter.action.modpack-unlinked": {
-    "defaultMessage": "Modpack bị huỷ liên kết"
+    "defaultMessage": "Modpack b�?hu�?liên kết"
   },
   "servers.access-page.activity-log-filter.action.port-allocation-added": {
     "defaultMessage": "Cổng đã được cấp thêm"
   },
   "servers.access-page.activity-log-filter.action.port-allocation-removed": {
-    "defaultMessage": "Cổng bị xoá"
+    "defaultMessage": "Cổng b�?xoá"
   },
   "servers.access-page.activity-log-filter.action.server-created": {
-    "defaultMessage": "Máy chủ được tạo"
+    "defaultMessage": "Máy ch�?được tạo"
   },
   "servers.access-page.activity-log-filter.action.server-killed": {
-    "defaultMessage": "Máy chủ bị buộc tắt"
+    "defaultMessage": "Máy ch�?b�?buộc tắt"
   },
   "servers.access-page.activity-log-filter.action.server-plan-changed": {
-    "defaultMessage": "Gói cước bị đổi"
+    "defaultMessage": "Gói cước b�?đổi"
   },
   "servers.access-page.activity-log-filter.action.server-properties-modified": {
-    "defaultMessage": "Thuộc tính máy chủ bị chỉnh sửa"
+    "defaultMessage": "Thuộc tính máy ch�?b�?chỉnh sửa"
   },
   "servers.access-page.activity-log-filter.action.server-reallocated": {
-    "defaultMessage": "Máy chủ bị tái cấp phát"
+    "defaultMessage": "Máy ch�?b�?tái cấp phát"
   },
   "servers.access-page.activity-log-filter.action.server-repaired": {
-    "defaultMessage": "Máy chủ bị sửa chữa"
+    "defaultMessage": "Máy ch�?b�?sửa chữa"
   },
   "servers.access-page.activity-log-filter.action.server-reset": {
-    "defaultMessage": "Máy chủ bị đặt lại"
+    "defaultMessage": "Máy ch�?b�?đặt lại"
   },
   "servers.access-page.activity-log-filter.action.server-restarted": {
-    "defaultMessage": "Máy chủ bị khởi động lại"
+    "defaultMessage": "Máy ch�?b�?khởi động lại"
   },
   "servers.access-page.activity-log-filter.action.server-started": {
-    "defaultMessage": "Máy chủ được bật"
+    "defaultMessage": "Máy ch�?được bật"
   },
   "servers.access-page.activity-log-filter.action.server-stopped": {
-    "defaultMessage": "Máy chủ bị tắt"
+    "defaultMessage": "Máy ch�?b�?tắt"
   },
   "servers.access-page.activity-log-filter.action.sftp-login": {
     "defaultMessage": "Đã đăng nhập qua SFTP"
   },
   "servers.access-page.activity-log-filter.action.startup-command-modified": {
-    "defaultMessage": "Lệnh bắt đầu bị đổi"
+    "defaultMessage": "Lệnh bắt đầu b�?đổi"
   },
   "servers.access-page.activity-log-filter.action.user-invite-revoked": {
-    "defaultMessage": "Lời mời bị thu hồi"
+    "defaultMessage": "Lời mời b�?thu hồi"
   },
   "servers.access-page.activity-log-filter.action.user-invited": {
     "defaultMessage": "Người dùng được mời"
   },
   "servers.access-page.activity-log-filter.action.user-permission-modified": {
-    "defaultMessage": "Quyền hạn người dùng bị đổi"
+    "defaultMessage": "Quyền hạn người dùng b�?đổi"
   },
   "servers.access-page.activity-log-filter.action.user-removed": {
-    "defaultMessage": "Quyền truy cập bị thu hồi"
+    "defaultMessage": "Quyền truy cập b�?thu hồi"
   },
   "servers.access-page.activity-log-filter.add": {
-    "defaultMessage": "Thêm bộ lọc"
+    "defaultMessage": "Thêm b�?lọc"
   },
   "servers.access-page.activity-log-filter.clear": {
-    "defaultMessage": "Xoá bộ lọc"
+    "defaultMessage": "Xoá b�?lọc"
   },
   "servers.access-page.activity-log-filter.empty-options": {
-    "defaultMessage": "Không có mục khả dụng."
+    "defaultMessage": "Không có mục kh�?dụng."
   },
   "servers.access-page.activity-log-filter.empty-search": {
     "defaultMessage": "Không mục nào được tìm thấy."
@@ -3471,10 +3471,10 @@
     "defaultMessage": "Cấu hình"
   },
   "servers.access-page.activity-log-filter.server-scoped-instance": {
-    "defaultMessage": "Máy chủ"
+    "defaultMessage": "Máy ch�?
   },
   "servers.access-page.activity-log-filter.support-actor": {
-    "defaultMessage": "Hỗ trợ"
+    "defaultMessage": "H�?tr�?
   },
   "servers.access-page.activity-log-filter.users": {
     "defaultMessage": "Người dùng"
@@ -3486,7 +3486,7 @@
     "defaultMessage": "Thêm người dùng"
   },
   "servers.access-page.notification.friend-request-failed.title": {
-    "defaultMessage": "Không thể gửi lời mời kết bạn"
+    "defaultMessage": "Không th�?gửi lời mời kết bạn"
   },
   "servers.access-page.notification.invite-cancelled.text": {
     "defaultMessage": "Đã thu hồi lời mời cho {target}."
@@ -3495,7 +3495,7 @@
     "defaultMessage": "Lời mời đã thu hồi"
   },
   "servers.access-page.notification.invite-failed.title": {
-    "defaultMessage": "Lời mời không thể được gửi"
+    "defaultMessage": "Lời mời không th�?được gửi"
   },
   "servers.access-page.notification.invite-resent.text": {
     "defaultMessage": "Đã gửi lời mời khác cho {target}."
@@ -3510,25 +3510,25 @@
     "defaultMessage": "Lời mời đã gửi"
   },
   "servers.access-page.notification.load-failed.text": {
-    "defaultMessage": "Làm mới trang để thử lại."
+    "defaultMessage": "Làm mới trang đ�?th�?lại."
   },
   "servers.access-page.notification.load-failed.title": {
-    "defaultMessage": "Quyền truy cập không thể tải"
+    "defaultMessage": "Quyền truy cập không th�?tải"
   },
   "servers.access-page.notification.member-removed.text": {
     "defaultMessage": "Đã thu hồi quyền truy cập của {target}."
   },
   "servers.access-page.notification.member-removed.title": {
-    "defaultMessage": "Quyền truy cập đã bị thu hồi"
+    "defaultMessage": "Quyền truy cập đã b�?thu hồi"
   },
   "servers.access-page.notification.remove-failed.title": {
-    "defaultMessage": "Quyền truy cập không thể bị xoá"
+    "defaultMessage": "Quyền truy cập không th�?b�?xoá"
   },
   "servers.access-page.notification.role-update-failed.title": {
-    "defaultMessage": "Không thể cập nhật vai trò"
+    "defaultMessage": "Không th�?cập nhật vai trò"
   },
   "servers.access-page.role-filter.all": {
-    "defaultMessage": "Tất cả"
+    "defaultMessage": "Tất c�?
   },
   "servers.access-page.role-filter.selected": {
     "defaultMessage": "Vai trò: {role}"
@@ -3540,16 +3540,16 @@
     "defaultMessage": "Quản lý nội dung, tệp tin, bản sao lưu và các cài đặt khác của cấu hình."
   },
   "servers.access-page.role.owner": {
-    "defaultMessage": "Chủ sở hữu"
+    "defaultMessage": "Ch�?s�?hữu"
   },
   "servers.access-page.role.owner-description": {
     "defaultMessage": "Toàn quyền truy cập bao gồm thanh toán, quản lý thành viên và các hành động gây ảnh hưởng cấu hình."
   },
   "servers.access-page.role.viewer": {
-    "defaultMessage": "Bị giới hạn"
+    "defaultMessage": "B�?giới hạn"
   },
   "servers.access-page.role.viewer-description": {
-    "defaultMessage": "Bắt đầu, dừng và xem máy chủ mà không được chỉnh sửa."
+    "defaultMessage": "Bắt đầu, dừng và xem máy ch�?mà không được chỉnh sửa."
   },
   "servers.access-page.search-users-placeholder": {
     "defaultMessage": "Tìm kiếm {count} {count, plural, one {user} other {users}}..."
@@ -3558,10 +3558,10 @@
     "defaultMessage": "Người chỉnh sửa"
   },
   "servers.access-role.owner": {
-    "defaultMessage": "Chủ sở hữu"
+    "defaultMessage": "Ch�?s�?hữu"
   },
   "servers.access-role.viewer": {
-    "defaultMessage": "Bị giới hạn"
+    "defaultMessage": "B�?giới hạn"
   },
   "servers.access-table.action.cancel-invite": {
     "defaultMessage": "Thu hồi lời mời"
@@ -3588,25 +3588,25 @@
     "defaultMessage": "Người dùng"
   },
   "servers.access-table.empty": {
-    "defaultMessage": "Không người dùng nào thoả bộ lọc."
+    "defaultMessage": "Không người dùng nào tho�?b�?lọc."
   },
   "servers.access-table.member-actions-label": {
     "defaultMessage": "Hành động cho {username}"
   },
   "servers.access-table.pending": {
-    "defaultMessage": "Đang chờ"
+    "defaultMessage": "Đang ch�?
   },
   "servers.access-table.unknown-joined-date": {
-    "defaultMessage": "—"
+    "defaultMessage": "�?
   },
   "servers.access-table.user-avatar-alt": {
     "defaultMessage": "Ảnh đại diện của {username}"
   },
   "servers.admonitions.background-task-running": {
-    "defaultMessage": "Đang chạy tác vụ nền"
+    "defaultMessage": "Đang chạy tác v�?nền"
   },
   "servers.audit-log.actor.support": {
-    "defaultMessage": "Hỗ trợ"
+    "defaultMessage": "H�?tr�?
   },
   "servers.audit-log.column.event": {
     "defaultMessage": "Hành động"
@@ -3621,16 +3621,16 @@
     "defaultMessage": "Cấu hình"
   },
   "servers.audit-log.column.world.tooltip-description": {
-    "defaultMessage": "Các cấu hình của máy chủ là các môi trường độc lập, chứa nội dung cài đặt và các tệp thế giới riêng."
+    "defaultMessage": "Các cấu hình của máy ch�?là các môi trường độc lập, chứa nội dung cài đặt và các tệp th�?giới riêng."
   },
   "servers.audit-log.column.world.tooltip-title": {
     "defaultMessage": "Sắp có!"
   },
   "servers.audit-log.empty": {
-    "defaultMessage": "Không hành động nào thoả bộ lọc."
+    "defaultMessage": "Không hành động nào tho�?b�?lọc."
   },
   "servers.audit-log.empty.no-activity": {
-    "defaultMessage": "Làm gì đó với máy chủ và bạn sẽ thấy nó ở đây!"
+    "defaultMessage": "Làm gì đó với máy ch�?và bạn s�?thấy nó �?đây!"
   },
   "servers.audit-log.event.addon-added": {
     "defaultMessage": "Đã thêm nội dung <content></content>"
@@ -3642,7 +3642,7 @@
     "defaultMessage": "Đã xoá nội dung <content></content>"
   },
   "servers.audit-log.event.addon-deleted-label": {
-    "defaultMessage": "Nội dung đã bị xoá"
+    "defaultMessage": "Nội dung đã b�?xoá"
   },
   "servers.audit-log.event.addon-disabled": {
     "defaultMessage": "Đã vô hiệu hoá <content></content>"
@@ -3660,7 +3660,7 @@
     "defaultMessage": "Đã thay đổi bản sao lưu <backup></backup>"
   },
   "servers.audit-log.event.backup-changed-fallback": {
-    "defaultMessage": "Bản sao lưu đã bị thay đổi"
+    "defaultMessage": "Bản sao lưu đã b�?thay đổi"
   },
   "servers.audit-log.event.backup-created": {
     "defaultMessage": "Đã tạo bản sao lưu <backup></backup>"
@@ -3672,13 +3672,13 @@
     "defaultMessage": "Đã xoá bản sao lưu <backup></backup>"
   },
   "servers.audit-log.event.backup-deleted-fallback": {
-    "defaultMessage": "Bản sao lưu đã bị xoá"
+    "defaultMessage": "Bản sao lưu đã b�?xoá"
   },
   "servers.audit-log.event.backup-renamed": {
-    "defaultMessage": "Đã đổi tên bản sao lưu từ <from></from> thành <renamed-backup></renamed-backup>"
+    "defaultMessage": "Đã đổi tên bản sao lưu t�?<from></from> thành <renamed-backup></renamed-backup>"
   },
   "servers.audit-log.event.backup-renamed-fallback": {
-    "defaultMessage": "Bản sao lưu đã bị đổi tên"
+    "defaultMessage": "Bản sao lưu đã b�?đổi tên"
   },
   "servers.audit-log.event.backup-restored": {
     "defaultMessage": "Đã khôi phục bản sao lưu <backup></backup>"
@@ -3687,7 +3687,7 @@
     "defaultMessage": "Bản sao lưu đã được khôi phục"
   },
   "servers.audit-log.event.config-changed": {
-    "defaultMessage": "Đã thay đổi cấu hình máy chủ"
+    "defaultMessage": "Đã thay đổi cấu hình máy ch�?
   },
   "servers.audit-log.event.console-cleared": {
     "defaultMessage": "Đã xoá nhật ký bản điều khiển"
@@ -3708,7 +3708,7 @@
     "defaultMessage": "Đã chỉnh sửa tệp <file></file>"
   },
   "servers.audit-log.event.file-renamed": {
-    "defaultMessage": "Đã đổi tên tệp từ <from></from> thành <to></to>"
+    "defaultMessage": "Đã đổi tên tệp t�?<from></from> thành <to></to>"
   },
   "servers.audit-log.event.file-uploaded": {
     "defaultMessage": "Đã tải lên tệp <file></file>"
@@ -3744,13 +3744,13 @@
     "defaultMessage": "Đã đổi phiên bản modpack thành <version></version>"
   },
   "servers.audit-log.event.modpack-unlinked": {
-    "defaultMessage": "Đã huỷ liên kết modpack"
+    "defaultMessage": "Đã hu�?liên kết modpack"
   },
   "servers.audit-log.event.modpack-unlinked-modpack": {
-    "defaultMessage": "Đã huỷ liên kết modpack <modpack></modpack>"
+    "defaultMessage": "Đã hu�?liên kết modpack <modpack></modpack>"
   },
   "servers.audit-log.event.modpack-unlinked-version": {
-    "defaultMessage": "Đã huỷ liên kết phiên bản modpack<version></version>"
+    "defaultMessage": "Đã hu�?liên kết phiên bản modpack<version></version>"
   },
   "servers.audit-log.event.port-allocation-added": {
     "defaultMessage": "Đã thêm cổng <port></port>"
@@ -3762,7 +3762,7 @@
     "defaultMessage": "Đã tạo server"
   },
   "servers.backups.admonition.backup-cancelled.description": {
-    "defaultMessage": "Bản sao lưu {backupName} đã bị hủy."
+    "defaultMessage": "Bản sao lưu {backupName} đã b�?hủy."
   },
   "servers.backups.admonition.backup-cancelled.title": {
     "defaultMessage": "Đã hủy sao lưu"
@@ -3774,25 +3774,25 @@
     "defaultMessage": "Sao lưu thành công"
   },
   "servers.backups.admonition.backup-failed.description": {
-    "defaultMessage": "Đã có lỗi xảy ra khi tạo {backupName}. Vui lòng thử lại hoặc liên hệ bộ phận hỗ trợ nếu lỗi vẫn tiếp diễn."
+    "defaultMessage": "Đã có lỗi xảy ra khi tạo {backupName}. Vui lòng th�?lại hoặc liên h�?b�?phận h�?tr�?nếu lỗi vẫn tiếp diễn."
   },
   "servers.backups.admonition.backup-failed.title": {
     "defaultMessage": "Sao lưu thất bại"
   },
   "servers.backups.admonition.backup-queued.description": {
-    "defaultMessage": "{backupName} đã được đưa vào hàng chờ và sẽ sớm bắt đầu."
+    "defaultMessage": "{backupName} đã được đưa vào hàng ch�?và s�?sớm bắt đầu."
   },
   "servers.backups.admonition.backup-queued.title": {
-    "defaultMessage": "Đang chờ sao lưu"
+    "defaultMessage": "Đang ch�?sao lưu"
   },
   "servers.backups.admonition.backup-timed-out.description": {
-    "defaultMessage": "Hết thời gian sao lưu {backupName}. Thử lại hoặc liên hệ hỗ trợ nếu vấn đề tiếp diễn."
+    "defaultMessage": "Hết thời gian sao lưu {backupName}. Th�?lại hoặc liên h�?h�?tr�?nếu vấn đ�?tiếp diễn."
   },
   "servers.backups.admonition.backup-timed-out.title": {
     "defaultMessage": "Backup timed out"
   },
   "servers.backups.admonition.creating-backup.description": {
-    "defaultMessage": "Đang lưu dữ liệu thế giới và cấu hình máy chủ cho {backupName}. Quá trình này có thể mất vài phút."
+    "defaultMessage": "Đang lưu d�?liệu th�?giới và cấu hình máy ch�?cho {backupName}. Quá trình này có th�?mất vài phút."
   },
   "servers.backups.admonition.creating-backup.title": {
     "defaultMessage": "Đang tạo bản sao lưu"
@@ -3801,40 +3801,40 @@
     "defaultMessage": "Bản sao lưu của bạn"
   },
   "servers.backups.admonition.restore-cancelled.description": {
-    "defaultMessage": "Đã hủy khôi phục từ {backupName}."
+    "defaultMessage": "Đã hủy khôi phục t�?{backupName}."
   },
   "servers.backups.admonition.restore-cancelled.title": {
     "defaultMessage": "Hủy khôi phục"
   },
   "servers.backups.admonition.restore-failed.description": {
-    "defaultMessage": "Đã có lỗi xảy ra khi đang khôi phục từ bản sao lưu {backupName}. Vui lòng thử lại hoặc liên hệ bộ phận hỗ trợ nếu lỗi vẫn tiếp diễn."
+    "defaultMessage": "Đã có lỗi xảy ra khi đang khôi phục t�?bản sao lưu {backupName}. Vui lòng th�?lại hoặc liên h�?b�?phận h�?tr�?nếu lỗi vẫn tiếp diễn."
   },
   "servers.backups.admonition.restore-failed.title": {
     "defaultMessage": "Khôi phục thất bại"
   },
   "servers.backups.admonition.restore-queued.description": {
-    "defaultMessage": "Khôi phục từ bản sao lưu {backupName} đã được đưa vào hàng chờ và sẽ sớm bắt đầu."
+    "defaultMessage": "Khôi phục t�?bản sao lưu {backupName} đã được đưa vào hàng ch�?và s�?sớm bắt đầu."
   },
   "servers.backups.admonition.restore-queued.title": {
-    "defaultMessage": "Đã vào hàng chờ khôi phục"
+    "defaultMessage": "Đã vào hàng ch�?khôi phục"
   },
   "servers.backups.admonition.restore-successful.description": {
-    "defaultMessage": "Máy chủ của bạn đã được khôi phục từ bản sao lưu {backupName} và sẵn sàng để khởi động."
+    "defaultMessage": "Máy ch�?của bạn đã được khôi phục t�?bản sao lưu {backupName} và sẵn sàng đ�?khởi động."
   },
   "servers.backups.admonition.restore-successful.title": {
     "defaultMessage": "Khôi phục thành công"
   },
   "servers.backups.admonition.restore-timed-out.description": {
-    "defaultMessage": "Hết thời gian khôi phục {backupName}. Thử lại hoặc liên hệ hỗ trợ nếu vấn đề tiếp diễn."
+    "defaultMessage": "Hết thời gian khôi phục {backupName}. Th�?lại hoặc liên h�?h�?tr�?nếu vấn đ�?tiếp diễn."
   },
   "servers.backups.admonition.restore-timed-out.title": {
     "defaultMessage": "Restore timed out"
   },
   "servers.backups.admonition.restoring-backup.description": {
-    "defaultMessage": "Đang khôi phục máy chủ của bạn từ bản sao lưu {backupName}. Điều này có thể mất vài phút."
+    "defaultMessage": "Đang khôi phục máy ch�?của bạn t�?bản sao lưu {backupName}. Điều này có th�?mất vài phút."
   },
   "servers.backups.admonition.restoring-backup.title": {
-    "defaultMessage": "Đang khôi phục từ bản sao lưu"
+    "defaultMessage": "Đang khôi phục t�?bản sao lưu"
   },
   "servers.backups.bulk-bar.aria-label": {
     "defaultMessage": "{count, plural, other {Hành động cho # bản sao lưu}}"
@@ -3846,10 +3846,10 @@
     "defaultMessage": "{count, plural, other {Đã chọn # bản sao lưu}}"
   },
   "servers.backups.delete-modal.admonition-body": {
-    "defaultMessage": "Khi đã bị xóa, {count, plural, other {mấy bản sao lưu này}} sẽ không thể lấy lại được. Nó sẽ bị xóa vĩnh viễn."
+    "defaultMessage": "Khi đã b�?xóa, {count, plural, other {mấy bản sao lưu này}} s�?không th�?lấy lại được. Nó s�?b�?xóa vĩnh viễn."
   },
   "servers.backups.delete-modal.admonition-header": {
-    "defaultMessage": "Cảnh báo về việc xóa"
+    "defaultMessage": "Cảnh báo v�?việc xóa"
   },
   "servers.backups.delete-modal.backups-label": {
     "defaultMessage": "{count, plural, other {Bản sao lưu ({count})}}"
@@ -3870,19 +3870,19 @@
     "defaultMessage": "Hủy lọc"
   },
   "servers.backups.filtered-empty.description": {
-    "defaultMessage": "Thử loại lọc khác hoặc hủy lọc để xem tất cả các bản sao lưu."
+    "defaultMessage": "Th�?loại lọc khác hoặc hủy lọc đ�?xem tất c�?các bản sao lưu."
   },
   "servers.backups.filtered-empty.heading": {
     "defaultMessage": "Không tìm được bản sao lưu"
   },
   "servers.backups.item.auto": {
-    "defaultMessage": "Tự động"
+    "defaultMessage": "T�?động"
   },
   "servers.backups.item.backup-schedule": {
     "defaultMessage": "Lịch sao lưu"
   },
   "servers.backups.item.manual-backup": {
-    "defaultMessage": "Sao lưu thủ công"
+    "defaultMessage": "Sao lưu th�?công"
   },
   "servers.backups.item.rename": {
     "defaultMessage": "Đổi tên"
@@ -3897,13 +3897,13 @@
     "defaultMessage": "Tạo bản sao lưu"
   },
   "servers.backups.toolbar.filter-auto": {
-    "defaultMessage": "Tự động"
+    "defaultMessage": "T�?động"
   },
   "servers.backups.toolbar.filter-manual": {
-    "defaultMessage": "Thủ công"
+    "defaultMessage": "Th�?công"
   },
   "servers.backups.toolbar.select-all": {
-    "defaultMessage": "Chọn tất cả"
+    "defaultMessage": "Chọn tất c�?
   },
   "servers.busy.backup-creating": {
     "defaultMessage": "Đang tạo bản sao lưu"
@@ -3912,31 +3912,31 @@
     "defaultMessage": "Đang khôi phục bản sao lưu"
   },
   "servers.busy.installing": {
-    "defaultMessage": "Đang cài máy chủ"
+    "defaultMessage": "Đang cài máy ch�?
   },
   "servers.busy.syncing-content": {
-    "defaultMessage": "Đang đồng bộ nội dung"
+    "defaultMessage": "Đang đồng b�?nội dung"
   },
   "servers.installing-banner.error.header": {
     "defaultMessage": "Tải thất bại"
   },
   "servers.installing-banner.error.internal-platform": {
-    "defaultMessage": "Đã xảy ra lỗi nội bộ trong quá trình cài đặt nền tảng. Thử lại."
+    "defaultMessage": "Đã xảy ra lỗi nội b�?trong quá trình cài đặt nền tảng. Th�?lại."
   },
   "servers.installing-banner.error.invalid-loader-version": {
-    "defaultMessage": "Không thể tải loader hoặc phiên bản Minecraft đã chọn. Nó có thể không phù hợp hoặc không được hỗ trợ."
+    "defaultMessage": "Không th�?tải loader hoặc phiên bản Minecraft đã chọn. Nó có th�?không phù hợp hoặc không được h�?tr�?"
   },
   "servers.installing-banner.error.modpack-install-failed": {
-    "defaultMessage": "Modpack này không thể tải được. Nó có thể bị hỏng hoặc không tương thích."
+    "defaultMessage": "Modpack này không th�?tải được. Nó có th�?b�?hỏng hoặc không tương thích."
   },
   "servers.installing-banner.error.no-primary-file": {
-    "defaultMessage": "Phiên bản modpack này không chứa tệp có thể tải xuống. Nó có thể không được làm đúng cách."
+    "defaultMessage": "Phiên bản modpack này không chứa tệp có th�?tải xuống. Nó có th�?không được làm đúng cách."
   },
   "servers.installing-banner.error.unknown": {
-    "defaultMessage": "Có lỗi lạ xảy ra trong khi tải."
+    "defaultMessage": "Có lỗi l�?xảy ra trong khi tải."
   },
   "servers.installing-banner.error.unsupported-loader-version": {
-    "defaultMessage": "Phiên bản minecraft hoặc loader hiện không được hỗ trợ bởi Modrinth Hosting."
+    "defaultMessage": "Phiên bản minecraft hoặc loader hiện không được h�?tr�?bởi Bbsmc Hosting."
   },
   "servers.installing-banner.phase.installing-addons": {
     "defaultMessage": "Đang cài addon..."
@@ -3948,13 +3948,13 @@
     "defaultMessage": "Đang cài platform..."
   },
   "servers.installing-banner.preparing.header": {
-    "defaultMessage": "Chúng tôi đang sửa máy chủ của bạn"
+    "defaultMessage": "Chúng tôi đang sửa máy ch�?của bạn"
   },
   "servers.installing-banner.ticker.adding-java": {
     "defaultMessage": "Đang thêm Java..."
   },
   "servers.installing-banner.ticker.configuring-server": {
-    "defaultMessage": "Đang chỉnh sửa máy chủ..."
+    "defaultMessage": "Đang chỉnh sửa máy ch�?.."
   },
   "servers.installing-banner.ticker.downloading-mods": {
     "defaultMessage": "Đang tải mod..."
@@ -3966,31 +3966,31 @@
     "defaultMessage": "Đang thiết lập môi trường..."
   },
   "servers.list-empty.already-have-server-label": {
-    "defaultMessage": "Đã có máy chủ rồi?"
+    "defaultMessage": "Đã có máy ch�?rồi?"
   },
   "servers.list-empty.learn-more-link": {
-    "defaultMessage": "Tìm hiểu thêm về Modrinth Hosting"
+    "defaultMessage": "Tìm hiểu thêm v�?Bbsmc Hosting"
   },
-  "servers.list-empty.modrinth-hosting-label": {
-    "defaultMessage": "Modrinth Hosting"
+  "servers.list-empty.Bbsmc-hosting-label": {
+    "defaultMessage": "Bbsmc Hosting"
   },
   "servers.list-empty.new-server-button": {
-    "defaultMessage": "Máy chủ mới"
+    "defaultMessage": "Máy ch�?mới"
   },
   "servers.list-empty.no-servers-description": {
-    "defaultMessage": "Cài mod, mời bạn bè, và chơi cùng nhau mà chỉ cần Ứng dụng Modrinth."
+    "defaultMessage": "Cài mod, mời bạn bè, và chơi cùng nhau mà ch�?cần Ứng dụng Bbsmc."
   },
   "servers.list-empty.no-servers-title": {
-    "defaultMessage": "Không máy chủ khả dụng"
+    "defaultMessage": "Không máy ch�?kh�?dụng"
   },
   "servers.list-empty.one-click-mod-installs-description": {
-    "defaultMessage": "Chọn bản mod mà bạn yêu thích và chúng tôi sẽ làm tất cả phần còn lại."
+    "defaultMessage": "Chọn bản mod mà bạn yêu thích và chúng tôi s�?làm tất c�?phần còn lại."
   },
   "servers.list-empty.one-click-mod-installs-title": {
     "defaultMessage": "Cài mod với một cú nhấp"
   },
   "servers.list-empty.play-with-friends-description": {
-    "defaultMessage": "Mời bạn bè và giúp họ thiết lập ngay trong ứng dụng Modrinth."
+    "defaultMessage": "Mời bạn bè và giúp h�?thiết lập ngay trong ứng dụng Bbsmc."
   },
   "servers.list-empty.play-with-friends-title": {
     "defaultMessage": "Chơi với bạn bè"
@@ -3999,7 +3999,7 @@
     "defaultMessage": "Đăng nhập"
   },
   "servers.list-empty.simple-setup-description": {
-    "defaultMessage": "Thiết lập máy chủ giống như thế giới chơi đơn."
+    "defaultMessage": "Thiết lập máy ch�?giống như th�?giới chơi đơn."
   },
   "servers.list-empty.simple-setup-title": {
     "defaultMessage": "Thiết lập đơn giản"
@@ -4008,7 +4008,7 @@
     "defaultMessage": "Đã sao chép"
   },
   "servers.listing.copy-code-tooltip": {
-    "defaultMessage": "Sao chép mã vào bảng nhớ tạm"
+    "defaultMessage": "Sao chép mã vào bảng nh�?tạm"
   },
   "servers.listing.copy-id-label": {
     "defaultMessage": "Sao chép ID"
@@ -4023,58 +4023,58 @@
     "defaultMessage": "Mới"
   },
   "servers.listing.notice.files-kept-for-download": {
-    "defaultMessage": "Tệp của bạn vẫn được giữ trong vòng <days-remaining>{daysRemaining} ngày{daysRemaining, plural, other {nữa}}</days-remaining>. liên hệ với bên hỗ trợ để tải tệp về trước khi chúng bị xóa."
+    "defaultMessage": "Tệp của bạn vẫn được gi�?trong vòng <days-remaining>{daysRemaining} ngày{daysRemaining, plural, other {nữa}}</days-remaining>. liên h�?với bên h�?tr�?đ�?tải tệp v�?trước khi chúng b�?xóa."
   },
   "servers.listing.notice.files-preserved-after-cancellation": {
-    "defaultMessage": "Tệp của bạn sẽ được giữ trong vòng 30 ngày trước khi bị xóa."
+    "defaultMessage": "Tệp của bạn s�?được gi�?trong vòng 30 ngày trước khi b�?xóa."
   },
   "servers.listing.notice.moderated": {
-    "defaultMessage": "Máy chủ của bạn đã bị đình chỉ do hành động bên kiểm duyệt."
+    "defaultMessage": "Máy ch�?của bạn đã b�?đình ch�?do hành động bên kiểm duyệt."
   },
   "servers.listing.notice.pending-change": {
-    "defaultMessage": "Máy chủ của bạn sẽ {verb, select, downgrade {bị hạ cấp} other {được nâng cấp}} đến Gói {planSize} vào <date>{formattedDate}</date>."
+    "defaultMessage": "Máy ch�?của bạn s�?{verb, select, downgrade {b�?h�?cấp} other {được nâng cấp}} đến Gói {planSize} vào <date>{formattedDate}</date>."
   },
   "servers.listing.notice.provisioning": {
-    "defaultMessage": "Vui lòng đợi trong khi chúng tôi thiết lập máy chủ của bạn. Điều này sẽ mất tối đa 10 phút."
+    "defaultMessage": "Vui lòng đợi trong khi chúng tôi thiết lập máy ch�?của bạn. Điều này s�?mất tối đa 10 phút."
   },
   "servers.listing.notice.subscription-cancelled": {
-    "defaultMessage": "Gói đăng ký của bạn đã bị hủy."
+    "defaultMessage": "Gói đăng ký của bạn đã b�?hủy."
   },
   "servers.listing.notice.subscription-cancelled-on-date": {
-    "defaultMessage": "Gói đăng ký của bạn đã bị hủy vào <date>{formattedDate}</date>."
+    "defaultMessage": "Gói đăng ký của bạn đã b�?hủy vào <date>{formattedDate}</date>."
   },
   "servers.listing.notice.subscription-cancelled-payment-failed": {
-    "defaultMessage": "Gói đăng ký của bạn đã bị hủy do thất bại giao dịch thanh toán."
+    "defaultMessage": "Gói đăng ký của bạn đã b�?hủy do thất bại giao dịch thanh toán."
   },
   "servers.listing.notice.subscription-cancelled-payment-failed-on-date": {
-    "defaultMessage": "Gói đăng ký của bạn đã bị hủy vào <date>{formattedDate}</date> do thất bại giao dịch thanh toán. "
+    "defaultMessage": "Gói đăng ký của bạn đã b�?hủy vào <date>{formattedDate}</date> do thất bại giao dịch thanh toán. "
   },
   "servers.listing.notice.subscription-set-to-cancel": {
-    "defaultMessage": "Gói đăng ký của bạn được thiết lập để hủy."
+    "defaultMessage": "Gói đăng ký của bạn được thiết lập đ�?hủy."
   },
   "servers.listing.notice.subscription-set-to-cancel-on-date": {
-    "defaultMessage": "Gói đăng ký của bạn được thiết lập để hủy vào <date>{formattedDate}</date>. "
+    "defaultMessage": "Gói đăng ký của bạn được thiết lập đ�?hủy vào <date>{formattedDate}</date>. "
   },
   "servers.listing.notice.suspended": {
-    "defaultMessage": "Máy chủ của bạn đã bị đình chỉ, liên hệ bên hỗ trợ Modrinth để biết thêm thông tin."
+    "defaultMessage": "Máy ch�?của bạn đã b�?đình ch�? liên h�?bên h�?tr�?Bbsmc đ�?biết thêm thông tin."
   },
   "servers.listing.notice.upgrading": {
-    "defaultMessage": "Phần cứng máy chủ của bạn hiện đang được nâng cấp và sẽ hoạt động trở lại trong thời gian ngắn."
+    "defaultMessage": "Phần cứng máy ch�?của bạn hiện đang được nâng cấp và s�?hoạt động tr�?lại trong thời gian ngắn."
   },
   "servers.listing.resubscribe-label": {
     "defaultMessage": "Đăng ký lại"
   },
   "servers.listing.server-icon-alt": {
-    "defaultMessage": "Biểu tượng máy chủ"
+    "defaultMessage": "Biểu tượng máy ch�?
   },
   "servers.listing.support-label": {
-    "defaultMessage": "Hỗ trợ"
+    "defaultMessage": "H�?tr�?
   },
   "servers.listing.using-project-label": {
-    "defaultMessage": "Đang sử dụng {projectTitle}"
+    "defaultMessage": "Đang s�?dụng {projectTitle}"
   },
   "servers.manage.checking-for-new-servers": {
-    "defaultMessage": "Đang tìm máy chủ mới..."
+    "defaultMessage": "Đang tìm máy ch�?mới..."
   },
   "servers.manage.confirm-leave.body": {
     "defaultMessage": "Đang tải lên tệp. Thoát khỏi trang này đồng nghĩa với việc hủy tải lên."
@@ -4083,58 +4083,58 @@
     "defaultMessage": "Đang tải lên"
   },
   "servers.manage.contact-support-button": {
-    "defaultMessage": "Liên hệ bên hỗ trợ Modrinth"
+    "defaultMessage": "Liên h�?bên h�?tr�?Bbsmc"
   },
   "servers.manage.error.alert-notice": {
-    "defaultMessage": "Hệ thống của chúng tôi tự động báo cáo với đội ngũ khi có vấn đề. Chúng tôi đã cố gắng đưa nó trực tuyến."
+    "defaultMessage": "H�?thống của chúng tôi t�?động báo cáo với đội ngũ khi có vấn đ�? Chúng tôi đã c�?gắng đưa nó trực tuyến."
   },
   "servers.manage.error.description": {
-    "defaultMessage": "Chúng tôi có thể đang có vấn đề tạm thời với máy chủ."
+    "defaultMessage": "Chúng tôi có th�?đang có vấn đ�?tạm thời với máy ch�?"
   },
   "servers.manage.error.details": {
     "defaultMessage": "Chi tiết lỗi:"
   },
   "servers.manage.error.queue-notice": {
-    "defaultMessage": "Nếu bạn đã từng mua máy chủ Modrinth Hosting, nó đang trong hàng chờ và sẽ xuất hiện ở đây khi đã sẵn sàng. <warning>Tuyệt đối không được mua lại máy chủ mới.</warning>"
+    "defaultMessage": "Nếu bạn đã từng mua máy ch�?Bbsmc Hosting, nó đang trong hàng ch�?và s�?xuất hiện �?đây khi đã sẵn sàng. <warning>Tuyệt đối không được mua lại máy ch�?mới.</warning>"
   },
   "servers.manage.error.support-notice": {
-    "defaultMessage": "Nếu bạn cần trợ giúp cá nhân liên quan đến trạng thái máy chủ, vui lòng liên hệ bên hỗ trợ Modrinth."
+    "defaultMessage": "Nếu bạn cần tr�?giúp cá nhân liên quan đến trạng thái máy ch�? vui lòng liên h�?bên h�?tr�?Bbsmc."
   },
   "servers.manage.error.title": {
-    "defaultMessage": "Không tải được máy chủ"
+    "defaultMessage": "Không tải được máy ch�?
   },
   "servers.manage.handle-error.title": {
     "defaultMessage": "Có lỗi xảy ra"
   },
   "servers.manage.new-server-button": {
-    "defaultMessage": "Máy chủ mới"
+    "defaultMessage": "Máy ch�?mới"
   },
   "servers.manage.no-servers-found": {
-    "defaultMessage": "Không tìm thấy máy chủ."
+    "defaultMessage": "Không tìm thấy máy ch�?"
   },
   "servers.manage.purchase-unavailable.text": {
-    "defaultMessage": "Thông tin thanh toán đang được tải. Trang thanh toán sẽ được mở khi sẵn sàng."
+    "defaultMessage": "Thông tin thanh toán đang được tải. Trang thanh toán s�?được m�?khi sẵn sàng."
   },
   "servers.manage.purchase-unavailable.title": {
-    "defaultMessage": "Không thể mua hàng"
+    "defaultMessage": "Không th�?mua hàng"
   },
   "servers.manage.reload-button": {
     "defaultMessage": "Làm mới"
   },
   "servers.manage.resubscribe-error.text": {
-    "defaultMessage": "Có lỗi xảy ra trong khi đăng ký lại cho máy chủ Modrinth."
+    "defaultMessage": "Có lỗi xảy ra trong khi đăng ký lại cho máy ch�?Bbsmc."
   },
   "servers.manage.resubscribe-error.title": {
     "defaultMessage": "Lỗi khi đăng ký lại"
   },
   "servers.manage.resubscribe-submitted.text": {
-    "defaultMessage": "Nếu máy chủ hiện bị hủy, có thể cần 10 phút trước khi thử lại thao tác tính phí."
+    "defaultMessage": "Nếu máy ch�?hiện b�?hủy, có th�?cần 10 phút trước khi th�?lại thao tác tính phí."
   },
   "servers.manage.resubscribe-submitted.title": {
     "defaultMessage": "Đã gửi yêu cầu gia hạn"
   },
   "servers.manage.resubscribe-success.text": {
-    "defaultMessage": "Gia hạn lại máy chủ thành công"
+    "defaultMessage": "Gia hạn lại máy ch�?thành công"
   },
   "servers.manage.resubscribe-success.title": {
     "defaultMessage": "Thành công"
@@ -4143,49 +4143,49 @@
     "defaultMessage": "Tìm kiếm trong {count} {count, plural, other {máy chủ}}..."
   },
   "servers.manage.servers-title": {
-    "defaultMessage": "Modrinth Hosting"
+    "defaultMessage": "Bbsmc Hosting"
   },
   "servers.manage.settings-hint.description": {
-    "defaultMessage": "Nó hiện đang ở đây!"
+    "defaultMessage": "Nó hiện đang �?đây!"
   },
   "servers.manage.settings-hint.dismiss": {
-    "defaultMessage": "Đừng hiển thị lại"
+    "defaultMessage": "Đừng hiển th�?lại"
   },
   "servers.manage.settings-hint.title": {
-    "defaultMessage": "Cài đặt máy chủ của bạn đã được di chuyển"
+    "defaultMessage": "Cài đặt máy ch�?của bạn đã được di chuyển"
   },
   "servers.medal-listing.countdown.remaining": {
     "defaultMessage": "còn <days-count>{days}</days-count> {days, plural, other {ngày}} <hours-count>{hours}</hours-count> {hours, plural,  other {giờ}} <minutes-count>{minutes}</minutes-count> {minutes, plural,  other {phút}} <seconds-count>{seconds}</seconds-count> {seconds, plural, other {giây}}..."
   },
   "servers.medal-listing.new-server-label": {
-    "defaultMessage": "Máy chủ mới"
+    "defaultMessage": "Máy ch�?mới"
   },
   "servers.medal-listing.notice.medal-trial-ended": {
-    "defaultMessage": "Thời gian dùng thử máy chủ Medal của bạn đã kết thúc và máy chủ của bạn đã bị đình chỉ. Vui lòng nâng cấp để tiếp tục sử dụng máy chủ."
+    "defaultMessage": "Thời gian dùng th�?máy ch�?Medal của bạn đã kết thúc và máy ch�?của bạn đã b�?đình ch�? Vui lòng nâng cấp đ�?tiếp tục s�?dụng máy ch�?"
   },
   "servers.medal-listing.notice.suspended": {
-    "defaultMessage": "Máy chủ của bạn đã bị đình chỉ. Vui lòng cập nhật thông tin thanh toán hoặc liên hệ với bên hỗ trợ của Modrinth để biết thêm thông tin."
+    "defaultMessage": "Máy ch�?của bạn đã b�?đình ch�? Vui lòng cập nhật thông tin thanh toán hoặc liên h�?với bên h�?tr�?của Bbsmc đ�?biết thêm thông tin."
   },
   "servers.medal-listing.notice.suspended-with-reason": {
-    "defaultMessage": "Máy chủ của bạn đã bị đình chỉ do: {reason}. Vui lòng cập nhật thông tin thanh toán hoặc liên hệ với bên hỗ trợ của Modrinth để biết thêm thông tin."
+    "defaultMessage": "Máy ch�?của bạn đã b�?đình ch�?do: {reason}. Vui lòng cập nhật thông tin thanh toán hoặc liên h�?với bên h�?tr�?của Bbsmc đ�?biết thêm thông tin."
   },
   "servers.medal-listing.notice.upgrading": {
-    "defaultMessage": "Phần cứng máy chủ của bạn hiện đang được nâng cấp và sẽ hoạt động trở lại trong thời gian ngắn."
+    "defaultMessage": "Phần cứng máy ch�?của bạn hiện đang được nâng cấp và s�?hoạt động tr�?lại trong thời gian ngắn."
   },
   "servers.medal-listing.server-icon-alt": {
-    "defaultMessage": "Biểu tượng máy chủ"
+    "defaultMessage": "Biểu tượng máy ch�?
   },
   "servers.medal-listing.upgrade-button": {
     "defaultMessage": "Nâng cấp"
   },
   "servers.medal-listing.using-project-label": {
-    "defaultMessage": "Đang sử dụng {projectTitle}"
+    "defaultMessage": "Đang s�?dụng {projectTitle}"
   },
   "servers.notice.dismiss": {
-    "defaultMessage": "Bỏ qua"
+    "defaultMessage": "B�?qua"
   },
   "servers.notice.dismissable": {
-    "defaultMessage": "Có thể bỏ qua"
+    "defaultMessage": "Có th�?b�?qua"
   },
   "servers.notice.heading.attention": {
     "defaultMessage": "Lưu ý"
@@ -4206,16 +4206,16 @@
     "defaultMessage": "Cảnh báo"
   },
   "servers.notice.undismissable": {
-    "defaultMessage": "Không thể bỏ qua"
+    "defaultMessage": "Không th�?b�?qua"
   },
   "servers.purchase.notification.success.text": {
-    "defaultMessage": "Đã thành toán thành công cho Modrinth Hosting."
+    "defaultMessage": "Đã thành toán thành công cho Bbsmc Hosting."
   },
   "servers.purchase.notification.success.title": {
     "defaultMessage": "Thanh toán thành công"
   },
   "servers.purchase.step.payment.description": {
-    "defaultMessage": "Bạn sẽ không bị tính phí."
+    "defaultMessage": "Bạn s�?không b�?tính phí."
   },
   "servers.purchase.step.payment.prompt": {
     "defaultMessage": "Chọn phương thức thanh toán"
@@ -4224,16 +4224,16 @@
     "defaultMessage": "Phương thức thanh toán"
   },
   "servers.purchase.step.plan.billed": {
-    "defaultMessage": "trả tiền hàng {interval, select, monthly {tháng} quarterly {quý (3 tháng)} yearly {năm} other {{interval}}}"
+    "defaultMessage": "tr�?tiền hàng {interval, select, monthly {tháng} quarterly {quý (3 tháng)} yearly {năm} other {{interval}}}"
   },
   "servers.purchase.step.plan.billing-subtitle": {
-    "defaultMessage": "Có sẵn ở Đông Nam Á, Châu Âu và Bắc Mỹ."
+    "defaultMessage": "Có sẵn �?Đông Nam Á, Châu Âu và Bắc M�?"
   },
   "servers.purchase.step.plan.custom.desc": {
     "defaultMessage": "Chọn gói tùy chỉnh với đúng những cấu hình bạn cần."
   },
   "servers.purchase.step.plan.custom.heading": {
-    "defaultMessage": "Biết bạn cần gì rồi chứ?"
+    "defaultMessage": "Biết bạn cần gì rồi ch�?"
   },
   "servers.purchase.step.plan.get-started": {
     "defaultMessage": "Bắt đầu"
@@ -4242,25 +4242,25 @@
     "defaultMessage": "Lớn"
   },
   "servers.purchase.step.plan.large.desc": {
-    "defaultMessage": "Ý tưởng cho 15–25 người chơi, modpacks hoặc nặng về modding."
+    "defaultMessage": "Ý tưởng cho 15�?5 người chơi, modpacks hoặc nặng v�?modding."
   },
   "servers.purchase.step.plan.medium": {
     "defaultMessage": "Trung bình"
   },
   "servers.purchase.step.plan.medium.desc": {
-    "defaultMessage": "Tốt cho 6–15 người chơi và nhiều mods khác nhau."
+    "defaultMessage": "Tốt cho 6�?5 người chơi và nhiều mods khác nhau."
   },
   "servers.purchase.step.plan.most-popular": {
-    "defaultMessage": "Phổ biến nhất"
+    "defaultMessage": "Ph�?biến nhất"
   },
   "servers.purchase.step.plan.select": {
     "defaultMessage": "Chọn gói"
   },
   "servers.purchase.step.plan.small": {
-    "defaultMessage": "Nhỏ"
+    "defaultMessage": "Nh�?
   },
   "servers.purchase.step.plan.small.desc": {
-    "defaultMessage": "Hoàn hảo cho 1–5 người bạn với một vài mod nhẹ."
+    "defaultMessage": "Hoàn hảo cho 1�? người bạn với một vài mod nh�?"
   },
   "servers.purchase.step.plan.title": {
     "defaultMessage": "Gói"
@@ -4281,25 +4281,25 @@
     "defaultMessage": "Trung Âu"
   },
   "servers.region.custom.prompt": {
-    "defaultMessage": "Bạn muốn máy chủ mình có bao nhiêu dung lượng RAM?"
+    "defaultMessage": "Bạn muốn máy ch�?mình có bao nhiêu dung lượng RAM?"
   },
   "servers.region.custom.prompt-ram-only": {
     "defaultMessage": "RAM"
   },
   "servers.region.north-america-central": {
-    "defaultMessage": "Trung Bắc Mỹ"
+    "defaultMessage": "Trung Bắc M�?
   },
   "servers.region.north-america-east": {
-    "defaultMessage": "Đông Bắc Mỹ"
+    "defaultMessage": "Đông Bắc M�?
   },
   "servers.region.north-america-west": {
-    "defaultMessage": "Tây Bắc Mỹ"
+    "defaultMessage": "Tây Bắc M�?
   },
   "servers.region.prompt": {
-    "defaultMessage": "Bạn muốn khu vực máy chủ của bạn được nằm ở đâu?"
+    "defaultMessage": "Bạn muốn khu vực máy ch�?của bạn được nằm �?đâu?"
   },
   "servers.region.region-unsupported": {
-    "defaultMessage": "Khu vực không được liệt kê? <link>Hãy cho chúng tôi biết nơi mà bạn muốn Modrinth Hosting sẽ có trong tương lai!</link>"
+    "defaultMessage": "Khu vực không được liệt kê? <link>Hãy cho chúng tôi biết nơi mà bạn muốn Bbsmc Hosting s�?có trong tương lai!</link>"
   },
   "servers.region.southeast-asia": {
     "defaultMessage": "Đông Nam Á"
@@ -4308,64 +4308,64 @@
     "defaultMessage": "Tây Âu"
   },
   "servers.setup.onboarding.installation-failed.text": {
-    "defaultMessage": "Có lỗi xảy ra trong khi tải. Thử lại sau."
+    "defaultMessage": "Có lỗi xảy ra trong khi tải. Th�?lại sau."
   },
   "servers.setup.onboarding.installation-failed.title": {
     "defaultMessage": "Cài đặt thất bại"
   },
   "servers.setup.onboarding.modpack-upload-failed.text": {
-    "defaultMessage": "Có lỗi xảy ra trong khi tải lên. Thử lại sau."
+    "defaultMessage": "Có lỗi xảy ra trong khi tải lên. Th�?lại sau."
   },
   "servers.setup.onboarding.modpack-upload-failed.title": {
     "defaultMessage": "Tải lên modpack thất bại"
   },
   "servers.setup.onboarding.setup-server.button": {
-    "defaultMessage": "Thiết lập máy chủ"
+    "defaultMessage": "Thiết lập máy ch�?
   },
   "servers.setup.onboarding.step.choose.description": {
     "defaultMessage": "Chọn modpack bạn yêu thích, hoặc chọn loader và thêm bản mod bạn muốn."
   },
   "servers.setup.onboarding.step.choose.title": {
-    "defaultMessage": "Chọn thứ để chơi"
+    "defaultMessage": "Chọn th�?đ�?chơi"
   },
   "servers.setup.onboarding.step.configure-world.description": {
-    "defaultMessage": "Thiết lập thế giới của bạn y hệt chơi đơn. Chọn Chế độ và hạt giống thế giới."
+    "defaultMessage": "Thiết lập th�?giới của bạn y hệt chơi đơn. Chọn Ch�?đ�?và hạt giống th�?giới."
   },
   "servers.setup.onboarding.step.configure-world.title": {
-    "defaultMessage": "Chỉnh sửa thế giới"
+    "defaultMessage": "Chỉnh sửa th�?giới"
   },
   "servers.setup.onboarding.step.invite-friends.description": {
-    "defaultMessage": "Chia sẻ máy chủ của bạn với bạn bè bằng cách sao chép địa chỉ và cho họ biết họ sẽ cần dùng bản mod nào để vào."
+    "defaultMessage": "Chia s�?máy ch�?của bạn với bạn bè bằng cách sao chép địa ch�?và cho h�?biết h�?s�?cần dùng bản mod nào đ�?vào."
   },
   "servers.setup.onboarding.step.invite-friends.title": {
     "defaultMessage": "Mời bạn bè"
   },
   "servers.setup.onboarding.steps.heading": {
-    "defaultMessage": "Thiết lập máy chủ (~2 phút)"
+    "defaultMessage": "Thiết lập máy ch�?(~2 phút)"
   },
   "servers.setup.onboarding.uploading.progress": {
     "defaultMessage": "Đang tải lên ({percent, number}%)"
   },
   "servers.setup.onboarding.welcome.description": {
-    "defaultMessage": "Máy chủ của bạn đã sẵn sàng. Bạn sẽ cần làm những điều này để bắt đầu chơi!"
+    "defaultMessage": "Máy ch�?của bạn đã sẵn sàng. Bạn s�?cần làm những điều này đ�?bắt đầu chơi!"
   },
   "servers.setup.onboarding.welcome.title": {
-    "defaultMessage": "Chào mừng đến Modrinth Hosting"
+    "defaultMessage": "Chào mừng đến Bbsmc Hosting"
   },
   "servers.setup.rate-limit.text": {
-    "defaultMessage": "Bạn đang bị giới hạn lượt truy cập. Vui lòng thử lại sau."
+    "defaultMessage": "Bạn đang b�?giới hạn lượt truy cập. Vui lòng th�?lại sau."
   },
   "servers.setup.rate-limit.title": {
-    "defaultMessage": "Không thể cài đặt lại máy chủ"
+    "defaultMessage": "Không th�?cài đặt lại máy ch�?
   },
   "servers.setup.reinstall-failed.text": {
-    "defaultMessage": "Đã xảy ra lỗi không mong muốn trong quá trình cài đặt lại. Vui lòng thử lại sau."
+    "defaultMessage": "Đã xảy ra lỗi không mong muốn trong quá trình cài đặt lại. Vui lòng th�?lại sau."
   },
   "servers.setup.reinstall-failed.title": {
     "defaultMessage": "Lỗi cài đặt lại"
   },
   "servers.setup.upload-warning": {
-    "defaultMessage": "Vui lòng giữ trang này mở cho đến khi quá trình tải lên hoàn tất."
+    "defaultMessage": "Vui lòng gi�?trang này m�?cho đến khi quá trình tải lên hoàn tất."
   },
   "servers.setup.uploading-modpack.header": {
     "defaultMessage": "Đang tải lên modpack"
@@ -4389,7 +4389,7 @@
     "defaultMessage": "Tối"
   },
   "settings.display.theme.description": {
-    "defaultMessage": "Chọn màu nền ưa thích của bạn cho Modrinth trên thiết bị này."
+    "defaultMessage": "Chọn màu nền ưa thích của bạn cho Bbsmc trên thiết b�?này."
   },
   "settings.display.theme.light": {
     "defaultMessage": "Sáng"
@@ -4398,40 +4398,40 @@
     "defaultMessage": "OLED"
   },
   "settings.display.theme.preferred-dark-theme": {
-    "defaultMessage": "Chủ đề tối được ưa thích"
+    "defaultMessage": "Ch�?đ�?tối được ưa thích"
   },
   "settings.display.theme.preferred-light-theme": {
-    "defaultMessage": "Chủ đề sáng được ưa thích"
+    "defaultMessage": "Ch�?đ�?sáng được ưa thích"
   },
   "settings.display.theme.retro": {
     "defaultMessage": "Retro"
   },
   "settings.display.theme.system": {
-    "defaultMessage": "Đồng bộ với hệ thống"
+    "defaultMessage": "Đồng b�?với h�?thống"
   },
   "settings.display.theme.title": {
-    "defaultMessage": "Màu chủ đề"
+    "defaultMessage": "Màu ch�?đ�?
   },
   "settings.feature-flags.title": {
-    "defaultMessage": "Tính năng phụ"
+    "defaultMessage": "Tính năng ph�?
   },
   "settings.language.categories.default": {
-    "defaultMessage": "Ngôn ngữ tiêu chuẩn"
+    "defaultMessage": "Ngôn ng�?tiêu chuẩn"
   },
   "settings.language.categories.search-result": {
-    "defaultMessage": "Kết quả tìm kiếm"
+    "defaultMessage": "Kết qu�?tìm kiếm"
   },
   "settings.language.description": {
-    "defaultMessage": "Chọn ngôn ngữ ưa thích của bạn cho {platform}. Các bản dịch được đóng góp bởi những tình nguyện viên trên <crowdin-link>Crowdin</crowdin-link>."
+    "defaultMessage": "Chọn ngôn ng�?ưa thích của bạn cho {platform}. Các bản dịch được đóng góp bởi những tình nguyện viên trên <crowdin-link>Crowdin</crowdin-link>."
   },
   "settings.language.languages.search-field.placeholder": {
-    "defaultMessage": "Tìm kiếm một ngôn ngữ..."
+    "defaultMessage": "Tìm kiếm một ngôn ng�?.."
   },
   "settings.language.languages.search-results-announcement": {
-    "defaultMessage": "{matches, plural, =0 {Không có ngôn ngữ nào} other {Có # ngôn ngữ}} khớp với tìm kiếm của bạn."
+    "defaultMessage": "{matches, plural, =0 {Không có ngôn ng�?nào} other {Có # ngôn ngữ}} khớp với tìm kiếm của bạn."
   },
   "settings.language.languages.search.no-results": {
-    "defaultMessage": "Không có ngôn ngữ phù hợp với tìm kiếm của bạn."
+    "defaultMessage": "Không có ngôn ng�?phù hợp với tìm kiếm của bạn."
   },
   "settings.language.platform.app": {
     "defaultMessage": "ứng dụng"
@@ -4440,10 +4440,10 @@
     "defaultMessage": "trang web"
   },
   "settings.language.title": {
-    "defaultMessage": "Ngôn ngữ"
+    "defaultMessage": "Ngôn ng�?
   },
   "settings.language.warning": {
-    "defaultMessage": "Thay đổi sang một số ngôn ngữ trên {platform} có thể sẽ khiến cho một số thứ được hiển thị bằng tiếng Anh do chưa được dịch đầy đủ."
+    "defaultMessage": "Thay đổi sang một s�?ngôn ng�?trên {platform} có th�?s�?khiến cho một s�?th�?được hiển th�?bằng tiếng Anh do chưa được dịch đầy đ�?"
   },
   "settings.pats.title": {
     "defaultMessage": "Khóa truy cập cá nhân"
@@ -4479,7 +4479,7 @@
     "defaultMessage": "Phiêu lưu"
   },
   "tag.category.adventure-mode": {
-    "defaultMessage": "Chế độ phiêu lưu"
+    "defaultMessage": "Ch�?đ�?phiêu lưu"
   },
   "tag.category.anarchy": {
     "defaultMessage": "Hỗn loạn"
@@ -4509,7 +4509,7 @@
     "defaultMessage": "Hoạt hình"
   },
   "tag.category.challenging": {
-    "defaultMessage": "Thử thách"
+    "defaultMessage": "Th�?thách"
   },
   "tag.category.classes": {
     "defaultMessage": "Lớp nhân vật"
@@ -4527,7 +4527,7 @@
     "defaultMessage": "Core Shaders"
   },
   "tag.category.creative-mode": {
-    "defaultMessage": "Chế độ sáng tạo"
+    "defaultMessage": "Ch�?đ�?sáng tạo"
   },
   "tag.category.creator-community": {
     "defaultMessage": "Nhà sáng tạo cộng đồng"
@@ -4539,7 +4539,7 @@
     "defaultMessage": "Nguyền rủa"
   },
   "tag.category.custom-content": {
-    "defaultMessage": "Nội dung tuỳ chỉnh"
+    "defaultMessage": "Nội dung tu�?chỉnh"
   },
   "tag.category.decoration": {
     "defaultMessage": "Trang trí"
@@ -4548,34 +4548,34 @@
     "defaultMessage": "Hầm ngục"
   },
   "tag.category.economy": {
-    "defaultMessage": "Kinh tế"
+    "defaultMessage": "Kinh t�?
   },
   "tag.category.entities": {
-    "defaultMessage": "Thực thể"
+    "defaultMessage": "Thực th�?
   },
   "tag.category.environment": {
     "defaultMessage": "Môi trường"
   },
   "tag.category.equipment": {
-    "defaultMessage": "Trang bị"
+    "defaultMessage": "Trang b�?
   },
   "tag.category.factions": {
     "defaultMessage": "Phe phái"
   },
   "tag.category.fantasy": {
-    "defaultMessage": "Giả tưởng"
+    "defaultMessage": "Gi�?tưởng"
   },
   "tag.category.foliage": {
     "defaultMessage": "Cây cối"
   },
   "tag.category.fonts": {
-    "defaultMessage": "Phông chữ"
+    "defaultMessage": "Phông ch�?
   },
   "tag.category.food": {
     "defaultMessage": "Thức ăn"
   },
   "tag.category.game-mechanics": {
-    "defaultMessage": "Cơ chế trò chơi"
+    "defaultMessage": "Cơ ch�?trò chơi"
   },
   "tag.category.gens": {
     "defaultMessage": "Khởi tạo"
@@ -4584,7 +4584,7 @@
     "defaultMessage": "GUI"
   },
   "tag.category.hardcore-mode": {
-    "defaultMessage": "Chế độ siêu khó"
+    "defaultMessage": "Ch�?đ�?siêu khó"
   },
   "tag.category.high": {
     "defaultMessage": "Cao"
@@ -4593,7 +4593,7 @@
     "defaultMessage": "Vật phẩm"
   },
   "tag.category.keep-inventory": {
-    "defaultMessage": "Chết không mất đồ"
+    "defaultMessage": "Chết không mất đ�?
   },
   "tag.category.kitchen-sink": {
     "defaultMessage": "Gì cũng được"
@@ -4608,10 +4608,10 @@
     "defaultMessage": "Lifesteal"
   },
   "tag.category.lightweight": {
-    "defaultMessage": "Nhẹ"
+    "defaultMessage": "Nh�?
   },
   "tag.category.locale": {
-    "defaultMessage": "Ngôn ngữ"
+    "defaultMessage": "Ngôn ng�?
   },
   "tag.category.low": {
     "defaultMessage": "Thấp"
@@ -4656,7 +4656,7 @@
     "defaultMessage": "Mạng"
   },
   "tag.category.offline-mode": {
-    "defaultMessage": "Chế độ ngoại tuyến"
+    "defaultMessage": "Ch�?đ�?ngoại tuyến"
   },
   "tag.category.oneblock": {
     "defaultMessage": "Một Block"
@@ -4677,7 +4677,7 @@
     "defaultMessage": "PBR"
   },
   "tag.category.personal-worlds": {
-    "defaultMessage": "Thế giới riêng"
+    "defaultMessage": "Th�?giới riêng"
   },
   "tag.category.plots": {
     "defaultMessage": "Đất riêng"
@@ -4698,10 +4698,10 @@
     "defaultMessage": "PvP"
   },
   "tag.category.questing": {
-    "defaultMessage": "Hệ thống nhiệm vụ"
+    "defaultMessage": "H�?thống nhiệm v�?
   },
   "tag.category.quests": {
-    "defaultMessage": "Nhiệm vụ"
+    "defaultMessage": "Nhiệm v�?
   },
   "tag.category.racing": {
     "defaultMessage": "Cuộc đua"
@@ -4725,10 +4725,10 @@
     "defaultMessage": "Chụp hình"
   },
   "tag.category.semi-realistic": {
-    "defaultMessage": "Bán thực tế"
+    "defaultMessage": "Bán thực t�?
   },
   "tag.category.shadows": {
-    "defaultMessage": "Đổ bóng"
+    "defaultMessage": "Đ�?bóng"
   },
   "tag.category.simplistic": {
     "defaultMessage": "Đơn điệu"
@@ -4743,25 +4743,25 @@
     "defaultMessage": "Giap tiếp"
   },
   "tag.category.storage": {
-    "defaultMessage": "Lưu trữ"
+    "defaultMessage": "Lưu tr�?
   },
   "tag.category.survival-mode": {
-    "defaultMessage": "Chế độ sinh tồn"
+    "defaultMessage": "Ch�?đ�?sinh tồn"
   },
   "tag.category.teams": {
     "defaultMessage": "Team"
   },
   "tag.category.technical": {
-    "defaultMessage": "Kỹ thuật"
+    "defaultMessage": "K�?thuật"
   },
   "tag.category.technology": {
-    "defaultMessage": "Công nghệ"
+    "defaultMessage": "Công ngh�?
   },
   "tag.category.themed": {
     "defaultMessage": "Giao diện"
   },
   "tag.category.towns": {
-    "defaultMessage": "Thị trấn"
+    "defaultMessage": "Th�?trấn"
   },
   "tag.category.transportation": {
     "defaultMessage": "Vận chuyển"
@@ -4779,10 +4779,10 @@
     "defaultMessage": "Yêu cầu xét duyệt"
   },
   "tag.category.world-resets": {
-    "defaultMessage": "Reset thế giới"
+    "defaultMessage": "Reset th�?giới"
   },
   "tag.category.worldgen": {
-    "defaultMessage": "Cấu tạo thế giới"
+    "defaultMessage": "Cấu tạo th�?giới"
   },
   "tag.loader.babric": {
     "defaultMessage": "Babric"
@@ -4800,7 +4800,7 @@
     "defaultMessage": "Canvas"
   },
   "tag.loader.datapack": {
-    "defaultMessage": "Gói dữ liệu"
+    "defaultMessage": "Gói d�?liệu"
   },
   "tag.loader.fabric": {
     "defaultMessage": "Fabric"
@@ -4812,7 +4812,7 @@
     "defaultMessage": "Forge"
   },
   "tag.loader.geyser": {
-    "defaultMessage": "Tiện ích mở rộng Geyser"
+    "defaultMessage": "Tiện ích m�?rộng Geyser"
   },
   "tag.loader.iris": {
     "defaultMessage": "Iris"
@@ -4944,16 +4944,16 @@
     "defaultMessage": "Tgian bắt đầu"
   },
   "time-frame-picker.timeframe-amount": {
-    "defaultMessage": "Số trong khung thời gian"
+    "defaultMessage": "S�?trong khung thời gian"
   },
   "time-frame-picker.timeframe-unit": {
-    "defaultMessage": "Đơn vị thời gian"
+    "defaultMessage": "Đơn v�?thời gian"
   },
   "time-frame-picker.unit.days": {
     "defaultMessage": "ngày"
   },
   "time-frame-picker.unit.hours": {
-    "defaultMessage": "giờ"
+    "defaultMessage": "gi�?
   },
   "time-frame-picker.unit.months": {
     "defaultMessage": "tháng"
@@ -4965,7 +4965,7 @@
     "defaultMessage": "Bạn có những thay đổi chưa được lưu"
   },
   "ui.confirm-leave-modal.body": {
-    "defaultMessage": "Bạn có một số thay đổi chưa được lưu, và những thay đổi này sẽ bị mất nếu bạn rời khỏi trang này."
+    "defaultMessage": "Bạn có một s�?thay đổi chưa được lưu, và những thay đổi này s�?b�?mất nếu bạn rời khỏi trang này."
   },
   "ui.confirm-leave-modal.header": {
     "defaultMessage": "Bạn có một vài thay đổi chưa được lưu"
@@ -4974,7 +4974,7 @@
     "defaultMessage": "Rời khỏi trang"
   },
   "ui.confirm-leave-modal.stay": {
-    "defaultMessage": "Ở lại trang này"
+    "defaultMessage": "�?lại trang này"
   },
   "ui.confirm-leave-modal.title": {
     "defaultMessage": "Rời khỏi trang nhé?"
@@ -4986,99 +4986,99 @@
     "defaultMessage": "Tắt hết"
   },
   "user.profile.badge.alpha.about.1": {
-    "defaultMessage": "Người dùng này đã có mặt từ thời khủng long, kết thúc vào tháng mười một năm 2020."
+    "defaultMessage": "Người dùng này đã có mặt t�?thời khủng long, kết thúc vào tháng mười một năm 2020."
   },
   "user.profile.badge.alpha.name": {
-    "defaultMessage": "Người thử nghiệm Alpha"
+    "defaultMessage": "Người th�?nghiệm Alpha"
   },
   "user.profile.badge.beta.about.1": {
-    "defaultMessage": "Người dùng nãy đã có mặt từ thời Beta, kết thúc vào tháng hai năm 2022."
+    "defaultMessage": "Người dùng nãy đã có mặt t�?thời Beta, kết thúc vào tháng hai năm 2022."
   },
   "user.profile.badge.beta.link": {
-    "defaultMessage": "Nhấp để tìm hiểu thêm vào sự ra mắt phiên bản Beta của Modrinth."
+    "defaultMessage": "Nhấp đ�?tìm hiểu thêm vào s�?ra mắt phiên bản Beta của Bbsmc."
   },
   "user.profile.badge.beta.name": {
-    "defaultMessage": "Người thử nghiệm Beta"
+    "defaultMessage": "Người th�?nghiệm Beta"
   },
   "user.profile.badge.downloads.about.1": {
-    "defaultMessage": "Dự án của người dùng này đã nhận được {download_sum} lượt tải xuống."
+    "defaultMessage": "D�?án của người dùng này đã nhận được {download_sum} lượt tải xuống."
   },
   "user.profile.badge.downloads.name": {
     "defaultMessage": "{download_sum} Lượt tải xuống"
   },
   "user.profile.badge.early-datapack-adopter.about.1": {
-    "defaultMessage": "Người dùng này đã giúp chúng tôi thử nghiệm với các dự án gói dữ liệu trên Modrinth trước khi chúng tôi phát hành chúng vào tháng giêng 2023."
+    "defaultMessage": "Người dùng này đã giúp chúng tôi th�?nghiệm với các d�?án gói d�?liệu trên Bbsmc trước khi chúng tôi phát hành chúng vào tháng giêng 2023."
   },
   "user.profile.badge.early-datapack-adopter.name": {
-    "defaultMessage": "Người dùng gói dữ liệu sớm"
+    "defaultMessage": "Người dùng gói d�?liệu sớm"
   },
   "user.profile.badge.early-modpack-adopter.about.1": {
-    "defaultMessage": "Người dùng này đã giúp chúng tôi thử nghiệm với các dự án Modpack trên Modrinth trước khi chúng tôi phát hành chúng vào tháng năm, 2022."
+    "defaultMessage": "Người dùng này đã giúp chúng tôi th�?nghiệm với các d�?án Modpack trên Bbsmc trước khi chúng tôi phát hành chúng vào tháng năm, 2022."
   },
   "user.profile.badge.early-modpack-adopter.name": {
     "defaultMessage": "Người dùng Modpack sớm"
   },
   "user.profile.badge.early-plugin-adopter.about.1": {
-    "defaultMessage": "Người dùng này đã giúp chúng tôi thử nghiệm với các dự án Plugin trên Modrinth trước khi chúng tôi phát hành chúng vào tháng tám 2022."
+    "defaultMessage": "Người dùng này đã giúp chúng tôi th�?nghiệm với các d�?án Plugin trên Bbsmc trước khi chúng tôi phát hành chúng vào tháng tám 2022."
   },
   "user.profile.badge.early-plugin-adopter.name": {
     "defaultMessage": "Người dùng Plugin sớm"
   },
   "user.profile.badge.early-resourcepack-adopter.about.1": {
-    "defaultMessage": "Người dùng này đã giúp chúng tôi thử nghiệm với các dự án gói tài nguyên trên Modrinth trước khi chúng tôi phát hành chúng vào tháng tám 2022."
+    "defaultMessage": "Người dùng này đã giúp chúng tôi th�?nghiệm với các d�?án gói tài nguyên trên Bbsmc trước khi chúng tôi phát hành chúng vào tháng tám 2022."
   },
   "user.profile.badge.early-resourcepack-adopter.name": {
     "defaultMessage": "Người dùng gói tài nguyên sớm"
   },
   "user.profile.badge.early-server-adopter.about.1": {
-    "defaultMessage": "Người dùng này đã giúp chúng tôi thử nghiệm với các dự án máy chủ trên Modrinth trước khi chúng tôi phát hành chúng vào tháng ba 2026."
+    "defaultMessage": "Người dùng này đã giúp chúng tôi th�?nghiệm với các d�?án máy ch�?trên Bbsmc trước khi chúng tôi phát hành chúng vào tháng ba 2026."
   },
   "user.profile.badge.early-server-adopter.name": {
-    "defaultMessage": "Người dùng Máy chủ sớm"
+    "defaultMessage": "Người dùng Máy ch�?sớm"
   },
   "user.profile.badge.early-shader-adopter.about.1": {
-    "defaultMessage": "Người dùng này đã giúp chúng tôi thử nghiệm với các dự án Shader trên Modrinth trước khi chúng tôi phát hành chúng vào tháng giêng 2023."
+    "defaultMessage": "Người dùng này đã giúp chúng tôi th�?nghiệm với các d�?án Shader trên Bbsmc trước khi chúng tôi phát hành chúng vào tháng giêng 2023."
   },
   "user.profile.badge.early-shader-adopter.name": {
     "defaultMessage": "Người dùng Shader sớm"
   },
   "user.profile.badge.hosting-alpha.about.1": {
-    "defaultMessage": "Người này đã tham gia vào việc thử nghiệm alpha kín của Modrinth Hosting trước khi chúng tôi phát hành Modrinth Hosting Beta vào tháng mười một 2024."
+    "defaultMessage": "Người này đã tham gia vào việc th�?nghiệm alpha kín của Bbsmc Hosting trước khi chúng tôi phát hành Bbsmc Hosting Beta vào tháng mười một 2024."
   },
   "user.profile.badge.hosting-alpha.name": {
-    "defaultMessage": "Người thử nghiệm Modrinth Hosting"
+    "defaultMessage": "Người th�?nghiệm Bbsmc Hosting"
   },
   "user.profile.badge.moderator.about.1": {
-    "defaultMessage": "Người dùng này làm cho bên kiểm duyệt nội dung Modrinth."
+    "defaultMessage": "Người dùng này làm cho bên kiểm duyệt nội dung Bbsmc."
   },
   "user.profile.badge.moderator.about.2": {
-    "defaultMessage": "Những người kiểm duyệt nội dung trên Modrinth xem xét các dự án, xử lý báo cáo và giúp giữ cho Modrinth an toàn."
+    "defaultMessage": "Những người kiểm duyệt nội dung trên Bbsmc xem xét các d�?án, x�?lý báo cáo và giúp gi�?cho Bbsmc an toàn."
   },
   "user.profile.badge.moderator.name": {
     "defaultMessage": "Thành viên bên kiểm duyệt nội dung"
   },
   "user.profile.badge.plus.about.1": {
-    "defaultMessage": "Người dùng này đang đóng góp và hỗ trợ cho Modrinth và Nhà sáng tạo trên nên tảng."
+    "defaultMessage": "Người dùng này đang đóng góp và h�?tr�?cho Bbsmc và Nhà sáng tạo trên nên tảng."
   },
   "user.profile.badge.plus.link": {
-    "defaultMessage": "Nhấp vào để xem cách làm thành viên."
+    "defaultMessage": "Nhấp vào đ�?xem cách làm thành viên."
   },
   "user.profile.badge.plus.name": {
-    "defaultMessage": "Thành viên Modrinth+"
+    "defaultMessage": "Thành viên Bbsmc+"
   },
   "user.profile.badge.pride.about.1": {
-    "defaultMessage": "Người dùng này đã tham gia ít nhất một trong các hoạt động gây quỹ của Modrinth dành cho cộng đồng LGBTQ+."
+    "defaultMessage": "Người dùng này đã tham gia ít nhất một trong các hoạt động gây qu�?của Bbsmc dành cho cộng đồng LGBTQ+."
   },
   "user.profile.badge.pride.link": {
-    "defaultMessage": "Nhấp vào để ghé qua quỹ LGBT của chúng tôi."
+    "defaultMessage": "Nhấp vào đ�?ghé qua qu�?LGBT của chúng tôi."
   },
   "user.profile.badge.pride.name": {
-    "defaultMessage": "Người ủng hộ quỹ LGBT"
+    "defaultMessage": "Người ủng h�?qu�?LGBT"
   },
   "user.profile.badge.staff.about.1": {
-    "defaultMessage": "Người dùng này là cộng tác viên Modrinth."
+    "defaultMessage": "Người dùng này là cộng tác viên Bbsmc."
   },
   "user.profile.badge.staff.name": {
-    "defaultMessage": "Đội ngũ Modrinth"
+    "defaultMessage": "Đội ngũ Bbsmc"
   }
 }

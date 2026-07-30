@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { moderationSettings, type SettingDefinition } from '@modrinth/moderation'
-import { Combobox, Toggle } from '@modrinth/ui'
+import { moderationSettings, type SettingDefinition } from '@Bbsmc/moderation'
+import { Combobox, Toggle } from '@Bbsmc/ui'
 
 const flattenedSettings = Object.entries(moderationSettings).reduce(
 	(acc, [group, settings]) => {

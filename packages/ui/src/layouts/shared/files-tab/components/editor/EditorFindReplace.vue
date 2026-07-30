@@ -118,7 +118,7 @@
 </template>
 
 <script setup lang="ts">
-import { ChevronDownIcon, ChevronRightIcon, ChevronUpIcon, XIcon } from '@modrinth/assets'
+import { ChevronDownIcon, ChevronRightIcon, ChevronUpIcon, XIcon } from '@Bbsmc/assets'
 import { nextTick, ref, watch } from 'vue'
 
 import ButtonStyled from '#ui/components/base/ButtonStyled.vue'

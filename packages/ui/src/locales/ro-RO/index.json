@@ -90,7 +90,7 @@
     "defaultMessage": "Niciun rezultat găsit pentru query-ul tău!"
   },
   "browse.offline": {
-    "defaultMessage": "Sunteți offline! Conectați-vă la internet ca să puteți căuta pe Modrinth!"
+    "defaultMessage": "Sunteți offline! Conectați-vă la internet ca să puteți căuta pe Bbsmc!"
   },
   "browse.search.placeholder": {
     "defaultMessage": "Caută {projectType}..."
@@ -215,8 +215,8 @@
   "button.open-in-folder": {
     "defaultMessage": "Deschide în folder"
   },
-  "button.open-in-modrinth": {
-    "defaultMessage": "Deschide în Modrinth"
+  "button.open-in-Bbsmc": {
+    "defaultMessage": "Deschide în Bbsmc"
   },
   "button.play": {
     "defaultMessage": "Joacă"
@@ -1602,16 +1602,16 @@
     "defaultMessage": "Mențineți fișierele actualizate atunci când serverul se modifică"
   },
   "modal.open-in-app.get-app": {
-    "defaultMessage": "Descărcați aplicația Modrinth"
+    "defaultMessage": "Descărcați aplicația Bbsmc"
   },
   "modal.open-in-app.opening-automatically": {
-    "defaultMessage": "Aplicația Modrinth se va deschide automat..."
+    "defaultMessage": "Aplicația Bbsmc se va deschide automat..."
   },
   "modal.open-in-app.title": {
-    "defaultMessage": "Deschiderea aplicației Modrinth"
+    "defaultMessage": "Deschiderea aplicației Bbsmc"
   },
   "modal.open-in-app.why-use": {
-    "defaultMessage": "De ce să folosiți aplicația Modrinth"
+    "defaultMessage": "De ce să folosiți aplicația Bbsmc"
   },
   "notification.error.title": {
     "defaultMessage": "A avut loc o eroare"
@@ -1643,8 +1643,8 @@
   "omorphia.component.badge.label.moderator": {
     "defaultMessage": "Moderator"
   },
-  "omorphia.component.badge.label.modrinth-team": {
-    "defaultMessage": "Echipa Modrinth"
+  "omorphia.component.badge.label.Bbsmc-team": {
+    "defaultMessage": "Echipa Bbsmc"
   },
   "omorphia.component.badge.label.pending": {
     "defaultMessage": "În așteptare"
@@ -2064,7 +2064,7 @@
     "defaultMessage": "{count} {countPlural, plural, one {recent jucat} other {recent jucate}}"
   },
   "project.recent-plays.tooltip": {
-    "defaultMessage": "{count} {countPlural, plural, one {recent jucat} other {recent jucate}} de la Modrinth în ultimele 2 săptămâni"
+    "defaultMessage": "{count} {countPlural, plural, one {recent jucat} other {recent jucate}} de la Bbsmc în ultimele 2 săptămâni"
   },
   "project.server.customModpackTooltip": {
     "defaultMessage": "Acest proiect folosește un pachet de resurse personalizat"
@@ -2229,7 +2229,7 @@
     "defaultMessage": "Proiectul tău are mai multe environment-uri"
   },
   "project.settings.environment.notice.review-options.description": {
-    "defaultMessage": "Tocmai am revizuit sistemul Environments pe Modrinth și acum sunt disponibile noi opțiuni. Asigurați-vă că ați selectat opțiunea corectă mai jos și apoi faceți clic pe „Verificați” când ați terminat!"
+    "defaultMessage": "Tocmai am revizuit sistemul Environments pe Bbsmc și acum sunt disponibile noi opțiuni. Asigurați-vă că ați selectat opțiunea corectă mai jos și apoi faceți clic pe „Verificați�?când ați terminat!"
   },
   "project.settings.environment.notice.review-options.title": {
     "defaultMessage": "Vă rugăm să examinați opțiunile de mai jos"
@@ -2913,10 +2913,10 @@
     "defaultMessage": "Începe"
   },
   "servers.purchase.step.plan.large.desc": {
-    "defaultMessage": "Ideal pentru 15–25 de jucători, pachete de moduri, sau modificări complexe."
+    "defaultMessage": "Ideal pentru 15�?5 de jucători, pachete de moduri, sau modificări complexe."
   },
   "servers.purchase.step.plan.medium.desc": {
-    "defaultMessage": "Bun pentru 6–15 jucători și multiple moduri."
+    "defaultMessage": "Bun pentru 6�?5 jucători și multiple moduri."
   },
   "servers.purchase.step.plan.most-popular": {
     "defaultMessage": "Cel mai Popular"
@@ -2925,7 +2925,7 @@
     "defaultMessage": "Selectează un Plan"
   },
   "servers.purchase.step.plan.small.desc": {
-    "defaultMessage": "Perfect pentru 1–5 prieteni cu câteva moduri simple."
+    "defaultMessage": "Perfect pentru 1�? prieteni cu câteva moduri simple."
   },
   "servers.purchase.step.plan.title": {
     "defaultMessage": "Plan"
@@ -2946,7 +2946,7 @@
     "defaultMessage": "Unde ți-ar plăcea ca serverul să fie localizat?"
   },
   "servers.region.region-unsupported": {
-    "defaultMessage": "Regiunea nu este listată? <link>Spuneți-ne unde doriți să vedeți în continuare Modrinth Hosting!</link>"
+    "defaultMessage": "Regiunea nu este listată? <link>Spuneți-ne unde doriți să vedeți în continuare Bbsmc Hosting!</link>"
   },
   "servers.region.southeast-asia": {
     "defaultMessage": "Asia Sud-Estică"
@@ -2973,7 +2973,7 @@
     "defaultMessage": "Întunecat"
   },
   "settings.display.theme.description": {
-    "defaultMessage": "Selectați tema de culoare preferată pentru Modrinth pe acest dispozitiv."
+    "defaultMessage": "Selectați tema de culoare preferată pentru Bbsmc pe acest dispozitiv."
   },
   "settings.display.theme.light": {
     "defaultMessage": "Luminos"

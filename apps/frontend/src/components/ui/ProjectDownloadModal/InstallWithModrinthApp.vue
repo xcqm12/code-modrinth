@@ -4,24 +4,24 @@
 			project.project_type !== 'plugin' ||
 			project.loaders.some((x) => !tags.loaderData.allPluginLoaders.includes(x))
 		"
-		class="modrinth-app-section contents"
+		class="Bbsmc-app-section contents"
 	>
 		<div class="flex flex-col items-center">
 			<ButtonStyled color="brand">
 				<a
 					class="!min-h-10 w-fit no-underline"
-					:href="`modrinth://mod/${project.slug}`"
+					:href="`Bbsmc://mod/${project.slug}`"
 					@click="installWithApp"
 				>
-					<ModrinthIcon aria-hidden="true" />
+					<BbsmcIcon aria-hidden="true" />
 					<span class="min-w-0 text-center">
-						{{ formatMessage(messages.installWithModrinthApp) }}
+						{{ formatMessage(messages.installWithBbsmcApp) }}
 					</span>
 				</a>
 			</ButtonStyled>
-			<Accordion ref="getModrinthAppAccordion">
+			<Accordion ref="getBbsmcAppAccordion">
 				<nuxt-link class="mt-2 flex justify-center text-brand-blue hover:underline" to="/app">
-					{{ formatMessage(messages.dontHaveModrinthApp) }}
+					{{ formatMessage(messages.dontHaveBbsmcApp) }}
 				</nuxt-link>
 			</Accordion>
 		</div>
@@ -37,16 +37,16 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { ModrinthIcon } from '@modrinth/assets'
-import { ButtonStyled, defineMessages, useVIntl } from '@modrinth/ui'
-import type { DisplayProjectType } from '@modrinth/utils'
+import type { Labrinth } from '@Bbsmc/api-client'
+import { BbsmcIcon } from '@Bbsmc/assets'
+import { ButtonStyled, defineMessages, useVIntl } from '@Bbsmc/ui'
+import type { DisplayProjectType } from '@Bbsmc/utils'
 import { ref } from 'vue'
 
 import Accordion from '~/components/ui/Accordion.vue'
 
 defineOptions({
-	name: 'InstallWithModrinthApp',
+	name: 'InstallWithBbsmcApp',
 })
 
 type DownloadModalProject = Omit<Labrinth.Projects.v2.Project, 'project_type'> & {
@@ -60,16 +60,16 @@ defineProps<{
 
 const { formatMessage } = useVIntl()
 const tags = useGeneratedState()
-const getModrinthAppAccordion = ref<InstanceType<typeof Accordion> | null>(null)
+const getBbsmcAppAccordion = ref<InstanceType<typeof Accordion> | null>(null)
 
 const messages = defineMessages({
-	installWithModrinthApp: {
+	installWithBbsmcApp: {
 		id: 'project.download.install-with-app',
-		defaultMessage: 'Install with Modrinth App',
+		defaultMessage: 'Install with Bbsmc App',
 	},
-	dontHaveModrinthApp: {
+	dontHaveBbsmcApp: {
 		id: 'project.download.no-app',
-		defaultMessage: "Don't have Modrinth App?",
+		defaultMessage: "Don't have Bbsmc App?",
 	},
 	downloadManually: {
 		id: 'project.download.manually',
@@ -79,14 +79,14 @@ const messages = defineMessages({
 
 function installWithApp() {
 	setTimeout(() => {
-		getModrinthAppAccordion.value?.open()
+		getBbsmcAppAccordion.value?.open()
 	}, 1500)
 }
 </script>
 
 <style lang="scss" scoped>
 @media (hover: none) and (max-width: 767px) {
-	.modrinth-app-section {
+	.Bbsmc-app-section {
 		display: none;
 	}
 }

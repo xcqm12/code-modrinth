@@ -1,12 +1,12 @@
-import type { Labrinth } from '@modrinth/api-client'
-import { ModrinthApiError } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
+import { BbsmcApiError } from '@Bbsmc/api-client'
 import {
 	BookOpenIcon,
 	TagCategoryRefreshCcwIcon,
 	TagCategoryWandSparklesIcon,
 	UserPlusIcon,
-} from '@modrinth/assets'
-import { Alert, injectModrinthClient, injectProjectPageContext } from '@modrinth/ui'
+} from '@Bbsmc/assets'
+import { Alert, injectBbsmcClient, injectProjectPageContext } from '@Bbsmc/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 import { computed, ref, watch } from 'vue'
 
@@ -35,7 +35,7 @@ function hasCustomSlug(project: Labrinth.Projects.v3.Project) {
 
 export default function () {
 	const { projectV3: project } = injectProjectPageContext()
-	const client = injectModrinthClient()
+	const client = injectBbsmcClient()
 	const queryClient = useQueryClient()
 
 	const autoSlugStatus = ref<AutoSlugStatus>('loading')
@@ -60,7 +60,7 @@ export default function () {
 				staleTime: STALE_TIME,
 			})
 		} catch (e) {
-			if (e instanceof ModrinthApiError && e.statusCode === 404) return null
+			if (e instanceof BbsmcApiError && e.statusCode === 404) return null
 			throw e
 		}
 	}
@@ -71,8 +71,7 @@ export default function () {
 		if (v === 'checking')
 			return (
 				<Alert type="checking" class="w-full">
-					Checking availabilityâ€¦
-				</Alert>
+					Checking availabilityâ€?				</Alert>
 			)
 		if (v === 'unchanged')
 			return (

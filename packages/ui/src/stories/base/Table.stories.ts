@@ -1,4 +1,4 @@
-import { EditIcon, MoreVerticalIcon, TrashIcon } from '@modrinth/assets'
+import { EditIcon, MoreVerticalIcon, TrashIcon } from '@Bbsmc/assets'
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
 import { computed, ref } from 'vue'
 
@@ -349,7 +349,7 @@ export const WithCustomHeaderSlots: StoryObj = {
 		template: /* html */ `
 			<Table :columns="columns" :data="data">
 				<template #header-name="{ column }">
-					<span class="text-brand font-bold uppercase">{{ column.label }} âœ¨</span>
+					<span class="text-brand font-bold uppercase">{{ column.label }} âœ?/span>
 				</template>
 				<template #header-status="{ column }">
 					<span class="flex items-center gap-1">

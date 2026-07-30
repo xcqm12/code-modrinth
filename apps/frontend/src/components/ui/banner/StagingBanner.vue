@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { XIcon } from '@modrinth/assets'
+import { XIcon } from '@Bbsmc/assets'
 import {
 	ButtonStyled,
 	commonMessages,
 	defineMessages,
 	PagewideBanner,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 
 const { formatMessage } = useVIntl()
 const cosmetics = useCosmetics()
@@ -15,12 +15,12 @@ const flags = useFeatureFlags()
 const messages = defineMessages({
 	title: {
 		id: 'layout.banner.staging.title',
-		defaultMessage: 'You’re viewing Modrinth’s staging environment',
+		defaultMessage: 'You’re viewing Bbsmc’s staging environment',
 	},
 	description: {
 		id: 'layout.banner.staging.description',
 		defaultMessage:
-			'The staging environment is completely separate from the production Modrinth database. This is used for testing and debugging purposes, and may be running in-development versions of the Modrinth backend or frontend newer than the production instance.',
+			'The staging environment is completely separate from the production Bbsmc database. This is used for testing and debugging purposes, and may be running in-development versions of the Bbsmc backend or frontend newer than the production instance.',
 	},
 })
 

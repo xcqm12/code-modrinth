@@ -100,7 +100,7 @@
 						input-class="!bg-surface-3"
 					/>
 					<span>
-						To make up for it, we've added {{ days }} day{{ pluralize(days) }} to your Modrinth
+						To make up for it, we've added {{ days }} day{{ pluralize(days) }} to your Bbsmc
 						Servers subscription.
 					</span>
 					<span>
@@ -129,24 +129,24 @@
 </template>
 
 <script setup lang="ts">
-import { CheckIcon, PlusIcon, XIcon } from '@modrinth/assets'
+import { CheckIcon, PlusIcon, XIcon } from '@Bbsmc/assets'
 import {
 	ButtonStyled,
 	Combobox,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	NewModal,
 	StyledInput,
 	TagItem,
 	Toggle,
-} from '@modrinth/ui'
-import { DEFAULT_CREDIT_EMAIL_MESSAGE } from '@modrinth/utils/utils.ts'
+} from '@Bbsmc/ui'
+import { DEFAULT_CREDIT_EMAIL_MESSAGE } from '@Bbsmc/utils/utils.ts'
 import { computed, ref } from 'vue'
 
 import { useBaseFetch } from '#imports'
 
 const { addNotification } = injectNotificationManager()
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 
 const modal = ref<InstanceType<typeof NewModal>>()
 

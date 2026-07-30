@@ -1,4 +1,4 @@
-import { isStaff } from '@modrinth/utils'
+import { isStaff } from '@Bbsmc/utils'
 
 export default defineNuxtRouteMiddleware(async () => {
 	const auth = await useAuth()

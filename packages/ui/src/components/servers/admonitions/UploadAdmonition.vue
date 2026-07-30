@@ -26,13 +26,13 @@
 </template>
 
 <script setup lang="ts">
-import { UploadIcon } from '@modrinth/assets'
+import { UploadIcon } from '@Bbsmc/assets'
 import { computed } from 'vue'
 
 import Admonition from '#ui/components/base/Admonition.vue'
 import ButtonStyled from '#ui/components/base/ButtonStyled.vue'
 import { useFormatBytes } from '#ui/composables'
-import { injectModrinthServerContext } from '#ui/providers'
+import { injectBbsmcServerContext } from '#ui/providers'
 
 withDefaults(
 	defineProps<{
@@ -51,7 +51,7 @@ defineEmits<{
 
 const formatBytes = useFormatBytes()
 
-const ctx = injectModrinthServerContext()
+const ctx = injectBbsmcServerContext()
 
 const state = computed(() => ctx.uploadState.value)
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { NotepadTextIcon, XIcon } from '@modrinth/assets'
-import { ButtonStyled, defineMessages, injectNotificationManager, useVIntl } from '@modrinth/ui'
+import { NotepadTextIcon, XIcon } from '@Bbsmc/assets'
+import { ButtonStyled, defineMessages, injectNotificationManager, useVIntl } from '@Bbsmc/ui'
 import { type } from '@tauri-apps/plugin-os'
 import { $fetch } from 'ofetch'
 import { onMounted, ref } from 'vue'
@@ -32,17 +32,17 @@ const availableSurvey = ref<Survey | null>(null)
 const messages = defineMessages({
 	surveyTitle: {
 		id: 'app.survey.title',
-		defaultMessage: 'Hey there Modrinth user!',
+		defaultMessage: 'Hey there Bbsmc user!',
 	},
 	surveyBody: {
 		id: 'app.survey.body',
 		defaultMessage:
-			'Would you mind answering a few questions about your experience with Modrinth App?',
+			'Would you mind answering a few questions about your experience with Bbsmc App?',
 	},
 	surveyFooter: {
 		id: 'app.survey.footer',
 		defaultMessage:
-			'This feedback will go directly to the Modrinth team and help guide future updates!',
+			'This feedback will go directly to the Bbsmc team and help guide future updates!',
 	},
 	takeSurvey: {
 		id: 'app.survey.take-survey',

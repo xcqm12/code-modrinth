@@ -1,4 +1,4 @@
-pub const MRPACK_MIME_TYPE: &str = "application/x-modrinth-modpack+zip";
+pub const MRPACK_MIME_TYPE: &str = "application/x-Bbsmc-modpack+zip";
 
 pub fn get_image_content_type(extension: &str) -> Option<&'static str> {
     match extension {

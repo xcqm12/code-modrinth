@@ -1,11 +1,11 @@
 ---
-title: Modrinth Website
-description: Guide for contributing to Modrinth's frontend
+title: Bbsmc Website
+description: Guide for contributing to Bbsmc's frontend
 sidebar:
   order: 2
 ---
 
-The [Modrinth Website], codename Knossos, is a Nuxt.js frontend. You will need to install [pnpm] and run the standard commands:
+The [Bbsmc Website], codename Knossos, is a Nuxt.js frontend. You will need to install [pnpm] and run the standard commands:
 
 ## Setup
 
@@ -15,8 +15,8 @@ The [Modrinth Website], codename Knossos, is a Nuxt.js frontend. You will need t
 
 ### 2. Install dependencies & set up .env
 
-- Clone [`https://github.com/modrinth/code`](https://github.com/modrinth/code) and run `pnpm install` in the workspace root folder.
-- In `apps/frontend` you should be able to see `.env.prod`, `.env.staging` â€” for basic work, it's recommended to use `.env.prod`. Copy the relevant file into a new `.env` file within the `apps/frontend` folder.
+- Clone [`https://github.com/Bbsmc/code`](https://github.com/Bbsmc/code) and run `pnpm install` in the workspace root folder.
+- In `apps/frontend` you should be able to see `.env.prod`, `.env.staging` â€?for basic work, it's recommended to use `.env.prod`. Copy the relevant file into a new `.env` file within the `apps/frontend` folder.
 
 ### 3. Run the frontend
 
@@ -28,5 +28,5 @@ If you're prepared to contribute by submitting a pull request, ensure you have m
 
 - `pnpm prepr:frontend` has been run.
 
-[Modrinth website]: https://github.com/modrinth/code/tree/main/apps/frontend
+[Bbsmc website]: https://github.com/Bbsmc/code/tree/main/apps/frontend
 [pnpm]: https://pnpm.io

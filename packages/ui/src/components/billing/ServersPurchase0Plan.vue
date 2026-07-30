@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { RightArrowIcon } from '@modrinth/assets'
+import type { Labrinth } from '@Bbsmc/api-client'
+import { RightArrowIcon } from '@Bbsmc/assets'
 import { computed } from 'vue'
 
 import { useFormatPrice } from '../../composables'
@@ -8,7 +8,7 @@ import { defineMessages, useVIntl } from '../../composables/i18n'
 import { getPriceForInterval, monthsInInterval } from '../../utils/product-utils'
 import ButtonStyled from '../base/ButtonStyled.vue'
 import OptionGroup from '../base/OptionGroup.vue'
-import type { ServerBillingInterval } from './ModrinthServersPurchaseModal.vue'
+import type { ServerBillingInterval } from './BbsmcServersPurchaseModal.vue'
 import ServersSpecs from './ServersSpecs.vue'
 
 const { formatMessage } = useVIntl()
@@ -51,15 +51,15 @@ const messages = defineMessages({
 	},
 	smallDesc: {
 		id: 'servers.purchase.step.plan.small.desc',
-		defaultMessage: 'Perfect for 1â€“5 friends with a few light mods.',
+		defaultMessage: 'Perfect for 1â€? friends with a few light mods.',
 	},
 	mediumDesc: {
 		id: 'servers.purchase.step.plan.medium.desc',
-		defaultMessage: 'Great for 6â€“15 players and multiple mods.',
+		defaultMessage: 'Great for 6â€?5 players and multiple mods.',
 	},
 	largeDesc: {
 		id: 'servers.purchase.step.plan.large.desc',
-		defaultMessage: 'Ideal for 15â€“25 players, modpacks, or heavy modding.',
+		defaultMessage: 'Ideal for 15â€?5 players, modpacks, or heavy modding.',
 	},
 	customDesc: {
 		id: 'servers.purchase.step.plan.custom.desc',

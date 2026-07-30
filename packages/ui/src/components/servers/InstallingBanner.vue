@@ -44,7 +44,7 @@
 </template>
 
 <script setup lang="ts">
-import { RotateCounterClockwiseIcon } from '@modrinth/assets'
+import { RotateCounterClockwiseIcon } from '@Bbsmc/assets'
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 
 import { defineMessages, useVIntl } from '#ui/composables/i18n'
@@ -95,7 +95,7 @@ const messages = defineMessages({
 	},
 	unsupportedLoaderVersionError: {
 		id: 'servers.installing-banner.error.unsupported-loader-version',
-		defaultMessage: 'This version of Minecraft or loader is not yet supported by Modrinth Hosting.',
+		defaultMessage: 'This version of Minecraft or loader is not yet supported by Bbsmc Hosting.',
 	},
 	internalPlatformError: {
 		id: 'servers.installing-banner.error.internal-platform',

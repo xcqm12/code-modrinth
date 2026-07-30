@@ -1,11 +1,11 @@
 const trimTrailingSlash = (url: string) => url.replace(/\/$/, '')
 
-const siteUrl = trimTrailingSlash(import.meta.env.MODRINTH_URL || 'https://bbsmc.org.cn')
+const siteUrl = trimTrailingSlash(import.meta.env.Bbsmc_URL || 'https://bbsmc.org.cn')
 const labrinthBaseUrl = trimTrailingSlash(
-	import.meta.env.MODRINTH_API_BASE_URL || 'https://api.bbsmc.org.cn',
+	import.meta.env.Bbsmc_API_BASE_URL || 'https://api.bbsmc.org.cn',
 )
 const archonBaseUrl = trimTrailingSlash(
-	import.meta.env.MODRINTH_ARCHON_BASE_URL || 'https://archon.bbsmc.org.cn',
+	import.meta.env.Bbsmc_ARCHON_BASE_URL || 'https://archon.bbsmc.org.cn',
 )
 const sharedInstancesBaseUrl = trimTrailingSlash(
 	import.meta.env.SHARED_INSTANCES_API_BASE_URL || 'https://shared-instances.bbsmc.org.cn',

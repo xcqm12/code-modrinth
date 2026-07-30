@@ -1,20 +1,20 @@
 <script setup lang="ts">
-import type { Archon } from '@modrinth/api-client'
-import { PlusIcon, XIcon } from '@modrinth/assets'
+import type { Archon } from '@Bbsmc/api-client'
+import { PlusIcon, XIcon } from '@Bbsmc/assets'
 import {
 	Accordion,
 	ButtonStyled,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	NewModal,
 	ServerNotice,
 	StyledInput,
 	TagItem,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { ref } from 'vue'
 
 const { addNotification } = injectNotificationManager()
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 
 type ServerNoticeType = Archon.Notices.v0.ListedNotice
 

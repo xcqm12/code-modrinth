@@ -19,8 +19,8 @@
 </template>
 
 <script setup lang="ts">
-import { TrashIcon } from '@modrinth/assets'
-import { Admonition, ButtonStyled, defineMessages, useVIntl } from '@modrinth/ui'
+import { TrashIcon } from '@Bbsmc/assets'
+import { Admonition, ButtonStyled, defineMessages, useVIntl } from '@Bbsmc/ui'
 
 import type { SharedInstanceUnavailableReason } from '@/helpers/install'
 import {

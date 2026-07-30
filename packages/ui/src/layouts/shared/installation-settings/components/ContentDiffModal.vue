@@ -201,7 +201,7 @@ import {
 	RefreshCwIcon,
 	ReportIcon,
 	XIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import { type Component, computed, ref } from 'vue'
 
 import Admonition from '#ui/components/base/Admonition.vue'
@@ -335,7 +335,7 @@ function getVersionLabel(diff: ContentDiffItem) {
 	if (diff.type === 'modpack_updated') return diff.newVersionName
 	if (isConfigurationDiff(diff)) {
 		if (diff.currentVersionName && diff.newVersionName) {
-			return `${diff.currentVersionName} → ${diff.newVersionName}`
+			return `${diff.currentVersionName} �?${diff.newVersionName}`
 		}
 		return diff.newVersionName ?? diff.currentVersionName
 	}
@@ -409,7 +409,7 @@ const messages = defineMessages({
 	unknownFilesDescription: {
 		id: 'content.diff-modal.unknown-files-description',
 		defaultMessage:
-			'This update contains files that aren’t published on Modrinth. We strongly recommend only installing files from sources you trust.',
+			'This update contains files that aren’t published on Bbsmc. We strongly recommend only installing files from sources you trust.',
 	},
 	unknownProject: {
 		id: 'content.diff-modal.unknown-project',
@@ -418,7 +418,7 @@ const messages = defineMessages({
 	reviewedFiles: {
 		id: 'content.diff-modal.reviewed-files',
 		defaultMessage:
-			'A file is only reviewed if it’s published to Modrinth, regardless of its file format (including .mrpack).',
+			'A file is only reviewed if it’s published to Bbsmc, regardless of its file format (including .mrpack).',
 	},
 	installAnyway: {
 		id: 'content.diff-modal.install-anyway',

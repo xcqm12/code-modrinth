@@ -10,19 +10,19 @@ import {
 	UserPlusIcon,
 	UsersIcon,
 	VersionIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	Avatar,
 	ButtonStyled,
 	ConfirmLeaveModal,
 	type ContentItem,
-	injectModrinthClient,
+	injectBbsmcClient,
 	ModpackContentModal,
 	Table,
 	type TableColumn,
 	useFormatDateTime,
 	useRelativeTime,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { useQuery } from '@tanstack/vue-query'
 import { computed, ref } from 'vue'
 
@@ -78,7 +78,7 @@ const emit = defineEmits<{
 
 const contentModal = ref<InstanceType<typeof ModpackContentModal> | null>(null)
 const banModal = ref<InstanceType<typeof ConfirmLeaveModal> | null>(null)
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const contentByVersion = new Map<string, ContentItem[]>()
 const contentInstance = ref<Pick<SharedInstanceOwnerInstance, 'id' | 'name' | 'icon_url'>>({
 	id: props.details.id,
@@ -143,7 +143,7 @@ const banDisabled = computed(
 		ownerBlacklistStatus.value?.blacklisted === true,
 )
 const banButtonLabel = computed(() => {
-	if (props.banPending) return 'Banning ownerâ€¦'
+	if (props.banPending) return 'Banning ownerâ€?
 	if (ownerBlacklistStatus.value?.blacklisted) return 'Owner already banned'
 	if (props.details.quarantine) return 'Instance already quarantined'
 	return 'Ban from shared instances'

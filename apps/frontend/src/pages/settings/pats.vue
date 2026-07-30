@@ -196,7 +196,7 @@
 	</div>
 </template>
 <script setup>
-import { EditIcon, PlusIcon, SaveIcon, TrashIcon, XIcon } from '@modrinth/assets'
+import { EditIcon, PlusIcon, SaveIcon, TrashIcon, XIcon } from '@Bbsmc/assets'
 import {
 	ButtonStyled,
 	Checkbox,
@@ -206,7 +206,7 @@ import {
 	CopyCode,
 	DatePicker,
 	defineMessages,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	IntlFormatted,
 	NewModal,
@@ -214,7 +214,7 @@ import {
 	useFormatDateTime,
 	useRelativeTime,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 
 import {
@@ -226,7 +226,7 @@ import {
 	useScopes,
 } from '~/composables/auth/scopes.ts'
 
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const queryClient = useQueryClient()
 const { addNotification } = injectNotificationManager()
 const { formatMessage } = useVIntl()
@@ -283,7 +283,7 @@ const messages = defineMessages({
 	description: {
 		id: 'settings.pats.description',
 		defaultMessage:
-			"PATs can be used to access Modrinth's API. They can be created and revoked at any time. For more information, see <doc-link>Modrinth's API documentation</doc-link>.",
+			"PATs can be used to access Bbsmc's API. They can be created and revoked at any time. For more information, see <doc-link>Bbsmc's API documentation</doc-link>.",
 	},
 	create: {
 		id: 'settings.pats.action.create',
@@ -323,7 +323,7 @@ definePageMeta({
 })
 
 useHead({
-	title: `${formatMessage(commonSettingsMessages.pats)} - Modrinth`,
+	title: `${formatMessage(commonSettingsMessages.pats)} - Bbsmc`,
 })
 
 const data = useNuxtApp()

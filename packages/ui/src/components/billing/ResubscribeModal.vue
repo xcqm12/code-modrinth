@@ -96,8 +96,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { RotateCounterClockwiseIcon, XIcon } from '@modrinth/assets'
+import type { Labrinth } from '@Bbsmc/api-client'
+import { RotateCounterClockwiseIcon, XIcon } from '@Bbsmc/assets'
 import { computed, ref, useTemplateRef } from 'vue'
 
 import { injectNotificationManager } from '#ui/providers/web-notifications.ts'

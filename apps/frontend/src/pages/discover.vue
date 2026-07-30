@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { commonProjectTypeCategoryMessages, NavTabs, useVIntl } from '@modrinth/ui'
+import { commonProjectTypeCategoryMessages, NavTabs, useVIntl } from '@Bbsmc/ui'
 
 const { formatMessage } = useVIntl()
 

@@ -12,7 +12,7 @@
     "message": "Принять все"
   },
   "ads-consent.body": {
-    "message": "Реклама обеспечивает работу Modrinth и финансирует выплаты авторам. Наши партнёры могут хранить или получать доступ к файлам cookie на сайте для персонализации рекламы и измерения производительности."
+    "message": "Реклама обеспечивает работу Bbsmc и финансирует выплаты авторам. Наши партнёры могут хранить или получать доступ к файлам cookie на сайте для персонализации рекламы и измерения производительности."
   },
   "ads-consent.manage": {
     "message": "Настроить предпочтения"
@@ -21,7 +21,7 @@
     "message": "Отклонить всё"
   },
   "ads-consent.title": {
-    "message": "Конфиденциальность и как реклама помогает Modrinth"
+    "message": "Конфиденциальность и как реклама помогает Bbsmc"
   },
   "analytics.action.add": {
     "message": "Добавить"
@@ -90,7 +90,7 @@
     "message": "Показать меньше"
   },
   "analytics.chart.action.show-top-eight": {
-    "message": "Показать топ‑8"
+    "message": "Показать топ�?"
   },
   "analytics.chart.axis.playtime-hours": {
     "message": "{hours} ч"
@@ -110,11 +110,11 @@
   "analytics.chart.controls.display": {
     "message": "Отображение"
   },
-  "analytics.chart.controls.modrinth-events": {
-    "message": "События Modrinth"
+  "analytics.chart.controls.Bbsmc-events": {
+    "message": "События Bbsmc"
   },
-  "analytics.chart.controls.no-modrinth-events": {
-    "message": "На диаграмме нет событий Modrinth."
+  "analytics.chart.controls.no-Bbsmc-events": {
+    "message": "На диаграмме нет событий Bbsmc."
   },
   "analytics.chart.controls.no-project-events": {
     "message": "На диаграмме нет событий проекта."
@@ -144,7 +144,7 @@
     "message": "Посмотреть сведения о монетизации"
   },
   "analytics.chart.legend.monetization-details.description": {
-    "message": "В монетизации учитываются только просмотры и скачивания на Modrinth, при этом для учёта скачиваний пользователи должны быть авторизованы."
+    "message": "В монетизации учитываются только просмотры и скачивания на Bbsmc, при этом для учёта скачиваний пользователи должны быть авторизованы."
   },
   "analytics.chart.legend.monetization-details.title": {
     "message": "Сведения о монетизации"
@@ -222,10 +222,10 @@
     "message": "Обновление"
   },
   "analytics.download-source.app": {
-    "message": "Modrinth App"
+    "message": "Bbsmc App"
   },
   "analytics.download-source.website": {
-    "message": "Сайт Modrinth"
+    "message": "Сайт Bbsmc"
   },
   "analytics.downloads.suffix": {
     "message": "скачиваний"
@@ -411,7 +411,7 @@
     "message": "Скачивания"
   },
   "analytics.stat.monetization-banner.body": {
-    "message": "К монетизации допускаются только проверенные просмотры и скачивания, выполненные через Modrinth. Для скачивания через Modrinth App пользователь также должен быть авторизован. Поскольку все проекты имеют схожее соотношение монетизируемых скачиваний, ваш доход существенно бы не изменился при учёте каждой загрузки."
+    "message": "К монетизации допускаются только проверенные просмотры и скачивания, выполненные через Bbsmc. Для скачивания через Bbsmc App пользователь также должен быть авторизован. Поскольку все проекты имеют схожее соотношение монетизируемых скачиваний, ваш доход существенно бы не изменился при учёте каждой загрузки."
   },
   "analytics.stat.monetization-banner.learn-more": {
     "message": "Подробнее"
@@ -450,7 +450,7 @@
     "message": "с {start} по {end}"
   },
   "analytics.table.csv.filename": {
-    "message": "Аналитика Modrinth с разбивкой «{breakdown}» {dateRange}"
+    "message": "Аналитика Bbsmc с разбивкой «{breakdown}» {dateRange}"
   },
   "analytics.table.csv.header.playtime-seconds": {
     "message": "Время игры (в секундах)"
@@ -519,7 +519,7 @@
     "message": "Нет"
   },
   "analytics.value.no-dependent-tooltip": {
-    "message": "Скачано по иным причинам — не как зависимость"
+    "message": "Скачано по иным причинам �?не как зависимость"
   },
   "analytics.value.none": {
     "message": "Нет"
@@ -537,7 +537,7 @@
     "message": "Без монетизации"
   },
   "app-marketing.download.description": {
-    "message": "Наше приложение доступно на всех платформах — выберите желаемую версию."
+    "message": "Наше приложение доступно на всех платформах �?выберите желаемую версию."
   },
   "app-marketing.download.download-appimage": {
     "message": "Скачать AppImage"
@@ -558,7 +558,7 @@
     "message": "Linux"
   },
   "app-marketing.download.linux-disclaimer": {
-    "message": "Версии Modrinth App для Linux <issues-link>могут работать нестабильно</issues-link> на некоторых системах и конфигурациях. При возникновении проблем с приложением рекомендуется использовать альтернативы наподобие <prism-link>Prism Launcher</prism-link> для удобной установки контента с Modrinth."
+    "message": "Версии Bbsmc App для Linux <issues-link>могут работать нестабильно</issues-link> на некоторых системах и конфигурациях. При возникновении проблем с приложением рекомендуется использовать альтернативы наподобие <prism-link>Prism Launcher</prism-link> для удобной установки контента с Bbsmc."
   },
   "app-marketing.download.mac": {
     "message": "Mac"
@@ -567,10 +567,10 @@
     "message": "Варианты установки"
   },
   "app-marketing.download.terms": {
-    "message": "Скачивая Modrinth App, вы принимаете наши <terms-link>условия</terms-link> и <privacy-link>политику конфиденци­аль­ности</privacy-link>."
+    "message": "Скачивая Bbsmc App, вы принимаете наши <terms-link>условия</terms-link> и <privacy-link>политику конфиденци­аль­ности</privacy-link>."
   },
   "app-marketing.download.title": {
-    "message": "Скачать Modrinth App (бета-версия)"
+    "message": "Скачать Bbsmc App (бета-версия)"
   },
   "app-marketing.download.windows": {
     "message": "Windows"
@@ -582,7 +582,7 @@
     "message": "Отслеживайте проекты"
   },
   "app-marketing.features.importing.description": {
-    "message": "Перенесите любимые профили из старого лаунчера и начните пользоваться Modrinth App за считанные секунды!"
+    "message": "Перенесите любимые профили из старого лаунчера и начните пользоваться Bbsmc App за считанные секунды!"
   },
   "app-marketing.features.importing.gdlauncher-alt": {
     "message": "GDLauncher"
@@ -600,7 +600,7 @@
     "message": "от {author}"
   },
   "app-marketing.features.mod-management.description": {
-    "message": "Modrinth хранит все моды в одном месте. Скачивайте, удаляйте и обновляйте моды в один клик."
+    "message": "Bbsmc хранит все моды в одном месте. Скачивайте, удаляйте и обновляйте моды в один клик."
   },
   "app-marketing.features.mod-management.installed-mods": {
     "message": "Установленные моды"
@@ -624,7 +624,7 @@
     "message": "Офлайн-режим"
   },
   "app-marketing.features.open-source.description": {
-    "message": "Modrinth App имеет полностью открытый исходный код, доступный на <github-link>GitHub</github-link>!"
+    "message": "Bbsmc App имеет полностью открытый исходный код, доступный на <github-link>GitHub</github-link>!"
   },
   "app-marketing.features.open-source.title": {
     "message": "Открытый код"
@@ -636,7 +636,7 @@
     "message": "% ЦП"
   },
   "app-marketing.features.performance.description": {
-    "message": "Modrinth App работает лучше многих популярных лаунчеров, используя лишь 150 МБ ОЗУ!"
+    "message": "Bbsmc App работает лучше многих популярных лаунчеров, используя лишь 150 МБ ОЗУ!"
   },
   "app-marketing.features.performance.discord": {
     "message": "Discord"
@@ -648,16 +648,16 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "∞ МБ"
+    "message": "�?МБ"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
     "message": "∞ · ∞ МБ"
   },
   "app-marketing.features.performance.less-than-150mb": {
-    "message": "< 150 МБ"
+    "message": "<�?50 МБ"
   },
-  "app-marketing.features.performance.modrinth-app": {
-    "message": "Modrinth App"
+  "app-marketing.features.performance.Bbsmc-app": {
+    "message": "Bbsmc App"
   },
   "app-marketing.features.performance.one-billion-percent": {
     "message": "1 млрд %"
@@ -675,13 +675,13 @@
     "message": "Быстродействие"
   },
   "app-marketing.features.play.description": {
-    "message": "Скачивайте и играйте в любимые сборки и моды, используя Modrinth App."
+    "message": "Скачивайте и играйте в любимые сборки и моды, используя Bbsmc App."
   },
   "app-marketing.features.play.title": {
     "message": "Играйте с любимыми модами"
   },
   "app-marketing.features.sharing.description": {
-    "message": "Создавайте, делитесь и играйте в сборки, используя любые из тысяч модов и сборок, размещённых на Modrinth."
+    "message": "Создавайте, делитесь и играйте в сборки, используя любые из тысяч модов и сборок, размещённых на Bbsmc."
   },
   "app-marketing.features.sharing.modpack": {
     "message": "Сборка"
@@ -696,7 +696,7 @@
     "message": "Лаунчер, непохожий"
   },
   "app-marketing.features.website.description": {
-    "message": "Приложение полностью интегрировано с сайтом — открывайте любимые проекты прямо в Modrinth App!"
+    "message": "Приложение полностью интегрировано с сайтом �?открывайте любимые проекты прямо в Bbsmc App!"
   },
   "app-marketing.features.website.title": {
     "message": "Интеграция с сайтом"
@@ -705,19 +705,19 @@
     "message": "на все остальные"
   },
   "app-marketing.hero.app-screenshot-alt": {
-    "message": "Скриншот Modrinth App со страницей содержимого сборки Cobblemon."
+    "message": "Скриншот Bbsmc App со страницей содержимого сборки Cobblemon."
   },
   "app-marketing.hero.description": {
-    "message": "Modrinth App — уникальный лаунчер с открытым кодом, возможностью играть в любимые моды и быстро обновлять их, — всё в одной аккуратной упаковке."
+    "message": "Bbsmc App �?уникальный лаунчер с открытым кодом, возможностью играть в любимые моды и быстро обновлять их, �?всё в одной аккуратной упаковке."
   },
   "app-marketing.hero.download-button": {
-    "message": "Скачать Modrinth App"
+    "message": "Скачать Bbsmc App"
   },
-  "app-marketing.hero.download-modrinth-app": {
-    "message": "Скачать Modrinth App"
+  "app-marketing.hero.download-Bbsmc-app": {
+    "message": "Скачать Bbsmc App"
   },
-  "app-marketing.hero.download-modrinth-app-for-os": {
-    "message": "Скачать Modrinth App для {os}"
+  "app-marketing.hero.download-Bbsmc-app-for-os": {
+    "message": "Скачать Bbsmc App для {os}"
   },
   "app-marketing.hero.minecraft-screenshot-alt": {
     "message": "Скриншот главного меню сборки Cobblemon."
@@ -786,7 +786,7 @@
     "message": "Необходима дата рождения"
   },
   "auth.create-account.date-of-birth.under13-helper": {
-    "message": "Вы не подходите по возрастным требованиям для создания аккаунта на Modrinth."
+    "message": "Вы не подходите по возрастным требованиям для создания аккаунта на Bbsmc."
   },
   "auth.create-account.info-panel.source-code-link": {
     "message": "Исходный код"
@@ -801,7 +801,7 @@
     "message": "Проверка безопасности"
   },
   "auth.create-account.subscribe.label": {
-    "message": "Держите меня в курсе всего крутого, над чем работает Modrinth"
+    "message": "Держите меня в курсе всего крутого, над чем работает Bbsmc"
   },
   "auth.create-account.title": {
     "message": "Создание аккаунта"
@@ -846,7 +846,7 @@
     "message": "Сброс пароля"
   },
   "auth.sign-in.2fa.description": {
-    "message": "Введите 6‑значный код из аутентификатора или используйте резервный код."
+    "message": "Введите 6‑значны�?код из аутентификатора или используйте резервный код."
   },
   "auth.sign-in.2fa.label": {
     "message": "Подтверждение входа"
@@ -873,7 +873,7 @@
     "message": "Нет аккаунта?"
   },
   "auth.sign-in.sign-in-with": {
-    "message": "Вход в Modrinth"
+    "message": "Вход в Bbsmc"
   },
   "auth.sign-in.title": {
     "message": "Вход"
@@ -975,7 +975,7 @@
     "message": "Вы действительно хотите удалить эту коллекцию?"
   },
   "collection.description": {
-    "message": "{description} — Посмотреть коллекцию {name} от {username} на Modrinth"
+    "message": "{description} �?Посмотреть коллекцию {name} от {username} на Bbsmc"
   },
   "collection.description.following": {
     "message": "Создана автоматически на основе всех отслеживаемых проектов."
@@ -1008,7 +1008,7 @@
     "message": "Профиль {user}"
   },
   "collection.title": {
-    "message": "{name} — Коллекция"
+    "message": "{name} �?Коллекция"
   },
   "conversation-thread.action.add-private-note": {
     "message": "Добавить приватную заметку"
@@ -1098,7 +1098,7 @@
     "message": "Ответ в ветке"
   },
   "conversation-thread.reply-modal.help-center-note": {
-    "message": "Если вам нужно связаться с модераторами, перейдите в <help-center-link>Справочный центр Modrinth</help-center-link> и нажмите на синий кружок чата в правом нижнем углу, чтобы написать в поддержку."
+    "message": "Если вам нужно связаться с модераторами, перейдите в <help-center-link>Справочный центр Bbsmc</help-center-link> и нажмите на синий кружок чата в правом нижнем углу, чтобы написать в поддержку."
   },
   "conversation-thread.resubmit-modal.confirmation.description": {
     "message": "Подтвердить, что я ответил на сообщения модерации"
@@ -1134,7 +1134,7 @@
     "message": "Метаданные"
   },
   "create-project-version.create-modal.stage.add-files.primary-file-description": {
-    "message": "Основной файл — тот, который скачивается по умолчанию."
+    "message": "Основной файл �?тот, который скачивается по умолчанию."
   },
   "create-project-version.create-modal.stage.add-files.primary-file-label": {
     "message": "Основной файл"
@@ -1464,7 +1464,7 @@
     "message": "Поиск коллекций..."
   },
   "dashboard.collections.sort.name-ascending": {
-    "message": "Название (А–Я)"
+    "message": "Название (А–�?"
   },
   "dashboard.collections.sort.recently-created": {
     "message": "Дата создания"
@@ -1488,7 +1488,7 @@
     "message": "Готово! 🎉"
   },
   "dashboard.creator-tax-form-modal.entity.description": {
-    "message": "Иностранная организация — юридическое лицо, созданное за пределами Соединённых Штатов (например, иностранная компания, партнёрство или ООО)."
+    "message": "Иностранная организация �?юридическое лицо, созданное за пределами Соединённых Штатов (например, иностранная компания, партнёрство или ООО)."
   },
   "dashboard.creator-tax-form-modal.entity.foreign-entity": {
     "message": "Иностранная организация"
@@ -1509,7 +1509,7 @@
     "message": "Налоговая форма не заполнена"
   },
   "dashboard.creator-tax-form-modal.security.description": {
-    "message": "Modrinth использует сторонний сервис Track1099 для безопасного сбора и хранения налоговых форм. <security-link>Подробнее...</security-link>"
+    "message": "Bbsmc использует сторонний сервис Track1099 для безопасного сбора и хранения налоговых форм. <security-link>Подробнее...</security-link>"
   },
   "dashboard.creator-tax-form-modal.security.header": {
     "message": "Меры безопасности"
@@ -1551,7 +1551,7 @@
     "message": "Введите дату рождения"
   },
   "dashboard.creator-withdraw-modal.kyc.entity-description": {
-    "message": "Юридическое лицо — зарегистрированная организация, например компания, партнёрство или ООО."
+    "message": "Юридическое лицо �?зарегистрированная организация, например компания, партнёрство или ООО."
   },
   "dashboard.creator-withdraw-modal.kyc.entity-question": {
     "message": "Вы выводите как физическое или юридическое лицо?"
@@ -1683,7 +1683,7 @@
     "message": "Чтобы вывести все <b>{available}</b> средства, пожалуйста, заполните форму ниже. Это необходимо для налоговой отчётности и нужно сделать только один раз."
   },
   "dashboard.creator-withdraw-modal.tax-form-required.body-with-limit": {
-    "message": "Для отчётности Modrinth и соблюдения налогового законодательства нужно заполнить форму W‑9 или W‑8."
+    "message": "Для отчётности Bbsmc и соблюдения налогового законодательства нужно заполнить форму W�? или W�?."
   },
   "dashboard.creator-withdraw-modal.tax-form-required.header": {
     "message": "Требуется налоговая форма"
@@ -1701,7 +1701,7 @@
     "message": "Введите сумму"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.minimum-denomination-exceeds-balance": {
-    "message": "Минимальный номинал — {min}, что превышает {balance} на вашем балансе."
+    "message": "Минимальный номинал �?{min}, что превышает {balance} на вашем балансе."
   },
   "dashboard.creator-withdraw-modal.tremendous-details.need-at-least-gift-card": {
     "message": "Вам надо хотя бы {min}, чтобы использовать подарочную карту."
@@ -1746,13 +1746,13 @@
     "message": "Непроверенная почта"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.unverified-email-message": {
-    "message": "Указанная почта не привязана к аккаунту Modrinth. Вознаграждения, отправленные на неверный адрес, невозможно вернуть."
+    "message": "Указанная почта не привязана к аккаунту Bbsmc. Вознаграждения, отправленные на неверный адрес, невозможно вернуть."
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-header": {
     "message": "Можно снизить сборы"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-message": {
-    "message": "Выбран PayPal International с USD. <direct-paypal-link>Используйте PayPal напрямую</direct-paypal-link>, чтобы снизить комиссию (≈2% вместо ≈6%)."
+    "message": "Выбран PayPal International с USD. <direct-paypal-link>Используйте PayPal напрямую</direct-paypal-link>, чтобы снизить комиссию (�?% вместо �?%)."
   },
   "dashboard.creator-withdraw-modal.tremendous-details.withdrawal-amount-min-max": {
     "message": "Можно вывести от {min} до {max}."
@@ -1770,7 +1770,7 @@
     "message": "Достигнут лимит вывода в <b>{withdrawLimit}</b>. Для снятия лимита заполните налоговую форму."
   },
   "dashboard.discord-roles.banner.body": {
-    "message": "Вам доступны роли за {roles}. Привяжите Discord к аккаунту Modrinth, чтобы синхронизировать роли."
+    "message": "Вам доступны роли за {roles}. Привяжите Discord к аккаунту Bbsmc, чтобы синхронизировать роли."
   },
   "dashboard.discord-roles.banner.cta": {
     "message": "Привязать Discord"
@@ -1953,7 +1953,7 @@
     "message": "Сумма может измениться, прежде чем станет доступна."
   },
   "dashboard.revenue.estimated-tooltip.msg2": {
-    "message": "Нажмите, чтобы узнать, как Modrinth рассчитывает доход."
+    "message": "Нажмите, чтобы узнать, как Bbsmc рассчитывает доход."
   },
   "dashboard.revenue.estimated-with-date": {
     "message": "Ожидается {date}"
@@ -1974,7 +1974,7 @@
     "message": "Выведено"
   },
   "dashboard.revenue.tos": {
-    "message": "Загружая проекты на Modrinth и выводя деньги со своего счёта, вы соглашаетесь с нашими <terms-link>Условиями программы вознаграждений</terms-link>. Узнайте больше о <info-link>программе вознаграждений</info-link>."
+    "message": "Загружая проекты на Bbsmc и выводя деньги со своего счёта, вы соглашаетесь с нашими <terms-link>Условиями программы вознаграждений</terms-link>. Узнайте больше о <info-link>программе вознаграждений</info-link>."
   },
   "dashboard.revenue.transactions.btn.download-csv": {
     "message": "Скачать в формате CSV"
@@ -2163,7 +2163,7 @@
     "message": "Выбор сборки модов для установки после сброса"
   },
   "discover.seo.description": {
-    "message": "Находите лучшие Minecraft {projectType} на Modrinth с помощью мгновенного и точного поиска. Наши фильтры помогут быстро подобрать подходящие {projectType}."
+    "message": "Находите лучшие Minecraft {projectType} на Bbsmc с помощью мгновенного и точного поиска. Наши фильтры помогут быстро подобрать подходящие {projectType}."
   },
   "discover.seo.title": {
     "message": "Искать {projectType}"
@@ -2178,7 +2178,7 @@
     "message": "Коллекция может быть приватной."
   },
   "error.collection.404.list_item.3": {
-    "message": "Коллекция могла быть удалена модерацией Modrinth за нарушение <tou-link>условий использования</tou-link>."
+    "message": "Коллекция могла быть удалена модерацией Bbsmc за нарушение <tou-link>условий использования</tou-link>."
   },
   "error.collection.404.list_title": {
     "message": "Почему?"
@@ -2205,10 +2205,10 @@
     "message": "Контент недоступен по юридичес­ким причинам"
   },
   "error.generic.default.list_item.1": {
-    "message": "Проверьте доступность Modrinth на <status-link>странице статуса</status-link>."
+    "message": "Проверьте доступность Bbsmc на <status-link>странице статуса</status-link>."
   },
   "error.generic.default.list_item.2": {
-    "message": "Если проблема не исчезает, сообщите о ней команде Modrinth в <discord-link>Discord</discord-link>."
+    "message": "Если проблема не исчезает, сообщите о ней команде Bbsmc в <discord-link>Discord</discord-link>."
   },
   "error.generic.default.list_title": {
     "message": "Повторите попытку через несколько минут."
@@ -2226,7 +2226,7 @@
     "message": "Владелец организации мог изменить адрес или удалить её."
   },
   "error.organization.404.list_item.3": {
-    "message": "Организация могла быть удалена модерацией Modrinth за нарушение <tou-link>условий использования</tou-link>."
+    "message": "Организация могла быть удалена модерацией Bbsmc за нарушение <tou-link>условий использования</tou-link>."
   },
   "error.organization.404.list_title": {
     "message": "Почему?"
@@ -2241,7 +2241,7 @@
     "message": "Владелец проекта мог изменить адрес, сделать проект приватным или удалить его."
   },
   "error.project.404.list_item.3": {
-    "message": "Проект мог быть удалён модерацией Modrinth за нарушение <tou-link>условий использования</tou-link>."
+    "message": "Проект мог быть удалён модерацией Bbsmc за нарушение <tou-link>условий использования</tou-link>."
   },
   "error.project.404.list_title": {
     "message": "Почему?"
@@ -2274,7 +2274,7 @@
     "message": "Жаба"
   },
   "hosting-marketing.available-locations": {
-    "message": "Широкий охват за счёт серверов в Северной Америке, Европе, Юго‑Восточной Азии и Австралии."
+    "message": "Широкий охват за счёт серверов в Северной Америке, Европе, Юго‑Восточно�?Азии и Австралии."
   },
   "hosting-marketing.billing.monthly": {
     "message": "На месяц"
@@ -2295,13 +2295,13 @@
     "message": "Как работает рост потоков CPU?"
   },
   "hosting-marketing.faq.burst-threads.answer": {
-    "message": "Когда сервер испытывает высокую нагрузку, ему временно выделяются дополнительные потоки CPU. Это помогает показателю TPS не упасть ниже 20 и обеспечивает максимально плавный игровой процесс. Из‑за своей кратковременности такие потоки могут не отображаться в отчётах Spark и других инструментах профилирования."
+    "message": "Когда сервер испытывает высокую нагрузку, ему временно выделяются дополнительные потоки CPU. Это помогает показателю TPS не упасть ниже 20 и обеспечивает максимально плавный игровой процесс. Из‑з�?своей кратковременности такие потоки могут не отображаться в отчётах Spark и других инструментах профилирования."
   },
   "hosting-marketing.faq.cpu-kind": {
-    "message": "Какие процессоры используются на серверах Modrinth Hosting?"
+    "message": "Какие процессоры используются на серверах Bbsmc Hosting?"
   },
   "hosting-marketing.faq.cpu-kind.answer": {
-    "message": "Серверы Modrinth Hosting оснащены процессорами уровня AMD Ryzen 7900 и 7950X3D с частотой более 5 ГГц и памятью DDR5."
+    "message": "Серверы Bbsmc Hosting оснащены процессорами уровня AMD Ryzen 7900 и 7950X3D с частотой более 5 ГГц и памятью DDR5."
   },
   "hosting-marketing.faq.currency": {
     "message": "В какой валюте указаны цены?"
@@ -2310,19 +2310,19 @@
     "message": "Все цены указаны в долларах США (USD)."
   },
   "hosting-marketing.faq.ddos-protection": {
-    "message": "Защищены ли серверы Modrinth Hosting от DDoS‑атак?"
+    "message": "Защищены ли серверы Bbsmc Hosting от DDoS‑ата�?"
   },
   "hosting-marketing.faq.ddos-protection.answer": {
-    "message": "Да. Все серверы Modrinth Hosting защищены от DDoS‑атак и в некоторых регионах выдерживают атаки до 17 Тбит/⁠с."
+    "message": "Да. Все серверы Bbsmc Hosting защищены от DDoS‑ата�?и в некоторых регионах выдерживают атаки до 17 Тбит/⁠�?"
   },
   "hosting-marketing.faq.heading": {
     "message": "Вопросы и ответы"
   },
   "hosting-marketing.faq.how-fast": {
-    "message": "Насколько быстро работают серверы Modrinth Hosting?"
+    "message": "Насколько быстро работают серверы Bbsmc Hosting?"
   },
   "hosting-marketing.faq.how-fast.answer.one": {
-    "message": "Серверы Modrinth Hosting используют современное и мощное оборудование, однако сложно точно сказать, насколько быстро будет работать конкретный сервер. На производи­тель­ность влияет множество факторов: используемые моды, плагины, наборы данных и даже поведение игроков."
+    "message": "Серверы Bbsmc Hosting используют современное и мощное оборудование, однако сложно точно сказать, насколько быстро будет работать конкретный сервер. На производи­тель­ность влияет множество факторов: используемые моды, плагины, наборы данных и даже поведение игроков."
   },
   "hosting-marketing.faq.how-fast.answer.two": {
     "message": "Чаще всего проблемы с производи­тель­ностью вызваны плохой оптимизацией сборок, модов, плагинов и наборов данных. Наши серверы рассчитаны на высокие нагрузки, поэтому при выборе подходящего плана серьёзных проблем возникнуть не должно."
@@ -2331,19 +2331,19 @@
     "message": "Можно ли увеличить объём диска на сервере?"
   },
   "hosting-marketing.faq.increase-storage.answer": {
-    "message": "Да. Объём диска на сервере можно бесплатно увеличить: достаточно обратиться в поддержку Modrinth."
+    "message": "Да. Объём диска на сервере можно бесплатно увеличить: достаточно обратиться в поддержку Bbsmc."
   },
   "hosting-marketing.faq.location": {
-    "message": "Где расположены серверы Modrinth Hosting? Можно ли выбрать регион?"
+    "message": "Где расположены серверы Bbsmc Hosting? Можно ли выбрать регион?"
   },
   "hosting-marketing.faq.location.answer": {
-    "message": "При покупке можно выбрать сервер в Северной Америке, Европе, Юго‑Восточной Азии или Австралии. В будущем появятся и другие регионы! Чтобы сменить регион, обратитесь в поддержку."
+    "message": "При покупке можно выбрать сервер в Северной Америке, Европе, Юго‑Восточно�?Азии или Австралии. В будущем появятся и другие регионы! Чтобы сменить регион, обратитесь в поддержку."
   },
   "hosting-marketing.faq.versions-loaders": {
     "message": "Какие загрузчики и версии Minecraft можно использовать?"
   },
   "hosting-marketing.faq.versions-loaders.answer.one": {
-    "message": "Серверы Modrinth Hosting поддерживают все версии Minecraft: Java Edition, начиная с 1.2.5, в том числе снапшоты."
+    "message": "Серверы Bbsmc Hosting поддерживают все версии Minecraft: Java Edition, начиная с 1.2.5, в том числе снапшоты."
   },
   "hosting-marketing.faq.versions-loaders.answer.two": {
     "message": "Также доступен большой выбор загрузчиков модов и плагинов, в том числе Fabric, Quilt, Forge, NeoForge, Paper и Purpur. Поддержка каждого загрузчика зависит от выбранной версии Minecraft."
@@ -2360,11 +2360,11 @@
   "hosting-marketing.hero.button.start-your-server": {
     "message": "Создать свой сервер"
   },
-  "hosting-marketing.hero.host-with-modrinth": {
-    "message": "Создайте свой сервер с Modrinth Hosting"
+  "hosting-marketing.hero.host-with-Bbsmc": {
+    "message": "Создайте свой сервер с Bbsmc Hosting"
   },
   "hosting-marketing.hero.hosting-description": {
-    "message": "Modrinth Hosting — самый простой способ создать свой сервер Minecraft: Java Edition. Устанавливайте и играйте в любимые моды и сборки без хлопот — всё это внутри платформы Modrinth."
+    "message": "Bbsmc Hosting �?самый простой способ создать свой сервер Minecraft: Java Edition. Устанавливайте и играйте в любимые моды и сборки без хлопот �?всё это внутри платформы Bbsmc."
   },
   "hosting-marketing.included.advanced-networking": {
     "message": "Гибкое управление сетью"
@@ -2382,10 +2382,10 @@
     "message": "Настраиваемый адрес"
   },
   "hosting-marketing.included.custom-url.description": {
-    "message": "Делитесь сервером, используя собственный адрес <contrast>modrinth.gg</contrast>."
+    "message": "Делитесь сервером, используя собственный адрес <contrast>Bbsmc.gg</contrast>."
   },
   "hosting-marketing.included.description": {
-    "message": "Каждый сервер предлагает возможности для хостинга, доступные только на Modrinth."
+    "message": "Каждый сервер предлагает возможности для хостинга, доступные только на Bbsmc."
   },
   "hosting-marketing.included.file-manager": {
     "message": "Удобный файловый менеджер"
@@ -2400,19 +2400,19 @@
     "message": "Поддержка в нужный момент"
   },
   "hosting-marketing.included.help.description": {
-    "message": "Команда Modrinth готова помочь с сервером в любое время."
+    "message": "Команда Bbsmc готова помочь с сервером в любое время."
   },
   "hosting-marketing.included.powerful-console": {
     "message": "Мощная консоль, удобная настройка и многое другое"
   },
   "hosting-marketing.included.powerful-console.description": {
-    "message": "С Modrinth Hosting управление сервером становится проще."
+    "message": "С Bbsmc Hosting управление сервером становится проще."
   },
   "hosting-marketing.included.sftp-access": {
     "message": "Доступ по SFTP"
   },
   "hosting-marketing.included.sftp-access.description": {
-    "message": "Работайте с файлами сервера напрямую по SFTP внутри Modrinth Hosting."
+    "message": "Работайте с файлами сервера напрямую по SFTP внутри Bbsmc Hosting."
   },
   "hosting-marketing.included.with-your-server": {
     "message": "Возможности сервера"
@@ -2453,20 +2453,20 @@
   "hosting-marketing.server-for-everyone": {
     "message": "Сервер найдётся для каждого"
   },
-  "hosting-marketing.why.all-on-modrinth": {
-    "message": "Управляйте всем на Modrinth"
+  "hosting-marketing.why.all-on-Bbsmc": {
+    "message": "Управляйте всем на Bbsmc"
   },
-  "hosting-marketing.why.all-on-modrinth.description": {
-    "message": "Сервер, моды, игроки — всё уже есть на Modrinth. Не нужно переключаться между платформами."
+  "hosting-marketing.why.all-on-Bbsmc.description": {
+    "message": "Сервер, моды, игроки �?всё уже есть на Bbsmc. Не нужно переключаться между платформами."
   },
   "hosting-marketing.why.consistently-fast": {
     "message": "Всегда высокая скорость"
   },
   "hosting-marketing.why.consistently-fast.description": {
-    "message": "Из‑за отсутствия перегрузок в инфраструктуре каждый сервер работает на полной мощности."
+    "message": "Из‑з�?отсутствия перегрузок в инфраструктуре каждый сервер работает на полной мощности."
   },
   "hosting-marketing.why.description": {
-    "message": "Выберите любую из тысяч сборок на Modrinth или создайте свою. Пригласите друзей и начинайте игру."
+    "message": "Выберите любую из тысяч сборок на Bbsmc или создайте свою. Пригласите друзей и начинайте игру."
   },
   "hosting-marketing.why.heading": {
     "message": "Найдите сборку. Сервер готов."
@@ -2475,22 +2475,22 @@
     "message": "Новейший и надёжный хостинг"
   },
   "hosting-marketing.why.modern-reliable-hosting.description": {
-    "message": "<contrast>Современные процессоры AMD с памятью DDR5</contrast> и собственное ПО обеспечивают быструю и стабильную работу серверов Modrinth Hosting."
+    "message": "<contrast>Современные процессоры AMD с памятью DDR5</contrast> и собственное ПО обеспечивают быструю и стабильную работу серверов Bbsmc Hosting."
   },
   "hosting-marketing.why.where-mods-are": {
     "message": "Играйте сразу с модами"
   },
   "hosting-marketing.why.where-mods-are.description": {
-    "message": "Установка серверных модов и сборок встроена в Modrinth Hosting."
+    "message": "Установка серверных модов и сборок встроена в Bbsmc Hosting."
   },
-  "hosting-marketing.why.why-modrinth-hosting": {
-    "message": "Преимущества Modrinth Hosting"
+  "hosting-marketing.why.why-Bbsmc-hosting": {
+    "message": "Преимущества Bbsmc Hosting"
   },
   "hosting-marketing.why.your-favorite-mods": {
     "message": "Моды на любой вкус"
   },
   "hosting-marketing.why.your-favorite-mods.description": {
-    "message": "Выбирайте Fabric, Forge, Quilt, NeoForge или сервер без модов. Всё, что есть на Modrinth, работает на сервере."
+    "message": "Выбирайте Fabric, Forge, Quilt, NeoForge или сервер без модов. Всё, что есть на Bbsmc, работает на сервере."
   },
   "hosting.plan.out-of-stock": {
     "message": "Нет в наличии"
@@ -2505,7 +2505,7 @@
     "message": "Перейти в панель управления"
   },
   "landing.creator.feature.constantly-evolving.description": {
-    "message": "Получайте лучший опыт моддинга благодаря постоянным обновлениям от команды Modrinth"
+    "message": "Получайте лучший опыт моддинга благодаря постоянным обновлениям от команды Bbsmc"
   },
   "landing.creator.feature.constantly-evolving.title": {
     "message": "Постоянное развитие"
@@ -2550,13 +2550,13 @@
     "message": "Следите за тем, что нравится"
   },
   "landing.feature.launcher.description": {
-    "message": "Наш открытый API позволяет глубже интегрироваться с Modrinth — используйте <link>наше приложение</link> или сторонние лаунчеры наподобие ATLauncher, MultiMC и Prism Launcher."
+    "message": "Наш открытый API позволяет глубже интегрироваться с Bbsmc �?используйте <link>наше приложение</link> или сторонние лаунчеры наподобие ATLauncher, MultiMC и Prism Launcher."
   },
   "landing.feature.launcher.heading": {
     "message": "Играйте через свой лаунчер"
   },
   "landing.feature.search.description": {
-    "message": "Мгновенный поиск и мощные фильтры Modrinth позволяют находить контент уже во время ввода."
+    "message": "Мгновенный поиск и мощные фильтры Bbsmc позволяют находить контент уже во время ввода."
   },
   "landing.feature.search.heading": {
     "message": "Ищите нужное быстро и легко"
@@ -2589,10 +2589,10 @@
     "message": "ATLauncher"
   },
   "landing.launcher.graphic-alt": {
-    "message": "Упрощённое изображение окна Minecraft с логотипом Mojang Studios в зелёном цвете Modrinth."
+    "message": "Упрощённое изображение окна Minecraft с логотипом Mojang Studios в зелёном цвете Bbsmc."
   },
-  "landing.launcher.modrinth-app-label": {
-    "message": "Modrinth App"
+  "landing.launcher.Bbsmc-app-label": {
+    "message": "Bbsmc App"
   },
   "landing.launcher.prism-launcher-label": {
     "message": "Prism Launcher"
@@ -2619,7 +2619,7 @@
     "message": "Делитесь творениями с миром"
   },
   "landing.section.for-players.description": {
-    "message": "От магических биомов до проклятых подземелий — вы точно найдёте контент, который выведет игру на новый уровень."
+    "message": "От магических биомов до проклятых подземелий �?вы точно найдёте контент, который выведет игру на новый уровень."
   },
   "landing.section.for-players.label": {
     "message": "Для игроков"
@@ -2688,13 +2688,13 @@
     "message": "Открыть настройки аккаунта"
   },
   "layout.banner.add-email.description": {
-    "message": "В целях безопасности Modrinth просит привязать почту к аккаунту."
+    "message": "В целях безопасности Bbsmc просит привязать почту к аккаунту."
   },
   "layout.banner.build-fail.always-ignore": {
     "message": "Всегда игнорировать"
   },
   "layout.banner.build-fail.description": {
-    "message": "При развёртывании фронтенда Modrinth не удалось сгенерировать состояние от API. Причиной может быть временный сбой или неверная настройка. Пересоберите проект, когда API станет доступен. Коды ошибок: {errors}. Текущий адрес API: {url}"
+    "message": "При развёртывании фронтенда Bbsmc не удалось сгенерировать состояние от API. Причиной может быть временный сбой или неверная настройка. Пересоберите проект, когда API станет доступен. Коды ошибок: {errors}. Текущий адрес API: {url}"
   },
   "layout.banner.build-fail.ignore": {
     "message": "Игнорировать"
@@ -2703,16 +2703,16 @@
     "message": "Ошибка генерации состояния от API во время сборки."
   },
   "layout.banner.preview.description": {
-    "message": "Официальный сайт Modrinth доступен по адресу {url}. Текущая предварительная версия предназначена для тестирования командой Modrinth и собрана из {ref}."
+    "message": "Официальный сайт Bbsmc доступен по адресу {url}. Текущая предварительная версия предназначена для тестирования командой Bbsmc и собрана из {ref}."
   },
   "layout.banner.preview.title": {
-    "message": "Это предварительная версия сайта Modrinth."
+    "message": "Это предварительная версия сайта Bbsmc."
   },
   "layout.banner.staging.description": {
-    "message": "Тестовая среда полностью отделена от основной базы данных Modrinth и нужна для тестирования и отладки. Фронтенд и бэкенд здесь могут содержать изменения, которые ещё не вышли на основном сайте."
+    "message": "Тестовая среда полностью отделена от основной базы данных Bbsmc и нужна для тестирования и отладки. Фронтенд и бэкенд здесь могут содержать изменения, которые ещё не вышли на основном сайте."
   },
   "layout.banner.staging.title": {
-    "message": "Вы находитесь в тестовой среде Modrinth"
+    "message": "Вы находитесь в тестовой среде Bbsmc"
   },
   "layout.banner.subscription-payment-failed.button": {
     "message": "Обновить платёжные данные"
@@ -2727,7 +2727,7 @@
     "message": "Заполнить налоговую форму"
   },
   "layout.banner.tax.description": {
-    "message": "В этом году вы вывели уже более {threshold} из Modrinth. Для соблюдения налогового законодательства нужно заполнить налоговую форму. Вывод средств приостановлен до подачи этой формы."
+    "message": "В этом году вы вывели уже более {threshold} из Bbsmc. Для соблюдения налогового законодательства нужно заполнить налоговую форму. Вывод средств приостановлен до подачи этой формы."
   },
   "layout.banner.tax.title": {
     "message": "Требуется налоговая форма"
@@ -2745,7 +2745,7 @@
     "message": "Повторить отправку письма"
   },
   "layout.banner.verify-email.description": {
-    "message": "В целях безопасности Modrinth просит подтвердить почту, привязанную к аккаунту."
+    "message": "В целях безопасности Bbsmc просит подтвердить почту, привязанную к аккаунту."
   },
   "layout.footer.about": {
     "message": "О проекте"
@@ -2801,23 +2801,23 @@
   "layout.footer.legal.terms-of-use": {
     "message": "Условия использования"
   },
-  "layout.footer.modrinth-information": {
-    "message": "Информация о Modrinth"
+  "layout.footer.Bbsmc-information": {
+    "message": "Информация о Bbsmc"
   },
   "layout.footer.open-source": {
-    "message": "Modrinth — <github-link>открытый проект</github-link>."
+    "message": "Bbsmc �?<github-link>открытый проект</github-link>."
   },
   "layout.footer.products": {
     "message": "Продукты"
   },
   "layout.footer.products.app": {
-    "message": "Modrinth App"
+    "message": "Bbsmc App"
   },
   "layout.footer.products.plus": {
-    "message": "Modrinth+"
+    "message": "Bbsmc+"
   },
   "layout.footer.products.servers": {
-    "message": "Modrinth Hosting"
+    "message": "Bbsmc Hosting"
   },
   "layout.footer.resources": {
     "message": "Ресурсы"
@@ -2856,7 +2856,7 @@
     "message": "Меню"
   },
   "layout.meta.description": {
-    "message": "Скачивайте моды, плагины, наборы данных, шейдеры, наборы ресурсов и сборки для Minecraft на Modrinth. Ищите и публикуйте проекты на Modrinth, используя удобный современный интерфейс и API."
+    "message": "Скачивайте моды, плагины, наборы данных, шейдеры, наборы ресурсов и сборки для Minecraft на Bbsmc. Ищите и публикуйте проекты на Bbsmc, используя удобный современный интерфейс и API."
   },
   "layout.meta.og-description": {
     "message": "Ищите и публикуйте проекты для Minecraft!"
@@ -2873,8 +2873,8 @@
   "layout.nav.discover": {
     "message": "Найти"
   },
-  "layout.nav.get-modrinth-app": {
-    "message": "Скачать Modrinth App"
+  "layout.nav.get-Bbsmc-app": {
+    "message": "Скачать Bbsmc App"
   },
   "layout.nav.home": {
     "message": "Главная"
@@ -2882,11 +2882,11 @@
   "layout.nav.host-a-server": {
     "message": "Создать сервер"
   },
-  "layout.nav.modrinth-app": {
-    "message": "Modrinth App"
+  "layout.nav.Bbsmc-app": {
+    "message": "Bbsmc App"
   },
-  "layout.nav.modrinth-home-page": {
-    "message": "Главная страница Modrinth"
+  "layout.nav.Bbsmc-home-page": {
+    "message": "Главная страница Bbsmc"
   },
   "layout.nav.my-servers": {
     "message": "Мои серверы"
@@ -2909,11 +2909,11 @@
   "layout.nav.search": {
     "message": "Поиск"
   },
-  "layout.nav.upgrade-to-modrinth-plus": {
-    "message": "Перейти на Modrinth+"
+  "layout.nav.upgrade-to-Bbsmc-plus": {
+    "message": "Перейти на Bbsmc+"
   },
   "layout.publish.email-verification-required.description": {
-    "message": "Перед публикацией на Modrinth необходимо подтвердить адрес электронной почты."
+    "message": "Перед публикацией на Bbsmc необходимо подтвердить адрес электронной почты."
   },
   "layout.publish.email-verification-required.title": {
     "message": "Необходимо подтвердить почту"
@@ -2925,13 +2925,13 @@
     "message": "Управляется"
   },
   "modal.shared-instance.open-in-app.opening-automatically": {
-    "message": "Modrinth App откроется автоматически..."
+    "message": "Bbsmc App откроется автоматически..."
   },
   "modal.shared-instance.open-in-app.title": {
-    "message": "Открытие Modrinth App"
+    "message": "Открытие Bbsmc App"
   },
   "modal.shared-instance.open-in-app.why-use": {
-    "message": "Преимущества Modrinth App"
+    "message": "Преимущества Bbsmc App"
   },
   "moderation.exclude-technical-review": {
     "message": "Исключать ТП"
@@ -3183,7 +3183,7 @@
     "message": "CBU или CVU"
   },
   "muralpay.placeholder.cci": {
-    "message": "Введите 20‑значный CCI"
+    "message": "Введите 20‑значны�?CCI"
   },
   "muralpay.placeholder.cuit-cuil": {
     "message": "Введите CUIT или CUIL"
@@ -3192,7 +3192,7 @@
     "message": "Введите номер счёта"
   },
   "muralpay.placeholder.enter-clabe": {
-    "message": "Введите 18‑значный CLABE"
+    "message": "Введите 18‑значны�?CLABE"
   },
   "muralpay.placeholder.enter-cpf-cnpj": {
     "message": "Введите CPF или CNPJ"
@@ -3207,7 +3207,7 @@
     "message": "Введите случайный ключ"
   },
   "muralpay.placeholder.enter-routing-number": {
-    "message": "Введите 9‑значный маршрутный номер"
+    "message": "Введите 9‑значны�?маршрутный номер"
   },
   "muralpay.placeholder.enter-swift-bic": {
     "message": "Введите SWIFT/BIC-код"
@@ -3249,7 +3249,7 @@
     "message": "Банковский перевод (PEN)"
   },
   "muralpay.rail.fiat-usd-peru.name": {
-    "message": "Банковский перевод (USD — Перу)"
+    "message": "Банковский перевод (USD �?Перу)"
   },
   "muralpay.rail.fiat-usd.name": {
     "message": "Банковский перевод (USD)"
@@ -3348,7 +3348,7 @@
     "message": "Запросите перепроверку"
   },
   "project-moderation-nags.resubmit-for-review-desc": {
-    "message": "Проект {status, select, rejected {отклонён} withheld {на удержании} other {{status}}} командой Modrinth. Обычно после решения указанных модератором проблем можно снова запросить проверку."
+    "message": "Проект {status, select, rejected {отклонён} withheld {на удержании} other {{status}}} командой Bbsmc. Обычно после решения указанных модератором проблем можно снова запросить проверку."
   },
   "project-moderation-nags.submit-checklist-tooltip": {
     "message": "Необходимо выполнить обязательные действия в контрольном списке"
@@ -3450,7 +3450,7 @@
     "message": "Проверить проект"
   },
   "project.actions.servers-promo.description": {
-    "message": "Modrinth Hosting — самый простой способ играть с друзьями без лишних хлопот!"
+    "message": "Bbsmc Hosting �?самый простой способ играть с друзьями без лишних хлопот!"
   },
   "project.actions.servers-promo.pricing": {
     "message": "От {price}<small> в месяц</small>"
@@ -3540,13 +3540,13 @@
     "message": "{title} не поддерживает {gameVersion} на {platform}"
   },
   "project.download.install-with-app": {
-    "message": "Установить в Modrinth App"
+    "message": "Установить в Bbsmc App"
   },
   "project.download.manually": {
     "message": "Скачать вручную"
   },
   "project.download.no-app": {
-    "message": "У вас нет Modrinth App?"
+    "message": "У вас нет Bbsmc App?"
   },
   "project.download.no-game-versions-found": {
     "message": "Версии игры не найдены"
@@ -3591,7 +3591,7 @@
     "message": "Не удалось скачать файлы"
   },
   "project.environment.migration-no-permission.message": {
-    "message": "На Modrinth изменилась система сред и появились новые варианты. У вас нет доступа к среде — сообщите другому участнику о необходимости проверки метаданных."
+    "message": "На Bbsmc изменилась система сред и появились новые варианты. У вас нет доступа к среде �?сообщите другому участнику о необходимости проверки метаданных."
   },
   "project.environment.migration-no-permission.title": {
     "message": "Необходимо проверить метаданные среды"
@@ -3600,7 +3600,7 @@
     "message": "Подробнее об этом изменении..."
   },
   "project.environment.migration.message": {
-    "message": "На Modrinth изменилась система сред и появились новые варианты. Убедитесь в верности метаданных."
+    "message": "На Bbsmc изменилась система сред и появились новые варианты. Убедитесь в верности метаданных."
   },
   "project.environment.migration.review-button": {
     "message": "Проверить настройки среды"
@@ -3627,7 +3627,7 @@
     "message": "Ваш проект приватный, доступ к нему есть только у вас и приглашённых вами людей."
   },
   "project.moderation.admonition.approved.body.public": {
-    "message": "Ваш проект выложен и доступен для поиска на Modrinth."
+    "message": "Ваш проект выложен и доступен для поиска на Bbsmc."
   },
   "project.moderation.admonition.approved.body.unlisted": {
     "message": "Ваш проект скрыт, доступ к нему можно получить только по ссылке."
@@ -3639,13 +3639,13 @@
     "message": "Проект одобрен"
   },
   "project.moderation.admonition.draft.body": {
-    "message": "Это черновик проекта, который никому не виден до запроса на проверку и одобрения модерации Modrinth."
+    "message": "Это черновик проекта, который никому не виден до запроса на проверку и одобрения модерации Bbsmc."
   },
   "project.moderation.admonition.draft.header": {
     "message": "Черновик"
   },
   "project.moderation.admonition.draft.submit-for-review": {
-    "message": "Когда вы выполните все обязательные шаги и убедитесь в отсутствии нарушений <rules-link>правил контента Modrinth</rules-link>, то тогда можно будет запросить проверку проекта."
+    "message": "Когда вы выполните все обязательные шаги и убедитесь в отсутствии нарушений <rules-link>правил контента Bbsmc</rules-link>, то тогда можно будет запросить проверку проекта."
   },
   "project.moderation.admonition.rejected.address-all-concerns": {
     "message": "Пожалуйста, устраните все замечания, указанные модераторами, включая перечисленные в сообщениях ниже, прежде чем повторно отправлять проект на проверку."
@@ -3657,22 +3657,22 @@
     "message": "Многократная отправка проекта без предварительного устранения всех замечаний модерации может привести к блокировке учётной записи."
   },
   "project.moderation.admonition.under-review.body.1": {
-    "message": "Ваш проект находится в очереди на проверку модерацией Modrinth."
+    "message": "Ваш проект находится в очереди на проверку модерацией Bbsmc."
   },
   "project.moderation.admonition.under-review.body.2": {
-    "message": "Ваш проект будет проверен автоматической системой и затем рассмотрен модераторами на соответствие <rules-link>правилам контента Modrinth</rules-link> и <terms-link>условиям использования</terms-link>."
+    "message": "Ваш проект будет проверен автоматической системой и затем рассмотрен модераторами на соответствие <rules-link>правилам контента Bbsmc</rules-link> и <terms-link>условиям использования</terms-link>."
   },
   "project.moderation.admonition.under-review.body.3": {
-    "message": "Вы по-прежнему можете редактировать проект — это не повлияет на его положение в очереди."
+    "message": "Вы по-прежнему можете редактировать проект �?это не повлияет на его положение в очереди."
   },
   "project.moderation.admonition.under-review.body.4": {
-    "message": "Мы стараемся проверять проекты в течение 24–48 часов, однако иногда возможны задержки. Это не означает, что с вашим проектом что-то не так."
+    "message": "Мы стараемся проверять проекты в течение 24�?8 часов, однако иногда возможны задержки. Это не означает, что с вашим проектом что-то не так."
   },
   "project.moderation.admonition.under-review.body.4.alt-week": {
     "message": "Мы стараемся проверять проекты в течение недели, однако иногда возможны задержки. Это не означает, что с вашим проектом что-то не так."
   },
   "project.moderation.admonition.under-review.body.5": {
-    "message": "<emphasis>Мы ценим ваше терпение, пока модераторы усердно работают над поддержанием безопасности Modrinth, и с нетерпением ждём возможности помочь вам поделиться своим контентом! 💚</emphasis>"
+    "message": "<emphasis>Мы ценим ваше терпение, пока модераторы усердно работают над поддержанием безопасности Bbsmc, и с нетерпением ждём возможности помочь вам поделиться своим контентом! 💚</emphasis>"
   },
   "project.moderation.admonition.under-review.header": {
     "message": "Проект на проверке"
@@ -3690,13 +3690,13 @@
     "message": "Эта ветка не отслеживается в реальном времени, но при необходимости может быть просмотрена для получения информации о вашем проекте."
   },
   "project.moderation.thread.help-center-note.1": {
-    "message": "Модераторы контента не могут помочь с большинством вопросов, а сообщения в этой переписке не уведомляют сотрудников Modrinth."
+    "message": "Модераторы контента не могут помочь с большинством вопросов, а сообщения в этой переписке не уведомляют сотрудников Bbsmc."
   },
   "project.moderation.thread.help-center-note.2": {
-    "message": "Если вам нужна помощь или у вас есть дополнительные вопросы, посетите <help-center-link>справочный центр Modrinth</help-center-link> и нажмите на синий значок, чтобы обратиться в поддержку."
+    "message": "Если вам нужна помощь или у вас есть дополнительные вопросы, посетите <help-center-link>справочный центр Bbsmc</help-center-link> и нажмите на синий значок, чтобы обратиться в поддержку."
   },
   "project.moderation.thread.private-description": {
-    "message": "Это личная переписка с модераторами Modrinth. Они могут связываться с вами по вопросам, связанным с этим проектом."
+    "message": "Это личная переписка с модераторами Bbsmc. Они могут связываться с вами по вопросам, связанным с этим проектом."
   },
   "project.moderation.thread.title": {
     "message": "Сообщения модерации"
@@ -3720,7 +3720,7 @@
     "message": "Проект обновлён"
   },
   "project.settings.general.name.description": {
-    "message": "Не используйте лишние приписки, скобки и описания — введите только название проекта."
+    "message": "Не используйте лишние приписки, скобки и описания �?введите только название проекта."
   },
   "project.settings.general.name.placeholder.1": {
     "message": "Например: Nether Overhaul 2"
@@ -3774,7 +3774,7 @@
     "message": "Неизвестный внешний контент"
   },
   "project.settings.permissions.bad-proof.description": {
-    "message": "Команда модераторов Modrinth отклонила предоставленные вами данные для разрешения доступа к некоторому стороннему контенту. Пожалуйста, просмотрите список отклоненных материалов ниже и предоставьте убедительные доказательства или удалите контент."
+    "message": "Команда модераторов Bbsmc отклонила предоставленные вами данные для разрешения доступа к некоторому стороннему контенту. Пожалуйста, просмотрите список отклоненных материалов ниже и предоставьте убедительные доказательства или удалите контент."
   },
   "project.settings.permissions.bad-proof.title": {
     "message": "Часть доказательств отклонена"
@@ -3813,13 +3813,13 @@
     "message": "Развернуть всё"
   },
   "project.settings.permissions.fail.description": {
-    "message": "Возможно, у вас нет разрешения на распространение части стороннего контента в вашем проекте. Чтобы опубликовать проект на Modrinth, удалите этот контент или предоставьте доказательства того, что у вас есть разрешение на его использование."
+    "message": "Возможно, у вас нет разрешения на распространение части стороннего контента в вашем проекте. Чтобы опубликовать проект на Bbsmc, удалите этот контент или предоставьте доказательства того, что у вас есть разрешение на его использование."
   },
   "project.settings.permissions.fail.title": {
     "message": "Некоторый контент не может быть включён"
   },
   "project.settings.permissions.info-banner.description": {
-    "message": "Если включённый контент не размещён на Modrinth, то надо указать его источник, и подтвердить наличие разрешения на распространение файлов. Подробнее — в <link>нашем объявлении новой системы</link>!"
+    "message": "Если включённый контент не размещён на Bbsmc, то надо указать его источник, и подтвердить наличие разрешения на распространение файлов. Подробнее �?в <link>нашем объявлении новой системы</link>!"
   },
   "project.settings.permissions.info-banner.title": {
     "message": "Узнайте о разрешениях на распространение"
@@ -3831,7 +3831,7 @@
     "message": "Сторонние файлы не найдены."
   },
   "project.settings.permissions.not-allowed.description": {
-    "message": "Часть внешнего контента не может распространяться на Modrinth за нарушение правил контента и должна быть удалена."
+    "message": "Часть внешнего контента не может распространяться на Bbsmc за нарушение правил контента и должна быть удалена."
   },
   "project.settings.permissions.pending-approval-count": {
     "message": "{count, plural, =0 {Все атрибуции одобрены} one {# атрибуция без одобрения} few {# атрибуции без одобрения} other {# атрибуций без одобрения}}"
@@ -4248,7 +4248,7 @@
     "message": "Изменение жалоб"
   },
   "scopes.sessionAccess.description": {
-    "message": "Пользоваться сеансами Modrinth"
+    "message": "Пользоваться сеансами Bbsmc"
   },
   "scopes.sessionAccess.label": {
     "message": "Использование сеансов"
@@ -4347,7 +4347,7 @@
     "message": "Использовать с сервера"
   },
   "servers.manage.content.title": {
-    "message": "Контент — {serverName} — Modrinth"
+    "message": "Контент �?{serverName} �?Bbsmc"
   },
   "servers.notice.actions": {
     "message": "Действия"
@@ -4377,13 +4377,13 @@
     "message": "Нет оповещений"
   },
   "servers.plan.large.description": {
-    "message": "Для 15–25 игроков, сборок и тяжёлых модов."
+    "message": "Для 15�?5 игроков, сборок и тяжёлых модов."
   },
   "servers.plan.medium.description": {
-    "message": "Для 6–15 игроков и нескольких модов."
+    "message": "Для 6�?5 игроков и нескольких модов."
   },
   "servers.plan.small.description": {
-    "message": "Для 1–5 друзей и пары лёгких модов."
+    "message": "Для 1�? друзей и пары лёгких модов."
   },
   "servers.purchase.step.plan.most-popular": {
     "message": "Популярный"
@@ -4404,7 +4404,7 @@
     "message": "Подготовка данных..."
   },
   "settings.account.data-export.description": {
-    "message": "Запросите копию своих личных данных, хранящихся на Modrinth. Подготовка может занять несколько минут."
+    "message": "Запросите копию своих личных данных, хранящихся на Bbsmc. Подготовка может занять несколько минут."
   },
   "settings.account.data-export.title": {
     "message": "Экспорт данных"
@@ -4422,7 +4422,7 @@
     "message": "Удалить аккаунт"
   },
   "settings.account.delete.section.description": {
-    "message": "Удаление аккаунта необратимо. Все связанные данные, кроме проектов, будут удалены с серверов Modrinth."
+    "message": "Удаление аккаунта необратимо. Все связанные данные, кроме проектов, будут удалены с серверов Bbsmc."
   },
   "settings.account.delete.section.title": {
     "message": "Удаление аккаунта"
@@ -4638,7 +4638,7 @@
     "message": "Если код не сканируется, введите ключ вручную:"
   },
   "settings.account.two-factor.setup.scan": {
-    "message": "Отсканируйте QR‑код через <authy-link>Authy</authy-link>, <microsoft-authenticator-link>Microsoft Authenticator</microsoft-authenticator-link> или любое другое приложение для генерации кодов, чтобы начать настройку."
+    "message": "Отсканируйте QR‑ко�?через <authy-link>Authy</authy-link>, <microsoft-authenticator-link>Microsoft Authenticator</microsoft-authenticator-link> или любое другое приложение для генерации кодов, чтобы начать настройку."
   },
   "settings.account.two-factor.verify.description": {
     "message": "Введите одноразовый код подтверждения из приложения."
@@ -4686,7 +4686,7 @@
     "message": "Вы действительно хотите удалить это приложение?"
   },
   "settings.applications.description.intro": {
-    "message": "Через приложения пользователи Modrinth могут входить в ваши сервисы. Подробнее — в <docs-link>документации</docs-link>."
+    "message": "Через приложения пользователи Bbsmc могут входить в ваши сервисы. Подробнее �?в <docs-link>документации</docs-link>."
   },
   "settings.applications.field.description": {
     "message": "Описание"
@@ -4737,7 +4737,7 @@
     "message": "О приложении"
   },
   "settings.authorizations.description": {
-    "message": "Авторизованные приложения получают доступ к аккаунту Modrinth. Здесь можно просматривать и отзывать этот доступ."
+    "message": "Авторизованные приложения получают доступ к аккаунту Bbsmc. Здесь можно просматривать и отзывать этот доступ."
   },
   "settings.authorizations.head-title": {
     "message": "Авторизации"
@@ -4752,16 +4752,16 @@
     "message": "Вы действительно хотите деавторизовать это приложение?"
   },
   "settings.billing.charges.description": {
-    "message": "Здесь перечислены все списания по аккаунту Modrinth:"
+    "message": "Здесь перечислены все списания по аккаунту Bbsmc:"
   },
   "settings.billing.charges.product.medal-trial": {
     "message": "Пробный сервер от Medal"
   },
   "settings.billing.charges.product.midas": {
-    "message": "Modrinth Plus"
+    "message": "Bbsmc Plus"
   },
   "settings.billing.charges.product.pyro": {
-    "message": "Modrinth Hosting"
+    "message": "Bbsmc Hosting"
   },
   "settings.billing.charges.title": {
     "message": "История списаний"
@@ -4782,10 +4782,10 @@
     "message": "Отсутствие рекламы на сайте и в приложении"
   },
   "settings.billing.midas.benefits.badge": {
-    "message": "Значок Modrinth+ в профиле"
+    "message": "Значок Bbsmc+ в профиле"
   },
   "settings.billing.midas.benefits.support": {
-    "message": "Прямая поддержка Modrinth и авторов"
+    "message": "Прямая поддержка Bbsmc и авторов"
   },
   "settings.billing.midas.benefits.title": {
     "message": "Преимущества"
@@ -4809,7 +4809,7 @@
     "message": "Платёж в обработке. Подписка активируется автоматически."
   },
   "settings.billing.midas.upsell": {
-    "message": "Оформите подписку на Modrinth Plus!"
+    "message": "Оформите подписку на Bbsmc Plus!"
   },
   "settings.billing.modal.cancel.action": {
     "message": "Отменить подписку"
@@ -4863,7 +4863,7 @@
     "message": "{price} в {interval}"
   },
   "settings.billing.pyro.linked-server.not-found": {
-    "message": "Привязанный сервер не найден. Возможных причин несколько: сервер куплен только что — подождите, подготовка занимает до часа; сервер куплен давно — вероятно, его уже приостановили. Если что‑то не так, свяжитесь с поддержкой Modrinth, указав следующие данные:"
+    "message": "Привязанный сервер не найден. Возможных причин несколько: сервер куплен только что �?подождите, подготовка занимает до часа; сервер куплен давно �?вероятно, его уже приостановили. Если что‑т�?не так, свяжитесь с поддержкой Bbsmc, указав следующие данные:"
   },
   "settings.billing.pyro.linked-server.server-id": {
     "message": "ID сервера: {id}"
@@ -4875,7 +4875,7 @@
     "message": "{gb} ГБ ОЗУ"
   },
   "settings.billing.pyro.resubscribe.error.text": {
-    "message": "Произошла ошибка при возобновлении подписки на сервер Modrinth."
+    "message": "Произошла ошибка при возобновлении подписки на сервер Bbsmc."
   },
   "settings.billing.pyro.resubscribe.error.title": {
     "message": "Не удалось возобновить подписку"
@@ -4902,10 +4902,10 @@
     "message": "{gb} ГБ подкачки"
   },
   "settings.billing.pyro_subscription.description": {
-    "message": "Управляйте своими подписками на Modrinth Servers."
+    "message": "Управляйте своими подписками на Bbsmc Servers."
   },
   "settings.billing.pyro_subscription.title": {
-    "message": "Подписки на Modrinth Servers"
+    "message": "Подписки на Bbsmc Servers"
   },
   "settings.billing.renews": {
     "message": "Продлится {date}"
@@ -4920,7 +4920,7 @@
     "message": "Подписаться"
   },
   "settings.billing.subscription.description": {
-    "message": "Управляйте своими подписками на Modrinth."
+    "message": "Управляйте своими подписками на Bbsmc."
   },
   "settings.billing.subscription.title": {
     "message": "Подписки"
@@ -4944,7 +4944,7 @@
     "message": "Отключить режим разработчика"
   },
   "settings.display.banner.developer-mode.description": {
-    "message": "<strong>Режим разработчика</strong> включён. Отображаются внутренние идентификаторы различных элементов сайта, что удобно при работе с API. Чтобы отключить, снова нажмите на логотип Modrinth внизу страницы 5 раз."
+    "message": "<strong>Режим разработчика</strong> включён. Отображаются внутренние идентификаторы различных элементов сайта, что удобно при работе с API. Чтобы отключить, снова нажмите на логотип Bbsmc внизу страницы 5 раз."
   },
   "settings.display.flags.description": {
     "message": "Настройте отдельные функции на этом устройстве."
@@ -5007,16 +5007,16 @@
     "message": "Расширенные эффекты"
   },
   "settings.display.sidebar.external-links-new-tab.description": {
-    "message": "Ссылки за пределы Modrinth будут открываться в новой вкладке. Исключения: ссылки внутри домена и в Markdown — всегда в той же вкладке; реклама и страницы редактирования — всегда в новой."
+    "message": "Ссылки за пределы Bbsmc будут открываться в новой вкладке. Исключения: ссылки внутри домена и в Markdown �?всегда в той же вкладке; реклама и страницы редактирования �?всегда в новой."
   },
   "settings.display.sidebar.external-links-new-tab.title": {
     "message": "Внешние ссылки в новой вкладке"
   },
   "settings.display.sidebar.hide-app-promos.description": {
-    "message": "Убирает кнопку «Скачать Modrinth App» с поисковых страниц. Ссылку на раздел с Modrinth App всё ещё можно найти на главной странице или в нижней части интерфейса."
+    "message": "Убирает кнопку «Скачать Bbsmc App» с поисковых страниц. Ссылку на раздел с Bbsmc App всё ещё можно найти на главной странице или в нижней части интерфейса."
   },
   "settings.display.sidebar.hide-app-promos.title": {
-    "message": "Скрывать кнопку скачивания Modrinth App"
+    "message": "Скрывать кнопку скачивания Bbsmc App"
   },
   "settings.display.sidebar.left-aligned-content-sidebar.title": {
     "message": "Панель сведений слева"
@@ -5031,7 +5031,7 @@
     "message": "Панель фильтров справа"
   },
   "settings.display.theme.description": {
-    "message": "Выберите тему для Modrinth на этом устройстве."
+    "message": "Выберите тему для Bbsmc на этом устройстве."
   },
   "settings.display.theme.title": {
     "message": "Тема"
@@ -5043,7 +5043,7 @@
     "message": "Создать токен доступа"
   },
   "settings.pats.description": {
-    "message": "Токены доступа используются для обращения к API Modrinth. Их можно создавать и отзывать в любое время. Подробнее — в <doc-link>документации</doc-link>."
+    "message": "Токены доступа используются для обращения к API Bbsmc. Их можно создавать и отзывать в любое время. Подробнее �?в <doc-link>документации</doc-link>."
   },
   "settings.pats.modal.create.action": {
     "message": "Создать токен доступа"
@@ -5100,7 +5100,7 @@
     "message": "Текущий сеанс"
   },
   "settings.sessions.description": {
-    "message": "Ниже представлены все устройства, с которых осуществлён вход в вашу учётную запись Modrinth. Вы можете управлять сеансом каждого из них по отдельности.\n\nЕсли среди них присутствует незнакомое устройство, незамедлительно завершите его сеанс и смените пароль своей учётной записи."
+    "message": "Ниже представлены все устройства, с которых осуществлён вход в вашу учётную запись Bbsmc. Вы можете управлять сеансом каждого из них по отдельности.\n\nЕсли среди них присутствует незнакомое устройство, незамедлительно завершите его сеанс и смените пароль своей учётной записи."
   },
   "settings.sessions.last-accessed-ago": {
     "message": "Активность {ago}"
@@ -5124,7 +5124,7 @@
     "message": "Принять приглашение"
   },
   "shared-instance.invite.inviter.unknown": {
-    "message": "Пользователь Modrinth"
+    "message": "Пользователь Bbsmc"
   },
   "shared-instance.invite.joined-count": {
     "message": "{count, plural, one {# человек} few {# человека} other {# человек}} уже присоединились"
@@ -5136,7 +5136,7 @@
     "message": "{name} приглашает сыграть"
   },
   "shared-instance.invite.trust.description": {
-    "message": "Это приглашение создано другим пользователем Modrinth. Принимайте приглашения только от тех, кому доверяете."
+    "message": "Это приглашение создано другим пользователем Bbsmc. Принимайте приглашения только от тех, кому доверяете."
   },
   "shared-instance.invite.trust.heading": {
     "message": "Вы знакомы с этим пользователем?"
@@ -5145,7 +5145,7 @@
     "message": "Приглашение недоступно"
   },
   "ui.latest-news-row.latest-news": {
-    "message": "Последние новости от Modrinth"
+    "message": "Последние новости от Bbsmc"
   },
   "ui.latest-news-row.view-all": {
     "message": "Посмотреть все новости"
@@ -5157,7 +5157,7 @@
     "message": "Вы подписаны!"
   },
   "ui.newsletter-button.tooltip": {
-    "message": "Подписаться на рассылку от Modrinth"
+    "message": "Подписаться на рассылку от Bbsmc"
   },
   "version.all-versions": {
     "message": "Все версии"
@@ -5259,10 +5259,10 @@
     "message": "Координаты Maven:"
   },
   "version.section.content.dev-info.maven-description": {
-    "message": "Проекты на Modrinth автоматически доступны через репозиторий Maven для использования с инструментами сборки JVM, такими как <gradle-link>Gradle</gradle-link>. Чтобы узнать больше о Modrinth Maven API, <article-link>нажмите сюда</article-link>."
+    "message": "Проекты на Bbsmc автоматически доступны через репозиторий Maven для использования с инструментами сборки JVM, такими как <gradle-link>Gradle</gradle-link>. Чтобы узнать больше о Bbsmc Maven API, <article-link>нажмите сюда</article-link>."
   },
   "version.section.content.dev-info.maven-note": {
-    "message": "Примечание: По возможности следует использовать Maven-репозиторий самого автора, так как он содержит информацию о транзитивных зависимостях, которой нет у Modrinth Maven API. Кроме того, вы можете столкнуться с дублированием зависимостей, если будете одновременно использовать Maven-репозитории Modrinth и сторонние репозитории для своих зависимостей, поскольку идентификатор группы будет отличаться при их получении через Modrinth Maven API."
+    "message": "Примечание: По возможности следует использовать Maven-репозиторий самого автора, так как он содержит информацию о транзитивных зависимостях, которой нет у Bbsmc Maven API. Кроме того, вы можете столкнуться с дублированием зависимостей, если будете одновременно использовать Maven-репозитории Bbsmc и сторонние репозитории для своих зависимостей, поскольку идентификатор группы будет отличаться при их получении через Bbsmc Maven API."
   },
   "version.section.content.dev-info.version-id": {
     "message": "ID версии:"

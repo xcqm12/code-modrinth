@@ -72,7 +72,7 @@
     "message": "Pokročilé vykreslování"
   },
   "app.appearance-settings.color-theme.description": {
-    "message": "Vyberte si váš preferovaný motiv pro aplikaci Modrinth."
+    "message": "Vyberte si váš preferovaný motiv pro aplikaci Bbsmc."
   },
   "app.appearance-settings.color-theme.title": {
     "message": "Barevný motiv"
@@ -96,7 +96,7 @@
     "message": "Skrýt jmenovku"
   },
   "app.appearance-settings.jump-back-into-worlds.description": {
-    "message": "Zahrne nedávné světy do sekce „Vrátit se do hry“ na domovské stránce."
+    "message": "Zahrne nedávné světy do sekce „Vrátit se do hry�?na domovské stránce."
   },
   "app.appearance-settings.jump-back-into-worlds.title": {
     "message": "Rychlý návrat do světů"
@@ -132,7 +132,7 @@
     "message": "Přepnout postranní panel"
   },
   "app.appearance-settings.unknown-pack-warning.description": {
-    "message": "Pokud se pokusíte nainstalovat soubor Modrinth Pack (.mrpack), který není hostován na Modrinth, zajistíme, abyste si před instalací uvědomili související rizika."
+    "message": "Pokud se pokusíte nainstalovat soubor Bbsmc Pack (.mrpack), který není hostován na Bbsmc, zajistíme, abyste si před instalací uvědomili související rizika."
   },
   "app.appearance-settings.unknown-pack-warning.title": {
     "message": "Upozorni mě před instalací neznámých modpacků"
@@ -524,14 +524,14 @@
   "app.skins.section.minecon-earth-2017": {
     "message": "MINECON Earth 2017"
   },
-  "app.skins.section.modrinth": {
-    "message": "Modrinth"
+  "app.skins.section.Bbsmc": {
+    "message": "Bbsmc"
   },
-  "app.skins.section.modrinth-pride": {
-    "message": "Modrinth Pride"
+  "app.skins.section.Bbsmc-pride": {
+    "message": "Bbsmc Pride"
   },
-  "app.skins.section.modrinth-pride.tooltip": {
-    "message": "Tyto skiny jsi obdržel za přispění do sbírky Modrinth Pride behěm Pride měsíce."
+  "app.skins.section.Bbsmc-pride.tooltip": {
+    "message": "Tyto skiny jsi obdržel za přispění do sbírky Bbsmc Pride behěm Pride měsíce."
   },
   "app.skins.section.mounts-of-mayhem": {
     "message": "Mounts of Mayhem"
@@ -555,10 +555,10 @@
     "message": "Přihlásit se"
   },
   "app.skins.sign-in.description": {
-    "message": "Přihlas se prosím ke svému Minecraft účtu, abys mohl/a využívat funkce pro správu skinů v aplikaci Modrinth."
+    "message": "Přihlas se prosím ke svému Minecraft účtu, abys mohl/a využívat funkce pro správu skinů v aplikaci Bbsmc."
   },
   "app.skins.sign-in.rinthbot-alt": {
-    "message": "Nadšený Modrinth Bot"
+    "message": "Nadšený Bbsmc Bot"
   },
   "app.skins.sign-in.title": {
     "message": "Přihlaš se prosím"
@@ -567,13 +567,13 @@
     "message": "Výběr skinu"
   },
   "app.update-popup.body.download-complete": {
-    "message": "Stahování Modrinth App v{version} bylo dokončeno. Aktualizujte ji znovunačtením nebo se automaticky aktualizuje po zavření."
+    "message": "Stahování Bbsmc App v{version} bylo dokončeno. Aktualizujte ji znovunačtením nebo se automaticky aktualizuje po zavření."
   },
   "app.update-popup.body.linux": {
-    "message": "Modrinth App v{version} je k dispozici. Aktualizujte ji pomocí svého správce balíčků, abyste získali nejnovější funkce a opravy!"
+    "message": "Bbsmc App v{version} je k dispozici. Aktualizujte ji pomocí svého správce balíčků, abyste získali nejnovější funkce a opravy!"
   },
   "app.update-popup.body.metered": {
-    "message": "Modrinth App v{version} je nyní k dispozici! Protože jste v měřené síti, nebyla stažena automaticky."
+    "message": "Bbsmc App v{version} je nyní k dispozici! Protože jste v měřené síti, nebyla stažena automaticky."
   },
   "app.update-popup.changelog": {
     "message": "Seznam změn"
@@ -597,7 +597,7 @@
     "message": "Verze {version} byla úspěšně nainstalována!"
   },
   "app.world.server-modal.placeholder-address": {
-    "message": "priklad.modrinth.gg"
+    "message": "priklad.Bbsmc.gg"
   },
   "app.world.server-modal.select-an-option": {
     "message": "Vybrat možnost"
@@ -630,10 +630,10 @@
     "message": "Může se lišit od jejich Minecraft přezdívky!"
   },
   "friends.add-friend.username.placeholder": {
-    "message": "Zadej přezdívku na Modrinthu..."
+    "message": "Zadej přezdívku na Bbsmcu..."
   },
   "friends.add-friend.username.title": {
-    "message": "Jaká je přezdívka tvého přítele na Modrinthu?"
+    "message": "Jaká je přezdívka tvého přítele na Bbsmcu?"
   },
   "friends.add-friends-to-share": {
     "message": "<link>Přidej si přátele</link>, abys viděl, co hrají!"
@@ -675,7 +675,7 @@
     "message": "{title} - {count}"
   },
   "friends.sign-in-to-add-friends": {
-    "message": "<link>Přihlas se k Modrinth účtu</link>, abys mohl přidávat přátele a vidět, co hrají!"
+    "message": "<link>Přihlas se k Bbsmc účtu</link>, abys mohl přidávat přátele a vidět, co hrají!"
   },
   "instance.add-server.add-and-play": {
     "message": "Přidat a hrát"

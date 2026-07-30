@@ -1,4 +1,4 @@
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
 import type { GeneratedState } from '~/composables/generated'
 
 export default defineNuxtPlugin(async () => {

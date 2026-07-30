@@ -56,8 +56,8 @@
   "app.action-bar.install.summary.local-data-error": {
     "message": "Kunde inte uppdatera lokal data"
   },
-  "app.action-bar.install.summary.modrinth-unreachable": {
-    "message": "Kunde inte nå Modrinth"
+  "app.action-bar.install.summary.Bbsmc-unreachable": {
+    "message": "Kunde inte nå Bbsmc"
   },
   "app.action-bar.install.summary.no-write-permission": {
     "message": "Ingen behörighet att skriva"
@@ -114,7 +114,7 @@
     "message": "Godkänn alla"
   },
   "app.ads-consent.body": {
-    "message": "Reklam gör Modrinth möjligt och finansierar utbetalningar till skapare. Våra partners kan lagra eller komma åt cookies i appen för att Personalisera reklam och mäta statistik."
+    "message": "Reklam gör Bbsmc möjligt och finansierar utbetalningar till skapare. Våra partners kan lagra eller komma åt cookies i appen för att Personalisera reklam och mäta statistik."
   },
   "app.ads-consent.manage": {
     "message": "Hantera inställningar"
@@ -123,7 +123,7 @@
     "message": "Neka alla"
   },
   "app.ads-consent.title": {
-    "message": "Din integritet och hur reklam stödjer Modrinth"
+    "message": "Din integritet och hur reklam stödjer Bbsmc"
   },
   "app.appearance-settings.advanced-rendering.description": {
     "message": "Aktiverar avancerad rendering som till exempel oskärpa vilket kan leda till prestandaproblem utan hårdvaruaccelererad rendering."
@@ -132,7 +132,7 @@
     "message": "Avancerad rendering"
   },
   "app.appearance-settings.color-theme.description": {
-    "message": "Välj färgtema för Modrinth-appen."
+    "message": "Välj färgtema för Bbsmc-appen."
   },
   "app.appearance-settings.color-theme.title": {
     "message": "Färgtema"
@@ -192,7 +192,7 @@
     "message": "Växla sidofält"
   },
   "app.appearance-settings.unknown-pack-warning.description": {
-    "message": "Om du försöker installera en Modrinth Pack fil (.mrpack) som inte kommer från Modrinth ser vi till att du känner till riskerna innan du installerar den."
+    "message": "Om du försöker installera en Bbsmc Pack fil (.mrpack) som inte kommer från Bbsmc ser vi till att du känner till riskerna innan du installerar den."
   },
   "app.appearance-settings.unknown-pack-warning.title": {
     "message": "Varna mig innan jag installerar okända modpaket"
@@ -456,7 +456,7 @@
     "message": "Logga in som"
   },
   "app.instance.shared-instance-wrong-account.warning-header": {
-    "message": "Du använder fel Modrinth-konto"
+    "message": "Du använder fel Bbsmc-konto"
   },
   "app.instance.worlds.add-server": {
     "message": "Lägg till server"
@@ -534,7 +534,7 @@
     "message": "Installera"
   },
   "app.modal.install-to-play.invite-warning": {
-    "message": "Denna inbjudan skapades av en annan Modrinth-användare, inte Modrinth. Acceptera endast inbjudningar från personer du litar på."
+    "message": "Denna inbjudan skapades av en annan Bbsmc-användare, inte Bbsmc. Acceptera endast inbjudningar från personer du litar på."
   },
   "app.modal.install-to-play.mod-count": {
     "message": "{count, plural, one {# mod} other {# moddar}}"
@@ -546,7 +546,7 @@
     "message": "Delad instans"
   },
   "app.modal.install-to-play.unknown-files-description": {
-    "message": "Detta server-modpaket innehåller filer som inte är utgivna på Modrinth. Vi rekommenderar att endast installera filer från källor du litar på."
+    "message": "Detta server-modpaket innehåller filer som inte är utgivna på Bbsmc. Vi rekommenderar att endast installera filer från källor du litar på."
   },
   "app.modal.install-to-play.unknown-files-warning": {
     "message": "Okända filvarningar"
@@ -594,7 +594,7 @@
     "message": "Ladda ner v{version}"
   },
   "app.settings.privacy.ads-consent.intro": {
-    "message": "Reklam gör Modrinth möjligt och finansierar utbetalningar till skapare. Våra partners kan lagra eller komma åt cookies i appen för att Personalisera reklam och mäta statistik."
+    "message": "Reklam gör Bbsmc möjligt och finansierar utbetalningar till skapare. Våra partners kan lagra eller komma åt cookies i appen för att Personalisera reklam och mäta statistik."
   },
   "app.settings.tabs.appearance": {
     "message": "Utseende"
@@ -722,14 +722,14 @@
   "app.skins.section.minecon-earth-2017": {
     "message": "MINECON Earth 2017"
   },
-  "app.skins.section.modrinth": {
-    "message": "Modrinth"
+  "app.skins.section.Bbsmc": {
+    "message": "Bbsmc"
   },
-  "app.skins.section.modrinth-pride": {
-    "message": "Modrinth Pride"
+  "app.skins.section.Bbsmc-pride": {
+    "message": "Bbsmc Pride"
   },
-  "app.skins.section.modrinth-pride.tooltip": {
-    "message": "Du har fått dessa utseende eftersom du donerat till en Modrinth Pride insamling under pride månaden."
+  "app.skins.section.Bbsmc-pride.tooltip": {
+    "message": "Du har fått dessa utseende eftersom du donerat till en Bbsmc Pride insamling under pride månaden."
   },
   "app.skins.section.mounts-of-mayhem": {
     "message": "Mounts of Mayhem"
@@ -753,10 +753,10 @@
     "message": "Logga in"
   },
   "app.skins.sign-in.description": {
-    "message": "Vänligen logga in på ditt Minecraft-konto för att använda utseendehanteringfunktioner i Modrinth appen."
+    "message": "Vänligen logga in på ditt Minecraft-konto för att använda utseendehanteringfunktioner i Bbsmc appen."
   },
   "app.skins.sign-in.rinthbot-alt": {
-    "message": "Exalterad Modrinth bot"
+    "message": "Exalterad Bbsmc bot"
   },
   "app.skins.sign-in.title": {
     "message": "Vänligen logga in"
@@ -765,13 +765,13 @@
     "message": "Utseende väljare"
   },
   "app.update-popup.body.download-complete": {
-    "message": "Modrinth App v{version} har laddats ner. Ladda om för att uppdatera nu, eller automatiskt när du stänger Modrinth App."
+    "message": "Bbsmc App v{version} har laddats ner. Ladda om för att uppdatera nu, eller automatiskt när du stänger Bbsmc App."
   },
   "app.update-popup.body.linux": {
-    "message": "Modrinth App v{version} är tillgänglig. Använd din pakethanterare för att uppdatera och få tillgång till de senaste funktionerna och buggfixarna!"
+    "message": "Bbsmc App v{version} är tillgänglig. Använd din pakethanterare för att uppdatera och få tillgång till de senaste funktionerna och buggfixarna!"
   },
   "app.update-popup.body.metered": {
-    "message": "Modrinth App v{version} är nu tillgänglig! Eftersom du använder ett nätverk med datatrafikbegränsningar har vi inte laddat ner det automatiskt."
+    "message": "Bbsmc App v{version} är nu tillgänglig! Eftersom du använder ett nätverk med datatrafikbegränsningar har vi inte laddat ner det automatiskt."
   },
   "app.update-popup.changelog": {
     "message": "Ändringslogg"
@@ -795,7 +795,7 @@
     "message": "Version {version} har installerats!"
   },
   "app.world.server-modal.placeholder-address": {
-    "message": "exempel.modrinth.gg"
+    "message": "exempel.Bbsmc.gg"
   },
   "app.world.server-modal.select-an-option": {
     "message": "Välj ett alternativ"
@@ -828,10 +828,10 @@
     "message": "Det kan vara annorlunda från deras Minecraft-användarnamn!"
   },
   "friends.add-friend.username.placeholder": {
-    "message": "Ange Modrinth-användarnamn..."
+    "message": "Ange Bbsmc-användarnamn..."
   },
   "friends.add-friend.username.title": {
-    "message": "Vad är din väns Modrinth-användarnamn?"
+    "message": "Vad är din väns Bbsmc-användarnamn?"
   },
   "friends.add-friends-to-share": {
     "message": "<link>Lägg till vänner</link> för att se vad de spelar!"
@@ -873,7 +873,7 @@
     "message": "{title} - {count}"
   },
   "friends.sign-in-to-add-friends": {
-    "message": "<link>Logga in på ett Modrinth-konto</link> för att lägga till vänner och se vad de spelar!"
+    "message": "<link>Logga in på ett Bbsmc-konto</link> för att lägga till vänner och se vad de spelar!"
   },
   "installation-settings.shared-instance.unlink-button": {
     "message": "Avlänka delad instans"
@@ -1262,22 +1262,22 @@
   "minecraft-required.sign-in": {
     "message": "Logga in på Microsoft"
   },
-  "modal.modrinth-account-required.cancel-button": {
+  "modal.Bbsmc-account-required.cancel-button": {
     "message": "Avbryt"
   },
-  "modal.modrinth-account-required.continue-in-browser-heading": {
+  "modal.Bbsmc-account-required.continue-in-browser-heading": {
     "message": "Fortsätt i din webbläsare"
   },
-  "modal.modrinth-account-required.create-account-button": {
+  "modal.Bbsmc-account-required.create-account-button": {
     "message": "Skapa ett konto"
   },
-  "modal.modrinth-account-required.header": {
+  "modal.Bbsmc-account-required.header": {
     "message": "Konto behövs"
   },
-  "modal.modrinth-account-required.open-browser-again-button": {
+  "modal.Bbsmc-account-required.open-browser-again-button": {
     "message": "Öppna webbläsare igen"
   },
-  "modal.modrinth-account-required.signing-in-header": {
+  "modal.Bbsmc-account-required.signing-in-header": {
     "message": "Loggar in"
   },
   "search.filter.locked.instance": {

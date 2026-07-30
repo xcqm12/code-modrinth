@@ -1,4 +1,4 @@
-import { defineMessage, type MessageDescriptor } from '@modrinth/ui'
+import { defineMessage, type MessageDescriptor } from '@Bbsmc/ui'
 
 export type FieldType = 'text' | 'select' | 'email' | 'tel' | 'date'
 
@@ -81,7 +81,7 @@ export const MURALPAY_RAILS: Record<string, RailConfig> = {
 		}),
 		currency: 'USD',
 		type: 'fiat',
-		fee: 'â‰ˆ 1.50% + $0.50',
+		fee: 'â‰?1.50% + $0.50',
 		railCode: 'usd',
 		requiresBankName: true,
 		fields: [
@@ -134,7 +134,7 @@ export const MURALPAY_RAILS: Record<string, RailConfig> = {
 		}),
 		currency: 'EUR',
 		type: 'fiat',
-		fee: 'â‰ˆ 1.60% + â‚¬1.00',
+		fee: 'â‰?1.60% + â‚?.00',
 		railCode: 'eur',
 		requiresBankName: true,
 		fields: [
@@ -260,7 +260,7 @@ export const MURALPAY_RAILS: Record<string, RailConfig> = {
 		}),
 		currency: 'MXN',
 		type: 'fiat',
-		fee: 'â‰ˆ 1.90% + $0.50',
+		fee: 'â‰?1.90% + $0.50',
 		railCode: 'mxn',
 		requiresBankName: true,
 		fields: [
@@ -292,7 +292,7 @@ export const MURALPAY_RAILS: Record<string, RailConfig> = {
 		}),
 		currency: 'BRL',
 		type: 'fiat',
-		fee: 'â‰ˆ 2.30% + $0.25',
+		fee: 'â‰?2.30% + $0.25',
 		railCode: 'brl',
 		requiresBankName: true,
 		fields: [
@@ -398,7 +398,7 @@ export const MURALPAY_RAILS: Record<string, RailConfig> = {
 		}),
 		currency: 'COP',
 		type: 'fiat',
-		fee: 'â‰ˆ 1.95% + $0.35',
+		fee: 'â‰?1.95% + $0.35',
 		railCode: 'cop',
 		requiresBankName: true,
 		fields: [
@@ -457,7 +457,7 @@ export const MURALPAY_RAILS: Record<string, RailConfig> = {
 		}),
 		currency: 'ARS',
 		type: 'fiat',
-		fee: 'â‰ˆ 1.50% + $0.00',
+		fee: 'â‰?1.50% + $0.00',
 		railCode: 'ars',
 		requiresBankName: true,
 		fields: [
@@ -519,7 +519,7 @@ export const MURALPAY_RAILS: Record<string, RailConfig> = {
 		}),
 		currency: 'CLP',
 		type: 'fiat',
-		fee: 'â‰ˆ 1.95% + $1.20',
+		fee: 'â‰?1.95% + $1.20',
 		railCode: 'clp',
 		requiresBankName: true,
 		fields: [
@@ -567,7 +567,7 @@ export const MURALPAY_RAILS: Record<string, RailConfig> = {
 		}),
 		currency: 'CRC',
 		type: 'fiat',
-		fee: 'â‰ˆ 2.05% + $0.80',
+		fee: 'â‰?2.05% + $0.80',
 		railCode: 'crc',
 		requiresBankName: true,
 		fields: [
@@ -604,7 +604,7 @@ export const MURALPAY_RAILS: Record<string, RailConfig> = {
 		}),
 		currency: 'PEN',
 		type: 'fiat',
-		fee: 'â‰ˆ 2.15% + $1.00',
+		fee: 'â‰?2.15% + $1.00',
 		railCode: 'pen',
 		requiresBankName: true,
 		fields: [
@@ -696,7 +696,7 @@ export const MURALPAY_RAILS: Record<string, RailConfig> = {
 		}),
 		currency: 'ZAR',
 		type: 'fiat',
-		fee: 'â‰ˆ 2.40% + $1.50',
+		fee: 'â‰?2.40% + $1.50',
 		railCode: 'zar',
 		requiresBankName: true,
 		fields: [
@@ -733,7 +733,7 @@ export const MURALPAY_RAILS: Record<string, RailConfig> = {
 		}),
 		currency: 'USD',
 		type: 'fiat',
-		fee: 'â‰ˆ 1.50% + $5.00',
+		fee: 'â‰?1.50% + $5.00',
 		railCode: 'usd-peru',
 		requiresBankName: true,
 		fields: [
@@ -873,7 +873,7 @@ export const MURALPAY_RAILS: Record<string, RailConfig> = {
 		}),
 		currency: 'USDC',
 		type: 'crypto',
-		fee: 'â‰ˆ 1%',
+		fee: 'â‰?1%',
 		railCode: 'blockchain-usdc-polygon',
 		blockchain: 'POLYGON',
 		warningMessage: defineMessage({
@@ -907,7 +907,7 @@ export const MURALPAY_RAILS: Record<string, RailConfig> = {
 		name: defineMessage({ id: 'muralpay.rail.usdc-base.name', defaultMessage: 'USDC (Base)' }),
 		currency: 'USDC',
 		type: 'crypto',
-		fee: 'â‰ˆ 1%',
+		fee: 'â‰?1%',
 		railCode: 'blockchain-usdc-base',
 		blockchain: 'BASE',
 		warningMessage: defineMessage({
@@ -944,7 +944,7 @@ export const MURALPAY_RAILS: Record<string, RailConfig> = {
 		}),
 		currency: 'USDC',
 		type: 'crypto',
-		fee: 'â‰ˆ 1%',
+		fee: 'â‰?1%',
 		railCode: 'blockchain-usdc-ethereum',
 		blockchain: 'ETHEREUM',
 		warningMessage: defineMessage({
@@ -978,7 +978,7 @@ export const MURALPAY_RAILS: Record<string, RailConfig> = {
 		name: defineMessage({ id: 'muralpay.rail.usdc-celo.name', defaultMessage: 'USDC (Celo)' }),
 		currency: 'USDC',
 		type: 'crypto',
-		fee: 'â‰ˆ 1%',
+		fee: 'â‰?1%',
 		railCode: 'blockchain-usdc-celo',
 		blockchain: 'CELO',
 		warningMessage: defineMessage({

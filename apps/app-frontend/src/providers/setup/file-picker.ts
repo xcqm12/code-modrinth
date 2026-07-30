@@ -1,4 +1,4 @@
-import { provideFilePicker } from '@modrinth/ui'
+import { provideFilePicker } from '@Bbsmc/ui'
 import { convertFileSrc, invoke } from '@tauri-apps/api/core'
 import { open } from '@tauri-apps/plugin-dialog'
 import { readFile } from '@tauri-apps/plugin-fs'
@@ -71,7 +71,7 @@ export function setupFilePickerProvider() {
 				file: await createFileFromPath(
 					path,
 					'modpack.mrpack',
-					'application/x-modrinth-modpack+zip',
+					'application/x-Bbsmc-modpack+zip',
 				),
 				path,
 				previewUrl: '',

@@ -1,4 +1,4 @@
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
 
 import { compareByIndex } from './utils'
 // noinspection JSUnusedGlobalSymbols
@@ -123,7 +123,7 @@ export function formatVersionsForDisplay(
 			return `${major}.x`
 		}
 
-		return `${formatMinecraftMinorVersion(major, minor[0])}â€“${formatMinecraftMinorVersion(major, minor[minor.length - 1])}`
+		return `${formatMinecraftMinorVersion(major, minor[0])}â€?{formatMinecraftMinorVersion(major, minor[minor.length - 1])}`
 	})
 
 	const legacyVersionsAsRanges = groupConsecutiveIndices(
@@ -209,13 +209,13 @@ function groupConsecutiveIndices(versions: string[], referenceList: GameVersionT
 	for (let i = 1; i < sortedList.length; i++) {
 		const current = sortedList[i]
 		if (referenceMap.get(current) !== referenceMap.get(previous) + 1) {
-			ranges.push(validateRange(`${previous}â€“${start}`))
+			ranges.push(validateRange(`${previous}â€?{start}`))
 			start = current
 		}
 		previous = current
 	}
 
-	ranges.push(validateRange(`${previous}â€“${start}`))
+	ranges.push(validateRange(`${previous}â€?{start}`))
 
 	return ranges
 }
@@ -233,7 +233,7 @@ function validateRange(range: string): string {
 		case 'rd-132211â€“inf20100618':
 			return 'All pre-alpha versions'
 	}
-	const splitRange = range.split('â€“')
+	const splitRange = range.split('â€?)
 	if (splitRange && splitRange[0] === splitRange[1]) {
 		return splitRange[0]
 	}

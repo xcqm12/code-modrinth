@@ -1,6 +1,6 @@
-import type { Labrinth } from '@modrinth/api-client'
-import { DatabaseIcon } from '@modrinth/assets'
-import { ENVIRONMENTS_COPY, injectProjectPageContext, injectTags } from '@modrinth/ui'
+import type { Labrinth } from '@Bbsmc/api-client'
+import { DatabaseIcon } from '@Bbsmc/assets'
+import { ENVIRONMENTS_COPY, injectProjectPageContext, injectTags } from '@Bbsmc/ui'
 import { computed } from 'vue'
 
 import { dropdown, fix, group, md, option, stage, toggle } from '../../types/node'

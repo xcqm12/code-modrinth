@@ -1,12 +1,12 @@
 ---
-title: '(April Fools 2023) Powering up your experience: Modrinth Technologies™️ beta launch!'
-short_title: '(April Fools 2023) Modrinth Technologies™️ beta launch!'
-summary: Welcome to the new era of Modrinth. We can't wait to hear your feedback.
+title: '(April Fools 2023) Powering up your experience: Bbsmc Technologies™️ beta launch!'
+short_title: '(April Fools 2023) Bbsmc Technologies™️ beta launch!'
+summary: Welcome to the new era of Bbsmc. We can't wait to hear your feedback.
 short_summary: Power up your experience.
 date: 2023-04-01T00:00:00-08:00
 ---
 
-**Update 04/02: Due to a number of (ridiculous) complaints we received such as “not being able to use the site on mobile” and “the ads are a bit much”, we have decided to halt the rollout of the beta site. Happy April 1st, everyone.**
+**Update 04/02: Due to a number of (ridiculous) complaints we received such as “not being able to use the site on mobile�?and “the ads are a bit much�? we have decided to halt the rollout of the beta site. Happy April 1st, everyone.**
 
 ---
 

@@ -1,8 +1,8 @@
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
 import { invoke } from '@tauri-apps/api/core'
 
 // Converts user profile links from rendered Markdown/any dynamic content into app routes.
-export function parse_modrinth_user_link(href: string): string | null {
+export function parse_Bbsmc_user_link(href: string): string | null {
 	try {
 		const url = new URL(href)
 		if (url.hostname !== 'bbsmc.org.cn' && url.hostname !== 'www.bbsmc.org.cn') return null

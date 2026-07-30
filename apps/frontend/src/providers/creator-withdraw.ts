@@ -1,4 +1,4 @@
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
 import {
 	BadgeDollarSignIcon,
 	GiftIcon,
@@ -6,9 +6,9 @@ import {
 	LandmarkIcon,
 	PayPalColorIcon,
 	VenmoColorIcon,
-} from '@modrinth/assets'
-import type { MessageDescriptor } from '@modrinth/ui'
-import { createContext, getCurrencyIcon, paymentMethodMessages, useDebugLogger } from '@modrinth/ui'
+} from '@Bbsmc/assets'
+import type { MessageDescriptor } from '@Bbsmc/ui'
+import { createContext, getCurrencyIcon, paymentMethodMessages, useDebugLogger } from '@Bbsmc/ui'
 import { type Component, computed, type ComputedRef, type Ref, ref } from 'vue'
 
 import { type FieldConfig, getRailConfig } from '@/utils/muralpay-rails'
@@ -375,7 +375,7 @@ function buildPayoutPayload(data: WithdrawData): PayoutPayload {
 	throw new Error('Invalid provider')
 }
 
-const STORAGE_KEY = 'modrinth_withdraw_state'
+const STORAGE_KEY = 'Bbsmc_withdraw_state'
 const STATE_EXPIRY_MS = 15 * 60 * 1000 // 15 minutes
 
 export function createWithdrawContext(
@@ -496,7 +496,7 @@ export function createWithdrawContext(
 				label: paymentMethodMessages.paypalInternational,
 				icon: PayPalColorIcon,
 				methodId: internationalPaypalMethod.id,
-				fee: 'â‰ˆ 3.84%, min $0.25',
+				fee: 'â‰?3.84%, min $0.25',
 				type: 'tremendous',
 			})
 		}
@@ -513,7 +513,7 @@ export function createWithdrawContext(
 				label: paymentMethodMessages.giftCard,
 				icon: GiftIcon,
 				methodId: undefined,
-				fee: 'â‰ˆ 0%',
+				fee: 'â‰?0%',
 				type: 'tremendous',
 			})
 		}
@@ -525,7 +525,7 @@ export function createWithdrawContext(
 				label: paymentMethodMessages.charity,
 				icon: HandHelpingIcon,
 				methodId: undefined,
-				fee: 'â‰ˆ 0%',
+				fee: 'â‰?0%',
 				type: 'tremendous',
 			})
 		}
@@ -576,7 +576,7 @@ export function createWithdrawContext(
 				label: paymentMethodMessages.paypal,
 				icon: PayPalColorIcon,
 				methodId: directPaypal.id,
-				fee: `â‰ˆ 2% + $0.25, max $1`,
+				fee: `â‰?2% + $0.25, max $1`,
 				type: 'paypal',
 			})
 		}
@@ -588,7 +588,7 @@ export function createWithdrawContext(
 				label: paymentMethodMessages.venmo,
 				icon: VenmoColorIcon,
 				methodId: directVenmo.id,
-				fee: `â‰ˆ 2% + $0.25, max $1`,
+				fee: `â‰?2% + $0.25, max $1`,
 				type: 'venmo',
 			})
 		}

@@ -99,7 +99,7 @@
     "defaultMessage": "Inga resultat hittades för din sökning!"
   },
   "browse.offline": {
-    "defaultMessage": "Du är för nuvarande offline. Koppla upp dig till internet för att bläddra bland Modrinth!"
+    "defaultMessage": "Du är för nuvarande offline. Koppla upp dig till internet för att bläddra bland Bbsmc!"
   },
   "browse.search.placeholder": {
     "defaultMessage": "Sök {projectType}..."
@@ -227,8 +227,8 @@
   "button.open-in-folder": {
     "defaultMessage": "Öppna i mapp"
   },
-  "button.open-in-modrinth": {
-    "defaultMessage": "Öppna i Modrinth"
+  "button.open-in-Bbsmc": {
+    "defaultMessage": "Öppna i Bbsmc"
   },
   "button.play": {
     "defaultMessage": "Spela"
@@ -486,7 +486,7 @@
     "defaultMessage": "Något innehåll på din server kunde inte analyseras och kommer kanske påverkas av denna ändring."
   },
   "content.diff-modal.unknown-files-description": {
-    "defaultMessage": "Denna uppdatering innehåller filer som inte är utgivna på Modrinth. Vi rekommenderar att endast installera filer från källor du litar på."
+    "defaultMessage": "Denna uppdatering innehåller filer som inte är utgivna på Bbsmc. Vi rekommenderar att endast installera filer från källor du litar på."
   },
   "content.diff-modal.unknown-files-warning": {
     "defaultMessage": "Okända filvarningar"
@@ -2262,16 +2262,16 @@
     "defaultMessage": "Håll filer uppdaterade när servern ändras"
   },
   "modal.open-in-app.get-app": {
-    "defaultMessage": "Installera Modrinth App"
+    "defaultMessage": "Installera Bbsmc App"
   },
   "modal.open-in-app.opening-automatically": {
-    "defaultMessage": "Modrinth App kommer att öppnas automatiskt..."
+    "defaultMessage": "Bbsmc App kommer att öppnas automatiskt..."
   },
   "modal.open-in-app.title": {
-    "defaultMessage": "Öppnar Modrinth App"
+    "defaultMessage": "Öppnar Bbsmc App"
   },
   "modal.open-in-app.why-use": {
-    "defaultMessage": "Varför använda Modrinth App"
+    "defaultMessage": "Varför använda Bbsmc App"
   },
   "notification.error.title": {
     "defaultMessage": "Ett fel inträffade"
@@ -2303,8 +2303,8 @@
   "omorphia.component.badge.label.moderator": {
     "defaultMessage": "Moderator"
   },
-  "omorphia.component.badge.label.modrinth-team": {
-    "defaultMessage": "Modrinth-teamet"
+  "omorphia.component.badge.label.Bbsmc-team": {
+    "defaultMessage": "Bbsmc-teamet"
   },
   "omorphia.component.badge.label.pending": {
     "defaultMessage": "Väntar"
@@ -2718,7 +2718,7 @@
     "defaultMessage": "Spelades senast {count} {countPlural, plural, one {gång} other {gånger}}"
   },
   "project.recent-plays.tooltip": {
-    "defaultMessage": "Spelades på Modrinth {count} {countPlural, plural, one {gång} other {gånger}} i de 2 sista veckorna"
+    "defaultMessage": "Spelades på Bbsmc {count} {countPlural, plural, one {gång} other {gånger}} i de 2 sista veckorna"
   },
   "project.server.customModpackTooltip": {
     "defaultMessage": "Detta projektet använder ett modpaket"
@@ -3030,7 +3030,7 @@
     "defaultMessage": "Ditt projekt har flera miljöer"
   },
   "project.settings.environment.notice.review-options.description": {
-    "defaultMessage": "Vi har just förbättrat Miljösystemet på Modrinth och nya val finns nu. Vänligen kontrollera att rätt val är vald nedanför och sen klicka på 'Verifiera' när du är klar!"
+    "defaultMessage": "Vi har just förbättrat Miljösystemet på Bbsmc och nya val finns nu. Vänligen kontrollera att rätt val är vald nedanför och sen klicka på 'Verifiera' när du är klar!"
   },
   "project.settings.environment.notice.review-options.title": {
     "defaultMessage": "Granska valen nedan"
@@ -3522,7 +3522,7 @@
     "defaultMessage": "Väntar"
   },
   "servers.access-table.unknown-joined-date": {
-    "defaultMessage": "—"
+    "defaultMessage": "�?
   },
   "servers.access-table.user-avatar-alt": {
     "defaultMessage": "{username}s avatar"
@@ -3855,13 +3855,13 @@
     "defaultMessage": "Använd inte deras Minecraft-användarnamn."
   },
   "servers.grant-access-modal.target.label": {
-    "defaultMessage": "Modrinth-användarnamn"
+    "defaultMessage": "Bbsmc-användarnamn"
   },
   "servers.grant-access-modal.target.no-suggestions": {
     "defaultMessage": "Ingen matchande användare hittades."
   },
   "servers.grant-access-modal.target.placeholder": {
-    "defaultMessage": "Ange Modrinth-användarnamn"
+    "defaultMessage": "Ange Bbsmc-användarnamn"
   },
   "servers.grant-access-modal.target.searching": {
     "defaultMessage": "Söker..."
@@ -3906,7 +3906,7 @@
     "defaultMessage": "Ny server"
   },
   "servers.list-empty.no-servers-description": {
-    "defaultMessage": "Installera moddar, bjud in vänner och spela tillsammans, allt från Modrinth-appen."
+    "defaultMessage": "Installera moddar, bjud in vänner och spela tillsammans, allt från Bbsmc-appen."
   },
   "servers.list-empty.no-servers-title": {
     "defaultMessage": "Inga servrar än"
@@ -3978,7 +3978,7 @@
     "defaultMessage": "Uppladdning pågår"
   },
   "servers.manage.contact-support-button": {
-    "defaultMessage": "Kontakta Modrinth-support"
+    "defaultMessage": "Kontakta Bbsmc-support"
   },
   "servers.manage.error.details": {
     "defaultMessage": "Feldetaljer:"
@@ -4005,7 +4005,7 @@
     "defaultMessage": "Ladda om"
   },
   "servers.manage.resubscribe-error.text": {
-    "defaultMessage": "Ett fel inträffade när du återprenumererade till din Modrinth server."
+    "defaultMessage": "Ett fel inträffade när du återprenumererade till din Bbsmc server."
   },
   "servers.manage.resubscribe-error.title": {
     "defaultMessage": "Fel vid återprenumerering"
@@ -4017,7 +4017,7 @@
     "defaultMessage": "Sök {count} {count, plural,one {server}other {servrar}}..."
   },
   "servers.manage.servers-title": {
-    "defaultMessage": "Modrinth Hosting"
+    "defaultMessage": "Bbsmc Hosting"
   },
   "servers.manage.settings-hint.description": {
     "defaultMessage": "De kan nu hittas här!"
@@ -4107,13 +4107,13 @@
     "defaultMessage": "Stor"
   },
   "servers.purchase.step.plan.large.desc": {
-    "defaultMessage": "Ideal för 15–25 spelare, modpaket, eller tungt moddande."
+    "defaultMessage": "Ideal för 15�?5 spelare, modpaket, eller tungt moddande."
   },
   "servers.purchase.step.plan.medium": {
     "defaultMessage": "Medel"
   },
   "servers.purchase.step.plan.medium.desc": {
-    "defaultMessage": "Bra för 6–15 spelare och flera moddar."
+    "defaultMessage": "Bra för 6�?5 spelare och flera moddar."
   },
   "servers.purchase.step.plan.most-popular": {
     "defaultMessage": "Populärast"
@@ -4125,7 +4125,7 @@
     "defaultMessage": "Liten"
   },
   "servers.purchase.step.plan.small.desc": {
-    "defaultMessage": "Perfekt för 1–5 vänner med några få lätta moddar."
+    "defaultMessage": "Perfekt för 1�? vänner med några få lätta moddar."
   },
   "servers.purchase.step.plan.title": {
     "defaultMessage": "Plan"
@@ -4164,7 +4164,7 @@
     "defaultMessage": "Vart vill du att din server ska vara placerad?"
   },
   "servers.region.region-unsupported": {
-    "defaultMessage": "Är området inte med i listan? <link>Berätta vart du vill se Modrinth Hosting härnäst!</link>"
+    "defaultMessage": "Är området inte med i listan? <link>Berätta vart du vill se Bbsmc Hosting härnäst!</link>"
   },
   "servers.region.southeast-asia": {
     "defaultMessage": "Sydostasien"
@@ -4284,7 +4284,7 @@
     "defaultMessage": "Mörkt"
   },
   "settings.display.theme.description": {
-    "defaultMessage": "Välj färgtema för Modrinth på denna enhet."
+    "defaultMessage": "Välj färgtema för Bbsmc på denna enhet."
   },
   "settings.display.theme.light": {
     "defaultMessage": "Ljust"
@@ -4860,25 +4860,25 @@
     "defaultMessage": "Skadeprogram distribueras ofta via moddfiler genom att dela dem på plattformar som Discord."
   },
   "unknown-file-warning-modal.mod-warning-body": {
-    "defaultMessage": " är inte publiserad på Modrinth. Vi rekommenderar starkt att endast installera filer från källor du litar på."
+    "defaultMessage": " är inte publiserad på Bbsmc. Vi rekommenderar starkt att endast installera filer från källor du litar på."
   },
   "unknown-file-warning-modal.mod-warning-title": {
     "defaultMessage": "Okänd filvarning"
   },
   "unknown-file-warning-modal.modpack-warning-body": {
-    "defaultMessage": " innehåller filer som inte är utgivna på Modrinth. Vi rekommenderar att endast installera filer från källor du litar på."
+    "defaultMessage": " innehåller filer som inte är utgivna på Bbsmc. Vi rekommenderar att endast installera filer från källor du litar på."
   },
   "unknown-file-warning-modal.modpack-warning-title": {
     "defaultMessage": "Okända filvarningar"
   },
   "user.profile.badge.alpha.about.1": {
-    "defaultMessage": "Denna användare har funnits sedan Modrinth alfa, som slutate i november 2020."
+    "defaultMessage": "Denna användare har funnits sedan Bbsmc alfa, som slutate i november 2020."
   },
   "user.profile.badge.alpha.name": {
     "defaultMessage": "Alfa-testare"
   },
   "user.profile.badge.beta.about.1": {
-    "defaultMessage": "Denna användare har funnits sedan Modrinth beta, som slutade i februari 2022."
+    "defaultMessage": "Denna användare har funnits sedan Bbsmc beta, som slutade i februari 2022."
   },
   "user.profile.badge.beta.name": {
     "defaultMessage": "Beta-testare"
@@ -4887,7 +4887,7 @@
     "defaultMessage": "{download_sum} nedladdningar"
   },
   "user.profile.badge.pride.about.1": {
-    "defaultMessage": "Denna användare har deltagit i åtminstone ett av Modrinths Pride-insamlingar för LGBTQ+ gemenskapen."
+    "defaultMessage": "Denna användare har deltagit i åtminstone ett av Bbsmcs Pride-insamlingar för LGBTQ+ gemenskapen."
   },
   "version.content.name": {
     "defaultMessage": "Namn"

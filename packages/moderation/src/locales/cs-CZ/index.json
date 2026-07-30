@@ -24,13 +24,13 @@
     "defaultMessage": "Přidejte podrobnosti licence"
   },
   "nags.add-links-server.description": {
-    "defaultMessage": "Přidejte jakékoli relevantní odkazy směřující mimo Modrinth, například na webové stránky, do obchodu nebo na pozvánku na Discord."
+    "defaultMessage": "Přidejte jakékoli relevantní odkazy směřující mimo Bbsmc, například na webové stránky, do obchodu nebo na pozvánku na Discord."
   },
   "nags.add-links-server.title": {
     "defaultMessage": "Přidejte externí odkazy"
   },
   "nags.add-links.description": {
-    "defaultMessage": "Přidejte relevantní odkazy směřující mimo Modrinth, například zdrojový kód, issue tracker nebo pozvánku na Discord."
+    "defaultMessage": "Přidejte relevantní odkazy směřující mimo Bbsmc, například zdrojový kód, issue tracker nebo pozvánku na Discord."
   },
   "nags.add-links.title": {
     "defaultMessage": "Přidejte externí odkazy"
@@ -129,7 +129,7 @@
     "defaultMessage": "Přidejte popisek k obrázku"
   },
   "nags.misused-discord-link-description": {
-    "defaultMessage": "Odkazy na Discord lze použít pouze ve vyhrazeném poli. Prosím, vložte odkaz na Discord do pole „Odkaz na Discord“, nikoli do jiných typů odkazů."
+    "defaultMessage": "Odkazy na Discord lze použít pouze ve vyhrazeném poli. Prosím, vložte odkaz na Discord do pole „Odkaz na Discord�? nikoli do jiných typů odkazů."
   },
   "nags.misused-discord-link.title": {
     "defaultMessage": "Přesuňte Discord pozvánku"

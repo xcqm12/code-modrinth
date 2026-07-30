@@ -24,13 +24,13 @@
     "defaultMessage": "Dodaj detalje licence"
   },
   "nags.add-links-server.description": {
-    "defaultMessage": "Dodaj sve relevantne linkove usmerene izvan Modrintha, kao što su veb lokacija, veb prodavnica ili pozivnica na Discord."
+    "defaultMessage": "Dodaj sve relevantne linkove usmerene izvan Bbsmca, kao što su veb lokacija, veb prodavnica ili pozivnica na Discord."
   },
   "nags.add-links-server.title": {
     "defaultMessage": "Dodaj spoljne linkove"
   },
   "nags.add-links.description": {
-    "defaultMessage": "Dodaj sve relevantne linkove usmerene izvan Modrintha, kao što su izvorni kod, praćenje problema ili pozivnica na Discord."
+    "defaultMessage": "Dodaj sve relevantne linkove usmerene izvan Bbsmca, kao što su izvorni kod, praćenje problema ili pozivnica na Discord."
   },
   "nags.add-links.title": {
     "defaultMessage": "Dodaj spoljne linkove"
@@ -120,7 +120,7 @@
     "defaultMessage": "Skrati zaglavlja"
   },
   "nags.minecraft-title-clause.description": {
-    "defaultMessage": "Projekti ne smeju koristiti brendiranje Minecrafta niti uključivati „Minecraft“ kao značajan deo imena."
+    "defaultMessage": "Projekti ne smeju koristiti brendiranje Minecrafta niti uključivati „Minecraft�?kao značajan deo imena."
   },
   "nags.minecraft-title-clause.title": {
     "defaultMessage": "Izbegavaj kršenje brenda"

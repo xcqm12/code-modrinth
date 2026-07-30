@@ -1,6 +1,6 @@
-<!-- @deprecated Use NewModal from @modrinth/ui directly. Ads/noblur now handled by injectModalBehavior. -->
+<!-- @deprecated Use NewModal from @Bbsmc/ui directly. Ads/noblur now handled by injectModalBehavior. -->
 <script setup lang="ts">
-import { NewModal as Modal } from '@modrinth/ui'
+import { NewModal as Modal } from '@Bbsmc/ui'
 import { useTemplateRef } from 'vue'
 
 const props = defineProps({
@@ -22,7 +22,7 @@ const props = defineProps({
 			return () => {}
 		},
 	},
-	/** @deprecated No longer used â€” ads are handled by provideModalBehavior */
+	/** @deprecated No longer used â€?ads are handled by provideModalBehavior */
 	showAdOnClose: {
 		type: Boolean,
 		default: true,

@@ -5,7 +5,7 @@ info:
   title: Labrinth
   termsOfService: https://bbsmc.org.cn/legal/terms
   contact:
-    name: Modrinth Support
+    name: Bbsmc Support
     url: https://support.bbsmc.org.cn
     email: support@bbsmc.org.cn
   description: |
@@ -23,17 +23,17 @@ info:
     {
       "about": "Welcome traveler!",
       "documentation": "https://docs.bbsmc.org.cn",
-      "name": "modrinth-labrinth",
+      "name": "Bbsmc-labrinth",
       "version": "2.7.0"
     }
     ```
 
-    If you got a response similar to the one above, you can use the Modrinth API!
+    If you got a response similar to the one above, you can use the Bbsmc API!
     When you want to go live using the production API, use `api.bbsmc.org.cn` instead of `staging-api.bbsmc.org.cn`.
 
     ## Authentication
     This API has two options for authentication: personal access tokens and [OAuth2](https://en.wikipedia.org/wiki/OAuth).
-    All tokens are tied to a Modrinth user and use the `Authorization` header of the request.
+    All tokens are tied to a Bbsmc user and use the `Authorization` header of the request.
 
     Example:
     ```
@@ -46,20 +46,20 @@ info:
     - those which access private data (such as draft projects, notifications, emails, and payout data)
 
     Each request requiring authentication has a certain scope. For example, to view the email of the user being requested, the token must have the `USER_READ_EMAIL` scope.
-    You can find the list of available scopes [on GitHub](https://github.com/modrinth/labrinth/blob/master/src/models/pats.rs#L15). Making a request with an invalid scope will return a 401 error.
+    You can find the list of available scopes [on GitHub](https://github.com/Bbsmc/labrinth/blob/master/src/models/pats.rs#L15). Making a request with an invalid scope will return a 401 error.
 
     Please note that certain scopes and requests cannot be completed with a personal access token or using OAuth.
-    For example, deleting a user account can only be done through Modrinth's frontend.
+    For example, deleting a user account can only be done through Bbsmc's frontend.
 
-    A detailed guide on OAuth has been published in [Modrinth's technical documentation](https://docs.bbsmc.org.cn/guide/oauth).
+    A detailed guide on OAuth has been published in [Bbsmc's technical documentation](https://docs.bbsmc.org.cn/guide/oauth).
 
     ### Personal access tokens
     Personal access tokens (PATs) can be generated in from [the user settings](https://bbsmc.org.cn/settings/account).
 
     ### GitHub tokens
-    For backwards compatibility purposes, some types of GitHub tokens also work for authenticating a user with Modrinth's API, granting all scopes.
+    For backwards compatibility purposes, some types of GitHub tokens also work for authenticating a user with Bbsmc's API, granting all scopes.
     **We urge any application still using GitHub tokens to start using personal access tokens for security and reliability purposes.**
-    GitHub tokens will cease to function to authenticate with Modrinth's API as soon as version 3 of the API is made generally available.
+    GitHub tokens will cease to function to authenticate with Bbsmc's API as soon as version 3 of the API is made generally available.
 
     ## Cross-Origin Resource Sharing
     This API features Cross-Origin Resource Sharing (CORS) implemented in compliance with the [W3C spec](https://www.w3.org/TR/cors/).
@@ -85,7 +85,7 @@ info:
     The ratelimit is currently 300 requests per minute. If you have a use case requiring a higher limit, please [contact us](mailto:support@bbsmc.org.cn).
 
     ## User Agents
-    To access the Modrinth API, you **must** use provide a uniquely-identifying `User-Agent` header.
+    To access the Bbsmc API, you **must** use provide a uniquely-identifying `User-Agent` header.
     Providing a user agent that only identifies your HTTP client library (such as "okhttp/4.9.3") increases the likelihood that we will block your traffic.
     It is recommended, but not required, to include contact information in your user agent.
     This allows us to contact you if we would like a change in your application's behavior without having to block your traffic.
@@ -95,7 +95,7 @@ info:
     - Best: `User-Agent: github_username/project_name/1.56.0 (launcher.com)` or `User-Agent: github_username/project_name/1.56.0 (contact@launcher.com)`
 
     ## Versioning
-    Modrinth follows a simple pattern for its API versioning.
+    Bbsmc follows a simple pattern for its API versioning.
     In the event of a breaking API change, the API version in the URL path is bumped, and migration steps will be published below.
 
     When an API is no longer the current one, it will immediately be considered deprecated.
@@ -109,9 +109,9 @@ info:
     Please ensure your application handles these 410 errors.
 
     ### Migrations
-    Inside the following spoiler, you will be able to find all changes between versions of the Modrinth API, accompanied by tips and a guide to migrate applications to newer versions.
+    Inside the following spoiler, you will be able to find all changes between versions of the Bbsmc API, accompanied by tips and a guide to migrate applications to newer versions.
 
-    Here, you can also find changes for [Minotaur](https://github.com/modrinth/minotaur), Modrinth's official Gradle plugin. Major versions of Minotaur directly correspond to major versions of the Modrinth API.
+    Here, you can also find changes for [Minotaur](https://github.com/Bbsmc/minotaur), Bbsmc's official Gradle plugin. Major versions of Minotaur directly correspond to major versions of the Bbsmc API.
 
     <details><summary>API v1 to API v2</summary>
 
@@ -124,8 +124,8 @@ info:
     - New search fields: `project_type`, `gallery`
       - The gallery field is an array of URLs to images that are part of the project's gallery
     - The gallery is a new feature which allows the user to upload images showcasing their mod to the CDN which will be displayed on their mod page
-    - Internal change: Any project file uploaded to Modrinth is now validated to make sure it's a valid Minecraft mod, Modpack, etc.
-      - For example, a Forge 1.17 mod with a JAR not containing a mods.toml will not be allowed to be uploaded to Modrinth
+    - Internal change: Any project file uploaded to Bbsmc is now validated to make sure it's a valid Minecraft mod, Modpack, etc.
+      - For example, a Forge 1.17 mod with a JAR not containing a mods.toml will not be allowed to be uploaded to Bbsmc
     - In project creation, projects may not upload a mod with no versions to review, however they can be saved as a draft
       - Similarly, for version creation, a version may not be uploaded without any files
     - Donation URLs have been enabled
@@ -140,13 +140,13 @@ info:
 
     Minotaur 2.x introduced a few breaking changes to how your buildscript is formatted.
 
-    First, instead of registering your own `publishModrinth` task, Minotaur now automatically creates a `modrinth` task. As such, you can replace the `task publishModrinth(type: TaskModrinthUpload) {` line with just `modrinth {`.
+    First, instead of registering your own `publishBbsmc` task, Minotaur now automatically creates a `Bbsmc` task. As such, you can replace the `task publishBbsmc(type: TaskBbsmcUpload) {` line with just `Bbsmc {`.
 
     To declare supported Minecraft versions and mod loaders, the `gameVersions` and `loaders` arrays must now be used. The syntax for these are pretty self-explanatory.
 
     Instead of using `releaseType`, you must now use `versionType`. This was actually changed in v1.2.0, but very few buildscripts have moved on from v1.1.0.
 
-    Dependencies have been changed to a special DSL. Create a `dependencies` block within the `modrinth` block, and then use `scope.type("project/version")`. For example, `required.project("fabric-api")` adds a required project dependency on Fabric API.
+    Dependencies have been changed to a special DSL. Create a `dependencies` block within the `Bbsmc` block, and then use `scope.type("project/version")`. For example, `required.project("fabric-api")` adds a required project dependency on Fabric API.
 
     You may now use the slug anywhere that a project ID was previously required.
 
@@ -365,7 +365,7 @@ components:
       required:
         - dependency_type
 
-    # https://github.com/modrinth/labrinth/blob/master/src/routes/versions.rs#L169-L190
+    # https://github.com/Bbsmc/labrinth/blob/master/src/routes/versions.rs#L169-L190
     EditableVersion:
       allOf:
         - $ref: '#/components/schemas/BaseVersion'
@@ -402,7 +402,7 @@ components:
         - algorithm
         - hash
         - file_type
-    # https://github.com/modrinth/code/blob/main/apps/labrinth/src/models/v3/projects.rs#L981-990
+    # https://github.com/Bbsmc/code/blob/main/apps/labrinth/src/models/v3/projects.rs#L981-990
     FileTypeEnum:
       type: string
       enum:
@@ -414,7 +414,7 @@ components:
         - unknown
         - signature
       example: required-resource-pack
-    # https://github.com/modrinth/code/blob/main/apps/labrinth/src/routes/v2/version_creation.rs#L32-L76
+    # https://github.com/Bbsmc/code/blob/main/apps/labrinth/src/routes/v2/version_creation.rs#L32-L76
     CreatableVersion:
       allOf:
         - $ref: '#/components/schemas/BaseVersion'
@@ -853,7 +853,7 @@ components:
               type: string
               description: The URL to this license
               nullable: true
-    # Fields that can be edited through a PATCH request. https://github.com/modrinth/labrinth/blob/master/src/routes/projects.rs#L195-L269
+    # Fields that can be edited through a PATCH request. https://github.com/Bbsmc/labrinth/blob/master/src/routes/projects.rs#L195-L269
     EditableProject:
       allOf:
         - $ref: '#/components/schemas/ModifiableProject'
@@ -867,7 +867,7 @@ components:
               type: string
               description: The body of the moderators' message for the project
               nullable: true
-    # Fields only available for project creation. https://github.com/modrinth/labrinth/blob/master/src/routes/project_creation.rs#L129-L197
+    # Fields only available for project creation. https://github.com/Bbsmc/labrinth/blob/master/src/routes/project_creation.rs#L129-L197
     CreatableProject:
       allOf:
         - $ref: '#/components/schemas/ModifiableProject'
@@ -1828,16 +1828,16 @@ components:
       properties:
         projects:
           type: integer
-          description: Number of projects on Modrinth
+          description: Number of projects on Bbsmc
         versions:
           type: integer
-          description: Number of versions on Modrinth
+          description: Number of versions on Bbsmc
         files:
           type: integer
-          description: Number of version files on Modrinth
+          description: Number of version files on Bbsmc
         authors:
           type: integer
-          description: Number of authors (users with projects) on Modrinth
+          description: Number of authors (users with projects) on Bbsmc
     ForgeUpdates:
       type: object
       description: Mod version information that can be consumed by Forge's update checker
@@ -1867,7 +1867,7 @@ components:
 tags:
   - name: projects
     x-displayName: Projects
-    description: Projects are what Modrinth is centered around, be it mods, modpacks, resource packs, etc.
+    description: Projects are what Bbsmc is centered around, be it mods, modpacks, resource packs, etc.
   - name: versions
     x-displayName: Versions
     description: Versions contain download links to files with additional metadata.
@@ -2285,7 +2285,7 @@ paths:
       - $ref: '#/components/parameters/ProjectIdentifier'
     post:
       summary: Add a gallery image
-      description: Modrinth allows you to upload files of up to 5MiB to a project's gallery.
+      description: Bbsmc allows you to upload files of up to 5MiB to a project's gallery.
       operationId: addGalleryImage
       tags:
         - projects
@@ -2885,7 +2885,7 @@ paths:
                 $ref: '#/components/schemas/HashVersionMap'
         '400':
           description: Request was invalid, see given error
-  # TODO check this out? https://github.com/modrinth/labrinth/blob/ec80c2b9dbf0bae98eb41714d3455b98095563b7/src/routes/v2/version_file.rs#L381
+  # TODO check this out? https://github.com/Bbsmc/labrinth/blob/ec80c2b9dbf0bae98eb41714d3455b98095563b7/src/routes/v2/version_file.rs#L381
   #/version_files/project:
   #  post:
   #    summary: Get projects from hashes
@@ -3932,7 +3932,7 @@ paths:
       summary: Forge Updates JSON file
       operationId: forgeUpdates
       description: |
-        If you're a Forge mod developer, your Modrinth mods have an automatically generated `updates.json` using the
+        If you're a Forge mod developer, your Bbsmc mods have an automatically generated `updates.json` using the
         [Forge Update Checker](https://docs.minecraftforge.net/en/latest/misc/updatechecker/).
 
         The only setup is to insert the URL into the `[[mods]]` section of your `mods.toml` file as such:
@@ -3945,10 +3945,10 @@ paths:
 
         Replace `{slug|id}` with the slug or ID of your project.
 
-        Modrinth will handle the rest! When you update your mod, Forge will notify your users that their copy of your mod is out of date.
+        Bbsmc will handle the rest! When you update your mod, Forge will notify your users that their copy of your mod is out of date.
 
-        Make sure that the version format you use for your Modrinth releases is the same as the version format you use in your `mods.toml`.
-        If you use a format such as `1.2.3-forge` or `1.2.3+1.19` with your Modrinth releases but your `mods.toml` only has `1.2.3`,
+        Make sure that the version format you use for your Bbsmc releases is the same as the version format you use in your `mods.toml`.
+        If you use a format such as `1.2.3-forge` or `1.2.3+1.19` with your Bbsmc releases but your `mods.toml` only has `1.2.3`,
         the update checker may not function properly.
 
         If you're using NeoForge, NeoForge versions will, by default, not appear in the default URL.
@@ -3976,7 +3976,7 @@ paths:
                 $ref: '#/components/schemas/InvalidInputError'
   /statistics:
     get:
-      summary: Various statistics about this Modrinth instance
+      summary: Various statistics about this Bbsmc instance
       operationId: statistics
       tags:
         - misc

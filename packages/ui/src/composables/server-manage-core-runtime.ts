@@ -3,15 +3,15 @@ import {
 	clearNodeAuthState,
 	setNodeAuthState,
 	type UploadState,
-} from '@modrinth/api-client'
+} from '@Bbsmc/api-client'
 import type { ComputedRef, Ref } from 'vue'
 import { computed, ref } from 'vue'
 
 import type { FileOperation } from '../layouts/shared/files-tab/types'
-import { injectModrinthClient, provideModrinthServerContext } from '../providers'
+import { injectBbsmcClient, provideBbsmcServerContext } from '../providers'
 import type { BusyReason, CancelUploadHandler, ServerStats } from '../providers/server-context'
 import { defineMessage } from './i18n'
-import { useModrinthServersConsole } from './server-console'
+import { useBbsmcServersConsole } from './server-console'
 
 type ReadableRef<T> = Ref<T> | ComputedRef<T>
 type SocketUnsubscriber = () => void
@@ -81,8 +81,8 @@ const mapPowerStateFromStateEvent = (
 }
 
 export function useServerManageCoreRuntime(options: UseServerManageCoreRuntimeOptions) {
-	const client = injectModrinthClient()
-	const modrinthServersConsole = useModrinthServersConsole()
+	const client = injectBbsmcClient()
+	const BbsmcServersConsole = useBbsmcServersConsole()
 
 	const shouldProcessEvent = () => (options.eventGuard ? options.eventGuard() : true)
 
@@ -211,14 +211,14 @@ export function useServerManageCoreRuntime(options: UseServerManageCoreRuntimeOp
 
 	const handleLog = (data: Archon.Websocket.v0.WSLogEvent) => {
 		if (!shouldProcessEvent()) return
-		modrinthServersConsole.recordWsEvent({ event: 'log', ...data })
-		modrinthServersConsole.addLegacyLog(data.message)
+		BbsmcServersConsole.recordWsEvent({ event: 'log', ...data })
+		BbsmcServersConsole.addLegacyLog(data.message)
 	}
 
 	const handleLog4j = (data: Archon.Websocket.v0.WSLog4jEvent) => {
 		if (!shouldProcessEvent()) return
-		modrinthServersConsole.recordWsEvent({ event: 'log4j', ...data })
-		modrinthServersConsole.addLog4jEvent(data)
+		BbsmcServersConsole.recordWsEvent({ event: 'log4j', ...data })
+		BbsmcServersConsole.addLog4jEvent(data)
 	}
 
 	const handleStats = (data: Archon.Websocket.v0.WSStatsEvent) => {
@@ -323,8 +323,8 @@ export function useServerManageCoreRuntime(options: UseServerManageCoreRuntimeOp
 			isConnected.value = true
 			isWsAuthIncorrect.value = false
 
-			modrinthServersConsole.clear()
-			modrinthServersConsole.beginInitialLogHydration()
+			BbsmcServersConsole.clear()
+			BbsmcServersConsole.beginInitialLogHydration()
 
 			const baseSubscriptions: SocketUnsubscriber[] = [
 				client.archon.sockets.on(targetServerId, 'log', handleLog),
@@ -387,7 +387,7 @@ export function useServerManageCoreRuntime(options: UseServerManageCoreRuntimeOp
 	const currentUserPermissions = computed(() => options.server.value?.current_user_permissions ?? 0)
 	const serverFull = computed(() => options.serverFull?.value ?? null)
 
-	provideModrinthServerContext({
+	provideBbsmcServerContext({
 		get serverId() {
 			return options.serverId.value
 		},

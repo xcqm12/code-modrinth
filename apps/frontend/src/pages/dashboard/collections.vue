@@ -141,18 +141,18 @@ import {
 	PlusIcon,
 	SearchIcon,
 	XIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	Avatar,
 	ButtonStyled,
 	commonMessages,
 	defineMessages,
 	DropdownSelect,
-	injectModrinthClient,
+	injectBbsmcClient,
 	StyledInput,
 	useCompactNumber,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { useQuery } from '@tanstack/vue-query'
 
 import CollectionCreateModal from '~/components/ui/create/CollectionCreateModal.vue'
@@ -220,12 +220,12 @@ definePageMeta({
 })
 
 useHead({
-	title: () => `${formatMessage(messages.collectionsLongTitle)} - Modrinth`,
+	title: () => `${formatMessage(messages.collectionsLongTitle)} - Bbsmc`,
 })
 
 const auth = await useAuth()
 const user = await useUser()
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 
 if (import.meta.client) {
 	await initUserFollows()

@@ -12,7 +12,7 @@
     "message": "Zaakceptuj wszystko"
   },
   "ads-consent.body": {
-    "message": "Reklamy pozwalają na dalsze działanie Modrinth i finansują dochody dla twórców. Nasi partnerzy mogą gromadzić i uzyskiwać dostęp do plików cookies w celu personalizacji reklam i mierzenia skuteczności​."
+    "message": "Reklamy pozwalają na dalsze działanie Bbsmc i finansują dochody dla twórców. Nasi partnerzy mogą gromadzić i uzyskiwać dostęp do plików cookies w celu personalizacji reklam i mierzenia skuteczności�?"
   },
   "ads-consent.manage": {
     "message": "Zarządzaj preferencjami"
@@ -21,7 +21,7 @@
     "message": "Odrzuć wszystko"
   },
   "ads-consent.title": {
-    "message": "Twoja prywatność i jak reklamy wspierają Modrinth"
+    "message": "Twoja prywatność i jak reklamy wspierają Bbsmc"
   },
   "analytics.action.add": {
     "message": "Dodaj"
@@ -113,11 +113,11 @@
   "analytics.chart.controls.display": {
     "message": "Wyświetlanie"
   },
-  "analytics.chart.controls.modrinth-events": {
-    "message": "Wydarzenia Modrinth"
+  "analytics.chart.controls.Bbsmc-events": {
+    "message": "Wydarzenia Bbsmc"
   },
-  "analytics.chart.controls.no-modrinth-events": {
-    "message": "Brak wydarzeń Modrinth na wykresie."
+  "analytics.chart.controls.no-Bbsmc-events": {
+    "message": "Brak wydarzeń Bbsmc na wykresie."
   },
   "analytics.chart.controls.no-project-events": {
     "message": "Brak wydarzeń projektów na wykresie."
@@ -147,7 +147,7 @@
     "message": "Pokaż szczegóły analityki monetyzacji"
   },
   "analytics.chart.legend.monetization-details.description": {
-    "message": "Tylko wyświetlenia i pobrania z Modrinth liczą się do monetyzacji, gdzie pobrania wymagają bycia zalogowanym."
+    "message": "Tylko wyświetlenia i pobrania z Bbsmc liczą się do monetyzacji, gdzie pobrania wymagają bycia zalogowanym."
   },
   "analytics.chart.legend.monetization-details.title": {
     "message": "Szczegóły analityki monetyzacji"
@@ -225,10 +225,10 @@
     "message": "Zaktualizuj"
   },
   "analytics.download-source.app": {
-    "message": "Modrinth App"
+    "message": "Bbsmc App"
   },
   "analytics.download-source.website": {
-    "message": "Strona Modrinth"
+    "message": "Strona Bbsmc"
   },
   "analytics.downloads.suffix": {
     "message": "pobrań"
@@ -411,7 +411,7 @@
     "message": "Ilość pobrań"
   },
   "analytics.stat.monetization-banner.body": {
-    "message": "Tylko wyświetlenia i pobrania z Modrinth kwalifikują się do monetyzacji i muszą przejść filtrowanie, by uniknąć fałszowania. Pobrania z Modrinth App wymagają także, by użytkownik był zalogowany. Skoro wszystkie projekty mają mniej więcej takie same proporcje monetyzowanych pobrań, Twój przychód nie zmienił by się znacznie, gdyby liczone były wszystkie pobrania."
+    "message": "Tylko wyświetlenia i pobrania z Bbsmc kwalifikują się do monetyzacji i muszą przejść filtrowanie, by uniknąć fałszowania. Pobrania z Bbsmc App wymagają także, by użytkownik był zalogowany. Skoro wszystkie projekty mają mniej więcej takie same proporcje monetyzowanych pobrań, Twój przychód nie zmienił by się znacznie, gdyby liczone były wszystkie pobrania."
   },
   "analytics.stat.monetization-banner.learn-more": {
     "message": "Dowiedz się więcej"
@@ -450,7 +450,7 @@
     "message": "Od {start} do {end}"
   },
   "analytics.table.csv.filename": {
-    "message": "Analityka Modrinth - {breakdown} - {dateRange}"
+    "message": "Analityka Bbsmc - {breakdown} - {dateRange}"
   },
   "analytics.table.csv.header.playtime-seconds": {
     "message": "Czas gry (w sekundach)"
@@ -558,7 +558,7 @@
     "message": "Linux"
   },
   "app-marketing.download.linux-disclaimer": {
-    "message": "W wersjach Modrinth App dla systemu Linux <issues-link>mogą występywać problemy</issues-link> na niektórych systemach i konfiguracjach. Jeśli Modrinth App działa niestabilnie na Twoim komputerze, zachęcamy do wypróbowania innych aplikacji, takich jak <prism-link>Prism Launcher</prism-link>, które umożliwiają łatwą instalację treści z Modrinth."
+    "message": "W wersjach Bbsmc App dla systemu Linux <issues-link>mogą występywać problemy</issues-link> na niektórych systemach i konfiguracjach. Jeśli Bbsmc App działa niestabilnie na Twoim komputerze, zachęcamy do wypróbowania innych aplikacji, takich jak <prism-link>Prism Launcher</prism-link>, które umożliwiają łatwą instalację treści z Bbsmc."
   },
   "app-marketing.download.mac": {
     "message": "Mac"
@@ -567,10 +567,10 @@
     "message": "Opcje pobierania"
   },
   "app-marketing.download.terms": {
-    "message": "Pobierając Modrinth App, wyrażasz zgodę na nasze <terms-link>Warunki</terms-link> oraz <privacy-link>Politykę prywatności</privacy-link>."
+    "message": "Pobierając Bbsmc App, wyrażasz zgodę na nasze <terms-link>Warunki</terms-link> oraz <privacy-link>Politykę prywatności</privacy-link>."
   },
   "app-marketing.download.title": {
-    "message": "Pobierz Modrinth App (Beta)"
+    "message": "Pobierz Bbsmc App (Beta)"
   },
   "app-marketing.download.windows": {
     "message": "Windows"
@@ -582,7 +582,7 @@
     "message": "Obserwuj projekty"
   },
   "app-marketing.features.importing.description": {
-    "message": "Zaimportuj wszystkie swoje ulubione profile z launchera, którego używałeś wcześniej, i zacznij korzystać z Modrinth App w kilka sekund!"
+    "message": "Zaimportuj wszystkie swoje ulubione profile z launchera, którego używałeś wcześniej, i zacznij korzystać z Bbsmc App w kilka sekund!"
   },
   "app-marketing.features.importing.gdlauncher-alt": {
     "message": "GDLauncher"
@@ -600,7 +600,7 @@
     "message": "przez {author}"
   },
   "app-marketing.features.mod-management.description": {
-    "message": "Modrinth ułatwia zarządzanie wszystkimi modami w jednym miejscu. Możesz instalować, odinstalowywać i aktualizować mody jednym kliknięciem."
+    "message": "Bbsmc ułatwia zarządzanie wszystkimi modami w jednym miejscu. Możesz instalować, odinstalowywać i aktualizować mody jednym kliknięciem."
   },
   "app-marketing.features.mod-management.installed-mods": {
     "message": "Zainstalowane mody"
@@ -624,7 +624,7 @@
     "message": "Tryb offline"
   },
   "app-marketing.features.open-source.description": {
-    "message": "Modrinth Launcher jest w pełni otwarto-źródłowy. Kod źródłowy możesz zobaczyć na naszym <github-link>GitHubie</github-link>!"
+    "message": "Bbsmc Launcher jest w pełni otwarto-źródłowy. Kod źródłowy możesz zobaczyć na naszym <github-link>GitHubie</github-link>!"
   },
   "app-marketing.features.open-source.title": {
     "message": "Otwarte oprogramowanie"
@@ -636,7 +636,7 @@
     "message": "% CPU"
   },
   "app-marketing.features.performance.description": {
-    "message": "Modrinth App działa wydajniej niż wiele popularnych menedżerów modów, zużywając zaledwie 150 MB pamięci RAM!"
+    "message": "Bbsmc App działa wydajniej niż wiele popularnych menedżerów modów, zużywając zaledwie 150 MB pamięci RAM!"
   },
   "app-marketing.features.performance.discord": {
     "message": "Discord"
@@ -648,16 +648,16 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "∞ MB"
+    "message": "�?MB"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
-    "message": "∞ × ∞ MB"
+    "message": "�?× �?MB"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MB"
   },
-  "app-marketing.features.performance.modrinth-app": {
-    "message": "Modrinth App"
+  "app-marketing.features.performance.Bbsmc-app": {
+    "message": "Bbsmc App"
   },
   "app-marketing.features.performance.one-billion-percent": {
     "message": "1 miliard %"
@@ -675,13 +675,13 @@
     "message": "Wydajny"
   },
   "app-marketing.features.play.description": {
-    "message": "Użyj Modrinth App, aby pobierać i grać ze swoimi ulubionymi modami i paczkami modów."
+    "message": "Użyj Bbsmc App, aby pobierać i grać ze swoimi ulubionymi modami i paczkami modów."
   },
   "app-marketing.features.play.title": {
     "message": "Graj ze swoimi ulubionymi modami"
   },
   "app-marketing.features.sharing.description": {
-    "message": "Twórz, udostępniaj i graj w paczki modów, korzystając z tysięcy modów i paczek dostępnych na Modrinth."
+    "message": "Twórz, udostępniaj i graj w paczki modów, korzystając z tysięcy modów i paczek dostępnych na Bbsmc."
   },
   "app-marketing.features.sharing.modpack": {
     "message": "Paczka modów"
@@ -696,7 +696,7 @@
     "message": "Jak żaden inny launcher"
   },
   "app-marketing.features.website.description": {
-    "message": "Modrinth App jest w pełni zintegrowany ze stroną, dzięki czemu możesz uzyskać dostęp do wszystkich swoich ulubionych projektów bezpośrednio z aplikacji!"
+    "message": "Bbsmc App jest w pełni zintegrowany ze stroną, dzięki czemu możesz uzyskać dostęp do wszystkich swoich ulubionych projektów bezpośrednio z aplikacji!"
   },
   "app-marketing.features.website.title": {
     "message": "Integracja ze stroną"
@@ -705,19 +705,19 @@
     "message": "które kiedykolwiek użyłeś(-aś)"
   },
   "app-marketing.hero.app-screenshot-alt": {
-    "message": "Zrzut ekranu z Modrinth App z otwartą instancją Cobblemon na stronie „Treść”."
+    "message": "Zrzut ekranu z Bbsmc App z otwartą instancją Cobblemon na stronie „Treść�?"
   },
   "app-marketing.hero.description": {
-    "message": "Modrinth App to wyjątkowy, otwarto-źrodłowy launcher, który pozwala grać w Twoje ulubione mody i utrzymywać je na bieżąco, wszystko w jednym poręcznym pakiecie."
+    "message": "Bbsmc App to wyjątkowy, otwarto-źrodłowy launcher, który pozwala grać w Twoje ulubione mody i utrzymywać je na bieżąco, wszystko w jednym poręcznym pakiecie."
   },
   "app-marketing.hero.download-button": {
-    "message": "Pobierz Modrinth App"
+    "message": "Pobierz Bbsmc App"
   },
-  "app-marketing.hero.download-modrinth-app": {
-    "message": "Pobierz Modrinth App"
+  "app-marketing.hero.download-Bbsmc-app": {
+    "message": "Pobierz Bbsmc App"
   },
-  "app-marketing.hero.download-modrinth-app-for-os": {
-    "message": "Pobierz Modrinth App dla {os}"
+  "app-marketing.hero.download-Bbsmc-app-for-os": {
+    "message": "Pobierz Bbsmc App dla {os}"
   },
   "app-marketing.hero.minecraft-screenshot-alt": {
     "message": "Zrzut ekranu głównego menu instancji Cobblemon."
@@ -786,7 +786,7 @@
     "message": "Wymagana data urodzenia"
   },
   "auth.create-account.date-of-birth.under13-helper": {
-    "message": "Nie spełniasz wymagań wiekowych, aby utworzyć konto na Modrinth."
+    "message": "Nie spełniasz wymagań wiekowych, aby utworzyć konto na Bbsmc."
   },
   "auth.create-account.info-panel.source-code-link": {
     "message": "Kod źródłowy funkcji"
@@ -801,7 +801,7 @@
     "message": "Test bezpieczeństwa"
   },
   "auth.create-account.subscribe.label": {
-    "message": "Wysyłaj mi nowinki o Modrinth przez e-mail"
+    "message": "Wysyłaj mi nowinki o Bbsmc przez e-mail"
   },
   "auth.create-account.title": {
     "message": "Utwórz konto"
@@ -873,7 +873,7 @@
     "message": "Nie masz konta?"
   },
   "auth.sign-in.sign-in-with": {
-    "message": "Zaloguj się na Modrinth"
+    "message": "Zaloguj się na Bbsmc"
   },
   "auth.sign-in.title": {
     "message": "Zaloguj się"
@@ -885,7 +885,7 @@
     "message": "Kontynuuj przez e-mail"
   },
   "auth.sign-up.legal-dislaimer": {
-    "message": "Tworząc konto, wyrażasz zgodę na <terms-link>Warunki</terms-link> i <privacy-policy-link>Politykę Prywatności</privacy-policy-link> Modrinth."
+    "message": "Tworząc konto, wyrażasz zgodę na <terms-link>Warunki</terms-link> i <privacy-policy-link>Politykę Prywatności</privacy-policy-link> Bbsmc."
   },
   "auth.sign-up.show-fewer-options": {
     "message": "Pokaż mniej opcji"
@@ -975,7 +975,7 @@
     "message": "Czy na pewno chcesz usunąć tę kolekcję?"
   },
   "collection.description": {
-    "message": "{description} - Zobacz kolekcję {name} od {username} na Modrinth"
+    "message": "{description} - Zobacz kolekcję {name} od {username} na Bbsmc"
   },
   "collection.description.following": {
     "message": "Automatycznie wygenerowana kolekcja wszystkich projektów, które obserwujesz."
@@ -1098,7 +1098,7 @@
     "message": "Odpowiedz na wątek"
   },
   "conversation-thread.reply-modal.help-center-note": {
-    "message": "Jeżeli musisz skontaktować się z zespołem moderatorów, odwiedź <help-center-link>centrum pomocy Modrinth</help-center-link> i kliknij w niebieskie kółko, by skontaktować się z obsługą."
+    "message": "Jeżeli musisz skontaktować się z zespołem moderatorów, odwiedź <help-center-link>centrum pomocy Bbsmc</help-center-link> i kliknij w niebieskie kółko, by skontaktować się z obsługą."
   },
   "conversation-thread.resubmit-modal.confirmation.description": {
     "message": "Potwierdzenie, że komentarze od zespołu moderacji zostały zaadresowane"
@@ -1509,7 +1509,7 @@
     "message": "Formularz podatkowy nie jest kompletny"
   },
   "dashboard.creator-tax-form-modal.security.description": {
-    "message": "Modrinth używa dostawcy będącego stroną trzecią, Track1099, by bezpiecznie zbierać i przechowywać Twoje formularze podatkowe. <security-link>Dowiedz się więcej.</security-link>"
+    "message": "Bbsmc używa dostawcy będącego stroną trzecią, Track1099, by bezpiecznie zbierać i przechowywać Twoje formularze podatkowe. <security-link>Dowiedz się więcej.</security-link>"
   },
   "dashboard.creator-tax-form-modal.security.header": {
     "message": "Praktyki bezpieczeństwa"
@@ -1683,7 +1683,7 @@
     "message": "By wypłacić całe saldo konta (<b>{available}</b>) musisz wypełnić ten formularz. Jest on wymagany dla sprawozdawczości podatkowej i musi być wypełniony tylko raz."
   },
   "dashboard.creator-withdraw-modal.tax-form-required.body-with-limit": {
-    "message": "Musisz wypełnić formularz podatkowy W-9 lub W-8 dla zapisów podatkowych Modrinth, abyśmy mogli zachować zgodność z przepisami podatkowymi."
+    "message": "Musisz wypełnić formularz podatkowy W-9 lub W-8 dla zapisów podatkowych Bbsmc, abyśmy mogli zachować zgodność z przepisami podatkowymi."
   },
   "dashboard.creator-withdraw-modal.tax-form-required.header": {
     "message": "Wymagany jest formularz podatkowy"
@@ -1746,13 +1746,13 @@
     "message": "Adres e-mail nie jest zweryfikowany"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.unverified-email-message": {
-    "message": "Podany adres e-mail nie jest powiązany z Twoim kontem Modrinth. Modrinth nie może odzyskać nagród wysłanych na niepoprawny adres e-mail."
+    "message": "Podany adres e-mail nie jest powiązany z Twoim kontem Bbsmc. Bbsmc nie może odzyskać nagród wysłanych na niepoprawny adres e-mail."
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-header": {
     "message": "Dostępne niższe opłaty"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-message": {
-    "message": "Wybrano walutę USD w opcji międzynarodowej PayPal. <direct-paypal-link>Przełącz się na bezpośredni PayPal</direct-paypal-link> dla niższych opłat (≈2% zamiast ≈6%)."
+    "message": "Wybrano walutę USD w opcji międzynarodowej PayPal. <direct-paypal-link>Przełącz się na bezpośredni PayPal</direct-paypal-link> dla niższych opłat (�?% zamiast �?%)."
   },
   "dashboard.creator-withdraw-modal.tremendous-details.withdrawal-amount-min-max": {
     "message": "Minimalnie {min}, maksymalnie {max} możliwe do odebrania."
@@ -1770,7 +1770,7 @@
     "message": "Przekroczono limit wypłat (<b>{withdrawLimit}</b>). Musisz wypełnić formularz podatkowy, by wypłacić więcej."
   },
   "dashboard.discord-roles.banner.body": {
-    "message": "Możesz otrzymać role: {roles}. Połącz swoje konto Discord poprzez Modrinth, a my automatycznie Ci je damy."
+    "message": "Możesz otrzymać role: {roles}. Połącz swoje konto Discord poprzez Bbsmc, a my automatycznie Ci je damy."
   },
   "dashboard.discord-roles.banner.cta": {
     "message": "Połącz z Discord"
@@ -1950,7 +1950,7 @@
     "message": "Szacunkowe przychody mogą ulec zmianie do momentu ich udostępnienia."
   },
   "dashboard.revenue.estimated-tooltip.msg2": {
-    "message": "Kliknij tutaj, by dowiedzieć się, jak Modrinth oblicza Twoje przychody."
+    "message": "Kliknij tutaj, by dowiedzieć się, jak Bbsmc oblicza Twoje przychody."
   },
   "dashboard.revenue.estimated-with-date": {
     "message": "Oszacowane na {date}"
@@ -1971,7 +1971,7 @@
     "message": "Wypłacone"
   },
   "dashboard.revenue.tos": {
-    "message": "Udostępniając projekty na Modrinth i wypłacając pieniądze z konta, wyrażasz zgodę na <terms-link>Warunki programu wynagrodzenia</terms-link>. Dowiedz się więcej o <info-link>programie wynagrodzenia</info-link>."
+    "message": "Udostępniając projekty na Bbsmc i wypłacając pieniądze z konta, wyrażasz zgodę na <terms-link>Warunki programu wynagrodzenia</terms-link>. Dowiedz się więcej o <info-link>programie wynagrodzenia</info-link>."
   },
   "dashboard.revenue.transactions.btn.download-csv": {
     "message": "Pobierz jako CSV"
@@ -2160,7 +2160,7 @@
     "message": "Wybieranie paczki modów do zainstalowania po zresetowaniu"
   },
   "discover.seo.description": {
-    "message": "Przeglądaj {projectType} Minecraft na Modrinth z natychmiastowymi, trafnymi wynikami wyszukiwania. Nasze filtry pomogą Ci znaleźć najlepsze {projectType} Minecraft."
+    "message": "Przeglądaj {projectType} Minecraft na Bbsmc z natychmiastowymi, trafnymi wynikami wyszukiwania. Nasze filtry pomogą Ci znaleźć najlepsze {projectType} Minecraft."
   },
   "discover.seo.title": {
     "message": "Szukaj {projectType}"
@@ -2175,7 +2175,7 @@
     "message": "Ta kolekcja może być prywatna."
   },
   "error.collection.404.list_item.3": {
-    "message": "Ta kolekcja została usunięta przez zespół moderacji Modrinth za naruszenie naszych <tou-link>Warunków użytkowania</tou-link>."
+    "message": "Ta kolekcja została usunięta przez zespół moderacji Bbsmc za naruszenie naszych <tou-link>Warunków użytkowania</tou-link>."
   },
   "error.collection.404.list_title": {
     "message": "Dlaczego?"
@@ -2202,10 +2202,10 @@
     "message": "Treści niedostępne z przyczyn prawnych"
   },
   "error.generic.default.list_item.1": {
-    "message": "Sprawdź na naszej <status-link>stronie statusu</status-link>, czy Modrinth jest niedostępny."
+    "message": "Sprawdź na naszej <status-link>stronie statusu</status-link>, czy Bbsmc jest niedostępny."
   },
   "error.generic.default.list_item.2": {
-    "message": "Jeśli problem będzie się powtarzał, możesz powiadomić o tym zespół Modrinth, dołączając do naszego <discord-link>serwera Discord</discord-link>."
+    "message": "Jeśli problem będzie się powtarzał, możesz powiadomić o tym zespół Bbsmc, dołączając do naszego <discord-link>serwera Discord</discord-link>."
   },
   "error.generic.default.list_title": {
     "message": "Spróbuj ponownie za kilka minut."
@@ -2223,7 +2223,7 @@
     "message": "Właściciel organizacji mógł zmienić adres URL lub go usunąć."
   },
   "error.organization.404.list_item.3": {
-    "message": "Organizacja mogła zostać usunięta przez zespół moderacyjny Modrinth za naruszenie naszych <tou-link>Warunków użytkowania</tou-link>."
+    "message": "Organizacja mogła zostać usunięta przez zespół moderacyjny Bbsmc za naruszenie naszych <tou-link>Warunków użytkowania</tou-link>."
   },
   "error.organization.404.list_title": {
     "message": "Dlaczego?"
@@ -2238,7 +2238,7 @@
     "message": "Właściciel projektu mógł zmienić adres URL, ustawić projekt jako prywatny lub go usunąć."
   },
   "error.project.404.list_item.3": {
-    "message": "Projekt mógł zostać usunięty przez zespół moderacyjny Modrinth za naruszenie naszych <tou-link>Warunków użytkowania</tou-link>."
+    "message": "Projekt mógł zostać usunięty przez zespół moderacyjny Bbsmc za naruszenie naszych <tou-link>Warunków użytkowania</tou-link>."
   },
   "error.project.404.list_title": {
     "message": "Dlaczego?"
@@ -2253,7 +2253,7 @@
     "message": "Użytkownik mógł zmienić nazwę użytkownika lub usunąć konto."
   },
   "error.user.404.list_item.3": {
-    "message": "Konto użytkownika mogło zostać zamknięte z powodu naruszenia <tou-link>Warunków używania</tou-link> serwisu Modrinth."
+    "message": "Konto użytkownika mogło zostać zamknięte z powodu naruszenia <tou-link>Warunków używania</tou-link> serwisu Bbsmc."
   },
   "error.user.404.list_title": {
     "message": "Dlaczego?"
@@ -2295,10 +2295,10 @@
     "message": "Gdy Twój serwer jest pod dużym obciążeniem, tymczasowo przyznajemy mu dostęp do dodatkowych wątków procesora, aby pomóc złagodzić skoki opóźnień i niestabilność. Pomaga to zapobiec spadkom TPS poniżej 20, zapewniając możliwie najpłynniejszą rozgrywkę. Ponieważ te dodatkowe wątki są dostępne tylko krótko podczas okresów wysokiego obciążenia, mogą nie pojawiać się w raportach Spark ani innych narzędziach do profilowania."
   },
   "hosting-marketing.faq.cpu-kind": {
-    "message": "Na jakich procesorach działają serwery Modrinth Hosting?"
+    "message": "Na jakich procesorach działają serwery Bbsmc Hosting?"
   },
   "hosting-marketing.faq.cpu-kind.answer": {
-    "message": "Serwery Modrinth Hosting są zasilane przez procesory klasy AMD Ryzen 7900 i 7950X3D o taktowaniu 5+ GHz, sparowane z pamięcią DDR5."
+    "message": "Serwery Bbsmc Hosting są zasilane przez procesory klasy AMD Ryzen 7900 i 7950X3D o taktowaniu 5+ GHz, sparowane z pamięcią DDR5."
   },
   "hosting-marketing.faq.currency": {
     "message": "W jakiej walucie są podane ceny?"
@@ -2307,19 +2307,19 @@
     "message": "Wszystkie ceny są podane w dolarach amerykańskich (USD)."
   },
   "hosting-marketing.faq.ddos-protection": {
-    "message": "Czy serwery Modrinth Hosting posiadają ochronę DDoS?"
+    "message": "Czy serwery Bbsmc Hosting posiadają ochronę DDoS?"
   },
   "hosting-marketing.faq.ddos-protection.answer": {
-    "message": "Tak. Wszystkie serwery Modrinth Hosting są wyposażone w ochronę DDoS o przepustowości do 17 Tbps w wybranych lokalizacjach."
+    "message": "Tak. Wszystkie serwery Bbsmc Hosting są wyposażone w ochronę DDoS o przepustowości do 17 Tbps w wybranych lokalizacjach."
   },
   "hosting-marketing.faq.heading": {
     "message": "Często zadawane pytania"
   },
   "hosting-marketing.faq.how-fast": {
-    "message": "Jak szybkie są serwery Modrinth Hosting?"
+    "message": "Jak szybkie są serwery Bbsmc Hosting?"
   },
   "hosting-marketing.faq.how-fast.answer.one": {
-    "message": "Serwery Modrinth Hosting są hostowane na bardzo nowoczesnym, wydajnym sprzęcie, ale trudno powiedzieć dokładnie, jak szybko będzie działał Twój serwer. Wpływa na to wiele czynników, takich jak używane mody, paczki danych (data packi) czy pluginy, a nawet zachowanie samych graczy."
+    "message": "Serwery Bbsmc Hosting są hostowane na bardzo nowoczesnym, wydajnym sprzęcie, ale trudno powiedzieć dokładnie, jak szybko będzie działał Twój serwer. Wpływa na to wiele czynników, takich jak używane mody, paczki danych (data packi) czy pluginy, a nawet zachowanie samych graczy."
   },
   "hosting-marketing.faq.how-fast.answer.two": {
     "message": "Większość problemów z wydajnością jest spowodowane przez mało zoptymalizowane paczki modów, mody, paczki danych lub pluginy, które powodują lag na serwerze. Nasze serwery są z najwyższej półki, więc powinny wystarczać, jeśli wybierzesz odpowiedni plan do tego, co instalujesz na serwerze."
@@ -2331,7 +2331,7 @@
     "message": "Tak, pojemność dysku na Twoim serwerze można zwiększyć bez dodatkowych kosztów. Jeżeli potrzebujesz więcej miejsca na dysku, skontaktuj się z obsługą."
   },
   "hosting-marketing.faq.location": {
-    "message": "Gdzie znajdują się serwery Modrinth Hosting? Czy mogę wybrać region?"
+    "message": "Gdzie znajdują się serwery Bbsmc Hosting? Czy mogę wybrać region?"
   },
   "hosting-marketing.faq.location.answer": {
     "message": "Aktualnie mamy dostępne serwery w Ameryce Północnej, Europie, Azji Południowo-Wschodniej i Australii, które możesz wybrać podczas zakupu. Więcej regionów będzie dostępne w przyszłości! Jeżeli chcesz zmienić region, skontaktuj się z obsługą."
@@ -2340,7 +2340,7 @@
     "message": "Które loadery i wersje Minecraft mogę użyć?"
   },
   "hosting-marketing.faq.versions-loaders.answer.one": {
-    "message": "Serwery Modrinth Hosting wspierają każdą wersję Minecraft: Java Edition wstecz do wersji 1.2.5, w tym wersje snapshotowe."
+    "message": "Serwery Bbsmc Hosting wspierają każdą wersję Minecraft: Java Edition wstecz do wersji 1.2.5, w tym wersje snapshotowe."
   },
   "hosting-marketing.faq.versions-loaders.answer.two": {
     "message": "Wspieramy także szeroki wybór loaderów modów i pluginów, w tym Fabric, Quilt, Forge i Neoforge dla modów; jak i Paper i Purpur dla pluginów. Dostępność zależy od tego, czy loader modów lub pluginów wspiera wybraną wersję Minecraft."
@@ -2357,11 +2357,11 @@
   "hosting-marketing.hero.button.start-your-server": {
     "message": "Uruchom swój serwer"
   },
-  "hosting-marketing.hero.host-with-modrinth": {
-    "message": "Hostuj swój następny serwer z Modrinth Hosting"
+  "hosting-marketing.hero.host-with-Bbsmc": {
+    "message": "Hostuj swój następny serwer z Bbsmc Hosting"
   },
   "hosting-marketing.hero.hosting-description": {
-    "message": "Modrinth Hosting to najprostszy sposób na własny serwer Minecraft: Java Edition. Bezproblemowo instaluj i graj w swoje ulubione mody i paczki modów, a wszystko to w obrębie platformy Modrinth."
+    "message": "Bbsmc Hosting to najprostszy sposób na własny serwer Minecraft: Java Edition. Bezproblemowo instaluj i graj w swoje ulubione mody i paczki modów, a wszystko to w obrębie platformy Bbsmc."
   },
   "hosting-marketing.included.advanced-networking": {
     "message": "Zaawansowane zarządzanie siecią"
@@ -2379,10 +2379,10 @@
     "message": "Własny adres URL"
   },
   "hosting-marketing.included.custom-url.description": {
-    "message": "Udostępnij swój serwer za pomocą niestandardowego adresu URL <contrast>modrinth.gg</contrast>."
+    "message": "Udostępnij swój serwer za pomocą niestandardowego adresu URL <contrast>Bbsmc.gg</contrast>."
   },
   "hosting-marketing.included.description": {
-    "message": "Do każdego serwera dołączony jest pakiet funkcji zaprojektowanych tak, aby zapewnić jakość hostingu, którą może zaoferować tylko Modrinth."
+    "message": "Do każdego serwera dołączony jest pakiet funkcji zaprojektowanych tak, aby zapewnić jakość hostingu, którą może zaoferować tylko Bbsmc."
   },
   "hosting-marketing.included.file-manager": {
     "message": "Łatwy w użyciu menedżer plików"
@@ -2397,19 +2397,19 @@
     "message": "Pomoc zawsze, gdy jej potrzebujesz"
   },
   "hosting-marketing.included.help.description": {
-    "message": "Skontaktuj się z zespołem Modrinth, aby uzyskać pomoc dotyczącą serwera w dowolnym momencie."
+    "message": "Skontaktuj się z zespołem Bbsmc, aby uzyskać pomoc dotyczącą serwera w dowolnym momencie."
   },
   "hosting-marketing.included.powerful-console": {
     "message": "Potężna konsola, menedżer właściwości serwera i nie tylko"
   },
   "hosting-marketing.included.powerful-console.description": {
-    "message": "Modrinth Hosting oferuje zaawansowane narzędzia do zarządzania Twoim serwerem."
+    "message": "Bbsmc Hosting oferuje zaawansowane narzędzia do zarządzania Twoim serwerem."
   },
   "hosting-marketing.included.sftp-access": {
     "message": "Dostęp przez SFTP"
   },
   "hosting-marketing.included.sftp-access.description": {
-    "message": "Uzyskaj bezpośredni dostęp do plików swojego serwera dzięki wbudowanemu SFTP w Modrinth Hosting."
+    "message": "Uzyskaj bezpośredni dostęp do plików swojego serwera dzięki wbudowanemu SFTP w Bbsmc Hosting."
   },
   "hosting-marketing.included.with-your-server": {
     "message": "W zestawie z Twoim serwerem"
@@ -2450,20 +2450,20 @@
   "hosting-marketing.server-for-everyone": {
     "message": "Dla każdego znajdzie się serwer "
   },
-  "hosting-marketing.why.all-on-modrinth": {
-    "message": "Zarządzaj wszystkim na Modrinth"
+  "hosting-marketing.why.all-on-Bbsmc": {
+    "message": "Zarządzaj wszystkim na Bbsmc"
   },
-  "hosting-marketing.why.all-on-modrinth.description": {
-    "message": "Twój serwer, mody, gracze i inne elementy są dostępne w jednym miejscu na Modrinth. Nie musisz przełączać się między platformami."
+  "hosting-marketing.why.all-on-Bbsmc.description": {
+    "message": "Twój serwer, mody, gracze i inne elementy są dostępne w jednym miejscu na Bbsmc. Nie musisz przełączać się między platformami."
   },
   "hosting-marketing.why.consistently-fast": {
     "message": "Stale wysoka wydajność"
   },
   "hosting-marketing.why.consistently-fast.description": {
-    "message": "Nasza infrastruktura nigdy nie jest przeciążona, co oznacza, że każdy serwer hostowany na Modrinth zawsze działa z pełną wydajnością."
+    "message": "Nasza infrastruktura nigdy nie jest przeciążona, co oznacza, że każdy serwer hostowany na Bbsmc zawsze działa z pełną wydajnością."
   },
   "hosting-marketing.why.description": {
-    "message": "Wybieraj spośród tysięcy paczek modów na Modrinth lub stwórz własny. Zaproś znajomych, gdy będziesz gotowy do gry."
+    "message": "Wybieraj spośród tysięcy paczek modów na Bbsmc lub stwórz własny. Zaproś znajomych, gdy będziesz gotowy do gry."
   },
   "hosting-marketing.why.heading": {
     "message": "Znajdź paczkę modów. Teraz to serwer."
@@ -2472,22 +2472,22 @@
     "message": "Doświadcz nowoczesnego, niezawodnego hostingu"
   },
   "hosting-marketing.why.modern-reliable-hosting.description": {
-    "message": "Serwery Modrinth Hosting opierają się na <contrast>wydajnych procesorach AMD i pamięci RAM DDR5</contrast>, działając na autorskim oprogramowaniu, aby zapewnić płynną rozgrywkę."
+    "message": "Serwery Bbsmc Hosting opierają się na <contrast>wydajnych procesorach AMD i pamięci RAM DDR5</contrast>, działając na autorskim oprogramowaniu, aby zapewnić płynną rozgrywkę."
   },
   "hosting-marketing.why.where-mods-are": {
     "message": "Graj tam, gdzie są Twoje mody"
   },
   "hosting-marketing.why.where-mods-are.description": {
-    "message": "Modrinth Hosting bezproblemowo integruje proces instalacji modów i paczek modów z Twoim serwerem."
+    "message": "Bbsmc Hosting bezproblemowo integruje proces instalacji modów i paczek modów z Twoim serwerem."
   },
-  "hosting-marketing.why.why-modrinth-hosting": {
-    "message": "Dlaczego Modrinth Hosting?"
+  "hosting-marketing.why.why-Bbsmc-hosting": {
+    "message": "Dlaczego Bbsmc Hosting?"
   },
   "hosting-marketing.why.your-favorite-mods": {
     "message": "Wszystkie Twoje ulubione mody"
   },
   "hosting-marketing.why.your-favorite-mods.description": {
-    "message": "Wybieraj między Vanilla, Fabric, Forge, Quilt i NeoForge. Jeśli coś jest na Modrinth, może działać na Twoim serwerze."
+    "message": "Wybieraj między Vanilla, Fabric, Forge, Quilt i NeoForge. Jeśli coś jest na Bbsmc, może działać na Twoim serwerze."
   },
   "hosting.plan.out-of-stock": {
     "message": "Wyprzedane"
@@ -2502,7 +2502,7 @@
     "message": "Przejdź do kokpitu"
   },
   "landing.creator.feature.constantly-evolving.description": {
-    "message": "Uzyskaj najlepsze możliwe doświadczenie w modowaniu dzięki stałym aktualizacjom od zespołu Modrinth"
+    "message": "Uzyskaj najlepsze możliwe doświadczenie w modowaniu dzięki stałym aktualizacjom od zespołu Bbsmc"
   },
   "landing.creator.feature.constantly-evolving.title": {
     "message": "Nieustanny rozwój"
@@ -2547,7 +2547,7 @@
     "message": "Obserwuj projekty, które kochasz"
   },
   "landing.feature.launcher.description": {
-    "message": "Otwarto-źródłowe API Modrinth pozwala launcherom dodać głęboką integrację z Modrinth. Możesz używać Modrinth przez <link>naszą aplikację</link> i inne popularne launchery, takie jak ATLauncher, MultiMC i Prism Launcher."
+    "message": "Otwarto-źródłowe API Bbsmc pozwala launcherom dodać głęboką integrację z Bbsmc. Możesz używać Bbsmc przez <link>naszą aplikację</link> i inne popularne launchery, takie jak ATLauncher, MultiMC i Prism Launcher."
   },
   "landing.feature.launcher.heading": {
     "message": "Graj na swoim ulubionym launcherze"
@@ -2586,10 +2586,10 @@
     "message": "ATLauncher"
   },
   "landing.launcher.graphic-alt": {
-    "message": "Prostsza reprezentacja okna Minecraft, z logiem Mojang Studios w zielonym kolorze Modrinth."
+    "message": "Prostsza reprezentacja okna Minecraft, z logiem Mojang Studios w zielonym kolorze Bbsmc."
   },
-  "landing.launcher.modrinth-app-label": {
-    "message": "Modrinth App"
+  "landing.launcher.Bbsmc-app-label": {
+    "message": "Bbsmc App"
   },
   "landing.launcher.prism-launcher-label": {
     "message": "Prism Launcher"
@@ -2685,13 +2685,13 @@
     "message": "Odwiedź ustawienia konta"
   },
   "layout.banner.add-email.description": {
-    "message": "Dla bezpieczeństwa, Modrinth musi zweryfikować e-maila powiązanego z twoim kontem."
+    "message": "Dla bezpieczeństwa, Bbsmc musi zweryfikować e-maila powiązanego z twoim kontem."
   },
   "layout.banner.build-fail.always-ignore": {
     "message": "Zawsze ignoruj"
   },
   "layout.banner.build-fail.description": {
-    "message": "Wdrożenie interfejsu użytkownika Modrinth nie udało się wygenerować stanu z API. Może to wynikać z awarii lub błędu w konfiguracji. Odbuduj, gdy API będzie dostępne. Kody błędów: {errors}; Aktualny adres URL interfejsu API to: {url}"
+    "message": "Wdrożenie interfejsu użytkownika Bbsmc nie udało się wygenerować stanu z API. Może to wynikać z awarii lub błędu w konfiguracji. Odbuduj, gdy API będzie dostępne. Kody błędów: {errors}; Aktualny adres URL interfejsu API to: {url}"
   },
   "layout.banner.build-fail.ignore": {
     "message": "Ignoruj"
@@ -2700,16 +2700,16 @@
     "message": "Błąd podczas generowania stanu z API przy kompilacji."
   },
   "layout.banner.preview.description": {
-    "message": "Jeśli chciałeś/aś wejść na oficjalną stronę Modrinth, odwiedź {url}. To wydanie poglądowe jest używane przez administrację Modrinth do testów. Zostało utworzone z {ref}."
+    "message": "Jeśli chciałeś/aś wejść na oficjalną stronę Bbsmc, odwiedź {url}. To wydanie poglądowe jest używane przez administrację Bbsmc do testów. Zostało utworzone z {ref}."
   },
   "layout.banner.preview.title": {
-    "message": "To jest wydanie poglądowe strony Modrinth."
+    "message": "To jest wydanie poglądowe strony Bbsmc."
   },
   "layout.banner.staging.description": {
-    "message": "Środowisko testowe jest całkowicie oddzielone od produkcyjnej bazy danych Modrinth. Służy ono do testowania i debugowania i może działać w wersjach rozwojowych lub interfejsu użytkownika Modrinth, które są nowsze niż instancja produkcyjna."
+    "message": "Środowisko testowe jest całkowicie oddzielone od produkcyjnej bazy danych Bbsmc. Służy ono do testowania i debugowania i może działać w wersjach rozwojowych lub interfejsu użytkownika Bbsmc, które są nowsze niż instancja produkcyjna."
   },
   "layout.banner.staging.title": {
-    "message": "Przeglądasz środowisko testowe Modrinth"
+    "message": "Przeglądasz środowisko testowe Bbsmc"
   },
   "layout.banner.subscription-payment-failed.button": {
     "message": "Zaktualizuj informacje płatności"
@@ -2724,7 +2724,7 @@
     "message": "Wypełnij formularz podatkowy"
   },
   "layout.banner.tax.description": {
-    "message": "Wypłaciłeś/aś ponad {threshold} z Modrinth w tym roku. Aby spełnić wymogi podatkowe, musisz wypełnić formularz podatkowy. Twoje wypłaty są spauzowane, aż nie wypełnisz formularza podatkowego."
+    "message": "Wypłaciłeś/aś ponad {threshold} z Bbsmc w tym roku. Aby spełnić wymogi podatkowe, musisz wypełnić formularz podatkowy. Twoje wypłaty są spauzowane, aż nie wypełnisz formularza podatkowego."
   },
   "layout.banner.tax.title": {
     "message": "Wymagany jest formularz podatkowy"
@@ -2742,7 +2742,7 @@
     "message": "Wyślij ponownie e-mail weryfikacyjny"
   },
   "layout.banner.verify-email.description": {
-    "message": "Dla bezpieczeństwa, Modrinth musi zweryfikować e-maila powiązanego z twoim kontem."
+    "message": "Dla bezpieczeństwa, Bbsmc musi zweryfikować e-maila powiązanego z twoim kontem."
   },
   "layout.footer.about": {
     "message": "O nas"
@@ -2798,23 +2798,23 @@
   "layout.footer.legal.terms-of-use": {
     "message": "Warunki użytkowania"
   },
-  "layout.footer.modrinth-information": {
-    "message": "Informacje o Modrinth"
+  "layout.footer.Bbsmc-information": {
+    "message": "Informacje o Bbsmc"
   },
   "layout.footer.open-source": {
-    "message": "Modrinth to <github-link>otwarte oprogramowanie</github-link>."
+    "message": "Bbsmc to <github-link>otwarte oprogramowanie</github-link>."
   },
   "layout.footer.products": {
     "message": "Produkty"
   },
   "layout.footer.products.app": {
-    "message": "Aplikacja Modrinth"
+    "message": "Aplikacja Bbsmc"
   },
   "layout.footer.products.plus": {
-    "message": "Modrinth+"
+    "message": "Bbsmc+"
   },
   "layout.footer.products.servers": {
-    "message": "Modrinth Hosting"
+    "message": "Bbsmc Hosting"
   },
   "layout.footer.resources": {
     "message": "Zasoby"
@@ -2853,7 +2853,7 @@
     "message": "Przełącz menu"
   },
   "layout.meta.description": {
-    "message": "Pobieraj mody, pluginy, paczki danych, shadery, paczki zasobów i paczki modów do Minecrafta na Modrinth. Odkrywaj i publikuj projekty na Modrinth dzięki nowoczesnemu, łatwemu w użyciu interfejsowi i API."
+    "message": "Pobieraj mody, pluginy, paczki danych, shadery, paczki zasobów i paczki modów do Minecrafta na Bbsmc. Odkrywaj i publikuj projekty na Bbsmc dzięki nowoczesnemu, łatwemu w użyciu interfejsowi i API."
   },
   "layout.meta.og-description": {
     "message": "Odkrywaj i publikuj zawartość Minecraft!"
@@ -2870,8 +2870,8 @@
   "layout.nav.discover": {
     "message": "Odkrywaj"
   },
-  "layout.nav.get-modrinth-app": {
-    "message": "Pobierz Modrinth App"
+  "layout.nav.get-Bbsmc-app": {
+    "message": "Pobierz Bbsmc App"
   },
   "layout.nav.home": {
     "message": "Strona główna"
@@ -2879,11 +2879,11 @@
   "layout.nav.host-a-server": {
     "message": "Hostuj serwer"
   },
-  "layout.nav.modrinth-app": {
-    "message": "Modrinth App"
+  "layout.nav.Bbsmc-app": {
+    "message": "Bbsmc App"
   },
-  "layout.nav.modrinth-home-page": {
-    "message": "Strona główna Modrinth"
+  "layout.nav.Bbsmc-home-page": {
+    "message": "Strona główna Bbsmc"
   },
   "layout.nav.my-servers": {
     "message": "Moje serwery"
@@ -2906,11 +2906,11 @@
   "layout.nav.search": {
     "message": "Szukaj"
   },
-  "layout.nav.upgrade-to-modrinth-plus": {
-    "message": "Ulepsz do Modrinth+"
+  "layout.nav.upgrade-to-Bbsmc-plus": {
+    "message": "Ulepsz do Bbsmc+"
   },
   "layout.publish.email-verification-required.description": {
-    "message": "Musisz zweryfikować adres e-mail, żeby móc publikować zawartość na Modrinth."
+    "message": "Musisz zweryfikować adres e-mail, żeby móc publikować zawartość na Bbsmc."
   },
   "layout.publish.email-verification-required.title": {
     "message": "Wymagana weryfikacja adresu e-mail"
@@ -2925,19 +2925,19 @@
     "message": "Otrzymuj aktualizacje do udostępnionej zawartości, gdy zostanie zmieniona"
   },
   "modal.shared-instance.open-in-app.get-app": {
-    "message": "Pobierz Modrinth App"
+    "message": "Pobierz Bbsmc App"
   },
   "modal.shared-instance.open-in-app.managed-by": {
     "message": "Zarządzane przez"
   },
   "modal.shared-instance.open-in-app.opening-automatically": {
-    "message": "Modrinth App zostanie otwarte automatycznie..."
+    "message": "Bbsmc App zostanie otwarte automatycznie..."
   },
   "modal.shared-instance.open-in-app.title": {
-    "message": "Otwieranie Modrinth App"
+    "message": "Otwieranie Bbsmc App"
   },
   "modal.shared-instance.open-in-app.why-use": {
-    "message": "Czemu warto używać Modrinth App"
+    "message": "Czemu warto używać Bbsmc App"
   },
   "moderation.exclude-technical-review": {
     "message": "Wyklucz RT"
@@ -3444,7 +3444,7 @@
     "message": "Przegląd projektu"
   },
   "project.actions.servers-promo.description": {
-    "message": "Modrinth Hosting to najprostszy sposób na zabawę z przyjaciółmi bez żadnych kłopotów!"
+    "message": "Bbsmc Hosting to najprostszy sposób na zabawę z przyjaciółmi bez żadnych kłopotów!"
   },
   "project.actions.servers-promo.pricing": {
     "message": "Od {price}<small> / miesięcznie</small>"
@@ -3534,13 +3534,13 @@
     "message": "{title} nie obsługuje {gameVersion} dla {platform}"
   },
   "project.download.install-with-app": {
-    "message": "Zainstaluj przez Modrinth App"
+    "message": "Zainstaluj przez Bbsmc App"
   },
   "project.download.manually": {
     "message": "Pobierz ręcznie"
   },
   "project.download.no-app": {
-    "message": "Nie masz Modrinth App?"
+    "message": "Nie masz Bbsmc App?"
   },
   "project.download.no-game-versions-found": {
     "message": "Nie znaleziono żadnej wersji gry"
@@ -3585,7 +3585,7 @@
     "message": "Nie udało się pobrać plików"
   },
   "project.environment.migration-no-permission.message": {
-    "message": "Właśnie odnowiliśmy system środowisk na Modrinth i nowe opcje są teraz dostępne. Nie masz uprawnień, aby modyfikować te ustawienia, ale daj znać innemu członkowi projektu, że metadane środowisk muszą zostać zweryfikowane."
+    "message": "Właśnie odnowiliśmy system środowisk na Bbsmc i nowe opcje są teraz dostępne. Nie masz uprawnień, aby modyfikować te ustawienia, ale daj znać innemu członkowi projektu, że metadane środowisk muszą zostać zweryfikowane."
   },
   "project.environment.migration-no-permission.title": {
     "message": "Metadane środowiska muszą być sprawdzone"
@@ -3594,7 +3594,7 @@
     "message": "Dowiedz się więcej o tej zmianie"
   },
   "project.environment.migration.message": {
-    "message": "Właśnie zmodernizowaliśmy system środowisk w Modrinth i nowe opcje są teraz dostępne. Prosimy o przejście do ustawień projektu i sprawdzenie poprawności metadanych."
+    "message": "Właśnie zmodernizowaliśmy system środowisk w Bbsmc i nowe opcje są teraz dostępne. Prosimy o przejście do ustawień projektu i sprawdzenie poprawności metadanych."
   },
   "project.environment.migration.review-button": {
     "message": "Sprawdź ustawienia środowiska"
@@ -3621,10 +3621,10 @@
     "message": "Twój projekt jest prywatny, co oznacza, że jest widoczny tylko dla ciebie i tych, których zaprosisz."
   },
   "project.moderation.admonition.approved.body.public": {
-    "message": "Twój projekt jest opublikowany i widoczny na Modrinth."
+    "message": "Twój projekt jest opublikowany i widoczny na Bbsmc."
   },
   "project.moderation.admonition.approved.body.unlisted": {
-    "message": "Twój projekt jest niewymieniony, co oznacza, że nie jest odkrywalny na Modrinth i można go otworzyć tylko poprzez bezpośrednie łącze."
+    "message": "Twój projekt jest niewymieniony, co oznacza, że nie jest odkrywalny na Bbsmc i można go otworzyć tylko poprzez bezpośrednie łącze."
   },
   "project.moderation.admonition.approved.body.visibility-message": {
     "message": "Możesz zmienić widoczność projektu w jego <visibility-settings-link>ustawieniach widoczności</visibility-settings-link>."
@@ -3633,13 +3633,13 @@
     "message": "Projekt został zaakceptowany"
   },
   "project.moderation.admonition.draft.body": {
-    "message": "Ten projekt jest ustawiony jako wersja robocza, więc nie może być oglądany przez innych, dopóki nie zostanie wysłany do przeglądu i sprawdzony przez zespół moderacji Modrinth."
+    "message": "Ten projekt jest ustawiony jako wersja robocza, więc nie może być oglądany przez innych, dopóki nie zostanie wysłany do przeglądu i sprawdzony przez zespół moderacji Bbsmc."
   },
   "project.moderation.admonition.draft.header": {
     "message": "Projekt ustawiony jako wersja robocza"
   },
   "project.moderation.admonition.draft.submit-for-review": {
-    "message": "Po zakończeniu wszystkich wymaganych kroków i sprawdzeniu, czy Twój projekt jest zgodny z <rules-link>zasadami dotyczącymi treści</rules-link> na Modrinth, możesz wysłać swój projekt do przeglądu."
+    "message": "Po zakończeniu wszystkich wymaganych kroków i sprawdzeniu, czy Twój projekt jest zgodny z <rules-link>zasadami dotyczącymi treści</rules-link> na Bbsmc, możesz wysłać swój projekt do przeglądu."
   },
   "project.moderation.admonition.rejected.address-all-concerns": {
     "message": "Zaadresuj wszystkie uwagi moderatorów, w tym jakiekolwiek problemy wspomniane w poniższych wiadomościach, zanim ponownie wyślesz projekt do przeglądu."
@@ -3651,10 +3651,10 @@
     "message": "Powtórne wysyłanie Twojego projektu do sprawdzenia bez uprzedniego zaadresowania wszystkich komentarzy moderatorów może skutkować zawieszeniem konta."
   },
   "project.moderation.admonition.under-review.body.1": {
-    "message": "Twój projekt jest w kolejce do sprawdzenia przez zespół Modrinth."
+    "message": "Twój projekt jest w kolejce do sprawdzenia przez zespół Bbsmc."
   },
   "project.moderation.admonition.under-review.body.2": {
-    "message": "Twój projekt zostanie zeskanowany i sprawdzony przez ludzi by upewnić się, że jest zgodny z <rules-link>zasadami dotyczącymi treści</rules-link> i <terms-link>Warunkami użytkowania</terms-link> Modrinth."
+    "message": "Twój projekt zostanie zeskanowany i sprawdzony przez ludzi by upewnić się, że jest zgodny z <rules-link>zasadami dotyczącymi treści</rules-link> i <terms-link>Warunkami użytkowania</terms-link> Bbsmc."
   },
   "project.moderation.admonition.under-review.body.3": {
     "message": "Możesz dalej zmieniać swój projekt, nie wpłynie to na Twoją pozycję w kolejce."
@@ -3666,7 +3666,7 @@
     "message": "Staramy się zakończyć przegląd w tydzień, ale sprawdzanie niektórych projektów może zająć dłużej. Nie oznacza to, że coś jest nie tak z Twoim projektem."
   },
   "project.moderation.admonition.under-review.body.5": {
-    "message": "<emphasis>Dziękujemy za cierpliwość podczas gdy nasi moderatorzy pracują ciężko by zapewnić, że Modrinth jest bezpiecznym miejscem i żeby Twój projekt został opublikowany! 💚</emphasis>"
+    "message": "<emphasis>Dziękujemy za cierpliwość podczas gdy nasi moderatorzy pracują ciężko by zapewnić, że Bbsmc jest bezpiecznym miejscem i żeby Twój projekt został opublikowany! 💚</emphasis>"
   },
   "project.moderation.admonition.under-review.header": {
     "message": "Projekt w trakcie przeglądu"
@@ -3684,13 +3684,13 @@
     "message": "Ten wątek nie jest aktywnie monitorowany, ale może być sprawdzany w celu znalezienia informacji o Twoim projekcie."
   },
   "project.moderation.thread.help-center-note.1": {
-    "message": "Moderatorzy zawartości nie mogą udzielać wsparcia z większością problemów i wiadomości w tym wątku nie powiadamiają reszty zespołu Modrinth."
+    "message": "Moderatorzy zawartości nie mogą udzielać wsparcia z większością problemów i wiadomości w tym wątku nie powiadamiają reszty zespołu Bbsmc."
   },
   "project.moderation.thread.help-center-note.2": {
-    "message": "Jeżeli potrzebujesz pomocy lub masz więcej pytań, odwiedź <help-center-link>centrum pomocy Modrinth</help-center-link> i kliknij w niebieskie kółko, by skontaktować się z obsługą."
+    "message": "Jeżeli potrzebujesz pomocy lub masz więcej pytań, odwiedź <help-center-link>centrum pomocy Bbsmc</help-center-link> i kliknij w niebieskie kółko, by skontaktować się z obsługą."
   },
   "project.moderation.thread.private-description": {
-    "message": "Prywatny wątek konwersacji z moderatorami Modrinth. Mogą skontaktować się z Tobą w razie problemów z Twoim projektem."
+    "message": "Prywatny wątek konwersacji z moderatorami Bbsmc. Mogą skontaktować się z Tobą w razie problemów z Twoim projektem."
   },
   "project.moderation.thread.title": {
     "message": "Wiadomości od moderatorów"
@@ -3714,7 +3714,7 @@
     "message": "Projekt zaktualizowany"
   },
   "project.settings.general.name.description": {
-    "message": "Unikaj przedrostków, przyrostków, wtrąceń lub dodatkowych opisów — używaj tylko rzeczywistej nazwy projektu."
+    "message": "Unikaj przedrostków, przyrostków, wtrąceń lub dodatkowych opisów �?używaj tylko rzeczywistej nazwy projektu."
   },
   "project.settings.general.name.placeholder.1": {
     "message": "np. Nether Overhaul 2"
@@ -3768,7 +3768,7 @@
     "message": "Nieznana zewnętrzna zawartość"
   },
   "project.settings.permissions.bad-proof.description": {
-    "message": "Zespół moderatorów Modrinth odrzucił podane informacje o zezwoleniach dla niektórej zawartości. Podaj poprawne dowody lub usuń podaną niżej zawartość."
+    "message": "Zespół moderatorów Bbsmc odrzucił podane informacje o zezwoleniach dla niektórej zawartości. Podaj poprawne dowody lub usuń podaną niżej zawartość."
   },
   "project.settings.permissions.bad-proof.title": {
     "message": "Niektóre dowody zostały odrzucone"
@@ -3795,13 +3795,13 @@
     "message": "Rozwiń wszytkie"
   },
   "project.settings.permissions.fail.description": {
-    "message": "Możesz nie mieć uprawnień do redystrybucji kilku zewnętrznych treści w twoim projekcie. Żeby publikować na Modrinth, proszę usunąć tę treść albo \nwysłać dowód, który potwierdza, że masz permisje do użycia go."
+    "message": "Możesz nie mieć uprawnień do redystrybucji kilku zewnętrznych treści w twoim projekcie. Żeby publikować na Bbsmc, proszę usunąć tę treść albo \nwysłać dowód, który potwierdza, że masz permisje do użycia go."
   },
   "project.settings.permissions.fail.title": {
     "message": "Niektórych treści nie można uwzględnić"
   },
   "project.settings.permissions.info-banner.description": {
-    "message": "Jeśli zamieszczasz treści, które nie są hostowane na Modrinth, musisz poinformować nas, skąd pochodzą i potwierdzić, że masz pozwolenie na ich dystrybucję. Zobacz <link>nasze ogłoszenie o nowym systemie</link>, aby dowiedzieć się więcej!"
+    "message": "Jeśli zamieszczasz treści, które nie są hostowane na Bbsmc, musisz poinformować nas, skąd pochodzą i potwierdzić, że masz pozwolenie na ich dystrybucję. Zobacz <link>nasze ogłoszenie o nowym systemie</link>, aby dowiedzieć się więcej!"
   },
   "project.settings.permissions.info-banner.title": {
     "message": "Dowiedz się więcej o uprawnieniach dystrybucji"
@@ -3813,7 +3813,7 @@
     "message": "Nie znaleziono żadnego pliku zewnętrznego pasującego do Twojego wyszukiwania."
   },
   "project.settings.permissions.not-allowed.description": {
-    "message": "Niektóra zewnętrzna zawartość na może być dystrybuowana przez Modrinth i musi być usunięta, ponieważ jest niezgodna z naszymi Zasadami dotyczącymi treści."
+    "message": "Niektóra zewnętrzna zawartość na może być dystrybuowana przez Bbsmc i musi być usunięta, ponieważ jest niezgodna z naszymi Zasadami dotyczącymi treści."
   },
   "project.settings.permissions.pending-approval-count": {
     "message": "{count, plural, =0 {Żadna atrybucja nie potrzebuje sprawdzenia} one {# atrybucja potrzebuje sprawdzenia} few{# atrybucje potrzebują sprawdzenia} other {# atrybucji potrzebuje sprawdzenia}}"
@@ -3969,7 +3969,7 @@
     "message": "Nie znaleziono {item}"
   },
   "report.for.violation": {
-    "message": "Naruszenie <rules-link>zasad Modrinth</rules-link> lub <terms-link>Warunków użytkowania</terms-link>"
+    "message": "Naruszenie <rules-link>zasad Bbsmc</rules-link> lub <terms-link>Warunków użytkowania</terms-link>"
   },
   "report.for.violation.description": {
     "message": "Przykłady obejmują treści złośliwe, spam, obraźliwe, wprowadzające w błąd, nieprawdziwe i niezgodne z prawem."
@@ -4014,7 +4014,7 @@
     "message": "Jakiego rodzaju treści zgłaszasz?"
   },
   "report.question.report-reason": {
-    "message": "Które z zasad Modrinth narusza {item}?"
+    "message": "Które z zasad Bbsmc narusza {item}?"
   },
   "report.report-content": {
     "message": "Zgłoś treści do moderacji"
@@ -4218,7 +4218,7 @@
     "message": "Edytowanie zgłoszeń"
   },
   "scopes.sessionAccess.description": {
-    "message": "Dostęp do sesji wydanych przez Modrinth"
+    "message": "Dostęp do sesji wydanych przez Bbsmc"
   },
   "scopes.sessionAccess.label": {
     "message": "Dostęp do sesji"
@@ -4317,7 +4317,7 @@
     "message": "Synchronizuj z serwerem"
   },
   "servers.manage.content.title": {
-    "message": "Zawartość - {serverName} - Modrinth"
+    "message": "Zawartość - {serverName} - Bbsmc"
   },
   "servers.notice.actions": {
     "message": "Akcje"
@@ -4347,13 +4347,13 @@
     "message": "Brak powiadomień"
   },
   "servers.plan.large.description": {
-    "message": "Idealny dla 15–25 graczy, paczek modów lub dużej ilości modów."
+    "message": "Idealny dla 15�?5 graczy, paczek modów lub dużej ilości modów."
   },
   "servers.plan.medium.description": {
-    "message": "Świetny wybór dla 6–15 graczy i wielu modów."
+    "message": "Świetny wybór dla 6�?5 graczy i wielu modów."
   },
   "servers.plan.small.description": {
-    "message": "Idealny dla 1–5 przyjaciół z kilkoma lekkimi modami."
+    "message": "Idealny dla 1�? przyjaciół z kilkoma lekkimi modami."
   },
   "servers.purchase.step.plan.most-popular": {
     "message": "Najbardziej popularny"
@@ -4371,13 +4371,13 @@
     "message": "Tworzenie eksportu..."
   },
   "settings.account.data-export.description": {
-    "message": "Otrzymaj kopię wszystkich danych personalnych, które przesłałeś/aś na Modrinth. Może to potrwać kilka minut."
+    "message": "Otrzymaj kopię wszystkich danych personalnych, które przesłałeś/aś na Bbsmc. Może to potrwać kilka minut."
   },
   "settings.account.data-export.title": {
     "message": "Eksport danych"
   },
   "settings.account.delete.confirm.description": {
-    "message": "Spowoduje to **natychmiastowe usunięcie wszystkich Twoich projektów i obserwujących**. Usunięcie konta nie może być cofnięte.<br><br>Jeśli potrzebujesz pomocy ze swoim kontem, uzyskaj wsparcie na [Modrinth Discord](https://discord.bbsmc.org.cn)."
+    "message": "Spowoduje to **natychmiastowe usunięcie wszystkich Twoich projektów i obserwujących**. Usunięcie konta nie może być cofnięte.<br><br>Jeśli potrzebujesz pomocy ze swoim kontem, uzyskaj wsparcie na [Bbsmc Discord](https://discord.bbsmc.org.cn)."
   },
   "settings.account.delete.confirm.proceed": {
     "message": "Usuń to konto"
@@ -4653,7 +4653,7 @@
     "message": "Czy na pewno chcesz usunąć tę aplikację?"
   },
   "settings.applications.description.intro": {
-    "message": "Aplikacje pozwalają uwierzytelniać użytkowników Modrinth w Twoich produktach. Więcej informacji można znaleźć w <docs-link>dokumentacji API Modrinth</docs-link>."
+    "message": "Aplikacje pozwalają uwierzytelniać użytkowników Bbsmc w Twoich produktach. Więcej informacji można znaleźć w <docs-link>dokumentacji API Bbsmc</docs-link>."
   },
   "settings.applications.field.description": {
     "message": "Opis"
@@ -4704,7 +4704,7 @@
     "message": "O aplikacji"
   },
   "settings.authorizations.description": {
-    "message": "Kiedy autoryzujesz aplikacje ze swoim kontem Modrinth, dajesz jej dostęp do swojego konta. Możesz tutaj zawsze zarządzać oraz przeglądać stan aplikacji z dostępem do Twojego konta."
+    "message": "Kiedy autoryzujesz aplikacje ze swoim kontem Bbsmc, dajesz jej dostęp do swojego konta. Możesz tutaj zawsze zarządzać oraz przeglądać stan aplikacji z dostępem do Twojego konta."
   },
   "settings.authorizations.head-title": {
     "message": "Autoryzacje"
@@ -4719,16 +4719,16 @@
     "message": "Czy na pewno chcesz unieważnić dostęp tej aplikacji?"
   },
   "settings.billing.charges.description": {
-    "message": "Wszystkie pobrane opłaty z twojego konta Modrinth są wyświetlane poniżej:"
+    "message": "Wszystkie pobrane opłaty z twojego konta Bbsmc są wyświetlane poniżej:"
   },
   "settings.billing.charges.product.medal-trial": {
     "message": "Okres próbny Medal"
   },
   "settings.billing.charges.product.midas": {
-    "message": "Modrinth Plus"
+    "message": "Bbsmc Plus"
   },
   "settings.billing.charges.product.pyro": {
-    "message": "Modrinth Hosting"
+    "message": "Bbsmc Hosting"
   },
   "settings.billing.charges.title": {
     "message": "Pobrane opłaty"
@@ -4746,13 +4746,13 @@
     "message": "rok"
   },
   "settings.billing.midas.benefits.ad-free": {
-    "message": "Brak reklam na bbsmc.org.cn i w Modrinth App"
+    "message": "Brak reklam na bbsmc.org.cn i w Bbsmc App"
   },
   "settings.billing.midas.benefits.badge": {
-    "message": "Odznaka Modrinth+ na twoim profilu"
+    "message": "Odznaka Bbsmc+ na twoim profilu"
   },
   "settings.billing.midas.benefits.support": {
-    "message": "Wspieraj Modrinth oraz twórców bezpośrednio"
+    "message": "Wspieraj Bbsmc oraz twórców bezpośrednio"
   },
   "settings.billing.midas.benefits.title": {
     "message": "Korzyści"
@@ -4776,7 +4776,7 @@
     "message": "Trwa przetwarzanie Twojej płatności. Dodatkowe korzyści zostaną aktywowane, gdy transakcja zostanie zakończona."
   },
   "settings.billing.midas.upsell": {
-    "message": "Zasubskrybuj do Modrinth Plus!"
+    "message": "Zasubskrybuj do Bbsmc Plus!"
   },
   "settings.billing.modal.cancel.action": {
     "message": "Anuluj subskrypcję"
@@ -4833,7 +4833,7 @@
     "message": "{shared} współdzielonych CPU (może osiągać do {bursts} CPU)"
   },
   "settings.billing.pyro.linked-server.not-found": {
-    "message": "Nie znaleziono serwera powiązanego z tą subskrypcją. Mogło się to stać z kilku przyczyn. Jeżeli dopiero kupiłeś/aś serwer, jest to normalne. Przydzielenie serwera może trwać około godziny. Jeżeli kupiłeś/aś serwer chwilę temu, mógł on być zawieszony. Jeżeli nie spodziewałeś/aś się tego, skontaktuj się z obsługą Modrinth i podaj następujące informacje:"
+    "message": "Nie znaleziono serwera powiązanego z tą subskrypcją. Mogło się to stać z kilku przyczyn. Jeżeli dopiero kupiłeś/aś serwer, jest to normalne. Przydzielenie serwera może trwać około godziny. Jeżeli kupiłeś/aś serwer chwilę temu, mógł on być zawieszony. Jeżeli nie spodziewałeś/aś się tego, skontaktuj się z obsługą Bbsmc i podaj następujące informacje:"
   },
   "settings.billing.pyro.linked-server.server-id": {
     "message": "ID serwera: {id}"
@@ -4845,7 +4845,7 @@
     "message": "{gb} GB pamięci RAM"
   },
   "settings.billing.pyro.resubscribe.error.text": {
-    "message": "Wystąpił błąd podczas ponawiania subskrypcji do serwera Modrinth."
+    "message": "Wystąpił błąd podczas ponawiania subskrypcji do serwera Bbsmc."
   },
   "settings.billing.pyro.resubscribe.error.title": {
     "message": "Błąd ponawiania subskrypcji"
@@ -4872,10 +4872,10 @@
     "message": "{gb} GB pamięci swap"
   },
   "settings.billing.pyro_subscription.description": {
-    "message": "Zarządzaj subskrypcjami serwerów Modrinth."
+    "message": "Zarządzaj subskrypcjami serwerów Bbsmc."
   },
   "settings.billing.pyro_subscription.title": {
-    "message": "Subskrypcje serwerów Modrinth"
+    "message": "Subskrypcje serwerów Bbsmc"
   },
   "settings.billing.renews": {
     "message": "Odnawia się {date}"
@@ -4890,7 +4890,7 @@
     "message": "Subskrybuj"
   },
   "settings.billing.subscription.description": {
-    "message": "Zarządzaj swoimi subskrypcjami Modrinth."
+    "message": "Zarządzaj swoimi subskrypcjami Bbsmc."
   },
   "settings.billing.subscription.title": {
     "message": "Subskrypcje"
@@ -4917,7 +4917,7 @@
     "message": "Wyłącz tryb dewelopera"
   },
   "settings.display.banner.developer-mode.description": {
-    "message": "<strong>Tryb dewelopera</strong> jest aktywny. To umożliwia wyświetlać wewnętrzne identyfikatory różnych rzeczy w Modrinth, które mogą być pomocne, jeśli jesteś deweloperem korzystającym z API Modrinth'a. Kliknij logo Modrinth na dole strony 5 razy, aby przełączać tryb dewelopera."
+    "message": "<strong>Tryb dewelopera</strong> jest aktywny. To umożliwia wyświetlać wewnętrzne identyfikatory różnych rzeczy w Bbsmc, które mogą być pomocne, jeśli jesteś deweloperem korzystającym z API Bbsmc'a. Kliknij logo Bbsmc na dole strony 5 razy, aby przełączać tryb dewelopera."
   },
   "settings.display.flags.description": {
     "message": "Włącz lub wyłącz określone funkcje na tym urządzeniu."
@@ -4980,16 +4980,16 @@
     "message": "Zaawansowane renderowanie"
   },
   "settings.display.sidebar.external-links-new-tab.description": {
-    "message": "Spraw, aby linki prowadzące poza Modrinth otwierały się w nowej karcie. Niezależnie od tego ustawienia linki w tej samej domenie i w opisach Markdown będą otwierane w tej samej karcie, a linki w reklamach i edytowanych stronach będą otwierane w nowej karcie."
+    "message": "Spraw, aby linki prowadzące poza Bbsmc otwierały się w nowej karcie. Niezależnie od tego ustawienia linki w tej samej domenie i w opisach Markdown będą otwierane w tej samej karcie, a linki w reklamach i edytowanych stronach będą otwierane w nowej karcie."
   },
   "settings.display.sidebar.external-links-new-tab.title": {
     "message": "Otwieraj linki zewnętrzne w nowej karcie"
   },
   "settings.display.sidebar.hide-app-promos.description": {
-    "message": "Ukrywa przyciski \"Pobierz Modrinth App\" z głównych stron nawigacji. Strona aplikacji Modrinth nadal może być znaleziona na stronie lądowania lub w stopce."
+    "message": "Ukrywa przyciski \"Pobierz Bbsmc App\" z głównych stron nawigacji. Strona aplikacji Bbsmc nadal może być znaleziona na stronie lądowania lub w stopce."
   },
   "settings.display.sidebar.hide-app-promos.title": {
-    "message": "Ukryj reklamy Modrinth App"
+    "message": "Ukryj reklamy Bbsmc App"
   },
   "settings.display.sidebar.left-aligned-content-sidebar.title": {
     "message": "Pasek boczny wyrównany do lewej strony na stronach z treścią"
@@ -5004,7 +5004,7 @@
     "message": "Filtry po prawej na stronach wyszukiwania"
   },
   "settings.display.theme.description": {
-    "message": "Wybierz preferowany motyw dla Modrinth na tym urządzeniu."
+    "message": "Wybierz preferowany motyw dla Bbsmc na tym urządzeniu."
   },
   "settings.display.theme.title": {
     "message": "Motyw"
@@ -5016,7 +5016,7 @@
     "message": "Utwórz klucz dostępu osobistego"
   },
   "settings.pats.description": {
-    "message": "Klucze dostępu osobistego zezwalają na dostęp do API Modrinth. Mogą być dowolnie tworzone bądź unieważniane. Więcej informacji zawarte jest w <doc-link>dokumentacji API Modrinth</doc-link>."
+    "message": "Klucze dostępu osobistego zezwalają na dostęp do API Bbsmc. Mogą być dowolnie tworzone bądź unieważniane. Więcej informacji zawarte jest w <doc-link>dokumentacji API Bbsmc</doc-link>."
   },
   "settings.pats.modal.create.action": {
     "message": "Utwórz klucz dostępu osobistego"
@@ -5073,7 +5073,7 @@
     "message": "Aktualna sesja"
   },
   "settings.sessions.description": {
-    "message": "Tu pokazane są wszystkie urządzenia zalogowane na Twoje konto Modrinth. Możesz wylogować się z każdego indywidualnie.\n\nJeżeli widzisz tu wpis, którego nie rozpoznajesz, natychmiast wyloguj to urządzenie i zmień hasło swojego konta Modrinth."
+    "message": "Tu pokazane są wszystkie urządzenia zalogowane na Twoje konto Bbsmc. Możesz wylogować się z każdego indywidualnie.\n\nJeżeli widzisz tu wpis, którego nie rozpoznajesz, natychmiast wyloguj to urządzenie i zmień hasło swojego konta Bbsmc."
   },
   "settings.sessions.last-accessed-ago": {
     "message": "Ostatnio użyte {ago}"
@@ -5097,19 +5097,19 @@
     "message": "Zaakceptuj zaproszenie"
   },
   "shared-instance.invite.inviter.unknown": {
-    "message": "Użytkownik Modrinth"
+    "message": "Użytkownik Bbsmc"
   },
   "shared-instance.invite.joined-count": {
     "message": "{count, plural, one {# osoba już dołączyła} other {# osób już dołączyło}}"
   },
   "shared-instance.invite.loading": {
-    "message": "Ładowanie zaproszenia…"
+    "message": "Ładowanie zaproszenia�?
   },
   "shared-instance.invite.title": {
     "message": "Użytkownik {name} zaprosił Cię do grania w"
   },
   "shared-instance.invite.trust.description": {
-    "message": "To zaproszenie zostało utworzone przez innego użytkownika Modrinth, na przez Modrinth. Akceptuj zaproszenia tylko od osób, którym ufasz."
+    "message": "To zaproszenie zostało utworzone przez innego użytkownika Bbsmc, na przez Bbsmc. Akceptuj zaproszenia tylko od osób, którym ufasz."
   },
   "shared-instance.invite.trust.heading": {
     "message": "Czy znasz tego użytkownika?"
@@ -5121,7 +5121,7 @@
     "message": "To zaproszenie jest niedostępne"
   },
   "ui.latest-news-row.latest-news": {
-    "message": "Najnowsze aktualności z Modrinth"
+    "message": "Najnowsze aktualności z Bbsmc"
   },
   "ui.latest-news-row.view-all": {
     "message": "Zobacz wszystkie aktualności"
@@ -5133,7 +5133,7 @@
     "message": "Zasubskrybowano!"
   },
   "ui.newsletter-button.tooltip": {
-    "message": "Subskrybuj do newslettera Modrinth"
+    "message": "Subskrybuj do newslettera Bbsmc"
   },
   "version.all-versions": {
     "message": "Wszystkie wersje"
@@ -5229,10 +5229,10 @@
     "message": "Koordynaty Maven:"
   },
   "version.section.content.dev-info.maven-description": {
-    "message": "Projekty na Modrinth są automatycznie dostępne przez repozytorium Maven do użytku z narzędziami takimi jak <gradle-link>Gradle</gradle-link>. By dowiedzieć się więcej o API Maven Modrinth, <article-link>kliknij tutaj</article-link>."
+    "message": "Projekty na Bbsmc są automatycznie dostępne przez repozytorium Maven do użytku z narzędziami takimi jak <gradle-link>Gradle</gradle-link>. By dowiedzieć się więcej o API Maven Bbsmc, <article-link>kliknij tutaj</article-link>."
   },
   "version.section.content.dev-info.maven-note": {
-    "message": "Uwaga: Jeśli jest to możliwe, zalecanie jest używanie repozytorium Maven od twórcy projektu, ponieważ może zawierać przejściowe informacje o zależnościach, o których nie wie API Maven Modrinth. Możesz także skończyć z duplikatami niektórych zależności mieszając repozytoria Maven z i spoza Modrinth, ponieważ identyfikatory grup będą się różnić."
+    "message": "Uwaga: Jeśli jest to możliwe, zalecanie jest używanie repozytorium Maven od twórcy projektu, ponieważ może zawierać przejściowe informacje o zależnościach, o których nie wie API Maven Bbsmc. Możesz także skończyć z duplikatami niektórych zależności mieszając repozytoria Maven z i spoza Bbsmc, ponieważ identyfikatory grup będą się różnić."
   },
   "version.section.content.dev-info.version-id": {
     "message": "Identyfikator wersji:"

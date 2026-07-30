@@ -1,6 +1,6 @@
 {
   "db_name": "SQLite",
-  "query": "\n            SELECT\n                id, active, session_id, expires\n            FROM modrinth_users\n            WHERE active = TRUE\n            ",
+  "query": "\n            SELECT\n                id, active, session_id, expires\n            FROM Bbsmc_users\n            WHERE active = TRUE\n            ",
   "describe": {
     "columns": [
       {

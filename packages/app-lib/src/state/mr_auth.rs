@@ -7,14 +7,14 @@ use reqwest::Method;
 use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize, Clone, Debug)]
-pub struct ModrinthCredentials {
+pub struct BbsmcCredentials {
     pub session: String,
     pub expires: DateTime<Utc>,
     pub user_id: String,
     pub active: bool,
 }
 
-impl ModrinthCredentials {
+impl BbsmcCredentials {
     pub async fn get_and_refresh(
         exec: impl sqlx::Executor<'_, Database = sqlx::Sqlite> + Copy,
         semaphore: &FetchSemaphore,
@@ -30,7 +30,7 @@ impl ModrinthCredentials {
 
                 let resp = fetch_advanced(
                     Method::POST,
-                    concat!(env!("MODRINTH_API_URL"), "session/refresh"),
+                    concat!(env!("Bbsmc_API_URL"), "session/refresh"),
                     None,
                     None,
                     Some(("Authorization", &*creds.session)),
@@ -70,7 +70,7 @@ impl ModrinthCredentials {
             "
             SELECT
                 id, active, session_id, expires
-            FROM modrinth_users
+            FROM Bbsmc_users
             WHERE active = TRUE
             "
         )
@@ -95,7 +95,7 @@ impl ModrinthCredentials {
             "
             SELECT
                 id, active, session_id, expires
-            FROM modrinth_users
+            FROM Bbsmc_users
             "
         )
         .fetch(exec)
@@ -129,7 +129,7 @@ impl ModrinthCredentials {
         if self.active {
             sqlx::query!(
                 "
-                UPDATE modrinth_users
+                UPDATE Bbsmc_users
                 SET active = FALSE
                 "
             )
@@ -139,7 +139,7 @@ impl ModrinthCredentials {
 
         sqlx::query!(
             "
-            INSERT INTO modrinth_users (id, active, session_id, expires)
+            INSERT INTO Bbsmc_users (id, active, session_id, expires)
             VALUES ($1, $2, $3, $4)
             ON CONFLICT (id) DO UPDATE SET
                 active = $2,
@@ -163,7 +163,7 @@ impl ModrinthCredentials {
     ) -> crate::Result<()> {
         sqlx::query!(
             "
-            DELETE FROM modrinth_users WHERE id = $1
+            DELETE FROM Bbsmc_users WHERE id = $1
             ",
             user_id,
         )
@@ -192,18 +192,18 @@ impl ModrinthCredentials {
 }
 
 pub const fn get_login_url() -> &'static str {
-    concat!(env!("MODRINTH_URL"), "auth/sign-in")
+    concat!(env!("Bbsmc_URL"), "auth/sign-in")
 }
 
 pub const fn get_signup_url() -> &'static str {
-    concat!(env!("MODRINTH_URL"), "auth/sign-up")
+    concat!(env!("Bbsmc_URL"), "auth/sign-up")
 }
 
 pub async fn finish_login_flow(
     code: &str,
     semaphore: &FetchSemaphore,
     exec: impl sqlx::Executor<'_, Database = sqlx::Sqlite>,
-) -> crate::Result<ModrinthCredentials> {
+) -> crate::Result<BbsmcCredentials> {
     // The authorization code actually is the access token, since labrinth doesn't
     // issue separate authorization codes. Therefore, this is equivalent to an
     // implicit OAuth grant flow, and no additional exchanging or finalization is
@@ -212,7 +212,7 @@ pub async fn finish_login_flow(
 
     let info = fetch_info(code, semaphore, exec).await?;
 
-    Ok(ModrinthCredentials {
+    Ok(BbsmcCredentials {
         session: code.to_string(),
         expires: Utc::now() + Duration::weeks(2),
         user_id: info.id,
@@ -227,7 +227,7 @@ async fn fetch_info(
 ) -> crate::Result<crate::state::cache::User> {
     let result = fetch_advanced(
         Method::GET,
-        concat!(env!("MODRINTH_API_URL"), "user"),
+        concat!(env!("Bbsmc_API_URL"), "user"),
         None,
         None,
         Some(("Authorization", token)),

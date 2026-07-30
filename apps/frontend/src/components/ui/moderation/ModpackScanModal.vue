@@ -1,26 +1,26 @@
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
 import {
 	FolderSearchIcon,
 	RotateCounterClockwiseIcon,
 	SpinnerIcon,
 	StarIcon,
 	TrashIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	ButtonStyled,
 	Combobox,
 	type ComboboxOption,
 	ConfirmModal,
 	defineMessages,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	NewModal,
 	Table,
 	type TableColumn,
 	useVIntl,
-} from '@modrinth/ui'
-import { renderString } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import { renderString } from '@Bbsmc/utils'
 import { useQueryClient } from '@tanstack/vue-query'
 import { computed, ref, useTemplateRef } from 'vue'
 
@@ -133,7 +133,7 @@ const props = defineProps<{
 	project_id: string
 }>()
 
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const queryClient = useQueryClient()
 const { addNotification } = injectNotificationManager()
 const modalRef = useTemplateRef<InstanceType<typeof NewModal>>('modalRef')

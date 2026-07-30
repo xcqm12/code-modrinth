@@ -24,13 +24,13 @@
     "defaultMessage": "Tambah perincian lisensi"
   },
   "nags.add-links-server.description": {
-    "defaultMessage": "Tambah tautan relevan yang disasarkan di luar Modrinth, seperti situs web, toko, atau undangan Discord."
+    "defaultMessage": "Tambah tautan relevan yang disasarkan di luar Bbsmc, seperti situs web, toko, atau undangan Discord."
   },
   "nags.add-links-server.title": {
     "defaultMessage": "Tambah tautan eksternal"
   },
   "nags.add-links.description": {
-    "defaultMessage": "Tambahkan tautan relevan yang disasarkan di luar Modrinth, seperti kode sumber, pelacak masalah, atau undangan Discord."
+    "defaultMessage": "Tambahkan tautan relevan yang disasarkan di luar Bbsmc, seperti kode sumber, pelacak masalah, atau undangan Discord."
   },
   "nags.add-links.title": {
     "defaultMessage": "Tambah tautan eksternal"

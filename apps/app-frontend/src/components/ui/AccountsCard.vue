@@ -91,7 +91,7 @@ import {
 	RadioButtonIcon,
 	SpinnerIcon,
 	TrashIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	Accordion,
 	Avatar,
@@ -99,7 +99,7 @@ import {
 	defineMessages,
 	injectNotificationManager,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import type { Ref } from 'vue'
 import { computed, onUnmounted, ref } from 'vue'
 

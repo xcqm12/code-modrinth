@@ -7,17 +7,17 @@ export default defineConfig({
 	site: 'https://docs.bbsmc.org.cn',
 	integrations: [
 		starlight({
-			title: 'Modrinth Documentation',
+			title: 'Bbsmc Documentation',
 			favicon: '/favicon.ico',
 			editLink: {
-				baseUrl: 'https://github.com/modrinth/code/edit/main/apps/docs/',
+				baseUrl: 'https://github.com/Bbsmc/code/edit/main/apps/docs/',
 			},
 			social: {
-				github: 'https://github.com/modrinth/code',
+				github: 'https://github.com/Bbsmc/code',
 				discord: 'https://discord.bbsmc.org.cn',
 				'x.com': 'https://x.com/xingchenqimiao',
-				mastodon: 'https://floss.social/@modrinth',
-				threads: 'https://threads.net/@modrinth',
+				mastodon: 'https://floss.social/@Bbsmc',
+				threads: 'https://threads.net/@Bbsmc',
 			},
 			logo: {
 				light: './src/assets/light-logo.svg',
@@ -25,23 +25,23 @@ export default defineConfig({
 				replacesTitle: true,
 			},
 			customCss: [
-				'@modrinth/assets/styles/variables.scss',
-				'@modrinth/assets/styles/inter.scss',
-				'./src/styles/modrinth.css',
+				'@Bbsmc/assets/styles/variables.scss',
+				'@Bbsmc/assets/styles/inter.scss',
+				'./src/styles/Bbsmc.css',
 			],
 			plugins: [
 				// Generate the OpenAPI documentation pages.
 				starlightOpenAPI([
 					{
 						base: 'api',
-						label: 'Modrinth API',
+						label: 'Bbsmc API',
 						schema: './public/openapi.yaml',
 					},
 				]),
 			],
 			sidebar: [
 				{
-					label: 'Contributing to Modrinth',
+					label: 'Contributing to Bbsmc',
 					autogenerate: { directory: 'contributing' },
 				},
 				{

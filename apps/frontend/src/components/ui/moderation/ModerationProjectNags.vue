@@ -82,7 +82,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
 import {
 	AsteriskIcon,
 	ChevronRightIcon,
@@ -91,10 +91,10 @@ import {
 	ScaleIcon,
 	SendIcon,
 	TriangleAlertIcon,
-} from '@modrinth/assets'
-import type { Nag, NagContext, NagStatus } from '@modrinth/moderation'
-import { nags } from '@modrinth/moderation'
-import { ButtonStyled, defineMessages, type MessageDescriptor, useVIntl } from '@modrinth/ui'
+} from '@Bbsmc/assets'
+import type { Nag, NagContext, NagStatus } from '@Bbsmc/moderation'
+import { nags } from '@Bbsmc/moderation'
+import { ButtonStyled, defineMessages, type MessageDescriptor, useVIntl } from '@Bbsmc/ui'
 import type { Component } from 'vue'
 import { computed } from 'vue'
 
@@ -137,7 +137,7 @@ const messages = defineMessages({
 	resubmitForReviewDesc: {
 		id: 'project-moderation-nags.resubmit-for-review-desc',
 		defaultMessage:
-			"Your project has been {status, select, rejected {rejected} withheld {withheld} other {{status}}} by Modrinth's staff. In most cases, you can resubmit for review after addressing the staff's message.",
+			"Your project has been {status, select, rejected {rejected} withheld {withheld} other {{status}}} by Bbsmc's staff. In most cases, you can resubmit for review after addressing the staff's message.",
 	},
 	visitModerationPage: {
 		id: 'project-moderation-nags.visit-moderation-page',

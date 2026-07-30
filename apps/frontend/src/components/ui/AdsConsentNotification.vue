@@ -4,7 +4,7 @@ import {
 	injectNotificationManager,
 	useVIntl,
 	type WebNotification,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { onBeforeUnmount, onMounted } from 'vue'
 
 type ConsentAction = 'accept' | 'reject' | 'manage'
@@ -31,19 +31,19 @@ interface GppData {
 type GppCallback = (data: GppData, success: boolean) => void
 type GppApi = (command: string, callback: GppCallback, parameter?: unknown) => void
 
-const CMP_HIDDEN_CLASS = 'modrinth-cmp-summary-hidden'
+const CMP_HIDDEN_CLASS = 'Bbsmc-cmp-summary-hidden'
 const notificationManager = injectNotificationManager()
 const { formatMessage } = useVIntl()
 
 const messages = defineMessages({
 	title: {
 		id: 'ads-consent.title',
-		defaultMessage: 'Your privacy and how ads support Modrinth',
+		defaultMessage: 'Your privacy and how ads support Bbsmc',
 	},
 	body: {
 		id: 'ads-consent.body',
 		defaultMessage:
-			'Ads make Modrinth possible and fund creator payouts. Our partners may store or access cookies on the website to personalize ads and measure performance.',
+			'Ads make Bbsmc possible and fund creator payouts. Our partners may store or access cookies on the website to personalize ads and measure performance.',
 	},
 	manage: {
 		id: 'ads-consent.manage',
@@ -556,7 +556,7 @@ onMounted(() => {
 	syncConsentUi()
 	installTcfConsentListener()
 	installGppConsentListener()
-	window.addEventListener('modrinth-cmp-ready', installTcfConsentListener)
+	window.addEventListener('Bbsmc-cmp-ready', installTcfConsentListener)
 	document.addEventListener('click', handleDocumentClick, true)
 	document.addEventListener('keydown', handleDocumentKeydown, true)
 })
@@ -565,7 +565,7 @@ onBeforeUnmount(() => {
 	consentContainerObserver?.disconnect()
 	clearTimeout(uspCommitTimeout)
 	clearTimeout(gppInstallTimeout)
-	window.removeEventListener('modrinth-cmp-ready', installTcfConsentListener)
+	window.removeEventListener('Bbsmc-cmp-ready', installTcfConsentListener)
 	document.removeEventListener('click', handleDocumentClick, true)
 	document.removeEventListener('keydown', handleDocumentKeydown, true)
 	setConsentUiHidden(false)
@@ -592,11 +592,11 @@ onBeforeUnmount(() => {
 
 <template><div></div></template>
 <style>
-html.modrinth-cmp-summary-hidden .qc-cmp2-container,
-html.modrinth-cmp-summary-hidden #qc-cmp2-container,
-html.modrinth-cmp-summary-hidden #qc-cmp2-main,
-html.modrinth-cmp-summary-hidden #qc-cmp2-ui,
-html.modrinth-cmp-summary-hidden #qc-cmp2-usp {
+html.Bbsmc-cmp-summary-hidden .qc-cmp2-container,
+html.Bbsmc-cmp-summary-hidden #qc-cmp2-container,
+html.Bbsmc-cmp-summary-hidden #qc-cmp2-main,
+html.Bbsmc-cmp-summary-hidden #qc-cmp2-ui,
+html.Bbsmc-cmp-summary-hidden #qc-cmp2-usp {
 	display: none !important;
 	z-index: -1 !important;
 	pointer-events: none !important;

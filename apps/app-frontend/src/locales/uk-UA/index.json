@@ -74,8 +74,8 @@
   "app.action-bar.install.summary.minecraft-setup-failed": {
     "message": "Не вдалося встановити Minecraft"
   },
-  "app.action-bar.install.summary.modrinth-unreachable": {
-    "message": "Не вдалося зʼєднатися з Modrinth"
+  "app.action-bar.install.summary.Bbsmc-unreachable": {
+    "message": "Не вдалося зʼєднатися з Bbsmc"
   },
   "app.action-bar.install.summary.no-write-permission": {
     "message": "Немає прав для запису"
@@ -129,7 +129,7 @@
     "message": "Прийняти всі"
   },
   "app.ads-consent.body": {
-    "message": "Реклама підтримує існування Modrinth та фінансує виплати творцям. Наші партнери можуть зберігати та отримувати доступ до cookie в застосунку, аби персоналізувати рекламу та збирати метрики."
+    "message": "Реклама підтримує існування Bbsmc та фінансує виплати творцям. Наші партнери можуть зберігати та отримувати доступ до cookie в застосунку, аби персоналізувати рекламу та збирати метрики."
   },
   "app.ads-consent.manage": {
     "message": "Налаштувати"
@@ -138,7 +138,7 @@
     "message": "Відхилити всі"
   },
   "app.ads-consent.title": {
-    "message": "Ваша приватність та як реклама підтримує Modrinth"
+    "message": "Ваша приватність та як реклама підтримує Bbsmc"
   },
   "app.appearance-settings.advanced-rendering.description": {
     "message": "Умикає розширене промальовування, як-от ефекти розмиття. Вони можуть спричиняти проблеми з продуктивністю без апаратного прискорення."
@@ -147,7 +147,7 @@
     "message": "Розширене промальовування"
   },
   "app.appearance-settings.color-theme.description": {
-    "message": "Оберіть бажану колірну тему для Modrinth App."
+    "message": "Оберіть бажану колірну тему для Bbsmc App."
   },
   "app.appearance-settings.color-theme.title": {
     "message": "Колірна тема"
@@ -207,16 +207,16 @@
     "message": "Перемикання бокової панелі"
   },
   "app.appearance-settings.unknown-pack-warning.description": {
-    "message": "Якщо ви спробуєте встановити файл пакета Modrinth (.mrpack), який не розміщено на Modrinth, ми переконаємося, що ви розумієте ризики, перш ніж установлювати його."
+    "message": "Якщо ви спробуєте встановити файл пакета Bbsmc (.mrpack), який не розміщено на Bbsmc, ми переконаємося, що ви розумієте ризики, перш ніж установлювати його."
   },
   "app.appearance-settings.unknown-pack-warning.title": {
     "message": "Попереджати мене перед установленням невідомих збірок"
   },
   "app.auth-servers.unreachable.body": {
-    "message": "Сервери автентифікації Minecraft можуть зараз не працювати. Перевірте з’єднання з інтернетом та спробуйте пізніше."
+    "message": "Сервери автентифікації Minecraft можуть зараз не працювати. Перевірте з’єднанн�?з інтернетом та спробуйте пізніше."
   },
   "app.auth-servers.unreachable.header": {
-    "message": "Не вдається зв’язатися із серверами автентифікації"
+    "message": "Не вдається зв’язатис�?із серверами автентифікації"
   },
   "app.browse.add-servers-to-instance": {
     "message": "Додавання сервера до профілю"
@@ -258,7 +258,7 @@
     "message": "Жодна доступна версія не сумісна з {compatibilityLabel}. Виберіть версію, щоб усе одно її встановити. Залежності не встановлюватимуться автоматично."
   },
   "app.export-modal.description-placeholder": {
-    "message": "Уведіть опис збірки…"
+    "message": "Уведіть опис збірки�?
   },
   "app.export-modal.export-button": {
     "message": "Експортувати"
@@ -345,7 +345,7 @@
     "message": "Опублікувати оновлення"
   },
   "app.instance.admonitions.shared-instance.publishing-button": {
-    "message": "Публікуємо…"
+    "message": "Публікуємо�?
   },
   "app.instance.confirm-delete.admonition-body": {
     "message": "Усі дані вашого профілю будуть видалені назавжди, включно з вашими світами, налаштуваннями та всім установленим умістом."
@@ -372,13 +372,13 @@
     "message": "Профіль"
   },
   "app.instance.mods.bulk-update.downloading-projects": {
-    "message": "Завантаження проєктів: {current, number}/{total, number}…"
+    "message": "Завантаження проєктів: {current, number}/{total, number}�?
   },
   "app.instance.mods.bulk-update.finishing": {
-    "message": "Завершуємо оновлення…"
+    "message": "Завершуємо оновлення�?
   },
   "app.instance.mods.bulk-update.resolving-versions": {
-    "message": "Знаходимо версії…"
+    "message": "Знаходимо версії�?
   },
   "app.instance.mods.content-type-project": {
     "message": "проєкт"
@@ -468,10 +468,10 @@
     "message": "Увійти як"
   },
   "app.instance.shared-instance-wrong-account.signed-out-header": {
-    "message": "Ви повинні ввійти в Modrinth"
+    "message": "Ви повинні ввійти в Bbsmc"
   },
   "app.instance.shared-instance-wrong-account.warning-header": {
-    "message": "Ви використовуєте не той обліковий запис Modrinth"
+    "message": "Ви використовуєте не той обліковий запис Bbsmc"
   },
   "app.instance.worlds.add-server": {
     "message": "Додати сервер"
@@ -522,7 +522,7 @@
     "message": "Видалення {name}"
   },
   "app.instance.worlds.search-worlds-placeholder": {
-    "message": "Пошук {count} світів…"
+    "message": "Пошук {count} світів�?
   },
   "app.modal.install-to-play.additional-context": {
     "message": "Додатковий контекст"
@@ -549,7 +549,7 @@
     "message": "Установити"
   },
   "app.modal.install-to-play.invite-warning": {
-    "message": "Це запрошення створив інший користувач Modrinth, не сам Modrinth. Приймайте запрошення лише від тих людей, яким довіряєте."
+    "message": "Це запрошення створив інший користувач Bbsmc, не сам Bbsmc. Приймайте запрошення лише від тих людей, яким довіряєте."
   },
   "app.modal.install-to-play.mod-count": {
     "message": "{count, plural, one {# мод} few {# мода} other {# модів}}"
@@ -582,7 +582,7 @@
     "message": "Для отримання допомоги зв'яжіться з нашою <support-link>командою підтримки</support-link>. Для створення звіту про помилки відкрийте <github-link>issue в GitHub</github-link>."
   },
   "app.modal.install-to-play.reviewed-files": {
-    "message": "Файл перевірятиметься, лише якщо його завантажено на Modrinth, незалежно від його формату (включно з .mrpack)."
+    "message": "Файл перевірятиметься, лише якщо його завантажено на Bbsmc, незалежно від його формату (включно з .mrpack)."
   },
   "app.modal.install-to-play.shared-instance": {
     "message": "Профіль"
@@ -591,10 +591,10 @@
     "message": "Уміст спільного профілю"
   },
   "app.modal.install-to-play.shared-instance-unknown-files-description": {
-    "message": "Цей спільний профіль містить файли, які не є опубліковані на Modrinth. Ми наполегливо рекомендуємо встановлювати лише ті файли, яким довіряєте."
+    "message": "Цей спільний профіль містить файли, які не є опубліковані на Bbsmc. Ми наполегливо рекомендуємо встановлювати лише ті файли, яким довіряєте."
   },
   "app.modal.install-to-play.unknown-files-description": {
-    "message": "Ця збірка сервера містить файли, які не є опубліковані на Modrinth. Ми наполегливо рекомендуємо встановлювати лише ті файли, яким довіряєте."
+    "message": "Ця збірка сервера містить файли, які не є опубліковані на Bbsmc. Ми наполегливо рекомендуємо встановлювати лише ті файли, яким довіряєте."
   },
   "app.modal.install-to-play.unknown-files-warning": {
     "message": "Попередження про невідомі файли"
@@ -612,7 +612,7 @@
     "message": "Видалено"
   },
   "app.modal.update-to-play.server-modpack-unknown-files-description": {
-    "message": "Це оновлення збірки сервера містить файли, які не є опубліковані на Modrinth. Ми наполегливо рекомендуємо встановлювати лише ті файли, яким довіряєте."
+    "message": "Це оновлення збірки сервера містить файли, які не є опубліковані на Bbsmc. Ми наполегливо рекомендуємо встановлювати лише ті файли, яким довіряєте."
   },
   "app.modal.update-to-play.shared-instance-added-label": {
     "message": "Додано"
@@ -621,7 +621,7 @@
     "message": "Видалено"
   },
   "app.modal.update-to-play.shared-instance-unknown-files-description": {
-    "message": "Це оновлення спільного профілю містить файли, які не є опубліковані на Modrinth. Ми наполегливо рекомендуємо встановлювати лише ті файли, яким довіряєте."
+    "message": "Це оновлення спільного профілю містить файли, які не є опубліковані на Bbsmc. Ми наполегливо рекомендуємо встановлювати лише ті файли, яким довіряєте."
   },
   "app.modal.update-to-play.update-required": {
     "message": "Необхідне оновлення"
@@ -654,7 +654,7 @@
     "message": "Завантаження v{version}"
   },
   "app.settings.privacy.ads-consent.intro": {
-    "message": "Реклама підтримує існування Modrinth та фінансує виплати творцям. Наші партнери можуть зберігати та отримувати доступ до cookie в застосунку, аби персоналізувати рекламу та збирати метрики. Ви можете відмовитися від них або керувати налаштуваннями нижче."
+    "message": "Реклама підтримує існування Bbsmc та фінансує виплати творцям. Наші партнери можуть зберігати та отримувати доступ до cookie в застосунку, аби персоналізувати рекламу та збирати метрики. Ви можете відмовитися від них або керувати налаштуваннями нижче."
   },
   "app.settings.tabs.appearance": {
     "message": "Вигляд"
@@ -744,7 +744,7 @@
     "message": "Зберегти скін"
   },
   "app.skins.modal.saving-tooltip": {
-    "message": "Збереження…"
+    "message": "Збереження�?
   },
   "app.skins.modal.texture-section": {
     "message": "Текстура"
@@ -785,14 +785,14 @@
   "app.skins.section.minecon-earth-2017": {
     "message": "MINECON Earth 2017"
   },
-  "app.skins.section.modrinth": {
-    "message": "Modrinth"
+  "app.skins.section.Bbsmc": {
+    "message": "Bbsmc"
   },
-  "app.skins.section.modrinth-pride": {
-    "message": "Modrinth Pride"
+  "app.skins.section.Bbsmc-pride": {
+    "message": "Bbsmc Pride"
   },
-  "app.skins.section.modrinth-pride.tooltip": {
-    "message": "Ви отримали ці скіни за участь у благодійній акції Modrinth Pride під час місяця прайду."
+  "app.skins.section.Bbsmc-pride.tooltip": {
+    "message": "Ви отримали ці скіни за участь у благодійній акції Bbsmc Pride під час місяця прайду."
   },
   "app.skins.section.mounts-of-mayhem": {
     "message": "Mounts of Mayhem"
@@ -816,10 +816,10 @@
     "message": "Увійдіть"
   },
   "app.skins.sign-in.description": {
-    "message": "Будь ласка, увійдіть у свій обліковий запис Minecraft, щоб використовувати особливості керування скінами в Modrinth App."
+    "message": "Будь ласка, увійдіть у свій обліковий запис Minecraft, щоб використовувати особливості керування скінами в Bbsmc App."
   },
   "app.skins.sign-in.rinthbot-alt": {
-    "message": "Схвильований бот Modrinth"
+    "message": "Схвильований бот Bbsmc"
   },
   "app.skins.sign-in.title": {
     "message": "Увійдіть"
@@ -834,13 +834,13 @@
     "message": "Увімкнути"
   },
   "app.update-popup.body.download-complete": {
-    "message": "Modrinth App v{version} завантажено. Перезапустіть, щоб оновити зараз, або це відбудеться автоматично після закриття застосунку."
+    "message": "Bbsmc App v{version} завантажено. Перезапустіть, щоб оновити зараз, або це відбудеться автоматично після закриття застосунку."
   },
   "app.update-popup.body.linux": {
-    "message": "Modrinth App v{version} вже доступно. Скористайтеся менеджером пакетів, щоб отримати найновіші функції та виправлення!"
+    "message": "Bbsmc App v{version} вже доступно. Скористайтеся менеджером пакетів, щоб отримати найновіші функції та виправлення!"
   },
   "app.update-popup.body.metered": {
-    "message": "Modrinth App v{version} вже доступно! Оскільки ви використовуєте лімітне підключення, ми не завантажили його автоматично."
+    "message": "Bbsmc App v{version} вже доступно! Оскільки ви використовуєте лімітне підключення, ми не завантажили його автоматично."
   },
   "app.update-popup.changelog": {
     "message": "Журнал змін"
@@ -864,7 +864,7 @@
     "message": "Версію {version} успішно встановлено!"
   },
   "app.world.server-modal.placeholder-address": {
-    "message": "example.modrinth.gg"
+    "message": "example.Bbsmc.gg"
   },
   "app.world.server-modal.select-an-option": {
     "message": "Виберіть опцію"
@@ -909,10 +909,10 @@
     "message": "Може відрізнятися від його або її імені користувача Minecraft!"
   },
   "friends.add-friend.username.placeholder": {
-    "message": "Уведіть ім’я користувача…"
+    "message": "Уведіть ім’�?користувача�?
   },
   "friends.add-friend.username.title": {
-    "message": "Яке ім’я користувача Modrinth у вашого друга?"
+    "message": "Яке ім’�?користувача Bbsmc у вашого друга?"
   },
   "friends.add-friends-to-share": {
     "message": "<link>Додайте друзів</link>, щоб бачити, у що вони грають!"
@@ -948,13 +948,13 @@
     "message": "Немає друзів, які збігаються з «{query}»"
   },
   "friends.search-friends-placeholder": {
-    "message": "Пошук друзів…"
+    "message": "Пошук друзів�?
   },
   "friends.section.heading": {
-    "message": "{title} — {count}"
+    "message": "{title} �?{count}"
   },
   "friends.sign-in-to-add-friends": {
-    "message": "<link>Увійдіть в обліковий запис Modrinth</link>, щоб додати друзів і бачити, у що вони грають!"
+    "message": "<link>Увійдіть в обліковий запис Bbsmc</link>, щоб додати друзів і бачити, у що вони грають!"
   },
   "instance.action.create-shortcut": {
     "message": "Створити ярлик"
@@ -978,10 +978,10 @@
     "message": "Налаштування профілю"
   },
   "instance.action.starting": {
-    "message": "Запускаємо…"
+    "message": "Запускаємо�?
   },
   "instance.action.stopping": {
-    "message": "Зупиняємо…"
+    "message": "Зупиняємо�?
   },
   "instance.add-server.add-and-play": {
     "message": "Додати та грати"
@@ -1053,7 +1053,7 @@
     "message": "Назавжди видаляє профіль з вашого пристрою, включно з вашими світами, налаштуваннями та всім установленим умістом. Будьте обережні, після видалення, відновити профіль буде неможливо."
   },
   "instance.settings.tabs.general.deleting.button": {
-    "message": "Видалення…"
+    "message": "Видалення�?
   },
   "instance.settings.tabs.general.duplicate-button": {
     "message": "Клонувати"
@@ -1134,7 +1134,7 @@
     "message": "Запускається після закриття гри."
   },
   "instance.settings.tabs.hooks.post-exit.enter": {
-    "message": "Уведіть команду, що виконуватиметься після виходу…"
+    "message": "Уведіть команду, що виконуватиметься після виходу�?
   },
   "instance.settings.tabs.hooks.pre-launch": {
     "message": "Перед запуском"
@@ -1143,7 +1143,7 @@
     "message": "Запускається перед відкриттям профілю."
   },
   "instance.settings.tabs.hooks.pre-launch.enter": {
-    "message": "Уведіть команду, що виконуватиметься перед запуском…"
+    "message": "Уведіть команду, що виконуватиметься перед запуском�?
   },
   "instance.settings.tabs.hooks.title": {
     "message": "Гуки запуску гри"
@@ -1155,7 +1155,7 @@
     "message": "Обгортальна команда для запуску Minecraft."
   },
   "instance.settings.tabs.hooks.wrapper.enter": {
-    "message": "Уведіть обгортальну команду…"
+    "message": "Уведіть обгортальну команду�?
   },
   "instance.settings.tabs.installation": {
     "message": "Інсталяція"
@@ -1164,7 +1164,7 @@
     "message": "Версія {loader}"
   },
   "instance.settings.tabs.java": {
-    "message": "Java та пам’ять"
+    "message": "Java та пам’ят�?
   },
   "instance.settings.tabs.java.custom-environment-variables": {
     "message": "Власні змінні середовища"
@@ -1179,10 +1179,10 @@
     "message": "Власний розподіл пам'яті"
   },
   "instance.settings.tabs.java.enter-environment-variables": {
-    "message": "Уведіть змінні середовища…"
+    "message": "Уведіть змінні середовища�?
   },
   "instance.settings.tabs.java.enter-java-arguments": {
-    "message": "Уведіть аргументи Java…"
+    "message": "Уведіть аргументи Java�?
   },
   "instance.settings.tabs.java.environment-variables": {
     "message": "Змінні середовища"
@@ -1197,7 +1197,7 @@
     "message": "Інсталяції Java"
   },
   "instance.settings.tabs.java.java-memory": {
-    "message": "Виділена пам’ять"
+    "message": "Виділена пам’ят�?
   },
   "instance.settings.tabs.java.java-path-placeholder": {
     "message": "/шлях/до/java"
@@ -1221,7 +1221,7 @@
     "message": "Висота ігрового вікна під час запуску."
   },
   "instance.settings.tabs.window.height.enter": {
-    "message": "Уведіть висоту…"
+    "message": "Уведіть висоту�?
   },
   "instance.settings.tabs.window.width": {
     "message": "Ширина"
@@ -1230,7 +1230,7 @@
     "message": "Ширина ігрового вікна під час запуску."
   },
   "instance.settings.tabs.window.width.enter": {
-    "message": "Уведіть ширину…"
+    "message": "Уведіть ширину�?
   },
   "instance.shared-instance.error.title": {
     "message": "Щось пішло не так"
@@ -1278,7 +1278,7 @@
     "message": "Сервер Minecraft"
   },
   "instance.worlds.cant_connect": {
-    "message": "Неможливо під’єднатися до сервера"
+    "message": "Неможливо під’єднатис�?до сервера"
   },
   "instance.worlds.copy_address": {
     "message": "Скопіювати адресу"
@@ -1302,7 +1302,7 @@
     "message": "Керується серверним проєктом"
   },
   "instance.worlds.no_contact": {
-    "message": "Не вдалося зв’язатися зі сервером"
+    "message": "Не вдалося зв’язатис�?зі сервером"
   },
   "instance.worlds.no_server_quick_play": {
     "message": "Запускатися у сервери напряму можливо лише починаючи з версії Minecraft Alpha 1.0.5"
@@ -1358,38 +1358,38 @@
   "minecraft-required.sign-in": {
     "message": "Увійти в Microsoft"
   },
-  "modal.modrinth-account-required.browser-description": {
+  "modal.Bbsmc-account-required.browser-description": {
     "message": "Відкрилася нова вкладка, де ви зможете ввійти. Увійдіть, тоді поверніться до застосунку."
   },
-  "modal.modrinth-account-required.cancel-button": {
+  "modal.Bbsmc-account-required.cancel-button": {
     "message": "Скасувати"
   },
-  "modal.modrinth-account-required.create-account-button": {
+  "modal.Bbsmc-account-required.create-account-button": {
     "message": "Створити обліковий запис"
   },
-  "modal.modrinth-account-required.description": {
-    "message": "Ви повинні ввійти у свій обліковий запис Modrinth, перш ніж використовувати цей функціонал."
+  "modal.Bbsmc-account-required.description": {
+    "message": "Ви повинні ввійти у свій обліковий запис Bbsmc, перш ніж використовувати цей функціонал."
   },
-  "modal.modrinth-account-required.header": {
+  "modal.Bbsmc-account-required.header": {
     "message": "Необхідний обліковий запис"
   },
-  "modal.modrinth-account-required.open-browser-again-button": {
+  "modal.Bbsmc-account-required.open-browser-again-button": {
     "message": "Знову відкрити браузер"
   },
-  "modal.modrinth-account-required.sign-in-button": {
-    "message": "Увійти в Modrinth"
+  "modal.Bbsmc-account-required.sign-in-button": {
+    "message": "Увійти в Bbsmc"
   },
-  "modal.modrinth-account-required.sign-in-heading": {
-    "message": "Вхід в обліковий запис Modrinth"
+  "modal.Bbsmc-account-required.sign-in-heading": {
+    "message": "Вхід в обліковий запис Bbsmc"
   },
-  "modal.modrinth-account-required.signing-in-header": {
+  "modal.Bbsmc-account-required.signing-in-header": {
     "message": "Вхід"
   },
-  "modal.modrinth-account-required.support-prompt": {
+  "modal.Bbsmc-account-required.support-prompt": {
     "message": "Не можете ввійти? <support>Отримати допомогу</support>"
   },
-  "modal.modrinth-account-required.waiting-for-browser": {
-    "message": "Очікуємо на підтвердження від переглядача…"
+  "modal.Bbsmc-account-required.waiting-for-browser": {
+    "message": "Очікуємо на підтвердження від переглядача�?
   },
   "search.filter.locked.instance": {
     "message": "Надано профілем"

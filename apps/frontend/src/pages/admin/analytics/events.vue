@@ -168,7 +168,7 @@
 						Open link
 						<ExternalIcon class="size-4" aria-hidden="true" />
 					</a>
-					<span v-else class="text-xs font-medium text-primary">â€”</span>
+					<span v-else class="text-xs font-medium text-primary">â€?/span>
 				</template>
 
 				<template #cell-date="{ row }">
@@ -229,7 +229,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
 import {
 	EditIcon,
 	ExternalIcon,
@@ -238,12 +238,12 @@ import {
 	SearchIcon,
 	SpinnerIcon,
 	TrashIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	ButtonStyled,
 	ConfirmModal,
 	DatePicker,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	MultiSelect,
 	type MultiSelectOption,
@@ -252,8 +252,8 @@ import {
 	StyledInput,
 	Table,
 	type TableColumn,
-} from '@modrinth/ui'
-import { isAdmin } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import { isAdmin } from '@Bbsmc/utils'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { computed, nextTick, onBeforeUnmount, ref, watch } from 'vue'
 
@@ -295,7 +295,7 @@ type EventForm = {
 type DatePickerValue = string | Date | null | undefined
 
 const { addNotification } = injectNotificationManager()
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const queryClient = useQueryClient()
 const analyticsEventsQueryKey = ['analytics-events'] as const
 const EVENT_TIME_ZONE = 'America/Los_Angeles'

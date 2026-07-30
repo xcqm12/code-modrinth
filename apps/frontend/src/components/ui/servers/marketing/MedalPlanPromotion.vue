@@ -23,7 +23,7 @@
 		</div>
 		<ButtonStyled color="medal-promo" type="outlined" size="large">
 			<nuxt-link
-				to="https://medal.tv/modrinth"
+				to="https://medal.tv/Bbsmc"
 				class="z-10 my-auto mt-2 flex w-full items-center justify-center gap-1 md:mt-0 md:w-auto"
 				>{{ formatMessage(messages.learnMoreButton) }} <ExternalIcon
 			/></nuxt-link>
@@ -32,14 +32,14 @@
 </template>
 
 <script lang="ts" setup>
-import { ExternalIcon } from '@modrinth/assets'
+import { ExternalIcon } from '@Bbsmc/assets'
 import {
 	ButtonStyled,
 	defineMessages,
 	IntlFormatted,
 	MedalBackgroundImage,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 
 import MedalIcon from '~/assets/images/illustrations/medal_icon.svg?component'
 

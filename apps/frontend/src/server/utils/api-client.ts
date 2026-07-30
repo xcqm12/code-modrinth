@@ -3,8 +3,8 @@ import {
 	AuthFeature,
 	type FeatureConfig,
 	type NuxtClientConfig,
-	NuxtModrinthClient,
-} from '@modrinth/api-client'
+	NuxtBbsmcClient,
+} from '@Bbsmc/api-client'
 import type { H3Event } from 'h3'
 
 async function getRateLimitKeyFromSecretsStore(): Promise<string | undefined> {
@@ -17,12 +17,12 @@ async function getRateLimitKeyFromSecretsStore(): Promise<string | undefined> {
 	}
 }
 
-export interface ServerModrinthClientOptions {
+export interface ServerBbsmcClientOptions {
 	event?: H3Event
 	authToken?: string
 }
 
-export function useServerModrinthClient(options?: ServerModrinthClientOptions): NuxtModrinthClient {
+export function useServerBbsmcClient(options?: ServerBbsmcClientOptions): NuxtBbsmcClient {
 	const config = useRuntimeConfig(options?.event)
 	const apiBaseUrl = (config.apiBaseUrl || config.public.apiBaseUrl).replace('/v2/', '/')
 	const sharedInstancesBaseUrl =
@@ -46,5 +46,5 @@ export function useServerModrinthClient(options?: ServerModrinthClientOptions): 
 		features,
 	}
 
-	return new NuxtModrinthClient(clientConfig)
+	return new NuxtBbsmcClient(clientConfig)
 }

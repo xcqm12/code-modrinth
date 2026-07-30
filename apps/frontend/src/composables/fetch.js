@@ -1,5 +1,5 @@
 /**
- * @deprecated Use `@modrinth/api-client` via `injectModrinthClient()` instead.
+ * @deprecated Use `@Bbsmc/api-client` via `injectBbsmcClient()` instead.
  * This composable is kept for legacy code that hasn't been migrated yet.
  */
 

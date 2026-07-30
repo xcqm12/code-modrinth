@@ -1,4 +1,4 @@
-import type { AbstractModrinthClient, Labrinth } from '@modrinth/api-client'
+import type { AbstractBbsmcClient, Labrinth } from '@Bbsmc/api-client'
 
 type Notification = Labrinth.Notifications.v2.Notification
 
@@ -17,7 +17,7 @@ async function safeBulkFetch<T>(fn: () => Promise<T[]>): Promise<T[]> {
 }
 
 export async function fetchExtraNotificationData(
-	client: AbstractModrinthClient,
+	client: AbstractBbsmcClient,
 	notifications: PlatformNotification[],
 ): Promise<PlatformNotification[]> {
 	const bulk = {
@@ -155,7 +155,7 @@ function isSimilar(a: PlatformNotification, b: PlatformNotification | undefined)
 }
 
 export async function markAsRead(
-	client: AbstractModrinthClient,
+	client: AbstractBbsmcClient,
 	ids: string[],
 ): Promise<(notifications: PlatformNotification[]) => PlatformNotification[]> {
 	await client.labrinth.notifications_v2.markMultipleAsRead(ids)

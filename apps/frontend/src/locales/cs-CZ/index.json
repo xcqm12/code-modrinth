@@ -92,11 +92,11 @@
   "analytics.chart.controls.display": {
     "message": "Zobrazit"
   },
-  "analytics.chart.controls.modrinth-events": {
-    "message": "Události Modrinthu"
+  "analytics.chart.controls.Bbsmc-events": {
+    "message": "Události Bbsmcu"
   },
-  "analytics.chart.controls.no-modrinth-events": {
-    "message": "Žádné události Modrinthu v grafu."
+  "analytics.chart.controls.no-Bbsmc-events": {
+    "message": "Žádné události Bbsmcu v grafu."
   },
   "analytics.chart.controls.no-project-events": {
     "message": "Žádné události projektu v grafu."
@@ -165,10 +165,10 @@
     "message": "Aktualizace"
   },
   "analytics.download-source.app": {
-    "message": "Modrinth App"
+    "message": "Bbsmc App"
   },
   "analytics.download-source.website": {
-    "message": "Modrinth Stránka"
+    "message": "Bbsmc Stránka"
   },
   "analytics.downloads.suffix": {
     "message": "stažení"
@@ -375,7 +375,7 @@
     "message": "{start} až {end}"
   },
   "analytics.table.csv.filename": {
-    "message": "Analytika Modrinthu - členění podle {breakdown} - {dateRange}"
+    "message": "Analytika Bbsmcu - členění podle {breakdown} - {dateRange}"
   },
   "analytics.table.csv.header.playtime-seconds": {
     "message": "Odehraný čas (sekundy)"
@@ -441,7 +441,7 @@
     "message": "Linux"
   },
   "app-marketing.download.linux-disclaimer": {
-    "message": "U linuxových verzí Modrinth App jsou <issues-link>známé problémy</issues-link> na určitých systémech a konfiguracích. Pokud je aplikace Modrinth App ve vašem systému nestabilní, doporučujeme vám vyzkoušet jiné aplikace, například <prism-link>Prism Launcher</prism-link>, které vám umožní snadnou instalaci obsahu Modrinth."
+    "message": "U linuxových verzí Bbsmc App jsou <issues-link>známé problémy</issues-link> na určitých systémech a konfiguracích. Pokud je aplikace Bbsmc App ve vašem systému nestabilní, doporučujeme vám vyzkoušet jiné aplikace, například <prism-link>Prism Launcher</prism-link>, které vám umožní snadnou instalaci obsahu Bbsmc."
   },
   "app-marketing.download.mac": {
     "message": "Mac"
@@ -450,10 +450,10 @@
     "message": "Možnosti stažení"
   },
   "app-marketing.download.terms": {
-    "message": "Stažením Modrinth App vyjadřujete souhlas s našimi <terms-link>Podmínkami</terms-link> a <privacy-link>Zásadami ochrany osobních údajů</privacy-link>."
+    "message": "Stažením Bbsmc App vyjadřujete souhlas s našimi <terms-link>Podmínkami</terms-link> a <privacy-link>Zásadami ochrany osobních údajů</privacy-link>."
   },
   "app-marketing.download.title": {
-    "message": "Stáhnout Modrinth App (Beta)"
+    "message": "Stáhnout Bbsmc App (Beta)"
   },
   "app-marketing.download.windows": {
     "message": "Windows"
@@ -465,7 +465,7 @@
     "message": "Sledovat projekty"
   },
   "app-marketing.features.importing.description": {
-    "message": "Importujte všechny své oblíbené profily z launcheru, které jste používali předtím, a začněte s Modrinth App během několika sekund!"
+    "message": "Importujte všechny své oblíbené profily z launcheru, které jste používali předtím, a začněte s Bbsmc App během několika sekund!"
   },
   "app-marketing.features.importing.gdlauncher-alt": {
     "message": "GDLauncher"
@@ -483,7 +483,7 @@
     "message": "od {author}"
   },
   "app-marketing.features.mod-management.description": {
-    "message": "Modrinth usnadňuje správu všech vašich modů na jednom místě. Módy můžete instalovat, odinstalovat a aktualizovat jediným kliknutím."
+    "message": "Bbsmc usnadňuje správu všech vašich modů na jednom místě. Módy můžete instalovat, odinstalovat a aktualizovat jediným kliknutím."
   },
   "app-marketing.features.mod-management.installed-mods": {
     "message": "Nainstalované módy"
@@ -507,7 +507,7 @@
     "message": "Offline režim"
   },
   "app-marketing.features.open-source.description": {
-    "message": "Launcher Modrinthu je plně open source. Zdrojový kód si můžete prohlédnout na našem <github-link>GitHubu</github-link>!"
+    "message": "Launcher Bbsmcu je plně open source. Zdrojový kód si můžete prohlédnout na našem <github-link>GitHubu</github-link>!"
   },
   "app-marketing.features.open-source.title": {
     "message": "Otevřený zdroj"
@@ -519,7 +519,7 @@
     "message": "% CPU"
   },
   "app-marketing.features.performance.description": {
-    "message": "Modrinth App má lepší výkon než mnoho předních správců modů a využívá jen 150 MB RAM!"
+    "message": "Bbsmc App má lepší výkon než mnoho předních správců modů a využívá jen 150 MB RAM!"
   },
   "app-marketing.features.performance.discord": {
     "message": "Discord"
@@ -531,16 +531,16 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "∞ MB"
+    "message": "�?MB"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
-    "message": "∞ × ∞ MB"
+    "message": "�?× �?MB"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MB"
   },
-  "app-marketing.features.performance.modrinth-app": {
-    "message": "Modrinth App"
+  "app-marketing.features.performance.Bbsmc-app": {
+    "message": "Bbsmc App"
   },
   "app-marketing.features.performance.one-billion-percent": {
     "message": "1 miliarda %"
@@ -558,13 +558,13 @@
     "message": "Výkonný"
   },
   "app-marketing.features.play.description": {
-    "message": "Pomocí Modrinth App můžete stahovat a hrát své oblíbené módy a modpacky."
+    "message": "Pomocí Bbsmc App můžete stahovat a hrát své oblíbené módy a modpacky."
   },
   "app-marketing.features.play.title": {
     "message": "Hrajte se svými oblíbenými módy"
   },
   "app-marketing.features.sharing.description": {
-    "message": "Vytvářejte, sdílejte a hrajte modpacky s jakýmikoli z tisíců modů a modpacků hostovaných zde na Modrinthu."
+    "message": "Vytvářejte, sdílejte a hrajte modpacky s jakýmikoli z tisíců modů a modpacků hostovaných zde na Bbsmcu."
   },
   "app-marketing.features.sharing.modpack": {
     "message": "Modpack"
@@ -579,7 +579,7 @@
     "message": "Jako žádný jiný launcher"
   },
   "app-marketing.features.website.description": {
-    "message": "Modrinth App je plně integrovaný s webovými stránkami, takže máte přístup ke všem svým oblíbeným projektům z aplikace!"
+    "message": "Bbsmc App je plně integrovaný s webovými stránkami, takže máte přístup ke všem svým oblíbeným projektům z aplikace!"
   },
   "app-marketing.features.website.title": {
     "message": "Integrace s webovou stránkou"
@@ -588,19 +588,19 @@
     "message": "který jste kdy používali"
   },
   "app-marketing.hero.app-screenshot-alt": {
-    "message": "Snímek obrazovky z Modrinth App se spuštěnou instancí Cobblemon na stránce \"Obsah\"."
+    "message": "Snímek obrazovky z Bbsmc App se spuštěnou instancí Cobblemon na stránce \"Obsah\"."
   },
   "app-marketing.hero.description": {
-    "message": "Modrinth App je jedinečný open source launcher, který vám umožní přehrávat vaše oblíbené mody a udržovat je aktuální, a to vše v jednom malém úhledném balíčku."
+    "message": "Bbsmc App je jedinečný open source launcher, který vám umožní přehrávat vaše oblíbené mody a udržovat je aktuální, a to vše v jednom malém úhledném balíčku."
   },
   "app-marketing.hero.download-button": {
-    "message": "Stáhnout Modrinth App"
+    "message": "Stáhnout Bbsmc App"
   },
-  "app-marketing.hero.download-modrinth-app": {
-    "message": "Stáhnout Modrinth App"
+  "app-marketing.hero.download-Bbsmc-app": {
+    "message": "Stáhnout Bbsmc App"
   },
-  "app-marketing.hero.download-modrinth-app-for-os": {
-    "message": "Stáhnout Modrinth App pro {os}"
+  "app-marketing.hero.download-Bbsmc-app-for-os": {
+    "message": "Stáhnout Bbsmc App pro {os}"
   },
   "app-marketing.hero.minecraft-screenshot-alt": {
     "message": "Snímek obrazovky hlavní nabídky instance Cobblemon."
@@ -666,7 +666,7 @@
     "message": "Datum narození je povinné"
   },
   "auth.create-account.date-of-birth.under13-helper": {
-    "message": "Nesplňujete věkové omezení pro vytvoření účtu na Modrinthu."
+    "message": "Nesplňujete věkové omezení pro vytvoření účtu na Bbsmcu."
   },
   "auth.create-account.info-panel.source-code-link": {
     "message": "Relevantní zdrojový kód"
@@ -681,7 +681,7 @@
     "message": "Bezpečnostní ověření"
   },
   "auth.create-account.subscribe.label": {
-    "message": "Chci e-mailem dostávat novinky o zajímavých věcech, na kterých Modrinth pracuje"
+    "message": "Chci e-mailem dostávat novinky o zajímavých věcech, na kterých Bbsmc pracuje"
   },
   "auth.create-account.title": {
     "message": "Vytvořit Účet"
@@ -753,7 +753,7 @@
     "message": "Nemáte účet?"
   },
   "auth.sign-in.sign-in-with": {
-    "message": "Přihlašte se do Modrinthu"
+    "message": "Přihlašte se do Bbsmcu"
   },
   "auth.sign-in.title": {
     "message": "Přihlásit se"
@@ -765,7 +765,7 @@
     "message": "Pokračovat s E-mailem"
   },
   "auth.sign-up.legal-dislaimer": {
-    "message": "Vytvořením účtu souhlasíte s <terms-link>Podmínkami</terms-link> a <privacy-policy-link>Zásadami ochrany osobních údajů</privacy-policy-link> Modrinthu."
+    "message": "Vytvořením účtu souhlasíte s <terms-link>Podmínkami</terms-link> a <privacy-policy-link>Zásadami ochrany osobních údajů</privacy-policy-link> Bbsmcu."
   },
   "auth.sign-up.show-fewer-options": {
     "message": "Zobrazit méně možností"
@@ -849,7 +849,7 @@
     "message": "Opravdu si přejete odstranit tuto kolikci?"
   },
   "collection.description": {
-    "message": "{description} - Zobrazit kolekci {name} od {username} na Modrinthu"
+    "message": "{description} - Zobrazit kolekci {name} od {username} na Bbsmcu"
   },
   "collection.description.following": {
     "message": "Automaticky generovaná kolekce všech projektů, které sledujete."
@@ -1131,7 +1131,7 @@
     "message": "Odvolat"
   },
   "dashboard.affiliate-links.revoke-confirm.title": {
-    "message": "Jste si jistý, že chcete zrušit svůj partnerský odkaz „{title}“?"
+    "message": "Jste si jistý, že chcete zrušit svůj partnerský odkaz „{title}�?"
   },
   "dashboard.analytics.total-downloads": {
     "message": "Stažení celkem"
@@ -1290,7 +1290,7 @@
     "message": "Vyčerpali jste svůj limit pro výběr <b>{withdrawLimit}</b>. Pro vyšší výběr musíte vyplnit daňový formulář."
   },
   "dashboard.discord-roles.banner.body": {
-    "message": "Máte nárok na {roles}. Propojte svůj účet Discord přes Modrinth a my je automaticky synchronizujeme."
+    "message": "Máte nárok na {roles}. Propojte svůj účet Discord přes Bbsmc a my je automaticky synchronizujeme."
   },
   "dashboard.discord-roles.banner.cta": {
     "message": "Propojit Discord"
@@ -1575,7 +1575,7 @@
     "message": "Vybírání modpacku pro instalaci po resetu"
   },
   "discover.seo.description": {
-    "message": "Vyhledávejte a procházejte tisíce Minecraft {projectType} na Modrinthu díky okamžitým a přesným výsledkům vyhledávání. Naše filtry vám pomohou rychle najít nejlepší Minecraft {projectType}."
+    "message": "Vyhledávejte a procházejte tisíce Minecraft {projectType} na Bbsmcu díky okamžitým a přesným výsledkům vyhledávání. Naše filtry vám pomohou rychle najít nejlepší Minecraft {projectType}."
   },
   "discover.seo.title": {
     "message": "Hledat {projectType}"
@@ -1590,7 +1590,7 @@
     "message": "Tato kolekce je možná soukromá."
   },
   "error.collection.404.list_item.3": {
-    "message": "Kolekce mohla být odstraněna moderátorským týmem Modrinth z důvodu porušení našich <tou-link>Podmínek použití</tou-link>."
+    "message": "Kolekce mohla být odstraněna moderátorským týmem Bbsmc z důvodu porušení našich <tou-link>Podmínek použití</tou-link>."
   },
   "error.collection.404.list_title": {
     "message": "Proč?"
@@ -1605,10 +1605,10 @@
     "message": "Stránka nenalezena"
   },
   "error.generic.default.list_item.1": {
-    "message": "Zkontrolujte, zda je Modrinth offline, na naší <status-link>Stránce statusu</status-link>."
+    "message": "Zkontrolujte, zda je Bbsmc offline, na naší <status-link>Stránce statusu</status-link>."
   },
   "error.generic.default.list_item.2": {
-    "message": "Pokud se to bude dít i nadále, můžete dát vědět týmu Modrinth připojením se k našemu <discord-link>Discord serveru</discord-link>."
+    "message": "Pokud se to bude dít i nadále, můžete dát vědět týmu Bbsmc připojením se k našemu <discord-link>Discord serveru</discord-link>."
   },
   "error.generic.default.list_title": {
     "message": "Prosím zkuste znovu za pár minut."
@@ -1626,7 +1626,7 @@
     "message": "Majitel organizace možná změnil URL adresu, nebo ji smazal."
   },
   "error.organization.404.list_item.3": {
-    "message": "Organizace mohla být smazána moderátorským týmem Modrinth z důvodu porušení našich <tou-link>Podmínek použití</tou-link>."
+    "message": "Organizace mohla být smazána moderátorským týmem Bbsmc z důvodu porušení našich <tou-link>Podmínek použití</tou-link>."
   },
   "error.organization.404.list_title": {
     "message": "Proč?"
@@ -1641,7 +1641,7 @@
     "message": "Majitel projektu možná změnil URL adresu, nastavil projekt jako soukromý, nebo jej smazal."
   },
   "error.project.404.list_item.3": {
-    "message": "Projekt mohl být odstraněn moderátorským týmem Modrinth z důvodu porušení našich <tou-link>Podmínek použití</tou-link>."
+    "message": "Projekt mohl být odstraněn moderátorským týmem Bbsmc z důvodu porušení našich <tou-link>Podmínek použití</tou-link>."
   },
   "error.project.404.list_title": {
     "message": "Proč?"
@@ -1674,28 +1674,28 @@
     "message": "Žába"
   },
   "hosting-marketing.faq.ddos-protection": {
-    "message": "Mají Modrinth Hosting servery ochranu proti DDoS útokům?"
+    "message": "Mají Bbsmc Hosting servery ochranu proti DDoS útokům?"
   },
   "hosting-marketing.faq.ddos-protection.answer": {
-    "message": "Ano. Všechny Modrinth Hosting servery jsou vybaveny ochranou proti DDoS útokům, v některých lokalitách s kapacitou až 17 Tbps."
+    "message": "Ano. Všechny Bbsmc Hosting servery jsou vybaveny ochranou proti DDoS útokům, v některých lokalitách s kapacitou až 17 Tbps."
   },
   "hosting-marketing.faq.heading": {
     "message": "Časté dotazy"
   },
   "hosting-marketing.faq.how-fast": {
-    "message": "Jak rychlé jsou Modrinth Hosting servery?"
+    "message": "Jak rychlé jsou Bbsmc Hosting servery?"
   },
   "hosting-marketing.faq.increase-storage": {
     "message": "Mohu zvýšit úložiště na mém serveru?"
   },
   "hosting-marketing.faq.location": {
-    "message": "Kde se nachází Modrinth Hosting servery? Mohu si vybrat oblast?"
+    "message": "Kde se nachází Bbsmc Hosting servery? Mohu si vybrat oblast?"
   },
   "hosting-marketing.faq.versions-loaders": {
     "message": "Jaké verze Minecraftu a loadery lze použít?"
   },
   "hosting-marketing.faq.versions-loaders.answer.one": {
-    "message": "Servery Modrinth Hosting mohou spustit jakoukoli verzi Minecraft: Java Edition až zpět k verzi 1.2.5, včetně snapshotů."
+    "message": "Servery Bbsmc Hosting mohou spustit jakoukoli verzi Minecraft: Java Edition až zpět k verzi 1.2.5, včetně snapshotů."
   },
   "hosting-marketing.get-started": {
     "message": "Začít"
@@ -1703,8 +1703,8 @@
   "hosting-marketing.hero.button.start-a-new-server": {
     "message": "Začít nový server"
   },
-  "hosting-marketing.hero.host-with-modrinth": {
-    "message": "Hostuj tvůj další server s Modrinth Hosting"
+  "hosting-marketing.hero.host-with-Bbsmc": {
+    "message": "Hostuj tvůj další server s Bbsmc Hosting"
   },
   "hosting-marketing.included.custom-url": {
     "message": "Vlastní URL"
@@ -1715,8 +1715,8 @@
   "hosting-marketing.medal.learn-more": {
     "message": "Dozvědět se více"
   },
-  "hosting-marketing.why.why-modrinth-hosting": {
-    "message": "Proč Modrinth Hosting?"
+  "hosting-marketing.why.why-Bbsmc-hosting": {
+    "message": "Proč Bbsmc Hosting?"
   },
   "hosting.plan.select-plan": {
     "message": "Vybrat plán"
@@ -1754,8 +1754,8 @@
   "landing.launcher.atlauncher-label": {
     "message": "ATLauncher"
   },
-  "landing.launcher.modrinth-app-label": {
-    "message": "Modrinth App"
+  "landing.launcher.Bbsmc-app-label": {
+    "message": "Bbsmc App"
   },
   "landing.launcher.prism-launcher-label": {
     "message": "Prism Launcher"
@@ -1803,13 +1803,13 @@
     "message": "Navštívit nastavení účtu"
   },
   "layout.banner.add-email.description": {
-    "message": "Z bezpečnostních důvodu, Modrinth potřebuje aby jste si zaregistrovaly e-mail adresu k vašemu účtu."
+    "message": "Z bezpečnostních důvodu, Bbsmc potřebuje aby jste si zaregistrovaly e-mail adresu k vašemu účtu."
   },
   "layout.banner.build-fail.always-ignore": {
     "message": "Vždy ignorovat"
   },
   "layout.banner.build-fail.description": {
-    "message": "Nepodařilo se generovat stav z API v této sestavě frontendu Modrinthu. Může to být kvůli výpadku nebo chybě v konfiguraci. Vygenerujte novou sestavu jakmile bude API dostupné. Chybové kódy: {errors}; Aktuální adresa API: {url}"
+    "message": "Nepodařilo se generovat stav z API v této sestavě frontendu Bbsmcu. Může to být kvůli výpadku nebo chybě v konfiguraci. Vygenerujte novou sestavu jakmile bude API dostupné. Chybové kódy: {errors}; Aktuální adresa API: {url}"
   },
   "layout.banner.build-fail.ignore": {
     "message": "Ignorovat"
@@ -1818,10 +1818,10 @@
     "message": "Chyba generování stavu z API při sestavování."
   },
   "layout.banner.staging.description": {
-    "message": "Vývojové prostředí je oddělené od produkční databáze Modrinthu. Používá se pro testování a odstraňování chyb, a může spouštět právě vyvíjené verze backendu nebo frontendu Modrinthu, které jsou novější než produkční instance."
+    "message": "Vývojové prostředí je oddělené od produkční databáze Bbsmcu. Používá se pro testování a odstraňování chyb, a může spouštět právě vyvíjené verze backendu nebo frontendu Bbsmcu, které jsou novější než produkční instance."
   },
   "layout.banner.staging.title": {
-    "message": "Sledujete vývojové prostředí Modrinthu"
+    "message": "Sledujete vývojové prostředí Bbsmcu"
   },
   "layout.banner.subscription-payment-failed.button": {
     "message": "Aktualizuje fakturační informace"
@@ -1839,7 +1839,7 @@
     "message": "Znovu poslat ověřovací e-mail"
   },
   "layout.banner.verify-email.description": {
-    "message": "Z bezpečnostních důvodů potřebuje Modrinth ověření e-mailové adresy spojené s vaším účtem."
+    "message": "Z bezpečnostních důvodů potřebuje Bbsmc ověření e-mailové adresy spojené s vaším účtem."
   },
   "layout.footer.about": {
     "message": "O"
@@ -1880,23 +1880,23 @@
   "layout.footer.legal.terms-of-use": {
     "message": "Podmínky Užívání"
   },
-  "layout.footer.modrinth-information": {
-    "message": "Modrinth informace"
+  "layout.footer.Bbsmc-information": {
+    "message": "Bbsmc informace"
   },
   "layout.footer.open-source": {
-    "message": "Modrinth je <github-link>open source</github-link>."
+    "message": "Bbsmc je <github-link>open source</github-link>."
   },
   "layout.footer.products": {
     "message": "Produkty"
   },
   "layout.footer.products.app": {
-    "message": "Modrinth App"
+    "message": "Bbsmc App"
   },
   "layout.footer.products.plus": {
-    "message": "Modrinth+"
+    "message": "Bbsmc+"
   },
   "layout.footer.products.servers": {
-    "message": "Modrinth Hosting"
+    "message": "Bbsmc Hosting"
   },
   "layout.footer.resources": {
     "message": "Zdroje"
@@ -1932,7 +1932,7 @@
     "message": "Přepnout menu"
   },
   "layout.meta.description": {
-    "message": "Stáhněte si Minecraft mody, pluginy, datapacky, shadery, resourcepacky a modpacky na Modrinthu. Objevte a publikujte projekty na Modrintu s moderním, snadno použitelným rozhraním a API."
+    "message": "Stáhněte si Minecraft mody, pluginy, datapacky, shadery, resourcepacky a modpacky na Bbsmcu. Objevte a publikujte projekty na Modrintu s moderním, snadno použitelným rozhraním a API."
   },
   "layout.meta.og-description": {
     "message": "Objevujte a zveřejňujte obsah pro Minecraft!"
@@ -1949,8 +1949,8 @@
   "layout.nav.discover": {
     "message": "Objevit"
   },
-  "layout.nav.get-modrinth-app": {
-    "message": "Získat Modrinth App"
+  "layout.nav.get-Bbsmc-app": {
+    "message": "Získat Bbsmc App"
   },
   "layout.nav.home": {
     "message": "Domů"
@@ -1958,11 +1958,11 @@
   "layout.nav.host-a-server": {
     "message": "Hostovat server"
   },
-  "layout.nav.modrinth-app": {
-    "message": "Modrinth App"
+  "layout.nav.Bbsmc-app": {
+    "message": "Bbsmc App"
   },
-  "layout.nav.modrinth-home-page": {
-    "message": "Domovská stránka Modrinthu"
+  "layout.nav.Bbsmc-home-page": {
+    "message": "Domovská stránka Bbsmcu"
   },
   "layout.nav.my-servers": {
     "message": "Moje servery"
@@ -1985,8 +1985,8 @@
   "layout.nav.search": {
     "message": "Hledat"
   },
-  "layout.nav.upgrade-to-modrinth-plus": {
-    "message": "Upgradovat na Modrinth+"
+  "layout.nav.upgrade-to-Bbsmc-plus": {
+    "message": "Upgradovat na Bbsmc+"
   },
   "moderation.moderate": {
     "message": "Moderace"
@@ -2220,7 +2220,7 @@
     "message": "Zkontrolovat projekt"
   },
   "project.actions.servers-promo.description": {
-    "message": "Modrinth Hosting je nejjednodušší způsob, jak hrát s přáteli bez starostí!"
+    "message": "Bbsmc Hosting je nejjednodušší způsob, jak hrát s přáteli bez starostí!"
   },
   "project.actions.servers-promo.title": {
     "message": "Vytvořit server"
@@ -2238,7 +2238,7 @@
     "message": "{title} nepodporuje {gameVersion} pro {platform}"
   },
   "project.download.no-app": {
-    "message": "Nemáte Modrinth App?"
+    "message": "Nemáte Bbsmc App?"
   },
   "project.download.platform-unsupported-tooltip": {
     "message": "{title} nepodporuje {platform} pro {gameVersion}"
@@ -2268,10 +2268,10 @@
     "message": "Váš projekt je soukromý, což znamená, že k němu máte přístup pouze vy a lidé, které pozvete."
   },
   "project.moderation.admonition.approved.body.public": {
-    "message": "Váš projekt je zveřejněný a dostupný na Modrinthu."
+    "message": "Váš projekt je zveřejněný a dostupný na Bbsmcu."
   },
   "project.moderation.admonition.approved.body.unlisted": {
-    "message": "Váš projekt je neveřejný, což znamená, že je přístupný pouze přes přímý odkaz a na Modrinthu ho nelze najít."
+    "message": "Váš projekt je neveřejný, což znamená, že je přístupný pouze přes přímý odkaz a na Bbsmcu ho nelze najít."
   },
   "project.moderation.admonition.approved.body.visibility-message": {
     "message": "Viditelnost svého projektu můžete změnit v <visibility-settings-link>nastavení viditelnosti</visibility-settings-link> projektu."
@@ -2280,7 +2280,7 @@
     "message": "Projekt schválen"
   },
   "project.moderation.admonition.draft.body": {
-    "message": "Toto je návrh projektu, který ostatní neuvidí, dokud nebude odeslán ke kontrole a schválen moderátorským týmem Modrinthu."
+    "message": "Toto je návrh projektu, který ostatní neuvidí, dokud nebude odeslán ke kontrole a schválen moderátorským týmem Bbsmcu."
   },
   "project.moderation.admonition.draft.header": {
     "message": "Návrh projektu"
@@ -2340,13 +2340,13 @@
     "message": "Rozbalit vše"
   },
   "project.settings.permissions.fail.description": {
-    "message": "Je možné, že nemáte oprávnění k redistribuci části externího obsahu ve svém projektu. Aby mohl být projekt publikován na Modrinthu, odeberte prosím tento obsah nebo doložte, že máte oprávnění jej použít."
+    "message": "Je možné, že nemáte oprávnění k redistribuci části externího obsahu ve svém projektu. Aby mohl být projekt publikován na Bbsmcu, odeberte prosím tento obsah nebo doložte, že máte oprávnění jej použít."
   },
   "project.settings.permissions.fail.title": {
     "message": "Některý obsah nelze zahrnout"
   },
   "project.settings.permissions.info-banner.description": {
-    "message": "Pokud zahrnete obsah, který není hostován na Modrinthu, musíte nám sdělit, odkud pochází, a ověřit, že máte oprávnění tyto soubory distribuovat. Další informace najdete v <link>našem oznámení tohoto nového systému</link>!"
+    "message": "Pokud zahrnete obsah, který není hostován na Bbsmcu, musíte nám sdělit, odkud pochází, a ověřit, že máte oprávnění tyto soubory distribuovat. Další informace najdete v <link>našem oznámení tohoto nového systému</link>!"
   },
   "project.settings.permissions.info-banner.title": {
     "message": "Zjistěte více o oprávněních k distribuci"
@@ -2358,7 +2358,7 @@
     "message": "Žádné externí soubory neodpovídají tvému vyhledávání."
   },
   "project.settings.permissions.not-allowed.description": {
-    "message": "Část zahrnutého externího obsahu nelze na Modrinthu distribuovat, protože porušuje naše pravidla pro obsah, a musí být odstraněna."
+    "message": "Část zahrnutého externího obsahu nelze na Bbsmcu distribuovat, protože porušuje naše pravidla pro obsah, a musí být odstraněna."
   },
   "project.settings.permissions.pending-approval-count": {
     "message": "{count, plural, =0 {Žádná atribuce nevyžaduje schválení} one {# atribuce vyžaduje schválení} few {# atribuce vyžadují schválení} other {# atribucí vyžaduje schválení}}"
@@ -2409,7 +2409,7 @@
     "message": "Nepodařilo se najít {item}"
   },
   "report.for.violation": {
-    "message": "Porušení <rules-link>Pravidel</rules-link> nebo <terms-link>Podmínek Užívání</terms-link> Modrinthu"
+    "message": "Porušení <rules-link>Pravidel</rules-link> nebo <terms-link>Podmínek Užívání</terms-link> Bbsmcu"
   },
   "report.for.violation.description": {
     "message": "Příklady zahrnují podvodný, urážlivý, klamný, zavádějící, nelegální obsah, a spam."
@@ -2454,7 +2454,7 @@
     "message": "Jaký druh obsahu nahlašujete?"
   },
   "report.question.report-reason": {
-    "message": "Které z pravidel Modrinthu {item} porušuje?"
+    "message": "Které z pravidel Bbsmcu {item} porušuje?"
   },
   "report.report-content": {
     "message": "Nahlašte obsah moderátorům"
@@ -2616,7 +2616,7 @@
     "message": "Synchronizovat se serverem"
   },
   "servers.manage.content.title": {
-    "message": "Obsah - {serverName} - Modrinth"
+    "message": "Obsah - {serverName} - Bbsmc"
   },
   "servers.notice.actions": {
     "message": "Akce"
@@ -2640,13 +2640,13 @@
     "message": "Neuzavíratelné"
   },
   "servers.plan.large.description": {
-    "message": "Ideální pro 15–25 hráčů, modpacky nebo náročné modování."
+    "message": "Ideální pro 15�?5 hráčů, modpacky nebo náročné modování."
   },
   "servers.plan.medium.description": {
-    "message": "Skvělé pro 6–15 hráčů a více modů."
+    "message": "Skvělé pro 6�?5 hráčů a více modů."
   },
   "servers.plan.small.description": {
-    "message": "Ideální pro 1–5 přátel s pár lehkými módámi."
+    "message": "Ideální pro 1�? přátel s pár lehkými módámi."
   },
   "settings.account.button.complete-setup": {
     "message": "Dokončit nastavování"
@@ -2829,10 +2829,10 @@
     "message": "Opravdu si přejete odvolat tuto aplikaci?"
   },
   "settings.billing.charges.product.midas": {
-    "message": "Modrinth Plus"
+    "message": "Bbsmc Plus"
   },
   "settings.billing.charges.product.pyro": {
-    "message": "Modrinth Hosting"
+    "message": "Bbsmc Hosting"
   },
   "settings.billing.payment_method.primary": {
     "message": "Hlavní"
@@ -2841,7 +2841,7 @@
     "message": "Předplatit"
   },
   "settings.billing.subscription.description": {
-    "message": "Spravujte svá Modrinth předplatná."
+    "message": "Spravujte svá Bbsmc předplatná."
   },
   "settings.billing.subscription.title": {
     "message": "Předplatné"
@@ -2856,7 +2856,7 @@
     "message": "Deaktivovat vývojářský režim"
   },
   "settings.display.banner.developer-mode.description": {
-    "message": "<strong>Vývojářský režim</strong> je aktivní. Toto vám umožní zobrazit interní ID různých věcí v Modrinthu, které mohou být užitečné, pokud používáte Modrinth API. Klikněte na logo Modrinthu ve spodní části stránky 5krát pro přepnutí vývojářského režimu."
+    "message": "<strong>Vývojářský režim</strong> je aktivní. Toto vám umožní zobrazit interní ID různých věcí v Bbsmcu, které mohou být užitečné, pokud používáte Bbsmc API. Klikněte na logo Bbsmcu ve spodní části stránky 5krát pro přepnutí vývojářského režimu."
   },
   "settings.display.notification.developer-mode-deactivated.text": {
     "message": "Vývojářský režim byl vypnut"
@@ -2913,16 +2913,16 @@
     "message": "Pokročilé vykreslování"
   },
   "settings.display.sidebar.external-links-new-tab.description": {
-    "message": "Způsobí, že odkazy směřující mimo Modrinth budou otevřeny v nové kartě. Bez ohledu na toto nastavení se odkazy na stejné doméně a v Markdown popisech otevřou ve stávající kartě a odkazy na reklamy a úpravy stránek budou otevřeny v nové kartě."
+    "message": "Způsobí, že odkazy směřující mimo Bbsmc budou otevřeny v nové kartě. Bez ohledu na toto nastavení se odkazy na stejné doméně a v Markdown popisech otevřou ve stávající kartě a odkazy na reklamy a úpravy stránek budou otevřeny v nové kartě."
   },
   "settings.display.sidebar.external-links-new-tab.title": {
     "message": "Otevřít externí odkazy v nové kartě"
   },
   "settings.display.sidebar.hide-app-promos.description": {
-    "message": "Skryje tlačítka \"Získat Modrinth App\" z primární navigace. Stránka aplikace Modrinth bude stále přístupná ze vstupní stránky nebo ze zápatí."
+    "message": "Skryje tlačítka \"Získat Bbsmc App\" z primární navigace. Stránka aplikace Bbsmc bude stále přístupná ze vstupní stránky nebo ze zápatí."
   },
   "settings.display.sidebar.hide-app-promos.title": {
-    "message": "Skrýt Modrinth App promoce"
+    "message": "Skrýt Bbsmc App promoce"
   },
   "settings.display.sidebar.right-aligned-content-sidebar.description": {
     "message": "Zarovná postranní panel s detaily o projektu vlevo od obsahu stránky."
@@ -2931,7 +2931,7 @@
     "message": "Zarovná postranní panel s filtry vpravo od výsledků vyhledávání."
   },
   "settings.display.theme.description": {
-    "message": "Vyberte si preferovaný barevný motiv pro Modrinth na tomto zařízení."
+    "message": "Vyberte si preferovaný barevný motiv pro Bbsmc na tomto zařízení."
   },
   "settings.display.theme.title": {
     "message": "Barevný motiv"
@@ -3006,7 +3006,7 @@
     "message": "Není nastaveno žádné prostředí"
   },
   "version.environment.unknown.description": {
-    "message": "Prostředí „{environment}“ není rozpoznáno."
+    "message": "Prostředí „{environment}�?není rozpoznáno."
   },
   "version.environment.unknown.title": {
     "message": "Neznámé prostředí"

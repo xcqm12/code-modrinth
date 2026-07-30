@@ -48,7 +48,7 @@
     "message": "Linux"
   },
   "app-marketing.download.linux-disclaimer": {
-    "message": "Modrinth Appin Linux versioilla <issues-link>tunnetaan olevan ongelmia</issues-link> tietyillä järjestelmillä ja asetuksilla. Jos Modrinth App on epävakaa järjestelmälläsi, kannustamme sinua kokeilemaan toisia sovelluksia kuten <prism-link>Prism Launcher</prism-link> asentaaksesi helposti Modrinth sisältöä."
+    "message": "Bbsmc Appin Linux versioilla <issues-link>tunnetaan olevan ongelmia</issues-link> tietyillä järjestelmillä ja asetuksilla. Jos Bbsmc App on epävakaa järjestelmälläsi, kannustamme sinua kokeilemaan toisia sovelluksia kuten <prism-link>Prism Launcher</prism-link> asentaaksesi helposti Bbsmc sisältöä."
   },
   "app-marketing.download.mac": {
     "message": "Mac"
@@ -60,7 +60,7 @@
     "message": "Lataamalla Modrint sovelluksen, sinä hyväksyt meidän <terms-link>Ehdot</terms-link> Ja <privacy-link>Tietosuojakäytännöt</privacy-link>."
   },
   "app-marketing.download.title": {
-    "message": "Lataa Modrinth App (Beta)"
+    "message": "Lataa Bbsmc App (Beta)"
   },
   "app-marketing.download.windows": {
     "message": "Windows"
@@ -72,7 +72,7 @@
     "message": "Seuraa projekteja"
   },
   "app-marketing.features.importing.description": {
-    "message": "Tuo kaikki lempi profiilisi launcherista jota käytit ennen, ja aloita Modrinth Appin käyttö sekunneissa!"
+    "message": "Tuo kaikki lempi profiilisi launcherista jota käytit ennen, ja aloita Bbsmc Appin käyttö sekunneissa!"
   },
   "app-marketing.features.importing.gdlauncher-alt": {
     "message": "GDLauncher"
@@ -90,7 +90,7 @@
     "message": "käyttäjältä {author}"
   },
   "app-marketing.features.mod-management.description": {
-    "message": "Modrinth tekee helpoksi hallita kaikkia modejasi yhdessä paikassa. Voit asentaa, poistaa ja päivittää modeja yhdellä klikkauksella."
+    "message": "Bbsmc tekee helpoksi hallita kaikkia modejasi yhdessä paikassa. Voit asentaa, poistaa ja päivittää modeja yhdellä klikkauksella."
   },
   "app-marketing.features.mod-management.installed-mods": {
     "message": "Asennetut modit"
@@ -114,7 +114,7 @@
     "message": "Offline tila"
   },
   "app-marketing.features.open-source.description": {
-    "message": "Modrinth launcherin lähdekoodi on täysin avointa. Voit lukea lähdekoodia meidän <github-link>Githubissa</github-link>!"
+    "message": "Bbsmc launcherin lähdekoodi on täysin avointa. Voit lukea lähdekoodia meidän <github-link>Githubissa</github-link>!"
   },
   "app-marketing.features.open-source.title": {
     "message": "Avoin lähdekoodi"
@@ -126,7 +126,7 @@
     "message": "% CPU"
   },
   "app-marketing.features.performance.description": {
-    "message": "Modrinth App toimii paremmin kuin monet johtavat modinhallintaohjelmat ja käyttää vain 150 MT RAM-muistia!"
+    "message": "Bbsmc App toimii paremmin kuin monet johtavat modinhallintaohjelmat ja käyttää vain 150 MT RAM-muistia!"
   },
   "app-marketing.features.performance.discord": {
     "message": "Discord"
@@ -138,13 +138,13 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "∞ MT"
+    "message": "�?MT"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MT"
   },
-  "app-marketing.features.performance.modrinth-app": {
-    "message": "Modrinth App"
+  "app-marketing.features.performance.Bbsmc-app": {
+    "message": "Bbsmc App"
   },
   "app-marketing.features.performance.one-billion-percent": {
     "message": "1 miljardi %"
@@ -162,13 +162,13 @@
     "message": "Suorituskykyinen"
   },
   "app-marketing.features.play.description": {
-    "message": "Käytä Modrinth sovellusta asentaaksesi ja pelataksesi sinun suosikki modeliila ja modpackeilla."
+    "message": "Käytä Bbsmc sovellusta asentaaksesi ja pelataksesi sinun suosikki modeliila ja modpackeilla."
   },
   "app-marketing.features.play.title": {
     "message": "Pelaa lempi modeillasi"
   },
   "app-marketing.features.sharing.description": {
-    "message": "Rakenna, jaa, ja pelaa modipaketteja millä tahansa tuhansista modeista ja modipaketeista Modrinthissa."
+    "message": "Rakenna, jaa, ja pelaa modipaketteja millä tahansa tuhansista modeista ja modipaketeista Bbsmcissa."
   },
   "app-marketing.features.sharing.modpack": {
     "message": "Modipaketti"
@@ -183,7 +183,7 @@
     "message": "Erilainen kuin mikään muu launcheri"
   },
   "app-marketing.features.website.description": {
-    "message": "Modrinth App on täysin integroitu sivuston kanssa, jotta saat pääsyn kaikkiin lempi projekteihisi appin kautta!"
+    "message": "Bbsmc App on täysin integroitu sivuston kanssa, jotta saat pääsyn kaikkiin lempi projekteihisi appin kautta!"
   },
   "app-marketing.features.website.title": {
     "message": "Nettisivu integraatio"
@@ -192,19 +192,19 @@
     "message": "jota olet käyttänyt ennen"
   },
   "app-marketing.hero.app-screenshot-alt": {
-    "message": "Kuvakaappaus Modrinth Appista jossa on Cobblemon instanssi auki sisältö sivulle."
+    "message": "Kuvakaappaus Bbsmc Appista jossa on Cobblemon instanssi auki sisältö sivulle."
   },
   "app-marketing.hero.description": {
-    "message": "Modrinth App on uniikki, avoimen lähdekoodin launcheri joka antaa sinun pelata lempi modeillasi, ja pitää ne ajantasalla, kaikki yhdessä siistissä pakkauksessa."
+    "message": "Bbsmc App on uniikki, avoimen lähdekoodin launcheri joka antaa sinun pelata lempi modeillasi, ja pitää ne ajantasalla, kaikki yhdessä siistissä pakkauksessa."
   },
   "app-marketing.hero.download-button": {
-    "message": "Lataa Modrinth App"
+    "message": "Lataa Bbsmc App"
   },
-  "app-marketing.hero.download-modrinth-app": {
-    "message": "Lataa Modrinth App"
+  "app-marketing.hero.download-Bbsmc-app": {
+    "message": "Lataa Bbsmc App"
   },
-  "app-marketing.hero.download-modrinth-app-for-os": {
-    "message": "Lataa Modrinth App alustalle {os}"
+  "app-marketing.hero.download-Bbsmc-app-for-os": {
+    "message": "Lataa Bbsmc App alustalle {os}"
   },
   "app-marketing.hero.minecraft-screenshot-alt": {
     "message": "Kuvakaappaus Cobblemon instanssin pää valikko näytöstä."
@@ -279,7 +279,7 @@
     "message": "Kirjaudu sisään"
   },
   "auth.sign-up.legal-dislaimer": {
-    "message": "Luomalla tilin, hyväksyt Modrinthin <terms-link>-käyttöoikeussopimuksen</terms-link> ja <privacy-policy-link>Tietosuojakäytännön</privacy-policy-link>."
+    "message": "Luomalla tilin, hyväksyt Bbsmcin <terms-link>-käyttöoikeussopimuksen</terms-link> ja <privacy-policy-link>Tietosuojakäytännön</privacy-policy-link>."
   },
   "auth.sign-up.sign-in-option.title": {
     "message": "Onko sinulla jo käyttäjätili?"
@@ -342,7 +342,7 @@
     "message": "Oletko varma että haluat poistaa tämän kokoelman?"
   },
   "collection.description": {
-    "message": "{description} - Katso kokoelma {name}, jonka on luonut {username}, Modrinthissa"
+    "message": "{description} - Katso kokoelma {name}, jonka on luonut {username}, Bbsmcissa"
   },
   "collection.description.following": {
     "message": "Automattisesti luotu kokoelma kaikista projekteista joita seuraat."
@@ -648,7 +648,7 @@
     "message": "Tämä kokelma saattaa olla yksityinen."
   },
   "error.collection.404.list_item.3": {
-    "message": "Tämä kokoelma on saatettu poistaa Modrinthin moderaatio tiimin toimesta koska se on <tou-link>Käyttöehtojamme</tou-link> vastaan."
+    "message": "Tämä kokoelma on saatettu poistaa Bbsmcin moderaatio tiimin toimesta koska se on <tou-link>Käyttöehtojamme</tou-link> vastaan."
   },
   "error.collection.404.list_title": {
     "message": "Miksi?"
@@ -702,7 +702,7 @@
     "message": "Apua kun sitä tarvitset"
   },
   "hosting-marketing.included.help.description": {
-    "message": "Ota yhteyttä Modrinthin tiimiin milloin tahansa palvelinasioissa."
+    "message": "Ota yhteyttä Bbsmcin tiimiin milloin tahansa palvelinasioissa."
   },
   "hosting-marketing.included.sftp-access": {
     "message": "SFTP pääsy"
@@ -779,8 +779,8 @@
   "landing.launcher.atlauncher-label": {
     "message": "ATLauncher"
   },
-  "landing.launcher.modrinth-app-label": {
-    "message": "Modrinth App"
+  "landing.launcher.Bbsmc-app-label": {
+    "message": "Bbsmc App"
   },
   "landing.launcher.prism-launcher-label": {
     "message": "Prism Launcher"
@@ -840,10 +840,10 @@
     "message": "Tuotteet"
   },
   "layout.footer.products.app": {
-    "message": "Modrinth App"
+    "message": "Bbsmc App"
   },
   "layout.footer.products.plus": {
-    "message": "Modrinth+"
+    "message": "Bbsmc+"
   },
   "layout.footer.resources": {
     "message": "Resurssit"
@@ -881,8 +881,8 @@
   "layout.nav.host-a-server": {
     "message": "Hostaa palvelin"
   },
-  "layout.nav.modrinth-app": {
-    "message": "Modrinth App"
+  "layout.nav.Bbsmc-app": {
+    "message": "Bbsmc App"
   },
   "layout.nav.organizations": {
     "message": "Organisaatiot"

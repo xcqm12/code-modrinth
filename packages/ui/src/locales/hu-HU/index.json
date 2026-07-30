@@ -93,7 +93,7 @@
     "defaultMessage": "A keresésre nem találtunk találatot!"
   },
   "browse.offline": {
-    "defaultMessage": "Jelenleg nincs internetkapcsolatod. Csatlakozz az internethez, hogy böngészhess a Modrinthon!"
+    "defaultMessage": "Jelenleg nincs internetkapcsolatod. Csatlakozz az internethez, hogy böngészhess a Bbsmcon!"
   },
   "browse.selected-projects-floating-bar.aria-label": {
     "defaultMessage": "Kiválasztott projektek"
@@ -215,8 +215,8 @@
   "button.open-in-folder": {
     "defaultMessage": "Megnyitás mappában"
   },
-  "button.open-in-modrinth": {
-    "defaultMessage": "Megnyitás Modrinthban"
+  "button.open-in-Bbsmc": {
+    "defaultMessage": "Megnyitás Bbsmcban"
   },
   "button.play": {
     "defaultMessage": "Játék"
@@ -330,7 +330,7 @@
     "defaultMessage": "Projektek frissítése"
   },
   "content.confirm-bulk-update.shift-click-hint": {
-    "defaultMessage": "Tartsd lenyomva a Shift-et, miközben az „Összes frissítése” gombra kattintasz, hogy a jövőben elkerüld ezt a megerősítést."
+    "defaultMessage": "Tartsd lenyomva a Shift-et, miközben az „Összes frissítése�?gombra kattintasz, hogy a jövőben elkerüld ezt a megerősítést."
   },
   "content.confirm-bulk-update.update-button": {
     "defaultMessage": "{count} projekt frissítése"
@@ -348,7 +348,7 @@
     "defaultMessage": "{action, select, downgrade {A verzió visszaváltása} other {A frissítés}} kompatibilitási problémákat okozhat. A modcsomaghoz hozzáadott modok vagy tartalmak megmaradnak, de előfordulhat, hogy nem lesznek kompatibilisek az új verzióval."
   },
   "content.confirm-modpack-update.admonition-header": {
-    "defaultMessage": "{action, select, downgrade {Visszaváltás korábbi verzióra – figyelmeztetés} other {Frissítési figyelmeztetés}}"
+    "defaultMessage": "{action, select, downgrade {Visszaváltás korábbi verzióra �?figyelmeztetés} other {Frissítési figyelmeztetés}}"
   },
   "content.confirm-modpack-update.confirm-button": {
     "defaultMessage": "{action, select, downgrade {Visszaváltás korábbi verzióra} other {Frissítés}}"
@@ -429,13 +429,13 @@
     "defaultMessage": "{count} eltávolítva"
   },
   "content.diff-modal.reviewed-files": {
-    "defaultMessage": "Egy fájlt csak akkor vizsgálnak meg, ha azt a Modrinthon közzétették, függetlenül a fájlformátumtól (beleértve a .mrpack formátumot is)."
+    "defaultMessage": "Egy fájlt csak akkor vizsgálnak meg, ha azt a Bbsmcon közzétették, függetlenül a fájlformátumtól (beleértve a .mrpack formátumot is)."
   },
   "content.diff-modal.unknown-content-body": {
     "defaultMessage": "A szerverén található egyes tartalmakat nem sikerült elemezni, ezért előfordulhat, hogy ez a változás hatással lesz rájuk."
   },
   "content.diff-modal.unknown-files-description": {
-    "defaultMessage": "Ez a frissítés olyan fájlokat tartalmaz, amelyek nem szerepelnek a Modrinthon. Határozottan javasoljuk, hogy kizárólag olyan forrásokból származó fájlokat telepíts, amelyekben megbízol."
+    "defaultMessage": "Ez a frissítés olyan fájlokat tartalmaz, amelyek nem szerepelnek a Bbsmcon. Határozottan javasoljuk, hogy kizárólag olyan forrásokból származó fájlokat telepíts, amelyekben megbízol."
   },
   "content.diff-modal.unknown-files-warning": {
     "defaultMessage": "Ismeretlen fájlok"
@@ -807,7 +807,7 @@
     "defaultMessage": "Játékpéldány importálása"
   },
   "creation-flow.modal.setup-type.option.modpack-base.description": {
-    "defaultMessage": "Böngéssz modcsomagokat a Modrinthon, vagy tölts be egyet fájlból."
+    "defaultMessage": "Böngéssz modcsomagokat a Bbsmcon, vagy tölts be egyet fájlból."
   },
   "creation-flow.modal.setup-type.option.modpack-base.title": {
     "defaultMessage": "Modcsomag letöltése"
@@ -966,7 +966,7 @@
     "defaultMessage": "pl. config.yml"
   },
   "files.delete-modal.deleting-name": {
-    "defaultMessage": "„{name}” törlése"
+    "defaultMessage": "„{name}�?törlése"
   },
   "files.delete-modal.header": {
     "defaultMessage": "Fájl törlése"
@@ -1104,7 +1104,7 @@
     "defaultMessage": "Vissza a kezdőlapra"
   },
   "files.navbar.create-new": {
-    "defaultMessage": "Létrehozás…"
+    "defaultMessage": "Létrehozás�?
   },
   "files.navbar.file-navigation": {
     "defaultMessage": "Fájl navigáció"
@@ -1191,10 +1191,10 @@
     "defaultMessage": "Hiba - A fájl már létezik"
   },
   "files.upload-dropdown.failed-generic": {
-    "defaultMessage": "Hiba – {error}"
+    "defaultMessage": "Hiba �?{error}"
   },
   "files.upload-dropdown.failed-incorrect-type": {
-    "defaultMessage": "Hiba – Helytelen fájltípus"
+    "defaultMessage": "Hiba �?Helytelen fájltípus"
   },
   "files.upload-dropdown.failed-to-upload": {
     "defaultMessage": "A feltöltés nem sikerült ({fileName})"
@@ -1266,7 +1266,7 @@
     "defaultMessage": "Keresd meg a modcsomagot"
   },
   "files.zip-url-modal.step-select-description": {
-    "defaultMessage": "Menj a „Fájlok” fülre, és válaszd ki a telepíteni kívánt verziót."
+    "defaultMessage": "Menj a „Fájlok�?fülre, és válaszd ki a telepíteni kívánt verziót."
   },
   "files.zip-url-modal.step-select-title": {
     "defaultMessage": "Válassz ki egy verziót"
@@ -1608,7 +1608,7 @@
     "defaultMessage": "A leválasztás véglegesen leválasztja ezt a {type}t a {projectType}projektről, így lehetőséged nyílik a betöltő és a Minecraft verziójának megváltoztatására, de a jövőbeli frissítéseket nem fogod megkapni."
   },
   "installation-settings.verifying": {
-    "defaultMessage": "Ellenőrzés…"
+    "defaultMessage": "Ellenőrzés�?
   },
   "instance.confirm-reinstall.admonition-body": {
     "defaultMessage": "Az újratelepítés minden telepített vagy módosított tartalmat visszaállít a modcsomag által biztosított állapotra, eltávolítva az eredeti telepítéshez később hozzáadott összes modot és tartalmat."
@@ -2295,16 +2295,16 @@
     "defaultMessage": "Tartsd naprakészen a fájlokat, amikor a szerver változik"
   },
   "modal.open-in-app.get-app": {
-    "defaultMessage": "Szerezd meg a Modrinth Appot"
+    "defaultMessage": "Szerezd meg a Bbsmc Appot"
   },
   "modal.open-in-app.opening-automatically": {
-    "defaultMessage": "A Modrinth alkalmazás automatikusan megnyílik..."
+    "defaultMessage": "A Bbsmc alkalmazás automatikusan megnyílik..."
   },
   "modal.open-in-app.title": {
-    "defaultMessage": "A Modrinth App megnyitása"
+    "defaultMessage": "A Bbsmc App megnyitása"
   },
   "modal.open-in-app.why-use": {
-    "defaultMessage": "Miért használd a Modrinth Appot?"
+    "defaultMessage": "Miért használd a Bbsmc Appot?"
   },
   "notification.error.title": {
     "defaultMessage": "Hiba történt"
@@ -2336,8 +2336,8 @@
   "omorphia.component.badge.label.moderator": {
     "defaultMessage": "Moderátor"
   },
-  "omorphia.component.badge.label.modrinth-team": {
-    "defaultMessage": "Modrinth Csapat"
+  "omorphia.component.badge.label.Bbsmc-team": {
+    "defaultMessage": "Bbsmc Csapat"
   },
   "omorphia.component.badge.label.pending": {
     "defaultMessage": "Függőben"
@@ -2745,7 +2745,7 @@
     "defaultMessage": "{count} {countPlural, plural,one {jelenleg játszott} other {jelenleg játszottak}}"
   },
   "project.recent-plays.tooltip": {
-    "defaultMessage": "{count} {countPlural, plural,one {jelenleg játszott} other {jelenleg játszottak}} Modrinth-től az elmúlt 2 hétben"
+    "defaultMessage": "{count} {countPlural, plural,one {jelenleg játszott} other {jelenleg játszottak}} Bbsmc-től az elmúlt 2 hétben"
   },
   "project.server.customModpackTooltip": {
     "defaultMessage": "Ez a projekt egy egyedi modcsomagot használ"
@@ -3051,7 +3051,7 @@
     "defaultMessage": "A projektednek több környezete van"
   },
   "project.settings.environment.notice.review-options.description": {
-    "defaultMessage": "Nemrégiben átalakítottuk a Modrinth környezetrendszerét, és mostantól új beállítási lehetőségek állnak rendelkezésre. Kérjük, győződj meg arról, hogy az alábbiak közül a megfelelő opciót választottad ki, majd ha kész vagy, kattints az „Ellenőrzés” gombra!"
+    "defaultMessage": "Nemrégiben átalakítottuk a Bbsmc környezetrendszerét, és mostantól új beállítási lehetőségek állnak rendelkezésre. Kérjük, győződj meg arról, hogy az alábbiak közül a megfelelő opciót választottad ki, majd ha kész vagy, kattints az „Ellenőrzés�?gombra!"
   },
   "project.settings.environment.notice.wrong-project-type.description": {
     "defaultMessage": "Csak a mod- vagy modcsomag-projektek rendelkezhetnek környezeti metaadatokkal."
@@ -3480,7 +3480,7 @@
     "defaultMessage": "Függőben"
   },
   "servers.access-table.unknown-joined-date": {
-    "defaultMessage": "—"
+    "defaultMessage": "�?
   },
   "servers.access-table.user-avatar-alt": {
     "defaultMessage": "{username} avatárja"
@@ -3741,13 +3741,13 @@
     "defaultMessage": "Ne használd a Minecraft felhasználó nevűket."
   },
   "servers.grant-access-modal.target.label": {
-    "defaultMessage": "Modrinth felhasználónév"
+    "defaultMessage": "Bbsmc felhasználónév"
   },
   "servers.grant-access-modal.target.no-suggestions": {
     "defaultMessage": "Nem található a keresésnek megfelelő felhasználó."
   },
   "servers.grant-access-modal.target.placeholder": {
-    "defaultMessage": "Modrinth felhasználónév megadása"
+    "defaultMessage": "Bbsmc felhasználónév megadása"
   },
   "servers.grant-access-modal.target.searching": {
     "defaultMessage": "Keresés..."
@@ -3792,16 +3792,16 @@
     "defaultMessage": "Már van egy szervered?"
   },
   "servers.list-empty.learn-more-link": {
-    "defaultMessage": "Tudj meg többet a Modrinth Hostingról"
+    "defaultMessage": "Tudj meg többet a Bbsmc Hostingról"
   },
-  "servers.list-empty.modrinth-hosting-label": {
-    "defaultMessage": "Modrinth Hosting"
+  "servers.list-empty.Bbsmc-hosting-label": {
+    "defaultMessage": "Bbsmc Hosting"
   },
   "servers.list-empty.new-server-button": {
     "defaultMessage": "Új szerver"
   },
   "servers.list-empty.no-servers-description": {
-    "defaultMessage": "Telepíts modokat, hívd meg a barátaidat, és játsszatok együtt, mindezt a Modrinth Appban."
+    "defaultMessage": "Telepíts modokat, hívd meg a barátaidat, és játsszatok együtt, mindezt a Bbsmc Appban."
   },
   "servers.list-empty.no-servers-title": {
     "defaultMessage": "Még nincsenek szerverek"
@@ -3810,7 +3810,7 @@
     "defaultMessage": "Modok telepítése egy kattintással"
   },
   "servers.list-empty.play-with-friends-description": {
-    "defaultMessage": "Hívd meg a barátaidat, és állítsd be őket közvetlenül a Modrinth Appban."
+    "defaultMessage": "Hívd meg a barátaidat, és állítsd be őket közvetlenül a Bbsmc Appban."
   },
   "servers.list-empty.play-with-friends-title": {
     "defaultMessage": "Játssz a barátaiddal"
@@ -3876,16 +3876,16 @@
     "defaultMessage": "Feltöltés folyamatban"
   },
   "servers.manage.contact-support-button": {
-    "defaultMessage": "Kapcsolatfelvétel a Modrinth ügyfélszolgálatával"
+    "defaultMessage": "Kapcsolatfelvétel a Bbsmc ügyfélszolgálatával"
   },
   "servers.manage.error.details": {
     "defaultMessage": "A hiba részletei:"
   },
   "servers.manage.error.queue-notice": {
-    "defaultMessage": "Ha nemrég vásároltál Modrinth Hosting szervert, az jelenleg a várólistán van, és amint készen áll, itt fog megjelenni. <warning>Ne próbálj új szervert vásárolni.</warning>"
+    "defaultMessage": "Ha nemrég vásároltál Bbsmc Hosting szervert, az jelenleg a várólistán van, és amint készen áll, itt fog megjelenni. <warning>Ne próbálj új szervert vásárolni.</warning>"
   },
   "servers.manage.error.support-notice": {
-    "defaultMessage": "Ha személyre szabott segítségre van szükséged a szervered állapotával kapcsolatban, kérlek, vedd fel a kapcsolatot a Modrinth ügyfélszolgálatával."
+    "defaultMessage": "Ha személyre szabott segítségre van szükséged a szervered állapotával kapcsolatban, kérlek, vedd fel a kapcsolatot a Bbsmc ügyfélszolgálatával."
   },
   "servers.manage.error.title": {
     "defaultMessage": "A szerverek betöltése nem sikerült"
@@ -3909,7 +3909,7 @@
     "defaultMessage": "Keresés {count} szerver között..."
   },
   "servers.manage.servers-title": {
-    "defaultMessage": "Modrinth Hosting"
+    "defaultMessage": "Bbsmc Hosting"
   },
   "servers.manage.settings-hint.description": {
     "defaultMessage": "Mostantól itt található!"
@@ -3930,10 +3930,10 @@
     "defaultMessage": "A Medal szerver próbaidőszaka lejárt, és a szerveredet felfüggesztettük. Kérlek, frissítsd a szolgáltatást, ha továbbra is használni szeretnéd a szervert."
   },
   "servers.medal-listing.notice.suspended": {
-    "defaultMessage": "A szerveredet felfüggesztettük. Kérlek, frissítsd a számlázási adataidat, vagy további információkért vedd fel a kapcsolatot a Modrinth ügyfélszolgálatával."
+    "defaultMessage": "A szerveredet felfüggesztettük. Kérlek, frissítsd a számlázási adataidat, vagy további információkért vedd fel a kapcsolatot a Bbsmc ügyfélszolgálatával."
   },
   "servers.medal-listing.notice.suspended-with-reason": {
-    "defaultMessage": "A szerveredet felfüggesztettük: {reason}. Kérlek, frissítsd a számlázási adataidat, vagy további információkért vedd fel a kapcsolatot a Modrinth ügyfélszolgálatával."
+    "defaultMessage": "A szerveredet felfüggesztettük: {reason}. Kérlek, frissítsd a számlázási adataidat, vagy további információkért vedd fel a kapcsolatot a Bbsmc ügyfélszolgálatával."
   },
   "servers.medal-listing.owner-avatar-alt": {
     "defaultMessage": "{username} avatárja"
@@ -3975,7 +3975,7 @@
     "defaultMessage": "Elutasíthatatlan"
   },
   "servers.purchase.notification.success.text": {
-    "defaultMessage": "A Modrinth Hosting szolgáltatás megvásárlása sikeresen lezárult."
+    "defaultMessage": "A Bbsmc Hosting szolgáltatás megvásárlása sikeresen lezárult."
   },
   "servers.purchase.notification.success.title": {
     "defaultMessage": "A vásárlás sikeresen lezárult"
@@ -4005,13 +4005,13 @@
     "defaultMessage": "Nagy"
   },
   "servers.purchase.step.plan.large.desc": {
-    "defaultMessage": "Ideális 15–25 játékos számára, modcsomagokhoz vagy intenzív moddoláshoz."
+    "defaultMessage": "Ideális 15�?5 játékos számára, modcsomagokhoz vagy intenzív moddoláshoz."
   },
   "servers.purchase.step.plan.medium": {
     "defaultMessage": "Közepes"
   },
   "servers.purchase.step.plan.medium.desc": {
-    "defaultMessage": "Nagyszerű 6–15 játékos számára, többféle moddal."
+    "defaultMessage": "Nagyszerű 6�?5 játékos számára, többféle moddal."
   },
   "servers.purchase.step.plan.most-popular": {
     "defaultMessage": "Legnépszerűbb"
@@ -4023,7 +4023,7 @@
     "defaultMessage": "Kicsi"
   },
   "servers.purchase.step.plan.small.desc": {
-    "defaultMessage": "Tökéletes 1–5 barát számára, néhány kisebb moddal."
+    "defaultMessage": "Tökéletes 1�? barát számára, néhány kisebb moddal."
   },
   "servers.purchase.step.plan.title": {
     "defaultMessage": "Előfizetés"
@@ -4050,7 +4050,7 @@
     "defaultMessage": "Hol szeretnéd elhelyezni a szerveredet?"
   },
   "servers.region.region-unsupported": {
-    "defaultMessage": "Nincs a listán a régiód? <link>Jelezd nekünk, hogy hol szeretnéd látni legközelebb a Modrinth Hostingot!</link>"
+    "defaultMessage": "Nincs a listán a régiód? <link>Jelezd nekünk, hogy hol szeretnéd látni legközelebb a Bbsmc Hostingot!</link>"
   },
   "servers.region.southeast-asia": {
     "defaultMessage": "Délkelet-Ázsia"
@@ -4077,7 +4077,7 @@
     "defaultMessage": "A szerver beállítása"
   },
   "servers.setup.onboarding.step.choose.description": {
-    "defaultMessage": "Válaszd ki a kedvenc modcsomagodat a Modrinthról, vagy válassz egy betöltőt, és add hozzá a kívánt modokat."
+    "defaultMessage": "Válaszd ki a kedvenc modcsomagodat a Bbsmcról, vagy válassz egy betöltőt, és add hozzá a kívánt modokat."
   },
   "servers.setup.onboarding.step.choose.title": {
     "defaultMessage": "Válaszd ki, mit szeretnél játszani"
@@ -4104,7 +4104,7 @@
     "defaultMessage": "A szervered készen áll. Íme, mit kell tenned a játék elkezdéséhez!"
   },
   "servers.setup.onboarding.welcome.title": {
-    "defaultMessage": "Üdvözlünk a Modrinth Hostingnál"
+    "defaultMessage": "Üdvözlünk a Bbsmc Hostingnál"
   },
   "servers.setup.rate-limit.text": {
     "defaultMessage": "A rendszer korlátozza a lekérdezések számát. Kérlek próbáld újra később."
@@ -4143,7 +4143,7 @@
     "defaultMessage": "Sötét"
   },
   "settings.display.theme.description": {
-    "defaultMessage": "Válaszd ki a Modrinth számára a kívánt színsémát ezen az eszközön."
+    "defaultMessage": "Válaszd ki a Bbsmc számára a kívánt színsémát ezen az eszközön."
   },
   "settings.display.theme.light": {
     "defaultMessage": "Világos"
@@ -4230,7 +4230,7 @@
     "defaultMessage": "Lejárati dátum"
   },
   "sharing.invite-players-modal.friends-heading": {
-    "defaultMessage": "A barátaid – {count}"
+    "defaultMessage": "A barátaid �?{count}"
   },
   "sharing.invite-players-modal.invite": {
     "defaultMessage": "Meghívás"
@@ -4260,7 +4260,7 @@
     "defaultMessage": "Mentés"
   },
   "sharing.invite-players-modal.search-placeholder": {
-    "defaultMessage": "Modrinth felhasználónév megadása"
+    "defaultMessage": "Bbsmc felhasználónév megadása"
   },
   "sharing.invite-players-modal.searching": {
     "defaultMessage": "Keresés..."
@@ -4779,16 +4779,16 @@
     "defaultMessage": "Ismeretlen fájlok"
   },
   "user.profile.badge.alpha.about.1": {
-    "defaultMessage": "Ez a felhasználó már a Modrinth Alpha óta aktív, amely 2020 novemberében ért véget."
+    "defaultMessage": "Ez a felhasználó már a Bbsmc Alpha óta aktív, amely 2020 novemberében ért véget."
   },
   "user.profile.badge.alpha.name": {
     "defaultMessage": "Alfa-tesztelő"
   },
   "user.profile.badge.beta.about.1": {
-    "defaultMessage": "Ez a felhasználó már a Modrinth Beta óta aktív, amely 2022 februárjában ért véget."
+    "defaultMessage": "Ez a felhasználó már a Bbsmc Beta óta aktív, amely 2022 februárjában ért véget."
   },
   "user.profile.badge.beta.link": {
-    "defaultMessage": "Kattints ide, hogy elolvasd a Modrinth Beta elindításáról szóló hírt."
+    "defaultMessage": "Kattints ide, hogy elolvasd a Bbsmc Beta elindításáról szóló hírt."
   },
   "user.profile.badge.beta.name": {
     "defaultMessage": "Béta-tesztelő"
@@ -4800,67 +4800,67 @@
     "defaultMessage": "{download_sum} letöltés"
   },
   "user.profile.badge.early-datapack-adopter.about.1": {
-    "defaultMessage": "Ez a felhasználó segített nekünk az adatcsomag-projektek tesztelésében a Modrinthon, mielőtt azokat 2023 januárjában elindítottuk."
+    "defaultMessage": "Ez a felhasználó segített nekünk az adatcsomag-projektek tesztelésében a Bbsmcon, mielőtt azokat 2023 januárjában elindítottuk."
   },
   "user.profile.badge.early-datapack-adopter.name": {
     "defaultMessage": "Az adatcsomagok korai tesztelője"
   },
   "user.profile.badge.early-modpack-adopter.about.1": {
-    "defaultMessage": "Ez a felhasználó segített nekünk a modcsomag-projektek tesztelésében a Modrinthon, mielőtt azokat 2022 májusában elindítottuk."
+    "defaultMessage": "Ez a felhasználó segített nekünk a modcsomag-projektek tesztelésében a Bbsmcon, mielőtt azokat 2022 májusában elindítottuk."
   },
   "user.profile.badge.early-modpack-adopter.name": {
     "defaultMessage": "A modcsomagok korai tesztelője"
   },
   "user.profile.badge.early-plugin-adopter.about.1": {
-    "defaultMessage": "Ez a felhasználó segített nekünk a bővítményprojektek tesztelésében a Modrinthon, mielőtt azokat 2022 augusztusában elindítottuk."
+    "defaultMessage": "Ez a felhasználó segített nekünk a bővítményprojektek tesztelésében a Bbsmcon, mielőtt azokat 2022 augusztusában elindítottuk."
   },
   "user.profile.badge.early-plugin-adopter.name": {
     "defaultMessage": "A bővítmények korai tesztelője"
   },
   "user.profile.badge.early-resourcepack-adopter.about.1": {
-    "defaultMessage": "Ez a felhasználó segített nekünk a forráscsomag-projektek tesztelésében a Modrinthon, mielőtt azokat 2022 augusztusában elindítottuk."
+    "defaultMessage": "Ez a felhasználó segített nekünk a forráscsomag-projektek tesztelésében a Bbsmcon, mielőtt azokat 2022 augusztusában elindítottuk."
   },
   "user.profile.badge.early-resourcepack-adopter.name": {
     "defaultMessage": "A forráscsomagok korai tesztelője"
   },
   "user.profile.badge.early-server-adopter.about.1": {
-    "defaultMessage": "Ez a felhasználó segített nekünk a szerverprojektek tesztelésében a Modrinthon, mielőtt azokat 2026 márciusában elindítottuk."
+    "defaultMessage": "Ez a felhasználó segített nekünk a szerverprojektek tesztelésében a Bbsmcon, mielőtt azokat 2026 márciusában elindítottuk."
   },
   "user.profile.badge.early-server-adopter.name": {
     "defaultMessage": "A szerverek korai tesztelője"
   },
   "user.profile.badge.early-shader-adopter.about.1": {
-    "defaultMessage": "Ez a felhasználó segített nekünk a shaderprojektek tesztelésében a Modrinthon, mielőtt azokat 2023 januárjában elindítottuk."
+    "defaultMessage": "Ez a felhasználó segített nekünk a shaderprojektek tesztelésében a Bbsmcon, mielőtt azokat 2023 januárjában elindítottuk."
   },
   "user.profile.badge.early-shader-adopter.name": {
     "defaultMessage": "A shaderek korai tesztelője"
   },
   "user.profile.badge.hosting-alpha.about.1": {
-    "defaultMessage": "Ez a felhasználó részt vett a Modrinth Hosting zárt alfa-tesztjén, mielőtt 2024 novemberében elindítottuk a Modrinth Hosting bétaverzióját."
+    "defaultMessage": "Ez a felhasználó részt vett a Bbsmc Hosting zárt alfa-tesztjén, mielőtt 2024 novemberében elindítottuk a Bbsmc Hosting bétaverzióját."
   },
   "user.profile.badge.hosting-alpha.name": {
-    "defaultMessage": "Modrinth Hosting alfa-tesztelő"
+    "defaultMessage": "Bbsmc Hosting alfa-tesztelő"
   },
   "user.profile.badge.moderator.about.1": {
-    "defaultMessage": "Ez a felhasználó a Modrinthnál tartalommoderátorként dolgozik."
+    "defaultMessage": "Ez a felhasználó a Bbsmcnál tartalommoderátorként dolgozik."
   },
   "user.profile.badge.moderator.about.2": {
-    "defaultMessage": "A Modrinth tartalommoderátorai áttekintik a projekteket, feldolgozzák a bejelentéseket, és hozzájárulnak a Modrinth biztonságának fenntartásához."
+    "defaultMessage": "A Bbsmc tartalommoderátorai áttekintik a projekteket, feldolgozzák a bejelentéseket, és hozzájárulnak a Bbsmc biztonságának fenntartásához."
   },
   "user.profile.badge.moderator.name": {
     "defaultMessage": "Tartalommoderátor"
   },
   "user.profile.badge.plus.about.1": {
-    "defaultMessage": "Ez a felhasználó minden tőle telhetőt megtesz, hogy támogassa a Modrinthot és a platformon tevékenykedő alkotókat."
+    "defaultMessage": "Ez a felhasználó minden tőle telhetőt megtesz, hogy támogassa a Bbsmcot és a platformon tevékenykedő alkotókat."
   },
   "user.profile.badge.plus.link": {
     "defaultMessage": "Kattints ide, ha többet szeretnél megtudni arról, hogy hogyan válhatsz taggá."
   },
   "user.profile.badge.plus.name": {
-    "defaultMessage": "Modrinth+ tag"
+    "defaultMessage": "Bbsmc+ tag"
   },
   "user.profile.badge.pride.about.1": {
-    "defaultMessage": "Ez a felhasználó részt vett a Modrinth’s Pride legalább egy, az LGBTQ+ közösség javára szervezett adománygyűjtő akciójában."
+    "defaultMessage": "Ez a felhasználó részt vett a Bbsmc’s Pride legalább egy, az LGBTQ+ közösség javára szervezett adománygyűjtő akciójában."
   },
   "user.profile.badge.pride.link": {
     "defaultMessage": "Kattints ide, hogy megtekintsd legújabb Pride-jótékonysági akciónkat."
@@ -4869,9 +4869,9 @@
     "defaultMessage": "A Pride jótékonysági akció támogatója"
   },
   "user.profile.badge.staff.about.1": {
-    "defaultMessage": "Ez a felhasználó a Modrinthnál dolgozik."
+    "defaultMessage": "Ez a felhasználó a Bbsmcnál dolgozik."
   },
   "user.profile.badge.staff.name": {
-    "defaultMessage": "A Modrinth-csapat"
+    "defaultMessage": "A Bbsmc-csapat"
   }
 }

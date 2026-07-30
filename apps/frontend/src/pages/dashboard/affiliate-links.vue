@@ -57,8 +57,8 @@
 	</div>
 </template>
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { PlusIcon, SearchIcon, XCircleIcon } from '@modrinth/assets'
+import type { Labrinth } from '@Bbsmc/api-client'
+import { PlusIcon, SearchIcon, XCircleIcon } from '@Bbsmc/assets'
 import {
 	Admonition,
 	AffiliateLinkCard,
@@ -66,11 +66,11 @@ import {
 	ButtonStyled,
 	ConfirmModal,
 	defineMessages,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	StyledInput,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { useQuery } from '@tanstack/vue-query'
 
 const createModal = useTemplateRef<typeof AffiliateLinkCreateModal>('createModal')
@@ -78,7 +78,7 @@ const revokeModal = useTemplateRef<typeof ConfirmModal>('revokeModal')
 
 const auth = await useAuth()
 
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const { handleError } = injectNotificationManager()
 
 const { formatMessage } = useVIntl()

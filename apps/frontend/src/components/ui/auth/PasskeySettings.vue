@@ -41,8 +41,7 @@
 										})
 									}}
 								</span>
-								â‹…
-								<span v-if="passkey.last_used" v-tooltip="formatDateTime(passkey.last_used)">
+								â‹?								<span v-if="passkey.last_used" v-tooltip="formatDateTime(passkey.last_used)">
 									{{
 										formatMessage(messages.managePasskeyModalLastUsed, {
 											ago: formatRelativeTime(passkey.last_used),
@@ -198,7 +197,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
 import {
 	EditIcon,
 	PlusIcon,
@@ -207,25 +206,25 @@ import {
 	TrashIcon,
 	UserKeyIcon,
 	XIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	ButtonStyled,
 	commonMessages,
 	ConfirmModal,
 	defineMessages,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	NewModal,
 	StyledInput,
 	useFormatDateTime,
 	useRelativeTime,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { computed, ref, useTemplateRef } from 'vue'
 
 import { createPasskeyCredential } from '~/helpers/passkey.ts'
 
-const { labrinth } = injectModrinthClient()
+const { labrinth } = injectBbsmcClient()
 const { addNotification } = injectNotificationManager()
 const { formatMessage } = useVIntl()
 const formatRelativeTime = useRelativeTime()

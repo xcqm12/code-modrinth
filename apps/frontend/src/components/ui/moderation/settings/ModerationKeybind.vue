@@ -40,9 +40,9 @@
 </template>
 
 <script setup lang="ts">
-import { GlobeIcon, RotateCounterClockwiseIcon } from '@modrinth/assets'
-import { type KeybindDefinition, toKeybindDefinition } from '@modrinth/moderation'
-import { Button, ButtonStyled } from '@modrinth/ui'
+import { GlobeIcon, RotateCounterClockwiseIcon } from '@Bbsmc/assets'
+import { type KeybindDefinition, toKeybindDefinition } from '@Bbsmc/moderation'
+import { Button, ButtonStyled } from '@Bbsmc/ui'
 import { onUnmounted } from 'vue'
 
 const props = defineProps<{
@@ -121,11 +121,11 @@ function toDisplay(definition: KeybindDefinition): string {
 
 	const mainKey = definition.key
 		.toUpperCase()
-		.replace('ARROWLEFT', 'â†')
-		.replace('ARROWRIGHT', 'â†’')
-		.replace('ARROWUP', 'â†‘')
-		.replace('ARROWDOWN', 'â†“')
-		.replace('ENTER', 'â†µ')
+		.replace('ARROWLEFT', 'â†?)
+		.replace('ARROWRIGHT', 'â†?)
+		.replace('ARROWUP', 'â†?)
+		.replace('ARROWDOWN', 'â†?)
+		.replace('ENTER', 'â†?)
 
 	keys.push(mainKey)
 

@@ -67,7 +67,7 @@ import {
 	OrganizationIcon,
 	SettingsIcon,
 	UsersIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -82,7 +82,7 @@ import {
 	type TeleportOverflowMenuItem,
 	useFormatNumber,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { computed } from 'vue'
 
 const messages = defineMessages({

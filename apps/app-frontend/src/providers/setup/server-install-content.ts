@@ -1,4 +1,4 @@
-import type { AbstractModrinthClient, Archon, Labrinth } from '@modrinth/api-client'
+import type { AbstractBbsmcClient, Archon, Labrinth } from '@Bbsmc/api-client'
 import {
 	addPendingServerContentInstalls,
 	type BrowseInstallPlan,
@@ -7,7 +7,7 @@ import {
 	type CreationFlowContextValue,
 	flushStoredServerAddonInstallQueue,
 	getStoredServerAddonInstallQueue,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	type ModpackSearchResult,
 	type PendingServerContentInstall,
@@ -17,7 +17,7 @@ import {
 	removePendingServerContentInstall,
 	writePendingServerContentInstallBaseline,
 	writeStoredServerInstallQueue,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 import { computed, type ComputedRef, nextTick, type Ref, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
@@ -113,7 +113,7 @@ function getQueuedInstallOwnerFallback(project: InstallableSearchResult) {
 }
 
 async function getQueuedInstallOwner(
-	client: AbstractModrinthClient,
+	client: AbstractBbsmcClient,
 	project: InstallableSearchResult,
 ) {
 	const fallback = getQueuedInstallOwnerFallback(project)
@@ -188,7 +188,7 @@ function getQueuedInstallPlaceholderFallbacks(
 }
 
 async function getQueuedInstallPlaceholders(
-	client: AbstractModrinthClient,
+	client: AbstractBbsmcClient,
 	plans: Map<string, BrowseInstallPlan<InstallableSearchResult>>,
 ) {
 	return Promise.all(
@@ -204,7 +204,7 @@ export function createServerInstallContent(opts: {
 	const { serverSetupModalRef } = opts
 	const route = useRoute()
 	const router = useRouter()
-	const client = injectModrinthClient()
+	const client = injectBbsmcClient()
 	const { handleError } = injectNotificationManager()
 	const queryClient = useQueryClient()
 
@@ -554,7 +554,7 @@ export function createServerInstallContent(opts: {
 			await client.archon.content_v1.installContent(sid, wid, {
 				content_variant: 'modpack',
 				spec: {
-					platform: 'modrinth',
+					platform: 'Bbsmc',
 					project_id: config.modpackSelection.value.projectId,
 					version_id: config.modpackSelection.value.versionId,
 				},

@@ -1,5 +1,5 @@
-import { ScaleIcon } from '@modrinth/assets'
-import { injectProjectPageContext } from '@modrinth/ui'
+import { ScaleIcon } from '@Bbsmc/assets'
+import { injectProjectPageContext } from '@Bbsmc/ui'
 import { computed } from 'vue'
 
 import { group, stage, text, toggle } from '../../types/node'

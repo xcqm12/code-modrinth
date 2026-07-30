@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import { CheckIcon } from '@modrinth/assets'
+import { CheckIcon } from '@Bbsmc/assets'
 import {
 	Admonition,
 	commonProjectSettingsMessages,
 	defineMessages,
 	EnvironmentSelector,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	injectProjectPageContext,
 	UnsavedChangesPopup,
 	useSavable,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { computed } from 'vue'
 
 const { formatMessage } = useVIntl()
@@ -27,7 +27,7 @@ const props = withDefaults(
 
 const { currentMember, projectV2, projectV3, invalidate } = injectProjectPageContext()
 const { handleError } = injectNotificationManager()
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 
 const supportsEnvironment = computed(() =>
 	(projectV3.value?.project_types ?? []).some((type) => ['mod', 'modpack'].includes(type)),
@@ -135,7 +135,7 @@ const messages = defineMessages({
 	reviewOptionsDescription: {
 		id: 'project.settings.environment.notice.review-options.description',
 		defaultMessage:
-			"We've just overhauled the Environments system on Modrinth and new options are now available. Please ensure the correct option is selected below and then click 'Verify' when you're done!",
+			"We've just overhauled the Environments system on Bbsmc and new options are now available. Please ensure the correct option is selected below and then click 'Verify' when you're done!",
 	},
 })
 </script>

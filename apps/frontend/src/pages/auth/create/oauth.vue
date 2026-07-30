@@ -22,10 +22,10 @@
 import {
 	commonMessages,
 	defineMessages,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import type { LocationQueryValue } from 'vue-router'
 
@@ -61,7 +61,7 @@ const getErrorMessage = (error: unknown): string => {
 	return String(error)
 }
 
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const queryClient = useQueryClient()
 const { addNotification } = injectNotificationManager()
 const { formatMessage } = useVIntl()
@@ -78,7 +78,7 @@ const messages = defineMessages({
 
 useHead({
 	title() {
-		return `${formatMessage(messages.createAccountTitle)} - Modrinth`
+		return `${formatMessage(messages.createAccountTitle)} - Bbsmc`
 	},
 })
 

@@ -23,7 +23,7 @@ const PRODUCT_SUMMARY_MAP: Record<string, Product> = {
 }
 
 const GITHUB_API = 'https://api.github.com'
-const REPO = 'modrinth/code'
+const REPO = 'Bbsmc/code'
 
 interface ParsedChangelog {
 	entries: Map<Product, Map<string, string[]>>
@@ -140,7 +140,7 @@ function parseChangelogComment(body: string, parse: Function): ParsedChangelog |
 function linkifyIssues(text: string): string {
 	return text.replace(
 		/\[#(\d+)\]/g,
-		'[#$1](https://github.com/modrinth/code/issues/$1)',
+		'[#$1](https://github.com/Bbsmc/code/issues/$1)',
 	)
 }
 
@@ -343,7 +343,7 @@ async function main() {
 
 		const products = [...parsed.entries.keys()]
 		const types = [...new Set([...parsed.entries.values()].flatMap((s) => [...s.keys()]))]
-		console.log(chalk.cyan(`PR #${pr.number}: ${products.join(', ')} â€” ${types.join(', ')}`))
+		console.log(chalk.cyan(`PR #${pr.number}: ${products.join(', ')} â€?${types.join(', ')}`))
 
 		for (const [product, sections] of parsed.entries) {
 			if (!allEntries.has(product)) {
@@ -393,7 +393,7 @@ async function main() {
 
 	console.log()
 	if (args.dryRun) {
-		console.log(chalk.cyan('Dry run complete â€” no changes written'))
+		console.log(chalk.cyan('Dry run complete â€?no changes written'))
 	} else {
 		console.log(chalk.green('Done! Review the changes in packages/blog/changelog.ts'))
 	}

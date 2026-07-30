@@ -1,4 +1,4 @@
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
 
 import type {
 	Action,
@@ -319,15 +319,15 @@ export function requiresEnvironmentInfo(projectTypes): boolean {
 export function flattenStaticVariables(): Record<string, string> {
 	const vars: Record<string, string> = {}
 
-	vars[`RULES`] = `[Modrinth's Content Rules](https://bbsmc.org.cn/legal/rules)`
+	vars[`RULES`] = `[Bbsmc's Content Rules](https://bbsmc.org.cn/legal/rules)`
 	vars[`TOS`] = `[Terms of Use](https://bbsmc.org.cn/legal/terms)`
 	vars[`COPYRIGHT_POLICY`] = `[Copyright Policy](https://bbsmc.org.cn/legal/copyright)`
 	vars[`SUPPORT`] =
-		`please visit the [Modrinth Help Center](https://support.bbsmc.org.cn/) and click the blue bubble to contact support.`
+		`please visit the [Bbsmc Help Center](https://support.bbsmc.org.cn/) and click the blue bubble to contact support.`
 	vars[`MODPACK_PERMISSIONS_GUIDE`] =
 		`our guide to [Obtaining Modpack Permissions](https://support.bbsmc.org.cn/en/articles/8797527-obtaining-modpack-permissions)`
-	vars[`MODPACKS_ON_MODRINTH`] =
-		`[Modpacks on Modrinth](https://support.bbsmc.org.cn/en/articles/8802250-modpacks-on-modrinth)`
+	vars[`MODPACKS_ON_Bbsmc`] =
+		`[Modpacks on Bbsmc](https://support.bbsmc.org.cn/en/articles/8802250-modpacks-on-Bbsmc)`
 	vars[`ADVANCED_MARKDOWN`] =
 		`[Markdown Formatting Guide](https://support.bbsmc.org.cn/en/articles/8801962-advanced-markdown-formatting)`
 	vars[`LICENSING_GUIDE`] =

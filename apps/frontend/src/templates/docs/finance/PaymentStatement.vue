@@ -90,7 +90,7 @@ import StyledDoc from '../shared/StyledDoc.vue'
 				Purpose of Payment
 			</Text>
 			<Text class="m-0 text-sm leading-relaxed text-secondary">
-				This payout reflects the creator's earnings from their activity on the Modrinth platform.
+				This payout reflects the creator's earnings from their activity on the Bbsmc platform.
 				Such earnings are based on advertising revenue derived from user engagement with the
 				creator's published projects and/or affiliate commissions in accordance with the Rewards
 				Program Terms.

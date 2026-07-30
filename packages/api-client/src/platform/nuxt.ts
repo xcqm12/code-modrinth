@@ -1,6 +1,6 @@
 import { FetchError } from 'ofetch'
 
-import { ModrinthApiError } from '../core/errors'
+import { BbsmcApiError } from '../core/errors'
 import type { CircuitBreakerState, CircuitBreakerStorage } from '../features/circuit-breaker'
 import type { ClientConfig } from '../types/client'
 import type { RequestOptions } from '../types/request'
@@ -69,7 +69,7 @@ export interface NuxtClientConfig extends ClientConfig {
  * // In a Nuxt composable
  * const config = useRuntimeConfig()
  *
- * const client = new NuxtModrinthClient({
+ * const client = new NuxtBbsmcClient({
  *   userAgent: 'my-nuxt-app/1.0.0',
  *   rateLimitKey: import.meta.server ? config.rateLimitKey : undefined,
  *   features: [
@@ -85,7 +85,7 @@ export interface NuxtClientConfig extends ClientConfig {
  * const project = await client.request('/project/sodium', { api: 'labrinth', version: 2 })
  * ```
  */
-export class NuxtModrinthClient extends XHRUploadClient {
+export class NuxtBbsmcClient extends XHRUploadClient {
 	declare protected config: NuxtClientConfig
 	private rateLimitKeyResolved: string | undefined
 	private rateLimitKeyPromise: Promise<string | undefined> | undefined
@@ -150,7 +150,7 @@ export class NuxtModrinthClient extends XHRUploadClient {
 	upload<T = void>(path: string, options: UploadRequestOptions): UploadHandle<T> {
 		// @ts-expect-error - import.meta is provided by Nuxt
 		if (import.meta.server) {
-			throw new ModrinthApiError('upload() is not supported during SSR')
+			throw new BbsmcApiError('upload() is not supported during SSR')
 		}
 		return super.upload(path, options)
 	}
@@ -198,7 +198,7 @@ export class NuxtModrinthClient extends XHRUploadClient {
 			}
 
 			if (!response.body) {
-				throw new ModrinthApiError('Streaming response has no readable body', {
+				throw new BbsmcApiError('Streaming response has no readable body', {
 					statusCode: response.status,
 				})
 			}
@@ -209,7 +209,7 @@ export class NuxtModrinthClient extends XHRUploadClient {
 		}
 	}
 
-	protected normalizeError(error: unknown): ModrinthApiError {
+	protected normalizeError(error: unknown): BbsmcApiError {
 		if (error instanceof FetchError) {
 			return this.createNormalizedError(error, error.response?.status, error.data)
 		}

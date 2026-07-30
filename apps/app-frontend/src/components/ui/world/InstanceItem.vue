@@ -6,7 +6,7 @@ import {
 	PlayIcon,
 	SpinnerIcon,
 	StopCircleIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -17,8 +17,8 @@ import {
 	useFormatDateTime,
 	useRelativeTime,
 	useVIntl,
-} from '@modrinth/ui'
-import { capitalizeString } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import { capitalizeString } from '@Bbsmc/utils'
 import { convertFileSrc } from '@tauri-apps/api/core'
 import type { Dayjs } from 'dayjs'
 import { computed, nextTick, onMounted, onUnmounted, ref } from 'vue'
@@ -163,8 +163,7 @@ onUnmounted(() => {
 						</template>
 						<template v-else> Not played yet </template>
 					</div>
-					â€¢
-					<span v-if="modpack" class="flex items-center gap-1 truncate text-secondary">
+					â€?					<span v-if="modpack" class="flex items-center gap-1 truncate text-secondary">
 						<router-link
 							class="inline-flex items-center gap-1 truncate hover:underline text-secondary smart-clickable:allow-pointer-events"
 							:to="`/project/${modpack.id}`"

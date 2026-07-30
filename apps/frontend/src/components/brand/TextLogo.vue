@@ -9,7 +9,7 @@
 		viewBox="0 0 3307 593"
 		:class="{ animate: loading }"
 	>
-		<!-- modrinth -->
+		<!-- Bbsmc -->
 		<path
 			v-if="api === 'prod'"
 			fill="currentColor"

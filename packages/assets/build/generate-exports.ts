@@ -1,4 +1,4 @@
-import { compareImportSources } from '@modrinth/tooling-config/script-utils/import-sort'
+import { compareImportSources } from '@Bbsmc/tooling-config/script-utils/import-sort'
 import fs from 'fs'
 import path from 'path'
 
@@ -209,10 +209,10 @@ function runTests(): void {
 		const success = result === expected
 
 		if (success) {
-			console.log(`‚úÖ ${input} ‚Üí ${result}`)
+			console.log(`‚ú?${input} ‚Ü?${result}`)
 			passed++
 		} else {
-			console.log(`‚ùå ${input} ‚Üí ${result} (expected: ${expected})`)
+			console.log(`‚ù?${input} ‚Ü?${result} (expected: ${expected})`)
 			failed++
 		}
 	})
@@ -246,12 +246,12 @@ ${loaderMap}`
 		const outputPath = path.join(packageRoot, 'generated-icons.ts')
 		fs.writeFileSync(outputPath, output)
 
-		console.log(`‚úÖ Generated icon exports to: ${outputPath}`)
+		console.log(`‚ú?Generated icon exports to: ${outputPath}`)
 		console.log(
 			`üì¶ Generated ${imports.split('\n').filter((line) => line.trim()).length} icon imports/exports`,
 		)
 	} catch (error) {
-		console.error('‚ùå Error generating icons:', error)
+		console.error('‚ù?Error generating icons:', error)
 		process.exit(1)
 	}
 }
@@ -396,22 +396,22 @@ function validateIconConsistency(): void {
 		const extraExports = actualExports.filter((name) => !expectedExports.includes(name))
 
 		if (missingExports.length > 0) {
-			console.error(`‚ùå Missing icon exports: ${missingExports.join(', ')}`)
+			console.error(`‚ù?Missing icon exports: ${missingExports.join(', ')}`)
 			console.error("Run 'pnpm run fix' to generate them.")
 			process.exit(1)
 		}
 
 		if (extraExports.length > 0) {
 			console.error(
-				`‚ùå Extra icon exports (no corresponding SVG files): ${extraExports.join(', ')}`,
+				`‚ù?Extra icon exports (no corresponding SVG files): ${extraExports.join(', ')}`,
 			)
 			console.error("Run 'pnpm run fix' to clean them up.")
 			process.exit(1)
 		}
 
-		console.log('‚úÖ Icon exports are consistent with SVG files')
+		console.log('‚ú?Icon exports are consistent with SVG files')
 	} catch (error) {
-		console.error('‚ùå Error validating icons:', error)
+		console.error('‚ù?Error validating icons:', error)
 		process.exit(1)
 	}
 }

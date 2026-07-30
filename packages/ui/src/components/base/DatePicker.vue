@@ -1,7 +1,7 @@
 <template>
 	<div
 		ref="wrapperRef"
-		class="modrinth-date-picker relative inline-flex items-center"
+		class="Bbsmc-date-picker relative inline-flex items-center"
 		:class="[
 			wrapperClass,
 			calendarOnly ? 'calendar-only' : '',
@@ -47,9 +47,9 @@
 <script setup lang="ts">
 import 'flatpickr/dist/flatpickr.css'
 
-import { CalendarIcon, XIcon } from '@modrinth/assets'
-import chevronLeftIcon from '@modrinth/assets/icons/chevron-left.svg?raw'
-import chevronRightIcon from '@modrinth/assets/icons/chevron-right.svg?raw'
+import { CalendarIcon, XIcon } from '@Bbsmc/assets'
+import chevronLeftIcon from '@Bbsmc/assets/icons/chevron-left.svg?raw'
+import chevronRightIcon from '@Bbsmc/assets/icons/chevron-right.svg?raw'
 import flatpickr from 'flatpickr'
 import type { Instance } from 'flatpickr/dist/types/instance'
 import type { Options } from 'flatpickr/dist/types/options'
@@ -105,7 +105,7 @@ const props = withDefaults(
 		maxDate?: string | Date
 		/**
 		 * The date the calendar opens to when no value is selected. Does not set
-		 * the value â€” only controls which month/year is shown when the picker
+		 * the value â€?only controls which month/year is shown when the picker
 		 * first opens (and on subsequent opens while the value is empty).
 		 */
 		defaultViewDate?: string | Date
@@ -197,7 +197,7 @@ let calendarPortal: HTMLElement | null = null
 let inputFocusScrollSuppressionTarget: HTMLInputElement | null = null
 let originalInputFocus: HTMLInputElement['focus'] | null = null
 let suppressNextInputFocusScroll = false
-const calendarBaseClass = 'modrinth-date-picker-calendar'
+const calendarBaseClass = 'Bbsmc-date-picker-calendar'
 const twoCalendarClass = 'has-two-calendars'
 const calendarPositionGap = 2
 const calendarStateClasses = [
@@ -245,7 +245,7 @@ function ensureCalendarPortal() {
 
 	if (!calendarPortal) {
 		calendarPortal = document.createElement('div')
-		calendarPortal.classList.add('modrinth-date-picker', 'modrinth-date-picker-portal')
+		calendarPortal.classList.add('Bbsmc-date-picker', 'Bbsmc-date-picker-portal')
 
 		for (const attr of wrapperRef.value?.getAttributeNames() ?? []) {
 			if (attr.startsWith('data-v-')) {
@@ -359,12 +359,12 @@ function getMonthName(instance: Instance, month: number) {
 function syncMultiMonthSelects(instance = picker.value) {
 	if (!instance) return
 
-	for (const select of instance.monthNav.querySelectorAll('.modrinth-monthDropdown-months')) {
+	for (const select of instance.monthNav.querySelectorAll('.Bbsmc-monthDropdown-months')) {
 		select.remove()
 	}
 
-	for (const monthElement of instance.monthNav.querySelectorAll('.modrinth-hidden-cur-month')) {
-		monthElement.classList.remove('modrinth-hidden-cur-month')
+	for (const monthElement of instance.monthNav.querySelectorAll('.Bbsmc-hidden-cur-month')) {
+		monthElement.classList.remove('Bbsmc-hidden-cur-month')
 	}
 
 	const showMultiMonthSelects =
@@ -380,7 +380,7 @@ function syncMultiMonthSelects(instance = picker.value) {
 		const displayedYear = displayedMonthDate.getFullYear()
 		const displayedMonth = displayedMonthDate.getMonth()
 		const monthSelect = document.createElement('select')
-		monthSelect.className = 'flatpickr-monthDropdown-months modrinth-monthDropdown-months'
+		monthSelect.className = 'flatpickr-monthDropdown-months Bbsmc-monthDropdown-months'
 		monthSelect.setAttribute('aria-label', instance.l10n.monthAriaLabel)
 		monthSelect.tabIndex = -1
 
@@ -408,7 +408,7 @@ function syncMultiMonthSelects(instance = picker.value) {
 			syncMultiMonthSelects(instance)
 		})
 
-		monthElement.classList.add('modrinth-hidden-cur-month')
+		monthElement.classList.add('Bbsmc-hidden-cur-month')
 		currentMonth.insertBefore(monthSelect, monthElement)
 	})
 }
@@ -1544,97 +1544,97 @@ defineExpose({
 </script>
 
 <style scoped>
-.modrinth-date-picker :deep(.flatpickr-wrapper) {
+.Bbsmc-date-picker :deep(.flatpickr-wrapper) {
 	@apply w-full;
 }
 
-.modrinth-date-picker :deep(.flatpickr-calendar) {
+.Bbsmc-date-picker :deep(.flatpickr-calendar) {
 	@apply mt-2 touch-manipulation rounded-2xl border border-solid border-surface-5 bg-surface-3 shadow-none p-3 text-primary select-none;
 	box-sizing: content-box;
 }
 
-.modrinth-date-picker :deep(.flatpickr-calendar.arrowBottom) {
+.Bbsmc-date-picker :deep(.flatpickr-calendar.arrowBottom) {
 	margin-top: -0.5rem;
 }
 
-.modrinth-date-picker.calendar-only {
+.Bbsmc-date-picker.calendar-only {
 	@apply block;
 }
 
-.modrinth-date-picker.calendar-only :deep(.flatpickr-wrapper) {
+.Bbsmc-date-picker.calendar-only :deep(.flatpickr-wrapper) {
 	@apply block w-full;
 }
 
-.modrinth-date-picker.calendar-only :deep(.flatpickr-calendar) {
+.Bbsmc-date-picker.calendar-only :deep(.flatpickr-calendar) {
 	@apply m-0;
 	box-sizing: content-box;
 }
 
-.modrinth-date-picker :deep(.dayContainer) {
+.Bbsmc-date-picker :deep(.dayContainer) {
 	@apply max-w-[307.875px] min-w-[307.875px] w-[307.875px];
 }
 
-.modrinth-date-picker :deep(.flatpickr-calendar.multiMonth .flatpickr-rContainer),
-.modrinth-date-picker :deep(.flatpickr-calendar.multiMonth .flatpickr-days) {
+.Bbsmc-date-picker :deep(.flatpickr-calendar.multiMonth .flatpickr-rContainer),
+.Bbsmc-date-picker :deep(.flatpickr-calendar.multiMonth .flatpickr-days) {
 	@apply max-w-none;
 }
 
-.modrinth-date-picker :deep(.flatpickr-calendar.multiMonth .flatpickr-days) {
+.Bbsmc-date-picker :deep(.flatpickr-calendar.multiMonth .flatpickr-days) {
 	overflow: visible;
 }
 
-.modrinth-date-picker :deep(.flatpickr-calendar.multiMonth .dayContainer + .dayContainer) {
+.Bbsmc-date-picker :deep(.flatpickr-calendar.multiMonth .dayContainer + .dayContainer) {
 	box-shadow: none;
 }
 
-.modrinth-date-picker :deep(.flatpickr-calendar.has-two-calendars) {
+.Bbsmc-date-picker :deep(.flatpickr-calendar.has-two-calendars) {
 	width: calc(615.75px + 0.75rem) !important;
 }
 
-.modrinth-date-picker :deep(.flatpickr-calendar.has-two-calendars .flatpickr-months),
-.modrinth-date-picker :deep(.flatpickr-calendar.has-two-calendars .flatpickr-weekdays),
-.modrinth-date-picker :deep(.flatpickr-calendar.has-two-calendars .flatpickr-days) {
+.Bbsmc-date-picker :deep(.flatpickr-calendar.has-two-calendars .flatpickr-months),
+.Bbsmc-date-picker :deep(.flatpickr-calendar.has-two-calendars .flatpickr-weekdays),
+.Bbsmc-date-picker :deep(.flatpickr-calendar.has-two-calendars .flatpickr-days) {
 	@apply gap-3;
 }
 
-.modrinth-date-picker :deep(.flatpickr-calendar.has-two-calendars .flatpickr-rContainer),
-.modrinth-date-picker :deep(.flatpickr-calendar.has-two-calendars .flatpickr-weekdays),
-.modrinth-date-picker :deep(.flatpickr-calendar.has-two-calendars .flatpickr-days) {
+.Bbsmc-date-picker :deep(.flatpickr-calendar.has-two-calendars .flatpickr-rContainer),
+.Bbsmc-date-picker :deep(.flatpickr-calendar.has-two-calendars .flatpickr-weekdays),
+.Bbsmc-date-picker :deep(.flatpickr-calendar.has-two-calendars .flatpickr-days) {
 	width: calc(615.75px + 0.75rem) !important;
 }
 
-.modrinth-date-picker :deep(.flatpickr-calendar.has-two-calendars .flatpickr-month),
-.modrinth-date-picker :deep(.flatpickr-calendar.has-two-calendars .flatpickr-weekdaycontainer) {
+.Bbsmc-date-picker :deep(.flatpickr-calendar.has-two-calendars .flatpickr-month),
+.Bbsmc-date-picker :deep(.flatpickr-calendar.has-two-calendars .flatpickr-weekdaycontainer) {
 	@apply max-w-[307.875px] min-w-[307.875px] flex-none;
 }
 
-.modrinth-date-picker :deep(.flatpickr-calendar::before),
-.modrinth-date-picker :deep(.flatpickr-calendar::after) {
+.Bbsmc-date-picker :deep(.flatpickr-calendar::before),
+.Bbsmc-date-picker :deep(.flatpickr-calendar::after) {
 	display: none;
 }
 
-.modrinth-date-picker :deep(.flatpickr-months),
-.modrinth-date-picker :deep(.flatpickr-month) {
+.Bbsmc-date-picker :deep(.flatpickr-months),
+.Bbsmc-date-picker :deep(.flatpickr-month) {
 	@apply items-center h-10 flex mb-1 overflow-visible;
 }
 
-.modrinth-date-picker :deep(.flatpickr-month),
-.modrinth-date-picker :deep(.flatpickr-current-month),
-.modrinth-date-picker :deep(.flatpickr-weekdays),
-.modrinth-date-picker :deep(.flatpickr-weekdaycontainer) {
+.Bbsmc-date-picker :deep(.flatpickr-month),
+.Bbsmc-date-picker :deep(.flatpickr-current-month),
+.Bbsmc-date-picker :deep(.flatpickr-weekdays),
+.Bbsmc-date-picker :deep(.flatpickr-weekdaycontainer) {
 	@apply text-contrast shadow-none;
 }
 
-.modrinth-date-picker :deep(.flatpickr-current-month) {
+.Bbsmc-date-picker :deep(.flatpickr-current-month) {
 	@apply flex h-full items-center justify-center gap-2 py-0 text-base font-semibold;
 }
 
-.modrinth-date-picker :deep(.flatpickr-current-month input.cur-year),
-.modrinth-date-picker :deep(.flatpickr-current-month .flatpickr-monthDropdown-months) {
+.Bbsmc-date-picker :deep(.flatpickr-current-month input.cur-year),
+.Bbsmc-date-picker :deep(.flatpickr-current-month .flatpickr-monthDropdown-months) {
 	@apply touch-manipulation rounded-xl bg-surface-4 py-1 font-semibold text-contrast hover:bg-surface-5 min-h-10;
 }
 
-.modrinth-date-picker :deep(.flatpickr-current-month .flatpickr-monthDropdown-months) {
+.Bbsmc-date-picker :deep(.flatpickr-current-month .flatpickr-monthDropdown-months) {
 	@apply min-w-28 pl-3 pr-8;
 	appearance: none;
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
@@ -1642,90 +1642,90 @@ defineExpose({
 	background-repeat: no-repeat;
 	background-size: 16px 16px;
 }
-.modrinth-date-picker :deep(.flatpickr-current-month .modrinth-hidden-cur-month) {
+.Bbsmc-date-picker :deep(.flatpickr-current-month .Bbsmc-hidden-cur-month) {
 	display: none;
 }
-.modrinth-date-picker :deep(.flatpickr-current-month .flatpickr-monthDropdown-months:disabled) {
+.Bbsmc-date-picker :deep(.flatpickr-current-month .flatpickr-monthDropdown-months:disabled) {
 	@apply cursor-not-allowed opacity-40 hover:bg-surface-4;
 }
-.modrinth-date-picker :deep(.flatpickr-current-month .numInputWrapper:has(input.cur-year)) {
+.Bbsmc-date-picker :deep(.flatpickr-current-month .numInputWrapper:has(input.cur-year)) {
 	@apply w-[76px];
 }
-.modrinth-date-picker :deep(.flatpickr-current-month input.cur-year) {
+.Bbsmc-date-picker :deep(.flatpickr-current-month input.cur-year) {
 	@apply min-w-[76px] px-2 text-center;
 }
-.modrinth-date-picker :deep(input[type='number']) {
+.Bbsmc-date-picker :deep(input[type='number']) {
 	-moz-appearance: textfield;
 	appearance: textfield;
 }
-.modrinth-date-picker :deep(input[type='number']::-webkit-inner-spin-button),
-.modrinth-date-picker :deep(input[type='number']::-webkit-outer-spin-button) {
+.Bbsmc-date-picker :deep(input[type='number']::-webkit-inner-spin-button),
+.Bbsmc-date-picker :deep(input[type='number']::-webkit-outer-spin-button) {
 	margin: 0;
 	-webkit-appearance: none;
 }
-.modrinth-date-picker
+.Bbsmc-date-picker
 	:deep(.flatpickr-current-month .numInputWrapper:has(input.cur-year:disabled)) {
 	@apply cursor-not-allowed;
 	background: none;
 }
-.modrinth-date-picker :deep(.flatpickr-current-month input.cur-year:disabled) {
+.Bbsmc-date-picker :deep(.flatpickr-current-month input.cur-year:disabled) {
 	@apply opacity-40 bg-surface-4 hover:bg-surface-4;
 }
-.modrinth-date-picker
+.Bbsmc-date-picker
 	:deep(.flatpickr-current-month .numInputWrapper:has(input.cur-year:disabled) span) {
 	@apply pointer-events-none opacity-0;
 }
 
-.modrinth-date-picker :deep(.flatpickr-current-month input.cur-year:focus),
-.modrinth-date-picker :deep(.flatpickr-current-month .flatpickr-monthDropdown-months:focus) {
+.Bbsmc-date-picker :deep(.flatpickr-current-month input.cur-year:focus),
+.Bbsmc-date-picker :deep(.flatpickr-current-month .flatpickr-monthDropdown-months:focus) {
 	@apply outline-none ring-4 ring-brand-shadow;
 }
 
-.modrinth-date-picker :deep(.numInputWrapper span.arrowUp) {
+.Bbsmc-date-picker :deep(.numInputWrapper span.arrowUp) {
 	@apply border-0 rounded-tr-xl;
 }
-.modrinth-date-picker :deep(.numInputWrapper span.arrowDown) {
+.Bbsmc-date-picker :deep(.numInputWrapper span.arrowDown) {
 	@apply border-0 rounded-br-xl;
 }
 
-.modrinth-date-picker :deep(.numInputWrapper span.arrowUp::after) {
+.Bbsmc-date-picker :deep(.numInputWrapper span.arrowUp::after) {
 	border-bottom-color: var(--color-text-secondary);
 }
 
-.modrinth-date-picker :deep(.numInputWrapper span.arrowDown::after) {
+.Bbsmc-date-picker :deep(.numInputWrapper span.arrowDown::after) {
 	border-top-color: var(--color-text-secondary);
 }
 
-.modrinth-date-picker :deep(.flatpickr-prev-month),
-.modrinth-date-picker :deep(.flatpickr-next-month) {
+.Bbsmc-date-picker :deep(.flatpickr-prev-month),
+.Bbsmc-date-picker :deep(.flatpickr-next-month) {
 	@apply top-2.5 mx-3.5 flex h-10 w-10 touch-manipulation items-center justify-center rounded-full p-0 text-secondary hover:bg-surface-4 hover:text-contrast;
 }
 
-.modrinth-date-picker :deep(.flatpickr-prev-month.flatpickr-disabled),
-.modrinth-date-picker :deep(.flatpickr-next-month.flatpickr-disabled) {
+.Bbsmc-date-picker :deep(.flatpickr-prev-month.flatpickr-disabled),
+.Bbsmc-date-picker :deep(.flatpickr-next-month.flatpickr-disabled) {
 	@apply cursor-not-allowed opacity-40 hover:bg-transparent hover:text-secondary;
 }
 
-.modrinth-date-picker :deep(.flatpickr-prev-month svg),
-.modrinth-date-picker :deep(.flatpickr-next-month svg) {
+.Bbsmc-date-picker :deep(.flatpickr-prev-month svg),
+.Bbsmc-date-picker :deep(.flatpickr-next-month svg) {
 	@apply h-5 w-5 stroke-current text-secondary;
 	fill: none;
 	stroke-width: 3;
 }
 
-.modrinth-date-picker :deep(.flatpickr-prev-month:hover svg),
-.modrinth-date-picker :deep(.flatpickr-next-month:hover svg) {
+.Bbsmc-date-picker :deep(.flatpickr-prev-month:hover svg),
+.Bbsmc-date-picker :deep(.flatpickr-next-month:hover svg) {
 	fill: none;
 }
 
-.modrinth-date-picker :deep(.flatpickr-weekday) {
+.Bbsmc-date-picker :deep(.flatpickr-weekday) {
 	@apply text-xs font-semibold text-secondary;
 }
 
-.modrinth-date-picker :deep(.flatpickr-day) {
+.Bbsmc-date-picker :deep(.flatpickr-day) {
 	@apply relative z-0 m-0 max-w-none touch-manipulation rounded-full border border-solid border-transparent text-primary hover:bg-surface-4 hover:text-contrast font-semibold aspect-square h-auto;
 }
-.modrinth-date-picker
+.Bbsmc-date-picker
 	:deep(
 		.flatpickr-day:focus:not(:focus-visible):not(.selected):not(.startRange):not(.endRange):not(
 				.inRange
@@ -1733,15 +1733,15 @@ defineExpose({
 	) {
 	@apply border-transparent bg-transparent text-primary outline-none;
 }
-.modrinth-date-picker
+.Bbsmc-date-picker
 	:deep(.flatpickr-day:focus-visible:not(.selected):not(.startRange):not(.endRange):not(.inRange)) {
 	@apply border-transparent bg-surface-4 text-contrast outline-none;
 }
-.modrinth-date-picker :deep(.flatpickr-day.flatpickr-disabled) {
+.Bbsmc-date-picker :deep(.flatpickr-day.flatpickr-disabled) {
 	@apply hover:bg-transparent;
 }
 
-.modrinth-date-picker :deep(.flatpickr-day::before) {
+.Bbsmc-date-picker :deep(.flatpickr-day::before) {
 	content: '';
 	position: absolute;
 	inset: 0 0;
@@ -1749,11 +1749,11 @@ defineExpose({
 	background: transparent;
 }
 
-.modrinth-date-picker :deep(.flatpickr-day.today) {
+.Bbsmc-date-picker :deep(.flatpickr-day.today) {
 	@apply border-transparent;
 }
 
-.modrinth-date-picker.show-today :deep(.flatpickr-day.today::after) {
+.Bbsmc-date-picker.show-today :deep(.flatpickr-day.today::after) {
 	content: '';
 	position: absolute;
 	bottom: 6px;
@@ -1765,90 +1765,90 @@ defineExpose({
 	@apply bg-brand;
 }
 
-.modrinth-date-picker.show-today :deep(.flatpickr-day.today.selected::after),
-.modrinth-date-picker.show-today :deep(.flatpickr-day.today.startRange::after),
-.modrinth-date-picker.show-today :deep(.flatpickr-day.today.endRange::after) {
+.Bbsmc-date-picker.show-today :deep(.flatpickr-day.today.selected::after),
+.Bbsmc-date-picker.show-today :deep(.flatpickr-day.today.startRange::after),
+.Bbsmc-date-picker.show-today :deep(.flatpickr-day.today.endRange::after) {
 	@apply bg-brand-inverted;
 }
 
-.modrinth-date-picker :deep(.flatpickr-day.selected),
-.modrinth-date-picker :deep(.flatpickr-day.startRange),
-.modrinth-date-picker :deep(.flatpickr-day.endRange) {
+.Bbsmc-date-picker :deep(.flatpickr-day.selected),
+.Bbsmc-date-picker :deep(.flatpickr-day.startRange),
+.Bbsmc-date-picker :deep(.flatpickr-day.endRange) {
 	@apply z-[1] border-brand bg-brand text-brand-inverted !shadow-none hover:border-brand hover:bg-brand hover:text-brand-inverted hover:shadow-none;
 }
 
-.modrinth-date-picker :deep(.flatpickr-day.inRange) {
+.Bbsmc-date-picker :deep(.flatpickr-day.inRange) {
 	@apply rounded-none border-transparent bg-transparent text-brand shadow-none hover:rounded-none hover:border-transparent hover:bg-transparent;
 }
 
-.modrinth-date-picker :deep(.flatpickr-calendar.multiMonth .flatpickr-day.inRange) {
+.Bbsmc-date-picker :deep(.flatpickr-calendar.multiMonth .flatpickr-day.inRange) {
 	box-shadow: none !important;
 }
 
-.modrinth-date-picker :deep(.flatpickr-day.inRange::before),
-.modrinth-date-picker :deep(.flatpickr-day.startRange:not(.endRange)::before),
-.modrinth-date-picker :deep(.flatpickr-day.endRange:not(.startRange)::before) {
+.Bbsmc-date-picker :deep(.flatpickr-day.inRange::before),
+.Bbsmc-date-picker :deep(.flatpickr-day.startRange:not(.endRange)::before),
+.Bbsmc-date-picker :deep(.flatpickr-day.endRange:not(.startRange)::before) {
 	background: var(--color-brand-highlight);
 }
 
-.modrinth-date-picker :deep(.flatpickr-day.inRange::before) {
+.Bbsmc-date-picker :deep(.flatpickr-day.inRange::before) {
 	left: -1px;
 	right: -1px;
 }
 
-.modrinth-date-picker :deep(.flatpickr-day.inRange:nth-child(7n + 1)::before) {
+.Bbsmc-date-picker :deep(.flatpickr-day.inRange:nth-child(7n + 1)::before) {
 	@apply rounded-l-xl;
 	left: 0;
 }
 
-.modrinth-date-picker :deep(.flatpickr-day.inRange:nth-child(7n)::before) {
+.Bbsmc-date-picker :deep(.flatpickr-day.inRange:nth-child(7n)::before) {
 	@apply rounded-r-xl;
 	right: 0;
 }
 
-.modrinth-date-picker :deep(.flatpickr-day.startRange:not(.endRange)) {
+.Bbsmc-date-picker :deep(.flatpickr-day.startRange:not(.endRange)) {
 	@apply rounded-full border-brand;
 }
 
-.modrinth-date-picker :deep(.flatpickr-day.startRange:not(.endRange)::before) {
+.Bbsmc-date-picker :deep(.flatpickr-day.startRange:not(.endRange)::before) {
 	@apply rounded-l-xl;
 	left: 50%;
 	right: -1px;
 }
 
-.modrinth-date-picker
+.Bbsmc-date-picker
 	:deep(.flatpickr-calendar.is-missing-range-end .flatpickr-day.startRange:not(.endRange)::before),
-.modrinth-date-picker :deep(.flatpickr-calendar.is-missing-range-end .flatpickr-day:hover::before) {
+.Bbsmc-date-picker :deep(.flatpickr-calendar.is-missing-range-end .flatpickr-day:hover::before) {
 	background: transparent;
 }
 
-.modrinth-date-picker :deep(.flatpickr-day.startRange:nth-child(7n):not(.endRange)::before) {
+.Bbsmc-date-picker :deep(.flatpickr-day.startRange:nth-child(7n):not(.endRange)::before) {
 	@apply rounded-r-xl;
 	right: 0;
 }
 
-.modrinth-date-picker :deep(.flatpickr-day.endRange:not(.startRange)) {
+.Bbsmc-date-picker :deep(.flatpickr-day.endRange:not(.startRange)) {
 	@apply rounded-full border-brand;
 }
 
-.modrinth-date-picker :deep(.flatpickr-day.endRange:not(.startRange)::before) {
+.Bbsmc-date-picker :deep(.flatpickr-day.endRange:not(.startRange)::before) {
 	@apply rounded-r-xl;
 	left: -1px;
 	right: 50%;
 }
 
-.modrinth-date-picker :deep(.flatpickr-day.endRange:nth-child(7n + 1):not(.startRange)::before) {
+.Bbsmc-date-picker :deep(.flatpickr-day.endRange:nth-child(7n + 1):not(.startRange)::before) {
 	@apply rounded-l-xl;
 	left: 0;
 }
 
-.modrinth-date-picker :deep(.flatpickr-calendar.multiMonth .flatpickr-day.hidden::before) {
+.Bbsmc-date-picker :deep(.flatpickr-calendar.multiMonth .flatpickr-day.hidden::before) {
 	display: none;
 }
 
-.modrinth-date-picker
+.Bbsmc-date-picker
 	:deep(.flatpickr-calendar.multiMonth .flatpickr-day.hidden + .flatpickr-day.inRange::before),
-.modrinth-date-picker
+.Bbsmc-date-picker
 	:deep(
 		.flatpickr-calendar.multiMonth
 			.flatpickr-day.hidden
@@ -1858,9 +1858,9 @@ defineExpose({
 	left: 0;
 }
 
-.modrinth-date-picker
+.Bbsmc-date-picker
 	:deep(.flatpickr-calendar.multiMonth .flatpickr-day.inRange:has(+ .hidden)::before),
-.modrinth-date-picker
+.Bbsmc-date-picker
 	:deep(
 		.flatpickr-calendar.multiMonth .flatpickr-day.startRange:not(.endRange):has(+ .hidden)::before
 	) {
@@ -1868,64 +1868,64 @@ defineExpose({
 	right: 0;
 }
 
-.modrinth-date-picker.can-select-range :deep(.flatpickr-day:not(.flatpickr-disabled):not(.hidden)) {
+.Bbsmc-date-picker.can-select-range :deep(.flatpickr-day:not(.flatpickr-disabled):not(.hidden)) {
 	cursor: pointer;
 }
 
-.modrinth-date-picker.is-selecting-range
+.Bbsmc-date-picker.is-selecting-range
 	:deep(.flatpickr-day:not(.flatpickr-disabled):not(.hidden)) {
 	cursor: grabbing;
 }
 
-.modrinth-date-picker.can-drag-range
+.Bbsmc-date-picker.can-drag-range
 	:deep(.flatpickr-day.startRange:not(.endRange):not(.flatpickr-disabled)),
-.modrinth-date-picker.can-drag-range
+.Bbsmc-date-picker.can-drag-range
 	:deep(.flatpickr-day.endRange:not(.startRange):not(.flatpickr-disabled)) {
 	cursor: grab;
 }
 
-.modrinth-date-picker.is-moving-range-end
+.Bbsmc-date-picker.is-moving-range-end
 	:deep(.flatpickr-day:not(.flatpickr-disabled):not(.hidden)) {
 	cursor: grabbing !important;
 }
 
-.modrinth-date-picker.is-dragging-range :deep(.flatpickr-day) {
+.Bbsmc-date-picker.is-dragging-range :deep(.flatpickr-day) {
 	cursor: grabbing !important;
 }
 
-.modrinth-date-picker.is-dragging-range
+.Bbsmc-date-picker.is-dragging-range
 	:deep(.flatpickr-day:not(.selected):not(.startRange):not(.endRange):not(.inRange):hover),
-.modrinth-date-picker.is-dragging-range
+.Bbsmc-date-picker.is-dragging-range
 	:deep(.flatpickr-day:not(.selected):not(.startRange):not(.endRange):not(.inRange):focus) {
 	@apply border-transparent bg-transparent text-primary;
 }
 
-.modrinth-date-picker
+.Bbsmc-date-picker
 	:deep(.flatpickr-day.prevMonthDay:not(.inRange):not(.startRange):not(.endRange)),
-.modrinth-date-picker
+.Bbsmc-date-picker
 	:deep(.flatpickr-day.nextMonthDay:not(.inRange):not(.startRange):not(.endRange)),
-.modrinth-date-picker :deep(.flatpickr-day.flatpickr-disabled) {
+.Bbsmc-date-picker :deep(.flatpickr-day.flatpickr-disabled) {
 	@apply text-secondary opacity-40;
 }
 
-.modrinth-date-picker :deep(.flatpickr-time) {
+.Bbsmc-date-picker :deep(.flatpickr-time) {
 	@apply mt-2 flex h-11 max-h-none items-center  gap-2 border-0 border-t border-solid border-surface-5 px-1 pt-2 overflow-visible leading-none;
 }
 
-.modrinth-date-picker :deep(.flatpickr-time .numInputWrapper) {
+.Bbsmc-date-picker :deep(.flatpickr-time .numInputWrapper) {
 	@apply h-full flex-1 rounded-xl bg-surface-4;
 }
 
-.modrinth-date-picker :deep(.flatpickr-time input),
-.modrinth-date-picker :deep(.flatpickr-time .flatpickr-am-pm) {
+.Bbsmc-date-picker :deep(.flatpickr-time input),
+.Bbsmc-date-picker :deep(.flatpickr-time .flatpickr-am-pm) {
 	@apply h-full touch-manipulation rounded-xl bg-transparent px-2 text-center font-semibold text-primary hover:bg-surface-5 focus:bg-surface-5;
 }
 
-.modrinth-date-picker :deep(.flatpickr-time .flatpickr-time-separator) {
+.Bbsmc-date-picker :deep(.flatpickr-time .flatpickr-time-separator) {
 	@apply flex h-full items-center justify-center text-secondary text-center;
 }
 
-.modrinth-date-picker :deep(.flatpickr-time .flatpickr-am-pm) {
+.Bbsmc-date-picker :deep(.flatpickr-time .flatpickr-am-pm) {
 	@apply flex w-14 items-center justify-center bg-surface-4 px-3;
 }
 </style>

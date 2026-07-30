@@ -28,13 +28,11 @@
 								{{ charge.subscription_interval }}
 							</template>
 						</span>
-						â‹…
-						<span>{{ formatPrice(charge.amount, charge.currency_code) }}</span>
+						â‹?						<span>{{ formatPrice(charge.amount, charge.currency_code) }}</span>
 					</div>
 					<div class="flex items-center gap-1">
 						<Badge :color="charge.status === 'succeeded' ? 'green' : 'red'" :type="charge.status" />
-						â‹…
-						{{ formatDate(charge.due) }}
+						â‹?						{{ formatDate(charge.due) }}
 					</div>
 				</div>
 			</div>
@@ -47,11 +45,11 @@ import {
 	Breadcrumbs,
 	commonSettingsMessages,
 	defineMessages,
-	injectModrinthClient,
+	injectBbsmcClient,
 	useFormatDateTime,
 	useFormatPrice,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { useQuery } from '@tanstack/vue-query'
 
 import { products } from '~/generated/state.json'
@@ -61,7 +59,7 @@ definePageMeta({
 })
 
 const { formatMessage } = useVIntl()
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 
 const formatPrice = useFormatPrice()
 const formatDate = useFormatDateTime({
@@ -77,15 +75,15 @@ const messages = defineMessages({
 	},
 	description: {
 		id: 'settings.billing.charges.description',
-		defaultMessage: 'All of your past charges to your Modrinth account will be listed here:',
+		defaultMessage: 'All of your past charges to your Bbsmc account will be listed here:',
 	},
 	productMidas: {
 		id: 'settings.billing.charges.product.midas',
-		defaultMessage: 'Modrinth Plus',
+		defaultMessage: 'Bbsmc Plus',
 	},
 	productPyro: {
 		id: 'settings.billing.charges.product.pyro',
-		defaultMessage: 'Modrinth Hosting',
+		defaultMessage: 'Bbsmc Hosting',
 	},
 	productMedalTrial: {
 		id: 'settings.billing.charges.product.medal-trial',

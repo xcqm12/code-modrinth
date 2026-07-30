@@ -414,7 +414,7 @@ pub(super) async fn shared_content_snapshot(
 pub(super) fn remote_shared_content(
     version: &InstanceVersionResponse,
 ) -> (Vec<String>, HashSet<String>) {
-    let mut version_ids = version.modrinth_ids.clone();
+    let mut version_ids = version.Bbsmc_ids.clone();
     if let Some(modpack_id) = version.modpack_id.as_deref() {
         version_ids.retain(|id| id != modpack_id);
     }

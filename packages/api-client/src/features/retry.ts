@@ -1,5 +1,5 @@
 import { AbstractFeature, type FeatureConfig } from '../core/abstract-feature'
-import { ModrinthApiError } from '../core/errors'
+import { BbsmcApiError } from '../core/errors'
 import type { RequestContext } from '../types/request'
 
 /**
@@ -141,7 +141,7 @@ export class RetryFeature extends AbstractFeature {
 			return true
 		}
 
-		if (error instanceof ModrinthApiError && error.statusCode) {
+		if (error instanceof BbsmcApiError && error.statusCode) {
 			return this.config.retryableStatusCodes.includes(error.statusCode)
 		}
 

@@ -136,7 +136,7 @@ impl EmailQueue {
             mailer: Arc::new(TokioMutex::new(Mailer::Uninitialized)),
             identity: templates::MailingIdentity::from_env(),
             client: Client::builder()
-                .user_agent("Modrinth")
+                .user_agent("Bbsmc")
                 .build()
                 .expect("Failed to build HTTP client"),
         })

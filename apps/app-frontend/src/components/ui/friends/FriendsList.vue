@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { MailIcon, SearchIcon, SendIcon, UserIcon, UserPlusIcon, XIcon } from '@modrinth/assets'
+import { MailIcon, SearchIcon, SendIcon, UserIcon, UserPlusIcon, XIcon } from '@Bbsmc/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -9,14 +9,14 @@ import {
 	StyledInput,
 	useRelativeTime,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { computed, ref } from 'vue'
 
 import FriendsSection from '@/components/ui/friends/FriendsSection.vue'
 import ModalWrapper from '@/components/ui/modal/ModalWrapper.vue'
 import { useFriends } from '@/composables/use-friends'
 import type { FriendWithUserData } from '@/helpers/friends.ts'
-import type { ModrinthCredentials } from '@/helpers/mr_auth'
+import type { BbsmcCredentials } from '@/helpers/mr_auth'
 
 const { formatMessage } = useVIntl()
 
@@ -24,7 +24,7 @@ const { handleError } = injectNotificationManager()
 const formatRelativeTime = useRelativeTime()
 
 const props = defineProps<{
-	credentials: ModrinthCredentials | null
+	credentials: BbsmcCredentials | null
 	signIn: () => void
 }>()
 
@@ -117,7 +117,7 @@ const messages = defineMessages({
 	},
 	usernameTitle: {
 		id: 'friends.add-friend.username.title',
-		defaultMessage: "What's your friend's Modrinth username?",
+		defaultMessage: "What's your friend's Bbsmc username?",
 	},
 	usernameDescription: {
 		id: 'friends.add-friend.username.description',
@@ -125,7 +125,7 @@ const messages = defineMessages({
 	},
 	usernamePlaceholder: {
 		id: 'friends.add-friend.username.placeholder',
-		defaultMessage: 'Enter Modrinth username...',
+		defaultMessage: 'Enter Bbsmc username...',
 	},
 	sendFriendRequest: {
 		id: 'friends.add-friend.submit',
@@ -166,7 +166,7 @@ const messages = defineMessages({
 	signInToAddFriends: {
 		id: 'friends.sign-in-to-add-friends',
 		defaultMessage:
-			"<link>Sign in to a Modrinth account</link> to add friends and see what they're playing!",
+			"<link>Sign in to a Bbsmc account</link> to add friends and see what they're playing!",
 	},
 	addFriendsToShare: {
 		id: 'friends.add-friends-to-share',

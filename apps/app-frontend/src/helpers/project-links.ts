@@ -1,6 +1,6 @@
 import type { LocationQuery, LocationQueryRaw } from 'vue-router'
 
-const MODRINTH_HOSTNAMES = new Set(['bbsmc.org.cn', 'www.bbsmc.org.cn'])
+const Bbsmc_HOSTNAMES = new Set(['bbsmc.org.cn', 'www.bbsmc.org.cn'])
 
 const SUPPORTED_PROJECT_TYPES = new Set([
 	'mod',
@@ -13,7 +13,7 @@ const SUPPORTED_PROJECT_TYPES = new Set([
 	'project',
 ])
 
-export function parseModrinthLink(
+export function parseBbsmcLink(
 	href: string,
 ): { slug: string; pathSuffix: string; url: URL } | null {
 	let url: URL
@@ -23,7 +23,7 @@ export function parseModrinthLink(
 		return null
 	}
 
-	if (!MODRINTH_HOSTNAMES.has(url.hostname.toLowerCase())) {
+	if (!Bbsmc_HOSTNAMES.has(url.hostname.toLowerCase())) {
 		return null
 	}
 

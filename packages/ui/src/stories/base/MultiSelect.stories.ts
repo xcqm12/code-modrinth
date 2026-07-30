@@ -1,4 +1,4 @@
-import { BoxIcon, CheckIcon } from '@modrinth/assets'
+import { BoxIcon, CheckIcon } from '@Bbsmc/assets'
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
 import { computed, ref } from 'vue'
 
@@ -331,8 +331,7 @@ export const CustomInputContent: Story = {
 								class="text-secondary transition-transform duration-150"
 								:style="{ transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)' }"
 							>
-								‚åÑ
-							</span>
+								‚å?							</span>
 							<button
 								type="button"
 								class="-mr-1 inline-flex size-5 shrink-0 items-center justify-center rounded-full border-0 bg-transparent text-secondary shadow-none transition-colors hover:bg-transparent hover:text-contrast"

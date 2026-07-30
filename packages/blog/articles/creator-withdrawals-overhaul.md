@@ -9,7 +9,7 @@ authors: ['AJfd8YH6', 'bOHH0P9Z', 'xSQqYYIN']
 
 ---
 
-Hey everyone! We've heard your feedback on creator withdrawal options, and we're excited to share that more are finally coming to Modrinth! Over the past month, we've been working on overhauling the withdrawal experience and supporting more withdraw methods.
+Hey everyone! We've heard your feedback on creator withdrawal options, and we're excited to share that more are finally coming to Bbsmc! Over the past month, we've been working on overhauling the withdrawal experience and supporting more withdraw methods.
 
 There's a lot packed into this release, so let's dive in!
 
@@ -44,7 +44,7 @@ A big goal for this release was to make payouts as clear as possible for creator
 
 > Green shows available revenue, blue and purple show estimated revenue from the last two completed months, and grey shows the current month revenue that's still being processed.
 
-We've also cleaned up the transaction history. You'll now see your most recent transactions directly on the revenue page, along with any deposits from Modrinth into your account.
+We've also cleaned up the transaction history. You'll now see your most recent transactions directly on the revenue page, along with any deposits from Bbsmc into your account.
 
 ## New Withdraw Methods
 
@@ -67,7 +67,7 @@ We're working to expand this list, most notably to Canada, the UK, and countries
 | Country         | Currency | Transaction Fee | FX Fee            | **Total Fee**     |
 | --------------- | -------- | --------------- | ----------------- | ----------------- |
 | 🇺🇸 USA          | USD      | $0.50 + 1%      | 0.50%             | **~1.5% + $0.50** |
-| 🇪🇺 EU           | EUR      | €1.00 + 1%      | 0.60%             | **~1.6% + €1.00** |
+| 🇪🇺 EU           | EUR      | �?.00 + 1%      | 0.60%             | **~1.6% + �?.00** |
 | 🇦🇷 Argentina    | ARS      | $0.00 + 1%      | 0.50%             | **~1.5%**         |
 | 🇲🇽 Mexico       | MXN      | $0.50 + 1%      | 0.90%             | **~1.9% + $0.50** |
 | 🇧🇷 Brazil       | BRL      | $0.25 + 1%      | 1.30% (incl. IOF) | **~2.3% + $0.25** |
@@ -107,8 +107,8 @@ Creator withdrawals will now be limited to $600.00 USD per calendar year as of 2
 
 ![A snippet of the tax form stage of the new withdraw modal.](./tax-compliance.png)
 
-Completing this form helps Modrinth stay compliant and will automatically unlock withdrawals again once submitted. For non-US users, these details are not automatically sent to the US government! They are for our own records in the case of an audit and we need to prove where we're sending money to.
+Completing this form helps Bbsmc stay compliant and will automatically unlock withdrawals again once submitted. For non-US users, these details are not automatically sent to the US government! They are for our own records in the case of an audit and we need to prove where we're sending money to.
 
 ---
 
-Thank you to all the creators and players supporting Modrinth, we hope you enjoy this long deserved update! 💚
+Thank you to all the creators and players supporting Bbsmc, we hope you enjoy this long deserved update! 💚

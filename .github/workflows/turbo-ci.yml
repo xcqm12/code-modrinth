@@ -62,7 +62,7 @@ jobs:
 
   build:
     name: Lint and Test
-    runs-on: ${{ needs.skip-if-clean.outputs.internal == 'true' && 'namespace-profile-modrinth-turbo' || 'ubuntu-latest' }}
+    runs-on: ${{ needs.skip-if-clean.outputs.internal == 'true' && 'namespace-profile-Bbsmc-turbo' || 'ubuntu-latest' }}
     needs: [skip-if-clean]
     if: ${{ needs.skip-if-clean.outputs.skip != 'true' }}
 
@@ -152,7 +152,7 @@ jobs:
       - name: Check if labrinth tests need to run
         id: check-labrinth
         run: |
-          LABRINTH_TEST_STATUS=$(pnpm turbo run test --filter=@modrinth/labrinth --dry-run=json | jq -r '.tasks[] | select(.task == "test") | .cache.status')
+          LABRINTH_TEST_STATUS=$(pnpm turbo run test --filter=@Bbsmc/labrinth --dry-run=json | jq -r '.tasks[] | select(.task == "test") | .cache.status')
           echo "Labrinth test cache status: $LABRINTH_TEST_STATUS"
           if [ "$LABRINTH_TEST_STATUS" = "HIT" ]; then
             echo "needs_services=false" >> $GITHUB_OUTPUT

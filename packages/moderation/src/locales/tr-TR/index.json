@@ -24,13 +24,13 @@
     "defaultMessage": "Lisans detaylarını ekleyin"
   },
   "nags.add-links-server.description": {
-    "defaultMessage": "Modrinth'in dışında herhangi ilgili bağlantı ekleyin, website, mağaza veya Discord daveti gibi."
+    "defaultMessage": "Bbsmc'in dışında herhangi ilgili bağlantı ekleyin, website, mağaza veya Discord daveti gibi."
   },
   "nags.add-links-server.title": {
     "defaultMessage": "Dış bağlantı ekle"
   },
   "nags.add-links.description": {
-    "defaultMessage": "Modrinth'in dışına gönderen herhangi ilgili bağlantı ekle. Mesela kaynak kodu, hata takipçisi veya Discord daveti."
+    "defaultMessage": "Bbsmc'in dışına gönderen herhangi ilgili bağlantı ekle. Mesela kaynak kodu, hata takipçisi veya Discord daveti."
   },
   "nags.add-links.title": {
     "defaultMessage": "Dış bağlantı ekle"

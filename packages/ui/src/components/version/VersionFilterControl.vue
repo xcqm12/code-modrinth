@@ -120,10 +120,10 @@
 </template>
 
 <script setup lang="ts">
-import { ChevronLeftIcon, FilterIcon, XCircleIcon, XIcon } from '@modrinth/assets'
-import type { MultiSelectOption } from '@modrinth/ui'
-import { Checkbox, formatLoader, FormattedTag, MultiSelect, TagItem, useVIntl } from '@modrinth/ui'
-import type { GameVersionTag, Version } from '@modrinth/utils'
+import { ChevronLeftIcon, FilterIcon, XCircleIcon, XIcon } from '@Bbsmc/assets'
+import type { MultiSelectOption } from '@Bbsmc/ui'
+import { Checkbox, formatLoader, FormattedTag, MultiSelect, TagItem, useVIntl } from '@Bbsmc/ui'
+import type { GameVersionTag, Version } from '@Bbsmc/utils'
 import { computed, ref } from 'vue'
 import type { LocationQueryValue } from 'vue-router'
 import { useRoute } from 'vue-router'

@@ -12,7 +12,7 @@ Refer to the standard: @standards/frontend/FETCHING_DATA.md
 2. **Read the standard above** for the query/mutation patterns, query key conventions, and optimistic update approach.
 3. **Convert queries:**
    - Replace `useAsyncData` / `useFetch` / manual fetches with `useQuery`.
-   - Use the `api-client` via `injectModrinthClient()` for the `queryFn`.
+   - Use the `api-client` via `injectBbsmcClient()` for the `queryFn`.
    - Design query keys with the `['resource', 'version', ...params]` convention.
    - Use `computed` query keys for reactive parameters.
    - Use the `enabled` option for conditional queries that depend on other data.
@@ -23,5 +23,5 @@ Refer to the standard: @standards/frontend/FETCHING_DATA.md
 5. **Clean up:**
    - Remove manual loading/error `ref()`s that are now handled by TanStack Query's return values (`isPending`, `isError`, `error`).
    - Remove manual `onMounted` fetch calls.
-   - Ensure SSR compatibility â€” queries in Nuxt pages are automatically awaited during SSR.
+   - Ensure SSR compatibility â€?queries in Nuxt pages are automatically awaited during SSR.
 6. **Verify** the page still renders correctly and that cache invalidation triggers re-fetches where expected.

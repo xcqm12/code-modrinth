@@ -1,9 +1,9 @@
-import type { AbstractModrinthClient } from './abstract-client'
+import type { AbstractBbsmcClient } from './abstract-client'
 
 export abstract class AbstractModule {
-	protected client: AbstractModrinthClient
+	protected client: AbstractBbsmcClient
 
-	public constructor(client: AbstractModrinthClient) {
+	public constructor(client: AbstractBbsmcClient) {
 		this.client = client
 	}
 

@@ -27,7 +27,7 @@
     "defaultMessage": "Opprettet av {user}"
   },
   "affiliate.creating.button": {
-    "defaultMessage": "Oppretter affiliatelenke…"
+    "defaultMessage": "Oppretter affiliatelenke�?
   },
   "affiliate.revoke": {
     "defaultMessage": "Deaktiver affiliatelenke"
@@ -75,7 +75,7 @@
     "defaultMessage": "Ingen resultater funnet for ditt søk!"
   },
   "browse.offline": {
-    "defaultMessage": "Du er offline akkurat nå. Koble til internett for å surfe på Modrinth!"
+    "defaultMessage": "Du er offline akkurat nå. Koble til internett for å surfe på Bbsmc!"
   },
   "browse.search.placeholder": {
     "defaultMessage": "Søk etter {projectType}..."
@@ -182,8 +182,8 @@
   "button.open-folder": {
     "defaultMessage": "Åpne mappe"
   },
-  "button.open-in-modrinth": {
-    "defaultMessage": "Åpne i Modrinth"
+  "button.open-in-Bbsmc": {
+    "defaultMessage": "Åpne i Bbsmc"
   },
   "button.play": {
     "defaultMessage": "Spill"
@@ -1161,16 +1161,16 @@
     "defaultMessage": "Hold filer oppdatert når serveren endres"
   },
   "modal.open-in-app.get-app": {
-    "defaultMessage": "Skaff Modrinth App-en"
+    "defaultMessage": "Skaff Bbsmc App-en"
   },
   "modal.open-in-app.opening-automatically": {
-    "defaultMessage": "Modrinth App-en kommer til å åpne seg automatisk..."
+    "defaultMessage": "Bbsmc App-en kommer til å åpne seg automatisk..."
   },
   "modal.open-in-app.title": {
-    "defaultMessage": "Åpner Modrinth App-en"
+    "defaultMessage": "Åpner Bbsmc App-en"
   },
   "modal.open-in-app.why-use": {
-    "defaultMessage": "Hvorfor bruke modrinth App-en"
+    "defaultMessage": "Hvorfor bruke Bbsmc App-en"
   },
   "notification.error.title": {
     "defaultMessage": "En feil oppstod"
@@ -1199,8 +1199,8 @@
   "omorphia.component.badge.label.moderator": {
     "defaultMessage": "Moderator"
   },
-  "omorphia.component.badge.label.modrinth-team": {
-    "defaultMessage": "Modrinth Team"
+  "omorphia.component.badge.label.Bbsmc-team": {
+    "defaultMessage": "Bbsmc Team"
   },
   "omorphia.component.badge.label.pending": {
     "defaultMessage": "Venter"
@@ -1737,10 +1737,10 @@
     "defaultMessage": "Har noe funksjonalitet både på klienten og serveren, selv om den bare er delvis."
   },
   "project.settings.environment.client_and_server.optional_both.title": {
-    "defaultMessage": "Valgfritt på begge – fungerer likt enten det er installert på klient eller server."
+    "defaultMessage": "Valgfritt på begge �?fungerer likt enten det er installert på klient eller server."
   },
   "project.settings.environment.client_and_server.optional_both_prefers_both.title": {
-    "defaultMessage": "Valgfritt på begge – fungerer best når det er installert på både klient og server."
+    "defaultMessage": "Valgfritt på begge �?fungerer best når det er installert på både klient og server."
   },
   "project.settings.environment.client_and_server.optional_client.title": {
     "defaultMessage": "Valgfritt på klient"
@@ -1773,7 +1773,7 @@
     "defaultMessage": "Prosjektet ditt har flere miljøer"
   },
   "project.settings.environment.notice.review-options.description": {
-    "defaultMessage": "Vi har nettopp oppdatert miljøsystemet på Modrinth, og nye valg er nå tilgjengelige. Pass på at riktig alternativ er valgt nedenfor, og klikk deretter «Verifiser» når du er ferdig."
+    "defaultMessage": "Vi har nettopp oppdatert miljøsystemet på Bbsmc, og nye valg er nå tilgjengelige. Pass på at riktig alternativ er valgt nedenfor, og klikk deretter «Verifiser» når du er ferdig."
   },
   "project.settings.environment.notice.review-options.title": {
     "defaultMessage": "Gå gjennom valgene nedenfor"
@@ -2307,10 +2307,10 @@
     "defaultMessage": "Kom i gang"
   },
   "servers.purchase.step.plan.large.desc": {
-    "defaultMessage": "Ideell for 15–25 spillere, modpakker eller tung modding."
+    "defaultMessage": "Ideell for 15�?5 spillere, modpakker eller tung modding."
   },
   "servers.purchase.step.plan.medium.desc": {
-    "defaultMessage": "Flott for 6–15 spillere og flere mods."
+    "defaultMessage": "Flott for 6�?5 spillere og flere mods."
   },
   "servers.purchase.step.plan.most-popular": {
     "defaultMessage": "Mest populær"
@@ -2319,7 +2319,7 @@
     "defaultMessage": "Velg Plan"
   },
   "servers.purchase.step.plan.small.desc": {
-    "defaultMessage": "Perfekt for 1–5 venner med noen få lette modifikasjoner."
+    "defaultMessage": "Perfekt for 1�? venner med noen få lette modifikasjoner."
   },
   "servers.purchase.step.plan.title": {
     "defaultMessage": "Plan"
@@ -2340,7 +2340,7 @@
     "defaultMessage": "Hvor vil du at serveren din skal være plassert?"
   },
   "servers.region.region-unsupported": {
-    "defaultMessage": "Region ikke oppført? <link>Gi oss beskjed om hvor du ønsker å se Modrinth Hosting neste gang!</link>"
+    "defaultMessage": "Region ikke oppført? <link>Gi oss beskjed om hvor du ønsker å se Bbsmc Hosting neste gang!</link>"
   },
   "servers.region.southeast-asia": {
     "defaultMessage": "Sørøst-Asia"
@@ -2367,7 +2367,7 @@
     "defaultMessage": "Mørk"
   },
   "settings.display.theme.description": {
-    "defaultMessage": "Velg ditt foretrukne fargetema for Modrinth på denne enheten."
+    "defaultMessage": "Velg ditt foretrukne fargetema for Bbsmc på denne enheten."
   },
   "settings.display.theme.light": {
     "defaultMessage": "Lys"

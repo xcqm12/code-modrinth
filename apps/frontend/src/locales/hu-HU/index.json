@@ -12,7 +12,7 @@
     "message": "Összes elfogadása"
   },
   "ads-consent.body": {
-    "message": "A hirdetések teszik lehetővé a Modrinth működését, és biztosítják a tartalomkészítők juttatásait. Partnereink sütiket tárolhatnak vagy érhetnek el a weboldalon a hirdetések személyre szabása és a teljesítmény mérése céljából."
+    "message": "A hirdetések teszik lehetővé a Bbsmc működését, és biztosítják a tartalomkészítők juttatásait. Partnereink sütiket tárolhatnak vagy érhetnek el a weboldalon a hirdetések személyre szabása és a teljesítmény mérése céljából."
   },
   "ads-consent.manage": {
     "message": "Beállítások kezelése"
@@ -21,7 +21,7 @@
     "message": "Összes elutasítása"
   },
   "ads-consent.title": {
-    "message": "Adataid védelme és a hirdetések szerepe a Modrinth működésében"
+    "message": "Adataid védelme és a hirdetések szerepe a Bbsmc működésében"
   },
   "analytics.action.add": {
     "message": "Hozzáadás"
@@ -110,11 +110,11 @@
   "analytics.chart.controls.display": {
     "message": "Kijelző"
   },
-  "analytics.chart.controls.modrinth-events": {
-    "message": "Modrinth események"
+  "analytics.chart.controls.Bbsmc-events": {
+    "message": "Bbsmc események"
   },
-  "analytics.chart.controls.no-modrinth-events": {
-    "message": "Nincs Modrinth esemény a grafiokonon."
+  "analytics.chart.controls.no-Bbsmc-events": {
+    "message": "Nincs Bbsmc esemény a grafiokonon."
   },
   "analytics.chart.controls.no-project-events": {
     "message": "A grafikonon nincs projektesemény."
@@ -144,7 +144,7 @@
     "message": "Bevételszerzési analitikai részletek megtekintése"
   },
   "analytics.chart.legend.monetization-details.description": {
-    "message": "Csak a Modrinthon keresztül történő megtekintések és letöltések számítanak bele a bevételszerzésbe, és a letöltéshez a felhasználóknak be kell jelentkezniük."
+    "message": "Csak a Bbsmcon keresztül történő megtekintések és letöltések számítanak bele a bevételszerzésbe, és a letöltéshez a felhasználóknak be kell jelentkezniük."
   },
   "analytics.chart.legend.monetization-details.title": {
     "message": "A bevételszerző statisztika részletei"
@@ -222,10 +222,10 @@
     "message": "Frissítés"
   },
   "analytics.download-source.app": {
-    "message": "Modrinth App"
+    "message": "Bbsmc App"
   },
   "analytics.download-source.website": {
-    "message": "A Modrinth weboldala"
+    "message": "A Bbsmc weboldala"
   },
   "analytics.downloads.suffix": {
     "message": "letöltéssel"
@@ -408,7 +408,7 @@
     "message": "Letöltések"
   },
   "analytics.stat.monetization-banner.body": {
-    "message": "Csak a Modrinthon keresztül történő megtekintések és letöltések jogosultak bevételszerzésre, és át kell menniük a csalásmegelőző szűrésen. A Modrinth App letöltéséhez a felhasználónak be kell jelentkeznie. Mivel az összes projekt esetében hasonló azoknak a letöltéseknek az aránya, amelyek bevételt generálnak, a bevételed nem változna jelentősen, ha az összes letöltést figyelembe vennénk."
+    "message": "Csak a Bbsmcon keresztül történő megtekintések és letöltések jogosultak bevételszerzésre, és át kell menniük a csalásmegelőző szűrésen. A Bbsmc App letöltéséhez a felhasználónak be kell jelentkeznie. Mivel az összes projekt esetében hasonló azoknak a letöltéseknek az aránya, amelyek bevételt generálnak, a bevételed nem változna jelentősen, ha az összes letöltést figyelembe vennénk."
   },
   "analytics.stat.monetization-banner.learn-more": {
     "message": "Tudj meg többet"
@@ -546,7 +546,7 @@
     "message": "Linux"
   },
   "app-marketing.download.linux-disclaimer": {
-    "message": "A Linux verziója a Modrinth Appnak <issues-link>problémái vannak</issues-link> bizonyos rendszereken és a konfigurációkon. Ha a Modrinth App instabil a rendszereden akkor próbáld ki a <prism-link>Prism Launcher</prism-link>t, ahol nagyon könnyen lehet Modrinth tartalmat telepíteni."
+    "message": "A Linux verziója a Bbsmc Appnak <issues-link>problémái vannak</issues-link> bizonyos rendszereken és a konfigurációkon. Ha a Bbsmc App instabil a rendszereden akkor próbáld ki a <prism-link>Prism Launcher</prism-link>t, ahol nagyon könnyen lehet Bbsmc tartalmat telepíteni."
   },
   "app-marketing.download.mac": {
     "message": "Mac"
@@ -555,10 +555,10 @@
     "message": "Letöltési opciók"
   },
   "app-marketing.download.terms": {
-    "message": "A Modrinth App letöltésével elfogadod a <terms-link>feltételeket</terms-link> és a <privacy-link>biztonsági szabályzatot</privacy-link>."
+    "message": "A Bbsmc App letöltésével elfogadod a <terms-link>feltételeket</terms-link> és a <privacy-link>biztonsági szabályzatot</privacy-link>."
   },
   "app-marketing.download.title": {
-    "message": "Modrinth App letöltése (béta)"
+    "message": "Bbsmc App letöltése (béta)"
   },
   "app-marketing.download.windows": {
     "message": "Windows"
@@ -570,7 +570,7 @@
     "message": "Projektek követése"
   },
   "app-marketing.features.importing.description": {
-    "message": "Importáld az összes kedvenc profilodat a korábban használt indítóból, és néhány másodperc alatt elindíthatod a Modrinth Appot!"
+    "message": "Importáld az összes kedvenc profilodat a korábban használt indítóból, és néhány másodperc alatt elindíthatod a Bbsmc Appot!"
   },
   "app-marketing.features.importing.gdlauncher-alt": {
     "message": "GDLauncher"
@@ -588,7 +588,7 @@
     "message": "{author} által"
   },
   "app-marketing.features.mod-management.description": {
-    "message": "A Modrinth könnyűvé teszi az összes telepített modod a kezelését egy helyen. Telepíthetsz, eltávolíthatsz és frissíthetsz modokat egyetlen kattintással."
+    "message": "A Bbsmc könnyűvé teszi az összes telepített modod a kezelését egy helyen. Telepíthetsz, eltávolíthatsz és frissíthetsz modokat egyetlen kattintással."
   },
   "app-marketing.features.mod-management.installed-mods": {
     "message": "Telepített modok"
@@ -612,7 +612,7 @@
     "message": "Offline mód"
   },
   "app-marketing.features.open-source.description": {
-    "message": "A Modrinth inditója teljesen nyílt forráskódú. Ellenőrizheted a forráskódot a <github-link>GitHub</github-link> oldalunkon!"
+    "message": "A Bbsmc inditója teljesen nyílt forráskódú. Ellenőrizheted a forráskódot a <github-link>GitHub</github-link> oldalunkon!"
   },
   "app-marketing.features.open-source.title": {
     "message": "Nyílt forráskódú"
@@ -624,7 +624,7 @@
     "message": "% CPU"
   },
   "app-marketing.features.performance.description": {
-    "message": "A Modrinth App jobb teljesítményt nyújt, mint sok vezető modkezelő, és csak 150 MB RAM-ot használ!"
+    "message": "A Bbsmc App jobb teljesítményt nyújt, mint sok vezető modkezelő, és csak 150 MB RAM-ot használ!"
   },
   "app-marketing.features.performance.discord": {
     "message": "Discord"
@@ -636,16 +636,16 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "∞ MB"
+    "message": "�?MB"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
-    "message": "∞ × ∞ MB"
+    "message": "�?× �?MB"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MB"
   },
-  "app-marketing.features.performance.modrinth-app": {
-    "message": "Modrinth App"
+  "app-marketing.features.performance.Bbsmc-app": {
+    "message": "Bbsmc App"
   },
   "app-marketing.features.performance.one-billion-percent": {
     "message": "1 milliárd %"
@@ -663,13 +663,13 @@
     "message": "Teljesítmény"
   },
   "app-marketing.features.play.description": {
-    "message": "Használd a Modrinth Appot kedvenc modjaid és modcsomagjaid letöltéséhez és játszásához."
+    "message": "Használd a Bbsmc Appot kedvenc modjaid és modcsomagjaid letöltéséhez és játszásához."
   },
   "app-marketing.features.play.title": {
     "message": "Játssz a kedvenc modjaiddal"
   },
   "app-marketing.features.sharing.description": {
-    "message": "Készíts, ossz meg és játssz a Modrinthon fentartott több ezer modok és modcsomagok közül bármelyikkel."
+    "message": "Készíts, ossz meg és játssz a Bbsmcon fentartott több ezer modok és modcsomagok közül bármelyikkel."
   },
   "app-marketing.features.sharing.modpack": {
     "message": "Modcsomag"
@@ -684,7 +684,7 @@
     "message": "Más, mint bármely indító"
   },
   "app-marketing.features.website.description": {
-    "message": "A Modrinth App teljes mértékben integrálva van a weboldallal, így az alkalmazásból elérheted az összes kedvenc projektedet!"
+    "message": "A Bbsmc App teljes mértékben integrálva van a weboldallal, így az alkalmazásból elérheted az összes kedvenc projektedet!"
   },
   "app-marketing.features.website.title": {
     "message": "Weboldal integráció"
@@ -693,19 +693,19 @@
     "message": "amit eddig használtál"
   },
   "app-marketing.hero.app-screenshot-alt": {
-    "message": "A Modrinth App képernyőképe, amelyen a Cobblemon modcsomag a „Tartalom” oldalon van megnyitva."
+    "message": "A Bbsmc App képernyőképe, amelyen a Cobblemon modcsomag a „Tartalom�?oldalon van megnyitva."
   },
   "app-marketing.hero.description": {
-    "message": "A Modrinth App egy egyedülálló, nyílt forráskódú kliens, amely lehetővé teszi, hogy kedvenc modjaidat játssz, és naprakészen tartsd őket, mindezt egy kis, praktikus csomagban."
+    "message": "A Bbsmc App egy egyedülálló, nyílt forráskódú kliens, amely lehetővé teszi, hogy kedvenc modjaidat játssz, és naprakészen tartsd őket, mindezt egy kis, praktikus csomagban."
   },
   "app-marketing.hero.download-button": {
-    "message": "Modrinth App letöltése"
+    "message": "Bbsmc App letöltése"
   },
-  "app-marketing.hero.download-modrinth-app": {
-    "message": "Modrinth App letöltése"
+  "app-marketing.hero.download-Bbsmc-app": {
+    "message": "Bbsmc App letöltése"
   },
-  "app-marketing.hero.download-modrinth-app-for-os": {
-    "message": "Modrinth App letöltése {os} rendszerre"
+  "app-marketing.hero.download-Bbsmc-app-for-os": {
+    "message": "Bbsmc App letöltése {os} rendszerre"
   },
   "app-marketing.hero.minecraft-screenshot-alt": {
     "message": "A Cobblemon modcsomag főmenüjének képernyőképe."
@@ -774,7 +774,7 @@
     "message": "A születési dátumod megadása kötelező"
   },
   "auth.create-account.date-of-birth.under13-helper": {
-    "message": "Nem felelsz meg a Modrinth fiók létrehozásához szükséges korhatárnak."
+    "message": "Nem felelsz meg a Bbsmc fiók létrehozásához szükséges korhatárnak."
   },
   "auth.create-account.info-panel.source-code-link": {
     "message": "Releváns forráskód"
@@ -789,7 +789,7 @@
     "message": "Biztonsági ellenőrzés"
   },
   "auth.create-account.subscribe.label": {
-    "message": "Kérek Emaileket a menő dolgokról amiken a Modrinth dolgozik"
+    "message": "Kérek Emaileket a menő dolgokról amiken a Bbsmc dolgozik"
   },
   "auth.create-account.title": {
     "message": "Fiók létrehozása"
@@ -861,7 +861,7 @@
     "message": "Nincs fiókja?"
   },
   "auth.sign-in.sign-in-with": {
-    "message": "Bejelentkezés a Modrinthbe"
+    "message": "Bejelentkezés a Bbsmcbe"
   },
   "auth.sign-in.title": {
     "message": "Bejelentkezés"
@@ -873,7 +873,7 @@
     "message": "Folytatás e-maillel"
   },
   "auth.sign-up.legal-dislaimer": {
-    "message": "Fiók létrehozásával elfogadod a Modrinth <terms-link>Felhasználási feltételeit</terms-link> és <privacy-policy-link>Adatvédelmi irányelveit</privacy-policy-link>."
+    "message": "Fiók létrehozásával elfogadod a Bbsmc <terms-link>Felhasználási feltételeit</terms-link> és <privacy-policy-link>Adatvédelmi irányelveit</privacy-policy-link>."
   },
   "auth.sign-up.show-fewer-options": {
     "message": "Kevesebb opció mutatása"
@@ -963,7 +963,7 @@
     "message": "Biztos vagy hogy törölni akarod ezt a gyűjteményt?"
   },
   "collection.description": {
-    "message": "{description}- Nézd meg a {name} nevű gyűjtemény {username} által Modrinth-on"
+    "message": "{description}- Nézd meg a {name} nevű gyűjtemény {username} által Bbsmc-on"
   },
   "collection.description.following": {
     "message": "Az összes követett projekt automatikusan generált gyűjteménye."
@@ -1065,7 +1065,7 @@
     "message": "A projekted már jóváhagyásra került, ezért a moderátorcsapat nem követi aktívan ezt a témát. Ugyanakkor előfordulhat, hogy meglátják az üzenetedet, ha valami probléma adódik a projekteddel kapcsolatban."
   },
   "conversation-thread.reply-modal.help-center-note": {
-    "message": "Ha kapcsolatba szeretnél lépni a moderátorcsapattal, kérjük, használd a <help-center-link>Modrinth Súgó</help-center-link> oldalt, és kattints a jobb alsó sarokban található kék buborékra az ügyfélszolgálat elérése érdekében."
+    "message": "Ha kapcsolatba szeretnél lépni a moderátorcsapattal, kérjük, használd a <help-center-link>Bbsmc Súgó</help-center-link> oldalt, és kattints a jobb alsó sarokban található kék buborékra az ügyfélszolgálat elérése érdekében."
   },
   "conversation-thread.resubmit-modal.confirmation.label": {
     "message": "Megerősítem, hogy a moderátorok észrevételeit megfelelően figyelembe vettem."
@@ -1431,7 +1431,7 @@
     "message": "Készen állsz! 🎉"
   },
   "dashboard.creator-tax-form-modal.entity.description": {
-    "message": "A külföldi jogi személy olyan üzleti egységet jelent, amelyet az Egyesült Államokon kívül hoztak létre (például nem amerikai részvénytársaság, társulás vagy korlátolt felelősségű társaság – LLC)."
+    "message": "A külföldi jogi személy olyan üzleti egységet jelent, amelyet az Egyesült Államokon kívül hoztak létre (például nem amerikai részvénytársaság, társulás vagy korlátolt felelősségű társaság �?LLC)."
   },
   "dashboard.creator-tax-form-modal.entity.foreign-entity": {
     "message": "Külföldi szervezet"
@@ -1446,7 +1446,7 @@
     "message": "Adóűrlap"
   },
   "dashboard.creator-tax-form-modal.security.description": {
-    "message": "A Modrinth a Track1099 nevű harmadik fél szolgáltatót használja az adóűrlapjaid biztonságos begyűjtésére és tárolására. <security-link>További információ.</security-link>"
+    "message": "A Bbsmc a Track1099 nevű harmadik fél szolgáltatót használja az adóűrlapjaid biztonságos begyűjtésére és tárolására. <security-link>További információ.</security-link>"
   },
   "dashboard.creator-tax-form-modal.security.header": {
     "message": "Biztonsági gyakorlatok"
@@ -1485,7 +1485,7 @@
     "message": "Üzleti szervezet"
   },
   "dashboard.creator-withdraw-modal.kyc.entity-description": {
-    "message": "Az „üzleti szervezet” egy olyan regisztrált szervezetre utal, mint egy vállalat, partnerség vagy Kft."
+    "message": "Az „üzleti szervezet�?egy olyan regisztrált szervezetre utal, mint egy vállalat, partnerség vagy Kft."
   },
   "dashboard.creator-withdraw-modal.kyc.entity-question": {
     "message": "Szervezetként vagy személyként veszel fel?"
@@ -1611,7 +1611,7 @@
     "message": "Ahhoz, hogy kivedd a teljes <b>{available}</b> rendelkezésre álló összeget, kérlek töltsd ki az űrlapot. Szükséges az adóbevalláshoz és csak egyszer kell megcsinálni."
   },
   "dashboard.creator-withdraw-modal.tax-form-required.body-with-limit": {
-    "message": "Ki kell töltened egy W-9 vagy egy W-8 adóbevallási űrlapot Modrinth adóügyi nyilvántartásaihoz, hogy az adóügyi előírásoknak eleget tegyünk."
+    "message": "Ki kell töltened egy W-9 vagy egy W-8 adóbevallási űrlapot Bbsmc adóügyi nyilvántartásaihoz, hogy az adóügyi előírásoknak eleget tegyünk."
   },
   "dashboard.creator-withdraw-modal.tax-form-required.header": {
     "message": "Adóbevallási űrlap szükséges"
@@ -1656,13 +1656,13 @@
     "message": "Hitelesítetlen e-mail cím"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.unverified-email-message": {
-    "message": "A kiszállítási e-mail cím, amit megadtál nincs hozzákapcsolva a Modrinth fiókodhoz. A Modrinth nem tudja visszaállítani a jutalmakat, amik rossz e-mail címre lettek küldve."
+    "message": "A kiszállítási e-mail cím, amit megadtál nincs hozzákapcsolva a Bbsmc fiókodhoz. A Bbsmc nem tudja visszaállítani a jutalmakat, amik rossz e-mail címre lettek küldve."
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-header": {
     "message": "Alacsonyabb díjak elérhetőek"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-message": {
-    "message": "A PayPal International szolgáltatáshoz az USD pénznemet választotta. <direct-paypal-link>Váltson át a közvetlen PayPal-re</direct-paypal-link> a kedvezőbb díjakért (≈6% helyett ≈2%)."
+    "message": "A PayPal International szolgáltatáshoz az USD pénznemet választotta. <direct-paypal-link>Váltson át a közvetlen PayPal-re</direct-paypal-link> a kedvezőbb díjakért (�?% helyett �?%)."
   },
   "dashboard.creator-withdraw-modal.withdraw-button": {
     "message": "Pénzfelvétel"
@@ -1674,7 +1674,7 @@
     "message": "Elérted a(z) <b>{withdrawLimit}</b> kifizetési limitet. További kifizetésekhez ki kell töltened egy adózási űrlapot."
   },
   "dashboard.discord-roles.banner.body": {
-    "message": "Jogosult vagy a következő rangokra: {roles}. Kapcsold össze a Discord fiókodat a Modrinth-en keresztül, és automatikusan szinkronizáljuk őket."
+    "message": "Jogosult vagy a következő rangokra: {roles}. Kapcsold össze a Discord fiókodat a Bbsmc-en keresztül, és automatikusan szinkronizáljuk őket."
   },
   "dashboard.discord-roles.banner.cta": {
     "message": "Discord Linkelése"
@@ -1839,7 +1839,7 @@
     "message": "A becsült bevételek a rendelkezésre bocsátásig változhatnak."
   },
   "dashboard.revenue.estimated-tooltip.msg2": {
-    "message": "Kattints ide, hogy elolvasd, hogyan kezeli a Modrinth a bevételeidet."
+    "message": "Kattints ide, hogy elolvasd, hogyan kezeli a Bbsmc a bevételeidet."
   },
   "dashboard.revenue.estimated-with-date": {
     "message": "Becsült {date}"
@@ -1860,7 +1860,7 @@
     "message": "Felvéve"
   },
   "dashboard.revenue.tos": {
-    "message": "A projektek Modrinthra való feltöltésével és a számládról történő pénzfelvétellel elfogadod a <terms-link>jutalomprogram feltételeit</terms-link>. Tudj meg többet a <info-link>jutalomprogramról</info-link>."
+    "message": "A projektek Bbsmcra való feltöltésével és a számládról történő pénzfelvétellel elfogadod a <terms-link>jutalomprogram feltételeit</terms-link>. Tudj meg többet a <info-link>jutalomprogramról</info-link>."
   },
   "dashboard.revenue.transactions.btn.download-csv": {
     "message": "Letöltés CSV formátumban"
@@ -2043,7 +2043,7 @@
     "message": "Ez a gyűjtemény lehet hogy privát."
   },
   "error.collection.404.list_item.3": {
-    "message": "A gyűjteményt a Modrinth moderációs csapata eltávolította, mert megsértette a <tou-link>Felhasználási feltételeinket</tou-link>."
+    "message": "A gyűjteményt a Bbsmc moderációs csapata eltávolította, mert megsértette a <tou-link>Felhasználási feltételeinket</tou-link>."
   },
   "error.collection.404.list_title": {
     "message": "Miért?"
@@ -2070,10 +2070,10 @@
     "message": "Tartalom nem elérhető legális okok miatt"
   },
   "error.generic.default.list_item.1": {
-    "message": "Ellenőrizd, hogy a Modrinth elérhető-e az <status-link>állapotoldalon</status-link>."
+    "message": "Ellenőrizd, hogy a Bbsmc elérhető-e az <status-link>állapotoldalon</status-link>."
   },
   "error.generic.default.list_item.2": {
-    "message": "Ha ez továbbra is történik, valószínűleg tudatni szeretnéd a Modrinth csapatával. Ezt úgy tehetet meg, hogy csatlakozol a <discord-link>Discord szerverünkre</discord-link>."
+    "message": "Ha ez továbbra is történik, valószínűleg tudatni szeretnéd a Bbsmc csapatával. Ezt úgy tehetet meg, hogy csatlakozol a <discord-link>Discord szerverünkre</discord-link>."
   },
   "error.generic.default.list_title": {
     "message": "Kerjük próbáld újra pár perc múlva."
@@ -2091,7 +2091,7 @@
     "message": "A szervezet készítője megváltoztathatta, vagy törölhette a linket."
   },
   "error.organization.404.list_item.3": {
-    "message": "A szervezet törölve lehetett a Modrinth moderációs csapata által, amiért megsértette a <tou-link>Terms of Use</tou-link>-t."
+    "message": "A szervezet törölve lehetett a Bbsmc moderációs csapata által, amiért megsértette a <tou-link>Terms of Use</tou-link>-t."
   },
   "error.organization.404.list_title": {
     "message": "Miért?"
@@ -2106,7 +2106,7 @@
     "message": "A projekt lészítője megváltoztathatta a linket, vagy a projektet privátta tette, esetleg ki is törölte."
   },
   "error.project.404.list_item.3": {
-    "message": "A projekt valószínűleg le lett törölve a Modrinth moderációs csapat által, amiért megsértette a <tou-link>Felhasználási feltételek</tou-link>et."
+    "message": "A projekt valószínűleg le lett törölve a Bbsmc moderációs csapat által, amiért megsértette a <tou-link>Felhasználási feltételek</tou-link>et."
   },
   "error.project.404.list_title": {
     "message": "Miért?"
@@ -2121,7 +2121,7 @@
     "message": "A felhasználó megváltoztathatta a nevét, vagy törölhette fiókját."
   },
   "error.user.404.list_item.3": {
-    "message": "A felhasználó fiókja fel lehet függesztve, amiért megsértette a Modrinth <tou-link>Terms of Use</tou-link>-t."
+    "message": "A felhasználó fiókja fel lehet függesztve, amiért megsértette a Bbsmc <tou-link>Terms of Use</tou-link>-t."
   },
   "error.user.404.list_title": {
     "message": "Miért?"
@@ -2163,10 +2163,10 @@
     "message": "Amikor a szervered nagy terhelés alatt áll, ideiglenesen további processzorszálakat biztosítunk számára, hogy csökkentsük a lagtüskéket és az instabilitást. Ez segít megakadályozni, hogy a TPS 20 alá essen, így a játékélmény a lehető legsimább marad.\nMivel ezek az extra processzorszálak csak rövid ideig, nagy terhelés esetén érhetők el, előfordulhat, hogy nem jelennek meg a Spark jelentésekben vagy más teljesítményelemző eszközökben."
   },
   "hosting-marketing.faq.cpu-kind": {
-    "message": "Milyen típusú CPU-k futnak a Modrinth Hosting szerverein?"
+    "message": "Milyen típusú CPU-k futnak a Bbsmc Hosting szerverein?"
   },
   "hosting-marketing.faq.cpu-kind.answer": {
-    "message": "A Modrinth Hosting szerverei AMD Ryzen 7900 és 7950X3D egyenértékű, 5+ GHz-s processzorokkal és DDR5 memóriával vannak felszerelve."
+    "message": "A Bbsmc Hosting szerverei AMD Ryzen 7900 és 7950X3D egyenértékű, 5+ GHz-s processzorokkal és DDR5 memóriával vannak felszerelve."
   },
   "hosting-marketing.faq.currency": {
     "message": "Milyen pénznemben vannak megadva az árak?"
@@ -2175,19 +2175,19 @@
     "message": "Minden ár amerikai dollárban (USD) van feltüntetve."
   },
   "hosting-marketing.faq.ddos-protection": {
-    "message": "A Modrinth Hosting szerverei rendelkeznek DDoS védelemmel?"
+    "message": "A Bbsmc Hosting szerverei rendelkeznek DDoS védelemmel?"
   },
   "hosting-marketing.faq.ddos-protection.answer": {
-    "message": "Igen. A Modrinth Hosting összes szerverén DDoS-védelem működik, egyes helyszíneken akár 17 Tbps kapacitással."
+    "message": "Igen. A Bbsmc Hosting összes szerverén DDoS-védelem működik, egyes helyszíneken akár 17 Tbps kapacitással."
   },
   "hosting-marketing.faq.heading": {
     "message": "Gyakran ismételt kérdések"
   },
   "hosting-marketing.faq.how-fast": {
-    "message": "Milyen gyorsak a Modrinth Hosting szerverek?"
+    "message": "Milyen gyorsak a Bbsmc Hosting szerverek?"
   },
   "hosting-marketing.faq.how-fast.answer.one": {
-    "message": "A Modrinth Hosting szerverei nagyon modern, nagy teljesítményű hardvereken futnak, de nehéz megmondani, hogy ez pontosan hogyan fogja befolyásolni a szervered sebességét, mert sok tényező hat rá, például a szerveren futó modok, adatcsomagok vagy bővítmények, sőt még a felhasználói viselkedés is."
+    "message": "A Bbsmc Hosting szerverei nagyon modern, nagy teljesítményű hardvereken futnak, de nehéz megmondani, hogy ez pontosan hogyan fogja befolyásolni a szervered sebességét, mert sok tényező hat rá, például a szerveren futó modok, adatcsomagok vagy bővítmények, sőt még a felhasználói viselkedés is."
   },
   "hosting-marketing.faq.how-fast.answer.two": {
     "message": "A legtöbb teljesítményprobléma általában egy nem optimalizált modcsomag, mod, adatcsomag vagy bővítmény hibájából ered, ami a szerver lagolását okozza. Mivel szervereink nagyon csúcskategóriásak, nem kell sok problémával számolnod, ha a szerveren futtatott tartalomhoz megfelelő csomagot választasz."
@@ -2196,10 +2196,10 @@
     "message": "Növelhetem a szerverem tárhelyét?"
   },
   "hosting-marketing.faq.increase-storage.answer": {
-    "message": "Igen, a szervereden a tárhely további költségek nélkül növelhető. Ha több tárhelyre van szükséged, vedd fel a kapcsolatot a Modrinth ügyfélszolgálatával."
+    "message": "Igen, a szervereden a tárhely további költségek nélkül növelhető. Ha több tárhelyre van szükséged, vedd fel a kapcsolatot a Bbsmc ügyfélszolgálatával."
   },
   "hosting-marketing.faq.location": {
-    "message": "Hol találhatók a Modrinth Hosting szerverei? Kiválaszthatom a régiót?"
+    "message": "Hol találhatók a Bbsmc Hosting szerverei? Kiválaszthatom a régiót?"
   },
   "hosting-marketing.faq.location.answer": {
     "message": "Jelenleg Észak-Amerikában, Európában, Délkelet-Ázsiában és Ausztráliában rendelkezünk szerverekkel, amelyeket vásárláskor kiválaszthatsz. A jövőben további régiók érkeznek! Ha régiót szeretnél váltani, kérlek vedd fel a kapcsolatot az ügyfélszolgálattal."
@@ -2208,7 +2208,7 @@
     "message": "Melyik Minecraft verziók és betöltők használhatók?"
   },
   "hosting-marketing.faq.versions-loaders.answer.one": {
-    "message": "A Modrinth Hosting szerverei a Minecraft: Java Edition bármelyik verzióját futtathatják, egészen az 1.2.5-ös verziótól kezdve, beleértve a snapshot verziókat is."
+    "message": "A Bbsmc Hosting szerverei a Minecraft: Java Edition bármelyik verzióját futtathatják, egészen az 1.2.5-ös verziótól kezdve, beleértve a snapshot verziókat is."
   },
   "hosting-marketing.faq.versions-loaders.answer.two": {
     "message": "Számos mod- és bővítménybetöltőt is támogatunk, többek között a Fabric, Quilt, Forge és NeoForge modokat, valamint a Paper és Purpur bővítményeket. A rendelkezésre állás attól függ, hogy a mod- vagy pluginbetöltő támogatja-e a kiválasztott Minecraft verziót."
@@ -2225,11 +2225,11 @@
   "hosting-marketing.hero.button.start-your-server": {
     "message": "Szervered indítása"
   },
-  "hosting-marketing.hero.host-with-modrinth": {
-    "message": "Hozd létre a következő szerveredet a Modrinth Hostingnál"
+  "hosting-marketing.hero.host-with-Bbsmc": {
+    "message": "Hozd létre a következő szerveredet a Bbsmc Hostingnál"
   },
   "hosting-marketing.hero.hosting-description": {
-    "message": "A Modrinth Hosting a legegyszerűbb módja saját Minecraft: Java Edition szerver létrehozásához. Telepítsd és játssz kedvenc modjaiddal és modcsomagjaiddal zökkenőmentesen, mindezt a Modrinth platformon belül."
+    "message": "A Bbsmc Hosting a legegyszerűbb módja saját Minecraft: Java Edition szerver létrehozásához. Telepítsd és játssz kedvenc modjaiddal és modcsomagjaiddal zökkenőmentesen, mindezt a Bbsmc platformon belül."
   },
   "hosting-marketing.included.advanced-networking": {
     "message": "Fejlett hálózatkezelés"
@@ -2247,10 +2247,10 @@
     "message": "Egyéni link"
   },
   "hosting-marketing.included.custom-url.description": {
-    "message": "Oszd meg a szerveredet egy egyedi <contrast>modrinth.gg</contrast> linkkel."
+    "message": "Oszd meg a szerveredet egy egyedi <contrast>Bbsmc.gg</contrast> linkkel."
   },
   "hosting-marketing.included.description": {
-    "message": "Minden szerverhez tartozik egy sor olyan funkció, amelynek célja, hogy olyan tárhelyszolgáltatást nyújtson, amelyet csak a Modrinth tud nyújtani."
+    "message": "Minden szerverhez tartozik egy sor olyan funkció, amelynek célja, hogy olyan tárhelyszolgáltatást nyújtson, amelyet csak a Bbsmc tud nyújtani."
   },
   "hosting-marketing.included.file-manager": {
     "message": "Könnyen használható fájlkezelő"
@@ -2265,19 +2265,19 @@
     "message": "Segítség, amikor szükséged van rá"
   },
   "hosting-marketing.included.help.description": {
-    "message": "Bármikor fordulhatsz a Modrinth csapatához segítségért a szervereddel kapcsolatban."
+    "message": "Bármikor fordulhatsz a Bbsmc csapatához segítségért a szervereddel kapcsolatban."
   },
   "hosting-marketing.included.powerful-console": {
     "message": "Erőteljes konzol, szervertulajdonság-kezelő és még sok más"
   },
   "hosting-marketing.included.powerful-console.description": {
-    "message": "A Modrinth Hosting hatékony eszközökkel rendelkezik a szerver kezeléséhez."
+    "message": "A Bbsmc Hosting hatékony eszközökkel rendelkezik a szerver kezeléséhez."
   },
   "hosting-marketing.included.sftp-access": {
     "message": "SFTP hozzáférés"
   },
   "hosting-marketing.included.sftp-access.description": {
-    "message": "A Modrinth Hosting szolgáltatásba beépített SFTP segítségével közvetlenül elérheti a szerver fájljait."
+    "message": "A Bbsmc Hosting szolgáltatásba beépített SFTP segítségével közvetlenül elérheti a szerver fájljait."
   },
   "hosting-marketing.included.with-your-server": {
     "message": "A szerverhez tartozik"
@@ -2300,20 +2300,20 @@
   "hosting-marketing.server-for-everyone": {
     "message": "Ez egy szerver mindenkinek"
   },
-  "hosting-marketing.why.all-on-modrinth": {
-    "message": "Kezeld mindezt a Modrinthal"
+  "hosting-marketing.why.all-on-Bbsmc": {
+    "message": "Kezeld mindezt a Bbsmcal"
   },
-  "hosting-marketing.why.all-on-modrinth.description": {
-    "message": "A szervered, a modjaid, a játékosaid és még sok más mind a Modrinthon van. Nincs szükség platformok közötti váltásra."
+  "hosting-marketing.why.all-on-Bbsmc.description": {
+    "message": "A szervered, a modjaid, a játékosaid és még sok más mind a Bbsmcon van. Nincs szükség platformok közötti váltásra."
   },
   "hosting-marketing.why.consistently-fast": {
     "message": "Állandóan gyors"
   },
   "hosting-marketing.why.consistently-fast.description": {
-    "message": "Infrastruktúránk soha nem terhelt túl, ami azt jelenti, hogy a Modrinth által üzemeltetett minden szerver mindig teljes teljesítményen működik."
+    "message": "Infrastruktúránk soha nem terhelt túl, ami azt jelenti, hogy a Bbsmc által üzemeltetett minden szerver mindig teljes teljesítményen működik."
   },
   "hosting-marketing.why.description": {
-    "message": "Válassz a Modrinth több ezer modcsomagja közül, vagy készítsd el a sajátodat. Ha készen állsz a játékra, hívd meg barátaidat."
+    "message": "Válassz a Bbsmc több ezer modcsomagja közül, vagy készítsd el a sajátodat. Ha készen állsz a játékra, hívd meg barátaidat."
   },
   "hosting-marketing.why.heading": {
     "message": "Keress egy modcsomagot. Most már ez egy szerver."
@@ -2322,22 +2322,22 @@
     "message": "Élvezd a modern, megbízható szerverüzemeltetést"
   },
   "hosting-marketing.why.modern-reliable-hosting.description": {
-    "message": "A Modrinth Hosting <contrast>nagy teljesítményű AMD processzorokat és DDR5 memóriát</contrast> használ, valamint egyedi szoftverrel gondoskodik a stabil, zökkenőmentes működésről."
+    "message": "A Bbsmc Hosting <contrast>nagy teljesítményű AMD processzorokat és DDR5 memóriát</contrast> használ, valamint egyedi szoftverrel gondoskodik a stabil, zökkenőmentes működésről."
   },
   "hosting-marketing.why.where-mods-are": {
     "message": "Játssz ott, ahol a modjaid vannak"
   },
   "hosting-marketing.why.where-mods-are.description": {
-    "message": "A Modrinth Hosting zökkenőmentesen integrálja a mod és modcsomag telepítési folyamatot a szerveredbe."
+    "message": "A Bbsmc Hosting zökkenőmentesen integrálja a mod és modcsomag telepítési folyamatot a szerveredbe."
   },
-  "hosting-marketing.why.why-modrinth-hosting": {
-    "message": "Miért a Modrinth Hosting?"
+  "hosting-marketing.why.why-Bbsmc-hosting": {
+    "message": "Miért a Bbsmc Hosting?"
   },
   "hosting-marketing.why.your-favorite-mods": {
     "message": "Az összes kedvenc modod"
   },
   "hosting-marketing.why.your-favorite-mods.description": {
-    "message": "Válassz a Vanilla, Fabric, Forge, Quilt és NeoForge közül. Ha Modrinthon fut, akkor a szervereden is futtatható."
+    "message": "Válassz a Vanilla, Fabric, Forge, Quilt és NeoForge közül. Ha Bbsmcon fut, akkor a szervereden is futtatható."
   },
   "hosting.plan.out-of-stock": {
     "message": "Nincs raktáron"
@@ -2352,7 +2352,7 @@
     "message": "Ugrás az irányítópultra"
   },
   "landing.creator.feature.constantly-evolving.description": {
-    "message": "Kapd meg a legjobb modolási élményt folyamatos frissítésekkel a Modrinth csapattól"
+    "message": "Kapd meg a legjobb modolási élményt folyamatos frissítésekkel a Bbsmc csapattól"
   },
   "landing.creator.feature.constantly-evolving.title": {
     "message": "Folyamatos változás"
@@ -2397,13 +2397,13 @@
     "message": "Kövesd a projekteket, amiket szeretsz"
   },
   "landing.feature.launcher.description": {
-    "message": "A Modrinth nyílt forráskódú API-ja lehetővé teszi az indítók számára a Modrinthal való mély integrációt. A Modrinthot használhatod a <link>saját alkalmazásunkon</link> és néhány népszerű indítón kersztül, mint például az ATLauncher, a MultiMC és a Prism Launcher."
+    "message": "A Bbsmc nyílt forráskódú API-ja lehetővé teszi az indítók számára a Bbsmcal való mély integrációt. A Bbsmcot használhatod a <link>saját alkalmazásunkon</link> és néhány népszerű indítón kersztül, mint például az ATLauncher, a MultiMC és a Prism Launcher."
   },
   "landing.feature.launcher.heading": {
     "message": "Játssz kedvenc indítóddal"
   },
   "landing.feature.search.description": {
-    "message": "A Modrinth villámgyors keresője és hatékony szűrői lehetővé teszik, hogy már a beírás közben megtaláld, amit keresel."
+    "message": "A Bbsmc villámgyors keresője és hatékony szűrői lehetővé teszik, hogy már a beírás közben megtaláld, amit keresel."
   },
   "landing.feature.search.heading": {
     "message": "Találd meg gyorsan és egyszerűen, amit keresel"
@@ -2436,10 +2436,10 @@
     "message": "ATLauncher"
   },
   "landing.launcher.graphic-alt": {
-    "message": "A Minecraft ablak egyszerűsített ábrázolása, a Mojang Studios logójával Modrinth-zöldben."
+    "message": "A Minecraft ablak egyszerűsített ábrázolása, a Mojang Studios logójával Bbsmc-zöldben."
   },
-  "landing.launcher.modrinth-app-label": {
-    "message": "Modrinth App"
+  "landing.launcher.Bbsmc-app-label": {
+    "message": "Bbsmc App"
   },
   "landing.launcher.prism-launcher-label": {
     "message": "Prism Launcher"
@@ -2535,13 +2535,13 @@
     "message": "Nézd meg fiókbeállításaidat"
   },
   "layout.banner.add-email.description": {
-    "message": "Biztonsági okok miatt a Modrinthon kell egy e-mail cím a fiókodhoz."
+    "message": "Biztonsági okok miatt a Bbsmcon kell egy e-mail cím a fiókodhoz."
   },
   "layout.banner.build-fail.always-ignore": {
     "message": "Mindig mellőzd"
   },
   "layout.banner.build-fail.description": {
-    "message": "A Modrinth felhasználói felületének jelenlegi telepítése nem tudta az API-ból lekérni az állapotadatokat. Ennek oka lehet egy szolgáltatáskimaradás vagy konfigurációs hiba. Kérlek próbáld meg újra, amikor az API újra elérhetővé válik. Hibakódok: {errors}; Az API jelenlegi linkje: {url}"
+    "message": "A Bbsmc felhasználói felületének jelenlegi telepítése nem tudta az API-ból lekérni az állapotadatokat. Ennek oka lehet egy szolgáltatáskimaradás vagy konfigurációs hiba. Kérlek próbáld meg újra, amikor az API újra elérhetővé válik. Hibakódok: {errors}; Az API jelenlegi linkje: {url}"
   },
   "layout.banner.build-fail.ignore": {
     "message": "Mellőz"
@@ -2550,13 +2550,13 @@
     "message": "Hiba történt az API állapotának generálása közben a fordítás során."
   },
   "layout.banner.preview.title": {
-    "message": "Ez a Modrinth weboldal előzetes verziója."
+    "message": "Ez a Bbsmc weboldal előzetes verziója."
   },
   "layout.banner.staging.description": {
-    "message": "Az előkészítési környezet teljesen elkülönül az éles Modrinth-adatbázistól. Tesztelési és hibakeresési célokat szolgál, és a Modrinth háttérrendszerének vagy felhasználói felületének a fejlesztés alatt álló, az éles környezetnél újabb verzióit is futtathatja."
+    "message": "Az előkészítési környezet teljesen elkülönül az éles Bbsmc-adatbázistól. Tesztelési és hibakeresési célokat szolgál, és a Bbsmc háttérrendszerének vagy felhasználói felületének a fejlesztés alatt álló, az éles környezetnél újabb verzióit is futtathatja."
   },
   "layout.banner.staging.title": {
-    "message": "A Modrinth színreviteli környezetét nézed"
+    "message": "A Bbsmc színreviteli környezetét nézed"
   },
   "layout.banner.subscription-payment-failed.button": {
     "message": "Számlázási információ frissítése"
@@ -2571,7 +2571,7 @@
     "message": "Adózási űrlap kitöltése"
   },
   "layout.banner.tax.description": {
-    "message": "Idén már több mint {threshold} összeget vettél ki a Modrinth-ből. Az adózási szabályozásoknak való megfelelés érdekében ki kell töltened egy adóbevallási űrlapot. A kifizetések a nyomtatvány benyújtásáig szünetelnek."
+    "message": "Idén már több mint {threshold} összeget vettél ki a Bbsmc-ből. Az adózási szabályozásoknak való megfelelés érdekében ki kell töltened egy adóbevallási űrlapot. A kifizetések a nyomtatvány benyújtásáig szünetelnek."
   },
   "layout.banner.tax.title": {
     "message": "Adózási űrlap szükséges"
@@ -2589,7 +2589,7 @@
     "message": "Ellenőrző e-mail újraküldése"
   },
   "layout.banner.verify-email.description": {
-    "message": "Biztonsági okokból a Modrinth megköveteli, hogy igazold a fiókodhoz tartozó e-mail címet."
+    "message": "Biztonsági okokból a Bbsmc megköveteli, hogy igazold a fiókodhoz tartozó e-mail címet."
   },
   "layout.footer.about": {
     "message": "Rólunk"
@@ -2630,23 +2630,23 @@
   "layout.footer.legal.terms-of-use": {
     "message": "Felhasználási feltételek"
   },
-  "layout.footer.modrinth-information": {
-    "message": "Modrinth infórmáció"
+  "layout.footer.Bbsmc-information": {
+    "message": "Bbsmc infórmáció"
   },
   "layout.footer.open-source": {
-    "message": "A Modrinth <github-link>nyílt forráskódú</github-link>."
+    "message": "A Bbsmc <github-link>nyílt forráskódú</github-link>."
   },
   "layout.footer.products": {
     "message": "Termékek"
   },
   "layout.footer.products.app": {
-    "message": "Modrinth App"
+    "message": "Bbsmc App"
   },
   "layout.footer.products.plus": {
-    "message": "Modrinth+"
+    "message": "Bbsmc+"
   },
   "layout.footer.products.servers": {
-    "message": "Modrinth Hosting"
+    "message": "Bbsmc Hosting"
   },
   "layout.footer.resources": {
     "message": "Források"
@@ -2682,7 +2682,7 @@
     "message": "Menü ki-be"
   },
   "layout.meta.description": {
-    "message": "Tölts le Minecraft modokat, bővítményeket, adatcsomagokat, shadereket, forráscsomagokat és modcsomagokat a Modrinthról. Fedezd fel és tedd közzé projektjeidet a Modrinthon egy modern, könnyen használható felületen és API-n keresztül."
+    "message": "Tölts le Minecraft modokat, bővítményeket, adatcsomagokat, shadereket, forráscsomagokat és modcsomagokat a Bbsmcról. Fedezd fel és tedd közzé projektjeidet a Bbsmcon egy modern, könnyen használható felületen és API-n keresztül."
   },
   "layout.meta.og-description": {
     "message": "Fedezd fel és tegyél közzé Minecraft tartalmakat!"
@@ -2699,8 +2699,8 @@
   "layout.nav.discover": {
     "message": "Felfedezés"
   },
-  "layout.nav.get-modrinth-app": {
-    "message": "Szerezd meg a Modrinth Appot"
+  "layout.nav.get-Bbsmc-app": {
+    "message": "Szerezd meg a Bbsmc Appot"
   },
   "layout.nav.home": {
     "message": "Kezdőlap"
@@ -2708,11 +2708,11 @@
   "layout.nav.host-a-server": {
     "message": "Hozz létre egy szervert"
   },
-  "layout.nav.modrinth-app": {
-    "message": "Modrinth App"
+  "layout.nav.Bbsmc-app": {
+    "message": "Bbsmc App"
   },
-  "layout.nav.modrinth-home-page": {
-    "message": "Modrinth kezdőlap"
+  "layout.nav.Bbsmc-home-page": {
+    "message": "Bbsmc kezdőlap"
   },
   "layout.nav.my-servers": {
     "message": "Szervereim"
@@ -2735,11 +2735,11 @@
   "layout.nav.search": {
     "message": "Keresés"
   },
-  "layout.nav.upgrade-to-modrinth-plus": {
-    "message": "Frissíts a Modrinth+-ra"
+  "layout.nav.upgrade-to-Bbsmc-plus": {
+    "message": "Frissíts a Bbsmc+-ra"
   },
   "layout.publish.email-verification-required.description": {
-    "message": "A Modrinthon való közzététel előtt hitelesítened kell az e-mail címedet."
+    "message": "A Bbsmcon való közzététel előtt hitelesítened kell az e-mail címedet."
   },
   "layout.publish.email-verification-required.title": {
     "message": "E-mail hitelesítés szükséges"
@@ -3078,7 +3078,7 @@
     "message": "Meghívtak, hogy csatlakozz a projekthez"
   },
   "project-member-header.invitation-with-role": {
-    "message": "Meghívtak, hogy legyél ennek a projektnek a tagja „{role}” szereppel."
+    "message": "Meghívtak, hogy legyél ennek a projektnek a tagja „{role}�?szereppel."
   },
   "project-member-header.success-decline": {
     "message": "Elutasítottad a meghívást"
@@ -3096,7 +3096,7 @@
     "message": "Felülvizsgálatra való benyújtás visszavonása"
   },
   "project-moderation-nags.resubmit-for-review-desc": {
-    "message": "A projektedet {status, select, rejected {elutasították} withheld {visszatartották} other {{status}}} a Modrinth moderátor tagjai. A legtöbb esetben újra beküldheted felülvizsgálatra, miután reagáltál a moderátor üzenetére."
+    "message": "A projektedet {status, select, rejected {elutasították} withheld {visszatartották} other {{status}}} a Bbsmc moderátor tagjai. A legtöbb esetben újra beküldheted felülvizsgálatra, miután reagáltál a moderátor üzenetére."
   },
   "project-moderation-nags.submit-checklist-tooltip": {
     "message": "El kell végezned a közzétételi ellenőrzőlistán szereplő szükséges lépéseket!"
@@ -3195,7 +3195,7 @@
     "message": "Tekintsd át a projektet"
   },
   "project.actions.servers-promo.description": {
-    "message": "A Modrinth Hosting a legegyszerűbb módja annak, hogy gond nélkül játszhass a barátaiddal!"
+    "message": "A Bbsmc Hosting a legegyszerűbb módja annak, hogy gond nélkül játszhass a barátaiddal!"
   },
   "project.actions.servers-promo.pricing": {
     "message": "Kezdőár: {price}<small> / hó</small>"
@@ -3261,7 +3261,7 @@
     "message": "Letöltés"
   },
   "project.download.download-as-zip": {
-    "message": "Letöltés  「.zip」  fájlként"
+    "message": "Letöltés  �?zip�? fájlként"
   },
   "project.download.download-version": {
     "message": "{version} letöltése"
@@ -3273,7 +3273,7 @@
     "message": "Letöltés az ajánlottakkal"
   },
   "project.download.download-with-recommended-as-zip": {
-    "message": "Letöltés az ajánlottokkal  「.zip」  formátumban"
+    "message": "Letöltés az ajánlottokkal  �?zip�? formátumban"
   },
   "project.download.duplicate-dependencies-hidden": {
     "message": "A duplázott függőségek el vannak rejtve"
@@ -3285,13 +3285,13 @@
     "message": "A(z) {title} nem támogatja ezt a verziót: {platform} {gameVersion}"
   },
   "project.download.install-with-app": {
-    "message": "Letöltés a Modrinth Appal"
+    "message": "Letöltés a Bbsmc Appal"
   },
   "project.download.manually": {
     "message": "Letöltés manuálisan"
   },
   "project.download.no-app": {
-    "message": "Nincs meg a Modrinth App? "
+    "message": "Nincs meg a Bbsmc App? "
   },
   "project.download.no-game-versions-found": {
     "message": "Játékverzió nem található"
@@ -3333,7 +3333,7 @@
     "message": "A fájlokat nem sikerült letölteni"
   },
   "project.environment.migration-no-permission.message": {
-    "message": "Átdolgoztuk a Modrinth Környezetek rendszerét, és új beállítások érhetők el. Nincs jogosultságod módosítani ezeket a beállításokat, de kérlek, jelezd a projekt egy másik tagjának, hogy a környezet metaadatait ellenőrizni kell."
+    "message": "Átdolgoztuk a Bbsmc Környezetek rendszerét, és új beállítások érhetők el. Nincs jogosultságod módosítani ezeket a beállításokat, de kérlek, jelezd a projekt egy másik tagjának, hogy a környezet metaadatait ellenőrizni kell."
   },
   "project.environment.migration-no-permission.title": {
     "message": "A környezeti metaadatokat felül kell vizsgálni"
@@ -3342,7 +3342,7 @@
     "message": "Tudj meg többet erről a változásról"
   },
   "project.environment.migration.message": {
-    "message": "Átdolgoztuk a Modrinth Környezetek rendszerét, és új lehetőségek érhetők el. Kérjük, ellenőrizd, hogy a metaadatok helyesek-e."
+    "message": "Átdolgoztuk a Bbsmc Környezetek rendszerét, és új lehetőségek érhetők el. Kérjük, ellenőrizd, hogy a metaadatok helyesek-e."
   },
   "project.environment.migration.review-button": {
     "message": "Környezeti beállítások áttekintése"
@@ -3366,10 +3366,10 @@
     "message": "A projekted privát, vagyis csak te és az általad meghívott személyek férhetnek hozzá."
   },
   "project.moderation.admonition.approved.body.public": {
-    "message": "A projekted publikus, és felfedezhető a Modrinthen."
+    "message": "A projekted publikus, és felfedezhető a Bbsmcen."
   },
   "project.moderation.admonition.approved.body.unlisted": {
-    "message": "A projekted nem listázott, ami azt jelenti, hogy csak a linkjével érhető el, és nem felfedezhető a Modrinthen."
+    "message": "A projekted nem listázott, ami azt jelenti, hogy csak a linkjével érhető el, és nem felfedezhető a Bbsmcen."
   },
   "project.moderation.admonition.approved.body.visibility-message": {
     "message": "A projekt láthatóságát a projekt <visibility-settings-link>láthatósági beállításaiban</visibility-settings-link> módosíthatod."
@@ -3378,19 +3378,19 @@
     "message": "Projekt jóváhagyva"
   },
   "project.moderation.admonition.draft.body": {
-    "message": "Ez egy projektvázlat, amelyet mások nem láthatnak, amíg azt felülvizsgálatra nem nyújtják be, és a Modrinth moderátori csapata jóvá nem hagyja."
+    "message": "Ez egy projektvázlat, amelyet mások nem láthatnak, amíg azt felülvizsgálatra nem nyújtják be, és a Bbsmc moderátori csapata jóvá nem hagyja."
   },
   "project.moderation.admonition.draft.header": {
     "message": "Projektvázlat"
   },
   "project.moderation.admonition.draft.submit-for-review": {
-    "message": "Miután elvégezted az összes szükséges lépést, és meggyőződtél arról, hogy a projekted megfelel a Modrinth <rules-link>Tartalmi szabályainak</rules-link>, benyújthatod a projektedet felülvizsgálatra."
+    "message": "Miután elvégezted az összes szükséges lépést, és meggyőződtél arról, hogy a projekted megfelel a Bbsmc <rules-link>Tartalmi szabályainak</rules-link>, benyújthatod a projektedet felülvizsgálatra."
   },
   "project.moderation.admonition.rejected.header": {
     "message": "Változtatások kérve lettek"
   },
   "project.moderation.admonition.under-review.body.5": {
-    "message": "<emphasis>Köszönjük türelmedet, amíg moderátoraink keményen dolgoznak a Modrinth biztonságának fenntartásán, és alig várjuk, hogy segíthessünk tartalmaid megosztásában! 💚</emphasis>"
+    "message": "<emphasis>Köszönjük türelmedet, amíg moderátoraink keményen dolgoznak a Bbsmc biztonságának fenntartásán, és alig várjuk, hogy segíthessünk tartalmaid megosztásában! 💚</emphasis>"
   },
   "project.moderation.admonition.under-review.header": {
     "message": "Projekt áttekintés alatt"
@@ -3417,7 +3417,7 @@
     "message": "Projekt frissítve"
   },
   "project.settings.general.name.description": {
-    "message": "Kerüld az előtagokat, utótagokat, zárójeleket vagy hozzáadott leírásokat – csak a projekt tényleges nevét használd."
+    "message": "Kerüld az előtagokat, utótagokat, zárójeleket vagy hozzáadott leírásokat �?csak a projekt tényleges nevét használd."
   },
   "project.settings.general.name.placeholder.1": {
     "message": "pl. Nether Overhaul 2"
@@ -3468,7 +3468,7 @@
     "message": "Kélek mielőtt benyújtanád a projekedet felülvizsgálatra, igazold, hogy rendelkezel az alábbi fájlok mindegyikének továbbterjesztésére vonatkozó engedéllyel."
   },
   "project.settings.permissions.bad-proof.description": {
-    "message": "A Modrinth moderátori csapata elutasította az általad bizonyos külső tartalmakhoz megadott engedélyezési információkat. Kérlek tekintsd át az alábbi elutasított elemeket, és nyújts be elfogadható igazolást, vagy távolítsd el a tartalmat."
+    "message": "A Bbsmc moderátori csapata elutasította az általad bizonyos külső tartalmakhoz megadott engedélyezési információkat. Kérlek tekintsd át az alábbi elutasított elemeket, és nyújts be elfogadható igazolást, vagy távolítsd el a tartalmat."
   },
   "project.settings.permissions.collapse-all": {
     "message": "Összes becsukása"
@@ -3546,7 +3546,7 @@
     "message": "Adj meg további kontextust a jelentéseddel kapcsolatban"
   },
   "report.for.violation": {
-    "message": "A Modrinth <rules-link>Szabályzat</rules-link> vagy <terms-link>Felhasználási feltételek</terms-link> megsértése"
+    "message": "A Bbsmc <rules-link>Szabályzat</rules-link> vagy <terms-link>Felhasználási feltételek</terms-link> megsértése"
   },
   "report.for.violation.description": {
     "message": "Példák: rosszindulatú, spam, sértő, megtévesztő, félrevezető és illegális tartalom."
@@ -3777,7 +3777,7 @@
     "message": "Jelentések írása"
   },
   "scopes.sessionAccess.description": {
-    "message": "Modrinth által kiadott munkamenetek elérése"
+    "message": "Bbsmc által kiadott munkamenetek elérése"
   },
   "scopes.sessionAccess.label": {
     "message": "Munkamenetek hozzáférése"
@@ -3876,7 +3876,7 @@
     "message": "Szinkronizálás a szerverrel"
   },
   "servers.manage.content.title": {
-    "message": "Tartalom – {serverName} – Modrinth"
+    "message": "Tartalom �?{serverName} �?Bbsmc"
   },
   "servers.notice.actions": {
     "message": "Műveletek"
@@ -3906,13 +3906,13 @@
     "message": "Nincsen értesítés"
   },
   "servers.plan.large.description": {
-    "message": "Ideális 15–25 játékos számára, modcsomagokhoz vagy intenzív moddoláshoz."
+    "message": "Ideális 15�?5 játékos számára, modcsomagokhoz vagy intenzív moddoláshoz."
   },
   "servers.plan.medium.description": {
-    "message": "Nagyszerű 6–15 játékos számára, többféle moddal."
+    "message": "Nagyszerű 6�?5 játékos számára, többféle moddal."
   },
   "servers.plan.small.description": {
-    "message": "Tökéletes 1–5 barát számára, néhány kisebb moddal."
+    "message": "Tökéletes 1�? barát számára, néhány kisebb moddal."
   },
   "settings.account.button.complete-setup": {
     "message": "Beállítás befejezése"
@@ -3927,13 +3927,13 @@
     "message": "Exportálás..."
   },
   "settings.account.data-export.description": {
-    "message": "Másolatot kér az összes személyes adatról, amelyet a Modrinthra feltöltött. A feldolgozás néhány percig is eltarthat."
+    "message": "Másolatot kér az összes személyes adatról, amelyet a Bbsmcra feltöltött. A feldolgozás néhány percig is eltarthat."
   },
   "settings.account.data-export.title": {
     "message": "Adatok exportálása"
   },
   "settings.account.delete.confirm.description": {
-    "message": "Ez **azonnal törli az összes felhasználói adatodat és követőidet**. A projektjeid nem kerülnek törlésre. A fiók törlése visszafordíthatatlan.<br><br>Ha segítségre van szükséged a fiókoddal kapcsolatban, kérj támogatást a [Modrinth Discord](https://discord.bbsmc.org.cn)on."
+    "message": "Ez **azonnal törli az összes felhasználói adatodat és követőidet**. A projektjeid nem kerülnek törlésre. A fiók törlése visszafordíthatatlan.<br><br>Ha segítségre van szükséged a fiókoddal kapcsolatban, kérj támogatást a [Bbsmc Discord](https://discord.bbsmc.org.cn)on."
   },
   "settings.account.delete.confirm.proceed": {
     "message": "Fiók törlése"
@@ -4161,7 +4161,7 @@
     "message": "Biztos törölni szeretnéd ezt az alkamazást?"
   },
   "settings.applications.description.intro": {
-    "message": "Az alkalmazások segítségével hitelesítheti a Modrinth felhasználóit a termékeivel. További információkért lásd a <docs-link>Modrinth API dokumentációját</docs-link>."
+    "message": "Az alkalmazások segítségével hitelesítheti a Bbsmc felhasználóit a termékeivel. További információkért lásd a <docs-link>Bbsmc API dokumentációját</docs-link>."
   },
   "settings.applications.field.description": {
     "message": "Leírás"
@@ -4212,7 +4212,7 @@
     "message": "Az alkalmazásról"
   },
   "settings.authorizations.description": {
-    "message": "Amikor engedélyezel egy alkalmazást a Modrinth fiókoddal, hozzáférést biztosítasz számára a fiókodhoz. A fiókodhoz való hozzáférést bármikor kezelheted és ellenőrizheted itt."
+    "message": "Amikor engedélyezel egy alkalmazást a Bbsmc fiókoddal, hozzáférést biztosítasz számára a fiókodhoz. A fiókodhoz való hozzáférést bármikor kezelheted és ellenőrizheted itt."
   },
   "settings.authorizations.head-title": {
     "message": "Engedélyek"
@@ -4227,16 +4227,16 @@
     "message": "Biztosan visszavonod ezt a kérelmet?"
   },
   "settings.billing.charges.description": {
-    "message": "A Modrinth-számládra korábban leadott összes fiókod itt lesz felsorolva:"
+    "message": "A Bbsmc-számládra korábban leadott összes fiókod itt lesz felsorolva:"
   },
   "settings.billing.charges.product.medal-trial": {
     "message": "Medal Server próbaverzió"
   },
   "settings.billing.charges.product.midas": {
-    "message": "Modrinth Plus"
+    "message": "Bbsmc Plus"
   },
   "settings.billing.charges.product.pyro": {
-    "message": "Modrinth Hosting"
+    "message": "Bbsmc Hosting"
   },
   "settings.billing.charges.title": {
     "message": "Korábbi költségek"
@@ -4254,13 +4254,13 @@
     "message": "év"
   },
   "settings.billing.midas.benefits.ad-free": {
-    "message": "Reklámmentes böngészés a bbsmc.org.cn-on és a Modrinth App-ban"
+    "message": "Reklámmentes böngészés a bbsmc.org.cn-on és a Bbsmc App-ban"
   },
   "settings.billing.midas.benefits.badge": {
-    "message": "Modrinth+ jelvény a profilodon"
+    "message": "Bbsmc+ jelvény a profilodon"
   },
   "settings.billing.midas.benefits.support": {
-    "message": "Támogasd közvetlenül a Modrinth-et és a fejlesztőit"
+    "message": "Támogasd közvetlenül a Bbsmc-et és a fejlesztőit"
   },
   "settings.billing.midas.benefits.title": {
     "message": "Előnyök"
@@ -4284,7 +4284,7 @@
     "message": "A fizetésed feldolgozás alatt áll. A juttatások a fizetés befejezése után aktiválódnak."
   },
   "settings.billing.midas.upsell": {
-    "message": "Iratkozz fel a Modrinth Plusra!"
+    "message": "Iratkozz fel a Bbsmc Plusra!"
   },
   "settings.billing.modal.cancel.action": {
     "message": "Előfizetés lemondása"
@@ -4341,7 +4341,7 @@
     "message": "{shared} Megosztott CPU-k (maximum {bursts} CPU-ig terjedő löketek)"
   },
   "settings.billing.pyro.linked-server.not-found": {
-    "message": "Nem található ehhez az előfizetéshez csatolt szerver. Ennek több lehetséges magyarázata is van. Ha nemrég vásároltad meg a szervert, ez normális. A szerver kiépítése akár egy órát is igénybe vehet. Ellenkező esetben, ha egy ideje vásároltad meg ezt a szervert, valószínűleg azóta felfüggesztették. Ha nem erre számítottál, kérjük, vedd fel a kapcsolatot a Modrinth ügyfélszolgálatával a következő információkkal:"
+    "message": "Nem található ehhez az előfizetéshez csatolt szerver. Ennek több lehetséges magyarázata is van. Ha nemrég vásároltad meg a szervert, ez normális. A szerver kiépítése akár egy órát is igénybe vehet. Ellenkező esetben, ha egy ideje vásároltad meg ezt a szervert, valószínűleg azóta felfüggesztették. Ha nem erre számítottál, kérjük, vedd fel a kapcsolatot a Bbsmc ügyfélszolgálatával a következő információkkal:"
   },
   "settings.billing.pyro.linked-server.server-id": {
     "message": "Szerverazonosító: {id}"
@@ -4353,7 +4353,7 @@
     "message": "{gb} GB RAM"
   },
   "settings.billing.pyro.resubscribe.error.text": {
-    "message": "Hiba történt a Modrinth szerverre való újbóli feliratkozás során."
+    "message": "Hiba történt a Bbsmc szerverre való újbóli feliratkozás során."
   },
   "settings.billing.pyro.resubscribe.error.title": {
     "message": "Hiba az újbóli feliratkozáskor"
@@ -4383,7 +4383,7 @@
     "message": "Modirinth szerver feliratkozásaid kezelése."
   },
   "settings.billing.pyro_subscription.title": {
-    "message": "Modrinth Szerver Előfizetések"
+    "message": "Bbsmc Szerver Előfizetések"
   },
   "settings.billing.renews": {
     "message": "Megújul: {date}"
@@ -4416,7 +4416,7 @@
     "message": "A fejlesztői mód letiltása"
   },
   "settings.display.banner.developer-mode.description": {
-    "message": "A <strong>fejlesztői mód</strong> aktív. Ez lehetővé teszi, hogy megtekintsd a Modrinth különböző elemeinek belső azonosítóit, ami hasznos lehet, ha a Modrinth API-t használó fejlesztő vagy. Kattints 5-ször a lap alján található Modrinth logóra a fejlesztői mód bekapcsolásához."
+    "message": "A <strong>fejlesztői mód</strong> aktív. Ez lehetővé teszi, hogy megtekintsd a Bbsmc különböző elemeinek belső azonosítóit, ami hasznos lehet, ha a Bbsmc API-t használó fejlesztő vagy. Kattints 5-ször a lap alján található Bbsmc logóra a fejlesztői mód bekapcsolásához."
   },
   "settings.display.flags.description": {
     "message": "Bizonyos funkciók engedélyezése vagy letiltása ezen az eszközön."
@@ -4479,16 +4479,16 @@
     "message": "Összetett renderelés"
   },
   "settings.display.sidebar.external-links-new-tab.description": {
-    "message": "A Modrinthon kívüli linkeket új lapon nyílnak meg. Ettől a beállítástól függetlenül az azonos domainen található linkek és a Markdown leírásokban szereplő linkek ugyanazon a lapon nyílnak meg, míg a hirdetésekben és a szerkesztési oldalakon található linkek új lapon nyílnak meg."
+    "message": "A Bbsmcon kívüli linkeket új lapon nyílnak meg. Ettől a beállítástól függetlenül az azonos domainen található linkek és a Markdown leírásokban szereplő linkek ugyanazon a lapon nyílnak meg, míg a hirdetésekben és a szerkesztési oldalakon található linkek új lapon nyílnak meg."
   },
   "settings.display.sidebar.external-links-new-tab.title": {
     "message": "Külső linkek megnyitása új lapon"
   },
   "settings.display.sidebar.hide-app-promos.description": {
-    "message": "Elrejti a „Szerezd meg a Modrinth Appot” gombokat az elsődleges navigációból. A Modrinth App oldal továbbra is megtalálható a nyitóoldalon vagy a láblécben."
+    "message": "Elrejti a „Szerezd meg a Bbsmc Appot�?gombokat az elsődleges navigációból. A Bbsmc App oldal továbbra is megtalálható a nyitóoldalon vagy a láblécben."
   },
   "settings.display.sidebar.hide-app-promos.title": {
-    "message": "Modrinth App promóciók elrejtése"
+    "message": "Bbsmc App promóciók elrejtése"
   },
   "settings.display.sidebar.left-aligned-content-sidebar.title": {
     "message": "Balra igazított oldalsáv oldalakon"
@@ -4503,7 +4503,7 @@
     "message": "Jobbra igazított szűrők oldalakon"
   },
   "settings.display.theme.description": {
-    "message": "Válaszd ki a Modrinth számára a kívánt színsémát ezen az eszközön."
+    "message": "Válaszd ki a Bbsmc számára a kívánt színsémát ezen az eszközön."
   },
   "settings.display.theme.title": {
     "message": "Téma"
@@ -4515,7 +4515,7 @@
     "message": "PAT létrehozása"
   },
   "settings.pats.description": {
-    "message": "A PAT-ek a Modrinth API-hoz való hozzáférést biztosítják. Bármikor létrehozhatók és visszavonhatók. További információkért látogasson el a <doc-link>Modrinth API dokumentációjára</doc-link>."
+    "message": "A PAT-ek a Bbsmc API-hoz való hozzáférést biztosítják. Bármikor létrehozhatók és visszavonhatók. További információkért látogasson el a <doc-link>Bbsmc API dokumentációjára</doc-link>."
   },
   "settings.pats.modal.create.action": {
     "message": "PAT létrehozása"
@@ -4572,7 +4572,7 @@
     "message": "Jelenlegi munkamenet"
   },
   "settings.sessions.description": {
-    "message": "Itt találhatók azok az eszközök, amelyek jelenleg be vannak jelentkezve a Modrinth fiókodba. Mindegyikről külön-külön kijelentkezhetsz.\n\nHa nem ismerős bejegyzést látsz, jelentkezz ki az adott eszközről, és azonnal változtasd meg Modrinth fiókod jelszavát."
+    "message": "Itt találhatók azok az eszközök, amelyek jelenleg be vannak jelentkezve a Bbsmc fiókodba. Mindegyikről külön-külön kijelentkezhetsz.\n\nHa nem ismerős bejegyzést látsz, jelentkezz ki az adott eszközről, és azonnal változtasd meg Bbsmc fiókod jelszavát."
   },
   "settings.sessions.last-accessed-ago": {
     "message": "Legutoljára hozzáférve {ago}"
@@ -4596,7 +4596,7 @@
     "message": "{count} személy már csatlakozott"
   },
   "ui.latest-news-row.latest-news": {
-    "message": "A legújabb hírek a Modrinthról"
+    "message": "A legújabb hírek a Bbsmcról"
   },
   "ui.latest-news-row.view-all": {
     "message": "Összes hír"
@@ -4608,7 +4608,7 @@
     "message": "Feliratkozva!"
   },
   "ui.newsletter-button.tooltip": {
-    "message": "Feliratkozás a Modrinth hírlevelére"
+    "message": "Feliratkozás a Bbsmc hírlevelére"
   },
   "version.confirm-delete.title": {
     "message": "Biztos, hogy le akarod törölni ezt a verziót?"

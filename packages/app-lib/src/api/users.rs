@@ -21,7 +21,7 @@ pub async fn search_user(query: &str) -> crate::Result<Vec<SearchUser>> {
         Method::GET,
         &format!(
             "{}users/search?query={}",
-            env!("MODRINTH_API_URL_V3"),
+            env!("Bbsmc_API_URL_V3"),
             query
         ),
         None,
@@ -40,7 +40,7 @@ pub async fn get_user_profile(user_id: &str) -> crate::Result<Value> {
 
     fetch_json(
         Method::GET,
-        &format!("{}user/{}", env!("MODRINTH_API_URL_V3"), user_id),
+        &format!("{}user/{}", env!("Bbsmc_API_URL_V3"), user_id),
         None,
         None,
         Some("/v3/user/:id"),
@@ -57,7 +57,7 @@ pub async fn get_user_projects(user_id: &str) -> crate::Result<Value> {
 
     fetch_json(
         Method::GET,
-        &format!("{}user/{}/projects", env!("MODRINTH_API_URL"), user_id),
+        &format!("{}user/{}/projects", env!("Bbsmc_API_URL"), user_id),
         None,
         None,
         Some("/v2/user/:id/projects"),
@@ -76,7 +76,7 @@ pub async fn get_user_organizations(user_id: &str) -> crate::Result<Value> {
         Method::GET,
         &format!(
             "{}user/{}/organizations",
-            env!("MODRINTH_API_URL_V3"),
+            env!("Bbsmc_API_URL_V3"),
             user_id
         ),
         None,
@@ -97,7 +97,7 @@ pub async fn get_user_collections(user_id: &str) -> crate::Result<Value> {
         Method::GET,
         &format!(
             "{}user/{}/collections",
-            env!("MODRINTH_API_URL_V3"),
+            env!("Bbsmc_API_URL_V3"),
             user_id
         ),
         None,
@@ -116,7 +116,7 @@ pub async fn patch_user(user_id: &str, patch: Value) -> crate::Result<()> {
 
     fetch_advanced(
         Method::PATCH,
-        &format!("{}user/{}", env!("MODRINTH_API_URL"), user_id),
+        &format!("{}user/{}", env!("Bbsmc_API_URL"), user_id),
         None,
         Some(patch),
         None,
@@ -145,7 +145,7 @@ pub async fn change_user_avatar(
         Method::PATCH,
         &format!(
             "{}user/{}/icon?ext={}",
-            env!("MODRINTH_API_URL"),
+            env!("Bbsmc_API_URL"),
             user_id,
             extension
         ),
@@ -167,7 +167,7 @@ pub async fn delete_user_avatar(user_id: &str) -> crate::Result<()> {
 
     fetch_advanced(
         Method::DELETE,
-        &format!("{}user/{}/icon", env!("MODRINTH_API_URL"), user_id),
+        &format!("{}user/{}/icon", env!("Bbsmc_API_URL"), user_id),
         None,
         None,
         None,
@@ -189,7 +189,7 @@ pub async fn block_user(user_id: &str) -> crate::Result<()> {
 
     fetch_advanced(
         Method::POST,
-        &format!("{}block/{}", env!("MODRINTH_API_URL_V3"), user_id),
+        &format!("{}block/{}", env!("Bbsmc_API_URL_V3"), user_id),
         None,
         None,
         None,
@@ -211,7 +211,7 @@ pub async fn unblock_user(user_id: &str) -> crate::Result<()> {
 
     fetch_advanced(
         Method::DELETE,
-        &format!("{}block/{}", env!("MODRINTH_API_URL_V3"), user_id),
+        &format!("{}block/{}", env!("Bbsmc_API_URL_V3"), user_id),
         None,
         None,
         None,
@@ -232,7 +232,7 @@ pub async fn get_blocked_users() -> crate::Result<Vec<String>> {
 
     fetch_json(
         Method::GET,
-        &format!("{}blocks", env!("MODRINTH_API_URL_V3")),
+        &format!("{}blocks", env!("Bbsmc_API_URL_V3")),
         None,
         None,
         Some("/v3/blocks"),

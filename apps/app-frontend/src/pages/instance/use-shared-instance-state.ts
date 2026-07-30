@@ -1,4 +1,4 @@
-import { injectAuth } from '@modrinth/ui'
+import { injectAuth } from '@Bbsmc/ui'
 import { computed, inject, type InjectionKey, provide, type Ref, ref, watch } from 'vue'
 
 import { useUserQuery } from '@/composables/users/use-user-query'

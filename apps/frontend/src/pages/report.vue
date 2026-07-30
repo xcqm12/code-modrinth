@@ -283,7 +283,7 @@ import {
 	SpinnerIcon,
 	VersionIcon,
 	XCircleIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	AutoLink,
 	Avatar,
@@ -300,8 +300,8 @@ import {
 	RadioButtons,
 	StyledInput,
 	useVIntl,
-} from '@modrinth/ui'
-import type { Project, Report, User, Version } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import type { Project, Report, User, Version } from '@Bbsmc/utils'
 
 import { useImageUpload } from '~/composables/image-upload.ts'
 
@@ -586,7 +586,7 @@ const messages = defineMessages({
 	violation: {
 		id: 'report.for.violation',
 		defaultMessage:
-			'Violation of Modrinth <rules-link>Rules</rules-link> or <terms-link>Terms of Use</terms-link>',
+			'Violation of Bbsmc <rules-link>Rules</rules-link> or <terms-link>Terms of Use</terms-link>',
 	},
 	violationDescription: {
 		id: 'report.for.violation.description',
@@ -619,7 +619,7 @@ const messages = defineMessages({
 	},
 	whatReportReason: {
 		id: 'report.question.report-reason',
-		defaultMessage: "Which of Modrinth's rules is this {item} violating?",
+		defaultMessage: "Which of Bbsmc's rules is this {item} violating?",
 	},
 	checking: {
 		id: 'report.checking',

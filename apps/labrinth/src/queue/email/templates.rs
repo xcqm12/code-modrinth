@@ -815,7 +815,7 @@ async fn collect_template_variables(
                     let label = match pinfo.product_metadata {
                         crate::models::billing::ProductMetadata::Pyro { .. } => "server".to_string(),
                         crate::models::billing::ProductMetadata::Medal { .. } => "server".to_string(),
-                        crate::models::billing::ProductMetadata::Midas => "Modrinth+".to_string(),
+                        crate::models::billing::ProductMetadata::Midas => "Bbsmc+".to_string(),
                     };
                     map.insert(CREDIT_SUBSCRIPTION_TYPE, label);
                 }

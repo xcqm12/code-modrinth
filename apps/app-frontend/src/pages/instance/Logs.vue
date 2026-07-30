@@ -7,10 +7,10 @@
 <script setup>
 import {
 	ConsolePageLayout,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	provideConsoleManager,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { computed, onUnmounted, ref, shallowRef, triggerRef, watch, watchEffect } from 'vue'
 import { useRoute } from 'vue-router'
 
@@ -18,7 +18,7 @@ import { useInstanceConsole } from '@/composables/useInstanceConsole'
 import { log_listener, process_listener } from '@/helpers/events.js'
 import { delete_logs_by_filename, get_output_by_filename } from '@/helpers/logs.js'
 
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const { handleError } = injectNotificationManager()
 const route = useRoute()
 

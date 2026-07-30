@@ -75,7 +75,7 @@ impl TestFile {
             "environment": "client",
             "entrypoints": {
               "main": [
-                "io.github.modrinth.Modrinth"
+                "io.github.Bbsmc.Bbsmc"
               ]
             },
             "depends": {
@@ -116,7 +116,7 @@ impl TestFile {
         let filename =
             format!("random-modpack-{}.mrpack", rand::random::<u64>());
 
-        let modrinth_index_json = serde_json::json!({
+        let Bbsmc_index_json = serde_json::json!({
             "formatVersion": 1,
             "game": "minecraft",
             "versionId": "1.20.1-9.6",
@@ -151,12 +151,12 @@ impl TestFile {
         {
             let mut zip = ZipWriter::new(&mut cursor);
             zip.start_file(
-                "modrinth.index.json",
+                "Bbsmc.index.json",
                 FileOptions::<()>::default()
                     .compression_method(CompressionMethod::Stored),
             )
             .unwrap();
-            zip.write_all(modrinth_index_json.as_bytes()).unwrap();
+            zip.write_all(Bbsmc_index_json.as_bytes()).unwrap();
             zip.finish().unwrap();
         }
         let bytes = cursor.into_inner();
@@ -527,7 +527,7 @@ impl TestFile {
             TestFile::BasicZip => Some("application/zip"),
 
             TestFile::BasicModpackRandom { .. } => {
-                Some("application/x-modrinth-modpack+zip")
+                Some("application/x-Bbsmc-modpack+zip")
             }
         }
         .map(|s| s.to_string())

@@ -1,25 +1,25 @@
 const THEME_STYLE = `
 	:root {
-		--modrinth-usp-bg: #27292e;
-		--modrinth-usp-surface: #34363c;
-		--modrinth-usp-divider: #34363c;
-		--modrinth-usp-text: #b0bac5;
-		--modrinth-usp-contrast: #ffffff;
-		--modrinth-usp-brand: #1bd96a;
-		--modrinth-usp-link: #4f9cff;
-		--modrinth-usp-accent-contrast: #000000;
-		--modrinth-usp-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px,
+		--Bbsmc-usp-bg: #27292e;
+		--Bbsmc-usp-surface: #34363c;
+		--Bbsmc-usp-divider: #34363c;
+		--Bbsmc-usp-text: #b0bac5;
+		--Bbsmc-usp-contrast: #ffffff;
+		--Bbsmc-usp-brand: #1bd96a;
+		--Bbsmc-usp-link: #4f9cff;
+		--Bbsmc-usp-accent-contrast: #000000;
+		--Bbsmc-usp-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px,
 			rgba(0, 0, 0, 0.06) 0 2px 4px -1px;
 		color-scheme: dark;
 	}
 
 	#qc-cmp2-usp {
 		outline: none !important;
-		background: var(--modrinth-usp-bg) !important;
-		border: 1px solid var(--modrinth-usp-divider) !important;
+		background: var(--Bbsmc-usp-bg) !important;
+		border: 1px solid var(--Bbsmc-usp-divider) !important;
 		border-radius: 1rem !important;
-		box-shadow: var(--modrinth-usp-shadow) !important;
-		color: var(--modrinth-usp-text) !important;
+		box-shadow: var(--Bbsmc-usp-shadow) !important;
+		color: var(--Bbsmc-usp-text) !important;
 		font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Roboto,
 			Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
 		max-width: 660px;
@@ -38,13 +38,13 @@ const THEME_STYLE = `
 	#qc-cmp2-usp p,
 	#qc-cmp2-usp label,
 	#qc-cmp2-usp .qc-usp-action-description {
-		color: var(--modrinth-usp-text) !important;
+		color: var(--Bbsmc-usp-text) !important;
 		font-family: inherit !important;
 	}
 
 	#qc-cmp2-usp .qc-usp-title,
 	#qc-cmp2-usp .qc-cmp2-list-item-title {
-		color: var(--modrinth-usp-contrast) !important;
+		color: var(--Bbsmc-usp-contrast) !important;
 		font-family: inherit !important;
 		font-weight: 700 !important;
 	}
@@ -55,52 +55,52 @@ const THEME_STYLE = `
 
 	#qc-cmp2-usp a,
 	#qc-cmp2-usp .qc-usp-alt-action {
-		color: var(--modrinth-usp-link) !important;
+		color: var(--Bbsmc-usp-link) !important;
 	}
 
 	#qc-cmp2-usp .qc-cmp2-list-item {
-		background: var(--modrinth-usp-surface) !important;
-		border: 1px solid var(--modrinth-usp-divider) !important;
+		background: var(--Bbsmc-usp-surface) !important;
+		border: 1px solid var(--Bbsmc-usp-divider) !important;
 		border-radius: 0.75rem !important;
 	}
 
 	#qc-cmp2-usp .qc-cmp2-list-item-header {
 		background: transparent !important;
 		border: 0 !important;
-		color: var(--modrinth-usp-contrast) !important;
+		color: var(--Bbsmc-usp-contrast) !important;
 	}
 
 	#qc-cmp2-usp .qc-cmp2-list-item-header svg {
-		color: var(--modrinth-usp-text) !important;
+		color: var(--Bbsmc-usp-text) !important;
 	}
 
 	#qc-cmp2-usp .qc-cmp2-toggle {
-		background: var(--modrinth-usp-bg) !important;
-		border-color: var(--modrinth-usp-divider) !important;
+		background: var(--Bbsmc-usp-bg) !important;
+		border-color: var(--Bbsmc-usp-divider) !important;
 	}
 
 	#qc-cmp2-usp .qc-cmp2-toggle .toggle {
-		background: var(--modrinth-usp-contrast) !important;
+		background: var(--Bbsmc-usp-contrast) !important;
 	}
 
 	#qc-cmp2-usp .qc-cmp2-toggle .text {
-		color: var(--modrinth-usp-contrast) !important;
+		color: var(--Bbsmc-usp-contrast) !important;
 	}
 
 	#qc-cmp2-usp .qc-cmp2-toggle[aria-checked='true'] {
-		background: var(--modrinth-usp-brand) !important;
-		border-color: var(--modrinth-usp-brand) !important;
+		background: var(--Bbsmc-usp-brand) !important;
+		border-color: var(--Bbsmc-usp-brand) !important;
 	}
 
 	#qc-cmp2-usp .qc-cmp2-toggle[aria-checked='true'] .text {
-		color: var(--modrinth-usp-accent-contrast) !important;
+		color: var(--Bbsmc-usp-accent-contrast) !important;
 	}
 
 	#qc-cmp2-usp button[mode='primary'] {
-		background: var(--modrinth-usp-brand) !important;
+		background: var(--Bbsmc-usp-brand) !important;
 		border: 0 !important;
 		border-radius: 0.75rem !important;
-		color: var(--modrinth-usp-accent-contrast) !important;
+		color: var(--Bbsmc-usp-accent-contrast) !important;
 		font-family: inherit !important;
 		font-weight: 700 !important;
 	}
@@ -113,7 +113,7 @@ const THEME_STYLE = `
 
 	#qc-cmp2-usp a:focus-visible,
 	#qc-cmp2-usp button:focus-visible {
-		outline: 2px solid var(--modrinth-usp-brand) !important;
+		outline: 2px solid var(--Bbsmc-usp-brand) !important;
 		outline-offset: 2px !important;
 	}
 
@@ -128,14 +128,14 @@ const THEME_STYLE = `
 `
 
 const RAIL_STYLE = `
-	html.modrinth-ads-consent-preferences #modrinth-rail-1 {
+	html.Bbsmc-ads-consent-preferences #Bbsmc-rail-1 {
 		display: none !important;
 	}
 `
 
 const OVERLAY_STYLE = `
-	html.modrinth-ads-consent-overlay:not(.modrinth-ads-consent-fallback):not(.modrinth-ads-consent-preferences) #qc-cmp2-main,
-	html.modrinth-ads-consent-preferences:not(.modrinth-ads-consent-preferences-visible) #qc-cmp2-main {
+	html.Bbsmc-ads-consent-overlay:not(.Bbsmc-ads-consent-fallback):not(.Bbsmc-ads-consent-preferences) #qc-cmp2-main,
+	html.Bbsmc-ads-consent-preferences:not(.Bbsmc-ads-consent-preferences-visible) #qc-cmp2-main {
 		display: none !important;
 	}
 
@@ -154,7 +154,7 @@ function installStyle(id, css) {
 }
 
 function installConsentStyles() {
-	installStyle('modrinth-ads-consent-theme-style', THEME_STYLE)
-	installStyle('modrinth-ads-rail-style', RAIL_STYLE)
-	installStyle('modrinth-ads-consent-overlay-style', OVERLAY_STYLE)
+	installStyle('Bbsmc-ads-consent-theme-style', THEME_STYLE)
+	installStyle('Bbsmc-ads-rail-style', RAIL_STYLE)
+	installStyle('Bbsmc-ads-consent-overlay-style', OVERLAY_STYLE)
 }

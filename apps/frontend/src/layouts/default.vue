@@ -35,7 +35,7 @@
 		class="layout"
 		:class="{
 			'expanded-mobile-nav': isBrowseMenuOpen,
-			'modrinth-parent__no-modal-blurs': !cosmetics.advancedRendering,
+			'Bbsmc-parent__no-modal-blurs': !cosmetics.advancedRendering,
 		}"
 	>
 		<RussiaBanner v-if="flags.showAllBanners || isRussia" />
@@ -70,14 +70,14 @@
 			:errors="generatedStateErrors"
 			:api-url="config.public.apiBaseUrl"
 		/>
-		<ViewOnModrinthBanner />
+		<ViewOnBbsmcBanner />
 		<header
 			class="desktop-only relative z-[5] mx-auto grid max-w-[1280px] grid-cols-[1fr_auto] items-center gap-2 px-6 py-4 lg:grid-cols-[auto_1fr_auto]"
 		>
 			<div>
 				<NuxtLink
 					to="/"
-					:aria-label="formatMessage(messages.modrinthHomePage)"
+					:aria-label="formatMessage(messages.BbsmcHomePage)"
 					class="group hover:brightness-[--hover-brightness] focus-visible:brightness-[--hover-brightness]"
 				>
 					<img
@@ -308,10 +308,10 @@
 						<nuxt-link to="/app">
 							<DownloadIcon aria-hidden="true" />
 							<span class="hidden md:contents">{{
-								formatMessage(navMenuMessages.getModrinthApp)
+								formatMessage(navMenuMessages.getBbsmcApp)
 							}}</span>
 							<span class="contents md:hidden">{{
-								formatMessage(navMenuMessages.modrinthApp)
+								formatMessage(navMenuMessages.BbsmcApp)
 							}}</span>
 						</nuxt-link>
 					</ButtonStyled>
@@ -396,7 +396,7 @@
 							},
 						]"
 					>
-						<ModrinthIcon aria-hidden="true" />
+						<BbsmcIcon aria-hidden="true" />
 						<DropdownIcon aria-hidden="true" class="h-5 w-5 text-secondary" />
 						<template #review-projects>
 							<ScaleIcon aria-hidden="true" /> {{ formatMessage(messages.reviewProjects) }}
@@ -506,7 +506,7 @@
 					</template>
 					<template #plus>
 						<ArrowBigUpDashIcon aria-hidden="true" />
-						{{ formatMessage(messages.upgradeToModrinthPlus) }}
+						{{ formatMessage(messages.upgradeToBbsmcPlus) }}
 					</template>
 					<template #settings>
 						<SettingsIcon aria-hidden="true" /> {{ formatMessage(commonMessages.settingsLabel) }}
@@ -726,7 +726,7 @@
 			<BatchCreditModal v-if="auth.user && isAdmin(auth.user)" ref="modal_batch_credit" />
 			<slot id="main" />
 		</main>
-		<ModrinthFooter />
+		<BbsmcFooter />
 	</div>
 </template>
 <script setup>
@@ -751,7 +751,7 @@ import {
 	LibraryIcon,
 	LogInIcon,
 	LogOutIcon,
-	ModrinthIcon,
+	BbsmcIcon,
 	MoonIcon,
 	OrganizationIcon,
 	PackageOpenIcon,
@@ -771,7 +771,7 @@ import {
 	UserIcon,
 	UserSearchIcon,
 	XIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -780,16 +780,16 @@ import {
 	commonSettingsMessages,
 	createHostingIntercomIdentityKey,
 	defineMessages,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	injectPageContext,
 	OverflowMenu,
 	providePageContext,
 	useHostingIntercom,
 	useVIntl,
-} from '@modrinth/ui'
-import TeleportOverflowMenu from '@modrinth/ui/src/components/base/TeleportOverflowMenu.vue'
-import { isAdmin, isStaff, UserBadge } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import TeleportOverflowMenu from '@Bbsmc/ui/src/components/base/TeleportOverflowMenu.vue'
+import { isAdmin, isStaff, UserBadge } from '@Bbsmc/utils'
 import { useQuery } from '@tanstack/vue-query'
 
 import { getTaxThreshold } from '@/providers/creator-withdraw.ts'
@@ -803,11 +803,11 @@ import SubscriptionPaymentFailedBanner from '~/components/ui/banner/Subscription
 import TaxComplianceBanner from '~/components/ui/banner/TaxComplianceBanner.vue'
 import TaxIdMismatchBanner from '~/components/ui/banner/TaxIdMismatchBanner.vue'
 import VerifyEmailBanner from '~/components/ui/banner/VerifyEmailBanner.vue'
-import ViewOnModrinthBanner from '~/components/ui/banner/ViewOnModrinthBanner.vue'
+import ViewOnBbsmcBanner from '~/components/ui/banner/ViewOnBbsmcBanner.vue'
 import CollectionCreateModal from '~/components/ui/create/CollectionCreateModal.vue'
 import OrganizationCreateModal from '~/components/ui/create/OrganizationCreateModal.vue'
 import ProjectCreateModal from '~/components/ui/create/ProjectCreateModal.vue'
-import ModrinthFooter from '~/components/ui/ModrinthFooter.vue'
+import BbsmcFooter from '~/components/ui/BbsmcFooter.vue'
 import { getSignInRouteObj } from '~/composables/auth.ts'
 import { errors as generatedStateErrors } from '~/generated/state.json'
 import { provideCurrentProjectId } from '~/providers/current-project.ts'
@@ -832,7 +832,7 @@ const route = useNativeRoute()
 const router = useNativeRouter()
 const signInRouteObj = computed(() => getSignInRouteObj(route))
 const link = config.public.siteUrl + route.path.replace(/\/+$/, '')
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const pageContext = injectPageContext()
 const hostingIntercomActive = computed(() => route.path.startsWith('/hosting') && !!auth.value.user)
 const hostingIntercomServerId = computed(() => {
@@ -942,13 +942,13 @@ const navMenuMessages = defineMessages({
 		id: 'layout.nav.host-a-server',
 		defaultMessage: 'Host a server',
 	},
-	getModrinthApp: {
-		id: 'layout.nav.get-modrinth-app',
-		defaultMessage: 'Get Modrinth App',
+	getBbsmcApp: {
+		id: 'layout.nav.get-Bbsmc-app',
+		defaultMessage: 'Get Bbsmc App',
 	},
-	modrinthApp: {
-		id: 'layout.nav.modrinth-app',
-		defaultMessage: 'Modrinth App',
+	BbsmcApp: {
+		id: 'layout.nav.Bbsmc-app',
+		defaultMessage: 'Bbsmc App',
 	},
 })
 
@@ -965,9 +965,9 @@ const messages = defineMessages({
 		id: 'layout.action.change-theme',
 		defaultMessage: 'Change theme',
 	},
-	modrinthHomePage: {
-		id: 'layout.nav.modrinth-home-page',
-		defaultMessage: 'Modrinth home page',
+	BbsmcHomePage: {
+		id: 'layout.nav.Bbsmc-home-page',
+		defaultMessage: 'Bbsmc home page',
 	},
 	createNew: {
 		id: 'layout.action.create-new',
@@ -983,7 +983,7 @@ const messages = defineMessages({
 	},
 	verifyEmailBeforePublishing: {
 		id: 'layout.publish.email-verification-required.description',
-		defaultMessage: 'You must verify your email before publishing on Modrinth.',
+		defaultMessage: 'You must verify your email before publishing on Bbsmc.',
 	},
 	reviewProjects: {
 		id: 'layout.action.review-projects',
@@ -1045,9 +1045,9 @@ const messages = defineMessages({
 		id: 'layout.nav.saved-projects',
 		defaultMessage: 'Saved projects',
 	},
-	upgradeToModrinthPlus: {
-		id: 'layout.nav.upgrade-to-modrinth-plus',
-		defaultMessage: 'Upgrade to Modrinth+',
+	upgradeToBbsmcPlus: {
+		id: 'layout.nav.upgrade-to-Bbsmc-plus',
+		defaultMessage: 'Upgrade to Bbsmc+',
 	},
 	projects: {
 		id: 'layout.nav.projects',
@@ -1088,33 +1088,33 @@ useHead({
 	],
 })
 useSeoMeta({
-	title: 'Modrinth',
+	title: 'Bbsmc',
 	description: () =>
 		formatMessage({
 			id: 'layout.meta.description',
 			defaultMessage:
-				'Download Minecraft mods, plugins, datapacks, shaders, resourcepacks, and modpacks on Modrinth. ' +
-				'Discover and publish projects on Modrinth with a modern, easy to use interface and API.',
+				'Download Minecraft mods, plugins, datapacks, shaders, resourcepacks, and modpacks on Bbsmc. ' +
+				'Discover and publish projects on Bbsmc with a modern, easy to use interface and API.',
 		}),
-	publisher: 'Modrinth',
+	publisher: 'Bbsmc',
 	themeColor: '#1bd96a',
 	colorScheme: 'dark light',
 
 	// OpenGraph
-	ogTitle: 'Modrinth',
-	ogSiteName: 'Modrinth',
+	ogTitle: 'Bbsmc',
+	ogSiteName: 'Bbsmc',
 	ogDescription: () =>
 		formatMessage({
 			id: 'layout.meta.og-description',
 			defaultMessage: 'Discover and publish Minecraft content!',
 		}),
 	ogType: 'website',
-	ogImage: 'https://cdn.bbsmc.org.cn/modrinth-new.png',
+	ogImage: 'https://cdn.bbsmc.org.cn/Bbsmc-new.png',
 	ogUrl: link,
 
 	// Twitter
 	twitterCard: 'summary',
-	twitterSite: '@modrinth',
+	twitterSite: '@Bbsmc',
 })
 
 const isMobileMenuOpen = ref(false)
@@ -1368,7 +1368,7 @@ const { cycle: changeTheme } = useTheme()
 
 <style lang="scss">
 @import '~/assets/styles/global.scss';
-// @import '@modrinth/assets';
+// @import '@Bbsmc/assets';
 
 .layout {
 	min-height: 100vh;

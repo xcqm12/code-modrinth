@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Archon } from '@modrinth/api-client'
+import type { Archon } from '@Bbsmc/api-client'
 import {
 	ClipboardCopyIcon,
 	DownloadIcon,
@@ -10,7 +10,7 @@ import {
 	ShieldIcon,
 	TrashIcon,
 	UserRoundIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import { computed, ref } from 'vue'
 
 import { useFormatDateTime } from '../../../composables'
@@ -110,7 +110,7 @@ const overflowMenuOptions = computed<OverflowOption[]>(() => {
 	options.push({
 		id: 'download',
 		action: () => emit('download'),
-		link: `https://${props.kyrosUrl}/modrinth/v0/backups/${props.backup.id}/download?auth=${props.jwt}`,
+		link: `https://${props.kyrosUrl}/Bbsmc/v0/backups/${props.backup.id}/download?auth=${props.jwt}`,
 		disabled: !props.kyrosUrl || !props.jwt,
 	})
 

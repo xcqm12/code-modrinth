@@ -12,7 +12,7 @@ import type {
 	ContentOwner,
 } from '../../layouts/shared/content-tab/types'
 
-// Real project data from Modrinth API
+// Real project data from Bbsmc API
 const fabulouslyOptimizedProject: ContentModpackCardProject = {
 	id: '1KVo5zza',
 	slug: 'fabulously-optimized',
@@ -46,7 +46,7 @@ const simplyOptimizedProject: ContentModpackCardProject = {
 	followers: 1387,
 }
 
-// Version data from Modrinth API
+// Version data from Bbsmc API
 const fabulouslyOptimizedVersion: ContentModpackCardVersion = {
 	id: 'YEEXo8mO',
 	version_number: '1.12.1',
@@ -59,7 +59,7 @@ const cobblemonVersion: ContentModpackCardVersion = {
 	date_published: '2024-05-27T07:12:36.043005Z',
 }
 
-// Owner data from Modrinth API
+// Owner data from Bbsmc API
 const userOwner: ContentOwner = {
 	id: '2avTeeAE',
 	name: 'robotkoer',
@@ -441,7 +441,7 @@ export const WithOverflowMenu: Story = {
 		},
 		template: /*html*/ `
 			<ContentModpackCard v-bind="args">
-				<template #view>View on Modrinth</template>
+				<template #view>View on Bbsmc</template>
 				<template #settings>Settings</template>
 				<template #remove>Remove modpack</template>
 			</ContentModpackCard>

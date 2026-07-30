@@ -25,15 +25,13 @@
 Use the `NewModal` component (`packages/ui/src/components/modal/NewModal.vue`) for all standard modals.
 
 - Set the modal’s width via the `width` or `maxWidth` props. For responsive sizing, use `min(base-size, calc(95vw - 10rem))`.
-- `ModalWrapper` is deprecated — modal behavior is automatically handled via the `injectModalBehavior` DI utility.
+- `ModalWrapper` is deprecated �?modal behavior is automatically handled via the `injectModalBehavior` DI utility.
 
 ## Basic Usage
 
 ```vue
 <script setup lang="ts">
-import { ref } from ‘vue’
-import { NewModal } from ‘@modrinth/ui’
-
+import { ref } from ‘vue�?import { NewModal } from ‘@Bbsmc/ui�?
 const modal = ref<InstanceType<typeof NewModal> | null>(null)
 </script>
 
@@ -52,7 +50,7 @@ Call `show(event?)` to open the modal. Passing the `MouseEvent` triggers an anim
 
 | Prop                  | Type                                  | Default       | Description                                                                                      |
 | --------------------- | ------------------------------------- | ------------- | ------------------------------------------------------------------------------------------------ |
-| `header`              | `string`                              | —             | Title text displayed in the header bar                                                           |
+| `header`              | `string`                              | �?            | Title text displayed in the header bar                                                           |
 | `hideHeader`          | `boolean`                             | `false`       | Hides the entire header (title + close button)                                                   |
 | `mergeHeader`         | `boolean`                             | `false`       | Removes the header bar; renders a floating close button over the content                         |
 | `closable`            | `boolean`                             | `true`        | Shows the close button and enables ESC / click-outside dismissal                                 |
@@ -60,15 +58,15 @@ Call `show(event?)` to open the modal. Passing the `MouseEvent` triggers an anim
 | `closeOnEsc`          | `boolean`                             | `true`        | Allow closing with the Escape key                                                                |
 | `closeOnClickOutside` | `boolean`                             | `true`        | Allow closing by clicking the overlay                                                            |
 | `scrollable`          | `boolean`                             | `false`       | Enables scroll tracking with top/bottom fade indicators                                          |
-| `maxContentHeight`    | `string`                              | `’70vh’`      | Max height of the scrollable content area (only applies when `scrollable`)                       |
+| `maxContentHeight`    | `string`                              | `�?0vh’`      | Max height of the scrollable content area (only applies when `scrollable`)                       |
 | `noPadding`           | `boolean`                             | `false`       | Removes padding from the content area for edge-to-edge layouts                                   |
-| `maxWidth`            | `string`                              | `’60rem’`     | Maximum width of the modal                                                                       |
+| `maxWidth`            | `string`                              | `�?0rem’`     | Maximum width of the modal                                                                       |
 | `width`               | `string`                              | `fit-content` | Width of the modal body                                                                          |
-| `noblur`              | `boolean`                             | —             | Disables backdrop blur. Defaults to the value from `injectModalBehavior`                         |
-| `fade`                | `’standard’ \| ‘warning’ \| ‘danger’` | `’standard’`  | Overlay color variant                                                                            |
-| `danger`              | `boolean`                             | `false`       | **Deprecated** — use `fade="danger"` instead                                                     |
-| `onShow`              | `() => void`                          | —             | Called when the modal opens                                                                      |
-| `onHide`              | `() => void`                          | —             | Called when the modal closes                                                                     |
+| `noblur`              | `boolean`                             | �?            | Disables backdrop blur. Defaults to the value from `injectModalBehavior`                         |
+| `fade`                | `’standard�?\| ‘warning�?\| ‘danger’` | `’standard’`  | Overlay color variant                                                                            |
+| `danger`              | `boolean`                             | `false`       | **Deprecated** �?use `fade="danger"` instead                                                     |
+| `onShow`              | `() => void`                          | �?            | Called when the modal opens                                                                      |
+| `onHide`              | `() => void`                          | �?            | Called when the modal closes                                                                     |
 
 ## Slots
 
@@ -124,7 +122,7 @@ Set `scrollable` to enable scroll tracking. The modal renders animated fade grad
 </NewModal>
 ```
 
-The `checkScrollState` method is exposed via ref — call it after dynamically changing content to re-evaluate whether fade indicators should appear.
+The `checkScrollState` method is exposed via ref �?call it after dynamically changing content to re-evaluate whether fade indicators should appear.
 
 When `scrollable` is `false` (the default), content uses `overflow-y: auto` without fade indicators.
 
@@ -143,7 +141,7 @@ When `mergeHeader` is set, the header bar is hidden and a floating close button 
 
 ## Modal Stacking
 
-`NewModal` integrates with a modal stack (`useModalStack`). Multiple modals can be open simultaneously — only the topmost modal responds to the Escape key. The document body scroll is locked when any modal is open and restored when the last modal closes.
+`NewModal` integrates with a modal stack (`useModalStack`). Multiple modals can be open simultaneously �?only the topmost modal responds to the Escape key. The document body scroll is locked when any modal is open and restored when the last modal closes.
 
 ## Exposed Methods
 
@@ -161,9 +159,9 @@ The `MultiStageModal` component (`packages/ui/src/components/base/MultiStageModa
 
 A multistage modal has three parts:
 
-1. **Context** — A DI provider that holds all state, business logic, and stage configs
-2. **Stage configs** — Data objects describing each stage (title, component, buttons, skip conditions)
-3. **Stage components** — Vue components rendered inside the modal, consuming the context
+1. **Context** �?A DI provider that holds all state, business logic, and stage configs
+2. **Stage configs** �?Data objects describing each stage (title, component, buttons, skip conditions)
+3. **Stage components** �?Vue components rendered inside the modal, consuming the context
 
 ## Building a Multistage Modal
 
@@ -175,8 +173,8 @@ Create a DI provider with all the state your wizard needs. Include the modal ref
 // providers/my-feature/my-modal.ts
 import type { ShallowRef } from 'vue'
 import type { ComponentExposed } from 'vue-component-type-helpers'
-import type { MultiStageModal, StageConfigInput } from '@modrinth/ui'
-import { createContext } from '@modrinth/ui'
+import type { MultiStageModal, StageConfigInput } from '@Bbsmc/ui'
+import { createContext } from '@Bbsmc/ui'
 
 export interface MyModalContext {
 	// State
@@ -221,10 +219,10 @@ Each stage is a `StageConfigInput<T>` where `T` is your context type. Most field
 ```ts
 // providers/my-feature/stages/details-stage.ts
 import { markRaw } from 'vue'
-import type { StageConfigInput } from '@modrinth/ui'
+import type { StageConfigInput } from '@Bbsmc/ui'
 import type { MyModalContext } from '../my-modal'
 import DetailsStage from './DetailsStage.vue'
-import { RightArrowIcon, SaveIcon } from '@modrinth/assets'
+import { RightArrowIcon, SaveIcon } from '@Bbsmc/assets'
 
 export const detailsStageConfig: StageConfigInput<MyModalContext> = {
 	id: 'details',
@@ -306,7 +304,7 @@ The wrapper provides context and renders `MultiStageModal`:
 <!-- components/MyModalWrapper.vue -->
 <script setup lang="ts">
 import { shallowRef } from 'vue'
-import { MultiStageModal } from '@modrinth/ui'
+import { MultiStageModal } from '@Bbsmc/ui'
 import { createMyModalContext, provideMyModalContext } from '../providers/my-feature/my-modal'
 
 const modal = shallowRef<InstanceType<typeof MultiStageModal> | null>(null)
@@ -355,7 +353,7 @@ export const editLoadersStageConfig: StageConfigInput<MyContext> = {
 }
 ```
 
-Navigate to it with `modal.value?.setStage('edit-loaders')` — it won't affect the progress indicator.
+Navigate to it with `modal.value?.setStage('edit-loaders')` �?it won't affect the progress indicator.
 
 ## Reference Implementation
 

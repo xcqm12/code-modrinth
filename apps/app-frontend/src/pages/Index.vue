@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { HomeIcon } from '@modrinth/assets'
-import { injectNotificationManager } from '@modrinth/ui'
-import type { SearchResult } from '@modrinth/utils'
+import { HomeIcon } from '@Bbsmc/assets'
+import { injectNotificationManager } from '@Bbsmc/ui'
+import type { SearchResult } from '@Bbsmc/utils'
 import dayjs from 'dayjs'
 import { computed, onUnmounted, ref } from 'vue'
 
@@ -107,7 +107,7 @@ onUnmounted(() => {
 <template>
 	<div class="p-6 flex flex-col gap-2">
 		<h1 v-if="recentInstances?.length > 0" class="m-0 text-2xl font-extrabold">Welcome back!</h1>
-		<h1 v-else class="m-0 text-2xl font-extrabold">Welcome to Modrinth App!</h1>
+		<h1 v-else class="m-0 text-2xl font-extrabold">Welcome to Bbsmc App!</h1>
 		<RecentWorldsList :recent-instances="recentInstances" />
 		<RowDisplay
 			v-if="hasFeaturedProjects"

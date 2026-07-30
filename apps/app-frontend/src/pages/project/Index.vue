@@ -196,7 +196,7 @@
 				<DownloadIcon /> {{ formatMessage(commonMessages.installButton) }}
 			</template>
 			<template #open_link>
-				<GlobeIcon /> {{ formatMessage(commonMessages.openInModrinthButton) }} <ExternalIcon />
+				<GlobeIcon /> {{ formatMessage(commonMessages.openInBbsmcButton) }} <ExternalIcon />
 			</template>
 			<template #copy_link>
 				<ClipboardCopyIcon /> {{ formatMessage(commonMessages.copyLinkButton) }}
@@ -238,7 +238,7 @@ import {
 	ReportIcon,
 	SpinnerIcon,
 	StopCircleIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	BrowseInstallHeader,
 	ButtonStyled,
@@ -260,7 +260,7 @@ import {
 	SelectedProjectsFloatingBar,
 	TeleportOverflowMenu,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 import { convertFileSrc } from '@tauri-apps/api/core'
 import { openUrl } from '@tauri-apps/plugin-opener'
@@ -566,7 +566,7 @@ const installButtonIconClass = computed(() =>
 const serverProjectHeaderMoreActions = computed(() => [
 	{
 		id: 'open-in-browser',
-		label: formatMessage(commonMessages.openInModrinthButton),
+		label: formatMessage(commonMessages.openInBbsmcButton),
 		icon: ExternalIcon,
 		action: openProjectInBrowser,
 	},
@@ -600,7 +600,7 @@ const projectHeaderMoreActions = computed(() => [
 	},
 	{
 		id: 'open-in-browser',
-		label: formatMessage(commonMessages.openInModrinthButton),
+		label: formatMessage(commonMessages.openInBbsmcButton),
 		icon: ExternalIcon,
 		action: openProjectInBrowser,
 	},

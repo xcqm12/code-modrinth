@@ -28,8 +28,8 @@
 </template>
 
 <script>
-import { XIcon } from '@modrinth/assets'
-import { ButtonStyled } from '@modrinth/ui'
+import { XIcon } from '@Bbsmc/assets'
+import { ButtonStyled } from '@Bbsmc/ui'
 
 export default {
 	components: {

@@ -6,10 +6,10 @@
     "message": "กำลังดาวน์โหลดอัปเดต"
   },
   "app.action-bar.downloads": {
-    "message": "ดาวน์โหลด"
+    "message": "ดาวน์โหล�?
   },
   "app.action-bar.hide-more-running-instances": {
-    "message": "ซ่อนอินสแตนซ์ที่ทำงานอยู่เพิ่มเติม"
+    "message": "ซ่อนอินสแตนซ์ที่ทำงานอยู่เพิ่มเติ�?
   },
   "app.action-bar.install.copied-details": {
     "message": "คัดลอก"
@@ -18,34 +18,34 @@
     "message": "คัดลอก รายระเอียด"
   },
   "app.action-bar.install.dismiss": {
-    "message": "ปิด"
+    "message": "ปิ�?
   },
   "app.action-bar.install.retry": {
-    "message": "ลองอีกครั้ง"
+    "message": "ลองอีกครั้�?
   },
   "app.action-bar.install.summary.canceled": {
-    "message": "ยกเลิกสำเร็จ"
+    "message": "ยกเลิกสำเร็�?
   },
   "app.action-bar.make-primary-instance": {
     "message": "กำหนดอินสแตนซ์หลัก"
   },
   "app.action-bar.no-instances-running": {
-    "message": "ไม่มีอินสแตนซ์ที่กำลังทำงาน"
+    "message": "ไม่มีอินสแตนซ์ที่กำลังทำงา�?
   },
   "app.action-bar.offline": {
-    "message": "ออฟไลน์"
+    "message": "ออฟไลน�?
   },
   "app.action-bar.primary-instance": {
-    "message": "อินสแตนซ์หลัก"
+    "message": "อินสแตนซ์หลั�?
   },
   "app.action-bar.reload-to-update": {
     "message": "รีโหลดเพื่ออัปเดต"
   },
   "app.action-bar.show-more-running-instances": {
-    "message": "แสดงอินสแตนซ์ที่ทำงานอยู่เพิ่มเติม"
+    "message": "แสดงอินสแตนซ์ที่ทำงานอยู่เพิ่มเติ�?
   },
   "app.action-bar.stop-instance": {
-    "message": "หยุดอินสแตนซ์"
+    "message": "หยุดอินสแตนซ�?
   },
   "app.action-bar.update": {
     "message": "อัปเดต"
@@ -54,64 +54,64 @@
     "message": "ดูการดาวน์โหลดที่กำลังดำเนินการอยู่"
   },
   "app.action-bar.view-instance": {
-    "message": "ดูอินสแตนซ์"
+    "message": "ดูอินสแตนซ�?
   },
   "app.action-bar.view-logs": {
     "message": "ดู Log"
   },
   "app.appearance-settings.advanced-rendering.description": {
-    "message": "เปิดการใช้งานการเรนเดอร์ขั้นสูง เช่น เอฟเฟคการเบลอ อาจทำให้เกมเกิดปัญหาด้านประสิทธิภาพได้หากไม่มีอุปกรณ์ฮาร์ดแวร์ที่สามารถรองรับการเรนเดอร์ได้"
+    "message": "เปิดการใช้งานการเรนเดอร์ขั้นสู�?เช่�?เอฟเฟคการเบล�?อาจทำให้เกมเกิดปัญหาด้านประสิทธิภาพได้หากไม่มีอุปกรณ์ฮาร์ดแวร์ที่สามารถรองรับการเรนเดอร์ได�?
   },
   "app.appearance-settings.advanced-rendering.title": {
-    "message": "การเรนเดอร์ขั้นสูง"
+    "message": "การเรนเดอร์ขั้นสู�?
   },
   "app.appearance-settings.color-theme.description": {
-    "message": "เลือกธีมสีที่คุณต้องการสำหรับ Modrinth App"
+    "message": "เลือกธีมสีที่คุณต้องการสำหรับ Bbsmc App"
   },
   "app.appearance-settings.color-theme.title": {
-    "message": "ธีมสี"
+    "message": "ธีมส�?
   },
   "app.appearance-settings.default-landing-page.description": {
-    "message": "เปลี่ยนหน้าไปหน้าต่างที่ลันเชอร์เปิดขึ้นมา"
+    "message": "เปลี่ยนหน้าไปหน้าต่างที่ลันเชอร์เปิดขึ้นม�?
   },
   "app.appearance-settings.default-landing-page.home": {
     "message": "หน้าหลัก"
   },
   "app.appearance-settings.default-landing-page.library": {
-    "message": "ไลบรารี"
+    "message": "ไลบราร�?
   },
   "app.appearance-settings.default-landing-page.title": {
-    "message": "หน้าเริ่มต้น"
+    "message": "หน้าเริ่มต้�?
   },
   "app.appearance-settings.hide-nametag.description": {
-    "message": "ซ่อนป้ายชื่อบนศีรษะของผู้เล่นในหน้าแสดงสกิน"
+    "message": "ซ่อนป้ายชื่อบนศีรษะของผู้เล่นในหน้าแสดงสกิ�?
   },
   "app.appearance-settings.hide-nametag.title": {
     "message": "ซ่อนป้ายชื่อ"
   },
   "app.appearance-settings.jump-back-into-worlds.description": {
-    "message": "แสดงโลกที่เล่นล่าสุดในส่วน \"เล่นต่อ\" บนหน้าหลัก"
+    "message": "แสดงโลกที่เล่นล่าสุดในส่ว�?\"เล่นต่อ\" บนหน้าหลัก"
   },
   "app.appearance-settings.jump-back-into-worlds.title": {
     "message": "เล่นต่อ"
   },
   "app.appearance-settings.minimize-launcher.description": {
-    "message": "ย่อลันเชอร์เมื่อกระบวนการการรัน Minecraft เริ่มต้นแล้ว"
+    "message": "ย่อลันเชอร์เมื่อกระบวนการการรั�?Minecraft เริ่มต้นแล้�?
   },
   "app.appearance-settings.minimize-launcher.title": {
     "message": "ย่อลันเชอร์"
   },
   "app.appearance-settings.native-decorations.description": {
-    "message": "ใช้กรอบหน้าต่างระบบ (ต้องรีสตาร์ทแอป)"
+    "message": "ใช้กรอบหน้าต่างระบ�?(ต้องรีสตาร์ทแอ�?"
   },
   "app.appearance-settings.native-decorations.title": {
-    "message": "ของตกแต่งดั้งเดิม"
+    "message": "ของตกแต่งดั้งเดิ�?
   },
   "app.appearance-settings.show-play-time.description": {
-    "message": "แสดงเวลาที่คุณใช้เล่นในแต่ละอินสแตนซ์"
+    "message": "แสดงเวลาที่คุณใช้เล่นในแต่ละอินสแตนซ�?
   },
   "app.appearance-settings.show-play-time.title": {
-    "message": "แสดงระยะเวลาที่เล่น"
+    "message": "แสดงระยะเวลาที่เล่�?
   },
   "app.appearance-settings.toggle-sidebar.description": {
     "message": "เปิดใช้งานตัวเลือกในการเลือกย่อหรือขยายแถบด้านข้าง"
@@ -120,25 +120,25 @@
     "message": "ย่อแถบด้านข้าง"
   },
   "app.appearance-settings.unknown-pack-warning.description": {
-    "message": "หากคุณกำลังติดตั้งไฟล์แพ็กของ Modrinth (.mrpack) ที่ไม่ได้โฮสต์โดยตรงบน Modrinth เราจะแจ้งให้คุณตรวจสอบให้มั่นใจก่อนที่จะติดตั้งไฟล์แพ็กดังกล่าว"
+    "message": "หากคุณกำลังติดตั้งไฟล์แพ็กขอ�?Bbsmc (.mrpack) ที่ไม่ได้โฮสต์โดยตรงบน Bbsmc เราจะแจ้งให้คุณตรวจสอบให้มั่นใจก่อนที่จะติดตั้งไฟล์แพ็กดังกล่าว"
   },
   "app.appearance-settings.unknown-pack-warning.title": {
     "message": "เตือนฉันก่อนติดตั้งแพ็กม็อดที่ไม่รู้จัก"
   },
   "app.auth-servers.unreachable.body": {
-    "message": "เซิร์ฟเวอร์ตรวจสอบสิทธิ์ของ Minecraft อาจใช้งานไม่ได้ในขณะนี้ โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณและลองใหม่อีกครั้งในภายหลัง"
+    "message": "เซิร์ฟเวอร์ตรวจสอบสิทธิ์ของ Minecraft อาจใช้งานไม่ได้ในขณะนี�?โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณและลองใหม่อีกครั้งในภายหลัง"
   },
   "app.auth-servers.unreachable.header": {
-    "message": "ไม่สามารถเชื่อมต่อถึงเซิร์ฟเวอร์ได้"
+    "message": "ไม่สามารถเชื่อมต่อถึงเซิร์ฟเวอร์ได�?
   },
   "app.browse.add-servers-to-instance": {
-    "message": "เพิ่มเซิร์ฟเวอร์ลงในอินสแตนซ์"
+    "message": "เพิ่มเซิร์ฟเวอร์ลงในอินสแตนซ�?
   },
   "app.browse.add-to-an-instance": {
-    "message": "เพิ่มลงในอินสแตนซ์"
+    "message": "เพิ่มลงในอินสแตนซ�?
   },
   "app.browse.add-to-instance": {
-    "message": "เพิ่มลงในโปรแกรม"
+    "message": "เพิ่มลงในโปรแกร�?
   },
   "app.browse.add-to-instance-name": {
     "message": "เพิ่มลงใน {instanceName}"
@@ -165,10 +165,10 @@
     "message": "กำลังติดตั้ง"
   },
   "app.content-install.no-compatible-versions": {
-    "message": "ไม่มีเวอร์ชันที่เข้ากันได้ {compatibilityLabel} โปรดเลือกเวอร์ชันที่จะติดตั้ง ไฟล์ที่จำเป็นจะไม่ถูกติดตั้งโดยอัตโนมัติ"
+    "message": "ไม่มีเวอร์ชันที่เข้ากันได�?{compatibilityLabel} โปรดเลือกเวอร์ชันที่จะติดตั้�?ไฟล์ที่จำเป็นจะไม่ถูกติดตั้งโดยอัตโนมัติ"
   },
   "app.export-modal.description-placeholder": {
-    "message": "กรอกคำอธิบายมอดแพ็ก.."
+    "message": "กรอกคำอธิบายมอดแพ็�?."
   },
   "app.export-modal.export-button": {
     "message": "ส่งออก"
@@ -180,34 +180,34 @@
     "message": "ชื่อแพ็กม็อด"
   },
   "app.export-modal.version-number-label": {
-    "message": "หมายเลขเวอร์ชัน"
+    "message": "หมายเลขเวอร์ชั�?
   },
   "app.export-modal.version-number-placeholder": {
     "message": "1.0.0"
   },
   "app.instance.confirm-delete.admonition-body": {
-    "message": "ข้อมูลทั้งหมดที่ถูกเก็บไว้ในโปรแกรมจะถูกลบออกอย่างถาวร รวมถึงโลก การตั้งค่า และเนื้อหาอื่นที่ติดตั้งไว้ทั้งหมด"
+    "message": "ข้อมูลทั้งหมดที่ถูกเก็บไว้ในโปรแกรมจะถูกลบออกอย่างถาวร รวมถึงโล�?การตั้งค่า และเนื้อหาอื่นที่ติดตั้งไว้ทั้งหมด"
   },
   "app.instance.confirm-delete.admonition-header": {
     "message": "การดำเนินการนี้ไม่สามารถย้อนคืนได้"
   },
   "app.instance.confirm-delete.delete-button": {
-    "message": "ลบโปรแกรม"
+    "message": "ลบโปรแกร�?
   },
   "app.instance.confirm-delete.header": {
-    "message": "ลบโปรแกรม"
+    "message": "ลบโปรแกร�?
   },
   "app.instance.modpack-already-installed.body": {
     "message": "แพ็กม็อดดังกล่าวติดตั้งไว้ใน <bold>{instanceName}</bold> อยู่แล้ว คุณแน่ใจหรือไม่ว่าต้องการจะทำซ้ำ?"
   },
   "app.instance.modpack-already-installed.create": {
-    "message": "สร้าง"
+    "message": "สร้า�?
   },
   "app.instance.modpack-already-installed.header": {
     "message": "แพ็กม็อดดังกล่าวถูกติดตั้งไปแล้ว"
   },
   "app.instance.modpack-already-installed.instance": {
-    "message": "โปรแกรม"
+    "message": "โปรแกร�?
   },
   "app.instance.mods.content-type-project": {
     "message": "โปรเจกต์"
@@ -219,13 +219,13 @@
     "message": "เพิ่ม {count} โปรเจกต์เรียบร้อยแล้ว"
   },
   "app.instance.mods.share-text": {
-    "message": "มาตรวจดูโปรเจกต์ต่าง ๆ ที่ฉันใช้ในแพ็กม็อดนี้กัน!"
+    "message": "มาตรวจดูโปรเจกต์ต่าง �?ที่ฉันใช้ในแพ็กม็อดนี้กั�?"
   },
   "app.instance.mods.share-title": {
     "message": "แบ่งปันเนื้อหาแพ็กม็อด"
   },
   "app.instance.mods.successfully-uploaded": {
-    "message": "อัปโหลดสำเร็จ"
+    "message": "อัปโหลดสำเร็�?
   },
   "app.instance.worlds.add-server": {
     "message": "เพิ่มเซิร์ฟเวอร์"
@@ -237,61 +237,61 @@
     "message": "ม็อด"
   },
   "app.instance.worlds.filter-offline": {
-    "message": "ออฟไลน์"
+    "message": "ออฟไลน�?
   },
   "app.instance.worlds.filter-online": {
-    "message": "ออนไลน์"
+    "message": "ออนไลน�?
   },
   "app.instance.worlds.filter-vanilla": {
-    "message": "วานิลลา"
+    "message": "วานิลล�?
   },
   "app.instance.worlds.no-worlds-description": {
-    "message": "เพิ่มเซิร์ฟเวอร์หรือค้นหาเพื่อเริ่มต้น"
+    "message": "เพิ่มเซิร์ฟเวอร์หรือค้นหาเพื่อเริ่มต้�?
   },
   "app.instance.worlds.no-worlds-heading": {
-    "message": "ไม่มีเซิร์ฟเวอร์หรือโลกที่เพิ่มไว้"
+    "message": "ไม่มีเซิร์ฟเวอร์หรือโลกที่เพิ่มไว�?
   },
   "app.instance.worlds.search-worlds-placeholder": {
-    "message": "ค้าหาโลกทั้งหมด {count} โลก"
+    "message": "ค้าหาโลกทั้งหม�?{count} โล�?
   },
   "app.modal.install-to-play.header": {
-    "message": "ติดตั้งเพื่อเล่น"
+    "message": "ติดตั้งเพื่อเล่�?
   },
   "app.modal.install-to-play.install-button": {
-    "message": "ติดตั้ง"
+    "message": "ติดตั้�?
   },
   "app.modal.install-to-play.mod-count": {
     "message": "{count, plural, other {# ม็อด}}"
   },
   "app.modal.install-to-play.shared-instance": {
-    "message": "โปรแกรมที่มีร่วมกัน"
+    "message": "โปรแกรมที่มีร่วมกั�?
   },
   "app.modal.install-to-play.view-contents": {
     "message": "ดูเนื้อหา"
   },
   "app.modal.update-to-play.header": {
-    "message": "อัปเดตเพื่อเล่น"
+    "message": "อัปเดตเพื่อเล่�?
   },
   "app.project.install-button.already-installed": {
-    "message": "โปรเจคนี้ถูกติดตั้งแล้ว"
+    "message": "โปรเจคนี้ถูกติดตั้งแล้�?
   },
   "app.project.install-context.back-to-browse": {
     "message": "กลับไปที่หน้าค้นหา"
   },
   "app.settings.developer-mode-enabled": {
-    "message": "โหมดนักพัฒนาเปิดอยู่"
+    "message": "โหมดนักพัฒนาเปิดอยู�?
   },
   "app.settings.downloading": {
-    "message": "ดาวน์โหลดเวอร์ชัน {version}"
+    "message": "ดาวน์โหลดเวอร์ชั�?{version}"
   },
   "app.settings.tabs.appearance": {
     "message": "หน้าตา"
   },
   "app.settings.tabs.default-instance-options": {
-    "message": "ตั้งค่าโปรแกรมเริ่มต้น"
+    "message": "ตั้งค่าโปรแกรมเริ่มต้�?
   },
   "app.settings.tabs.java-installations": {
-    "message": "การจัดการ Java ที่ติดตั้ง"
+    "message": "การจัดกา�?Java ที่ติดตั้ง"
   },
   "app.settings.tabs.language": {
     "message": "ภาษา"
@@ -300,34 +300,34 @@
     "message": "ความเป็นส่วนตัว"
   },
   "app.settings.tabs.resource-management": {
-    "message": "การจัดการทรัพยากร"
+    "message": "การจัดการทรัพยาก�?
   },
   "app.skins.add-button": {
     "message": "เพิ่มสกิน"
   },
   "app.skins.add-button.drag-and-drop": {
-    "message": "ลากและวาง"
+    "message": "ลากและวา�?
   },
   "app.skins.apply-button": {
-    "message": "นำไปใช้"
+    "message": "นำไปใช�?
   },
   "app.skins.delete-button": {
     "message": "ลบสกิน"
   },
   "app.skins.delete-modal.description": {
-    "message": "การดำเนินการนี้จะลบสกินที่เลือกอย่างถาวร การกระทำนี้ไม่สามารถย้อนกลับได้"
+    "message": "การดำเนินการนี้จะลบสกินที่เลือกอย่างถาว�?การกระทำนี้ไม่สามารถย้อนกลับได�?
   },
   "app.skins.delete-modal.title": {
     "message": "คุณแน่ใจหรือว่าต้องการที่จะลบสกินนี้?"
   },
   "app.skins.dropped-file-error.text": {
-    "message": "ไม่สามารถอ่านไฟล์ที่ถูกลากและวางได้"
+    "message": "ไม่สามารถอ่านไฟล์ที่ถูกลากและวางได�?
   },
   "app.skins.dropped-file-error.title": {
-    "message": "ข้อผิดพลาดในการประมวลผลไฟล์"
+    "message": "ข้อผิดพลาดในการประมวลผลไฟล�?
   },
   "app.skins.edit-button": {
-    "message": "แก้ไขสกิน"
+    "message": "แก้ไขสกิ�?
   },
   "app.skins.modal.add-skin-button": {
     "message": "เพิ่มสกิน"
@@ -339,28 +339,28 @@
     "message": "สไตล์แขน"
   },
   "app.skins.modal.arm-style-slim": {
-    "message": "เพรียว"
+    "message": "เพรีย�?
   },
   "app.skins.modal.arm-style-wide": {
-    "message": "กว้าง"
+    "message": "กว้า�?
   },
   "app.skins.modal.cape-fallback-name": {
-    "message": "ผ้าคลุม"
+    "message": "ผ้าคลุ�?
   },
   "app.skins.modal.cape-section": {
-    "message": "ผ้าคลุม"
+    "message": "ผ้าคลุ�?
   },
   "app.skins.modal.edit-title": {
-    "message": "แก้ไขสกิน"
+    "message": "แก้ไขสกิ�?
   },
   "app.skins.modal.make-edit-first-tooltip": {
-    "message": "แก้ไขสกินก่อน!"
+    "message": "แก้ไขสกินก่อ�?"
   },
   "app.skins.modal.no-cape-tooltip": {
     "message": "ไม่มีผ้าคลุม"
   },
   "app.skins.modal.none-cape-option": {
-    "message": "ไม่มี"
+    "message": "ไม่ม�?
   },
   "app.skins.modal.replace-texture-button": {
     "message": "เปลี่ยนเท็กซ์เจอร์"
@@ -369,31 +369,31 @@
     "message": "บันทึกสกิน"
   },
   "app.skins.modal.saving-tooltip": {
-    "message": "กำลังบันทึก"
+    "message": "กำลังบันทึ�?
   },
   "app.skins.modal.texture-section": {
     "message": "เท็กซ์เจอร์"
   },
   "app.skins.modal.upload-skin-first-tooltip": {
-    "message": "อัพโหลดสกินก่อน!"
+    "message": "อัพโหลดสกินก่อ�?"
   },
   "app.skins.preview.edit-button": {
-    "message": "แก้ไขสกิน"
+    "message": "แก้ไขสกิ�?
   },
   "app.skins.previewing-badge": {
-    "message": "การแสดงตัวอย่าง"
+    "message": "การแสดงตัวอย่า�?
   },
   "app.skins.rate-limit.text": {
-    "message": "คุณได้เปลี่ยนสกินบ่อยเกินไป เซิร์ฟเวอร์ของ Mojang ได้บล็อกคำขอเพิ่มเติมชั่วคราว โปรดรอสักครู่ก่อนลองอีกครั้ง"
+    "message": "คุณได้เปลี่ยนสกินบ่อยเกินไ�?เซิร์ฟเวอร์ขอ�?Mojang ได้บล็อกคำขอเพิ่มเติมชั่วครา�?โปรดรอสักครู่ก่อนลองอีกครั้ง"
   },
   "app.skins.rate-limit.title": {
-    "message": "ลดความถี่ลง!"
+    "message": "ลดความถี่ล�?"
   },
   "app.skins.reorder-error.text": {
-    "message": "ไม่สามารถบันทึกลำดับสกินของคุณได้"
+    "message": "ไม่สามารถบันทึกลำดับสกินของคุณได�?
   },
   "app.skins.reorder-error.title": {
-    "message": "ไม่สามารถจัดเรียงสกินได้"
+    "message": "ไม่สามารถจัดเรียงสกินได�?
   },
   "app.skins.section.builders-and-biomes": {
     "message": "Builders & Biomes"
@@ -402,19 +402,19 @@
     "message": "Chase the Skies"
   },
   "app.skins.section.default-skins": {
-    "message": "สกินเริ่มต้น"
+    "message": "สกินเริ่มต้�?
   },
   "app.skins.section.minecon-earth-2017": {
     "message": "MINECON Earth 2017"
   },
-  "app.skins.section.modrinth": {
-    "message": "Modrinth"
+  "app.skins.section.Bbsmc": {
+    "message": "Bbsmc"
   },
-  "app.skins.section.modrinth-pride": {
-    "message": "Modrinth Pride"
+  "app.skins.section.Bbsmc-pride": {
+    "message": "Bbsmc Pride"
   },
-  "app.skins.section.modrinth-pride.tooltip": {
-    "message": "คุณได้รับสกินเหล่านี้จากการร่วมบริจาคให้กับกิจกรรมระดมทุน Modrinth Pride ในช่วงเดือน Pride Month"
+  "app.skins.section.Bbsmc-pride.tooltip": {
+    "message": "คุณได้รับสกินเหล่านี้จากการร่วมบริจาคให้กับกิจกรรมระดมทุ�?Bbsmc Pride ในช่วงเดือน Pride Month"
   },
   "app.skins.section.mounts-of-mayhem": {
     "message": "Mounts of Mayhem"
@@ -438,31 +438,31 @@
     "message": "ลงชื่อเข้าใช้"
   },
   "app.skins.sign-in.description": {
-    "message": "โปรดลงชื่อเข้าใช้บัญชี Minecraft ของคุณเพื่อใช้งานฟีเจอร์จัดการสกินของแอป Modrinth"
+    "message": "โปรดลงชื่อเข้าใช้บัญช�?Minecraft ของคุณเพื่อใช้งานฟีเจอร์จัดการสกินของแอป Bbsmc"
   },
   "app.skins.sign-in.rinthbot-alt": {
-    "message": "บอท Modrinth ที่กำลังตื่นเต้น"
+    "message": "บอ�?Bbsmc ที่กำลังตื่นเต้�?
   },
   "app.skins.sign-in.title": {
     "message": "โปรดลงชื่อเข้าใช้"
   },
   "app.update-popup.body.download-complete": {
-    "message": "ดาวน์โหลด Modrinth v{version} สำเร็จแล้ว เปิดโปรแกรมใหม่อีกครั้งเพื่ออัปเดตตอนนี้ หรือจะรออัปเดตอัตโนมัติ ซึ่งจะเกิดขึ้นเมื่อคุณกดปิดโปรแกรม Modrinth"
+    "message": "ดาวน์โหล�?Bbsmc v{version} สำเร็จแล้�?เปิดโปรแกรมใหม่อีกครั้งเพื่ออัปเดตตอนนี้ หรือจะรออัปเดตอัตโนมัต�?ซึ่งจะเกิดขึ้นเมื่อคุณกดปิดโปรแกร�?Bbsmc"
   },
   "app.update-popup.body.linux": {
-    "message": "Modrinth v{version} พร้อมให้อัปเดตแล้ว โปรดไปที่การจัดการแพ็กเกจของคุณสำหรับการอัปเดตคุณสมบัติใหม่และการแก้ไขต่าง ๆ"
+    "message": "Bbsmc v{version} พร้อมให้อัปเดตแล้ว โปรดไปที่การจัดการแพ็กเกจของคุณสำหรับการอัปเดตคุณสมบัติใหม่และการแก้ไขต่าง �?
   },
   "app.update-popup.body.metered": {
-    "message": "Modrinth v{version} พร้อมให้บริการแล้ว! แต่เนื่องจากคุณเปิดโหมดจำกัดปริมาณการใช้ข้อมูลเครือข่าย เราจึงไม่ได้อัปเดตเนื้อหาโดยอัตโนมัติ"
+    "message": "Bbsmc v{version} พร้อมให้บริการแล้ว! แต่เนื่องจากคุณเปิดโหมดจำกัดปริมาณการใช้ข้อมูลเครือข่าย เราจึงไม่ได้อัปเดตเนื้อหาโดยอัตโนมัติ"
   },
   "app.update-popup.changelog": {
     "message": "บันทึกการเปลี่ยนแปลง"
   },
   "app.update-popup.download": {
-    "message": "ดาวโหลด ({size})"
+    "message": "ดาวโหล�?({size})"
   },
   "app.update-popup.download-complete": {
-    "message": "การดาวน์โหลดเสร็จสมบูรณ์"
+    "message": "การดาวน์โหลดเสร็จสมบูรณ�?
   },
   "app.update-popup.title": {
     "message": "มีการอัปเดตใหม่"
@@ -474,70 +474,70 @@
     "message": "เวอร์ชั่น {version} ถูกติดตั้งแล้ว"
   },
   "app.world.server-modal.placeholder-address": {
-    "message": "example.modrinth.gg"
+    "message": "example.Bbsmc.gg"
   },
   "app.world.server-modal.select-an-option": {
     "message": "เลือกตัวเลือก"
   },
   "app.world.world-item.incompatible-version": {
-    "message": "ไม่สามารถเข้ากับเวอร์ชัน {version} ได้"
+    "message": "ไม่สามารถเข้ากับเวอร์ชั�?{version} ได�?
   },
   "app.world.world-item.not-played-yet": {
-    "message": "ยังไม่เคยเล่น"
+    "message": "ยังไม่เคยเล่�?
   },
   "app.world.world-item.offline": {
-    "message": "ออฟไลน์"
+    "message": "ออฟไลน�?
   },
   "app.world.world-item.players-online": {
-    "message": "{count} ออนไลน์"
+    "message": "{count} ออนไลน�?
   },
   "friends.action.add-friend": {
-    "message": "เพิ่มเพื่อน"
+    "message": "เพิ่มเพื่อ�?
   },
   "friends.action.view-friend-requests": {
-    "message": "คำขอเป็นเพื่อน {count} {count, plural, other {คน}}"
+    "message": "คำขอเป็นเพื่อ�?{count} {count, plural, other {คน}}"
   },
   "friends.add-friend.submit": {
-    "message": "ส่งคำขอเป็นเพื่อน"
+    "message": "ส่งคำขอเป็นเพื่อ�?
   },
   "friends.add-friend.title": {
-    "message": "กำลังเพิ่มเพื่อน"
+    "message": "กำลังเพิ่มเพื่อ�?
   },
   "friends.add-friend.username.description": {
     "message": "มันอาจแตกต่างจากชื่อในเกม Minecraft ของพวกเขา!"
   },
   "friends.add-friend.username.placeholder": {
-    "message": "กรอกชื่อผู้ใช้ Modrinth..."
+    "message": "กรอกชื่อผู้ใช้ Bbsmc..."
   },
   "friends.add-friend.username.title": {
-    "message": "เพื่อนของคุณมีชื่อผู้ใช้ Modrinth ว่าอะไร?"
+    "message": "เพื่อนของคุณมีชื่อผู้ใช�?Bbsmc ว่าอะไ�?"
   },
   "friends.add-friends-to-share": {
-    "message": "<link>เพิ่มเพื่อน</link> เพื่อเห็นว่าพวกเขากำลังเล่นอะไรอยู่!"
+    "message": "<link>เพิ่มเพื่อ�?/link> เพื่อเห็นว่าพวกเขากำลังเล่นอะไรอยู�?"
   },
   "friends.friend.cancel-request": {
-    "message": "ยกเลิกคำขอ"
+    "message": "ยกเลิกคำข�?
   },
   "friends.friend.remove-friend": {
-    "message": "ลบเพื่อน"
+    "message": "ลบเพื่อ�?
   },
   "friends.friend.request-sent": {
-    "message": "ส่งคำขอเป็นเพื่อนแล้ว"
+    "message": "ส่งคำขอเป็นเพื่อนแล้�?
   },
   "friends.friend.view-profile": {
-    "message": "ดูโปรไฟล์"
+    "message": "ดูโปรไฟล�?
   },
   "friends.heading": {
-    "message": "เพื่อน"
+    "message": "เพื่อ�?
   },
   "friends.heading.active": {
-    "message": "ออนไลน์"
+    "message": "ออนไลน�?
   },
   "friends.heading.offline": {
-    "message": "ออฟไลน์"
+    "message": "ออฟไลน�?
   },
   "friends.heading.online": {
-    "message": "ออนไลน์"
+    "message": "ออนไลน�?
   },
   "friends.heading.pending": {
     "message": "กําลังดำเนินการ"
@@ -546,13 +546,13 @@
     "message": "ไม่มีรายชื่อเพื่อนที่ตรงกับ \"{query}\""
   },
   "friends.search-friends-placeholder": {
-    "message": "ค้นหาเพื่อน"
+    "message": "ค้นหาเพื่อ�?
   },
   "friends.section.heading": {
     "message": "{title} - {count}"
   },
   "friends.sign-in-to-add-friends": {
-    "message": "<link>ล็อกอินเข้าบัญชี Modrinth</link> เพื่อเพิ่มเพื่อนและเห็นว่าพวกเขากำลังเล่นอะไรอยู่!"
+    "message": "<link>ล็อกอินเข้าบัญชี Bbsmc</link> เพื่อเพิ่มเพื่อนและเห็นว่าพวกเขากำลังเล่นอะไรอยู�?"
   },
   "instance.add-server.add-and-play": {
     "message": "เพิ่มและเล่นทันที"
@@ -582,10 +582,10 @@
     "message": "ชื่อ"
   },
   "instance.edit-world.placeholder-name": {
-    "message": "โลก Minecraft"
+    "message": "โล�?Minecraft"
   },
   "instance.edit-world.reset-icon": {
-    "message": "รีเซ็ตรูปสัญลักษณ์"
+    "message": "รีเซ็ตรูปสัญลักษณ�?
   },
   "instance.edit-world.title": {
     "message": "แก้ไขโลก"
@@ -594,7 +594,7 @@
     "message": "กำลังเพิ่มไฟล์ ({completed}/{total})"
   },
   "instance.files.save-as": {
-    "message": "บันทึกเป็น..."
+    "message": "บันทึกเป็�?.."
   },
   "instance.server-modal.address": {
     "message": "ที่อยู่เซิร์ฟเวอร์"
@@ -606,43 +606,43 @@
     "message": "ชื่อเซิร์ฟเวอร์"
   },
   "instance.server-modal.resource-pack": {
-    "message": "รีซอร์ซแพ็ก"
+    "message": "รีซอร์ซแพ็�?
   },
   "instance.settings.tabs.general": {
     "message": "ทั่วไป"
   },
   "instance.settings.tabs.general.delete": {
-    "message": "ลบโปรแกรม"
+    "message": "ลบโปรแกร�?
   },
   "instance.settings.tabs.general.delete.button": {
-    "message": "ลบโปรแกรม"
+    "message": "ลบโปรแกร�?
   },
   "instance.settings.tabs.general.delete.description": {
-    "message": "การกระทำดังกล่าวจะลบโปรแกรมออกจากอุปกรณ์ของคุณอย่างถาวร รวมถึงโลก การตั้งค่า และเนื้อหาทั้งหมดที่ติดตั้งไว้ โปรดระมัดระวัง เนื่องจากเมื่อถูกลบแล้วจะไม่สามารถกู้คืนได้อีก"
+    "message": "การกระทำดังกล่าวจะลบโปรแกรมออกจากอุปกรณ์ของคุณอย่างถาว�?รวมถึงโล�?การตั้งค่า และเนื้อหาทั้งหมดที่ติดตั้งไว้ โปรดระมัดระวัง เนื่องจากเมื่อถูกลบแล้วจะไม่สามารถกู้คืนได้อีก"
   },
   "instance.settings.tabs.general.deleting.button": {
-    "message": "กำลังลบ..."
+    "message": "กำลังล�?.."
   },
   "instance.settings.tabs.general.duplicate-button": {
-    "message": "ทำซ้ำ"
+    "message": "ทำซ้�?
   },
   "instance.settings.tabs.general.duplicate-button.tooltip.installing": {
-    "message": "ไม่สามารถทำซ้ำได้ขณะติดตั้ง"
+    "message": "ไม่สามารถทำซ้ำได้ขณะติดตั้�?
   },
   "instance.settings.tabs.general.duplicate-instance": {
-    "message": "สร้างสำเนาโปรแกรม"
+    "message": "สร้างสำเนาโปรแกร�?
   },
   "instance.settings.tabs.general.duplicate-instance.description": {
-    "message": "สร้างสำเนาของโปรแกรมนี้ รวมถึงโลก การตั้งค่า ม็อด และอื่น ๆ"
+    "message": "สร้างสำเนาของโปรแกรมนี�?รวมถึงโล�?การตั้งค่า ม็อด และอื่�?�?
   },
   "instance.settings.tabs.general.edit-icon": {
     "message": "แก้ไขสัญลักษณ์"
   },
   "instance.settings.tabs.general.edit-icon.remove": {
-    "message": "ลบสัญลักษณ์"
+    "message": "ลบสัญลักษณ�?
   },
   "instance.settings.tabs.general.edit-icon.replace": {
-    "message": "แทนที่สัญลักษณ์"
+    "message": "แทนที่สัญลักษณ�?
   },
   "instance.settings.tabs.general.edit-icon.select": {
     "message": "เลือกรูปสัญลักษณ์"
@@ -654,7 +654,7 @@
     "message": "สร้างกลุ่มใหม่"
   },
   "instance.settings.tabs.general.library-groups.description": {
-    "message": "การจัดกลุ่มจะช่วยจัดระเบียบโปรแกรมของคุณภายในหน้ารายการให้เป็นหมวดหมู่"
+    "message": "การจัดกลุ่มจะช่วยจัดระเบียบโปรแกรมของคุณภายในหน้ารายการให้เป็นหมวดหมู�?
   },
   "instance.settings.tabs.general.library-groups.enter-name": {
     "message": "ใส่ชื่อกลุ่ม"
@@ -666,10 +666,10 @@
     "message": "Launch Hook"
   },
   "instance.settings.tabs.hooks.custom-hooks": {
-    "message": "กำหนด Launch Hook เอง"
+    "message": "กำหน�?Launch Hook เอง"
   },
   "instance.settings.tabs.hooks.description": {
-    "message": "Launch Hook จะช่วยให้ผู้เล่นที่ชำนาญสามารถใช้คำสั่งต่อระบบบางอย่างได้ ทั้งก่อนและหลังเกมถูกเปิด"
+    "message": "Launch Hook จะช่วยให้ผู้เล่นที่ชำนาญสามารถใช้คำสั่งต่อระบบบางอย่างได้ ทั้งก่อนและหลังเกมถูกเปิ�?
   },
   "instance.settings.tabs.hooks.post-exit": {
     "message": "Post-exit"
@@ -696,7 +696,7 @@
     "message": "Wrapper"
   },
   "instance.settings.tabs.hooks.wrapper.description": {
-    "message": "คำสั่ง Wrapper สำหรับใช้ในการรันเปิด Minecraft"
+    "message": "คำสั่ง Wrapper สำหรับใช้ในการรันเปิ�?Minecraft"
   },
   "instance.settings.tabs.hooks.wrapper.enter": {
     "message": "ป้อนคำสั่ง Wrapper..."
@@ -705,10 +705,10 @@
     "message": "การติดตั้ง"
   },
   "instance.settings.tabs.installation.loader-version": {
-    "message": "เวอร์ชัน {loader}"
+    "message": "เวอร์ชั�?{loader}"
   },
   "instance.settings.tabs.java": {
-    "message": "Java และ หน่วยความจำ"
+    "message": "Java แล�?หน่วยความจ�?
   },
   "instance.settings.tabs.java.environment-variables": {
     "message": "Environment Variables"
@@ -729,109 +729,109 @@
     "message": "หน้าต่าง"
   },
   "instance.settings.tabs.window.custom-window-settings": {
-    "message": "การตั้งค่าการปรับแต่งหน้าต่าง"
+    "message": "การตั้งค่าการปรับแต่งหน้าต่า�?
   },
   "instance.settings.tabs.window.fullscreen": {
-    "message": "เต็มหน้าจอ"
+    "message": "เต็มหน้าจ�?
   },
   "instance.settings.tabs.window.fullscreen.description": {
     "message": "ทำให้เกมเปิดในโหมดเต็มหน้าจอเมื่อเริ่มเกม (โดยใช้ไฟล์ options.txt)"
   },
   "instance.settings.tabs.window.height": {
-    "message": "ความสูง"
+    "message": "ความสู�?
   },
   "instance.settings.tabs.window.height.description": {
     "message": "ความสูงของหน้าต่างเมื่อรันเกม"
   },
   "instance.settings.tabs.window.height.enter": {
-    "message": "ป้อนความสูง..."
+    "message": "ป้อนความสู�?.."
   },
   "instance.settings.tabs.window.width": {
-    "message": "ความกว้าง"
+    "message": "ความกว้า�?
   },
   "instance.settings.tabs.window.width.description": {
     "message": "ความกว้างของหน้าต่างเมื่อรันเกม"
   },
   "instance.settings.tabs.window.width.enter": {
-    "message": "ป้อนความกว้าง..."
+    "message": "ป้อนความกว้า�?.."
   },
   "instance.worlds.a_minecraft_server": {
     "message": "เซิร์ฟเวอร์ Minecraft"
   },
   "instance.worlds.cant_connect": {
-    "message": "ไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์ได้"
+    "message": "ไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์ได�?
   },
   "instance.worlds.copy_address": {
-    "message": "คัดลอกที่อยู่"
+    "message": "คัดลอกที่อยู�?
   },
   "instance.worlds.dont_show_on_home": {
     "message": "ไม่ต้องแสดงในหน้าแรก"
   },
   "instance.worlds.game_already_open": {
-    "message": "โปรแกรมถูกเปิดอยู่แล้ว"
+    "message": "โปรแกรมถูกเปิดอยู่แล้�?
   },
   "instance.worlds.hardcore": {
-    "message": "โหมดฮาร์ดคอร์"
+    "message": "โหมดฮาร์ดคอร�?
   },
   "instance.worlds.incompatible_server": {
-    "message": "เซิร์ฟเวอร์ไม่รองรับ"
+    "message": "เซิร์ฟเวอร์ไม่รองรั�?
   },
   "instance.worlds.linked_server": {
     "message": "จัดการโดยโปรเจกต์เซิร์ฟเวอร์"
   },
   "instance.worlds.no_contact": {
-    "message": "ไม่สามารถติดต่อเซิร์ฟเวอร์ได้"
+    "message": "ไม่สามารถติดต่อเซิร์ฟเวอร์ได�?
   },
   "instance.worlds.no_server_quick_play": {
-    "message": "คุณสามารถเข้าสู่เซิร์ฟเวอร์ได้โดยตรงบน Minecraft Alpha 1.0.5 ขึ้นไปเท่านั้น"
+    "message": "คุณสามารถเข้าสู่เซิร์ฟเวอร์ได้โดยตรงบ�?Minecraft Alpha 1.0.5 ขึ้นไปเท่านั้�?
   },
   "instance.worlds.no_singleplayer_quick_play": {
-    "message": "คุณสามารถเข้าสู่โลกผู้เล่นคนเดียวได้โดยตรงบน Minecraft 1.20 ขึ้นไปเท่านั้น"
+    "message": "คุณสามารถเข้าสู่โลกผู้เล่นคนเดียวได้โดยตรงบ�?Minecraft 1.20 ขึ้นไปเท่านั้�?
   },
   "instance.worlds.play_instance": {
     "message": "เริ่มรันโปรแกรม"
   },
   "instance.worlds.view_instance": {
-    "message": "ดูโปรแกรม"
+    "message": "ดูโปรแกร�?
   },
   "instance.worlds.world_in_use": {
     "message": "โลกนี้กำลังถูกใช้งานอยู่"
   },
   "minecraft-account.add-account": {
-    "message": "เพิ่มบัญชี"
+    "message": "เพิ่มบัญช�?
   },
   "minecraft-account.label": {
-    "message": "บัญชี Minecraft"
+    "message": "บัญช�?Minecraft"
   },
   "minecraft-account.not-signed-in": {
     "message": "ยังไม่ได้ลงชื่อเข้าใช้"
   },
   "minecraft-account.remove-account": {
-    "message": "ลบบัญชี"
+    "message": "ลบบัญช�?
   },
   "minecraft-account.select-account": {
-    "message": "เลือกบัญชี"
+    "message": "เลือกบัญช�?
   },
   "minecraft-account.sign-in": {
     "message": "ลงชื่อเข้าใช้ Minecraft"
   },
   "search.filter.locked.instance": {
-    "message": "โปรแกรมเป็นผู้กำหนด"
+    "message": "โปรแกรมเป็นผู้กำหน�?
   },
   "search.filter.locked.instance-game-version.title": {
-    "message": "เวอร์ชันเกมถูกกำหนดไว้โดยโปรแกรมแล้ว"
+    "message": "เวอร์ชันเกมถูกกำหนดไว้โดยโปรแกรมแล้�?
   },
   "search.filter.locked.instance-loader.title": {
-    "message": "ตัวรันถูกกำหนดไว้โดยโปรแกรมแล้ว"
+    "message": "ตัวรันถูกกำหนดไว้โดยโปรแกรมแล้�?
   },
   "search.filter.locked.instance.sync": {
     "message": "เชื่อมต่อกับโปรแกรม"
   },
   "search.filter.locked.server": {
-    "message": "เซิร์ฟเวอร์เป็นผู้กำหนด"
+    "message": "เซิร์ฟเวอร์เป็นผู้กำหน�?
   },
   "search.filter.locked.server-environment.title": {
-    "message": "มีเพียงม็อดสำหรับฝั่งเครื่องของผู้เล่นเท่านั้นที่สามารถเพิ่มลงในโปรแกรมเซิร์ฟเวอร์ดังกล่าวได้"
+    "message": "มีเพียงม็อดสำหรับฝั่งเครื่องของผู้เล่นเท่านั้นที่สามารถเพิ่มลงในโปรแกรมเซิร์ฟเวอร์ดังกล่าวได�?
   },
   "search.filter.locked.server-game-version.title": {
     "message": "เวอร์ชันเกมถูกกำหนดโดยเซิร์ฟเวอร์แล้ว"

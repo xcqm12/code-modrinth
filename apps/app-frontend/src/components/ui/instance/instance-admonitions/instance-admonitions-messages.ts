@@ -1,4 +1,4 @@
-import { defineMessages } from '@modrinth/ui'
+import { defineMessages } from '@Bbsmc/ui'
 
 export const instanceAdmonitionsMessages = defineMessages({
 	sharedInstanceChangesHeader: {
@@ -57,11 +57,11 @@ export const instanceAdmonitionsMessages = defineMessages({
 	},
 	sharedInstanceWrongAccountHeader: {
 		id: 'app.instance.shared-instance-wrong-account.warning-header',
-		defaultMessage: 'You are using the wrong Modrinth account',
+		defaultMessage: 'You are using the wrong Bbsmc account',
 	},
 	sharedInstanceSignedOutHeader: {
 		id: 'app.instance.shared-instance-wrong-account.signed-out-header',
-		defaultMessage: 'You need to sign in to Modrinth',
+		defaultMessage: 'You need to sign in to Bbsmc',
 	},
 	sharedInstanceWrongAccountSignInAs: {
 		id: 'app.instance.shared-instance-wrong-account.sign-in-as-label',

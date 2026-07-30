@@ -7,18 +7,18 @@ body:
     attributes:
       label: Please confirm the following.
       options:
-        - label: I checked the [existing issues](https://github.com/modrinth/code/issues?q=is%3Aissue) for duplicate feature requests
+        - label: I checked the [existing issues](https://github.com/Bbsmc/code/issues?q=is%3Aissue) for duplicate feature requests
           required: true
   - type: dropdown
     id: projects
     attributes:
-      label: What parts of Modrinth is your feature request related too?
+      label: What parts of Bbsmc is your feature request related too?
       multiple: true
       options:
-        - Modrinth App
+        - Bbsmc App
         - bbsmc.org.cn website
-        - Modrinth Hosting
-        - Modrinth API for developers
+        - Bbsmc Hosting
+        - Bbsmc API for developers
   - type: textarea
     attributes:
       label: Is your suggested feature related to a problem? Please describe.

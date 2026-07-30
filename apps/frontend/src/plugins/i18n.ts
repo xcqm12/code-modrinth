@@ -1,4 +1,4 @@
-import { moderationLocaleModules } from '@modrinth/moderation'
+import { moderationLocaleModules } from '@Bbsmc/moderation'
 import {
 	type CrowdinMessages,
 	I18N_INJECTION_KEY,
@@ -7,7 +7,7 @@ import {
 	transformCrowdinMessages,
 	uiLocaleModules,
 	useDebugLogger,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import IntlMessageFormat from 'intl-messageformat'
 import { LRUCache } from 'lru-cache'
 
@@ -104,7 +104,7 @@ async function loadLocale(code: string): Promise<void> {
 			frontendKeys: frontendData ? Object.keys(frontendData.default).length : 0,
 		})
 
-		// Merge: UI (base) â†’ moderation â†’ frontend (highest priority)
+		// Merge: UI (base) â†?moderation â†?frontend (highest priority)
 		const mergedMessages: Record<string, string> = {}
 		if (uiData) Object.assign(mergedMessages, transformCrowdinMessages(uiData.default))
 		if (moderationData)

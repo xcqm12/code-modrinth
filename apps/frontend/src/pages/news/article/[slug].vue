@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { GitGraphIcon, RssIcon } from '@modrinth/assets'
-import { articles as rawArticles } from '@modrinth/blog'
+import { GitGraphIcon, RssIcon } from '@Bbsmc/assets'
+import { articles as rawArticles } from '@Bbsmc/blog'
 import {
 	ArticleBody,
 	Avatar,
 	ButtonStyled,
-	injectModrinthClient,
+	injectBbsmcClient,
 	useFormatDateTime,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { useQuery } from '@tanstack/vue-query'
 import dayjs from 'dayjs'
 import { computed, onMounted } from 'vue'
@@ -15,7 +15,7 @@ import { computed, onMounted } from 'vue'
 import NewsletterButton from '~/components/ui/NewsletterButton.vue'
 import ShareArticleButtons from '~/components/ui/ShareArticleButtons.vue'
 
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const config = useRuntimeConfig()
 const route = useRoute()
 
@@ -71,7 +71,7 @@ const thumbnailPath = computed(() =>
 const dayjsDate = computed(() => dayjs(article.value.date))
 
 useSeoMeta({
-	title: () => `${articleTitle.value} - Modrinth News`,
+	title: () => `${articleTitle.value} - Bbsmc News`,
 	ogTitle: () => articleTitle.value,
 	description: () => article.value.summary,
 	ogDescription: () => article.value.summary,
@@ -156,11 +156,11 @@ onMounted(() => {
 				</template>
 				<template v-if="!authors || authorCount === 0">
 					<nuxt-link
-						to="/organization/modrinth"
+						to="/organization/Bbsmc"
 						class="inline-flex items-center gap-1 font-semibold hover:underline hover:brightness-[--hover-brightness]"
 					>
-						<Avatar src="https://cdn-raw.bbsmc.org.cn/modrinth-icon-96.webp" size="24px" />
-						Modrinth Team
+						<Avatar src="https://cdn-raw.bbsmc.org.cn/Bbsmc-icon-96.webp" size="24px" />
+						Bbsmc Team
 					</nuxt-link>
 				</template>
 				<span class="hidden md:block">·</span>

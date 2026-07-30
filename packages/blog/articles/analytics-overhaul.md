@@ -26,7 +26,7 @@ With a new query builder and a lot of new data, you can finally dig into how peo
 - Playtime metrics
 - Line, area, and bar chart views
 - Table view
-- Event markers for project releases and Modrinth outages
+- Event markers for project releases and Bbsmc outages
 
 ## Explore your data
 
@@ -63,7 +63,7 @@ Lastly, the meat and potatoes: breakdowns and filters. Breakdowns split your dat
 
 ## Metrics overview
 
-After selecting your query parameters, all of the data below updates automatically. At the top is an overview with four metric cards showing total views, downloads, revenue, and playtime. Playtime is a new metric that tracks hours played by users in Modrinth App.
+After selecting your query parameters, all of the data below updates automatically. At the top is an overview with four metric cards showing total views, downloads, revenue, and playtime. Playtime is a new metric that tracks hours played by users in Bbsmc App.
 
 You can select any metric card to explore that data further on the graph below.
 
@@ -86,7 +86,7 @@ The parameters shown on the graph are controlled through the table card below by
 Another new addition to the graphs are events. Event markers are designed to provide context for unusual trends on the graph. There are two types of events:
 
 - **Project Events:** Notable changes related to your project, such as status changes or version releases
-- **Modrinth Events:** Things that happened on Modrinth that may affect analytics, such as revenue being overreported or analytics outages
+- **Bbsmc Events:** Things that happened on Bbsmc that may affect analytics, such as revenue being overreported or analytics outages
 
 ## Table visualization
 
@@ -98,7 +98,7 @@ You can also export the table as a CSV to manipulate the data in other tools, wi
 
 ## Contributing analytics data
 
-Some of this data is only available due to support from the launcher or installer downloading the content. If you develop a website, app, or utility that uses the Modrinth CDN to download content, you can also send analytics data back to creators. When sending requests to `cdn.bbsmc.org.cn`, include the `modrinth-download-meta` header:
+Some of this data is only available due to support from the launcher or installer downloading the content. If you develop a website, app, or utility that uses the Bbsmc CDN to download content, you can also send analytics data back to creators. When sending requests to `cdn.bbsmc.org.cn`, include the `Bbsmc-download-meta` header:
 
 ```json
 {

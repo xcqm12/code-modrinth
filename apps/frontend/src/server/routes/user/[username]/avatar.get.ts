@@ -1,6 +1,6 @@
-import { type Labrinth, ModrinthApiError } from '@modrinth/api-client'
+import { type Labrinth, BbsmcApiError } from '@Bbsmc/api-client'
 
-import { useServerModrinthClient } from '~/server/utils/api-client'
+import { useServerBbsmcClient } from '~/server/utils/api-client'
 
 export default defineEventHandler(async (event) => {
 	const username = getRouterParam(event, 'username')
@@ -12,13 +12,13 @@ export default defineEventHandler(async (event) => {
 		})
 	}
 
-	const client = useServerModrinthClient({ event })
+	const client = useServerBbsmcClient({ event })
 
 	let user: Labrinth.Users.v2.User
 	try {
 		user = await client.labrinth.users_v2.get(username)
 	} catch (error) {
-		if (error instanceof ModrinthApiError && error.statusCode === 404) {
+		if (error instanceof BbsmcApiError && error.statusCode === 404) {
 			throw createError({
 				statusCode: 404,
 				message: 'User not found',

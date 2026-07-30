@@ -1,4 +1,4 @@
-import type { IdentifiedNodeBuilder, NodeState } from '@modrinth/moderation'
+import type { IdentifiedNodeBuilder, NodeState } from '@Bbsmc/moderation'
 import type { ComputedRef, InjectionKey, Ref } from 'vue'
 
 export interface ActiveAction {

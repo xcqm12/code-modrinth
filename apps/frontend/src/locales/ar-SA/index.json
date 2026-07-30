@@ -107,11 +107,11 @@
   "analytics.chart.controls.display": {
     "message": "عرض"
   },
-  "analytics.chart.controls.modrinth-events": {
-    "message": "فعاليات Modrinth"
+  "analytics.chart.controls.Bbsmc-events": {
+    "message": "فعاليات Bbsmc"
   },
-  "analytics.chart.controls.no-modrinth-events": {
-    "message": "لا توجد حالات Modrinth في الرسوم البيانية."
+  "analytics.chart.controls.no-Bbsmc-events": {
+    "message": "لا توجد حالات Bbsmc في الرسوم البيانية."
   },
   "analytics.chart.controls.no-project-events": {
     "message": "لا توجد أحداث للمشروع في الرسم البياني."
@@ -141,7 +141,7 @@
     "message": "عرض تفاصيل التحليلات المتعلقة بتحقيق الدخل"
   },
   "analytics.chart.legend.monetization-details.description": {
-    "message": "لا تُحتسب في عملية تحقيق الدخل سوى المشاهدات وعمليات التنزيل التي تتم عبر Modrinth، ويجب على المستخدمين تسجيل الدخول لإجراء عمليات التنزيل."
+    "message": "لا تُحتسب في عملية تحقيق الدخل سوى المشاهدات وعمليات التنزيل التي تتم عبر Bbsmc، ويجب على المستخدمين تسجيل الدخول لإجراء عمليات التنزيل."
   },
   "analytics.chart.legend.monetization-details.title": {
     "message": "تفاصيل التحليلات المُدرة للدخل"
@@ -219,10 +219,10 @@
     "message": "تحديث"
   },
   "analytics.download-source.app": {
-    "message": "تطبيق Modrinth"
+    "message": "تطبيق Bbsmc"
   },
   "analytics.download-source.website": {
-    "message": "موقع Modrinth الإلكتروني"
+    "message": "موقع Bbsmc الإلكتروني"
   },
   "analytics.downloads.suffix": {
     "message": "التنزيلات"
@@ -405,7 +405,7 @@
     "message": "التنزيلات"
   },
   "analytics.stat.monetization-banner.body": {
-    "message": "المشاهدات وعمليات التنزيل التي تتم عبر Modrinth فقط هي المؤهلة لتحقيق الأرباح، ويجب أن تجتاز عملية تصفية لمنع الاحتيال. كما تتطلب عمليات التنزيل من تطبيق Modrinth تسجيل دخول المستخدم. ونظرًا لأن جميع المشاريع لديها نسبة متشابهة من التنزيلات القابلة لتحقيق الأرباح، فلن يتغير إيرادك بشكل ملحوظ إذا تم احتساب جميع عمليات التنزيل."
+    "message": "المشاهدات وعمليات التنزيل التي تتم عبر Bbsmc فقط هي المؤهلة لتحقيق الأرباح، ويجب أن تجتاز عملية تصفية لمنع الاحتيال. كما تتطلب عمليات التنزيل من تطبيق Bbsmc تسجيل دخول المستخدم. ونظرًا لأن جميع المشاريع لديها نسبة متشابهة من التنزيلات القابلة لتحقيق الأرباح، فلن يتغير إيرادك بشكل ملحوظ إذا تم احتساب جميع عمليات التنزيل."
   },
   "analytics.stat.monetization-banner.learn-more": {
     "message": "معرفة المزيد"
@@ -444,7 +444,7 @@
     "message": "لينكس"
   },
   "app-marketing.download.linux-disclaimer": {
-    "message": "الإصدارات الخاصة بـ Linux من Modrinth App <issues-link>معروفة بوجود مشاكل</issues-link> على بعض الأنظمة والتكوينات. إذا كان Modrinth App غير مستقر على نظامك، فننصحك بتجربة تطبيقات أخرى مثل <prism-link>Prism Launcher</prism-link> لتثبيت محتوى Modrinth بسهولة."
+    "message": "الإصدارات الخاصة بـ Linux من Bbsmc App <issues-link>معروفة بوجود مشاكل</issues-link> على بعض الأنظمة والتكوينات. إذا كان Bbsmc App غير مستقر على نظامك، فننصحك بتجربة تطبيقات أخرى مثل <prism-link>Prism Launcher</prism-link> لتثبيت محتوى Bbsmc بسهولة."
   },
   "app-marketing.download.mac": {
     "message": "ماك"
@@ -453,10 +453,10 @@
     "message": "خيارات التنزيل"
   },
   "app-marketing.download.terms": {
-    "message": "بتنزيلك Modrinth App فإنك توافق على <terms-link>الشروط</terms-link> و <privacy-link>سياسة الخصوصية</privacy-link>."
+    "message": "بتنزيلك Bbsmc App فإنك توافق على <terms-link>الشروط</terms-link> و <privacy-link>سياسة الخصوصية</privacy-link>."
   },
   "app-marketing.download.title": {
-    "message": "تنزيل Modrinth App (النسخة التجريبية)"
+    "message": "تنزيل Bbsmc App (النسخة التجريبية)"
   },
   "app-marketing.download.windows": {
     "message": "ويندوز"
@@ -468,7 +468,7 @@
     "message": "تابع المشروعات"
   },
   "app-marketing.features.importing.description": {
-    "message": "استورد جميع ملفاتك الشخصية المفضلة من المشغل الذي كنت تستخدمه من قبل، وابدأ باستخدام Modrinth App في ثوانٍ!"
+    "message": "استورد جميع ملفاتك الشخصية المفضلة من المشغل الذي كنت تستخدمه من قبل، وابدأ باستخدام Bbsmc App في ثوانٍ!"
   },
   "app-marketing.features.importing.gdlauncher-alt": {
     "message": "GDLauncher"
@@ -522,7 +522,7 @@
     "message": "% CPU"
   },
   "app-marketing.features.performance.description": {
-    "message": "يعمل Modrinth App بكفاءة أفضل من العديد من مديري المودات الرائدين، باستخدام 150 ميغابايت فقط من الذاكرة العشوائية!"
+    "message": "يعمل Bbsmc App بكفاءة أفضل من العديد من مديري المودات الرائدين، باستخدام 150 ميغابايت فقط من الذاكرة العشوائية!"
   },
   "app-marketing.features.performance.discord": {
     "message": "ديسكورد"
@@ -534,12 +534,12 @@
     "message": "جوجل كروم"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "∞ ميغابايت"
+    "message": "�?ميغابايت"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 ميغابايت"
   },
-  "app-marketing.features.performance.modrinth-app": {
+  "app-marketing.features.performance.Bbsmc-app": {
     "message": "تطبيق مودرينث"
   },
   "app-marketing.features.performance.one-billion-percent": {
@@ -558,7 +558,7 @@
     "message": "أداء قوي"
   },
   "app-marketing.features.play.description": {
-    "message": "استخدم Modrinth App لتنزيل ولعب موداتك وحزم المودات المفضلة لديك."
+    "message": "استخدم Bbsmc App لتنزيل ولعب موداتك وحزم المودات المفضلة لديك."
   },
   "app-marketing.features.play.title": {
     "message": "العب مع موداتك المفضلة"
@@ -579,7 +579,7 @@
     "message": "مختلف عن أي مشغل آخر"
   },
   "app-marketing.features.website.description": {
-    "message": "تم دمج Modrinth App بالكامل مع الموقع، بحيث يمكنك الوصول إلى جميع مشاريعك المفضلة بواسطة التطبيق!"
+    "message": "تم دمج Bbsmc App بالكامل مع الموقع، بحيث يمكنك الوصول إلى جميع مشاريعك المفضلة بواسطة التطبيق!"
   },
   "app-marketing.features.website.title": {
     "message": "تكامل مع الموقع"
@@ -588,19 +588,19 @@
     "message": "الذي استخدمته من قبل"
   },
   "app-marketing.hero.app-screenshot-alt": {
-    "message": "لقطة شاشة لـ Modrinth App مع نسخة Cobblemon مفتوحة في صفحة \"المحتوى\"."
+    "message": "لقطة شاشة لـ Bbsmc App مع نسخة Cobblemon مفتوحة في صفحة \"المحتوى\"."
   },
   "app-marketing.hero.description": {
-    "message": "Modrinth App هو مشغل فريد ومفتوح المصدر يتيح لك لعب موداتك المفضلة والحفاظ عليها محدثة، وكل ذلك في حزمة واحدة بسيطة ومنظمة."
+    "message": "Bbsmc App هو مشغل فريد ومفتوح المصدر يتيح لك لعب موداتك المفضلة والحفاظ عليها محدثة، وكل ذلك في حزمة واحدة بسيطة ومنظمة."
   },
   "app-marketing.hero.download-button": {
-    "message": "تنزيل Modrinth App"
+    "message": "تنزيل Bbsmc App"
   },
-  "app-marketing.hero.download-modrinth-app": {
-    "message": "تنزيل Modrinth App"
+  "app-marketing.hero.download-Bbsmc-app": {
+    "message": "تنزيل Bbsmc App"
   },
-  "app-marketing.hero.download-modrinth-app-for-os": {
-    "message": "تنزيل Modrinth App لـ {os}"
+  "app-marketing.hero.download-Bbsmc-app-for-os": {
+    "message": "تنزيل Bbsmc App لـ {os}"
   },
   "app-marketing.hero.minecraft-screenshot-alt": {
     "message": "لقطة شاشة لقائمة Cobblemon الرئيسية."
@@ -804,7 +804,7 @@
     "message": "إنشاء مجموعة"
   },
   "create.limit-alert.approaching-limit": {
-    "message": "تقترب من حدّ {type} ‏({current}/{max})"
+    "message": "تقترب من حدّ {type} �?{current}/{max})"
   },
   "create.limit-alert.approaching-limit-description": {
     "message": "أنت على وشك بلوغ حدّ {type}. يُرجى التواصل مع الدعم إذا كنت بحاجة إلى أكثر من {max} {typePlural}."
@@ -993,7 +993,7 @@
     "message": "نموذج ضريبي"
   },
   "dashboard.creator-tax-form-modal.security.description": {
-    "message": "تستخدم Modrinth المزود الخارجي Track1099 لجمع وتخزين نماذج الضرائب الخاصة بك بأمان. <security-link>تعرف على المزيد هنا.</security-link>"
+    "message": "تستخدم Bbsmc المزود الخارجي Track1099 لجمع وتخزين نماذج الضرائب الخاصة بك بأمان. <security-link>تعرف على المزيد هنا.</security-link>"
   },
   "dashboard.creator-tax-form-modal.security.header": {
     "message": "ممارسات الأمن"
@@ -1158,7 +1158,7 @@
     "message": "لسحب رصيدك المتاح بالكامل <b>{available}</b> يرجى تعبئة النموذج أدناه. هذا النموذج مطلوب لأغراض الإبلاغ الضريبي، ولا يلزم تعبئته إلا مرة واحدة."
   },
   "dashboard.creator-withdraw-modal.tax-form-required.body-with-limit": {
-    "message": "يجب عليك إكمال نموذج W-9 أو W-8 لسجلات الضرائب الخاصة بشركة Modrinth حتى نبقى ملتزمين باللوائح الضريبية."
+    "message": "يجب عليك إكمال نموذج W-9 أو W-8 لسجلات الضرائب الخاصة بشركة Bbsmc حتى نبقى ملتزمين باللوائح الضريبية."
   },
   "dashboard.creator-withdraw-modal.tax-form-required.header": {
     "message": "نموذج ضريبي مطلوب"
@@ -1200,7 +1200,7 @@
     "message": "ايميل غير مؤكد"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.unverified-email-message": {
-    "message": "البريد الإلكتروني الذي أدخلته لا يرتبط بحسابك في Modrinth. لا يمكن Modrinth استرداد المكافآت المرسلة إلى عنوان بريد إلكتروني غير صحيح."
+    "message": "البريد الإلكتروني الذي أدخلته لا يرتبط بحسابك في Bbsmc. لا يمكن Bbsmc استرداد المكافآت المرسلة إلى عنوان بريد إلكتروني غير صحيح."
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-header": {
     "message": "تتوفر أقساط مخفضة"
@@ -1239,7 +1239,7 @@
     "message": "قد تخضع الإيرادات المقدرة للتغيير حتى يتم توفيرها. "
   },
   "dashboard.revenue.estimated-tooltip.msg2": {
-    "message": "اضغط لكي تعرف كيف Modrinth يستحمل إيراداتك"
+    "message": "اضغط لكي تعرف كيف Bbsmc يستحمل إيراداتك"
   },
   "dashboard.revenue.estimated-with-date": {
     "message": "مقدر {date}"
@@ -1509,10 +1509,10 @@
     "message": "الأسئلة شائعه"
   },
   "hosting-marketing.faq.how-fast": {
-    "message": "ما سرعه خوادم modrinth؟"
+    "message": "ما سرعه خوادم Bbsmc؟"
   },
   "hosting-marketing.faq.location": {
-    "message": "أين تقع استضافة خوادم Modrinth؟ هل يمكنني اختيار منطقة؟"
+    "message": "أين تقع استضافة خوادم Bbsmc؟ هل يمكنني اختيار منطقة؟"
   },
   "hosting-marketing.get-started": {
     "message": "ابدأ"
@@ -1526,8 +1526,8 @@
   "hosting-marketing.hero.button.start-your-server": {
     "message": "أنشئ خادمك"
   },
-  "hosting-marketing.hero.host-with-modrinth": {
-    "message": "أدر خادمك التالي مع Modrinth Hosting"
+  "hosting-marketing.hero.host-with-Bbsmc": {
+    "message": "أدر خادمك التالي مع Bbsmc Hosting"
   },
   "hosting-marketing.included.backups-included": {
     "message": "النسخ الاحتياطية مضمنة"
@@ -1553,20 +1553,20 @@
   "hosting-marketing.server-for-everyone": {
     "message": "يوجد خادم يناسب الجميع"
   },
-  "hosting-marketing.why.all-on-modrinth": {
+  "hosting-marketing.why.all-on-Bbsmc": {
     "message": "يمكنك إدارة كل شيء على مودرينث"
   },
-  "hosting-marketing.why.all-on-modrinth.description": {
-    "message": "خادمك، وتعديلاتك، ولاعبوك، وغير ذلك الكثير موجود جميعها على Modrinth. لا حاجة للتبديل بين المنصات."
+  "hosting-marketing.why.all-on-Bbsmc.description": {
+    "message": "خادمك، وتعديلاتك، ولاعبوك، وغير ذلك الكثير موجود جميعها على Bbsmc. لا حاجة للتبديل بين المنصات."
   },
   "hosting-marketing.why.consistently-fast": {
     "message": "سريع باستمرار"
   },
   "hosting-marketing.why.consistently-fast.description": {
-    "message": "لا يتم تحميل بنيتنا التحتية بشكل زائد أبدًا، مما يعني أن كل خادم مستضاف مع Modrinth يعمل دائمًا بكامل طاقته."
+    "message": "لا يتم تحميل بنيتنا التحتية بشكل زائد أبدًا، مما يعني أن كل خادم مستضاف مع Bbsmc يعمل دائمًا بكامل طاقته."
   },
   "hosting-marketing.why.description": {
-    "message": "اختر من بين آلاف حزم التعديلات المتوفرة على موقع Modrinth أو أنشئ حزمتك الخاصة. ادعُ أصدقاءك عندما تكون مستعدًا للعب."
+    "message": "اختر من بين آلاف حزم التعديلات المتوفرة على موقع Bbsmc أو أنشئ حزمتك الخاصة. ادعُ أصدقاءك عندما تكون مستعدًا للعب."
   },
   "hosting-marketing.why.heading": {
     "message": "ابحث عن حزمة تعديلات. الآن أصبح خادمًا."
@@ -1575,22 +1575,22 @@
     "message": "استمتع بتجربة استضافة عصرية وموثوقة"
   },
   "hosting-marketing.why.modern-reliable-hosting.description": {
-    "message": "يتم استضافة خوادم Modrinth Hosting على <contrast>high-performance AMD CPUs with DDR5 RAM</contrast>، وتعمل على برمجيات مخصّصة لضمان تشغيل خادمك بسلاسة."
+    "message": "يتم استضافة خوادم Bbsmc Hosting على <contrast>high-performance AMD CPUs with DDR5 RAM</contrast>، وتعمل على برمجيات مخصّصة لضمان تشغيل خادمك بسلاسة."
   },
   "hosting-marketing.why.where-mods-are": {
     "message": "العب حيث توجد تعديلاتك"
   },
   "hosting-marketing.why.where-mods-are.description": {
-    "message": "تدمج خدمة Modrinth Hosting عملية تثبيت التعديلات وحزم التعديلات بسلاسة في خادمك."
+    "message": "تدمج خدمة Bbsmc Hosting عملية تثبيت التعديلات وحزم التعديلات بسلاسة في خادمك."
   },
-  "hosting-marketing.why.why-modrinth-hosting": {
-    "message": "لماذا استضافة Modrinth؟"
+  "hosting-marketing.why.why-Bbsmc-hosting": {
+    "message": "لماذا استضافة Bbsmc؟"
   },
   "hosting-marketing.why.your-favorite-mods": {
     "message": "جميع التعديلات المفضلة لديك"
   },
   "hosting-marketing.why.your-favorite-mods.description": {
-    "message": "اختر بين Vanilla و Fabric و Forge و Quilt و NeoForge. إذا كان البرنامج موجودًا على Modrinth، فيمكن تشغيله على خادمك."
+    "message": "اختر بين Vanilla و Fabric و Forge و Quilt و NeoForge. إذا كان البرنامج موجودًا على Bbsmc، فيمكن تشغيله على خادمك."
   },
   "hosting.plan.out-of-stock": {
     "message": "إنتهى من المخزن"
@@ -1691,8 +1691,8 @@
   "landing.launcher.graphic-alt": {
     "message": "تمثيل مبسط لنافذة ماين كرافت، مع شعار Mojang Studios باللون الأخضر الخاص بمودرنث."
   },
-  "landing.launcher.modrinth-app-label": {
-    "message": "Modrinth App"
+  "landing.launcher.Bbsmc-app-label": {
+    "message": "Bbsmc App"
   },
   "landing.launcher.prism-launcher-label": {
     "message": "Prism Launcher"
@@ -1793,23 +1793,23 @@
   "layout.footer.legal.terms-of-use": {
     "message": "شروط الاستخدام"
   },
-  "layout.footer.modrinth-information": {
-    "message": "معلومات Modrinth"
+  "layout.footer.Bbsmc-information": {
+    "message": "معلومات Bbsmc"
   },
   "layout.footer.open-source": {
-    "message": "Modrinth <github-link>مفتوح المصدر</github-link>."
+    "message": "Bbsmc <github-link>مفتوح المصدر</github-link>."
   },
   "layout.footer.products": {
     "message": "منتجات"
   },
   "layout.footer.products.app": {
-    "message": "Modrinth App"
+    "message": "Bbsmc App"
   },
   "layout.footer.products.plus": {
-    "message": "Modrinth+"
+    "message": "Bbsmc+"
   },
   "layout.footer.products.servers": {
-    "message": "استضافة Modrinth"
+    "message": "استضافة Bbsmc"
   },
   "layout.footer.resources": {
     "message": "موارد"
@@ -1820,7 +1820,7 @@
   "layout.footer.resources.help-center": {
     "message": "مركز المساعدة"
   },
-  "layout.nav.modrinth-home-page": {
+  "layout.nav.Bbsmc-home-page": {
     "message": "الصفحة الرئيسة لمودرينث"
   },
   "layout.nav.my-servers": {

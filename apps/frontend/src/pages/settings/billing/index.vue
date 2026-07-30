@@ -31,7 +31,7 @@
 					</template>
 
 					<span v-else>{{ formatMessage(messages.midasUpsell) }}</span>
-					<ModrinthPlusIcon class="h-8 w-min" />
+					<BbsmcPlusIcon class="h-8 w-min" />
 					<div class="flex flex-col gap-2">
 						<span class="font-bold">{{ formatMessage(messages.midasBenefitsTitle) }}</span>
 						<div class="flex items-center gap-2">
@@ -277,7 +277,7 @@
 			>
 				<div class="flex flex-col justify-between gap-4">
 					<div class="flex flex-col gap-4">
-						<ModrinthServersIcon class="flex h-8 w-fit" />
+						<BbsmcServersIcon class="flex h-8 w-fit" />
 						<div class="flex flex-col gap-6">
 							<ServerListing
 								v-if="subscription.serverInfo"
@@ -681,7 +681,7 @@ import {
 	CheckCircleIcon,
 	EditIcon,
 	HistoryIcon,
-	ModrinthPlusIcon,
+	BbsmcPlusIcon,
 	MoreVerticalIcon,
 	PlusIcon,
 	RightArrowIcon,
@@ -691,7 +691,7 @@ import {
 	TrashIcon,
 	UpdatedIcon,
 	XIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	AddPaymentMethodModal,
 	ButtonStyled,
@@ -700,7 +700,7 @@ import {
 	CopyCode,
 	defineMessages,
 	getPaymentMethodIcon,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	OverflowMenu,
 	paymentMethodMessages,
@@ -711,18 +711,18 @@ import {
 	useFormatPrice,
 	useServerBackupDownload,
 	useVIntl,
-} from '@modrinth/ui'
-import { calculateSavings, getCurrency } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import { calculateSavings, getCurrency } from '@Bbsmc/utils'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { useIntervalFn } from '@vueuse/core'
 import { computed, ref, watch } from 'vue'
 
-import ModrinthServersIcon from '~/components/brand/ModrinthServersIcon.vue'
+import BbsmcServersIcon from '~/components/brand/BbsmcServersIcon.vue'
 import ServersUpgradeModalWrapper from '~/components/ui/servers/ServersUpgradeModalWrapper.vue'
 import { products } from '~/generated/state.json'
 
 const { addNotification, handleError } = injectNotificationManager()
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const { getLatestBackupDownload } = useServerBackupDownload()
 definePageMeta({
 	middleware: 'auth',
@@ -789,7 +789,7 @@ const messages = defineMessages({
 	},
 	subscriptionDescription: {
 		id: 'settings.billing.subscription.description',
-		defaultMessage: 'Manage your Modrinth subscriptions.',
+		defaultMessage: 'Manage your Bbsmc subscriptions.',
 	},
 	paymentMethodTitle: {
 		id: 'settings.billing.payment_method.title',
@@ -821,11 +821,11 @@ const messages = defineMessages({
 	},
 	pyroSubscriptionTitle: {
 		id: 'settings.billing.pyro_subscription.title',
-		defaultMessage: 'Modrinth Server Subscriptions',
+		defaultMessage: 'Bbsmc Server Subscriptions',
 	},
 	pyroSubscriptionDescription: {
 		id: 'settings.billing.pyro_subscription.description',
-		defaultMessage: 'Manage your Modrinth Server subscriptions.',
+		defaultMessage: 'Manage your Bbsmc Server subscriptions.',
 	},
 	intervalMonth: {
 		id: 'settings.billing.interval.month',
@@ -870,7 +870,7 @@ const messages = defineMessages({
 	},
 	midasUpsell: {
 		id: 'settings.billing.midas.upsell',
-		defaultMessage: 'Become a subscriber to Modrinth Plus!',
+		defaultMessage: 'Become a subscriber to Bbsmc Plus!',
 	},
 	midasBenefitsTitle: {
 		id: 'settings.billing.midas.benefits.title',
@@ -878,15 +878,15 @@ const messages = defineMessages({
 	},
 	midasBenefitAdFree: {
 		id: 'settings.billing.midas.benefits.ad-free',
-		defaultMessage: 'Ad-free browsing on bbsmc.org.cn and Modrinth App',
+		defaultMessage: 'Ad-free browsing on bbsmc.org.cn and Bbsmc App',
 	},
 	midasBenefitBadge: {
 		id: 'settings.billing.midas.benefits.badge',
-		defaultMessage: 'Modrinth+ badge on your profile',
+		defaultMessage: 'Bbsmc+ badge on your profile',
 	},
 	midasBenefitSupport: {
 		id: 'settings.billing.midas.benefits.support',
-		defaultMessage: 'Support Modrinth and creators directly',
+		defaultMessage: 'Support Bbsmc and creators directly',
 	},
 	savePerYearBySwitchingToYearly: {
 		id: 'settings.billing.midas.save-per-year',
@@ -946,7 +946,7 @@ const messages = defineMessages({
 	pyroLinkedServerNotFound: {
 		id: 'settings.billing.pyro.linked-server.not-found',
 		defaultMessage:
-			"A linked server couldn't be found for this subscription. There are a few possible explanations for this. If you just purchased your server, this is normal. It could take up to an hour for your server to be provisioned. Otherwise, if you purchased this server a while ago, it has likely since been suspended. If this is not what you were expecting, please contact Modrinth Support with the following information:",
+			"A linked server couldn't be found for this subscription. There are a few possible explanations for this. If you just purchased your server, this is normal. It could take up to an hour for your server to be provisioned. Otherwise, if you purchased this server a while ago, it has likely since been suspended. If this is not what you were expecting, please contact Bbsmc Support with the following information:",
 	},
 	pyroServerIdLabel: {
 		id: 'settings.billing.pyro.linked-server.server-id',
@@ -1005,7 +1005,7 @@ const messages = defineMessages({
 	},
 	pyroResubscribeErrorText: {
 		id: 'settings.billing.pyro.resubscribe.error.text',
-		defaultMessage: 'An error occurred while resubscribing to your Modrinth server.',
+		defaultMessage: 'An error occurred while resubscribing to your Bbsmc server.',
 	},
 })
 
@@ -1153,7 +1153,7 @@ async function switchMidasInterval(interval) {
 		})
 		await refresh()
 	} catch (error) {
-		console.error('Error switching Modrinth+ payment interval:', error)
+		console.error('Error switching Bbsmc+ payment interval:', error)
 	}
 	stopLoading()
 	changingInterval.value = false

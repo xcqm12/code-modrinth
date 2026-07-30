@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
 import {
 	BanIcon,
 	BugIcon,
@@ -20,8 +20,8 @@ import {
 	SpinnerIcon,
 	TimerIcon,
 	XIcon,
-} from '@modrinth/assets'
-import { type TechReviewContext, techReviewQuickReplies } from '@modrinth/moderation'
+} from '@Bbsmc/assets'
+import { type TechReviewContext, techReviewQuickReplies } from '@Bbsmc/moderation'
 import {
 	Avatar,
 	ButtonStyled,
@@ -29,7 +29,7 @@ import {
 	CollapsibleRegion,
 	commonMessages,
 	getProjectTypeIcon,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	NavTabs,
 	OverflowMenu,
@@ -38,14 +38,14 @@ import {
 	useFormatBytes,
 	useFormatDateTime,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import {
 	capitalizeString,
 	formatProjectType,
 	highlightCodeLines,
 	type ThreadMessage,
 	type User,
-} from '@modrinth/utils'
+} from '@Bbsmc/utils'
 import dayjs from 'dayjs'
 import { computed, nextTick, reactive, ref, watch } from 'vue'
 
@@ -200,7 +200,7 @@ watch(selectedFile, (newFile) => {
 	}
 })
 
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 
 async function updateIssueDetails(
 	data: {
@@ -1284,13 +1284,13 @@ const reviewSummaryPreview = computed(() => {
 		const fileVerdict = fileUnsafe > 0 ? 'Unsafe' : 'Safe'
 
 		markdown += `### ${fileData.fileName}\n`
-		markdown += `> ${formatBytes(fileData.fileSize)} ‚Ä¢ ${fileData.decisions.length} issues ‚Ä¢ Max severity: ${fileData.maxSeverity} ‚Ä¢ **Verdict:** ${fileVerdict}\n\n`
+		markdown += `> ${formatBytes(fileData.fileSize)} ‚Ä?${fileData.decisions.length} issues ‚Ä?Max severity: ${fileData.maxSeverity} ‚Ä?**Verdict:** ${fileVerdict}\n\n`
 		markdown += `<details>\n<summary>Issues (${fileSafe} safe, ${fileUnsafe} unsafe)</summary>\n\n`
 		markdown += `| Class | Issue Type | Severity | Decision |\n`
 		markdown += `|-------|------------|----------|----------|\n`
 
 		for (const d of fileData.decisions) {
-			const decisionText = d.decision === 'safe' ? '‚úÖ Safe' : '‚ùå Unsafe'
+			const decisionText = d.decision === 'safe' ? '‚ú?Safe' : '‚ù?Unsafe'
 			markdown += `| \`${d.filePath}\` | ${d.issueType} | ${capitalizeString(d.severity)} | ${decisionText} |\n`
 		}
 

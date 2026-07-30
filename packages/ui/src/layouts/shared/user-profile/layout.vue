@@ -111,7 +111,7 @@
 					<span class="text-lg font-bold text-primary">
 						{{ formatMessage(messages.authProvidersLabel) }}
 					</span>
-					<span>{{ user.auth_providers?.join(', ') || 'â€”' }}</span>
+					<span>{{ user.auth_providers?.join(', ') || 'â€? }}</span>
 				</div>
 
 				<div v-if="isAdminViewing" class="flex flex-col gap-1">
@@ -133,7 +133,7 @@
 							Venmo ({{ user.payout_data.venmo_handle }})
 						</template>
 						<template v-if="!user.payout_data?.paypal_address && !user.payout_data?.venmo_handle">
-							â€”						</template>
+							â€?					</template>
 					</span>
 				</div>
 
@@ -169,10 +169,10 @@
 			<template #header>
 				<UserPageHeader
 					:user="user"
-					:summary="isModrinthUser ? null : profileHeaderSummary"
+					:summary="isBbsmcUser ? null : profileHeaderSummary"
 					:auth-user="auth.user.value"
 					:edit-profile-link="editProfileLink"
-					:is-modrinth-user="isModrinthUser"
+					:is-Bbsmc-user="isBbsmcUser"
 					:is-official-account="isOfficialAccount"
 					:show-affiliate-badge="isAdminViewing && isAffiliate"
 					:is-affiliate="isAffiliate"
@@ -196,7 +196,7 @@
 					"
 					@edit-role="openRoleEditModal"
 				>
-					<template v-if="isModrinthUser" #summary>
+					<template v-if="isBbsmcUser" #summary>
 						<IntlFormatted :message-id="messages.officialAccountBio">
 							<template #support-link>
 								<a
@@ -421,7 +421,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
 import {
 	BanIcon,
 	BoxIcon,
@@ -433,12 +433,12 @@ import {
 	SaveIcon,
 	SpinnerIcon,
 	XIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
-	isModrinthUser as checkIsModrinthUser,
+	isBbsmcUser as checkIsBbsmcUser,
 	isOfficialAccount as checkIsOfficialAccount,
 	UserBadge,
-} from '@modrinth/utils'
+} from '@Bbsmc/utils'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { computed, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
@@ -580,11 +580,11 @@ const messages = defineMessages({
 	},
 	bioFallbackUser: {
 		id: 'profile.bio.fallback.user',
-		defaultMessage: 'A Modrinth user.',
+		defaultMessage: 'A Bbsmc user.',
 	},
 	bioFallbackCreator: {
 		id: 'profile.bio.fallback.creator',
-		defaultMessage: 'A Modrinth creator.',
+		defaultMessage: 'A Bbsmc creator.',
 	},
 	collectionLabel: {
 		id: 'profile.label.collection',
@@ -633,7 +633,7 @@ const messages = defineMessages({
 	officialAccountBio: {
 		id: 'profile.official-account.bio',
 		defaultMessage:
-			'The official user account of Modrinth. Get support at <support-link></support-link> or via email at <email></email>',
+			'The official user account of Bbsmc. Get support at <support-link></support-link> or via email at <email></email>',
 	},
 	roleUpdateErrorTitle: {
 		id: 'profile.role.update-error-title',
@@ -674,7 +674,7 @@ const messages = defineMessages({
 	blockUserAdmonitionBody: {
 		id: 'profile.block-user.admonition-body',
 		defaultMessage:
-			'{username} will not be able to send you friend requests, invite you to shared instances or invite you to Modrinth Hosting servers.',
+			'{username} will not be able to send you friend requests, invite you to shared instances or invite you to Bbsmc Hosting servers.',
 	},
 	blockUserSuccessTitle: {
 		id: 'profile.block-user.success-title',
@@ -828,7 +828,7 @@ const earliestProjectByType = computed(() => {
 	return earliest
 })
 
-const isModrinthUser = computed(() => checkIsModrinthUser(user.value?.id))
+const isBbsmcUser = computed(() => checkIsBbsmcUser(user.value?.id))
 const isOfficialAccount = computed(() => checkIsOfficialAccount(user.value?.id))
 const isSelf = computed(() => auth.user.value?.id === user.value?.id)
 const isAdminViewing = computed(() => auth.user.value?.role === 'admin')

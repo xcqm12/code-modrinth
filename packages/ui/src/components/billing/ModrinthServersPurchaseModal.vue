@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type Archon, type Labrinth, pingWebSocketUrl } from '@modrinth/api-client'
+import { type Archon, type Labrinth, pingWebSocketUrl } from '@Bbsmc/api-client'
 import {
 	CheckCircleIcon,
 	ChevronRightIcon,
@@ -7,7 +7,7 @@ import {
 	RightArrowIcon,
 	SpinnerIcon,
 	XIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import { useQueryClient } from '@tanstack/vue-query'
 import type Stripe from 'stripe'
 import { computed, nextTick, onBeforeUnmount, ref, toRef, useTemplateRef, watch } from 'vue'
@@ -142,7 +142,7 @@ const purchaseSuccessTitle = defineMessage({
 
 const purchaseSuccessText = defineMessage({
 	id: 'servers.purchase.notification.success.text',
-	defaultMessage: 'Your Modrinth Hosting purchase was completed successfully.',
+	defaultMessage: 'Your Bbsmc Hosting purchase was completed successfully.',
 })
 
 const currentRegion = computed(() => {

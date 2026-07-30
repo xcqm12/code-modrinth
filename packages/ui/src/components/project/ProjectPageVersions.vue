@@ -434,7 +434,7 @@
 	</div>
 </template>
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
 import {
 	CalendarIcon,
 	CircleAlertIcon,
@@ -442,7 +442,7 @@ import {
 	getLoaderIcon,
 	PlusIcon,
 	StarIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	AutoLink,
 	ButtonStyled,
@@ -456,8 +456,8 @@ import {
 	useFormatDateTime,
 	VersionChannelIndicator,
 	VersionFilterControl,
-} from '@modrinth/ui'
-import { formatVersionsForDisplay, type GameVersionTag, type Version } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import { formatVersionsForDisplay, type GameVersionTag, type Version } from '@Bbsmc/utils'
 import { Menu } from 'floating-vue'
 import { computed, type Ref, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'

@@ -157,10 +157,10 @@
 						<span class="flex items-center gap-2 font-semibold text-contrast">
 							<!-- TODO(backend): provide proper metadata for midas (MR+) subscriptions -->
 							<template v-if="subscription.price_id === 'a6eRm92L'">
-								<ModrinthPlusIcon class="h-7 w-min" />
+								<BbsmcPlusIcon class="h-7 w-min" />
 							</template>
 							<template v-else-if="subscription.metadata?.type === 'pyro'">
-								<ModrinthServersIcon class="h-7 w-min" />
+								<BbsmcServersIcon class="h-7 w-min" />
 							</template>
 							<template v-else-if="subscription.metadata?.type === 'medal'">
 								<span>Medal Trial Server</span>
@@ -219,18 +219,18 @@ import {
 	CheckIcon,
 	CurrencyIcon,
 	ExternalIcon,
-	ModrinthPlusIcon,
+	BbsmcPlusIcon,
 	ServerIcon,
 	UserIcon,
 	XIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	Avatar,
 	ButtonStyled,
 	CopyCode,
 	defineMessages,
 	DropdownSelect,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	NewModal,
 	StyledInput,
@@ -238,17 +238,17 @@ import {
 	useFormatDateTime,
 	useRelativeTime,
 	useVIntl,
-} from '@modrinth/ui'
-import { capitalizeString } from '@modrinth/utils'
-import { DEFAULT_CREDIT_EMAIL_MESSAGE } from '@modrinth/utils/utils.ts'
+} from '@Bbsmc/ui'
+import { capitalizeString } from '@Bbsmc/utils'
+import { DEFAULT_CREDIT_EMAIL_MESSAGE } from '@Bbsmc/utils/utils.ts'
 import { useQuery } from '@tanstack/vue-query'
 import dayjs from 'dayjs'
 
-import ModrinthServersIcon from '~/components/brand/ModrinthServersIcon.vue'
+import BbsmcServersIcon from '~/components/brand/BbsmcServersIcon.vue'
 import AdminBillingChargeCard from '~/components/ui/admin/AdminBillingChargeCard.vue'
 
 const { addNotification } = injectNotificationManager()
-const { labrinth } = injectModrinthClient()
+const { labrinth } = injectBbsmcClient()
 const formatDateTime = useFormatDateTime({
 	timeStyle: 'short',
 	dateStyle: 'long',

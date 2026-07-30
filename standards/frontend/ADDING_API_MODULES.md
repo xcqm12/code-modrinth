@@ -89,7 +89,7 @@ export class LabrinthThingsV3Module extends AbstractModule {
 | Field         | Values                                            | Purpose                            |
 | ------------- | ------------------------------------------------- | ---------------------------------- |
 | `api`         | `'labrinth'`, `'archon'`, or a full URL           | Which base URL to use              |
-| `version`     | `2`, `3`, `'internal'`, `'modrinth/v0'`, etc.     | URL version segment                |
+| `version`     | `2`, `3`, `'internal'`, `'Bbsmc/v0'`, etc.     | URL version segment                |
 | `method`      | `'GET'`, `'POST'`, `'PUT'`, `'PATCH'`, `'DELETE'` | HTTP method                        |
 | `body`        | object                                            | JSON request body                  |
 | `params`      | `Record<string, string>`                          | Query parameters                   |
@@ -153,15 +153,15 @@ export * from './<service>/types'
 
 | Convention     | Example                                              |
 | -------------- | ---------------------------------------------------- |
-| Module class   | `LabrinthThingsV3Module` â€” `{Api}{Domain}V{N}Module` |
-| Module ID      | `labrinth_things_v3` â€” `{api}_{domain}_v{n}`         |
+| Module class   | `LabrinthThingsV3Module` â€?`{Api}{Domain}V{N}Module` |
+| Module ID      | `labrinth_things_v3` â€?`{api}_{domain}_v{n}`         |
 | Type namespace | `Labrinth.MyDomain.v3.Thing`                         |
 | File path      | `modules/labrinth/things/v3.ts`                      |
 
 ## Key Files
 
-- `src/core/abstract-module.ts` â€” base class all modules extend
-- `src/core/abstract-client.ts` â€” `request()` and `upload()` methods
-- `src/modules/index.ts` â€” `MODULE_REGISTRY` and `buildModuleStructure()`
-- `src/modules/<api>/types.ts` â€” type definitions per API
-- `src/types/upload.ts` â€” `UploadHandle`, `UploadProgress`, `UploadRequestOptions`
+- `src/core/abstract-module.ts` â€?base class all modules extend
+- `src/core/abstract-client.ts` â€?`request()` and `upload()` methods
+- `src/modules/index.ts` â€?`MODULE_REGISTRY` and `buildModuleStructure()`
+- `src/modules/<api>/types.ts` â€?type definitions per API
+- `src/types/upload.ts` â€?`UploadHandle`, `UploadProgress`, `UploadRequestOptions`

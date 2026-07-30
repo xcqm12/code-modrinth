@@ -79,16 +79,16 @@
 							<span v-tooltip="formatDateTime(batch.created_at)">
 								Created {{ formatRelativeTime(batch.created_at) }}
 							</span>
-							<span>â€¢</span>
+							<span>â€?/span>
 							<span v-tooltip="formatDateTime(batch.scheduled_at)">
 								Scheduled {{ formatRelativeTime(batch.scheduled_at) }}
 							</span>
 							<template v-if="batch.provision_options?.region">
-								<span>â€¢</span>
+								<span>â€?/span>
 								<span>Region: {{ batch.provision_options.region }}</span>
 							</template>
 							<template v-if="batch.provision_options?.node_tags?.length">
-								<span>â€¢</span>
+								<span>â€?/span>
 								<span>Tags: {{ batch.provision_options.node_tags.join(', ') }}</span>
 							</template>
 						</div>
@@ -108,27 +108,27 @@
 </template>
 
 <script setup lang="ts">
-import type { Archon } from '@modrinth/api-client'
-import { PlusIcon, XCircleIcon } from '@modrinth/assets'
+import type { Archon } from '@Bbsmc/api-client'
+import { PlusIcon, XCircleIcon } from '@Bbsmc/assets'
 import {
 	Avatar,
 	ButtonStyled,
 	ConfirmModal,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	Pagination,
 	TagItem,
 	useFormatDateTime,
 	useRelativeTime,
-} from '@modrinth/ui'
-import type { User } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import type { User } from '@Bbsmc/utils'
 import dayjs from 'dayjs'
 import { computed, ref } from 'vue'
 
 import TransferModal from '~/components/ui/admin/TransferModal.vue'
 
 const { addNotification } = injectNotificationManager()
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const formatRelativeTime = useRelativeTime()
 const formatDateTime = useFormatDateTime({
 	timeStyle: 'short',

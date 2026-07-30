@@ -182,12 +182,12 @@ pub fn get_jvm_arguments(
     ));
 
     parsed_arguments
-        .push(format!("-Dmodrinth.internal.ipc.host={}", ipc_addr.ip()));
+        .push(format!("-DBbsmc.internal.ipc.host={}", ipc_addr.ip()));
     parsed_arguments
-        .push(format!("-Dmodrinth.internal.ipc.port={}", ipc_addr.port()));
+        .push(format!("-DBbsmc.internal.ipc.port={}", ipc_addr.port()));
 
     parsed_arguments.push(format!(
-        "-Dmodrinth.internal.quickPlay.serverVersion={}",
+        "-DBbsmc.internal.quickPlay.serverVersion={}",
         serde_json::to_value(quick_play_version.server)?
             .as_str()
             .unwrap()
@@ -197,8 +197,8 @@ pub fn get_jvm_arguments(
     {
         let (host, port) = server.require_resolved()?;
         parsed_arguments.extend_from_slice(&[
-            format!("-Dmodrinth.internal.quickPlay.host={host}"),
-            format!("-Dmodrinth.internal.quickPlay.port={port}"),
+            format!("-DBbsmc.internal.quickPlay.host={host}"),
+            format!("-DBbsmc.internal.quickPlay.port={port}"),
         ]);
     }
 

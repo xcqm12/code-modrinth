@@ -1,5 +1,5 @@
-import { XIcon } from '@modrinth/assets'
-import { injectProjectPageContext } from '@modrinth/ui'
+import { XIcon } from '@Bbsmc/assets'
+import { injectProjectPageContext } from '@Bbsmc/ui'
 import { computed } from 'vue'
 
 import { group, stage, toggle } from '../../types/node'

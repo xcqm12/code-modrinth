@@ -39,12 +39,12 @@ export function createHostingIntercomIdentityKey(
 
 const DEFAULT_PADDING = 20
 const DEFAULT_LAUNCHER_WIDTH = 48
-const INTERCOM_STYLE_ID = 'modrinth-hosting-intercom-style'
+const INTERCOM_STYLE_ID = 'Bbsmc-hosting-intercom-style'
 const LAUNCHER_SELECTOR =
 	".intercom-lightweight-app-launcher, .intercom-launcher-frame, iframe[name='intercom-launcher-frame']"
-const RIGHT_VAR = '--modrinth-hosting-intercom-right'
-const BOTTOM_VAR = '--modrinth-hosting-intercom-bottom'
-const POINTER_EVENTS_VAR = '--modrinth-hosting-intercom-pointer-events'
+const RIGHT_VAR = '--Bbsmc-hosting-intercom-right'
+const BOTTOM_VAR = '--Bbsmc-hosting-intercom-bottom'
+const POINTER_EVENTS_VAR = '--Bbsmc-hosting-intercom-pointer-events'
 
 function sanitizePixels(value: number | undefined, fallback = DEFAULT_PADDING) {
 	if (typeof value !== 'number' || !Number.isFinite(value)) return fallback

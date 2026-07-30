@@ -72,7 +72,7 @@ where
 #[derive(Serialize, Deserialize, Debug)]
 #[serde(rename_all = "lowercase")]
 pub enum MMCManagedPackType {
-    Modrinth,
+    Bbsmc,
     Flame,
     ATLauncher,
     #[serde(other)]
@@ -229,13 +229,13 @@ pub async fn import_mmc(
     // Managed pack
     if instance_cfg.managed_pack.unwrap_or(false) {
         match instance_cfg.managed_pack_type {
-            Some(MMCManagedPackType::Modrinth) => {
+            Some(MMCManagedPackType::Bbsmc) => {
                 description.project_id = instance_cfg.managed_pack_id;
                 description.version_id = instance_cfg.managed_pack_version_id;
 
-                // Modrinth Managed Pack
-                // Kept separate as we may in the future want to add special handling for modrinth managed packs
-                import_mmc_unmanaged(instance_id, minecraft_folder, "Imported Modrinth Modpack".to_string(), description, mmc_pack, reporter, details).await?;
+                // Bbsmc Managed Pack
+                // Kept separate as we may in the future want to add special handling for Bbsmc managed packs
+                import_mmc_unmanaged(instance_id, minecraft_folder, "Imported Bbsmc Modpack".to_string(), description, mmc_pack, reporter, details).await?;
             }
             Some(MMCManagedPackType::Flame | MMCManagedPackType::ATLauncher) => {
                 // For flame/atlauncher managed packs
@@ -243,7 +243,7 @@ pub async fn import_mmc(
                 import_mmc_unmanaged(instance_id, minecraft_folder, "Imported Modpack".to_string(), description, mmc_pack, reporter, details).await?;
             },
             Some(_) => {
-                // For managed packs that aren't modrinth, flame, atlauncher
+                // For managed packs that aren't Bbsmc, flame, atlauncher
                 // Treat as unmanaged
                 import_mmc_unmanaged(instance_id, minecraft_folder, "ImportedModpack".to_string(), description, mmc_pack, reporter, details).await?;
             },

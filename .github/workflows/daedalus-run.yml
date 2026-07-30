@@ -7,7 +7,7 @@ on:
 
 jobs:
   run-docker:
-    if: github.repository_owner == 'modrinth'
+    if: github.repository_owner == 'Bbsmc'
     runs-on: ubuntu-latest
 
     steps:
@@ -22,7 +22,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Pull Docker image from GHCR
-        run: docker pull ghcr.io/modrinth/daedalus:main
+        run: docker pull ghcr.io/Bbsmc/daedalus:main
 
       - name: Run Docker container
         env:
@@ -48,4 +48,4 @@ jobs:
             -e CLOUDFLARE_INTEGRATION=$CLOUDFLARE_INTEGRATION \
             -e CLOUDFLARE_TOKEN=$CLOUDFLARE_TOKEN \
             -e CLOUDFLARE_ZONE_ID=$CLOUDFLARE_ZONE_ID \
-            ghcr.io/modrinth/daedalus:main
+            ghcr.io/Bbsmc/daedalus:main

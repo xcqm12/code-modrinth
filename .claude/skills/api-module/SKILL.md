@@ -8,11 +8,11 @@ Refer to the standard: @standards/frontend/ADDING_API_MODULES.md
 
 ## Steps
 
-1. **Read the OpenAPI schema** at `$ARGUMENTS` â€” identify the endpoints, request/response shapes, and path parameters.
+1. **Read the OpenAPI schema** at `$ARGUMENTS` â€?identify the endpoints, request/response shapes, and path parameters.
 2. **Read the standard above** for naming conventions, type rules, and the module registration pattern.
-3. **Determine the service and version** â€” the URL path prefix tells you which service directory and version namespace to use (e.g. `/v3/projects` â†’ `labrinth/v3/`).
-4. **Define types in `types.ts`** â€” types must match the API response 1:1. Use the OpenAPI schema as the source of truth. Do not reshape or rename fields.
-5. **Create the module class** â€” extend `BaseModule`, implement each endpoint as a method. Use the correct HTTP verb and request options pattern from the standard.
-6. **Register in `MODULE_REGISTRY`** â€” add the module entry so it's auto-instantiated on the client.
+3. **Determine the service and version** â€?the URL path prefix tells you which service directory and version namespace to use (e.g. `/v3/projects` â†?`labrinth/v3/`).
+4. **Define types in `types.ts`** â€?types must match the API response 1:1. Use the OpenAPI schema as the source of truth. Do not reshape or rename fields.
+5. **Create the module class** â€?extend `BaseModule`, implement each endpoint as a method. Use the correct HTTP verb and request options pattern from the standard.
+6. **Register in `MODULE_REGISTRY`** â€?add the module entry so it's auto-instantiated on the client.
 7. **Export types** from the service's barrel `index.ts`.
-8. **Verify** â€” check that the module compiles and the types are accessible from `@modrinth/api-client`.
+8. **Verify** â€?check that the module compiles and the types are accessible from `@Bbsmc/api-client`.

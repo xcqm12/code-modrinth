@@ -24,13 +24,13 @@
     "defaultMessage": "Add meg a license információit"
   },
   "nags.add-links-server.description": {
-    "defaultMessage": "Adj hozzá bármilyen releváns linket ami a Modrinthon kívűl található, például a weboldalad, webshopod vagy egy discord meghívó."
+    "defaultMessage": "Adj hozzá bármilyen releváns linket ami a Bbsmcon kívűl található, például a weboldalad, webshopod vagy egy discord meghívó."
   },
   "nags.add-links-server.title": {
     "defaultMessage": "Adj hozzá külső linkeket"
   },
   "nags.add-links.description": {
-    "defaultMessage": "Adj hozzá bármilyen releváns linket, amely a Modrinthon kívülre visz, mint például a forráskód, hibajelentő oldal vagy Discord meghívó."
+    "defaultMessage": "Adj hozzá bármilyen releváns linket, amely a Bbsmcon kívülre visz, mint például a forráskód, hibajelentő oldal vagy Discord meghívó."
   },
   "nags.add-links.title": {
     "defaultMessage": "Adj hozzá külső linkeket"
@@ -120,7 +120,7 @@
     "defaultMessage": "Rövidebb fejlécek"
   },
   "nags.minecraft-title-clause.description": {
-    "defaultMessage": "A projektek nem használhatják a Minecraft márkanevet, és nem tartalmazhatják a „Minecraft” szót a nevük jelentős részeként."
+    "defaultMessage": "A projektek nem használhatják a Minecraft márkanevet, és nem tartalmazhatják a „Minecraft�?szót a nevük jelentős részeként."
   },
   "nags.minecraft-title-clause.title": {
     "defaultMessage": "Ne sérts márka védjegyet"

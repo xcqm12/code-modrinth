@@ -57,7 +57,7 @@ import {
 	StyledInput,
 	useFormatMoney,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { computed, ref, watch } from 'vue'
 
 const props = withDefaults(

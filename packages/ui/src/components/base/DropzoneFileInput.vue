@@ -46,8 +46,8 @@
 </template>
 
 <script setup lang="ts">
-import { FolderUpIcon } from '@modrinth/assets'
-import { fileIsValid } from '@modrinth/utils'
+import { FolderUpIcon } from '@Bbsmc/assets'
+import { fileIsValid } from '@Bbsmc/utils'
 import { ref } from 'vue'
 
 import { useFormatBytes } from '../../composables'

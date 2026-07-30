@@ -353,8 +353,8 @@ export namespace Archon {
 				| 'purpur'
 				| 'vanilla'
 
-			export type ModpackSpecModrinth = {
-				platform: 'modrinth'
+			export type ModpackSpecBbsmc = {
+				platform: 'Bbsmc'
 				project_id: string
 				version_id: string
 			}
@@ -366,7 +366,7 @@ export namespace Archon {
 				description: string | null
 			}
 
-			export type ModpackSpec = ModpackSpecModrinth | ModpackSpecLocalFile
+			export type ModpackSpec = ModpackSpecBbsmc | ModpackSpecLocalFile
 
 			export type ModpackOwner = {
 				id: string
@@ -677,7 +677,7 @@ export namespace Archon {
 			}
 
 			export type JWTAuth = {
-				url: string // e.g., "node-xyz.bbsmc.org.cn/modrinth/v0/fs"
+				url: string // e.g., "node-xyz.bbsmc.org.cn/Bbsmc/v0/fs"
 				token: string // JWT token for filesystem access
 			}
 

@@ -1,13 +1,13 @@
-import type { Labrinth, UploadProgress } from '@modrinth/api-client'
-import { ArrowLeftRightIcon, LeftArrowIcon, SaveIcon, SpinnerIcon, XIcon } from '@modrinth/assets'
+import type { Labrinth, UploadProgress } from '@Bbsmc/api-client'
+import { ArrowLeftRightIcon, LeftArrowIcon, SaveIcon, SpinnerIcon, XIcon } from '@Bbsmc/assets'
 import {
 	createContext,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	injectProjectPageContext,
 	type MultiStageModal,
 	type StageConfigInput,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import JSZip from 'jszip'
 import type { Ref, ShallowRef } from 'vue'
 import { markRaw, toRaw } from 'vue'
@@ -51,7 +51,7 @@ export function createServerCompatibilityContext(
 	modal: ShallowRef<ComponentExposed<typeof MultiStageModal> | null>,
 ): ServerCompatibilityContextValue {
 	const { projectV3, patchProjectV3 } = injectProjectPageContext()
-	const { labrinth } = injectModrinthClient()
+	const { labrinth } = injectBbsmcClient()
 	const { addNotification } = injectNotificationManager()
 
 	const isSubmitting = ref(false)
@@ -78,7 +78,7 @@ export function createServerCompatibilityContext(
 
 		try {
 			const zip = await JSZip.loadAsync(rawFile)
-			const indexFile = zip.file('modrinth.index.json')
+			const indexFile = zip.file('Bbsmc.index.json')
 
 			if (indexFile) {
 				const indexContent = await indexFile.async('text')
@@ -104,7 +104,7 @@ export function createServerCompatibilityContext(
 				}
 			}
 		} catch {
-			console.warn('Could not parse modrinth.index.json from mrpack')
+			console.warn('Could not parse Bbsmc.index.json from mrpack')
 		}
 
 		const draftVersion: Labrinth.Versions.v3.DraftVersion = {
@@ -286,8 +286,8 @@ const selectVanillaVersionsStage: StageConfigInput<ServerCompatibilityContextVal
 			: {
 					label: ctx.isSubmitting.value
 						? ctx.isEditingExistingCompatibility.value
-							? 'Updatingâ€¦'
-							: 'Savingâ€¦'
+							? 'Updatingâ€?
+							: 'Savingâ€?
 						: ctx.isEditingExistingCompatibility.value
 							? 'Save changes'
 							: 'Save',
@@ -336,8 +336,8 @@ const selectPublishedModpackStage: StageConfigInput<ServerCompatibilityContextVa
 			: {
 					label: ctx.isSubmitting.value
 						? ctx.isEditingExistingCompatibility.value
-							? 'Updatingâ€¦'
-							: 'Savingâ€¦'
+							? 'Updatingâ€?
+							: 'Savingâ€?
 						: ctx.isEditingExistingCompatibility.value
 							? 'Save changes'
 							: 'Save',
@@ -355,12 +355,12 @@ const selectPublishedModpackStage: StageConfigInput<ServerCompatibilityContextVa
 function getUploadLabel(ctx: ServerCompatibilityContextValue): string {
 	if (ctx.isUploading.value) {
 		if (ctx.uploadProgress.value.progress >= 1) {
-			return 'Savingâ€¦'
+			return 'Savingâ€?
 		}
 		return `Uploading ${Math.round(ctx.uploadProgress.value.progress * 100)}%`
 	}
 	if (ctx.isSubmitting.value) {
-		return ctx.isEditingExistingCompatibility.value ? 'Updatingâ€¦' : 'Savingâ€¦'
+		return ctx.isEditingExistingCompatibility.value ? 'Updatingâ€? : 'Savingâ€?
 	}
 	return ctx.isEditingExistingCompatibility.value ? 'Save changes' : 'Save'
 }

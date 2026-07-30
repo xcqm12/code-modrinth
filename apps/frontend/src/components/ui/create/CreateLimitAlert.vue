@@ -41,19 +41,19 @@
 </template>
 
 <script setup lang="ts">
-import { MessageIcon } from '@modrinth/assets'
+import { MessageIcon } from '@Bbsmc/assets'
 import {
 	Admonition,
 	ButtonStyled,
 	defineMessages,
-	injectModrinthClient,
+	injectBbsmcClient,
 	useVIntl,
-} from '@modrinth/ui'
-import { capitalizeString } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import { capitalizeString } from '@Bbsmc/utils'
 import { useQuery } from '@tanstack/vue-query'
 import { computed, watch } from 'vue'
 
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const { formatMessage } = useVIntl()
 
 const messages = defineMessages({

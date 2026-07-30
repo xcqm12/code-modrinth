@@ -1,5 +1,5 @@
 <script setup>
-import { XIcon } from '@modrinth/assets'
+import { XIcon } from '@Bbsmc/assets'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -9,7 +9,7 @@ import {
 	NewModal,
 	StyledInput,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { save } from '@tauri-apps/plugin-dialog'
 import { readDir, stat } from '@tauri-apps/plugin-fs'
 import { ref } from 'vue'
@@ -97,7 +97,7 @@ const exportPack = async () => {
 		defaultPath: `${nameInput.value} ${versionInput.value}.mrpack`,
 		filters: [
 			{
-				name: 'Modrinth Modpack',
+				name: 'Bbsmc Modpack',
 				extensions: ['mrpack'],
 			},
 		],
@@ -225,7 +225,7 @@ function isDefaultSelectedExportCandidate(path) {
 function isExportCandidateDisabled(path) {
 	return (
 		path === 'profile.json' ||
-		path.startsWith('modrinth_logs') ||
+		path.startsWith('Bbsmc_logs') ||
 		path.startsWith('.fabric') ||
 		path.startsWith('__MACOSX')
 	)

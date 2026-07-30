@@ -199,7 +199,7 @@ COMMIT;
 def mode_search(query, limit=5):
     encoded_query = urllib.parse.quote(query)
     search_url = f"{API_BASE}/search?query={encoded_query}&limit={limit}&facets=[]"
-    print(f"Searching Modrinth for: {query} (limit: {limit})")
+    print(f"Searching Bbsmc for: {query} (limit: {limit})")
 
     search_data = api_get(search_url)
     hits = search_data.get("hits", [])
@@ -217,7 +217,7 @@ def mode_search(query, limit=5):
 
 
 def mode_top(count=1000):
-    print(f"Fetching top {count} projects by downloads from Modrinth...")
+    print(f"Fetching top {count} projects by downloads from Bbsmc...")
 
     imported = 0
     batch_size = 50

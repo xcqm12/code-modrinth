@@ -64,16 +64,16 @@
 </template>
 
 <script setup lang="ts">
-import { getLoaderIcon } from '@modrinth/assets'
+import { getLoaderIcon } from '@Bbsmc/assets'
 import {
 	Combobox,
 	FormattedTag,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	injectProjectPageContext,
 	ProjectCombobox,
 	TagItem,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { useQuery } from '@tanstack/vue-query'
 import { computed, ref, watch } from 'vue'
 
@@ -85,7 +85,7 @@ const { projectV3 } = injectProjectPageContext()
 
 const currentProjectId = computed(() => projectV3.value?.id)
 const { selectedProjectId, selectedVersionId } = injectServerCompatibilityContext()
-const { labrinth } = injectModrinthClient()
+const { labrinth } = injectBbsmcClient()
 const { addNotification } = injectNotificationManager()
 const auth = await useAuth()
 

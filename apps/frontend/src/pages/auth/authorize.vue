@@ -16,7 +16,7 @@
 				<div class="flex w-full flex-row items-center justify-evenly">
 					<Avatar size="md" :src="app.icon_url" />
 					<!-- <img class="profile-pic" :src="app.icon_url" alt="User profile picture" /> -->
-					<div class="flex select-none items-center justify-center text-[2rem] text-primary">â†’</div>
+					<div class="flex select-none items-center justify-center text-[2rem] text-primary">â†?/div>
 					<Avatar size="md" circle :src="auth.user?.avatar_url" />
 					<!-- <img class="profile-pic" :src="auth.user.avatar_url" alt="User profile picture" /> -->
 				</div>
@@ -88,18 +88,18 @@
 </template>
 
 <script setup lang="ts">
-import { CheckIcon, XIcon } from '@modrinth/assets'
+import { CheckIcon, XIcon } from '@Bbsmc/assets'
 import {
 	Avatar,
 	ButtonStyled,
 	commonMessages,
 	defineMessages,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	IntlFormatted,
 	normalizeChildren,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { useQuery } from '@tanstack/vue-query'
 import { computed } from 'vue'
 import type { LocationQueryValue } from 'vue-router'
@@ -131,7 +131,7 @@ const getErrorMessage = (error: unknown): string => {
 	return String(error)
 }
 
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const { addNotification } = injectNotificationManager()
 const { formatMessage } = useVIntl()
 

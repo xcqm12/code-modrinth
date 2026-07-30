@@ -1,8 +1,8 @@
 {
 	"$schema": "https://schema.tauri.app/config/2",
 	"build": {
-		"beforeDevCommand": "pnpm turbo run dev --filter=@modrinth/app-frontend",
-		"beforeBuildCommand": "pnpm turbo run build --filter=@modrinth/app-frontend",
+		"beforeDevCommand": "pnpm turbo run dev --filter=@Bbsmc/app-frontend",
+		"beforeBuildCommand": "pnpm turbo run build --filter=@Bbsmc/app-frontend",
 		"frontendDist": "../app-frontend/dist",
 		"devUrl": "http://localhost:1420"
 	},
@@ -58,19 +58,19 @@
 				"ext": [
 					"mrpack"
 				],
-				"mimeType": "application/x-modrinth-modpack+zip"
+				"mimeType": "application/x-Bbsmc-modpack+zip"
 			}
 		]
 	},
-	"productName": "Modrinth App",
+	"productName": "Bbsmc App",
 	"version": "../app-frontend/package.json",
-	"mainBinaryName": "Modrinth App",
-	"identifier": "ModrinthApp",
+	"mainBinaryName": "Bbsmc App",
+	"identifier": "BbsmcApp",
 	"plugins": {
 		"deep-link": {
 			"desktop": {
 				"schemes": [
-					"modrinth"
+					"Bbsmc"
 				]
 			},
 			"mobile": []
@@ -86,7 +86,7 @@
 				"fullscreen": false,
 				"height": 800,
 				"resizable": true,
-				"title": "Modrinth App",
+				"title": "Bbsmc App",
 				"label": "main",
 				"width": 1280,
 				"minHeight": 700,

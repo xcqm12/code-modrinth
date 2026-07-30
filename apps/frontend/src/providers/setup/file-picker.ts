@@ -1,4 +1,4 @@
-import { provideFilePicker } from '@modrinth/ui'
+import { provideFilePicker } from '@Bbsmc/ui'
 
 function pickFile(accept: string): Promise<{ file: File; previewUrl: string } | null> {
 	return new Promise((resolve) => {
@@ -18,6 +18,6 @@ function pickFile(accept: string): Promise<{ file: File; previewUrl: string } | 
 export function setupFilePickerProvider() {
 	provideFilePicker({
 		pickImage: () => pickFile('image/png,image/jpeg,image/jpg,image/svg+xml,image/webp,image/gif'),
-		pickModpackFile: () => pickFile('.mrpack,application/x-modrinth-modpack+zip,application/zip'),
+		pickModpackFile: () => pickFile('.mrpack,application/x-Bbsmc-modpack+zip,application/zip'),
 	})
 }

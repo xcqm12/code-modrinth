@@ -111,20 +111,20 @@
 </template>
 
 <script setup lang="ts">
-import { CheckCircleIcon, FolderOpenIcon, SpinnerIcon, XCircleIcon } from '@modrinth/assets'
+import { CheckCircleIcon, FolderOpenIcon, SpinnerIcon, XCircleIcon } from '@Bbsmc/assets'
 import { computed, nextTick, ref, watch } from 'vue'
 
 import ButtonStyled from '#ui/components/base/ButtonStyled.vue'
 import { useFormatBytes } from '#ui/composables'
 import { defineMessages, useVIntl } from '#ui/composables/i18n'
-import { injectModrinthClient } from '#ui/providers/api-client'
+import { injectBbsmcClient } from '#ui/providers/api-client'
 import { injectNotificationManager } from '#ui/providers/web-notifications'
 import { commonMessages } from '#ui/utils/common-messages'
 
 const { formatMessage } = useVIntl()
 const formatBytes = useFormatBytes()
 const { addNotification } = injectNotificationManager()
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 
 const messages = defineMessages({
 	file: {

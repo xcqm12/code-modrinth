@@ -1,5 +1,5 @@
 <script setup>
-import { ButtonStyled, injectNotificationManager, ProjectCard } from '@modrinth/ui'
+import { ButtonStyled, injectNotificationManager, ProjectCard } from '@Bbsmc/ui'
 import { ref } from 'vue'
 
 import ModalWrapper from '@/components/ui/modal/ModalWrapper.vue'
@@ -65,7 +65,7 @@ async function install() {
 			<div class="button-row">
 				<div class="markdown-body">
 					<p>
-						Installing <code>{{ version.id }}</code> from Modrinth
+						Installing <code>{{ version.id }}</code> from Bbsmc
 					</p>
 				</div>
 				<div class="button-group">

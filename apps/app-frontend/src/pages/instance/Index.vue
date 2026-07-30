@@ -103,7 +103,7 @@
 			<template #copy_path> <ClipboardCopyIcon /> Copy path </template>
 			<template #open_folder> <FolderOpenIcon /> Open folder </template>
 			<template #copy_link> <ClipboardCopyIcon /> Copy link </template>
-			<template #open_link> <GlobeIcon /> Open in Modrinth <ExternalIcon /> </template>
+			<template #open_link> <GlobeIcon /> Open in Bbsmc <ExternalIcon /> </template>
 			<template #copy_names><EditIcon />Copy names</template>
 			<template #copy_slugs><HashIcon />Copy slugs</template>
 			<template #copy_links><GlobeIcon />Copy links</template>
@@ -119,7 +119,7 @@
 	</div>
 </template>
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
 import {
 	BoxesIcon,
 	CheckCircleIcon,
@@ -137,7 +137,7 @@ import {
 	UpdatedIcon,
 	UserPlusIcon,
 	XIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	commonMessages,
 	injectAuth,
@@ -145,7 +145,7 @@ import {
 	NavTabs,
 	useLoadingBarToken,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { convertFileSrc } from '@tauri-apps/api/core'
 import dayjs from 'dayjs'
@@ -669,7 +669,7 @@ const repairInstance = async () => {
 	if (instance.value.quarantined) return
 	if (
 		instance.value.install_stage !== 'pack_installed' &&
-		(instance.value.link?.type === 'modrinth_modpack' ||
+		(instance.value.link?.type === 'Bbsmc_modpack' ||
 			instance.value.link?.type === 'server_project_modpack')
 	) {
 		await install_pack_to_existing_instance(instance.value.id, {

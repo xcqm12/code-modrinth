@@ -10,9 +10,9 @@
 
 # TanStack Query
 
-TanStack Query (`@tanstack/vue-query` v5) is used for server state management â€” caching, background refetching, and cache invalidation. Use it instead of manual `ref()` + `await` patterns for any data that comes from an API.
+TanStack Query (`@tanstack/vue-query` v5) is used for server state management â€?caching, background refetching, and cache invalidation. Use it instead of manual `ref()` + `await` patterns for any data that comes from an API.
 
-A TanStack MCP server is available â€” use `tanstack_doc` and `tanstack_search_docs` tools to look up API details when needed.
+A TanStack MCP server is available â€?use `tanstack_doc` and `tanstack_search_docs` tools to look up API details when needed.
 
 ## Setup
 
@@ -23,7 +23,7 @@ TanStack Query is configured in `apps/frontend/src/plugins/tanstack.ts` as a Nux
 Use `useQuery` with the api-client for data fetching:
 
 ```ts
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 
 const { data, isPending, isError, error } = useQuery({
 	queryKey: ['project', 'v3', projectId],
@@ -50,13 +50,13 @@ export const STALE_TIME = 1000 * 60 * 5
 export const STALE_TIME_LONG = 1000 * 60 * 10
 
 export const projectQueryOptions = {
-	v3: (projectId: string, client: AbstractModrinthClient) => ({
+	v3: (projectId: string, client: AbstractBbsmcClient) => ({
 		queryKey: ['project', 'v3', projectId] as const,
 		queryFn: () => client.labrinth.projects_v3.get(projectId),
 		staleTime: STALE_TIME,
 	}),
 
-	members: (projectId: string, client: AbstractModrinthClient) => ({
+	members: (projectId: string, client: AbstractBbsmcClient) => ({
 		queryKey: ['project', projectId, 'members'] as const,
 		queryFn: () => client.labrinth.projects_v3.getMembers(projectId),
 		staleTime: STALE_TIME,
@@ -88,7 +88,7 @@ Use `useMutation` for create/update/delete operations. Invalidate related querie
 
 ```ts
 const queryClient = useQueryClient()
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 
 const createMutation = useMutation({
 	mutationFn: (name: string) => client.archon.backups_v0.create(serverId, { name }),
@@ -138,19 +138,19 @@ const patchMutation = useMutation({
 Keys use a hierarchical array pattern:
 
 ```ts
-// Resource type â†’ version/qualifier â†’ ID
+// Resource type â†?version/qualifier â†?ID
 ['project', 'v3', projectId]
 
-// Resource type â†’ ID â†’ sub-resource
+// Resource type â†?ID â†?sub-resource
 ['project', projectId, 'members']
 ['project', projectId, 'versions', 'v3']
 
-// Domain â†’ action â†’ ID
+// Domain â†?action â†?ID
 ['backups', 'list', serverId]
 ['tech-reviews']
 ```
 
-Use `as const` for type safety. Put the resource ID last when possible â€” this makes partial key matching work for invalidation:
+Use `as const` for type safety. Put the resource ID last when possible â€?this makes partial key matching work for invalidation:
 
 ```ts
 // Invalidates all project queries for this ID
@@ -159,6 +159,6 @@ queryClient.invalidateQueries({ queryKey: ['project', projectId] })
 
 ## Key Files
 
-- `apps/frontend/src/plugins/tanstack.ts` â€” QueryClient setup + SSR hydration
-- `apps/frontend/src/composables/query-client.ts` â€” `useAppQueryClient()` helper
-- `apps/frontend/src/composables/queries/` â€” reusable query option factories
+- `apps/frontend/src/plugins/tanstack.ts` â€?QueryClient setup + SSR hydration
+- `apps/frontend/src/composables/query-client.ts` â€?`useAppQueryClient()` helper
+- `apps/frontend/src/composables/queries/` â€?reusable query option factories

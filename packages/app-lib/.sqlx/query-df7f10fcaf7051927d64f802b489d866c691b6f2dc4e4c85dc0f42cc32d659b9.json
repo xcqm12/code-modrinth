@@ -1,6 +1,6 @@
 {
   "db_name": "SQLite",
-  "query": "\n        INSERT OR REPLACE INTO instance_links (\n            instance_id,\n            link_kind,\n            modrinth_project_id,\n            modrinth_version_id,\n            server_project_id,\n            content_project_id,\n            content_version_id,\n            hosting_server_id,\n            hosting_instance_ids,\n            hosting_active_instance_id,\n            shared_instance_id\n        )\n        VALUES (?, ?, ?, ?, ?, ?, ?, ?, jsonb(?), ?, ?)\n        ",
+  "query": "\n        INSERT OR REPLACE INTO instance_links (\n            instance_id,\n            link_kind,\n            Bbsmc_project_id,\n            Bbsmc_version_id,\n            server_project_id,\n            content_project_id,\n            content_version_id,\n            hosting_server_id,\n            hosting_instance_ids,\n            hosting_active_instance_id,\n            shared_instance_id\n        )\n        VALUES (?, ?, ?, ?, ?, ?, ?, ?, jsonb(?), ?, ?)\n        ",
   "describe": {
     "columns": [],
     "parameters": {

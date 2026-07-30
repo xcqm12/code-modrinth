@@ -200,8 +200,7 @@
 								class="flex items-center gap-2 border-0 border-t border-solid border-surface-4 px-4 py-6 text-secondary"
 							>
 								<LoaderCircleIcon class="size-5 animate-spin" />
-								Loading shared instance detailsâ€¦
-							</div>
+								Loading shared instance detailsâ€?							</div>
 							<div
 								v-else-if="sharedInstanceError"
 								class="flex flex-col items-start gap-3 border-0 border-t border-solid border-surface-4 px-4 py-6"
@@ -256,15 +255,15 @@
 	</div>
 </template>
 <script setup lang="ts">
-import type { Labrinth, SharedInstances } from '@modrinth/api-client'
+import type { Labrinth, SharedInstances } from '@Bbsmc/api-client'
 import {
 	CheckCircleIcon,
 	ClipboardCopyIcon,
 	ExternalIcon,
 	LoaderCircleIcon,
 	LockIcon,
-} from '@modrinth/assets'
-import { type ExtendedReport, reportQuickReplies } from '@modrinth/moderation'
+} from '@Bbsmc/assets'
+import { type ExtendedReport, reportQuickReplies } from '@Bbsmc/moderation'
 import {
 	Avatar,
 	ButtonStyled,
@@ -272,12 +271,12 @@ import {
 	type ContentItem,
 	CopyCode,
 	getProjectTypeIcon,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	useFormatDateTime,
 	useRelativeTime,
-} from '@modrinth/ui'
-import { formatProjectType } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import { formatProjectType } from '@Bbsmc/utils'
 import { computed, ref, watch } from 'vue'
 
 import { isStaff } from '~/helpers/users.js'
@@ -290,7 +289,7 @@ import SharedInstanceReportContext, {
 } from './SharedInstanceReportContext.vue'
 
 const { addNotification } = injectNotificationManager()
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const auth = await useAuth()
 
 type SharedInstanceVersionDependency = Labrinth.Versions.v2.Dependency & {
@@ -586,7 +585,7 @@ async function loadSharedInstanceVersionContent(
 	const instanceVersion = await getSharedInstanceVersion(instanceId, versionNumber)
 
 	const modpackVersionId = instanceVersion.modpack_id
-	const directVersionIds = (instanceVersion.modrinth_ids ?? []).filter(
+	const directVersionIds = (instanceVersion.Bbsmc_ids ?? []).filter(
 		(versionId) => versionId !== modpackVersionId,
 	)
 	const modpackVersion = modpackVersionId

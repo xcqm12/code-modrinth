@@ -71,8 +71,8 @@
   "app.action-bar.install.summary.minecraft-setup-failed": {
     "message": "Minecraft setup fejlede"
   },
-  "app.action-bar.install.summary.modrinth-unreachable": {
-    "message": "Kunne ikke få forbindelse til Modrinth"
+  "app.action-bar.install.summary.Bbsmc-unreachable": {
+    "message": "Kunne ikke få forbindelse til Bbsmc"
   },
   "app.action-bar.install.summary.no-write-permission": {
     "message": "Ingen adgang til at skrive"
@@ -126,7 +126,7 @@
     "message": "Tillad alle"
   },
   "app.ads-consent.body": {
-    "message": "Reklamer gør Modrinth muligt og finansiere skaber udbetalinger. Vores partnere må gemme og tilgå cookies i appen for at personliggøre reklamer og måle effektivitet."
+    "message": "Reklamer gør Bbsmc muligt og finansiere skaber udbetalinger. Vores partnere må gemme og tilgå cookies i appen for at personliggøre reklamer og måle effektivitet."
   },
   "app.ads-consent.reject": {
     "message": "Afvis alle"
@@ -138,7 +138,7 @@
     "message": "Avanceret rendering"
   },
   "app.appearance-settings.color-theme.description": {
-    "message": "Vælg dit foretrukne farvetema til Modrinth App."
+    "message": "Vælg dit foretrukne farvetema til Bbsmc App."
   },
   "app.appearance-settings.color-theme.title": {
     "message": "Farvetema"
@@ -186,7 +186,7 @@
     "message": "Slå sidepanel til og fra"
   },
   "app.appearance-settings.unknown-pack-warning.description": {
-    "message": "Hvis du prøver at installere en Modrinth Pack fil (.mrpack) som ikke er hosted på Modrinth, så skal vi nok sikre os du forstår riskoen før du installere den."
+    "message": "Hvis du prøver at installere en Bbsmc Pack fil (.mrpack) som ikke er hosted på Bbsmc, så skal vi nok sikre os du forstår riskoen før du installere den."
   },
   "app.appearance-settings.unknown-pack-warning.title": {
     "message": "Advar mig før jeg installere en ukendt modpacks"
@@ -572,14 +572,14 @@
   "app.skins.section.minecon-earth-2017": {
     "message": "MINECON Earth 2017"
   },
-  "app.skins.section.modrinth": {
-    "message": "Modrinth"
+  "app.skins.section.Bbsmc": {
+    "message": "Bbsmc"
   },
-  "app.skins.section.modrinth-pride": {
-    "message": "Modrinth Pride"
+  "app.skins.section.Bbsmc-pride": {
+    "message": "Bbsmc Pride"
   },
-  "app.skins.section.modrinth-pride.tooltip": {
-    "message": "Du modtog disse skins for at donere til en Modrinth Pride indsamling imens der er Pride Month."
+  "app.skins.section.Bbsmc-pride.tooltip": {
+    "message": "Du modtog disse skins for at donere til en Bbsmc Pride indsamling imens der er Pride Month."
   },
   "app.skins.section.mounts-of-mayhem": {
     "message": "Mounts of Mayhem"
@@ -603,10 +603,10 @@
     "message": "Log Ind"
   },
   "app.skins.sign-in.description": {
-    "message": "Venligst log ind til din Minecraft konto for at kunne funktionerne til at administrere dit skin i Modrinth appen."
+    "message": "Venligst log ind til din Minecraft konto for at kunne funktionerne til at administrere dit skin i Bbsmc appen."
   },
   "app.skins.sign-in.rinthbot-alt": {
-    "message": "Overrasket Modrinth Bot"
+    "message": "Overrasket Bbsmc Bot"
   },
   "app.skins.sign-in.title": {
     "message": "Venligst log ind"
@@ -621,13 +621,13 @@
     "message": "Slå til"
   },
   "app.update-popup.body.download-complete": {
-    "message": "Modrinth App v{version} er færdig med at download. Genindlæs for at opdatere nu, eller automatisk når du lukker Modrinth App."
+    "message": "Bbsmc App v{version} er færdig med at download. Genindlæs for at opdatere nu, eller automatisk når du lukker Bbsmc App."
   },
   "app.update-popup.body.linux": {
-    "message": "Modrinth App v{version} er nu tilgængelig. Brug din pakke-manager til at opdatere for de nyeste features og fejlrettelser!"
+    "message": "Bbsmc App v{version} er nu tilgængelig. Brug din pakke-manager til at opdatere for de nyeste features og fejlrettelser!"
   },
   "app.update-popup.body.metered": {
-    "message": "Modrinth App v{version} er nu tilgængelig! Siden du er på et begrænset netværk, vi downloadede den ikke automatisk."
+    "message": "Bbsmc App v{version} er nu tilgængelig! Siden du er på et begrænset netværk, vi downloadede den ikke automatisk."
   },
   "app.update-popup.changelog": {
     "message": "Ændringslog"
@@ -651,7 +651,7 @@
     "message": "Version {version} var installeret med succes!"
   },
   "app.world.server-modal.placeholder-address": {
-    "message": "eksemple.modrinth.gg"
+    "message": "eksemple.Bbsmc.gg"
   },
   "app.world.server-modal.select-an-option": {
     "message": "Vælg en mulighed"
@@ -687,10 +687,10 @@
     "message": "Det er muligvis anderledes end deres Minecraft brugernavn!"
   },
   "friends.add-friend.username.placeholder": {
-    "message": "Indskriv Modrinth brugernavn..."
+    "message": "Indskriv Bbsmc brugernavn..."
   },
   "friends.add-friend.username.title": {
-    "message": "Hvad er din vens Modrinth brugernavn?"
+    "message": "Hvad er din vens Bbsmc brugernavn?"
   },
   "friends.add-friends-to-share": {
     "message": "<link>Tilføj venner</link> for at se hvad de spiller!"
@@ -732,7 +732,7 @@
     "message": "{title} - {count}"
   },
   "friends.sign-in-to-add-friends": {
-    "message": "<link>Log ind på en Modrinth konto</link> for at tilføje venner og se hvad de spiller!"
+    "message": "<link>Log ind på en Bbsmc konto</link> for at tilføje venner og se hvad de spiller!"
   },
   "instance.action.create-shortcut": {
     "message": "Opret genvej"
@@ -1085,34 +1085,34 @@
   "minecraft-required.sign-in": {
     "message": "Log ind på Microsoft"
   },
-  "modal.modrinth-account-required.cancel-button": {
+  "modal.Bbsmc-account-required.cancel-button": {
     "message": "Annuller"
   },
-  "modal.modrinth-account-required.continue-in-browser-heading": {
+  "modal.Bbsmc-account-required.continue-in-browser-heading": {
     "message": "Fortsæt i din browser"
   },
-  "modal.modrinth-account-required.create-account-button": {
+  "modal.Bbsmc-account-required.create-account-button": {
     "message": "Opret en konto"
   },
-  "modal.modrinth-account-required.header": {
+  "modal.Bbsmc-account-required.header": {
     "message": "Konto påkrævet"
   },
-  "modal.modrinth-account-required.open-browser-again-button": {
+  "modal.Bbsmc-account-required.open-browser-again-button": {
     "message": "Åbn browser igen"
   },
-  "modal.modrinth-account-required.sign-in-button": {
-    "message": "Log ind på Modrinth"
+  "modal.Bbsmc-account-required.sign-in-button": {
+    "message": "Log ind på Bbsmc"
   },
-  "modal.modrinth-account-required.sign-in-heading": {
-    "message": "Log ind med en Modrinth konto"
+  "modal.Bbsmc-account-required.sign-in-heading": {
+    "message": "Log ind med en Bbsmc konto"
   },
-  "modal.modrinth-account-required.signing-in-header": {
+  "modal.Bbsmc-account-required.signing-in-header": {
     "message": "Logger ind"
   },
-  "modal.modrinth-account-required.support-prompt": {
+  "modal.Bbsmc-account-required.support-prompt": {
     "message": "Har du problemer med at logge ind? <support>Få hjælp</support>"
   },
-  "modal.modrinth-account-required.waiting-for-browser": {
+  "modal.Bbsmc-account-required.waiting-for-browser": {
     "message": "Venter på browser bekræftigelse..."
   },
   "search.filter.locked.instance": {

@@ -99,7 +99,7 @@
     "defaultMessage": "Pro váš dotaz nebyly nalezeny žádné výsledky!"
   },
   "browse.offline": {
-    "defaultMessage": "Právě nejste připojeni k internetu. Připojte se k internetu a prohlížejte si Modrinth!"
+    "defaultMessage": "Právě nejste připojeni k internetu. Připojte se k internetu a prohlížejte si Bbsmc!"
   },
   "browse.search.placeholder": {
     "defaultMessage": "Najít {projectType}..."
@@ -227,8 +227,8 @@
   "button.open-in-folder": {
     "defaultMessage": "Otevřít ve složce"
   },
-  "button.open-in-modrinth": {
-    "defaultMessage": "Otevřít v Modrinth"
+  "button.open-in-Bbsmc": {
+    "defaultMessage": "Otevřít v Bbsmc"
   },
   "button.play": {
     "defaultMessage": "Hrát"
@@ -810,7 +810,7 @@
     "defaultMessage": "Importovat instanci"
   },
   "creation-flow.modal.setup-type.option.modpack-base.description": {
-    "defaultMessage": "Procházejte modpacky na Modrinthu nebo ho importujte ze souboru."
+    "defaultMessage": "Procházejte modpacky na Bbsmcu nebo ho importujte ze souboru."
   },
   "creation-flow.modal.setup-type.option.modpack-base.title": {
     "defaultMessage": "Nainstalovat modpack"
@@ -926,8 +926,8 @@
   "external-files.permissions-card.editor.link-to-work-url-placeholder": {
     "defaultMessage": "odkaz-k-dilu"
   },
-  "external-files.permissions-card.editor.modrinth-link-to-work": {
-    "defaultMessage": "Toto vypadá jako odkaz na Modrinth. Pokud je tento obsah dostupný na Modrinthu, váš pack byl pravděpodobně exportován nesprávně. Pokud jste ho stáhli z jiného webu, zkuste místo toho stáhnout verzi z Modrinthu; někdy nejde o totožné soubory."
+  "external-files.permissions-card.editor.Bbsmc-link-to-work": {
+    "defaultMessage": "Toto vypadá jako odkaz na Bbsmc. Pokud je tento obsah dostupný na Bbsmcu, váš pack byl pravděpodobně exportován nesprávně. Pokud jste ho stáhli z jiného webu, zkuste místo toho stáhnout verzi z Bbsmcu; někdy nejde o totožné soubory."
   },
   "external-files.permissions-card.editor.notes-label": {
     "defaultMessage": "Poznámky"
@@ -957,7 +957,7 @@
     "defaultMessage": "Důvod práva"
   },
   "external-files.permissions-card.error.custom-license-required": {
-    "defaultMessage": "Přidejte prosím odkaz na svou licenci. Pokud žádnou nemáte, měli byste pravděpodobně vybrat „Všechna práva vyhrazena / žádná licence“"
+    "defaultMessage": "Přidejte prosím odkaz na svou licenci. Pokud žádnou nemáte, měli byste pravděpodobně vybrat „Všechna práva vyhrazena / žádná licence�?
   },
   "external-files.permissions-card.error.explanation-or-images-required": {
     "defaultMessage": "Uveďte prosím vysvětlení nebo nahrajte alespoň jeden obrázek jako důkaz."
@@ -1101,7 +1101,7 @@
     "defaultMessage": "např. config.yml"
   },
   "files.delete-modal.deleting-name": {
-    "defaultMessage": "Smazání „{name}“"
+    "defaultMessage": "Smazání „{name}�?
   },
   "files.delete-modal.header": {
     "defaultMessage": "Smazání souboru"
@@ -1428,7 +1428,7 @@
     "defaultMessage": "Najdi modpack"
   },
   "files.zip-url-modal.step-select-description": {
-    "defaultMessage": "Přejděte na kartu „Soubory“ a vyberte verzi, kterou chcete nainstalovat."
+    "defaultMessage": "Přejděte na kartu „Soubory�?a vyberte verzi, kterou chcete nainstalovat."
   },
   "files.zip-url-modal.step-select-title": {
     "defaultMessage": "Vyber verzi"
@@ -2316,16 +2316,16 @@
     "defaultMessage": "Přidávání platební metody"
   },
   "modal.open-in-app.get-app": {
-    "defaultMessage": "Získat Modrinth App"
+    "defaultMessage": "Získat Bbsmc App"
   },
   "modal.open-in-app.opening-automatically": {
-    "defaultMessage": "Modrinth App se otevře automaticky..."
+    "defaultMessage": "Bbsmc App se otevře automaticky..."
   },
   "modal.open-in-app.title": {
-    "defaultMessage": "Otevírání Modrinth App"
+    "defaultMessage": "Otevírání Bbsmc App"
   },
   "modal.open-in-app.why-use": {
-    "defaultMessage": "Proč používat Modrinth App"
+    "defaultMessage": "Proč používat Bbsmc App"
   },
   "notification.error.title": {
     "defaultMessage": "Došlo k chybě"
@@ -2357,8 +2357,8 @@
   "omorphia.component.badge.label.moderator": {
     "defaultMessage": "Moderátor"
   },
-  "omorphia.component.badge.label.modrinth-team": {
-    "defaultMessage": "Modrinth tým"
+  "omorphia.component.badge.label.Bbsmc-team": {
+    "defaultMessage": "Bbsmc tým"
   },
   "omorphia.component.badge.label.pending": {
     "defaultMessage": "Čekající"
@@ -3435,7 +3435,7 @@
     "defaultMessage": "Nevyřízeno"
   },
   "servers.access-table.unknown-joined-date": {
-    "defaultMessage": "—"
+    "defaultMessage": "�?
   },
   "servers.access-table.user-avatar-alt": {
     "defaultMessage": "Avatar uživatele {username}"
@@ -3687,7 +3687,7 @@
     "defaultMessage": "Vyhledávání..."
   },
   "servers.installing-banner.error.unsupported-loader-version": {
-    "defaultMessage": "Modrinth Hosting tuto verzi Minecraftu nebo loaderu zatím nepodporuje."
+    "defaultMessage": "Bbsmc Hosting tuto verzi Minecraftu nebo loaderu zatím nepodporuje."
   },
   "servers.installing-banner.phase.installing-addons": {
     "defaultMessage": "Instalování addonů..."
@@ -3720,16 +3720,16 @@
     "defaultMessage": "Už máte server?"
   },
   "servers.list-empty.learn-more-link": {
-    "defaultMessage": "Zjistěte víc o Modrinth hostingu"
+    "defaultMessage": "Zjistěte víc o Bbsmc hostingu"
   },
-  "servers.list-empty.modrinth-hosting-label": {
-    "defaultMessage": "Modrinth Hosting"
+  "servers.list-empty.Bbsmc-hosting-label": {
+    "defaultMessage": "Bbsmc Hosting"
   },
   "servers.list-empty.new-server-button": {
     "defaultMessage": "Nový server"
   },
   "servers.list-empty.no-servers-description": {
-    "defaultMessage": "Instalujte mody, zvěte přátele a hrajte společně, to vše z Modrinth App."
+    "defaultMessage": "Instalujte mody, zvěte přátele a hrajte společně, to vše z Bbsmc App."
   },
   "servers.list-empty.no-servers-title": {
     "defaultMessage": "Zatím žádné servery"
@@ -3741,7 +3741,7 @@
     "defaultMessage": "Instalace módů jedním klikem"
   },
   "servers.list-empty.play-with-friends-description": {
-    "defaultMessage": "Pozvěte přátele a nastavte jim vše přímo v Modrinth App."
+    "defaultMessage": "Pozvěte přátele a nastavte jim vše přímo v Bbsmc App."
   },
   "servers.list-empty.play-with-friends-title": {
     "defaultMessage": "Hrajte s přáteli"
@@ -3783,7 +3783,7 @@
     "defaultMessage": "Probíhá nahrávání"
   },
   "servers.manage.contact-support-button": {
-    "defaultMessage": "Kontaktovat Modrinth Podporu"
+    "defaultMessage": "Kontaktovat Bbsmc Podporu"
   },
   "servers.manage.error.details": {
     "defaultMessage": "Podrobnosti chyby:"
@@ -3810,7 +3810,7 @@
     "defaultMessage": "Úspěch"
   },
   "servers.manage.servers-title": {
-    "defaultMessage": "Modrinth Hosting"
+    "defaultMessage": "Bbsmc Hosting"
   },
   "servers.manage.settings-hint.dismiss": {
     "defaultMessage": "Znovu nezobrazovat"
@@ -3885,13 +3885,13 @@
     "defaultMessage": "Velký"
   },
   "servers.purchase.step.plan.large.desc": {
-    "defaultMessage": "Ideální pro 15–25 hráčů, modpacky nebo náročné modování."
+    "defaultMessage": "Ideální pro 15�?5 hráčů, modpacky nebo náročné modování."
   },
   "servers.purchase.step.plan.medium": {
     "defaultMessage": "Střední"
   },
   "servers.purchase.step.plan.medium.desc": {
-    "defaultMessage": "Skvělé pro 6–15 hráčů a více modů."
+    "defaultMessage": "Skvělé pro 6�?5 hráčů a více modů."
   },
   "servers.purchase.step.plan.most-popular": {
     "defaultMessage": "Nejoblíbenější"
@@ -3903,7 +3903,7 @@
     "defaultMessage": "Malý"
   },
   "servers.purchase.step.plan.small.desc": {
-    "defaultMessage": "Ideální pro 1–5 přátel s pár lehkými módámi."
+    "defaultMessage": "Ideální pro 1�? přátel s pár lehkými módámi."
   },
   "servers.purchase.step.plan.title": {
     "defaultMessage": "Plán"
@@ -3942,7 +3942,7 @@
     "defaultMessage": "Kde bys chtěl mít umístěný svůj server?"
   },
   "servers.region.region-unsupported": {
-    "defaultMessage": "Chybí vaše oblast? <link>Dejte nám vědět, kde byste chtěli vidět Modrinth Hosting příště!</link>"
+    "defaultMessage": "Chybí vaše oblast? <link>Dejte nám vědět, kde byste chtěli vidět Bbsmc Hosting příště!</link>"
   },
   "servers.region.southeast-asia": {
     "defaultMessage": "Jihovýchodní Asie"
@@ -3999,7 +3999,7 @@
     "defaultMessage": "Nastavte si svůj server (~2min)"
   },
   "servers.setup.onboarding.welcome.title": {
-    "defaultMessage": "Vítejte v Modrinth Hostingu"
+    "defaultMessage": "Vítejte v Bbsmc Hostingu"
   },
   "servers.setup.uploading-modpack.header": {
     "defaultMessage": "Nahrávání modpacku"
@@ -4023,7 +4023,7 @@
     "defaultMessage": "Tmavý"
   },
   "settings.display.theme.description": {
-    "defaultMessage": "Vyberte si preferovaný barevný motiv pro Modrinth na tomto zařízení."
+    "defaultMessage": "Vyberte si preferovaný barevný motiv pro Bbsmc na tomto zařízení."
   },
   "settings.display.theme.light": {
     "defaultMessage": "Světlý"
@@ -4446,25 +4446,25 @@
     "defaultMessage": "{download_sum} stažení"
   },
   "user.profile.badge.moderator.about.1": {
-    "defaultMessage": "Tento uživatel pracuje jako moderátor obsahu pro Modrinth."
+    "defaultMessage": "Tento uživatel pracuje jako moderátor obsahu pro Bbsmc."
   },
   "user.profile.badge.moderator.about.2": {
-    "defaultMessage": "Moderátoři obsahu na Modrinthu kontrolují projekty, řeší nahlášení a pomáhají udržovat Modrinth bezpečný."
+    "defaultMessage": "Moderátoři obsahu na Bbsmcu kontrolují projekty, řeší nahlášení a pomáhají udržovat Bbsmc bezpečný."
   },
   "user.profile.badge.moderator.name": {
     "defaultMessage": "Moderátor obsahu"
   },
   "user.profile.badge.plus.name": {
-    "defaultMessage": "Člen Modrinth+"
+    "defaultMessage": "Člen Bbsmc+"
   },
   "user.profile.badge.pride.name": {
     "defaultMessage": "Podporovatel Pride sbírky"
   },
   "user.profile.badge.staff.about.1": {
-    "defaultMessage": "Tento uživatel pracuje pro Modrinth."
+    "defaultMessage": "Tento uživatel pracuje pro Bbsmc."
   },
   "user.profile.badge.staff.name": {
-    "defaultMessage": "Modrinth tým"
+    "defaultMessage": "Bbsmc tým"
   },
   "version.content.name": {
     "defaultMessage": "Název"

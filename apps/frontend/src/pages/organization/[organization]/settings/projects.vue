@@ -355,7 +355,7 @@ import {
 	TrashIcon,
 	TriangleAlertIcon,
 	XIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	ButtonStyled,
 	Checkbox,
@@ -363,7 +363,7 @@ import {
 	CopyCode,
 	defineMessages,
 	FloatingActionBar,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	IntlFormatted,
 	NewModal,
@@ -371,8 +371,8 @@ import {
 	StyledInput,
 	Table,
 	useVIntl,
-} from '@modrinth/ui'
-import { formatProjectType } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import { formatProjectType } from '@Bbsmc/utils'
 import { useQuery } from '@tanstack/vue-query'
 
 import ModalCreation from '~/components/ui/create/ProjectCreateModal.vue'
@@ -382,7 +382,7 @@ import { injectOrganizationContext } from '~/providers/organization-context.ts'
 
 const EDIT_DETAILS = 1 << 2
 
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const { addNotification } = injectNotificationManager()
 const { formatMessage } = useVIntl()
 

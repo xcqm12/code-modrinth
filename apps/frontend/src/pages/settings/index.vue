@@ -128,17 +128,17 @@
 					/>
 				</div>
 				<div v-if="false" class="flex flex-row flex-wrap items-center justify-between gap-2">
-					<label for="modrinth-app-promos" class="flex-1">
+					<label for="Bbsmc-app-promos" class="flex-1">
 						<span class="block font-semibold text-contrast">
-							{{ formatMessage(toggleFeatures.hideModrinthAppPromosTitle) }}
+							{{ formatMessage(toggleFeatures.hideBbsmcAppPromosTitle) }}
 						</span>
 						<span class="text-secondary">
-							{{ formatMessage(toggleFeatures.hideModrinthAppPromosDescription) }}
+							{{ formatMessage(toggleFeatures.hideBbsmcAppPromosDescription) }}
 						</span>
 					</label>
 					<Toggle
-						id="modrinth-app-promos"
-						v-model="cosmetics.hideModrinthAppPromos"
+						id="Bbsmc-app-promos"
+						v-model="cosmetics.hideBbsmcAppPromos"
 						class="shrink-0"
 					/>
 				</div>
@@ -178,7 +178,7 @@
 </template>
 
 <script setup lang="ts">
-import { CodeIcon, RadioButtonCheckedIcon, RadioButtonIcon } from '@modrinth/assets'
+import { CodeIcon, RadioButtonCheckedIcon, RadioButtonIcon } from '@Bbsmc/assets'
 import {
 	ButtonStyled,
 	defineMessages,
@@ -188,8 +188,8 @@ import {
 	ThemeSelector,
 	Toggle,
 	useVIntl,
-} from '@modrinth/ui'
-import { formatProjectType } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import { formatProjectType } from '@Bbsmc/utils'
 
 import MessageBanner from '~/components/ui/MessageBanner.vue'
 import type { DisplayLocation } from '~/plugins/cosmetics'
@@ -209,7 +209,7 @@ const developerModeBanner = defineMessages({
 	description: {
 		id: 'settings.display.banner.developer-mode.description',
 		defaultMessage:
-			"<strong>Developer mode</strong> is active. This will allow you to view the internal IDs of various things throughout Modrinth that may be helpful if you're a developer using the Modrinth API. Click on the Modrinth logo at the bottom of the page 5 times to toggle developer mode.",
+			"<strong>Developer mode</strong> is active. This will allow you to view the internal IDs of various things throughout Bbsmc that may be helpful if you're a developer using the Bbsmc API. Click on the Bbsmc logo at the bottom of the page 5 times to toggle developer mode.",
 	},
 	deactivate: {
 		id: 'settings.display.banner.developer-mode.button',
@@ -218,7 +218,7 @@ const developerModeBanner = defineMessages({
 })
 
 useHead({
-	title: () => `${formatMessage(messages.headTitle)} - Modrinth`,
+	title: () => `${formatMessage(messages.headTitle)} - Bbsmc`,
 })
 
 const layoutMode = defineMessages({
@@ -254,7 +254,7 @@ const colorTheme = defineMessages({
 	},
 	description: {
 		id: 'settings.display.theme.description',
-		defaultMessage: 'Select your preferred color theme for Modrinth on this device.',
+		defaultMessage: 'Select your preferred color theme for Bbsmc on this device.',
 	},
 })
 
@@ -331,16 +331,16 @@ const toggleFeatures = defineMessages({
 	externalLinksNewTabDescription: {
 		id: 'settings.display.sidebar.external-links-new-tab.description',
 		defaultMessage:
-			'Make links which go outside of Modrinth open in a new tab. No matter this setting, links on the same domain and in Markdown descriptions will open in the same tab, and links on ads and edit pages will open in a new tab.',
+			'Make links which go outside of Bbsmc open in a new tab. No matter this setting, links on the same domain and in Markdown descriptions will open in the same tab, and links on ads and edit pages will open in a new tab.',
 	},
-	hideModrinthAppPromosTitle: {
+	hideBbsmcAppPromosTitle: {
 		id: 'settings.display.sidebar.hide-app-promos.title',
-		defaultMessage: 'Hide Modrinth App promotions',
+		defaultMessage: 'Hide Bbsmc App promotions',
 	},
-	hideModrinthAppPromosDescription: {
+	hideBbsmcAppPromosDescription: {
 		id: 'settings.display.sidebar.hide-app-promos.description',
 		defaultMessage:
-			'Hides the "Get Modrinth App" buttons from primary navigation. The Modrinth App page can still be found on the landing page or in the footer.',
+			'Hides the "Get Bbsmc App" buttons from primary navigation. The Bbsmc App page can still be found on the landing page or in the footer.',
 	},
 	rightAlignedFiltersSidebarTitle: {
 		id: 'settings.display.sidebar.right-aligned-filters-sidebar.title',

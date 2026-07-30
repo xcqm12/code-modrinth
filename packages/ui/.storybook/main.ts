@@ -22,7 +22,7 @@ const config: StorybookConfig = {
 			},
 			resolve: {
 				alias: {
-					'@modrinth/api-client': path.resolve(storybookDirectory, '../../api-client/src/index.ts'),
+					'@Bbsmc/api-client': path.resolve(storybookDirectory, '../../api-client/src/index.ts'),
 				},
 			},
 		}),

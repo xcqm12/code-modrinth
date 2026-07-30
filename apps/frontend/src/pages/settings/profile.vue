@@ -19,21 +19,21 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
 import {
 	AccountProfileSettings,
 	commonSettingsMessages,
-	injectModrinthClient,
+	injectBbsmcClient,
 	UnsavedChangesPopup,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 
 definePageMeta({
 	middleware: 'auth',
 })
 
 const auth = await useAuth()
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const { formatMessage } = useVIntl()
 const profileSettings = ref<InstanceType<typeof AccountProfileSettings> | null>(null)
 const emptyProfileState = {
@@ -72,6 +72,6 @@ function saveProfileSettings(): void {
 }
 
 useHead({
-	title: () => `${formatMessage(commonSettingsMessages.profile)} - Modrinth`,
+	title: () => `${formatMessage(commonSettingsMessages.profile)} - Bbsmc`,
 })
 </script>

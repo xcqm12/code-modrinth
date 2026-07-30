@@ -137,8 +137,8 @@
 	</div>
 </template>
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { ListFilterIcon, ScaleIcon, SearchIcon, SortAscIcon, SortDescIcon } from '@modrinth/assets'
+import type { Labrinth } from '@Bbsmc/api-client'
+import { ListFilterIcon, ScaleIcon, SearchIcon, SortAscIcon, SortDescIcon } from '@Bbsmc/assets'
 import {
 	ButtonStyled,
 	Combobox,
@@ -146,13 +146,13 @@ import {
 	commonMessages,
 	defineMessages,
 	EmptyState,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	Pagination,
 	StyledInput,
 	Toggle,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { useQuery } from '@tanstack/vue-query'
 import ConfettiExplosion from 'vue-confetti-explosion'
 
@@ -160,14 +160,14 @@ import ModerationQueueCard from '~/components/ui/moderation/ModerationQueueCard.
 import { type ModerationProject, toModerationProjects } from '~/helpers/moderation.ts'
 import { useModerationQueue } from '~/services/moderation-queue.ts'
 
-useHead({ title: 'Projects queue - Modrinth' })
+useHead({ title: 'Projects queue - Bbsmc' })
 
 const { formatMessage } = useVIntl()
 const { addNotification } = injectNotificationManager()
 const moderationQueue = useModerationQueue()
 const route = useRoute()
 const router = useRouter()
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 
 const visible = ref(false)
 if (import.meta.client && history && history.state && history.state.confetti) {

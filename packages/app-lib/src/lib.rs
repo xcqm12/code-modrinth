@@ -1,8 +1,8 @@
 /*!
 # Theseus
 
-Theseus is a library which provides utilities for launching minecraft, creating Modrinth mod packs,
-and launching Modrinth mod packs
+Theseus is a library which provides utilities for launching minecraft, creating Bbsmc mod packs,
+and launching Bbsmc mod packs
 */
 #![warn(unused_import_braces)]
 #![deny(unused_must_use)]
@@ -30,7 +30,7 @@ pub use util::fetch::DownloadReason;
 
 pub fn launcher_user_agent() -> String {
     const LAUNCHER_BASE_USER_AGENT: &str =
-        concat!("modrinth/theseus/", env!("CARGO_PKG_VERSION"),);
+        concat!("Bbsmc/theseus/", env!("CARGO_PKG_VERSION"),);
 
     format!(
         "{} ({}; support@bbsmc.org.cn)",

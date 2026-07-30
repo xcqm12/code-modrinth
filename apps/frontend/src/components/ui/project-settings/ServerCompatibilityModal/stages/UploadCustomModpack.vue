@@ -64,8 +64,8 @@
 </template>
 
 <script setup lang="ts">
-import { ArrowLeftRightIcon, FileIcon } from '@modrinth/assets'
-import { ButtonStyled, Checkbox, DropzoneFileInput } from '@modrinth/ui'
+import { ArrowLeftRightIcon, FileIcon } from '@Bbsmc/assets'
+import { ButtonStyled, Checkbox, DropzoneFileInput } from '@Bbsmc/ui'
 
 import { injectServerCompatibilityContext } from '~/providers/manage-server-compatibility-modal'
 

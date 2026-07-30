@@ -39,7 +39,7 @@ export default defineConfig({
 	resolve: {
 		alias: [
 			{
-				find: '@modrinth/api-client',
+				find: '@Bbsmc/api-client',
 				replacement: apiClientSource,
 			},
 			{
@@ -94,7 +94,7 @@ export default defineConfig({
 	},
 	// to make use of `TAURI_ENV_DEBUG` and other env variables
 	// https://v2.tauri.app/reference/environment-variables/#tauri-cli-hook-commands
-	envPrefix: ['VITE_', 'TAURI_', 'MODRINTH_', 'SHARED_INSTANCES_'],
+	envPrefix: ['VITE_', 'TAURI_', 'Bbsmc_', 'SHARED_INSTANCES_'],
 	build: {
 		rolldownOptions: {
 			onwarn(warning, defaultHandler) {

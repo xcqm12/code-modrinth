@@ -1,10 +1,10 @@
 # ![Frontend Cover](/.github/assets/web_cover.png)
 
-# Modrinth Web Interface
+# Bbsmc Web Interface
 
-Welcome to the Modrinth Web Interface! This web-based platform is designed for discovering, downloading, and managing Minecraft mods.
+Welcome to the Bbsmc Web Interface! This web-based platform is designed for discovering, downloading, and managing Minecraft mods.
 
-If you're not a developer and you've stumbled upon this repository, you can access the web interface on the [Modrinth website](https://bbsmc.org.cn).
+If you're not a developer and you've stumbled upon this repository, you can access the web interface on the [Bbsmc website](https://bbsmc.org.cn).
 
 ## Development
 

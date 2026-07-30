@@ -24,8 +24,8 @@
 </template>
 
 <script setup lang="ts">
-import { DownloadIcon, RefreshCwIcon } from '@modrinth/assets'
-import { ButtonStyled, defineMessages, useVIntl } from '@modrinth/ui'
+import { DownloadIcon, RefreshCwIcon } from '@Bbsmc/assets'
+import { ButtonStyled, defineMessages, useVIntl } from '@Bbsmc/ui'
 import { computed, nextTick, onBeforeUnmount, ref, watch } from 'vue'
 
 import {

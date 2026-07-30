@@ -116,7 +116,7 @@
 </template>
 
 <script setup lang="ts">
-import { SearchIcon, XIcon } from '@modrinth/assets'
+import { SearchIcon, XIcon } from '@Bbsmc/assets'
 import { type Component, computed, ref } from 'vue'
 
 const RING = {

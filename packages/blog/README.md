@@ -1,6 +1,6 @@
-# Modrinth Blog Articles
+# Bbsmc Blog Articles
 
-This package contains the articles for the Modrinth blog. The articles are written in Markdown and are rendered on the Modrinth website.
+This package contains the articles for the Bbsmc blog. The articles are written in Markdown and are rendered on the Bbsmc website.
 
 ## How to add a new article
 

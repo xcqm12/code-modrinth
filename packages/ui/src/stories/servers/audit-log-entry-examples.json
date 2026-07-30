@@ -447,7 +447,7 @@
 				"action": "modpack_changed",
 				"metadata": {
 					"spec": {
-						"platform": "modrinth",
+						"platform": "Bbsmc",
 						"project_id": "BYN9yKrV",
 						"version_id": "w0KHzZ43",
 						"mrpack_sha1": "6b277e2f6e3a9a1acef3342bd154ade25031ad70"
@@ -467,7 +467,7 @@
 				"action": "modpack_unlinked",
 				"metadata": {
 					"spec": {
-						"platform": "modrinth",
+						"platform": "Bbsmc",
 						"project_id": "BYN9yKrV",
 						"version_id": "w0KHzZ43",
 						"mrpack_sha1": "6b277e2f6e3a9a1acef3342bd154ade25031ad70"

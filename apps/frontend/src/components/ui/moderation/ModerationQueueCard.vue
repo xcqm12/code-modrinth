@@ -124,7 +124,7 @@
 </template>
 
 <script setup lang="ts">
-import { ClipboardCopyIcon, FileIcon, LinkIcon, ScaleIcon } from '@modrinth/assets'
+import { ClipboardCopyIcon, FileIcon, LinkIcon, ScaleIcon } from '@Bbsmc/assets'
 import {
 	Avatar,
 	Badge,
@@ -133,8 +133,8 @@ import {
 	injectNotificationManager,
 	useFormatDateTime,
 	useRelativeTime,
-} from '@modrinth/ui'
-import { formatProjectType } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import { formatProjectType } from '@Bbsmc/utils'
 import dayjs from 'dayjs'
 import { computed } from 'vue'
 

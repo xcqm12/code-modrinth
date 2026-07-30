@@ -89,11 +89,11 @@
   "analytics.chart.controls.display": {
     "message": "Paparan"
   },
-  "analytics.chart.controls.modrinth-events": {
-    "message": "Peristiwa Modrinth"
+  "analytics.chart.controls.Bbsmc-events": {
+    "message": "Peristiwa Bbsmc"
   },
-  "analytics.chart.controls.no-modrinth-events": {
-    "message": "Tiada peristiwa Modrinth dalam graf."
+  "analytics.chart.controls.no-Bbsmc-events": {
+    "message": "Tiada peristiwa Bbsmc dalam graf."
   },
   "analytics.chart.controls.no-project-events": {
     "message": "Tiada peristiwa projek dalam graf."
@@ -123,7 +123,7 @@
     "message": "Lihat butiran analitik pengewangan"
   },
   "analytics.chart.legend.monetization-details.description": {
-    "message": "Hanya tontonan dan muat turun yang dibuat melalui Modrinth diambil kira untuk pengewangan, dan muat turun memerlukan pengguna log masuk ke akaun mereka."
+    "message": "Hanya tontonan dan muat turun yang dibuat melalui Bbsmc diambil kira untuk pengewangan, dan muat turun memerlukan pengguna log masuk ke akaun mereka."
   },
   "analytics.chart.legend.monetization-details.title": {
     "message": "Butiran analitik pengewangan"
@@ -192,10 +192,10 @@
     "message": "Kemas kini"
   },
   "analytics.download-source.app": {
-    "message": "Modrinth App"
+    "message": "Bbsmc App"
   },
   "analytics.download-source.website": {
-    "message": "Laman sesawang Modrinth"
+    "message": "Laman sesawang Bbsmc"
   },
   "analytics.downloads.suffix": {
     "message": "muat turun"
@@ -348,7 +348,7 @@
     "message": "Muat turun"
   },
   "analytics.stat.monetization-banner.body": {
-    "message": "Hanya tontonan dan muat turun yang dibuat melalui Modrinth layak untuk pengewangan dan mesti melepasi penapisan pencegahan penipuan. Muat turun melalui Modrinth App juga memerlukan pengguna log masuk ke akaun mereka. Oleh sebab semua projek mempunyai nisbah muat turun yang layak untuk pengewangan yang hampir sama, pendapatan anda tidak akan berubah secara ketara walaupun semua muat turun diambil kira."
+    "message": "Hanya tontonan dan muat turun yang dibuat melalui Bbsmc layak untuk pengewangan dan mesti melepasi penapisan pencegahan penipuan. Muat turun melalui Bbsmc App juga memerlukan pengguna log masuk ke akaun mereka. Oleh sebab semua projek mempunyai nisbah muat turun yang layak untuk pengewangan yang hampir sama, pendapatan anda tidak akan berubah secara ketara walaupun semua muat turun diambil kira."
   },
   "analytics.stat.monetization-banner.learn-more": {
     "message": "Ketahui lebih lanjut"
@@ -447,7 +447,7 @@
     "message": "Linux"
   },
   "app-marketing.download.linux-disclaimer": {
-    "message": "Versi Linux Modrinth App <issues-link>diketahui mempunyai isu</issues-link> pada sistem dan konfigurasi tertentu. Jika Modrinth App tidak stabil pada sistem anda, kami menggalakkan anda mencuba aplikasi lain seperti <prism-link>Prism Launcher</prism-link> untuk memasang kandungan Modrinth dengan mudah."
+    "message": "Versi Linux Bbsmc App <issues-link>diketahui mempunyai isu</issues-link> pada sistem dan konfigurasi tertentu. Jika Bbsmc App tidak stabil pada sistem anda, kami menggalakkan anda mencuba aplikasi lain seperti <prism-link>Prism Launcher</prism-link> untuk memasang kandungan Bbsmc dengan mudah."
   },
   "app-marketing.download.mac": {
     "message": "Mac"
@@ -456,10 +456,10 @@
     "message": "Pilihan muat turun"
   },
   "app-marketing.download.terms": {
-    "message": "Dengan memuat turun Modrinth App, anda bersetuju dengan <terms-link>Terma</terms-link> dan <privacy-link>Dasar Privasi</privacy-link> kami."
+    "message": "Dengan memuat turun Bbsmc App, anda bersetuju dengan <terms-link>Terma</terms-link> dan <privacy-link>Dasar Privasi</privacy-link> kami."
   },
   "app-marketing.download.title": {
-    "message": "Muat Turun Modrinth App (Beta)"
+    "message": "Muat Turun Bbsmc App (Beta)"
   },
   "app-marketing.download.windows": {
     "message": "Windows"
@@ -471,7 +471,7 @@
     "message": "Ikuti projek"
   },
   "app-marketing.features.importing.description": {
-    "message": "Import semua profil kegemaran anda daripada pelancar yang anda gunakan sebelum ini, dan mula gunakan Modrinth App dalam beberapa saat!"
+    "message": "Import semua profil kegemaran anda daripada pelancar yang anda gunakan sebelum ini, dan mula gunakan Bbsmc App dalam beberapa saat!"
   },
   "app-marketing.features.importing.gdlauncher-alt": {
     "message": "GDLauncher"
@@ -489,7 +489,7 @@
     "message": "oleh {author}"
   },
   "app-marketing.features.mod-management.description": {
-    "message": "Modrinth menjadikan pengurusan semua mod anda pada satu tempat mudah. Anda boleh memasang, menyahpasang dan mengemas kini mod dengan sekali klik."
+    "message": "Bbsmc menjadikan pengurusan semua mod anda pada satu tempat mudah. Anda boleh memasang, menyahpasang dan mengemas kini mod dengan sekali klik."
   },
   "app-marketing.features.mod-management.installed-mods": {
     "message": "Mod yang dipasang"
@@ -513,7 +513,7 @@
     "message": "Mod luar talian"
   },
   "app-marketing.features.open-source.description": {
-    "message": "Pelancar Modrinth adalah sumber terbuka sepenuhnya. Anda boleh melihat kod sumber pada laman <github-link>GitHub</github-link> kami!"
+    "message": "Pelancar Bbsmc adalah sumber terbuka sepenuhnya. Anda boleh melihat kod sumber pada laman <github-link>GitHub</github-link> kami!"
   },
   "app-marketing.features.open-source.title": {
     "message": "Sumber terbuka"
@@ -525,7 +525,7 @@
     "message": "% CPU"
   },
   "app-marketing.features.performance.description": {
-    "message": "Modrinth App berprestasi lebih baik daripada kebanyakan pengurus mod terkemuka, menggunakan hanya 150 MB RAM!"
+    "message": "Bbsmc App berprestasi lebih baik daripada kebanyakan pengurus mod terkemuka, menggunakan hanya 150 MB RAM!"
   },
   "app-marketing.features.performance.discord": {
     "message": "Discord"
@@ -537,16 +537,16 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.infinite-mb": {
-    "message": "âˆž MB"
+    "message": "âˆ?MB"
   },
   "app-marketing.features.performance.infinite-times-infinite-mb": {
-    "message": "âˆž Ã— âˆž MB"
+    "message": "âˆ?Ã— âˆ?MB"
   },
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MB"
   },
-  "app-marketing.features.performance.modrinth-app": {
-    "message": "Modrinth App"
+  "app-marketing.features.performance.Bbsmc-app": {
+    "message": "Bbsmc App"
   },
   "app-marketing.features.performance.one-billion-percent": {
     "message": "1 bilion %"
@@ -564,13 +564,13 @@
     "message": "Cekap"
   },
   "app-marketing.features.play.description": {
-    "message": "Gunakan Modrinth App untuk memuat turun dan memainkan mod dan pek mod kegemaran anda."
+    "message": "Gunakan Bbsmc App untuk memuat turun dan memainkan mod dan pek mod kegemaran anda."
   },
   "app-marketing.features.play.title": {
     "message": "Mainkan mod kegemaran anda"
   },
   "app-marketing.features.sharing.description": {
-    "message": "Bina, kongsi dan mainkan pek mod dengan mana-mana pilihan daripada beribu-ribu mod dan pek mod yang dihoskan di sini di Modrinth."
+    "message": "Bina, kongsi dan mainkan pek mod dengan mana-mana pilihan daripada beribu-ribu mod dan pek mod yang dihoskan di sini di Bbsmc."
   },
   "app-marketing.features.sharing.modpack": {
     "message": "Pek Mod"
@@ -585,7 +585,7 @@
     "message": "Tidak seperti pelancar yang"
   },
   "app-marketing.features.website.description": {
-    "message": "Modrinth App disepadukan sepenuhnya dengan laman sesawang, jadi anda boleh mengakses semua projek kegemaran anda dari dalam aplikasi!"
+    "message": "Bbsmc App disepadukan sepenuhnya dengan laman sesawang, jadi anda boleh mengakses semua projek kegemaran anda dari dalam aplikasi!"
   },
   "app-marketing.features.website.title": {
     "message": "Penyepaduan laman sesawang"
@@ -594,19 +594,19 @@
     "message": "anda gunakan sebelum ini"
   },
   "app-marketing.hero.app-screenshot-alt": {
-    "message": "Petikan skrin Modrinth App dengan pemasangan Cobblemon dibuka ke laman 'Kandungan'."
+    "message": "Petikan skrin Bbsmc App dengan pemasangan Cobblemon dibuka ke laman 'Kandungan'."
   },
   "app-marketing.hero.description": {
-    "message": "Modrinth App ialah sebuah pelancar sumber terbuka unik yang membolehkan anda memainkan mod kegemaran anda dan memastikannya dikemas kini, semuanya dalam satu pakej kecil yang kemas."
+    "message": "Bbsmc App ialah sebuah pelancar sumber terbuka unik yang membolehkan anda memainkan mod kegemaran anda dan memastikannya dikemas kini, semuanya dalam satu pakej kecil yang kemas."
   },
   "app-marketing.hero.download-button": {
-    "message": "Muat Turun Modrinth App"
+    "message": "Muat Turun Bbsmc App"
   },
-  "app-marketing.hero.download-modrinth-app": {
-    "message": "Muat Turun Modrinth App"
+  "app-marketing.hero.download-Bbsmc-app": {
+    "message": "Muat Turun Bbsmc App"
   },
-  "app-marketing.hero.download-modrinth-app-for-os": {
-    "message": "Muat Turun Modrinth App untuk {os}"
+  "app-marketing.hero.download-Bbsmc-app-for-os": {
+    "message": "Muat Turun Bbsmc App untuk {os}"
   },
   "app-marketing.hero.minecraft-screenshot-alt": {
     "message": "Petikan skrin menu utama pemasangan Cobblemon."
@@ -690,7 +690,7 @@
     "message": "Daftar Masuk"
   },
   "auth.sign-up.legal-dislaimer": {
-    "message": "Dengan mencipta akaun, anda bersetuju dengan <terms-link>Terma</terms-link> dan <privacy-policy-link>Dasar Privasi</privacy-policy-link> Modrinth."
+    "message": "Dengan mencipta akaun, anda bersetuju dengan <terms-link>Terma</terms-link> dan <privacy-policy-link>Dasar Privasi</privacy-policy-link> Bbsmc."
   },
   "auth.sign-up.sign-in-option.title": {
     "message": "Sudah mempunyai akaun?"
@@ -753,7 +753,7 @@
     "message": "Adakah anda pasti mahu memadamkan koleksi ini?"
   },
   "collection.description": {
-    "message": "{description} - Lihat koleksi {name} oleh {username} di Modrinth"
+    "message": "{description} - Lihat koleksi {name} oleh {username} di Bbsmc"
   },
   "collection.description.following": {
     "message": "Koleksi semua projek yang anda ikuti yang dijana secara automatik."
@@ -873,7 +873,7 @@
     "message": "Balas bebenang"
   },
   "conversation-thread.reply-modal.help-center-note": {
-    "message": "Jika anda perlu menghubungi pasukan penyederhana, sila gunakan <help-center-link>Pusat Bantuan Modrinth</help-center-link> dan klik gelembung biru di penjuru kanan bawah untuk menghubungi sokongan."
+    "message": "Jika anda perlu menghubungi pasukan penyederhana, sila gunakan <help-center-link>Pusat Bantuan Bbsmc</help-center-link> dan klik gelembung biru di penjuru kanan bawah untuk menghubungi sokongan."
   },
   "conversation-thread.resubmit-modal.confirmation.label": {
     "message": "Saya mengesahkan bahawa saya telah menjawab ulasan-ulasan penyederhana dengan betul."
@@ -1128,7 +1128,7 @@
     "message": "Borang cukai"
   },
   "dashboard.creator-tax-form-modal.security.description": {
-    "message": "Modrinth menggunakan penyedia pihak ketiga Track1099 untuk mengumpul dan menyimpan borang cukai anda dengan selamat. <security-link>Ketahui lebih lanjut di sini.</security-link>"
+    "message": "Bbsmc menggunakan penyedia pihak ketiga Track1099 untuk mengumpul dan menyimpan borang cukai anda dengan selamat. <security-link>Ketahui lebih lanjut di sini.</security-link>"
   },
   "dashboard.creator-tax-form-modal.security.header": {
     "message": "Amalan keselamatan"
@@ -1293,7 +1293,7 @@
     "message": "Untuk mengeluarkan baki penuh anda yang tersedia sebanyak <b>{available}</b>, sila lengkapkan borang di bawah. Ia diperlukan untuk pelaporan cukai dan hanya perlu dilakukan sekali sahaja."
   },
   "dashboard.creator-withdraw-modal.tax-form-required.body-with-limit": {
-    "message": "Anda mesti melengkapkan borang W-9 atau W-8 untuk rekod cukai Modrinth supaya kami kekal mematuhi peraturan cukai."
+    "message": "Anda mesti melengkapkan borang W-9 atau W-8 untuk rekod cukai Bbsmc supaya kami kekal mematuhi peraturan cukai."
   },
   "dashboard.creator-withdraw-modal.tax-form-required.header": {
     "message": "Borang cukai diperlukan"
@@ -1335,13 +1335,13 @@
     "message": "E-mel yang belum disahkan"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.unverified-email-message": {
-    "message": "E-mel penghantaran yang anda masukkan tidak dikaitkan dengan akaun Modrinth anda. Modrinth tidak dapat mendapatkan semula ganjaran yang dihantar ke alamat e-mel yang salah."
+    "message": "E-mel penghantaran yang anda masukkan tidak dikaitkan dengan akaun Bbsmc anda. Bbsmc tidak dapat mendapatkan semula ganjaran yang dihantar ke alamat e-mel yang salah."
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-header": {
     "message": "Yuran lebih rendah tersedia"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-message": {
-    "message": "Anda memilih USD untuk PayPal Antarabangsa. <direct-paypal-link>Tukar kepada PayPal langsung</direct-paypal-link> untuk yuran yang lebih baik (â‰ˆ2% dan bukannya â‰ˆ6%)."
+    "message": "Anda memilih USD untuk PayPal Antarabangsa. <direct-paypal-link>Tukar kepada PayPal langsung</direct-paypal-link> untuk yuran yang lebih baik (â‰?% dan bukannya â‰?%)."
   },
   "dashboard.creator-withdraw-modal.withdraw-button": {
     "message": "Keluarkan"
@@ -1500,7 +1500,7 @@
     "message": "Anggaran hasil pendapatan mungkin tertakluk kepada perubahan sehingga ia tersedia."
   },
   "dashboard.revenue.estimated-tooltip.msg2": {
-    "message": "Klik untuk membaca tentang cara Modrinth mengendalikan pendapatan anda."
+    "message": "Klik untuk membaca tentang cara Bbsmc mengendalikan pendapatan anda."
   },
   "dashboard.revenue.estimated-with-date": {
     "message": "Anggaran {date}"
@@ -1521,7 +1521,7 @@
     "message": "Dikeluarkan"
   },
   "dashboard.revenue.tos": {
-    "message": "Dengan memuat naik projek ke Modrinth dan mengeluarkan wang daripada akaun anda, anda bersetuju dengan <terms-link>Terma Program Ganjaran</terms-link> kami. Ketahui lebih lanjut tentang <info-link>Program Ganjaran</info-link> ini."
+    "message": "Dengan memuat naik projek ke Bbsmc dan mengeluarkan wang daripada akaun anda, anda bersetuju dengan <terms-link>Terma Program Ganjaran</terms-link> kami. Ketahui lebih lanjut tentang <info-link>Program Ganjaran</info-link> ini."
   },
   "dashboard.revenue.transactions.btn.download-csv": {
     "message": "Muat turun sebagai CSV"
@@ -1695,7 +1695,7 @@
     "message": "Batalkan penetapan semula"
   },
   "discover.seo.description": {
-    "message": "Cari dan layari beribu-ribu {projectType} Minecraft di Modrinth dengan hasil carian yang segera dan tepat. Penapis kami membantu anda mencari {projectType} Minecraft terbaik dengan cepat."
+    "message": "Cari dan layari beribu-ribu {projectType} Minecraft di Bbsmc dengan hasil carian yang segera dan tepat. Penapis kami membantu anda mencari {projectType} Minecraft terbaik dengan cepat."
   },
   "error.collection.404.list_item.1": {
     "message": "Anda mungkin tersalah taip URL koleksi."
@@ -1704,7 +1704,7 @@
     "message": "Koleksi ini mungkin sebuah koleksi peribadi."
   },
   "error.collection.404.list_item.3": {
-    "message": "Koleksi itu mungkin telah dialih keluar oleh pasukan penyederhana Modrinth kerana melanggar <tou-link>Terma Penggunaan</tou-link> kami."
+    "message": "Koleksi itu mungkin telah dialih keluar oleh pasukan penyederhana Bbsmc kerana melanggar <tou-link>Terma Penggunaan</tou-link> kami."
   },
   "error.collection.404.list_title": {
     "message": "Kenapa?"
@@ -1725,10 +1725,10 @@
     "message": "Kandungan tidak tersedia atas sebab undang-undang"
   },
   "error.generic.default.list_item.1": {
-    "message": "Semak sama ada Modrinth tidak berfungsi pada <status-link>laman Status</status-link> kami."
+    "message": "Semak sama ada Bbsmc tidak berfungsi pada <status-link>laman Status</status-link> kami."
   },
   "error.generic.default.list_item.2": {
-    "message": "Jika ralat ini terus berlaku, anda mungkin ingin memberitahu Pasukan Modrinth dengan menyertai <discord-link>pelayan Discord</discord-link> kami."
+    "message": "Jika ralat ini terus berlaku, anda mungkin ingin memberitahu Pasukan Bbsmc dengan menyertai <discord-link>pelayan Discord</discord-link> kami."
   },
   "error.generic.default.list_title": {
     "message": "Sila cuba lagi dalam beberapa minit."
@@ -1746,7 +1746,7 @@
     "message": "Pemilik organisasi mungkin telah menukar URL atau memadamkannya."
   },
   "error.organization.404.list_item.3": {
-    "message": "Organisasi itu mungkin telah dialih keluar oleh pasukan penyederhana Modrinth kerana melanggar <tou-link>Terma Penggunaan</tou-link> kami."
+    "message": "Organisasi itu mungkin telah dialih keluar oleh pasukan penyederhana Bbsmc kerana melanggar <tou-link>Terma Penggunaan</tou-link> kami."
   },
   "error.organization.404.list_title": {
     "message": "Kenapa?"
@@ -1761,7 +1761,7 @@
     "message": "Pemilik projek mungkin telah menukar URL, memperibadikan projek atau memadamkannya."
   },
   "error.project.404.list_item.3": {
-    "message": "Projek itu mungkin telah dialih keluar oleh pasukan penyederhana Modrinth kerana melanggar <tou-link>Terma Penggunaan</tou-link> kami."
+    "message": "Projek itu mungkin telah dialih keluar oleh pasukan penyederhana Bbsmc kerana melanggar <tou-link>Terma Penggunaan</tou-link> kami."
   },
   "error.project.404.list_title": {
     "message": "Kenapa?"
@@ -1818,10 +1818,10 @@
     "message": "Apabila pelayan anda berada di bawah beban yang berat, kami memberikannya akses kepada bebenang CPU tambahan buat sementara waktu untuk membantu mengurangkan lonjakan lag dan ketidakstabilan. Ini membantu mengelakkan TPS daripada menurun ke bawah 20, memastikan pengalaman yang paling lancar. Memandangkan bebenang CPU tambahan tersebut hanya tersedia sebentar semasa tempoh beban yang tinggi, ia mungkin tidak muncul dalam laporan Spark atau alat pemprofilan lain."
   },
   "hosting-marketing.faq.cpu-kind": {
-    "message": "Apakah jenis CPU yang digunakan oleh pelayan Modrinth Hosting?"
+    "message": "Apakah jenis CPU yang digunakan oleh pelayan Bbsmc Hosting?"
   },
   "hosting-marketing.faq.cpu-kind.answer": {
-    "message": "Pelayan Modrinth Hosting dikuasakan oleh CPU setara AMD Ryzen 7900 dan 7950X3D pada 5+ GHz, digandingkan dengan ingatan DDR5."
+    "message": "Pelayan Bbsmc Hosting dikuasakan oleh CPU setara AMD Ryzen 7900 dan 7950X3D pada 5+ GHz, digandingkan dengan ingatan DDR5."
   },
   "hosting-marketing.faq.currency": {
     "message": "Dalam mata wang apa harga-harga tersebut?"
@@ -1830,19 +1830,19 @@
     "message": "Semua harga disenaraikan dalam Dolar Amerika Syarikat (USD)."
   },
   "hosting-marketing.faq.ddos-protection": {
-    "message": "Adakah pelayan Modrinth Hosting mempunyai perlindungan DDoS?"
+    "message": "Adakah pelayan Bbsmc Hosting mempunyai perlindungan DDoS?"
   },
   "hosting-marketing.faq.ddos-protection.answer": {
-    "message": "Ya. Semua pelayan Modrinth Hosting dilengkapi dengan perlindungan DDoS, dengan kapasiti sehingga 17 Tbps di beberapa lokasi."
+    "message": "Ya. Semua pelayan Bbsmc Hosting dilengkapi dengan perlindungan DDoS, dengan kapasiti sehingga 17 Tbps di beberapa lokasi."
   },
   "hosting-marketing.faq.heading": {
     "message": "Soalan Lazim"
   },
   "hosting-marketing.faq.how-fast": {
-    "message": "Seberapa pantaskah pelayan Modrinth Hosting?"
+    "message": "Seberapa pantaskah pelayan Bbsmc Hosting?"
   },
   "hosting-marketing.faq.how-fast.answer.one": {
-    "message": "Pelayan Modrinth Hosting dihoskan pada perkakasan berprestasi tinggi yang sangat moden, tetapi sukar untuk mengatakan bagaimana sebenarnya itu akan diterjemahkan kepada seberapa pantas pelayan anda akan berjalan kerana terdapat begitu banyak faktor yang mempengaruhinya, seperti mod, pek data atau pemalam yang anda jalankan pada pelayan anda, dan juga tingkah laku pengguna."
+    "message": "Pelayan Bbsmc Hosting dihoskan pada perkakasan berprestasi tinggi yang sangat moden, tetapi sukar untuk mengatakan bagaimana sebenarnya itu akan diterjemahkan kepada seberapa pantas pelayan anda akan berjalan kerana terdapat begitu banyak faktor yang mempengaruhinya, seperti mod, pek data atau pemalam yang anda jalankan pada pelayan anda, dan juga tingkah laku pengguna."
   },
   "hosting-marketing.faq.how-fast.answer.two": {
     "message": "Kebanyakan masalah prestasi yang timbul cenderung disebabkan oleh pek mod, mod, pek data atau pemalam yang tidak dioptimumkan yang menyebabkan pelayan menjadi lag. Memandangkan pelayan kami sangat canggih, anda tidak sepatutnya menghadapi banyak masalah selagi anda memilih pelan yang sesuai untuk kandungan yang anda jalankan di pelayan."
@@ -1851,10 +1851,10 @@
     "message": "Bolehkah saya menambah penyimpanan pada pelayan saya?"
   },
   "hosting-marketing.faq.increase-storage.answer": {
-    "message": "Ya, penyimpanan boleh ditambah pada pelayan anda tanpa sebarang kos tambahan. Jika anda memerlukan lebih banyak storan, hubungi Sokongan Modrinth."
+    "message": "Ya, penyimpanan boleh ditambah pada pelayan anda tanpa sebarang kos tambahan. Jika anda memerlukan lebih banyak storan, hubungi Sokongan Bbsmc."
   },
   "hosting-marketing.faq.location": {
-    "message": "Di manakah pelayan Modrinth Hosting terletak? Bolehkah saya memilih rantau?"
+    "message": "Di manakah pelayan Bbsmc Hosting terletak? Bolehkah saya memilih rantau?"
   },
   "hosting-marketing.faq.location.answer": {
     "message": "Kami mempunyai pelayan yang tersedia merentasi Amerika Utara, Eropah, Asia Tenggara dan Australia pada masa ini yang boleh anda pilih semasa pembelian. Lebih banyak rantau akan datang pada masa hadapan! Jika anda ingin menukar rantau anda, sila hubungi sokongan."
@@ -1863,7 +1863,7 @@
     "message": "Versi Minecraft dan pemuat apa yang boleh digunakan?"
   },
   "hosting-marketing.faq.versions-loaders.answer.one": {
-    "message": "Pelayan Modrinth Hosting boleh menjalankan sebarang versi Minecraft: Edisi Java sejak versi 1.2.5, termasuk versi-versi petikan (snapshot)."
+    "message": "Pelayan Bbsmc Hosting boleh menjalankan sebarang versi Minecraft: Edisi Java sejak versi 1.2.5, termasuk versi-versi petikan (snapshot)."
   },
   "hosting-marketing.faq.versions-loaders.answer.two": {
     "message": "Kami juga menyokong pelbagai pemuat mod dan pemalam, termasuk Fabric, Quilt, Forge dan NeoForge untuk mod, serta Paper dan Purpur untuk pemalam. Ketersediaan bergantung pada sama ada pemuat mod atau pemalam menyokong versi Minecraft yang dipilih."
@@ -1880,11 +1880,11 @@
   "hosting-marketing.hero.button.start-your-server": {
     "message": "Mulakan pelayan anda"
   },
-  "hosting-marketing.hero.host-with-modrinth": {
-    "message": "Hoskan pelayan anda yang seterusnya dengan Modrinth Hosting"
+  "hosting-marketing.hero.host-with-Bbsmc": {
+    "message": "Hoskan pelayan anda yang seterusnya dengan Bbsmc Hosting"
   },
   "hosting-marketing.hero.hosting-description": {
-    "message": "Modrinth Hosting ialah cara paling mudah untuk mengehos pelayan Minecraft: Edisi Java anda sendiri. Pasang dan mainkan mod dan pek mod kegemaran anda dengan lancar, semuanya dalam platform Modrinth."
+    "message": "Bbsmc Hosting ialah cara paling mudah untuk mengehos pelayan Minecraft: Edisi Java anda sendiri. Pasang dan mainkan mod dan pek mod kegemaran anda dengan lancar, semuanya dalam platform Bbsmc."
   },
   "hosting-marketing.included.advanced-networking": {
     "message": "Pengurusan rangkaian lanjutan"
@@ -1902,10 +1902,10 @@
     "message": "URL Tersuai"
   },
   "hosting-marketing.included.custom-url.description": {
-    "message": "Kongsi pelayan anda dengan URL <contrast>modrinth.gg</contrast> tersuai."
+    "message": "Kongsi pelayan anda dengan URL <contrast>Bbsmc.gg</contrast> tersuai."
   },
   "hosting-marketing.included.description": {
-    "message": "Setiap pelayan disertakan dengan satu set ciri yang direka untuk menyediakan pengalaman pengehosan yang hanya boleh ditawarkan oleh Modrinth."
+    "message": "Setiap pelayan disertakan dengan satu set ciri yang direka untuk menyediakan pengalaman pengehosan yang hanya boleh ditawarkan oleh Bbsmc."
   },
   "hosting-marketing.included.file-manager": {
     "message": "Pengurus fail yang mudah digunakan"
@@ -1920,19 +1920,19 @@
     "message": "Bantuan apabila anda memerlukannya"
   },
   "hosting-marketing.included.help.description": {
-    "message": "Hubungi pasukan Modrinth untuk mendapatkan bantuan dengan pelayan anda pada bila-bila masa."
+    "message": "Hubungi pasukan Bbsmc untuk mendapatkan bantuan dengan pelayan anda pada bila-bila masa."
   },
   "hosting-marketing.included.powerful-console": {
     "message": "Konsol yang berkuasa, pengurus sifat pelayan dan banyak lagi"
   },
   "hosting-marketing.included.powerful-console.description": {
-    "message": "Modrinth Hosting dilengkapi dengan alat yang berkuasa untuk mengurus pelayan anda."
+    "message": "Bbsmc Hosting dilengkapi dengan alat yang berkuasa untuk mengurus pelayan anda."
   },
   "hosting-marketing.included.sftp-access": {
     "message": "Akses SFTP"
   },
   "hosting-marketing.included.sftp-access.description": {
-    "message": "Akses fail pelayan anda secara langsung dengan SFTP yang terbina dalam Modrinth Hosting."
+    "message": "Akses fail pelayan anda secara langsung dengan SFTP yang terbina dalam Bbsmc Hosting."
   },
   "hosting-marketing.included.with-your-server": {
     "message": "Disertakan dengan pelayan anda"
@@ -1955,20 +1955,20 @@
   "hosting-marketing.server-for-everyone": {
     "message": "Ada pelayan untuk semua orang"
   },
-  "hosting-marketing.why.all-on-modrinth": {
-    "message": "Urus semuanya di Modrinth"
+  "hosting-marketing.why.all-on-Bbsmc": {
+    "message": "Urus semuanya di Bbsmc"
   },
-  "hosting-marketing.why.all-on-modrinth.description": {
-    "message": "Pelayan, mod, pemain dan banyak lagi semuanya ada di Modrinth. Tidak perlu bertukar antara platform."
+  "hosting-marketing.why.all-on-Bbsmc.description": {
+    "message": "Pelayan, mod, pemain dan banyak lagi semuanya ada di Bbsmc. Tidak perlu bertukar antara platform."
   },
   "hosting-marketing.why.consistently-fast": {
     "message": "Sentiasa pantas"
   },
   "hosting-marketing.why.consistently-fast.description": {
-    "message": "Infrastruktur kami tidak pernah kelebihan beban, bermakna setiap pelayan yang dihoskan dengan Modrinth sentiasa berjalan pada prestasi penuhnya."
+    "message": "Infrastruktur kami tidak pernah kelebihan beban, bermakna setiap pelayan yang dihoskan dengan Bbsmc sentiasa berjalan pada prestasi penuhnya."
   },
   "hosting-marketing.why.description": {
-    "message": "Pilih daripada beribu-ribu pek mod di Modrinth atau cipta pek mod anda sendiri. Jemput rakan anda apabila anda bersedia untuk bermain."
+    "message": "Pilih daripada beribu-ribu pek mod di Bbsmc atau cipta pek mod anda sendiri. Jemput rakan anda apabila anda bersedia untuk bermain."
   },
   "hosting-marketing.why.heading": {
     "message": "Cari pek mod. Sekarang, sudah jadi pelayan."
@@ -1977,22 +1977,22 @@
     "message": "Alami pengehosan moden yang boleh dipercayai"
   },
   "hosting-marketing.why.modern-reliable-hosting.description": {
-    "message": "Pelayan Modrinth Hosting dihoskan pada <contrast>CPU AMD berprestasi tinggi dengan RAM DDR5</contrast>, yang berjalan pada perisian binaan khas untuk memastikan pelayan anda berfungsi dengan lancar."
+    "message": "Pelayan Bbsmc Hosting dihoskan pada <contrast>CPU AMD berprestasi tinggi dengan RAM DDR5</contrast>, yang berjalan pada perisian binaan khas untuk memastikan pelayan anda berfungsi dengan lancar."
   },
   "hosting-marketing.why.where-mods-are": {
     "message": "Main di tempat mod anda berada"
   },
   "hosting-marketing.why.where-mods-are.description": {
-    "message": "Modrinth Hosting mengintegrasikan proses pemasangan mod dan pek mod dengan lancar ke dalam pelayan anda."
+    "message": "Bbsmc Hosting mengintegrasikan proses pemasangan mod dan pek mod dengan lancar ke dalam pelayan anda."
   },
-  "hosting-marketing.why.why-modrinth-hosting": {
-    "message": "Kenapa Modrinth Hosting?"
+  "hosting-marketing.why.why-Bbsmc-hosting": {
+    "message": "Kenapa Bbsmc Hosting?"
   },
   "hosting-marketing.why.your-favorite-mods": {
     "message": "Semua mod kegemaran anda"
   },
   "hosting-marketing.why.your-favorite-mods.description": {
-    "message": "Pilih antara Vanila, Fabric, Forge, Quilt dan NeoForge. Jika ia berada di Modrinth, ia boleh dijalankan pada pelayan anda."
+    "message": "Pilih antara Vanila, Fabric, Forge, Quilt dan NeoForge. Jika ia berada di Bbsmc, ia boleh dijalankan pada pelayan anda."
   },
   "hosting.plan.out-of-stock": {
     "message": "Kehabisan stok"
@@ -2007,7 +2007,7 @@
     "message": "Pergi ke papan pemuka"
   },
   "landing.creator.feature.constantly-evolving.description": {
-    "message": "Dapatkan pengalaman pengubahsuaian terbaik yang mungkin dengan kemas kini berterusan daripada pasukan Modrinth"
+    "message": "Dapatkan pengalaman pengubahsuaian terbaik yang mungkin dengan kemas kini berterusan daripada pasukan Bbsmc"
   },
   "landing.creator.feature.constantly-evolving.title": {
     "message": "Sentiasa Berkembang"
@@ -2052,13 +2052,13 @@
     "message": "Ikuti projek yang anda sukai"
   },
   "landing.feature.launcher.description": {
-    "message": "API sumber terbuka Modrinth membolehkan pelancar menambah penyepaduan yang mendalam dengan Modrinth. Anda boleh menggunakan Modrinth melalui <link>aplikasi kami sendiri</link> dan beberapa pelancar paling popular seperti ATLauncher, MultiMC dan Prism Launcher."
+    "message": "API sumber terbuka Bbsmc membolehkan pelancar menambah penyepaduan yang mendalam dengan Bbsmc. Anda boleh menggunakan Bbsmc melalui <link>aplikasi kami sendiri</link> dan beberapa pelancar paling popular seperti ATLauncher, MultiMC dan Prism Launcher."
   },
   "landing.feature.launcher.heading": {
     "message": "Mainkan dengan pelancar kegemaran anda"
   },
   "landing.feature.search.description": {
-    "message": "Carian sepantas kilat dan penapis berkuasa oleh Modrinth membolehkan anda mencari perkara yang anda inginkan semasa anda menaip."
+    "message": "Carian sepantas kilat dan penapis berkuasa oleh Bbsmc membolehkan anda mencari perkara yang anda inginkan semasa anda menaip."
   },
   "landing.feature.search.heading": {
     "message": "Cari apa yang anda mahu, dengan cepat dan mudah"
@@ -2091,10 +2091,10 @@
     "message": "ATLauncher"
   },
   "landing.launcher.graphic-alt": {
-    "message": "Perwakilan ringkas tetingkap Minecraft, dengan logo Mojang Studios dalam warna hijau Modrinth."
+    "message": "Perwakilan ringkas tetingkap Minecraft, dengan logo Mojang Studios dalam warna hijau Bbsmc."
   },
-  "landing.launcher.modrinth-app-label": {
-    "message": "Modrinth App"
+  "landing.launcher.Bbsmc-app-label": {
+    "message": "Bbsmc App"
   },
   "landing.launcher.prism-launcher-label": {
     "message": "Prism Launcher"
@@ -2187,13 +2187,13 @@
     "message": "Kunjungi tetapan akaun"
   },
   "layout.banner.add-email.description": {
-    "message": "Atas sebab keselamatan, Modrinth memerlukan anda mendaftarkan alamat e-mel ke akaun anda."
+    "message": "Atas sebab keselamatan, Bbsmc memerlukan anda mendaftarkan alamat e-mel ke akaun anda."
   },
   "layout.banner.build-fail.always-ignore": {
     "message": "Sentiasa abaikan"
   },
   "layout.banner.build-fail.description": {
-    "message": "Penggunaan bahagian hadapan Modrinth ini gagal menjana keadaan daripada API. Ini mungkin disebabkan oleh gangguan atau ralat dalam konfigurasi. Bina semula apabila API tersedia. Kod ralat: {errors}; URL API semasa ialah: {url}"
+    "message": "Penggunaan bahagian hadapan Bbsmc ini gagal menjana keadaan daripada API. Ini mungkin disebabkan oleh gangguan atau ralat dalam konfigurasi. Bina semula apabila API tersedia. Kod ralat: {errors}; URL API semasa ialah: {url}"
   },
   "layout.banner.build-fail.ignore": {
     "message": "Abaikan"
@@ -2202,16 +2202,16 @@
     "message": "Ralat menjana keadaan daripada API semasa membina."
   },
   "layout.banner.preview.description": {
-    "message": "Jika anda bermaksud untuk mengakses laman sesawang rasmi Modrinth, kunjungi {url}. Pralihat pelaksanaan ini digunakan oleh kakitangan Modrinth untuk tujuan pengujian. Ia dibina menggunakan {ref}."
+    "message": "Jika anda bermaksud untuk mengakses laman sesawang rasmi Bbsmc, kunjungi {url}. Pralihat pelaksanaan ini digunakan oleh kakitangan Bbsmc untuk tujuan pengujian. Ia dibina menggunakan {ref}."
   },
   "layout.banner.preview.title": {
-    "message": "Ini ialah pengaturan pralihat laman sesawang Modrinth."
+    "message": "Ini ialah pengaturan pralihat laman sesawang Bbsmc."
   },
   "layout.banner.staging.description": {
-    "message": "Persekitaran pementasan adalah berasingan daripada pangkalan data produksi Modrinth. Ini digunakan untuk tujuan ujian dan penyahpepijatan, dan mungkin menjalankan versi dalam pembangunan bahagian belakang atau hadapan Modrinth yang lebih baharu daripada persekitaran produksi."
+    "message": "Persekitaran pementasan adalah berasingan daripada pangkalan data produksi Bbsmc. Ini digunakan untuk tujuan ujian dan penyahpepijatan, dan mungkin menjalankan versi dalam pembangunan bahagian belakang atau hadapan Bbsmc yang lebih baharu daripada persekitaran produksi."
   },
   "layout.banner.staging.title": {
-    "message": "Anda sedang melihat persekitaran pementasan Modrinth"
+    "message": "Anda sedang melihat persekitaran pementasan Bbsmc"
   },
   "layout.banner.subscription-payment-failed.button": {
     "message": "Kemas kini maklumat pengebilan"
@@ -2226,7 +2226,7 @@
     "message": "Lengkapkan borang cukai"
   },
   "layout.banner.tax.description": {
-    "message": "Anda telah mengeluarkan lebih {threshold} daripada Modrinth tahun ini. Untuk mematuhi peraturan cukai, anda perlu melengkapkan borang cukai. Pengeluaran anda dijeda sehingga borang ini diserahkan."
+    "message": "Anda telah mengeluarkan lebih {threshold} daripada Bbsmc tahun ini. Untuk mematuhi peraturan cukai, anda perlu melengkapkan borang cukai. Pengeluaran anda dijeda sehingga borang ini diserahkan."
   },
   "layout.banner.tax.title": {
     "message": "Borang cukai diperlukan"
@@ -2244,7 +2244,7 @@
     "message": "Hantar semula e-mel pengesahan"
   },
   "layout.banner.verify-email.description": {
-    "message": "Atas sebab keselamatan, Modrinth memerlukan anda mengesahkan alamat e-mel yang dikaitkan dengan akaun anda."
+    "message": "Atas sebab keselamatan, Bbsmc memerlukan anda mengesahkan alamat e-mel yang dikaitkan dengan akaun anda."
   },
   "layout.footer.about": {
     "message": "Tentang"
@@ -2285,23 +2285,23 @@
   "layout.footer.legal.terms-of-use": {
     "message": "Terma Penggunaan"
   },
-  "layout.footer.modrinth-information": {
-    "message": "Maklumat Modrinth"
+  "layout.footer.Bbsmc-information": {
+    "message": "Maklumat Bbsmc"
   },
   "layout.footer.open-source": {
-    "message": "<github-link>Sumber Modrinth adalah terbuka</github-link>."
+    "message": "<github-link>Sumber Bbsmc adalah terbuka</github-link>."
   },
   "layout.footer.products": {
     "message": "Produk"
   },
   "layout.footer.products.app": {
-    "message": "Modrinth App"
+    "message": "Bbsmc App"
   },
   "layout.footer.products.plus": {
-    "message": "Modrinth+"
+    "message": "Bbsmc+"
   },
   "layout.footer.products.servers": {
-    "message": "Modrinth Hosting"
+    "message": "Bbsmc Hosting"
   },
   "layout.footer.resources": {
     "message": "Sumber"
@@ -2337,7 +2337,7 @@
     "message": "Togol menu"
   },
   "layout.meta.description": {
-    "message": "Muat turun mod, pemalam, pek data, pek pembayang, pek sumber dan pek mod Minecraft di Modrinth. Temui dan terbitkan projek di Modrinth dengan antara muka dan API yang moden dan mudah digunakan."
+    "message": "Muat turun mod, pemalam, pek data, pek pembayang, pek sumber dan pek mod Minecraft di Bbsmc. Temui dan terbitkan projek di Bbsmc dengan antara muka dan API yang moden dan mudah digunakan."
   },
   "layout.meta.og-description": {
     "message": "Temui dan terbitkan kandungan Minecraft!"
@@ -2354,8 +2354,8 @@
   "layout.nav.discover": {
     "message": "Temui"
   },
-  "layout.nav.get-modrinth-app": {
-    "message": "Dapatkan Modrinth App"
+  "layout.nav.get-Bbsmc-app": {
+    "message": "Dapatkan Bbsmc App"
   },
   "layout.nav.home": {
     "message": "Laman Utama"
@@ -2363,11 +2363,11 @@
   "layout.nav.host-a-server": {
     "message": "Hos sebuah pelayan"
   },
-  "layout.nav.modrinth-app": {
-    "message": "Modrinth App"
+  "layout.nav.Bbsmc-app": {
+    "message": "Bbsmc App"
   },
-  "layout.nav.modrinth-home-page": {
-    "message": "Laman utama Modrinth"
+  "layout.nav.Bbsmc-home-page": {
+    "message": "Laman utama Bbsmc"
   },
   "layout.nav.my-servers": {
     "message": "Pelayan saya"
@@ -2390,8 +2390,8 @@
   "layout.nav.search": {
     "message": "Cari"
   },
-  "layout.nav.upgrade-to-modrinth-plus": {
-    "message": "Naik taraf ke Modrinth+"
+  "layout.nav.upgrade-to-Bbsmc-plus": {
+    "message": "Naik taraf ke Bbsmc+"
   },
   "moderation.moderate": {
     "message": "Sederhanakan"
@@ -2712,7 +2712,7 @@
     "message": "Serah semula untuk semakan"
   },
   "project-moderation-nags.resubmit-for-review-desc": {
-    "message": "Projek anda telah {status, select, rejected {ditolak} withheld {ditahan} other {{status}}} oleh staf Modrinth. Dalam kebanyakan kes, anda boleh menyerahkan semula untuk semakan selepas menangani masalah yang dikemukakan dalam mesej kakitangan."
+    "message": "Projek anda telah {status, select, rejected {ditolak} withheld {ditahan} other {{status}}} oleh staf Bbsmc. Dalam kebanyakan kes, anda boleh menyerahkan semula untuk semakan selepas menangani masalah yang dikemukakan dalam mesej kakitangan."
   },
   "project-moderation-nags.submit-checklist-tooltip": {
     "message": "Anda mesti melengkapkan langkah-langkah yang diperlukan dalam senarai semak penerbitan!"
@@ -2808,7 +2808,7 @@
     "message": "Semak projek"
   },
   "project.actions.servers-promo.description": {
-    "message": "Modrinth Hosting ialah cara paling mudah untuk bermain dengan rakan anda tanpa perlu bersusah payah!"
+    "message": "Bbsmc Hosting ialah cara paling mudah untuk bermain dengan rakan anda tanpa perlu bersusah payah!"
   },
   "project.actions.servers-promo.pricing": {
     "message": "Bermula pada harga {price}<small> / bulan</small>"
@@ -2829,7 +2829,7 @@
     "message": "{title} tidak menyokong {gameVersion} untuk {platform}"
   },
   "project.download.no-app": {
-    "message": "Tidak ada Modrinth App?"
+    "message": "Tidak ada Bbsmc App?"
   },
   "project.download.platform-unsupported-tooltip": {
     "message": "{title} tidak menyokong {platform} untuk {gameVersion}"
@@ -2847,7 +2847,7 @@
     "message": "Muat turun {title}"
   },
   "project.environment.migration-no-permission.message": {
-    "message": "Kami baru sahaja merombak sistem Persekitaran pada Modrinth dan pilihan baharu kini tersedia. Anda tidak mempunyai kebenaran untuk mengubah suai tetapan ini, tetapi sila maklumkan ahli projek yang lain bahawa metadata persekitaran perlu disahkan."
+    "message": "Kami baru sahaja merombak sistem Persekitaran pada Bbsmc dan pilihan baharu kini tersedia. Anda tidak mempunyai kebenaran untuk mengubah suai tetapan ini, tetapi sila maklumkan ahli projek yang lain bahawa metadata persekitaran perlu disahkan."
   },
   "project.environment.migration-no-permission.title": {
     "message": "Metadata persekitaran perlu disemak"
@@ -2856,7 +2856,7 @@
     "message": "Ketahui lebih lanjut tentang perubahan ini"
   },
   "project.environment.migration.message": {
-    "message": "Kami baru sahaja merombak sistem Persekitaran pada Modrinth dan pilihan baharu kini tersedia. Sila sahkan bahawa metadata adalah betul."
+    "message": "Kami baru sahaja merombak sistem Persekitaran pada Bbsmc dan pilihan baharu kini tersedia. Sila sahkan bahawa metadata adalah betul."
   },
   "project.environment.migration.review-button": {
     "message": "Semak tetapan persekitaran"
@@ -2880,10 +2880,10 @@
     "message": "Projek anda adalah peribadi, yang bermakna ia hanya boleh diakses oleh anda dan orang yang anda jemput."
   },
   "project.moderation.admonition.approved.body.public": {
-    "message": "Projek anda adalah diterbitkan dan boleh ditemui di Modrinth."
+    "message": "Projek anda adalah diterbitkan dan boleh ditemui di Bbsmc."
   },
   "project.moderation.admonition.approved.body.unlisted": {
-    "message": "Projek anda adalah tidak tersenarai, yang bermakna ia hanya boleh diakses dengan pautan langsung dan tidak boleh ditemui di Modrinth."
+    "message": "Projek anda adalah tidak tersenarai, yang bermakna ia hanya boleh diakses dengan pautan langsung dan tidak boleh ditemui di Bbsmc."
   },
   "project.moderation.admonition.approved.body.visibility-message": {
     "message": "Anda boleh menukar keterlihatan projek anda dalam <visibility-settings-link>tetapan keterlihatan</visibility-settings-link> projek anda."
@@ -2892,13 +2892,13 @@
     "message": "Projek diluluskan"
   },
   "project.moderation.admonition.draft.body": {
-    "message": "Ini merupakan draf projek yang tidak boleh dilihat oleh orang lain sehingga dihantar untuk semakan dan diluluskan oleh pasukan penyederhanaan Modrinth."
+    "message": "Ini merupakan draf projek yang tidak boleh dilihat oleh orang lain sehingga dihantar untuk semakan dan diluluskan oleh pasukan penyederhanaan Bbsmc."
   },
   "project.moderation.admonition.draft.header": {
     "message": "Draf projek"
   },
   "project.moderation.admonition.draft.submit-for-review": {
-    "message": "Sebaik sahaja anda telah menyelesaikan semua langkah yang diperlukan dan memastikan projek anda mematuhi <rules-link>Peraturan Kandungan</rules-link> Modrinth, anda boleh menghantar projek anda untuk semakan."
+    "message": "Sebaik sahaja anda telah menyelesaikan semua langkah yang diperlukan dan memastikan projek anda mematuhi <rules-link>Peraturan Kandungan</rules-link> Bbsmc, anda boleh menghantar projek anda untuk semakan."
   },
   "project.moderation.admonition.rejected.address-all-concerns": {
     "message": "Mohon tangani semua kebimbangan tentang penyederhanaan, termasuk sebarang isu yang disenaraikan dalam mesej di bawah, sebelum menghantar semula projek ini."
@@ -2910,16 +2910,16 @@
     "message": "Menyerahkan projek anda berulang kali tanpa menangani semua kebimbangan penyederhanaan terlebih dahulu boleh mengakibatkan penggantungan akaun."
   },
   "project.moderation.admonition.under-review.body.1": {
-    "message": "Projek anda sedang dalam barisan untuk disemak oleh pasukan penyederhanaan Modrinth."
+    "message": "Projek anda sedang dalam barisan untuk disemak oleh pasukan penyederhanaan Bbsmc."
   },
   "project.moderation.admonition.under-review.body.2": {
-    "message": "Projek anda akan diimbas dan kemudian disemak oleh penyederhana manusia untuk memastikan ia mematuhi <rules-link>Peraturan Kandungan</rules-link> dan <terms-link>Terma Penggunaan</terms-link> Modrinth."
+    "message": "Projek anda akan diimbas dan kemudian disemak oleh penyederhana manusia untuk memastikan ia mematuhi <rules-link>Peraturan Kandungan</rules-link> dan <terms-link>Terma Penggunaan</terms-link> Bbsmc."
   },
   "project.moderation.admonition.under-review.body.3": {
     "message": "Anda masih boleh mengubah suai projek anda, ia tidak akan menjejaskan kedudukan anda dalam barisan."
   },
   "project.moderation.admonition.under-review.body.5": {
-    "message": "<emphasis>Kami menghargai kesabaran anda sementara penyederhana kami berusaha keras untuk memastikan Modrinth kekal selamat, dan berharap dapat membantu anda berkongsi kandungan anda!ðŸ’š</emphasis>"
+    "message": "<emphasis>Kami menghargai kesabaran anda sementara penyederhana kami berusaha keras untuk memastikan Bbsmc kekal selamat, dan berharap dapat membantu anda berkongsi kandungan anda!ðŸ’š</emphasis>"
   },
   "project.moderation.admonition.under-review.header": {
     "message": "Projek dalam semakan"
@@ -2940,10 +2940,10 @@
     "message": "Penyederhana kandungan tidak dapat memberikan sokongan untuk kebanyakan isu dan mesej ke dalam bebenang ini tidak memaklumkan kakitangan."
   },
   "project.moderation.thread.help-center-note.2": {
-    "message": "Jika anda memerlukan bantuan atau mempunyai pertanyaan tambahan, sila lawati <help-center-link>Pusat Bantuan Modrinth</help-center-link> dan klik gelembung biru untuk menghubungi sokongan."
+    "message": "Jika anda memerlukan bantuan atau mempunyai pertanyaan tambahan, sila lawati <help-center-link>Pusat Bantuan Bbsmc</help-center-link> dan klik gelembung biru untuk menghubungi sokongan."
   },
   "project.moderation.thread.private-description": {
-    "message": "Ini adalah bebenang perbualan peribadi dengan penyederhana Modrinth. Mereka mungkin akan menghantar mesej kepada anda tentang isu-isu berkaitan projek ini."
+    "message": "Ini adalah bebenang perbualan peribadi dengan penyederhana Bbsmc. Mereka mungkin akan menghantar mesej kepada anda tentang isu-isu berkaitan projek ini."
   },
   "project.moderation.thread.title": {
     "message": "Mesej penyederhana"
@@ -3015,19 +3015,19 @@
     "message": "Sila berikan bukti bahawa anda mempunyai kebenaran untuk mengedarkan semula semua fail berikut. Setelah selesai, sebarang versi yang ditahan akan diterbitkan secara automatik."
   },
   "project.settings.permissions.bad-proof.description": {
-    "message": "Pasukan penyederhana Modrinth telah menolak maklumat kebenaran yang anda berikan untuk beberapa kandungan luaran. Sila semak item yang ditolak di bawah dan berikan bukti yang boleh diterima atau alih keluar kandungan tersebut."
+    "message": "Pasukan penyederhana Bbsmc telah menolak maklumat kebenaran yang anda berikan untuk beberapa kandungan luaran. Sila semak item yang ditolak di bawah dan berikan bukti yang boleh diterima atau alih keluar kandungan tersebut."
   },
   "project.settings.permissions.empty-state.heading": {
     "message": "Semuanya sudah siap!"
   },
   "project.settings.permissions.fail.description": {
-    "message": "Anda mungkin tidak mempunyai kebenaran untuk mengedarkan semula sebahagian daripada kandungan luaran dalam projek anda. Untuk menerbitkan projek ini di Modrinth, sila alih keluar kandungan ini atau berikan bukti bahawa anda mempunyai kebenaran untuk menggunakannya."
+    "message": "Anda mungkin tidak mempunyai kebenaran untuk mengedarkan semula sebahagian daripada kandungan luaran dalam projek anda. Untuk menerbitkan projek ini di Bbsmc, sila alih keluar kandungan ini atau berikan bukti bahawa anda mempunyai kebenaran untuk menggunakannya."
   },
   "project.settings.permissions.fail.title": {
     "message": "Sesetengah kandungan tidak boleh disertakan"
   },
   "project.settings.permissions.info-banner.description": {
-    "message": "Jika anda memasukkan kandungan yang tidak dihoskan di Modrinth, anda perlu memberitahu kami dari mana ia berasal dan mengesahkan bahawa anda mempunyai kebenaran untuk mengedarkan fail tersebut. Lihat <link>pengumuman kami tentang sistem baharu ini</link> untuk mengetahui lebih lanjut!"
+    "message": "Jika anda memasukkan kandungan yang tidak dihoskan di Bbsmc, anda perlu memberitahu kami dari mana ia berasal dan mengesahkan bahawa anda mempunyai kebenaran untuk mengedarkan fail tersebut. Lihat <link>pengumuman kami tentang sistem baharu ini</link> untuk mengetahui lebih lanjut!"
   },
   "project.settings.permissions.learn-more": {
     "message": "Ketahui lebih lanjut"
@@ -3069,7 +3069,7 @@
     "message": "Sila berikan konteks tambahan tentang laporan anda"
   },
   "report.for.violation": {
-    "message": "Pelanggaran <rules-link>Peraturan</rules-link> atau <terms-link>Terma Penggunaan</terms-link> Modrinth"
+    "message": "Pelanggaran <rules-link>Peraturan</rules-link> atau <terms-link>Terma Penggunaan</terms-link> Bbsmc"
   },
   "report.for.violation.description": {
     "message": "Contohnya termasuk kandungan berniat jahat, spam, menyinggung perasaan, memperdaya, mengelirukan dan menyalahi undang-undang."
@@ -3300,7 +3300,7 @@
     "message": "Tulis laporan"
   },
   "scopes.sessionAccess.description": {
-    "message": "Mengakses sesi keluaran Modrinth"
+    "message": "Mengakses sesi keluaran Bbsmc"
   },
   "scopes.sessionAccess.label": {
     "message": "Akses sesi"
@@ -3399,7 +3399,7 @@
     "message": "Selaraskan dengan pelayan"
   },
   "servers.manage.content.title": {
-    "message": "Kandungan - {serverName} - Modrinth"
+    "message": "Kandungan - {serverName} - Bbsmc"
   },
   "servers.notice.actions": {
     "message": "Tindakan"
@@ -3429,13 +3429,13 @@
     "message": "Tiada notis"
   },
   "servers.plan.large.description": {
-    "message": "Sesuai untuk 15â€“25 pemain, pek mod atau pengubahsuaian yang berat."
+    "message": "Sesuai untuk 15â€?5 pemain, pek mod atau pengubahsuaian yang berat."
   },
   "servers.plan.medium.description": {
-    "message": "Bagus untuk 6â€“15 pemain dan berbilang mod."
+    "message": "Bagus untuk 6â€?5 pemain dan berbilang mod."
   },
   "servers.plan.small.description": {
-    "message": "Sesuai untuk 1â€“5 rakan dengan beberapa mod ringan."
+    "message": "Sesuai untuk 1â€? rakan dengan beberapa mod ringan."
   },
   "settings.account.button.complete-setup": {
     "message": "Lengkapkan persediaan"
@@ -3450,13 +3450,13 @@
     "message": "Sedang menjana eksport..."
   },
   "settings.account.data-export.description": {
-    "message": "Minta salinan semua data peribadi anda yang telah dimuat naik ke Modrinth. Ini mungkin mengambil masa beberapa minit untuk diselesaikan."
+    "message": "Minta salinan semua data peribadi anda yang telah dimuat naik ke Bbsmc. Ini mungkin mengambil masa beberapa minit untuk diselesaikan."
   },
   "settings.account.data-export.title": {
     "message": "Pengeksportan data"
   },
   "settings.account.delete.confirm.description": {
-    "message": "Ini akan **dengan segera memadamkan semua projek** dan ikutan anda. Ini tidak akan memadamkan projek anda. Pemadaman akaun anda tidak boleh dibatalkan.<br><br>Jika anda memerlukan bantuan dengan akaun anda, dapatkan sokongan di [Discord Modrinth](https://discord.bbsmc.org.cn)."
+    "message": "Ini akan **dengan segera memadamkan semua projek** dan ikutan anda. Ini tidak akan memadamkan projek anda. Pemadaman akaun anda tidak boleh dibatalkan.<br><br>Jika anda memerlukan bantuan dengan akaun anda, dapatkan sokongan di [Discord Bbsmc](https://discord.bbsmc.org.cn)."
   },
   "settings.account.delete.confirm.proceed": {
     "message": "Padam akaun ini"
@@ -3684,7 +3684,7 @@
     "message": "Adakah anda pasti mahu memadamkan aplikasi ini?"
   },
   "settings.applications.description.intro": {
-    "message": "Aplikasi boleh digunakan untuk mengesahkan pengguna Modrinth dengan produk anda. Untuk maklumat lanjut, lihat <docs-link>Dokumentasi API Modrinth</docs-link>."
+    "message": "Aplikasi boleh digunakan untuk mengesahkan pengguna Bbsmc dengan produk anda. Untuk maklumat lanjut, lihat <docs-link>Dokumentasi API Bbsmc</docs-link>."
   },
   "settings.applications.field.description": {
     "message": "Keterangan"
@@ -3735,7 +3735,7 @@
     "message": "Mengenai aplikasi ini"
   },
   "settings.authorizations.description": {
-    "message": "Apabila anda membenarkan aplikasi ini dengan akaun Modrinth anda, anda memberikannya akses kepada akaun anda. Anda boleh mengurus dan menyemak akses kepada akaun anda di sini pada bila-bila masa."
+    "message": "Apabila anda membenarkan aplikasi ini dengan akaun Bbsmc anda, anda memberikannya akses kepada akaun anda. Anda boleh mengurus dan menyemak akses kepada akaun anda di sini pada bila-bila masa."
   },
   "settings.authorizations.head-title": {
     "message": "Kebenaran"
@@ -3750,16 +3750,16 @@
     "message": "Adakah anda pasti mahu membatalkan aplikasi ini?"
   },
   "settings.billing.charges.description": {
-    "message": "Semua caj anda ke akaun Modrinth anda yang lepas akan disenaraikan di sini:"
+    "message": "Semua caj anda ke akaun Bbsmc anda yang lepas akan disenaraikan di sini:"
   },
   "settings.billing.charges.product.medal-trial": {
     "message": "Percubaan Pelayan Medal"
   },
   "settings.billing.charges.product.midas": {
-    "message": "Modrinth Plus"
+    "message": "Bbsmc Plus"
   },
   "settings.billing.charges.product.pyro": {
-    "message": "Modrinth Hosting"
+    "message": "Bbsmc Hosting"
   },
   "settings.billing.charges.title": {
     "message": "Caj sebelum ini"
@@ -3777,13 +3777,13 @@
     "message": "tahun"
   },
   "settings.billing.midas.benefits.ad-free": {
-    "message": "Pelayaran bebas iklan di bbsmc.org.cn dan Modrinth App"
+    "message": "Pelayaran bebas iklan di bbsmc.org.cn dan Bbsmc App"
   },
   "settings.billing.midas.benefits.badge": {
-    "message": "Lencana Modrinth+ pada profil anda"
+    "message": "Lencana Bbsmc+ pada profil anda"
   },
   "settings.billing.midas.benefits.support": {
-    "message": "Sokong Modrinth dan pencipta secara langsung"
+    "message": "Sokong Bbsmc dan pencipta secara langsung"
   },
   "settings.billing.midas.benefits.title": {
     "message": "Faedah"
@@ -3807,7 +3807,7 @@
     "message": "Pembayaran anda sedang diproses. Manfaat akan diaktifkan setelah pembayaran selesai."
   },
   "settings.billing.midas.upsell": {
-    "message": "Jadilah pelanggan Modrinth Plus!"
+    "message": "Jadilah pelanggan Bbsmc Plus!"
   },
   "settings.billing.modal.cancel.action": {
     "message": "Batalkan langganan"
@@ -3864,7 +3864,7 @@
     "message": "{shared} CPU Kongsi (Boleh memecut sehingga {bursts} CPU)"
   },
   "settings.billing.pyro.linked-server.not-found": {
-    "message": "Pelayan yang dipautkan tidak dapat ditemui untuk langganan ini. Terdapat beberapa kemungkinan untuk menjelaskan perkara ini. Jika anda baru sahaja membeli pelayan anda, ini adalah perkara biasa. Ia mungkin mengambil masa sehingga sejam untuk pelayan anda disediakan. Jika tidak, jika anda membeli pelayan ini beberapa ketika dahulu, ia mungkin telah digantung. Jika ini bukan yang anda jangkakan, sila hubungi Sokongan Modrinth dengan maklumat berikut:"
+    "message": "Pelayan yang dipautkan tidak dapat ditemui untuk langganan ini. Terdapat beberapa kemungkinan untuk menjelaskan perkara ini. Jika anda baru sahaja membeli pelayan anda, ini adalah perkara biasa. Ia mungkin mengambil masa sehingga sejam untuk pelayan anda disediakan. Jika tidak, jika anda membeli pelayan ini beberapa ketika dahulu, ia mungkin telah digantung. Jika ini bukan yang anda jangkakan, sila hubungi Sokongan Bbsmc dengan maklumat berikut:"
   },
   "settings.billing.pyro.linked-server.server-id": {
     "message": "ID Pelayan: {id}"
@@ -3876,7 +3876,7 @@
     "message": "RAM {gb} GB"
   },
   "settings.billing.pyro.resubscribe.error.text": {
-    "message": "Sebuah ralat telah berlaku semasa melanggan semula pelayan Modrinth anda."
+    "message": "Sebuah ralat telah berlaku semasa melanggan semula pelayan Bbsmc anda."
   },
   "settings.billing.pyro.resubscribe.error.title": {
     "message": "Ralat semasa melanggan semula"
@@ -3903,10 +3903,10 @@
     "message": "Swap {gb} GB"
   },
   "settings.billing.pyro_subscription.description": {
-    "message": "Urus langganan Modrinth Servers anda."
+    "message": "Urus langganan Bbsmc Servers anda."
   },
   "settings.billing.pyro_subscription.title": {
-    "message": "Langganan Modrinth Servers"
+    "message": "Langganan Bbsmc Servers"
   },
   "settings.billing.renews": {
     "message": "Diperbaharui {date}"
@@ -3921,7 +3921,7 @@
     "message": "Langgan"
   },
   "settings.billing.subscription.description": {
-    "message": "Urus langganan Modrinth anda."
+    "message": "Urus langganan Bbsmc anda."
   },
   "settings.billing.subscription.title": {
     "message": "Langganan"
@@ -3948,7 +3948,7 @@
     "message": "Nyahaktifkan mod pembangun"
   },
   "settings.display.banner.developer-mode.description": {
-    "message": "<strong>Mod pembangun</strong> kini aktif. Ini akan membolehkan anda melihat ID dalaman pelbagai perkara di seluruh Modrinth yang mungkin berguna jika anda seorang pembangun yang menggunakan API Modrinth. Klik pada logo Modrinth di bahagian bawah laman sebanyak 5 kali untuk menogol mod pembangun."
+    "message": "<strong>Mod pembangun</strong> kini aktif. Ini akan membolehkan anda melihat ID dalaman pelbagai perkara di seluruh Bbsmc yang mungkin berguna jika anda seorang pembangun yang menggunakan API Bbsmc. Klik pada logo Bbsmc di bahagian bawah laman sebanyak 5 kali untuk menogol mod pembangun."
   },
   "settings.display.flags.description": {
     "message": "Dayakan atau nyahdayakan ciri tertentu pada peranti ini."
@@ -4011,16 +4011,16 @@
     "message": "Pemaparan lanjutan"
   },
   "settings.display.sidebar.external-links-new-tab.description": {
-    "message": "Buka pautan yang membawa anda ke luar Modrinth dalam tab baharu. Tidak kira tetapan ini, pautan pada domain yang sama dan dalam keterangan berformat Markdown akan dibuka dalam tab yang sama dan pautan pada iklan dan laman sunting akan dibuka dalam tab baharu."
+    "message": "Buka pautan yang membawa anda ke luar Bbsmc dalam tab baharu. Tidak kira tetapan ini, pautan pada domain yang sama dan dalam keterangan berformat Markdown akan dibuka dalam tab yang sama dan pautan pada iklan dan laman sunting akan dibuka dalam tab baharu."
   },
   "settings.display.sidebar.external-links-new-tab.title": {
     "message": "Buka pautan luaran dalam tab baharu"
   },
   "settings.display.sidebar.hide-app-promos.description": {
-    "message": "Menyembunyikan butang \"Dapatkan Modrinth App\" daripada navigasi utama. Laman Modrinth App masih boleh dijumpai pada halaman pendaratan atau dalam pengaki."
+    "message": "Menyembunyikan butang \"Dapatkan Bbsmc App\" daripada navigasi utama. Laman Bbsmc App masih boleh dijumpai pada halaman pendaratan atau dalam pengaki."
   },
   "settings.display.sidebar.hide-app-promos.title": {
-    "message": "Sembunyikan promosi Modrinth App"
+    "message": "Sembunyikan promosi Bbsmc App"
   },
   "settings.display.sidebar.left-aligned-content-sidebar.title": {
     "message": "Bar sisi carian dijajar kiri pada laman kandungan"
@@ -4035,7 +4035,7 @@
     "message": "Bar sisi penapis dijajar kanan pada laman carian"
   },
   "settings.display.theme.description": {
-    "message": "Pilih tema warna pilihan anda untuk Modrinth pada peranti ini."
+    "message": "Pilih tema warna pilihan anda untuk Bbsmc pada peranti ini."
   },
   "settings.display.theme.title": {
     "message": "Tema warna"
@@ -4047,7 +4047,7 @@
     "message": "Cipta PAT"
   },
   "settings.pats.description": {
-    "message": "PAT boleh digunakan untuk mengakses API Modrinth. Ia boleh dicipta dan dibatalkan pada bila-bila masa. Untuk maklumat lanjut, lihat <doc-link>Dokumentasi API Modrinth</doc-link>."
+    "message": "PAT boleh digunakan untuk mengakses API Bbsmc. Ia boleh dicipta dan dibatalkan pada bila-bila masa. Untuk maklumat lanjut, lihat <doc-link>Dokumentasi API Bbsmc</doc-link>."
   },
   "settings.pats.modal.create.action": {
     "message": "Cipta PAT"
@@ -4104,7 +4104,7 @@
     "message": "Sesi semasa"
   },
   "settings.sessions.description": {
-    "message": "Berikut ialah semua peranti yang sedang dilog masuk dengan akaun Modrinth anda. Anda boleh log keluar daripada setiap satu peranti secara individu.\n\nJika anda melihat entri yang anda tidak kenali, log keluar daripada peranti itu dan tukar kata laluan akaun Modrinth anda dengan segera."
+    "message": "Berikut ialah semua peranti yang sedang dilog masuk dengan akaun Bbsmc anda. Anda boleh log keluar daripada setiap satu peranti secara individu.\n\nJika anda melihat entri yang anda tidak kenali, log keluar daripada peranti itu dan tukar kata laluan akaun Bbsmc anda dengan segera."
   },
   "settings.sessions.last-accessed-ago": {
     "message": "Kali terakhir diakses {ago}"
@@ -4125,7 +4125,7 @@
     "message": "Paparan"
   },
   "ui.latest-news-row.latest-news": {
-    "message": "Berita terkini dari Modrinth"
+    "message": "Berita terkini dari Bbsmc"
   },
   "ui.latest-news-row.view-all": {
     "message": "Lihat semua berita"
@@ -4137,7 +4137,7 @@
     "message": "Sudah melanggan!"
   },
   "ui.newsletter-button.tooltip": {
-    "message": "Langgan surat berita Modrinth"
+    "message": "Langgan surat berita Bbsmc"
   },
   "version.edit.button": {
     "message": "Sunting"
@@ -4155,10 +4155,10 @@
     "message": "Persekitaran yang tidak diketahui"
   },
   "version.section.content.dev-info.maven-description": {
-    "message": "Projek di Modrinth tersedia secara automatik melalui repositori Maven untuk digunakan dengan alat binaan JVM seperti <gradle-link>Gradle</gradle-link>. Untuk mengetahui lebih lanjut tentang API Maven Modrinth, <article-link>klik di sini</article-link>."
+    "message": "Projek di Bbsmc tersedia secara automatik melalui repositori Maven untuk digunakan dengan alat binaan JVM seperti <gradle-link>Gradle</gradle-link>. Untuk mengetahui lebih lanjut tentang API Maven Bbsmc, <article-link>klik di sini</article-link>."
   },
   "version.section.content.dev-info.maven-note": {
-    "message": "Nota: Apabila tersedia, anda harus menggunakan repo maven pencipta kerana ia akan mempunyai maklumat kebergantungan transitif yang tidak terdapat pada API Maven Modrinth. Anda juga mungkin akan mendapat kebergantungan pendua jika anda menggunakan campuran repositori Maven Modrinth dan bukan Modrinth untuk kebergantungan anda, kerana pengecam kumpulan akan berbeza apabila disampaikan melalui API Maven Modrinth."
+    "message": "Nota: Apabila tersedia, anda harus menggunakan repo maven pencipta kerana ia akan mempunyai maklumat kebergantungan transitif yang tidak terdapat pada API Maven Bbsmc. Anda juga mungkin akan mendapat kebergantungan pendua jika anda menggunakan campuran repositori Maven Bbsmc dan bukan Bbsmc untuk kebergantungan anda, kerana pengecam kumpulan akan berbeza apabila disampaikan melalui API Maven Bbsmc."
   },
   "version.supplementary-resources.copy-hash-sha1": {
     "message": "Salin SHA-1"

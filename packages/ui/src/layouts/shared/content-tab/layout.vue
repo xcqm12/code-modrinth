@@ -17,7 +17,7 @@ import {
 	ShareIcon,
 	TextCursorInputIcon,
 	TrashIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import { computed, nextTick, ref, watch } from 'vue'
 
 import ButtonStyled from '#ui/components/base/ButtonStyled.vue'

@@ -7,7 +7,7 @@ authors: [bOHH0P9Z, o2Dd4mrX, AJfd8YH6]
 
 Hey everyone!
 
-Sharing content has been one of the most requested features for the Modrinth App. People have worked around this by creating unlisted projects or sending a new `.mrpack` after every update.
+Sharing content has been one of the most requested features for the Bbsmc App. People have worked around this by creating unlisted projects or sending a new `.mrpack` after every update.
 
 You can finally share an instance directly with friends and push updates as it changes!
 
@@ -20,7 +20,7 @@ You can finally share an instance directly with friends and push updates as it c
 
 ## Sharing an instance
 
-Instances have a new share tab, which requires you to be signed into a Modrinth account.
+Instances have a new share tab, which requires you to be signed into a Bbsmc account.
 
 You can invite someone by username or create a share link. Username invites send a notification in the app, while share links can be sent directly to anyone you want to invite.
 
@@ -48,7 +48,7 @@ We detect when your instance has changed and let you know when it is ahead of th
 
 ## Receiving an instance
 
-When you receive an invite, you’ll see actions to accept or deny in the app - or if you use an invite link, you will see a page to accept the invite. This will open a preview modal, which shows what content is included, and whether anything is not published on Modrinth. Once accepted, it installs like a normal instance.
+When you receive an invite, you’ll see actions to accept or deny in the app - or if you use an invite link, you will see a page to accept the invite. This will open a preview modal, which shows what content is included, and whether anything is not published on Bbsmc. Once accepted, it installs like a normal instance.
 
 <div class="video-wrapper mb-8">
 	<video autoplay loop muted playsinline>
@@ -60,16 +60,15 @@ Shared instances work a bit differently from normal ones. You cannot edit conten
 
 ### Receiving updates
 
-Updates sync when you go to play the instance. You can review any changes before accepting, and files not published on Modrinth are surfaced to help you spot anything potentially malicious.
+Updates sync when you go to play the instance. You can review any changes before accepting, and files not published on Bbsmc are surfaced to help you spot anything potentially malicious.
 
 ![The review screen for an update to a shared instance.](./receiving-update.webp)
 
 ## Only accept invites from people you trust
 
-Shared instances are not reviewed like published Modrinth projects, so only accept invites from people you trust.
+Shared instances are not reviewed like published Bbsmc projects, so only accept invites from people you trust.
 
 You can report a shared instance if anything looks suspicious.
 
-—
-
+�?
 Thank you! We hope you guys enjoy this one.

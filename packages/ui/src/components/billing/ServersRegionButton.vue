@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { Archon } from '@modrinth/api-client'
-import { SignalIcon, SpinnerIcon } from '@modrinth/assets'
-import { getPingLevel } from '@modrinth/utils'
+import type { Archon } from '@Bbsmc/api-client'
+import { SignalIcon, SpinnerIcon } from '@Bbsmc/assets'
+import { getPingLevel } from '@Bbsmc/utils'
 import { computed } from 'vue'
 
 import { useVIntl } from '../../composables/i18n'
@@ -73,7 +73,7 @@ function setRegion() {
 					<span>
 						{{ locationSubtitle }}
 					</span>
-					<span v-if="ping !== -1">â€¢</span>
+					<span v-if="ping !== -1">â€?/span>
 				</template>
 				<span v-if="ping !== -1" class="flex gap-1 items-center">
 					<SignalIcon

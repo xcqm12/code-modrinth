@@ -74,8 +74,8 @@
   "app.action-bar.install.summary.minecraft-setup-failed": {
     "message": "A Minecraft telepítése meghiúsult"
   },
-  "app.action-bar.install.summary.modrinth-unreachable": {
-    "message": "Nem sikerült elérni Modrinthot"
+  "app.action-bar.install.summary.Bbsmc-unreachable": {
+    "message": "Nem sikerült elérni Bbsmcot"
   },
   "app.action-bar.install.summary.no-write-permission": {
     "message": "Nincs írási jogosultság"
@@ -132,7 +132,7 @@
     "message": "Összes elfogadása"
   },
   "app.ads-consent.body": {
-    "message": "A hirdetések teszik lehetővé a Modrinth működését, és biztosítják a tartalomkészítők juttatásait. Partnereink sütiket tárolhatnak vagy érhetnek el az alkalmazásban a hirdetések személyre szabása és a teljesítmény mérése céljából."
+    "message": "A hirdetések teszik lehetővé a Bbsmc működését, és biztosítják a tartalomkészítők juttatásait. Partnereink sütiket tárolhatnak vagy érhetnek el az alkalmazásban a hirdetések személyre szabása és a teljesítmény mérése céljából."
   },
   "app.ads-consent.manage": {
     "message": "Beállítások kezelése"
@@ -141,7 +141,7 @@
     "message": "Összes elutasítása"
   },
   "app.ads-consent.title": {
-    "message": "Adataid védelme és a hirdetések szerepe a Modrinth működésében"
+    "message": "Adataid védelme és a hirdetések szerepe a Bbsmc működésében"
   },
   "app.appearance-settings.advanced-rendering.description": {
     "message": "Lehetővé teszi olyan speciális megjelenítési effektusok használatát, mint például az elmosódás, amelyek hardveres gyorsítás nélkül teljesítménycsökkenést okozhatnak."
@@ -150,7 +150,7 @@
     "message": "Haladó megjelenítési beállítások"
   },
   "app.appearance-settings.color-theme.description": {
-    "message": "Válaszd ki a Modrinth Apphoz a kívánt színsémát."
+    "message": "Válaszd ki a Bbsmc Apphoz a kívánt színsémát."
   },
   "app.appearance-settings.color-theme.title": {
     "message": "Téma"
@@ -174,10 +174,10 @@
     "message": "Névcímke eltüntetése"
   },
   "app.appearance-settings.jump-back-into-worlds.description": {
-    "message": "A kezdőlap „Folytasd itt” részében a legújabb világok is megtalálhatók."
+    "message": "A kezdőlap „Folytasd itt�?részében a legújabb világok is megtalálhatók."
   },
   "app.appearance-settings.jump-back-into-worlds.title": {
-    "message": "„Folytasd itt” a világokat is"
+    "message": "„Folytasd itt�?a világokat is"
   },
   "app.appearance-settings.minimize-launcher.description": {
     "message": "Minimalizáld az indítót a Minecraft indításakor."
@@ -198,7 +198,7 @@
     "message": "Játékidő megjelenítése"
   },
   "app.appearance-settings.skip-non-essential-warnings.description": {
-    "message": "Az alacsony kockázatú megerősítéseket – például a modcsomagok ismételt telepítését, a szokásos tartalomtörlést, a tömeges frissítéseket, a modcsomagok kapcsolatának megszüntetését és a javítási felhívásokat – a rendszer automatikusan kihagyja. A veszélyes figyelmeztetéseket továbbra is megjeleníti."
+    "message": "Az alacsony kockázatú megerősítéseket �?például a modcsomagok ismételt telepítését, a szokásos tartalomtörlést, a tömeges frissítéseket, a modcsomagok kapcsolatának megszüntetését és a javítási felhívásokat �?a rendszer automatikusan kihagyja. A veszélyes figyelmeztetéseket továbbra is megjeleníti."
   },
   "app.appearance-settings.skip-non-essential-warnings.title": {
     "message": "Hagyd ki a lényegtelen figyelmeztetéseket"
@@ -210,7 +210,7 @@
     "message": "Oldalsáv megjelenítése/elrejtése"
   },
   "app.appearance-settings.unknown-pack-warning.description": {
-    "message": "Ha olyan Modrinth Csomagfájlt (.mrpack) próbálsz telepíteni, amely nem a Modrinth szerverén található, a telepítés előtt gondoskodunk arról, hogy tisztában legyél a kockázatokkal."
+    "message": "Ha olyan Bbsmc Csomagfájlt (.mrpack) próbálsz telepíteni, amely nem a Bbsmc szerverén található, a telepítés előtt gondoskodunk arról, hogy tisztában legyél a kockázatokkal."
   },
   "app.appearance-settings.unknown-pack-warning.title": {
     "message": "Figyelmeztess, mielőtt ismeretlen modcsomagokat telepítenék"
@@ -405,7 +405,7 @@
     "message": "Zárolt játékpéldányokban a tartalom nem változtatható meg."
   },
   "app.instance.mods.project-was-added": {
-    "message": "„{name}” hozzá lett adva"
+    "message": "„{name}�?hozzá lett adva"
   },
   "app.instance.mods.projects-were-added": {
     "message": "{count} projekt került hozzáadásra"
@@ -501,13 +501,13 @@
     "message": "Jelentkezz be mint"
   },
   "app.instance.shared-instance-wrong-account.signed-out-header": {
-    "message": "Be kell jelentkezned a Modrinthba"
+    "message": "Be kell jelentkezned a Bbsmcba"
   },
   "app.instance.shared-instance-wrong-account.user-admonition-body-v2": {
     "message": ", hogy értesítéseket kapj erről a megosztott játékpéldányról."
   },
   "app.instance.shared-instance-wrong-account.warning-header": {
-    "message": "Nem a megfelelő Modrinth-fiókot használod"
+    "message": "Nem a megfelelő Bbsmc-fiókot használod"
   },
   "app.instance.worlds.add-server": {
     "message": "Szerver hozzáadása"
@@ -582,7 +582,7 @@
     "message": "Telepítés"
   },
   "app.modal.install-to-play.invite-warning": {
-    "message": "Ezt a meghívót nem a Modrinth, hanem egy másik Modrinth-felhasználó hozta létre. Csak olyan személyektől fogadd el a meghívásokat, akikben megbízol."
+    "message": "Ezt a meghívót nem a Bbsmc, hanem egy másik Bbsmc-felhasználó hozta létre. Csak olyan személyektől fogadd el a meghívásokat, akikben megbízol."
   },
   "app.modal.install-to-play.mod-count": {
     "message": "{count} mod"
@@ -591,13 +591,13 @@
     "message": "Spam"
   },
   "app.modal.install-to-play.reviewed-files": {
-    "message": "Egy fájlt csak akkor vizsgálnak meg, ha azt a Modrinth-en közzétették, függetlenül a fájlformátumtól (beleértve a .mrpack formátumot is)."
+    "message": "Egy fájlt csak akkor vizsgálnak meg, ha azt a Bbsmc-en közzétették, függetlenül a fájlformátumtól (beleértve a .mrpack formátumot is)."
   },
   "app.modal.install-to-play.shared-instance": {
     "message": "Megosztott játékpéldány"
   },
   "app.modal.install-to-play.unknown-files-description": {
-    "message": "Ez a szerver-modpack olyan fájlokat tartalmaz, amelyek nem szerepelnek a Modrinth oldalon. Határozottan javasoljuk, hogy kizárólag olyan forrásokból telepíts fájlokat, amelyekben megbízol."
+    "message": "Ez a szerver-modpack olyan fájlokat tartalmaz, amelyek nem szerepelnek a Bbsmc oldalon. Határozottan javasoljuk, hogy kizárólag olyan forrásokból telepíts fájlokat, amelyekben megbízol."
   },
   "app.modal.install-to-play.unknown-files-warning": {
     "message": "Figyelmeztetés ismeretlen fájlokról"
@@ -642,7 +642,7 @@
     "message": "v{version} letöltése"
   },
   "app.settings.privacy.ads-consent.intro": {
-    "message": "A hirdetések teszik lehetővé a Modrinth működését, és biztosítják a tartalomkészítők juttatásait. Partnereink sütiket tárolhatnak vagy érhetnek el az alkalmazásban a hirdetések személyre szabása és a teljesítmény mérése céljából. Az alábbiakban leiratkozhatsz erről, illetve beállíthatod a preferenciáidat."
+    "message": "A hirdetések teszik lehetővé a Bbsmc működését, és biztosítják a tartalomkészítők juttatásait. Partnereink sütiket tárolhatnak vagy érhetnek el az alkalmazásban a hirdetések személyre szabása és a teljesítmény mérése céljából. Az alábbiakban leiratkozhatsz erről, illetve beállíthatod a preferenciáidat."
   },
   "app.settings.tabs.appearance": {
     "message": "Megjelenés"
@@ -773,14 +773,14 @@
   "app.skins.section.minecon-earth-2017": {
     "message": "MINECON Earth 2017"
   },
-  "app.skins.section.modrinth": {
-    "message": "Modrinth"
+  "app.skins.section.Bbsmc": {
+    "message": "Bbsmc"
   },
-  "app.skins.section.modrinth-pride": {
-    "message": "Modrinth Pride"
+  "app.skins.section.Bbsmc-pride": {
+    "message": "Bbsmc Pride"
   },
-  "app.skins.section.modrinth-pride.tooltip": {
-    "message": "Ezeket a kinézeteket azért kaptad, mert a Pride-hónap során adományoztál a Modrinth Pride jótékonysági gyűjtéséhez."
+  "app.skins.section.Bbsmc-pride.tooltip": {
+    "message": "Ezeket a kinézeteket azért kaptad, mert a Pride-hónap során adományoztál a Bbsmc Pride jótékonysági gyűjtéséhez."
   },
   "app.skins.section.mounts-of-mayhem": {
     "message": "Mounts of Mayhem"
@@ -804,10 +804,10 @@
     "message": "Bejelentkezés"
   },
   "app.skins.sign-in.description": {
-    "message": "Kérlek jelentkezz be a Minecraft-fiókodba, hogy használni tudd a Modrinth App kinézetkezelési funkcióit."
+    "message": "Kérlek jelentkezz be a Minecraft-fiókodba, hogy használni tudd a Bbsmc App kinézetkezelési funkcióit."
   },
   "app.skins.sign-in.rinthbot-alt": {
-    "message": "Izgatott Modrinth bot"
+    "message": "Izgatott Bbsmc bot"
   },
   "app.skins.sign-in.title": {
     "message": "Kérlek jelentkezz be"
@@ -822,13 +822,13 @@
     "message": "Bekapcsolás"
   },
   "app.update-popup.body.download-complete": {
-    "message": "A Modrinth App v{version} letöltése befejeződött. Frissítéshez válaszd ki a Frissítés opciót, vagy az alkalmazás a bezárásakor automatikusan frissül."
+    "message": "A Bbsmc App v{version} letöltése befejeződött. Frissítéshez válaszd ki a Frissítés opciót, vagy az alkalmazás a bezárásakor automatikusan frissül."
   },
   "app.update-popup.body.linux": {
-    "message": "A Modrinth App v{version} elérhető. Használd a csomagkezelőt a legújabb funkciók és javítások frissítéséhez!"
+    "message": "A Bbsmc App v{version} elérhető. Használd a csomagkezelőt a legújabb funkciók és javítások frissítéséhez!"
   },
   "app.update-popup.body.metered": {
-    "message": "A Modrinth App v{version} már elérhető! Mivel mérhető hálózaton vagy, nem töltöttük le automatikusan."
+    "message": "A Bbsmc App v{version} már elérhető! Mivel mérhető hálózaton vagy, nem töltöttük le automatikusan."
   },
   "app.update-popup.changelog": {
     "message": "Változásnapló"
@@ -852,7 +852,7 @@
     "message": "Verzió {version} sikeresen telepítve!"
   },
   "app.world.server-modal.placeholder-address": {
-    "message": "pelda.modrinth.gg"
+    "message": "pelda.Bbsmc.gg"
   },
   "app.world.server-modal.select-an-option": {
     "message": "Válassz egy lehetőséget"
@@ -885,10 +885,10 @@
     "message": "Más is lehet, mint a Minecraft felhasználóneve!"
   },
   "friends.add-friend.username.placeholder": {
-    "message": "Barát Modrinth felhasználóneve..."
+    "message": "Barát Bbsmc felhasználóneve..."
   },
   "friends.add-friend.username.title": {
-    "message": "Mi a barátod Modrinth felhasználóneve?"
+    "message": "Mi a barátod Bbsmc felhasználóneve?"
   },
   "friends.add-friends-to-share": {
     "message": "<link>Vegyél fel barátokat</link>, hogy lásd mivel játszanak!"
@@ -930,7 +930,7 @@
     "message": "{title} - {count}"
   },
   "friends.sign-in-to-add-friends": {
-    "message": "<link>Lépj be Modrinth fiókodba</link>, hogy felvehess barátokat és lásd mivel játszanak!"
+    "message": "<link>Lépj be Bbsmc fiókodba</link>, hogy felvehess barátokat és lásd mivel játszanak!"
   },
   "installation-settings.shared-instance.unpublishing-button": {
     "message": "Közzététel visszavonása..."
@@ -1319,25 +1319,25 @@
   "minecraft-required.sign-in": {
     "message": "Bejelentkezés a Microsft-ba"
   },
-  "modal.modrinth-account-required.cancel-button": {
+  "modal.Bbsmc-account-required.cancel-button": {
     "message": "Mégse"
   },
-  "modal.modrinth-account-required.create-account-button": {
+  "modal.Bbsmc-account-required.create-account-button": {
     "message": "Fiók létrehozása"
   },
-  "modal.modrinth-account-required.header": {
+  "modal.Bbsmc-account-required.header": {
     "message": "Fiók szükséges"
   },
-  "modal.modrinth-account-required.sign-in-button": {
-    "message": "Jelentkezz be a Modrinth-be"
+  "modal.Bbsmc-account-required.sign-in-button": {
+    "message": "Jelentkezz be a Bbsmc-be"
   },
-  "modal.modrinth-account-required.sign-in-heading": {
-    "message": "Jelentkezz be egy Modrinth-fiókba"
+  "modal.Bbsmc-account-required.sign-in-heading": {
+    "message": "Jelentkezz be egy Bbsmc-fiókba"
   },
-  "modal.modrinth-account-required.signing-in-header": {
+  "modal.Bbsmc-account-required.signing-in-header": {
     "message": "Bejelentkezés"
   },
-  "modal.modrinth-account-required.waiting-for-browser": {
+  "modal.Bbsmc-account-required.waiting-for-browser": {
     "message": "Várakozás a böngésző megerősítésére..."
   },
   "search.filter.locked.instance": {

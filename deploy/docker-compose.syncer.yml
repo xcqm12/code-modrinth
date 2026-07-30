@@ -1,6 +1,5 @@
 # 数据同步服务
-# 从 api.modrinth.com 同步项目/版本到本地实例
-#
+# �?api.Bbsmc.com 同步项目/版本到本地实�?#
 # 用法:
 #   docker compose -f docker-compose.yml -f docker-compose.syncer.yml run --rm syncer
 #   docker compose -f docker-compose.yml -f docker-compose.syncer.yml run --rm syncer --limit 200 --project-type modpack
@@ -26,7 +25,7 @@ volumes:
   sync-data:
 
 networks:
-  # 使用主 compose 文件的默认网络，让 syncer 能访问 labrinth
+  # 使用�?compose 文件的默认网络，�?syncer 能访�?labrinth
   default:
     name: 8h8g_default
     external: true

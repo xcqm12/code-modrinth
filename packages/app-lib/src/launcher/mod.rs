@@ -231,7 +231,7 @@ pub async fn resolve_minecraft_manifest(
         return Ok((minecraft, idx));
     }
 
-    // Version not found in cache â€” force a manifest refresh in case it was
+    // Version not found in cache â€?force a manifest refresh in case it was
     // released after the cache was populated.
     let refreshed = crate::state::CachedEntry::get_minecraft_manifest(
         Some(crate::state::CacheBehaviour::MustRevalidate),
@@ -705,7 +705,7 @@ fn link_project_and_version(
     link: &InstanceLink,
 ) -> (Option<&String>, Option<&String>) {
     match link {
-        InstanceLink::ModrinthModpack {
+        InstanceLink::BbsmcModpack {
             project_id,
             version_id,
         } => (Some(project_id), Some(version_id)),
@@ -721,7 +721,7 @@ fn link_project_and_version(
             ..
         } => (project_id.as_ref(), version_id.as_ref()),
         InstanceLink::Unmanaged
-        | InstanceLink::ModrinthHosting { .. }
+        | InstanceLink::BbsmcHosting { .. }
         | InstanceLink::SharedInstance { .. } => (None, None),
     }
 }
@@ -967,7 +967,7 @@ pub async fn launch_minecraft(
     }
 
     command
-        .arg("com.modrinth.theseus.MinecraftLaunch")
+        .arg("com.Bbsmc.theseus.MinecraftLaunch")
         .arg(version_info.main_class.clone())
         .args(
             args::get_minecraft_arguments(
@@ -1095,16 +1095,16 @@ pub async fn launch_minecraft(
                 let (link_project_id, link_version_id) =
                     link_project_and_version(&context.link);
                 let system_properties = [
-                    ("modrinth.process.startTime", Some(&process_start_time)),
-                    ("modrinth.profile.created", Some(&instance_created_time)),
-                    ("modrinth.profile.icon", instance.icon_path.as_ref()),
-                    ("modrinth.profile.link.project", link_project_id),
-                    ("modrinth.profile.link.version", link_version_id),
+                    ("Bbsmc.process.startTime", Some(&process_start_time)),
+                    ("Bbsmc.profile.created", Some(&instance_created_time)),
+                    ("Bbsmc.profile.icon", instance.icon_path.as_ref()),
+                    ("Bbsmc.profile.link.project", link_project_id),
+                    ("Bbsmc.profile.link.version", link_version_id),
                     (
-                        "modrinth.profile.modified",
+                        "Bbsmc.profile.modified",
                         Some(&instance_modified_time),
                     ),
-                    ("modrinth.profile.name", Some(&instance.name)),
+                    ("Bbsmc.profile.name", Some(&instance.name)),
                 ];
                 for (key, value) in system_properties {
                     let Some(value) = value else {

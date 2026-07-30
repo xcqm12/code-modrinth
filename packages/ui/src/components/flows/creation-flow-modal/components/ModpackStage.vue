@@ -57,8 +57,8 @@
 </template>
 
 <script setup lang="ts">
-import { CompassIcon, ImportIcon, RightArrowIcon } from '@modrinth/assets'
-import { commonMessages, defineMessages, useVIntl } from '@modrinth/ui'
+import { CompassIcon, ImportIcon, RightArrowIcon } from '@Bbsmc/assets'
+import { commonMessages, defineMessages, useVIntl } from '@Bbsmc/ui'
 import { defineAsyncComponent, h, onMounted, ref, watch } from 'vue'
 
 import { useDebugLogger } from '#ui/composables/debug-logger'
@@ -204,7 +204,7 @@ watch(
 				proceedWithModpack()
 			}
 		} catch {
-			// Failed to fetch versions â€” do nothing
+			// Failed to fetch versions â€?do nothing
 		}
 	},
 )

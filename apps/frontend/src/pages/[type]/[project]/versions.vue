@@ -147,7 +147,7 @@
 								{
 									id: 'copy-maven',
 									action: () => {
-										copyToClipboard(`maven.modrinth:${project.slug}:${version.id}`)
+										copyToClipboard(`maven.Bbsmc:${project.slug}:${version.id}`)
 									},
 									shown: flags.developerMode,
 								},
@@ -257,16 +257,16 @@ import {
 	ShareIcon,
 	SpinnerIcon,
 	TrashIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	ButtonStyled,
 	ConfirmModal,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	injectProjectPageContext,
 	OverflowMenu,
 	ProjectPageVersions,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { onMounted, useTemplateRef, watch } from 'vue'
 
 import CreateProjectVersionModal from '~/components/ui/create-project-version/CreateProjectVersionModal.vue'
@@ -281,7 +281,7 @@ const tags = useGeneratedState()
 const flags = useFeatureFlags()
 const auth = await useAuth()
 
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const { addNotification } = injectNotificationManager()
 const {
 	projectV2: project,

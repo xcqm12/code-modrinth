@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import { ChevronRightIcon } from '@modrinth/assets'
+import { ChevronRightIcon } from '@Bbsmc/assets'
 
 import AutoLink from './AutoLink.vue'
 

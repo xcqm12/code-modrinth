@@ -10,10 +10,10 @@ use std::str::FromStr;
 use std::time::Duration;
 use xredis::RedisPool;
 
-pub const MODRINTH_GENERATED_PDF_TYPE: HeaderName =
-    HeaderName::from_static("modrinth-generated-pdf-type");
-pub const MODRINTH_PAYMENT_ID: HeaderName =
-    HeaderName::from_static("modrinth-payment-id");
+pub const Bbsmc_GENERATED_PDF_TYPE: HeaderName =
+    HeaderName::from_static("Bbsmc-generated-pdf-type");
+pub const Bbsmc_PAYMENT_ID: HeaderName =
+    HeaderName::from_static("Bbsmc-payment-id");
 pub const PAYMENT_STATEMENTS_NAMESPACE: &str = "payment_statements:v3";
 const REDIS_TIMEOUT_MARGIN_MS: u64 = 250;
 
@@ -77,7 +77,7 @@ impl GotenbergClient {
     /// Initialize the client from environment variables.
     pub fn from_env(redis: RedisPool) -> eyre::Result<Self> {
         let client = reqwest::Client::builder()
-            .user_agent("Modrinth")
+            .user_agent("Bbsmc")
             .build()
             .wrap_err("failed to build reqwest client")?;
 
@@ -149,12 +149,12 @@ impl GotenbergClient {
             .header(
                 "Gotenberg-Webhook-Extra-Http-Headers",
                 serde_json::json!({
-					"Modrinth-Payment-Id": statement.payment_id,
-					"Modrinth-Generated-Pdf-Type": GeneratedPdfType::PaymentStatement.as_str(),
+					"Bbsmc-Payment-Id": statement.payment_id,
+					"Bbsmc-Generated-Pdf-Type": GeneratedPdfType::PaymentStatement.as_str(),
 				}).to_string(),
             )
             .header(
-                "Modrinth-Payment-Id",
+                "Bbsmc-Payment-Id",
                 statement.payment_id.to_string(),
             )
             .header(

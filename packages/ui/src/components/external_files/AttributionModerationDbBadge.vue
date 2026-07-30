@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { ScaleIcon } from '@modrinth/assets'
-import { sortByIndex } from '@modrinth/utils'
+import type { Labrinth } from '@Bbsmc/api-client'
+import { ScaleIcon } from '@Bbsmc/assets'
+import { sortByIndex } from '@Bbsmc/utils'
 import { computed } from 'vue'
 
 import { TagItem } from '#ui/components'

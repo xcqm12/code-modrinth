@@ -36,9 +36,9 @@ impl FromStr for OutputFormat {
 }
 
 /// Key for the environment variable that determines the output format.
-pub const OUTPUT_FORMAT_ENV_VAR: &str = "MODRINTH_OUTPUT_FORMAT";
+pub const OUTPUT_FORMAT_ENV_VAR: &str = "Bbsmc_OUTPUT_FORMAT";
 
-/// Initializes logging for Modrinth services.
+/// Initializes logging for Bbsmc services.
 ///
 /// This uses [`OUTPUT_FORMAT_ENV_VAR`] to determine the [`OutputFormat`] to
 /// use - see that type for details of each possible format.
@@ -50,7 +50,7 @@ pub fn init() -> Result<()> {
     init_with_config(false)
 }
 
-/// Initializes logging for Modrinth services.
+/// Initializes logging for Bbsmc services.
 ///
 /// This uses [`OUTPUT_FORMAT_ENV_VAR`] to determine the [`OutputFormat`] to
 /// use - see that type for details of each possible format.

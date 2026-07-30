@@ -1,6 +1,6 @@
 {
   "db_name": "SQLite",
-  "query": "\n            DELETE FROM modrinth_users WHERE id = $1\n            ",
+  "query": "\n            DELETE FROM Bbsmc_users WHERE id = $1\n            ",
   "describe": {
     "columns": [],
     "parameters": {

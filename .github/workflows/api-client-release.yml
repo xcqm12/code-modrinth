@@ -17,13 +17,13 @@ permissions:
 
 jobs:
   release:
-    if: github.repository_owner == 'modrinth' && github.ref == 'refs/heads/main'
+    if: github.repository_owner == 'Bbsmc' && github.ref == 'refs/heads/main'
     # npm Trusted Publishing requires a GitHub-hosted runner.
     runs-on: ubuntu-latest
     env:
       FORCE_COLOR: 3
       PACKAGE_DIR: packages/api-client
-      PACKAGE_NAME: '@modrinth/api-client'
+      PACKAGE_NAME: '@Bbsmc/api-client'
       BUMP_TYPE: minor
     steps:
       - name: Check out code
@@ -72,7 +72,7 @@ jobs:
 
       - name: Install dependencies
         if: steps.changes.outputs.changed == 'true'
-        run: pnpm install --frozen-lockfile --filter @modrinth/api-client...
+        run: pnpm install --frozen-lockfile --filter @Bbsmc/api-client...
 
       - name: Resolve release version
         if: steps.changes.outputs.changed == 'true'
@@ -112,7 +112,7 @@ jobs:
 
       - name: Build api-client
         if: steps.changes.outputs.changed == 'true'
-        run: pnpm --filter @modrinth/api-client build
+        run: pnpm --filter @Bbsmc/api-client build
 
       - name: Check package contents
         if: steps.changes.outputs.changed == 'true'

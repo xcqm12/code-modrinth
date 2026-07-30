@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import { useCompactNumber, useVIntl } from '@modrinth/ui'
+import { useCompactNumber, useVIntl } from '@Bbsmc/ui'
 import {
 	BarController,
 	BarElement,

@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { ServerStackIcon } from '@modrinth/assets'
-import { injectModrinthClient, ServersManagePageIndex } from '@modrinth/ui'
+import type { Labrinth } from '@Bbsmc/api-client'
+import { ServerStackIcon } from '@Bbsmc/assets'
+import { injectBbsmcClient, ServersManagePageIndex } from '@Bbsmc/ui'
 import { useQuery } from '@tanstack/vue-query'
 import { computed } from 'vue'
 
@@ -11,7 +11,7 @@ import { config } from '../config'
 
 const stripePublishableKey = (config.stripePublishableKey as string) || ''
 
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 
 useRootBreadcrumb({
 	slot: 'root',

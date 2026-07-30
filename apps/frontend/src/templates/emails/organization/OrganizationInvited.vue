@@ -30,7 +30,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 		<Text class="text-base">Hi <span class="no-auto-link">{user.name}</span>,</Text>
 
 		<Text class="text-base"
-			>Modrinth user
+			>Bbsmc user
 			<b
 				><VLink href="https://bbsmc.org.cn/user/{inviter.name}" class="text-green underline">
 					{inviter.name}
@@ -45,7 +45,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 					{organization.name}
 				</VLink></b
 			>
-			on Modrinth.
+			on Bbsmc.
 		</Text>
 
 		<Section class="bg-bg-super mb-4 mt-4 rounded-lg border border-divider pb-4 pl-4 pr-4 pt-4">

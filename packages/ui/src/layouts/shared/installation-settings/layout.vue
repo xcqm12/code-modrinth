@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
 import {
 	ArrowLeftRightIcon,
 	CircleAlertIcon,
@@ -12,7 +12,7 @@ import {
 	SpinnerIcon,
 	UnlinkIcon,
 	XIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import { computed, nextTick, onBeforeUnmount, onMounted, onUpdated, ref, watch } from 'vue'
 import { onBeforeRouteLeave } from 'vue-router'
 
@@ -762,7 +762,7 @@ const messages = defineMessages({
 					</span>
 				</div>
 
-				<!-- Repair (hidden for local file modpacks â€” reinstall covers this) -->
+				<!-- Repair (hidden for local file modpacks â€?reinstall covers this) -->
 				<div v-if="!isLocalFile" class="flex flex-col gap-2.5">
 					<span class="text-lg font-semibold text-contrast">
 						{{

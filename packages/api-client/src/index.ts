@@ -1,4 +1,4 @@
-export { AbstractModrinthClient } from './core/abstract-client'
+export { AbstractBbsmcClient } from './core/abstract-client'
 export { AbstractFeature, type FeatureConfig } from './core/abstract-feature'
 export {
 	AbstractSyncClient,
@@ -18,7 +18,7 @@ export {
 	type WebSocketEventHandler,
 	type WebSocketStatus,
 } from './core/abstract-websocket'
-export { ModrinthApiError, ModrinthServerError } from './core/errors'
+export { BbsmcApiError, BbsmcServerError } from './core/errors'
 export { type AuthConfig, AuthFeature } from './features/auth'
 export {
 	type CircuitBreakerConfig,
@@ -33,12 +33,12 @@ export { type BackoffStrategy, type RetryConfig, RetryFeature } from './features
 export { type VerboseLoggingConfig, VerboseLoggingFeature } from './features/verbose-logging'
 export type { InferredClientModules } from './modules'
 export * from './modules/types'
-export { GenericModrinthClient } from './platform/generic'
+export { GenericBbsmcClient } from './platform/generic'
 export type { NuxtClientConfig } from './platform/nuxt'
-export { NuxtCircuitBreakerStorage, NuxtModrinthClient } from './platform/nuxt'
+export { NuxtCircuitBreakerStorage, NuxtBbsmcClient } from './platform/nuxt'
 export { GenericSyncClient } from './platform/sync-generic'
 export type { TauriClientConfig } from './platform/tauri'
-export { TauriModrinthClient } from './platform/tauri'
+export { TauriBbsmcClient } from './platform/tauri'
 export { XHRUploadClient } from './platform/xhr-upload-client'
 export { clearNodeAuthState, nodeAuthState, setNodeAuthState } from './state/node-auth'
 export * from './types'

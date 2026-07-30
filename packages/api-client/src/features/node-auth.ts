@@ -1,5 +1,5 @@
 import { AbstractFeature, type FeatureConfig } from '../core/abstract-feature'
-import { ModrinthApiError } from '../core/errors'
+import { BbsmcApiError } from '../core/errors'
 import type { RequestContext } from '../types/request'
 import { getNodeBaseUrl } from '../utils/node-url'
 
@@ -7,7 +7,7 @@ import { getNodeBaseUrl } from '../utils/node-url'
  * Node authentication credentials
  */
 export interface NodeAuth {
-	/** Node instance URL (e.g., "node-xyz.bbsmc.org.cn/modrinth/v0/fs") */
+	/** Node instance URL (e.g., "node-xyz.bbsmc.org.cn/Bbsmc/v0/fs") */
 	url: string
 	/** Base URL without path suffix (e.g., "node-xyz.bbsmc.org.cn") â€?used when available */
 	baseUrl?: string
@@ -85,7 +85,7 @@ export class NodeAuthFeature extends AbstractFeature {
 			try {
 				return await next()
 			} catch (error) {
-				if (error instanceof ModrinthApiError && error.statusCode === 401) {
+				if (error instanceof BbsmcApiError && error.statusCode === 401) {
 					retryCount++
 					if (retryCount >= maxRetries) {
 						throw new Error(

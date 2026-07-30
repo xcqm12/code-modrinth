@@ -1,6 +1,6 @@
 {
   "db_name": "SQLite",
-  "query": "\n        SELECT\n            instance_id,\n            link_kind,\n            modrinth_project_id,\n            modrinth_version_id,\n            server_project_id,\n            content_project_id,\n            content_version_id,\n            hosting_server_id,\n            json(hosting_instance_ids) AS \"hosting_instance_ids?: String\",\n            hosting_active_instance_id,\n            shared_instance_id,\n            shared_instance_role,\n            shared_instance_manager_id,\n            shared_instance_linked_user_id,\n            imported_name,\n            imported_version_number,\n            imported_filename\n        FROM instance_links\n        WHERE instance_id = ?\n        ",
+  "query": "\n        SELECT\n            instance_id,\n            link_kind,\n            Bbsmc_project_id,\n            Bbsmc_version_id,\n            server_project_id,\n            content_project_id,\n            content_version_id,\n            hosting_server_id,\n            json(hosting_instance_ids) AS \"hosting_instance_ids?: String\",\n            hosting_active_instance_id,\n            shared_instance_id,\n            shared_instance_role,\n            shared_instance_manager_id,\n            shared_instance_linked_user_id,\n            imported_name,\n            imported_version_number,\n            imported_filename\n        FROM instance_links\n        WHERE instance_id = ?\n        ",
   "describe": {
     "columns": [
       {
@@ -14,12 +14,12 @@
         "type_info": "Text"
       },
       {
-        "name": "modrinth_project_id",
+        "name": "Bbsmc_project_id",
         "ordinal": 2,
         "type_info": "Text"
       },
       {
-        "name": "modrinth_version_id",
+        "name": "Bbsmc_version_id",
         "ordinal": 3,
         "type_info": "Text"
       },

@@ -4,7 +4,7 @@ use super::model::{
     InstallPhaseDetails, InstallPhaseId, InstallProgress,
 };
 use super::store;
-use crate::state::{ModrinthCredentials, State};
+use crate::state::{BbsmcCredentials, State};
 use regex::{Captures, Regex};
 use sqlx::Row;
 use std::fmt::Write as _;
@@ -591,7 +591,7 @@ async fn censor_support_text(
     mut text: String,
     state: &State,
 ) -> crate::Result<String> {
-    for credentials in ModrinthCredentials::get_all(&state.pool)
+    for credentials in BbsmcCredentials::get_all(&state.pool)
         .await?
         .into_iter()
         .map(|credentials| credentials.1)
@@ -599,7 +599,7 @@ async fn censor_support_text(
         replace_nonempty(
             &mut text,
             &credentials.session,
-            "{MODRINTH_ACCESS_TOKEN}",
+            "{Bbsmc_ACCESS_TOKEN}",
         );
     }
 

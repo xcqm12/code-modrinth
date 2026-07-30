@@ -1,4 +1,4 @@
-import type { Archon, Labrinth } from '@modrinth/api-client'
+import type { Archon, Labrinth } from '@Bbsmc/api-client'
 import type {
 	BrowseInstallContentType,
 	BrowseInstallPlan,
@@ -8,7 +8,7 @@ import type {
 	FilterValue,
 	PendingServerContentInstall,
 	PendingServerContentInstallType,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import {
 	addPendingServerContentInstalls,
 	commonMessages,
@@ -16,7 +16,7 @@ import {
 	flushStoredServerAddonInstallQueue,
 	getStoredServerAddonInstallQueue,
 	getTargetInstallPreferences,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	readPendingServerContentInstalls,
 	readStoredServerInstallQueue,
@@ -27,7 +27,7 @@ import {
 	useVIntl,
 	writePendingServerContentInstallBaseline,
 	writeStoredServerInstallQueue,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import type { ComputedRef, Ref } from 'vue'
 import { computed, nextTick, ref, watch } from 'vue'
@@ -122,7 +122,7 @@ export function useServerInstallContent({
 	debug = () => {},
 }: UseServerInstallContentOptions) {
 	const { formatMessage } = useVIntl()
-	const client = injectModrinthClient()
+	const client = injectBbsmcClient()
 	const queryClient = useQueryClient()
 	const route = useRoute()
 	const { handleError } = injectNotificationManager()
@@ -679,7 +679,7 @@ export function useServerInstallContent({
 			await client.archon.content_v1.installContent(currentServerId.value, currentWorldId.value, {
 				content_variant: 'modpack',
 				spec: {
-					platform: 'modrinth',
+					platform: 'Bbsmc',
 					project_id: config.modpackSelection.value.projectId,
 					version_id: config.modpackSelection.value.versionId,
 				},

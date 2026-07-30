@@ -1,4 +1,4 @@
-name: Modrinth App build
+name: Bbsmc App build
 on:
   push:
     branches:
@@ -109,9 +109,9 @@ jobs:
           GIT_HASH=$(git rev-parse --short HEAD)
           cat > apps/app/tauri-dev.conf.json <<EOF
           {
-            "productName": "Modrinth App (dev-${GIT_HASH})",
-            "mainBinaryName": "Modrinth App (dev-${GIT_HASH})",
-            "identifier": "ModrinthApp-dev-${GIT_HASH}",
+            "productName": "Bbsmc App (dev-${GIT_HASH})",
+            "mainBinaryName": "Bbsmc App (dev-${GIT_HASH})",
+            "identifier": "BbsmcApp-dev-${GIT_HASH}",
             "bundle": {
               "fileAssociations": []
             }
@@ -169,7 +169,7 @@ jobs:
           fi
 
       - name: Build macOS app
-        run: ${{ (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v') || inputs.app-version-override != '') && 'pnpm --filter=@modrinth/app run tauri build --target universal-apple-darwin --config tauri-release.conf.json' || 'pnpm --filter=@modrinth/app run tauri build --target universal-apple-darwin --config tauri-dev.conf.json' }}
+        run: ${{ (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v') || inputs.app-version-override != '') && 'pnpm --filter=@Bbsmc/app run tauri build --target universal-apple-darwin --config tauri-release.conf.json' || 'pnpm --filter=@Bbsmc/app run tauri build --target universal-apple-darwin --config tauri-dev.conf.json' }}
         if: contains(matrix.artifact-target-name, 'darwin')
         env:
           TAURI_BUNDLER_DMG_IGNORE_CI: 'true'
@@ -184,7 +184,7 @@ jobs:
           TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
 
       - name: Build Linux app
-        run: ${{ (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v') || inputs.app-version-override != '') && 'pnpm --filter=@modrinth/app run tauri build --config tauri-release.conf.json' || 'pnpm --filter=@modrinth/app run tauri build --config tauri-dev.conf.json' }}
+        run: ${{ (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v') || inputs.app-version-override != '') && 'pnpm --filter=@Bbsmc/app run tauri build --config tauri-release.conf.json' || 'pnpm --filter=@Bbsmc/app run tauri build --config tauri-dev.conf.json' }}
         if: contains(matrix.artifact-target-name, 'linux')
         env:
           TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
@@ -195,7 +195,7 @@ jobs:
           [System.Convert]::FromBase64String("$env:DIGICERT_ONE_SIGNER_CLIENT_CERTIFICATE_BASE64") | Set-Content -Path signer-client-cert.p12 -AsByteStream
           $env:DIGICERT_ONE_SIGNER_CREDENTIALS = "$env:DIGICERT_ONE_SIGNER_API_KEY|$PWD\signer-client-cert.p12|$env:DIGICERT_ONE_SIGNER_CLIENT_CERTIFICATE_PASSWORD"
           $env:JAVA_HOME = "$env:JAVA_HOME_17_X64"
-          ${{ (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v') || inputs.app-version-override != '') && 'pnpm --filter=@modrinth/app run tauri build --config tauri-release.conf.json --verbose --bundles "nsis,updater"' || 'pnpm --filter=@modrinth/app run tauri build --config tauri-dev.conf.json --verbose --bundles "nsis,updater"' }}
+          ${{ (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v') || inputs.app-version-override != '') && 'pnpm --filter=@Bbsmc/app run tauri build --config tauri-release.conf.json --verbose --bundles "nsis,updater"' || 'pnpm --filter=@Bbsmc/app run tauri build --config tauri-dev.conf.json --verbose --bundles "nsis,updater"' }}
           Remove-Item -Path signer-client-cert.p12 -ErrorAction SilentlyContinue
         if: contains(matrix.artifact-target-name, 'windows')
         env:
@@ -210,16 +210,16 @@ jobs:
         with:
           name: App bundle (${{ matrix.artifact-target-name }})
           path: |
-            target/release/bundle/appimage/Modrinth App_*.AppImage*
-            target/release/bundle/deb/Modrinth App_*.deb*
-            target/release/bundle/rpm/Modrinth App-*.rpm*
-            target/release/bundle/appimage/Modrinth App (dev-*)_*.AppImage*
-            target/release/bundle/deb/Modrinth App (dev-*)_*.deb*
-            target/release/bundle/rpm/Modrinth App (dev-*)-*.rpm*
-            target/universal-apple-darwin/release/bundle/macos/Modrinth App.app.tar.gz*
-            target/universal-apple-darwin/release/bundle/macos/Modrinth App (dev-*)*.app.tar.gz
-            target/universal-apple-darwin/release/bundle/dmg/Modrinth App (dev-*)*.dmg
-            target/universal-apple-darwin/release/bundle/dmg/Modrinth App_*.dmg*
-            target/release/bundle/nsis/Modrinth App_*-setup.exe*
-            target/release/bundle/nsis/Modrinth App (dev-*)_*-setup.exe*
-            target/release/bundle/nsis/Modrinth App_*-setup.nsis.zip*
+            target/release/bundle/appimage/Bbsmc App_*.AppImage*
+            target/release/bundle/deb/Bbsmc App_*.deb*
+            target/release/bundle/rpm/Bbsmc App-*.rpm*
+            target/release/bundle/appimage/Bbsmc App (dev-*)_*.AppImage*
+            target/release/bundle/deb/Bbsmc App (dev-*)_*.deb*
+            target/release/bundle/rpm/Bbsmc App (dev-*)-*.rpm*
+            target/universal-apple-darwin/release/bundle/macos/Bbsmc App.app.tar.gz*
+            target/universal-apple-darwin/release/bundle/macos/Bbsmc App (dev-*)*.app.tar.gz
+            target/universal-apple-darwin/release/bundle/dmg/Bbsmc App (dev-*)*.dmg
+            target/universal-apple-darwin/release/bundle/dmg/Bbsmc App_*.dmg*
+            target/release/bundle/nsis/Bbsmc App_*-setup.exe*
+            target/release/bundle/nsis/Bbsmc App (dev-*)_*-setup.exe*
+            target/release/bundle/nsis/Bbsmc App_*-setup.nsis.zip*

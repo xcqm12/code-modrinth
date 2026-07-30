@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Chips, defineMessages, Toggle, useVIntl } from '@modrinth/ui'
+import { Chips, defineMessages, Toggle, useVIntl } from '@Bbsmc/ui'
 import { ref, watch } from 'vue'
 
 import { get, set } from '@/helpers/settings.ts'
@@ -36,7 +36,7 @@ const messages = defineMessages({
 	},
 	minimizeLauncherDescription: {
 		id: 'app.appearance-settings.minimize-launcher.description',
-		defaultMessage: 'Minimize Modrinth App when Minecraft starts.',
+		defaultMessage: 'Minimize Bbsmc App when Minecraft starts.',
 	},
 	defaultLandingPageTitle: {
 		id: 'app.appearance-settings.default-landing-page.title',
@@ -44,7 +44,7 @@ const messages = defineMessages({
 	},
 	defaultLandingPageDescription: {
 		id: 'app.appearance-settings.default-landing-page.description',
-		defaultMessage: 'Choose the page shown when Modrinth App opens.',
+		defaultMessage: 'Choose the page shown when Bbsmc App opens.',
 	},
 	defaultLandingPageHome: {
 		id: 'app.appearance-settings.default-landing-page.home',
@@ -93,7 +93,7 @@ const messages = defineMessages({
 	unknownPackWarningDescription: {
 		id: 'app.appearance-settings.unknown-pack-warning.description',
 		defaultMessage:
-			"Show a safety warning before installing a Modrinth Pack (.mrpack) that isn't hosted on Modrinth.",
+			"Show a safety warning before installing a Bbsmc Pack (.mrpack) that isn't hosted on Bbsmc.",
 	},
 	skipNonEssentialWarningsTitle: {
 		id: 'app.appearance-settings.skip-non-essential-warnings.title',

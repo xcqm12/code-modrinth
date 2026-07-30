@@ -1,4 +1,4 @@
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
 import type { FunctionalComponent, InjectionKey, Ref, SVGAttributes } from 'vue'
 import { markRaw, toValue } from 'vue'
 
@@ -121,7 +121,7 @@ export async function loadMd(
 		}
 	}
 	const expanded = expandVariables(raw, projectV2, project, vars)
-	// Code spans render literally â€” markdown escapes inside them show as-is, so strip them
+	// Code spans render literally â€?markdown escapes inside them show as-is, so strip them
 	return expanded.replace(/`[^`\n]*`/g, (match) => match.replace(/\\([\\*_`[~])/g, '$1'))
 }
 
@@ -612,7 +612,7 @@ function childrenScopePath(node: IdentifiedNodeBuilder): string[] | null {
 
 function stampChildPaths(entries: ChildEntry[], scopePath: string[]): void {
 	for (const entry of entries) {
-		// Skip reactive entries (refs, functions, nulls) â€” they get stamped on resolution
+		// Skip reactive entries (refs, functions, nulls) â€?they get stamped on resolution
 		if (!(entry instanceof NodeBuilder)) continue
 		if (!(entry instanceof IdentifiedNodeBuilder)) continue
 		const selectId = entry instanceof GroupNodeBuilder ? entry._selectId : undefined

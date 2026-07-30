@@ -5,13 +5,13 @@ import {
 	GaugeIcon,
 	HeartHandshakeIcon,
 	LanguagesIcon,
-	ModrinthIcon,
+	BbsmcIcon,
 	PaintbrushIcon,
 	Settings2Icon,
 	ShieldIcon,
 	ToggleRightIcon,
 	UserIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	commonMessages,
 	commonSettingsMessages,
@@ -21,7 +21,7 @@ import {
 	TabbedModal,
 	UnsavedChangesPopup,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { getVersion } from '@tauri-apps/api/app'
 import { platform as getOsPlatform, version as getOsVersion } from '@tauri-apps/plugin-os'
 import { computed, provide, ref, watch } from 'vue'
@@ -251,7 +251,7 @@ const messages = defineMessages({
 	},
 	appVersion: {
 		id: 'app.settings.app-version',
-		defaultMessage: 'Modrinth App {version}',
+		defaultMessage: 'Bbsmc App {version}',
 	},
 	macos: {
 		id: 'app.settings.operating-system.macos',
@@ -311,7 +311,7 @@ const messages = defineMessages({
 						}"
 						@click="devModeCount"
 					>
-						<ModrinthIcon aria-hidden="true" class="w-6 h-6" />
+						<BbsmcIcon aria-hidden="true" class="w-6 h-6" />
 					</button>
 					<div class="max-w-[200px]">
 						<p class="m-0">

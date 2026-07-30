@@ -1,9 +1,9 @@
-import type { Archon } from '@modrinth/api-client'
+import type { Archon } from '@Bbsmc/api-client'
 import { useQueryClient } from '@tanstack/vue-query'
 import type { ComputedRef, Ref } from 'vue'
 import { onMounted, onUnmounted, watch } from 'vue'
 
-import { injectModrinthClient } from '#ui/providers'
+import { injectBbsmcClient } from '#ui/providers'
 
 type ReadableRef<T> = Ref<T> | ComputedRef<T>
 type SyncUnsubscriber = () => void
@@ -16,7 +16,7 @@ type UseServerPanelSyncOptions = {
 const ACTION_LOG_INVALIDATE_DELAY_MS = 500
 
 export function useServerPanelSync(options: UseServerPanelSyncOptions) {
-	const client = injectModrinthClient()
+	const client = injectBbsmcClient()
 	const queryClient = useQueryClient()
 
 	let activeServerId: string | null = null

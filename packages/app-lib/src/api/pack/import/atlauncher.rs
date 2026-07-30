@@ -33,9 +33,9 @@ pub struct ATLauncher {
     pub version: String, // ie: 1.6
     pub loader_version: ATLauncherLoaderVersion,
 
-    pub modrinth_project: Option<ATLauncherModrinthProject>,
-    pub modrinth_version: Option<ATLauncherModrinthVersion>,
-    pub modrinth_manifest: Option<pack::install_from::PackFormat>,
+    pub Bbsmc_project: Option<ATLauncherBbsmcProject>,
+    pub Bbsmc_version: Option<ATLauncherBbsmcVersion>,
+    pub Bbsmc_manifest: Option<pack::install_from::PackFormat>,
 }
 
 #[derive(Serialize, Deserialize)]
@@ -53,7 +53,7 @@ pub struct ATLauncherLoaderVersion {
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-pub struct ATLauncherModrinthProject {
+pub struct ATLauncherBbsmcProject {
     pub id: String,
     pub slug: String,
     pub project_type: String,
@@ -64,7 +64,7 @@ pub struct ATLauncherModrinthProject {
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-pub struct ATLauncherModrinthVersion {
+pub struct ATLauncherBbsmcVersion {
     pub id: String,
     pub project_id: String,
     pub name: String,
@@ -73,7 +73,7 @@ pub struct ATLauncherModrinthVersion {
 
 #[derive(Serialize, Deserialize, Debug)]
 #[serde(rename_all = "camelCase")]
-pub struct ATLauncherModrinthVersionFile {
+pub struct ATLauncherBbsmcVersionFile {
     pub hashes: HashMap<String, String>,
     pub url: String,
     pub filename: String,
@@ -83,7 +83,7 @@ pub struct ATLauncherModrinthVersionFile {
 
 #[derive(Serialize, Deserialize, Debug)]
 #[serde(rename_all = "camelCase")]
-pub struct ATLauncherModrinthVersionDependency {
+pub struct ATLauncherBbsmcVersionDependency {
     pub project_id: Option<String>,
     pub version_id: Option<String>,
 }
@@ -95,8 +95,8 @@ pub struct ATLauncherMod {
     pub version: String,
     pub file: String,
 
-    pub modrinth_project: Option<ATLauncherModrinthProject>,
-    pub modrinth_version: Option<ATLauncherModrinthVersion>,
+    pub Bbsmc_project: Option<ATLauncherBbsmcProject>,
+    pub Bbsmc_version: Option<ATLauncherBbsmcVersion>,
 }
 
 // Check if folder has a instance.json that parses
@@ -225,7 +225,7 @@ async fn import_atlauncher_unmanaged(
 
     let link = match (&description.project_id, &description.version_id) {
         (Some(project_id), Some(version_id)) => {
-            Some(InstanceLink::ModrinthModpack {
+            Some(InstanceLink::BbsmcModpack {
                 project_id: project_id.clone(),
                 version_id: version_id.clone(),
             })

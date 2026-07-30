@@ -24,13 +24,13 @@
     "defaultMessage": "Details zur Lizenz hinzufügen"
   },
   "nags.add-links-server.description": {
-    "defaultMessage": "Füge alle relevanten Links hinzu, die außerhalb von Modrinth liegen, wie z. B. eine Website, einen Shop oder eine Discord-Einladung."
+    "defaultMessage": "Füge alle relevanten Links hinzu, die außerhalb von Bbsmc liegen, wie z. B. eine Website, einen Shop oder eine Discord-Einladung."
   },
   "nags.add-links-server.title": {
     "defaultMessage": "Externe Links hinzufügen"
   },
   "nags.add-links.description": {
-    "defaultMessage": "Füge alle relevanten Links hinzu, die außerhalb von Modrinth liegen, wie zum Beispiel Quellcode, ein Issue-Tracker oder eine Discord-Einladung."
+    "defaultMessage": "Füge alle relevanten Links hinzu, die außerhalb von Bbsmc liegen, wie zum Beispiel Quellcode, ein Issue-Tracker oder eine Discord-Einladung."
   },
   "nags.add-links.title": {
     "defaultMessage": "Externe Links hinzufügen"
@@ -120,7 +120,7 @@
     "defaultMessage": "Überschriften kürzen"
   },
   "nags.minecraft-title-clause.description": {
-    "defaultMessage": "Projekte dürfen die Marke Minecraft nicht verwenden oder „Minecraft“ als wesentlichen Teil des Namens enthalten."
+    "defaultMessage": "Projekte dürfen die Marke Minecraft nicht verwenden oder „Minecraft�?als wesentlichen Teil des Namens enthalten."
   },
   "nags.minecraft-title-clause.title": {
     "defaultMessage": "Vermeide Markenrechtsverletzungen"
@@ -132,7 +132,7 @@
     "defaultMessage": "Alternativen Bild-Text hinzufügen"
   },
   "nags.misused-discord-link-description": {
-    "defaultMessage": "Discord-Einladungen können nicht für andere Link-Typen verwendet werden. Bitte füge deinen Discord-Link nur in das Feld „Discord-Einladungslink“ ein."
+    "defaultMessage": "Discord-Einladungen können nicht für andere Link-Typen verwendet werden. Bitte füge deinen Discord-Link nur in das Feld „Discord-Einladungslink�?ein."
   },
   "nags.misused-discord-link.title": {
     "defaultMessage": "Discord-Einladung verschieben"

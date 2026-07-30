@@ -18,10 +18,10 @@
     "message": "Sao chép chi tiết"
   },
   "app.action-bar.install.dismiss": {
-    "message": "Bỏ qua"
+    "message": "B�?qua"
   },
   "app.action-bar.install.retry": {
-    "message": "Thử lại"
+    "message": "Th�?lại"
   },
   "app.action-bar.install.summary.app-closing": {
     "message": "Đã hủy do đóng ứng dụng"
@@ -39,7 +39,7 @@
     "message": "Không tải được tệp"
   },
   "app.action-bar.install.summary.corrupt-download": {
-    "message": "Tệp được tải bị hỏng"
+    "message": "Tệp được tải b�?hỏng"
   },
   "app.action-bar.install.summary.could-not-save-files": {
     "message": "Không lưu được tệp"
@@ -48,34 +48,34 @@
     "message": "Không hoàn tất tải xuống"
   },
   "app.action-bar.install.summary.invalid-file-path": {
-    "message": "Đường dẫn tệp tin không hợp lệ"
+    "message": "Đường dẫn tệp tin không hợp l�?
   },
   "app.action-bar.install.summary.invalid-modpack": {
-    "message": "Dữ liệu modpack không hợp lệ"
+    "message": "D�?liệu modpack không hợp l�?
   },
   "app.action-bar.install.summary.invalid-modpack-files": {
-    "message": "Tệp modpack có metadata không hợp lệ"
+    "message": "Tệp modpack có metadata không hợp l�?
   },
   "app.action-bar.install.summary.java-setup-failed": {
-    "message": "Quá trình cài đặt Java không thể hoàn thành"
+    "message": "Quá trình cài đặt Java không th�?hoàn thành"
   },
   "app.action-bar.install.summary.loader-setup-failed": {
     "message": "Cài đặt Loader thất bại"
   },
   "app.action-bar.install.summary.local-data-error": {
-    "message": "Không thể cập nhật dữ liệu cục bộ"
+    "message": "Không th�?cập nhật d�?liệu cục b�?
   },
   "app.action-bar.install.summary.minecraft-setup-failed": {
     "message": "Cài đặt Minecraft thất bại"
   },
-  "app.action-bar.install.summary.modrinth-unreachable": {
-    "message": "Không thể kết nối được với Modrinth"
+  "app.action-bar.install.summary.Bbsmc-unreachable": {
+    "message": "Không th�?kết nối được với Bbsmc"
   },
   "app.action-bar.install.summary.no-write-permission": {
-    "message": "Không có quyền để viết"
+    "message": "Không có quyền đ�?viết"
   },
   "app.action-bar.install.summary.pack-download-failed": {
-    "message": "Không thể tải xuống gói"
+    "message": "Không th�?tải xuống gói"
   },
   "app.action-bar.install.summary.unexpected-error": {
     "message": "Đã xảy ra lỗi"
@@ -99,7 +99,7 @@
     "message": "Bản instance chính"
   },
   "app.action-bar.reload-to-update": {
-    "message": "Tải lại để cập nhật"
+    "message": "Tải lại đ�?cập nhật"
   },
   "app.action-bar.show-more-running-instances": {
     "message": "Hiện thêm các phiên bản đang chạy"
@@ -120,37 +120,37 @@
     "message": "Xem logs"
   },
   "app.ads-consent.accept": {
-    "message": "Chấp nhận tất cả"
+    "message": "Chấp nhận tất c�?
   },
   "app.ads-consent.body": {
-    "message": "Quảng cáo giúp Modrinth hoạt động và tài trợ cho việc thanh toán cho người sáng tạo nội dung. Các đối tác của chúng tôi có thể lưu trữ hoặc truy cập cookie trong ứng dụng để cá nhân hóa quảng cáo và đo lường hiệu suất."
+    "message": "Quảng cáo giúp Bbsmc hoạt động và tài tr�?cho việc thanh toán cho người sáng tạo nội dung. Các đối tác của chúng tôi có th�?lưu tr�?hoặc truy cập cookie trong ứng dụng đ�?cá nhân hóa quảng cáo và đo lường hiệu suất."
   },
   "app.ads-consent.manage": {
     "message": "Quản lý tùy chọn"
   },
   "app.ads-consent.reject": {
-    "message": "Từ chối tất cả"
+    "message": "T�?chối tất c�?
   },
   "app.ads-consent.title": {
-    "message": "Quyền riêng tư của bạn và cách quảng cáo hỗ trợ Modrinth"
+    "message": "Quyền riêng tư của bạn và cách quảng cáo h�?tr�?Bbsmc"
   },
   "app.appearance-settings.advanced-rendering.description": {
-    "message": "Kích hoạt các tính năng dựng hình nâng cao như hiệu ứng làm mờ, có thể gây giảm hiệu năng nếu không có chế độ tăng tốc phần cứng."
+    "message": "Kích hoạt các tính năng dựng hình nâng cao như hiệu ứng làm m�? có th�?gây giảm hiệu năng nếu không có ch�?đ�?tăng tốc phần cứng."
   },
   "app.appearance-settings.advanced-rendering.title": {
     "message": "Dựng hình nâng cao"
   },
   "app.appearance-settings.color-theme.description": {
-    "message": "Chọn màu nền ưu thích của bạn cho Modrinth App."
+    "message": "Chọn màu nền ưu thích của bạn cho Bbsmc App."
   },
   "app.appearance-settings.color-theme.title": {
-    "message": "Màu chủ đề"
+    "message": "Màu ch�?đ�?
   },
   "app.appearance-settings.default-landing-page.description": {
-    "message": "Thay đổi trang hiển thị khi khởi chạy launcher."
+    "message": "Thay đổi trang hiển th�?khi khởi chạy launcher."
   },
   "app.appearance-settings.default-landing-page.home": {
-    "message": "Trang chủ"
+    "message": "Trang ch�?
   },
   "app.appearance-settings.default-landing-page.library": {
     "message": "Thư viện"
@@ -159,67 +159,67 @@
     "message": "Trang mặc định"
   },
   "app.appearance-settings.hide-nametag.description": {
-    "message": "Tắt hiển thị thẻ tên phía trên người chơi ở trang skin."
+    "message": "Tắt hiển th�?th�?tên phía trên người chơi �?trang skin."
   },
   "app.appearance-settings.hide-nametag.title": {
-    "message": "Ẩn thẻ tên"
+    "message": "Ẩn th�?tên"
   },
   "app.appearance-settings.jump-back-into-worlds.description": {
-    "message": "Hiển thị các thế giới gần đây trong mục \"Tiếp tục chơi\" ở Trang chủ."
+    "message": "Hiển th�?các th�?giới gần đây trong mục \"Tiếp tục chơi\" �?Trang ch�?"
   },
   "app.appearance-settings.jump-back-into-worlds.title": {
     "message": "Tiếp tục chơi"
   },
   "app.appearance-settings.minimize-launcher.description": {
-    "message": "Thu nhỏ launcher khi game Minecraft bắt đầu chạy."
+    "message": "Thu nh�?launcher khi game Minecraft bắt đầu chạy."
   },
   "app.appearance-settings.minimize-launcher.title": {
-    "message": "Thu nhỏ launcher"
+    "message": "Thu nh�?launcher"
   },
   "app.appearance-settings.native-decorations.description": {
-    "message": "Sử dụng khung cửa sổ hệ thống (yêu cầu khởi động lại ứng dụng)."
+    "message": "S�?dụng khung cửa s�?h�?thống (yêu cầu khởi động lại ứng dụng)."
   },
   "app.appearance-settings.native-decorations.title": {
-    "message": "Giao diện cửa sổ hệ thống"
+    "message": "Giao diện cửa s�?h�?thống"
   },
   "app.appearance-settings.show-play-time.description": {
-    "message": "Hiển thị thời gian bạn đã dành để chơi bằng một cấu hình."
+    "message": "Hiển th�?thời gian bạn đã dành đ�?chơi bằng một cấu hình."
   },
   "app.appearance-settings.show-play-time.title": {
     "message": "Hiện thời gian chơi"
   },
   "app.appearance-settings.skip-non-essential-warnings.description": {
-    "message": "Tự động bỏ qua các bước xác nhận rủi ro thấp như cài đặt gói mod trùng lặp, xóa nội dung thông thường, cập nhật hàng loạt, hủy liên kết gói mod và lời nhắc sửa chữa. Các cảnh báo nguy hiểm vẫn sẽ được hiển thị."
+    "message": "T�?động b�?qua các bước xác nhận rủi ro thấp như cài đặt gói mod trùng lặp, xóa nội dung thông thường, cập nhật hàng loạt, hủy liên kết gói mod và lời nhắc sửa chữa. Các cảnh báo nguy hiểm vẫn s�?được hiển th�?"
   },
   "app.appearance-settings.skip-non-essential-warnings.title": {
-    "message": "Bỏ qua các cảnh báo không quan trọng"
+    "message": "B�?qua các cảnh báo không quan trọng"
   },
   "app.appearance-settings.toggle-sidebar.description": {
-    "message": "Bật tính năng ẩn hiển thị thanh menu bên."
+    "message": "Bật tính năng ẩn hiển th�?thanh menu bên."
   },
   "app.appearance-settings.toggle-sidebar.title": {
     "message": "Ẩn/hiện thanh bên"
   },
   "app.appearance-settings.unknown-pack-warning.description": {
-    "message": "Nếu bạn cố gắng cài đặt tệp Modrinth Pack (.mrpack) không được lưu trữ trên máy chủ Modrinth, chúng tôi sẽ đảm bảo bạn hiểu rõ các rủi ro trước khi cài đặt."
+    "message": "Nếu bạn c�?gắng cài đặt tệp Bbsmc Pack (.mrpack) không được lưu tr�?trên máy ch�?Bbsmc, chúng tôi s�?đảm bảo bạn hiểu rõ các rủi ro trước khi cài đặt."
   },
   "app.appearance-settings.unknown-pack-warning.title": {
     "message": "Cảnh báo tôi trước khi cài đặt các modpacks không rõ nguồn gốc"
   },
   "app.auth-servers.unreachable.body": {
-    "message": "Máy chủ xác thực của Minecraft có thể đang bị sập. Hãy kiểm tra kết nối Internet của bạn và thử lại sau."
+    "message": "Máy ch�?xác thực của Minecraft có th�?đang b�?sập. Hãy kiểm tra kết nối Internet của bạn và th�?lại sau."
   },
   "app.auth-servers.unreachable.header": {
-    "message": "Không thể kết nối đến máy chủ xác thực"
+    "message": "Không th�?kết nối đến máy ch�?xác thực"
   },
   "app.browse.add-servers-to-instance": {
-    "message": "Thêm máy chủ vào phiên bản"
+    "message": "Thêm máy ch�?vào phiên bản"
   },
   "app.browse.add-to-an-instance": {
     "message": "Thêm vào phiên bản"
   },
   "app.browse.add-to-instance": {
-    "message": "Thêm vào hồ sơ"
+    "message": "Thêm vào h�?sơ"
   },
   "app.browse.add-to-instance-name": {
     "message": "Thêm vào {instanceName}"
@@ -234,25 +234,25 @@
     "message": "Quay lại phiên bản"
   },
   "app.browse.discover-servers": {
-    "message": "Khám phá máy chủ"
+    "message": "Khám phá máy ch�?
   },
   "app.browse.hide-added-servers": {
-    "message": "Ẩn máy chủ đã thêm vào"
+    "message": "Ẩn máy ch�?đã thêm vào"
   },
   "app.browse.project-type.modpacks": {
     "message": "Modpack"
   },
   "app.browse.server-instance-content-warning": {
-    "message": "Thêm nội dung có thể gây lỗi tương thích khi tham gia máy chủ. Bất kỳ nội dung nào được thêm vào cũng sẽ bị mất khi bạn cập nhật nội dung của phiên bản máy chủ."
+    "message": "Thêm nội dung có th�?gây lỗi tương thích khi tham gia máy ch�? Bất k�?nội dung nào được thêm vào cũng s�?b�?mất khi bạn cập nhật nội dung của phiên bản máy ch�?"
   },
   "app.browse.server.installing": {
     "message": "Đang cài đặt"
   },
   "app.content-install.no-compatible-versions": {
-    "message": "Không có phiên bản nào phù hợp với {compatibilityLabel}. Nếu vẫn chọn một phiên bản để cài đặt, các gói phụ thuộc sẽ không được tải tự động."
+    "message": "Không có phiên bản nào phù hợp với {compatibilityLabel}. Nếu vẫn chọn một phiên bản đ�?cài đặt, các gói ph�?thuộc s�?không được tải t�?động."
   },
   "app.export-modal.description-placeholder": {
-    "message": "Thêm miêu tả cho gói modpack..."
+    "message": "Thêm miêu t�?cho gói modpack..."
   },
   "app.export-modal.export-button": {
     "message": "Xuất"
@@ -288,10 +288,10 @@
     "message": "Hoàn tất"
   },
   "app.install.phase.preparing_instance": {
-    "message": "Đã thêm vào hàng chờ tải"
+    "message": "Đã thêm vào hàng ch�?tải"
   },
   "app.install.phase.preparing_java": {
-    "message": "Đang chuẩn bị Java"
+    "message": "Đang chuẩn b�?Java"
   },
   "app.install.phase.preparing_java.downloading": {
     "message": "Đang tải Java {version}"
@@ -303,22 +303,22 @@
     "message": "Đang tìm Java {version}"
   },
   "app.install.phase.preparing_java.resolving": {
-    "message": "Đang chuẩn bị Java {version}"
+    "message": "Đang chuẩn b�?Java {version}"
   },
   "app.instance.confirm-delete.admonition-body": {
-    "message": "Tất cả dữ liệu trong gói hồ sơ này sẽ bị xoá, bao gồm thế giới của bạn, cấu hình, và tất cả nội dung đã được tải xuống."
+    "message": "Tất c�?d�?liệu trong gói h�?sơ này s�?b�?xoá, bao gồm th�?giới của bạn, cấu hình, và tất c�?nội dung đã được tải xuống."
   },
   "app.instance.confirm-delete.admonition-header": {
-    "message": "Hành động này sẽ không thể huỷ bỏ"
+    "message": "Hành động này s�?không th�?hu�?b�?
   },
   "app.instance.confirm-delete.delete-button": {
-    "message": "Xoá hồ sơ"
+    "message": "Xoá h�?sơ"
   },
   "app.instance.confirm-delete.header": {
-    "message": "Xoá hồ sơ"
+    "message": "Xoá h�?sơ"
   },
   "app.instance.modpack-already-installed.body": {
-    "message": "Gói modpack này đã được cài đặt trong hồ sơ <bold>{instanceName}</bold> rồi. Bạn có chắc chắn muốn sao chép nó không?"
+    "message": "Gói modpack này đã được cài đặt trong h�?sơ <bold>{instanceName}</bold> rồi. Bạn có chắc chắn muốn sao chép nó không?"
   },
   "app.instance.modpack-already-installed.create": {
     "message": "Khởi tạo"
@@ -327,37 +327,37 @@
     "message": "Modpack đã được cài đặt"
   },
   "app.instance.modpack-already-installed.instance": {
-    "message": "Hồ sơ"
+    "message": "H�?sơ"
   },
   "app.instance.mods.content-type-project": {
-    "message": "Dự án"
+    "message": "D�?án"
   },
   "app.instance.mods.project-was-added": {
     "message": "\"{name}\" đã được thêm"
   },
   "app.instance.mods.projects-were-added": {
-    "message": "{count} dự án đã được thêm"
+    "message": "{count} d�?án đã được thêm"
   },
   "app.instance.mods.share-text": {
-    "message": "Kiểm tra dự án tôi đang sử dụng trong modpack của mình!"
+    "message": "Kiểm tra d�?án tôi đang s�?dụng trong modpack của mình!"
   },
   "app.instance.mods.share-title": {
-    "message": "Chia sẻ hồ sơ modpack"
+    "message": "Chia s�?h�?sơ modpack"
   },
   "app.instance.mods.successfully-uploaded": {
     "message": "Tải lên thành công"
   },
   "app.instance.worlds.add-server": {
-    "message": "Thêm máy chủ"
+    "message": "Thêm máy ch�?
   },
   "app.instance.worlds.browse-servers": {
-    "message": "Tìm kiếm máy chủ"
+    "message": "Tìm kiếm máy ch�?
   },
   "app.instance.worlds.delete-world-modal.delete-button": {
-    "message": "Xóa thế giới"
+    "message": "Xóa th�?giới"
   },
   "app.instance.worlds.delete-world-modal.title": {
-    "message": "Xóa thế giới"
+    "message": "Xóa th�?giới"
   },
   "app.instance.worlds.delete-world-modal.warning-header": {
     "message": "Đang xóa {name}"
@@ -375,25 +375,25 @@
     "message": "Vanilla"
   },
   "app.instance.worlds.no-worlds-description": {
-    "message": "Thêm một máy chủ hoặc tìm kiếm để bắt đầu"
+    "message": "Thêm một máy ch�?hoặc tìm kiếm đ�?bắt đầu"
   },
   "app.instance.worlds.no-worlds-heading": {
-    "message": "Không có máy chủ hay thế giới nào đã được thêm"
+    "message": "Không có máy ch�?hay th�?giới nào đã được thêm"
   },
   "app.instance.worlds.remove-server-modal.remove-button": {
-    "message": "Bỏ khỏi danh sách"
+    "message": "B�?khỏi danh sách"
   },
   "app.instance.worlds.remove-server-modal.title": {
-    "message": "Xóa máy chủ"
+    "message": "Xóa máy ch�?
   },
   "app.instance.worlds.remove-server-modal.warning-header": {
-    "message": "{name} sẽ bị xóa"
+    "message": "{name} s�?b�?xóa"
   },
   "app.instance.worlds.search-worlds-placeholder": {
     "message": "Tìm kiếm {count} world..."
   },
   "app.modal.install-to-play.header": {
-    "message": "Tải xuống để chơi"
+    "message": "Tải xuống đ�?chơi"
   },
   "app.modal.install-to-play.install-anyway": {
     "message": "Tải tiếp"
@@ -405,7 +405,7 @@
     "message": "{count, plural, other {# mod}}"
   },
   "app.modal.install-to-play.shared-instance": {
-    "message": "Chia sẻ hồ sơ"
+    "message": "Chia s�?h�?sơ"
   },
   "app.modal.install-to-play.view-contents": {
     "message": "Xem nội dung"
@@ -414,10 +414,10 @@
     "message": "Cập nhật và bắt đầu chơi"
   },
   "app.modal.update-to-play.removed": {
-    "message": "Đã bỏ"
+    "message": "Đã b�?
   },
   "app.project.install-button.already-installed": {
-    "message": "Dự án này đã được cài đặt"
+    "message": "D�?án này đã được cài đặt"
   },
   "app.project.install-button.switch-version": {
     "message": "Đổi phiên bản"
@@ -426,7 +426,7 @@
     "message": "Quay lại trang Khám Phá"
   },
   "app.project.version.all-versions": {
-    "message": "Tất cả phiên bản"
+    "message": "Tất c�?phiên bản"
   },
   "app.project.version.download-in-browser": {
     "message": "Tải trong trình duyệt"
@@ -438,22 +438,22 @@
     "message": "Đã có sẵn"
   },
   "app.settings.developer-mode-enabled": {
-    "message": "Chế độ nhà phát triển đã được bật."
+    "message": "Ch�?đ�?nhà phát triển đã được bật."
   },
   "app.settings.downloading": {
-    "message": "Đang tải về v{version}"
+    "message": "Đang tải v�?v{version}"
   },
   "app.settings.tabs.appearance": {
     "message": "Giao diện"
   },
   "app.settings.tabs.default-instance-options": {
-    "message": "Tuỳ chọn hồ sơ khởi chạy mặc định"
+    "message": "Tu�?chọn h�?sơ khởi chạy mặc định"
   },
   "app.settings.tabs.java-installations": {
     "message": "Các bản cài Java"
   },
   "app.settings.tabs.language": {
-    "message": "Ngôn ngữ"
+    "message": "Ngôn ng�?
   },
   "app.settings.tabs.privacy": {
     "message": "Quyền riêng tư"
@@ -462,10 +462,10 @@
     "message": "Quản lý tài nguyên"
   },
   "app.skins.add-button": {
-    "message": "Skin tự tạo"
+    "message": "Skin t�?tạo"
   },
   "app.skins.add-button.drag-and-drop": {
-    "message": "Kéo và thả"
+    "message": "Kéo và th�?
   },
   "app.skins.apply-button": {
     "message": "Áp dụng"
@@ -474,13 +474,13 @@
     "message": "Xóa skin"
   },
   "app.skins.delete-modal.description": {
-    "message": "Hành động này sẽ xóa skin trên vĩnh viễn. Hành động này không thể khôi phục lại."
+    "message": "Hành động này s�?xóa skin trên vĩnh viễn. Hành động này không th�?khôi phục lại."
   },
   "app.skins.delete-modal.title": {
-    "message": "Bạn hoàn toàn muốn xóa skin này chứ?"
+    "message": "Bạn hoàn toàn muốn xóa skin này ch�?"
   },
   "app.skins.dropped-file-error.text": {
-    "message": "Không đọc được file thả."
+    "message": "Không đọc được file th�?"
   },
   "app.skins.dropped-file-error.title": {
     "message": "Có lỗi khi đọc file"
@@ -495,7 +495,7 @@
     "message": "Tạo skin"
   },
   "app.skins.modal.arm-style-section": {
-    "message": "Độ rộng cánh tay"
+    "message": "Đ�?rộng cánh tay"
   },
   "app.skins.modal.arm-style-slim": {
     "message": "Gầy"
@@ -543,13 +543,13 @@
     "message": "Xem trước"
   },
   "app.skins.rate-limit.text": {
-    "message": "Bạn đang chỉnh skin quá thường xuyên. Mãy chủ của Mojang đã tạm thời chặn lại các yêu cầu hiện thời. Đợi một lúc trước khi thử lại lần nữa."
+    "message": "Bạn đang chỉnh skin quá thường xuyên. Mãy ch�?của Mojang đã tạm thời chặn lại các yêu cầu hiện thời. Đợi một lúc trước khi th�?lại lần nữa."
   },
   "app.skins.rate-limit.title": {
     "message": "Bình tĩnh lại!"
   },
   "app.skins.reorder-error.text": {
-    "message": "Không thể lưu thứ tự skin của bạn."
+    "message": "Không th�?lưu th�?t�?skin của bạn."
   },
   "app.skins.reorder-error.title": {
     "message": "Sắp xếp lại skin thất bại"
@@ -569,14 +569,14 @@
   "app.skins.section.minecon-earth-2017": {
     "message": "MINECON Earth 2017"
   },
-  "app.skins.section.modrinth": {
-    "message": "Modrinth"
+  "app.skins.section.Bbsmc": {
+    "message": "Bbsmc"
   },
-  "app.skins.section.modrinth-pride": {
-    "message": "Modrinth Pride"
+  "app.skins.section.Bbsmc-pride": {
+    "message": "Bbsmc Pride"
   },
-  "app.skins.section.modrinth-pride.tooltip": {
-    "message": "Bạn đã được tặng những skin này sau khi quyên góp cho Modrinth trong tháng tự hào LGBT thế giới."
+  "app.skins.section.Bbsmc-pride.tooltip": {
+    "message": "Bạn đã được tặng những skin này sau khi quyên góp cho Bbsmc trong tháng t�?hào LGBT th�?giới."
   },
   "app.skins.section.mounts-of-mayhem": {
     "message": "Mounts of Mayhem"
@@ -600,7 +600,7 @@
     "message": "Đăng nhập"
   },
   "app.skins.sign-in.description": {
-    "message": "Đặng nhập vào mội tài khoản Minecraft để đổi skin Skin trong ứng dụng này."
+    "message": "Đặng nhập vào mội tài khoản Minecraft đ�?đổi skin Skin trong ứng dụng này."
   },
   "app.skins.sign-in.rinthbot-alt": {
     "message": "Bot phấn khích"
@@ -612,13 +612,13 @@
     "message": "Đổi skin"
   },
   "app.update-popup.body.download-complete": {
-    "message": "Phiên bản v{version} của Modrinth đã sẵn sàng để có thể cài đặt. Khởi động lại ứng dụng để cập nhật ngay bây giờ, hoặc tự động cập nhật sau khi bạn tắt Modrinth."
+    "message": "Phiên bản v{version} của Bbsmc đã sẵn sàng đ�?có th�?cài đặt. Khởi động lại ứng dụng đ�?cập nhật ngay bây gi�? hoặc t�?động cập nhật sau khi bạn tắt Bbsmc."
   },
   "app.update-popup.body.linux": {
-    "message": "Phiên bản v{version} của Modrinth hiện đang khả dụng. Hãy sử dụng trình quản lý gói của bạn để cập nhật các tính năng và bản vá lỗi mới nhất!"
+    "message": "Phiên bản v{version} của Bbsmc hiện đang kh�?dụng. Hãy s�?dụng trình quản lý gói của bạn đ�?cập nhật các tính năng và bản vá lỗi mới nhất!"
   },
   "app.update-popup.body.metered": {
-    "message": "Phiên bản v{version} của Modrinth hiện đang khả dụng ngay bây giờ! Vì bạn đang sử dụng mạng có tính phí theo dung lượng nên chúng tôi không tự động tải xuống."
+    "message": "Phiên bản v{version} của Bbsmc hiện đang kh�?dụng ngay bây gi�? Vì bạn đang s�?dụng mạng có tính phí theo dung lượng nên chúng tôi không t�?động tải xuống."
   },
   "app.update-popup.changelog": {
     "message": "Nhật ký thay đổi"
@@ -630,22 +630,22 @@
     "message": "Cài đặt thành công"
   },
   "app.update-popup.reload": {
-    "message": "Tải lại để cập nhật"
+    "message": "Tải lại đ�?cập nhật"
   },
   "app.update-popup.title": {
-    "message": "Cập nhật mới hiện đang khả dụng"
+    "message": "Cập nhật mới hiện đang kh�?dụng"
   },
   "app.update.complete-toast.text": {
-    "message": "Nhấn vào đây để xem nhật kí thay đổi."
+    "message": "Nhấn vào đây đ�?xem nhật kí thay đổi."
   },
   "app.update.complete-toast.title": {
     "message": "Phiên bản {version} đã được cài đặt thành công!"
   },
   "app.world.server-modal.placeholder-address": {
-    "message": "example.modrinth.gg"
+    "message": "example.Bbsmc.gg"
   },
   "app.world.server-modal.select-an-option": {
-    "message": "Chọn một tuỳ chọn"
+    "message": "Chọn một tu�?chọn"
   },
   "app.world.world-item.incompatible-version": {
     "message": "Không phù hợp với phiên bản {version}"
@@ -672,19 +672,19 @@
     "message": "Thêm một người bạn"
   },
   "friends.add-friend.username.description": {
-    "message": "Nó có thể khác với tên người dùng Minecraft của họ!"
+    "message": "Nó có th�?khác với tên người dùng Minecraft của h�?"
   },
   "friends.add-friend.username.placeholder": {
-    "message": "Nhập tên người dùng Modrinth..."
+    "message": "Nhập tên người dùng Bbsmc..."
   },
   "friends.add-friend.username.title": {
-    "message": "Tên người dùng Modrinth của bạn của bạn là gì?"
+    "message": "Tên người dùng Bbsmc của bạn của bạn là gì?"
   },
   "friends.add-friends-to-share": {
-    "message": "Hãy <link>thêm bạn bè</link> để biết họ đang chơi gì!"
+    "message": "Hãy <link>thêm bạn bè</link> đ�?biết h�?đang chơi gì!"
   },
   "friends.friend.cancel-request": {
-    "message": "Huỷ yêu cầu"
+    "message": "Hu�?yêu cầu"
   },
   "friends.friend.remove-friend": {
     "message": "Xoá bạn bè"
@@ -708,7 +708,7 @@
     "message": "Trực tuyến"
   },
   "friends.heading.pending": {
-    "message": "Đang chờ"
+    "message": "Đang ch�?
   },
   "friends.no-friends-match": {
     "message": "Không có người bạn nào phù hợp với ''{query}''"
@@ -720,13 +720,13 @@
     "message": "{title} - {count}"
   },
   "friends.sign-in-to-add-friends": {
-    "message": "<link>Đăng nhập bằng tài khoản Modrinth</link> để kết bạn và xem họ đang chơi gì!"
+    "message": "<link>Đăng nhập bằng tài khoản Bbsmc</link> đ�?kết bạn và xem h�?đang chơi gì!"
   },
   "instance.add-server.add-and-play": {
     "message": "Thêm và chơi"
   },
   "instance.add-server.add-server": {
-    "message": "Thêm máy chủ"
+    "message": "Thêm máy ch�?
   },
   "instance.add-server.resource-pack.disabled": {
     "message": "Tắt"
@@ -735,43 +735,43 @@
     "message": "Bật"
   },
   "instance.add-server.resource-pack.prompt": {
-    "message": "Nhắc nhở"
+    "message": "Nhắc nh�?
   },
   "instance.add-server.title": {
-    "message": "Thêm máy chủ"
+    "message": "Thêm máy ch�?
   },
   "instance.edit-server.title": {
-    "message": "Sửa máy chủ"
+    "message": "Sửa máy ch�?
   },
   "instance.edit-world.hide-from-home": {
-    "message": "Ẩn khỏi trang chủ"
+    "message": "Ẩn khỏi trang ch�?
   },
   "instance.edit-world.name": {
     "message": "Tên"
   },
   "instance.edit-world.placeholder-name": {
-    "message": "Thế giới Minecraft"
+    "message": "Th�?giới Minecraft"
   },
   "instance.edit-world.reset-icon": {
     "message": "Đặt lại biểu tượng"
   },
   "instance.edit-world.title": {
-    "message": "Chỉnh sửa thế giới"
+    "message": "Chỉnh sửa th�?giới"
   },
   "instance.files.adding-files": {
-    "message": "Đang thêm dữ liệu ({completed}/{total})"
+    "message": "Đang thêm d�?liệu ({completed}/{total})"
   },
   "instance.files.save-as": {
     "message": "Lưu như..."
   },
   "instance.server-modal.address": {
-    "message": "Địa chỉ"
+    "message": "Địa ch�?
   },
   "instance.server-modal.name": {
     "message": "Tên"
   },
   "instance.server-modal.placeholder-name": {
-    "message": "Máy chủ Minecraft"
+    "message": "Máy ch�?Minecraft"
   },
   "instance.server-modal.resource-pack": {
     "message": "Gói tài nguyên"
@@ -780,13 +780,13 @@
     "message": "Tổng quát"
   },
   "instance.settings.tabs.general.delete": {
-    "message": "Xoá hồ sơ"
+    "message": "Xoá h�?sơ"
   },
   "instance.settings.tabs.general.delete.button": {
-    "message": "Xoá hồ sơ"
+    "message": "Xoá h�?sơ"
   },
   "instance.settings.tabs.general.delete.description": {
-    "message": "Xoá vĩnh viễn sẽ xoá toàn bộ thế giới, cài đặt, và các nội dung được cài đặt khỏi thiết bị của bạn. Hãy cân nhắc và chắc chắn vì bạn không thể khôi phục các tệp dữ liệt sau khi xoá."
+    "message": "Xoá vĩnh viễn s�?xoá toàn b�?th�?giới, cài đặt, và các nội dung được cài đặt khỏi thiết b�?của bạn. Hãy cân nhắc và chắc chắn vì bạn không th�?khôi phục các tệp d�?liệt sau khi xoá."
   },
   "instance.settings.tabs.general.deleting.button": {
     "message": "Đang xoá..."
@@ -795,22 +795,22 @@
     "message": "Nhân bản"
   },
   "instance.settings.tabs.general.duplicate-button.tooltip.installing": {
-    "message": "Không thể nhân bản trong khi đang cài đặt."
+    "message": "Không th�?nhân bản trong khi đang cài đặt."
   },
   "instance.settings.tabs.general.duplicate-instance": {
-    "message": "Nhân bản hồ sơ"
+    "message": "Nhân bản h�?sơ"
   },
   "instance.settings.tabs.general.duplicate-instance.description": {
-    "message": "Tạo ra một bản sao của hồ sơ này, bao gồm các thế giới, cấu hình, mod, v.v."
+    "message": "Tạo ra một bản sao của h�?sơ này, bao gồm các th�?giới, cấu hình, mod, v.v."
   },
   "instance.settings.tabs.general.edit-icon": {
     "message": "Sửa biểu tượng"
   },
   "instance.settings.tabs.general.edit-icon.remove": {
-    "message": "Loại bỏ biểu tượng"
+    "message": "Loại b�?biểu tượng"
   },
   "instance.settings.tabs.general.edit-icon.replace": {
-    "message": "Thay thế biểu tượng"
+    "message": "Thay th�?biểu tượng"
   },
   "instance.settings.tabs.general.edit-icon.select": {
     "message": "Chọn biểu tượng"
@@ -822,7 +822,7 @@
     "message": "Tạo nhóm mới"
   },
   "instance.settings.tabs.general.library-groups.description": {
-    "message": "Nhóm thư viện cho phép bạn tổ chức các hiện thể thành các phần khác nhau trong thư viện của bạn."
+    "message": "Nhóm thư viện cho phép bạn t�?chức các hiện th�?thành các phần khác nhau trong thư viện của bạn."
   },
   "instance.settings.tabs.general.library-groups.enter-name": {
     "message": "Nhập tên nhóm"
@@ -837,19 +837,19 @@
     "message": "Sơ khai"
   },
   "instance.settings.tabs.general.update-channel.alpha.description": {
-    "message": "Các phiên bản chính thức, thử nghiệm và sơ khai sẽ hiển thị trong danh sách cập nhật có sẵn."
+    "message": "Các phiên bản chính thức, th�?nghiệm và sơ khai s�?hiển th�?trong danh sách cập nhật có sẵn."
   },
   "instance.settings.tabs.general.update-channel.beta": {
-    "message": "Thử nghiệm"
+    "message": "Th�?nghiệm"
   },
   "instance.settings.tabs.general.update-channel.beta.description": {
-    "message": "Các phiên bản chính thức và thử nghiệm sẽ hiển thị trong danh sách cập nhật có sẵn."
+    "message": "Các phiên bản chính thức và th�?nghiệm s�?hiển th�?trong danh sách cập nhật có sẵn."
   },
   "instance.settings.tabs.general.update-channel.release": {
     "message": "Chính thức"
   },
   "instance.settings.tabs.general.update-channel.release.description": {
-    "message": "Chỉ phiên bản chính thức sẽ hiển thị trong danh sách cập nhật có sẵn."
+    "message": "Ch�?phiên bản chính thức s�?hiển th�?trong danh sách cập nhật có sẵn."
   },
   "instance.settings.tabs.general.update-channel.select": {
     "message": "Chọn kênh cập nhật"
@@ -858,10 +858,10 @@
     "message": "Khởi chạy Hooks"
   },
   "instance.settings.tabs.hooks.custom-hooks": {
-    "message": "Hooks khởi chạy tuỳ biến"
+    "message": "Hooks khởi chạy tu�?biến"
   },
   "instance.settings.tabs.hooks.description": {
-    "message": "Hooks cho phép người dùng nâng cao chạy câu lệnh hệ thống trước và sau khi chạy game."
+    "message": "Hooks cho phép người dùng nâng cao chạy câu lệnh h�?thống trước và sau khi chạy game."
   },
   "instance.settings.tabs.hooks.post-exit": {
     "message": "Sau khi thoát"
@@ -876,19 +876,19 @@
     "message": "Trước khi chạy"
   },
   "instance.settings.tabs.hooks.pre-launch.description": {
-    "message": "Chạy trước khi hiện thể được khởi chạy."
+    "message": "Chạy trước khi hiện th�?được khởi chạy."
   },
   "instance.settings.tabs.hooks.pre-launch.enter": {
     "message": "Nhập câu lệnh trước khi chạy..."
   },
   "instance.settings.tabs.hooks.title": {
-    "message": "Hooks để chạy game"
+    "message": "Hooks đ�?chạy game"
   },
   "instance.settings.tabs.hooks.wrapper": {
     "message": "Lệnh bao bọc (Wrapper)"
   },
   "instance.settings.tabs.hooks.wrapper.description": {
-    "message": "Lệnh bao bọc (Wrapper) để khởi chạy Minecraft."
+    "message": "Lệnh bao bọc (Wrapper) đ�?khởi chạy Minecraft."
   },
   "instance.settings.tabs.hooks.wrapper.enter": {
     "message": "Nhập lệnh bao bọc..."
@@ -900,25 +900,25 @@
     "message": "Phiên bản {loader}"
   },
   "instance.settings.tabs.java": {
-    "message": "Java và bộ nhớ"
+    "message": "Java và b�?nh�?
   },
   "instance.settings.tabs.java.custom-environment-variables": {
     "message": "Tùy chọn biến môi trường"
   },
   "instance.settings.tabs.java.custom-java-arguments": {
-    "message": "Tùy chỉnh tham số Java"
+    "message": "Tùy chỉnh tham s�?Java"
   },
   "instance.settings.tabs.java.custom-java-installation": {
     "message": "Tùy chỉnh phiên bản cài đặt Java"
   },
   "instance.settings.tabs.java.custom-memory-allocation": {
-    "message": "Tùy chỉnh phân bổ bộ nhớ"
+    "message": "Tùy chỉnh phân b�?b�?nh�?
   },
   "instance.settings.tabs.java.enter-environment-variables": {
     "message": "Nhập biến môi trường..."
   },
   "instance.settings.tabs.java.enter-java-arguments": {
-    "message": "Nhập tham số Java..."
+    "message": "Nhập tham s�?Java..."
   },
   "instance.settings.tabs.java.environment-variables": {
     "message": "Biến môi trường"
@@ -927,34 +927,34 @@
     "message": "Hooks"
   },
   "instance.settings.tabs.java.java-arguments": {
-    "message": "Tham số Java"
+    "message": "Tham s�?Java"
   },
   "instance.settings.tabs.java.java-installation": {
     "message": "Bản cài đặt Java"
   },
   "instance.settings.tabs.java.java-memory": {
-    "message": "Bộ nhớ phân bổ"
+    "message": "B�?nh�?phân b�?
   },
   "instance.settings.tabs.java.java-path-placeholder": {
     "message": "/đường_dẫn/tới/java"
   },
   "instance.settings.tabs.window": {
-    "message": "Cửa sổ"
+    "message": "Cửa s�?
   },
   "instance.settings.tabs.window.custom-window-settings": {
-    "message": "Thiết đặt cửa sổ tuỳ chỉnh"
+    "message": "Thiết đặt cửa s�?tu�?chỉnh"
   },
   "instance.settings.tabs.window.fullscreen": {
     "message": "Toàn màn hình"
   },
   "instance.settings.tabs.window.fullscreen.description": {
-    "message": "Làm cho trò chơi bắt đầu ở dạng toàn màn hình khi khởi chạy (sử dụng options.txt)."
+    "message": "Làm cho trò chơi bắt đầu �?dạng toàn màn hình khi khởi chạy (s�?dụng options.txt)."
   },
   "instance.settings.tabs.window.height": {
     "message": "Chiều cao"
   },
   "instance.settings.tabs.window.height.description": {
-    "message": "Chiều cao cửa sổ trò chơi khi khởi chạy."
+    "message": "Chiều cao cửa s�?trò chơi khi khởi chạy."
   },
   "instance.settings.tabs.window.height.enter": {
     "message": "Nhập chiều cao..."
@@ -963,46 +963,46 @@
     "message": "Chiều rộng"
   },
   "instance.settings.tabs.window.width.description": {
-    "message": "Chiều dài cửa sổ trò chơi khi khởi chạy."
+    "message": "Chiều dài cửa s�?trò chơi khi khởi chạy."
   },
   "instance.settings.tabs.window.width.enter": {
     "message": "Nhập chiều dài..."
   },
   "instance.worlds.a_minecraft_server": {
-    "message": "Một máy chủ Minecraft"
+    "message": "Một máy ch�?Minecraft"
   },
   "instance.worlds.cant_connect": {
-    "message": "Không thể kết nối đến máy chủ"
+    "message": "Không th�?kết nối đến máy ch�?
   },
   "instance.worlds.copy_address": {
-    "message": "Sao chép địa chỉ"
+    "message": "Sao chép địa ch�?
   },
   "instance.worlds.create_shortcut": {
     "message": "Tạo lối tắt"
   },
   "instance.worlds.dont_show_on_home": {
-    "message": "Không hiện ở Trang chủ"
+    "message": "Không hiện �?Trang ch�?
   },
   "instance.worlds.game_already_open": {
-    "message": "Bản này đã mở sẵn"
+    "message": "Bản này đã m�?sẵn"
   },
   "instance.worlds.hardcore": {
-    "message": "Chế độ siêu khó"
+    "message": "Ch�?đ�?siêu khó"
   },
   "instance.worlds.incompatible_server": {
-    "message": "Máy chủ không tương thích"
+    "message": "Máy ch�?không tương thích"
   },
   "instance.worlds.linked_server": {
-    "message": "Quản lý dự án máy chủ"
+    "message": "Quản lý d�?án máy ch�?
   },
   "instance.worlds.no_contact": {
-    "message": "Không thể liên lạc với máy chủ"
+    "message": "Không th�?liên lạc với máy ch�?
   },
   "instance.worlds.no_server_quick_play": {
-    "message": "Bạn chỉ có thể nhảy thẳng vào servers trên phiên bản Minecraft Alpha 1.0.5+"
+    "message": "Bạn ch�?có th�?nhảy thẳng vào servers trên phiên bản Minecraft Alpha 1.0.5+"
   },
   "instance.worlds.no_singleplayer_quick_play": {
-    "message": "Bạn chỉ có thể nhảy thẳng vào thế giới người chơi đơn trên phiên bản Minecraft 1.20+"
+    "message": "Bạn ch�?có th�?nhảy thẳng vào th�?giới người chơi đơn trên phiên bản Minecraft 1.20+"
   },
   "instance.worlds.play_instance": {
     "message": "Chơi phiên bản này"
@@ -1011,7 +1011,7 @@
     "message": "Xem phiên bản"
   },
   "instance.worlds.world_in_use": {
-    "message": "Thế giới đang mở"
+    "message": "Th�?giới đang m�?
   },
   "minecraft-account.add-account": {
     "message": "Thêm tài khoản"
@@ -1035,24 +1035,24 @@
     "message": "Được cung cấp bởi phiên bản"
   },
   "search.filter.locked.instance-game-version.title": {
-    "message": "Phiên bản trò chơi được cung cấp bởi hồ sơ này"
+    "message": "Phiên bản trò chơi được cung cấp bởi h�?sơ này"
   },
   "search.filter.locked.instance-loader.title": {
-    "message": "Loader được cung cấp bởi hồ sơ"
+    "message": "Loader được cung cấp bởi h�?sơ"
   },
   "search.filter.locked.instance.sync": {
-    "message": "Đồng bộ với phiên bản"
+    "message": "Đồng b�?với phiên bản"
   },
   "search.filter.locked.server": {
-    "message": "Do máy chủ cung cấp"
+    "message": "Do máy ch�?cung cấp"
   },
   "search.filter.locked.server-environment.title": {
-    "message": "Chỉ các mod chạy phía client mới có thể thêm hồ sơ máy chủ"
+    "message": "Ch�?các mod chạy phía client mới có th�?thêm h�?sơ máy ch�?
   },
   "search.filter.locked.server-game-version.title": {
-    "message": "Phiên bản trò chơi được cung cấp bởi máy chủ"
+    "message": "Phiên bản trò chơi được cung cấp bởi máy ch�?
   },
   "search.filter.locked.server-loader.title": {
-    "message": "Loader được cung cấp bởi máy chủ"
+    "message": "Loader được cung cấp bởi máy ch�?
   }
 }

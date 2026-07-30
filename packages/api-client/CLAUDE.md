@@ -1,29 +1,29 @@
-# @modrinth/api-client
+# @Bbsmc/api-client
 
-Platform-agnostic API client for Modrinth's services. Works in Nuxt (SSR + CSR), Tauri (desktop app), and plain Node/browser environments.
+Platform-agnostic API client for Bbsmc's services. Works in Nuxt (SSR + CSR), Tauri (desktop app), and plain Node/browser environments.
 
 ## Architecture
 
 ```
 Request Flow:
-  Module Method â†’ client.request() â†’ Feature Chain (middleware) â†’ Platform executeRequest()
+  Module Method â†?client.request() â†?Feature Chain (middleware) â†?Platform executeRequest()
 ```
 
 ### Key Directories
 
-- **`src/core/`** â€” base classes (`AbstractModrinthClient`, `AbstractModule`, `AbstractFeature`, etc.)
-- **`src/platform/`** â€” platform implementations (generic, nuxt, tauri, xhr-upload, websocket)
-- **`src/features/`** â€” middleware plugins (auth, retry, circuit-breaker, etc.)
-- **`src/modules/`** â€” API endpoint modules organized by service (`labrinth/`, `archon/`, `kyros/`, `iso3166/`)
-- **`src/types/`** â€” core type definitions (client config, request options, upload types, errors)
+- **`src/core/`** â€?base classes (`AbstractBbsmcClient`, `AbstractModule`, `AbstractFeature`, etc.)
+- **`src/platform/`** â€?platform implementations (generic, nuxt, tauri, xhr-upload, websocket)
+- **`src/features/`** â€?middleware plugins (auth, retry, circuit-breaker, etc.)
+- **`src/modules/`** â€?API endpoint modules organized by service (`labrinth/`, `archon/`, `kyros/`, `iso3166/`)
+- **`src/types/`** â€?core type definitions (client config, request options, upload types, errors)
 
 ### Client Hierarchy
 
-All platform clients extend `XHRUploadClient` â†’ `AbstractModrinthClient`:
+All platform clients extend `XHRUploadClient` â†?`AbstractBbsmcClient`:
 
-- **`GenericModrinthClient`** â€” uses `ofetch`, attaches WebSocket client to `archon.sockets`
-- **`NuxtModrinthClient`** â€” uses Nuxt's `$fetch`, SSR-aware, blocks `upload()` during SSR
-- **`TauriModrinthClient`** â€” uses `@tauri-apps/plugin-http`
+- **`GenericBbsmcClient`** â€?uses `ofetch`, attaches WebSocket client to `archon.sockets`
+- **`NuxtBbsmcClient`** â€?uses Nuxt's `$fetch`, SSR-aware, blocks `upload()` during SSR
+- **`TauriBbsmcClient`** â€?uses `@tauri-apps/plugin-http`
 
 ### Module Access
 
@@ -49,9 +49,9 @@ This structure is derived at runtime from the flat `MODULE_REGISTRY` in `modules
 
 ## Critical: Always use `this.client.request()`
 
-API modules **must** use `this.client.request()` (or `.upload`) for all HTTP calls â€” never `$fetch`, `fetch`, or any other HTTP library directly. The request method routes through the platform-specific implementation (Nuxt `$fetch`, Tauri HTTP plugin, etc.) and the feature middleware chain (auth, retry, circuit breaker). Using `$fetch` directly bypasses the platform layer and will fail in Tauri (CORS/sandboxing). The only exception is the `ISO3166Module` which is explicitly node-only.
+API modules **must** use `this.client.request()` (or `.upload`) for all HTTP calls â€?never `$fetch`, `fetch`, or any other HTTP library directly. The request method routes through the platform-specific implementation (Nuxt `$fetch`, Tauri HTTP plugin, etc.) and the feature middleware chain (auth, retry, circuit breaker). Using `$fetch` directly bypasses the platform layer and will fail in Tauri (CORS/sandboxing). The only exception is the `ISO3166Module` which is explicitly node-only.
 
-For external APIs (non-Modrinth), pass the full base URL as the `api` field and set `skipAuth: true`:
+For external APIs (non-Bbsmc), pass the full base URL as the `api` field and set `skipAuth: true`:
 
 ```ts
 this.client.request<MyType>('/endpoint', {
@@ -69,18 +69,18 @@ The client is provided to the component tree via DI (see the `dependency-injecti
 
 ```ts
 // apps/frontend/src/app.vue (Nuxt)
-const client = new NuxtModrinthClient({ ... })
-provideModrinthClient(client)
+const client = new NuxtBbsmcClient({ ... })
+provideBbsmcClient(client)
 
 // apps/app-frontend/src/App.vue (Tauri)
-const client = new TauriModrinthClient({ ... })
-provideModrinthClient(client)
+const client = new TauriBbsmcClient({ ... })
+provideBbsmcClient(client)
 ```
 
 Components anywhere in the tree then inject it:
 
 ```ts
-const { labrinth, archon, kyros } = injectModrinthClient()
+const { labrinth, archon, kyros } = injectBbsmcClient()
 
 // Fetch data
 const project = await labrinth.projects_v3.get(projectId)
@@ -92,16 +92,16 @@ const { data } = useQuery({
 })
 ```
 
-`provideModrinthClient` and `injectModrinthClient` are exported from `@modrinth/ui` (defined in `packages/ui/src/providers/api-client.ts`). The provider is typed as `AbstractModrinthClient`, so shared components in `packages/ui` work with any platform client.
+`provideBbsmcClient` and `injectBbsmcClient` are exported from `@Bbsmc/ui` (defined in `packages/ui/src/providers/api-client.ts`). The provider is typed as `AbstractBbsmcClient`, so shared components in `packages/ui` work with any platform client.
 
 ## Types
 
-Types must match 1:1 with how they are returned from the backend API they are fetching from. Do not reshape, rename, or omit fields â€” the types should be a direct representation of the API response.
+Types must match 1:1 with how they are returned from the backend API they are fetching from. Do not reshape, rename, or omit fields â€?the types should be a direct representation of the API response.
 
 Types are organized in namespaces that mirror the backend services:
 
 ```ts
-import type { Labrinth, Archon, Kyros, ISO3166 } from '@modrinth/api-client'
+import type { Labrinth, Archon, Kyros, ISO3166 } from '@Bbsmc/api-client'
 
 const project: Labrinth.Projects.v3.Project = ...
 const server: Archon.Servers.v0.Server = ...
@@ -114,9 +114,9 @@ Each API has a `types.ts` in its module directory (`modules/labrinth/types.ts`, 
 
 Features wrap requests in a chain. Each feature can modify the request, retry, or short-circuit:
 
-- **`AuthFeature`** â€” injects `Authorization: Bearer <token>`, supports async token providers
-- **`RetryFeature`** â€” exponential/linear/constant backoff, retries on 408/429/5xx and network errors
-- **`CircuitBreakerFeature`** â€” opens after N consecutive failures per endpoint, resets after timeout
+- **`AuthFeature`** â€?injects `Authorization: Bearer <token>`, supports async token providers
+- **`RetryFeature`** â€?exponential/linear/constant backoff, retries on 408/429/5xx and network errors
+- **`CircuitBreakerFeature`** â€?opens after N consecutive failures per endpoint, resets after timeout
 
 ## XHR Upload
 
@@ -132,8 +132,8 @@ interface UploadHandle<T> {
 
 Supports two modes:
 
-- **Single file** â€” `{ file: File | Blob }` sends with `Content-Type: application/octet-stream`
-- **FormData** â€” `{ formData: FormData }` for multipart uploads (browser/platform sets boundary)
+- **Single file** â€?`{ file: File | Blob }` sends with `Content-Type: application/octet-stream`
+- **FormData** â€?`{ formData: FormData }` for multipart uploads (browser/platform sets boundary)
 
 Uploads go through the feature chain (auth, retry, etc.). Features detect uploads via `context.metadata.isUpload`.
 
@@ -163,17 +163,17 @@ See `packages/ui/src/components/servers/files/upload/FileUploadDropdown.vue` and
 
 ## WebSocket
 
-WebSocket support is attached to `client.archon.sockets` (only on `GenericModrinthClient`). It provides event-based communication with Modrinth Hosting servers.
+WebSocket support is attached to `client.archon.sockets` (only on `GenericBbsmcClient`). It provides event-based communication with Bbsmc Hosting servers.
 
 ### Connection Flow
 
 ```
 client.archon.sockets.safeConnect(serverId)
-  â†’ fetches JWT auth via archon.servers_v0.getWebSocketAuth()
-  â†’ opens wss:// connection
-  â†’ sends { event: 'auth', jwt: token }
-  â†’ server responds with { event: 'auth-ok' }
-  â†’ ready to receive events
+  â†?fetches JWT auth via archon.servers_v0.getWebSocketAuth()
+  â†?opens wss:// connection
+  â†?sends { event: 'auth', jwt: token }
+  â†?server responds with { event: 'auth-ok' }
+  â†?ready to receive events
 ```
 
 Auto-reconnects on unexpected disconnection with exponential backoff (base 1s, max 30s, up to 10 attempts).

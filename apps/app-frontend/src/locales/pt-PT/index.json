@@ -74,8 +74,8 @@
   "app.action-bar.install.summary.minecraft-setup-failed": {
     "message": "A instalação do Minecraft falhou"
   },
-  "app.action-bar.install.summary.modrinth-unreachable": {
-    "message": "Não foi possível carregar o Modrinth."
+  "app.action-bar.install.summary.Bbsmc-unreachable": {
+    "message": "Não foi possível carregar o Bbsmc."
   },
   "app.action-bar.install.summary.no-write-permission": {
     "message": "Sem autorização para editar."
@@ -129,7 +129,7 @@
     "message": "Aceitar tudo"
   },
   "app.ads-consent.body": {
-    "message": "Os anúncios tornam o Modrinth possível e financiam os pagamentos aos criadores. Os nossos parceiros podem armazenar ou aceder a cookies na aplicação para personalizar anúncios e medir o desempenho."
+    "message": "Os anúncios tornam o Bbsmc possível e financiam os pagamentos aos criadores. Os nossos parceiros podem armazenar ou aceder a cookies na aplicação para personalizar anúncios e medir o desempenho."
   },
   "app.ads-consent.manage": {
     "message": "Gerir preferências"
@@ -138,7 +138,7 @@
     "message": "Rejeitar tudo"
   },
   "app.ads-consent.title": {
-    "message": "A sua privacidade e como os anúncios são financiados pela Modrinth"
+    "message": "A sua privacidade e como os anúncios são financiados pela Bbsmc"
   },
   "app.appearance-settings.advanced-rendering.description": {
     "message": "Ativa a renderização avançada, como efeitos de desfoque, que podem causar problemas de desempenho sem o uso de renderização acelerada por hardware."
@@ -147,7 +147,7 @@
     "message": "Renderização avançada"
   },
   "app.appearance-settings.color-theme.description": {
-    "message": "Seleciona a tua cor preferida para a Modrinth App."
+    "message": "Seleciona a tua cor preferida para a Bbsmc App."
   },
   "app.appearance-settings.color-theme.title": {
     "message": "Cor de tema"
@@ -207,7 +207,7 @@
     "message": "Ativar/desativar Barra lateral"
   },
   "app.appearance-settings.unknown-pack-warning.description": {
-    "message": "Se tentar instalar um ficheiro Modrinth Pack (.mrpack) que não esteja alojado no Modrinth, iremos garantir que compreende os riscos antes de o instalar."
+    "message": "Se tentar instalar um ficheiro Bbsmc Pack (.mrpack) que não esteja alojado no Bbsmc, iremos garantir que compreende os riscos antes de o instalar."
   },
   "app.appearance-settings.unknown-pack-warning.title": {
     "message": "Avise-me antes de instalar pacotes de mods desconhecidos."
@@ -444,19 +444,19 @@
     "message": "Instalar"
   },
   "app.modal.install-to-play.invite-warning": {
-    "message": "Este convite foi criado por outro utilizador do Modrinth, não pelo Modrinth. Aceite convites apenas de pessoas em quem confia."
+    "message": "Este convite foi criado por outro utilizador do Bbsmc, não pelo Bbsmc. Aceite convites apenas de pessoas em quem confia."
   },
   "app.modal.install-to-play.mod-count": {
     "message": "{count, plural, one {mod} other {mods}}"
   },
   "app.modal.install-to-play.reviewed-files": {
-    "message": "Um ficheiro só é analisado se for publicado no Modrinth, independentemente do seu formato (incluindo .mrpack)."
+    "message": "Um ficheiro só é analisado se for publicado no Bbsmc, independentemente do seu formato (incluindo .mrpack)."
   },
   "app.modal.install-to-play.shared-instance": {
     "message": "Instância partilhada"
   },
   "app.modal.install-to-play.unknown-files-description": {
-    "message": "Este pacote de mods para o servidor contém ficheiros que não estão publicados no Modrinth. Recomendamos vivamente que instale apenas ficheiros de fontes fidedignas."
+    "message": "Este pacote de mods para o servidor contém ficheiros que não estão publicados no Bbsmc. Recomendamos vivamente que instale apenas ficheiros de fontes fidedignas."
   },
   "app.modal.install-to-play.unknown-files-warning": {
     "message": "Aviso de ficheiros desconhecidos"
@@ -498,7 +498,7 @@
     "message": "A transferir v{version}"
   },
   "app.settings.privacy.ads-consent.intro": {
-    "message": "Os anúncios tornam o Modrinth possível e financiam os pagamentos aos criadores. Os nossos parceiros podem armazenar ou aceder a cookies na aplicação para personalizar anúncios e medir o desempenho."
+    "message": "Os anúncios tornam o Bbsmc possível e financiam os pagamentos aos criadores. Os nossos parceiros podem armazenar ou aceder a cookies na aplicação para personalizar anúncios e medir o desempenho."
   },
   "app.settings.tabs.appearance": {
     "message": "Aparência"
@@ -551,17 +551,17 @@
   "app.skins.reorder-error.text": {
     "message": "O seu pedido de skin não pôde ser guardado."
   },
-  "app.skins.section.modrinth": {
-    "message": "Modrinth"
+  "app.skins.section.Bbsmc": {
+    "message": "Bbsmc"
   },
   "app.update-popup.body.download-complete": {
-    "message": "Modrinth App v{version} acabou de ser transferida. Recarrega para atualizar agora, ou automaticamente quando fechares a Modrinth App."
+    "message": "Bbsmc App v{version} acabou de ser transferida. Recarrega para atualizar agora, ou automaticamente quando fechares a Bbsmc App."
   },
   "app.update-popup.body.linux": {
-    "message": "Modrinth App v{version} está disponível. Usa o teu gestor de pacotes para atualizar e receber as correções e recursos mais recentes!"
+    "message": "Bbsmc App v{version} está disponível. Usa o teu gestor de pacotes para atualizar e receber as correções e recursos mais recentes!"
   },
   "app.update-popup.body.metered": {
-    "message": "Modrinth App v{version} está disponível! Como estás numa rede com tráfego limitado, não a transferimos automaticamente."
+    "message": "Bbsmc App v{version} está disponível! Como estás numa rede com tráfego limitado, não a transferimos automaticamente."
   },
   "app.update-popup.changelog": {
     "message": "Lista de alterações"
@@ -582,7 +582,7 @@
     "message": "Versão {version} foi instalada com sucesso!"
   },
   "app.world.server-modal.placeholder-address": {
-    "message": "exemplo.modrinth.gg"
+    "message": "exemplo.Bbsmc.gg"
   },
   "app.world.server-modal.select-an-option": {
     "message": "Seleciona uma opção"
@@ -615,10 +615,10 @@
     "message": "Pode ser diferente do nome no Minecraft!"
   },
   "friends.add-friend.username.placeholder": {
-    "message": "Insere o nome do utilizador no Modrinth..."
+    "message": "Insere o nome do utilizador no Bbsmc..."
   },
   "friends.add-friend.username.title": {
-    "message": "Qual é o nome de utilizador do teu amigo no Modrinth?"
+    "message": "Qual é o nome de utilizador do teu amigo no Bbsmc?"
   },
   "friends.add-friends-to-share": {
     "message": "<link>Adiciona amigos</link> para ver o que estão a jogar!"
@@ -660,7 +660,7 @@
     "message": "{title} - {count}"
   },
   "friends.sign-in-to-add-friends": {
-    "message": "<link>Inicia a sessão com uma conta Modrinth</link> para adicionar amigos e ver o que estão a jogar!"
+    "message": "<link>Inicia a sessão com uma conta Bbsmc</link> para adicionar amigos e ver o que estão a jogar!"
   },
   "instance.add-server.add-and-play": {
     "message": "Adicionar e jogar"

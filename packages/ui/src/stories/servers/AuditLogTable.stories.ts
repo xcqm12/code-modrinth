@@ -1,4 +1,4 @@
-import type { Archon } from '@modrinth/api-client'
+import type { Archon } from '@Bbsmc/api-client'
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
 import { ref } from 'vue'
 
@@ -300,7 +300,7 @@ const actionLogResponse: Archon.Actions.v1.ActionLogResponse = {
 			action: 'modpack_changed',
 			metadata: {
 				spec: {
-					platform: 'modrinth',
+					platform: 'Bbsmc',
 					project_id: 'project-modpack-001',
 					version_id: 'version-modpack-001',
 				},
@@ -311,7 +311,7 @@ const actionLogResponse: Archon.Actions.v1.ActionLogResponse = {
 			action: 'modpack_unlinked',
 			metadata: {
 				spec: {
-					platform: 'modrinth',
+					platform: 'Bbsmc',
 					project_id: 'project-modpack-001',
 					version_id: 'version-modpack-001',
 				},

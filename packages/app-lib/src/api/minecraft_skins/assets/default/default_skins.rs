@@ -6,7 +6,7 @@ use crate::{minecraft_skins::SkinSource, state::MinecraftSkinVariant};
 
 use super::super::super::Skin;
 
-const MODRINTH_PRIDE_SKIN_PACK_SECTION: &str = "Modrinth Pride";
+const Bbsmc_PRIDE_SKIN_PACK_SECTION: &str = "Bbsmc Pride";
 const DEFAULT_SKINS_SECTION: &str = "Default skins";
 const MINECON_EARTH_2017_SKIN_PACK_SECTION: &str = "MINECON Earth 2017";
 const BUILDERS_AND_BIOMES_SKIN_PACK_SECTION: &str = "Builders & Biomes";
@@ -24,7 +24,7 @@ pub static DEFAULT_SKINS: LazyLock<Vec<Skin>> = LazyLock::new(|| {
     vec![Skin {
         texture_key: Arc::from("local-cb3974d16e88a6bd1fe91b0bd58aa5a89abc01f66aed0efc732b84091a523fc9"),
         name: Some(Arc::from("Mr. Pack - Asexual")),
-        section: Some(Arc::from(MODRINTH_PRIDE_SKIN_PACK_SECTION)),
+        section: Some(Arc::from(Bbsmc_PRIDE_SKIN_PACK_SECTION)),
         variant: MinecraftSkinVariant::Classic,
         cape_id: None,
         texture: Arc::from(Url::try_from(
@@ -36,7 +36,7 @@ pub static DEFAULT_SKINS: LazyLock<Vec<Skin>> = LazyLock::new(|| {
     Skin {
         texture_key: Arc::from("local-017ef388aa15a32c47af5b6230c0969085c30e2a884e8853fb449bcdcb60d6f4"),
         name: Some(Arc::from("Mr. Pack - Bisexual")),
-        section: Some(Arc::from(MODRINTH_PRIDE_SKIN_PACK_SECTION)),
+        section: Some(Arc::from(Bbsmc_PRIDE_SKIN_PACK_SECTION)),
         variant: MinecraftSkinVariant::Classic,
         cape_id: None,
         texture: Arc::from(Url::try_from(
@@ -48,7 +48,7 @@ pub static DEFAULT_SKINS: LazyLock<Vec<Skin>> = LazyLock::new(|| {
     Skin {
         texture_key: Arc::from("local-6721474dc24f7ebfac096c3df0bbc0ff7bd3d7d63e8bce13754b0db9acab3805"),
         name: Some(Arc::from("Mr. Pack - Genderfluid")),
-        section: Some(Arc::from(MODRINTH_PRIDE_SKIN_PACK_SECTION)),
+        section: Some(Arc::from(Bbsmc_PRIDE_SKIN_PACK_SECTION)),
         variant: MinecraftSkinVariant::Classic,
         cape_id: None,
         texture: Arc::from(Url::try_from(
@@ -60,7 +60,7 @@ pub static DEFAULT_SKINS: LazyLock<Vec<Skin>> = LazyLock::new(|| {
     Skin {
         texture_key: Arc::from("local-7f01d162a7dedfd0e1bf1a03533ca9eecd8105dd1008e3297ff9d9d8b1582b8c"),
         name: Some(Arc::from("Mr. Pack - Intersex")),
-        section: Some(Arc::from(MODRINTH_PRIDE_SKIN_PACK_SECTION)),
+        section: Some(Arc::from(Bbsmc_PRIDE_SKIN_PACK_SECTION)),
         variant: MinecraftSkinVariant::Classic,
         cape_id: None,
         texture: Arc::from(Url::try_from(
@@ -72,7 +72,7 @@ pub static DEFAULT_SKINS: LazyLock<Vec<Skin>> = LazyLock::new(|| {
     Skin {
         texture_key: Arc::from("local-9417023c7f4674feff1592df3cab3bea791a2dd2bc453eb03033859fbf9483f9"),
         name: Some(Arc::from("Mr. Pack - Lesbian")),
-        section: Some(Arc::from(MODRINTH_PRIDE_SKIN_PACK_SECTION)),
+        section: Some(Arc::from(Bbsmc_PRIDE_SKIN_PACK_SECTION)),
         variant: MinecraftSkinVariant::Classic,
         cape_id: None,
         texture: Arc::from(Url::try_from(
@@ -84,7 +84,7 @@ pub static DEFAULT_SKINS: LazyLock<Vec<Skin>> = LazyLock::new(|| {
     Skin {
         texture_key: Arc::from("local-88b4e9d37f25f947c12dfc5c354af30601016cf852e90681633c92b750e43761"),
         name: Some(Arc::from("Mr. Pack - MLM")),
-        section: Some(Arc::from(MODRINTH_PRIDE_SKIN_PACK_SECTION)),
+        section: Some(Arc::from(Bbsmc_PRIDE_SKIN_PACK_SECTION)),
         variant: MinecraftSkinVariant::Classic,
         cape_id: None,
         texture: Arc::from(Url::try_from(
@@ -96,7 +96,7 @@ pub static DEFAULT_SKINS: LazyLock<Vec<Skin>> = LazyLock::new(|| {
     Skin {
         texture_key: Arc::from("local-8fcc36625f7b7ce18362ab5eaec276653f26af331f4ec38d00a610c93da69640"),
         name: Some(Arc::from("Mr. Pack - Nonbinary")),
-        section: Some(Arc::from(MODRINTH_PRIDE_SKIN_PACK_SECTION)),
+        section: Some(Arc::from(Bbsmc_PRIDE_SKIN_PACK_SECTION)),
         variant: MinecraftSkinVariant::Classic,
         cape_id: None,
         texture: Arc::from(Url::try_from(
@@ -108,7 +108,7 @@ pub static DEFAULT_SKINS: LazyLock<Vec<Skin>> = LazyLock::new(|| {
     Skin {
         texture_key: Arc::from("local-7cc8f7620b66002be6e531ac0f90f050eca831d7827a66c01cf6256b0a4f936e"),
         name: Some(Arc::from("Mr. Pack - Pride")),
-        section: Some(Arc::from(MODRINTH_PRIDE_SKIN_PACK_SECTION)),
+        section: Some(Arc::from(Bbsmc_PRIDE_SKIN_PACK_SECTION)),
         variant: MinecraftSkinVariant::Classic,
         cape_id: None,
         texture: Arc::from(Url::try_from(
@@ -120,7 +120,7 @@ pub static DEFAULT_SKINS: LazyLock<Vec<Skin>> = LazyLock::new(|| {
     Skin {
         texture_key: Arc::from("local-2674d92834203a9fc2b3c435fc8c89fb68de8c62eac674b885c1fe7868ab04b6"),
         name: Some(Arc::from("Mr. Pack - Transgender")),
-        section: Some(Arc::from(MODRINTH_PRIDE_SKIN_PACK_SECTION)),
+        section: Some(Arc::from(Bbsmc_PRIDE_SKIN_PACK_SECTION)),
         variant: MinecraftSkinVariant::Classic,
         cape_id: None,
         texture: Arc::from(Url::try_from(

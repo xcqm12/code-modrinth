@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { type Archon, type Labrinth, ModrinthApiError } from '@modrinth/api-client'
-import { ClipboardCopyIcon } from '@modrinth/assets'
+import { type Archon, type Labrinth, BbsmcApiError } from '@Bbsmc/api-client'
+import { ClipboardCopyIcon } from '@Bbsmc/assets'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/vue-query'
 import { useIntervalFn } from '@vueuse/core'
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
@@ -12,8 +12,8 @@ import { useUploadSessionUpload } from '#ui/composables/hosting/kyros-session-up
 import { defineMessages, useVIntl } from '#ui/composables/i18n'
 import { useServerPermissions } from '#ui/composables/server-permissions'
 import {
-	injectModrinthClient,
-	injectModrinthServerContext,
+	injectBbsmcClient,
+	injectBbsmcServerContext,
 	injectNotificationManager,
 	injectServerSettingsModal,
 } from '#ui/providers'
@@ -115,9 +115,9 @@ const messages = defineMessages({
 	},
 })
 
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const { server, worldId, busyReasons, isSyncingContent, uploadState, cancelUpload } =
-	injectModrinthServerContext()
+	injectBbsmcServerContext()
 const contentUploadSession = useUploadSessionUpload({
 	client,
 	scope: 'content',
@@ -200,7 +200,7 @@ const setupActionBusyMessage = computed(() => {
 
 const modpackProjectId = computed(() => {
 	const spec = contentQuery.data.value?.modpack?.spec
-	return spec?.platform === 'modrinth' ? spec.project_id : null
+	return spec?.platform === 'Bbsmc' ? spec.project_id : null
 })
 
 const modpackVersionsQuery = useQuery({
@@ -228,7 +228,7 @@ function sortVersionsByPublishedDate(versions: Labrinth.Versions.v2.Version[]) {
 
 const currentModpackVersionId = computed(() => {
 	const spec = contentQuery.data.value?.modpack?.spec
-	return spec?.platform === 'modrinth' ? spec.version_id : null
+	return spec?.platform === 'Bbsmc' ? spec.version_id : null
 })
 
 const newestModpackUpdateVersion = computed(() => {
@@ -937,7 +937,7 @@ function handleUploadFiles() {
 		if (!wid) return
 
 		try {
-			const fileRecognition = await Promise.all(files.map(isFileOnModrinth))
+			const fileRecognition = await Promise.all(files.map(isFileOnBbsmc))
 			const unrecognizedFileSet = new Set(files.filter((_, index) => !fileRecognition[index]))
 			const confirmedFiles: File[] = []
 			for (const file of files) {
@@ -962,7 +962,7 @@ function handleUploadFiles() {
 	input.click()
 }
 
-async function isFileOnModrinth(file: File) {
+async function isFileOnBbsmc(file: File) {
 	const buffer = await file.arrayBuffer()
 	const digest = await crypto.subtle.digest('SHA-1', buffer)
 	const hash = Array.from(new Uint8Array(digest), (byte) =>
@@ -973,7 +973,7 @@ async function isFileOnModrinth(file: File) {
 		await client.labrinth.versions_v2.getVersionFromFileHash(hash, 'sha1')
 		return true
 	} catch (error) {
-		return !(error instanceof ModrinthApiError && error.statusCode === 404)
+		return !(error instanceof BbsmcApiError && error.statusCode === 404)
 	}
 }
 
@@ -1210,7 +1210,7 @@ async function handleSwitchVersion(item: ContentItem) {
 
 async function handleModpackUpdate() {
 	const mp = contentQuery.data.value?.modpack
-	if (!mp || mp.spec.platform !== 'modrinth') return
+	if (!mp || mp.spec.platform !== 'Bbsmc') return
 
 	updatingModpack.value = true
 	updatingProject.value = null
@@ -1268,7 +1268,7 @@ function handleModalUpdate(selectedVersion: Labrinth.Versions.v2.Version, event?
 		pendingModpackUpdateVersion.value = selectedVersion
 
 		const mpSpec = contentQuery.data.value?.modpack?.spec
-		const currentVersionId = mpSpec?.platform === 'modrinth' ? mpSpec.version_id : undefined
+		const currentVersionId = mpSpec?.platform === 'Bbsmc' ? mpSpec.version_id : undefined
 		const currentVersion = updatingProjectVersions.value.find((v) => v.id === currentVersionId)
 		isModpackUpdateDowngrade.value = currentVersion
 			? new Date(selectedVersion.date_published) < new Date(currentVersion.date_published)
@@ -1309,11 +1309,11 @@ async function performUpdate(selectedVersion: Labrinth.Versions.v2.Version) {
 	try {
 		if (updatingModpack.value) {
 			const mp = contentQuery.data.value?.modpack
-			if (!mp || mp.spec.platform !== 'modrinth') return
+			if (!mp || mp.spec.platform !== 'Bbsmc') return
 			await client.archon.content_v1.installContent(serverId, worldId.value!, {
 				content_variant: 'modpack',
 				spec: {
-					platform: 'modrinth',
+					platform: 'Bbsmc',
 					project_id: mp.spec.project_id,
 					version_id: selectedVersion.id,
 				},
@@ -1409,15 +1409,15 @@ provideContentManager({
 	mapToTableItem: (item) => {
 		const projectType = item.project_type ?? type.value
 		const addon = addonLookup.value.get(item.file_name)
-		const hasModrinthProject = !!addon?.project_id || (!!item.installing && !!item.project?.id)
+		const hasBbsmcProject = !!addon?.project_id || (!!item.installing && !!item.project?.id)
 		const projectSlugOrId = item.project.slug ?? item.project.id
 		return {
 			id: getContentItemId(item),
 			project: item.project,
-			projectLink: hasModrinthProject ? `/${projectType}/${projectSlugOrId}` : undefined,
+			projectLink: hasBbsmcProject ? `/${projectType}/${projectSlugOrId}` : undefined,
 			version: item.version,
 			versionLink:
-				hasModrinthProject && item.version?.id
+				hasBbsmcProject && item.version?.id
 					? `/${projectType}/${projectSlugOrId}/version/${item.version.id}`
 					: undefined,
 			owner: item.owner
@@ -1468,7 +1468,7 @@ provideContentManager({
 					:current-loader="currentLoader"
 					:current-version-id="
 						updatingModpack
-							? contentQuery.data.value?.modpack?.spec.platform === 'modrinth'
+							? contentQuery.data.value?.modpack?.spec.platform === 'Bbsmc'
 								? contentQuery.data.value.modpack.spec.version_id
 								: ''
 							: (updatingProject?.version?.id ?? '')

@@ -345,12 +345,12 @@ pub async fn send_slack_project_webhook(
                 "elements": [
                     {
                         "type": "image",
-                        "image_url": "https://cdn-raw.bbsmc.org.cn/modrinth-new.png",
+                        "image_url": "https://cdn-raw.bbsmc.org.cn/Bbsmc-new.png",
                         "alt_text": "Author"
                     },
                     {
                         "type": "mrkdwn",
-                        "text": format!("{} on Modrinth ï¿½?<!date^{}^{{date_short_pretty}} at {{time}}|Unknown date>", metadata.display_project_type, Utc::now().timestamp())
+                        "text": format!("{} on Bbsmc ï¿?<!date^{}^{{date_short_pretty}} at {{time}}|Unknown date>", metadata.display_project_type, Utc::now().timestamp())
                     }
                 ]
             })
@@ -481,9 +481,9 @@ pub async fn send_discord_webhook(
                 .gallery_image
                 .map(|x| DiscordEmbedImage { url: Some(x) }),
             footer: Some(DiscordEmbedFooter {
-                text: format!("{} on Modrinth", project.display_project_type),
+                text: format!("{} on Bbsmc", project.display_project_type),
                 icon_url: Some(
-                    "https://cdn-raw.bbsmc.org.cn/modrinth-new.png".to_string(),
+                    "https://cdn-raw.bbsmc.org.cn/Bbsmc-new.png".to_string(),
                 ),
             }),
         };
@@ -494,10 +494,10 @@ pub async fn send_discord_webhook(
             .post(webhook_url)
             .json(&DiscordWebhook {
                 avatar_url: Some(
-                    "https://cdn.bbsmc.org.cn/Modrinth_Dark_Logo.png"
+                    "https://cdn.bbsmc.org.cn/Bbsmc_Dark_Logo.png"
                         .to_string(),
                 ),
-                username: Some("Modrinth Release".to_string()),
+                username: Some("Bbsmc Release".to_string()),
                 embeds: vec![embed],
                 content: message,
             })
@@ -656,7 +656,7 @@ fn get_gv_range(
 
 // Converted from knossos
 // See: packages/utils/utils.ts
-// https://github.com/modrinth/code/blob/47af459f24e541a844b42b1c8427af6a7b86381e/packages/utils/utils.ts#L147-L196
+// https://github.com/Bbsmc/code/blob/47af459f24e541a844b42b1c8427af6a7b86381e/packages/utils/utils.ts#L147-L196
 fn format_category_or_loader(mut x: String) -> String {
     match &*x {
         "modloader" => "Risugami's ModLoader".to_string(),

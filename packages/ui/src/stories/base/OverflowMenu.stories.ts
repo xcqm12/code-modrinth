@@ -1,4 +1,4 @@
-import { MoreHorizontalIcon } from '@modrinth/assets'
+import { MoreHorizontalIcon } from '@Bbsmc/assets'
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
 
 import ButtonStyled from '../../components/base/ButtonStyled.vue'

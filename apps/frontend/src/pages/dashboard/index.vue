@@ -62,15 +62,15 @@
 	</div>
 </template>
 <script setup>
-import { ChevronRightIcon, HistoryIcon } from '@modrinth/assets'
+import { ChevronRightIcon, HistoryIcon } from '@Bbsmc/assets'
 import {
 	Avatar,
 	ButtonStyled,
 	commonMessages,
 	defineMessages,
-	injectModrinthClient,
+	injectBbsmcClient,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { useQuery } from '@tanstack/vue-query'
 
 import NotificationItem from '~/components/ui/NotificationItem.vue'
@@ -115,11 +115,11 @@ const messages = defineMessages({
 })
 
 useHead({
-	title: () => `${formatMessage(messages.headTitle)} - Modrinth`,
+	title: () => `${formatMessage(messages.headTitle)} - Bbsmc`,
 })
 
 const auth = await useAuth()
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 
 const { data, refetch } = useQuery({
 	queryKey: computed(() => ['user', auth.value?.user?.id, 'notifications']),

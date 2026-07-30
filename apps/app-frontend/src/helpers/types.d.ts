@@ -1,4 +1,4 @@
-import type { ModrinthId } from '@modrinth/utils'
+import type { BbsmcId } from '@Bbsmc/utils'
 
 export type GameInstance = {
 	id: string
@@ -46,50 +46,50 @@ type InstallStage =
 	| 'not_installed'
 
 type InstanceLinkIdentity = {
-	project_id?: ModrinthId | null
-	version_id?: ModrinthId | null
-	server_project_id?: ModrinthId | null
-	content_project_id?: ModrinthId | null
-	content_version_id?: ModrinthId | null
+	project_id?: BbsmcId | null
+	version_id?: BbsmcId | null
+	server_project_id?: BbsmcId | null
+	content_project_id?: BbsmcId | null
+	content_version_id?: BbsmcId | null
 }
 
 export type InstanceLink = InstanceLinkIdentity &
 	(
 		| {
-				type: 'modrinth_modpack'
-				project_id: ModrinthId
-				version_id: ModrinthId
+				type: 'Bbsmc_modpack'
+				project_id: BbsmcId
+				version_id: BbsmcId
 		  }
 		| {
 				type: 'server_project'
-				project_id: ModrinthId
+				project_id: BbsmcId
 		  }
 		| {
 				type: 'server_project_modpack'
-				server_project_id: ModrinthId
-				content_project_id?: ModrinthId | null
-				content_version_id: ModrinthId
-				project_id?: ModrinthId
-				version_id?: ModrinthId
+				server_project_id: BbsmcId
+				content_project_id?: BbsmcId | null
+				content_version_id: BbsmcId
+				project_id?: BbsmcId
+				version_id?: BbsmcId
 		  }
 		| {
 				type: 'imported_modpack'
-				project_id?: ModrinthId | null
-				version_id?: ModrinthId | null
+				project_id?: BbsmcId | null
+				version_id?: BbsmcId | null
 				name?: string | null
 				version_number?: string | null
 				filename?: string | null
 		  }
 		| {
-				type: 'modrinth_hosting'
+				type: 'Bbsmc_hosting'
 				server_id: string
 				instance_ids: string[]
 				active_instance_id?: string | null
 		  }
 		| {
 				type: 'shared_instance'
-				modpack_project_id?: ModrinthId | null
-				modpack_version_id?: ModrinthId | null
+				modpack_project_id?: BbsmcId | null
+				modpack_version_id?: BbsmcId | null
 		  }
 	)
 
@@ -120,9 +120,9 @@ export type InstanceLoader = 'vanilla' | 'forge' | 'fabric' | 'quilt' | 'neoforg
 
 export type ContentSourceKind =
 	| 'local'
-	| 'modrinth_modpack'
+	| 'Bbsmc_modpack'
 	| 'server_project'
-	| 'modrinth_hosting'
+	| 'Bbsmc_hosting'
 	| 'imported_modpack'
 	| 'shared_instance'
 

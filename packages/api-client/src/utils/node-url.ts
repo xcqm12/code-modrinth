@@ -1,4 +1,4 @@
-const NODE_FS_PATH_REGEX = /\/modrinth\/v\d+\/fs\/?$/
+const NODE_FS_PATH_REGEX = /\/Bbsmc\/v\d+\/fs\/?$/
 const HTTP_SCHEME_REGEX = /^https?:\/\//i
 const WS_SCHEME_REGEX = /^wss?:\/\//i
 const HTTP_SECURE_SCHEME_REGEX = /^https:\/\//i

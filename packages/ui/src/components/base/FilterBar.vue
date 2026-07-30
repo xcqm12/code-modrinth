@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import { FilterIcon } from '@modrinth/assets'
+import { FilterIcon } from '@Bbsmc/assets'
 import { watch } from 'vue'
 
 import { type MessageDescriptor, useVIntl } from '../../composables/i18n'

@@ -27,7 +27,7 @@ Refer to the standard: @standards/maintaining/CHANGELOG.md
    - Describes observable behavior, not implementation.
    - Specific enough to identify the surface (names the tab/page/modal).
    - One sentence, ends with a period, sentence case.
-   - Uses branded names (Modrinth App, Modrinth Hosting) correctly.
+   - Uses branded names (Bbsmc App, Bbsmc Hosting) correctly.
    - No filler ("issue with", "issue where", "various", "some"), no vague intensifiers, no apologies, no PR/commit references (unless crediting a third-party contributor with a linked GitHub profile).
    - Not a duplicate sub-fix of a bigger change already listed.
 

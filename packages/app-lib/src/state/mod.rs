@@ -87,7 +87,7 @@ pub struct State {
     // because creating the state object is fallible (e.g. database missing),
     // but we rely on the app identifier to create the state (data dir).
     //
-    // /// App identifier string (like com.modrinth.ModrinthApp)
+    // /// App identifier string (like com.Bbsmc.BbsmcApp)
     // pub app_identifier: String,
     /// Friends socket
     pub friends_socket: FriendsSocket,
@@ -158,7 +158,7 @@ impl State {
                 state.discord_rpc.clear_to_default(true),
                 instances::refresh_all_instances(),
                 Settings::migrate(&state.pool),
-                ModrinthCredentials::refresh_all(),
+                BbsmcCredentials::refresh_all(),
             );
 
             if let Err(e) = res {

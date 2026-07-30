@@ -32,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import { HammerIcon, XIcon } from '@modrinth/assets'
+import { HammerIcon, XIcon } from '@Bbsmc/assets'
 import { ref } from 'vue'
 
 import ButtonStyled from '#ui/components/base/ButtonStyled.vue'

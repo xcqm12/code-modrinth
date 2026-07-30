@@ -1,4 +1,4 @@
-import { ModrinthApiError } from '../core/errors'
+import { BbsmcApiError } from '../core/errors'
 
 /**
  * Wrap a function with JWT retry logic.
@@ -11,7 +11,7 @@ export async function withJWTRetry<T>(
 	try {
 		return await fn()
 	} catch (error) {
-		if (error instanceof ModrinthApiError && error.statusCode === 401) {
+		if (error instanceof BbsmcApiError && error.statusCode === 401) {
 			await refreshToken()
 			return await fn()
 		}

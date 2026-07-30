@@ -151,7 +151,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@Bbsmc/api-client'
 import {
 	DownloadIcon,
 	ExternalIcon,
@@ -166,7 +166,7 @@ import {
 	TagCategoryGamepad2Icon as Gamepad2Icon,
 	TimerIcon,
 	UnknownIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -185,7 +185,7 @@ import {
 	TeleportOverflowMenu,
 	type TeleportOverflowMenuItem,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'
 

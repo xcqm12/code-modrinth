@@ -1,5 +1,5 @@
 import { useAppQueryClient } from '~/composables/query-client'
-import { useServerModrinthClient } from '~/server/utils/api-client'
+import { useServerBbsmcClient } from '~/server/utils/api-client'
 
 export default defineNuxtRouteMiddleware(async (to) => {
 	const userParam = to.params.user ?? to.params.id
@@ -11,7 +11,7 @@ export default defineNuxtRouteMiddleware(async (to) => {
 
 	const queryClient = useAppQueryClient()
 	const authToken = useCookie('auth-token')
-	const client = useServerModrinthClient({ authToken: authToken.value || undefined })
+	const client = useServerBbsmcClient({ authToken: authToken.value || undefined })
 
 	try {
 		const user = await queryClient.fetchQuery({

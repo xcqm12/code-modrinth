@@ -12,7 +12,7 @@ use crate::install::{
 use crate::state::instances::{InstanceLink, SharedInstanceAttachment};
 use crate::state::{
     AppliedContentSetPatch, CacheBehaviour, CachedEntry, ContentSetSyncStatus,
-    ContentSourceKind, EditInstance, ModLoader, ModrinthCredentials,
+    ContentSourceKind, EditInstance, ModLoader, BbsmcCredentials,
     ProjectType, SharedInstanceRole, State,
 };
 use crate::util::fetch::{INSECURE_REQWEST_CLIENT, REQWEST_CLIENT};
@@ -130,7 +130,7 @@ pub use self::types::{
 pub async fn can_active_user_use_shared_instances() -> crate::Result<bool> {
     let state = State::get().await?;
     let Some(credentials) =
-        ModrinthCredentials::get_and_refresh(&state.pool, &state.api_semaphore)
+        BbsmcCredentials::get_and_refresh(&state.pool, &state.api_semaphore)
             .await?
     else {
         return Ok(true);

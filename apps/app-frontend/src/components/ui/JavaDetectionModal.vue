@@ -49,14 +49,14 @@
 	</ModalWrapper>
 </template>
 <script setup>
-import { CheckIcon, PlusIcon, XIcon } from '@modrinth/assets'
+import { CheckIcon, PlusIcon, XIcon } from '@Bbsmc/assets'
 import {
 	ButtonStyled,
 	defineMessages,
 	injectNotificationManager,
 	Table,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { computed, ref } from 'vue'
 
 import ModalWrapper from '@/components/ui/modal/ModalWrapper.vue'

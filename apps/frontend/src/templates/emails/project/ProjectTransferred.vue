@@ -33,7 +33,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 					{project.name}
 				</VLink>
 			</b>
-			has been successfully transferred to the Modrinth {new_owner.type_capitalized}
+			has been successfully transferred to the Bbsmc {new_owner.type_capitalized}
 			<b
 				><VLink
 					href="https://bbsmc.org.cn/{new_owner.type}/{new_owner.name}"

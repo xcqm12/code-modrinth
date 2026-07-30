@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { InfoIcon, XIcon } from '@modrinth/assets'
+import { InfoIcon, XIcon } from '@Bbsmc/assets'
 import { computed, toValue } from 'vue'
 
 import ButtonStyled from '#ui/components/base/ButtonStyled.vue'

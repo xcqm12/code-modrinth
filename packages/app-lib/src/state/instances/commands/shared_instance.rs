@@ -75,7 +75,7 @@ async fn detach_shared_instance(
         InstanceLink::SharedInstance {
             modpack_project_id: Some(project_id),
             modpack_version_id: Some(version_id),
-        } => Some(InstanceLink::ModrinthModpack {
+        } => Some(InstanceLink::BbsmcModpack {
             project_id,
             version_id,
         }),

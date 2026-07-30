@@ -1,5 +1,5 @@
-import { TagsIcon } from '@modrinth/assets'
-import { injectProjectPageContext } from '@modrinth/ui'
+import { TagsIcon } from '@Bbsmc/assets'
+import { injectProjectPageContext } from '@Bbsmc/ui'
 import { computed } from 'vue'
 
 import { fix, group, md, stage, toggle } from '../../types/node'

@@ -28,7 +28,7 @@
 </template>
 
 <script setup lang="ts">
-import { ButtonStyled, NewModal, useVIntl } from '@modrinth/ui'
+import { ButtonStyled, NewModal, useVIntl } from '@Bbsmc/ui'
 
 import { analyticsChartMessages } from '../../analytics-messages'
 

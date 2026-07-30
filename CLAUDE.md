@@ -1,6 +1,6 @@
-# Modrinth Monorepo
+# Bbsmc Monorepo
 
-This is the Modrinth monorepo — it contains all Modrinth projects, both frontend and backend. When entering a project, either to edit or analyse, you should read it's CLAUDE.md.
+This is the Bbsmc monorepo �?it contains all Bbsmc projects, both frontend and backend. When entering a project, either to edit or analyse, you should read it's CLAUDE.md.
 
 ## Architecture
 
@@ -13,7 +13,7 @@ This is the Modrinth monorepo — it contains all Modrinth projects, both fronte
 
 | App               | Description                    |
 | ----------------- | ------------------------------ |
-| `frontend`        | Main Modrinth website (Nuxt 3) |
+| `frontend`        | Main Bbsmc website (Nuxt 3) |
 | `app-frontend`    | Desktop/app frontend (Vue 3)   |
 | `app`             | Desktop/app shell (Tauri)      |
 | `app-playground`  | Testing playground for app     |
@@ -25,8 +25,8 @@ This is the Modrinth monorepo — it contains all Modrinth projects, both fronte
 
 | Package            | Description                                           |
 | ------------------ | ----------------------------------------------------- |
-| `ui`               | Shared Vue component library (`@modrinth/ui`)         |
-| `assets`           | Styling and auto-generated icons (`@modrinth/assets`) |
+| `ui`               | Shared Vue component library (`@Bbsmc/ui`)         |
+| `assets`           | Styling and auto-generated icons (`@Bbsmc/assets`) |
 | `api-client`       | API client for Nuxt, Tauri, and Node/browser          |
 | `app-lib`          | Shared app library                                    |
 | `blog`             | Blog system and changelog data                        |
@@ -35,9 +35,9 @@ This is the Modrinth monorepo — it contains all Modrinth projects, both fronte
 | `daedalus`         | Daedalus protocol                                     |
 | `tooling-config`   | ESLint, Prettier, TypeScript configs                  |
 | `ariadne`          | Analytics library                                     |
-| `modrinth-log`     | Logging utilities                                     |
-| `modrinth-maxmind` | MaxMind GeoIP                                         |
-| `modrinth-util`    | General utilities                                     |
+| `Bbsmc-log`     | Logging utilities                                     |
+| `Bbsmc-maxmind` | MaxMind GeoIP                                         |
+| `Bbsmc-util`    | General utilities                                     |
 | `muralpay`         | Payment processing                                    |
 | `path-util`        | Path utilities                                        |
 | `sqlx-tracing`     | SQLx query tracing                                    |
@@ -64,7 +64,7 @@ The website and app `prepr` commands
 
 Each project may have its own file with detailed instructions:
 
-- [`apps/labrinth/AGENTS.md`](apps/labrinth/AGENTS.md) — Backend API
+- [`apps/labrinth/AGENTS.md`](apps/labrinth/AGENTS.md) �?Backend API
 - [`apps/frontend/CLAUDE.md`](apps/frontend/CLAUDE.md) - Frontend Website
 
 ## Code Guidelines
@@ -80,12 +80,12 @@ Each project may have its own file with detailed instructions:
 - NEVER use `| head -n X` or `| tail -n X` to truncate output
 - IMPORTANT: Run commands directly without pipes when possible
 - IMPORTANT: If you need to limit output, use command-specific flags (e.g. `git log -n 10` instead of `git log | head -10`)
-- ALWAYS read the full output — never pipe through filters
+- ALWAYS read the full output �?never pipe through filters
 
 ### General
 - Do not create new non-source code files (e.g. Bash scripts, SQL scripts) unless explicitly prompted to
 - For Frontend, when doing lint checks, only use the `prepr` commands, do not use `typecheck` or `tsc` etc.
-- Types in `@modrinth/utils` are considered highly outdated, if a component needs them, check if you can switch said component to use types from `packages/api-client`
+- Types in `@Bbsmc/utils` are considered highly outdated, if a component needs them, check if you can switch said component to use types from `packages/api-client`
 - When provided problems, do not say "I didn't introduce these problems" (shifting the blame/effort) - just fix them.
 
 ## Edit Tool - Whitespace Handling (CLAUDE ONLY)
@@ -98,8 +98,8 @@ The Read tool uses `→` to mark where line numbers end and file content begins.
 - Don't count arrows, don't interpret - just copy what's after the `→`
 
 **Example:**
-14→		private byte tag;
-For Edit, use: `		private byte tag;` (copy everything after →, including the two tabs)
+14�?	private byte tag;
+For Edit, use: `		private byte tag;` (copy everything after �? including the two tabs)
 
 **If Edit fails:** Stop and explain the problem. Do not attempt sed/awk/bash workarounds.
 

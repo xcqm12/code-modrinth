@@ -3,10 +3,10 @@
     "defaultMessage": "คุณไม่มีสิทธิ์"
   },
   "affiliate.create.title.placeholder": {
-    "defaultMessage": "เช่น YouTube"
+    "defaultMessage": "เช่�?YouTube"
   },
   "affiliate.create.user.placeholder": {
-    "defaultMessage": "ใส่ชื่อผู้ใช้"
+    "defaultMessage": "ใส่ชื่อผู้ใช�?
   },
   "affiliate.createdBy": {
     "defaultMessage": "สร้างโดย {user}"
@@ -18,13 +18,13 @@
     "defaultMessage": "ใหม่"
   },
   "billing.resubscribe-modal.cancel": {
-    "defaultMessage": "ยกเลิก"
+    "defaultMessage": "ยกเลิ�?
   },
   "billing.resubscribe-modal.ram": {
     "defaultMessage": "{ramGb} กิกะไบต์ RAM"
   },
   "billing.resubscribe-modal.storage": {
-    "defaultMessage": "{storageGb} กิกะไบต์ พื้นที่จัดเก็บ"
+    "defaultMessage": "{storageGb} กิกะไบต์ พื้นที่จัดเก็�?
   },
   "button.accept": {
     "defaultMessage": "ยอมรับ"
@@ -33,64 +33,64 @@
     "defaultMessage": "กลับ"
   },
   "button.cancel": {
-    "defaultMessage": "ยกเลิก"
+    "defaultMessage": "ยกเลิ�?
   },
   "button.clear": {
     "defaultMessage": "ล้าง"
   },
   "button.close": {
-    "defaultMessage": "ปิด"
+    "defaultMessage": "ปิ�?
   },
   "button.continue": {
-    "defaultMessage": "ดำเนินการต่อ"
+    "defaultMessage": "ดำเนินการต่�?
   },
   "button.copy-id": {
     "defaultMessage": "คัดลอก ID"
   },
   "button.copy-permalink": {
-    "defaultMessage": "คัดลอกลิงก์ถาวร"
+    "defaultMessage": "คัดลอกลิงก์ถาว�?
   },
   "button.create-a-project": {
     "defaultMessage": "สร้างโปรเจกต์"
   },
   "button.disable": {
-    "defaultMessage": "ปิด"
+    "defaultMessage": "ปิ�?
   },
   "button.download": {
-    "defaultMessage": "ดาวน์โหลด"
+    "defaultMessage": "ดาวน์โหล�?
   },
   "button.downloading": {
     "defaultMessage": "กำลังดาวน์โหลด"
   },
   "button.edit": {
-    "defaultMessage": "แก้ไข"
+    "defaultMessage": "แก้ไ�?
   },
   "button.enable": {
-    "defaultMessage": "เปิด"
+    "defaultMessage": "เปิ�?
   },
   "button.follow": {
     "defaultMessage": "ติดตาม"
   },
   "button.install": {
-    "defaultMessage": "ติดตั้ง"
+    "defaultMessage": "ติดตั้�?
   },
   "button.more-options": {
-    "defaultMessage": "ตัวเลือกเพิ่มเติม"
+    "defaultMessage": "ตัวเลือกเพิ่มเติ�?
   },
   "button.next": {
-    "defaultMessage": "ถัดไป"
+    "defaultMessage": "ถัดไ�?
   },
   "button.open-folder": {
     "defaultMessage": "เปิดโฟลเดอร์"
   },
   "button.play": {
-    "defaultMessage": "เล่น"
+    "defaultMessage": "เล่�?
   },
   "button.refresh": {
-    "defaultMessage": "รีเฟรช"
+    "defaultMessage": "รีเฟร�?
   },
   "button.remove-image": {
-    "defaultMessage": "ลบรูป"
+    "defaultMessage": "ลบรู�?
   },
   "button.report": {
     "defaultMessage": "รายงาน"
@@ -120,7 +120,7 @@
     "defaultMessage": "หยุด"
   },
   "button.unfollow": {
-    "defaultMessage": "เลิกติดตาม"
+    "defaultMessage": "เลิกติดตา�?
   },
   "button.upload-image": {
     "defaultMessage": "อัพโหลดภาพ"
@@ -129,22 +129,22 @@
     "defaultMessage": "ตอนนี้"
   },
   "content.page-layout.update-all": {
-    "defaultMessage": "อัปเดตทั้งหมด"
+    "defaultMessage": "อัปเดตทั้งหม�?
   },
   "content.page-layout.upload-files": {
-    "defaultMessage": "อัปโหลดไฟล์"
+    "defaultMessage": "อัปโหลดไฟล�?
   },
   "content.selection-bar.bulk.deleting": {
-    "defaultMessage": "กำลังลบ {progress}/{total}{contentType}..."
+    "defaultMessage": "กำลังล�?{progress}/{total}{contentType}..."
   },
   "content.selection-bar.bulk.deleting-waiting": {
-    "defaultMessage": "กำลังลบ {contentType}..."
+    "defaultMessage": "กำลังล�?{contentType}..."
   },
   "content.selection-bar.bulk.disabling": {
-    "defaultMessage": "กำลังปิดการใช้งาน {progress}/{total} {contentType}..."
+    "defaultMessage": "กำลังปิดการใช้งา�?{progress}/{total} {contentType}..."
   },
   "content.selection-bar.bulk.disabling-waiting": {
-    "defaultMessage": "กำลังปิดการใช้งาน {contentType}..."
+    "defaultMessage": "กำลังปิดการใช้งา�?{contentType}..."
   },
   "content.selection-bar.bulk.enabling": {
     "defaultMessage": "กำลังเปิดการใช้งาน {progress}/{total} {contentType}..."
@@ -165,13 +165,13 @@
     "defaultMessage": "ไม่สามารถโหลดไฟล์เนื้อหา"
   },
   "files.zip-url-modal.install-button": {
-    "defaultMessage": "ติดตั้ง"
+    "defaultMessage": "ติดตั้�?
   },
   "form.label.address-line-2": {
-    "defaultMessage": "ที่อยู่บรรทัดที่ 2 (ไม่จำเป็น)"
+    "defaultMessage": "ที่อยู่บรรทัดที่ 2 (ไม่จำเป็�?"
   },
   "form.label.amount": {
-    "defaultMessage": "จำนวน"
+    "defaultMessage": "จำนว�?
   },
   "form.label.bank-name": {
     "defaultMessage": "ชื่อธนาคาร"
@@ -186,7 +186,7 @@
     "defaultMessage": "ประเทศ"
   },
   "form.label.date-of-birth": {
-    "defaultMessage": "วันเกิด"
+    "defaultMessage": "วันเกิ�?
   },
   "form.label.email": {
     "defaultMessage": "อีเมล"
@@ -195,19 +195,19 @@
     "defaultMessage": "ชื่อจริง"
   },
   "form.label.last-name": {
-    "defaultMessage": "นามสกุล"
+    "defaultMessage": "นามสกุ�?
   },
   "form.label.postal-code": {
     "defaultMessage": "รหัสไปรษณีย์"
   },
   "form.label.state-province": {
-    "defaultMessage": "รัฐ หรือ จังหวัด"
+    "defaultMessage": "รั�?หรือ จังหวั�?
   },
   "form.placeholder.address": {
-    "defaultMessage": "กรอกที่อยู่"
+    "defaultMessage": "กรอกที่อยู�?
   },
   "form.placeholder.amount": {
-    "defaultMessage": "กรอกจำนวน"
+    "defaultMessage": "กรอกจำนว�?
   },
   "form.placeholder.bank-name": {
     "defaultMessage": "กรอกชื่อธนาคาร"
@@ -231,7 +231,7 @@
     "defaultMessage": "กรอกชื่อจริง"
   },
   "form.placeholder.last-name": {
-    "defaultMessage": "กรอกนามสกุล"
+    "defaultMessage": "กรอกนามสกุ�?
   },
   "form.placeholder.postal-code": {
     "defaultMessage": "กรอกรหัสไปรษณีย์"
@@ -240,34 +240,34 @@
     "defaultMessage": "กรอกรัฐหรือจังหวัด"
   },
   "hosting.content.failed-to-bulk-delete": {
-    "defaultMessage": "ไม่สามารถลบเนื้อหาได้"
+    "defaultMessage": "ไม่สามารถลบเนื้อหาได�?
   },
   "hosting.content.failed-to-bulk-disable": {
-    "defaultMessage": "ไม่สามารถปิดใช้งานเนื้อหาได้"
+    "defaultMessage": "ไม่สามารถปิดใช้งานเนื้อหาได�?
   },
   "icon-select.edit": {
     "defaultMessage": "แก้ไขไอคอน"
   },
   "icon-select.remove": {
-    "defaultMessage": "ลบไอคอน"
+    "defaultMessage": "ลบไอคอ�?
   },
   "icon-select.replace": {
-    "defaultMessage": "เปลี่ยนไอคอน"
+    "defaultMessage": "เปลี่ยนไอคอ�?
   },
   "icon-select.select": {
     "defaultMessage": "เลือกรูปไอคอน"
   },
   "input.search.placeholder": {
-    "defaultMessage": "ค้นหา..."
+    "defaultMessage": "ค้นห�?.."
   },
   "input.view.gallery": {
     "defaultMessage": "มุมมองแกลเลอรี"
   },
   "input.view.grid": {
-    "defaultMessage": "มุมมองตาราง"
+    "defaultMessage": "มุมมองตารา�?
   },
   "input.view.list": {
-    "defaultMessage": "มุมมองแถว"
+    "defaultMessage": "มุมมองแถ�?
   },
   "instance.worlds.game_mode.adventure": {
     "defaultMessage": "โหมดผจญภัย"
@@ -276,7 +276,7 @@
     "defaultMessage": "โหมดสร้างสรรค์"
   },
   "instance.worlds.game_mode.spectator": {
-    "defaultMessage": "โหมดผู้ชม"
+    "defaultMessage": "โหมดผู้ช�?
   },
   "instance.worlds.game_mode.survival": {
     "defaultMessage": "โหมดเอาชีวิตรอด"
@@ -291,13 +291,13 @@
     "defaultMessage": "ติดตั้งโปรเจกต์"
   },
   "instances.content-install.install-button": {
-    "defaultMessage": "ติดตั้ง"
+    "defaultMessage": "ติดตั้�?
   },
   "instances.content-install.installed-badge": {
-    "defaultMessage": "ติดตั้งแล้ว"
+    "defaultMessage": "ติดตั้งแล้�?
   },
   "instances.content-install.instance-type": {
-    "defaultMessage": "ประเถทอินสแตนซ์"
+    "defaultMessage": "ประเถทอินสแตนซ�?
   },
   "instances.content-install.name-label": {
     "defaultMessage": "ชื่อ"
@@ -309,13 +309,13 @@
     "defaultMessage": "อินสแตนซ์อันใหม่"
   },
   "instances.content-install.remove-icon": {
-    "defaultMessage": "ลบไอคอน"
+    "defaultMessage": "ลบไอคอ�?
   },
   "instances.content-install.search-placeholder": {
     "defaultMessage": "ค้นหาอินสแตนซ์"
   },
   "instances.content-install.select-icon": {
-    "defaultMessage": "เลือกไอคอน"
+    "defaultMessage": "เลือกไอคอ�?
   },
   "instances.modpack-content-modal.empty-title": {
     "defaultMessage": "ไม่พบเนื้อหา"
@@ -333,7 +333,7 @@
     "defaultMessage": "บันทึกการเปลี่ยนแปลงแล้ว"
   },
   "label.collections": {
-    "defaultMessage": "คอลเลกชัน"
+    "defaultMessage": "คอลเลกชั�?
   },
   "label.content": {
     "defaultMessage": "เนื้อหา"
@@ -354,10 +354,10 @@
     "defaultMessage": "ข้อผิดพลาด"
   },
   "label.followed-projects": {
-    "defaultMessage": "โปรเจกต์ที่ติดตาม"
+    "defaultMessage": "โปรเจกต์ที่ติดตา�?
   },
   "label.loading": {
-    "defaultMessage": "กำลังโหลด..."
+    "defaultMessage": "กำลังโหล�?.."
   },
   "label.moderation": {
     "defaultMessage": "การกลั่นกรอง"
@@ -372,7 +372,7 @@
     "defaultMessage": "รหัสผ่าน"
   },
   "label.public": {
-    "defaultMessage": "สาธารณะ"
+    "defaultMessage": "สาธารณ�?
   },
   "label.rejected": {
     "defaultMessage": "ไม่อนุมัติ"
@@ -390,7 +390,7 @@
     "defaultMessage": "เซิร์ฟเวอร์"
   },
   "label.settings": {
-    "defaultMessage": "ตั้งค่า"
+    "defaultMessage": "ตั้งค่�?
   },
   "label.singleplayer": {
     "defaultMessage": "เล่นคนเดียว"
@@ -405,40 +405,40 @@
     "defaultMessage": "การเปิดเผย"
   },
   "modal.add-payment-method.action": {
-    "defaultMessage": "เพิ่มช่องทางการชำระเงิน"
+    "defaultMessage": "เพิ่มช่องทางการชำระเงิ�?
   },
   "modal.add-payment-method.title": {
-    "defaultMessage": "กำลังเพิ่มช่องทางการชำระเงิน"
+    "defaultMessage": "กำลังเพิ่มช่องทางการชำระเงิ�?
   },
   "notification.error.title": {
-    "defaultMessage": "เกิดข้อผิดพลาด"
+    "defaultMessage": "เกิดข้อผิดพลา�?
   },
   "omorphia.component.badge.label.accepted": {
     "defaultMessage": "ยอมรับแล้ว"
   },
   "omorphia.component.badge.label.approved": {
-    "defaultMessage": "อนุมัติแล้ว"
+    "defaultMessage": "อนุมัติแล้�?
   },
   "omorphia.component.badge.label.archived": {
-    "defaultMessage": "จัดเก็บแล้ว"
+    "defaultMessage": "จัดเก็บแล้�?
   },
   "omorphia.component.badge.label.closed": {
     "defaultMessage": "ถูกปิด"
   },
   "omorphia.component.badge.label.draft": {
-    "defaultMessage": "แบบร่าง"
+    "defaultMessage": "แบบร่า�?
   },
   "omorphia.component.badge.label.failed": {
-    "defaultMessage": "ไม่สำเร็จ"
+    "defaultMessage": "ไม่สำเร็�?
   },
-  "omorphia.component.badge.label.modrinth-team": {
-    "defaultMessage": "ทีม Modrinth"
+  "omorphia.component.badge.label.Bbsmc-team": {
+    "defaultMessage": "ที�?Bbsmc"
   },
   "omorphia.component.badge.label.pending": {
     "defaultMessage": "กําลังดำเนินการ"
   },
   "omorphia.component.badge.label.private": {
-    "defaultMessage": "ส่วนตัว"
+    "defaultMessage": "ส่วนตั�?
   },
   "omorphia.component.badge.label.processed": {
     "defaultMessage": "ประมวลผลแล้ว"
@@ -447,7 +447,7 @@
     "defaultMessage": "ถูกปฏิเสธ"
   },
   "omorphia.component.badge.label.returned": {
-    "defaultMessage": "ถูกตีกลับ"
+    "defaultMessage": "ถูกตีกลั�?
   },
   "omorphia.component.badge.label.safe": {
     "defaultMessage": "ผ่าน"
@@ -459,13 +459,13 @@
     "defaultMessage": "ไม่เผยแพร่"
   },
   "omorphia.component.badge.label.unsafe": {
-    "defaultMessage": "ไม่ผ่าน"
+    "defaultMessage": "ไม่ผ่า�?
   },
   "omorphia.component.copy.action.copy": {
     "defaultMessage": "คัดลอกโค้ดไปยังคลิปบอร์ด"
   },
   "omorphia.component.environment-indicator.label.client": {
-    "defaultMessage": "ไคลเอ็นต์"
+    "defaultMessage": "ไคลเอ็นต�?
   },
   "omorphia.component.environment-indicator.label.client-and-server": {
     "defaultMessage": "ไคลเอ็นต์และเซิร์ฟเวอร์"
@@ -477,7 +477,7 @@
     "defaultMessage": "เซิร์ฟเวอร์"
   },
   "omorphia.component.environment-indicator.label.unsupported": {
-    "defaultMessage": "ไม่รองรับ"
+    "defaultMessage": "ไม่รองรั�?
   },
   "payment-method.venmo": {
     "defaultMessage": "Venmo"
@@ -489,7 +489,7 @@
     "defaultMessage": "Virtual Visas"
   },
   "project-type.all": {
-    "defaultMessage": "ทั้งหมด"
+    "defaultMessage": "ทั้งหม�?
   },
   "project-type.mod.category": {
     "defaultMessage": "ม็อด"
@@ -501,7 +501,7 @@
     "defaultMessage": "ปลั๊กอิน"
   },
   "project-type.resourcepack.category": {
-    "defaultMessage": "รีซอร์ซแพ็ก"
+    "defaultMessage": "รีซอร์ซแพ็�?
   },
   "project-type.server.category": {
     "defaultMessage": "เซิร์ฟเวอร์"
@@ -513,7 +513,7 @@
     "defaultMessage": "Minecraft: Java Edition"
   },
   "project.about.compatibility.platforms": {
-    "defaultMessage": "แพลตฟอร์ม"
+    "defaultMessage": "แพลตฟอร์�?
   },
   "project.about.creators.title": {
     "defaultMessage": "ผู้สร้าง"
@@ -531,7 +531,7 @@
     "defaultMessage": "อัพเดทเมื่อ {date}"
   },
   "project.about.links.discord": {
-    "defaultMessage": "เข้าร่วม Discord server"
+    "defaultMessage": "เข้าร่ว�?Discord server"
   },
   "project.about.links.donate.bmac": {
     "defaultMessage": "Buy Me a Coffee"
@@ -552,19 +552,19 @@
     "defaultMessage": "สนับสนุนบน PayPal"
   },
   "project.about.links.issues": {
-    "defaultMessage": "รายงานปัญหา"
+    "defaultMessage": "รายงานปัญห�?
   },
   "project.about.links.title": {
-    "defaultMessage": "ลิงก์"
+    "defaultMessage": "ลิงก�?
   },
   "project.server.status.offline": {
-    "defaultMessage": "ออฟไลน์"
+    "defaultMessage": "ออฟไลน�?
   },
   "project.server.status.offline.tooltip": {
-    "defaultMessage": "เซิร์ฟเวอร์ออฟไลน์อยู่"
+    "defaultMessage": "เซิร์ฟเวอร์ออฟไลน์อยู�?
   },
   "project.server.status.online": {
-    "defaultMessage": "ออนไลน์"
+    "defaultMessage": "ออนไลน�?
   },
   "project.settings.description.title": {
     "defaultMessage": "คำอธิบาย"
@@ -585,7 +585,7 @@
     "defaultMessage": "ไคลเอ็นต์และเซิร์ฟเวอร์"
   },
   "project.settings.environment.client_only.title": {
-    "defaultMessage": "ฝั่งไคลเอนต์เท่านั้น"
+    "defaultMessage": "ฝั่งไคลเอนต์เท่านั้�?
   },
   "project.versions.channel.alpha.symbol": {
     "defaultMessage": "A"
@@ -597,13 +597,13 @@
     "defaultMessage": "R"
   },
   "project.visibility.draft": {
-    "defaultMessage": "แบบร่าง"
+    "defaultMessage": "แบบร่า�?
   },
   "project.visibility.private": {
-    "defaultMessage": "ส่วนตัว"
+    "defaultMessage": "ส่วนตั�?
   },
   "project.visibility.public": {
-    "defaultMessage": "สาธารณะ"
+    "defaultMessage": "สาธารณ�?
   },
   "project.visibility.rejected": {
     "defaultMessage": "ไม่อนุมัติ"
@@ -612,7 +612,7 @@
     "defaultMessage": "อยู่ภายใต้การพิจารณา"
   },
   "project.visibility.unknown": {
-    "defaultMessage": "ไม่ทราบ"
+    "defaultMessage": "ไม่ทรา�?
   },
   "project.visibility.unlisted": {
     "defaultMessage": "ไม่เปิดเผย"
@@ -627,37 +627,37 @@
     "defaultMessage": "ประเภท"
   },
   "servers.listing.server-icon-alt": {
-    "defaultMessage": "เซิร์ฟเวอร์ไอคอน"
+    "defaultMessage": "เซิร์ฟเวอร์ไอคอ�?
   },
   "servers.medal-listing.server-icon-alt": {
-    "defaultMessage": "เซิร์ฟเวอร์ไอคอน"
+    "defaultMessage": "เซิร์ฟเวอร์ไอคอ�?
   },
   "servers.region.prompt": {
-    "defaultMessage": "คุณอยากตั้งเซิร์ฟเวอร์ไว้ที่ไหน"
+    "defaultMessage": "คุณอยากตั้งเซิร์ฟเวอร์ไว้ที่ไห�?
   },
   "servers.region.western-europe": {
     "defaultMessage": "ยุโรปตะวันตก"
   },
   "settings.account.title": {
-    "defaultMessage": "บัญชีและความปลอดภัย"
+    "defaultMessage": "บัญชีและความปลอดภั�?
   },
   "settings.authorized-apps.title": {
     "defaultMessage": "แอพที่ได้รับอนุญาต"
   },
   "settings.display.theme.dark": {
-    "defaultMessage": "มืด"
+    "defaultMessage": "มื�?
   },
   "settings.display.theme.description": {
-    "defaultMessage": "เลือกธีมสีที่คุณต้องการสำหรับ Modrinth บนอุปกรณ์นี้"
+    "defaultMessage": "เลือกธีมสีที่คุณต้องการสำหรับ Bbsmc บนอุปกรณ์นี้"
   },
   "settings.display.theme.light": {
-    "defaultMessage": "สว่าง"
+    "defaultMessage": "สว่า�?
   },
   "settings.display.theme.oled": {
     "defaultMessage": "OLED"
   },
   "settings.display.theme.title": {
-    "defaultMessage": "ธีมสี"
+    "defaultMessage": "ธีมส�?
   },
   "settings.language.title": {
     "defaultMessage": "ภาษา"

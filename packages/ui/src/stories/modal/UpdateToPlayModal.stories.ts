@@ -1,4 +1,4 @@
-import { DownloadIcon } from '@modrinth/assets'
+import { DownloadIcon } from '@Bbsmc/assets'
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
 import { ref } from 'vue'
 
@@ -78,7 +78,7 @@ export const ExternalFiles: Story = {
 			<ContentDiffModal
 				ref="modalRef"
 				header="Update to play"
-				description="An update is required to play Epic Modrinth Pack. Please update to the latest version to launch the game."
+				description="An update is required to play Epic Bbsmc Pack. Please update to the latest version to launch the game."
 				:diffs="diffs"
 				version-date="November 25, 2025"
 				show-external-warnings

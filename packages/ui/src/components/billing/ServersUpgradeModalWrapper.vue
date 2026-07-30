@@ -1,5 +1,5 @@
 <template>
-	<ModrinthServersPurchaseModal
+	<BbsmcServersPurchaseModal
 		v-if="customer && regionsData"
 		ref="purchaseModal"
 		:publishable-key="props.stripePublishableKey"
@@ -27,13 +27,13 @@
 </template>
 
 <script setup lang="ts">
-import type { Archon, Labrinth } from '@modrinth/api-client'
+import type { Archon, Labrinth } from '@Bbsmc/api-client'
 import {
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
-	ModrinthServersPurchaseModal,
+	BbsmcServersPurchaseModal,
 	useDebugLogger,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { useMutation, useQuery } from '@tanstack/vue-query'
 import { computed, ref, watch } from 'vue'
 
@@ -48,9 +48,9 @@ const checkoutReturnUrl = computed(() => {
 })
 
 const { addNotification } = injectNotificationManager()
-const { labrinth, archon } = injectModrinthClient()
+const { labrinth, archon } = injectBbsmcClient()
 const debug = useDebugLogger('ServersUpgradeModalWrapper')
-const purchaseModal = ref<InstanceType<typeof ModrinthServersPurchaseModal> | null>(null)
+const purchaseModal = ref<InstanceType<typeof BbsmcServersPurchaseModal> | null>(null)
 
 // stripe type
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -177,10 +177,10 @@ async function initiatePayment(
 				dry && typeof dry === 'object' && 'requires_payment' in dry && dry.requires_payment
 
 			if (requiresPayment) {
-				// Upgrade: requires payment â€” finalize to create the payment intent
+				// Upgrade: requires payment â€?finalize to create the payment intent
 				return await finalizeImmediate(transformedBody)
 			} else {
-				// Downgrade or no payment change â€” defer until user confirms
+				// Downgrade or no payment change â€?defer until user confirms
 				pendingDowngradeBody.value = transformedBody
 				return null
 			}

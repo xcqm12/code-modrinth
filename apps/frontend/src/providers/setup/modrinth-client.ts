@@ -1,15 +1,15 @@
-import { provideModrinthClient } from '@modrinth/ui'
+import { provideBbsmcClient } from '@Bbsmc/ui'
 
-import { createModrinthClient } from '~/helpers/api.ts'
+import { createBbsmcClient } from '~/helpers/api.ts'
 
-export function setupModrinthClientProvider(auth: Awaited<ReturnType<typeof useAuth>>) {
+export function setupBbsmcClientProvider(auth: Awaited<ReturnType<typeof useAuth>>) {
 	const config = useRuntimeConfig()
-	const client = createModrinthClient(auth, {
+	const client = createBbsmcClient(auth, {
 		apiBaseUrl: config.public.apiBaseUrl.replace('/v2/', '/'),
 		archonBaseUrl: config.public.pyroBaseUrl.replace('/v2/', '/'),
 		sharedInstancesBaseUrl: config.public.sharedInstancesBaseUrl,
 		rateLimitKey: config.rateLimitKey,
 	})
-	provideModrinthClient(client)
+	provideBbsmcClient(client)
 	return client
 }

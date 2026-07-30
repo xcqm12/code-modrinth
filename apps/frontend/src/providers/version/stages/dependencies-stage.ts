@@ -1,5 +1,5 @@
-import { PlusIcon, XIcon } from '@modrinth/assets'
-import type { StageConfigInput } from '@modrinth/ui'
+import { PlusIcon, XIcon } from '@Bbsmc/assets'
+import type { StageConfigInput } from '@Bbsmc/ui'
 import { markRaw } from 'vue'
 
 import DependenciesStage from '~/components/ui/create-project-version/stages/DependenciesStage.vue'

@@ -8,26 +8,26 @@ export class ArchonNoticesV0Module extends AbstractModule {
 
 	/**
 	 * Get all server notices.
-	 * GET /modrinth/v0/notices
+	 * GET /Bbsmc/v0/notices
 	 */
 	public async list(): Promise<Archon.Notices.v0.ListedNotice[]> {
 		return this.client.request<Archon.Notices.v0.ListedNotice[]>('/notices', {
 			api: 'archon',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 			method: 'GET',
 		})
 	}
 
 	/**
 	 * Create a server notice.
-	 * POST /modrinth/v0/notices
+	 * POST /Bbsmc/v0/notices
 	 */
 	public async create(
 		request: Archon.Notices.v0.Announce,
 	): Promise<Archon.Notices.v0.PostNoticeResponseBody> {
 		return this.client.request<Archon.Notices.v0.PostNoticeResponseBody>('/notices', {
 			api: 'archon',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 			method: 'POST',
 			body: request,
 		})
@@ -35,12 +35,12 @@ export class ArchonNoticesV0Module extends AbstractModule {
 
 	/**
 	 * Update a server notice.
-	 * PATCH /modrinth/v0/notices/:id
+	 * PATCH /Bbsmc/v0/notices/:id
 	 */
 	public async update(id: number, request: Archon.Notices.v0.AnnouncePatch): Promise<void> {
 		await this.client.request(`/notices/${id}`, {
 			api: 'archon',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 			method: 'PATCH',
 			body: request,
 		})
@@ -48,25 +48,25 @@ export class ArchonNoticesV0Module extends AbstractModule {
 
 	/**
 	 * Delete a server notice.
-	 * DELETE /modrinth/v0/notices/:id
+	 * DELETE /Bbsmc/v0/notices/:id
 	 */
 	public async delete(id: number): Promise<void> {
 		await this.client.request(`/notices/${id}`, {
 			api: 'archon',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 			method: 'DELETE',
 		})
 	}
 
 	/**
 	 * Assign a notice to a server or node.
-	 * PUT /modrinth/v0/notices/:id/assign?server=:serverId
-	 * PUT /modrinth/v0/notices/:id/assign?node=:nodeId
+	 * PUT /Bbsmc/v0/notices/:id/assign?server=:serverId
+	 * PUT /Bbsmc/v0/notices/:id/assign?node=:nodeId
 	 */
 	public async assign(id: number, target: Archon.Notices.v0.AssignmentTarget): Promise<void> {
 		await this.client.request(`/notices/${id}/assign`, {
 			api: 'archon',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 			method: 'PUT',
 			params: this.assignmentTargetToParams(target),
 		})
@@ -74,13 +74,13 @@ export class ArchonNoticesV0Module extends AbstractModule {
 
 	/**
 	 * Unassign a notice from a server or node.
-	 * PUT /modrinth/v0/notices/:id/unassign?server=:serverId
-	 * PUT /modrinth/v0/notices/:id/unassign?node=:nodeId
+	 * PUT /Bbsmc/v0/notices/:id/unassign?server=:serverId
+	 * PUT /Bbsmc/v0/notices/:id/unassign?node=:nodeId
 	 */
 	public async unassign(id: number, target: Archon.Notices.v0.AssignmentTarget): Promise<void> {
 		await this.client.request(`/notices/${id}/unassign`, {
 			api: 'archon',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 			method: 'PUT',
 			params: this.assignmentTargetToParams(target),
 		})

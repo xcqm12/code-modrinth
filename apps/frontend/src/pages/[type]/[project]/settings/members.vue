@@ -28,7 +28,7 @@
 			<span class="label">
 				<span class="label__title">Invite a member</span>
 				<span class="label__description">
-					Enter the Modrinth username of the person you'd like to invite to be a member of this
+					Enter the Bbsmc username of the person you'd like to invite to be a member of this
 					project.
 				</span>
 			</span>
@@ -556,7 +556,7 @@ import {
 	UserPlusIcon,
 	UsersIcon,
 	UserXIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	Avatar,
 	Badge,
@@ -565,18 +565,18 @@ import {
 	Checkbox,
 	Combobox,
 	ConfirmModal,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	injectProjectPageContext,
 	StyledInput,
 	Toggle,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { useQuery } from '@tanstack/vue-query'
 
 import ConfirmTransferProjectModal from '~/components/ui/ConfirmTransferProjectModal.vue'
 import { removeSelfFromTeam } from '~/helpers/teams.js'
 
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const { addNotification } = injectNotificationManager()
 const {
 	projectV2: project,

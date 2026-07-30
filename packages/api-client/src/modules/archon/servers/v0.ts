@@ -9,19 +9,19 @@ export class ArchonServersV0Module extends AbstractModule {
 
 	/**
 	 * Get a specific server by ID
-	 * GET /modrinth/v0/servers/:id
+	 * GET /Bbsmc/v0/servers/:id
 	 */
 	public async get(serverId: string): Promise<Archon.Servers.v0.Server> {
 		return this.client.request<Archon.Servers.v0.Server>(`/servers/${serverId}`, {
 			api: 'archon',
 			method: 'GET',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 		})
 	}
 
 	/**
 	 * Get list of servers for the authenticated user
-	 * GET /modrinth/v0/servers
+	 * GET /Bbsmc/v0/servers
 	 */
 	public async list(
 		options?: Archon.Servers.v0.GetServersOptions,
@@ -35,13 +35,13 @@ export class ArchonServersV0Module extends AbstractModule {
 		return this.client.request<Archon.Servers.v0.ServerGetResponse>(`servers${query}`, {
 			api: 'archon',
 			method: 'GET',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 		})
 	}
 
 	/**
 	 * Check stock availability for a region
-	 * POST /modrinth/v0/stock?region=:region
+	 * POST /Bbsmc/v0/stock?region=:region
 	 */
 	public async checkStock(
 		region: string,
@@ -49,7 +49,7 @@ export class ArchonServersV0Module extends AbstractModule {
 	): Promise<Archon.Servers.v0.StockResponse> {
 		return this.client.request<Archon.Servers.v0.StockResponse>(`/stock?region=${region}`, {
 			api: 'archon',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 			method: 'POST',
 			body: request,
 			skipAuth: true,
@@ -58,14 +58,14 @@ export class ArchonServersV0Module extends AbstractModule {
 
 	/**
 	 * Check stock availability (without region filter)
-	 * POST /modrinth/v0/stock
+	 * POST /Bbsmc/v0/stock
 	 */
 	public async checkStockGlobal(
 		request: Archon.Servers.v0.StockRequest,
 	): Promise<Archon.Servers.v0.StockResponse> {
 		return this.client.request<Archon.Servers.v0.StockResponse>('/stock', {
 			api: 'archon',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 			method: 'POST',
 			body: request,
 			skipAuth: true,
@@ -75,31 +75,31 @@ export class ArchonServersV0Module extends AbstractModule {
 	/**
 	 * Get filesystem authentication credentials for a server
 	 * Returns URL and JWT token for accessing the server's filesystem via Kyros
-	 * GET /modrinth/v0/servers/:id/fs
+	 * GET /Bbsmc/v0/servers/:id/fs
 	 */
 	public async getFilesystemAuth(serverId: string): Promise<Archon.Servers.v0.JWTAuth> {
 		return this.client.request<Archon.Servers.v0.JWTAuth>(`/servers/${serverId}/fs`, {
 			api: 'archon',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 			method: 'GET',
 		})
 	}
 
 	/**
 	 * Get WebSocket authentication credentials for a server
-	 * GET /modrinth/v0/servers/:id/ws
+	 * GET /Bbsmc/v0/servers/:id/ws
 	 */
 	public async getWebSocketAuth(serverId: string): Promise<Archon.Websocket.v0.WSAuth> {
 		return this.client.request<Archon.Websocket.v0.WSAuth>(`/servers/${serverId}/ws`, {
 			api: 'archon',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 			method: 'GET',
 		})
 	}
 
 	/**
 	 * Send a power action to a server (Start, Stop, Restart, Kill)
-	 * POST /modrinth/v0/servers/:id/power
+	 * POST /Bbsmc/v0/servers/:id/power
 	 */
 	public async power(
 		serverId: string,
@@ -108,14 +108,14 @@ export class ArchonServersV0Module extends AbstractModule {
 		await this.client.request(`/servers/${serverId}/power`, {
 			api: 'archon',
 			method: 'POST',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 			body: { action },
 		})
 	}
 
 	/**
 	 * Reinstall a server with a new loader or modpack
-	 * POST /modrinth/v0/servers/:id/reinstall
+	 * POST /Bbsmc/v0/servers/:id/reinstall
 	 */
 	public async reinstall(
 		serverId: string,
@@ -125,7 +125,7 @@ export class ArchonServersV0Module extends AbstractModule {
 		await this.client.request(`/servers/${serverId}/reinstall`, {
 			api: 'archon',
 			method: 'POST',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 			params: { hard: String(hardReset) },
 			body: request,
 		})
@@ -133,7 +133,7 @@ export class ArchonServersV0Module extends AbstractModule {
 
 	/**
 	 * Get authentication credentials for .mrpack file upload
-	 * GET /modrinth/v0/servers/:id/reinstallFromMrpack
+	 * GET /Bbsmc/v0/servers/:id/reinstallFromMrpack
 	 */
 	public async getReinstallMrpackAuth(
 		serverId: string,
@@ -142,7 +142,7 @@ export class ArchonServersV0Module extends AbstractModule {
 			`/servers/${serverId}/reinstallFromMrpack`,
 			{
 				api: 'archon',
-				version: 'modrinth/v0',
+				version: 'Bbsmc/v0',
 				method: 'GET',
 			},
 		)
@@ -186,32 +186,32 @@ export class ArchonServersV0Module extends AbstractModule {
 
 	/**
 	 * Update a server's name
-	 * POST /modrinth/v0/servers/:id/name
+	 * POST /Bbsmc/v0/servers/:id/name
 	 */
 	public async updateName(serverId: string, name: string): Promise<void> {
 		await this.client.request(`/servers/${serverId}/name`, {
 			api: 'archon',
 			method: 'POST',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 			body: { name },
 		})
 	}
 
 	/**
 	 * Get allocations for a server
-	 * GET /modrinth/v0/servers/:id/allocations
+	 * GET /Bbsmc/v0/servers/:id/allocations
 	 */
 	public async getAllocations(serverId: string): Promise<Archon.Servers.v0.Allocation[]> {
 		return this.client.request<Archon.Servers.v0.Allocation[]>(`/servers/${serverId}/allocations`, {
 			api: 'archon',
 			method: 'GET',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 		})
 	}
 
 	/**
 	 * Reserve a new allocation for a server
-	 * POST /modrinth/v0/servers/:id/allocations?name=...
+	 * POST /Bbsmc/v0/servers/:id/allocations?name=...
 	 */
 	public async reserveAllocation(
 		serverId: string,
@@ -220,76 +220,76 @@ export class ArchonServersV0Module extends AbstractModule {
 		return this.client.request<Archon.Servers.v0.Allocation>(`/servers/${serverId}/allocations`, {
 			api: 'archon',
 			method: 'POST',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 			params: { name },
 		})
 	}
 
 	/**
 	 * Update an allocation's name
-	 * PUT /modrinth/v0/servers/:id/allocations/:port?name=...
+	 * PUT /Bbsmc/v0/servers/:id/allocations/:port?name=...
 	 */
 	public async updateAllocation(serverId: string, port: number, name: string): Promise<void> {
 		await this.client.request(`/servers/${serverId}/allocations/${port}`, {
 			api: 'archon',
 			method: 'PUT',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 			params: { name },
 		})
 	}
 
 	/**
 	 * Delete an allocation
-	 * DELETE /modrinth/v0/servers/:id/allocations/:port
+	 * DELETE /Bbsmc/v0/servers/:id/allocations/:port
 	 */
 	public async deleteAllocation(serverId: string, port: number): Promise<void> {
 		await this.client.request(`/servers/${serverId}/allocations/${port}`, {
 			api: 'archon',
 			method: 'DELETE',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 		})
 	}
 
 	/**
 	 * Check if a subdomain is available
-	 * GET /modrinth/v0/subdomains/:subdomain/isavailable
+	 * GET /Bbsmc/v0/subdomains/:subdomain/isavailable
 	 */
 	public async checkSubdomainAvailability(subdomain: string): Promise<{ available: boolean }> {
 		return this.client.request<{ available: boolean }>(`/subdomains/${subdomain}/isavailable`, {
 			api: 'archon',
 			method: 'GET',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 		})
 	}
 
 	/**
 	 * Change a server's subdomain
-	 * POST /modrinth/v0/servers/:id/subdomain
+	 * POST /Bbsmc/v0/servers/:id/subdomain
 	 */
 	public async changeSubdomain(serverId: string, subdomain: string): Promise<void> {
 		await this.client.request(`/servers/${serverId}/subdomain`, {
 			api: 'archon',
 			method: 'POST',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 			body: { subdomain },
 		})
 	}
 
 	/**
 	 * Get startup configuration for a server
-	 * GET /modrinth/v0/servers/:id/startup
+	 * GET /Bbsmc/v0/servers/:id/startup
 	 */
 	public async getStartupConfig(serverId: string): Promise<Archon.Servers.v0.StartupConfig> {
 		return this.client.request<Archon.Servers.v0.StartupConfig>(`/servers/${serverId}/startup`, {
 			api: 'archon',
 			method: 'GET',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 		})
 	}
 
 	/**
 	 * Update startup configuration for a server
-	 * POST /modrinth/v0/servers/:id/startup
+	 * POST /Bbsmc/v0/servers/:id/startup
 	 */
 	public async updateStartupConfig(
 		serverId: string,
@@ -302,20 +302,20 @@ export class ArchonServersV0Module extends AbstractModule {
 		await this.client.request(`/servers/${serverId}/startup`, {
 			api: 'archon',
 			method: 'POST',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 			body: config,
 		})
 	}
 
 	/**
 	 * Dismiss a server notice
-	 * POST /modrinth/v0/servers/:id/notices/:noticeId/dismiss
+	 * POST /Bbsmc/v0/servers/:id/notices/:noticeId/dismiss
 	 */
 	public async dismissNotice(serverId: string, noticeId: number): Promise<void> {
 		await this.client.request(`/servers/${serverId}/notices/${noticeId}/dismiss`, {
 			api: 'archon',
 			method: 'POST',
-			version: 'modrinth/v0',
+			version: 'Bbsmc/v0',
 		})
 	}
 }

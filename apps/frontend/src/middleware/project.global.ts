@@ -1,9 +1,9 @@
 import { useGeneratedState } from '~/composables/generated'
 import { projectQueryOptions } from '~/composables/queries/project'
 import { useAppQueryClient } from '~/composables/query-client'
-import { createModrinthClient } from '~/helpers/api.ts'
+import { createBbsmcClient } from '~/helpers/api.ts'
 import { getProjectTypeForUrlShorthand } from '~/helpers/projects.js'
-import { useServerModrinthClient } from '~/server/utils/api-client'
+import { useServerBbsmcClient } from '~/server/utils/api-client'
 
 // All valid project type URL segments
 const PROJECT_TYPES = [
@@ -35,7 +35,7 @@ export default defineNuxtRouteMiddleware(async (to) => {
 	if (import.meta.client) startLoading()
 
 	try {
-		// Fetch v2 and v3 in parallel â€” cache both for the page's useQuery calls
+		// Fetch v2 and v3 in parallel â€?cache both for the page's useQuery calls
 		const [project, projectV3] = await Promise.all([
 			queryClient.fetchQuery(projectQueryOptions.v2(projectId, client)),
 			queryClient.fetchQuery(projectQueryOptions.v3(projectId, client)),
@@ -90,13 +90,13 @@ export default defineNuxtRouteMiddleware(async (to) => {
 async function getProjectMiddlewareClient() {
 	if (import.meta.server) {
 		const authToken = useCookie('auth-token')
-		return useServerModrinthClient({ authToken: authToken.value || undefined })
+		return useServerBbsmcClient({ authToken: authToken.value || undefined })
 	}
 
 	const auth = await useAuth()
 	const config = useRuntimeConfig()
 
-	return createModrinthClient(auth, {
+	return createBbsmcClient(auth, {
 		apiBaseUrl: config.public.apiBaseUrl.replace('/v2/', '/'),
 		archonBaseUrl: config.public.pyroBaseUrl.replace('/v2/', '/'),
 		sharedInstancesBaseUrl: config.public.sharedInstancesBaseUrl,

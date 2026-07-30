@@ -140,7 +140,7 @@
 </template>
 
 <script setup lang="ts">
-import { XIcon } from '@modrinth/assets'
+import { XIcon } from '@Bbsmc/assets'
 import { computed, nextTick, onUnmounted, ref } from 'vue'
 
 import { useVIntl } from '../../composables/i18n'
@@ -463,7 +463,7 @@ defineOptions({
 	}
 }
 
-.modrinth-parent__no-modal-blurs {
+.Bbsmc-parent__no-modal-blurs {
 	.modal-overlay {
 		backdrop-filter: none;
 	}

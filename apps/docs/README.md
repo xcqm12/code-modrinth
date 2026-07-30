@@ -1,6 +1,6 @@
-# Modrinth Documentation
+# Bbsmc Documentation
 
-Welcome to the Modrinth documentation!
+Welcome to the Bbsmc documentation!
 
 ## Development
 

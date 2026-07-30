@@ -12,10 +12,10 @@
 			class="absolute left-0 border-0 border-l border-dashed transition-all"
 			:class="
 				activeGroup?.id === group.id
-					? isModrinthEventGroup(group)
+					? isBbsmcEventGroup(group)
 						? 'border-blue opacity-80'
 						: 'border-contrast opacity-60'
-					: isModrinthEventGroup(group)
+					: isBbsmcEventGroup(group)
 						? 'border-blue opacity-50'
 						: 'border-secondary opacity-40'
 			"
@@ -38,7 +38,7 @@
 			class="pointer-events-auto absolute left-0 top-0 inline-flex h-5 min-w-5 cursor-default items-center justify-center gap-1 rounded-full bg-surface-3 px-1 transition-colors focus-visible:border-brand focus-visible:text-contrast"
 			:class="
 				activeGroup?.id === group.id
-					? isModrinthEventGroup(group)
+					? isBbsmcEventGroup(group)
 						? 'border-blue text-contrast'
 						: 'border-brand text-contrast'
 					: 'text-secondary'
@@ -164,9 +164,9 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { ExternalIcon, InfoIcon, TagCategoryFlagIcon } from '@modrinth/assets'
-import { IntlFormatted, useScrollIndicator, useVIntl } from '@modrinth/ui'
+import type { Labrinth } from '@Bbsmc/api-client'
+import { ExternalIcon, InfoIcon, TagCategoryFlagIcon } from '@Bbsmc/assets'
+import { IntlFormatted, useScrollIndicator, useVIntl } from '@Bbsmc/ui'
 
 import type {
 	AnalyticsDashboardStat,
@@ -353,7 +353,7 @@ const visibleEvents = computed<PositionedEvent[]>(() => {
 })
 
 const eventGroups = computed<EventGroup[]>(() => {
-	const groups = mergeProjectGroupsForModrinthEventDistance(
+	const groups = mergeProjectGroupsForBbsmcEventDistance(
 		mergeNearbyEventGroups(buildInitialEventGroups(visibleEvents.value)),
 	)
 	const resolvedGroups = groups.map((group) => ({
@@ -419,22 +419,22 @@ function mergeNearbyEventGroupsOnce(groups: EventGroup[]) {
 	}
 }
 
-function mergeProjectGroupsForModrinthEventDistance(groups: EventGroup[]): EventGroup[] {
+function mergeProjectGroupsForBbsmcEventDistance(groups: EventGroup[]): EventGroup[] {
 	let nextGroups = groups
 
 	while (true) {
-		const result = mergeProjectGroupsForModrinthEventDistanceOnce(nextGroups)
+		const result = mergeProjectGroupsForBbsmcEventDistanceOnce(nextGroups)
 		if (!result.didMerge) return nextGroups
 
 		nextGroups = mergeNearbyEventGroups(result.groups).sort(compareEventGroupsByTarget)
 	}
 }
 
-function mergeProjectGroupsForModrinthEventDistanceOnce(groups: EventGroup[]) {
+function mergeProjectGroupsForBbsmcEventDistanceOnce(groups: EventGroup[]) {
 	const clusterLayouts = getCollisionClusterLayouts(groups)
 
 	for (const layout of clusterLayouts) {
-		const projectGroupsToMerge = getProjectGroupsToMergeForModrinthEventDistance(layout)
+		const projectGroupsToMerge = getProjectGroupsToMergeForBbsmcEventDistance(layout)
 		if (projectGroupsToMerge.length <= 1) continue
 
 		return {
@@ -449,21 +449,21 @@ function mergeProjectGroupsForModrinthEventDistanceOnce(groups: EventGroup[]) {
 	}
 }
 
-function getProjectGroupsToMergeForModrinthEventDistance(layout: CollisionClusterLayout) {
+function getProjectGroupsToMergeForBbsmcEventDistance(layout: CollisionClusterLayout) {
 	const placements = getCollisionClusterPlacements(layout)
 	const projectPlacements = placements.filter((placement) => isProjectEventGroup(placement.group))
 	if (projectPlacements.length <= 1) return []
 
 	const distanceLimit = Math.max(...projectPlacements.map((placement) => placement.markerWidth / 2))
-	const overLimitPlacement = getMostDisplacedModrinthPlacement(placements, distanceLimit)
+	const overLimitPlacement = getMostDisplacedBbsmcPlacement(placements, distanceLimit)
 	if (!overLimitPlacement) return []
 
-	const displacedModrinthPlacement = overLimitPlacement
-	const offset = displacedModrinthPlacement.markerX - displacedModrinthPlacement.group.x
+	const displacedBbsmcPlacement = overLimitPlacement
+	const offset = displacedBbsmcPlacement.markerX - displacedBbsmcPlacement.group.x
 	const projectPlacementsOnOffsetSide = projectPlacements.filter((placement) =>
 		offset > 0
-			? placement.index < displacedModrinthPlacement.index
-			: placement.index > displacedModrinthPlacement.index,
+			? placement.index < displacedBbsmcPlacement.index
+			: placement.index > displacedBbsmcPlacement.index,
 	)
 	const placementsToMerge =
 		projectPlacementsOnOffsetSide.length > 1 ? projectPlacementsOnOffsetSide : projectPlacements
@@ -471,7 +471,7 @@ function getProjectGroupsToMergeForModrinthEventDistance(layout: CollisionCluste
 	return placementsToMerge.map((placement) => placement.group)
 }
 
-function getMostDisplacedModrinthPlacement(
+function getMostDisplacedBbsmcPlacement(
 	placements: CollisionClusterPlacement[],
 	distanceLimit: number,
 ) {
@@ -479,7 +479,7 @@ function getMostDisplacedModrinthPlacement(
 	let overLimitPlacement: CollisionClusterPlacement | null = null
 
 	for (const placement of placements) {
-		if (!isModrinthEventGroup(placement.group)) continue
+		if (!isBbsmcEventGroup(placement.group)) continue
 
 		const overage = Math.abs(placement.markerX - placement.group.x) - distanceLimit
 		if (overage <= largestOverage) continue
@@ -601,8 +601,8 @@ function getEventGroupKey(event: AnalyticsChartEvent): string {
 	return event.groupKey ?? getEventMarkerIcon(event)
 }
 
-function isModrinthEventGroup(group: EventGroup) {
-	return group.groupKey === 'modrinth'
+function isBbsmcEventGroup(group: EventGroup) {
+	return group.groupKey === 'Bbsmc'
 }
 
 function isProjectEventGroup(group: EventGroup) {

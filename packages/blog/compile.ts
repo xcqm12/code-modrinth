@@ -1,5 +1,5 @@
-import { compareImportSources } from '@modrinth/tooling-config/script-utils/import-sort'
-import { md } from '@modrinth/utils'
+import { compareImportSources } from '@Bbsmc/tooling-config/script-utils/import-sort'
+import { md } from '@Bbsmc/utils'
 import { promises as fs } from 'fs'
 import { glob } from 'glob'
 import matter from 'gray-matter'
@@ -73,7 +73,7 @@ async function compileArticles() {
 			...rest
 		} = data
 		if (!title || !summary || !date) {
-			console.error(`‚ùå  Missing required frontmatter in ${file}. Required: title, summary, date`)
+			console.error(`‚ù? Missing required frontmatter in ${file}. Required: title, summary, date`)
 			process.exit(1)
 		}
 
@@ -232,12 +232,12 @@ async function generateRssFeed(articles): Promise<void> {
 	}
 
 	const feed = new RSS({
-		title: 'Modrinth News',
-		description: 'Keep up-to-date on the latest news from Modrinth.',
+		title: 'Bbsmc News',
+		description: 'Keep up-to-date on the latest news from Bbsmc.',
 		feed_url: `${SITE_URL}/news/feed/rss.xml`,
 		site_url: `${SITE_URL}/news/`,
 		language: 'en',
-		generator: '@modrinth/blog',
+		generator: '@Bbsmc/blog',
 	})
 
 	for (const article of sorted) {
@@ -280,7 +280,7 @@ async function deleteDirContents(dir: string) {
 			}),
 		)
 	} catch (error) {
-		console.error(`‚ùå  Error deleting contents of ${dir}:`, error)
+		console.error(`‚ù? Error deleting contents of ${dir}:`, error)
 		throw error
 	}
 }
@@ -301,6 +301,6 @@ async function main() {
 }
 
 main().catch((e) => {
-	console.error('‚ùå  Error in compile.ts:', e)
+	console.error('‚ù? Error in compile.ts:', e)
 	process.exit(1)
 })

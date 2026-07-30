@@ -2,7 +2,7 @@
 applyTo: '**/*.vue'
 ---
 
-You are given a Nuxt/Vue single-file component (.vue). Your task is to convert every hard-coded natural-language string in the <template> into our localization system using vue-i18n with utilities from `@modrinth/ui`.
+You are given a Nuxt/Vue single-file component (.vue). Your task is to convert every hard-coded natural-language string in the <template> into our localization system using vue-i18n with utilities from `@Bbsmc/ui`.
 
 Please follow these rules precisely:
 
@@ -13,17 +13,17 @@ Please follow these rules precisely:
 
 2. Create message definitions
 
-- In the <script setup> block, import `defineMessage` or `defineMessages` from `@modrinth/ui`.
+- In the <script setup> block, import `defineMessage` or `defineMessages` from `@Bbsmc/ui`.
 - For each extracted string, define a message with a unique `id` (use a descriptive prefix based on the component path, e.g. `auth.welcome.long-title`) and a `defaultMessage` equal to the original English string.
   Example:
   const messages = defineMessages({
   welcomeTitle: { id: 'auth.welcome.title', defaultMessage: 'Welcome' },
-  welcomeDescription: { id: 'auth.welcome.description', defaultMessage: 'You're now part of the communityâ€¦' },
+  welcomeDescription: { id: 'auth.welcome.description', defaultMessage: 'You're now part of the communityâ€? },
   })
 
 3. Handle variables and ICU formats
 
-- Replace dynamic parts with ICU placeholders: "Hello, ${user.name}!" â†’ `{name}` and defaultMessage: 'Hello, {name}!'
+- Replace dynamic parts with ICU placeholders: "Hello, ${user.name}!" â†?`{name}` and defaultMessage: 'Hello, {name}!'
 - For numbers/dates/times, use ICU options (e.g., currency): `{price, number, ::currency/USD}`
 - For plurals/selects, use ICU: `'{count, plural, one {# message} other {# messages}}'`
 
@@ -31,7 +31,7 @@ Please follow these rules precisely:
 
 - In `defaultMessage`, wrap link/markup ranges with tags, e.g.:
   "By creating an account, you agree to our <terms-link>Terms</terms-link> and <privacy-link>Privacy Policy</privacy-link>."
-- Render rich-text messages with `<IntlFormatted>` from `@modrinth/ui` using named slots:
+- Render rich-text messages with `<IntlFormatted>` from `@Bbsmc/ui` using named slots:
   <IntlFormatted :message-id="messages.tosLabel">
     <template #terms-link="{ children }">
       <NuxtLink to="/terms">
@@ -44,18 +44,18 @@ Please follow these rules precisely:
       </NuxtLink>
     </template>
   </IntlFormatted>
-- For simple emphasis: `'Welcome to <strong>Modrinth</strong>!'` with a slot:
+- For simple emphasis: `'Welcome to <strong>Bbsmc</strong>!'` with a slot:
   <template #strong="{ children }">
     <strong><component :is="() => children" /></strong>
   </template>
-- For more complex child handling, use `normalizeChildren` from `@modrinth/ui`:
+- For more complex child handling, use `normalizeChildren` from `@Bbsmc/ui`:
   <template #bold="{ children }">
     <strong><component :is="() => normalizeChildren(children)" /></strong>
   </template>
 
 5. Formatting in templates
 
-- Import and use `useVIntl()` from `@modrinth/ui`; prefer `formatMessage` for simple strings:
+- Import and use `useVIntl()` from `@Bbsmc/ui`; prefer `formatMessage` for simple strings:
   `const { formatMessage } = useVIntl()`
   `<button>{{ formatMessage(messages.welcomeTitle) }}</button>`
 - Pass variables as a second argument:
@@ -71,7 +71,7 @@ Please follow these rules precisely:
 
 8. Update imports and remove literals
 
-- Ensure imports from `@modrinth/ui` are present: `defineMessage`/`defineMessages`, `useVIntl`, `IntlFormatted`, and optionally `normalizeChildren`.
+- Ensure imports from `@Bbsmc/ui` are present: `defineMessage`/`defineMessages`, `useVIntl`, `IntlFormatted`, and optionally `normalizeChildren`.
 - Replace all hard-coded strings with `formatMessage(...)` or `<IntlFormatted>` and remove the literals.
 
 9. Preserve functionality

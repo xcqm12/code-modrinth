@@ -1,5 +1,5 @@
-import { LinkIcon } from '@modrinth/assets'
-import { injectProjectPageContext } from '@modrinth/ui'
+import { LinkIcon } from '@Bbsmc/assets'
+import { injectProjectPageContext } from '@Bbsmc/ui'
 import type { Ref } from 'vue'
 import { computed } from 'vue'
 

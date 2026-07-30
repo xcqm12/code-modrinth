@@ -26,7 +26,7 @@ class AdsConsentController {
 		if (!cmpMain) {
 			this.clearPopupReadinessTimeout()
 			if (this.state.phase === 'idle') {
-				document.documentElement.classList.remove('modrinth-ads-consent-overlay')
+				document.documentElement.classList.remove('Bbsmc-ads-consent-overlay')
 			} else if (this.state.phase !== 'submitting-consent' && this.state.phase !== 'finishing') {
 				this.finishConsentFlow()
 			}
@@ -35,7 +35,7 @@ class AdsConsentController {
 
 		if (this.state.phase !== 'idle') return
 
-		document.documentElement.classList.add('modrinth-ads-consent-overlay')
+		document.documentElement.classList.add('Bbsmc-ads-consent-overlay')
 		const variant = this.detectVariant()
 		if (!areConsentControlsPresent(variant)) {
 			this.waitForConsentControls()
@@ -197,7 +197,7 @@ class AdsConsentController {
 
 	/** @returns {Promise<void>} */
 	async reopenPreferences() {
-		if (document.documentElement.classList.contains('modrinth-ads-consent-overlay')) {
+		if (document.documentElement.classList.contains('Bbsmc-ads-consent-overlay')) {
 			try {
 				await this.openPreferences()
 			} catch {
@@ -258,19 +258,19 @@ class AdsConsentController {
 
 	/** @returns {void} */
 	preparePreferences() {
-		document.documentElement.classList.add('modrinth-ads-consent-preferences')
-		document.documentElement.classList.remove('modrinth-ads-consent-preferences-visible')
+		document.documentElement.classList.add('Bbsmc-ads-consent-preferences')
+		document.documentElement.classList.remove('Bbsmc-ads-consent-preferences-visible')
 	}
 
 	/** @returns {void} */
 	revealPreferences() {
-		document.documentElement.classList.add('modrinth-ads-consent-preferences-visible')
+		document.documentElement.classList.add('Bbsmc-ads-consent-preferences-visible')
 	}
 
 	/** @returns {void} */
 	concealPreferences() {
-		document.documentElement.classList.remove('modrinth-ads-consent-preferences')
-		document.documentElement.classList.remove('modrinth-ads-consent-preferences-visible')
+		document.documentElement.classList.remove('Bbsmc-ads-consent-preferences')
+		document.documentElement.classList.remove('Bbsmc-ads-consent-preferences-visible')
 	}
 
 	/** @returns {Promise<void>} */
@@ -321,8 +321,8 @@ class AdsConsentController {
 	setPopupMode(mode) {
 		const shown = mode !== 'hidden'
 		const hidden = mode === 'hidden'
-		document.documentElement.classList.toggle('modrinth-ads-consent-overlay', shown)
-		document.documentElement.classList.toggle('modrinth-ads-consent-fallback', mode === 'fallback')
+		document.documentElement.classList.toggle('Bbsmc-ads-consent-overlay', shown)
+		document.documentElement.classList.toggle('Bbsmc-ads-consent-fallback', mode === 'fallback')
 		if (hidden) this.concealPreferences()
 		void invokeAdsConsentPopupMode(mode)
 	}

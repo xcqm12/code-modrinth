@@ -74,8 +74,8 @@
   "app.action-bar.install.summary.minecraft-setup-failed": {
     "message": "Podešavanje Minecrafta nije uspelo"
   },
-  "app.action-bar.install.summary.modrinth-unreachable": {
-    "message": "Nije bilo moguće povezati se sa Modrinth-om"
+  "app.action-bar.install.summary.Bbsmc-unreachable": {
+    "message": "Nije bilo moguće povezati se sa Bbsmc-om"
   },
   "app.action-bar.install.summary.no-write-permission": {
     "message": "Nema dozvole za pisanje"
@@ -132,7 +132,7 @@
     "message": "Napredno renderovanje"
   },
   "app.appearance-settings.color-theme.description": {
-    "message": "Izaberi svoju preferiranu temu boja za Modrinth aplikaciju."
+    "message": "Izaberi svoju preferiranu temu boja za Bbsmc aplikaciju."
   },
   "app.appearance-settings.color-theme.title": {
     "message": "Tema boje"
@@ -156,7 +156,7 @@
     "message": "Sakrij ime"
   },
   "app.appearance-settings.jump-back-into-worlds.description": {
-    "message": "Uključuje nedavne svetove u odeljku „Povratak“ na početnoj stranici."
+    "message": "Uključuje nedavne svetove u odeljku „Povratak�?na početnoj stranici."
   },
   "app.appearance-settings.jump-back-into-worlds.title": {
     "message": "Vrati se u svetove"
@@ -192,7 +192,7 @@
     "message": "Prebaci bočnu traku"
   },
   "app.appearance-settings.unknown-pack-warning.description": {
-    "message": "Ako pokušaš da instaliraš datoteku Modrinth Pack datoteke (.mrpack) koja nije hostovana na Modrinthu, uverićemo se da razumeš rizike pre nego što je instaliraš."
+    "message": "Ako pokušaš da instaliraš datoteku Bbsmc Pack datoteke (.mrpack) koja nije hostovana na Bbsmcu, uverićemo se da razumeš rizike pre nego što je instaliraš."
   },
   "app.appearance-settings.unknown-pack-warning.title": {
     "message": "Upozoti me prije instalacije nepoznatih modpackova"
@@ -429,19 +429,19 @@
     "message": "Instaliraj"
   },
   "app.modal.install-to-play.invite-warning": {
-    "message": "Ovu pozivnicu je kreirao drugi korisnik Modrintha, a ne sam Modrinth. Prihvataj pozivnice samo od osoba kojima veruješ."
+    "message": "Ovu pozivnicu je kreirao drugi korisnik Bbsmca, a ne sam Bbsmc. Prihvataj pozivnice samo od osoba kojima veruješ."
   },
   "app.modal.install-to-play.mod-count": {
     "message": "{count, plural, one {# mod} other {# modova}}"
   },
   "app.modal.install-to-play.reviewed-files": {
-    "message": "Datoteka se pregleda samo ako je postavljena na Modrinth, bez obzira na njen format (uključujući .mrpack)."
+    "message": "Datoteka se pregleda samo ako je postavljena na Bbsmc, bez obzira na njen format (uključujući .mrpack)."
   },
   "app.modal.install-to-play.shared-instance": {
     "message": "Deljena instanca"
   },
   "app.modal.install-to-play.unknown-files-description": {
-    "message": "Ovaj modpack servera sadrži datoteke koje nisu postavljene na Modrinth-u. Preporučujemo da instaliraš datoteke samo iz izvora kojima veruješ."
+    "message": "Ovaj modpack servera sadrži datoteke koje nisu postavljene na Bbsmc-u. Preporučujemo da instaliraš datoteke samo iz izvora kojima veruješ."
   },
   "app.modal.install-to-play.unknown-files-warning": {
     "message": "Upozorenje nepoznatih datoteka"
@@ -611,14 +611,14 @@
   "app.skins.section.minecon-earth-2017": {
     "message": "MINECON Earth 2017"
   },
-  "app.skins.section.modrinth": {
-    "message": "Modrinth"
+  "app.skins.section.Bbsmc": {
+    "message": "Bbsmc"
   },
-  "app.skins.section.modrinth-pride": {
-    "message": "Modrinth Ponos"
+  "app.skins.section.Bbsmc-pride": {
+    "message": "Bbsmc Ponos"
   },
-  "app.skins.section.modrinth-pride.tooltip": {
-    "message": "Dobio si ove skinove za donaciju za prikupljanje sredstava Modrinth Ponos tokom Meseca ponosa."
+  "app.skins.section.Bbsmc-pride.tooltip": {
+    "message": "Dobio si ove skinove za donaciju za prikupljanje sredstava Bbsmc Ponos tokom Meseca ponosa."
   },
   "app.skins.section.mounts-of-mayhem": {
     "message": "Mounts of Mayhem"
@@ -642,10 +642,10 @@
     "message": "Prijavi se"
   },
   "app.skins.sign-in.description": {
-    "message": "Prijavi se na svoj Minecraft račun da bi koristio funkcije upravljanja skinovima u Modrinth aplikaciji."
+    "message": "Prijavi se na svoj Minecraft račun da bi koristio funkcije upravljanja skinovima u Bbsmc aplikaciji."
   },
   "app.skins.sign-in.rinthbot-alt": {
-    "message": "Uzbuđeni Modrinth Bot"
+    "message": "Uzbuđeni Bbsmc Bot"
   },
   "app.skins.sign-in.title": {
     "message": "Molimo prijavi se"
@@ -654,13 +654,13 @@
     "message": "Selektor skina"
   },
   "app.update-popup.body.download-complete": {
-    "message": "Preuzimanje Modrinth aplikacije v{version} je završeno. Ponovo učitaj da bi ažurirao sada ili automatski kada zatvoriš Modrinth aplikaciju."
+    "message": "Preuzimanje Bbsmc aplikacije v{version} je završeno. Ponovo učitaj da bi ažurirao sada ili automatski kada zatvoriš Bbsmc aplikaciju."
   },
   "app.update-popup.body.linux": {
-    "message": "Dostupna je Modrinth aplikacija v{version}. Koristi menadžer paketa da bi ažurirao za najnovije funkcije i ispravke!"
+    "message": "Dostupna je Bbsmc aplikacija v{version}. Koristi menadžer paketa da bi ažurirao za najnovije funkcije i ispravke!"
   },
   "app.update-popup.body.metered": {
-    "message": "Modrinth aplikacija v{version} je sada dostupna! Pošto si na mreži sa ograničenjem interneta, nismo je automatski preuzeli."
+    "message": "Bbsmc aplikacija v{version} je sada dostupna! Pošto si na mreži sa ograničenjem interneta, nismo je automatski preuzeli."
   },
   "app.update-popup.changelog": {
     "message": "Spisak promena"
@@ -684,7 +684,7 @@
     "message": "Verzija {version} je uspešno instalirana!"
   },
   "app.world.server-modal.placeholder-address": {
-    "message": "primer.modrinth.gg"
+    "message": "primer.Bbsmc.gg"
   },
   "app.world.server-modal.select-an-option": {
     "message": "Izaberi opciju"
@@ -717,10 +717,10 @@
     "message": "Možda se razlikuje od njihovog korisničkog imena za Minecraft!"
   },
   "friends.add-friend.username.placeholder": {
-    "message": "Unesite korisničko ime za Modrinthu..."
+    "message": "Unesite korisničko ime za Bbsmcu..."
   },
   "friends.add-friend.username.title": {
-    "message": "Koje je korisničko ime tvog prijatelja u Modrinthu?"
+    "message": "Koje je korisničko ime tvog prijatelja u Bbsmcu?"
   },
   "friends.add-friends-to-share": {
     "message": "<link>Dodaj prijatelje</link> da vidiš šta igraju!"
@@ -762,7 +762,7 @@
     "message": "{title} - {count}"
   },
   "friends.sign-in-to-add-friends": {
-    "message": "<link>Prijavi se na Modrinth račun</link> da bi dodao prijatelje i vidio šta igraju!"
+    "message": "<link>Prijavi se na Bbsmc račun</link> da bi dodao prijatelje i vidio šta igraju!"
   },
   "instance.add-server.add-and-play": {
     "message": "Dodaj i igraj"

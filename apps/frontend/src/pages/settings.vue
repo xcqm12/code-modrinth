@@ -116,15 +116,15 @@ import {
 	ShieldIcon,
 	ToggleRightIcon,
 	UserIcon,
-} from '@modrinth/assets'
+} from '@Bbsmc/assets'
 import {
 	commonMessages,
 	commonSettingsMessages,
 	defineMessages,
 	NormalPage,
 	useVIntl,
-} from '@modrinth/ui'
-import { isStaff } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import { isStaff } from '@Bbsmc/utils'
 
 import NavStack from '~/components/ui/NavStack.vue'
 

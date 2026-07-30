@@ -100,7 +100,7 @@ function decodeLevel(code: LogLevelCode): LogLevel | null {
 
 // Columnar ring buffer: stores text and level in parallel arrays instead of
 // LogLine objects, eliminating ~40 bytes of object header per line (~20MB
-// saved at 500k lines). Lines are stored by value â€” get(i) returns a fresh
+// saved at 500k lines). Lines are stored by value â€?get(i) returns a fresh
 // LogLine each call, so consumers must not rely on reference identity.
 class ColumnarRingBuffer {
 	texts: (string | undefined)[]
@@ -415,4 +415,4 @@ export function createConsoleState() {
 	}
 }
 
-export const useModrinthServersConsole = createGlobalState(createConsoleState)
+export const useBbsmcServersConsole = createGlobalState(createConsoleState)

@@ -9,11 +9,11 @@ Also read @packages/ui/CLAUDE.md for color token mapping and component conventio
 
 ## Steps
 
-1. **Parse the Figma URL** from `$ARGUMENTS` â€” extract the `fileKey` and `nodeId`. Convert `-` to `:` in the node ID.
+1. **Parse the Figma URL** from `$ARGUMENTS` â€?extract the `fileKey` and `nodeId`. Convert `-` to `:` in the node ID.
 2. **Read the standards above** for the available tools, adaptation rules, and color usage.
 3. **Call `get_design_context`** with the extracted `nodeId` and `fileKey`, using `clientLanguages: "typescript,html,css"` and `clientFrameworks: "vue"`. This is always the first tool to call.
-5. **Adapt the output to the Modrinth codebase:**
-   - Map Figma color variables to `surface-*` / `text-*` tokens â€” never use Figma's aliased names directly.
+5. **Adapt the output to the Bbsmc codebase:**
+   - Map Figma color variables to `surface-*` / `text-*` tokens â€?never use Figma's aliased names directly.
    - Check `packages/ui/src/components/` for existing components that match elements in the design (buttons, cards, modals, inputs, etc.).
    - Check `packages/assets/styles/variables.scss` for tokens not exposed in Figma.
    - Match spacing values exactly from the design.

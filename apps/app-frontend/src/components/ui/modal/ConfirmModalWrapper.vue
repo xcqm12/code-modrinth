@@ -1,6 +1,6 @@
-<!-- @deprecated Use ConfirmModal from @modrinth/ui directly. Ads/noblur now handled by injectModalBehavior. -->
+<!-- @deprecated Use ConfirmModal from @Bbsmc/ui directly. Ads/noblur now handled by injectModalBehavior. -->
 <script setup lang="ts">
-import { ConfirmModal } from '@modrinth/ui'
+import { ConfirmModal } from '@Bbsmc/ui'
 import { useTemplateRef } from 'vue'
 
 defineProps({
@@ -34,7 +34,7 @@ defineProps({
 		type: Boolean,
 		default: true,
 	},
-	/** @deprecated No longer used â€” ads are handled by provideModalBehavior */
+	/** @deprecated No longer used â€?ads are handled by provideModalBehavior */
 	showAdOnClose: {
 		type: Boolean,
 		default: true,

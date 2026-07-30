@@ -8,13 +8,11 @@
 			<div>
 				<div>
 					<strong>
-						{{ session.os ?? formatMessage(messages.unknownOsLabel) }} â‹…
-						{{ session.platform ?? formatMessage(messages.unknownPlatformLabel) }} â‹…
-						{{ session.ip }}
+						{{ session.os ?? formatMessage(messages.unknownOsLabel) }} â‹?						{{ session.platform ?? formatMessage(messages.unknownPlatformLabel) }} â‹?						{{ session.ip }}
 					</strong>
 				</div>
 				<div>
-					<template v-if="session.city">{{ session.city }}, {{ session.country }} â‹… </template>
+					<template v-if="session.city">{{ session.city }}, {{ session.country }} â‹?</template>
 					<span v-tooltip="formatDateTime(session.last_login)">
 						{{
 							formatMessage(messages.lastAccessedAgoLabel, {
@@ -22,8 +20,7 @@
 							})
 						}}
 					</span>
-					â‹…
-					<span v-tooltip="formatDateTime(session.created)">
+					â‹?					<span v-tooltip="formatDateTime(session.created)">
 						{{
 							formatMessage(messages.createdAgoLabel, {
 								ago: formatRelativeTime(session.created),
@@ -44,25 +41,25 @@
 	</div>
 </template>
 <script setup>
-import { XIcon } from '@modrinth/assets'
+import { XIcon } from '@Bbsmc/assets'
 import {
 	ButtonStyled,
 	commonMessages,
 	commonSettingsMessages,
 	defineMessages,
-	injectModrinthClient,
+	injectBbsmcClient,
 	injectNotificationManager,
 	useFormatDateTime,
 	useRelativeTime,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@Bbsmc/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 
 definePageMeta({
 	middleware: 'auth',
 })
 
-const client = injectModrinthClient()
+const client = injectBbsmcClient()
 const queryClient = useQueryClient()
 const { addNotification } = injectNotificationManager()
 const { formatMessage } = useVIntl()
@@ -88,7 +85,7 @@ const messages = defineMessages({
 	sessionsDescription: {
 		id: 'settings.sessions.description',
 		defaultMessage:
-			"Here are all the devices that are currently logged in with your Modrinth account. You can log out of each one individually.\n\nIf you see an entry you don't recognize, log out of that device and change your Modrinth account password immediately.",
+			"Here are all the devices that are currently logged in with your Bbsmc account. You can log out of each one individually.\n\nIf you see an entry you don't recognize, log out of that device and change your Bbsmc account password immediately.",
 	},
 	lastAccessedAgoLabel: {
 		id: 'settings.sessions.last-accessed-ago',
@@ -105,7 +102,7 @@ const messages = defineMessages({
 })
 
 useHead({
-	title: () => `${formatMessage(commonSettingsMessages.sessions)} - Modrinth`,
+	title: () => `${formatMessage(commonSettingsMessages.sessions)} - Bbsmc`,
 })
 
 const { data: sessions } = useQuery({

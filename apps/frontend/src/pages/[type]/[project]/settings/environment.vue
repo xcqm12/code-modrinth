@@ -25,14 +25,14 @@
 </template>
 
 <script setup lang="ts">
-import { SettingsIcon } from '@modrinth/assets'
+import { SettingsIcon } from '@Bbsmc/assets'
 import {
 	ButtonStyled,
 	EnvironmentMigration,
 	injectProjectPageContext,
 	LoadingIndicator,
-} from '@modrinth/ui'
-import { isStaff } from '@modrinth/utils'
+} from '@Bbsmc/ui'
+import { isStaff } from '@Bbsmc/utils'
 
 const { currentMember, projectV2, projectV3 } = injectProjectPageContext()
 
