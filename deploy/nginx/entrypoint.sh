@@ -1,8 +1,12 @@
 #!/bin/sh
 set -e
 
-# nginx:alpine doesn't ship openssl - install it for self-signed cert generation
-apk add --no-cache openssl >/dev/null 2>&1
+# Install openssl if missing (nginx:alpine doesn't ship it)
+if ! command -v openssl >/dev/null 2>&1; then
+    echo "Installing openssl..."
+    apk add --no-cache openssl >/dev/null 2>&1 || { echo "Failed to install openssl"; exit 1; }
+    echo "openssl installed"
+fi
 
 # Generate self-signed placeholder certificates for any domain that lacks real ones.
 DOMAINS="bbsmc.org.cn api.bbsmc.org.cn cdn.bbsmc.org.cn admin.bbsmc.org.cn launcher-meta.bbsmc.org.cn www.bbsmc.org.cn"
@@ -15,7 +19,7 @@ for domain in $DOMAINS; do
     if [ ! -f "$cert_file" ] || [ ! -f "$key_file" ]; then
         echo "Generating self-signed certificate for $domain..."
         mkdir -p "$cert_dir"
-        openssl ecparam -genkey -name prime256v1 -out "$key_file" && \
+        openssl ecparam -genkey -name prime256v1 -out "$key_file"
         openssl req -new -x509 -days 365 \
             -key "$key_file" \
             -out "$cert_file" \

@@ -1,4 +1,6 @@
-FROM node:24-alpine AS builder
+ARG NODE_VERSION=24-alpine
+
+FROM node:${NODE_VERSION} AS builder
 WORKDIR /app
 RUN corepack enable && corepack prepare pnpm@10.33.2 --activate
 
@@ -13,23 +15,28 @@ COPY packages/tooling-config packages/tooling-config
 COPY patches patches
 COPY apps/frontend apps/frontend
 
-# 使用生产环境配置
 RUN cp apps/frontend/.env.prod apps/frontend/.env
 
 RUN pnpm install --frozen-lockfile
 
-ENV NODE_OPTIONS="--max-old-space-size=7168"
+ARG NODE_OPTIONS="--max-old-space-size=7168"
+ARG BASE_URL=https://api.bbsmc.org.cn/v2/
+ARG BROWSER_BASE_URL=https://api.bbsmc.org.cn/v2/
+ARG PYRO_BASE_URL=https://archon.bbsmc.org.cn
+ARG SHARED_INSTANCES_API_BASE_URL=https://shared-instances.bbsmc.org.cn
+
+ENV NODE_OPTIONS=${NODE_OPTIONS}
 ENV NITRO_PRESET=node_server
 ENV BUILD_ENV=production
 ENV PREVIEW=true
-ENV BASE_URL=https://api.bbsmc.org.cn/v2/
-ENV BROWSER_BASE_URL=https://api.bbsmc.org.cn/v2/
-ENV PYRO_BASE_URL=https://archon.bbsmc.org.cn
-ENV SHARED_INSTANCES_API_BASE_URL=https://shared-instances.bbsmc.org.cn
+ENV BASE_URL=${BASE_URL}
+ENV BROWSER_BASE_URL=${BROWSER_BASE_URL}
+ENV PYRO_BASE_URL=${PYRO_BASE_URL}
+ENV SHARED_INSTANCES_API_BASE_URL=${SHARED_INSTANCES_API_BASE_URL}
 
 RUN pnpm --filter @modrinth/frontend build
 
-FROM node:24-alpine
+FROM node:${NODE_VERSION}
 WORKDIR /app
 RUN corepack enable && corepack prepare pnpm@10.33.2 --activate
 
@@ -41,9 +48,5 @@ EXPOSE 3000
 ENV NODE_ENV=production
 ENV HOST=0.0.0.0
 ENV PORT=3000
-ENV BASE_URL=https://api.bbsmc.org.cn/v2/
-ENV BROWSER_BASE_URL=https://api.bbsmc.org.cn/v2/
-ENV PYRO_BASE_URL=https://archon.bbsmc.org.cn
-ENV SHARED_INSTANCES_API_BASE_URL=https://shared-instances.bbsmc.org.cn
 
 CMD ["node", ".output/server/index.mjs"]
