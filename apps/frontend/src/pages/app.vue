@@ -62,15 +62,15 @@ const macLinks = reactive({
 	universal: null as string | null,
 })
 
-const newProjects = homePageProjects.slice(0, 40)
+const newProjects = homePageProjects?.slice(0, 40) ?? []
 const val = Math.ceil(newProjects.length / 6)
-const rows = [
+const rows = newProjects.length > 0 ? [
 	newProjects.slice(0, val),
 	newProjects.slice(val, val * 2),
 	newProjects.slice(val * 2, val * 3),
 	newProjects.slice(val * 3, val * 4),
 	newProjects.slice(val * 4, val * 5),
-]
+] : []
 
 const { data: launcherUpdates } = await useFetch<LauncherUpdates>(
 	'https://launcher-files.bbsmc.org.cn/updates.json?new',
