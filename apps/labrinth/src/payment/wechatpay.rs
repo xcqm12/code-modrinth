@@ -14,6 +14,7 @@ use super::{
 type HmacSha256 = Hmac<Sha256>;
 
 /// Configuration for the WeChat Pay (微信支付) payment gateway.
+#[derive(Clone)]
 pub struct WechatPayConfig {
     /// 应用ID (AppID) - the WeChat application identifier issued by WeChat.
     pub app_id: String,

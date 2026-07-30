@@ -379,9 +379,13 @@ pub async fn refund_charge(
                         ));
                     }
                 }
-                PaymentPlatform::None => {
+                PaymentPlatform::None
+                | PaymentPlatform::Alipay
+                | PaymentPlatform::WechatPay
+                | PaymentPlatform::Epay
+                | PaymentPlatform::Codepay => {
                     return Err(ApiError::InvalidInput(
-                        "This charge was not processed via a payment platform."
+                        "This charge was not processed via a refundable payment platform."
                             .to_owned(),
                     ));
                 }

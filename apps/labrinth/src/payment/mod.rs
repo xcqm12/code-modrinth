@@ -111,7 +111,7 @@ impl PaymentGatewayRegistry {
         self.gateways.insert(gateway.name().to_string(), gateway);
     }
 
-    pub fn get(&self, name: &str) -> Option<&dyn PaymentGateway + Send + Sync> {
+    pub fn get(&self, name: &str) -> Option<&(dyn PaymentGateway + Send + Sync)> {
         self.gateways.get(name).map(|g| g.as_ref())
     }
 

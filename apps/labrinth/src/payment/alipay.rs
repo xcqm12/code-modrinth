@@ -27,6 +27,8 @@ use async_trait::async_trait;
 use base64::Engine;
 use chrono::{DateTime, Utc};
 use rsa::pkcs1v15::{Signature, SigningKey, VerifyingKey};
+use rsa::pkcs8::DecodePrivateKey;
+use rsa::pkcs8::DecodePublicKey;
 use rsa::signature::{SignatureEncoding, Signer, Verifier};
 use rsa::{RsaPrivateKey, RsaPublicKey};
 use serde_json::Value;
@@ -96,7 +98,7 @@ impl AlipayGateway {
             ("timestamp".into(), ts),
             ("version".into(), "1.0".into()),
         ];
-        params.sort_by(|a, b| a.0.cmp(&b.0));
+        params.sort_by(|a: &(String, String), b: &(String, String)| a.0.cmp(&b.0));
         params
     }
 
@@ -121,7 +123,7 @@ impl AlipayGateway {
         let sk = RsaPrivateKey::from_pkcs8_pem(&self.config.private_key).map_err(|e| {
             PaymentError::Internal(format!("failed to parse alipay private key: {e}"))
         })?;
-        let signing_key = SigningKey::<Sha256>::new(sk);
+        let signing_key = SigningKey::<Sha256>::new_unprefixed(sk);
         let sig = signing_key.sign(data.as_bytes());
         Ok(base64::engine::general_purpose::STANDARD.encode(sig.to_bytes()))
     }
@@ -140,7 +142,7 @@ impl AlipayGateway {
         let pk = RsaPublicKey::from_public_key_pem(&self.config.alipay_public_key).map_err(
             |e| PaymentError::Internal(format!("failed to parse alipay public key: {e}")),
         )?;
-        let verifying_key = VerifyingKey::<Sha256>::new(pk);
+        let verifying_key = VerifyingKey::<Sha256>::new_unprefixed(pk);
         let sig_bytes = base64::engine::general_purpose::STANDARD
             .decode(signature_b64)
             .map_err(|_| PaymentError::InvalidSignature)?;
@@ -224,8 +226,11 @@ impl AlipayGateway {
     /// `DateTime<Utc>`.
     fn parse_time(s: &str) -> Option<DateTime<Utc>> {
         let naive = chrono::NaiveDateTime::parse_from_str(s, "%Y-%m-%d %H:%M:%S").ok()?;
-        let dt = naive.and_local_timezone(chrono::FixedOffset::east_opt(8 * 3600)?)?;
-        Some(dt.with_timezone(&Utc))
+        let offset = chrono::FixedOffset::east_opt(8 * 3600)?;
+        match naive.and_local_timezone(offset) {
+            chrono::LocalResult::Single(dt) => Some(dt.with_timezone(&Utc)),
+            _ => None,
+        }
     }
 
     /// Converts an Alipay trade status string into [`PaymentStatus`].
