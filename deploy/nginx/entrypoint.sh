@@ -1,8 +1,10 @@
 #!/bin/sh
 set -e
 
+# nginx:alpine doesn't ship openssl - install it for self-signed cert generation
+apk add --no-cache openssl >/dev/null 2>&1
+
 # Generate self-signed placeholder certificates for any domain that lacks real ones.
-# This allows nginx to start even before real SSL certs are placed.
 DOMAINS="bbsmc.org.cn api.bbsmc.org.cn cdn.bbsmc.org.cn admin.bbsmc.org.cn launcher-meta.bbsmc.org.cn www.bbsmc.org.cn"
 
 for domain in $DOMAINS; do
@@ -16,8 +18,8 @@ for domain in $DOMAINS; do
         openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
             -keyout "$key_file" \
             -out "$cert_file" \
-            -subj "/CN=$domain/O=Self-Signed/OU=Development" \
-            2>/dev/null
+            -subj "/CN=$domain/O=Self-Signed/OU=Development"
+        echo "Done: $domain"
     fi
 done
 
