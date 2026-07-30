@@ -161,7 +161,7 @@ redis = "1.4.1"
 regex = "1.12.2"
 reqwest = { version = "0.12.24", default-features = false }
 rgb = "0.8.52"
-rsa = { version = "0.9.7", features = ["pkcs8", "pem"] }
+rsa = { version = "0.9.7", features = ["pem"] }
 rust_decimal = { version = "1.39.0", features = [
   "serde-with-float",
   "serde-with-str"
