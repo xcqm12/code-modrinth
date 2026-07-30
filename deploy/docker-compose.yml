@@ -144,26 +144,28 @@ services:
       - redpanda
       - start
       - --kafka-addr internal://0.0.0.0:9092,external://0.0.0.0:19092
-      - --advertise-kafka-addr internal://redpanda:9092
-      - --pandaproxy-addr internal://0.0.0.0:8082
-      - --schema-registry-addr internal://0.0.0.0:8081
+      - --advertise-kafka-addr internal://redpanda:9092,external://localhost:19092
+      - --pandaproxy-addr internal://0.0.0.0:8082,external://0.0.0.0:18082
+      - --advertise-pandaproxy-addr internal://redpanda:8082,external://localhost:18082
+      - --schema-registry-addr internal://0.0.0.0:8081,external://0.0.0.0:18081
       - --rpc-addr redpanda:33145
       - --advertise-rpc-addr redpanda:33145
       - --mode dev-container
       - --smp 1
-      - --default-log-level=warn
+      - --default-log-level=info
     volumes:
       - redpanda-data:/var/lib/redpanda/data
     healthcheck:
       test: ['CMD', 'rpk', 'cluster', 'info', '-X', 'brokers=localhost:9092']
-      interval: 15s
-      timeout: 10s
-      retries: 5
+      interval: 10s
+      timeout: 15s
+      retries: 10
+      start_period: 30s
     deploy:
       resources:
         limits:
           cpus: '1'
-          memory: 1G
+          memory: 2G
         reservations:
           cpus: '0.5'
           memory: 512M
@@ -195,7 +197,7 @@ services:
       SENTRY_DSN: ''
       SENTRY_ENVIRONMENT: production
       SITE_URL: ${SITE_URL:-https://bbsmc.org.cn}
-      CDN_URL: file:///data/uploads
+      CDN_URL: ${CDN_URL:-https://cdn.bbsmc.org.cn}
       LABRINTH_ADMIN_KEY: ${LABRINTH_ADMIN_KEY:?err}
       LABRINTH_MEDAL_KEY: ''
       LABRINTH_EXTERNAL_NOTIFICATION_KEY: ${LABRINTH_EXTERNAL_NOTIFICATION_KEY:-beeffeed}
@@ -283,8 +285,8 @@ services:
       NODE_ENV: production
       HOST: '0.0.0.0'
       PORT: '3000'
-      BASE_URL: https://bbsmc.org.cn/api/v2/
-      BROWSER_BASE_URL: https://bbsmc.org.cn/api/v2/
+      BASE_URL: ${API_URL:-https://api.bbsmc.org.cn/v2/}
+      BROWSER_BASE_URL: ${API_URL:-https://api.bbsmc.org.cn/v2/}
       SHARED_INSTANCES_API_BASE_URL: https://shared-instances.bbsmc.org.cn
       PYRO_BASE_URL: https://archon.bbsmc.org.cn
     deploy:

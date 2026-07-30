@@ -299,7 +299,7 @@ export default defineNuxtConfig({
 			plugins: [serverSidedVue()],
 			external: ['cloudflare:workers'],
 		},
-		preset: 'cloudflare_module',
+		preset: process.env.NITRO_PRESET || 'cloudflare_module',
 		cloudflare: {
 			nodeCompat: true,
 		},

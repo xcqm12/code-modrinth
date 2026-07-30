@@ -234,6 +234,39 @@ free_web_ports() {
     fi
 }
 
+# ---- Create temporary swap to prevent OOM during builds ----
+create_swap() {
+    local swap_size="${1:-4G}"
+    local swap_file="/swapfile_tmp"
+
+    local current_swap
+    current_swap=$(swapon --show --noheadings 2>/dev/null | wc -l)
+    if [[ "$current_swap" -gt 0 ]]; then
+        log_ok "Swap already active ($(swapon --show --noheadings --output=SIZE 2>/dev/null | head -1))"
+        return
+    fi
+
+    log_info "Creating temporary ${swap_size} swap file to prevent OOM during build..."
+    sudo fallocate -l "$swap_size" "$swap_file" 2>/dev/null || sudo dd if=/dev/zero of="$swap_file" bs=1M count=$((4096)) 2>/dev/null
+    sudo chmod 600 "$swap_file"
+    sudo mkswap "$swap_file" >/dev/null 2>&1
+    sudo swapon "$swap_file" 2>/dev/null || {
+        log_warn "Failed to enable swap. Build may OOM on low-memory servers."
+        return
+    }
+    log_ok "Temporary swap (${swap_size}) enabled at ${swap_file}"
+}
+
+remove_swap() {
+    local swap_file="/swapfile_tmp"
+    if swapon --show --noheadings 2>/dev/null | grep -q "$swap_file"; then
+        log_info "Removing temporary swap file..."
+        sudo swapoff "$swap_file" 2>/dev/null || true
+        sudo rm -f "$swap_file" 2>/dev/null || true
+        log_ok "Temporary swap removed"
+    fi
+}
+
 # ---- Setup SSL (Let's Encrypt - Multi-Domain SAN) ----
 setup_ssl() {
     log_info "Setting up SSL certificates (multi-domain SAN)..."
@@ -324,12 +357,18 @@ deploy() {
     # Free ports 80/443 before starting nginx
     free_web_ports
 
+    # Create temporary swap for build stability on 8G servers
+    create_swap 4G
+
     # Build Docker images
     log_info "Building labrinth (Rust backend) Docker image..."
     $DOCKER_COMPOSE build labrinth
 
     log_info "Building frontend (Nuxt) Docker image..."
     $DOCKER_COMPOSE build frontend
+
+    # Remove temporary swap after build
+    remove_swap
 
     # Pull infrastructure images
     log_info "Pulling infrastructure images..."

@@ -68,11 +68,13 @@ setup_env() {
         log_info "Creating .env file from template..."
         cp "$SCRIPT_DIR/.env" "$SCRIPT_DIR/.env.template" 2>/dev/null || true
         cat > "$SCRIPT_DIR/.env" << 'ENVEOF'
-# 8h8g Production Configuration
+# 8h8g Production Configuration - 多域名拆分部署
 # Edit these values before running deploy
 
 DOMAIN=bbsmc.org.cn
 SITE_URL=https://bbsmc.org.cn
+API_URL=https://api.bbsmc.org.cn/v2/
+CDN_URL=https://cdn.bbsmc.org.cn
 
 POSTGRES_USER=8h8g
 POSTGRES_PASSWORD=8h8g_prod_db_pass
@@ -140,45 +142,75 @@ ENVEOF
     fi
 }
 
-# ---- Setup SSL (Let's Encrypt) ----
+# ---- Setup SSL (Let's Encrypt) for multiple domains ----
 setup_ssl() {
-    log_info "Setting up SSL..."
+    log_info "Setting up SSL certificates for all subdomains..."
 
-    if [[ -f "$SCRIPT_DIR/ssl/fullchain.pem" ]] && [[ -f "$SCRIPT_DIR/ssl/privkey.pem" ]]; then
-        log_ok "SSL certificates already exist at $SCRIPT_DIR/ssl/"
-        return
-    fi
+    local all_domains=(
+        "bbsmc.org.cn"
+        "api.bbsmc.org.cn"
+        "cdn.bbsmc.org.cn"
+        "admin.bbsmc.org.cn"
+        "launcher-meta.bbsmc.org.cn"
+        "www.bbsmc.org.cn"
+    )
 
     if command -v certbot >/dev/null 2>&1; then
-        local domain
-        domain=$(grep -oP '^DOMAIN=\K.*' "$SCRIPT_DIR/.env" 2>/dev/null || echo "bbsmc.org.cn")
-
-        # Stop any Docker services that may be using port 80
-        log_info "Stopping existing Docker services to free port 80 ..."
+        # Stop any system web server on port 80
         $DOCKER_COMPOSE down --remove-orphans 2>/dev/null || true
-
-        # Also stop any system web server on port 80 (nginx/apache2)
         sudo systemctl stop nginx 2>/dev/null || true
         sudo systemctl stop apache2 2>/dev/null || true
+        sleep 2
 
-        log_info "Obtaining Let's Encrypt certificate for $domain ..."
-        sudo certbot certonly --standalone -d "$domain" --non-interactive --agree-tos -m "admin@$domain" || {
-            log_warn "Certbot failed. You can still manually place certificates in $SCRIPT_DIR/ssl/"
-            log_warn "Required files: fullchain.pem, privkey.pem"
-            mkdir -p "$SCRIPT_DIR/ssl"
-            return
-        }
+        local first_domain="${all_domains[0]}"
+        local cert_domains=""
+        local cert_names=""
+        for d in "${all_domains[@]}"; do
+            if [[ -z "$cert_domains" ]]; then
+                cert_domains="-d $d"
+                cert_names="$d"
+            else
+                cert_domains="$cert_domains -d $d"
+            fi
+        done
 
-        mkdir -p "$SCRIPT_DIR/ssl"
-        sudo cp "/etc/letsencrypt/live/$domain/fullchain.pem" "$SCRIPT_DIR/ssl/"
-        sudo cp "/etc/letsencrypt/live/$domain/privkey.pem" "$SCRIPT_DIR/ssl/"
-        sudo chown -R "$(whoami):$(whoami)" "$SCRIPT_DIR/ssl/"
-        log_ok "SSL certificates obtained and copied to $SCRIPT_DIR/ssl/"
+        log_info "Obtaining wildcard/renewal certificate for $cert_names and subdomains ..."
+
+        # Try wildcard cert first
+        if sudo certbot certonly --standalone $cert_domains --non-interactive --agree-tos -m "admin@${first_domain}" 2>/dev/null; then
+            log_ok "Multi-domain certificate obtained!"
+            # Copy certs to each subdomain directory
+            for d in "${all_domains[@]}"; do
+                mkdir -p "$SCRIPT_DIR/ssl/$d"
+                if [[ -f "/etc/letsencrypt/live/$first_domain/fullchain.pem" ]]; then
+                    sudo cp "/etc/letsencrypt/live/$first_domain/fullchain.pem" "$SCRIPT_DIR/ssl/$d/"
+                    sudo cp "/etc/letsencrypt/live/$first_domain/privkey.pem" "$SCRIPT_DIR/ssl/$d/"
+                fi
+            done
+            sudo chown -R "$(whoami):$(whoami)" "$SCRIPT_DIR/ssl/"
+            log_ok "SSL certificates copied to $SCRIPT_DIR/ssl/<domain>/ directories"
+        else
+            log_warn "Certbot failed. Trying individual certificates..."
+            for d in "${all_domains[@]}"; do
+                log_info "Obtaining certificate for $d ..."
+                if sudo certbot certonly --standalone -d "$d" --non-interactive --agree-tos -m "admin@$d" 2>/dev/null; then
+                    mkdir -p "$SCRIPT_DIR/ssl/$d"
+                    sudo cp "/etc/letsencrypt/live/$d/fullchain.pem" "$SCRIPT_DIR/ssl/$d/"
+                    sudo cp "/etc/letsencrypt/live/$d/privkey.pem" "$SCRIPT_DIR/ssl/$d/"
+                    log_ok "Certificate obtained for $d"
+                else
+                    log_warn "Failed to obtain certificate for $d"
+                fi
+            done
+            sudo chown -R "$(whoami):$(whoami)" "$SCRIPT_DIR/ssl/"
+        fi
     else
-        mkdir -p "$SCRIPT_DIR/ssl"
-        log_warn "certbot not found. Please place your SSL certificates manually:"
-        log_warn "  $SCRIPT_DIR/ssl/fullchain.pem"
-        log_warn "  $SCRIPT_DIR/ssl/privkey.pem"
+        log_warn "certbot not found. Creating SSL directories - place certificates manually:"
+        for d in "${all_domains[@]}"; do
+            mkdir -p "$SCRIPT_DIR/ssl/$d"
+            log_warn "  $SCRIPT_DIR/ssl/$d/fullchain.pem"
+            log_warn "  $SCRIPT_DIR/ssl/$d/privkey.pem"
+        done
         echo ""
         read -rp "Press Enter after placing certificates (or Ctrl+C to abort)..."
     fi
@@ -265,6 +297,39 @@ free_web_ports() {
     fi
 }
 
+# ---- Create temporary swap to prevent OOM during builds ----
+create_swap() {
+    local swap_size="${1:-4G}"
+    local swap_file="/swapfile_tmp"
+
+    local current_swap
+    current_swap=$(swapon --show --noheadings 2>/dev/null | wc -l)
+    if [[ "$current_swap" -gt 0 ]]; then
+        log_ok "Swap already active ($(swapon --show --noheadings --output=SIZE 2>/dev/null | head -1))"
+        return
+    fi
+
+    log_info "Creating temporary ${swap_size} swap file to prevent OOM during build..."
+    sudo fallocate -l "$swap_size" "$swap_file" 2>/dev/null || sudo dd if=/dev/zero of="$swap_file" bs=1M count=$((4096)) 2>/dev/null
+    sudo chmod 600 "$swap_file"
+    sudo mkswap "$swap_file" >/dev/null 2>&1
+    sudo swapon "$swap_file" 2>/dev/null || {
+        log_warn "Failed to enable swap. Build may OOM on low-memory servers."
+        return
+    }
+    log_ok "Temporary swap (${swap_size}) enabled at ${swap_file}"
+}
+
+remove_swap() {
+    local swap_file="/swapfile_tmp"
+    if swapon --show --noheadings 2>/dev/null | grep -q "$swap_file"; then
+        log_info "Removing temporary swap file..."
+        sudo swapoff "$swap_file" 2>/dev/null || true
+        sudo rm -f "$swap_file" 2>/dev/null || true
+        log_ok "Temporary swap removed"
+    fi
+}
+
 # ---- Build and deploy ----
 deploy() {
     log_info "Starting deployment..."
@@ -272,12 +337,18 @@ deploy() {
     # Free ports 80/443 before starting nginx
     free_web_ports
 
+    # Create temporary swap for build stability on 8G servers
+    create_swap 4G
+
     # Build Docker images
     log_info "Building labrinth (Rust backend) Docker image..."
     $DOCKER_COMPOSE build labrinth
 
     log_info "Building frontend (Nuxt) Docker image..."
     $DOCKER_COMPOSE build frontend
+
+    # Remove temporary swap after build
+    remove_swap
 
     # Pull infrastructure images
     log_info "Pulling infrastructure images..."
@@ -325,24 +396,30 @@ show_info() {
 
     echo ""
     echo -e "${GREEN}======================================================${NC}"
-    echo -e "${GREEN}  8h8g 部署成功！8h8g Deployment Complete!${NC}"
+    echo -e "${GREEN}  8h8g 多域名部署成功！Deployment Complete!${NC}"
     echo -e "${GREEN}======================================================${NC}"
     echo ""
-    echo -e "  Frontend:  ${CYAN}https://$domain${NC}"
-    echo -e "  API:       ${CYAN}https://$domain/api/v2/${NC}"
-    echo -e "  Admin Key: ${YELLOW}check .env file${NC}"
+    echo -e "  ${YELLOW}━━━ 服务访问地址 ━━━${NC}"
+    echo -e "  Frontend (主站):          ${CYAN}https://$domain${NC}"
+    echo -e "  API (API 后端):           ${CYAN}https://api.$domain${NC}"
+    echo -e "  CDN (文件存储):           ${CYAN}https://cdn.$domain${NC}"
+    echo -e "  Admin (管理后台):         ${CYAN}https://admin.$domain${NC}"
+    echo -e "  Launcher Meta (加载器):   ${CYAN}https://launcher-meta.$domain${NC}"
     echo ""
-    echo -e "  Useful commands:"
+    echo -e "  ${YELLOW}━━━ 管理密钥 ━━━${NC}"
+    echo -e "  Admin Key: ${YELLOW}check .env file (LABRINTH_ADMIN_KEY)${NC}"
+    echo ""
+    echo -e "  ${YELLOW}━━━ 常用命令 ━━━${NC}"
     echo -e "    View logs:     ${CYAN}$DOCKER_COMPOSE logs -f${NC}"
     echo -e "    Restart:       ${CYAN}$DOCKER_COMPOSE restart${NC}"
     echo -e "    Stop:          ${CYAN}$DOCKER_COMPOSE down${NC}"
-    echo -e "    Update:        ${CYAN}$DOCKER_COMPOSE build && $DOCKER_COMPOSE up -d${NC}"
+    echo -e "    Update:        ${CYAN}git pull && $DOCKER_COMPOSE build && $DOCKER_COMPOSE up -d${NC}"
     echo ""
-    echo -e "  Next steps:"
-    echo -e "    1. Configure OAuth apps (GitHub, Discord, etc.) in the .env file"
-    echo -e "    2. Set up SMTP for production email delivery"
-    echo -e "    3. Run ${CYAN}$DOCKER_COMPOSE exec labrinth /labrinth/labrinth --run-background-task create-admin${NC}"
-    echo -e "       to create an admin user"
+    echo -e "  ${YELLOW}━━━ 后续步骤 ━━━${NC}"
+    echo -e "    1. 配置 DNS: 将上述子域名 A 记录指向服务器 IP"
+    echo -e "    2. 配置 OAuth (GitHub, Discord 等) 在 .env 文件中"
+    echo -e "    3. 配置 SMTP 用于生产环境邮件发送"
+    echo -e "    4. 创建管理员: ${CYAN}$DOCKER_COMPOSE exec labrinth /labrinth/labrinth --run-background-task create-admin${NC}"
     echo ""
 }
 
