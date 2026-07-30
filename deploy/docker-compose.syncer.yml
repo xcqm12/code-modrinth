@@ -1,0 +1,32 @@
+# 数据同步服务
+# 从 api.modrinth.com 同步项目/版本到本地实例
+#
+# 用法:
+#   docker compose -f docker-compose.yml -f docker-compose.syncer.yml run --rm syncer
+#   docker compose -f docker-compose.yml -f docker-compose.syncer.yml run --rm syncer --limit 200 --project-type modpack
+
+services:
+  syncer:
+    build:
+      context: ./sync
+      dockerfile: Dockerfile
+    container_name: 8h8g-syncer
+    volumes:
+      - sync-data:/data/sync
+    environment:
+      TARGET_API: http://labrinth:8000/v2
+      TARGET_ADMIN_KEY: ${LABRINTH_ADMIN_KEY:-}
+      SYNC_DIR: /data/sync
+    networks:
+      - 8h8g_default
+    profiles:
+      - sync
+
+volumes:
+  sync-data:
+
+networks:
+  # 使用主 compose 文件的默认网络，让 syncer 能访问 labrinth
+  default:
+    name: 8h8g_default
+    external: true
