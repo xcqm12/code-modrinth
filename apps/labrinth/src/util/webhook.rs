@@ -350,7 +350,7 @@ pub async fn send_slack_project_webhook(
                     },
                     {
                         "type": "mrkdwn",
-                        "text": format!("{} on Bbsmc ï¿?<!date^{}^{{date_short_pretty}} at {{time}}|Unknown date>", metadata.display_project_type, Utc::now().timestamp())
+                        "text": format!("{} on Bbsmc  <!date^{}^{{date_short_pretty}} at {{time}}|Unknown date>", metadata.display_project_type, Utc::now().timestamp())
                     }
                 ]
             })
