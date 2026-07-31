@@ -94,7 +94,7 @@
 	</div>
 </template>
 <script setup lang="ts">
-import { KeyIcon, MailIcon, SendIcon } from '@modrinth/assets'
+import { KeyIcon, MailIcon, SendIcon } from '@bbsmc/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -104,7 +104,7 @@ import {
 	injectNotificationManager,
 	StyledInput,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { useQuery } from '@tanstack/vue-query'
 import type { LocationQueryValue } from 'vue-router'
 

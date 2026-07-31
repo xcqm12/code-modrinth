@@ -75,8 +75,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { DownloadIcon, RadioButtonCheckedIcon, RadioButtonIcon } from '@modrinth/assets'
+import type { Labrinth } from '@bbsmc/api-client'
+import { DownloadIcon, RadioButtonCheckedIcon, RadioButtonIcon } from '@bbsmc/assets'
 import {
 	ButtonStyled,
 	type CdnDownloadReason,
@@ -86,9 +86,9 @@ import {
 	useFormatDateTime,
 	useRelativeTime,
 	useVIntl,
-} from '@modrinth/ui'
-import VersionChannelTag from '@modrinth/ui/src/components/version/VersionChannelTag.vue'
-import { capitalizeString, type DisplayProjectType } from '@modrinth/utils'
+} from '@bbsmc/ui'
+import VersionChannelTag from '@bbsmc/ui/src/components/version/VersionChannelTag.vue'
+import { capitalizeString, type DisplayProjectType } from '@bbsmc/utils'
 import { computed, ref } from 'vue'
 
 defineOptions({

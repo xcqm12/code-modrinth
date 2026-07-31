@@ -157,7 +157,7 @@ import {
 	MicrosoftColorIcon,
 	RightArrowIcon,
 	SteamColorIcon,
-} from '@modrinth/assets'
+} from '@bbsmc/assets'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -165,7 +165,7 @@ import {
 	IntlFormatted,
 	StyledInput,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { useStorage } from '@vueuse/core'
 import type { LocationQuery } from 'vue-router'
 

@@ -7,7 +7,7 @@ import {
 	PanelVersionFeature,
 	TaurimodrinthClient,
 	VerboseLoggingFeature,
-} from '@modrinth/api-client'
+} from '@bbsmc/api-client'
 import {
 	ArrowBigUpDashIcon,
 	ChevronLeftIcon,
@@ -25,7 +25,7 @@ import {
 	SettingsIcon,
 	ShirtIcon,
 	UserIcon,
-} from '@modrinth/assets'
+} from '@bbsmc/assets'
 import {
 	Admonition,
 	Avatar,
@@ -52,8 +52,8 @@ import {
 	useFormatBytes,
 	useHostingIntercom,
 	useVIntl,
-} from '@modrinth/ui'
-import { renderString } from '@modrinth/utils'
+} from '@bbsmc/ui'
+import { renderString } from '@bbsmc/utils'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { getVersion } from '@tauri-apps/api/app'
 import { invoke } from '@tauri-apps/api/core'

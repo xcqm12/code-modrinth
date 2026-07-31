@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import { CheckIcon, XIcon } from '@modrinth/assets'
+import { CheckIcon, XIcon } from '@bbsmc/assets'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -31,8 +31,8 @@ import {
 	injectNotificationManager,
 	type MessageDescriptor,
 	useVIntl,
-} from '@modrinth/ui'
-import type { Project, User, Version } from '@modrinth/utils'
+} from '@bbsmc/ui'
+import type { Project, User, Version } from '@bbsmc/utils'
 import { computed } from 'vue'
 
 import { acceptTeamInvite, removeTeamMember } from '~/helpers/teams.js'

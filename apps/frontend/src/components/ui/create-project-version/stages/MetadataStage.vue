@@ -213,8 +213,8 @@
 </template>
 
 <script lang="ts" setup>
-import type { Labrinth } from '@modrinth/api-client'
-import { EditIcon, getLoaderIcon, PlusIcon, UnknownIcon } from '@modrinth/assets'
+import type { Labrinth } from '@bbsmc/api-client'
+import { EditIcon, getLoaderIcon, PlusIcon, UnknownIcon } from '@bbsmc/assets'
 import {
 	ButtonStyled,
 	defineMessages,
@@ -225,7 +225,7 @@ import {
 	type TabsTab,
 	TagItem,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 
 import { useGeneratedState } from '~/composables/generated'
 import { injectManageVersionContext } from '~/providers/version/manage-version-modal'

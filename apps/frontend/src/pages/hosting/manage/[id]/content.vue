@@ -6,7 +6,7 @@ import {
 	injectmodrinthServerContext,
 	ServersManageContentPage,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 
 const client = injectmodrinthClient()

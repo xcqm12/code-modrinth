@@ -102,7 +102,7 @@
 </template>
 
 <script setup lang="ts">
-import { CheckIcon, PayPalColorIcon, SaveIcon, XIcon } from '@modrinth/assets'
+import { CheckIcon, PayPalColorIcon, SaveIcon, XIcon } from '@bbsmc/assets'
 import {
 	ButtonStyled,
 	Checkbox,
@@ -114,7 +114,7 @@ import {
 	normalizeChildren,
 	StyledInput,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { useDebounceFn } from '@vueuse/core'
 import { computed, onMounted, ref, watch } from 'vue'
 

@@ -82,8 +82,8 @@
 	</div>
 </template>
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { PlusIcon, SearchIcon, XCircleIcon } from '@modrinth/assets'
+import type { Labrinth } from '@bbsmc/api-client'
+import { PlusIcon, SearchIcon, XCircleIcon } from '@bbsmc/assets'
 import {
 	Accordion,
 	Admonition,
@@ -95,8 +95,8 @@ import {
 	injectmodrinthClient,
 	injectNotificationManager,
 	StyledInput,
-} from '@modrinth/ui'
-import type { User } from '@modrinth/utils'
+} from '@bbsmc/ui'
+import type { User } from '@bbsmc/utils'
 import { useQuery } from '@tanstack/vue-query'
 import { computed, ref } from 'vue'
 

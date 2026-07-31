@@ -81,8 +81,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { useFormatNumber, useVIntl } from '@modrinth/ui'
+import type { Labrinth } from '@bbsmc/api-client'
+import { useFormatNumber, useVIntl } from '@bbsmc/ui'
 
 import type {
 	AnalyticsDashboardStat,

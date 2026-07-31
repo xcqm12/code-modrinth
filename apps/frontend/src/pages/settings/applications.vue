@@ -241,7 +241,7 @@
 	</div>
 </template>
 <script setup>
-import { EditIcon, PlusIcon, SaveIcon, TrashIcon, UploadIcon, XIcon } from '@modrinth/assets'
+import { EditIcon, PlusIcon, SaveIcon, TrashIcon, UploadIcon, XIcon } from '@bbsmc/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -259,7 +259,7 @@ import {
 	StyledInput,
 	useFormatDateTime,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { useQuery } from '@tanstack/vue-query'
 
 import Modal from '~/components/ui/Modal.vue'

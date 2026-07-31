@@ -196,7 +196,7 @@
 </template>
 
 <script setup lang="ts">
-import { BoxIcon, UserIcon } from '@modrinth/assets'
+import { BoxIcon, UserIcon } from '@bbsmc/assets'
 import {
 	buildDependentsSearchFilters,
 	DropdownFilterBar,
@@ -210,8 +210,8 @@ import {
 	type TabsValue,
 	truncatedTooltip,
 	useVIntl,
-} from '@modrinth/ui'
-import { formatProjectType } from '@modrinth/utils'
+} from '@bbsmc/ui'
+import { formatProjectType } from '@bbsmc/utils'
 import { useQuery } from '@tanstack/vue-query'
 import type { ComponentPublicInstance } from 'vue'
 

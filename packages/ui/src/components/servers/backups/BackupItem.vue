@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Archon } from '@modrinth/api-client'
+import type { Archon } from '@bbsmc/api-client'
 import {
 	ClipboardCopyIcon,
 	DownloadIcon,
@@ -10,7 +10,7 @@ import {
 	ShieldIcon,
 	TrashIcon,
 	UserRoundIcon,
-} from '@modrinth/assets'
+} from '@bbsmc/assets'
 import { computed, ref } from 'vue'
 
 import { useFormatDateTime } from '../../../composables'

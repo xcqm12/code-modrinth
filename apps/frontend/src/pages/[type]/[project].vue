@@ -500,8 +500,8 @@ import {
 	ServerPlusIcon,
 	SettingsIcon,
 	XIcon,
-} from '@modrinth/assets'
-import { moderationSettings } from '@modrinth/moderation'
+} from '@bbsmc/assets'
+import { moderationSettings } from '@bbsmc/moderation'
 import {
 	Admonition,
 	Avatar,
@@ -531,8 +531,8 @@ import {
 	useFormatPrice,
 	useStickyObserver,
 	useVIntl,
-} from '@modrinth/ui'
-import { formatProjectType, isStaff } from '@modrinth/utils'
+} from '@bbsmc/ui'
+import { formatProjectType, isStaff } from '@bbsmc/utils'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/vue-query'
 import { useLocalStorage } from '@vueuse/core'
 import { Tooltip } from 'floating-vue'

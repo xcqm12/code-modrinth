@@ -37,10 +37,10 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { modrinthIcon } from '@modrinth/assets'
-import { ButtonStyled, defineMessages, useVIntl } from '@modrinth/ui'
-import type { DisplayProjectType } from '@modrinth/utils'
+import type { Labrinth } from '@bbsmc/api-client'
+import { modrinthIcon } from '@bbsmc/assets'
+import { ButtonStyled, defineMessages, useVIntl } from '@bbsmc/ui'
+import type { DisplayProjectType } from '@bbsmc/utils'
 import { ref } from 'vue'
 
 import Accordion from '~/components/ui/Accordion.vue'

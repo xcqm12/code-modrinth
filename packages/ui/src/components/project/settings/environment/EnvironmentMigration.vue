@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { CheckIcon } from '@modrinth/assets'
+import { CheckIcon } from '@bbsmc/assets'
 import {
 	Admonition,
 	commonProjectSettingsMessages,
@@ -11,7 +11,7 @@ import {
 	UnsavedChangesPopup,
 	useSavable,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { computed } from 'vue'
 
 const { formatMessage } = useVIntl()

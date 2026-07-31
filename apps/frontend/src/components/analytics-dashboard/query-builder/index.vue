@@ -441,7 +441,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@bbsmc/api-client'
 import {
 	BlocksIcon,
 	BoxIcon,
@@ -452,7 +452,7 @@ import {
 	FolderOpenIcon,
 	LayersIcon,
 	UserIcon,
-} from '@modrinth/assets'
+} from '@bbsmc/assets'
 import {
 	ButtonStyled,
 	Combobox,
@@ -461,7 +461,7 @@ import {
 	type MultiSelectItem,
 	type MultiSelectOption,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 
 import {
 	buildDefaultAnalyticsQueryBuilderState,

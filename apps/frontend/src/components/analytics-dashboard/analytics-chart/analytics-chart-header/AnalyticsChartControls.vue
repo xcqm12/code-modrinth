@@ -159,8 +159,8 @@ import {
 	InfoIcon,
 	Settings2Icon,
 	TagCategoryFlagIcon,
-} from '@modrinth/assets'
-import { Toggle, useVIntl } from '@modrinth/ui'
+} from '@bbsmc/assets'
+import { Toggle, useVIntl } from '@bbsmc/ui'
 import { Menu } from 'floating-vue'
 
 import { analyticsChartMessages, analyticsMessages } from '../../analytics-messages'

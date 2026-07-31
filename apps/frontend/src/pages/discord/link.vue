@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { injectmodrinthClient } from '@modrinth/ui'
+import { injectmodrinthClient } from '@bbsmc/ui'
 
 import { getAuthUrl } from '~/composables/auth.js'
 

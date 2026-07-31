@@ -4,7 +4,7 @@ import {
 	injectNotificationManager,
 	useVIntl,
 	type WebNotification,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { onBeforeUnmount, onMounted } from 'vue'
 
 type ConsentAction = 'accept' | 'reject' | 'manage'

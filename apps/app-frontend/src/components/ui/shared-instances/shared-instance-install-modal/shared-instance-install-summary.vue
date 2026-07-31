@@ -33,8 +33,8 @@
 </template>
 
 <script setup lang="ts">
-import { EyeIcon } from '@modrinth/assets'
-import { Avatar, ButtonStyled, defineMessages, formatLoader, useVIntl } from '@modrinth/ui'
+import { EyeIcon } from '@bbsmc/assets'
+import { Avatar, ButtonStyled, defineMessages, formatLoader, useVIntl } from '@bbsmc/ui'
 import { computed, toRefs } from 'vue'
 
 import type { SharedInstanceInstallPreview } from '@/helpers/install'

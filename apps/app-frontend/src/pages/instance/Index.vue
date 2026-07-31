@@ -119,7 +119,7 @@
 	</div>
 </template>
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@bbsmc/api-client'
 import {
 	BoxesIcon,
 	CheckCircleIcon,
@@ -137,7 +137,7 @@ import {
 	UpdatedIcon,
 	UserPlusIcon,
 	XIcon,
-} from '@modrinth/assets'
+} from '@bbsmc/assets'
 import {
 	commonMessages,
 	injectAuth,
@@ -145,7 +145,7 @@ import {
 	NavTabs,
 	useLoadingBarToken,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { convertFileSrc } from '@tauri-apps/api/core'
 import dayjs from 'dayjs'

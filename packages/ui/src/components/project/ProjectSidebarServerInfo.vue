@@ -79,10 +79,10 @@
 	</div>
 </template>
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { CopyIcon, getLoaderIcon } from '@modrinth/assets'
-import { SERVER_LANGUAGES } from '@modrinth/ui'
-import { formatVersionsForDisplay, type GameVersionTag, type PlatformTag } from '@modrinth/utils'
+import type { Labrinth } from '@bbsmc/api-client'
+import { CopyIcon, getLoaderIcon } from '@bbsmc/assets'
+import { SERVER_LANGUAGES } from '@bbsmc/ui'
+import { formatVersionsForDisplay, type GameVersionTag, type PlatformTag } from '@bbsmc/utils'
 import { computed } from 'vue'
 
 import { defineMessages, useVIntl } from '../../composables'

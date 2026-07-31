@@ -10,8 +10,8 @@ import {
 	PlusIcon,
 	StopCircleIcon,
 	TrashIcon,
-} from '@modrinth/assets'
-import { HeadingLink, injectNotificationManager } from '@modrinth/ui'
+} from '@bbsmc/assets'
+import { HeadingLink, injectNotificationManager } from '@bbsmc/ui'
 import { openUrl } from '@tauri-apps/plugin-opener'
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { useRouter } from 'vue-router'

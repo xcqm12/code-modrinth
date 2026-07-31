@@ -98,8 +98,8 @@ import {
 	ShieldCheckIcon,
 	UpdatedIcon,
 	XIcon,
-} from '@modrinth/assets'
-import { capitalizeString } from '@modrinth/utils'
+} from '@bbsmc/assets'
+import { capitalizeString } from '@bbsmc/utils'
 
 import { defineMessages, useVIntl } from '../../composables/i18n'
 

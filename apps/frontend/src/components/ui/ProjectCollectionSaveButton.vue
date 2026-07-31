@@ -51,7 +51,7 @@
 </template>
 
 <script setup lang="ts">
-import { BookmarkIcon, PlusIcon } from '@modrinth/assets'
+import { BookmarkIcon, PlusIcon } from '@bbsmc/assets'
 import {
 	ButtonStyled,
 	Checkbox,
@@ -59,7 +59,7 @@ import {
 	PopoutMenu,
 	StyledInput,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { computed, ref } from 'vue'
 import type { RouteLocationRaw } from 'vue-router'
 

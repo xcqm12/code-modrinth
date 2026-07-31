@@ -7,7 +7,7 @@ import {
 	MoreVerticalIcon,
 	Settings2Icon,
 	SpinnerIcon,
-} from '@modrinth/assets'
+} from '@bbsmc/assets'
 import { computed, getCurrentInstance, onMounted, onUnmounted, ref } from 'vue'
 import type { RouteLocationRaw } from 'vue-router'
 

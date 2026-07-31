@@ -387,7 +387,7 @@ import {
 	UserPlusIcon,
 	VersionIcon,
 	XIcon,
-} from '@modrinth/assets'
+} from '@bbsmc/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -399,8 +399,8 @@ import {
 	ProjectStatusBadge,
 	useFormatDateTime,
 	useRelativeTime,
-} from '@modrinth/ui'
-import { getUserLink, renderString } from '@modrinth/utils'
+} from '@bbsmc/ui'
+import { getUserLink, renderString } from '@bbsmc/utils'
 
 import { markAsRead } from '~/helpers/platform-notifications'
 import { getProjectLink, getVersionLink } from '~/helpers/projects'

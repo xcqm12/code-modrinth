@@ -3,7 +3,7 @@ import {
 	clearNodeAuthState,
 	setNodeAuthState,
 	type UploadState,
-} from '@modrinth/api-client'
+} from '@bbsmc/api-client'
 import type { ComputedRef, Ref } from 'vue'
 import { computed, ref } from 'vue'
 

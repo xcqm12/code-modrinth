@@ -283,7 +283,7 @@ import {
 	SpinnerIcon,
 	VersionIcon,
 	XCircleIcon,
-} from '@modrinth/assets'
+} from '@bbsmc/assets'
 import {
 	AutoLink,
 	Avatar,
@@ -300,8 +300,8 @@ import {
 	RadioButtons,
 	StyledInput,
 	useVIntl,
-} from '@modrinth/ui'
-import type { Project, Report, User, Version } from '@modrinth/utils'
+} from '@bbsmc/ui'
+import type { Project, Report, User, Version } from '@bbsmc/utils'
 
 import { useImageUpload } from '~/composables/image-upload.ts'
 

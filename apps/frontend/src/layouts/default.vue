@@ -771,7 +771,7 @@ import {
 	UserIcon,
 	UserSearchIcon,
 	XIcon,
-} from '@modrinth/assets'
+} from '@bbsmc/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -787,9 +787,9 @@ import {
 	providePageContext,
 	useHostingIntercom,
 	useVIntl,
-} from '@modrinth/ui'
-import TeleportOverflowMenu from '@modrinth/ui/src/components/base/TeleportOverflowMenu.vue'
-import { isAdmin, isStaff, UserBadge } from '@modrinth/utils'
+} from '@bbsmc/ui'
+import TeleportOverflowMenu from '@bbsmc/ui/src/components/base/TeleportOverflowMenu.vue'
+import { isAdmin, isStaff, UserBadge } from '@bbsmc/utils'
 import { useQuery } from '@tanstack/vue-query'
 
 import { getTaxThreshold } from '@/providers/creator-withdraw.ts'
@@ -1368,7 +1368,7 @@ const { cycle: changeTheme } = useTheme()
 
 <style lang="scss">
 @import '~/assets/styles/global.scss';
-// @import '@modrinth/assets';
+// @import '@bbsmc/assets';
 
 .layout {
 	min-height: 100vh;

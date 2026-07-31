@@ -28,7 +28,7 @@
 </template>
 
 <script setup lang="ts">
-import { XIcon } from '@modrinth/assets'
+import { XIcon } from '@bbsmc/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -37,7 +37,7 @@ import {
 	IntlFormatted,
 	NewModal,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { ref } from 'vue'
 
 const { formatMessage } = useVIntl()

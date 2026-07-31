@@ -23,7 +23,7 @@
 	</button>
 </template>
 <script setup lang="ts" generic="T">
-import { RadioButtonCheckedIcon, RadioButtonIcon } from '@modrinth/assets'
+import { RadioButtonCheckedIcon, RadioButtonIcon } from '@bbsmc/assets'
 
 const emit = defineEmits<{
 	(e: 'select'): void

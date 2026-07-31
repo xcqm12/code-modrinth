@@ -8,8 +8,8 @@ import {
 	UpdatedIcon,
 	WrenchIcon,
 	XIcon,
-} from '@modrinth/assets'
-import { ButtonStyled, Collapsible, injectNotificationManager } from '@modrinth/ui'
+} from '@bbsmc/assets'
+import { ButtonStyled, Collapsible, injectNotificationManager } from '@bbsmc/ui'
 import { computed, ref } from 'vue'
 
 import { ChatIcon } from '@/assets/icons'

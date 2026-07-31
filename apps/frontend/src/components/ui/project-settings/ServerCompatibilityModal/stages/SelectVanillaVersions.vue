@@ -32,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import { Combobox } from '@modrinth/ui'
+import { Combobox } from '@bbsmc/ui'
 import { computed, watch } from 'vue'
 
 import McVersionPicker from '~/components/ui/create-project-version/components/McVersionPicker.vue'

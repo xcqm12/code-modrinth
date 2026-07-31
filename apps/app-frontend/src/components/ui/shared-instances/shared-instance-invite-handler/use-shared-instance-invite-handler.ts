@@ -1,10 +1,10 @@
-import { modrinthApiError } from '@modrinth/api-client'
+import { modrinthApiError } from '@bbsmc/api-client'
 import {
 	injectAuth,
 	injectmodrinthClient,
 	injectNotificationManager,
 	injectPopupNotificationManager,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 import { type Ref, watch } from 'vue'
 import { useRouter } from 'vue-router'

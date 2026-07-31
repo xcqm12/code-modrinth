@@ -1,4 +1,4 @@
-import type { AbstractmodrinthClient } from '@modrinth/api-client'
+import type { AbstractmodrinthClient } from '@bbsmc/api-client'
 
 import { STALE_TIME } from './project'
 

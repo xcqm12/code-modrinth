@@ -193,7 +193,7 @@
 </template>
 
 <script setup lang="ts">
-import { PlusIcon, SendIcon, XIcon } from '@modrinth/assets'
+import { PlusIcon, SendIcon, XIcon } from '@bbsmc/assets'
 import {
 	ButtonStyled,
 	Chips,
@@ -204,7 +204,7 @@ import {
 	StyledInput,
 	TagItem,
 	Toggle,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import dayjs from 'dayjs'
 import { computed, ref } from 'vue'
 

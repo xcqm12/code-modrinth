@@ -112,8 +112,8 @@
 </template>
 
 <script setup lang="ts">
-import { CheckIcon, DownloadIcon, XIcon } from '@modrinth/assets'
-import { commonMessages } from '@modrinth/ui'
+import { CheckIcon, DownloadIcon, XIcon } from '@bbsmc/assets'
+import { commonMessages } from '@bbsmc/ui'
 import { computed, nextTick, onUnmounted, ref } from 'vue'
 
 import { defineMessages, useVIntl } from '../../composables/i18n'

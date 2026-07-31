@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import { ButtonStyled } from '@modrinth/ui'
+import { ButtonStyled } from '@bbsmc/ui'
 import { defineProps } from 'vue'
 
 export interface BatchScanProgress {

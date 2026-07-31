@@ -35,7 +35,7 @@
 	</div>
 </template>
 <script setup>
-import { injectmodrinthClient } from '@modrinth/ui'
+import { injectmodrinthClient } from '@bbsmc/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { computed } from 'vue'
 

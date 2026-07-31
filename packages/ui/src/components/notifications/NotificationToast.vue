@@ -179,7 +179,7 @@
 </template>
 
 <script setup lang="ts">
-import { CheckIcon, SpinnerIcon, XIcon } from '@modrinth/assets'
+import { CheckIcon, SpinnerIcon, XIcon } from '@bbsmc/assets'
 import { computed, ref } from 'vue'
 
 import { useFormatBytes, useFormatNumber } from '../../composables'

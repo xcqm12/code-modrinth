@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { XCircleIcon, XIcon } from '@modrinth/assets'
-import { ButtonStyled, defineMessages, PagewideBanner, useVIntl } from '@modrinth/ui'
+import { XCircleIcon, XIcon } from '@bbsmc/assets'
+import { ButtonStyled, defineMessages, PagewideBanner, useVIntl } from '@bbsmc/ui'
 
 const { formatMessage } = useVIntl()
 const flags = useFeatureFlags()

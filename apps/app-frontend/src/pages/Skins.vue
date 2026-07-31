@@ -8,7 +8,7 @@ import {
 	RotateCounterClockwiseIcon,
 	ShirtIcon,
 	SpinnerIcon,
-} from '@modrinth/assets'
+} from '@bbsmc/assets'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -20,8 +20,8 @@ import {
 	SkinPreviewRenderer,
 	Toggle,
 	useVIntl,
-} from '@modrinth/ui'
-import { arrayBufferToBase64 } from '@modrinth/utils'
+} from '@bbsmc/ui'
+import { arrayBufferToBase64 } from '@bbsmc/utils'
 import { useQuery } from '@tanstack/vue-query'
 import { type DragDropEvent, getCurrentWebview } from '@tauri-apps/api/webview'
 import { computedAsync } from '@vueuse/core'

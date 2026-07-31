@@ -217,7 +217,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Archon } from '@modrinth/api-client'
+import type { Archon } from '@bbsmc/api-client'
 import {
 	CopyIcon,
 	ExternalIcon,
@@ -225,7 +225,7 @@ import {
 	EyeOffIcon,
 	SpinnerIcon,
 	UpdatedIcon,
-} from '@modrinth/assets'
+} from '@bbsmc/assets'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/vue-query'
 import { computed, ref, watch } from 'vue'
 

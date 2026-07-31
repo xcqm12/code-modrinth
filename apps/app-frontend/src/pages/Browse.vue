@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@bbsmc/api-client'
 import {
 	CheckIcon,
 	ClipboardCopyIcon,
@@ -9,8 +9,8 @@ import {
 	PlusIcon,
 	ServerStackIcon,
 	SpinnerIcon,
-} from '@modrinth/assets'
-import type { BrowseInstallContentType, CardAction, ProjectType, Tags } from '@modrinth/ui'
+} from '@bbsmc/assets'
+import type { BrowseInstallContentType, CardAction, ProjectType, Tags } from '@bbsmc/ui'
 import {
 	BrowsePageLayout,
 	BrowseSidebar,
@@ -30,7 +30,7 @@ import {
 	useBrowseSearch,
 	useDebugLogger,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 import { convertFileSrc } from '@tauri-apps/api/core'
 import type { Ref } from 'vue'

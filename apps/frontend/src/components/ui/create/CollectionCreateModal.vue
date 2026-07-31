@@ -55,7 +55,7 @@
 	</NewModal>
 </template>
 <script setup>
-import { PlusIcon, XIcon } from '@modrinth/assets'
+import { PlusIcon, XIcon } from '@bbsmc/assets'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -64,7 +64,7 @@ import {
 	NewModal,
 	StyledInput,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 
 import CreateLimitAlert from './CreateLimitAlert.vue'
 

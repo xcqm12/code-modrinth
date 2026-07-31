@@ -78,8 +78,8 @@
 	</div>
 </template>
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { BadgeCheckIcon, CheckIcon, IssuesIcon, XCircleIcon } from '@modrinth/assets'
+import type { Labrinth } from '@bbsmc/api-client'
+import { BadgeCheckIcon, CheckIcon, IssuesIcon, XCircleIcon } from '@bbsmc/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -89,8 +89,8 @@ import {
 	PageHeaderMetadata,
 	PageHeaderMetadataItem,
 	useVIntl,
-} from '@modrinth/ui'
-import { isOfficialAccount } from '@modrinth/utils'
+} from '@bbsmc/ui'
+import { isOfficialAccount } from '@bbsmc/utils'
 
 import { useScopes } from '~/composables/auth/scopes.ts'
 

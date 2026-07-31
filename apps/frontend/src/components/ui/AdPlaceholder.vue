@@ -26,7 +26,7 @@
 	</div>
 </template>
 <script setup>
-import { AutoLink } from '@modrinth/ui'
+import { AutoLink } from '@bbsmc/ui'
 
 const flags = useFeatureFlags()
 

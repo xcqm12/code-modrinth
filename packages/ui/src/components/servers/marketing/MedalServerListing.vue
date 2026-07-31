@@ -160,8 +160,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Archon } from '@modrinth/api-client'
-import { LockIcon, RocketIcon, SparklesIcon, SpinnerIcon } from '@modrinth/assets'
+import type { Archon } from '@bbsmc/api-client'
+import { LockIcon, RocketIcon, SparklesIcon, SpinnerIcon } from '@bbsmc/assets'
 import { useQuery } from '@tanstack/vue-query'
 import dayjs from 'dayjs'
 import dayjsDuration from 'dayjs/plugin/duration'

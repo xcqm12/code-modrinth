@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Settings2Icon } from '@modrinth/assets'
+import { Settings2Icon } from '@bbsmc/assets'
 import {
 	ButtonStyled,
 	defineMessages,
@@ -7,7 +7,7 @@ import {
 	injectPageContext,
 	Toggle,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { ref, watch } from 'vue'
 
 import { open_ads_consent_preferences } from '@/helpers/ads.js'

@@ -67,7 +67,7 @@ import {
 	injectmodrinthClient,
 	injectNotificationManager,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { useQuery } from '@tanstack/vue-query'
 
 import AuthorizationCard from '~/components/ui/AuthorizationCard.vue'

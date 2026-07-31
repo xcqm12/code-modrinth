@@ -168,7 +168,7 @@ import {
 	MinecraftServerIcon,
 	XCircleIcon,
 	XIcon,
-} from '@modrinth/assets'
+} from '@bbsmc/assets'
 import { computed, ref } from 'vue'
 
 import { useModalStack } from '../../composables/modal-stack'

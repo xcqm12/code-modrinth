@@ -6,7 +6,7 @@ import {
 	MastodonIcon,
 	ToggleRightIcon,
 	TwitterIcon,
-} from '@modrinth/assets'
+} from '@bbsmc/assets'
 import {
 	AutoLink,
 	ButtonStyled,
@@ -16,8 +16,8 @@ import {
 	IntlFormatted,
 	type MessageDescriptor,
 	useVIntl,
-} from '@modrinth/ui'
-import { commonSettingsMessages } from '@modrinth/ui/src/utils/common-messages.js'
+} from '@bbsmc/ui'
+import { commonSettingsMessages } from '@bbsmc/ui/src/utils/common-messages.js'
 
 import qilingmiaoLogo from '~/assets/images/qilingmiao.png'
 

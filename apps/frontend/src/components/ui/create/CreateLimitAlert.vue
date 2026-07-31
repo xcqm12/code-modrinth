@@ -41,15 +41,15 @@
 </template>
 
 <script setup lang="ts">
-import { MessageIcon } from '@modrinth/assets'
+import { MessageIcon } from '@bbsmc/assets'
 import {
 	Admonition,
 	ButtonStyled,
 	defineMessages,
 	injectmodrinthClient,
 	useVIntl,
-} from '@modrinth/ui'
-import { capitalizeString } from '@modrinth/utils'
+} from '@bbsmc/ui'
+import { capitalizeString } from '@bbsmc/utils'
 import { useQuery } from '@tanstack/vue-query'
 import { computed, watch } from 'vue'
 

@@ -86,7 +86,7 @@
 	</div>
 </template>
 <script setup lang="ts">
-import { RightArrowIcon, SettingsIcon } from '@modrinth/assets'
+import { RightArrowIcon, SettingsIcon } from '@bbsmc/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -94,7 +94,7 @@ import {
 	defineMessages,
 	injectNotificationManager,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import type { LocationQueryValue } from 'vue-router'
 
 interface ApiErrorShape {

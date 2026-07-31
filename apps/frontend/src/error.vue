@@ -89,7 +89,7 @@
 </template>
 
 <script setup>
-import { AnnoyedRinthbot, LogInIcon, SadRinthbot } from '@modrinth/assets'
+import { AnnoyedRinthbot, LogInIcon, SadRinthbot } from '@bbsmc/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -104,7 +104,7 @@ import {
 	provideNotificationManager,
 	providePageContext,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 
 import Logo404 from '~/assets/images/404.svg'
 import { getSignInRouteObj } from '~/composables/auth.js'

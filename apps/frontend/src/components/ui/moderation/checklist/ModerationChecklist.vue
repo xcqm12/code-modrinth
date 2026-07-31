@@ -380,7 +380,7 @@ import {
 	ToggleRightIcon,
 	UndoIcon,
 	XIcon,
-} from '@modrinth/assets'
+} from '@bbsmc/assets'
 import {
 	type IdentifiedNodeBuilder,
 	moderationSettings,
@@ -388,7 +388,7 @@ import {
 	type Priority,
 	type StageNodeBuilder,
 	type ValueNodeBuilder,
-} from '@modrinth/moderation'
+} from '@bbsmc/moderation'
 import {
 	createTrackedPatch,
 	evalSegment,
@@ -404,7 +404,7 @@ import {
 	setMissingMdHandler,
 	useStages,
 	walkNodes,
-} from '@modrinth/moderation'
+} from '@bbsmc/moderation'
 import {
 	Avatar,
 	ButtonStyled,
@@ -416,9 +416,9 @@ import {
 	MarkdownEditor,
 	StyledInput,
 	useDebugLogger,
-} from '@modrinth/ui'
-import TeleportOverflowMenu from '@modrinth/ui/src/components/base/TeleportOverflowMenu.vue'
-import type { ProjectStatus } from '@modrinth/utils'
+} from '@bbsmc/ui'
+import TeleportOverflowMenu from '@bbsmc/ui/src/components/base/TeleportOverflowMenu.vue'
+import type { ProjectStatus } from '@bbsmc/utils'
 import { useQueryClient } from '@tanstack/vue-query'
 import { useDebounceFn } from '@vueuse/core'
 import type { Component } from 'vue'

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { ChevronRightIcon, ExternalIcon, XIcon } from '@modrinth/assets'
+import type { Labrinth } from '@bbsmc/api-client'
+import { ChevronRightIcon, ExternalIcon, XIcon } from '@bbsmc/assets'
 import { computed, ref, useTemplateRef } from 'vue'
 
 import ButtonStyled from '../base/ButtonStyled.vue'

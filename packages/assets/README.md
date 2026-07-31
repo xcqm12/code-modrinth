@@ -1,4 +1,4 @@
-# `@modrinth/assets`
+# `@bbsmc/assets`
 
 This package contains various assets used across the modrinth platform, including icons, images, and branding materials.
 

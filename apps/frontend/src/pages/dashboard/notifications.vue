@@ -69,7 +69,7 @@
 	</div>
 </template>
 <script setup>
-import { CheckCheckIcon, HistoryIcon } from '@modrinth/assets'
+import { CheckCheckIcon, HistoryIcon } from '@bbsmc/assets'
 import {
 	ButtonStyled,
 	Chips,
@@ -78,8 +78,8 @@ import {
 	injectmodrinthClient,
 	Pagination,
 	useVIntl,
-} from '@modrinth/ui'
-import { formatProjectType } from '@modrinth/utils'
+} from '@bbsmc/ui'
+import { formatProjectType } from '@bbsmc/utils'
 import { useQuery } from '@tanstack/vue-query'
 
 import Breadcrumbs from '~/components/ui/Breadcrumbs.vue'

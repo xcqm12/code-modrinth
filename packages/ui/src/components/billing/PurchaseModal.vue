@@ -465,8 +465,8 @@ import {
 	SpinnerIcon,
 	UnknownIcon,
 	XIcon,
-} from '@modrinth/assets'
-import { calculateSavings, createStripeElements, getCurrency } from '@modrinth/utils'
+} from '@bbsmc/assets'
+import { calculateSavings, createStripeElements, getCurrency } from '@bbsmc/utils'
 import dayjs from 'dayjs'
 import { computed, nextTick, reactive, ref, watch } from 'vue'
 

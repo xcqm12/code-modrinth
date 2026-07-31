@@ -1,10 +1,10 @@
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@bbsmc/api-client'
 import {
 	createContext,
 	injectmodrinthClient,
 	injectNotificationManager,
 	type ProjectPageContext,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import type { ComputedRef, Ref } from 'vue'
 

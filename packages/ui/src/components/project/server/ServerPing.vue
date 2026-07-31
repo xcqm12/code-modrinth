@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SignalIcon } from '@modrinth/assets'
+import { SignalIcon } from '@bbsmc/assets'
 import { computed } from 'vue'
 
 import { defineMessages, useVIntl } from '../../../composables'

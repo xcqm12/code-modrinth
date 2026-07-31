@@ -556,7 +556,7 @@ import {
 	UserPlusIcon,
 	UsersIcon,
 	UserXIcon,
-} from '@modrinth/assets'
+} from '@bbsmc/assets'
 import {
 	Avatar,
 	Badge,
@@ -570,7 +570,7 @@ import {
 	injectProjectPageContext,
 	StyledInput,
 	Toggle,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { useQuery } from '@tanstack/vue-query'
 
 import ConfirmTransferProjectModal from '~/components/ui/ConfirmTransferProjectModal.vue'

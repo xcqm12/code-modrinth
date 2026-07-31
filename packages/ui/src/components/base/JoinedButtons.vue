@@ -29,7 +29,7 @@
 </template>
 
 <script setup lang="ts">
-import { DropdownIcon } from '@modrinth/assets'
+import { DropdownIcon } from '@bbsmc/assets'
 import type { Component } from 'vue'
 import { computed } from 'vue'
 

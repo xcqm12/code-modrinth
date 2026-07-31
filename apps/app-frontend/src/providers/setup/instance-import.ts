@@ -1,5 +1,5 @@
-import type { AbstractWebNotificationManager } from '@modrinth/ui'
-import { provideInstanceImport } from '@modrinth/ui'
+import type { AbstractWebNotificationManager } from '@bbsmc/ui'
+import { provideInstanceImport } from '@bbsmc/ui'
 import { open } from '@tauri-apps/plugin-dialog'
 
 import {

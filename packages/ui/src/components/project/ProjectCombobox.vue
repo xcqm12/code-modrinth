@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts" setup>
-import { PackageIcon } from '@modrinth/assets'
+import { PackageIcon } from '@bbsmc/assets'
 import { useDebounceFn } from '@vueuse/core'
 import Fuse from 'fuse.js'
 import { defineAsyncComponent, h, markRaw, ref, watch } from 'vue'

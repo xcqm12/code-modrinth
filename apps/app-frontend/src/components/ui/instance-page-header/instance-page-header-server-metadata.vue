@@ -41,14 +41,14 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@bbsmc/api-client'
 import {
 	Avatar,
 	ServerOnlinePlayers,
 	ServerPing,
 	ServerRecentPlays,
 	ServerRegion,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 
 defineProps<{
 	loadingServerPing?: boolean

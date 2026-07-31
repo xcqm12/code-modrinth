@@ -41,7 +41,7 @@
 </template>
 
 <script setup lang="ts">
-import { FileCogIcon, UploadIcon } from '@modrinth/assets'
+import { FileCogIcon, UploadIcon } from '@bbsmc/assets'
 import {
 	Accordion,
 	type ContentDiffItem,
@@ -50,7 +50,7 @@ import {
 	FileTreeSelect,
 	type FileTreeSelectItem,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { computed, ref } from 'vue'
 
 import {

@@ -316,7 +316,7 @@
 </template>
 
 <script lang="ts" setup>
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@bbsmc/api-client'
 import {
 	BoxIcon,
 	ClipboardCopyIcon,
@@ -332,7 +332,7 @@ import {
 	RightArrowIcon,
 	ShareIcon,
 	TrashIcon,
-} from '@modrinth/assets'
+} from '@bbsmc/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -346,7 +346,7 @@ import {
 	OverflowMenu,
 	ProjectPageVersions,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { useTemplateRef, watch } from 'vue'
 
 import CreateProjectVersionModal from '~/components/ui/create-project-version/CreateProjectVersionModal.vue'

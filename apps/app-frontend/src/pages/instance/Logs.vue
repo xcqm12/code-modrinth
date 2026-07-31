@@ -10,7 +10,7 @@ import {
 	injectmodrinthClient,
 	injectNotificationManager,
 	provideConsoleManager,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { computed, onUnmounted, ref, shallowRef, triggerRef, watch, watchEffect } from 'vue'
 import { useRoute } from 'vue-router'
 

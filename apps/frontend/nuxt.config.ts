@@ -33,7 +33,7 @@ const STAGING_modrinth_URL = 'https://staging.bbsmc.org.cn'
 export default defineNuxtConfig({
 	srcDir: 'src/',
 	alias: {
-		'@modrinth/api-client': API_CLIENT_SOURCE,
+		'@bbsmc/api-client': API_CLIENT_SOURCE,
 	},
 	app: {
 		head: {
@@ -94,7 +94,7 @@ export default defineNuxtConfig({
 		cacheDir: '../../node_modules/.vite/apps/knossos',
 		resolve: {
 			alias: {
-				'@modrinth/api-client': API_CLIENT_SOURCE,
+				'@bbsmc/api-client': API_CLIENT_SOURCE,
 			},
 			dedupe: ['vue'],
 		},

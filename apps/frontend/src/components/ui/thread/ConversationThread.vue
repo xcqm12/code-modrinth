@@ -420,7 +420,7 @@ import {
 	SendIcon,
 	SpinnerIcon,
 	XIcon,
-} from '@modrinth/assets'
+} from '@bbsmc/assets'
 import {
 	ButtonStyled,
 	Checkbox,
@@ -433,7 +433,7 @@ import {
 	NewModal,
 	OverflowMenu,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 
 import ThreadMessage from '~/components/ui/thread/ThreadMessage.vue'
 import { useImageUpload } from '~/composables/image-upload.ts'

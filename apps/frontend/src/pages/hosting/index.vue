@@ -632,7 +632,7 @@ import {
 	TerminalSquareIcon,
 	TransferIcon,
 	VersionIcon,
-} from '@modrinth/assets'
+} from '@bbsmc/assets'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -644,8 +644,8 @@ import {
 	modrinthServersPurchaseModal,
 	useFormatPrice,
 	useVIntl,
-} from '@modrinth/ui'
-import { monthsInInterval } from '@modrinth/ui/src/utils/billing.ts'
+} from '@bbsmc/ui'
+import { monthsInInterval } from '@bbsmc/ui/src/utils/billing.ts'
 import { useQuery } from '@tanstack/vue-query'
 import { computed } from 'vue'
 

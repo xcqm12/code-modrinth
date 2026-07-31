@@ -253,15 +253,15 @@
 </template>
 
 <script setup lang="ts">
-import type { Archon } from '@modrinth/api-client'
+import type { Archon } from '@bbsmc/api-client'
 import {
 	DownloadIcon,
 	LockIcon,
 	MessagesSquareIcon,
 	SparklesIcon,
 	SpinnerIcon,
-} from '@modrinth/assets'
-import { AutoLink, ButtonStyled } from '@modrinth/ui'
+} from '@bbsmc/assets'
+import { AutoLink, ButtonStyled } from '@bbsmc/ui'
 import { useQuery } from '@tanstack/vue-query'
 import { computed, ref } from 'vue'
 import { useRouter } from 'vue-router'

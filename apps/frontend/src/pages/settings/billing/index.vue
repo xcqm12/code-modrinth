@@ -691,7 +691,7 @@ import {
 	TrashIcon,
 	UpdatedIcon,
 	XIcon,
-} from '@modrinth/assets'
+} from '@bbsmc/assets'
 import {
 	AddPaymentMethodModal,
 	ButtonStyled,
@@ -711,8 +711,8 @@ import {
 	useFormatPrice,
 	useServerBackupDownload,
 	useVIntl,
-} from '@modrinth/ui'
-import { calculateSavings, getCurrency } from '@modrinth/utils'
+} from '@bbsmc/ui'
+import { calculateSavings, getCurrency } from '@bbsmc/utils'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { useIntervalFn } from '@vueuse/core'
 import { computed, ref, watch } from 'vue'

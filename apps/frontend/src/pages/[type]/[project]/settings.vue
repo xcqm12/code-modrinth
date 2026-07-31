@@ -12,15 +12,15 @@ import {
 	TagsIcon,
 	UsersIcon,
 	VersionIcon,
-} from '@modrinth/assets'
+} from '@bbsmc/assets'
 import {
 	commonMessages,
 	commonProjectSettingsMessages,
 	injectProjectPageContext,
 	Toggle,
 	useVIntl,
-} from '@modrinth/ui'
-import { isStaff } from '@modrinth/utils'
+} from '@bbsmc/ui'
+import { isStaff } from '@bbsmc/utils'
 import { useLocalStorage, useScroll } from '@vueuse/core'
 import { computed } from 'vue'
 

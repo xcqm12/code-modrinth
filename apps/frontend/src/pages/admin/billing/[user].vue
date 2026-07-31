@@ -223,7 +223,7 @@ import {
 	ServerIcon,
 	UserIcon,
 	XIcon,
-} from '@modrinth/assets'
+} from '@bbsmc/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -238,9 +238,9 @@ import {
 	useFormatDateTime,
 	useRelativeTime,
 	useVIntl,
-} from '@modrinth/ui'
-import { capitalizeString } from '@modrinth/utils'
-import { DEFAULT_CREDIT_EMAIL_MESSAGE } from '@modrinth/utils/utils.ts'
+} from '@bbsmc/ui'
+import { capitalizeString } from '@bbsmc/utils'
+import { DEFAULT_CREDIT_EMAIL_MESSAGE } from '@bbsmc/utils/utils.ts'
 import { useQuery } from '@tanstack/vue-query'
 import dayjs from 'dayjs'
 

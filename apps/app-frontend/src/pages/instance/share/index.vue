@@ -144,7 +144,7 @@
 </template>
 
 <script setup lang="ts">
-import { LogInIcon, SpinnerIcon, UserPlusIcon } from '@modrinth/assets'
+import { LogInIcon, SpinnerIcon, UserPlusIcon } from '@bbsmc/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -155,7 +155,7 @@ import {
 	InvitePlayersModal,
 	type InvitePlayersUser,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { computed, ref, toRef, watch } from 'vue'
 

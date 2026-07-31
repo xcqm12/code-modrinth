@@ -1,4 +1,4 @@
-import type { AbstractmodrinthClient, Labrinth } from '@modrinth/api-client'
+import type { AbstractmodrinthClient, Labrinth } from '@bbsmc/api-client'
 
 type Notification = Labrinth.Notifications.v2.Notification
 

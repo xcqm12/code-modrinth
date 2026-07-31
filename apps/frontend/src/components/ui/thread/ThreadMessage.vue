@@ -159,8 +159,8 @@ import {
 	MoreHorizontalIcon,
 	ScaleIcon,
 	TrashIcon,
-} from '@modrinth/assets'
-import { moderationSettings } from '@modrinth/moderation'
+} from '@bbsmc/assets'
+import { moderationSettings } from '@bbsmc/moderation'
 import {
 	AutoLink,
 	Avatar,
@@ -169,8 +169,8 @@ import {
 	OverflowMenu,
 	useFormatDateTime,
 	useRelativeTime,
-} from '@modrinth/ui'
-import { renderString } from '@modrinth/utils'
+} from '@bbsmc/ui'
+import { renderString } from '@bbsmc/utils'
 
 import { isStaff } from '~/helpers/users.js'
 

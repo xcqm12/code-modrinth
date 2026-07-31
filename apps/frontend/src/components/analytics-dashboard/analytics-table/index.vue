@@ -190,7 +190,7 @@
 </template>
 
 <script setup lang="ts">
-import { DownloadIcon, DropdownIcon, SearchIcon, UserIcon } from '@modrinth/assets'
+import { DownloadIcon, DropdownIcon, SearchIcon, UserIcon } from '@bbsmc/assets'
 import {
 	ButtonStyled,
 	OverflowMenu,
@@ -200,7 +200,7 @@ import {
 	Table,
 	useFormatNumber,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import type { LocationQuery } from 'vue-router'
 
 import {

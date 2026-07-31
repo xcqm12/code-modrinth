@@ -19,14 +19,14 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
+import type { Labrinth } from '@bbsmc/api-client'
 import {
 	AccountProfileSettings,
 	commonSettingsMessages,
 	injectmodrinthClient,
 	UnsavedChangesPopup,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 
 definePageMeta({
 	middleware: 'auth',

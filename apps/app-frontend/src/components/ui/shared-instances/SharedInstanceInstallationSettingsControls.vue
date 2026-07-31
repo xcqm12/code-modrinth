@@ -85,7 +85,7 @@
 </template>
 
 <script setup lang="ts">
-import { SpinnerIcon, UnlinkIcon, XIcon } from '@modrinth/assets'
+import { SpinnerIcon, UnlinkIcon, XIcon } from '@bbsmc/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -94,7 +94,7 @@ import {
 	InlineBackupCreator,
 	NewModal,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { ref } from 'vue'
 
 const props = withDefaults(

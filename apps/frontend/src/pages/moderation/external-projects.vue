@@ -128,8 +128,8 @@
 	</div>
 </template>
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { BinaryIcon, EditIcon, HashIcon, SearchIcon } from '@modrinth/assets'
+import type { Labrinth } from '@bbsmc/api-client'
+import { BinaryIcon, EditIcon, HashIcon, SearchIcon } from '@bbsmc/assets'
 import {
 	ButtonStyled,
 	Combobox,
@@ -142,7 +142,7 @@ import {
 	NewModal,
 	StyledInput,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 
 const { formatMessage } = useVIntl()
 

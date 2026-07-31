@@ -22,8 +22,8 @@
 </template>
 
 <script setup lang="ts">
-import { LinkIcon } from '@modrinth/assets'
-import { injectNotificationManager } from '@modrinth/ui'
+import { LinkIcon } from '@bbsmc/assets'
+import { injectNotificationManager } from '@bbsmc/ui'
 import { useStorage } from '@vueuse/core'
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'

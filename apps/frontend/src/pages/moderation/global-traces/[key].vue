@@ -91,8 +91,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@modrinth/api-client'
-import { ArrowLeftIcon, HashIcon, TrashIcon } from '@modrinth/assets'
+import type { Labrinth } from '@bbsmc/api-client'
+import { ArrowLeftIcon, HashIcon, TrashIcon } from '@bbsmc/assets'
 import {
 	Badge,
 	ButtonStyled,
@@ -100,7 +100,7 @@ import {
 	injectmodrinthClient,
 	injectNotificationManager,
 	Pagination,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 
 import GlobalDetailLocalTraceCard from '~/components/ui/moderation/GlobalDetailLocalTraceCard.vue'
 

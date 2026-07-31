@@ -68,8 +68,8 @@
 </template>
 
 <script setup lang="ts">
-import { MessagesSquareIcon, SpinnerIcon } from '@modrinth/assets'
-import { ButtonStyled, defineMessages, NewModal, useVIntl } from '@modrinth/ui'
+import { MessagesSquareIcon, SpinnerIcon } from '@bbsmc/assets'
+import { ButtonStyled, defineMessages, NewModal, useVIntl } from '@bbsmc/ui'
 import { inject, type Ref, ref } from 'vue'
 
 import steveImage from '@/assets/steve-look-up-left.webp'

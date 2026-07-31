@@ -196,7 +196,7 @@
 	</div>
 </template>
 <script setup>
-import { EditIcon, PlusIcon, SaveIcon, TrashIcon, XIcon } from '@modrinth/assets'
+import { EditIcon, PlusIcon, SaveIcon, TrashIcon, XIcon } from '@bbsmc/assets'
 import {
 	ButtonStyled,
 	Checkbox,
@@ -214,7 +214,7 @@ import {
 	useFormatDateTime,
 	useRelativeTime,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 
 import {

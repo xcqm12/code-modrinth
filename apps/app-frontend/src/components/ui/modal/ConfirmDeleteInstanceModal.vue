@@ -24,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-import { TrashIcon, XIcon } from '@modrinth/assets'
+import { TrashIcon, XIcon } from '@bbsmc/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -32,7 +32,7 @@ import {
 	defineMessages,
 	NewModal,
 	useVIntl,
-} from '@modrinth/ui'
+} from '@bbsmc/ui'
 import { ref } from 'vue'
 
 const { formatMessage } = useVIntl()

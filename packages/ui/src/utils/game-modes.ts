@@ -1,4 +1,4 @@
-import { BlocksIcon, CompassIcon, EyeIcon, PickaxeIcon, UnknownIcon } from '@modrinth/assets'
+import { BlocksIcon, CompassIcon, EyeIcon, PickaxeIcon, UnknownIcon } from '@bbsmc/assets'
 
 import { defineMessage } from '../composables/i18n'
 
