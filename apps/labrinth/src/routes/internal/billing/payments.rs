@@ -29,16 +29,16 @@ use super::{
 
 const DEFAULT_USER_COUNTRY: &str = "US";
 
-pub const modrinth_SUBSCRIPTION_ID: &str = "modrinth_subscription_id";
-pub const modrinth_PRICE_ID: &str = "modrinth_price_id";
-pub const modrinth_SUBSCRIPTION_INTERVAL: &str =
+pub const MODRINTH_SUBSCRIPTION_ID: &str = "modrinth_subscription_id";
+pub const MODRINTH_PRICE_ID: &str = "modrinth_price_id";
+pub const MODRINTH_SUBSCRIPTION_INTERVAL: &str =
     "modrinth_subscription_interval";
-pub const modrinth_CHARGE_TYPE: &str = "modrinth_charge_type";
-pub const modrinth_NEW_REGION: &str = "modrinth_new_region";
-pub const modrinth_USER_ID: &str = "modrinth_user_id";
-pub const modrinth_CHARGE_ID: &str = "modrinth_charge_id";
-pub const modrinth_TAX_AMOUNT: &str = "modrinth_tax_amount";
-pub const modrinth_PAYMENT_METADATA: &str = "modrinth_payment_metadata";
+pub const MODRINTH_CHARGE_TYPE: &str = "modrinth_charge_type";
+pub const MODRINTH_NEW_REGION: &str = "modrinth_new_region";
+pub const MODRINTH_USER_ID: &str = "modrinth_user_id";
+pub const MODRINTH_CHARGE_ID: &str = "modrinth_charge_id";
+pub const MODRINTH_TAX_AMOUNT: &str = "modrinth_tax_amount";
+pub const MODRINTH_PAYMENT_METADATA: &str = "modrinth_payment_metadata";
 
 pub enum AttachedCharge {
     /// Create a proration charge.
@@ -426,32 +426,32 @@ pub async fn create_or_update_payment_intent(
 
     let mut metadata = HashMap::new();
 
-    metadata.insert(modrinth_USER_ID.to_owned(), to_base62(user.id.0));
+    metadata.insert(MODRINTH_USER_ID.to_owned(), to_base62(user.id.0));
     metadata.insert(
-        modrinth_CHARGE_TYPE.to_owned(),
+        MODRINTH_CHARGE_TYPE.to_owned(),
         charge_data.charge_type.as_str().to_owned(),
     );
-    metadata.insert(modrinth_TAX_AMOUNT.to_owned(), tax_amount.to_string());
+    metadata.insert(MODRINTH_TAX_AMOUNT.to_owned(), tax_amount.to_string());
 
     if let Some(payment_metadata) = attach_payment_metadata {
         metadata.insert(
-            modrinth_PAYMENT_METADATA.to_owned(),
+            MODRINTH_PAYMENT_METADATA.to_owned(),
             serde_json::to_string(&payment_metadata)?,
         );
     }
 
     if let AttachedCharge::UseExisting { charge } = attached_charge {
         metadata.insert(
-            modrinth_CHARGE_ID.to_owned(),
+            MODRINTH_CHARGE_ID.to_owned(),
             to_base62(charge.id.0 as u64),
         );
 
         // These are only used to post-create the charge in the stripe webhook, so
         // unset them.
-        metadata.insert(modrinth_PRICE_ID.to_owned(), String::new());
+        metadata.insert(MODRINTH_PRICE_ID.to_owned(), String::new());
         metadata
-            .insert(modrinth_SUBSCRIPTION_INTERVAL.to_owned(), String::new());
-        metadata.insert(modrinth_SUBSCRIPTION_ID.to_owned(), String::new());
+            .insert(MODRINTH_SUBSCRIPTION_INTERVAL.to_owned(), String::new());
+        metadata.insert(MODRINTH_SUBSCRIPTION_ID.to_owned(), String::new());
     } else if let AttachedCharge::Proration {
         amount: _,
         next_product_id: _,
@@ -463,20 +463,20 @@ pub async fn create_or_update_payment_intent(
         let charge_id = generate_charge_id(&mut transaction).await?;
 
         metadata.insert(
-            modrinth_CHARGE_ID.to_owned(),
+            MODRINTH_CHARGE_ID.to_owned(),
             to_base62(charge_id.0 as u64),
         );
 
         metadata.insert(
-            modrinth_PRICE_ID.to_owned(),
+            MODRINTH_PRICE_ID.to_owned(),
             charge_data.price_id.to_string(),
         );
         metadata.insert(
-            modrinth_SUBSCRIPTION_INTERVAL.to_owned(),
+            MODRINTH_SUBSCRIPTION_INTERVAL.to_owned(),
             next_interval.as_str().to_owned(),
         );
         metadata.insert(
-            modrinth_SUBSCRIPTION_ID.to_owned(),
+            MODRINTH_SUBSCRIPTION_ID.to_owned(),
             current_subscription.to_string(),
         );
     } else if let AttachedCharge::Promotion {
@@ -490,23 +490,23 @@ pub async fn create_or_update_payment_intent(
         let charge_id = generate_charge_id(&mut transaction).await?;
 
         metadata.insert(
-            modrinth_CHARGE_ID.to_owned(),
+            MODRINTH_CHARGE_ID.to_owned(),
             to_base62(charge_id.0 as u64),
         );
 
         metadata.insert(
-            modrinth_PRICE_ID.to_owned(),
+            MODRINTH_PRICE_ID.to_owned(),
             charge_data.price_id.to_string(),
         );
         metadata.insert(
-            modrinth_SUBSCRIPTION_INTERVAL.to_owned(),
+            MODRINTH_SUBSCRIPTION_INTERVAL.to_owned(),
             interval.as_str().to_owned(),
         );
         metadata.insert(
-            modrinth_SUBSCRIPTION_ID.to_owned(),
+            MODRINTH_SUBSCRIPTION_ID.to_owned(),
             current_subscription.to_string(),
         );
-        metadata.insert(modrinth_NEW_REGION.to_owned(), new_region);
+        metadata.insert(MODRINTH_NEW_REGION.to_owned(), new_region);
     } else {
         let mut transaction = pg.begin().await?;
         let charge_id = generate_charge_id(&mut transaction).await?;
@@ -514,22 +514,22 @@ pub async fn create_or_update_payment_intent(
             generate_user_subscription_id(&mut transaction).await?;
 
         metadata.insert(
-            modrinth_CHARGE_ID.to_owned(),
+            MODRINTH_CHARGE_ID.to_owned(),
             to_base62(charge_id.0 as u64),
         );
         metadata.insert(
-            modrinth_SUBSCRIPTION_ID.to_owned(),
+            MODRINTH_SUBSCRIPTION_ID.to_owned(),
             to_base62(subscription_id.0 as u64),
         );
 
         metadata.insert(
-            modrinth_PRICE_ID.to_owned(),
+            MODRINTH_PRICE_ID.to_owned(),
             charge_data.price_id.to_string(),
         );
 
         if let Some(interval) = charge_data.interval {
             metadata.insert(
-                modrinth_SUBSCRIPTION_INTERVAL.to_owned(),
+                MODRINTH_SUBSCRIPTION_INTERVAL.to_owned(),
                 interval.as_str().to_owned(),
             );
         }
@@ -611,7 +611,7 @@ pub async fn get_or_create_customer(
         Ok(customer_id)
     } else {
         let mut metadata = HashMap::new();
-        metadata.insert(modrinth_USER_ID.to_owned(), to_base62(user_id.0));
+        metadata.insert(MODRINTH_USER_ID.to_owned(), to_base62(user_id.0));
 
         let customer = stripe::Customer::create(
             client,

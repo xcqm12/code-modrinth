@@ -930,7 +930,7 @@ mod tests {
             ),
             (
                 "modrinth/theseus/0.8.6 (support@bbsmc.org.cn)",
-                Some(DownloadSource::modrinthApp),
+                Some(DownloadSource::ModrinthApp),
             ),
             (
                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15",
@@ -956,7 +956,7 @@ mod tests {
             json!("website")
         );
         assert_eq!(
-            serde_json::to_value(DownloadSource::modrinthApp).unwrap(),
+            serde_json::to_value(DownloadSource::ModrinthApp).unwrap(),
             json!("modrinth_app")
         );
         assert_eq!(

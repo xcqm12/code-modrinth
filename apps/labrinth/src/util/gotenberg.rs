@@ -10,9 +10,9 @@ use std::str::FromStr;
 use std::time::Duration;
 use xredis::RedisPool;
 
-pub const modrinth_GENERATED_PDF_TYPE: HeaderName =
+pub const MODRINTH_GENERATED_PDF_TYPE: HeaderName =
     HeaderName::from_static("bbsmc-generated-pdf-type");
-pub const modrinth_PAYMENT_ID: HeaderName =
+pub const MODRINTH_PAYMENT_ID: HeaderName =
     HeaderName::from_static("bbsmc-payment-id");
 pub const PAYMENT_STATEMENTS_NAMESPACE: &str = "payment_statements:v3";
 const REDIS_TIMEOUT_MARGIN_MS: u64 = 250;
