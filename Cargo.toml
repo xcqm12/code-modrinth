@@ -21,7 +21,7 @@ members = [
 [workspace.package]
 edition = "2024"
 rust-version = "1.90.0"
-repository = "https://github.com/Bbsmc/code"
+repository = "https://github.com/modrinth/code"
 
 [workspace.dependencies]
 actix-cors = "0.7.1"
@@ -74,7 +74,7 @@ daedalus = { path = "packages/daedalus" }
 darling = { version = "0.23" }
 dashmap = "6.1.0"
 data-url = "0.3.2"
-deadpool-redis = { git = "https://github.com/Bbsmc/deadpool", rev = "c7209b086829572f368f1194aba54bdea8dc540b", version = "0.23.0" }
+deadpool-redis = { git = "https://github.com/modrinth/deadpool", rev = "c7209b086829572f368f1194aba54bdea8dc540b", version = "0.23.0" }
 derive_more = "2.1.1"
 directories = "6.0.0"
 dirs = "6.0.0"
