@@ -289,7 +289,7 @@ vars! {
     PAYPAL_BALANCE_ALERT_THRESHOLD: u64 = 0u64;
 
     // Chinese payment gateways
-    // Alipay (支付�?
+    // Alipay (Alipay)
     ALIPAY_APP_ID: String = "none";
     ALIPAY_PRIVATE_KEY: String = "none";
     ALIPAY_PUBLIC_KEY: String = "none";
@@ -297,21 +297,21 @@ vars! {
     ALIPAY_NOTIFY_URL: String = "none";
     ALIPAY_RETURN_URL: String = "none";
 
-    // WeChat Pay (微信支付)
+    // WeChat Pay (WeChat Pay)
     WECHATPAY_APP_ID: String = "none";
     WECHATPAY_MCH_ID: String = "none";
     WECHATPAY_API_KEY: String = "none";
     WECHATPAY_API_V3_KEY: String = "none";
     WECHATPAY_NOTIFY_URL: String = "none";
 
-    // 易支�?(epay) - Chinese payment aggregation
+    // epay (epay) - Chinese payment aggregation
     EPAY_API_URL: String = "none";
     EPAY_PID: String = "none";
     EPAY_KEY: String = "none";
     EPAY_NOTIFY_URL: String = "none";
     EPAY_RETURN_URL: String = "none";
 
-    // 码支�?(codepay) - Chinese payment aggregation
+    // codepay (codepay) - Chinese payment aggregation
     CODEPAY_API_URL: String = "none";
     CODEPAY_APP_ID: String = "none";
     CODEPAY_APP_SECRET: String = "none";
