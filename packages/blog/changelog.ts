@@ -11,6 +11,41 @@ export type VersionEntry = {
 
 const VERSIONS: VersionEntry[] = [
 	{
+		date: `2026-07-31T06:10:23+00:00`,
+		product: 'web',
+		body: `## Fixed
+- Fixed randomly getting signed out of Modrinth account due to random non-auth related errors.`,
+	},
+	{
+		date: `2026-07-29T21:32:06+00:00`,
+		product: 'app',
+		version: '0.17.3',
+		body: `## Added
+- Added button to create a new instance on the Library page.
+
+## Changed
+- Added a toggle to hide modpacks that are already installed.
+- Added tooltip to installation settings button in installed modpack card.
+
+## Fixed
+- Improved error when shared instances reach a config file limit.
+- When pushing updates to shared instances, will now scroll to the top when entering a sub-page.
+- Fixed instance installations getting stuck when the instance is deleted.
+- Fixed error when failing to fetch a shared instance icon.
+- Installing content from Discover content will now install the latest that matches the game version and loader filters, not the absolute latest.`,
+	},
+	{
+		date: `2026-07-29T21:32:06+00:00`,
+		product: 'web',
+		body: `## Changed
+- Incomplete current day revenue hides that day's line segment instead of showing a dip to \$0.
+- Updated the modal for creating OAuth applications.
+
+## Fixed
+- Fixed dependencies in project download modal could give dependency with wrong Minecraft version.
+- Fixed PATS page new generated tokens invalidating in the same session.`,
+	},
+	{
 		date: `2026-07-28T23:36:10+00:00`,
 		product: 'web',
 		body: `## Changed
@@ -100,7 +135,7 @@ const VERSIONS: VersionEntry[] = [
 		date: `2026-07-26T19:06:47+00:00`,
 		product: 'web',
 		body: `## Changed
-- Changed review estimate text from 24â€?8 hours to within a week, to set more realistic expectations for now.`,
+- Changed review estimate text from 24ï¿½?8 hours to within a week, to set more realistic expectations for now.`,
 	},
 	{
 		date: `2026-07-26T01:32:43+00:00`,
@@ -1448,7 +1483,7 @@ const VERSIONS: VersionEntry[] = [
 ## Changed
 - When updating your game version in the platform settings, incompatible mods are now disabled instead of removed.
 - Better UI for installed custom modpack files.
-- Redesigned the server panel header â€?loader, game version, server address, uptime, and linked project are now shown as clean inline stats with the project icon and a link to the project page, matching instances in the Bbsmc App.
+- Redesigned the server panel header ï¿½?loader, game version, server address, uptime, and linked project are now shown as clean inline stats with the project icon and a link to the project page, matching instances in the Bbsmc App.
 - Rebuilt the Files tab with right-click context menus, keyboard shortcuts, drag-and-drop, improved modals for moving items and extracting archives, undo/redo for file moves and renames, and smoother scrolling for large directories, now aligned with the Content tab design.
 - Cleaned up backup progress indicators to be more compact.
 
@@ -1464,7 +1499,7 @@ const VERSIONS: VersionEntry[] = [
 		product: 'app',
 		version: '0.12.5',
 		body: `## Added
-- Added a Files tab for instances, matching the Bbsmc Hosting experience â€?browse, edit, and manage all files in your instance folder without leaving the app, ideal for editing config files, viewing crash reports, and more.
+- Added a Files tab for instances, matching the Bbsmc Hosting experience ï¿½?browse, edit, and manage all files in your instance folder without leaving the app, ideal for editing config files, viewing crash reports, and more.
 - Added new filters to the Worlds tab: Online, Offline, Singleplayer, Modded, and Vanilla, replacing the previous set.
 - Added a "Browse servers" option to the Worlds tab, allowing you to search for compatible servers and quickly play or save them for later.
 - Added an empty state to the Worlds tab aligned with the Content tabs, with options to add or browse for servers.
@@ -3166,7 +3201,7 @@ Contributed by [IMB11](https://github.com/Bbsmc/code/pull/1301).`,
   - The library page now gives responsive feedback as instances are installing.
 - The beginnings of a Friends system. In the future, you will be able to share the instances youâ€™re playing and invite them to servers.
 - Access your most recent instances with ease with Quick Instances.
-- Fixed â€œDatabase is lockedâ€?errors on devices with slow disks.
+- Fixed â€œDatabase is lockedï¿½?errors on devices with slow disks.
 - Fixed a few edge cases where API downtime could lead to an invalid state.`,
 	},
 	{
@@ -3204,7 +3239,7 @@ Contributed by [IMB11](https://github.com/Bbsmc/code/pull/1301).`,
 - The Platform options page has been completely redesigned to streamline user interactions and improve overall clarity.
 - Suspended servers now display a clear "Suspended" status instead of a confusing "Connection lost" message, allowing users to easily check their billing information.
 - The console has been internally reworked to improve responsiveness and prevent freezing during high-volume spam.
-- Resolved CPU usage readings that previously exceeded 100% during high-load scenarios. CPU usage is now accurately normalized to a 0â€?00% range across all cores.
+- Resolved CPU usage readings that previously exceeded 100% during high-load scenarios. CPU usage is now accurately normalized to a 0ï¿½?00% range across all cores.
 - Corrected CPU limit settings for some servers, potentially improving performance by up to half a core.
 - Fixed an issue preventing server reinstallation when at the maximum backup limit.
 - Resolved installation and runtime problems with older Minecraft versions.
