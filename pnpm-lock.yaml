@@ -64,13 +64,13 @@ importers:
 
   apps/app:
     dependencies:
-      '@Bbsmc/app-frontend':
+      '@bbsmc/app-frontend':
         specifier: workspace:*
         version: link:../app-frontend
-      '@Bbsmc/app-lib':
+      '@bbsmc/app-lib':
         specifier: workspace:*
         version: link:../../packages/app-lib
-      '@Bbsmc/daedalus':
+      '@bbsmc/daedalus':
         specifier: workspace:*
         version: link:../../packages/daedalus
     devDependencies:
@@ -80,16 +80,16 @@ importers:
 
   apps/app-frontend:
     dependencies:
-      '@Bbsmc/api-client':
+      '@bbsmc/api-client':
         specifier: workspace:^
         version: link:../../packages/api-client
-      '@Bbsmc/assets':
+      '@bbsmc/assets':
         specifier: workspace:*
         version: link:../../packages/assets
-      '@Bbsmc/ui':
+      '@bbsmc/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-      '@Bbsmc/utils':
+      '@bbsmc/utils':
         specifier: workspace:*
         version: link:../../packages/utils
       '@sentry/vue':
@@ -233,7 +233,7 @@ importers:
 
   apps/daedalus_client:
     dependencies:
-      '@Bbsmc/daedalus':
+      '@bbsmc/daedalus':
         specifier: workspace:*
         version: link:../../packages/daedalus
 
@@ -245,7 +245,7 @@ importers:
       '@astrojs/starlight':
         specifier: ^0.32.2
         version: 0.32.6(astro@5.17.1(@types/node@24.12.2)(db0@0.3.4)(ioredis@5.9.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.57.1)(sass@1.97.3)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))
-      '@Bbsmc/assets':
+      '@bbsmc/assets':
         specifier: workspace:*
         version: link:../../packages/assets
       astro:
@@ -269,22 +269,22 @@ importers:
       '@ltd/j-toml':
         specifier: ^1.38.0
         version: 1.38.0
-      '@Bbsmc/api-client':
+      '@bbsmc/api-client':
         specifier: workspace:*
         version: link:../../packages/api-client
-      '@Bbsmc/assets':
+      '@bbsmc/assets':
         specifier: workspace:*
         version: link:../../packages/assets
-      '@Bbsmc/blog':
+      '@bbsmc/blog':
         specifier: workspace:*
         version: link:../../packages/blog
-      '@Bbsmc/moderation':
+      '@bbsmc/moderation':
         specifier: workspace:*
         version: link:../../packages/moderation
-      '@Bbsmc/ui':
+      '@bbsmc/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-      '@Bbsmc/utils':
+      '@bbsmc/utils':
         specifier: workspace:*
         version: link:../../packages/utils
       '@sentry/nuxt':
@@ -497,7 +497,7 @@ importers:
 
   packages/blog:
     dependencies:
-      '@Bbsmc/utils':
+      '@bbsmc/utils':
         specifier: workspace:*
         version: link:../utils
       dayjs:
@@ -542,13 +542,13 @@ importers:
 
   packages/moderation:
     dependencies:
-      '@Bbsmc/api-client':
+      '@bbsmc/api-client':
         specifier: workspace:*
         version: link:../api-client
-      '@Bbsmc/assets':
+      '@bbsmc/assets':
         specifier: workspace:*
         version: link:../assets
-      '@Bbsmc/utils':
+      '@bbsmc/utils':
         specifier: workspace:*
         version: link:../utils
       vue:
@@ -561,7 +561,7 @@ importers:
       '@bbsmc/tooling-config':
         specifier: workspace:*
         version: link:../tooling-config
-      '@Bbsmc/ui':
+      '@bbsmc/ui':
         specifier: workspace:*
         version: link:../ui
 
@@ -643,16 +643,16 @@ importers:
       '@intercom/messenger-js-sdk':
         specifier: ^0.0.14
         version: 0.0.14
-      '@Bbsmc/api-client':
+      '@bbsmc/api-client':
         specifier: workspace:*
         version: link:../api-client
-      '@Bbsmc/assets':
+      '@bbsmc/assets':
         specifier: workspace:*
         version: link:../assets
-      '@Bbsmc/blog':
+      '@bbsmc/blog':
         specifier: workspace:*
         version: link:../blog
-      '@Bbsmc/utils':
+      '@bbsmc/utils':
         specifier: workspace:*
         version: link:../utils
       '@tanstack/vue-query':
@@ -855,8 +855,8 @@ importers:
         specifier: ^11.9.0
         version: 11.11.1
       highlightjs-mcfunction:
-        specifier: github:Bbsmc/better-highlightjs-mcfunction
-        version: https://codeload.github.com/Bbsmc/better-highlightjs-mcfunction/tar.gz/aa999b763fd792ffb950d28347eeb6811c83ea8e
+        specifier: github:modrinth/better-highlightjs-mcfunction
+        version: https://codeload.github.com/modrinth/better-highlightjs-mcfunction/tar.gz/aa999b763fd792ffb950d28347eeb6811c83ea8e
       markdown-it:
         specifier: ^14.1.0
         version: 14.1.0
@@ -870,7 +870,7 @@ importers:
         specifier: ^1.0.14
         version: 1.0.15
     devDependencies:
-      '@Bbsmc/api-client':
+      '@bbsmc/api-client':
         specifier: workspace:*
         version: link:../api-client
       '@bbsmc/tooling-config':
@@ -6650,8 +6650,8 @@ packages:
     resolution: {integrity: sha512-Xwwo44whKBVCYoliBQwaPvtd/2tYFkRQtXDWj1nackaV2JPXx3L0+Jvd8/qCJ2p+ML0/XVkJ2q+Mr+UVdpJK5w==}
     engines: {node: '>=12.0.0'}
 
-  highlightjs-mcfunction@https://codeload.github.com/Bbsmc/better-highlightjs-mcfunction/tar.gz/aa999b763fd792ffb950d28347eeb6811c83ea8e:
-    resolution: {tarball: https://codeload.github.com/Bbsmc/better-highlightjs-mcfunction/tar.gz/aa999b763fd792ffb950d28347eeb6811c83ea8e}
+  highlightjs-mcfunction@https://codeload.github.com/modrinth/better-highlightjs-mcfunction/tar.gz/aa999b763fd792ffb950d28347eeb6811c83ea8e:
+    resolution: {tarball: https://codeload.github.com/modrinth/better-highlightjs-mcfunction/tar.gz/aa999b763fd792ffb950d28347eeb6811c83ea8e}
     version: 1.0.0
 
   hookable@5.5.3:
@@ -16574,7 +16574,7 @@ snapshots:
 
   highlight.js@11.11.1: {}
 
-  highlightjs-mcfunction@https://codeload.github.com/Bbsmc/better-highlightjs-mcfunction/tar.gz/aa999b763fd792ffb950d28347eeb6811c83ea8e: {}
+  highlightjs-mcfunction@https://codeload.github.com/modrinth/better-highlightjs-mcfunction/tar.gz/aa999b763fd792ffb950d28347eeb6811c83ea8e: {}
 
   hookable@5.5.3: {}
 
