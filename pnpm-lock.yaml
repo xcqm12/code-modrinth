@@ -1,4 +1,4 @@
-lockfileVersion: '9.0'
+﻿lockfileVersion: '9.0'
 
 settings:
   autoInstallPeers: true
@@ -22,7 +22,7 @@ importers:
       '@formatjs/icu-messageformat-parser':
         specifier: ^2.11.4
         version: 2.11.4
-      '@Bbsmc/tooling-config':
+      '@bbsmc/tooling-config':
         specifier: workspace:*
         version: link:packages/tooling-config
       '@tailwindcss/container-queries':
@@ -183,7 +183,7 @@ importers:
       '@formatjs/cli':
         specifier: ^6.2.12
         version: 6.12.2(@vue/compiler-core@3.5.27)(vue@3.5.27(typescript@5.9.3))
-      '@Bbsmc/tooling-config':
+      '@bbsmc/tooling-config':
         specifier: workspace:*
         version: link:../../packages/tooling-config
       '@nuxt/eslint-config':
@@ -390,7 +390,7 @@ importers:
       '@formatjs/cli':
         specifier: ^6.2.12
         version: 6.12.2(@vue/compiler-core@3.5.27)(vue@3.5.27(typescript@5.9.3))
-      '@Bbsmc/tooling-config':
+      '@bbsmc/tooling-config':
         specifier: workspace:*
         version: link:../../packages/tooling-config
       '@types/dompurify':
@@ -459,7 +459,7 @@ importers:
       '@microsoft/api-extractor':
         specifier: ^7.58.9
         version: 7.58.9(@types/node@24.12.2)
-      '@Bbsmc/tooling-config':
+      '@bbsmc/tooling-config':
         specifier: workspace:*
         version: link:../tooling-config
       '@tauri-apps/plugin-http':
@@ -479,7 +479,7 @@ importers:
 
   packages/assets:
     devDependencies:
-      '@Bbsmc/tooling-config':
+      '@bbsmc/tooling-config':
         specifier: workspace:*
         version: link:../tooling-config
       '@types/node':
@@ -519,7 +519,7 @@ importers:
         specifier: ^0.6.2
         version: 0.6.2
     devDependencies:
-      '@Bbsmc/tooling-config':
+      '@bbsmc/tooling-config':
         specifier: workspace:*
         version: link:../tooling-config
       '@types/glob':
@@ -558,7 +558,7 @@ importers:
       '@formatjs/cli':
         specifier: ^6.2.12
         version: 6.12.2(@vue/compiler-core@3.5.27)(vue@3.5.27(typescript@5.9.3))
-      '@Bbsmc/tooling-config':
+      '@bbsmc/tooling-config':
         specifier: workspace:*
         version: link:../tooling-config
       '@Bbsmc/ui':
@@ -767,7 +767,7 @@ importers:
       '@formatjs/cli':
         specifier: ^6.2.12
         version: 6.12.2(@vue/compiler-core@3.5.27)(vue@3.5.27(typescript@5.9.3))
-      '@Bbsmc/tooling-config':
+      '@bbsmc/tooling-config':
         specifier: workspace:*
         version: link:../tooling-config
       '@storybook/addon-a11y':
@@ -873,7 +873,7 @@ importers:
       '@Bbsmc/api-client':
         specifier: workspace:*
         version: link:../api-client
-      '@Bbsmc/tooling-config':
+      '@bbsmc/tooling-config':
         specifier: workspace:*
         version: link:../tooling-config
 
