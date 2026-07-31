@@ -156,6 +156,7 @@ export default defineNuxtConfig({
 			}
 
 			const API_URL = getApiUrl()
+			const BUILD_API_URLS = ['https://api.modrinth.com/v2/', API_URL]
 
 			if (
 				// Skip regeneration if within TTL...
@@ -174,16 +175,20 @@ export default defineNuxtConfig({
 
 			let generatedState: Labrinth.State.GeneratedState & Record<string, any> = { errors: [] } as any
 
-			try {
-				const client = new GenericmodrinthClient({
-					labrinthBaseUrl: API_URL.replace('/v2/', ''),
-					userAgent: 'Knossos generator (support@bbsmc.org.cn)',
-					timeout: 5000,
-				})
+			for (const buildApiUrl of BUILD_API_URLS) {
+				try {
+					const client = new GenericmodrinthClient({
+						labrinthBaseUrl: buildApiUrl.replace('/v2/', ''),
+						userAgent: 'Knossos generator (support@bbsmc.org.cn)',
+						timeout: 5000,
+					})
 
-				generatedState = await client.labrinth.state.build()
-			} catch (e) {
-				console.warn('State generation skipped (API unavailable):', (e as Error).message)
+					generatedState = await client.labrinth.state.build()
+					console.log(`State generated successfully using API: ${buildApiUrl}`)
+					break
+				} catch (e) {
+					console.warn(`State generation using ${buildApiUrl} failed: ${(e as Error).message}`)
+				}
 			}
 
 			state.lastGenerated = new Date().toISOString()
