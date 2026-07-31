@@ -1,7 +1,7 @@
-package com.modrinth.theseus.agent;
+package com.bbsmc.theseus.agent;
 
-import com.modrinth.theseus.agent.transformers.ClassTransformer;
-import com.modrinth.theseus.agent.transformers.MinecraftTransformer;
+import com.bbsmc.theseus.agent.transformers.ClassTransformer;
+import com.bbsmc.theseus.agent.transformers.MinecraftTransformer;
 import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.lang.instrument.Instrumentation;

@@ -485,6 +485,7 @@ async function setStatus(status: Labrinth.Projects.v2.ProjectStatus) {
 		project.value.status = status
 		await invalidate()
 		await queryClient.invalidateQueries({ queryKey: ['thread', project.value?.thread_id] })
+		await queryClient.invalidateQueries({ queryKey: ['moderation-projects'] })
 	} catch (err) {
 		addNotification({
 			title: formatMessage(commonMessages.errorNotificationTitle),

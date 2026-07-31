@@ -1,4 +1,4 @@
-package com.modrinth.theseus.agent;
+package com.bbsmc.theseus.agent;
 
 import java.util.ListIterator;
 import java.util.function.Predicate;

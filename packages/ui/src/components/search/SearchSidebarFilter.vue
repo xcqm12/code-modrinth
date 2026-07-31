@@ -30,14 +30,14 @@
 			<div class="flex gap-1 flex-wrap">
 				<div
 					v-for="option in selectedFilterOptions"
-					:key="`selected-filter-${filterType.id}-${option}`"
+					:key="`selected-filter-${filterType.id}-${option.id}`"
 					class="flex gap-1 text-xs bg-button-bg px-2 py-0.5 rounded-full font-bold text-secondary w-fit shrink-0 items-center"
 				>
 					{{ option.formatted_name ?? option.id }}
 				</div>
 				<div
 					v-for="option in selectedNegativeFilterOptions"
-					:key="`excluded-filter-${filterType.id}-${option}`"
+					:key="`excluded-filter-${filterType.id}-${option.id}`"
 					class="flex gap-1 text-xs bg-button-bg px-2 py-0.5 rounded-full font-bold text-secondary w-fit shrink-0 items-center"
 				>
 					<BanIcon class="text-brand-red" /> {{ option.formatted_name ?? option.id }}
@@ -102,7 +102,7 @@
 					<template v-else>
 						<SearchFilterOption
 							v-for="option in visibleOptions"
-							:key="`${filterType.id}-${option}`"
+							:key="`${filterType.id}-${option.id}`"
 							:option="option"
 							:included="isIncluded(option)"
 							:excluded="isExcluded(option)"

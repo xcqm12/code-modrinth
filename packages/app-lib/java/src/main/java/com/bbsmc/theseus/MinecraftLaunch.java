@@ -1,7 +1,7 @@
-package com.modrinth.theseus;
+package com.bbsmc.theseus;
 
-import com.modrinth.theseus.rpc.RpcHandlers;
-import com.modrinth.theseus.rpc.TheseusRpc;
+import com.bbsmc.theseus.rpc.RpcHandlers;
+import com.bbsmc.theseus.rpc.TheseusRpc;
 import java.io.IOException;
 import java.lang.reflect.AccessibleObject;
 import java.lang.reflect.Method;

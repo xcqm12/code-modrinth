@@ -1,4 +1,4 @@
-package com.modrinth.theseus.rpc;
+package com.bbsmc.theseus.rpc;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonNull;

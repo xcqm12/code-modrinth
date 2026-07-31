@@ -1,4 +1,4 @@
-package com.modrinth.theseus.agent;
+package com.bbsmc.theseus.agent;
 
 // Must be kept up-to-date with quick_play_version.rs
 public enum QuickPlayServerVersion {

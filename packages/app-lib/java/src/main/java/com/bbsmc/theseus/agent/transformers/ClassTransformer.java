@@ -1,4 +1,4 @@
-package com.modrinth.theseus.agent.transformers;
+package com.bbsmc.theseus.agent.transformers;
 
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassWriter;

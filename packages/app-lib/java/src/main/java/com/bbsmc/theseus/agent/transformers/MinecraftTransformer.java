@@ -1,7 +1,7 @@
-package com.modrinth.theseus.agent.transformers;
+package com.bbsmc.theseus.agent.transformers;
 
-import com.modrinth.theseus.agent.InsnPattern;
-import com.modrinth.theseus.agent.QuickPlayServerVersion;
+import com.bbsmc.theseus.agent.InsnPattern;
+import com.bbsmc.theseus.agent.QuickPlayServerVersion;
 import java.util.ListIterator;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.AbstractInsnNode;
