@@ -1,4 +1,4 @@
-import type { Archon, LauncherMeta } from '@Bbsmc/api-client'
+import type { Archon, LauncherMeta } from '@modrinth/api-client'
 import { useQueryClient } from '@tanstack/vue-query'
 import { computed, type ComputedRef, type Ref, ref, type ShallowRef, watch } from 'vue'
 import type { ComponentExposed } from 'vue-component-type-helpers'
@@ -12,7 +12,7 @@ import {
 } from '#ui/composables/i18n'
 import { formatLoaderLabel } from '#ui/utils/loaders'
 
-import { createContext, injectBbsmcClient } from '../../../providers'
+import { createContext, injectmodrinthClient } from '../../../providers'
 import type { ImportableLauncher } from '../../../providers/instance-import'
 import type { MultiStageModal, StageConfigInput } from '../../base'
 import type { ComboboxOption } from '../../base/Combobox.vue'
@@ -249,7 +249,7 @@ export function createCreationFlowContext(
 	options: CreationFlowOptions = {},
 ): CreationFlowContextValue {
 	const debug = useDebugLogger('CreationFlow')
-	const client = injectBbsmcClient()
+	const client = injectmodrinthClient()
 	const queryClient = useQueryClient()
 	const { formatMessage } = useVIntl()
 	const availableLoaders = options.availableLoaders ?? ['fabric', 'neoforge', 'forge', 'quilt']

@@ -1,4 +1,4 @@
-import type { Labrinth } from '@Bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 
 export type UpdateChannelPolicy = 'release' | 'beta' | 'alpha'
 

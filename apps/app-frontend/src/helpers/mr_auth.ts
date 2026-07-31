@@ -5,27 +5,27 @@
  */
 import { invoke } from '@tauri-apps/api/core'
 
-export type BbsmcCredentials = {
+export type modrinthCredentials = {
 	session: string
 	expires: string
 	user_id: string
 	active: boolean
 }
 
-export type BbsmcAuthFlow = 'sign-in' | 'sign-up'
+export type modrinthAuthFlow = 'sign-in' | 'sign-up'
 
-export async function login(flow: BbsmcAuthFlow = 'sign-in'): Promise<BbsmcCredentials> {
-	return await invoke('plugin:mr-auth|Bbsmc_login', { flow })
+export async function login(flow: modrinthAuthFlow = 'sign-in'): Promise<modrinthCredentials> {
+	return await invoke('plugin:mr-auth|modrinth_login', { flow })
 }
 
 export async function logout(): Promise<void> {
 	return await invoke('plugin:mr-auth|logout')
 }
 
-export async function get(): Promise<BbsmcCredentials | null> {
+export async function get(): Promise<modrinthCredentials | null> {
 	return await invoke('plugin:mr-auth|get')
 }
 
 export async function cancelLogin(): Promise<void> {
-	return await invoke('plugin:mr-auth|cancel_Bbsmc_login')
+	return await invoke('plugin:mr-auth|cancel_modrinth_login')
 }

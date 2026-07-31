@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	CheckIcon,
 	InfoIcon,
@@ -9,8 +9,8 @@ import {
 	TrashIcon,
 	UploadIcon,
 	XIcon,
-} from '@Bbsmc/assets'
-import { builtinLicenses } from '@Bbsmc/utils'
+} from '@modrinth/assets'
+import { builtinLicenses } from '@modrinth/utils'
 import { useMutation, useQueryClient } from '@tanstack/vue-query'
 import { computed, ref, watch } from 'vue'
 
@@ -19,7 +19,7 @@ import { FileInput } from '#ui/components/base'
 import { commonMessages } from '#ui/utils'
 
 import { defineMessage, defineMessages, useVIntl } from '../../composables/i18n'
-import { injectBbsmcClient } from '../../providers'
+import { injectmodrinthClient } from '../../providers'
 import {
 	attributionLinkToWork,
 	attributionProofValidationError,
@@ -46,7 +46,7 @@ const emit = defineEmits<{
 }>()
 
 const { formatMessage } = useVIntl()
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const queryClient = useQueryClient()
 
 const initialAttribution = computed<Labrinth.Attribution.Internal.AttributionResolution | null>(
@@ -90,7 +90,7 @@ const messages = defineMessages({
 	},
 	proofWarningTitle: {
 		id: 'external-files.permissions-card.editor.proof-warning.title',
-		defaultMessage: 'Bbsmc staff may verify submitted proof',
+		defaultMessage: 'modrinth staff may verify submitted proof',
 	},
 	proofWarningBody: {
 		id: 'external-files.permissions-card.editor.proof-warning.body',
@@ -141,9 +141,9 @@ const messages = defineMessages({
 		id: 'external-files.permissions-card.editor.proof-image-remove',
 		defaultMessage: 'Remove image',
 	},
-	BbsmcLinkToWork: {
-		id: 'external-files.permissions-card.editor.Bbsmc-link-to-work',
-		defaultMessage: `This appears to be a Bbsmc link. If this content is available on Bbsmc, your pack was likely exported incorrectly. If you downloaded it from another site, try downloading the Bbsmc version instead; sometimes they are not identical files.`,
+	modrinthLinkToWork: {
+		id: 'external-files.permissions-card.editor.modrinth-link-to-work',
+		defaultMessage: `This appears to be a modrinth link. If this content is available on modrinth, your pack was likely exported incorrectly. If you downloaded it from another site, try downloading the modrinth version instead; sometimes they are not identical files.`,
 	},
 	arrLabel: {
 		id: 'external-files.permissions-card.editor.all-rights-reserved',
@@ -487,7 +487,7 @@ function cancelEditing() {
 				"
 				class="flex text-orange gap-2 font-medium mt-2"
 			>
-				<IssuesIcon class="shrink-0 mt-0.5" /> {{ formatMessage(messages.BbsmcLinkToWork) }}
+				<IssuesIcon class="shrink-0 mt-0.5" /> {{ formatMessage(messages.modrinthLinkToWork) }}
 			</span>
 		</div>
 		<div v-if="permissionReasonFields.includes('license_id')" class="flex flex-col gap-2">

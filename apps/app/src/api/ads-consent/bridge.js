@@ -1,4 +1,4 @@
-const Bbsmc_ORIGIN = 'https://bbsmc.org.cn'
+const modrinth_ORIGIN = 'https://bbsmc.org.cn'
 
 /**
  * @typedef {'custom' | 'fallback' | 'hidden'} AdsConsentPopupMode
@@ -14,7 +14,7 @@ function getTauriInvoke() {
 
 /** @returns {void} */
 function notifyAdClick() {
-	window.top?.postMessage({ BbsmcAdClick: true }, Bbsmc_ORIGIN)
+	window.top?.postMessage({ modrinthAdClick: true }, modrinth_ORIGIN)
 }
 
 /**
@@ -22,7 +22,7 @@ function notifyAdClick() {
  * @returns {void}
  */
 function openExternalUrl(url) {
-	window.top?.postMessage({ BbsmcOpenUrl: String(url) }, Bbsmc_ORIGIN)
+	window.top?.postMessage({ modrinthOpenUrl: String(url) }, modrinth_ORIGIN)
 }
 
 /**

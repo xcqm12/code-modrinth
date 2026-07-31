@@ -5,7 +5,7 @@ use crate::state::{
     CacheBehaviour, CachedEntry, ContentSourceKind, ProjectType, State,
 };
 use crate::util::fetch;
-use Bbsmc_content_management::{
+use modrinth_content_management::{
     ContentType, ResolutionPreferences, ResolveContentPlan,
 };
 use std::collections::HashMap;
@@ -235,7 +235,7 @@ pub async fn add_project_from_path(
 }
 
 #[tracing::instrument]
-pub async fn is_file_on_Bbsmc(path: &Path) -> crate::Result<bool> {
+pub async fn is_file_on_modrinth(path: &Path) -> crate::Result<bool> {
     let state = State::get().await?;
     let (_, hash) = fetch::sha1_file_async(path).await?;
     let files = CachedEntry::get_file_many(
@@ -329,7 +329,7 @@ async fn ensure_shared_instance_can_modify_project(
 }
 
 #[tracing::instrument]
-pub async fn update_managed_Bbsmc_version(
+pub async fn update_managed_modrinth_version(
     instance_id: &str,
     version_id: &str,
 ) -> crate::Result<crate::install::InstallJobSnapshot> {
@@ -362,7 +362,7 @@ pub async fn update_managed_Bbsmc_version(
     };
 
     let project_id = match &metadata.link {
-        crate::state::InstanceLink::BbsmcModpack { project_id, .. } => {
+        crate::state::InstanceLink::modrinthModpack { project_id, .. } => {
             project_id.clone()
         }
         crate::state::InstanceLink::ServerProjectModpack {
@@ -388,7 +388,7 @@ pub async fn update_managed_Bbsmc_version(
 }
 
 #[tracing::instrument]
-pub async fn repair_managed_Bbsmc(
+pub async fn repair_managed_modrinth(
     instance_id: &str,
 ) -> crate::Result<crate::install::InstallJobSnapshot> {
     let state = State::get().await?;
@@ -414,7 +414,7 @@ pub async fn repair_managed_Bbsmc(
     };
 
     let (project_id, version_id) = match &metadata.link {
-        crate::state::InstanceLink::BbsmcModpack {
+        crate::state::InstanceLink::modrinthModpack {
             project_id,
             version_id,
         } => (project_id.clone(), version_id.clone()),
@@ -443,7 +443,7 @@ pub async fn repair_managed_Bbsmc(
 
 fn unmanaged_pack_error(instance_id: &str) -> crate::ErrorKind {
     crate::ErrorKind::InputError(format!(
-        "Instance {instance_id} is not a managed Bbsmc pack, or has been disconnected."
+        "Instance {instance_id} is not a managed modrinth pack, or has been disconnected."
     ))
 }
 

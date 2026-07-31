@@ -1,4 +1,4 @@
-import type { TableColumn } from '@Bbsmc/ui'
+import type { TableColumn } from '@modrinth/ui'
 
 import { isAnalyticsTableBreakdownColumnKey } from './analytics-table-columns'
 import type { AnalyticsTableColumnKey, AnalyticsTableRow } from './analytics-table-types'

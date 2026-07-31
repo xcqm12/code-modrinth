@@ -1,4 +1,4 @@
-import { useVIntl } from '@Bbsmc/ui'
+import { useVIntl } from '@modrinth/ui'
 import { computed, type ComputedRef, type Ref, ref, watch } from 'vue'
 
 import type {

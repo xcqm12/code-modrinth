@@ -1,4 +1,4 @@
-import type { Labrinth } from '@Bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import type { ComputedRef, Ref } from 'vue'
 
 import { createContext } from '#ui/providers/create-context'
@@ -60,7 +60,7 @@ export interface InstallationSettingsContext {
 	/** When false, hides change-version and reinstall buttons in linked state (default: true) */
 	showModpackVersionActions?: boolean | ComputedRef<boolean>
 
-	/** True when the linked modpack was uploaded as a local file rather than from Bbsmc */
+	/** True when the linked modpack was uploaded as a local file rather than from modrinth */
 	isLocalFile?: boolean | ComputedRef<boolean>
 
 	/** True when an external source controls the linked modpack. */
@@ -86,7 +86,7 @@ export interface InstallationSettingsContext {
 	/**
 	 * Disable addons that are incompatible with the target game version.
 	 * Fetches version metadata in bulk, disables any addon whose game_versions
-	 * doesn't include the target, plus any custom (non-Bbsmc) content.
+	 * doesn't include the target, plus any custom (non-modrinth) content.
 	 */
 	disableIncompatibleContent?: (targetGameVersion: string) => Promise<void>
 

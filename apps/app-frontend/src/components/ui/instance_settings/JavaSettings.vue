@@ -7,7 +7,7 @@ import {
 	SearchIcon,
 	SpinnerIcon,
 	XCircleIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	ButtonStyled,
 	Checkbox,
@@ -16,7 +16,7 @@ import {
 	Slider,
 	StyledInput,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { open } from '@tauri-apps/plugin-dialog'
 import { computed, readonly, ref, watch } from 'vue'
 

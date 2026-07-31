@@ -5,7 +5,7 @@ import {
 	FileIcon,
 	LinkIcon,
 	UnknownIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import { Menu } from 'floating-vue'
 import { computed } from 'vue'
 

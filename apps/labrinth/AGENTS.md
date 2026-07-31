@@ -22,7 +22,7 @@
 - Hardcoded credentials for admin:
   - `Authorization: Bearer mra_admin` for default admin user
   - `Authorization: Bearer mra_user` for a regular user
-  - `Bbsmc-Admin: feedbeef` as admin key
+  - `modrinth-Admin: feedbeef` as admin key
 - If some steps require you to create a project/mod or version for testing, ask the user to go into the web frontend and manually create a project/version
 - When using `sqlx::query` etc. always use the macro form like `sqlx::query!` or `sqlx::query_scalar!` - never the plain function form. Avoid using `query_as!`.
 - Do not use `()` as an error type for operations, unless you have a very good reason. Either make a new error type, or use `eyre::Report`.

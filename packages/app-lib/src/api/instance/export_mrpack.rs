@@ -103,7 +103,7 @@ pub async fn export_mrpack(
 
     let data = serde_json::to_vec_pretty(&packfile)?;
     let builder = ZipEntryBuilder::new(
-        "Bbsmc.index.json".to_string().into(),
+        "modrinth.index.json".to_string().into(),
         Compression::Deflate,
     );
     writer.write_entry_whole(builder, &data).await?;

@@ -59,8 +59,8 @@
 </template>
 
 <script setup lang="ts">
-import { ChevronRightIcon } from '@Bbsmc/assets'
-import { Avatar } from '@Bbsmc/ui'
+import { ChevronRightIcon } from '@modrinth/assets'
+import { Avatar } from '@modrinth/ui'
 import { onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { RouterLink } from 'vue-router'
 

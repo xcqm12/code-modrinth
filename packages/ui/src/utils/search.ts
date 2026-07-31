@@ -1,6 +1,6 @@
-import type { Labrinth } from '@Bbsmc/api-client'
-import { ClientIcon, getCategoryIcon, getLoaderIcon, ServerIcon } from '@Bbsmc/assets'
-import { sortedCategories } from '@Bbsmc/utils'
+import type { Labrinth } from '@modrinth/api-client'
+import { ClientIcon, getCategoryIcon, getLoaderIcon, ServerIcon } from '@modrinth/assets'
+import { sortedCategories } from '@modrinth/utils'
 import { type Component, computed, readonly, type Ref, ref } from 'vue'
 import { type LocationQueryRaw, type LocationQueryValue, useRoute } from 'vue-router'
 

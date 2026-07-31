@@ -160,7 +160,7 @@ impl Client {
     pub fn from_env() -> Result<Self, ApiError> {
         Ok(Self {
             client: reqwest::Client::builder()
-                .user_agent("Bbsmc")
+                .user_agent("modrinth")
                 .build()
                 .expect("AnrokClient to build"),
             api_key: ENV.ANROK_API_KEY.clone(),

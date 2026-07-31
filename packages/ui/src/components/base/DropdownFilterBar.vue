@@ -379,7 +379,7 @@ import {
 	PlusIcon,
 	SearchIcon,
 	XIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import { onClickOutside } from '@vueuse/core'
 import { OverlayScrollbars, type PartialOptions } from 'overlayscrollbars'
 import type { Component, ComponentPublicInstance, CSSProperties } from 'vue'
@@ -491,7 +491,7 @@ const OPTIONS_OVERLAY_SCROLLBARS_OPTIONS = Object.freeze<PartialOptions>({
 		y: 'scroll',
 	},
 	scrollbars: {
-		theme: 'os-theme-Bbsmc',
+		theme: 'os-theme-modrinth',
 		autoHide: 'leave',
 		autoHideSuspend: true,
 	},
@@ -1877,7 +1877,7 @@ onBeforeUnmount(() => {
 	box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.08);
 }
 
-.dropdown-filter-bar-options-scrollbar :deep(.os-theme-Bbsmc) {
+.dropdown-filter-bar-options-scrollbar :deep(.os-theme-modrinth) {
 	--os-size: 8px;
 	--os-padding-perpendicular: 0px;
 	--os-padding-axis: 0px;

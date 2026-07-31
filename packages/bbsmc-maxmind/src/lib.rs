@@ -12,7 +12,7 @@ pub use maxminddb::{self, geoip2};
 
 use bytes::Bytes;
 use eyre::{Result, bail, eyre};
-use Bbsmc_util::{Context, env_var};
+use modrinth_util::{Context, env_var};
 use tokio::fs;
 use tracing::{debug, info, warn};
 
@@ -86,9 +86,9 @@ pub async fn init_reader() -> Result<maxminddb::Reader<Bytes>> {
         let license_key = env_var("MAXMIND_LICENSE_KEY")?;
 
         let dirs = directories::ProjectDirs::from(
-            "com.Bbsmc",
-            "Bbsmc",
-            "Bbsmc-backend",
+            "com.modrinth",
+            "modrinth",
+            "modrinth-backend",
         )
         .wrap_err("failed to get cache directory")?;
         let cache_dir = dirs.cache_dir();

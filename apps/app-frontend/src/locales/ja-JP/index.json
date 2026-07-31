@@ -74,8 +74,8 @@
   "app.action-bar.install.summary.minecraft-setup-failed": {
     "message": "マインクラフトのセットアップに失敗しまし�?
   },
-  "app.action-bar.install.summary.Bbsmc-unreachable": {
-    "message": "Bbsmcに接続できませんでし�?
+  "app.action-bar.install.summary.modrinth-unreachable": {
+    "message": "modrinthに接続できませんでし�?
   },
   "app.action-bar.install.summary.no-write-permission": {
     "message": "書き込み権限がありません"
@@ -129,7 +129,7 @@
     "message": "すべて受け入れる"
   },
   "app.ads-consent.body": {
-    "message": "Bbsmcは広告収益によって運営され、クリエイターへの報酬も広告収益から支払われています。当社のパートナーは、広告のパーソナライズや効果測定のために、アプリ内でCookieを保存・利用する場合があります�?
+    "message": "modrinthは広告収益によって運営され、クリエイターへの報酬も広告収益から支払われています。当社のパートナーは、広告のパーソナライズや効果測定のために、アプリ内でCookieを保存・利用する場合があります�?
   },
   "app.ads-consent.manage": {
     "message": "設定の管�?
@@ -138,7 +138,7 @@
     "message": "すべて拒否す�?
   },
   "app.ads-consent.title": {
-    "message": "プライバシーと広告がBbsmcを支える仕組�?
+    "message": "プライバシーと広告がmodrinthを支える仕組�?
   },
   "app.appearance-settings.advanced-rendering.description": {
     "message": "ぼかし効果などの高度なレンダリングを有効にします。グラフィックアクセラレーションが使用できない場合は、パフォーマンスが低下する可能性があります�?
@@ -147,7 +147,7 @@
     "message": "高度なレンダリン�?
   },
   "app.appearance-settings.color-theme.description": {
-    "message": "Bbsmc Appでのお好みのテーマを選択してください�?
+    "message": "modrinth Appでのお好みのテーマを選択してください�?
   },
   "app.appearance-settings.color-theme.title": {
     "message": "テー�?
@@ -207,7 +207,7 @@
     "message": "サイドバーの表示切替を有効化"
   },
   "app.appearance-settings.unknown-pack-warning.description": {
-    "message": "Bbsmcで配布されていないBbsmc Pack�?mrpack）をインストールする場合、事前にリスクについて警告します�?
+    "message": "modrinthで配布されていないmodrinth Pack�?mrpack）をインストールする場合、事前にリスクについて警告します�?
   },
   "app.appearance-settings.unknown-pack-warning.title": {
     "message": "不明なModパックのインストール前に警告する"
@@ -483,10 +483,10 @@
     "message": "リンクされたアカウン�?
   },
   "app.instance.shared-instance-wrong-account.signed-out-header": {
-    "message": "Bbsmcへのサインインが必要です"
+    "message": "modrinthへのサインインが必要です"
   },
   "app.instance.shared-instance-wrong-account.warning-header": {
-    "message": "Bbsmcのアカウントが間違っています"
+    "message": "modrinthのアカウントが間違っています"
   },
   "app.instance.worlds.add-server": {
     "message": "サーバーを追�?
@@ -564,7 +564,7 @@
     "message": "インストール"
   },
   "app.modal.install-to-play.invite-warning": {
-    "message": "この招待は他のBbsmcユーザーによって作成されたものであり、Bbsmc公式のものではありません。信頼できる人からの招待のみ承諾してください�?
+    "message": "この招待は他のmodrinthユーザーによって作成されたものであり、modrinth公式のものではありません。信頼できる人からの招待のみ承諾してください�?
   },
   "app.modal.install-to-play.mod-count": {
     "message": "{count, plural, other {#個のMod}}"
@@ -600,7 +600,7 @@
     "message": "サポートに関するお問い合わせは�?support-link>サポートチー�?/support-link>までご連絡ください。バグの報告は�?github-link>GitHubのIssue</github-link>を作成してください�?
   },
   "app.modal.install-to-play.reviewed-files": {
-    "message": "ファイル形式�?mrpackを含む）に関わらず、Bbsmcに公開されているファイルのみが審査の対象となります�?
+    "message": "ファイル形式�?mrpackを含む）に関わらず、modrinthに公開されているファイルのみが審査の対象となります�?
   },
   "app.modal.install-to-play.shared-instance": {
     "message": "共有インスタンス"
@@ -609,10 +609,10 @@
     "message": "共有された起動構成の内容"
   },
   "app.modal.install-to-play.shared-instance-unknown-files-description": {
-    "message": "この共有された起動構成には、Bbsmcで公開されていないファイルが含まれています。信頼できる提供元からのファイルのみをインストールすることを強くお勧めします�?
+    "message": "この共有された起動構成には、modrinthで公開されていないファイルが含まれています。信頼できる提供元からのファイルのみをインストールすることを強くお勧めします�?
   },
   "app.modal.install-to-play.unknown-files-description": {
-    "message": "このサーバーModパックには、Bbsmcに公開されていないファイルが含まれています。信頼できるソースからのファイルのみをインストールすることを強く推奨します�?
+    "message": "このサーバーModパックには、modrinthに公開されていないファイルが含まれています。信頼できるソースからのファイルのみをインストールすることを強く推奨します�?
   },
   "app.modal.install-to-play.unknown-files-warning": {
     "message": "不明なファイルの警告"
@@ -630,7 +630,7 @@
     "message": "削除されまし�?
   },
   "app.modal.update-to-play.server-modpack-unknown-files-description": {
-    "message": "このサーバーModパックのアップデートには、Bbsmcに公開されていないファイルが含まれています。信頼できるソースからのファイルのみをインストールすることを強く推奨します�?
+    "message": "このサーバーModパックのアップデートには、modrinthに公開されていないファイルが含まれています。信頼できるソースからのファイルのみをインストールすることを強く推奨します�?
   },
   "app.modal.update-to-play.shared-instance-added-label": {
     "message": "追加済み"
@@ -639,7 +639,7 @@
     "message": "削除済み"
   },
   "app.modal.update-to-play.shared-instance-unknown-files-description": {
-    "message": "この共有された起動構成のアップデートには、Bbsmcで公開されていないファイルが含まれています。信頼できる提供元からのファイルのみをインストールすることを強くお勧めします�?
+    "message": "この共有された起動構成のアップデートには、modrinthで公開されていないファイルが含まれています。信頼できる提供元からのファイルのみをインストールすることを強くお勧めします�?
   },
   "app.modal.update-to-play.update-required": {
     "message": "更新が必要で�?
@@ -675,7 +675,7 @@
     "message": "v{version}をダウンロード中"
   },
   "app.settings.privacy.ads-consent.intro": {
-    "message": "Bbsmcは広告収益によって運営され、クリエイターへの報酬も広告収益から支払われています。当社のパートナーは、広告のパーソナライズや効果測定のために、アプリ内でCookieを保存・利用する場合があります。この機能は下のボタンから個別に拒否や許可または変更することができます�?
+    "message": "modrinthは広告収益によって運営され、クリエイターへの報酬も広告収益から支払われています。当社のパートナーは、広告のパーソナライズや効果測定のために、アプリ内でCookieを保存・利用する場合があります。この機能は下のボタンから個別に拒否や許可または変更することができます�?
   },
   "app.settings.tabs.appearance": {
     "message": "表示設定"
@@ -806,14 +806,14 @@
   "app.skins.section.minecon-earth-2017": {
     "message": "MINECON Earth 2017"
   },
-  "app.skins.section.Bbsmc": {
-    "message": "Bbsmc"
+  "app.skins.section.modrinth": {
+    "message": "modrinth"
   },
-  "app.skins.section.Bbsmc-pride": {
-    "message": "Bbsmc プライド"
+  "app.skins.section.modrinth-pride": {
+    "message": "modrinth プライド"
   },
-  "app.skins.section.Bbsmc-pride.tooltip": {
-    "message": "これらのスキンは、プライド月間中にBbsmcのプライド募金活動に寄付したことで獲得したものです�?
+  "app.skins.section.modrinth-pride.tooltip": {
+    "message": "これらのスキンは、プライド月間中にmodrinthのプライド募金活動に寄付したことで獲得したものです�?
   },
   "app.skins.section.mounts-of-mayhem": {
     "message": "マウント・オブ・メイヘム"
@@ -837,10 +837,10 @@
     "message": "サイン審"
   },
   "app.skins.sign-in.description": {
-    "message": "Bbsmcアプリのスキン管理機能を使用するには、マインクラフトアカウントにサインインしてください�?
+    "message": "modrinthアプリのスキン管理機能を使用するには、マインクラフトアカウントにサインインしてください�?
   },
   "app.skins.sign-in.rinthbot-alt": {
-    "message": "ワクワクしている Bbsmc ボッ�?
+    "message": "ワクワクしている modrinth ボッ�?
   },
   "app.skins.sign-in.title": {
     "message": "サインインしてくださ�?
@@ -855,13 +855,13 @@
     "message": "オンに切り替�?
   },
   "app.update-popup.body.download-complete": {
-    "message": "Bbsmc App v{version} のダウンロードが完了しました。今すぐ更新するには再読み込みするか、Bbsmc Appを閉じる際に自動更新されます�?
+    "message": "modrinth App v{version} のダウンロードが完了しました。今すぐ更新するには再読み込みするか、modrinth Appを閉じる際に自動更新されます�?
   },
   "app.update-popup.body.linux": {
-    "message": "Bbsmc App v{version} が利用可能です。最新の機能と修正プログラムを入手するには、パッケージマネージャーを使用して更新してください！"
+    "message": "modrinth App v{version} が利用可能です。最新の機能と修正プログラムを入手するには、パッケージマネージャーを使用して更新してください！"
   },
   "app.update-popup.body.metered": {
-    "message": "Bbsmc App v{version} が利用可能になりました！お使いのネットワークが従量制のため、自動ダウンロードは行っておりません�?
+    "message": "modrinth App v{version} が利用可能になりました！お使いのネットワークが従量制のため、自動ダウンロードは行っておりません�?
   },
   "app.update-popup.changelog": {
     "message": "更新履歴"
@@ -885,7 +885,7 @@
     "message": "バージョ�?{version} が正常にインストールされました！"
   },
   "app.world.server-modal.placeholder-address": {
-    "message": "example.Bbsmc.gg"
+    "message": "example.modrinth.gg"
   },
   "app.world.server-modal.select-an-option": {
     "message": "オプションを選択"
@@ -948,10 +948,10 @@
     "message": "これはMinecraftユーザー名とは異なる可能性があります�?
   },
   "friends.add-friend.username.placeholder": {
-    "message": "Bbsmcユーザー名を入力�?
+    "message": "modrinthユーザー名を入力�?
   },
   "friends.add-friend.username.title": {
-    "message": "あなたのフレンドのBbsmcユーザー名は何ですか�?
+    "message": "あなたのフレンドのmodrinthユーザー名は何ですか�?
   },
   "friends.add-friends-to-share": {
     "message": "<link>友達を追�?/link>して、彼らが何をしているか見てみよう�?
@@ -993,7 +993,7 @@
     "message": "{title} - {count}"
   },
   "friends.sign-in-to-add-friends": {
-    "message": "<link>Bbsmcアカウントにサインイ�?/link>して友達を追加し、彼らがプレイしているゲームをチェックしよう�?
+    "message": "<link>modrinthアカウントにサインイ�?/link>して友達を追加し、彼らがプレイしているゲームをチェックしよう�?
   },
   "installation-settings.shared-instance.linked-title": {
     "message": "リンク済の共有された起動構成"
@@ -1373,40 +1373,40 @@
   "minecraft-required.sign-in": {
     "message": "Microsoft にサインイン"
   },
-  "modal.Bbsmc-account-required.browser-description": {
+  "modal.modrinth-account-required.browser-description": {
     "message": "サインイン用のタブが開きました。そちらでサインインを完了してから、アプリに戻ってください�?
   },
-  "modal.Bbsmc-account-required.cancel-button": {
+  "modal.modrinth-account-required.cancel-button": {
     "message": "キャンセ�?
   },
-  "modal.Bbsmc-account-required.continue-in-browser-heading": {
+  "modal.modrinth-account-required.continue-in-browser-heading": {
     "message": "ブラウザで続�?
   },
-  "modal.Bbsmc-account-required.create-account-button": {
+  "modal.modrinth-account-required.create-account-button": {
     "message": "アカウントを作成"
   },
-  "modal.Bbsmc-account-required.description": {
-    "message": "この機能を利用するには、Bbsmcアカウントにログインする必要があります�?
+  "modal.modrinth-account-required.description": {
+    "message": "この機能を利用するには、modrinthアカウントにログインする必要があります�?
   },
-  "modal.Bbsmc-account-required.header": {
+  "modal.modrinth-account-required.header": {
     "message": "アカウントが必要です"
   },
-  "modal.Bbsmc-account-required.open-browser-again-button": {
+  "modal.modrinth-account-required.open-browser-again-button": {
     "message": "もう一度ブラウザを開く"
   },
-  "modal.Bbsmc-account-required.sign-in-button": {
-    "message": "Bbsmcへサインイン"
+  "modal.modrinth-account-required.sign-in-button": {
+    "message": "modrinthへサインイン"
   },
-  "modal.Bbsmc-account-required.sign-in-heading": {
-    "message": "Bbsmc アカウントにサインインしてくださ�?
+  "modal.modrinth-account-required.sign-in-heading": {
+    "message": "modrinth アカウントにサインインしてくださ�?
   },
-  "modal.Bbsmc-account-required.signing-in-header": {
+  "modal.modrinth-account-required.signing-in-header": {
     "message": "サインイ�?
   },
-  "modal.Bbsmc-account-required.support-prompt": {
+  "modal.modrinth-account-required.support-prompt": {
     "message": "サインインでお困りですか�?support>サポート</support>"
   },
-  "modal.Bbsmc-account-required.waiting-for-browser": {
+  "modal.modrinth-account-required.waiting-for-browser": {
     "message": "ブラウザからの確認を待っています�?
   },
   "search.filter.locked.instance": {

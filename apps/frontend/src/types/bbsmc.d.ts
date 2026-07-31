@@ -1,1 +1,1 @@
-import '@Bbsmc/utils'
+import '@modrinth/utils'

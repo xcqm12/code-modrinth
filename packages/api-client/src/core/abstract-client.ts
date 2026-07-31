@@ -8,7 +8,7 @@ import type { AbstractModule } from './abstract-module'
 import type { AbstractSyncClient } from './abstract-sync'
 import { AbstractUploadClient } from './abstract-upload-client'
 import type { AbstractWebSocketClient } from './abstract-websocket'
-import { BbsmcApiError, BbsmcServerError } from './errors'
+import { modrinthApiError, modrinthServerError } from './errors'
 
 type ArchonClientModules = Omit<InferredClientModules['archon'], 'backups_v1'> & {
 	/** @deprecated Use `backups_queue_v1` for the Backups Queue API. */
@@ -16,9 +16,9 @@ type ArchonClientModules = Omit<InferredClientModules['archon'], 'backups_v1'> &
 }
 
 /**
- * Abstract base client for Bbsmc APIs
+ * Abstract base client for modrinth APIs
  */
-export abstract class AbstractBbsmcClient extends AbstractUploadClient {
+export abstract class AbstractmodrinthClient extends AbstractUploadClient {
 	protected config: ClientConfig
 	protected features: AbstractFeature[]
 
@@ -117,7 +117,7 @@ export abstract class AbstractBbsmcClient extends AbstractUploadClient {
 	 * @param path - API path (e.g., '/project/sodium')
 	 * @param options - Request options
 	 * @returns Promise resolving to the response data
-	 * @throws {BbsmcApiError} When the request fails or features throw errors
+	 * @throws {modrinthApiError} When the request fails or features throw errors
 	 */
 	async request<T>(path: string, options: RequestOptions): Promise<T> {
 		let baseUrl: string
@@ -286,7 +286,7 @@ export abstract class AbstractBbsmcClient extends AbstractUploadClient {
 		} else if (typeof version === 'number') {
 			versionPath = `/v${version}`
 		} else if (typeof version === 'string') {
-			// Custom version string (e.g., 'v0', 'Bbsmc/v0')
+			// Custom version string (e.g., 'v0', 'modrinth/v0')
 			versionPath = `/${version}`
 		}
 
@@ -388,7 +388,7 @@ export abstract class AbstractBbsmcClient extends AbstractUploadClient {
 			return
 		}
 
-		options.headers['Bbsmc-sentry-capture'] = '1'
+		options.headers['modrinth-sentry-capture'] = '1'
 	}
 
 	private shouldCaptureArchonRequests(): boolean {
@@ -433,17 +433,17 @@ export abstract class AbstractBbsmcClient extends AbstractUploadClient {
 	): Promise<T>
 
 	/**
-	 * Normalize an error into a BbsmcApiError
+	 * Normalize an error into a modrinthApiError
 	 *
 	 * Platform implementations should override this to handle platform-specific errors
 	 * (e.g., FetchError from ofetch, Tauri HTTP errors)
 	 */
-	protected normalizeError(error: unknown, context?: RequestContext): BbsmcApiError {
-		if (error instanceof BbsmcApiError) {
+	protected normalizeError(error: unknown, context?: RequestContext): modrinthApiError {
+		if (error instanceof modrinthApiError) {
 			return error
 		}
 
-		return BbsmcApiError.fromUnknown(error, context?.path)
+		return modrinthApiError.fromUnknown(error, context?.path)
 	}
 
 	/**
@@ -453,12 +453,12 @@ export abstract class AbstractBbsmcClient extends AbstractUploadClient {
 		error: Error,
 		statusCode: number | undefined,
 		responseData: unknown,
-	): BbsmcApiError {
+	): modrinthApiError {
 		if (statusCode && responseData) {
-			return BbsmcServerError.fromResponse(statusCode, responseData)
+			return modrinthServerError.fromResponse(statusCode, responseData)
 		}
 
-		return new BbsmcApiError(error.message, {
+		return new modrinthApiError(error.message, {
 			statusCode,
 			originalError: error,
 			responseData,
@@ -472,7 +472,7 @@ export abstract class AbstractBbsmcClient extends AbstractUploadClient {
 	 *
 	 * @example
 	 * ```typescript
-	 * const client = new GenericBbsmcClient()
+	 * const client = new GenericmodrinthClient()
 	 * client.addFeature(new AuthFeature({ token: async () => getOAuthToken() }))
 	 * client.addFeature(new RetryFeature({ maxAttempts: 3 }))
 	 * ```

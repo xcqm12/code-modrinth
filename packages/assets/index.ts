@@ -12,8 +12,8 @@ import _FourOhFourNotFound from './branding/404.svg?component'
 // Branding
 import _BrowserWindowSuccessIllustration from './branding/illustrations/browser-window-success.svg?component'
 import _InviteBackgroundIllustration from './branding/illustrations/invite-bg.webp?url'
-import _BbsmcIcon from './branding/logo.svg?component'
-import _BbsmcPlusIcon from './branding/Bbsmc-plus.svg?component'
+import _modrinthIcon from './branding/logo.svg?component'
+import _modrinthPlusIcon from './branding/modrinth-plus.svg?component'
 import _AngryRinthbot from './branding/rinthbot/angry.webp'
 import _AnnoyedRinthbot from './branding/rinthbot/annoyed.webp'
 import _ConfusedRinthbot from './branding/rinthbot/confused.webp'
@@ -83,11 +83,11 @@ import _NoMessagesIllustration from './illustrations/no-messages.svg?component'
 import _NoSearchResultIllustration from './illustrations/no-search-result.svg?component'
 import _NoTasksIllustration from './illustrations/no-tasks.svg?component'
 
-export const BbsmcIcon = _BbsmcIcon
+export const modrinthIcon = _modrinthIcon
 export const BrowserWindowSuccessIllustration = _BrowserWindowSuccessIllustration
 export const InviteBackgroundIllustration = _InviteBackgroundIllustration
 export const FourOhFourNotFound = _FourOhFourNotFound
-export const BbsmcPlusIcon = _BbsmcPlusIcon
+export const modrinthPlusIcon = _modrinthPlusIcon
 export const AngryRinthbot = _AngryRinthbot
 export const AnnoyedRinthbot = _AnnoyedRinthbot
 export const ConfusedRinthbot = _ConfusedRinthbot

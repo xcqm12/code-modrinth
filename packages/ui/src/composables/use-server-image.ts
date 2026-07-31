@@ -1,8 +1,8 @@
-import type { Archon } from '@Bbsmc/api-client'
+import type { Archon } from '@modrinth/api-client'
 import { useQuery } from '@tanstack/vue-query'
 import { computed, type ComputedRef, ref } from 'vue'
 
-import { injectBbsmcClient } from '#ui/providers'
+import { injectmodrinthClient } from '#ui/providers'
 
 type UpstreamRef = ComputedRef<Archon.Servers.v0.Server['upstream'] | null | undefined>
 
@@ -43,7 +43,7 @@ export function useServerImage(
 	upstream: UpstreamRef,
 	options: UseServerImageOptions = {},
 ) {
-	const client = injectBbsmcClient()
+	const client = injectmodrinthClient()
 	const localImage = ref<string | null | undefined>(undefined)
 	const iconSize = options.size ?? 512
 	const includeProjectFallback = options.includeProjectFallback ?? false

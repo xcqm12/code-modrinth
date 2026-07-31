@@ -1,5 +1,5 @@
 import { AbstractModule } from '../../../core/abstract-module'
-import { BbsmcApiError } from '../../../core/errors'
+import { modrinthApiError } from '../../../core/errors'
 import type { Labrinth } from '../types'
 
 export class LabrinthProjectsV3Module extends AbstractModule {
@@ -133,7 +133,7 @@ export class LabrinthProjectsV3Module extends AbstractModule {
 			)
 		} catch (error) {
 			// 404 means the project is not owned by an organization
-			if (error instanceof BbsmcApiError && error.statusCode === 404) {
+			if (error instanceof modrinthApiError && error.statusCode === 404) {
 				return null
 			}
 			throw error

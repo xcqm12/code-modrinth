@@ -1,4 +1,4 @@
-import type { AbstractBbsmcClient, Archon } from '@Bbsmc/api-client'
+import type { AbstractmodrinthClient, Archon } from '@modrinth/api-client'
 import { useInfiniteQuery, useQueryClient } from '@tanstack/vue-query'
 import type { ComputedRef } from 'vue'
 import { computed, onBeforeUnmount, ref, watch } from 'vue'
@@ -33,7 +33,7 @@ import { accessMessages, actionLogActionMessages } from './messages'
 type AuditLogFilterKey = 'users' | 'worlds' | 'actions'
 
 type UseAccessAuditLogOptions = {
-	client: AbstractBbsmcClient
+	client: AbstractmodrinthClient
 	serverId: string
 	serverFull: ComputedRef<Archon.Servers.v1.ServerFull | null>
 	showAuditLogInstances: ComputedRef<boolean>

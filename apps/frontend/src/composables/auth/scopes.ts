@@ -1,4 +1,4 @@
-import { defineMessages, useVIntl } from '@Bbsmc/ui'
+import { defineMessages, useVIntl } from '@modrinth/ui'
 
 export const scopeMessages = defineMessages({
 	userReadEmailLabel: {
@@ -319,7 +319,7 @@ export const scopeMessages = defineMessages({
 	},
 	sessionAccessDescription: {
 		id: 'scopes.sessionAccess.description',
-		defaultMessage: 'Access Bbsmc-issued sessions',
+		defaultMessage: 'Access modrinth-issued sessions',
 	},
 })
 

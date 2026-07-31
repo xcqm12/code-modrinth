@@ -368,7 +368,7 @@ const commands = {
 }
 
 export const markdownCommands = commands
-export const BbsmcMarkdownEditorKeymap: KeyBinding[] = [
+export const modrinthMarkdownEditorKeymap: KeyBinding[] = [
 	{ key: 'Enter', run: insertNewlineContinueMark },
 	{ key: 'Backspace', run: deleteMarkupBackward },
 	{ key: 'Mod-b', run: toggleBold },

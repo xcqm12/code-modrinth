@@ -15,8 +15,8 @@ type Story = StoryObj<typeof ShareModal>
 export const LinkShare: Story = {
 	args: {
 		header: 'Share link',
-		shareTitle: 'Bbsmc',
-		shareText: 'Check this out on Bbsmc',
+		shareTitle: 'modrinth',
+		shareText: 'Check this out on modrinth',
 		link: true,
 	},
 	render: (args) => ({
@@ -42,8 +42,8 @@ export const LinkShare: Story = {
 export const TextShare: Story = {
 	args: {
 		header: 'Share text',
-		shareTitle: 'Bbsmc',
-		shareText: 'Invite your friends to try Bbsmc.',
+		shareTitle: 'modrinth',
+		shareText: 'Invite your friends to try modrinth.',
 		link: false,
 	},
 	render: (args) => ({

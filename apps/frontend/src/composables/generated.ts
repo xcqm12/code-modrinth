@@ -1,5 +1,5 @@
-import type { ISO3166, Labrinth } from '@Bbsmc/api-client'
-import type { DisplayProjectType } from '@Bbsmc/utils'
+import type { ISO3166, Labrinth } from '@modrinth/api-client'
+import type { DisplayProjectType } from '@modrinth/utils'
 
 import generatedState from '~/generated/state.json'
 import type { DisplayMode } from '~/plugins/cosmetics'

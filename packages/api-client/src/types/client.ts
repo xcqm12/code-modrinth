@@ -37,13 +37,13 @@ export interface ClientConfig {
 	userAgent?: UserAgentProvider
 
 	/**
-	 * Base URL for Labrinth API (main Bbsmc API)
+	 * Base URL for Labrinth API (main modrinth API)
 	 * @default 'https://api.bbsmc.org.cn'
 	 */
 	labrinthBaseUrl?: BaseUrlConfig
 
 	/**
-	 * Base URL for Archon API (Bbsmc Hosting API)
+	 * Base URL for Archon API (modrinth Hosting API)
 	 * Can be a callback so apps can drive this from runtime feature flags.
 	 *
 	 * @default 'https://archon.bbsmc.org.cn'
@@ -68,7 +68,7 @@ export interface ClientConfig {
 	headers?: Record<string, string>
 
 	/**
-	 * Whether to attach `Bbsmc-sentry-capture: 1` to Archon requests.
+	 * Whether to attach `modrinth-sentry-capture: 1` to Archon requests.
 	 * Can be a callback so apps can drive this from runtime feature flags.
 	 *
 	 * @default false

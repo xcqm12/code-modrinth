@@ -1,4 +1,4 @@
-import type { Labrinth } from '@Bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
 import { fn } from 'storybook/test'
 import { ref } from 'vue'
@@ -6,7 +6,7 @@ import { ref } from 'vue'
 import ButtonStyled from '../../components/base/ButtonStyled.vue'
 import ContentUpdaterModal from '../../layouts/shared/content-tab/components/modals/content-updater-modal/index.vue'
 
-// Real version data from Bbsmc API - Sodium (mod)
+// Real version data from modrinth API - Sodium (mod)
 const sodiumVersions: Labrinth.Versions.v2.Version[] = [
 	{
 		id: '59wygFUQ',
@@ -117,7 +117,7 @@ const sodiumVersions: Labrinth.Versions.v2.Version[] = [
 	},
 ]
 
-// Real version data from Bbsmc API - Cobblemon modpack
+// Real version data from modrinth API - Cobblemon modpack
 const cobblemonVersions: Labrinth.Versions.v2.Version[] = [
 	{
 		id: 'DbQNxSJ0',

@@ -481,10 +481,10 @@ async fn desired_shared_instance_content(
     state: &State,
 ) -> crate::Result<DesiredSharedInstanceContent> {
     let versions_by_id =
-        shared_instance_versions_by_id(&data.Bbsmc_ids, state).await?;
+        shared_instance_versions_by_id(&data.modrinth_ids, state).await?;
     let mut content = DesiredSharedInstanceContent::default();
 
-    for version_id in &data.Bbsmc_ids {
+    for version_id in &data.modrinth_ids {
         let version = versions_by_id.get(version_id).ok_or_else(|| {
             crate::ErrorKind::InputError(format!(
                 "Shared instance version {version_id} was not found"
@@ -639,9 +639,9 @@ pub(super) async fn apply_shared_instance_content(
         .await?;
     }
 
-    if !data.Bbsmc_ids.is_empty() || !data.external_files.is_empty() {
+    if !data.modrinth_ids.is_empty() || !data.external_files.is_empty() {
         let content_change_count =
-            data.Bbsmc_ids.len() as u64 + data.external_files.len() as u64;
+            data.modrinth_ids.len() as u64 + data.external_files.len() as u64;
         update_content_progress(
             job_id,
             job_state,
@@ -651,7 +651,7 @@ pub(super) async fn apply_shared_instance_content(
         )
         .await?;
         let mut completed_content_changes = 0;
-        for version_id in &data.Bbsmc_ids {
+        for version_id in &data.modrinth_ids {
             crate::state::instances::commands::add_project_from_version(
                 instance_id,
                 version_id,

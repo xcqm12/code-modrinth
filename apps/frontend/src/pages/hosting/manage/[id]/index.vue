@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { injectBbsmcServerContext, ServersManageOverviewPage } from '@Bbsmc/ui'
+import { injectmodrinthServerContext, ServersManageOverviewPage } from '@modrinth/ui'
 
-const { server } = injectBbsmcServerContext()
+const { server } = injectmodrinthServerContext()
 const flags = useFeatureFlags()
 
 useHead({
-	title: computed(() => `Overview - ${server.value?.name ?? 'Server'} - Bbsmc`),
+	title: computed(() => `Overview - ${server.value?.name ?? 'Server'} - modrinth`),
 })
 </script>
 

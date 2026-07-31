@@ -11,7 +11,7 @@ pub struct Download {
     pub domain: String,
     pub site_path: String,
 
-    // Bbsmc User ID for logged in users, default 0
+    // modrinth User ID for logged in users, default 0
     pub user_id: u64,
     // default is 0 if unknown
     pub project_id: u64,
@@ -74,9 +74,9 @@ pub struct PageView {
     pub domain: String,
     pub site_path: String,
 
-    // Bbsmc User ID for logged in users
+    // modrinth User ID for logged in users
     pub user_id: u64,
-    // Bbsmc Project ID (used for payouts)
+    // modrinth Project ID (used for payouts)
     pub project_id: u64,
     // whether this view will be monetized / counted for payouts
     pub monetized: bool,
@@ -94,7 +94,7 @@ pub struct AffiliateCodeClick {
     pub recorded: i64,
     pub domain: String,
 
-    // Bbsmc User ID for logged in users
+    // modrinth User ID for logged in users
     pub user_id: u64,
     pub affiliate_code_id: u64,
 
@@ -109,11 +109,11 @@ pub struct Playtime {
     pub recorded: i64,
     pub seconds: u64,
 
-    // Bbsmc User ID for logged in users (unused atm)
+    // modrinth User ID for logged in users (unused atm)
     pub user_id: u64,
-    // Bbsmc Project ID
+    // modrinth Project ID
     pub project_id: u64,
-    // Bbsmc Version ID
+    // modrinth Version ID
     pub version_id: u64,
 
     pub loader: String,

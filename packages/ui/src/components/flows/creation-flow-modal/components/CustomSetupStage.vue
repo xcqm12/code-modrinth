@@ -148,14 +148,14 @@
 </template>
 
 <script setup lang="ts">
-import type { Paper } from '@Bbsmc/api-client'
-import { EyeIcon, EyeOffIcon, UploadIcon, XIcon } from '@Bbsmc/assets'
-import { commonMessages, defineMessages, useVIntl } from '@Bbsmc/ui'
+import type { Paper } from '@modrinth/api-client'
+import { EyeIcon, EyeOffIcon, UploadIcon, XIcon } from '@modrinth/assets'
+import { commonMessages, defineMessages, useVIntl } from '@modrinth/ui'
 import { computed, onMounted, ref, watch } from 'vue'
 
 import { useDebugLogger } from '#ui/composables/debug-logger'
 
-import { injectFilePicker, injectBbsmcClient, injectTags } from '../../../../providers'
+import { injectFilePicker, injectmodrinthClient, injectTags } from '../../../../providers'
 import Avatar from '../../../base/Avatar.vue'
 import ButtonStyled from '../../../base/ButtonStyled.vue'
 import Chips from '../../../base/Chips.vue'
@@ -168,7 +168,7 @@ import { injectCreationFlowContext } from '../creation-flow-context'
 import { formatLoaderLabel } from '../shared'
 
 const debug = useDebugLogger('CustomSetupStage')
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const ctx = injectCreationFlowContext()
 const { formatMessage } = useVIntl()
 const {
@@ -370,12 +370,12 @@ const gameVersionOptions = computed<ComboboxOption<string>[]>(() => {
 		const manifest = ctx.loaderVersionsCache.value[apiLoader]
 		if (!manifest) return []
 
-		const hasPlaceholder = manifest.gameVersions.some((x) => x.id === '${Bbsmc.gameVersion}')
+		const hasPlaceholder = manifest.gameVersions.some((x) => x.id === '${modrinth.gameVersion}')
 		const supportedVersions = new Set(
 			manifest.gameVersions
 				.filter(
 					(x) =>
-						x.id !== '${Bbsmc.gameVersion}' &&
+						x.id !== '${modrinth.gameVersion}' &&
 						(hasPlaceholder || x.loaders.length > 0 || !!x.versionGroup),
 				)
 				.map((x) => x.id),
@@ -473,7 +473,7 @@ function getLoaderVersionsForGameVersion(
 	if (!manifest) return []
 
 	// Some loaders (e.g. Fabric) list all versions under a placeholder entry
-	const placeholder = manifest.gameVersions.find((x) => x.id === '${Bbsmc.gameVersion}')
+	const placeholder = manifest.gameVersions.find((x) => x.id === '${modrinth.gameVersion}')
 	if (placeholder) {
 		if (!manifest.gameVersions.some((x) => x.id === gameVersion)) return []
 		debug(

@@ -1,9 +1,9 @@
 import type {
-	AbstractBbsmcClient,
+	AbstractmodrinthClient,
 	Kyros,
 	UploadProgress,
 	UploadState,
-} from '@Bbsmc/api-client'
+} from '@modrinth/api-client'
 import type { Ref } from 'vue'
 
 import type { CancelUploadHandler } from '#ui/providers/server-context'
@@ -16,7 +16,7 @@ export type UploadSessionUploadFile = {
 export type UploadSessionUploadResult = 'completed' | 'cancelled'
 
 export function useUploadSessionUpload(options: {
-	client: AbstractBbsmcClient
+	client: AbstractmodrinthClient
 	scope: Kyros.UploadSessions.v1.Scope
 	worldId: Ref<string | null>
 	uploadState: Ref<UploadState>

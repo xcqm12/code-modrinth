@@ -1,4 +1,4 @@
-import { IssuesIcon } from '@Bbsmc/assets'
+import { IssuesIcon } from '@modrinth/assets'
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
 
 import ErrorInformationCard from '../../components/base/ErrorInformationCard.vue'

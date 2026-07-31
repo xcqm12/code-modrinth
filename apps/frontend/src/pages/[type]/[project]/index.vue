@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-import { injectProjectPageContext, ProjectPageDescription } from '@Bbsmc/ui'
+import { injectProjectPageContext, ProjectPageDescription } from '@modrinth/ui'
 
 const route = useRoute()
 

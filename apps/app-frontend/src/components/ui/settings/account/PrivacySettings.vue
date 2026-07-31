@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Settings2Icon } from '@Bbsmc/assets'
+import { Settings2Icon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	defineMessages,
@@ -7,7 +7,7 @@ import {
 	injectPageContext,
 	Toggle,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { ref, watch } from 'vue'
 
 import { open_ads_consent_preferences } from '@/helpers/ads.js'
@@ -22,12 +22,12 @@ const settings = ref(await get())
 const messages = defineMessages({
 	adsConsentTitle: {
 		id: 'app.ads-consent.title',
-		defaultMessage: 'Your privacy and how ads support Bbsmc',
+		defaultMessage: 'Your privacy and how ads support modrinth',
 	},
 	adsConsentIntro: {
 		id: 'app.settings.privacy.ads-consent.intro',
 		defaultMessage:
-			'Ads make Bbsmc possible and fund creator payouts. Our partners may store or access cookies in the app to personalize ads and measure performance. You can opt out or manage your preferences below.',
+			'Ads make modrinth possible and fund creator payouts. Our partners may store or access cookies in the app to personalize ads and measure performance. You can opt out or manage your preferences below.',
 	},
 	adsConsentManage: {
 		id: 'app.ads-consent.manage',
@@ -40,7 +40,7 @@ const messages = defineMessages({
 	telemetryDescription: {
 		id: 'app.settings.privacy.telemetry.description',
 		defaultMessage:
-			'Bbsmc collects anonymized analytics and usage data to improve our user experience and customize your experience. By disabling this option, you opt out and your data will no longer be collected.',
+			'modrinth collects anonymized analytics and usage data to improve our user experience and customize your experience. By disabling this option, you opt out and your data will no longer be collected.',
 	},
 	discordRichPresenceTitle: {
 		id: 'app.settings.privacy.discord-rich-presence.title',
@@ -49,7 +49,7 @@ const messages = defineMessages({
 	discordRichPresenceDescription: {
 		id: 'app.settings.privacy.discord-rich-presence.description',
 		defaultMessage:
-			'Show Bbsmc App as your current activity on Discord. This does not affect Rich Presence added to instances by mods. Requires an app restart.',
+			'Show modrinth App as your current activity on Discord. This does not affect Rich Presence added to instances by mods. Requires an app restart.',
 	},
 })
 

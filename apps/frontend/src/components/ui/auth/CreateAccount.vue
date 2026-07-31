@@ -98,7 +98,7 @@
 </template>
 
 <script setup lang="ts">
-import { RightArrowIcon } from '@Bbsmc/assets'
+import { RightArrowIcon } from '@modrinth/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -108,7 +108,7 @@ import {
 	injectNotificationManager,
 	StyledInput,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, ref } from 'vue'
 
 import HCaptcha from '@/components/ui/auth/HCaptcha.vue'
@@ -133,7 +133,7 @@ const {
 } = defineProps<Props>()
 
 const SOURCE_CODE_URL =
-	'https://github.com/xcqm12/code-Bbsmc/blob/main/apps/frontend/src/components/ui/auth/CreateAccount.vue'
+	'https://github.com/xcqm12/code-modrinth/blob/main/apps/frontend/src/components/ui/auth/CreateAccount.vue'
 
 const dateOfBirthModel = defineModel<string | null>('dateOfBirth', { default: '' })
 const usernameModel = defineModel<string>('username', { default: '' })
@@ -245,7 +245,7 @@ const messages = defineMessages({
 	},
 	under13HelperText: {
 		id: 'auth.create-account.date-of-birth.under13-helper',
-		defaultMessage: 'You do not meet the age requirement to create an account at Bbsmc.',
+		defaultMessage: 'You do not meet the age requirement to create an account at modrinth.',
 	},
 	ageRequirementWarningTitle: {
 		id: 'auth.create-account.age-requirement.warning-title',
@@ -274,7 +274,7 @@ const messages = defineMessages({
 	},
 	subscribeLabel: {
 		id: 'auth.create-account.subscribe.label',
-		defaultMessage: 'Keep me updated on the cool things Bbsmc is working on via email',
+		defaultMessage: 'Keep me updated on the cool things modrinth is working on via email',
 	},
 	completeSignUpButton: {
 		id: 'auth.create-account.complete-sign-up',

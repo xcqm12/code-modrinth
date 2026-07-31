@@ -3,8 +3,8 @@ import { computed, type Ref } from 'vue'
 import { useVIntl } from '#ui/composables/i18n'
 import { useServerPermissions } from '#ui/composables/server-permissions'
 import {
-	injectBbsmcClient,
-	injectBbsmcServerContext,
+	injectmodrinthClient,
+	injectmodrinthServerContext,
 	injectNotificationManager,
 } from '#ui/providers'
 
@@ -12,9 +12,9 @@ export type PowerAction = 'Start' | 'Stop' | 'Restart' | 'Kill'
 
 export function useServerPowerAction(options?: { disabled?: Ref<boolean> }) {
 	const { formatMessage } = useVIntl()
-	const client = injectBbsmcClient()
+	const client = injectmodrinthClient()
 	const { serverId, server, powerState, isSyncingContent, busyReasons } =
-		injectBbsmcServerContext()
+		injectmodrinthServerContext()
 	const { addNotification } = injectNotificationManager()
 	const { canUsePowerActions, permissionDeniedMessage } = useServerPermissions()
 

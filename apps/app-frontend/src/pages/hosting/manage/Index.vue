@@ -47,15 +47,15 @@
 </template>
 
 <script setup lang="ts">
-import type { Archon, Labrinth } from '@Bbsmc/api-client'
-import { ServerStackIcon } from '@Bbsmc/assets'
+import type { Archon, Labrinth } from '@modrinth/api-client'
+import { ServerStackIcon } from '@modrinth/assets'
 import {
 	commonMessages,
 	injectAuth,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	ServersManageRootLayout,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { openUrl } from '@tauri-apps/plugin-opener'
 import { computed, ref, watch } from 'vue'
@@ -69,7 +69,7 @@ import { useTheming } from '@/store/theme'
 const route = useRoute()
 const router = useRouter()
 const auth = injectAuth()
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const queryClient = useQueryClient()
 const themeStore = useTheming()
 const { formatMessage } = useVIntl()

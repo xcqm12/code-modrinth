@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { DropdownIcon, EditIcon, PlusIcon, TrashIcon, UnknownIcon } from '@Bbsmc/assets'
+import { DropdownIcon, EditIcon, PlusIcon, TrashIcon, UnknownIcon } from '@modrinth/assets'
 import {
 	Accordion,
 	ButtonStyled,
@@ -9,7 +9,7 @@ import {
 	SkinLikeTextButton,
 	useScrollViewport,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useElementSize, useWindowSize } from '@vueuse/core'
 import { Tooltip } from 'floating-vue'
 import { computed, nextTick, onUnmounted, ref, useTemplateRef, watch } from 'vue'

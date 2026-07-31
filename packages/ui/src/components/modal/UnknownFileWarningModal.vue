@@ -103,7 +103,7 @@
 </template>
 
 <script setup lang="ts">
-import { BanIcon } from '@Bbsmc/assets'
+import { BanIcon } from '@modrinth/assets'
 import { computed, nextTick, ref, useTemplateRef } from 'vue'
 
 import { defineMessages, useVIntl } from '../../composables/i18n'
@@ -158,17 +158,17 @@ const messages = defineMessages({
 	modpackWarningBody: {
 		id: 'unknown-file-warning-modal.modpack-warning-body',
 		defaultMessage:
-			' contains files that aren’t published on Bbsmc. We strongly recommend only installing files from sources you trust.',
+			' contains files that aren’t published on modrinth. We strongly recommend only installing files from sources you trust.',
 	},
 	modWarningBody: {
 		id: 'unknown-file-warning-modal.mod-warning-body',
 		defaultMessage:
-			' isn’t published on Bbsmc. We strongly recommend only installing files from sources you trust.',
+			' isn’t published on modrinth. We strongly recommend only installing files from sources you trust.',
 	},
 	reviewedFiles: {
 		id: 'unknown-file-warning-modal.reviewed-files',
 		defaultMessage:
-			'A file is only reviewed if it’s published to Bbsmc, regardless of its file format (including .mrpack).',
+			'A file is only reviewed if it’s published to modrinth, regardless of its file format (including .mrpack).',
 	},
 	unrecognizedFiles: {
 		id: 'unknown-file-warning-modal.unrecognized-files',

@@ -97,7 +97,7 @@ bitflags::bitflags! {
         // delete an organization
         const ORGANIZATION_DELETE = 1 << 38;
 
-        // only accessible by Bbsmc-issued sessions
+        // only accessible by modrinth-issued sessions
         const SESSION_ACCESS = 1 << 39;
 
         // create a shared instance

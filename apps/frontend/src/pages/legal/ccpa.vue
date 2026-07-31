@@ -455,10 +455,10 @@
 
 <script setup>
 const description =
-	'The California Privacy Notice of Bbsmc, an open source modding platform focused on Minecraft.'
+	'The California Privacy Notice of modrinth, an open source modding platform focused on Minecraft.'
 
 useSeoMeta({
-	title: 'California Privacy Notice - Bbsmc',
+	title: 'California Privacy Notice - modrinth',
 	description,
 	ogTitle: 'California Privacy Notice',
 	ogDescription: description,

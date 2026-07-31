@@ -19,14 +19,14 @@
 </template>
 
 <script setup lang="ts">
-import { DownloadIcon } from '@Bbsmc/assets'
+import { DownloadIcon } from '@modrinth/assets'
 import {
 	commonMessages,
 	type ContentDiffItem,
 	ContentDiffModal,
 	defineMessages,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, ref } from 'vue'
 
 import {
@@ -130,7 +130,7 @@ const messages = defineMessages({
 	externalWarningDescription: {
 		id: 'app.modal.update-to-play.shared-instance-unknown-files-description',
 		defaultMessage:
-			'This shared instance update contains files that aren’t published on Bbsmc. We strongly recommend only installing files from sources you trust.',
+			'This shared instance update contains files that aren’t published on modrinth. We strongly recommend only installing files from sources you trust.',
 	},
 })
 

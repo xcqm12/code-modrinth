@@ -1,6 +1,6 @@
-import type { AbstractBbsmcClient, Labrinth, SharedInstances } from '@Bbsmc/api-client'
-import type { ExtendedReport, OwnershipTarget } from '@Bbsmc/moderation'
-import type { Organization, Project, TeamMember, Thread, User, Version } from '@Bbsmc/utils'
+import type { AbstractmodrinthClient, Labrinth, SharedInstances } from '@modrinth/api-client'
+import type { ExtendedReport, OwnershipTarget } from '@modrinth/moderation'
+import type { Organization, Project, TeamMember, Thread, User, Version } from '@modrinth/utils'
 
 export const useModerationCache = () => ({
 	threads: useState<Map<string, Thread>>('moderation-report-cache-threads', () => new Map()),
@@ -18,7 +18,7 @@ export const useModerationCache = () => ({
 // TODO: @AlexTMjugador - backend should do all of these functions.
 export async function enrichReportBatch(
 	reports: Labrinth.Reports.v3.Report[],
-	client: AbstractBbsmcClient,
+	client: AbstractmodrinthClient,
 ): Promise<ExtendedReport[]> {
 	if (reports.length === 0) return []
 
@@ -203,7 +203,7 @@ export async function enrichReportBatch(
 	})
 }
 
-// Doesn't need to be in @Bbsmc/moderation because it is specific to the frontend.
+// Doesn't need to be in @modrinth/moderation because it is specific to the frontend.
 export interface ModerationOwnershipUser {
 	kind: 'user'
 	id: string

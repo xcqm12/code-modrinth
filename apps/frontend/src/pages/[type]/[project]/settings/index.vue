@@ -251,7 +251,7 @@
 					<label for="project-monetization-toggle">
 						<span class="mb-1 block text-lg font-semibold text-contrast">Monetization</span>
 						<span class="block">
-							When enabled, this project can earn revenue through Bbsmc's
+							When enabled, this project can earn revenue through modrinth's
 							<nuxt-link to="/legal/cmp-info" target="_blank" class="text-link"
 								>Rewards Program</nuxt-link
 							>. If you don't want to (or can't for legal reasons) earn revenue from this project,
@@ -308,7 +308,7 @@
 				</h3>
 			</div>
 			<p>
-				Removes your project from Bbsmc's servers and search. Clicking on this will delete your
+				Removes your project from modrinth's servers and search. Clicking on this will delete your
 				project, so be extra careful!
 			</p>
 			<ButtonStyled color="red">
@@ -330,15 +330,15 @@
 </template>
 
 <script setup>
-import { ImageIcon, ScaleIcon, TrashIcon, TriangleAlertIcon, UploadIcon } from '@Bbsmc/assets'
-import { MIN_SUMMARY_CHARS } from '@Bbsmc/moderation'
+import { ImageIcon, ScaleIcon, TrashIcon, TriangleAlertIcon, UploadIcon } from '@modrinth/assets'
+import { MIN_SUMMARY_CHARS } from '@modrinth/moderation'
 import {
 	Avatar,
 	ButtonStyled,
 	Combobox,
 	ConfirmLeaveModal,
 	ConfirmModal,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	injectProjectPageContext,
 	StyledInput,
@@ -346,8 +346,8 @@ import {
 	UnsavedChangesPopup,
 	useFormatBytes,
 	usePageLeaveSafety,
-} from '@Bbsmc/ui'
-import { fileIsValid, formatProjectStatus, formatProjectType } from '@Bbsmc/utils'
+} from '@modrinth/ui'
+import { fileIsValid, formatProjectStatus, formatProjectType } from '@modrinth/utils'
 
 import FileInput from '~/components/ui/FileInput.vue'
 import { useAuth } from '~/composables/auth.js'
@@ -364,7 +364,7 @@ const {
 	patchIcon,
 	invalidate,
 } = injectProjectPageContext()
-const { labrinth } = injectBbsmcClient()
+const { labrinth } = injectmodrinthClient()
 
 const flags = useFeatureFlags()
 

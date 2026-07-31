@@ -1,5 +1,5 @@
 <script setup lang="ts" generic="T">
-import { DropdownIcon } from '@Bbsmc/assets'
+import { DropdownIcon } from '@modrinth/assets'
 import type { Ref } from 'vue'
 import { computed, ref } from 'vue'
 

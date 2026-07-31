@@ -1,4 +1,4 @@
-import { defineMessage, formatProjectTypeSentence, useVIntl } from '@Bbsmc/ui'
+import { defineMessage, formatProjectTypeSentence, useVIntl } from '@modrinth/ui'
 
 import type { Nag, NagContext } from '../../types/nags'
 import { licenseRequiresSource, licensesRequiringSource, notSourceAsDistributed } from '../../utils'
@@ -86,7 +86,7 @@ export const linksNags: Nag[] = [
 		description: defineMessage({
 			id: 'nags.add-links.description',
 			defaultMessage:
-				'Add any relevant links targeted outside of Bbsmc, such as source code, an issue tracker, or a Discord invite.',
+				'Add any relevant links targeted outside of modrinth, such as source code, an issue tracker, or a Discord invite.',
 		}),
 		status: 'suggestion',
 		shouldShow: (context: NagContext) => {
@@ -113,7 +113,7 @@ export const linksNags: Nag[] = [
 		description: defineMessage({
 			id: 'nags.add-links-server.description',
 			defaultMessage:
-				'Add any relevant links targeted outside of Bbsmc, such as a website, store, or a Discord invite.',
+				'Add any relevant links targeted outside of modrinth, such as a website, store, or a Discord invite.',
 		}),
 		status: 'suggestion',
 		shouldShow: (context: NagContext) => {

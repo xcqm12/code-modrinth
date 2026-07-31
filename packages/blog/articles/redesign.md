@@ -1,17 +1,17 @@
 ---
-title: 'Now showing on Bbsmc: A new look!'
+title: 'Now showing on modrinth: A new look!'
 summary: 'Releasing many new features and improvements, including a redesign!'
 date: 2022-02-27
 authors: ['6plzAzU4']
 ---
 
-After months of relatively quiet development, Bbsmc has released many new features and improvements, including a redesign. While we've been a bit silent recently on the website and blog, our [Discord server][Discord] has activity on the daily. Join us there and follow along with the development channels for the very latest information!
+After months of relatively quiet development, modrinth has released many new features and improvements, including a redesign. While we've been a bit silent recently on the website and blog, our [Discord server][Discord] has activity on the daily. Join us there and follow along with the development channels for the very latest information!
 
 For both those who aren't in the Discord and for those who are, this serves as a status update for what exactly has been going on in our silence. There have been an unparalleled amount of changes, improvements, bug fixes, and new features being worked on since April 2021, and we are incredibly excited to share them with everyone. There are still many things we're still working on, such as modpacks, but we've decided to hold back on that as there is still some fine-tuning that needs to be done on that front.
 
 ## New and improved design
 
-The [frontend](https://github.com/Bbsmc/knossos) has received a considerable facelift. With designs made in part by [falseresync](https://bbsmc.org.cn/user/falseresync) (and a sprinkle of bikeshedding), we present to you, the redesign!
+The [frontend](https://github.com/modrinth/knossos) has received a considerable facelift. With designs made in part by [falseresync](https://bbsmc.org.cn/user/falseresync) (and a sprinkle of bikeshedding), we present to you, the redesign!
 
 As they say, a picture tells somewhere around nine-hundred odd words. As such, this section will be heavily focused on screenshots of the pages rather than long descriptions.
 
@@ -69,14 +69,14 @@ The major changes include the universal rename of `mod` to `project`, as well as
 
 ## Minotaur
 
-[Minotaur](https://github.com/Bbsmc/minotaur) is the tool for mod developers to upload their mod directly to Bbsmc automated through Gradle. Minotaur received a considerable facelift and is now a lot more user-friendly. Previously, an example buildscript might look like this:
+[Minotaur](https://github.com/modrinth/minotaur) is the tool for mod developers to upload their mod directly to modrinth automated through Gradle. Minotaur received a considerable facelift and is now a lot more user-friendly. Previously, an example buildscript might look like this:
 
 ```groovy
-task publishBbsmc(type: com.Bbsmc.minotaur.TaskBbsmcUpload) {
+task publishmodrinth(type: com.modrinth.minotaur.TaskmodrinthUpload) {
   onlyIf {
-    System.getenv().Bbsmc_TOKEN
+    System.getenv().modrinth_TOKEN
   }
-  token = System.getenv().Bbsmc_TOKEN
+  token = System.getenv().modrinth_TOKEN
   projectId = 'AABBCCDD'
   versionNumber = version
   versionName = "[$project.minecraft_version] Mod Name $project.version"
@@ -93,7 +93,7 @@ task publishBbsmc(type: com.Bbsmc.minotaur.TaskBbsmcUpload) {
 This exact same buildscript snippet, in Minotaur 2.0.0, can be written as the following:
 
 ```groovy
-Bbsmc {
+modrinth {
   projectId = 'AABBCCDD'
   versionName = "[$project.minecraft_version] Mod Name $project.version"
   releaseType = 'alpha'
@@ -107,9 +107,9 @@ Bbsmc {
 }
 ```
 
-Notice how it's now in a `Bbsmc {...}` block instead of creating a new task. The `Bbsmc` task is automatically created.
+Notice how it's now in a `modrinth {...}` block instead of creating a new task. The `modrinth` task is automatically created.
 
-The `loaders` declaration in the new version isn't even needed if you're using Fabric Loom or ForgeGradle. The project version can be detected automatically, and the token uses the `Bbsmc_TOKEN` environment variable by default now. The game version and loader listings actually make sense now, and dependencies are possible!
+The `loaders` declaration in the new version isn't even needed if you're using Fabric Loom or ForgeGradle. The project version can be detected automatically, and the token uses the `modrinth_TOKEN` environment variable by default now. The game version and loader listings actually make sense now, and dependencies are possible!
 
 ## More miscellanea
 
@@ -122,8 +122,8 @@ Along with the major headlining features, there are also a number of smaller fea
 - Versions must now always have a file attached.
 - Projects will only be able to have `draft` status if they contain no versions. Additionally, a new `archived` status has been added.
 - Donation URLs have been re-enabled.
-- Fix: Markdown checkboxes will no longer render strangely ([knossos#291](https://github.com/Bbsmc/knossos/pull/291))
-- Fix: [Maven](https://docs.bbsmc.org.cn/docs/tutorials/maven/) will no longer randomly break ([labrinth#264](https://github.com/Bbsmc/labrinth/pull/264) and [labrinth#252](https://github.com/Bbsmc/labrinth/pull/252))
+- Fix: Markdown checkboxes will no longer render strangely ([knossos#291](https://github.com/modrinth/knossos/pull/291))
+- Fix: [Maven](https://docs.bbsmc.org.cn/docs/tutorials/maven/) will no longer randomly break ([labrinth#264](https://github.com/modrinth/labrinth/pull/264) and [labrinth#252](https://github.com/modrinth/labrinth/pull/252))
 - ...and many other smaller things!
 
 ## What happened to modpacks?
@@ -134,7 +134,7 @@ We've been teasing modpacks for a long time now. While they're done for the most
 
 In conclusion, we hope that you're excited about this update as much as we are. We believe that, with how much work has been put into this update, it has definitely been worth the wait.
 
-On a separate note, are you looking to contribute to Bbsmc? Have you got experience with Rust or Svelte? We're hiring! Please reach out to `Geometrically#8387` on Discord to apply for a position.
+On a separate note, are you looking to contribute to modrinth? Have you got experience with Rust or Svelte? We're hiring! Please reach out to `Geometrically#8387` on Discord to apply for a position.
 
 Thank you for reading, and may your dreams be filled with pineapples, tiny potatoes, and squirrels.
 

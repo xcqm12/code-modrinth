@@ -500,8 +500,8 @@ import {
 	ServerPlusIcon,
 	SettingsIcon,
 	XIcon,
-} from '@Bbsmc/assets'
-import { moderationSettings } from '@Bbsmc/moderation'
+} from '@modrinth/assets'
+import { moderationSettings } from '@modrinth/moderation'
 import {
 	Admonition,
 	Avatar,
@@ -509,7 +509,7 @@ import {
 	ButtonStyled,
 	commonMessages,
 	defineMessages,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	IntlFormatted,
 	NavTabs,
@@ -531,8 +531,8 @@ import {
 	useFormatPrice,
 	useStickyObserver,
 	useVIntl,
-} from '@Bbsmc/ui'
-import { formatProjectType, isStaff } from '@Bbsmc/utils'
+} from '@modrinth/ui'
+import { formatProjectType, isStaff } from '@modrinth/utils'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/vue-query'
 import { useLocalStorage } from '@vueuse/core'
 import { Tooltip } from 'floating-vue'
@@ -683,7 +683,7 @@ const messages = defineMessages({
 	environmentMigrationMessage: {
 		id: 'project.environment.migration.message',
 		defaultMessage:
-			"We've just overhauled the Environments system on Bbsmc and new options are now available. Please verify that the metadata is correct.",
+			"We've just overhauled the Environments system on modrinth and new options are now available. Please verify that the metadata is correct.",
 	},
 	environmentMigrationTitle: {
 		id: 'project.environment.migration.title',
@@ -692,7 +692,7 @@ const messages = defineMessages({
 	environmentMigrationNoPermissionMessage: {
 		id: 'project.environment.migration-no-permission.message',
 		defaultMessage:
-			"We've just overhauled the Environments system on Bbsmc and new options are now available. You don't have permission to modify these settings, but please let another member of the project know that the environment metadata needs to be verified.",
+			"We've just overhauled the Environments system on modrinth and new options are now available. You don't have permission to modify these settings, but please let another member of the project know that the environment metadata needs to be verified.",
 	},
 	environmentMigrationNoPermissionTitle: {
 		id: 'project.environment.migration-no-permission.title',
@@ -752,7 +752,7 @@ const messages = defineMessages({
 	},
 	serversPromoDescription: {
 		id: 'project.actions.servers-promo.description',
-		defaultMessage: 'Bbsmc Hosting is the easiest way to play with your friends without hassle!',
+		defaultMessage: 'modrinth Hosting is the easiest way to play with your friends without hassle!',
 	},
 	serversPromoPricing: {
 		id: 'project.actions.servers-promo.pricing',
@@ -797,7 +797,7 @@ if (
 }
 
 // Use DI client for TanStack Query
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const queryClient = useQueryClient()
 
 // V2 Project - hits middleware cache (uses route param for lookup)
@@ -812,7 +812,7 @@ watch(
 	projectV2Error,
 	(error) => {
 		if (error) {
-			// error.statusCode from BbsmcApiError, error.status as fallback
+			// error.statusCode from modrinthApiError, error.status as fallback
 			const status = error.statusCode ?? error.status ?? 500
 			showError({
 				fatal: true,
@@ -1555,7 +1555,7 @@ const description = computed(() =>
 	project.value
 		? `${project.value.description} - Download the Minecraft ${projectTypeDisplay.value} ${
 				project.value.title
-			} by ${members.value.find((x) => x.is_owner)?.user?.username || 'a creator'} on Bbsmc`
+			} by ${members.value.find((x) => x.is_owner)?.user?.username || 'a creator'} on modrinth`
 		: '',
 )
 

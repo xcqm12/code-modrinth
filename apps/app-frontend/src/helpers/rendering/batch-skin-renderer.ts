@@ -1,4 +1,4 @@
-import { ClassicPlayerModel, SlimPlayerModel } from '@Bbsmc/assets'
+import { ClassicPlayerModel, SlimPlayerModel } from '@modrinth/assets'
 import {
 	applyCapeTexture,
 	applyEarsMod,
@@ -7,7 +7,7 @@ import {
 	loadTexture,
 	removeEarsMod,
 	setupSkinModel,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import * as THREE from 'three'
 import { reactive } from 'vue'
 

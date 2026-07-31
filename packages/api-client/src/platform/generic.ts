@@ -1,6 +1,6 @@
 import { $fetch, FetchError } from 'ofetch'
 
-import { BbsmcApiError } from '../core/errors'
+import { modrinthApiError } from '../core/errors'
 import type { ClientConfig } from '../types/client'
 import type { RequestOptions } from '../types/request'
 import { appendRequestParams, parseResponseErrorData, toFetchBody } from '../utils/fetch'
@@ -15,7 +15,7 @@ import { XHRUploadClient } from './xhr-upload-client'
  *
  * @example
  * ```typescript
- * const client = new GenericBbsmcClient({
+ * const client = new GenericmodrinthClient({
  *   userAgent: 'my-app/1.0.0',
  *   features: [
  *     new AuthFeature({ token: async () => getOAuthToken() }),
@@ -26,7 +26,7 @@ import { XHRUploadClient } from './xhr-upload-client'
  * const project = await client.request('/project/sodium', { api: 'labrinth', version: 2 })
  * ```
  */
-export class GenericBbsmcClient extends XHRUploadClient {
+export class GenericmodrinthClient extends XHRUploadClient {
 	constructor(config: ClientConfig) {
 		super(config)
 
@@ -83,7 +83,7 @@ export class GenericBbsmcClient extends XHRUploadClient {
 			}
 
 			if (!response.body) {
-				throw new BbsmcApiError('Streaming response has no readable body', {
+				throw new modrinthApiError('Streaming response has no readable body', {
 					statusCode: response.status,
 				})
 			}
@@ -94,7 +94,7 @@ export class GenericBbsmcClient extends XHRUploadClient {
 		}
 	}
 
-	protected normalizeError(error: unknown): BbsmcApiError {
+	protected normalizeError(error: unknown): modrinthApiError {
 		if (error instanceof FetchError) {
 			return this.createNormalizedError(error, error.response?.status, error.data)
 		}

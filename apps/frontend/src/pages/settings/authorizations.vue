@@ -64,15 +64,15 @@ import {
 	ConfirmModal,
 	defineMessages,
 	EmptyState,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 
 import AuthorizationCard from '~/components/ui/AuthorizationCard.vue'
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const { addNotification } = injectNotificationManager()
 const { formatMessage } = useVIntl()
 
@@ -84,7 +84,7 @@ const messages = defineMessages({
 	description: {
 		id: 'settings.authorizations.description',
 		defaultMessage:
-			'When you authorize an application with your Bbsmc account, you grant it access to your account. You can manage and review access to your account here at any time.',
+			'When you authorize an application with your modrinth account, you grant it access to your account. You can manage and review access to your account here at any time.',
 	},
 	emptyStateHeading: {
 		id: 'settings.authorizations.empty-state.heading',
@@ -117,7 +117,7 @@ definePageMeta({
 })
 
 useHead({
-	title: () => `${formatMessage(messages.headTitle)} - Bbsmc`,
+	title: () => `${formatMessage(messages.headTitle)} - modrinth`,
 })
 
 const { data: usersApps, refetch: refresh } = useQuery({

@@ -470,8 +470,8 @@ def create_admin_user(username: str, password: str):
 
 def main():
     parser = argparse.ArgumentParser(description="8h8g sync tool")
-    parser.add_argument("--limit", type=int, default=50,
-                        help="Number of projects to sync (default: 50)")
+    parser.add_argument("--limit", type=int, default=25,
+                        help="Number of projects to sync (default: 25)")
     parser.add_argument("--project-type", default="mod",
                         choices=["mod", "modpack", "shader", "resourcepack",
                                  "datapack", "plugin"],

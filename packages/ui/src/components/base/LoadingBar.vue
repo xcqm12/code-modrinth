@@ -109,7 +109,7 @@ onBeforeUnmount(clearTimers)
 
 <template>
 	<div
-		class="Bbsmc-loading-bar"
+		class="modrinth-loading-bar"
 		:style="{
 			position: props.position,
 			top: props.offsetTop,
@@ -128,7 +128,7 @@ onBeforeUnmount(clearTimers)
 </template>
 
 <style lang="scss" scoped>
-.Bbsmc-loading-bar {
+.modrinth-loading-bar {
 	z-index: 999999;
 
 	&::before {

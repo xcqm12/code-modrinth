@@ -77,25 +77,25 @@
 </template>
 
 <script setup lang="ts">
-import type { Archon } from '@Bbsmc/api-client'
-import { GlobeIcon, PackageIcon, RightArrowIcon, SpinnerIcon, UsersIcon } from '@Bbsmc/assets'
+import type { Archon } from '@modrinth/api-client'
+import { GlobeIcon, PackageIcon, RightArrowIcon, SpinnerIcon, UsersIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	defineMessages,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	useServerPermissions,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 import { computed, nextTick, onBeforeUnmount, onMounted, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 
 import type { CreationFlowContextValue } from '#ui/components'
 import { CreationFlowModal } from '#ui/components'
-import { injectBbsmcServerContext } from '#ui/providers'
+import { injectmodrinthServerContext } from '#ui/providers'
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const { addNotification } = injectNotificationManager()
 const { formatMessage } = useVIntl()
 const { canSetup, permissionDeniedMessage } = useServerPermissions()
@@ -103,7 +103,7 @@ const { canSetup, permissionDeniedMessage } = useServerPermissions()
 const messages = defineMessages({
 	welcomeTitle: {
 		id: 'servers.setup.onboarding.welcome.title',
-		defaultMessage: 'Welcome to Bbsmc Hosting',
+		defaultMessage: 'Welcome to modrinth Hosting',
 	},
 	welcomeDescription: {
 		id: 'servers.setup.onboarding.welcome.description',
@@ -144,7 +144,7 @@ const messages = defineMessages({
 	chooseWhatToPlayDescription: {
 		id: 'servers.setup.onboarding.step.choose.description',
 		defaultMessage:
-			'Pick your favorite modpack from Bbsmc, or choose a loader and add the mods you want.',
+			'Pick your favorite modpack from modrinth, or choose a loader and add the mods you want.',
 	},
 	configureWorldTitle: {
 		id: 'servers.setup.onboarding.step.configure-world.title',
@@ -178,7 +178,7 @@ async function getProjectVersions(projectId: string) {
 	const versions = await client.labrinth.versions_v3.getProjectVersions(projectId)
 	return versions.map((v) => ({ id: v.id }))
 }
-const { serverId, worldId, server } = injectBbsmcServerContext()
+const { serverId, worldId, server } = injectmodrinthServerContext()
 const route = useRoute()
 const router = useRouter()
 const queryClient = useQueryClient()
@@ -330,7 +330,7 @@ const onCreate = async (config: CreationFlowContextValue) => {
 		request = {
 			content_variant: 'modpack',
 			spec: {
-				platform: 'Bbsmc',
+				platform: 'modrinth',
 				project_id: config.modpackSelection.value.projectId,
 				version_id: config.modpackSelection.value.versionId,
 			},

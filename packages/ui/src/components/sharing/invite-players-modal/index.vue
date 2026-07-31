@@ -25,7 +25,7 @@
 						show-search-icon
 						:show-chevron="false"
 						search-type="search"
-						search-name="Bbsmc-player-invite-search"
+						search-name="modrinth-player-invite-search"
 						search-inputmode="search"
 						search-autocomplete="new-password"
 						search-autocorrect="off"
@@ -141,7 +141,7 @@
 </template>
 
 <script setup lang="ts">
-import { ClipboardCopyIcon, PlusIcon } from '@Bbsmc/assets'
+import { ClipboardCopyIcon, PlusIcon } from '@modrinth/assets'
 import { computed, ref } from 'vue'
 
 import { defineMessages, useVIntl } from '../../../composables/i18n'
@@ -212,7 +212,7 @@ const messages = defineMessages({
 	},
 	searchPlaceholder: {
 		id: 'sharing.invite-players-modal.search-placeholder',
-		defaultMessage: 'Enter Bbsmc username',
+		defaultMessage: 'Enter modrinth username',
 	},
 	addButton: {
 		id: 'sharing.invite-players-modal.add',

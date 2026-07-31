@@ -1,5 +1,5 @@
-name: 🎮 Bug with Bbsmc App
-description: For issues with Bbsmc App.
+name: 🎮 Bug with modrinth App
+description: For issues with modrinth App.
 labels: [app]
 type: 'bug'
 body:
@@ -7,17 +7,17 @@ body:
     attributes:
       label: Please confirm the following.
       options:
-        - label: I checked the [existing issues](https://github.com/Bbsmc/code/issues?q=is%3Aissue) for duplicate problems
+        - label: I checked the [existing issues](https://github.com/modrinth/code/issues?q=is%3Aissue) for duplicate problems
           required: true
         - label: I have tried resolving the issue using the [support portal](https://support.bbsmc.org.cn)
           required: true
-        - label: I have ensured my Bbsmc App installation is up to date
+        - label: I have ensured my modrinth App installation is up to date
           required: true
   - type: input
     id: version
     attributes:
-      label: What version of the Bbsmc App are you using?
-      description: Find this in ⚙️ Settings (bottom right) -> After Bbsmc App (bottom left)
+      label: What version of the modrinth App are you using?
+      description: Find this in ⚙️ Settings (bottom right) -> After modrinth App (bottom left)
     validations:
       required: true
   - type: dropdown

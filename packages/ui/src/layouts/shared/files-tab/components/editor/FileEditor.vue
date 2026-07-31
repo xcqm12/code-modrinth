@@ -22,11 +22,11 @@
 			v-if="!isEditingImage && !isLoading && props.editorComponent"
 			v-model:value="fileContent"
 			:lang="editorLanguage"
-			theme="Bbsmc"
+			theme="modrinth"
 			:readonly="isEditorReadOnly"
 			:print-margin="false"
 			:style="{ height: editorHeight, fontSize: '0.875rem' }"
-			class="ace-Bbsmc rounded-[20px]"
+			class="ace-modrinth rounded-[20px]"
 			@init="onEditorInit"
 		/>
 		<FileImageViewer v-else-if="isEditingImage && imagePreview" :image-blob="imagePreview" />
@@ -41,12 +41,12 @@
 </template>
 
 <script setup lang="ts">
-import { SpinnerIcon } from '@Bbsmc/assets'
+import { SpinnerIcon } from '@modrinth/assets'
 import type { Ace } from 'ace-builds'
 import { type Component, computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 
 import { defineMessages, useVIntl } from '#ui/composables/i18n'
-import { injectBbsmcClient } from '#ui/providers'
+import { injectmodrinthClient } from '#ui/providers'
 import { injectNotificationManager } from '#ui/providers/web-notifications'
 import { getEditorLanguage, getFileExtension, isImageFile } from '#ui/utils/file-extensions'
 
@@ -67,7 +67,7 @@ const emit = defineEmits<{
 const { formatMessage } = useVIntl()
 const { addNotification } = injectNotificationManager()
 const ctx = injectFileManager()
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 
 const messages = defineMessages({
 	failedToOpenTitle: {

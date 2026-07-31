@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { DownloadIcon, HeartIcon, SearchIcon } from '@Bbsmc/assets'
-import { renderString } from '@Bbsmc/utils'
+import { DownloadIcon, HeartIcon, SearchIcon } from '@modrinth/assets'
+import { renderString } from '@modrinth/utils'
 import { useQuery } from '@tanstack/vue-query'
 import { computed, ref } from 'vue'
 
 import { useCompactNumber } from '#ui/composables/format-number.ts'
 
 import { defineMessages, useVIntl } from '../../composables/i18n'
-import { injectBbsmcClient } from '../../providers/api-client'
+import { injectmodrinthClient } from '../../providers/api-client'
 import AutoLink from '../base/AutoLink.vue'
 import Avatar from '../base/Avatar.vue'
 import StyledInput from '../base/StyledInput.vue'
@@ -19,7 +19,7 @@ const props = defineProps<{
 	collectionId: string
 }>()
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 
 const { data: collection, isLoading: isLoadingCollection } = useQuery({
 	queryKey: ['collection', () => props.collectionId],

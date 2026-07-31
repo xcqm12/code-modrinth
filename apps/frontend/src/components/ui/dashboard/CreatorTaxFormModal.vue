@@ -162,7 +162,7 @@ import {
 	RightArrowIcon,
 	SpinnerIcon,
 	XIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -174,7 +174,7 @@ import {
 	NewModal,
 	normalizeChildren,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 
 import { type FormRequestResponse, useAvalara1099 } from '@/composables/avalara1099'
 
@@ -228,7 +228,7 @@ const messages = defineMessages({
 	securityDescription: {
 		id: 'dashboard.creator-tax-form-modal.security.description',
 		defaultMessage:
-			'Bbsmc uses third-party provider Track1099 to securely collect and store your tax forms. <security-link>Learn more here.</security-link>',
+			'modrinth uses third-party provider Track1099 to securely collect and store your tax forms. <security-link>Learn more here.</security-link>',
 	},
 	usCitizenQuestion: {
 		id: 'dashboard.creator-tax-form-modal.us-citizen.question',

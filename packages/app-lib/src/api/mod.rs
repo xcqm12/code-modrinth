@@ -26,13 +26,13 @@ pub mod data {
         Hooks, InstanceInstallCandidate, InstanceInstallTarget,
         InstanceLaunchOverridesPatch, InstanceLink, InstanceMetadata,
         JavaVersion, LinkedModpackInfo, MemorySettings, ModLoader,
-        BbsmcCredentials, Organization, OwnerType, ProcessMetadata, Project,
+        modrinthCredentials, Organization, OwnerType, ProcessMetadata, Project,
         ProjectType, ProjectV3, SearchResult, SearchResults, SearchResultsV3,
         Settings, SharedInstanceAttachment, SharedInstanceRole, TeamMember,
         Theme, User, UserFriend, Version, WindowSize,
     };
     pub use ariadne::users::UserStatus;
-    pub use Bbsmc_content_management::{
+    pub use modrinth_content_management::{
         ContentType, ResolutionPreferences, ResolveContentPlan,
         ResolveContentRequest,
     };

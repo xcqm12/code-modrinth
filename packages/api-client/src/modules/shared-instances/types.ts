@@ -72,7 +72,7 @@ export namespace SharedInstances {
 
 			export type InstanceVersion = {
 				version: number
-				Bbsmc_ids?: string[]
+				modrinth_ids?: string[]
 				ready: boolean
 				external_files: ExternalFile[]
 				modpack_id: string | null

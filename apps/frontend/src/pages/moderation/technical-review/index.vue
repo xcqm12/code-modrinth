@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	BlendIcon,
 	ListFilterIcon,
@@ -7,18 +7,18 @@ import {
 	SearchIcon,
 	SortAscIcon,
 	SortDescIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Combobox,
 	type ComboboxOption,
 	commonMessages,
 	FloatingPanel,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	Pagination,
 	StyledInput,
 	Toggle,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useInfiniteQuery, useQueryClient } from '@tanstack/vue-query'
 import Fuse from 'fuse.js'
 import { nextTick, reactive } from 'vue'
@@ -28,9 +28,9 @@ import MaliciousSummaryModal, {
 } from '~/components/ui/moderation/MaliciousSummaryModal.vue'
 import ModerationTechRevCard from '~/components/ui/moderation/ModerationTechRevCard.vue'
 
-useHead({ title: 'Tech review queue - Bbsmc' })
+useHead({ title: 'Tech review queue - modrinth' })
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const queryClient = useQueryClient()
 
 const currentPage = ref(1)

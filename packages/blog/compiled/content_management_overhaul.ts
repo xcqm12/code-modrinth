@@ -2,7 +2,7 @@
 export const article = {
   html: () => import(`./content_management_overhaul.content`).then(m => m.html),
   title: "Content Management Overhaul",
-  summary: "Overhauled content management for both Bbsmc Hosting servers and Bbsmc App instances.",
+  summary: "Overhauled content management for both modrinth Hosting servers and modrinth App instances.",
   date: "2026-03-17T20:15:00.000Z",
   slug: "content-management-overhaul",
   authors: ["AJfd8YH6","bOHH0P9Z","LnK8MbX7"],

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { Archon } from '@Bbsmc/api-client'
-import { ChevronRightIcon } from '@Bbsmc/assets'
+import type { Archon } from '@modrinth/api-client'
+import { ChevronRightIcon } from '@modrinth/assets'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { computed, nextTick, ref } from 'vue'
 
@@ -18,8 +18,8 @@ import {
 } from '#ui/layouts/shared/server-settings'
 import { provideServerSettings } from '#ui/layouts/shared/server-settings/providers/server-settings'
 import {
-	injectBbsmcClient,
-	injectBbsmcServerContext,
+	injectmodrinthClient,
+	injectmodrinthServerContext,
 	injectNotificationManager,
 } from '#ui/providers'
 import { commonMessages } from '#ui/utils/common-messages'
@@ -41,7 +41,7 @@ const props = defineProps<{
 
 const { formatMessage } = useVIntl()
 const queryClient = useQueryClient()
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const { addNotification } = injectNotificationManager()
 
 const messages = defineMessages({
@@ -53,7 +53,7 @@ const messages = defineMessages({
 
 const modal = ref<InstanceType<typeof TabbedModal> | null>(null)
 
-const { serverId: currentServerId, worldId, server } = injectBbsmcServerContext()
+const { serverId: currentServerId, worldId, server } = injectmodrinthServerContext()
 
 const currentUserId = ref<string | null>(null)
 const currentUserRole = ref<string | null>(null)

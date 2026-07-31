@@ -59,13 +59,13 @@
 </template>
 
 <script setup lang="ts">
-import { CpuIcon, DatabaseIcon, FolderOpenIcon } from '@Bbsmc/assets'
+import { CpuIcon, DatabaseIcon, FolderOpenIcon } from '@modrinth/assets'
 import { useStorage } from '@vueuse/core'
 import { computed, defineAsyncComponent, onMounted, ref, shallowRef, watch } from 'vue'
 import { RouterLink } from 'vue-router'
 
 import { useFormatBytes } from '#ui/composables'
-import { injectBbsmcServerContext, injectPageContext } from '#ui/providers'
+import { injectmodrinthServerContext, injectPageContext } from '#ui/providers'
 import type { ServerStats } from '#ui/providers/server-context'
 
 const VueApexCharts = defineAsyncComponent(() => import('vue3-apexcharts'))
@@ -77,7 +77,7 @@ onMounted(() => {
 	isClient.value = true
 })
 
-const { serverId } = injectBbsmcServerContext()
+const { serverId } = injectmodrinthServerContext()
 const { featureFlags } = injectPageContext()
 
 const props = withDefaults(

@@ -125,22 +125,22 @@
 						/>
 					</div>
 					<div
-						v-tooltip="BbsmcEventsDisabledTooltip"
+						v-tooltip="modrinthEventsDisabledTooltip"
 						class="justify3 flex min-h-7 items-center"
 						:aria-disabled="!hasChartEvents"
 					>
 						<label
-							:for="BbsmcEventsToggleId"
+							:for="modrinthEventsToggleId"
 							class="flex min-h-7 min-w-0 grow items-center gap-1.5 pr-3 font-semibold leading-tight text-primary"
 							:class="hasChartEvents ? 'cursor-pointer' : 'cursor-not-allowed opacity-60'"
 						>
 							<InfoIcon class="size-4 shrink-0 text-blue" aria-hidden="true" />
 							<span class="min-w-0 truncate">
-								{{ formatMessage(analyticsChartMessages.BbsmcEvents) }}
+								{{ formatMessage(analyticsChartMessages.modrinthEvents) }}
 							</span>
 						</label>
 						<Toggle
-							:id="BbsmcEventsToggleId"
+							:id="modrinthEventsToggleId"
 							v-model="showChartEventsControlModel"
 							:small="smallToggles"
 							:disabled="!hasChartEvents"
@@ -159,8 +159,8 @@ import {
 	InfoIcon,
 	Settings2Icon,
 	TagCategoryFlagIcon,
-} from '@Bbsmc/assets'
-import { Toggle, useVIntl } from '@Bbsmc/ui'
+} from '@modrinth/assets'
+import { Toggle, useVIntl } from '@modrinth/ui'
 import { Menu } from 'floating-vue'
 
 import { analyticsChartMessages, analyticsMessages } from '../../analytics-messages'
@@ -198,7 +198,7 @@ const controlsMenuPanel = ref<HTMLElement | null>(null)
 const controlsMenuId = useId()
 const ratioModeToggleId = useId()
 const previousPeriodToggleId = useId()
-const BbsmcEventsToggleId = useId()
+const modrinthEventsToggleId = useId()
 const projectEventsToggleId = useId()
 const { formatMessage } = useVIntl()
 
@@ -231,8 +231,8 @@ const hasDisplayControls = computed(() => props.canShowPreviousPeriod || props.c
 const projectEventsDisabledTooltip = computed(() =>
 	props.hasProjectEvents ? undefined : formatMessage(analyticsChartMessages.noProjectEvents),
 )
-const BbsmcEventsDisabledTooltip = computed(() =>
-	props.hasChartEvents ? undefined : formatMessage(analyticsChartMessages.noBbsmcEvents),
+const modrinthEventsDisabledTooltip = computed(() =>
+	props.hasChartEvents ? undefined : formatMessage(analyticsChartMessages.nomodrinthEvents),
 )
 const activeControlCount = computed(() => {
 	let count = 0

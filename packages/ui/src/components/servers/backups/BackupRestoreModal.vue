@@ -40,15 +40,15 @@
 </template>
 
 <script setup lang="ts">
-import type { Archon } from '@Bbsmc/api-client'
-import { RotateCounterClockwiseIcon, SpinnerIcon, XIcon } from '@Bbsmc/assets'
+import type { Archon } from '@modrinth/api-client'
+import { RotateCounterClockwiseIcon, SpinnerIcon, XIcon } from '@modrinth/assets'
 import { useMutation, useQueryClient } from '@tanstack/vue-query'
 import { computed, ref } from 'vue'
 
 import { useVIntl } from '../../../composables/i18n'
 import {
-	injectBbsmcClient,
-	injectBbsmcServerContext,
+	injectmodrinthClient,
+	injectmodrinthServerContext,
 	injectNotificationManager,
 } from '../../../providers'
 import { commonMessages } from '../../../utils'
@@ -59,9 +59,9 @@ import BackupItem from './BackupItem.vue'
 
 const { addNotification } = injectNotificationManager()
 const { formatMessage } = useVIntl()
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const queryClient = useQueryClient()
-const ctx = injectBbsmcServerContext()
+const ctx = injectmodrinthServerContext()
 
 const props = withDefaults(
 	defineProps<{

@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import {
-	injectBbsmcClient,
-	injectBbsmcServerContext,
+	injectmodrinthClient,
+	injectmodrinthServerContext,
 	ServersManageFilesPage,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 
-const client = injectBbsmcClient()
-const { server, serverId } = injectBbsmcServerContext()
+const client = injectmodrinthClient()
+const { server, serverId } = injectmodrinthServerContext()
 const queryClient = useQueryClient()
 const flags = useFeatureFlags()
 
@@ -22,7 +22,7 @@ try {
 }
 
 useHead({
-	title: computed(() => `Files - ${server.value?.name ?? 'Server'} - Bbsmc`),
+	title: computed(() => `Files - ${server.value?.name ?? 'Server'} - modrinth`),
 })
 </script>
 

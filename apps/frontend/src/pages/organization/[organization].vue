@@ -216,7 +216,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	BoxIcon,
 	ChartIcon,
@@ -226,13 +226,13 @@ import {
 	SpinnerIcon,
 	UsersIcon,
 	XIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Avatar,
 	ButtonStyled,
 	commonMessages,
 	defineMessages,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	IntlFormatted,
 	NavTabs,
 	normalizeChildren,
@@ -242,8 +242,8 @@ import {
 	SidebarCard,
 	useCompactNumber,
 	useVIntl,
-} from '@Bbsmc/ui'
-import type { Organization, ProjectStatus, ProjectType } from '@Bbsmc/utils'
+} from '@modrinth/ui'
+import type { Organization, ProjectStatus, ProjectType } from '@modrinth/utils'
 import { useQuery } from '@tanstack/vue-query'
 
 import UpToDate from '~/assets/images/illustrations/up_to_date.svg?component'
@@ -298,7 +298,7 @@ if (route.path.includes('settings')) {
 // hacky way to show the edit button on the corner of the card.
 const routeHasSettings = computed(() => route.path.includes('settings'))
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 
 const {
 	data: organization,
@@ -469,7 +469,7 @@ watch(
 	(org) => {
 		if (org) {
 			const title = `${org.name} - Organization`
-			const description = `${org.description} - View the organization ${org.name} on Bbsmc`
+			const description = `${org.description} - View the organization ${org.name} on modrinth`
 			const canonicalUrl = org ? `https://bbsmc.org.cn/organization/${org.id}` : undefined
 
 			useSeoMeta({

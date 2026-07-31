@@ -196,13 +196,13 @@
 </template>
 
 <script setup lang="ts">
-import { BoxIcon, UserIcon } from '@Bbsmc/assets'
+import { BoxIcon, UserIcon } from '@modrinth/assets'
 import {
 	buildDependentsSearchFilters,
 	DropdownFilterBar,
 	type DropdownFilterBarCategory,
 	type DropdownFilterBarOption,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	type ProjectType,
 	Tabs,
@@ -210,8 +210,8 @@ import {
 	type TabsValue,
 	truncatedTooltip,
 	useVIntl,
-} from '@Bbsmc/ui'
-import { formatProjectType } from '@Bbsmc/utils'
+} from '@modrinth/ui'
+import { formatProjectType } from '@modrinth/utils'
 import { useQuery } from '@tanstack/vue-query'
 import type { ComponentPublicInstance } from 'vue'
 
@@ -283,7 +283,7 @@ const props = withDefaults(
 )
 
 const { formatMessage } = useVIntl()
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const { addNotification } = injectNotificationManager()
 const {
 	hasProjectContext,

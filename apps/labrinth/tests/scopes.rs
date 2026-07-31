@@ -399,7 +399,7 @@ pub async fn project_version_reads_scopes() {
         let req_gen = |pat: Option<String>| async move {
             let req = test::TestRequest::get()
                 .uri(&format!(
-                    "/maven/maven/Bbsmc/{beta_project_id}/maven-metadata.xml"
+                    "/maven/maven/modrinth/{beta_project_id}/maven-metadata.xml"
                 ))
                 .append_pat(pat.as_deref())
                 .to_request();

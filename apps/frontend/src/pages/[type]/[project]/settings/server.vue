@@ -168,13 +168,13 @@
 </template>
 
 <script setup>
-import { InfoIcon, RefreshCwIcon, SpinnerIcon } from '@Bbsmc/assets'
+import { InfoIcon, RefreshCwIcon, SpinnerIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	Combobox,
 	ConfirmLeaveModal,
 	defineMessages,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	injectProjectPageContext,
 	IntlFormatted,
@@ -186,7 +186,7 @@ import {
 	UnsavedChangesPopup,
 	usePageLeaveSafety,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 
 import CompatibilityCard from '~/components/ui/project-settings/CompatibilityCard.vue'
 
@@ -269,7 +269,7 @@ const messages = defineMessages({
 	},
 })
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const { addNotification } = injectNotificationManager()
 const { projectV3, currentMember, patchProjectV3 } = injectProjectPageContext()
 

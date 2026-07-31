@@ -1,4 +1,4 @@
-import type { Archon, UploadState } from '@Bbsmc/api-client'
+import type { Archon, UploadState } from '@modrinth/api-client'
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
 import { computed, onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
@@ -6,10 +6,10 @@ import { useRouter } from 'vue-router'
 import ServerPanelAdmonitions from '../../components/servers/admonitions/ServerPanelAdmonitions.vue'
 import { defineMessage } from '../../composables/i18n'
 import type { FileOperation } from '../../layouts/shared/files-tab/types'
-import { provideBbsmcServerContext } from '../../providers'
+import { providemodrinthServerContext } from '../../providers'
 import type {
 	CancelUploadHandler,
-	BbsmcServerContext,
+	modrinthServerContext,
 	ServerStats,
 } from '../../providers/server-context'
 
@@ -73,7 +73,7 @@ const meta = {
 					},
 				])
 
-				const serverContext: BbsmcServerContext = {
+				const serverContext: modrinthServerContext = {
 					get serverId() {
 						return 'demo-server'
 					},
@@ -107,7 +107,7 @@ const meta = {
 					},
 				}
 
-				provideBbsmcServerContext(serverContext)
+				providemodrinthServerContext(serverContext)
 				return {}
 			},
 			template: '<div style="max-width: 720px"><story /></div>',

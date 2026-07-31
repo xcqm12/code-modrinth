@@ -24,7 +24,7 @@ use tokio::sync::Semaphore;
 use tokio::{fs::File, io::AsyncReadExt, io::AsyncWriteExt};
 use tracing::{debug, info};
 
-pub const DOWNLOAD_META_HEADER: &str = "Bbsmc-download-meta";
+pub const DOWNLOAD_META_HEADER: &str = "modrinth-download-meta";
 
 #[derive(Debug, derive_more::Display, Clone, Copy, Serialize, Deserialize)]
 #[serde(rename_all = "snake_case")]
@@ -611,8 +611,8 @@ async fn fetch_advanced_with_client_and_progress(
 ) -> crate::Result<Bytes> {
     let _permit = semaphore.0.acquire().await?;
 
-    let is_api_url = url.starts_with(env!("Bbsmc_API_URL"))
-        || url.starts_with(env!("Bbsmc_API_URL_V3"));
+    let is_api_url = url.starts_with(env!("modrinth_API_URL"))
+        || url.starts_with(env!("modrinth_API_URL_V3"));
     let fence_key = if is_api_url { uri_path } else { None };
 
     let creds = if header
@@ -620,7 +620,7 @@ async fn fetch_advanced_with_client_and_progress(
         .is_none_or(|x| &*x.0.to_lowercase() != "authorization")
         && (url.starts_with("https://cdn.bbsmc.org.cn") || is_api_url)
     {
-        crate::state::BbsmcCredentials::get_active(exec).await?
+        crate::state::modrinthCredentials::get_active(exec).await?
     } else {
         None
     };
@@ -874,7 +874,7 @@ pub async fn post_json(
     let mut req = INSECURE_REQWEST_CLIENT.post(url).json(&json_body);
 
     if let Some(creds) =
-        crate::state::BbsmcCredentials::get_active(exec).await?
+        crate::state::modrinthCredentials::get_active(exec).await?
     {
         req = req.header("Authorization", &creds.session);
     }

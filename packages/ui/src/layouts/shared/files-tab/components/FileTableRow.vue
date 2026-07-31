@@ -106,7 +106,7 @@ import {
 	PaintbrushIcon,
 	RightArrowIcon,
 	TrashIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import { computed, ref } from 'vue'
 
 import ButtonStyled from '#ui/components/base/ButtonStyled.vue'

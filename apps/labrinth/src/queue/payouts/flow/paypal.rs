@@ -1,5 +1,5 @@
 use chrono::Utc;
-use Bbsmc_util::decimal::Decimal2dp;
+use modrinth_util::decimal::Decimal2dp;
 use reqwest::Method;
 use rust_decimal::{Decimal, RoundingStrategy, dec};
 use serde::Deserialize;
@@ -139,8 +139,8 @@ pub(super) async fn execute(
     let payout_req = json!({
         "sender_batch_header": {
             "sender_batch_id": format!("{}-payouts", Utc::now().to_rfc3339()),
-            "email_subject": "You have received a payment from Bbsmc!",
-            "email_message": "Thank you for creating projects on Bbsmc. Please claim this payment within 30 days.",
+            "email_subject": "You have received a payment from modrinth!",
+            "email_message": "Thank you for creating projects on modrinth. Please claim this payment within 30 days.",
         },
         "items": [{
             "amount": {
@@ -148,7 +148,7 @@ pub(super) async fn execute(
                 "value": net_usd.to_string()
             },
             "receiver": address,
-            "note": "Payment from Bbsmc creator monetization program",
+            "note": "Payment from modrinth creator monetization program",
             "recipient_type": wallet_type,
             "recipient_wallet": wallet,
             "sender_item_id": crate::models::ids::PayoutId::from(payout_id),

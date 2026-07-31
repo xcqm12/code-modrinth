@@ -50,7 +50,7 @@ export async function showLauncherLogsFolder() {
 
 export async function createInstanceShortcut(instanceName, instanceId, options = {}) {
 	const outputPath = await save({
-		defaultPath: `Bbsmc - ${instanceName}`,
+		defaultPath: `modrinth - ${instanceName}`,
 	})
 
 	if (!outputPath) return null

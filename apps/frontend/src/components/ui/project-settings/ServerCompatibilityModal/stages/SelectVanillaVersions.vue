@@ -23,7 +23,7 @@
 						:disabled="!recommendedOptions.length"
 					/>
 					<div class="mt-2 text-secondary">
-						Players joining the server from the Bbsmc App will connect using this version.
+						Players joining the server from the modrinth App will connect using this version.
 					</div>
 				</label>
 			</div>
@@ -32,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import { Combobox } from '@Bbsmc/ui'
+import { Combobox } from '@modrinth/ui'
 import { computed, watch } from 'vue'
 
 import McVersionPicker from '~/components/ui/create-project-version/components/McVersionPicker.vue'

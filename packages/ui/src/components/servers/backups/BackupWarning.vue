@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { IssuesIcon } from '@Bbsmc/assets'
+import { IssuesIcon } from '@modrinth/assets'
 
 import AutoLink from '../../base/AutoLink.vue'
 

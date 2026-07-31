@@ -207,7 +207,7 @@ pub async fn tiltify_webhook(
     }
     .await
     .inspect_err(|err| {
-        warn!("Failed to resolve donation to Bbsmc user: {err:?}")
+        warn!("Failed to resolve donation to modrinth user: {err:?}")
     })
     .ok();
 

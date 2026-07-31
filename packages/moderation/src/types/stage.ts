@@ -1,4 +1,4 @@
-import type { Labrinth } from '@Bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import type { FunctionalComponent, SVGAttributes } from 'vue'
 
 import type { Action } from './actions'

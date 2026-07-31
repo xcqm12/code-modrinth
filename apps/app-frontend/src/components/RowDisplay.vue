@@ -10,8 +10,8 @@ import {
 	PlusIcon,
 	StopCircleIcon,
 	TrashIcon,
-} from '@Bbsmc/assets'
-import { HeadingLink, injectNotificationManager } from '@Bbsmc/ui'
+} from '@modrinth/assets'
+import { HeadingLink, injectNotificationManager } from '@modrinth/ui'
 import { openUrl } from '@tauri-apps/plugin-opener'
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
@@ -287,7 +287,7 @@ onUnmounted(() => {
 		<template #duplicate> <ClipboardCopyIcon /> Duplicate instance</template>
 		<template #copy_path> <ClipboardCopyIcon /> Copy path </template>
 		<template #install> <DownloadIcon /> Install </template>
-		<template #open_link> <GlobeIcon /> Open in Bbsmc <ExternalIcon /> </template>
+		<template #open_link> <GlobeIcon /> Open in modrinth <ExternalIcon /> </template>
 		<template #copy_link> <ClipboardCopyIcon /> Copy link </template>
 	</ContextMenu>
 </template>

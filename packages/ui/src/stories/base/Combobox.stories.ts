@@ -7,7 +7,7 @@ import {
 	ShareIcon,
 	TrashIcon,
 	UserIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
 
 import Combobox from '../../components/base/Combobox.vue'

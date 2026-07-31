@@ -288,7 +288,7 @@ import {
 	TrashIcon,
 	UploadIcon,
 	XIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	ButtonStyled,
 	ConfirmModal,
@@ -298,7 +298,7 @@ import {
 	NewModal as Modal,
 	StyledInput,
 	useFormatDateTime,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 
 import { isPermission } from '~/utils/permissions.ts'
 
@@ -317,7 +317,7 @@ const {
 } = injectProjectPageContext()
 
 const title = `${project.value.title} - Gallery`
-const description = `View ${project.value.gallery?.length ?? 0} images of ${project.value.title} on Bbsmc.`
+const description = `View ${project.value.gallery?.length ?? 0} images of ${project.value.title} on modrinth.`
 
 useSeoMeta({
 	title,

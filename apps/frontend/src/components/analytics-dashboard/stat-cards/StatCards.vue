@@ -38,8 +38,8 @@
 </template>
 
 <script setup lang="ts">
-import { RightArrowIcon } from '@Bbsmc/assets'
-import { Admonition, ButtonStyled, useFormatNumber, useVIntl } from '@Bbsmc/ui'
+import { RightArrowIcon } from '@modrinth/assets'
+import { Admonition, ButtonStyled, useFormatNumber, useVIntl } from '@modrinth/ui'
 import { useLocalStorage } from '@vueuse/core'
 
 import {

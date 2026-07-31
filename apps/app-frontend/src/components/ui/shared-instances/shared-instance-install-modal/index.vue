@@ -41,7 +41,7 @@
 								<template #github-link="{ children }">
 									<AutoLink
 										class="text-link hover:underline"
-										to="https://github.com/Bbsmc/code/issues"
+										to="https://github.com/modrinth/code/issues"
 									>
 										<component :is="() => children" />
 									</AutoLink>
@@ -252,8 +252,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
-import { BanIcon, DownloadIcon, ReportIcon, SendIcon, SpinnerIcon, XIcon } from '@Bbsmc/assets'
+import type { Labrinth } from '@modrinth/api-client'
+import { BanIcon, DownloadIcon, ReportIcon, SendIcon, SpinnerIcon, XIcon } from '@modrinth/assets'
 import {
 	Admonition,
 	AutoLink,
@@ -266,7 +266,7 @@ import {
 	commonMessages,
 	defineMessages,
 	injectAuth,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	IntlFormatted,
 	MarkdownEditor,
@@ -276,7 +276,7 @@ import {
 	type TableColumn,
 	useScrollIndicator,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 import { openUrl } from '@tauri-apps/plugin-opener'
 import { computed, nextTick, ref } from 'vue'
@@ -323,7 +323,7 @@ const emit = defineEmits<{
 }>()
 const { formatMessage } = useVIntl()
 const auth = injectAuth()
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const queryClient = useQueryClient()
 const { addNotification, handleError } = injectNotificationManager()
 const { load } = useSharedInstancePreviewContent()
@@ -527,12 +527,12 @@ const messages = defineMessages({
 	inviteWarning: {
 		id: 'app.modal.install-to-play.invite-warning',
 		defaultMessage:
-			'This invite was created by another Bbsmc user, not Bbsmc. Only accept invites from people you trust.',
+			'This invite was created by another modrinth user, not modrinth. Only accept invites from people you trust.',
 	},
 	inviteWarningWithCreator: {
 		id: 'app.modal.install-to-play.invite-warning-with-creator',
 		defaultMessage:
-			'This invite was created by <creator>{username}</creator>, not Bbsmc. Only accept invites from people you trust.',
+			'This invite was created by <creator>{username}</creator>, not modrinth. Only accept invites from people you trust.',
 	},
 	reportDescription: {
 		id: 'app.modal.install-to-play.report-description',
@@ -604,7 +604,7 @@ const messages = defineMessages({
 	unknownFilesDescription: {
 		id: 'app.modal.install-to-play.shared-instance-unknown-files-description',
 		defaultMessage:
-			'This shared instance contains files that aren’t published on Bbsmc. We strongly recommend only installing files from sources you trust.',
+			'This shared instance contains files that aren’t published on modrinth. We strongly recommend only installing files from sources you trust.',
 	},
 	unrecognizedFiles: {
 		id: 'app.modal.install-to-play.unrecognized-files',
@@ -613,7 +613,7 @@ const messages = defineMessages({
 	reviewedFiles: {
 		id: 'app.modal.install-to-play.reviewed-files',
 		defaultMessage:
-			'A file is only reviewed if it’s published to Bbsmc, regardless of its file format (including .mrpack).',
+			'A file is only reviewed if it’s published to modrinth, regardless of its file format (including .mrpack).',
 	},
 	installAnyway: {
 		id: 'app.modal.install-to-play.install-anyway',

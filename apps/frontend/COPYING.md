@@ -1,10 +1,10 @@
 # Copying
 
-The source code of Bbsmc's web frontend is licensed under the GNU Affero General Public License, Version 3 only, which is provided in the file [LICENSE](./LICENSE). However, some files listed below are licensed under a different license.
+The source code of modrinth's web frontend is licensed under the GNU Affero General Public License, Version 3 only, which is provided in the file [LICENSE](./LICENSE). However, some files listed below are licensed under a different license.
 
-## Bbsmc logo
+## modrinth logo
 
-The use of Bbsmc branding elements, including but not limited to the wrench-in-labyrinth logo, the landing image, and any variations thereof, is strictly prohibited without explicit written permission from Rinth, Inc. This includes trademarks, logos, or other branding elements. The assets associated with our blog articles are also subject to the same restrictions.
+The use of modrinth branding elements, including but not limited to the wrench-in-labyrinth logo, the landing image, and any variations thereof, is strictly prohibited without explicit written permission from Rinth, Inc. This includes trademarks, logos, or other branding elements. The assets associated with our blog articles are also subject to the same restrictions.
 
 > All rights reserved. © 2020-2025 Rinth, Inc.
 

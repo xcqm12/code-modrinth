@@ -14,12 +14,12 @@
 </template>
 
 <script lang="ts" setup>
-import { PackageIcon } from '@Bbsmc/assets'
+import { PackageIcon } from '@modrinth/assets'
 import { useDebounceFn } from '@vueuse/core'
 import Fuse from 'fuse.js'
 import { defineAsyncComponent, h, markRaw, ref, watch } from 'vue'
 
-import { injectBbsmcClient, injectNotificationManager } from '../../providers'
+import { injectmodrinthClient, injectNotificationManager } from '../../providers'
 import type { ComboboxOption } from '../base/Combobox.vue'
 import Combobox from '../base/Combobox.vue'
 
@@ -81,7 +81,7 @@ const options = ref<ComboboxOption<string>[]>([])
 const selectedProject = ref<SearchHit | null>(null)
 const searchResultsCache = ref<Map<string, SearchHit>>(new Map())
 
-const { labrinth } = injectBbsmcClient()
+const { labrinth } = injectmodrinthClient()
 
 const userProjectHits = ref<SearchHit[]>([])
 const userProjectsFuse = ref<Fuse<SearchHit> | null>(null)

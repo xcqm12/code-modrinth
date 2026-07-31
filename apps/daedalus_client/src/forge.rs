@@ -221,18 +221,18 @@ async fn fetch(
 ) -> Result<FetchResult, Error> {
     let upload_files = DashMap::new();
     let mirror_artifacts = DashMap::<String, MirrorArtifact>::new();
-    let Bbsmc_manifest = fetch_json::<daedalus::modded::Manifest>(
+    let modrinth_manifest = fetch_json::<daedalus::modded::Manifest>(
         &format_url(&format!("{mod_loader}/v{format_version}/manifest.json",)),
         &semaphore,
     )
     .await
     .ok();
 
-    let fetch_versions = if let Some(Bbsmc_manifest) = Bbsmc_manifest {
+    let fetch_versions = if let Some(modrinth_manifest) = modrinth_manifest {
         let mut fetch_versions = Vec::new();
 
         for version in &forge_versions {
-            if !Bbsmc_manifest.game_versions.iter().any(|x| {
+            if !modrinth_manifest.game_versions.iter().any(|x| {
                 x.id == version.game_version
                     && x.loaders.iter().any(|x| x.id == version.loader_version)
             }) {
@@ -666,7 +666,7 @@ async fn fetch(
                             })?;
 
                         let path = format!(
-                            "com.Bbsmc.daedalus:{}-installer-extracts:{}:{}@{}",
+                            "com.modrinth.daedalus:{}-installer-extracts:{}:{}@{}",
                             mod_loader, version.raw, file_name, ext
                         );
 

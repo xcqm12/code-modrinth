@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
-import { PlusIcon, SearchIcon, SpinnerIcon, XIcon } from '@Bbsmc/assets'
+import type { Labrinth } from '@modrinth/api-client'
+import { PlusIcon, SearchIcon, SpinnerIcon, XIcon } from '@modrinth/assets'
 import { useMutation } from '@tanstack/vue-query'
 import { computed, ref, useTemplateRef } from 'vue'
 
 import { Accordion, ButtonStyled, NewModal, StyledInput } from '#ui/components'
 
-import { injectBbsmcClient, injectNotificationManager } from '../../providers'
+import { injectmodrinthClient, injectNotificationManager } from '../../providers'
 import AttributionGroupFilePicker from './AttributionGroupFilePicker.vue'
 import {
 	MODERATOR_ATTRIBUTION_KIND_LABELS,
@@ -38,7 +38,7 @@ type ExternalProject = {
 	}[]
 }
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const { addNotification } = injectNotificationManager()
 
 const modalRef = useTemplateRef<InstanceType<typeof NewModal>>('modalRef')

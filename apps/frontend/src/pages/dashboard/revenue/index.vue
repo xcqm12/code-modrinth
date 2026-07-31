@@ -271,14 +271,14 @@
 </template>
 
 <script setup lang="ts">
-import { ArrowUpRightIcon, InProgressIcon, UnknownIcon } from '@Bbsmc/assets'
+import { ArrowUpRightIcon, InProgressIcon, UnknownIcon } from '@modrinth/assets'
 import {
 	defineMessages,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	useFormatDateTime,
 	useFormatMoney,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 import dayjs from 'dayjs'
 import { Tooltip } from 'floating-vue'
@@ -293,7 +293,7 @@ const formatDate = useFormatDateTime({ dateStyle: 'medium' })
 
 await useAuth()
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 
 type RevenueBarSegment = {
 	key: string
@@ -330,7 +330,7 @@ const messages = defineMessages({
 	},
 	estimatedTooltip2: {
 		id: 'dashboard.revenue.estimated-tooltip.msg2',
-		defaultMessage: 'Click to read about how Bbsmc handles your revenue.',
+		defaultMessage: 'Click to read about how modrinth handles your revenue.',
 	},
 	processing: {
 		id: 'dashboard.revenue.processing',
@@ -361,7 +361,7 @@ const messages = defineMessages({
 	tosLabel: {
 		id: 'dashboard.revenue.tos',
 		defaultMessage:
-			'By uploading projects to Bbsmc and withdrawing money from your account, you agree to our <terms-link>Rewards Program Terms</terms-link>. Learn more about the <info-link>Reward Program</info-link>.',
+			'By uploading projects to modrinth and withdrawing money from your account, you agree to our <terms-link>Rewards Program Terms</terms-link>. Learn more about the <info-link>Reward Program</info-link>.',
 	},
 	transactionsHeader: {
 		id: 'dashboard.revenue.transactions.header',

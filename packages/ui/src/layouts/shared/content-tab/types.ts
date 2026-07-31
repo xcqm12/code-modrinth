@@ -1,4 +1,4 @@
-import type { Labrinth } from '@Bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import type { RouteLocationRaw } from 'vue-router'
 
 import type { Option as OverflowMenuOption } from '#ui/components/base/OverflowMenu.vue'
@@ -30,9 +30,9 @@ export type ClientWarningType = 'retained' | 'depends' | 'environment'
 
 export type ContentSourceKind =
 	| 'local'
-	| 'Bbsmc_modpack'
+	| 'modrinth_modpack'
 	| 'server_project'
-	| 'Bbsmc_hosting'
+	| 'modrinth_hosting'
 	| 'imported_modpack'
 	| 'shared_instance'
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { CheckIcon, MailIcon } from '@Bbsmc/assets'
-import { ButtonStyled, defineMessages, injectBbsmcClient, useVIntl } from '@Bbsmc/ui'
+import { CheckIcon, MailIcon } from '@modrinth/assets'
+import { ButtonStyled, defineMessages, injectmodrinthClient, useVIntl } from '@modrinth/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { computed, ref } from 'vue'
 
@@ -9,7 +9,7 @@ const { formatMessage } = useVIntl()
 const messages = defineMessages({
 	tooltipSubscribe: {
 		id: 'ui.newsletter-button.tooltip',
-		defaultMessage: 'Subscribe to the Bbsmc newsletter',
+		defaultMessage: 'Subscribe to the modrinth newsletter',
 	},
 	subscribe: {
 		id: 'ui.newsletter-button.subscribe',
@@ -24,7 +24,7 @@ const messages = defineMessages({
 const auth = (await useAuth()) as unknown as {
 	value: { user: { id: string; username: string; email: string; created: string } }
 }
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const queryClient = useQueryClient()
 const showSubscriptionConfirmation = ref(false)
 

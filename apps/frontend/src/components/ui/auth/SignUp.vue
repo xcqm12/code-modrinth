@@ -157,7 +157,7 @@ import {
 	MicrosoftColorIcon,
 	RightArrowIcon,
 	SteamColorIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -165,7 +165,7 @@ import {
 	IntlFormatted,
 	StyledInput,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useStorage } from '@vueuse/core'
 import type { LocationQuery } from 'vue-router'
 
@@ -214,7 +214,7 @@ const messages = defineMessages({
 	legalDisclaimer: {
 		id: 'auth.sign-up.legal-dislaimer',
 		defaultMessage:
-			"By creating an account, you agree to Bbsmc's <terms-link>Terms</terms-link> and <privacy-policy-link>Privacy Policy</privacy-policy-link>.",
+			"By creating an account, you agree to modrinth's <terms-link>Terms</terms-link> and <privacy-policy-link>Privacy Policy</privacy-policy-link>.",
 	},
 	alreadyHaveAccountLabel: {
 		id: 'auth.sign-up.sign-in-option.title',

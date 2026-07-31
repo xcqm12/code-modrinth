@@ -1,15 +1,15 @@
-import type { AbstractBbsmcClient } from '@Bbsmc/api-client'
+import type { AbstractmodrinthClient } from '@modrinth/api-client'
 
 import { STALE_TIME } from './project'
 
 export const versionQueryOptions = {
-	v3: (versionId: string, client: AbstractBbsmcClient) => ({
+	v3: (versionId: string, client: AbstractmodrinthClient) => ({
 		queryKey: ['version', 'v3', versionId] as const,
 		queryFn: () => client.labrinth.versions_v3.getVersion(versionId),
 		staleTime: STALE_TIME,
 	}),
 
-	fromProject: (projectId: string, versionIdOrNumber: string, client: AbstractBbsmcClient) => ({
+	fromProject: (projectId: string, versionIdOrNumber: string, client: AbstractmodrinthClient) => ({
 		queryKey: ['project', projectId, 'version', 'v3', versionIdOrNumber] as const,
 		queryFn: () =>
 			client.labrinth.versions_v3.getVersionFromIdOrNumber(projectId, versionIdOrNumber),

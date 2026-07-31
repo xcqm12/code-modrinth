@@ -5,5 +5,5 @@
 <script setup lang="ts">
 import GlobalDetailTracesList from '~/components/ui/moderation/GlobalDetailTracesList.vue'
 
-useHead({ title: 'Global detail traces - Bbsmc' })
+useHead({ title: 'Global detail traces - modrinth' })
 </script>

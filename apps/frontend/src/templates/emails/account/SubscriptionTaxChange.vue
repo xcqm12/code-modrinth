@@ -31,7 +31,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 		</Text>
 
 		<Text class="text-muted text-base">
-			Thank you for choosing Bbsmc! If you have any questions or need help with your
+			Thank you for choosing modrinth! If you have any questions or need help with your
 			subscription, visit our
 			<VLink href="https://support.bbsmc.org.cn" class="text-green underline">Support Portal</VLink
 			>.
@@ -39,7 +39,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 
 		<Text class="text-muted text-base">
 			Best,<br />
-			The Bbsmc Team
+			The modrinth Team
 		</Text>
 	</StyledEmail>
 </template>

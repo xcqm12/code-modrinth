@@ -183,7 +183,7 @@
 </template>
 
 <script setup lang="ts">
-import { BanIcon, DropdownIcon, LockOpenIcon, SearchIcon, UpdatedIcon } from '@Bbsmc/assets'
+import { BanIcon, DropdownIcon, LockOpenIcon, SearchIcon, UpdatedIcon } from '@modrinth/assets'
 import { computed, ref } from 'vue'
 
 import { defineMessages, useVIntl } from '../../composables/i18n'

@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="landing-hero">
-			<BbsmcIcon class="Bbsmc-icon text-brand" />
+			<modrinthIcon class="modrinth-icon text-brand" />
 			<h1 class="main-header">
 				<IntlFormatted :message-id="messages.thePlaceForMinecraft">
 					<template #~content>
@@ -242,9 +242,9 @@
 								<nuxt-link
 									to="/app"
 									class="graphic gradient-border text-brand"
-									:aria-label="formatMessage(messages.BbsmcAppLabel)"
+									:aria-label="formatMessage(messages.modrinthAppLabel)"
 								>
-									<BbsmcIcon aria-hidden="true" />
+									<modrinthIcon aria-hidden="true" />
 								</nuxt-link>
 								<a
 									rel="noopener"
@@ -439,22 +439,22 @@ import {
 	CompassIcon,
 	DashboardIcon,
 	LogInIcon,
-	BbsmcIcon,
+	modrinthIcon,
 	SearchIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Avatar,
 	ButtonStyled,
 	commonMessages,
 	defineMessages,
 	DropdownSelect,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	IntlFormatted,
 	ProjectCard,
 	StyledInput,
 	useRelativeTime,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { ref } from 'vue'
 
 import ATLauncherLogo from '~/assets/images/external/atlauncher.svg?component'
@@ -465,7 +465,7 @@ import { homePageNotifs, homePageProjects, homePageSearch } from '~/generated/st
 const formatRelativeTime = useRelativeTime()
 
 const { formatMessage } = useVIntl()
-const { labrinth } = injectBbsmcClient()
+const { labrinth } = injectmodrinthClient()
 
 const searchQuery = ref('leave')
 const sortType = ref('relevance')
@@ -567,7 +567,7 @@ const messages = defineMessages({
 	findWhatYouWantDescription: {
 		id: 'landing.feature.search.description',
 		defaultMessage:
-			"Bbsmc's lightning-fast search and powerful filters let you find what you want as you type.",
+			"modrinth's lightning-fast search and powerful filters let you find what you want as you type.",
 	},
 	followProjectsHeading: {
 		id: 'landing.feature.follow.heading',
@@ -584,7 +584,7 @@ const messages = defineMessages({
 	playWithLauncherDescription: {
 		id: 'landing.feature.launcher.description',
 		defaultMessage:
-			"Bbsmc's open-source API lets launchers add deep integration with Bbsmc. You can use Bbsmc through <link>our own app</link> and some of the most popular launchers like ATLauncher, MultiMC, and Prism Launcher.",
+			"modrinth's open-source API lets launchers add deep integration with modrinth. You can use modrinth through <link>our own app</link> and some of the most popular launchers like ATLauncher, MultiMC, and Prism Launcher.",
 	},
 	notificationsHeading: {
 		id: 'landing.notifications.heading',
@@ -605,15 +605,15 @@ const messages = defineMessages({
 	launcherGraphicAlt: {
 		id: 'landing.launcher.graphic-alt',
 		defaultMessage:
-			'A simplified representation of a Minecraft window, with the Mojang Studios logo in Bbsmc green.',
+			'A simplified representation of a Minecraft window, with the Mojang Studios logo in modrinth green.',
 	},
 	prismLauncherLabel: {
 		id: 'landing.launcher.prism-launcher-label',
 		defaultMessage: 'Prism Launcher',
 	},
-	BbsmcAppLabel: {
-		id: 'landing.launcher.Bbsmc-app-label',
-		defaultMessage: 'Bbsmc App',
+	modrinthAppLabel: {
+		id: 'landing.launcher.modrinth-app-label',
+		defaultMessage: 'modrinth App',
 	},
 	atlauncherLabel: {
 		id: 'landing.launcher.atlauncher-label',
@@ -703,7 +703,7 @@ const creatorFeatureMessages = defineMessages({
 	constantlyEvolvingDescription: {
 		id: 'landing.creator.feature.constantly-evolving.description',
 		defaultMessage:
-			'Get the best modding experience possible with constant updates from the Bbsmc team',
+			'Get the best modding experience possible with constant updates from the modrinth team',
 	},
 })
 </script>
@@ -721,7 +721,7 @@ const creatorFeatureMessages = defineMessages({
 	text-align: center;
 	flex-direction: column;
 
-	.Bbsmc-icon {
+	.modrinth-icon {
 		width: 13rem;
 		height: 13rem;
 		margin-bottom: 2.5rem;
@@ -1197,7 +1197,7 @@ const creatorFeatureMessages = defineMessages({
 	padding: 1rem 1rem 2rem 1rem;
 	overflow: hidden;
 
-	.Bbsmc-icon {
+	.modrinth-icon {
 		z-index: 2;
 		width: auto;
 		height: 32rem;

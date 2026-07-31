@@ -1,5 +1,5 @@
-import type { FilterValue } from '@Bbsmc/ui'
-import { LOADER_FILTER_TYPES } from '@Bbsmc/ui'
+import type { FilterValue } from '@modrinth/ui'
+import { LOADER_FILTER_TYPES } from '@modrinth/ui'
 
 const TEN_MINUTES = 600
 

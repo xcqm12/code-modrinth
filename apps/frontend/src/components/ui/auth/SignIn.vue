@@ -166,8 +166,8 @@ import {
 	RightArrowIcon,
 	SteamColorIcon,
 	UserKeyIcon,
-} from '@Bbsmc/assets'
-import { ButtonStyled, commonMessages, defineMessages, StyledInput, useVIntl } from '@Bbsmc/ui'
+} from '@modrinth/assets'
+import { ButtonStyled, commonMessages, defineMessages, StyledInput, useVIntl } from '@modrinth/ui'
 import { useStorage } from '@vueuse/core'
 import { computed } from 'vue'
 import type { LocationQuery } from 'vue-router'
@@ -258,7 +258,7 @@ const messages = defineMessages({
 	},
 	signInWithLabel: {
 		id: 'auth.sign-in.sign-in-with',
-		defaultMessage: 'Sign into Bbsmc',
+		defaultMessage: 'Sign into modrinth',
 	},
 	twoFactorCodeInputPlaceholder: {
 		id: 'auth.sign-in.2fa.placeholder',

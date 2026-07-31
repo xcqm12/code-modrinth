@@ -72,7 +72,7 @@
 </template>
 
 <script setup>
-import { CheckIcon, DownloadIcon, ExternalIcon, MoreVerticalIcon } from '@Bbsmc/assets'
+import { CheckIcon, DownloadIcon, ExternalIcon, MoreVerticalIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -81,7 +81,7 @@ import {
 	OverflowMenu,
 	ProjectPageVersions,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { ref } from 'vue'
 import { useRoute } from 'vue-router'
 

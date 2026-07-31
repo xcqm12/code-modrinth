@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SpinnerIcon, XCircleIcon } from '@Bbsmc/assets'
+import { SpinnerIcon, XCircleIcon } from '@modrinth/assets'
 
 withDefaults(
 	defineProps<{

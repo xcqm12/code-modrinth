@@ -1,5 +1,5 @@
-import { AbstractBbsmcClient } from '../core/abstract-client'
-import { BbsmcApiError } from '../core/errors'
+import { AbstractmodrinthClient } from '../core/abstract-client'
+import { modrinthApiError } from '../core/errors'
 import type { RequestContext } from '../types/request'
 import type {
 	UploadHandle,
@@ -11,10 +11,10 @@ import type {
 /**
  * Abstract client with XHR-based upload implementation
  *
- * Platform-specific clients should extend this instead of AbstractBbsmcClient
+ * Platform-specific clients should extend this instead of AbstractmodrinthClient
  * to inherit the XHR upload implementation.
  */
-export abstract class XHRUploadClient extends AbstractBbsmcClient {
+export abstract class XHRUploadClient extends AbstractmodrinthClient {
 	upload<T = void>(path: string, options: UploadRequestOptions): UploadHandle<T> {
 		let baseUrl: string
 		if (options.api === 'labrinth') {
@@ -63,7 +63,7 @@ export abstract class XHRUploadClient extends AbstractBbsmcClient {
 				const uploadContext = this.buildUploadContext(url, path, mergedOptions)
 				context = uploadContext
 				if (abortController.signal.aborted) {
-					throw new BbsmcApiError('Upload cancelled')
+					throw new modrinthApiError('Upload cancelled')
 				}
 
 				const result = await this.executeUploadFeatureChain<T>(
@@ -122,9 +122,9 @@ export abstract class XHRUploadClient extends AbstractBbsmcClient {
 				}
 			})
 
-			xhr.addEventListener('error', () => reject(new BbsmcApiError('Upload failed')))
-			xhr.addEventListener('abort', () => reject(new BbsmcApiError('Upload cancelled')))
-			xhr.addEventListener('timeout', () => reject(new BbsmcApiError('Upload timed out')))
+			xhr.addEventListener('error', () => reject(new modrinthApiError('Upload failed')))
+			xhr.addEventListener('abort', () => reject(new modrinthApiError('Upload cancelled')))
+			xhr.addEventListener('timeout', () => reject(new modrinthApiError('Upload timed out')))
 
 			if (context.options.timeout !== undefined) {
 				xhr.timeout = context.options.timeout
@@ -153,7 +153,7 @@ export abstract class XHRUploadClient extends AbstractBbsmcClient {
 		})
 	}
 
-	protected createUploadError(xhr: XMLHttpRequest): BbsmcApiError {
+	protected createUploadError(xhr: XMLHttpRequest): modrinthApiError {
 		let responseData: unknown
 		try {
 			responseData = xhr.response ? JSON.parse(xhr.response) : undefined

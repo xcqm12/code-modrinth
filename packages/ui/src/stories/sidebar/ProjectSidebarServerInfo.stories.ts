@@ -1,5 +1,5 @@
-import type { Labrinth } from '@Bbsmc/api-client'
-import type { GameVersionTag, PlatformTag } from '@Bbsmc/utils'
+import type { Labrinth } from '@modrinth/api-client'
+import type { GameVersionTag, PlatformTag } from '@modrinth/utils'
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
 
 import ProjectSidebarServerInfo from '../../components/project/ProjectSidebarServerInfo.vue'

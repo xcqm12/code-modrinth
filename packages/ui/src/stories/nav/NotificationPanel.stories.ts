@@ -52,7 +52,7 @@ export const Default: StoryObj = {
 
 			const showActions = () => {
 				notificationManager.addNotification({
-					title: 'Your privacy and how ads support Bbsmc',
+					title: 'Your privacy and how ads support modrinth',
 					text: 'Choose how our advertising partners may use your data.',
 					type: 'neutral',
 					autoCloseMs: null,

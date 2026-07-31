@@ -30,6 +30,6 @@ export const RSS_PATH = repoPath('apps/frontend/src/public/news/feed/rss.xml')
 export const JSON_PATH = repoPath('apps/frontend/src/public/news/feed/articles.json')
 
 /**
- * The base URL of the Bbsmc site, used for the RSS feed.
+ * The base URL of the modrinth site, used for the RSS feed.
  */
 export const SITE_URL = 'https://bbsmc.org.cn'

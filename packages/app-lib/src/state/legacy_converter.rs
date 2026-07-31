@@ -9,7 +9,7 @@ use crate::state::{
     CacheValue, CachedEntry, CachedFile, CachedFileHash, CachedFileUpdate,
     Credentials, DefaultPage, DependencyType, DeviceToken, DeviceTokenKey,
     DeviceTokenPair, FileType, Hooks, InstanceInstallStage,
-    LauncherFeatureVersion, MemorySettings, BbsmcCredentials,
+    LauncherFeatureVersion, MemorySettings, modrinthCredentials,
     ReleaseChannel, TeamMember, Theme, VersionFile, WindowSize,
 };
 use crate::util::fetch::{IoSemaphore, read_json};
@@ -94,15 +94,15 @@ where
             }
         }
 
-        let Bbsmc_auth_path =
+        let modrinth_auth_path =
             old_launcher_root.join("caches/metadata/auth.json");
-        if let Ok(creds) = read_json::<LegacyBbsmcCredentials>(
-            &Bbsmc_auth_path,
+        if let Ok(creds) = read_json::<LegacymodrinthCredentials>(
+            &modrinth_auth_path,
             &io_semaphore,
         )
         .await
         {
-            BbsmcCredentials {
+            modrinthCredentials {
                 session: creds.session,
                 expires: creds.expires_at,
                 user_id: creds.user.id,
@@ -201,7 +201,7 @@ where
                     }
                     let sha512 = project.sha512;
 
-                    if let LegacyProjectMetadata::Bbsmc {
+                    if let LegacyProjectMetadata::modrinth {
                         version,
                         members,
                         update_version,
@@ -493,8 +493,8 @@ where
     let (
         source_kind,
         link_kind,
-        Bbsmc_project_id,
-        Bbsmc_version_id,
+        modrinth_project_id,
+        modrinth_version_id,
         server_project_id,
     ) = match input.linked_data {
         Some(linked_data) => {
@@ -511,8 +511,8 @@ where
                     )
                 }
                 (Some(project_id), Some(version_id)) => (
-                    "Bbsmc_modpack",
-                    "Bbsmc_modpack",
+                    "modrinth_modpack",
+                    "modrinth_modpack",
                     Some(project_id),
                     Some(version_id),
                     None,
@@ -560,8 +560,8 @@ where
         INSERT OR REPLACE INTO instance_links (
             instance_id,
             link_kind,
-            Bbsmc_project_id,
-            Bbsmc_version_id,
+            modrinth_project_id,
+            modrinth_version_id,
             server_project_id,
             content_project_id,
             content_version_id,
@@ -574,8 +574,8 @@ where
         ",
         instance_id_str,
         link_kind,
-        Bbsmc_project_id,
-        Bbsmc_version_id,
+        modrinth_project_id,
+        modrinth_version_id,
         server_project_id,
         None::<&str>,
         None::<&str>,
@@ -666,7 +666,7 @@ struct LegacySettings {
 }
 
 fn default_settings_dir() -> Option<PathBuf> {
-    Some(dirs::config_dir()?.join("com.Bbsmc.theseus"))
+    Some(dirs::config_dir()?.join("com.modrinth.theseus"))
 }
 
 #[derive(Debug, Clone, Copy, Deserialize)]
@@ -710,7 +710,7 @@ struct LegacyJavaVersion {
 }
 
 #[derive(Deserialize, Clone, Debug)]
-struct LegacyBbsmcUser {
+struct LegacymodrinthUser {
     pub id: String,
     pub username: String,
     // pub name: Option<String>,
@@ -721,10 +721,10 @@ struct LegacyBbsmcUser {
 }
 
 #[derive(Deserialize, Clone, Debug)]
-struct LegacyBbsmcCredentials {
+struct LegacymodrinthCredentials {
     pub session: String,
     pub expires_at: DateTime<Utc>,
-    pub user: LegacyBbsmcUser,
+    pub user: LegacymodrinthUser,
 }
 
 #[derive(Deserialize, Debug)]
@@ -787,18 +787,18 @@ struct LegacyProject {
 #[derive(Deserialize, Clone, Debug)]
 #[serde(tag = "type", rename_all = "snake_case")]
 enum LegacyProjectMetadata {
-    Bbsmc {
-        // project: Box<LegacyBbsmcProject>,
-        version: Box<LegacyBbsmcVersion>,
-        members: Vec<LegacyBbsmcTeamMember>,
-        update_version: Option<Box<LegacyBbsmcVersion>>,
+    modrinth {
+        // project: Box<LegacymodrinthProject>,
+        version: Box<LegacymodrinthVersion>,
+        members: Vec<LegacymodrinthTeamMember>,
+        update_version: Option<Box<LegacymodrinthVersion>>,
     },
     Inferred,
     Unknown,
 }
 
 // #[derive(Deserialize, Clone, Debug)]
-// struct LegacyBbsmcProject {
+// struct LegacymodrinthProject {
 //     pub id: String,
 //     pub slug: Option<String>,
 //     pub project_type: String,
@@ -827,7 +827,7 @@ enum LegacyProjectMetadata {
 // }
 
 #[derive(Deserialize, Clone, Debug)]
-struct LegacyBbsmcVersion {
+struct LegacymodrinthVersion {
     pub id: String,
     pub project_id: String,
     pub author_id: String,
@@ -843,14 +843,14 @@ struct LegacyBbsmcVersion {
     pub downloads: u32,
     pub version_type: String,
 
-    pub files: Vec<LegacyBbsmcVersionFile>,
+    pub files: Vec<LegacymodrinthVersionFile>,
     pub dependencies: Vec<LegacyDependency>,
     pub game_versions: Vec<String>,
     pub loaders: Vec<String>,
 }
 
-impl From<LegacyBbsmcVersion> for Version {
-    fn from(value: LegacyBbsmcVersion) -> Self {
+impl From<LegacymodrinthVersion> for Version {
+    fn from(value: LegacymodrinthVersion) -> Self {
         Version {
             id: value.id,
             project_id: value.project_id,
@@ -913,7 +913,7 @@ impl From<LegacyBbsmcVersion> for Version {
 }
 
 #[derive(Deserialize, Clone, Debug)]
-struct LegacyBbsmcVersionFile {
+struct LegacymodrinthVersionFile {
     pub hashes: HashMap<String, String>,
     pub url: String,
     pub filename: String,
@@ -931,9 +931,9 @@ struct LegacyDependency {
 }
 
 #[derive(Deserialize, Clone, Debug)]
-struct LegacyBbsmcTeamMember {
+struct LegacymodrinthTeamMember {
     pub team_id: String,
-    pub user: LegacyBbsmcUser,
+    pub user: LegacymodrinthUser,
     pub role: String,
     pub ordering: i64,
 }

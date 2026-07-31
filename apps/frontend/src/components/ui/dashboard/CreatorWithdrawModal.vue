@@ -103,7 +103,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	ArrowLeftRightIcon,
 	ChevronRightIcon,
@@ -112,7 +112,7 @@ import {
 	RightArrowIcon,
 	SpinnerIcon,
 	XIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -120,7 +120,7 @@ import {
 	injectNotificationManager,
 	NewModal,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, nextTick, onMounted, ref, useTemplateRef, watch } from 'vue'
 
 import {

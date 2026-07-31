@@ -1,6 +1,6 @@
 ---
 title: Daedalus (Metadata service)
-description: Guide for contributing to Bbsmc's frontend
+description: Guide for contributing to modrinth's frontend
 sidebar:
   order: 5
 ---

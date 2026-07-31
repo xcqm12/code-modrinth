@@ -223,7 +223,7 @@
 </template>
 
 <script setup lang="ts">
-import { LoaderIcon } from '@Bbsmc/assets'
+import { LoaderIcon } from '@modrinth/assets'
 import { computed } from 'vue'
 
 import { formatLoaderLabel, type ServerLoader } from '#ui/utils/loaders'

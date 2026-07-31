@@ -1,10 +1,10 @@
-import type { Labrinth, UploadProgress } from '@Bbsmc/api-client'
-import { SaveIcon, SpinnerIcon } from '@Bbsmc/assets'
+import type { Labrinth, UploadProgress } from '@modrinth/api-client'
+import { SaveIcon, SpinnerIcon } from '@modrinth/assets'
 import {
 	type ComboboxOption,
 	createContext,
 	defineMessage,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	injectProjectPageContext,
 	type MessageDescriptor,
@@ -12,7 +12,7 @@ import {
 	resolveCtxFn,
 	type StageButtonConfig,
 	type StageConfigInput,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import JSZip from 'jszip'
 import type { ComputedRef, Ref, ShallowRef } from 'vue'
 import type { ComponentExposed } from 'vue-component-type-helpers'
@@ -211,7 +211,7 @@ export function createManageVersionContext(
 	modal: ShallowRef<ComponentExposed<typeof MultiStageModal> | null>,
 	onSave?: () => void,
 ): ManageVersionContextValue {
-	const { labrinth } = injectBbsmcClient()
+	const { labrinth } = injectmodrinthClient()
 	const { addNotification } = injectNotificationManager()
 	const { invalidate, projectV2 } = injectProjectPageContext()
 

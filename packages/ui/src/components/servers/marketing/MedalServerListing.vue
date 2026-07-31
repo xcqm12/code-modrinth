@@ -160,8 +160,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Archon } from '@Bbsmc/api-client'
-import { LockIcon, RocketIcon, SparklesIcon, SpinnerIcon } from '@Bbsmc/assets'
+import type { Archon } from '@modrinth/api-client'
+import { LockIcon, RocketIcon, SparklesIcon, SpinnerIcon } from '@modrinth/assets'
 import { useQuery } from '@tanstack/vue-query'
 import dayjs from 'dayjs'
 import dayjsDuration from 'dayjs/plugin/duration'
@@ -169,7 +169,7 @@ import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRouter } from 'vue-router'
 
 import { defineMessages, useVIntl } from '../../../composables/i18n'
-import { injectBbsmcClient } from '../../../providers/api-client'
+import { injectmodrinthClient } from '../../../providers/api-client'
 import Avatar from '../../base/Avatar.vue'
 import ButtonStyled from '../../base/ButtonStyled.vue'
 import CopyCode from '../../base/CopyCode.vue'
@@ -201,10 +201,10 @@ const props = defineProps<MedalServerListingProps>()
 const emit = defineEmits<{ (e: 'upgrade', serverId: string): void }>()
 const { formatMessage } = useVIntl()
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const router = useRouter()
 
-// const isNuxt = computed(() => client instanceof NuxtBbsmcClient)
+// const isNuxt = computed(() => client instanceof NuxtmodrinthClient)
 
 const showGameLabel = computed(() => !!props.game)
 const showLoaderLabel = computed(() => !!props.loader)
@@ -269,12 +269,12 @@ const messages = defineMessages({
 	suspendedWithReasonNotice: {
 		id: 'servers.medal-listing.notice.suspended-with-reason',
 		defaultMessage:
-			'Your server has been suspended: {reason}. Please update your billing information or contact Bbsmc Support for more information.',
+			'Your server has been suspended: {reason}. Please update your billing information or contact modrinth Support for more information.',
 	},
 	suspendedNotice: {
 		id: 'servers.medal-listing.notice.suspended',
 		defaultMessage:
-			'Your server has been suspended. Please update your billing information or contact Bbsmc Support for more information.',
+			'Your server has been suspended. Please update your billing information or contact modrinth Support for more information.',
 	},
 })
 

@@ -277,7 +277,7 @@ pub async fn check_java_at_filepath(path: &Path) -> crate::Result<JavaVersion> {
     let output = Command::new(&java)
         .arg("-cp")
         .arg(file_path)
-        .arg("com.Bbsmc.theseus.JavaInfo")
+        .arg("com.modrinth.theseus.JavaInfo")
         .env_remove("_JAVA_OPTIONS")
         .output()?;
 

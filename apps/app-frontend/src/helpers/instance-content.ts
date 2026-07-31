@@ -4,7 +4,7 @@ import type {
 	ContentModpackCardProject,
 	ContentModpackCardVersion,
 	ContentOwner,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 
 import {
 	get_content_items,

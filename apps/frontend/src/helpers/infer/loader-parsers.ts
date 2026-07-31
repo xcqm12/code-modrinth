@@ -282,7 +282,7 @@ export function createLoaderParsers(
 			}
 		},
 		// Modpacks
-		'Bbsmc.index.json': (file: string): InferredVersionInfo => {
+		'modrinth.index.json': (file: string): InferredVersionInfo => {
 			const metadata = JSON.parse(file) as any
 
 			const loaders = []

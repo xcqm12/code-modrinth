@@ -217,7 +217,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Archon } from '@Bbsmc/api-client'
+import type { Archon } from '@modrinth/api-client'
 import {
 	CopyIcon,
 	ExternalIcon,
@@ -225,7 +225,7 @@ import {
 	EyeOffIcon,
 	SpinnerIcon,
 	UpdatedIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/vue-query'
 import { computed, ref, watch } from 'vue'
 
@@ -233,14 +233,14 @@ import { ButtonStyled, Combobox, StyledInput } from '#ui/components'
 import SaveBanner from '#ui/components/servers/SaveBanner.vue'
 import { useServerPermissions } from '#ui/composables/server-permissions'
 import {
-	injectBbsmcClient,
-	injectBbsmcServerContext,
+	injectmodrinthClient,
+	injectmodrinthServerContext,
 	injectNotificationManager,
 } from '#ui/providers'
 
 const { addNotification } = injectNotificationManager()
-const { server, serverId, worldId } = injectBbsmcServerContext()
-const client = injectBbsmcClient()
+const { server, serverId, worldId } = injectmodrinthServerContext()
+const client = injectmodrinthClient()
 const queryClient = useQueryClient()
 const { canUseAdvancedSettings, canWriteFiles, permissionDeniedMessage } = useServerPermissions()
 

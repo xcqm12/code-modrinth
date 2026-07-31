@@ -78,7 +78,7 @@
 </template>
 
 <script setup lang="ts">
-import { SpinnerIcon, UnknownIcon } from '@Bbsmc/assets'
+import { SpinnerIcon, UnknownIcon } from '@modrinth/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -90,7 +90,7 @@ import {
 	useDebugLogger,
 	useFormatMoney,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useGeolocation } from '@vueuse/core'
 
 import { useCountries, useFormattedCountries, useUserCountry } from '@/composables/country.ts'

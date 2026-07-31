@@ -144,7 +144,7 @@ import {
 	UploadIcon,
 	UserPlusIcon,
 	XIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	AutoLink,
 	Avatar,
@@ -158,7 +158,7 @@ import {
 	useFormatDateTime,
 	useRelativeTime,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, ref, watch } from 'vue'
 
 import {

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ServersManagePageIndex } from '@Bbsmc/ui'
+import { ServersManagePageIndex } from '@modrinth/ui'
 
 import { useGeneratedState } from '~/composables/generated'
 
@@ -8,7 +8,7 @@ definePageMeta({
 })
 
 useHead({
-	title: 'Hosting - Bbsmc',
+	title: 'Hosting - modrinth',
 })
 
 const config = useRuntimeConfig()

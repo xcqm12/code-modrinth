@@ -8,7 +8,7 @@ import {
 	languageSelectorMessages,
 	LOCALES,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, ref, watch } from 'vue'
 
 import { get, set } from '@/helpers/settings.ts'

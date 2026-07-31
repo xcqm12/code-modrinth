@@ -25,10 +25,10 @@
 import {
 	commonMessages,
 	defineMessages,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 import { useStorage } from '@vueuse/core'
 import type { LocationQueryValue } from 'vue-router'
@@ -77,7 +77,7 @@ const getErrorMessage = (error: unknown): string => {
 	return String(error)
 }
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const { addNotification } = injectNotificationManager()
 const { formatMessage } = useVIntl()
 
@@ -92,12 +92,12 @@ const messages = defineMessages({
 	},
 	under13HelperText: {
 		id: 'auth.create-account.date-of-birth.under13-helper',
-		defaultMessage: 'You cannot create an account at Bbsmc unless you are over 13 years old.',
+		defaultMessage: 'You cannot create an account at modrinth unless you are over 13 years old.',
 	},
 })
 
 useHead({
-	title: () => `${formatMessage(messages.title)} - Bbsmc`,
+	title: () => `${formatMessage(messages.title)} - modrinth`,
 })
 
 const auth = await useAuth()

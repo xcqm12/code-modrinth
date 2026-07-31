@@ -7,7 +7,7 @@
 	</div>
 </template>
 <script setup>
-import { defineMessages, useVIntl } from '@Bbsmc/ui'
+import { defineMessages, useVIntl } from '@modrinth/ui'
 
 import ReportsList from '~/components/ui/report/ReportsList.vue'
 
@@ -26,6 +26,6 @@ const messages = defineMessages({
 
 const auth = await useAuth()
 useHead({
-	title: () => `${formatMessage(messages.activeReportsTitle)} - Bbsmc`,
+	title: () => `${formatMessage(messages.activeReportsTitle)} - modrinth`,
 })
 </script>

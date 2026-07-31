@@ -88,16 +88,16 @@
 	</div>
 </template>
 <script setup>
-import { DownloadIcon, SpinnerIcon } from '@Bbsmc/assets'
+import { DownloadIcon, SpinnerIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectProjectPageContext,
 	Pagination,
 	useFormatDateTime,
-} from '@Bbsmc/ui'
-import VersionFilterControl from '@Bbsmc/ui/src/components/version/VersionFilterControl.vue'
-import { renderHighlightedString } from '@Bbsmc/utils'
+} from '@modrinth/ui'
+import VersionFilterControl from '@modrinth/ui/src/components/version/VersionFilterControl.vue'
+import { renderHighlightedString } from '@modrinth/utils'
 import { useQuery } from '@tanstack/vue-query'
 import { onMounted, watch } from 'vue'
 
@@ -154,7 +154,7 @@ const filteredVersions = computed(() => {
 	)
 })
 
-const { labrinth } = injectBbsmcClient()
+const { labrinth } = injectmodrinthClient()
 
 const paginatedVersionIds = computed(() => {
 	const page = currentPage.value

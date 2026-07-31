@@ -274,11 +274,11 @@ pub async fn refund_charge(
                         let mut metadata = HashMap::new();
 
                         metadata.insert(
-                            Bbsmc_USER_ID.to_owned(),
+                            modrinth_USER_ID.to_owned(),
                             to_base62(user.id.0),
                         );
                         metadata.insert(
-                            Bbsmc_CHARGE_ID.to_owned(),
+                            modrinth_CHARGE_ID.to_owned(),
                             to_base62(charge.id.0 as u64),
                         );
 
@@ -1783,7 +1783,7 @@ pub async fn stripe_webhook(
         ) -> Result<PaymentIntentMetadata, ApiError> {
             'metadata: {
                 let Some(user_id) = metadata
-                    .get(Bbsmc_USER_ID)
+                    .get(modrinth_USER_ID)
                     .and_then(|x| parse_base62(x).ok())
                     .map(|x| crate::database::models::ids::DBUserId(x as i64))
                 else {
@@ -1800,11 +1800,11 @@ pub async fn stripe_webhook(
                 };
 
                 let payment_metadata = metadata
-                    .get(Bbsmc_PAYMENT_METADATA)
+                    .get(modrinth_PAYMENT_METADATA)
                     .and_then(|x| serde_json::from_str(x).ok());
 
                 let Some(charge_id) = metadata
-                    .get(Bbsmc_CHARGE_ID)
+                    .get(modrinth_CHARGE_ID)
                     .and_then(|x| parse_base62(x).ok())
                     .map(|x| {
                         crate::database::models::ids::DBChargeId(x as i64)
@@ -1814,21 +1814,21 @@ pub async fn stripe_webhook(
                 };
 
                 let tax_amount = metadata
-                    .get(Bbsmc_TAX_AMOUNT)
+                    .get(modrinth_TAX_AMOUNT)
                     .and_then(|x| x.parse::<i64>().ok())
                     .unwrap_or(0);
 
                 let subtotal_amount = payment_intent_amount - tax_amount;
 
                 let Some(charge_type) = metadata
-                    .get(Bbsmc_CHARGE_TYPE)
+                    .get(modrinth_CHARGE_TYPE)
                     .map(|x| ChargeType::from_string(x))
                 else {
                     break 'metadata;
                 };
 
                 let new_region =
-                    metadata.get(Bbsmc_NEW_REGION).map(String::to_owned);
+                    metadata.get(modrinth_NEW_REGION).map(String::to_owned);
 
                 let (charge, price, product, subscription, new_region) =
                     if let Some(mut charge) =
@@ -1910,7 +1910,7 @@ pub async fn stripe_webhook(
                         }
                     } else {
                         let Some(price_id) = metadata
-                            .get(Bbsmc_PRICE_ID)
+                            .get(modrinth_PRICE_ID)
                             .and_then(|x| parse_base62(x).ok())
                             .map(|x| {
                                 crate::database::models::ids::DBProductPriceId(
@@ -1942,7 +1942,7 @@ pub async fn stripe_webhook(
                             Price::OneTime { .. } => None,
                             Price::Recurring { intervals } => {
                                 let Some(interval) = metadata
-                                    .get(Bbsmc_SUBSCRIPTION_INTERVAL)
+                                    .get(modrinth_SUBSCRIPTION_INTERVAL)
                                     .map(|x| PriceDuration::from_string(x))
                                 else {
                                     break 'metadata;
@@ -1950,7 +1950,7 @@ pub async fn stripe_webhook(
 
                                 if intervals.get(&interval).is_some() {
                                     let Some(subscription_id) = metadata
-                                    .get(Bbsmc_SUBSCRIPTION_ID)
+                                    .get(modrinth_SUBSCRIPTION_ID)
                                     .and_then(|x| parse_base62(x).ok())
                                     .map(|x| {
                                         crate::database::models::ids::DBUserSubscriptionId(x as i64)
@@ -2165,7 +2165,7 @@ pub async fn stripe_webhook(
 
                                     client
                                         .post(format!(
-                                            "{}/Bbsmc/v0/servers/{}/unsuspend",
+                                            "{}/modrinth/v0/servers/{}/unsuspend",
                                             ENV.ARCHON_URL,
                                             id
                                         ))
@@ -2176,7 +2176,7 @@ pub async fn stripe_webhook(
 
                                     client
                                         .post(format!(
-                                            "{}/Bbsmc/v0/servers/{}/reallocate",
+                                            "{}/modrinth/v0/servers/{}/reallocate",
                                             ENV.ARCHON_URL,
                                             id
                                         ))
@@ -2243,7 +2243,7 @@ pub async fn stripe_webhook(
 
                                     let res = client
                                         .post(format!(
-                                            "{}/Bbsmc/v0/servers/create",
+                                            "{}/modrinth/v0/servers/create",
                                             ENV.ARCHON_URL,
                                         ))
                                         .header("X-Master-Key", &ENV.PYRO_API_KEY)
@@ -2469,15 +2469,15 @@ pub async fn stripe_webhook(
                                     .metadata
                                     .is_midas()
                                 {
-                                    "Bbsmc+"
+                                    "modrinth+"
                                 } else if metadata
                                     .product_item
                                     .metadata
                                     .is_pyro()
                                 {
-                                    "Bbsmc Hosting"
+                                    "modrinth Hosting"
                                 } else {
-                                    "a Bbsmc product"
+                                    "a modrinth product"
                                 }
                                 .to_owned(),
                             },

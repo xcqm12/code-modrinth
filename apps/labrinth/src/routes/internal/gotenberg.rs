@@ -11,7 +11,7 @@ use crate::models::ids::PayoutId;
 use crate::routes::ApiError;
 use crate::util::error::Context;
 use crate::util::gotenberg::{
-    GeneratedPdfType, Bbsmc_GENERATED_PDF_TYPE, Bbsmc_PAYMENT_ID,
+    GeneratedPdfType, modrinth_GENERATED_PDF_TYPE, modrinth_PAYMENT_ID,
     payment_statement_key,
 };
 use crate::util::guards::internal_network_guard;
@@ -41,10 +41,10 @@ pub async fn success_callback(
         parameters: disposition_parameters,
     }): web::Header<header::ContentDisposition>,
     web::Header(GotenbergTrace(trace)): web::Header<GotenbergTrace>,
-    web::Header(BbsmcGeneratedPdfType(r#type)): web::Header<
-        BbsmcGeneratedPdfType,
+    web::Header(modrinthGeneratedPdfType(r#type)): web::Header<
+        modrinthGeneratedPdfType,
     >,
-    maybe_payment_id: Option<web::Header<BbsmcPaymentId>>,
+    maybe_payment_id: Option<web::Header<modrinthPaymentId>>,
     body: web::Bytes,
     redis: web::Data<RedisPool>,
 ) -> Result<(), ApiError> {
@@ -112,10 +112,10 @@ impl fmt::Display for GotenbergError {
 #[post("/gotenberg/error", guard = "internal_network_guard")]
 pub async fn error_callback(
     web::Header(GotenbergTrace(trace)): web::Header<GotenbergTrace>,
-    web::Header(BbsmcGeneratedPdfType(r#type)): web::Header<
-        BbsmcGeneratedPdfType,
+    web::Header(modrinthGeneratedPdfType(r#type)): web::Header<
+        modrinthGeneratedPdfType,
     >,
-    maybe_payment_id: Option<web::Header<BbsmcPaymentId>>,
+    maybe_payment_id: Option<web::Header<modrinthPaymentId>>,
     web::Json(error_body): web::Json<GotenbergError>,
     redis: web::Data<RedisPool>,
 ) -> Result<(), ApiError> {
@@ -179,9 +179,9 @@ impl header::Header for GotenbergTrace {
 }
 
 #[derive(Debug)]
-struct BbsmcGeneratedPdfType(GeneratedPdfType);
+struct modrinthGeneratedPdfType(GeneratedPdfType);
 
-impl header::TryIntoHeaderValue for BbsmcGeneratedPdfType {
+impl header::TryIntoHeaderValue for modrinthGeneratedPdfType {
     type Error = header::InvalidHeaderValue;
 
     fn try_into_value(self) -> Result<header::HeaderValue, Self::Error> {
@@ -189,9 +189,9 @@ impl header::TryIntoHeaderValue for BbsmcGeneratedPdfType {
     }
 }
 
-impl header::Header for BbsmcGeneratedPdfType {
+impl header::Header for modrinthGeneratedPdfType {
     fn name() -> header::HeaderName {
-        Bbsmc_GENERATED_PDF_TYPE
+        modrinth_GENERATED_PDF_TYPE
     }
 
     fn parse<M: HttpMessage>(m: &M) -> Result<Self, ParseError> {
@@ -202,14 +202,14 @@ impl header::Header for BbsmcGeneratedPdfType {
             .map_err(|_| ParseError::Header)?
             .parse()
             .map_err(|_| ParseError::Header)
-            .map(BbsmcGeneratedPdfType)
+            .map(modrinthGeneratedPdfType)
     }
 }
 
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
-pub struct BbsmcPaymentId(pub PayoutId);
+pub struct modrinthPaymentId(pub PayoutId);
 
-impl header::TryIntoHeaderValue for BbsmcPaymentId {
+impl header::TryIntoHeaderValue for modrinthPaymentId {
     type Error = header::InvalidHeaderValue;
 
     fn try_into_value(self) -> Result<header::HeaderValue, Self::Error> {
@@ -217,9 +217,9 @@ impl header::TryIntoHeaderValue for BbsmcPaymentId {
     }
 }
 
-impl header::Header for BbsmcPaymentId {
+impl header::Header for modrinthPaymentId {
     fn name() -> header::HeaderName {
-        Bbsmc_PAYMENT_ID
+        modrinth_PAYMENT_ID
     }
 
     fn parse<M: HttpMessage>(m: &M) -> Result<Self, ParseError> {

@@ -18,7 +18,7 @@ export interface Cosmetics {
 	advancedRendering: boolean
 	externalLinksNewTab: boolean
 	notUsingBlockers: boolean
-	hideBbsmcAppPromos: boolean
+	hidemodrinthAppPromos: boolean
 	preferredDarkTheme: DarkTheme
 	searchDisplayMode: Record<DisplayLocation, DisplayMode>
 	hideStagingBanner: boolean
@@ -40,7 +40,7 @@ export default defineNuxtPlugin({
 				advancedRendering: true,
 				externalLinksNewTab: true,
 				notUsingBlockers: false,
-				hideBbsmcAppPromos: false,
+				hidemodrinthAppPromos: false,
 				preferredDarkTheme: 'dark',
 				searchDisplayMode: {
 					mod: 'list',

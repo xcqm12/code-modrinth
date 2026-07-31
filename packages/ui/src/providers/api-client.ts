@@ -1,8 +1,8 @@
-import type { AbstractBbsmcClient } from '@Bbsmc/api-client'
+import type { AbstractmodrinthClient } from '@modrinth/api-client'
 
 import { createContext } from './create-context'
 
-export const [injectBbsmcClient, provideBbsmcClient] = createContext<AbstractBbsmcClient>(
+export const [injectmodrinthClient, providemodrinthClient] = createContext<AbstractmodrinthClient>(
 	'root',
-	'BbsmcClient',
+	'modrinthClient',
 )

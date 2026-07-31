@@ -223,7 +223,7 @@ import {
 	SearchIcon,
 	ShareIcon,
 	UploadIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 
 import ButtonStyled from '#ui/components/base/ButtonStyled.vue'

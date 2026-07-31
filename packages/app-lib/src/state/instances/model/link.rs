@@ -7,7 +7,7 @@ use super::ContentSetSyncStatus;
 #[serde(rename_all = "snake_case")]
 pub enum InstanceLink {
     Unmanaged,
-    BbsmcModpack {
+    modrinthModpack {
         project_id: String,
         version_id: String,
     },
@@ -21,12 +21,12 @@ pub enum InstanceLink {
         content_version_id: String,
     },
     /// Hosting sync still flows through the shared-instance service.
-    BbsmcHosting {
+    modrinthHosting {
         server_id: Uuid,
         instance_ids: Vec<Uuid>,
         active_instance_id: Option<Uuid>,
     },
-    /// A custom modpack source without a Bbsmc project/version link.
+    /// A custom modpack source without a modrinth project/version link.
     ImportedModpack {
         project_id: Option<String>,
         version_id: Option<String>,

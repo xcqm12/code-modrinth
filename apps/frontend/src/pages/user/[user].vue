@@ -17,8 +17,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
-import { injectBbsmcClient, provideUserProfile, UserProfilePageLayout } from '@Bbsmc/ui'
+import type { Labrinth } from '@modrinth/api-client'
+import { injectmodrinthClient, provideUserProfile, UserProfilePageLayout } from '@modrinth/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 
 import AdPlaceholder from '~/components/ui/AdPlaceholder.vue'
@@ -26,7 +26,7 @@ import CollectionCreateModal from '~/components/ui/create/CollectionCreateModal.
 import ProjectCreateModal from '~/components/ui/create/ProjectCreateModal.vue'
 
 const route = useNativeRoute()
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const queryClient = useQueryClient()
 const userProfile = provideUserProfile({
 	getUser: (userId) => client.labrinth.users_v3.get(userId),
@@ -78,13 +78,13 @@ await Promise.allSettled([
 ])
 
 const title = computed(() =>
-	prefetchedUser ? `${prefetchedUser.username} - Bbsmc` : 'Bbsmc',
+	prefetchedUser ? `${prefetchedUser.username} - modrinth` : 'modrinth',
 )
 const description = computed(() => {
 	if (!prefetchedUser) return ''
 	return prefetchedUser.bio
-		? `${prefetchedUser.bio} - Download ${prefetchedUser.username}'s projects on Bbsmc`
-		: `Download ${prefetchedUser.username}'s projects on Bbsmc`
+		? `${prefetchedUser.bio} - Download ${prefetchedUser.username}'s projects on modrinth`
+		: `Download ${prefetchedUser.username}'s projects on modrinth`
 })
 
 useSeoMeta({

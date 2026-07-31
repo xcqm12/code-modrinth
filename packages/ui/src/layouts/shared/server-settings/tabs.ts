@@ -1,13 +1,13 @@
-import type { Archon } from '@Bbsmc/api-client'
+import type { Archon } from '@modrinth/api-client'
 import {
 	CardIcon,
 	ListIcon,
-	BbsmcIcon,
+	modrinthIcon,
 	SettingsIcon,
 	TextQuoteIcon,
 	VersionIcon,
 	WrenchIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import type { Component } from 'vue'
 
 export type ServerSettingsTabId =
@@ -74,7 +74,7 @@ export const serverSettingsTabDefinitions: ServerSettingsTabDefinition[] = [
 	{
 		id: 'admin-billing',
 		label: 'Admin Billing',
-		icon: BbsmcIcon,
+		icon: modrinthIcon,
 		href: ({ ownerId }) => `/admin/billing/${ownerId}`,
 		external: true,
 		shown: ({ isAdmin }) => isAdmin,

@@ -241,7 +241,7 @@
 	</div>
 </template>
 <script setup>
-import { EditIcon, PlusIcon, SaveIcon, TrashIcon, UploadIcon, XIcon } from '@Bbsmc/assets'
+import { EditIcon, PlusIcon, SaveIcon, TrashIcon, UploadIcon, XIcon } from '@modrinth/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -252,14 +252,14 @@ import {
 	CopyCode,
 	defineMessages,
 	FileInput,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	IntlFormatted,
 	normalizeChildren,
 	StyledInput,
 	useFormatDateTime,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 
 import Modal from '~/components/ui/Modal.vue'
@@ -272,7 +272,7 @@ import {
 	useScopes,
 } from '~/composables/auth/scopes.ts'
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const { addNotification } = injectNotificationManager()
 const { formatMessage } = useVIntl()
 const formatDate = useFormatDateTime()
@@ -374,7 +374,7 @@ const messages = defineMessages({
 	descriptionIntro: {
 		id: 'settings.applications.description.intro',
 		defaultMessage:
-			"Applications can be used to authenticate Bbsmc's users with your products. For more information, see <docs-link>Bbsmc's API documentation</docs-link>.",
+			"Applications can be used to authenticate modrinth's users with your products. For more information, see <docs-link>modrinth's API documentation</docs-link>.",
 	},
 	aboutLabel: {
 		id: 'settings.applications.about',
@@ -415,7 +415,7 @@ const messages = defineMessages({
 })
 
 useHead({
-	title: () => `${formatMessage(messages.headTitle)} - Bbsmc`,
+	title: () => `${formatMessage(messages.headTitle)} - modrinth`,
 })
 
 const { scopesToLabels } = useScopes()

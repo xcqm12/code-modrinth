@@ -41,7 +41,7 @@ if echo "$EXISTING" | grep -q "$SYNC_SCRIPT"; then
 fi
 
 # 每3天执行一次（在凌晨3点）
-CRON_LINE="0 3 */3 * * cd $SCRIPT_DIR && CACHE_TTL=259200 MAX_STORAGE=524288000 bash $SYNC_SCRIPT --import-data --limit 200 >> $CRON_LOG 2>&1"
+CRON_LINE="0 3 */3 * * cd $SCRIPT_DIR && CACHE_TTL=259200 MAX_STORAGE=524288000 bash $SYNC_SCRIPT --import-data --limit 25 >> $CRON_LOG 2>&1"
 
 # 写入 crontab
 if echo "$EXISTING" | grep -q .; then

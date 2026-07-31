@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	AlphaBadge,
 	BetaBadge,
@@ -21,15 +21,15 @@ import {
 	PlusBadge,
 	PrideBadge,
 	StaffBadge,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	defineMessage,
 	defineMessages,
 	type MessageDescriptor,
 	useFormatNumber,
 	useVIntl,
-} from '@Bbsmc/ui'
-import { UserBadge as BadgeBitflag } from '@Bbsmc/utils'
+} from '@modrinth/ui'
+import { UserBadge as BadgeBitflag } from '@modrinth/utils'
 import { type Component, computed } from 'vue'
 
 import UserBadge from './UserBadge.vue'
@@ -86,12 +86,12 @@ const BADGES = [
 		icon: StaffBadge,
 		name: defineMessage({
 			id: 'user.profile.badge.staff.name',
-			defaultMessage: 'Bbsmc Team',
+			defaultMessage: 'modrinth Team',
 		}),
 		about: [
 			defineMessage({
 				id: 'user.profile.badge.staff.about.1',
-				defaultMessage: `This user works for Bbsmc.`,
+				defaultMessage: `This user works for modrinth.`,
 			}),
 		],
 		criteria: [
@@ -114,11 +114,11 @@ const BADGES = [
 		about: [
 			defineMessage({
 				id: 'user.profile.badge.moderator.about.1',
-				defaultMessage: `This user works for Bbsmc as a Content Moderator.`,
+				defaultMessage: `This user works for modrinth as a Content Moderator.`,
 			}),
 			defineMessage({
 				id: 'user.profile.badge.moderator.about.2',
-				defaultMessage: `Content Moderators on Bbsmc review projects, handle reports, and help keep Bbsmc safe.`,
+				defaultMessage: `Content Moderators on modrinth review projects, handle reports, and help keep modrinth safe.`,
 			}),
 		],
 		criteria: [
@@ -137,7 +137,7 @@ const BADGES = [
 		about: [
 			defineMessage({
 				id: 'user.profile.badge.alpha.about.1',
-				defaultMessage: `This user has been around since Bbsmc Alpha, which ended in November 2020.`,
+				defaultMessage: `This user has been around since modrinth Alpha, which ended in November 2020.`,
 			}),
 		],
 		criteria: [
@@ -160,7 +160,7 @@ const BADGES = [
 		about: [
 			defineMessage({
 				id: 'user.profile.badge.beta.about.1',
-				defaultMessage: `This user has been around since Bbsmc Beta, which ended in February 2022.`,
+				defaultMessage: `This user has been around since modrinth Beta, which ended in February 2022.`,
 			}),
 		],
 		criteria: [
@@ -170,10 +170,10 @@ const BADGES = [
 			},
 		],
 		link: {
-			href: 'https://bbsmc.org.cn/news/article/Bbsmc-beta/',
+			href: 'https://bbsmc.org.cn/news/article/modrinth-beta/',
 			message: defineMessage({
 				id: 'user.profile.badge.beta.link',
-				defaultMessage: `Click to read about the launch of Bbsmc Beta.`,
+				defaultMessage: `Click to read about the launch of modrinth Beta.`,
 			}),
 		},
 	},
@@ -181,12 +181,12 @@ const BADGES = [
 		icon: PlusBadge,
 		name: defineMessage({
 			id: 'user.profile.badge.plus.name',
-			defaultMessage: 'Bbsmc+ Member',
+			defaultMessage: 'modrinth+ Member',
 		}),
 		about: [
 			defineMessage({
 				id: 'user.profile.badge.plus.about.1',
-				defaultMessage: `This user is going the extra mile to support Bbsmc and the creators on the platform.`,
+				defaultMessage: `This user is going the extra mile to support modrinth and the creators on the platform.`,
 			}),
 		],
 		criteria: [
@@ -215,7 +215,7 @@ const BADGES = [
 		about: [
 			defineMessage({
 				id: 'user.profile.badge.pride.about.1',
-				defaultMessage: `This user participated in at least one of Bbsmc's Pride fundraisers for the LGBTQ+ community.`,
+				defaultMessage: `This user participated in at least one of modrinth's Pride fundraisers for the LGBTQ+ community.`,
 			}),
 		],
 		criteria: [
@@ -240,7 +240,7 @@ const BADGES = [
 		about: [
 			defineMessage({
 				id: 'user.profile.badge.early-modpack-adopter.about.1',
-				defaultMessage: `This user helped us test Modpack projects on Bbsmc before we launched them in May 2022.`,
+				defaultMessage: `This user helped us test Modpack projects on modrinth before we launched them in May 2022.`,
 			}),
 		],
 		criteria: [
@@ -264,7 +264,7 @@ const BADGES = [
 		about: [
 			defineMessage({
 				id: 'user.profile.badge.early-resourcepack-adopter.about.1',
-				defaultMessage: `This user helped us test Resource Pack projects on Bbsmc before we launched them in August 2022.`,
+				defaultMessage: `This user helped us test Resource Pack projects on modrinth before we launched them in August 2022.`,
 			}),
 		],
 		criteria: [
@@ -288,7 +288,7 @@ const BADGES = [
 		about: [
 			defineMessage({
 				id: 'user.profile.badge.early-plugin-adopter.about.1',
-				defaultMessage: `This user helped us test Plugin projects on Bbsmc before we launched them in August 2022.`,
+				defaultMessage: `This user helped us test Plugin projects on modrinth before we launched them in August 2022.`,
 			}),
 		],
 		criteria: [
@@ -312,7 +312,7 @@ const BADGES = [
 		about: [
 			defineMessage({
 				id: 'user.profile.badge.early-datapack-adopter.about.1',
-				defaultMessage: `This user helped us test Data Pack projects on Bbsmc before we launched them in January 2023.`,
+				defaultMessage: `This user helped us test Data Pack projects on modrinth before we launched them in January 2023.`,
 			}),
 		],
 		criteria: [
@@ -332,7 +332,7 @@ const BADGES = [
 		about: [
 			defineMessage({
 				id: 'user.profile.badge.early-shader-adopter.about.1',
-				defaultMessage: `This user helped us test Shader projects on Bbsmc before we launched them in January 2023.`,
+				defaultMessage: `This user helped us test Shader projects on modrinth before we launched them in January 2023.`,
 			}),
 		],
 		criteria: [
@@ -352,7 +352,7 @@ const BADGES = [
 		about: [
 			defineMessage({
 				id: 'user.profile.badge.early-server-adopter.about.1',
-				defaultMessage: `This user helped us test Server projects on Bbsmc before we launched them in March 2026.`,
+				defaultMessage: `This user helped us test Server projects on modrinth before we launched them in March 2026.`,
 			}),
 		],
 		criteria: [
@@ -367,12 +367,12 @@ const BADGES = [
 		icon: EarlyHostingBadge,
 		name: defineMessage({
 			id: 'user.profile.badge.hosting-alpha.name',
-			defaultMessage: 'Bbsmc Hosting Alpha Tester',
+			defaultMessage: 'modrinth Hosting Alpha Tester',
 		}),
 		about: [
 			defineMessage({
 				id: 'user.profile.badge.hosting-alpha.about.1',
-				defaultMessage: `This user participated in a closed alpha test of Bbsmc Hosting before we launched Bbsmc Hosting Beta in November 2024.`,
+				defaultMessage: `This user participated in a closed alpha test of modrinth Hosting before we launched modrinth Hosting Beta in November 2024.`,
 			}),
 		],
 		criteria: [], // TODO: Add badge on backend for Hosting Alpha Tester

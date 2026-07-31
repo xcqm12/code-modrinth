@@ -15,8 +15,8 @@
 </template>
 
 <script setup lang="ts">
-import { FolderIcon, GlobeIcon, HashIcon, ReportIcon, ShieldCheckIcon } from '@Bbsmc/assets'
-import { Chips, defineMessages, NavTabs, useVIntl } from '@Bbsmc/ui'
+import { FolderIcon, GlobeIcon, HashIcon, ReportIcon, ShieldCheckIcon } from '@modrinth/assets'
+import { Chips, defineMessages, NavTabs, useVIntl } from '@modrinth/ui'
 
 definePageMeta({
 	middleware: ['auth', 'staff'],

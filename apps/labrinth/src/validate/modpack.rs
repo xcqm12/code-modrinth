@@ -27,7 +27,7 @@ impl super::Validator for ModpackValidator {
         archive: &mut ZipArchive<Cursor<bytes::Bytes>>,
     ) -> Result<ValidationResult, ValidationError> {
         let pack: PackFormat = {
-            let Ok(mut file) = archive.by_name("Bbsmc.index.json") else {
+            let Ok(mut file) = archive.by_name("modrinth.index.json") else {
                 return Ok(ValidationResult::Warning(
                     "Pack manifest is missing.",
                 ));

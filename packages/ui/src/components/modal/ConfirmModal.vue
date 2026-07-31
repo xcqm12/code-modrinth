@@ -49,8 +49,8 @@
 </template>
 
 <script setup>
-import { TrashIcon, XIcon } from '@Bbsmc/assets'
-import { renderString } from '@Bbsmc/utils'
+import { TrashIcon, XIcon } from '@modrinth/assets'
+import { renderString } from '@modrinth/utils'
 import { computed, ref } from 'vue'
 
 import ButtonStyled from '../base/ButtonStyled.vue'

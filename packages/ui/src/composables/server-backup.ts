@@ -1,10 +1,10 @@
-import type { Archon } from '@Bbsmc/api-client'
+import type { Archon } from '@modrinth/api-client'
 
-import { injectBbsmcClient } from '../providers/api-client'
+import { injectmodrinthClient } from '../providers/api-client'
 import { injectNotificationManager } from '../providers/web-notifications'
 
 export function useServerBackupDownload() {
-	const client = injectBbsmcClient()
+	const client = injectmodrinthClient()
 	const { addNotification } = injectNotificationManager()
 
 	function getLatestBackupDownload(
@@ -37,7 +37,7 @@ export function useServerBackupDownload() {
 				}
 
 				window.open(
-					`https://${kyrosUrl}/Bbsmc/v0/backups/${latestBackup.id}/download?auth=${jwt}`,
+					`https://${kyrosUrl}/modrinth/v0/backups/${latestBackup.id}/download?auth=${jwt}`,
 					'_blank',
 				)
 			} catch {

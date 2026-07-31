@@ -40,7 +40,7 @@
 </template>
 
 <script setup lang="ts">
-import { PackageOpenIcon } from '@Bbsmc/assets'
+import { PackageOpenIcon } from '@modrinth/assets'
 import { computed } from 'vue'
 
 import Admonition from '#ui/components/base/Admonition.vue'
@@ -49,7 +49,7 @@ import { useFormatBytes } from '#ui/composables'
 import { defineMessages, useVIntl } from '#ui/composables/i18n'
 import { useServerPermissions } from '#ui/composables/server-permissions'
 import type { FileOperation } from '#ui/layouts/shared/files-tab/types'
-import { injectBbsmcServerContext } from '#ui/providers'
+import { injectmodrinthServerContext } from '#ui/providers'
 import { commonMessages } from '#ui/utils/common-messages'
 
 defineEmits<{ dismiss: [] }>()
@@ -61,7 +61,7 @@ const props = defineProps<{
 
 const { formatMessage } = useVIntl()
 const formatBytes = useFormatBytes()
-const ctx = injectBbsmcServerContext()
+const ctx = injectmodrinthServerContext()
 const { canWriteFiles, permissionDeniedMessage } = useServerPermissions()
 
 const messages = defineMessages({

@@ -1,11 +1,11 @@
-import { CheckIcon, CopyIcon, UpdatedIcon } from '@Bbsmc/assets'
+import { CheckIcon, CopyIcon, UpdatedIcon } from '@modrinth/assets'
 import {
 	defineMessages,
 	type PopupNotificationButton,
 	type PopupNotificationProgressItem,
 	type PopupNotificationProgressType,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { convertFileSrc } from '@tauri-apps/api/core'
 import { computed, ref } from 'vue'
 import type { Router } from 'vue-router'
@@ -151,9 +151,9 @@ const failureSummaryMessages = defineMessages({
 		id: 'app.action-bar.install.summary.download-failed',
 		defaultMessage: "Download couldn't finish",
 	},
-	BbsmcUnreachable: {
-		id: 'app.action-bar.install.summary.Bbsmc-unreachable',
-		defaultMessage: "Couldn't reach Bbsmc",
+	modrinthUnreachable: {
+		id: 'app.action-bar.install.summary.modrinth-unreachable',
+		defaultMessage: "Couldn't reach modrinth",
 	},
 	packDownloadFailed: {
 		id: 'app.action-bar.install.summary.pack-download-failed',
@@ -297,7 +297,7 @@ export async function useInstallJobNotifications(opts: {
 						: failureSummaryMessages.downloadFailed,
 				)
 			case 'api_error':
-				return formatMessage(failureSummaryMessages.BbsmcUnreachable)
+				return formatMessage(failureSummaryMessages.modrinthUnreachable)
 			case 'pack_error':
 				return formatMessage(
 					phase === 'downloading_pack_file'

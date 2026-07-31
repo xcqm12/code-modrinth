@@ -94,17 +94,17 @@
 	</div>
 </template>
 <script setup lang="ts">
-import { KeyIcon, MailIcon, SendIcon } from '@Bbsmc/assets'
+import { KeyIcon, MailIcon, SendIcon } from '@modrinth/assets'
 import {
 	Admonition,
 	ButtonStyled,
 	commonMessages,
 	defineMessages,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	StyledInput,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 import type { LocationQueryValue } from 'vue-router'
 
@@ -142,7 +142,7 @@ const getErrorMessage = (error: unknown): string => {
 	return String(error)
 }
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const { addNotification } = injectNotificationManager()
 const { formatMessage } = useVIntl()
 
@@ -215,7 +215,7 @@ const messages = defineMessages({
 })
 
 useHead({
-	title: () => `${formatMessage(messages.title)} - Bbsmc`,
+	title: () => `${formatMessage(messages.title)} - modrinth`,
 })
 
 const auth = await useAuth()

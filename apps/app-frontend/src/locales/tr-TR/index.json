@@ -74,8 +74,8 @@
   "app.action-bar.install.summary.minecraft-setup-failed": {
     "message": "Minecraft kurulumu başarısız oldu"
   },
-  "app.action-bar.install.summary.Bbsmc-unreachable": {
-    "message": "Bbsmc'e erişilemiyor"
+  "app.action-bar.install.summary.modrinth-unreachable": {
+    "message": "modrinth'e erişilemiyor"
   },
   "app.action-bar.install.summary.no-write-permission": {
     "message": "Yazmak için yetkiniz yok"
@@ -132,7 +132,7 @@
     "message": "Hepsini kabul et"
   },
   "app.ads-consent.body": {
-    "message": "Reklamlar, Bbsmc'i mümkün kılıyor ve içerik üreticilerine yapılan ödemeleri finanse ediyor. Partnerlerimiz, reklamları kişiselleştirmek ve performansı ölçmek amacıyla uygulama içinde çerez depolayabilir veya bunlara erişebilir."
+    "message": "Reklamlar, modrinth'i mümkün kılıyor ve içerik üreticilerine yapılan ödemeleri finanse ediyor. Partnerlerimiz, reklamları kişiselleştirmek ve performansı ölçmek amacıyla uygulama içinde çerez depolayabilir veya bunlara erişebilir."
   },
   "app.ads-consent.manage": {
     "message": "Tercihleri yönet"
@@ -141,7 +141,7 @@
     "message": "Hepsini reddet"
   },
   "app.ads-consent.title": {
-    "message": "Sizin mahremiyetiniz ve reklamlar Bbsmc'i nasıl destekler"
+    "message": "Sizin mahremiyetiniz ve reklamlar modrinth'i nasıl destekler"
   },
   "app.appearance-settings.advanced-rendering.description": {
     "message": "Donanım hızlandırmalı işleme kapalıyken, performans sorunlarına yol açabilecek bulanıklık efektleri gibi gelişmiş işlemeleri aktif eder."
@@ -150,7 +150,7 @@
     "message": "Gelişmiş işleme"
   },
   "app.appearance-settings.color-theme.description": {
-    "message": "Bbsmc App için tercih ettiğiniz temayı seçin."
+    "message": "modrinth App için tercih ettiğiniz temayı seçin."
   },
   "app.appearance-settings.color-theme.title": {
     "message": "Tema Rengi"
@@ -210,7 +210,7 @@
     "message": "Kenar çubuğunu ayarla"
   },
   "app.appearance-settings.unknown-pack-warning.description": {
-    "message": "Bbsmc üzerinde barındırılmayan bir Bbsmc Paket dosyasını (.mrpack) yüklemeye çalışırsanız, yükleme öncesinde riskleri anladığınızdan emin oluruz."
+    "message": "modrinth üzerinde barındırılmayan bir modrinth Paket dosyasını (.mrpack) yüklemeye çalışırsanız, yükleme öncesinde riskleri anladığınızdan emin oluruz."
   },
   "app.appearance-settings.unknown-pack-warning.title": {
     "message": "Bilinmeyen mod paketlerini indirmeden önce beni uyar"
@@ -525,19 +525,19 @@
     "message": "Yükle"
   },
   "app.modal.install-to-play.invite-warning": {
-    "message": "Bu davetiye Bbsmc tarafından değil, başka bir Bbsmc kullanıcısı tarafından oluşturulmuştur. Sadece güvendiğiniz kişilerden gelen davetleri kabul edin."
+    "message": "Bu davetiye modrinth tarafından değil, başka bir modrinth kullanıcısı tarafından oluşturulmuştur. Sadece güvendiğiniz kişilerden gelen davetleri kabul edin."
   },
   "app.modal.install-to-play.mod-count": {
     "message": "{count, plural, one {#mod} other {#mods}}"
   },
   "app.modal.install-to-play.reviewed-files": {
-    "message": "Dosya formatı ne olursa olsun (.mrpack dahil), bir dosya yalnızca Bbsmc'e yüklendiğinde denetlenir."
+    "message": "Dosya formatı ne olursa olsun (.mrpack dahil), bir dosya yalnızca modrinth'e yüklendiğinde denetlenir."
   },
   "app.modal.install-to-play.shared-instance": {
     "message": "Paylaşılan Kurulum"
   },
   "app.modal.install-to-play.unknown-files-description": {
-    "message": "Bu sunucunun mod paketi Bbsmc'te yayınlanmamış doysaları mevcut. Yalnızca güvendiğiniz kaynaklardan dosya indirmenizi önemle tavsiye ederiz."
+    "message": "Bu sunucunun mod paketi modrinth'te yayınlanmamış doysaları mevcut. Yalnızca güvendiğiniz kaynaklardan dosya indirmenizi önemle tavsiye ederiz."
   },
   "app.modal.install-to-play.unknown-files-warning": {
     "message": "Bilinmeyen dosya uyarısı"
@@ -582,7 +582,7 @@
     "message": "v{version} indiriliyor"
   },
   "app.settings.privacy.ads-consent.intro": {
-    "message": "Reklamlar, Bbsmc'i mümkün kılıyor ve içerik üreticilerine yapılan ödemeleri finanse ediyor. Partnerlerimiz, reklamları kişiselleştirmek ve performansı ölçmek amacıyla uygulama içinde çerez depolayabilir veya bunlara erişebilir. Aşağıdan tercihinizi yönetebilir veya vazgeçebilirsiniz."
+    "message": "Reklamlar, modrinth'i mümkün kılıyor ve içerik üreticilerine yapılan ödemeleri finanse ediyor. Partnerlerimiz, reklamları kişiselleştirmek ve performansı ölçmek amacıyla uygulama içinde çerez depolayabilir veya bunlara erişebilir. Aşağıdan tercihinizi yönetebilir veya vazgeçebilirsiniz."
   },
   "app.settings.tabs.appearance": {
     "message": "Görünüm"
@@ -713,14 +713,14 @@
   "app.skins.section.minecon-earth-2017": {
     "message": "MINECON Earth 2017"
   },
-  "app.skins.section.Bbsmc": {
-    "message": "Bbsmc"
+  "app.skins.section.modrinth": {
+    "message": "modrinth"
   },
-  "app.skins.section.Bbsmc-pride": {
-    "message": "Bbsmc Onuru"
+  "app.skins.section.modrinth-pride": {
+    "message": "modrinth Onuru"
   },
-  "app.skins.section.Bbsmc-pride.tooltip": {
-    "message": "Bu skinleri, Onur Ayı boyunca Bbsmc'in düzenlediği bir bağış kampanyasına yaptığınız bağış karşılığında aldınız."
+  "app.skins.section.modrinth-pride.tooltip": {
+    "message": "Bu skinleri, Onur Ayı boyunca modrinth'in düzenlediği bir bağış kampanyasına yaptığınız bağış karşılığında aldınız."
   },
   "app.skins.section.mounts-of-mayhem": {
     "message": "Kaos Dağları"
@@ -744,10 +744,10 @@
     "message": "Giriş Yap"
   },
   "app.skins.sign-in.description": {
-    "message": "Bbsmc appdeki skin yönetim özelliklerini kullanmak için lütfen Minecraft hesabınıza giriş yapın."
+    "message": "modrinth appdeki skin yönetim özelliklerini kullanmak için lütfen Minecraft hesabınıza giriş yapın."
   },
   "app.skins.sign-in.rinthbot-alt": {
-    "message": "Heyecanlı Bbsmc Bot'u"
+    "message": "Heyecanlı modrinth Bot'u"
   },
   "app.skins.sign-in.title": {
     "message": "Lütfen giriş yapın"
@@ -762,13 +762,13 @@
     "message": "Aç"
   },
   "app.update-popup.body.download-complete": {
-    "message": "Bbsmc App v{version} indirildi. Güncellemek için yeniden başlatın veya Bbsmc App’i kapattığınızda otomatik olarak güncellenecektir."
+    "message": "modrinth App v{version} indirildi. Güncellemek için yeniden başlatın veya modrinth App’i kapattığınızda otomatik olarak güncellenecektir."
   },
   "app.update-popup.body.linux": {
-    "message": "Bbsmc App v{version} yayımlandı. En yeni özellikler ve hata düzeltmeleri için paket yöneticin üzerinden güncelle!"
+    "message": "modrinth App v{version} yayımlandı. En yeni özellikler ve hata düzeltmeleri için paket yöneticin üzerinden güncelle!"
   },
   "app.update-popup.body.metered": {
-    "message": "Bbsmc App v{version} mevcut! Kısıtlı bağlantıda olduğunuzdan otomatik olarak indirmedik."
+    "message": "modrinth App v{version} mevcut! Kısıtlı bağlantıda olduğunuzdan otomatik olarak indirmedik."
   },
   "app.update-popup.changelog": {
     "message": "Yama Notları"
@@ -792,7 +792,7 @@
     "message": "{version} sürümü başarıyla kuruldu!"
   },
   "app.world.server-modal.placeholder-address": {
-    "message": "example.Bbsmc.gg"
+    "message": "example.modrinth.gg"
   },
   "app.world.server-modal.select-an-option": {
     "message": "Bir seçenek seçin"
@@ -825,10 +825,10 @@
     "message": "Minecraft kullanıcı adıyla aynı olmayabilir!"
   },
   "friends.add-friend.username.placeholder": {
-    "message": "Bbsmc kullanıcı adını girin..."
+    "message": "modrinth kullanıcı adını girin..."
   },
   "friends.add-friend.username.title": {
-    "message": "Arkadaşının Bbsmc kullanıcı adı nedir?"
+    "message": "Arkadaşının modrinth kullanıcı adı nedir?"
   },
   "friends.add-friends-to-share": {
     "message": "<link>Arkadaş ekleyerek</link> ne oynadıklarını gör!"
@@ -870,7 +870,7 @@
     "message": "{title} - {count}"
   },
   "friends.sign-in-to-add-friends": {
-    "message": "Arkadaş eklemek ve ne oynadıklarını görmek için bir <link>Bbsmc hesabına giriş yap</link>!"
+    "message": "Arkadaş eklemek ve ne oynadıklarını görmek için bir <link>modrinth hesabına giriş yap</link>!"
   },
   "instance.action.create-shortcut": {
     "message": "Kısayol oluştur"

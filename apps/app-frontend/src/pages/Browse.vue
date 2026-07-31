@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	CheckIcon,
 	ClipboardCopyIcon,
@@ -9,8 +9,8 @@ import {
 	PlusIcon,
 	ServerStackIcon,
 	SpinnerIcon,
-} from '@Bbsmc/assets'
-import type { BrowseInstallContentType, CardAction, ProjectType, Tags } from '@Bbsmc/ui'
+} from '@modrinth/assets'
+import type { BrowseInstallContentType, CardAction, ProjectType, Tags } from '@modrinth/ui'
 import {
 	BrowsePageLayout,
 	BrowseSidebar,
@@ -30,7 +30,7 @@ import {
 	useBrowseSearch,
 	useDebugLogger,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 import { convertFileSrc } from '@tauri-apps/api/core'
 import type { Ref } from 'vue'
@@ -1198,7 +1198,7 @@ provideBrowseManager({
 			<template #after>
 				<ContextMenu ref="contextMenuRef" @option-clicked="handleOptionsClick">
 					<template #open_link>
-						<GlobeIcon /> {{ formatMessage(commonMessages.openInBbsmcButton) }} <ExternalIcon />
+						<GlobeIcon /> {{ formatMessage(commonMessages.openInmodrinthButton) }} <ExternalIcon />
 					</template>
 					<template #copy_link>
 						<ClipboardCopyIcon /> {{ formatMessage(commonMessages.copyLinkButton) }}

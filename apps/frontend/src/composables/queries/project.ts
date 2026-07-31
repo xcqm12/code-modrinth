@@ -1,41 +1,41 @@
-import type { AbstractBbsmcClient } from '@Bbsmc/api-client'
+import type { AbstractmodrinthClient } from '@modrinth/api-client'
 
 export const STALE_TIME = 1000 * 60 * 5 // 5 minutes
 export const STALE_TIME_LONG = 1000 * 60 * 10 // 10 minutes
 
 export const projectQueryOptions = {
-	v2: (projectId: string, client: AbstractBbsmcClient) => ({
+	v2: (projectId: string, client: AbstractmodrinthClient) => ({
 		queryKey: ['project', 'v2', projectId] as const,
 		queryFn: () => client.labrinth.projects_v2.get(projectId),
 		staleTime: STALE_TIME,
 	}),
 
-	v3: (projectId: string, client: AbstractBbsmcClient) => ({
+	v3: (projectId: string, client: AbstractmodrinthClient) => ({
 		queryKey: ['project', 'v3', projectId] as const,
 		queryFn: () => client.labrinth.projects_v3.get(projectId),
 		staleTime: STALE_TIME,
 	}),
 
-	members: (projectId: string, client: AbstractBbsmcClient) => ({
+	members: (projectId: string, client: AbstractmodrinthClient) => ({
 		queryKey: ['project', projectId, 'members'] as const,
 		queryFn: () => client.labrinth.projects_v3.getMembers(projectId),
 		staleTime: STALE_TIME,
 	}),
 
-	dependencies: (projectId: string, client: AbstractBbsmcClient) => ({
+	dependencies: (projectId: string, client: AbstractmodrinthClient) => ({
 		queryKey: ['project', projectId, 'dependencies'] as const,
 		queryFn: () => client.labrinth.projects_v2.getDependencies(projectId),
 		staleTime: STALE_TIME,
 	}),
 
-	versionsV2: (projectId: string, client: AbstractBbsmcClient) => ({
+	versionsV2: (projectId: string, client: AbstractmodrinthClient) => ({
 		queryKey: ['project', projectId, 'versions', 'v2'] as const,
 		queryFn: () =>
 			client.labrinth.versions_v3.getProjectVersions(projectId, { include_changelog: false }),
 		staleTime: STALE_TIME,
 	}),
 
-	versionsV3: (projectId: string, client: AbstractBbsmcClient) => ({
+	versionsV3: (projectId: string, client: AbstractmodrinthClient) => ({
 		queryKey: ['project', projectId, 'versions', 'v3'] as const,
 		queryFn: () =>
 			client.labrinth.versions_v3.getProjectVersions(projectId, {
@@ -45,7 +45,7 @@ export const projectQueryOptions = {
 		staleTime: STALE_TIME,
 	}),
 
-	organization: (projectId: string, client: AbstractBbsmcClient) => ({
+	organization: (projectId: string, client: AbstractmodrinthClient) => ({
 		queryKey: ['project', projectId, 'organization'] as const,
 		queryFn: () => client.labrinth.projects_v3.getOrganization(projectId),
 		staleTime: STALE_TIME,

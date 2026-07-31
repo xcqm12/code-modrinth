@@ -17,8 +17,8 @@
 </template>
 
 <script lang="ts" setup>
-import type { ComboboxOption } from '@Bbsmc/ui'
-import { Combobox, injectBbsmcClient, injectNotificationManager } from '@Bbsmc/ui'
+import type { ComboboxOption } from '@modrinth/ui'
+import { Combobox, injectmodrinthClient, injectNotificationManager } from '@modrinth/ui'
 import { useDebounceFn } from '@vueuse/core'
 import { defineAsyncComponent, h, markRaw, ref, watch } from 'vue'
 
@@ -30,7 +30,7 @@ const options = ref<ComboboxOption<string>[]>([])
 const selectedProjectOption = ref<ComboboxOption<string>>()
 const selectedProjectSearchQuery = ref('')
 
-const { labrinth } = injectBbsmcClient()
+const { labrinth } = injectmodrinthClient()
 let latestSearchQuery = ''
 
 function hitToOption(hit: { title: string; project_id: string; icon_url?: string | null }) {

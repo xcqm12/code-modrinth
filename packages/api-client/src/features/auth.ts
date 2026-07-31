@@ -34,7 +34,7 @@ export interface AuthConfig extends FeatureConfig {
  * @example
  * ```typescript
  * const auth = new AuthFeature({
- *   token: async () => process.env.Bbsmc_TOKEN
+ *   token: async () => process.env.modrinth_TOKEN
  * })
  * ```
  */

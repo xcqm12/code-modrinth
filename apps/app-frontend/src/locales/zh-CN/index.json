@@ -74,8 +74,8 @@
   "app.action-bar.install.summary.minecraft-setup-failed": {
     "message": "Minecraft 配置失败"
   },
-  "app.action-bar.install.summary.Bbsmc-unreachable": {
-    "message": "无法连接Bbsmc"
+  "app.action-bar.install.summary.modrinth-unreachable": {
+    "message": "无法连接modrinth"
   },
   "app.action-bar.install.summary.no-write-permission": {
     "message": "没有写入的权�?
@@ -132,7 +132,7 @@
     "message": "全部接受"
   },
   "app.ads-consent.body": {
-    "message": "广告�?Bbsmc 得以运营，并为创作者报酬提供资金支持。我们的合作伙伴可能会在应用中存储或访问 Cookie，以便实现广告个性化和效果衡量�?
+    "message": "广告�?modrinth 得以运营，并为创作者报酬提供资金支持。我们的合作伙伴可能会在应用中存储或访问 Cookie，以便实现广告个性化和效果衡量�?
   },
   "app.ads-consent.manage": {
     "message": "管理偏好设置"
@@ -141,7 +141,7 @@
     "message": "全部拒绝"
   },
   "app.ads-consent.title": {
-    "message": "您的隐私以及广告如何支持 Bbsmc"
+    "message": "您的隐私以及广告如何支持 modrinth"
   },
   "app.appearance-settings.advanced-rendering.description": {
     "message": "启用模糊效果等高级渲染。可能会在没有硬件加速渲染的情况下造成性能问题�?
@@ -150,7 +150,7 @@
     "message": "高级渲染"
   },
   "app.appearance-settings.color-theme.description": {
-    "message": "�?Bbsmc App 选择偏好的色彩主题�?
+    "message": "�?modrinth App 选择偏好的色彩主题�?
   },
   "app.appearance-settings.color-theme.title": {
     "message": "色彩主题"
@@ -210,7 +210,7 @@
     "message": "切换侧边�?
   },
   "app.appearance-settings.unknown-pack-warning.description": {
-    "message": "如果你尝试安装一个未托管�?Bbsmc 上的 Bbsmc 整合包文件（.mrpack），我们会确保你在安装之前了解相关风险�?
+    "message": "如果你尝试安装一个未托管�?modrinth 上的 modrinth 整合包文件（.mrpack），我们会确保你在安装之前了解相关风险�?
   },
   "app.appearance-settings.unknown-pack-warning.title": {
     "message": "安装未知整合包前提醒�?
@@ -507,13 +507,13 @@
     "message": "登录账号"
   },
   "app.instance.shared-instance-wrong-account.signed-out-header": {
-    "message": "你需要登�?Bbsmc"
+    "message": "你需要登�?modrinth"
   },
   "app.instance.shared-instance-wrong-account.user-admonition-body-v2": {
     "message": "才能接收此共享实例的更新�?
   },
   "app.instance.shared-instance-wrong-account.warning-header": {
-    "message": "你当前使用的 Bbsmc 账号不正�?
+    "message": "你当前使用的 modrinth 账号不正�?
   },
   "app.instance.worlds.add-server": {
     "message": "添加服务�?
@@ -591,7 +591,7 @@
     "message": "安装"
   },
   "app.modal.install-to-play.invite-warning": {
-    "message": "这个邀请是由另一�?Bbsmc 用户创建的，而不�?Bbsmc 官方。只接受你信任的人的邀请�?
+    "message": "这个邀请是由另一�?modrinth 用户创建的，而不�?modrinth 官方。只接受你信任的人的邀请�?
   },
   "app.modal.install-to-play.mod-count": {
     "message": "{count} 个模�?
@@ -630,7 +630,7 @@
     "message": "为了寻求支持，请咨询我们�?support-link>支持团队</support-link>为了发漏洞请进开启我们的一�?github-link>github-漏洞报告</github-link>�?
   },
   "app.modal.install-to-play.reviewed-files": {
-    "message": "只有上传�?Bbsmc 的文件才会经过审核，无论其文件格式如何（包括 .mrpack）�?
+    "message": "只有上传�?modrinth 的文件才会经过审核，无论其文件格式如何（包括 .mrpack）�?
   },
   "app.modal.install-to-play.shared-instance": {
     "message": "共享实例"
@@ -639,10 +639,10 @@
     "message": "共享的实�?
   },
   "app.modal.install-to-play.shared-instance-unknown-files-description": {
-    "message": "这实例里面有东西没有在Bbsmc。我们真的建议只安装你信任的文件源�?
+    "message": "这实例里面有东西没有在modrinth。我们真的建议只安装你信任的文件源�?
   },
   "app.modal.install-to-play.unknown-files-description": {
-    "message": "这个整合包包含一些未�?Bbsmc 发布的文件。我们强烈建议只从你信任的来源安装文件�?
+    "message": "这个整合包包含一些未�?modrinth 发布的文件。我们强烈建议只从你信任的来源安装文件�?
   },
   "app.modal.install-to-play.unknown-files-warning": {
     "message": "未知文件警告"
@@ -660,7 +660,7 @@
     "message": "已移�?
   },
   "app.modal.update-to-play.server-modpack-unknown-files-description": {
-    "message": "这服务器里面的模组有些不在Bbsmc。我们真的建议只安装你信任的文件源�?
+    "message": "这服务器里面的模组有些不在modrinth。我们真的建议只安装你信任的文件源�?
   },
   "app.modal.update-to-play.shared-instance-added-label": {
     "message": "被加入的"
@@ -669,7 +669,7 @@
     "message": "被删除的"
   },
   "app.modal.update-to-play.shared-instance-unknown-files-description": {
-    "message": "这分享实例里面有东西没有在Bbsmc。我们真的建议只安装你信任的文件源�?
+    "message": "这分享实例里面有东西没有在modrinth。我们真的建议只安装你信任的文件源�?
   },
   "app.modal.update-to-play.update-required": {
     "message": "需要更�?
@@ -705,7 +705,7 @@
     "message": "正在下载 v{version}"
   },
   "app.settings.privacy.ads-consent.intro": {
-    "message": "广告�?Bbsmc 得以运营，并为创作者报酬提供资金支持。我们的合作伙伴可能会在应用中存储或访问 Cookie，以便实现广告个性化和效果衡量。您可以在下方选择退出或管理您的偏好设置�?
+    "message": "广告�?modrinth 得以运营，并为创作者报酬提供资金支持。我们的合作伙伴可能会在应用中存储或访问 Cookie，以便实现广告个性化和效果衡量。您可以在下方选择退出或管理您的偏好设置�?
   },
   "app.settings.tabs.appearance": {
     "message": "外观"
@@ -836,14 +836,14 @@
   "app.skins.section.minecon-earth-2017": {
     "message": "MINECON Earth 2017"
   },
-  "app.skins.section.Bbsmc": {
-    "message": "Bbsmc"
+  "app.skins.section.modrinth": {
+    "message": "modrinth"
   },
-  "app.skins.section.Bbsmc-pride": {
-    "message": "Bbsmc 精�?
+  "app.skins.section.modrinth-pride": {
+    "message": "modrinth 精�?
   },
-  "app.skins.section.Bbsmc-pride.tooltip": {
-    "message": "你在骄傲月期间为 Bbsmc 的骄傲月筹款活动捐款，因此获得了这些皮肤�?
+  "app.skins.section.modrinth-pride.tooltip": {
+    "message": "你在骄傲月期间为 modrinth 的骄傲月筹款活动捐款，因此获得了这些皮肤�?
   },
   "app.skins.section.mounts-of-mayhem": {
     "message": "群骑纷争"
@@ -867,10 +867,10 @@
     "message": "登录"
   },
   "app.skins.sign-in.description": {
-    "message": "请登录您�?Minecraft 账号，以便使�?Bbsmc 应用的皮肤管理功能�?
+    "message": "请登录您�?Minecraft 账号，以便使�?modrinth 应用的皮肤管理功能�?
   },
   "app.skins.sign-in.rinthbot-alt": {
-    "message": "兴奋�?Bbsmc Bot"
+    "message": "兴奋�?modrinth Bot"
   },
   "app.skins.sign-in.title": {
     "message": "请登�?
@@ -885,13 +885,13 @@
     "message": "切换至开"
   },
   "app.update-popup.body.download-complete": {
-    "message": "Bbsmc App v{version} 更新已下载完成！立即重启更新，或退出时自动安装�?
+    "message": "modrinth App v{version} 更新已下载完成！立即重启更新，或退出时自动安装�?
   },
   "app.update-popup.body.linux": {
-    "message": "Bbsmc App v{version} 现已发布。请使用你的软件包管理器进行更新，获取最新功能与修复�?
+    "message": "modrinth App v{version} 现已发布。请使用你的软件包管理器进行更新，获取最新功能与修复�?
   },
   "app.update-popup.body.metered": {
-    "message": "Bbsmc App v{version} 现已发布！由于你正在使用按流量计费的网络，该更新未自动下载�?
+    "message": "modrinth App v{version} 现已发布！由于你正在使用按流量计费的网络，该更新未自动下载�?
   },
   "app.update-popup.changelog": {
     "message": "更新日志"
@@ -915,7 +915,7 @@
     "message": "版本 {version} 已成功安装！"
   },
   "app.world.server-modal.placeholder-address": {
-    "message": "example.Bbsmc.gg"
+    "message": "example.modrinth.gg"
   },
   "app.world.server-modal.select-an-option": {
     "message": "选择一个选项"
@@ -981,10 +981,10 @@
     "message": "这可能与对方�?Minecraft 用户名不同！"
   },
   "friends.add-friend.username.placeholder": {
-    "message": "输入 Bbsmc 用户名…�?
+    "message": "输入 modrinth 用户名…�?
   },
   "friends.add-friend.username.title": {
-    "message": "你好友的 Bbsmc 用户名是什么？"
+    "message": "你好友的 modrinth 用户名是什么？"
   },
   "friends.add-friends-to-share": {
     "message": "<link>添加好友</link> 来看看他们都在玩什么！"
@@ -1026,7 +1026,7 @@
     "message": "{title} - {count}"
   },
   "friends.sign-in-to-add-friends": {
-    "message": "登录你的 <link>Bbsmc 账号</link>，添加好友，看看他们在玩什么！"
+    "message": "登录你的 <link>modrinth 账号</link>，添加好友，看看他们在玩什么！"
   },
   "installation-settings.shared-instance.linked-title": {
     "message": "已关联的共享实例"
@@ -1047,7 +1047,7 @@
     "message": "取消发布共享实例"
   },
   "installation-settings.shared-instance.unpublish-description": {
-    "message": "从Bbsmc移除这个分享实例，同时停止发送新的更新到正在使用它的人，你的本地实例不会被影响�?
+    "message": "从modrinth移除这个分享实例，同时停止发送新的更新到正在使用它的人，你的本地实例不会被影响�?
   },
   "installation-settings.shared-instance.unpublishing-button": {
     "message": "取消发布中…�?
@@ -1062,7 +1062,7 @@
     "message": "解除共享实例关联"
   },
   "installation-settings.unpublish-shared-instance.modal.admonition-body": {
-    "message": "这将�?Bbsmc 服务器上删除该共享实例。在 Bbsmc App 中使用它的用户将停止接收更新，但你的本地实例及其内容仍会保留在此设备上�?
+    "message": "这将�?modrinth 服务器上删除该共享实例。在 modrinth App 中使用它的用户将停止接收更新，但你的本地实例及其内容仍会保留在此设备上�?
   },
   "installation-settings.unpublish-shared-instance.modal.admonition-header": {
     "message": "取消发布共享实例"
@@ -1493,40 +1493,40 @@
   "minecraft-required.sign-in": {
     "message": "登录 Microsoft 账户"
   },
-  "modal.Bbsmc-account-required.browser-description": {
-    "message": "一个新的标签页已打开，你需要在那里完成登录，然后回到Bbsmc app�?
+  "modal.modrinth-account-required.browser-description": {
+    "message": "一个新的标签页已打开，你需要在那里完成登录，然后回到modrinth app�?
   },
-  "modal.Bbsmc-account-required.cancel-button": {
+  "modal.modrinth-account-required.cancel-button": {
     "message": "取消"
   },
-  "modal.Bbsmc-account-required.continue-in-browser-heading": {
+  "modal.modrinth-account-required.continue-in-browser-heading": {
     "message": "请在你的浏览器中继续"
   },
-  "modal.Bbsmc-account-required.create-account-button": {
+  "modal.modrinth-account-required.create-account-button": {
     "message": "新建账户"
   },
-  "modal.Bbsmc-account-required.description": {
-    "message": "在使用这个功能之前，你需要登入你的Bbsmc账户�?
+  "modal.modrinth-account-required.description": {
+    "message": "在使用这个功能之前，你需要登入你的modrinth账户�?
   },
-  "modal.Bbsmc-account-required.header": {
+  "modal.modrinth-account-required.header": {
     "message": "需要账�?
   },
-  "modal.Bbsmc-account-required.open-browser-again-button": {
+  "modal.modrinth-account-required.open-browser-again-button": {
     "message": "再次开启浏览器"
   },
-  "modal.Bbsmc-account-required.sign-in-button": {
-    "message": "登录 Bbsmc"
+  "modal.modrinth-account-required.sign-in-button": {
+    "message": "登录 modrinth"
   },
-  "modal.Bbsmc-account-required.sign-in-heading": {
-    "message": "登录 Bbsmc 账号"
+  "modal.modrinth-account-required.sign-in-heading": {
+    "message": "登录 modrinth 账号"
   },
-  "modal.Bbsmc-account-required.signing-in-header": {
+  "modal.modrinth-account-required.signing-in-header": {
     "message": "正在登录"
   },
-  "modal.Bbsmc-account-required.support-prompt": {
+  "modal.modrinth-account-required.support-prompt": {
     "message": "在登录时遇到困难�?support>获取帮助</support>"
   },
-  "modal.Bbsmc-account-required.waiting-for-browser": {
+  "modal.modrinth-account-required.waiting-for-browser": {
     "message": "等待浏览器确认…�?
   },
   "search.filter.locked.instance": {

@@ -106,8 +106,8 @@
 </template>
 
 <script setup lang="ts">
-import { InfoIcon } from '@Bbsmc/assets'
-import { useScrollIndicator, useVIntl } from '@Bbsmc/ui'
+import { InfoIcon } from '@modrinth/assets'
+import { useScrollIndicator, useVIntl } from '@modrinth/ui'
 import { Dropdown } from 'floating-vue'
 
 import { analyticsChartMessages } from '../../analytics-messages'

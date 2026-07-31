@@ -51,7 +51,7 @@
     "message": "Pemaparan lanjutan"
   },
   "app.appearance-settings.color-theme.description": {
-    "message": "Pilih tema warna pilihan anda untuk Bbsmc App."
+    "message": "Pilih tema warna pilihan anda untuk modrinth App."
   },
   "app.appearance-settings.color-theme.title": {
     "message": "Tema warna"
@@ -102,7 +102,7 @@
     "message": "Togol bar sisi"
   },
   "app.appearance-settings.unknown-pack-warning.description": {
-    "message": "Jika anda cuba memasang fail Bbsmc Pack (.mrpack) yang tidak dihoskan pada Bbsmc, kami akan memastikan anda memahami risikonya sebelum memasangnya."
+    "message": "Jika anda cuba memasang fail modrinth Pack (.mrpack) yang tidak dihoskan pada modrinth, kami akan memastikan anda memahami risikonya sebelum memasangnya."
   },
   "app.appearance-settings.unknown-pack-warning.title": {
     "message": "Beri saya amaran sebelum memasang pek mod yang tidak diketahui"
@@ -365,14 +365,14 @@
   "app.skins.rate-limit.title": {
     "message": "Perlahanlah sikit!"
   },
-  "app.skins.section.Bbsmc": {
-    "message": "Bbsmc"
+  "app.skins.section.modrinth": {
+    "message": "modrinth"
   },
-  "app.skins.section.Bbsmc-pride": {
-    "message": "Bbsmc Pride"
+  "app.skins.section.modrinth-pride": {
+    "message": "modrinth Pride"
   },
-  "app.skins.section.Bbsmc-pride.tooltip": {
-    "message": "Anda menerima kekulit ini kerana menderma kepada acara pengumpulan dana Bbsmc Pride semasa Pride Month."
+  "app.skins.section.modrinth-pride.tooltip": {
+    "message": "Anda menerima kekulit ini kerana menderma kepada acara pengumpulan dana modrinth Pride semasa Pride Month."
   },
   "app.skins.section.mounts-of-mayhem": {
     "message": "Mounts of Mayhem"
@@ -396,10 +396,10 @@
     "message": "Daftar Masuk"
   },
   "app.skins.sign-in.description": {
-    "message": "Sila daftar masuk ke akaun Minecraft anda untuk menggunakan ciri pengurusan kekulit milik Bbsmc App."
+    "message": "Sila daftar masuk ke akaun Minecraft anda untuk menggunakan ciri pengurusan kekulit milik modrinth App."
   },
   "app.skins.sign-in.rinthbot-alt": {
-    "message": "Bot Bbsmc yang Teruja"
+    "message": "Bot modrinth yang Teruja"
   },
   "app.skins.sign-in.title": {
     "message": "Sila daftar masuk"
@@ -408,13 +408,13 @@
     "message": "Pemilih kekulit"
   },
   "app.update-popup.body.download-complete": {
-    "message": "Bbsmc App v{version} sudah selesai dimuat turun! Muat semula untuk kemas kini sekarang, atau kemas kini secara automatik apabila anda menutup Bbsmc App."
+    "message": "modrinth App v{version} sudah selesai dimuat turun! Muat semula untuk kemas kini sekarang, atau kemas kini secara automatik apabila anda menutup modrinth App."
   },
   "app.update-popup.body.linux": {
-    "message": "Bbsmc App v{version} tersedia. Gunakan pengurus pakej anda untuk mengemas kini dan mendapatkan ciri-ciri dan pembetulan terkini!"
+    "message": "modrinth App v{version} tersedia. Gunakan pengurus pakej anda untuk mengemas kini dan mendapatkan ciri-ciri dan pembetulan terkini!"
   },
   "app.update-popup.body.metered": {
-    "message": "Bbsmc App v{version} kini tersedia! Memandangkan anda sedang menggunakan rangkaian bermeter, kami tidak memuat turunnya secara automatik."
+    "message": "modrinth App v{version} kini tersedia! Memandangkan anda sedang menggunakan rangkaian bermeter, kami tidak memuat turunnya secara automatik."
   },
   "app.update-popup.changelog": {
     "message": "Log perubahan"
@@ -435,7 +435,7 @@
     "message": "Versi {version} telah berjaya dipasang!"
   },
   "app.world.server-modal.placeholder-address": {
-    "message": "example.Bbsmc.gg"
+    "message": "example.modrinth.gg"
   },
   "app.world.server-modal.select-an-option": {
     "message": "Pilih pilihan anda"
@@ -468,10 +468,10 @@
     "message": "Ia mungkin berbeza daripada nama pengguna Minecraft mereka!"
   },
   "friends.add-friend.username.placeholder": {
-    "message": "Masukkan nama pengguna Bbsmc..."
+    "message": "Masukkan nama pengguna modrinth..."
   },
   "friends.add-friend.username.title": {
-    "message": "Apakah nama pengguna Bbsmc rakan anda?"
+    "message": "Apakah nama pengguna modrinth rakan anda?"
   },
   "friends.add-friends-to-share": {
     "message": "<link>Tambah rakan</link> untuk melihat apa yang mereka mainkan!"
@@ -513,7 +513,7 @@
     "message": "{title} - {count}"
   },
   "friends.sign-in-to-add-friends": {
-    "message": "<link>Log masuk ke akaun Bbsmc</link> untuk menambah rakan dan melihat apa yang mereka mainkan!"
+    "message": "<link>Log masuk ke akaun modrinth</link> untuk menambah rakan dan melihat apa yang mereka mainkan!"
   },
   "instance.add-server.add-and-play": {
     "message": "Tambah dan main"

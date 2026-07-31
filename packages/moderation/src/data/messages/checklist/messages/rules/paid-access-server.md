@@ -1,5 +1,5 @@
 ## Unsupported Listing
 
-Bbsmc does not support the listing of servers that require players to pay for access or donate to be able to join.
+modrinth does not support the listing of servers that require players to pay for access or donate to be able to join.
 
-We ask that you remove such restrictions from your server before resubmission, ensuring that all Bbsmc users are able to enjoy your server as advertised for free.
+We ask that you remove such restrictions from your server before resubmission, ensuring that all modrinth users are able to enjoy your server as advertised for free.

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Kyros } from '@Bbsmc/api-client'
+import type { Kyros } from '@modrinth/api-client'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/vue-query'
 import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
@@ -10,8 +10,8 @@ import { useUploadSessionUpload } from '#ui/composables/hosting/kyros-session-up
 import { useVIntl } from '#ui/composables/i18n'
 import { useServerPermissions } from '#ui/composables/server-permissions'
 import {
-	injectBbsmcClient,
-	injectBbsmcServerContext,
+	injectmodrinthClient,
+	injectmodrinthServerContext,
 	injectNotificationManager,
 } from '#ui/providers'
 import { commonMessages } from '#ui/utils/common-messages'
@@ -25,8 +25,8 @@ const props = defineProps<{
 	showRefreshButton?: boolean
 }>()
 
-const client = injectBbsmcClient()
-const serverContext = injectBbsmcServerContext()
+const client = injectmodrinthClient()
+const serverContext = injectmodrinthServerContext()
 const {
 	serverId,
 	worldId,
@@ -135,7 +135,7 @@ const {
 })
 
 function isVisibleFileItem(item: Kyros.Files.v0.DirectoryItem) {
-	return !item.path.split('/').includes('.Bbsmc-staged')
+	return !item.path.split('/').includes('.modrinth-staged')
 }
 
 const items = computed<FileItem[]>(() =>

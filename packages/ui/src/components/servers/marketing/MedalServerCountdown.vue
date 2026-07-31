@@ -19,7 +19,7 @@
 				>
 					<ClockIcon class="clock-glow text-medal-orange size-5 shrink-0" />
 					<span class="w-full text-wrap text-lg">
-						Your <span class="text-medal-orange">Medal</span>-powered Bbsmc Server will expire in
+						Your <span class="text-medal-orange">Medal</span>-powered modrinth Server will expire in
 						<span class="text-medal-orange font-bold">{{ timeLeftCountdown.days }}</span> days
 						<span class="text-medal-orange font-bold">{{ timeLeftCountdown.hours }}</span> hours
 						<span class="text-medal-orange font-bold">{{ timeLeftCountdown.minutes }}</span> minutes
@@ -43,8 +43,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
-import { ClockIcon, RocketIcon } from '@Bbsmc/assets'
+import type { Labrinth } from '@modrinth/api-client'
+import { ClockIcon, RocketIcon } from '@modrinth/assets'
 import { useQuery } from '@tanstack/vue-query'
 import dayjs from 'dayjs'
 import dayjsDuration from 'dayjs/plugin/duration'
@@ -52,7 +52,7 @@ import { type ComponentPublicInstance, computed, onMounted, onUnmounted, ref } f
 
 import ButtonStyled from '#ui/components/base/ButtonStyled.vue'
 import ServersUpgradeModalWrapper from '#ui/components/billing/ServersUpgradeModalWrapper.vue'
-import { injectBbsmcClient } from '#ui/providers'
+import { injectmodrinthClient } from '#ui/providers'
 
 import MedalBackgroundImage from './MedalBackgroundImage.vue'
 
@@ -68,7 +68,7 @@ const props = defineProps<{
 	products?: Labrinth.Billing.Internal.Product[]
 }>()
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const { data: subscriptions } = useQuery({
 	queryKey: ['billing', 'subscriptions'],
 	queryFn: () => client.labrinth.billing_internal.getSubscriptions(),

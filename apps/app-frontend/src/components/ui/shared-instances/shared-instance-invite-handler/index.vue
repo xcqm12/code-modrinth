@@ -1,5 +1,5 @@
 <template>
-	<BbsmcAccountRequiredModal ref="accountRequiredModal" :request-auth="requestAuth" />
+	<modrinthAccountRequiredModal ref="accountRequiredModal" :request-auth="requestAuth" />
 	<SharedInstanceInstallModal ref="installModal" />
 	<SharedInstanceAlreadyInstalledModal
 		ref="alreadyInstalledModal"
@@ -10,13 +10,13 @@
 </template>
 
 <script setup lang="ts">
-import { injectAuth } from '@Bbsmc/ui'
+import { injectAuth } from '@modrinth/ui'
 import { nextTick, ref } from 'vue'
 
-import BbsmcAccountRequiredModal from '@/components/ui/modal/BbsmcAccountRequiredModal.vue'
+import modrinthAccountRequiredModal from '@/components/ui/modal/modrinthAccountRequiredModal.vue'
 import SharedInstanceInstallModal from '@/components/ui/shared-instances/shared-instance-install-modal/index.vue'
 import SharedInstanceAlreadyInstalledModal from '@/components/ui/shared-instances/SharedInstanceAlreadyInstalledModal.vue'
-import type { BbsmcAuthFlow } from '@/helpers/mr_auth'
+import type { modrinthAuthFlow } from '@/helpers/mr_auth'
 
 import type { SharedInstanceInviteHandler } from './shared-instance-invite-types'
 import { useSharedInstanceInviteHandler } from './use-shared-instance-invite-handler'
@@ -24,7 +24,7 @@ import { useSharedInstanceInviteHandler } from './use-shared-instance-invite-han
 const auth = injectAuth()
 const installModal = ref<InstanceType<typeof SharedInstanceInstallModal>>()
 const alreadyInstalledModal = ref<InstanceType<typeof SharedInstanceAlreadyInstalledModal>>()
-const accountRequiredModal = ref<InstanceType<typeof BbsmcAccountRequiredModal>>()
+const accountRequiredModal = ref<InstanceType<typeof modrinthAccountRequiredModal>>()
 const {
 	handleNotification,
 	installFromInviteId,
@@ -34,7 +34,7 @@ const {
 	handleAlreadyInstalledInstallAnyway,
 } = useSharedInstanceInviteHandler(installModal, alreadyInstalledModal, accountRequiredModal)
 
-async function requestAuth(flow: BbsmcAuthFlow) {
+async function requestAuth(flow: modrinthAuthFlow) {
 	await auth.requestSignIn('', flow, { showModal: false })
 	await nextTick()
 	return !!auth.session_token.value

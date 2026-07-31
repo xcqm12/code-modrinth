@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	commonMessages,
 	defineMessages,
@@ -10,8 +10,8 @@ import {
 	provideInstallationSettings,
 	useDebugLogger,
 	useVIntl,
-} from '@Bbsmc/ui'
-import type { GameVersionTag, PlatformTag } from '@Bbsmc/utils'
+} from '@modrinth/ui'
+import type { GameVersionTag, PlatformTag } from '@modrinth/utils'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { computed, ref } from 'vue'
 
@@ -28,8 +28,8 @@ import {
 	edit,
 	get_linked_modpack_info,
 	unlink_shared_instance,
-	update_managed_Bbsmc_version,
-	update_repair_Bbsmc,
+	update_managed_modrinth_version,
+	update_repair_modrinth,
 } from '@/helpers/instance'
 import { get_loader_versions } from '@/helpers/metadata'
 import { get_game_versions, get_loaders } from '@/helpers/tags'
@@ -109,9 +109,9 @@ debug('metadata queries configured', {
 	gameVersion: instance.value.game_version,
 })
 
-const isBbsmcLinkedModpack = computed(
+const ismodrinthLinkedModpack = computed(
 	() =>
-		instance.value.link?.type === 'Bbsmc_modpack' ||
+		instance.value.link?.type === 'modrinth_modpack' ||
 		instance.value.link?.type === 'server_project_modpack' ||
 		(instance.value.link?.type === 'shared_instance' &&
 			!!instance.value.link.modpack_project_id &&
@@ -124,7 +124,7 @@ const canUnlinkSharedInstance = managedContentPolicy.canUnlink
 const modpackInfoQuery = useQuery({
 	queryKey: computed(() => ['linkedModpackInfo', instance.value.id]),
 	queryFn: () => get_linked_modpack_info(instance.value.id, 'must_revalidate'),
-	enabled: computed(() => isBbsmcLinkedModpack.value && !offline),
+	enabled: computed(() => ismodrinthLinkedModpack.value && !offline),
 })
 const modpackInfo = modpackInfoQuery.data
 
@@ -227,7 +227,7 @@ provideInstallationSettings({
 	}),
 	isLinked: computed(
 		() =>
-			isBbsmcLinkedModpack.value ||
+			ismodrinthLinkedModpack.value ||
 			isImportedModpack.value ||
 			isSharedInstanceManagedModpack.value,
 	),
@@ -298,7 +298,7 @@ provideInstallationSettings({
 			})
 			return result
 		}
-		const placeholder = manifest.gameVersions?.find((item) => item.id === '${Bbsmc.gameVersion}')
+		const placeholder = manifest.gameVersions?.find((item) => item.id === '${modrinth.gameVersion}')
 		if (placeholder) {
 			const result = manifest.gameVersions?.some((item) => item.id === gameVersion)
 				? placeholder.loaders
@@ -384,7 +384,7 @@ provideInstallationSettings({
 			if (isImportedModpack.value) {
 				shouldTrack = await installLocalModpackFromPicker()
 			} else {
-				await update_repair_Bbsmc(instance.value.id).catch(handleError)
+				await update_repair_modrinth(instance.value.id).catch(handleError)
 				shouldTrack = true
 			}
 		} finally {
@@ -450,7 +450,7 @@ provideInstallationSettings({
 			versionId: version.id,
 			instanceId: instance.value.id,
 		})
-		await update_managed_Bbsmc_version(instance.value.id, version.id)
+		await update_managed_modrinth_version(instance.value.id, version.id)
 		await queryClient.invalidateQueries({
 			queryKey: ['linkedModpackInfo', instance.value.id],
 		})
@@ -470,7 +470,7 @@ provideInstallationSettings({
 	isApp: true,
 	showModpackVersionActions: computed(
 		() =>
-			isBbsmcLinkedModpack.value &&
+			ismodrinthLinkedModpack.value &&
 			!isMinecraftServer.value &&
 			!isSharedInstanceManagedModpack.value,
 	),

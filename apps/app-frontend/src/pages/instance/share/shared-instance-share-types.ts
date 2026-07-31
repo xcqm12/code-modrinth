@@ -19,4 +19,4 @@ export const methodLabels: Record<ShareMethod, string> = {
 	link: 'Share link',
 }
 
-export { normalizeInviteKey } from '@Bbsmc/ui'
+export { normalizeInviteKey } from '@modrinth/ui'

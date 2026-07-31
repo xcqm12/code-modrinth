@@ -219,7 +219,7 @@ import {
 	SaveIcon,
 	TrashIcon,
 	UploadIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { computed, nextTick, ref } from 'vue'
 
@@ -227,14 +227,14 @@ import { ButtonStyled, ConfirmModal, NewModal, StyledInput, Table, TagItem } fro
 import type { TableColumn } from '#ui/components/base'
 import { useServerPermissions } from '#ui/composables/server-permissions'
 import {
-	injectBbsmcClient,
-	injectBbsmcServerContext,
+	injectmodrinthClient,
+	injectmodrinthServerContext,
 	injectNotificationManager,
 } from '#ui/providers'
 
 const { addNotification } = injectNotificationManager()
-const { server, serverId } = injectBbsmcServerContext()
-const client = injectBbsmcClient()
+const { server, serverId } = injectmodrinthServerContext()
+const client = injectmodrinthClient()
 const queryClient = useQueryClient()
 const { canUseAdvancedSettings, permissionDeniedMessage } = useServerPermissions()
 

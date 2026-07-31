@@ -78,7 +78,7 @@
     "message": "Edistynyt renderointi"
   },
   "app.appearance-settings.color-theme.description": {
-    "message": "Valitse haluamasi väriteema Bbsmc Appille."
+    "message": "Valitse haluamasi väriteema modrinth Appille."
   },
   "app.appearance-settings.color-theme.title": {
     "message": "Väriteema"
@@ -138,7 +138,7 @@
     "message": "Kytke sivupalkki"
   },
   "app.appearance-settings.unknown-pack-warning.description": {
-    "message": "Jos yrität asentaa Bbsmc-pakettitiedoston (.mrpack), jota ei ole isännöity Bbsmcissä, varmistamme, että ymmärrät riskit ennen asennusta."
+    "message": "Jos yrität asentaa modrinth-pakettitiedoston (.mrpack), jota ei ole isännöity modrinthissä, varmistamme, että ymmärrät riskit ennen asennusta."
   },
   "app.appearance-settings.unknown-pack-warning.title": {
     "message": "Varoita minua ennen tuntemattomien modipakettien asentamista"
@@ -521,14 +521,14 @@
   "app.skins.section.minecon-earth-2017": {
     "message": "MINECON Earth 2017"
   },
-  "app.skins.section.Bbsmc": {
-    "message": "Bbsmc"
+  "app.skins.section.modrinth": {
+    "message": "modrinth"
   },
-  "app.skins.section.Bbsmc-pride": {
-    "message": "Bbsmc Pride"
+  "app.skins.section.modrinth-pride": {
+    "message": "modrinth Pride"
   },
-  "app.skins.section.Bbsmc-pride.tooltip": {
-    "message": "Sait nämä skinit lahjoittamalla Bbsmcin Pride-keräykseen Pride-kuukauden aikana."
+  "app.skins.section.modrinth-pride.tooltip": {
+    "message": "Sait nämä skinit lahjoittamalla modrinthin Pride-keräykseen Pride-kuukauden aikana."
   },
   "app.skins.section.mounts-of-mayhem": {
     "message": "Sekasorron ratsut"
@@ -552,10 +552,10 @@
     "message": "Kirjaudu sisään"
   },
   "app.skins.sign-in.description": {
-    "message": "Kirjaudu Minecraft-tilillesi käyttääksesi Bbsmc-sovelluksen ulkoasujen hallintaominaisuuksia."
+    "message": "Kirjaudu Minecraft-tilillesi käyttääksesi modrinth-sovelluksen ulkoasujen hallintaominaisuuksia."
   },
   "app.skins.sign-in.rinthbot-alt": {
-    "message": "Innostunut Bbsmc Botti"
+    "message": "Innostunut modrinth Botti"
   },
   "app.skins.sign-in.title": {
     "message": "Kirjaudu sisään"
@@ -570,13 +570,13 @@
     "message": "Ota käyttöön"
   },
   "app.update-popup.body.download-complete": {
-    "message": "Bbsmc App versio {version} on ladattu. Voit käynnistää sovelluksen uudelleen päivittääksesi heti tai antaa päivityksen asentua automaattisesti, kun suljet Bbsmc Appin."
+    "message": "modrinth App versio {version} on ladattu. Voit käynnistää sovelluksen uudelleen päivittääksesi heti tai antaa päivityksen asentua automaattisesti, kun suljet modrinth Appin."
   },
   "app.update-popup.body.linux": {
-    "message": "Bbsmc App versio {version} on saatavilla. Käytä paketinhallintasi ja päivitä käyttääksesi uusimpia ominaisuuksia ja korjauksia!"
+    "message": "modrinth App versio {version} on saatavilla. Käytä paketinhallintasi ja päivitä käyttääksesi uusimpia ominaisuuksia ja korjauksia!"
   },
   "app.update-popup.body.metered": {
-    "message": "Bbsmc App versio {version} on nyt saatavilla! Koska käytät käytön mukaan laskutettavaa verkkoa, emme ladannut sitä automaattisesti."
+    "message": "modrinth App versio {version} on nyt saatavilla! Koska käytät käytön mukaan laskutettavaa verkkoa, emme ladannut sitä automaattisesti."
   },
   "app.update-popup.changelog": {
     "message": "Muutosloki"
@@ -600,7 +600,7 @@
     "message": "Versio {version} asennettiin onnistuneesti!"
   },
   "app.world.server-modal.placeholder-address": {
-    "message": "example.Bbsmc.gg"
+    "message": "example.modrinth.gg"
   },
   "app.world.server-modal.select-an-option": {
     "message": "Valitse vaihtoehto"
@@ -633,10 +633,10 @@
     "message": "Se ei voi olla eri kuin heidän Minecraft-käyttäjänimi!"
   },
   "friends.add-friend.username.placeholder": {
-    "message": "Syötä Bbsmc-käyttäjätunnus..."
+    "message": "Syötä modrinth-käyttäjätunnus..."
   },
   "friends.add-friend.username.title": {
-    "message": "Mikä on ystäväsi Bbsmc-käyttäjänimi?"
+    "message": "Mikä on ystäväsi modrinth-käyttäjänimi?"
   },
   "friends.add-friends-to-share": {
     "message": "<link>Lisää kavereita</link> nähdäksesi mitä he pelaavat!"
@@ -678,7 +678,7 @@
     "message": "{title} - {count}"
   },
   "friends.sign-in-to-add-friends": {
-    "message": "<link>Kirjaudu Bbsmc-tilille</link> lisätäksesi ystäviä ja nähdäksesi mitä he pelaavat!"
+    "message": "<link>Kirjaudu modrinth-tilille</link> lisätäksesi ystäviä ja nähdäksesi mitä he pelaavat!"
   },
   "instance.action.create-shortcut": {
     "message": "Luo pikakuvake"

@@ -90,7 +90,7 @@ pub enum PackDependency {
 #[derive(Serialize, Deserialize, Debug, Clone)]
 #[serde(rename_all = "camelCase", tag = "type")]
 pub enum CreatePackLocation {
-    // Create a pack from a Bbsmc version ID (such as a modpack)
+    // Create a pack from a modrinth version ID (such as a modpack)
     FromVersionId {
         project_id: String,
         version_id: String,
@@ -113,7 +113,7 @@ pub struct CreatePackInstance {
     pub icon: Option<PathBuf>,          // the icon for the instance
     pub icon_url: Option<String>, // the URL icon for an instance during import
     pub link: Option<InstanceLink>,
-    pub unknown_file: bool, // true when the mrpack archive isn't found on Bbsmc via hash lookup
+    pub unknown_file: bool, // true when the mrpack archive isn't found on modrinth via hash lookup
     pub external_files_in_modpack: Vec<String>,
     pub skip_install_profile: Option<bool>,
     pub no_watch: Option<bool>,
@@ -175,7 +175,7 @@ pub async fn get_instance_from_pack(
         } => Ok(CreatePackInstance {
             name: title,
             icon_url,
-            link: Some(InstanceLink::BbsmcModpack {
+            link: Some(InstanceLink::modrinthModpack {
                 project_id,
                 version_id,
             }),
@@ -204,7 +204,7 @@ pub async fn get_instance_from_pack(
                     Ok(files) => !files.is_empty(),
                     Err(err) => {
                         tracing::warn!(
-                            "Failed to check Bbsmc file hash for {}: {}",
+                            "Failed to check modrinth file hash for {}: {}",
                             path.display(),
                             err
                         );
@@ -523,7 +523,7 @@ pub async fn set_instance_information(
     };
     let link = match (&description.project_id, &description.version_id) {
         (Some(project_id), Some(version_id)) => {
-            Some(InstanceLink::BbsmcModpack {
+            Some(InstanceLink::modrinthModpack {
                 project_id: project_id.clone(),
                 version_id: version_id.clone(),
             })
@@ -540,8 +540,8 @@ pub async fn set_instance_information(
         _ => None,
     };
     let source_kind = match &link {
-        Some(InstanceLink::BbsmcModpack { .. }) => {
-            Some(ContentSourceKind::BbsmcModpack)
+        Some(InstanceLink::modrinthModpack { .. }) => {
+            Some(ContentSourceKind::modrinthModpack)
         }
         Some(InstanceLink::ImportedModpack { .. }) => {
             Some(ContentSourceKind::ImportedModpack)

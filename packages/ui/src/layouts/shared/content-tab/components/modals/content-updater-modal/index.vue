@@ -272,7 +272,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	CircleAlertIcon,
 	DownloadIcon,
@@ -283,13 +283,13 @@ import {
 	SpinnerIcon,
 	TriangleAlertIcon,
 	XIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	capitalizeString,
 	formatVersionsForDisplay,
 	type GameVersionTag,
 	renderHighlightedString,
-} from '@Bbsmc/utils'
+} from '@modrinth/utils'
 import { useTimeoutFn } from '@vueuse/core'
 import { computed, ref, toRef } from 'vue'
 

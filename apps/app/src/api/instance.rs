@@ -43,11 +43,11 @@ pub fn init<R: tauri::Runtime>() -> tauri::plugin::TauriPlugin<R> {
             instance_install_project_with_dependencies,
             instance_switch_project_version_with_dependencies,
             instance_add_project_from_path,
-            instance_is_file_on_Bbsmc,
+            instance_is_file_on_modrinth,
             instance_toggle_disable_project,
             instance_remove_project,
-            instance_update_managed_Bbsmc_version,
-            instance_repair_managed_Bbsmc,
+            instance_update_managed_modrinth_version,
+            instance_repair_managed_modrinth,
             instance_run,
             instance_kill,
             instance_edit,
@@ -103,7 +103,7 @@ pub struct Instance {
 #[derive(Serialize, Deserialize, Debug, Clone)]
 #[serde(tag = "type", rename_all = "snake_case")]
 pub enum InstanceLink {
-    BbsmcModpack {
+    modrinthModpack {
         project_id: String,
         version_id: String,
     },
@@ -124,7 +124,7 @@ pub enum InstanceLink {
         version_number: Option<String>,
         filename: Option<String>,
     },
-    BbsmcHosting {
+    modrinthHosting {
         server_id: String,
         instance_ids: Vec<String>,
         active_instance_id: Option<String>,
@@ -269,10 +269,10 @@ impl InstanceLink {
     fn from_core(link: CoreInstanceLink) -> Option<Self> {
         match link {
             CoreInstanceLink::Unmanaged => None,
-            CoreInstanceLink::BbsmcModpack {
+            CoreInstanceLink::modrinthModpack {
                 project_id,
                 version_id,
-            } => Some(Self::BbsmcModpack {
+            } => Some(Self::modrinthModpack {
                 project_id,
                 version_id,
             }),
@@ -303,11 +303,11 @@ impl InstanceLink {
                 version_number,
                 filename,
             }),
-            CoreInstanceLink::BbsmcHosting {
+            CoreInstanceLink::modrinthHosting {
                 server_id,
                 instance_ids,
                 active_instance_id,
-            } => Some(Self::BbsmcHosting {
+            } => Some(Self::modrinthHosting {
                 server_id: server_id.to_string(),
                 instance_ids: instance_ids
                     .into_iter()
@@ -327,10 +327,10 @@ impl InstanceLink {
 
     pub(crate) fn into_core(self) -> Result<CoreInstanceLink> {
         match self {
-            Self::BbsmcModpack {
+            Self::modrinthModpack {
                 project_id,
                 version_id,
-            } => Ok(CoreInstanceLink::BbsmcModpack {
+            } => Ok(CoreInstanceLink::modrinthModpack {
                 project_id,
                 version_id,
             }),
@@ -360,11 +360,11 @@ impl InstanceLink {
                 version_number,
                 filename,
             }),
-            Self::BbsmcHosting {
+            Self::modrinthHosting {
                 server_id,
                 instance_ids,
                 active_instance_id,
-            } => Ok(CoreInstanceLink::BbsmcHosting {
+            } => Ok(CoreInstanceLink::modrinthHosting {
                 server_id: server_id.parse().map_err(|err| {
                     theseus::Error::from(theseus::ErrorKind::InputError(
                         format!("Invalid server id: {err}"),
@@ -678,8 +678,8 @@ pub async fn instance_add_project_from_path(
 }
 
 #[tauri::command]
-pub async fn instance_is_file_on_Bbsmc(project_path: &Path) -> Result<bool> {
-    Ok(theseus::instance::is_file_on_Bbsmc(project_path).await?)
+pub async fn instance_is_file_on_modrinth(project_path: &Path) -> Result<bool> {
+    Ok(theseus::instance::is_file_on_modrinth(project_path).await?)
 }
 
 #[tauri::command]
@@ -706,11 +706,11 @@ pub async fn instance_remove_project(
 }
 
 #[tauri::command]
-pub async fn instance_update_managed_Bbsmc_version(
+pub async fn instance_update_managed_modrinth_version(
     instance_id: String,
     version_id: String,
 ) -> Result<theseus::install::InstallJobSnapshot> {
-    Ok(theseus::instance::update_managed_Bbsmc_version(
+    Ok(theseus::instance::update_managed_modrinth_version(
         &instance_id,
         &version_id,
     )
@@ -718,10 +718,10 @@ pub async fn instance_update_managed_Bbsmc_version(
 }
 
 #[tauri::command]
-pub async fn instance_repair_managed_Bbsmc(
+pub async fn instance_repair_managed_modrinth(
     instance_id: &str,
 ) -> Result<theseus::install::InstallJobSnapshot> {
-    Ok(theseus::instance::repair_managed_Bbsmc(instance_id).await?)
+    Ok(theseus::instance::repair_managed_modrinth(instance_id).await?)
 }
 
 #[tauri::command]

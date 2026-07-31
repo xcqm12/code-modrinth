@@ -2,22 +2,22 @@
 import {
 	commonMessages,
 	defineMessages,
-	injectBbsmcClient,
-	injectBbsmcServerContext,
+	injectmodrinthClient,
+	injectmodrinthServerContext,
 	ServersManageContentPage,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 
-const client = injectBbsmcClient()
-const { server, serverId, worldId } = injectBbsmcServerContext()
+const client = injectmodrinthClient()
+const { server, serverId, worldId } = injectmodrinthServerContext()
 const queryClient = useQueryClient()
 const { formatMessage } = useVIntl()
 
 const messages = defineMessages({
 	title: {
 		id: 'servers.manage.content.title',
-		defaultMessage: 'Content - {serverName} - Bbsmc',
+		defaultMessage: 'Content - {serverName} - modrinth',
 	},
 })
 
@@ -45,7 +45,7 @@ if (contentWorldId) {
 		})
 
 		const modpackProjectId =
-			content.modpack?.spec.platform === 'Bbsmc' ? content.modpack.spec.project_id : null
+			content.modpack?.spec.platform === 'modrinth' ? content.modpack.spec.project_id : null
 
 		if (modpackProjectId) {
 			await queryClient.ensureQueryData({

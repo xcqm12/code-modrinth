@@ -255,7 +255,7 @@ import {
 	TriangleAlertIcon,
 	UploadIcon,
 	XIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import { computed, ref, watch } from 'vue'
 
 import AutoLink from '#ui/components/base/AutoLink.vue'

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PagewideBanner } from '@Bbsmc/ui'
+import { PagewideBanner } from '@modrinth/ui'
 
 const flags = useFeatureFlags()
 const route = useRoute()

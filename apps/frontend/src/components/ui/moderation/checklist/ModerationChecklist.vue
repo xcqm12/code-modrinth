@@ -380,7 +380,7 @@ import {
 	ToggleRightIcon,
 	UndoIcon,
 	XIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	type IdentifiedNodeBuilder,
 	moderationSettings,
@@ -388,7 +388,7 @@ import {
 	type Priority,
 	type StageNodeBuilder,
 	type ValueNodeBuilder,
-} from '@Bbsmc/moderation'
+} from '@modrinth/moderation'
 import {
 	createTrackedPatch,
 	evalSegment,
@@ -404,21 +404,21 @@ import {
 	setMissingMdHandler,
 	useStages,
 	walkNodes,
-} from '@Bbsmc/moderation'
+} from '@modrinth/moderation'
 import {
 	Avatar,
 	ButtonStyled,
 	Collapsible,
 	ConfirmModal,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	injectProjectPageContext,
 	MarkdownEditor,
 	StyledInput,
 	useDebugLogger,
-} from '@Bbsmc/ui'
-import TeleportOverflowMenu from '@Bbsmc/ui/src/components/base/TeleportOverflowMenu.vue'
-import type { ProjectStatus } from '@Bbsmc/utils'
+} from '@modrinth/ui'
+import TeleportOverflowMenu from '@modrinth/ui/src/components/base/TeleportOverflowMenu.vue'
+import type { ProjectStatus } from '@modrinth/utils'
 import { useQueryClient } from '@tanstack/vue-query'
 import { useDebounceFn } from '@vueuse/core'
 import type { Component } from 'vue'
@@ -458,7 +458,7 @@ setMissingMdHandler((path) => missingMdPaths.add(path))
 
 const nodeStates = ref<Record<string, Record<string, NodeState>>>({})
 const resolvedStages = ref(useStages(nodeStates))
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 
 const moderationQueue = useModerationQueue()
 const queryClient = useQueryClient()

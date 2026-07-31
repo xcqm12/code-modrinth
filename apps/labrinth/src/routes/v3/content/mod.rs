@@ -14,7 +14,7 @@ use crate::queue::session::AuthQueue;
 use actix_web::{HttpRequest, post, web};
 use ariadne::ids::base62_impl::parse_base62;
 use async_trait::async_trait;
-use Bbsmc_content_management::{
+use modrinth_content_management::{
     ContentMetadataProvider, Error as ResolveError, ResolveContentPlan,
     ResolveContentRequest,
 };
@@ -69,7 +69,7 @@ pub async fn resolve_content(
     let plan = if cache_public_result {
         resolve_content_with_cache(&mut provider, request).await
     } else {
-        Bbsmc_content_management::resolve_content(&mut provider, request)
+        modrinth_content_management::resolve_content(&mut provider, request)
             .await
     }
     .map_err(resolve_error_to_api)?;
@@ -119,7 +119,7 @@ struct VersionState<'a> {
 struct ResolveContentHeatKey<'a> {
     project_id: &'a str,
     version_id: Option<&'a str>,
-    content_type: Bbsmc_content_management::ContentType,
+    content_type: modrinth_content_management::ContentType,
 }
 
 #[async_trait]
@@ -127,7 +127,7 @@ impl ContentMetadataProvider for &mut LabrinthContentProvider<'_> {
     async fn get_version(
         &mut self,
         version_id: &str,
-    ) -> Result<Option<Bbsmc_content_management::Version>, ResolveError>
+    ) -> Result<Option<modrinth_content_management::Version>, ResolveError>
     {
         let Some(db_version_id) = parse_version_id(version_id) else {
             return Ok(None);
@@ -163,7 +163,7 @@ impl ContentMetadataProvider for &mut LabrinthContentProvider<'_> {
     async fn get_project_versions(
         &mut self,
         project_id: &str,
-    ) -> Result<Vec<Bbsmc_content_management::Version>, ResolveError> {
+    ) -> Result<Vec<modrinth_content_management::Version>, ResolveError> {
         let project = DBProject::get(project_id, self.pool, self.redis)
             .await
             .map_err(resolve_provider_error)?;
@@ -213,7 +213,7 @@ impl LabrinthContentProvider<'_> {
     fn record_version(
         &mut self,
         version_id: &str,
-        version: Option<&Bbsmc_content_management::Version>,
+        version: Option<&modrinth_content_management::Version>,
     ) {
         self.trace
             .versions
@@ -223,7 +223,7 @@ impl LabrinthContentProvider<'_> {
     fn record_project_versions(
         &mut self,
         project_id: &str,
-        versions: &[Bbsmc_content_management::Version],
+        versions: &[modrinth_content_management::Version],
     ) {
         self.trace
             .project_versions
@@ -266,7 +266,7 @@ async fn resolve_content_with_cache(
 
     provider.reset_trace();
     let plan =
-        Bbsmc_content_management::resolve_content(&mut *provider, request)
+        modrinth_content_management::resolve_content(&mut *provider, request)
             .await?;
     let trace = provider.trace();
     set_cached_resolve_content_plan(
@@ -478,7 +478,7 @@ fn normalized_resolve_content_request(
 }
 
 fn hash_optional_version(
-    version: Option<&Bbsmc_content_management::Version>,
+    version: Option<&modrinth_content_management::Version>,
 ) -> String {
     match version {
         Some(version) => format!("some:{}", hash_version(version)),
@@ -487,7 +487,7 @@ fn hash_optional_version(
 }
 
 fn hash_project_versions(
-    versions: &[Bbsmc_content_management::Version],
+    versions: &[modrinth_content_management::Version],
 ) -> String {
     let mut versions = versions
         .iter()
@@ -498,7 +498,7 @@ fn hash_project_versions(
     hash_serializable(&versions)
 }
 
-fn hash_version(version: &Bbsmc_content_management::Version) -> String {
+fn hash_version(version: &modrinth_content_management::Version) -> String {
     let mut dependencies = version
         .dependencies
         .iter()
@@ -538,15 +538,15 @@ fn hash_version(version: &Bbsmc_content_management::Version) -> String {
 }
 
 fn dependency_type_cache_key(
-    dependency_type: Bbsmc_content_management::DependencyType,
+    dependency_type: modrinth_content_management::DependencyType,
 ) -> &'static str {
     match dependency_type {
-        Bbsmc_content_management::DependencyType::Required => "required",
-        Bbsmc_content_management::DependencyType::Optional => "optional",
-        Bbsmc_content_management::DependencyType::Incompatible => {
+        modrinth_content_management::DependencyType::Required => "required",
+        modrinth_content_management::DependencyType::Optional => "optional",
+        modrinth_content_management::DependencyType::Incompatible => {
             "incompatible"
         }
-        Bbsmc_content_management::DependencyType::Embedded => "embedded",
+        modrinth_content_management::DependencyType::Embedded => "embedded",
     }
 }
 
@@ -576,7 +576,7 @@ async fn visible_versions(
 
 fn version_to_resolver(
     version: Version,
-) -> Bbsmc_content_management::Version {
+) -> modrinth_content_management::Version {
     let game_versions = version
         .fields
         .get("game_versions")
@@ -584,14 +584,14 @@ fn version_to_resolver(
         .and_then(|value| serde_json::from_value(value).ok())
         .unwrap_or_default();
 
-    Bbsmc_content_management::Version {
+    modrinth_content_management::Version {
         id: version.id.to_string(),
         project_id: version.project_id.to_string(),
         date_published: version.date_published,
         dependencies: version
             .dependencies
             .into_iter()
-            .map(|dependency| Bbsmc_content_management::Dependency {
+            .map(|dependency| modrinth_content_management::Dependency {
                 version_id: dependency.version_id.map(|id| id.to_string()),
                 project_id: dependency.project_id.map(|id| id.to_string()),
                 file_name: dependency.file_name,
@@ -607,19 +607,19 @@ fn version_to_resolver(
 
 fn dependency_type_to_resolver(
     dependency_type: DependencyType,
-) -> Bbsmc_content_management::DependencyType {
+) -> modrinth_content_management::DependencyType {
     match dependency_type {
         DependencyType::Required => {
-            Bbsmc_content_management::DependencyType::Required
+            modrinth_content_management::DependencyType::Required
         }
         DependencyType::Optional => {
-            Bbsmc_content_management::DependencyType::Optional
+            modrinth_content_management::DependencyType::Optional
         }
         DependencyType::Incompatible => {
-            Bbsmc_content_management::DependencyType::Incompatible
+            modrinth_content_management::DependencyType::Incompatible
         }
         DependencyType::Embedded => {
-            Bbsmc_content_management::DependencyType::Embedded
+            modrinth_content_management::DependencyType::Embedded
         }
     }
 }

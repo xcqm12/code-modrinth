@@ -134,7 +134,7 @@
 
 		<p>
 			You must own or have the necessary licenses, rights, consents, and permissions to store,
-			share, and distribute the Content that is uploaded under your Bbsmc account.
+			share, and distribute the Content that is uploaded under your modrinth account.
 		</p>
 
 		<p>
@@ -177,10 +177,10 @@
 
 <script setup>
 const description =
-	'The Content Rules of Bbsmc, an open source modding platform focused on Minecraft.'
+	'The Content Rules of modrinth, an open source modding platform focused on Minecraft.'
 
 useSeoMeta({
-	title: 'Content Rules - Bbsmc',
+	title: 'Content Rules - modrinth',
 	description,
 	ogTitle: 'Content Rules',
 	ogDescription: description,

@@ -6,7 +6,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 
 <template>
 	<StyledEmail
-		title="Verify your Bbsmc email"
+		title="Verify your modrinth email"
 		:manual-links="[{ link: '{verifyemail.url}', label: 'Verification link' }]"
 	>
 		<Heading as="h1" class="mb-2 text-2xl font-bold"> Verify your email </Heading>

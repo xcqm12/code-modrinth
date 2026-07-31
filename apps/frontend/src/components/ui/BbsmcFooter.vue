@@ -6,7 +6,7 @@ import {
 	MastodonIcon,
 	ToggleRightIcon,
 	TwitterIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	AutoLink,
 	ButtonStyled,
@@ -16,8 +16,8 @@ import {
 	IntlFormatted,
 	type MessageDescriptor,
 	useVIntl,
-} from '@Bbsmc/ui'
-import { commonSettingsMessages } from '@Bbsmc/ui/src/utils/common-messages.js'
+} from '@modrinth/ui'
+import { commonSettingsMessages } from '@modrinth/ui/src/utils/common-messages.js'
 
 import qilingmiaoLogo from '~/assets/images/qilingmiao.png'
 
@@ -27,8 +27,8 @@ const { addNotification } = injectNotificationManager()
 const config = useRuntimeConfig()
 
 const messages = defineMessages({
-	BbsmcInformation: {
-		id: 'layout.footer.Bbsmc-information',
+	modrinthInformation: {
+		id: 'layout.footer.modrinth-information',
 		defaultMessage: 'Site information',
 	},
 	openSource: {
@@ -38,7 +38,7 @@ const messages = defineMessages({
 	legalDisclaimer: {
 		id: 'layout.footer.legal-disclaimer',
 		defaultMessage:
-			'Minecraft and 我的世界 are trademarks of Microsoft Corporation. This site is not affiliated with or endorsed by Microsoft. This site is not affiliated with Bbsmc. The website is released under the LGPL license.',
+			'Minecraft and 我的世界 are trademarks of Microsoft Corporation. This site is not affiliated with or endorsed by Microsoft. This site is not affiliated with modrinth. The website is released under the LGPL license.',
 	},
 	basedOnLabel: {
 		id: 'layout.footer.based-on-label',
@@ -84,7 +84,7 @@ const socialLinks: {
 	},
 	{
 		label: defineMessage({ id: 'layout.footer.social.mastodon', defaultMessage: 'Mastodon' }),
-		href: 'https://floss.social/@Bbsmc',
+		href: 'https://floss.social/@modrinth',
 		icon: MastodonIcon,
 		rel: 'me',
 	},
@@ -95,7 +95,7 @@ const socialLinks: {
 	},
 	{
 		label: defineMessage({ id: 'layout.footer.social.github', defaultMessage: 'GitHub' }),
-		href: 'https://github.com/xcqm12/code-Bbsmc',
+		href: 'https://github.com/xcqm12/code-modrinth',
 		icon: GithubIcon,
 	},
 ]
@@ -140,17 +140,17 @@ const footerLinks: {
 		links: [
 			{
 				href: '/plus',
-				label: defineMessage({ id: 'layout.footer.products.plus', defaultMessage: 'Bbsmc+' }),
+				label: defineMessage({ id: 'layout.footer.products.plus', defaultMessage: 'modrinth+' }),
 			},
 			{
 				href: '/app',
-				label: defineMessage({ id: 'layout.footer.products.app', defaultMessage: 'Bbsmc App' }),
+				label: defineMessage({ id: 'layout.footer.products.app', defaultMessage: 'modrinth App' }),
 			},
 			{
 				href: '/hosting',
 				label: defineMessage({
 					id: 'layout.footer.products.servers',
-					defaultMessage: 'Bbsmc Hosting',
+					defaultMessage: 'modrinth Hosting',
 				}),
 			},
 		],
@@ -173,7 +173,7 @@ const footerLinks: {
 				}),
 			},
 			{
-				href: 'https://github.com/xcqm12/code-Bbsmc/issues',
+				href: 'https://github.com/xcqm12/code-modrinth/issues',
 				label: defineMessage({
 					id: 'layout.footer.resources.report-issues',
 					defaultMessage: 'Report issues',
@@ -263,7 +263,7 @@ function developerModeIncrement() {
 				<div
 					class="flex flex-col items-center gap-3 md:items-start"
 					role="region"
-					:aria-label="formatMessage(messages.BbsmcInformation)"
+					:aria-label="formatMessage(messages.modrinthInformation)"
 				>
 					<div class="flex items-center gap-2">
 						<img
@@ -303,7 +303,7 @@ function developerModeIncrement() {
 							<IntlFormatted :message-id="messages.openSource">
 								<template #github-link="{ children }">
 									<a
-										href="https://github.com/xcqm12/code-Bbsmc"
+										href="https://github.com/xcqm12/code-modrinth"
 										class="text-brand hover:underline"
 										target="_blank"
 										rel="noopener"

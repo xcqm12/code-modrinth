@@ -2,7 +2,7 @@ import type {
 	AbstractWebNotificationManager,
 	CreationFlowContextValue,
 	CreationFlowModal,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { provide, ref, useTemplateRef } from 'vue'
 import type { ComponentExposed } from 'vue-component-type-helpers'
 import { useRouter } from 'vue-router'

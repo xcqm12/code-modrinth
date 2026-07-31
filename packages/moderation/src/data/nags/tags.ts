@@ -1,5 +1,5 @@
-import type { Labrinth } from '@Bbsmc/api-client'
-import { defineMessage, formatCategory, useVIntl } from '@Bbsmc/ui'
+import type { Labrinth } from '@modrinth/api-client'
+import { defineMessage, formatCategory, useVIntl } from '@modrinth/ui'
 
 import type { Nag, NagContext } from '../../types/nags'
 

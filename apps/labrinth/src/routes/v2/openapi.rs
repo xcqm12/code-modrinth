@@ -13,7 +13,7 @@ use utoipa::openapi::{RefOr, Response};
 #[derive(utoipa::OpenApi)]
 #[openapi(
 	info(
-    	title = "Bbsmc API v2",
+    	title = "modrinth API v2",
     	version = "2.0.0",
     	description = include_str!("../../api_v2_description.md"),
 	),

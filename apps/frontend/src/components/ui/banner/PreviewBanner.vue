@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { XIcon } from '@Bbsmc/assets'
+import { XIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -7,7 +7,7 @@ import {
 	IntlFormatted,
 	PagewideBanner,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 
 const { formatMessage } = useVIntl()
 const flags = useFeatureFlags()
@@ -17,11 +17,11 @@ const route = useRoute()
 const messages = defineMessages({
 	title: {
 		id: 'layout.banner.preview.title',
-		defaultMessage: `This is a preview deploy of the Bbsmc website.`,
+		defaultMessage: `This is a preview deploy of the modrinth website.`,
 	},
 	description: {
 		id: 'layout.banner.preview.description',
-		defaultMessage: `If you meant to access the official Bbsmc website, visit {url}. This preview deploy is used by Bbsmc staff for testing purposes. It was built using {ref}.`,
+		defaultMessage: `If you meant to access the official modrinth website, visit {url}. This preview deploy is used by modrinth staff for testing purposes. It was built using {ref}.`,
 	},
 })
 

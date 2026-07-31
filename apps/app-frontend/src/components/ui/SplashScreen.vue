@@ -17,14 +17,14 @@
 					<g transform="matrix(1,0,0,1,-3395.45,-1175)">
 						<g transform="matrix(0.632704,0,0,0.161619,3395.45,1175)">
 							<rect
-								id="Bbsmc-app-logo"
+								id="modrinth-app-logo"
 								x="0"
 								y="0"
 								width="1920"
 								height="1080"
 								style="fill: none"
 							/>
-							<g id="Bbsmc-app-logo1">
+							<g id="modrinth-app-logo1">
 								<g transform="matrix(1.26353,0,0,3.23025,-514.757,-837.171)">
 									<g transform="matrix(1.25087,0,0,1.91545,-240.84,-608.008)">
 										<g transform="matrix(0.273005,0,0,0.273005,523.782,459.389)">
@@ -78,7 +78,7 @@
 </template>
 
 <script setup>
-import { injectLoadingState } from '@Bbsmc/ui'
+import { injectLoadingState } from '@modrinth/ui'
 import { ref, watch } from 'vue'
 
 import ProgressBar from '@/components/ui/ProgressBar.vue'

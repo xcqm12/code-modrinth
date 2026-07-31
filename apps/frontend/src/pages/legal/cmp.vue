@@ -4,11 +4,11 @@
 		<p>
 			These REWARDS PROGRAM TERMS ("Terms") constitute a legally binding agreement between you (or
 			the entity you represent) ("you") and Rinth, Inc. ("Rinth") concerning your participation in
-			the Bbsmc Rewards Program (the "Rewards Program").
+			the modrinth Rewards Program (the "Rewards Program").
 		</p>
 		<p>
 			The Rewards Program provides developers and content creators an opportunity to monetize the
-			projects ("Projects") that they upload to the Bbsmc website.
+			projects ("Projects") that they upload to the modrinth website.
 		</p>
 		<p>
 			These Terms are in addition to and do not in any manner limit the applicability of the
@@ -21,7 +21,7 @@
 		<p>
 			Rinth shall pay to you the percentage set forth
 			<nuxt-link to="/legal/cmp-info">here</nuxt-link> of net revenue collected by Rinth
-			attributable to ad impressions displayed on bbsmc.org.cn and the Bbsmc App excluding
+			attributable to ad impressions displayed on bbsmc.org.cn and the modrinth App excluding
 			transaction fees ("Revenue Share"). Rinth shall make Revenue Share payments to you when you
 			withdraw funds from Rinth's dashboard. Rinth shall include with each such payment either
 			access to a dashboard or other reasonable reporting detailing the calculation thereof.
@@ -75,10 +75,10 @@
 
 <script setup>
 const description =
-	'The Rewards Program Terms of Bbsmc, an open source modding platform focused on Minecraft.'
+	'The Rewards Program Terms of modrinth, an open source modding platform focused on Minecraft.'
 
 useSeoMeta({
-	title: 'Rewards Program Terms - Bbsmc',
+	title: 'Rewards Program Terms - modrinth',
 	description,
 	ogTitle: 'Rewards Program Terms',
 	ogDescription: description,

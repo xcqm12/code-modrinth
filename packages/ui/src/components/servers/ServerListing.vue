@@ -253,15 +253,15 @@
 </template>
 
 <script setup lang="ts">
-import type { Archon } from '@Bbsmc/api-client'
+import type { Archon } from '@modrinth/api-client'
 import {
 	DownloadIcon,
 	LockIcon,
 	MessagesSquareIcon,
 	SparklesIcon,
 	SpinnerIcon,
-} from '@Bbsmc/assets'
-import { AutoLink, ButtonStyled } from '@Bbsmc/ui'
+} from '@modrinth/assets'
+import { AutoLink, ButtonStyled } from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 import { computed, ref } from 'vue'
 import { useRouter } from 'vue-router'
@@ -274,7 +274,7 @@ import {
 } from '../../../../assets/generated-icons'
 import { useFormatDateTime } from '../../composables'
 import { defineMessages, useVIntl } from '../../composables/i18n'
-import { injectBbsmcClient } from '../../providers/api-client'
+import { injectmodrinthClient } from '../../providers/api-client'
 import Avatar from '../base/Avatar.vue'
 import IntlFormatted from '../base/IntlFormatted.vue'
 import ServersSpecs from '../billing/ServersSpecs.vue'
@@ -356,7 +356,7 @@ const messages = defineMessages({
 	suspendedNotice: {
 		id: 'servers.listing.notice.suspended',
 		defaultMessage:
-			'Your server has been suspended. Please contact Bbsmc Support for more information.',
+			'Your server has been suspended. Please contact modrinth Support for more information.',
 	},
 	downloadLatestBackupTooltip: {
 		id: 'servers.listing.download-latest-backup-tooltip',
@@ -433,7 +433,7 @@ type ServerListingProps = {
 const props = defineProps<ServerListingProps>()
 const router = useRouter()
 
-const { archon, kyros, labrinth } = injectBbsmcClient()
+const { archon, kyros, labrinth } = injectmodrinthClient()
 
 const isBackupDownloadEnabled = false
 const isConfiguring = computed(() => props.flows?.intro)

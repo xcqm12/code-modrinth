@@ -24,13 +24,13 @@
     "defaultMessage": "Licentiegegevens toevoegen"
   },
   "nags.add-links-server.description": {
-    "defaultMessage": "Voeg relevante links buiten Bbsmc toe, zoals een website, winkel of Discord invite."
+    "defaultMessage": "Voeg relevante links buiten modrinth toe, zoals een website, winkel of Discord invite."
   },
   "nags.add-links-server.title": {
     "defaultMessage": "Voeg externe links toe"
   },
   "nags.add-links.description": {
-    "defaultMessage": "Voeg relevante links buiten Bbsmc toe, zoals code, een probleemtracker of een Discord uitnodiging."
+    "defaultMessage": "Voeg relevante links buiten modrinth toe, zoals code, een probleemtracker of een Discord uitnodiging."
   },
   "nags.add-links.title": {
     "defaultMessage": "Voeg externe links toe"

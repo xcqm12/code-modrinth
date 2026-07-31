@@ -33,8 +33,8 @@ import {
 	USDCColorIcon,
 	XCircleIcon,
 	XIcon,
-} from '@Bbsmc/assets'
-import type { ProjectStatus, ProjectType } from '@Bbsmc/utils'
+} from '@modrinth/assets'
+import type { ProjectStatus, ProjectType } from '@modrinth/utils'
 import type { Component } from 'vue'
 
 import {

@@ -1,5 +1,5 @@
 [package]
-name = "Bbsmc-log"
+name = "modrinth-log"
 edition.workspace = true
 rust-version.workspace = true
 repository.workspace = true

@@ -417,7 +417,7 @@
 									</template>
 									<template #article-link="{ children }">
 										<a
-											href="https://support.bbsmc.org.cn/en/articles/8801191-Bbsmc-maven"
+											href="https://support.bbsmc.org.cn/en/articles/8801191-modrinth-maven"
 											class="text-link"
 											target="_blank"
 											rel="noopener"
@@ -479,7 +479,7 @@
 	</div>
 </template>
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	BoxIcon,
 	ChevronLeftIcon,
@@ -498,7 +498,7 @@ import {
 	SettingsIcon,
 	TrashIcon,
 	XIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -509,7 +509,7 @@ import {
 	CopyCode,
 	defineMessages,
 	formatLoader,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	injectProjectPageContext,
 	IntlFormatted,
@@ -520,8 +520,8 @@ import {
 	useFormatDateTime,
 	useVIntl,
 	VersionPage,
-} from '@Bbsmc/ui'
-import { isStaff } from '@Bbsmc/utils'
+} from '@modrinth/ui'
+import { isStaff } from '@modrinth/utils'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/vue-query'
 import { onServerPrefetch } from 'vue'
 
@@ -542,7 +542,7 @@ const route = useNativeRoute()
 const router = useRouter()
 const auth = await useAuth()
 const tags = useGeneratedState()
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const queryClient = useQueryClient()
 const { addNotification } = injectNotificationManager()
 const { createProjectDownloadUrl } = useCdnDownloadContext()
@@ -770,7 +770,7 @@ const description = computed(() => {
 
 	return `Download ${project.value.title} ${
 		version.value.version_number
-	} on Bbsmc. Supports ${(data as any).$formatVersion(version.value.game_versions)} ${(
+	} on modrinth. Supports ${(data as any).$formatVersion(version.value.game_versions)} ${(
 		version.value.loaders ?? []
 	)
 		.map((x: string) => x.charAt(0).toUpperCase() + x.slice(1))
@@ -1064,11 +1064,11 @@ const messages = defineMessages({
 	mavenDescription: {
 		id: 'version.section.content.dev-info.maven-description',
 		defaultMessage:
-			'Projects on Bbsmc are automatically available through a Maven repository for use with JVM build tools such as <gradle-link>Gradle</gradle-link>. To learn more about the Bbsmc Maven API, <article-link>click here</article-link>.',
+			'Projects on modrinth are automatically available through a Maven repository for use with JVM build tools such as <gradle-link>Gradle</gradle-link>. To learn more about the modrinth Maven API, <article-link>click here</article-link>.',
 	},
 	mavenNote: {
 		id: 'version.section.content.dev-info.maven-note',
-		defaultMessage: `Note: When available, you should use the creator's maven repo instead as it will have transitive dependency information that the Bbsmc Maven API does not. You may also end up with duplicate dependencies if you use a mix of Bbsmc and non-Bbsmc Maven repositories for your dependencies, because the group identifier will be different when served through the Bbsmc Maven API.`,
+		defaultMessage: `Note: When available, you should use the creator's maven repo instead as it will have transitive dependency information that the modrinth Maven API does not. You may also end up with duplicate dependencies if you use a mix of modrinth and non-modrinth Maven repositories for your dependencies, because the group identifier will be different when served through the modrinth Maven API.`,
 	},
 	mavenCoordinates: {
 		id: 'version.section.content.dev-info.maven-coordinates',
@@ -1184,19 +1184,19 @@ function createDependencyLink(context: {
 		: undefined
 }
 
-const coordinatesSnippet = computed(() => `maven.Bbsmc:${project.value.id}:${version.value?.id}`)
+const coordinatesSnippet = computed(() => `maven.modrinth:${project.value.id}:${version.value?.id}`)
 const gradleSnippet = computed(
 	() => `repositories {
     exclusiveContent {
         forRepository {
             maven {
-                name = "Bbsmc"
+                name = "modrinth"
                 url = "https://api.bbsmc.org.cn/maven"
             }
         }
         // forRepositories(fg.repository) // Uncomment when using ForgeGradle
         filter {
-            includeGroup "maven.Bbsmc"
+            includeGroup "maven.modrinth"
         }
     }
 }

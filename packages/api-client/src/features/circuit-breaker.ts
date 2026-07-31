@@ -1,5 +1,5 @@
 import { AbstractFeature, type FeatureConfig } from '../core/abstract-feature'
-import { BbsmcApiError } from '../core/errors'
+import { modrinthApiError } from '../core/errors'
 import type { RequestContext } from '../types/request'
 
 /**
@@ -134,7 +134,7 @@ export class CircuitBreakerFeature extends AbstractFeature {
 		const circuitKey = this.getCircuitKey(context)
 
 		if (this.isCircuitOpen(circuitKey)) {
-			throw new BbsmcApiError('Circuit breaker open - too many recent failures', {
+			throw new modrinthApiError('Circuit breaker open - too many recent failures', {
 				statusCode: 503,
 				context: context.path,
 			})
@@ -234,7 +234,7 @@ export class CircuitBreakerFeature extends AbstractFeature {
 	 * Determine if an error should count as a circuit failure
 	 */
 	private isFailureError(error: unknown): boolean {
-		if (error instanceof BbsmcApiError && error.statusCode) {
+		if (error instanceof modrinthApiError && error.statusCode) {
 			return this.config.failureStatusCodes.includes(error.statusCode)
 		}
 

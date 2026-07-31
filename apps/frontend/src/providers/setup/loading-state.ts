@@ -1,5 +1,5 @@
-import type { LoadingStateProvider } from '@Bbsmc/ui'
-import { createLoadingStateCore, provideLoadingState } from '@Bbsmc/ui'
+import type { LoadingStateProvider } from '@modrinth/ui'
+import { createLoadingStateCore, provideLoadingState } from '@modrinth/ui'
 import { watch } from 'vue'
 
 /**
@@ -11,7 +11,7 @@ import { watch } from 'vue'
  *    `startLoading()` / `stopLoading()` call sites continue to raise the bar.
  * 3. Register Nuxt `page:start` / `page:finish` hooks so route navigation
  *    auto-fires the bar (replaces the behavior previously inside
- *    `Bbsmc-loading-indicator.ts`).
+ *    `modrinth-loading-indicator.ts`).
  */
 export function setupLoadingStateProvider(): LoadingStateProvider {
 	const provider = createLoadingStateCore({ barEnabled: true })

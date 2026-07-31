@@ -3,7 +3,7 @@
 	"version": "0.0.0",
 	"type": "module",
 	"private": true,
-	"description": "Unified tooling configuration for Bbsmc monorepo",
+	"description": "Unified tooling configuration for modrinth monorepo",
 	"main": "./index.js",
 	"scripts": {
 		"lint": "prettier --check .",

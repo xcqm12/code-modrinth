@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { FileTextIcon } from '@Bbsmc/assets'
+import { FileTextIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	defineMessages,
 	PagewideBanner,
 	useFormatMoney,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { computed } from 'vue'
 
 import { getTaxThreshold } from '@/providers/creator-withdraw.ts'
@@ -29,7 +29,7 @@ const messages = defineMessages({
 	description: {
 		id: 'layout.banner.tax.description',
 		defaultMessage:
-			"You've already withdrawn over {threshold} from Bbsmc this year. To comply with tax regulations, you need to complete a tax form. Your withdrawals are paused until this form is submitted.",
+			"You've already withdrawn over {threshold} from modrinth this year. To comply with tax regulations, you need to complete a tax form. Your withdrawals are paused until this form is submitted.",
 	},
 	action: {
 		id: 'layout.banner.tax.action',

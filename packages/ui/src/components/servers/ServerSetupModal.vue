@@ -22,15 +22,15 @@
 </template>
 
 <script setup lang="ts">
-import type { Archon, BbsmcApiError } from '@Bbsmc/api-client'
+import type { Archon, modrinthApiError } from '@modrinth/api-client'
 import { computed, useTemplateRef } from 'vue'
 
 import { useDebugLogger } from '#ui/composables/debug-logger'
 import { useServerPermissions } from '#ui/composables/server-permissions'
 
 import { defineMessages, useVIntl } from '../../composables/i18n'
-import { injectBbsmcClient } from '../../providers/api-client'
-import { injectBbsmcServerContext } from '../../providers/server-context'
+import { injectmodrinthClient } from '../../providers/api-client'
+import { injectmodrinthServerContext } from '../../providers/server-context'
 import { injectNotificationManager } from '../../providers/web-notifications'
 import type { CreationFlowContextValue } from '../flows/creation-flow-modal/creation-flow-context'
 import CreationFlowModal from '../flows/creation-flow-modal/index.vue'
@@ -58,8 +58,8 @@ const messages = defineMessages({
 })
 
 const debug = useDebugLogger('ServerSetupModal')
-const client = injectBbsmcClient()
-const serverContext = injectBbsmcServerContext()
+const client = injectmodrinthClient()
+const serverContext = injectmodrinthServerContext()
 const { addNotification } = injectNotificationManager()
 
 const serverLoaders = ['vanilla', 'fabric', 'neoforge', 'forge', 'quilt', 'paper', 'purpur']
@@ -137,7 +137,7 @@ async function onFlowComplete(ctx: CreationFlowContextValue) {
 				{
 					content_variant: 'modpack',
 					spec: {
-						platform: 'Bbsmc',
+						platform: 'modrinth',
 						project_id: ctx.modpackSelection.value.projectId,
 						version_id: ctx.modpackSelection.value.versionId,
 					},
@@ -183,7 +183,7 @@ async function onFlowComplete(ctx: CreationFlowContextValue) {
 		creationFlowRef.value?.hide()
 	} catch (error) {
 		debug('onFlowComplete: ERROR', error)
-		if ((error as BbsmcApiError).statusCode === 429) {
+		if ((error as modrinthApiError).statusCode === 429) {
 			addNotification({
 				title: formatMessage(messages.rateLimitTitle),
 				text: formatMessage(messages.rateLimitText),

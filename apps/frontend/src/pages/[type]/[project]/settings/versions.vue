@@ -161,7 +161,7 @@
 							{
 								id: 'copy-maven',
 								action: () => {
-									copyToClipboard(`maven.Bbsmc:${project.slug}:${version.id}`)
+									copyToClipboard(`maven.modrinth:${project.slug}:${version.id}`)
 								},
 								shown: flags.developerMode,
 							},
@@ -316,7 +316,7 @@
 </template>
 
 <script lang="ts" setup>
-import type { Labrinth } from '@Bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	BoxIcon,
 	ClipboardCopyIcon,
@@ -332,7 +332,7 @@ import {
 	RightArrowIcon,
 	ShareIcon,
 	TrashIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -340,13 +340,13 @@ import {
 	commonProjectSettingsMessages,
 	ConfirmModal,
 	defineMessages,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	injectProjectPageContext,
 	OverflowMenu,
 	ProjectPageVersions,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useTemplateRef, watch } from 'vue'
 
 import CreateProjectVersionModal from '~/components/ui/create-project-version/CreateProjectVersionModal.vue'
@@ -357,7 +357,7 @@ const route = useRoute()
 
 const { createProjectDownloadUrl, updateVersionsFilterContext } = useCdnDownloadContext()
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const { addNotification } = injectNotificationManager()
 const { formatMessage } = useVIntl()
 const {

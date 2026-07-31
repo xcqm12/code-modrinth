@@ -27,7 +27,7 @@ const socialLinks = Object.freeze<readonly SocialLink[]>([
 		src: 'https://cdn-raw.bbsmc.org.cn/email/bluesky.png',
 	},
 	{
-		href: 'https://floss.social/@Bbsmc',
+		href: 'https://floss.social/@modrinth',
 		alt: 'Mastodon',
 		src: 'https://cdn-raw.bbsmc.org.cn/email/mastodon.png',
 	},
@@ -37,17 +37,17 @@ const socialLinks = Object.freeze<readonly SocialLink[]>([
 		src: 'https://cdn-raw.bbsmc.org.cn/email/x.png',
 	},
 	{
-		href: 'https://www.instagram.com/Bbsmc/',
+		href: 'https://www.instagram.com/modrinth/',
 		alt: 'Instagram',
 		src: 'https://cdn-raw.bbsmc.org.cn/email/instagram.png',
 	},
 	{
-		href: 'https://www.youtube.com/@Bbsmc',
+		href: 'https://www.youtube.com/@modrinth',
 		alt: 'YouTube',
 		src: 'https://cdn-raw.bbsmc.org.cn/email/youtube.png',
 	},
 	{
-		href: 'https://github.com/xcqm12/code-Bbsmc',
+		href: 'https://github.com/xcqm12/code-modrinth',
 		alt: 'GitHub',
 		src: 'https://cdn-raw.bbsmc.org.cn/email/github.png',
 	},
@@ -81,11 +81,11 @@ const socialLinks = Object.freeze<readonly SocialLink[]>([
 			<Container class="max-w-[600px]">
 				<Row>
 					<Column class="align-middle">
-						<VLink href="https://bbsmc.org.cn" aria-label="Bbsmc">
+						<VLink href="https://bbsmc.org.cn" aria-label="modrinth">
 							<Img
 								src="https://cdn.bbsmc.org.cn/email/bd3357dfae4b1d266250372db3a0988f.png"
 								width="175"
-								alt="Bbsmc logo"
+								alt="modrinth logo"
 								class="block h-auto"
 							/>
 						</VLink>
@@ -117,7 +117,7 @@ const socialLinks = Object.freeze<readonly SocialLink[]>([
 		<!-- <Text
 			class="text-footerText text-2xs mb-4 mt-0 pb-0 pl-4 pr-4 pt-0 text-center font-sans"
 		>
-			This email was sent to you as a registered user of Bbsmc. You can customize the
+			This email was sent to you as a registered user of modrinth. You can customize the
 			emails you recieve in your
 			<VLink href="https://bbsmc.org.cn/settings/notifications" class="text-green underline"
 				>notification settings</VLink

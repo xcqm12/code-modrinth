@@ -1,6 +1,6 @@
-<!-- @deprecated Use ShareModal from @Bbsmc/ui directly. Ads/noblur now handled by injectModalBehavior. -->
+<!-- @deprecated Use ShareModal from @modrinth/ui directly. Ads/noblur now handled by injectModalBehavior. -->
 <script setup lang="ts">
-import { ShareModal } from '@Bbsmc/ui'
+import { ShareModal } from '@modrinth/ui'
 import { ref } from 'vue'
 
 defineProps({
@@ -10,7 +10,7 @@ defineProps({
 	},
 	shareTitle: {
 		type: String,
-		default: 'Bbsmc',
+		default: 'modrinth',
 	},
 	shareText: {
 		type: String,

@@ -1,10 +1,10 @@
-import { BbsmcApiError } from '@Bbsmc/api-client'
+import { modrinthApiError } from '@modrinth/api-client'
 import {
 	injectAuth,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	injectPopupNotificationManager,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 import { type Ref, watch } from 'vue'
 import { useRouter } from 'vue-router'
@@ -51,7 +51,7 @@ export function useSharedInstanceInviteHandler(
 	accountRequiredModal: Ref<AccountRequiredModal | undefined>,
 ) {
 	const auth = injectAuth()
-	const client = injectBbsmcClient()
+	const client = injectmodrinthClient()
 	const { handleError } = injectNotificationManager()
 	const { notifySharedInstanceConnectionError, notifySharedInstanceError } =
 		useSharedInstanceErrors()
@@ -77,7 +77,7 @@ export function useSharedInstanceInviteHandler(
 		try {
 			await client.labrinth.notifications_v2.markAsRead(String(notification.id))
 		} catch (error) {
-			if (error instanceof BbsmcApiError && error.statusCode === 404) return
+			if (error instanceof modrinthApiError && error.statusCode === 404) return
 			throw error
 		}
 	}

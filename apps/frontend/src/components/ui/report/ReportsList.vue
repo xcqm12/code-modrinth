@@ -24,7 +24,7 @@
 	<p v-if="filteredReports.length === 0">You don't have any active reports.</p>
 </template>
 <script setup>
-import { Chips, injectBbsmcClient } from '@Bbsmc/ui'
+import { Chips, injectmodrinthClient } from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 import { computed, ref } from 'vue'
 
@@ -43,7 +43,7 @@ const props = defineProps({
 	},
 })
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const viewMode = ref('open')
 const reasonFilter = ref('All')
 

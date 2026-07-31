@@ -25,7 +25,7 @@
 			<span class="label">
 				<span class="label__title">Invite a member</span>
 				<span class="label__description">
-					Enter the Bbsmc username of the person you'd like to invite to be a member of this
+					Enter the modrinth username of the person you'd like to invite to be a member of this
 					organization.
 				</span>
 			</span>
@@ -242,7 +242,7 @@ import {
 	TransferIcon,
 	UserPlusIcon,
 	UserXIcon as UserRemoveIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Avatar,
 	Badge,
@@ -250,7 +250,7 @@ import {
 	Checkbox,
 	injectNotificationManager,
 	StyledInput,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { nextTick, ref } from 'vue'
 
 import ConfirmTransferOrgModal from '~/components/ui/ConfirmTransferOrgModal.vue'

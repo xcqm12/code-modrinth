@@ -60,7 +60,7 @@ struct Args {
 
 fn main() -> std::io::Result<()> {
     color_eyre::install().expect("failed to install `color-eyre`");
-    Bbsmc_util::log::init().expect("failed to initialize logging");
+    modrinth_util::log::init().expect("failed to initialize logging");
     env::init().expect("failed to initialize environment variables");
 
     // Sentry must be set up before the async runtime is started
@@ -367,10 +367,10 @@ async fn app() -> std::io::Result<()> {
             "telemetry": false,
 
             "metaData": {
-                "title": "Bbsmc API Documentation",
-                "description": "Reference documentation for the Bbsmc API.",
-                "ogTitle": "Bbsmc API Documentation",
-                "ogDescription": "Reference documentation for the Bbsmc API."
+                "title": "modrinth API Documentation",
+                "description": "Reference documentation for the modrinth API.",
+                "ogTitle": "modrinth API Documentation",
+                "ogDescription": "Reference documentation for the modrinth API."
             },
 
             "modelsSectionLabel": "Schemas",

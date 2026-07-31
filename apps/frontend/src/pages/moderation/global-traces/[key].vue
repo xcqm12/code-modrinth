@@ -91,20 +91,20 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
-import { ArrowLeftIcon, HashIcon, TrashIcon } from '@Bbsmc/assets'
+import type { Labrinth } from '@modrinth/api-client'
+import { ArrowLeftIcon, HashIcon, TrashIcon } from '@modrinth/assets'
 import {
 	Badge,
 	ButtonStyled,
 	EmptyState,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	Pagination,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 
 import GlobalDetailLocalTraceCard from '~/components/ui/moderation/GlobalDetailLocalTraceCard.vue'
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const { addNotification } = injectNotificationManager()
 const route = useRoute()
 const router = useRouter()
@@ -114,7 +114,7 @@ const detailKey = computed(() => {
 	return Array.isArray(key) ? key.join('/') : String(key)
 })
 
-useHead({ title: () => `Global trace - ${detailKey.value} - Bbsmc` })
+useHead({ title: () => `Global trace - ${detailKey.value} - modrinth` })
 
 const localTracePageSize = 20
 const isLoading = ref(false)

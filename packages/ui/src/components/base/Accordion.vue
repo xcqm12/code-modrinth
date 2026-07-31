@@ -55,7 +55,7 @@
 </template>
 
 <script setup lang="ts">
-import { DropdownIcon } from '@Bbsmc/assets'
+import { DropdownIcon } from '@modrinth/assets'
 import { computed, ref, useSlots, watch } from 'vue'
 
 const props = withDefaults(

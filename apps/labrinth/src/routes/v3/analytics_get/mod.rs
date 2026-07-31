@@ -929,8 +929,8 @@ mod tests {
                 Some(DownloadSource::Named("Prism Launcher".into())),
             ),
             (
-                "Bbsmc/theseus/0.8.6 (support@bbsmc.org.cn)",
-                Some(DownloadSource::BbsmcApp),
+                "modrinth/theseus/0.8.6 (support@bbsmc.org.cn)",
+                Some(DownloadSource::modrinthApp),
             ),
             (
                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15",
@@ -956,8 +956,8 @@ mod tests {
             json!("website")
         );
         assert_eq!(
-            serde_json::to_value(DownloadSource::BbsmcApp).unwrap(),
-            json!("Bbsmc_app")
+            serde_json::to_value(DownloadSource::modrinthApp).unwrap(),
+            json!("modrinth_app")
         );
         assert_eq!(
             serde_json::to_value(DownloadSource::Other).unwrap(),

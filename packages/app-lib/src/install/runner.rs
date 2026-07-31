@@ -1059,7 +1059,7 @@ async fn remove_existing_pack_content(
         crate::ErrorKind::InputError("Unknown instance".to_string())
     })?;
     let (project_id, version_id) = match &metadata.link {
-        InstanceLink::BbsmcModpack {
+        InstanceLink::modrinthModpack {
             project_id,
             version_id,
         } => (project_id.clone(), version_id.clone()),
@@ -1136,7 +1136,7 @@ async fn remove_existing_imported_pack_content(
         if !matches!(
             entry.source_kind,
             ContentSourceKind::ImportedModpack
-                | ContentSourceKind::BbsmcModpack
+                | ContentSourceKind::modrinthModpack
         ) {
             continue;
         }

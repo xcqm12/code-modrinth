@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import {
-	injectBbsmcClient,
-	injectBbsmcServerContext,
+	injectmodrinthClient,
+	injectmodrinthServerContext,
 	ServersManageBackupsPage,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 
-const client = injectBbsmcClient()
-const { server, serverId, worldId, isServerRunning } = injectBbsmcServerContext()
+const client = injectmodrinthClient()
+const { server, serverId, worldId, isServerRunning } = injectmodrinthServerContext()
 const queryClient = useQueryClient()
 const flags = useFeatureFlags()
 
@@ -24,7 +24,7 @@ if (worldId.value) {
 }
 
 useHead({
-	title: `Backups - ${server.value?.name ?? 'Server'} - Bbsmc`,
+	title: `Backups - ${server.value?.name ?? 'Server'} - modrinth`,
 })
 </script>
 

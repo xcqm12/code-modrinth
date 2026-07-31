@@ -28,9 +28,9 @@
 					{{ members[message.author_id].username }}
 				</AutoLink>
 				<ScaleIcon v-if="members[message.author_id].role === 'moderator'" v-tooltip="'Moderator'" />
-				<BbsmcIcon
+				<modrinthIcon
 					v-else-if="members[message.author_id].role === 'admin'"
-					v-tooltip="'Bbsmc Team'"
+					v-tooltip="'modrinth Team'"
 				/>
 				<EyeOffIcon
 					v-if="isPrivateMessage"
@@ -88,7 +88,7 @@
 		/>
 		<div v-else class="message__body status-message">
 			<span v-if="message.body.type === 'legacy_project_message'">
-				This project was published on Bbsmc before moderation threads existed and may be missing
+				This project was published on modrinth before moderation threads existed and may be missing
 				moderation history.
 			</span>
 			<span v-if="message.body.type === 'deleted'"> posted a message that has been deleted. </span>
@@ -155,12 +155,12 @@ import {
 	EyeOffIcon,
 	InfoIcon,
 	MicrophoneIcon,
-	BbsmcIcon,
+	modrinthIcon,
 	MoreHorizontalIcon,
 	ScaleIcon,
 	TrashIcon,
-} from '@Bbsmc/assets'
-import { moderationSettings } from '@Bbsmc/moderation'
+} from '@modrinth/assets'
+import { moderationSettings } from '@modrinth/moderation'
 import {
 	AutoLink,
 	Avatar,
@@ -169,8 +169,8 @@ import {
 	OverflowMenu,
 	useFormatDateTime,
 	useRelativeTime,
-} from '@Bbsmc/ui'
-import { renderString } from '@Bbsmc/utils'
+} from '@modrinth/ui'
+import { renderString } from '@modrinth/utils'
 
 import { isStaff } from '~/helpers/users.js'
 

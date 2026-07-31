@@ -89,8 +89,8 @@ import {
 	LeftArrowIcon,
 	RightArrowIcon,
 	XIcon,
-} from '@Bbsmc/assets'
-import { ButtonStyled, Card, useFormatDateTime } from '@Bbsmc/ui'
+} from '@modrinth/assets'
+import { ButtonStyled, Card, useFormatDateTime } from '@modrinth/ui'
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 
 import { hide_ads_window, show_ads_window } from '@/helpers/ads.js'

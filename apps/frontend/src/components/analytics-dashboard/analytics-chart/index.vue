@@ -98,7 +98,7 @@
 </template>
 
 <script setup lang="ts">
-import { useVIntl } from '@Bbsmc/ui'
+import { useVIntl } from '@modrinth/ui'
 
 import { getDefaultAnalyticsGraphProjectEventsVisibility } from '~/components/analytics-dashboard/analytics-route-query'
 import type { AnalyticsGroupByPreset } from '~/providers/analytics/analytics'

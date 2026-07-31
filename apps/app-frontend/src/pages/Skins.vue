@@ -8,20 +8,20 @@ import {
 	RotateCounterClockwiseIcon,
 	ShirtIcon,
 	SpinnerIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	ButtonStyled,
 	commonMessages,
 	ConfirmModal,
 	defineMessages,
 	injectAuth,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	SkinPreviewRenderer,
 	Toggle,
 	useVIntl,
-} from '@Bbsmc/ui'
-import { arrayBufferToBase64 } from '@Bbsmc/utils'
+} from '@modrinth/ui'
+import { arrayBufferToBase64 } from '@modrinth/utils'
 import { useQuery } from '@tanstack/vue-query'
 import { type DragDropEvent, getCurrentWebview } from '@tauri-apps/api/webview'
 import { computedAsync } from '@vueuse/core'
@@ -76,21 +76,21 @@ type VirtualSkinSectionListExpose = {
 }
 
 const PENDING_SKIN_REFRESH_DELAY_MS = 11_000
-const DEFAULT_SKIN_SECTION_SORT_ORDER = ['Default skins', 'Bbsmc Pride']
+const DEFAULT_SKIN_SECTION_SORT_ORDER = ['Default skins', 'modrinth Pride']
 const EARS_NOTICE_PLACEHOLDER = '__EARS_MOD_NAME__'
 const messages = defineMessages({
-	BbsmcPrideSection: {
-		id: 'app.skins.section.Bbsmc-pride',
-		defaultMessage: 'Bbsmc Pride',
+	modrinthPrideSection: {
+		id: 'app.skins.section.modrinth-pride',
+		defaultMessage: 'modrinth Pride',
 	},
-	BbsmcPrideTooltip: {
-		id: 'app.skins.section.Bbsmc-pride.tooltip',
+	modrinthPrideTooltip: {
+		id: 'app.skins.section.modrinth-pride.tooltip',
 		defaultMessage:
-			'You received these skins for donating to a Bbsmc Pride fundraiser during Pride Month.',
+			'You received these skins for donating to a modrinth Pride fundraiser during Pride Month.',
 	},
-	BbsmcSection: {
-		id: 'app.skins.section.Bbsmc',
-		defaultMessage: 'Bbsmc',
+	modrinthSection: {
+		id: 'app.skins.section.modrinth',
+		defaultMessage: 'modrinth',
 	},
 	defaultSkinsSection: {
 		id: 'app.skins.section.default-skins',
@@ -191,7 +191,7 @@ const messages = defineMessages({
 	},
 	excitedRinthbotAlt: {
 		id: 'app.skins.sign-in.rinthbot-alt',
-		defaultMessage: 'Excited Bbsmc Bot',
+		defaultMessage: 'Excited modrinth Bot',
 	},
 	signInTitle: {
 		id: 'app.skins.sign-in.title',
@@ -200,7 +200,7 @@ const messages = defineMessages({
 	signInDescription: {
 		id: 'app.skins.sign-in.description',
 		defaultMessage:
-			'Please sign into your Minecraft account to use the skin management features of the Bbsmc app.',
+			'Please sign into your Minecraft account to use the skin management features of the modrinth app.',
 	},
 	signInButton: {
 		id: 'app.skins.sign-in.button',
@@ -216,7 +216,7 @@ const { formatMessage } = useVIntl()
 const notifications = injectNotificationManager()
 const { addNotification, handleError } = notifications
 const auth = injectAuth()
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 
 const themeStore = useTheming()
 const skins = ref<Skin[]>([])
@@ -273,18 +273,18 @@ const authServerQuery = useQuery({
 	retry: false,
 	refetchOnWindowFocus: false,
 })
-const { data: BbsmcUser } = useQuery({
+const { data: modrinthUser } = useQuery({
 	queryKey: computed(() => ['authenticated-user', 'campaigns', auth.user.value?.id]),
 	queryFn: () => client.labrinth.users_v3.getAuthenticated(),
 	enabled: () => !!auth.session_token.value,
 	retry: false,
 })
-const hasBbsmcPrideCampaign = computed(
-	() => !!auth.session_token.value && hasPride26Badge(BbsmcUser.value?.campaigns?.pride_26),
+const hasmodrinthPrideCampaign = computed(
+	() => !!auth.session_token.value && hasPride26Badge(modrinthUser.value?.campaigns?.pride_26),
 )
 const defaultSkins = computed(() =>
 	filterDefaultSkins(skins.value).filter(
-		(skin) => skin.section !== 'Bbsmc Pride' || hasBbsmcPrideCampaign.value,
+		(skin) => skin.section !== 'modrinth Pride' || hasmodrinthPrideCampaign.value,
 	),
 )
 const defaultSkinSections = computed(() => {
@@ -479,10 +479,10 @@ function isMinecraftSkinRateLimitError(error: unknown) {
 
 function getDefaultSkinSectionTitle(section?: string) {
 	switch (section) {
-		case 'Bbsmc Pride':
-			return formatMessage(messages.BbsmcPrideSection)
-		case 'Bbsmc':
-			return formatMessage(messages.BbsmcSection)
+		case 'modrinth Pride':
+			return formatMessage(messages.modrinthPrideSection)
+		case 'modrinth':
+			return formatMessage(messages.modrinthSection)
 		case 'MINECON Earth 2017':
 			return formatMessage(messages.mineconEarth2017Section)
 		case 'Builders & Biomes':
@@ -510,8 +510,8 @@ function getDefaultSkinSectionTitle(section?: string) {
 
 function getDefaultSkinSectionInfoTooltip(section: string) {
 	switch (section) {
-		case 'Bbsmc Pride':
-			return formatMessage(messages.BbsmcPrideTooltip)
+		case 'modrinth Pride':
+			return formatMessage(messages.modrinthPrideTooltip)
 		default:
 			return undefined
 	}

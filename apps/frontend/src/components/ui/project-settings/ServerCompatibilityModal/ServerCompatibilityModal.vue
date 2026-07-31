@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import { injectProjectPageContext, MultiStageModal } from '@Bbsmc/ui'
+import { injectProjectPageContext, MultiStageModal } from '@modrinth/ui'
 import type { ComponentExposed } from 'vue-component-type-helpers'
 
 import {

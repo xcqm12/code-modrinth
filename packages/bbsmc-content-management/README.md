@@ -1,1 +1,1 @@
-Content management logic shared between Bbsmc App & Labrinth
+Content management logic shared between modrinth App & Labrinth

@@ -6,8 +6,8 @@ import {
 	LogInIcon,
 	MessagesSquareIcon,
 	WrenchIcon,
-} from '@Bbsmc/assets'
-import { Admonition, ButtonStyled, Collapsible, NewModal } from '@Bbsmc/ui'
+} from '@modrinth/assets'
+import { Admonition, ButtonStyled, Collapsible, NewModal } from '@modrinth/ui'
 import { computed, ref } from 'vue'
 
 import { hide_ads_window, show_ads_window } from '@/helpers/ads.js'

@@ -328,9 +328,9 @@ import {
 	UploadIcon,
 	XIcon,
 	YouTubeIcon,
-} from '@Bbsmc/assets'
-import { markdownCommands, BbsmcMarkdownEditorKeymap } from '@Bbsmc/utils/codemirror'
-import { renderHighlightedString } from '@Bbsmc/utils/highlightjs'
+} from '@modrinth/assets'
+import { markdownCommands, modrinthMarkdownEditorKeymap } from '@modrinth/utils/codemirror'
+import { renderHighlightedString } from '@modrinth/utils/highlightjs'
 import { type Component, computed, onBeforeUnmount, onMounted, ref, toRef, watch } from 'vue'
 
 import { defineMessages, type MessageDescriptor, useVIntl } from '../../composables/i18n'
@@ -699,7 +699,7 @@ onMounted(() => {
 			eventHandlers,
 			updateListener,
 			keymap.of([indentWithTab]),
-			keymap.of(BbsmcMarkdownEditorKeymap),
+			keymap.of(modrinthMarkdownEditorKeymap),
 			history(),
 			markdown({
 				addKeymap: false,

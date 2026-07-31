@@ -45,7 +45,7 @@
 </template>
 
 <script setup lang="ts">
-import { EditIcon, SpinnerIcon, TransferIcon, UploadIcon } from '@Bbsmc/assets'
+import { EditIcon, SpinnerIcon, TransferIcon, UploadIcon } from '@modrinth/assets'
 import { useQueryClient } from '@tanstack/vue-query'
 import { computed, ref } from 'vue'
 
@@ -53,8 +53,8 @@ import { OverflowMenu, ServerIcon } from '#ui/components'
 import { useServerImage } from '#ui/composables'
 import { useVIntl } from '#ui/composables/i18n'
 import {
-	injectBbsmcClient,
-	injectBbsmcServerContext,
+	injectmodrinthClient,
+	injectmodrinthServerContext,
 	injectNotificationManager,
 } from '#ui/providers'
 import { commonMessages } from '#ui/utils/common-messages'
@@ -72,8 +72,8 @@ const props = withDefaults(
 
 const { addNotification } = injectNotificationManager()
 const { formatMessage } = useVIntl()
-const client = injectBbsmcClient()
-const { serverId, server } = injectBbsmcServerContext()
+const client = injectmodrinthClient()
+const { serverId, server } = injectmodrinthServerContext()
 const queryClient = useQueryClient()
 const isUploadingIcon = ref(false)
 const isSyncingIcon = ref(false)

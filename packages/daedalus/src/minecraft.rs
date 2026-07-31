@@ -52,7 +52,7 @@ pub struct Version {
     /// Whether the version supports the latest player safety features
     pub compliance_level: u32,
     #[serde(skip_serializing_if = "Option::is_none")]
-    /// (Bbsmc Provided) The SHA1 hash of the original unmodified Minecraft versions JSON
+    /// (modrinth Provided) The SHA1 hash of the original unmodified Minecraft versions JSON
     pub original_sha1: Option<String>,
 }
 

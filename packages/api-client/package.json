@@ -1,7 +1,7 @@
 {
 	"name": "@bbsmc/api-client",
 	"version": "0.0.0",
-	"description": "An API client for Bbsmc's API for use in nuxt, tauri and plain node/browser environments.",
+	"description": "An API client for modrinth's API for use in nuxt, tauri and plain node/browser environments.",
 	"license": "LGPL-3.0-only",
 	"type": "module",
 	"main": "./dist/index.js",
@@ -22,13 +22,13 @@
 	"sideEffects": false,
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Bbsmc/code.git",
+		"url": "https://github.com/modrinth/code.git",
 		"directory": "packages/api-client"
 	},
 	"bugs": {
-		"url": "https://github.com/Bbsmc/code/issues"
+		"url": "https://github.com/modrinth/code/issues"
 	},
-	"homepage": "https://github.com/Bbsmc/code/tree/main/packages/api-client#readme",
+	"homepage": "https://github.com/modrinth/code/tree/main/packages/api-client#readme",
 	"publishConfig": {
 		"access": "public"
 	},

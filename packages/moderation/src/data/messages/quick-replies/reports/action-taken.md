@@ -1,3 +1,3 @@
 Thank you for your report.
 
-After additional verification, we have taken this project down from Bbsmc accordingly.
+After additional verification, we have taken this project down from modrinth accordingly.

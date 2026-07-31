@@ -120,21 +120,21 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
-import { HashIcon, ListIcon, SearchIcon, TrashIcon } from '@Bbsmc/assets'
+import type { Labrinth } from '@modrinth/api-client'
+import { HashIcon, ListIcon, SearchIcon, TrashIcon } from '@modrinth/assets'
 import {
 	Badge,
 	ButtonStyled,
 	EmptyState,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	Pagination,
 	StyledInput,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 
 import GlobalDetailLocalTraceCard from '~/components/ui/moderation/GlobalDetailLocalTraceCard.vue'
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const { addNotification } = injectNotificationManager()
 const query = ref('')
 const activeQuery = ref<string | null>(null)

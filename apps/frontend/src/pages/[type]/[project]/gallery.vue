@@ -298,7 +298,7 @@ import {
 	TrashIcon,
 	UploadIcon,
 	XIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	ButtonStyled,
 	ConfirmModal,
@@ -308,7 +308,7 @@ import {
 	NewModal as Modal,
 	StyledInput,
 	useFormatDateTime,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useEventListener } from '@vueuse/core'
 
 import { isPermission } from '~/utils/permissions.ts'
@@ -335,7 +335,7 @@ const modalConfirm = useTemplateRef('modal_confirm')
 // SEO
 const title = computed(() => `${project.value.title} - Gallery`)
 const description = computed(
-	() => `View ${project.value.gallery?.length ?? 0} images of ${project.value.title} on Bbsmc.`,
+	() => `View ${project.value.gallery?.length ?? 0} images of ${project.value.title} on modrinth.`,
 )
 
 useSeoMeta({

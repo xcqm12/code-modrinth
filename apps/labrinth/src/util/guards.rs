@@ -3,10 +3,10 @@ use actix_web::http::header::X_FORWARDED_FOR;
 
 use crate::env::ENV;
 
-pub const ADMIN_KEY_HEADER: &str = "Bbsmc-Admin";
+pub const ADMIN_KEY_HEADER: &str = "modrinth-Admin";
 pub const MEDAL_KEY_HEADER: &str = "X-Medal-Access-Key";
 pub const EXTERNAL_NOTIFICATION_KEY_HEADER: &str = "External-Notification-Key";
-pub const SUBSCRIPTIONS_KEY_HEADER: &str = "Bbsmc-Subscriptions-Key";
+pub const SUBSCRIPTIONS_KEY_HEADER: &str = "modrinth-Subscriptions-Key";
 
 pub fn admin_key_guard(ctx: &GuardContext) -> bool {
     ctx.head()

@@ -1,10 +1,10 @@
-import type { ApiErrorData, BbsmcErrorResponse } from '../types/errors'
-import { isBbsmcErrorResponse } from '../types/errors'
+import type { ApiErrorData, modrinthErrorResponse } from '../types/errors'
+import { ismodrinthErrorResponse } from '../types/errors'
 
 /**
- * Base error class for all Bbsmc API errors
+ * Base error class for all modrinth API errors
  */
-export class BbsmcApiError extends Error {
+export class modrinthApiError extends Error {
 	/**
 	 * HTTP status code (if available)
 	 */
@@ -27,7 +27,7 @@ export class BbsmcApiError extends Error {
 
 	constructor(message: string, data?: ApiErrorData) {
 		super(message)
-		this.name = 'BbsmcApiError'
+		this.name = 'modrinthApiError'
 
 		this.statusCode = data?.statusCode
 		this.originalError = data?.originalError
@@ -36,40 +36,40 @@ export class BbsmcApiError extends Error {
 
 		// Maintains proper stack trace for where our error was thrown (only available on V8)
 		if (Error.captureStackTrace) {
-			Error.captureStackTrace(this, BbsmcApiError)
+			Error.captureStackTrace(this, modrinthApiError)
 		}
 	}
 
 	/**
-	 * Create a BbsmcApiError from an unknown error
+	 * Create a modrinthApiError from an unknown error
 	 */
-	static fromUnknown(error: unknown, context?: string): BbsmcApiError {
-		if (error instanceof BbsmcApiError) {
+	static fromUnknown(error: unknown, context?: string): modrinthApiError {
+		if (error instanceof modrinthApiError) {
 			return error
 		}
 
 		if (error instanceof Error) {
-			return new BbsmcApiError(error.message, {
+			return new modrinthApiError(error.message, {
 				originalError: error,
 				context,
 			})
 		}
 
-		return new BbsmcApiError(String(error), { context })
+		return new modrinthApiError(String(error), { context })
 	}
 }
 
 /**
- * Error class for Bbsmc server errors (kyros/archon)
- * Extends BbsmcApiError with V1 error response parsing
+ * Error class for modrinth server errors (kyros/archon)
+ * Extends modrinthApiError with V1 error response parsing
  */
-export class BbsmcServerError extends BbsmcApiError {
+export class modrinthServerError extends modrinthApiError {
 	/**
 	 * V1 error information (if available)
 	 */
-	readonly v1Error?: BbsmcErrorResponse
+	readonly v1Error?: modrinthErrorResponse
 
-	constructor(message: string, data?: ApiErrorData & { v1Error?: BbsmcErrorResponse }) {
+	constructor(message: string, data?: ApiErrorData & { v1Error?: modrinthErrorResponse }) {
 		// If we have a V1 error, format the message nicely
 		let errorMessage = message
 		if (data?.v1Error) {
@@ -80,23 +80,23 @@ export class BbsmcServerError extends BbsmcApiError {
 		}
 
 		super(errorMessage, data)
-		this.name = 'BbsmcServerError'
+		this.name = 'modrinthServerError'
 		this.v1Error = data?.v1Error
 
 		if (Error.captureStackTrace) {
-			Error.captureStackTrace(this, BbsmcServerError)
+			Error.captureStackTrace(this, modrinthServerError)
 		}
 	}
 
 	/**
-	 * Create a BbsmcServerError from response data
+	 * Create a modrinthServerError from response data
 	 */
 	static fromResponse(
 		statusCode: number,
 		responseData: unknown,
 		context?: string,
-	): BbsmcServerError {
-		const v1Error = isBbsmcErrorResponse(responseData) ? responseData : undefined
+	): modrinthServerError {
+		const v1Error = ismodrinthErrorResponse(responseData) ? responseData : undefined
 
 		let message = `HTTP ${statusCode}`
 		if (v1Error) {
@@ -105,7 +105,7 @@ export class BbsmcServerError extends BbsmcApiError {
 			message = responseData
 		}
 
-		return new BbsmcServerError(message, {
+		return new modrinthServerError(message, {
 			statusCode,
 			responseData,
 			context,
@@ -114,15 +114,15 @@ export class BbsmcServerError extends BbsmcApiError {
 	}
 
 	/**
-	 * Create a BbsmcServerError from an unknown error
+	 * Create a modrinthServerError from an unknown error
 	 */
-	static fromUnknown(error: unknown, context?: string): BbsmcServerError {
-		if (error instanceof BbsmcServerError) {
+	static fromUnknown(error: unknown, context?: string): modrinthServerError {
+		if (error instanceof modrinthServerError) {
 			return error
 		}
 
-		if (error instanceof BbsmcApiError) {
-			return new BbsmcServerError(error.message, {
+		if (error instanceof modrinthApiError) {
+			return new modrinthServerError(error.message, {
 				statusCode: error.statusCode,
 				originalError: error.originalError,
 				responseData: error.responseData,
@@ -131,12 +131,12 @@ export class BbsmcServerError extends BbsmcApiError {
 		}
 
 		if (error instanceof Error) {
-			return new BbsmcServerError(error.message, {
+			return new modrinthServerError(error.message, {
 				originalError: error,
 				context,
 			})
 		}
 
-		return new BbsmcServerError(String(error), { context })
+		return new modrinthServerError(String(error), { context })
 	}
 }

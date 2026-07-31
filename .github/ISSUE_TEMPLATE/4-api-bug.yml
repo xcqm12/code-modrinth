@@ -1,5 +1,5 @@
-name: 🛠 Bug with Bbsmc API
-description: For issues with the Bbsmc API for developers.
+name: 🛠 Bug with modrinth API
+description: For issues with the modrinth API for developers.
 labels: [api, backend]
 type: 'bug'
 body:
@@ -7,7 +7,7 @@ body:
     attributes:
       label: Please confirm the following.
       options:
-        - label: I checked the [existing issues](https://github.com/Bbsmc/code/issues?q=is%3Aissue) for duplicate problems
+        - label: I checked the [existing issues](https://github.com/modrinth/code/issues?q=is%3Aissue) for duplicate problems
           required: true
         - label: I have tried resolving the issue using the [support portal](https://support.bbsmc.org.cn)
           required: true

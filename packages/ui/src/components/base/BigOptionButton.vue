@@ -26,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import { ChevronRightIcon } from '@Bbsmc/assets'
+import { ChevronRightIcon } from '@modrinth/assets'
 import type { Component } from 'vue'
 
 defineProps<{

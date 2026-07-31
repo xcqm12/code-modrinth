@@ -1081,7 +1081,7 @@ async fn linked_modpack_ids_for_instance(
 
 fn linked_modpack_ids(link: &InstanceLink) -> Option<(String, String)> {
     match link {
-        InstanceLink::BbsmcModpack {
+        InstanceLink::modrinthModpack {
             project_id,
             version_id,
         } => Some((project_id.clone(), version_id.clone())),
@@ -1107,8 +1107,8 @@ fn linked_modpack_source_kind(
     link: &InstanceLink,
 ) -> Option<ContentSourceKind> {
     match link {
-        InstanceLink::BbsmcModpack { .. } => {
-            Some(ContentSourceKind::BbsmcModpack)
+        InstanceLink::modrinthModpack { .. } => {
+            Some(ContentSourceKind::modrinthModpack)
         }
         InstanceLink::ServerProjectModpack { .. } => {
             Some(ContentSourceKind::ServerProject)
@@ -1116,7 +1116,7 @@ fn linked_modpack_source_kind(
         InstanceLink::SharedInstance {
             modpack_project_id: Some(_),
             modpack_version_id: Some(_),
-        } => Some(ContentSourceKind::BbsmcModpack),
+        } => Some(ContentSourceKind::modrinthModpack),
         _ => None,
     }
 }
@@ -1296,11 +1296,11 @@ async fn get_modpack_identifiers(
         .entries()
         .iter()
         .position(|file| {
-            matches!(file.filename().as_str(), Ok("Bbsmc.index.json"))
+            matches!(file.filename().as_str(), Ok("modrinth.index.json"))
         })
         .ok_or_else(|| {
             crate::ErrorKind::InputError(
-                "No Bbsmc.index.json found in mrpack".to_string(),
+                "No modrinth.index.json found in mrpack".to_string(),
             )
         })?;
     let mut manifest = String::new();

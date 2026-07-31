@@ -1,6 +1,6 @@
 ---
-title: Plugins and Resource Packs now have a home on Bbsmc
-summary: 'A small update with a big impact: plugins and resource packs are now available on Bbsmc!'
+title: Plugins and Resource Packs now have a home on modrinth
+summary: 'A small update with a big impact: plugins and resource packs are now available on modrinth!'
 date: 2022-08-27
 authors: ['6plzAzU4']
 ---
@@ -23,17 +23,17 @@ This is a question we've received quite often since we first announced our inten
 
 Currently, there are three main platforms on which plugins can be downloaded from: Bukkit, Spigot, and Sponge's Ore. Notice the main issue there? These sites are bound to a specific loader. This isn't inherently _bad_ - however, as forks and new projects spawn, there is a noticeable lack of flexibility in what can be hosted on a given platform. For example, Spigot is unable to host plugins which specifically depend on the exclusive features provided by Paper's API. Paper's solution to this is to build their own platform, but this simply perpetuates the same problem.
 
-The best solution here is to create a separate platform which is unbiased and flexible enough to adapt to a changing ecosystem. Bbsmc is the perfect candidate for this - after all, plugins are mods under a different name, and likewise mods are plugins under a different name.
+The best solution here is to create a separate platform which is unbiased and flexible enough to adapt to a changing ecosystem. modrinth is the perfect candidate for this - after all, plugins are mods under a different name, and likewise mods are plugins under a different name.
 
-No matter the situation, authors are always allowed to upload their plugins to multiple sites. Build automation is incredibly easy to set up, especially with "set it and forget it" build tools such as [Minotaur](https://github.com/Bbsmc/minotaur).
+No matter the situation, authors are always allowed to upload their plugins to multiple sites. Build automation is incredibly easy to set up, especially with "set it and forget it" build tools such as [Minotaur](https://github.com/modrinth/minotaur).
 
 ### Will paid plugins be supported?
 
-No. Bbsmc does not have the infrastructure to support this, and it's not currently planned. Author payouts are still being worked on.
+No. modrinth does not have the infrastructure to support this, and it's not currently planned. Author payouts are still being worked on.
 
 ### What about mods that have plugin versions and vice versa?
 
-Bbsmc is taking a unique approach to this. While the search pages are separate, in reality, the backend is the same. You can select plugin loaders when creating a mod and you can select mod loaders when creating a plugin. The split only exists on the frontend so that projects like [Chunky](https://bbsmc.org.cn/mod/chunky) can share a single page across their versions.
+modrinth is taking a unique approach to this. While the search pages are separate, in reality, the backend is the same. You can select plugin loaders when creating a mod and you can select mod loaders when creating a plugin. The split only exists on the frontend so that projects like [Chunky](https://bbsmc.org.cn/mod/chunky) can share a single page across their versions.
 
 Plugins which also have versions for mod loaders will be displayed under the `/mod/` URL on the frontend. Plugins without mod loader versions are displayed under `/plugin/`.
 
@@ -53,7 +53,7 @@ On search pages, "Features" have been split into their own header. Where categor
 
 ### What about resource packs that require a mod to function?
 
-Resource packs are able to set dependencies on other projects (even those which aren't resource packs), just like how modpacks are able to set dependencies on mods. It's worth noting that OptiFine is not on the platform, and thus you cannot set a dependency on that; however, you can set a dependency on any of the other alternative mods which _are_ available on Bbsmc, including [Entity Texture Features](https://bbsmc.org.cn/mod/entitytexturefeatures), [OptiGUI](https://bbsmc.org.cn/mod/optigui), [Continuity](https://bbsmc.org.cn/mod/continuity), [CIT Resewn](https://bbsmc.org.cn/mod/cit-resewn), [Animatica](https://bbsmc.org.cn/mod/animatica), or [Custom Entity Models](https://bbsmc.org.cn/mod/cem).
+Resource packs are able to set dependencies on other projects (even those which aren't resource packs), just like how modpacks are able to set dependencies on mods. It's worth noting that OptiFine is not on the platform, and thus you cannot set a dependency on that; however, you can set a dependency on any of the other alternative mods which _are_ available on modrinth, including [Entity Texture Features](https://bbsmc.org.cn/mod/entitytexturefeatures), [OptiGUI](https://bbsmc.org.cn/mod/optigui), [Continuity](https://bbsmc.org.cn/mod/continuity), [CIT Resewn](https://bbsmc.org.cn/mod/cit-resewn), [Animatica](https://bbsmc.org.cn/mod/animatica), or [Custom Entity Models](https://bbsmc.org.cn/mod/cem).
 
 ## Other miscellaneous changes
 
@@ -61,21 +61,21 @@ Resource packs are able to set dependencies on other projects (even those which 
 
 For a long time, version numbers have had a requirement to be unique within the same project. Alongside this update, we found it necessary to remove this restriction on version numbers. Thus, you'll no longer have to use something like `1.2.3+forge` and `1.2.3+fabric` if you have a project on multiple loaders - instead, you can just use `1.2.3`.
 
-To accommodate this, the frontend now appends the loaders and game versions onto the end of a URL if there are duplicates, and the [Bbsmc Maven] now supports version IDs.
+To accommodate this, the frontend now appends the loaders and game versions onto the end of a URL if there are duplicates, and the [modrinth Maven] now supports version IDs.
 
 We do not recommend retroactively changing version numbers to remove this additional metadata, though. If you change your version numbers, the following will break:
 
 - URLs to specific versions
-- Buildscripts depending on your project via the [Bbsmc Maven]
-- Download counters (see labrinth issue [#351](https://github.com/Bbsmc/labrinth/issues/351))
+- Buildscripts depending on your project via the [modrinth Maven]
+- Download counters (see labrinth issue [#351](https://github.com/modrinth/labrinth/issues/351))
 
 ### LiteLoader support
 
-Bbsmc now supports LiteLoader for mods. It's nothing special, but it should help with some archival efforts.
+modrinth now supports LiteLoader for mods. It's nothing special, but it should help with some archival efforts.
 
 ### Misc category deletion
 
-We've also deleted the `Misc` category as no one is going to want to filter by `Misc` in search. If you have any other suggestions for categories, feel free to suggest them in [our Discord][Discord] or [Tweet at us](https://twitter.com/Bbsmc)!
+We've also deleted the `Misc` category as no one is going to want to filter by `Misc` in search. If you have any other suggestions for categories, feel free to suggest them in [our Discord][Discord] or [Tweet at us](https://twitter.com/modrinth)!
 
 ## Developer/API changes
 
@@ -89,7 +89,7 @@ Differences between mod loaders and plugins will need to be hardcoded within you
 
 We're very happy to be announcing this feature, even if it is minor in comparison to some of our other past and future announcements. Don't worry - author payouts are still being worked on, and will most likely be our next major announcement! We saw this as an opportunity to get a feature out with relatively little new code (since we'd already done everything needed alongside modpacks), so we ran with it.
 
-As always, feel free to provide feedback on [our Discord][Discord], and please report any bugs you come across on [our GitHub](https://github.com/Bbsmc).
+As always, feel free to provide feedback on [our Discord][Discord], and please report any bugs you come across on [our GitHub](https://github.com/modrinth).
 
 [Discord]: https://discord.bbsmc.org.cn
-[Bbsmc Maven]: https://support.bbsmc.org.cn/en/articles/8801191-Bbsmc-maven
+[modrinth Maven]: https://support.bbsmc.org.cn/en/articles/8801191-modrinth-maven

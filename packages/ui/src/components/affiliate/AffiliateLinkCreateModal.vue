@@ -59,7 +59,7 @@
 </template>
 <script lang="ts"></script>
 <script setup lang="ts">
-import { AffiliateIcon, PlusIcon, SpinnerIcon, UserIcon } from '@Bbsmc/assets'
+import { AffiliateIcon, PlusIcon, SpinnerIcon, UserIcon } from '@modrinth/assets'
 import { computed, ref, useTemplateRef } from 'vue'
 
 import { defineMessages, useVIntl } from '../../composables/i18n'

@@ -355,7 +355,7 @@ import {
 	TrashIcon,
 	TriangleAlertIcon,
 	XIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	ButtonStyled,
 	Checkbox,
@@ -370,8 +370,8 @@ import {
 	StyledInput,
 	Table,
 	useVIntl,
-} from '@Bbsmc/ui'
-import { formatProjectType } from '@Bbsmc/utils'
+} from '@modrinth/ui'
+import { formatProjectType } from '@modrinth/utils'
 
 import ModalCreation from '~/components/ui/create/ProjectCreateModal.vue'
 import { getProjectTypeForUrl } from '~/helpers/projects.js'
@@ -521,7 +521,7 @@ const messages = defineMessages({
 	},
 })
 
-useHead({ title: () => `${formatMessage(messages.headTitle)} - Bbsmc` })
+useHead({ title: () => `${formatMessage(messages.headTitle)} - modrinth` })
 
 const user = await useUser()
 const projects = ref([])

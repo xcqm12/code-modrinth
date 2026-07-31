@@ -1,4 +1,4 @@
-import { defineMessages, getLoaderMessage, type VIntlFormatters } from '@Bbsmc/ui'
+import { defineMessages, getLoaderMessage, type VIntlFormatters } from '@modrinth/ui'
 
 import type {
 	AnalyticsBreakdownPreset,
@@ -265,7 +265,7 @@ export const analyticsStatCardMessages = defineMessages({
 	monetizationBannerBody: {
 		id: 'analytics.stat.monetization-banner.body',
 		defaultMessage:
-			'Only views and downloads made through Bbsmc are eligible for monetization and must pass fraud-prevention filtering. Bbsmc App downloads also require the user to be logged in. Because all projects have a similar ratio of monetized downloads, your revenue would not meaningfully change if all downloads were counted.',
+			'Only views and downloads made through modrinth are eligible for monetization and must pass fraud-prevention filtering. modrinth App downloads also require the user to be logged in. Because all projects have a similar ratio of monetized downloads, your revenue would not meaningfully change if all downloads were counted.',
 	},
 	monetizationBannerLearnMore: {
 		id: 'analytics.stat.monetization-banner.learn-more',
@@ -444,11 +444,11 @@ export const analyticsDownloadReasonMessages = defineMessages({
 export const analyticsDownloadSourceMessages = defineMessages({
 	website: {
 		id: 'analytics.download-source.website',
-		defaultMessage: 'Bbsmc Website',
+		defaultMessage: 'modrinth Website',
 	},
 	app: {
 		id: 'analytics.download-source.app',
-		defaultMessage: 'Bbsmc App',
+		defaultMessage: 'modrinth App',
 	},
 })
 
@@ -526,7 +526,7 @@ export const analyticsTableMessages = defineMessages({
 	},
 	csvFilename: {
 		id: 'analytics.table.csv.filename',
-		defaultMessage: 'Bbsmc Analytics {breakdown} Breakdown - {dateRange}',
+		defaultMessage: 'modrinth Analytics {breakdown} Breakdown - {dateRange}',
 	},
 	durationDays: {
 		id: 'analytics.table.duration.days',
@@ -635,17 +635,17 @@ export const analyticsChartMessages = defineMessages({
 		id: 'analytics.chart.controls.project-events',
 		defaultMessage: 'Project events',
 	},
-	BbsmcEvents: {
-		id: 'analytics.chart.controls.Bbsmc-events',
-		defaultMessage: 'Bbsmc events',
+	modrinthEvents: {
+		id: 'analytics.chart.controls.modrinth-events',
+		defaultMessage: 'modrinth events',
 	},
 	noProjectEvents: {
 		id: 'analytics.chart.controls.no-project-events',
 		defaultMessage: 'No project events in graph.',
 	},
-	noBbsmcEvents: {
-		id: 'analytics.chart.controls.no-Bbsmc-events',
-		defaultMessage: 'No Bbsmc events in graph.',
+	nomodrinthEvents: {
+		id: 'analytics.chart.controls.no-modrinth-events',
+		defaultMessage: 'No modrinth events in graph.',
 	},
 	viewMonetizedAnalyticsDetails: {
 		id: 'analytics.chart.legend.monetization-details.aria',
@@ -658,7 +658,7 @@ export const analyticsChartMessages = defineMessages({
 	monetizedAnalyticsDetailsDescription: {
 		id: 'analytics.chart.legend.monetization-details.description',
 		defaultMessage:
-			'Only views and downloads made through Bbsmc count toward monetization, and downloads require users to be logged in.',
+			'Only views and downloads made through modrinth count toward monetization, and downloads require users to be logged in.',
 	},
 	previousPeriodSuffix: {
 		id: 'analytics.chart.legend.previous-period-suffix',
@@ -932,7 +932,7 @@ export function formatAnalyticsDownloadSourceLabel(
 	if (normalizedLowercase === 'website') {
 		return formatMessage(analyticsDownloadSourceMessages.website)
 	}
-	if (normalizedLowercase === 'Bbsmc_app') {
+	if (normalizedLowercase === 'modrinth_app') {
 		return formatMessage(analyticsDownloadSourceMessages.app)
 	}
 	if (!normalized.includes('_')) {

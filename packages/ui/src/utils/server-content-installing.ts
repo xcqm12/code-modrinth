@@ -27,7 +27,7 @@ interface PendingServerContentInstallBaseline {
 	createdAt: number
 }
 
-export const pendingServerContentInstallsEvent = 'Bbsmc:pending-server-content-installs'
+export const pendingServerContentInstallsEvent = 'modrinth:pending-server-content-installs'
 
 const stalePendingInstallAge = 30 * 60 * 1000
 

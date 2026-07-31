@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { TrashIcon, XIcon } from '@Bbsmc/assets'
+import { TrashIcon, XIcon } from '@modrinth/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -7,7 +7,7 @@ import {
 	defineMessages,
 	NewModal,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, ref } from 'vue'
 
 import type { World } from '@/helpers/worlds.ts'

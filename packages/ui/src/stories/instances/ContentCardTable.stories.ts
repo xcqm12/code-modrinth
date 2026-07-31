@@ -1,4 +1,4 @@
-import { DownloadIcon, EyeIcon, FolderOpenIcon } from '@Bbsmc/assets'
+import { DownloadIcon, EyeIcon, FolderOpenIcon } from '@modrinth/assets'
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
 import { fn } from 'storybook/test'
 import { onMounted, onUnmounted, ref } from 'vue'
@@ -558,7 +558,7 @@ export const WithCustomItemButtons: Story = {
 					</ButtonStyled>
 				</template>
 				<template #itemButtonsRight="{ item }">
-					<ButtonStyled v-tooltip="'View on Bbsmc'" circular type="transparent">
+					<ButtonStyled v-tooltip="'View on modrinth'" circular type="transparent">
 						<button @click="console.log('View', item.id)">
 							<EyeIcon class="size-5 text-secondary" />
 						</button>
@@ -767,7 +767,7 @@ export const WithOverflowMenu: Story = {
 				@update:enabled="(id, val) => console.log('Toggle', id, val)"
 				@delete="(id) => console.log('Delete', id)"
 			>
-				<template #view>View on Bbsmc</template>
+				<template #view>View on modrinth</template>
 				<template #folder>Open folder</template>
 				<template #remove>Remove</template>
 			</ContentCardTable>

@@ -47,7 +47,7 @@ impl Api for ApiV2 {
     async fn reset_search_index(&self) -> ServiceResponse {
         let req = actix_web::test::TestRequest::post()
             .uri("/v2/admin/_force_reindex")
-            .append_header(("Bbsmc-Admin", ENV.LABRINTH_ADMIN_KEY.clone()))
+            .append_header(("modrinth-Admin", ENV.LABRINTH_ADMIN_KEY.clone()))
             .to_request();
         self.call(req).await
     }

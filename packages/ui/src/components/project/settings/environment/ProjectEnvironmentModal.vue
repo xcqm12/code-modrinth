@@ -27,7 +27,7 @@
 </template>
 
 <script setup lang="ts">
-import { CheckIcon, HistoryIcon, SaveIcon, SpinnerIcon } from '@Bbsmc/assets'
+import { CheckIcon, HistoryIcon, SaveIcon, SpinnerIcon } from '@modrinth/assets'
 import { computed, onMounted, unref, useTemplateRef } from 'vue'
 import { useRoute } from 'vue-router'
 

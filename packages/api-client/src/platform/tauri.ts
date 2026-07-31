@@ -1,4 +1,4 @@
-import type { BbsmcApiError } from '../core/errors'
+import type { modrinthApiError } from '../core/errors'
 import type { ClientConfig } from '../types/client'
 import type { RequestOptions } from '../types/request'
 import { appendRequestParams, parseResponseErrorData, toFetchBody } from '../utils/fetch'
@@ -29,8 +29,8 @@ interface HttpError extends Error {
  * ```typescript
  * import { getVersion } from '@tauri-apps/api/app'
  *
- * const client = new TauriBbsmcClient({
- *   userAgent: async () => `Bbsmc/theseus/${await getVersion()} (support@bbsmc.org.cn)`,
+ * const client = new TaurimodrinthClient({
+ *   userAgent: async () => `modrinth/theseus/${await getVersion()} (support@bbsmc.org.cn)`,
  *   features: [
  *     new AuthFeature({ token: async () => getOAuthToken() })
  *   ]
@@ -39,7 +39,7 @@ interface HttpError extends Error {
  * const project = await client.request('/project/sodium', { api: 'labrinth', version: 2 })
  * ```
  */
-export class TauriBbsmcClient extends XHRUploadClient {
+export class TaurimodrinthClient extends XHRUploadClient {
 	declare protected config: TauriClientConfig
 
 	constructor(config: TauriClientConfig) {
@@ -162,7 +162,7 @@ export class TauriBbsmcClient extends XHRUploadClient {
 		}
 	}
 
-	protected normalizeError(error: unknown): BbsmcApiError {
+	protected normalizeError(error: unknown): modrinthApiError {
 		if (error instanceof Error) {
 			const httpError = error as HttpError
 			const statusCode = httpError.statusCode

@@ -57,11 +57,11 @@ pub(super) async fn detach_local_shared_instance(
             modpack_project_id: Some(project_id),
             modpack_version_id: Some(version_id),
         } => Some((
-            InstanceLink::BbsmcModpack {
+            InstanceLink::modrinthModpack {
                 project_id,
                 version_id,
             },
-            ContentSourceKind::BbsmcModpack,
+            ContentSourceKind::modrinthModpack,
         )),
         InstanceLink::SharedInstance { .. } => {
             Some((InstanceLink::Unmanaged, ContentSourceKind::Local))
@@ -171,7 +171,7 @@ pub(super) async fn remote_publish_content(
     include_modpack_dependencies: bool,
     state: &State,
 ) -> crate::Result<(Vec<String>, HashSet<String>)> {
-    let mut version_ids = version.Bbsmc_ids.clone();
+    let mut version_ids = version.modrinth_ids.clone();
     if let Some(modpack_id) =
         version.modpack_id.as_deref().filter(|id| !id.is_empty())
     {
@@ -294,7 +294,7 @@ pub(super) async fn current_shared_content(
             == crate::state::ContentSourceKind::SharedInstance
             || (include_linked_modpack_content
                 && entry.source_kind
-                    == crate::state::ContentSourceKind::BbsmcModpack);
+                    == crate::state::ContentSourceKind::modrinthModpack);
         if !include_entry {
             continue;
         }
@@ -641,7 +641,7 @@ pub(super) async fn publish_current_content(
     } else {
         None
     };
-    let Bbsmc_ids = snapshot.version_ids;
+    let modrinth_ids = snapshot.version_ids;
     let mut external_files = snapshot.external_files;
     if let Some(config_bundle) = config_bundle {
         external_files.push(config_bundle);
@@ -650,7 +650,7 @@ pub(super) async fn publish_current_content(
         instance_id,
         shared_instance_id,
         modpack_id = modpack_id.as_deref().unwrap_or("none"),
-        Bbsmc_id_count = Bbsmc_ids.len(),
+        modrinth_id_count = modrinth_ids.len(),
         external_file_count = external_files.len(),
         "Creating shared instance version"
     );
@@ -666,7 +666,7 @@ pub(super) async fn publish_current_content(
         Method::POST,
         &format!("/instances/{shared_instance_id}/versions"),
         Some(json!({
-            "Bbsmc_ids": Bbsmc_ids,
+            "modrinth_ids": modrinth_ids,
             "external_files": external_file_data,
             "modpack_id": modpack_id,
             "game_version": metadata.applied_content_set.game_version.clone(),
@@ -678,7 +678,7 @@ pub(super) async fn publish_current_content(
                 .unwrap_or_default(),
         })),
         state,
-        SharedInstancesRequestAuth::BbsmcSession,
+        SharedInstancesRequestAuth::modrinthSession,
     )
     .await?;
     let response = match response {
@@ -940,7 +940,7 @@ fn read_config_bundle(
 
 pub(super) fn shared_modpack_id(link: &InstanceLink) -> Option<String> {
     match link {
-        InstanceLink::BbsmcModpack { version_id, .. } => {
+        InstanceLink::modrinthModpack { version_id, .. } => {
             Some(version_id.clone())
         }
         InstanceLink::ServerProjectModpack {
@@ -1081,7 +1081,7 @@ pub(super) async fn shared_instance_for_invites(
                 state,
             )
             .await?;
-            let linked_user_id = linked_Bbsmc_user_id(state).await?;
+            let linked_user_id = linked_modrinth_user_id(state).await?;
             tracing::info!(
                 instance_id,
                 shared_instance_id = %remote.id,

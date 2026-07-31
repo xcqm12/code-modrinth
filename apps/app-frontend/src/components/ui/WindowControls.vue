@@ -30,8 +30,8 @@
 </template>
 
 <script setup>
-import { MaximizeIcon, MinimizeIcon, RestoreIcon, XIcon } from '@Bbsmc/assets'
-import { ButtonStyled } from '@Bbsmc/ui'
+import { MaximizeIcon, MinimizeIcon, RestoreIcon, XIcon } from '@modrinth/assets'
+import { ButtonStyled } from '@modrinth/ui'
 import { getCurrentWindow } from '@tauri-apps/api/window'
 import { saveWindowState, StateFlags } from '@tauri-apps/plugin-window-state'
 import { computed, onMounted, onUnmounted, ref } from 'vue'

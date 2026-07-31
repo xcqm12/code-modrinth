@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { CalendarIcon, UsersIcon, XIcon } from '@Bbsmc/assets'
-import { injectBbsmcClient, ProgressBar } from '@Bbsmc/ui'
+import { CalendarIcon, UsersIcon, XIcon } from '@modrinth/assets'
+import { injectmodrinthClient, ProgressBar } from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 import { openUrl } from '@tauri-apps/plugin-opener'
 import { computed, ref } from 'vue'
 
 const DISMISSED_STORAGE_KEY = 'pride-fundraiser-2026-dismissed'
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const dismissed = ref(localStorage.getItem(DISMISSED_STORAGE_KEY) === 'true')
 
 const { data: campaignInfo } = useQuery({

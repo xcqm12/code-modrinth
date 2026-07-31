@@ -35,7 +35,7 @@ pub async fn create_report(
 
     fetch_json(
         Method::POST,
-        &format!("{}report", env!("Bbsmc_API_URL_V3")),
+        &format!("{}report", env!("modrinth_API_URL_V3")),
         None,
         Some(serde_json::to_value(request)?),
         Some("/v3/report"),

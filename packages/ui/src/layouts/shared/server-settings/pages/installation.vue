@@ -76,8 +76,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Archon } from '@Bbsmc/api-client'
-import { RotateCounterClockwiseIcon } from '@Bbsmc/assets'
+import type { Archon } from '@modrinth/api-client'
+import { RotateCounterClockwiseIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -85,8 +85,8 @@ import {
 	defineMessages,
 	formatLoaderLabel,
 	type GameVersionOption,
-	injectBbsmcClient,
-	injectBbsmcServerContext,
+	injectmodrinthClient,
+	injectmodrinthServerContext,
 	injectNotificationManager,
 	injectServerSettings,
 	injectTags,
@@ -96,25 +96,25 @@ import {
 	ServerSetupModal,
 	UploadProgressModal,
 	useDebugLogger,
-	useBbsmcServersConsole,
+	usemodrinthServersConsole,
 	useServerPermissions,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { computed, ref, useTemplateRef, watch } from 'vue'
 
 import { injectFilePicker } from '#ui/providers/file-picker'
 
 const debug = useDebugLogger('LoaderPage')
-const client = injectBbsmcClient()
-const { server, serverId, worldId, isSyncingContent, busyReasons } = injectBbsmcServerContext()
+const client = injectmodrinthClient()
+const { server, serverId, worldId, isSyncingContent, busyReasons } = injectmodrinthServerContext()
 const { addNotification } = injectNotificationManager()
 const queryClient = useQueryClient()
 const tags = injectTags()
 const { formatMessage } = useVIntl()
 const serverSettings = injectServerSettings()
 const filePicker = injectFilePicker()
-const BbsmcServersConsole = useBbsmcServersConsole()
+const modrinthServersConsole = usemodrinthServersConsole()
 const { canSetup, canResetServer, permissionDeniedMessage } = useServerPermissions()
 
 const uploadProgressModal =
@@ -253,7 +253,7 @@ const modpack = computed(() => addonsQuery.data.value?.modpack ?? null)
 
 const modpackProjectId = computed(() => {
 	const spec = modpack.value?.spec
-	return spec?.platform === 'Bbsmc' ? spec.project_id : null
+	return spec?.platform === 'modrinth' ? spec.project_id : null
 })
 
 const modpackVersionsQuery = useQuery({
@@ -379,7 +379,7 @@ function getLoaderVersionsForGameVersion(
 	const versionGroups = manifestQuery.data.value?.versionGroups
 	if (!manifest) return []
 
-	const placeholder = manifest.find((x) => x.id === '${Bbsmc.gameVersion}')
+	const placeholder = manifest.find((x) => x.id === '${modrinth.gameVersion}')
 	if (placeholder) return placeholder.loaders
 
 	const entry = manifest.find((x) => x.id === gameVersion)
@@ -507,7 +507,7 @@ provideInstallationSettings({
 			} else {
 				const manifest = manifestQuery.data.value?.gameVersions
 				if (manifest) {
-					const hasPlaceholder = manifest.some((x) => x.id === '${Bbsmc.gameVersion}')
+					const hasPlaceholder = manifest.some((x) => x.id === '${modrinth.gameVersion}')
 					if (!hasPlaceholder) {
 						const supportedVersions = new Set(
 							manifest.filter((x) => x.loaders.length > 0 || !!x.versionGroup).map((x) => x.id),
@@ -548,7 +548,7 @@ provideInstallationSettings({
 		}
 		const manifest = manifestQuery.data.value?.gameVersions
 		if (!manifest) return false
-		const hasPlaceholder = manifest.some((x) => x.id === '${Bbsmc.gameVersion}')
+		const hasPlaceholder = manifest.some((x) => x.id === '${modrinth.gameVersion}')
 		if (hasPlaceholder) {
 			return tags.gameVersions.value.some((v) => v.version_type !== 'release')
 		}
@@ -646,7 +646,7 @@ provideInstallationSettings({
 			}
 			return
 		}
-		if (modpack.value.spec.platform !== 'Bbsmc') return
+		if (modpack.value.spec.platform !== 'modrinth') return
 		debug(
 			'reinstallModpack: called, project:',
 			modpack.value.spec.project_id,
@@ -659,7 +659,7 @@ provideInstallationSettings({
 			await client.archon.content_v1.installContent(serverId, worldId.value!, {
 				content_variant: 'modpack',
 				spec: {
-					platform: 'Bbsmc',
+					platform: 'modrinth',
 					project_id: modpack.value.spec.project_id,
 					version_id: modpack.value.spec.version_id,
 				},
@@ -774,7 +774,7 @@ provideInstallationSettings({
 			await client.archon.content_v1.installContent(serverId, worldId.value!, {
 				content_variant: 'modpack',
 				spec: {
-					platform: 'Bbsmc',
+					platform: 'modrinth',
 					project_id: modpackProjectId.value,
 					version_id: version.id,
 				},
@@ -795,7 +795,7 @@ provideInstallationSettings({
 	updaterModalProps: computed(() => ({
 		isApp: serverSettings.isApp.value,
 		currentVersionId:
-			modpack.value?.spec.platform === 'Bbsmc' ? modpack.value.spec.version_id : '',
+			modpack.value?.spec.platform === 'modrinth' ? modpack.value.spec.version_id : '',
 		projectIconUrl: modpack.value?.icon_url ?? undefined,
 		projectName:
 			modpack.value?.title ?? modpackProjectId.value ?? formatMessage(commonMessages.modpackLabel),
@@ -805,7 +805,7 @@ provideInstallationSettings({
 
 	isServer: true,
 	isApp: serverSettings.isApp.value,
-	showModpackVersionActions: computed(() => modpack.value?.spec.platform === 'Bbsmc'),
+	showModpackVersionActions: computed(() => modpack.value?.spec.platform === 'modrinth'),
 	isLocalFile: computed(() => modpack.value?.spec.platform === 'local_file'),
 
 	lockPlatform: false,
@@ -831,19 +831,19 @@ provideInstallationSettings({
 		const addons = await client.archon.content_v1.getAddons(serverId, worldId.value!)
 		const activeAddons = (addons.addons ?? []).filter((a) => !a.disabled)
 
-		const BbsmcAddons = activeAddons.filter((a) => a.version?.id)
+		const modrinthAddons = activeAddons.filter((a) => a.version?.id)
 		const customAddons = activeAddons.filter((a) => !a.version?.id)
 
 		const incompatibleItems: { kind: (typeof activeAddons)[number]['kind']; filename: string }[] =
 			customAddons.map((a) => ({ kind: a.kind, filename: a.filename }))
 
-		if (BbsmcAddons.length > 0) {
-			const versionIds = BbsmcAddons.map((a) => a.version!.id)
+		if (modrinthAddons.length > 0) {
+			const versionIds = modrinthAddons.map((a) => a.version!.id)
 			const versions = await client.labrinth.versions_v2.getVersions(versionIds)
 			const incompatibleVersionIds = new Set(
 				versions.filter((v) => !v.game_versions.includes(targetGameVersion)).map((v) => v.id),
 			)
-			for (const addon of BbsmcAddons) {
+			for (const addon of modrinthAddons) {
 				if (incompatibleVersionIds.has(addon.version!.id)) {
 					incompatibleItems.push({ kind: addon.kind, filename: addon.filename })
 				}
@@ -932,7 +932,7 @@ watch(
 function onReinstall(event?: unknown) {
 	if (resetServerDisabled.value) return
 	installationSettingsLayout.value?.cancelEditing()
-	BbsmcServersConsole.clear()
+	modrinthServersConsole.clear()
 	queryClient.removeQueries({ queryKey: ['servers', 'ws-state', serverId] })
 	emit('reinstall', event)
 	serverSettings.closeModal?.()
@@ -954,7 +954,7 @@ async function confirmResetToOnboarding() {
 	try {
 		isResettingToOnboarding.value = true
 		await client.archon.servers_v1.resetToOnboarding(serverId, worldId.value)
-		BbsmcServersConsole.clear()
+		modrinthServersConsole.clear()
 		try {
 			await client.kyros.logs_v1.clear()
 		} catch (error) {

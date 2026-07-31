@@ -129,15 +129,15 @@ import {
 	InviteBackgroundIllustration,
 	LoaderCircleIcon,
 	UserPlusIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Admonition,
 	Avatar,
 	ButtonStyled,
 	defineMessages,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 import { computed, onServerPrefetch, useTemplateRef } from 'vue'
 
@@ -169,7 +169,7 @@ const messages = defineMessages({
 	},
 	unknownInviter: {
 		id: 'shared-instance.invite.inviter.unknown',
-		defaultMessage: 'A Bbsmc user',
+		defaultMessage: 'A modrinth user',
 	},
 	joinedCount: {
 		id: 'shared-instance.invite.joined-count',
@@ -186,12 +186,12 @@ const messages = defineMessages({
 	trustWarning: {
 		id: 'shared-instance.invite.trust.description',
 		defaultMessage:
-			'This invite was created by another Bbsmc user, not Bbsmc. Only accept invites from people you trust.',
+			'This invite was created by another modrinth user, not modrinth. Only accept invites from people you trust.',
 	},
 })
 
 const route = useRoute()
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const inviteId = computed(() => String(route.params.inviteId))
 const openInAppModal = useTemplateRef('openInAppModal')
 

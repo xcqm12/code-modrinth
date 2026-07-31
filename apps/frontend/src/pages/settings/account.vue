@@ -241,7 +241,7 @@
 							v-if="twoFactorSecret"
 							:value="`otpauth://totp/${encodeURIComponent(
 								auth.user.email,
-							)}?secret=${twoFactorSecret}&issuer=Bbsmc`"
+							)}?secret=${twoFactorSecret}&issuer=modrinth`"
 							:size="250"
 							:margin="2"
 							level="H"
@@ -491,7 +491,7 @@ import {
 	TrashIcon,
 	UpdatedIcon,
 	XIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -504,7 +504,7 @@ import {
 	StyledInput,
 	Table,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import KeyIcon from 'assets/icons/auth/key.svg'
 import DiscordIcon from 'assets/icons/auth/sso-discord.svg'
 import GithubIcon from 'assets/icons/auth/sso-github.svg'
@@ -534,7 +534,7 @@ const messages = defineMessages({
 	deleteAccountConfirmDescription: {
 		id: 'settings.account.delete.confirm.description',
 		defaultMessage:
-			'This will **immediately delete all of your user data and follows**. This will not delete your projects. Deleting your account cannot be reversed.<br><br>If you need help with your account, get support on the [Bbsmc Discord](https://discord.bbsmc.org.cn).',
+			'This will **immediately delete all of your user data and follows**. This will not delete your projects. Deleting your account cannot be reversed.<br><br>If you need help with your account, get support on the [modrinth Discord](https://discord.bbsmc.org.cn).',
 	},
 	deleteAccountConfirmProceed: {
 		id: 'settings.account.delete.confirm.proceed',
@@ -779,7 +779,7 @@ const messages = defineMessages({
 	dataExportDescription: {
 		id: 'settings.account.data-export.description',
 		defaultMessage:
-			'Request a copy of all your personal data you have uploaded to Bbsmc. This may take several minutes to complete.',
+			'Request a copy of all your personal data you have uploaded to modrinth. This may take several minutes to complete.',
 	},
 	downloadExportButton: {
 		id: 'settings.account.data-export.action.download',

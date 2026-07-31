@@ -66,7 +66,7 @@
     "message": "Renderizado avanzado"
   },
   "app.appearance-settings.color-theme.description": {
-    "message": "Selecciona tu tema de color preferido para la Bbsmc App."
+    "message": "Selecciona tu tema de color preferido para la modrinth App."
   },
   "app.appearance-settings.color-theme.title": {
     "message": "Tema de color"
@@ -126,7 +126,7 @@
     "message": "Alternar barra lateral"
   },
   "app.appearance-settings.unknown-pack-warning.description": {
-    "message": "Si intentas instalar un archivo de paquete de Bbsmc (.mrpack) que no esté alojado en Bbsmc, debes comprender los riesgos que esto conlleva antes de instalarlo."
+    "message": "Si intentas instalar un archivo de paquete de modrinth (.mrpack) que no esté alojado en modrinth, debes comprender los riesgos que esto conlleva antes de instalarlo."
   },
   "app.appearance-settings.unknown-pack-warning.title": {
     "message": "Adviérteme antes de instalarme modpacks desconocidos"
@@ -416,14 +416,14 @@
   "app.skins.section.minecon-earth-2017": {
     "message": "MINECON Earth 2017"
   },
-  "app.skins.section.Bbsmc": {
-    "message": "Bbsmc"
+  "app.skins.section.modrinth": {
+    "message": "modrinth"
   },
-  "app.skins.section.Bbsmc-pride": {
-    "message": "Orgullo Bbsmc"
+  "app.skins.section.modrinth-pride": {
+    "message": "Orgullo modrinth"
   },
-  "app.skins.section.Bbsmc-pride.tooltip": {
-    "message": "Has recibido estas skins por donar a la fundación Orgullo Bbsmc durante el Mes del Orgullo."
+  "app.skins.section.modrinth-pride.tooltip": {
+    "message": "Has recibido estas skins por donar a la fundación Orgullo modrinth durante el Mes del Orgullo."
   },
   "app.skins.section.mounts-of-mayhem": {
     "message": "Monturas del Caos"
@@ -447,10 +447,10 @@
     "message": "Iniciar Sesión"
   },
   "app.skins.sign-in.description": {
-    "message": "Por favor, inicia sesión con tu cuenta de Minecraft para usar las funciones del administrador de Skins de la app de Bbsmc."
+    "message": "Por favor, inicia sesión con tu cuenta de Minecraft para usar las funciones del administrador de Skins de la app de modrinth."
   },
   "app.skins.sign-in.rinthbot-alt": {
-    "message": "Bbsmc Bot emocionado"
+    "message": "modrinth Bot emocionado"
   },
   "app.skins.sign-in.title": {
     "message": "Por favor, inicia sesión"
@@ -459,13 +459,13 @@
     "message": "Selector de Skin"
   },
   "app.update-popup.body.download-complete": {
-    "message": "Bbsmc App v{version} se ha descargado. Actualiza la página ahora o espera a que se actualice automáticamente al cerrar Bbsmc App."
+    "message": "modrinth App v{version} se ha descargado. Actualiza la página ahora o espera a que se actualice automáticamente al cerrar modrinth App."
   },
   "app.update-popup.body.linux": {
-    "message": "Ya está disponible Bbsmc App v{version}. ¡Utiliza tu gestor de paquetes para actualizarla y disfrutar de las últimas funciones y correcciones!"
+    "message": "Ya está disponible modrinth App v{version}. ¡Utiliza tu gestor de paquetes para actualizarla y disfrutar de las últimas funciones y correcciones!"
   },
   "app.update-popup.body.metered": {
-    "message": "¡Bbsmc App v{version} ya está disponible! Como estás conectado a una red con tarifa por datos, no la hemos descargado automáticamente."
+    "message": "¡modrinth App v{version} ya está disponible! Como estás conectado a una red con tarifa por datos, no la hemos descargado automáticamente."
   },
   "app.update-popup.changelog": {
     "message": "Registro de cambios"
@@ -489,7 +489,7 @@
     "message": "¡La versión {version} se ha instalado correctamente!"
   },
   "app.world.server-modal.placeholder-address": {
-    "message": "ejemplo.Bbsmc.gg"
+    "message": "ejemplo.modrinth.gg"
   },
   "app.world.server-modal.select-an-option": {
     "message": "Selecciona una opción"
@@ -522,10 +522,10 @@
     "message": "¡Puede ser diferente de su apodo en Minecraft!"
   },
   "friends.add-friend.username.placeholder": {
-    "message": "Escribe su apodo en Bbsmc..."
+    "message": "Escribe su apodo en modrinth..."
   },
   "friends.add-friend.username.title": {
-    "message": "¿Cuál es el apodo de tu amigo en Bbsmc?"
+    "message": "¿Cuál es el apodo de tu amigo en modrinth?"
   },
   "friends.add-friends-to-share": {
     "message": "<link>Añade amigos</link> para ver a qué están jugando!"
@@ -567,7 +567,7 @@
     "message": "{title}: {count}"
   },
   "friends.sign-in-to-add-friends": {
-    "message": "<link>Inicia sesión en una cuenta Bbsmc</link> para añadir amigos y ver a qué están jugando!"
+    "message": "<link>Inicia sesión en una cuenta modrinth</link> para añadir amigos y ver a qué están jugando!"
   },
   "instance.add-server.add-and-play": {
     "message": "Añadir y jugar"

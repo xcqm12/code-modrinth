@@ -24,13 +24,13 @@
     "defaultMessage": "Legg til lisensdetaljer"
   },
   "nags.add-links-server.description": {
-    "defaultMessage": "Legg til relevante lenker målretta utenfor Bbsmc, som en nettside, butikk, eller en Discord invitasjon."
+    "defaultMessage": "Legg til relevante lenker målretta utenfor modrinth, som en nettside, butikk, eller en Discord invitasjon."
   },
   "nags.add-links-server.title": {
     "defaultMessage": "Legg til eksterne lenker"
   },
   "nags.add-links.description": {
-    "defaultMessage": "Legg til alle relevante lenker målrettet utenfor Bbsmc, som kildekode, en problemssporingssystem, eller en Discord-invitasjon."
+    "defaultMessage": "Legg til alle relevante lenker målrettet utenfor modrinth, som kildekode, en problemssporingssystem, eller en Discord-invitasjon."
   },
   "nags.add-links.title": {
     "defaultMessage": "Legg til eksterne lenker"

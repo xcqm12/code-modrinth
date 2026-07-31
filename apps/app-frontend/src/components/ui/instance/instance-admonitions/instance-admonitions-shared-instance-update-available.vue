@@ -17,8 +17,8 @@
 </template>
 
 <script setup lang="ts">
-import { DownloadIcon } from '@Bbsmc/assets'
-import { Admonition, ButtonStyled, useVIntl } from '@Bbsmc/ui'
+import { DownloadIcon } from '@modrinth/assets'
+import { Admonition, ButtonStyled, useVIntl } from '@modrinth/ui'
 
 import { instanceAdmonitionsMessages as messages } from './instance-admonitions-messages'
 

@@ -6,8 +6,8 @@ import {
 	SpinnerIcon,
 	StopCircleIcon,
 	TimerIcon,
-} from '@Bbsmc/assets'
-import { Avatar, ButtonStyled, injectNotificationManager, useRelativeTime } from '@Bbsmc/ui'
+} from '@modrinth/assets'
+import { Avatar, ButtonStyled, injectNotificationManager, useRelativeTime } from '@modrinth/ui'
 import { convertFileSrc } from '@tauri-apps/api/core'
 import dayjs from 'dayjs'
 import { computed, onMounted, onUnmounted, ref } from 'vue'
@@ -99,7 +99,7 @@ const repair = async (e) => {
 
 	if (
 		props.instance.install_stage !== 'pack_installed' &&
-		(props.instance.link?.type === 'Bbsmc_modpack' ||
+		(props.instance.link?.type === 'modrinth_modpack' ||
 			props.instance.link?.type === 'server_project_modpack')
 	) {
 		await install_pack_to_existing_instance(props.instance.id, {

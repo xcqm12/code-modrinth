@@ -135,9 +135,9 @@ pub struct ProjectDownloads {
 #[derive(Debug, Clone, PartialEq, Eq, Hash, utoipa::ToSchema)]
 pub enum DownloadSource {
     Website,
-    BbsmcApp,
-    BbsmcHosting,
-    BbsmcMaven,
+    modrinthApp,
+    modrinthHosting,
+    modrinthMaven,
     Other,
     Named(String),
 }
@@ -150,11 +150,11 @@ impl Serialize for DownloadSource {
         match self {
             Self::Named(name) => serializer.serialize_str(name),
             Self::Website => serializer.serialize_str("website"),
-            Self::BbsmcApp => serializer.serialize_str("Bbsmc_app"),
-            Self::BbsmcHosting => {
-                serializer.serialize_str("Bbsmc_hosting")
+            Self::modrinthApp => serializer.serialize_str("modrinth_app"),
+            Self::modrinthHosting => {
+                serializer.serialize_str("modrinth_hosting")
             }
-            Self::BbsmcMaven => serializer.serialize_str("Bbsmc_maven"),
+            Self::modrinthMaven => serializer.serialize_str("modrinth_maven"),
             Self::Other => serializer.serialize_str("other"),
         }
     }
@@ -168,9 +168,9 @@ impl<'de> Deserialize<'de> for DownloadSource {
         let source = String::deserialize(deserializer)?;
         Ok(match source.as_str() {
             "website" => Self::Website,
-            "Bbsmc_app" => Self::BbsmcApp,
-            "Bbsmc_hosting" => Self::BbsmcHosting,
-            "Bbsmc_maven" => Self::BbsmcMaven,
+            "modrinth_app" => Self::modrinthApp,
+            "modrinth_hosting" => Self::modrinthHosting,
+            "modrinth_maven" => Self::modrinthMaven,
             "other" => Self::Other,
             _ if !source.is_empty() => Self::Named(source),
             _ => {
@@ -586,9 +586,9 @@ pub(crate) async fn fetch(
 enum DownloadSourcePattern {
     Named(&'static str),
     Website,
-    BbsmcApp,
-    BbsmcHosting,
-    BbsmcMaven,
+    modrinthApp,
+    modrinthHosting,
+    modrinthMaven,
 }
 
 impl DownloadSourcePattern {
@@ -596,9 +596,9 @@ impl DownloadSourcePattern {
         match self {
             Self::Named(name) => DownloadSource::Named(name.into()),
             Self::Website => DownloadSource::Website,
-            Self::BbsmcApp => DownloadSource::BbsmcApp,
-            Self::BbsmcHosting => DownloadSource::BbsmcHosting,
-            Self::BbsmcMaven => DownloadSource::BbsmcMaven,
+            Self::modrinthApp => DownloadSource::modrinthApp,
+            Self::modrinthHosting => DownloadSource::modrinthHosting,
+            Self::modrinthMaven => DownloadSource::modrinthMaven,
         }
     }
 }
@@ -620,9 +620,9 @@ fn download_source_sort_key(source: &DownloadSource) -> &str {
     match source {
         DownloadSource::Named(name) => name,
         DownloadSource::Website => "website",
-        DownloadSource::BbsmcApp => "Bbsmc_app",
-        DownloadSource::BbsmcHosting => "Bbsmc_hosting",
-        DownloadSource::BbsmcMaven => "Bbsmc_maven",
+        DownloadSource::modrinthApp => "modrinth_app",
+        DownloadSource::modrinthHosting => "modrinth_hosting",
+        DownloadSource::modrinthMaven => "modrinth_maven",
         DownloadSource::Other => "other",
     }
 }
@@ -632,9 +632,9 @@ static DOWNLOAD_SOURCE_PATTERNS: LazyLock<Vec<(Regex, DownloadSourcePattern)>> =
         use DownloadSourcePattern as P;
 
         [
-            (r"^Bbsmc/kyros/", P::BbsmcHosting),
-            (r"^Bbsmc/theseus/", P::BbsmcApp),
-            (r"^(Gradle/|Apache-Maven/)", P::BbsmcMaven),
+            (r"^modrinth/kyros/", P::modrinthHosting),
+            (r"^modrinth/theseus/", P::modrinthApp),
+            (r"^(Gradle/|Apache-Maven/)", P::modrinthMaven),
             (r"^MultiMC/", P::Named("MultiMC")),
             (r"^PrismLauncher/", P::Named("Prism Launcher")),
             (r"^PolyMC/", P::Named("PolyMC")),

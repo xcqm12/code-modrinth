@@ -1,5 +1,5 @@
 ;(function () {
-	document.documentElement.classList.add('Bbsmc-cmp-summary-hidden')
+	document.documentElement.classList.add('modrinth-cmp-summary-hidden')
 
 	var host = 'bbsmc.org.cn'
 	// var host = window.location.hostname;
@@ -134,7 +134,7 @@
 	}
 
 	makeStub()
-	window.dispatchEvent(new Event('Bbsmc-cmp-ready'))
+	window.dispatchEvent(new Event('modrinth-cmp-ready'))
 
 	var uspStubFunction = function () {
 		var arg = arguments

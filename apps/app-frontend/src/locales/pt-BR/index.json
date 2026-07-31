@@ -74,8 +74,8 @@
   "app.action-bar.install.summary.minecraft-setup-failed": {
     "message": "Falha na configuração do Minecraft"
   },
-  "app.action-bar.install.summary.Bbsmc-unreachable": {
-    "message": "Não foi possível alcançar o Bbsmc"
+  "app.action-bar.install.summary.modrinth-unreachable": {
+    "message": "Não foi possível alcançar o modrinth"
   },
   "app.action-bar.install.summary.no-write-permission": {
     "message": "Sem permissão para escrita"
@@ -132,7 +132,7 @@
     "message": "Aceitar tudo"
   },
   "app.ads-consent.body": {
-    "message": "Anúncios tornam o Bbsmc possível e financiam os pagamentos dos criadores. Nossos parceiros talvez armazenem ou acessem os cookies no aplicativo para personalizar anúncios e medir o desempenho."
+    "message": "Anúncios tornam o modrinth possível e financiam os pagamentos dos criadores. Nossos parceiros talvez armazenem ou acessem os cookies no aplicativo para personalizar anúncios e medir o desempenho."
   },
   "app.ads-consent.manage": {
     "message": "Gerenciar preferências"
@@ -141,7 +141,7 @@
     "message": "Rejeitar tudo"
   },
   "app.ads-consent.title": {
-    "message": "Sua privacidade e como anúncios apoiam o Bbsmc"
+    "message": "Sua privacidade e como anúncios apoiam o modrinth"
   },
   "app.appearance-settings.advanced-rendering.description": {
     "message": "Ativa a renderização avançada, como desfoque que talvez afete o desempenho sem renderização acelerada do hardware."
@@ -150,7 +150,7 @@
     "message": "Renderização avançada"
   },
   "app.appearance-settings.color-theme.description": {
-    "message": "Escolha seu tema de cores preferido para o Bbsmc App."
+    "message": "Escolha seu tema de cores preferido para o modrinth App."
   },
   "app.appearance-settings.color-theme.title": {
     "message": "Tema de cores"
@@ -210,7 +210,7 @@
     "message": "Alternar barra lateral"
   },
   "app.appearance-settings.unknown-pack-warning.description": {
-    "message": "Se você tentar instalar um arquivo Bbsmc Pack (.mrpack) não hospedado no Bbsmc, garantiremos que você entenda os riscos antes de instalar."
+    "message": "Se você tentar instalar um arquivo modrinth Pack (.mrpack) não hospedado no modrinth, garantiremos que você entenda os riscos antes de instalar."
   },
   "app.appearance-settings.unknown-pack-warning.title": {
     "message": "Avise-me antes de instalar pacotes de mods desconhecidos"
@@ -507,13 +507,13 @@
     "message": "Iniciar sessão como"
   },
   "app.instance.shared-instance-wrong-account.signed-out-header": {
-    "message": "Você precisa iniciar sessão no Bbsmc"
+    "message": "Você precisa iniciar sessão no modrinth"
   },
   "app.instance.shared-instance-wrong-account.user-admonition-body-v2": {
     "message": "para receber atualizações desta instância compartilhada."
   },
   "app.instance.shared-instance-wrong-account.warning-header": {
-    "message": "Você está usando a conta errada do Bbsmc"
+    "message": "Você está usando a conta errada do modrinth"
   },
   "app.instance.worlds.add-server": {
     "message": "Adicionar servidor"
@@ -591,7 +591,7 @@
     "message": "Instalar"
   },
   "app.modal.install-to-play.invite-warning": {
-    "message": "Este convite foi criado por outro usuário do Bbsmc, não pelo próprio Bbsmc. Só aceite convites de pessoas que você confia."
+    "message": "Este convite foi criado por outro usuário do modrinth, não pelo próprio modrinth. Só aceite convites de pessoas que você confia."
   },
   "app.modal.install-to-play.mod-count": {
     "message": "{count, plural, =0 {Nenhum mod} one {# mod} other {# mods}}"
@@ -630,7 +630,7 @@
     "message": "Para solicitações de suporte, entre em contato com nossa <support-link>equipe de suporte</support-link>. Para informar erros, abra uma <github-link>discussão no GitHub</github-link>."
   },
   "app.modal.install-to-play.reviewed-files": {
-    "message": "Um arquivo só é revisado se for publicado no Bbsmc, independente do formato de arquivo (incluindo .mrpack)."
+    "message": "Um arquivo só é revisado se for publicado no modrinth, independente do formato de arquivo (incluindo .mrpack)."
   },
   "app.modal.install-to-play.shared-instance": {
     "message": "Instância compartilhada"
@@ -639,10 +639,10 @@
     "message": "Conteúdo de instância compartilhado"
   },
   "app.modal.install-to-play.shared-instance-unknown-files-description": {
-    "message": "Esta instância compartilhada contém arquivos não publicados no Bbsmc. Recomendamos fortemente a instalar somente arquivos de fontes que você confia."
+    "message": "Esta instância compartilhada contém arquivos não publicados no modrinth. Recomendamos fortemente a instalar somente arquivos de fontes que você confia."
   },
   "app.modal.install-to-play.unknown-files-description": {
-    "message": "Este pacote de mods do servidor contém arquivos não publicados no Bbsmc. Recomendamos fortemente a instalar apenas arquivos de fontes que você confia."
+    "message": "Este pacote de mods do servidor contém arquivos não publicados no modrinth. Recomendamos fortemente a instalar apenas arquivos de fontes que você confia."
   },
   "app.modal.install-to-play.unknown-files-warning": {
     "message": "Aviso de arquivos desconhecidos"
@@ -660,7 +660,7 @@
     "message": "Removido"
   },
   "app.modal.update-to-play.server-modpack-unknown-files-description": {
-    "message": "Esta atualização do pacote de mods do servidor contém arquivos que não estão publicados no Bbsmc. Recomendamos fortemente a apenas instalar arquivos de fontes que você confia."
+    "message": "Esta atualização do pacote de mods do servidor contém arquivos que não estão publicados no modrinth. Recomendamos fortemente a apenas instalar arquivos de fontes que você confia."
   },
   "app.modal.update-to-play.shared-instance-added-label": {
     "message": "Adicionado"
@@ -669,7 +669,7 @@
     "message": "Removido"
   },
   "app.modal.update-to-play.shared-instance-unknown-files-description": {
-    "message": "Esta atualização de instância compartilhada contém arquivos não publicados no Bbsmc. Recomendamos fortemente a instalar apenas de fontes que você confia."
+    "message": "Esta atualização de instância compartilhada contém arquivos não publicados no modrinth. Recomendamos fortemente a instalar apenas de fontes que você confia."
   },
   "app.modal.update-to-play.update-required": {
     "message": "Atualização necessária"
@@ -705,7 +705,7 @@
     "message": "Baixando v{version}"
   },
   "app.settings.privacy.ads-consent.intro": {
-    "message": "Anúncios tornam o Bbsmc possível e financiam os pagamentos dos criadores. Nossos parceiros talvez armazenem ou acessem os cookies no aplicativo para personalizar anúncios e medir o desempenho. Você pode recusar ou gerenciar suas preferências abaixo."
+    "message": "Anúncios tornam o modrinth possível e financiam os pagamentos dos criadores. Nossos parceiros talvez armazenem ou acessem os cookies no aplicativo para personalizar anúncios e medir o desempenho. Você pode recusar ou gerenciar suas preferências abaixo."
   },
   "app.settings.tabs.appearance": {
     "message": "Aparência"
@@ -836,14 +836,14 @@
   "app.skins.section.minecon-earth-2017": {
     "message": "MINECON Earth 2017"
   },
-  "app.skins.section.Bbsmc": {
-    "message": "Bbsmc"
+  "app.skins.section.modrinth": {
+    "message": "modrinth"
   },
-  "app.skins.section.Bbsmc-pride": {
-    "message": "Bbsmc Pride"
+  "app.skins.section.modrinth-pride": {
+    "message": "modrinth Pride"
   },
-  "app.skins.section.Bbsmc-pride.tooltip": {
-    "message": "Você recebeu estas skins por doar para uma campanha de arrecadação do Bbsmc Pride durante o Mês de Orgulho."
+  "app.skins.section.modrinth-pride.tooltip": {
+    "message": "Você recebeu estas skins por doar para uma campanha de arrecadação do modrinth Pride durante o Mês de Orgulho."
   },
   "app.skins.section.mounts-of-mayhem": {
     "message": "Mounts of Mayhem"
@@ -867,10 +867,10 @@
     "message": "Iniciar sessão"
   },
   "app.skins.sign-in.description": {
-    "message": "Inicie sessão na sua conta do Minecraft para usar os recursos de gerenciamento de skins no Bbsmc App."
+    "message": "Inicie sessão na sua conta do Minecraft para usar os recursos de gerenciamento de skins no modrinth App."
   },
   "app.skins.sign-in.rinthbot-alt": {
-    "message": "Bbsmc Bot animado"
+    "message": "modrinth Bot animado"
   },
   "app.skins.sign-in.title": {
     "message": "Inicie a sessão"
@@ -885,13 +885,13 @@
     "message": "Ativar"
   },
   "app.update-popup.body.download-complete": {
-    "message": "O Bbsmc App v{version} já foi instalado. Recarregue para atualizar agora ou ela será feita automaticamente ao fechar o Bbsmc App."
+    "message": "O modrinth App v{version} já foi instalado. Recarregue para atualizar agora ou ela será feita automaticamente ao fechar o modrinth App."
   },
   "app.update-popup.body.linux": {
-    "message": "O Bbsmc App v{version} está disponível. Use o gerenciador de pacotes para atualizar para obter novos recursos e correções!"
+    "message": "O modrinth App v{version} está disponível. Use o gerenciador de pacotes para atualizar para obter novos recursos e correções!"
   },
   "app.update-popup.body.metered": {
-    "message": "O Bbsmc App v{version} já está disponível! Já que sua rede é limitada, não a instalamos automaticamente."
+    "message": "O modrinth App v{version} já está disponível! Já que sua rede é limitada, não a instalamos automaticamente."
   },
   "app.update-popup.changelog": {
     "message": "Mudanças"
@@ -915,7 +915,7 @@
     "message": "Versão {version} instalada!"
   },
   "app.world.server-modal.placeholder-address": {
-    "message": "exemplo.Bbsmc.gg"
+    "message": "exemplo.modrinth.gg"
   },
   "app.world.server-modal.select-an-option": {
     "message": "Selecione uma opção"
@@ -984,7 +984,7 @@
     "message": "Insira o nome de usuário..."
   },
   "friends.add-friend.username.title": {
-    "message": "Qual o nome de usuário do seu amigo no Bbsmc?"
+    "message": "Qual o nome de usuário do seu amigo no modrinth?"
   },
   "friends.add-friends-to-share": {
     "message": "<link>Adicione amigos</link> para ver o que eles estão jogando!"
@@ -1026,7 +1026,7 @@
     "message": "{title} - {count}"
   },
   "friends.sign-in-to-add-friends": {
-    "message": "<link>Inicie uma sessão com o Bbsmc</link> para adicionar amigos e ver o que eles estão jogando!"
+    "message": "<link>Inicie uma sessão com o modrinth</link> para adicionar amigos e ver o que eles estão jogando!"
   },
   "installation-settings.shared-instance.linked-title": {
     "message": "Instância compartilhada vinculada"
@@ -1047,7 +1047,7 @@
     "message": "Remover instância compartilhada"
   },
   "installation-settings.shared-instance.unpublish-description": {
-    "message": "Remova esta instância compartilhada do Bbsmc e pare de enviar atualizações para todos que a utilizam. Sua instância local não será afetada."
+    "message": "Remova esta instância compartilhada do modrinth e pare de enviar atualizações para todos que a utilizam. Sua instância local não será afetada."
   },
   "installation-settings.shared-instance.unpublishing-button": {
     "message": "Removendo..."
@@ -1062,7 +1062,7 @@
     "message": "Desvincular instância compartilhada"
   },
   "installation-settings.unpublish-shared-instance.modal.admonition-body": {
-    "message": "Isso excluirá a instância compartilhada dos servidores do Bbsmc. As pessoas usando-o no Bbsmc App não receberá mais atualizações, mas sua instância local e seu conteúdo ainda permanecerá no dispositivo."
+    "message": "Isso excluirá a instância compartilhada dos servidores do modrinth. As pessoas usando-o no modrinth App não receberá mais atualizações, mas sua instância local e seu conteúdo ainda permanecerá no dispositivo."
   },
   "installation-settings.unpublish-shared-instance.modal.admonition-header": {
     "message": "Removendo instância compartilhada"
@@ -1493,40 +1493,40 @@
   "minecraft-required.sign-in": {
     "message": "Entrar na Microsoft"
   },
-  "modal.Bbsmc-account-required.browser-description": {
+  "modal.modrinth-account-required.browser-description": {
     "message": "Uma nova aba foi aberta para iniciar sessão. Conclua lá, então volte ao aplicativo."
   },
-  "modal.Bbsmc-account-required.cancel-button": {
+  "modal.modrinth-account-required.cancel-button": {
     "message": "Cancelar"
   },
-  "modal.Bbsmc-account-required.continue-in-browser-heading": {
+  "modal.modrinth-account-required.continue-in-browser-heading": {
     "message": "Continuar em seu navegador"
   },
-  "modal.Bbsmc-account-required.create-account-button": {
+  "modal.modrinth-account-required.create-account-button": {
     "message": "Criar uma conta"
   },
-  "modal.Bbsmc-account-required.description": {
-    "message": "Você precisa iniciar sessão na sua conta do Bbsmc antes de usar este recurso."
+  "modal.modrinth-account-required.description": {
+    "message": "Você precisa iniciar sessão na sua conta do modrinth antes de usar este recurso."
   },
-  "modal.Bbsmc-account-required.header": {
+  "modal.modrinth-account-required.header": {
     "message": "Conta necessária"
   },
-  "modal.Bbsmc-account-required.open-browser-again-button": {
+  "modal.modrinth-account-required.open-browser-again-button": {
     "message": "Abra o navegador novamente"
   },
-  "modal.Bbsmc-account-required.sign-in-button": {
-    "message": "Entrar no Bbsmc"
+  "modal.modrinth-account-required.sign-in-button": {
+    "message": "Entrar no modrinth"
   },
-  "modal.Bbsmc-account-required.sign-in-heading": {
-    "message": "Iniciar sessão em uma conta do Bbsmc"
+  "modal.modrinth-account-required.sign-in-heading": {
+    "message": "Iniciar sessão em uma conta do modrinth"
   },
-  "modal.Bbsmc-account-required.signing-in-header": {
+  "modal.modrinth-account-required.signing-in-header": {
     "message": "Iniciando sessão"
   },
-  "modal.Bbsmc-account-required.support-prompt": {
+  "modal.modrinth-account-required.support-prompt": {
     "message": "Enfrentando problemas ao iniciar sessão? <support>Obtenha suporte</support>"
   },
-  "modal.Bbsmc-account-required.waiting-for-browser": {
+  "modal.modrinth-account-required.waiting-for-browser": {
     "message": "Aguardando confirmação do navegador..."
   },
   "search.filter.locked.instance": {

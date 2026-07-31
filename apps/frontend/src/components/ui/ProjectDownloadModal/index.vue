@@ -14,7 +14,7 @@
 		</template>
 		<template #default>
 			<div v-if="project" class="mx-auto flex w-full flex-col gap-4">
-				<InstallWithBbsmcApp :project="project" />
+				<InstallWithmodrinthApp :project="project" />
 				<DownloadProject
 					:project="project"
 					:versions="versions"
@@ -91,14 +91,14 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
-import { DownloadIcon, SpinnerIcon } from '@Bbsmc/assets'
+import type { Labrinth } from '@modrinth/api-client'
+import { DownloadIcon, SpinnerIcon } from '@modrinth/assets'
 import {
 	Avatar,
 	ButtonStyled,
 	type CdnDownloadReason,
 	defineMessages,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	type JoinedButtonAction,
 	JoinedButtons,
@@ -107,8 +107,8 @@ import {
 	truncatedTooltip,
 	useDebugLogger,
 	useVIntl,
-} from '@Bbsmc/ui'
-import type { DisplayProjectType } from '@Bbsmc/utils'
+} from '@modrinth/ui'
+import type { DisplayProjectType } from '@modrinth/utils'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import dayjs from 'dayjs'
 import JSZip from 'jszip'
@@ -121,7 +121,7 @@ import { STALE_TIME, STALE_TIME_LONG } from '~/composables/queries/project'
 import { provideDownloadModalProvider } from './download-modal-provider'
 import DownloadDependencies from './DownloadDependencies.vue'
 import DownloadProject from './DownloadProject.vue'
-import InstallWithBbsmcApp from './InstallWithBbsmcApp.vue'
+import InstallWithmodrinthApp from './InstallWithmodrinthApp.vue'
 
 type DownloadModalProject = Omit<Labrinth.Projects.v2.Project, 'project_type'> & {
 	project_type: DisplayProjectType
@@ -184,7 +184,7 @@ const emit = defineEmits<{
 const route = useRoute()
 const flags = useFeatureFlags()
 const tags = useGeneratedState()
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const queryClient = useQueryClient()
 const { createProjectDownloadUrl } = useCdnDownloadContext()
 const { addNotification } = injectNotificationManager()

@@ -4,13 +4,13 @@ import { onBeforeRouteLeave } from 'vue-router'
 import { useServerBackupsQueue } from '#ui/composables/server-backups-queue'
 import {
 	injectAppBackup,
-	injectBbsmcClient,
-	injectBbsmcServerContext,
+	injectmodrinthClient,
+	injectmodrinthServerContext,
 	injectNotificationManager,
 } from '#ui/providers'
 
 export function useInlineBackup(backupName: string | (() => string)) {
-	const serverCtx = injectBbsmcServerContext(null)
+	const serverCtx = injectmodrinthServerContext(null)
 	const appBackup = injectAppBackup(null)
 
 	if (!serverCtx) {
@@ -59,7 +59,7 @@ export function useInlineBackup(backupName: string | (() => string)) {
 		}
 	}
 
-	const client = injectBbsmcClient()
+	const client = injectmodrinthClient()
 	const { addNotification } = injectNotificationManager()
 	const { serverId, worldId } = serverCtx
 

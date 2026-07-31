@@ -39,8 +39,8 @@
 </template>
 
 <script lang="ts" setup>
-import { TriangleAlertIcon } from '@Bbsmc/assets'
-import { countText, MIN_DESCRIPTION_CHARS } from '@Bbsmc/moderation'
+import { TriangleAlertIcon } from '@modrinth/assets'
+import { countText, MIN_DESCRIPTION_CHARS } from '@modrinth/moderation'
 import {
 	ConfirmLeaveModal,
 	injectProjectPageContext,
@@ -48,8 +48,8 @@ import {
 	UnsavedChangesPopup,
 	usePageLeaveSafety,
 	useSavable,
-} from '@Bbsmc/ui'
-import { TeamMemberPermission } from '@Bbsmc/utils'
+} from '@modrinth/ui'
+import { TeamMemberPermission } from '@modrinth/utils'
 import { computed } from 'vue'
 
 import { useImageUpload } from '~/composables/image-upload.ts'

@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { SettingsIcon } from '@Bbsmc/assets'
+import { SettingsIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	defineMessages,
 	injectNotificationManager,
 	PagewideBanner,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { FetchError } from 'ofetch'
 
 const { addNotification } = injectNotificationManager()
@@ -25,7 +25,7 @@ const verifyEmailBannerMessages = defineMessages({
 	description: {
 		id: 'layout.banner.verify-email.description',
 		defaultMessage:
-			'For security reasons, Bbsmc needs you to verify the email address associated with your account.',
+			'For security reasons, modrinth needs you to verify the email address associated with your account.',
 	},
 	action: {
 		id: 'layout.banner.verify-email.action',
@@ -41,7 +41,7 @@ const addEmailBannerMessages = defineMessages({
 	description: {
 		id: 'layout.banner.add-email.description',
 		defaultMessage:
-			'For security reasons, Bbsmc needs you to register an email address to your account.',
+			'For security reasons, modrinth needs you to register an email address to your account.',
 	},
 	action: {
 		id: 'layout.banner.add-email.button',

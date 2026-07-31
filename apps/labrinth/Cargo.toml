@@ -74,9 +74,9 @@ itertools = { workspace = true }
 json-patch = { workspace = true }
 lettre = { workspace = true }
 meilisearch-sdk = { workspace = true, features = ["reqwest"] }
-Bbsmc-content-management = { workspace = true }
+modrinth-content-management = { workspace = true }
 md-5 = { workspace = true }
-Bbsmc-util = { workspace = true, features = ["decimal", "sentry", "utoipa"] }
+modrinth-util = { workspace = true, features = ["decimal", "sentry", "utoipa"] }
 muralpay = { workspace = true, features = ["client", "mock", "utoipa"] }
 murmur2 = { workspace = true }
 neverbounce = { workspace = true }

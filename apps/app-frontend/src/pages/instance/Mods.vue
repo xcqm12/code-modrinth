@@ -89,8 +89,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
-import { ClipboardCopyIcon, FolderOpenIcon } from '@Bbsmc/assets'
+import type { Labrinth } from '@modrinth/api-client'
+import { ClipboardCopyIcon, FolderOpenIcon } from '@modrinth/assets'
 import {
 	type BulkOperationStatus,
 	commonMessages,
@@ -114,7 +114,7 @@ import {
 	useDebugLogger,
 	useVIntl,
 	versionChangesGameVersion,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { convertFileSrc } from '@tauri-apps/api/core'
 import { getCurrentWebview } from '@tauri-apps/api/webview'
@@ -137,12 +137,12 @@ import {
 	add_project_from_path,
 	edit,
 	get_linked_modpack_content,
-	is_file_on_Bbsmc,
+	is_file_on_modrinth,
 	remove_project,
 	switch_project_version_with_dependencies,
 	toggle_disable_project,
 	update_all,
-	update_managed_Bbsmc_version,
+	update_managed_modrinth_version,
 } from '@/helpers/instance'
 import { type InstanceContentData, loadInstanceContentData } from '@/helpers/instance-content'
 import { get as getSettings, set as setSettings } from '@/helpers/settings'
@@ -322,7 +322,7 @@ const isInstanceBusy = computed(() => props.instance?.install_stage !== 'install
 const isPackLocked = computed(
 	() =>
 		props.instance.quarantined ||
-		props.instance?.link?.type === 'Bbsmc_modpack' ||
+		props.instance?.link?.type === 'modrinth_modpack' ||
 		props.instance?.link?.type === 'server_project_modpack',
 )
 
@@ -547,7 +547,7 @@ async function handleUploadFiles() {
 	const fileRecognition = await Promise.all(
 		selectedFiles.map(async ({ path }) => {
 			try {
-				return await is_file_on_Bbsmc(path)
+				return await is_file_on_modrinth(path)
 			} catch {
 				return true
 			}
@@ -1221,7 +1221,7 @@ async function handleModpackUpdateConfirm() {
 	contentUpdaterModal.value?.hide()
 	isModpackUpdating.value = true
 	try {
-		await update_managed_Bbsmc_version(props.instance.id, version.id)
+		await update_managed_modrinth_version(props.instance.id, version.id)
 		await initProjects()
 	} finally {
 		isModpackUpdating.value = false

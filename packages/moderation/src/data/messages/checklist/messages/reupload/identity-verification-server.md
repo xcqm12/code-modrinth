@@ -1,6 +1,6 @@
 ## Identity Verification
 
-**Welcome to Bbsmc!**
+**Welcome to modrinth!**
 
 We're happy to see you here and are looking forward to sharing your server with our users.
 First, we just want to make sure you have the necessary authority to create this listing.

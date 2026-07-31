@@ -88,18 +88,18 @@ import {
 	DownloadIcon,
 	GenericListIcon,
 	SpinnerIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	ButtonStyled,
 	Combobox,
 	defineMessages,
 	EmptyState,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	useFormatDateTime,
 	useFormatMoney,
 	useVIntl,
-} from '@Bbsmc/ui'
-import { capitalizeString } from '@Bbsmc/utils'
+} from '@modrinth/ui'
+import { capitalizeString } from '@modrinth/utils'
 import { useQuery } from '@tanstack/vue-query'
 import dayjs from 'dayjs'
 
@@ -114,7 +114,7 @@ const formatMonth = useFormatDateTime({
 	month: 'long',
 })
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const generatedState = useGeneratedState()
 
 const messages = defineMessages({
@@ -165,7 +165,7 @@ const messages = defineMessages({
 })
 
 useHead({
-	title: () => `${formatMessage(messages.headTitle)} - Bbsmc`,
+	title: () => `${formatMessage(messages.headTitle)} - modrinth`,
 })
 
 const { data: transactions, refetch } = useQuery({
@@ -350,7 +350,7 @@ const downloadTransactionsCSV = () => {
 		const link = document.createElement('a')
 		const url = URL.createObjectURL(blob)
 		const yearSuffix = selectedYear.value === 'all' ? 'all' : selectedYear.value
-		const filename = `Bbsmc-transactions-${yearSuffix}.csv`
+		const filename = `modrinth-transactions-${yearSuffix}.csv`
 
 		link.setAttribute('href', url)
 		link.setAttribute('download', filename)

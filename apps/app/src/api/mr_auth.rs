@@ -11,19 +11,19 @@ use tokio::sync::oneshot;
 pub fn init<R: tauri::Runtime>() -> TauriPlugin<R> {
     tauri::plugin::Builder::new("mr-auth")
         .invoke_handler(tauri::generate_handler![
-            Bbsmc_login,
+            modrinth_login,
             logout,
             get,
-            cancel_Bbsmc_login,
+            cancel_modrinth_login,
         ])
         .build()
 }
 
 #[tauri::command]
-pub async fn Bbsmc_login<R: Runtime>(
+pub async fn modrinth_login<R: Runtime>(
     app: tauri::AppHandle<R>,
-    flow: mr_auth::BbsmcAuthFlow,
-) -> Result<BbsmcCredentials> {
+    flow: mr_auth::modrinthAuthFlow,
+) -> Result<modrinthCredentials> {
     let (auth_code_recv_socket_tx, auth_code_recv_socket) = oneshot::channel();
     let auth_code = tokio::spawn(oauth_utils::auth_code_reply::listen(
         auth_code_recv_socket_tx,
@@ -74,11 +74,11 @@ pub async fn logout() -> Result<()> {
 }
 
 #[tauri::command]
-pub async fn get() -> Result<Option<BbsmcCredentials>> {
+pub async fn get() -> Result<Option<modrinthCredentials>> {
     Ok(theseus::mr_auth::get_credentials().await?)
 }
 
 #[tauri::command]
-pub fn cancel_Bbsmc_login() {
+pub fn cancel_modrinth_login() {
     oauth_utils::auth_code_reply::stop_listeners();
 }

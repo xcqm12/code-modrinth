@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
-import { ArrowLeftIcon, LoaderCircleIcon } from '@Bbsmc/assets'
-import { ButtonStyled, injectBbsmcClient } from '@Bbsmc/ui'
+import type { Labrinth } from '@modrinth/api-client'
+import { ArrowLeftIcon, LoaderCircleIcon } from '@modrinth/assets'
+import { ButtonStyled, injectmodrinthClient } from '@modrinth/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 
 import MaliciousSummaryModal, {
@@ -9,13 +9,13 @@ import MaliciousSummaryModal, {
 } from '~/components/ui/moderation/MaliciousSummaryModal.vue'
 import ModerationTechRevCard from '~/components/ui/moderation/ModerationTechRevCard.vue'
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const queryClient = useQueryClient()
 const route = useRoute()
 
 const projectId = String(useRouteId('project'))
 
-useHead({ title: () => `Tech review - ${projectId} - Bbsmc` })
+useHead({ title: () => `Tech review - ${projectId} - modrinth` })
 
 const CACHE_TTL = 24 * 60 * 60 * 1000
 const CACHE_KEY_PREFIX = 'tech_review_source_'

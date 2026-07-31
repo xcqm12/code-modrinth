@@ -77,7 +77,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	CheckIcon,
 	ChevronLeftIcon,
@@ -86,7 +86,7 @@ import {
 	MoreVerticalIcon,
 	ReportIcon,
 	VersionIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -95,7 +95,7 @@ import {
 	OverflowMenu,
 	useVIntl,
 	VersionPage,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, ref, shallowRef, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 

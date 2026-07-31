@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts" setup>
-import { EnvironmentSelector } from '@Bbsmc/ui'
+import { EnvironmentSelector } from '@modrinth/ui'
 
 import { injectManageVersionContext } from '~/providers/version/manage-version-modal'
 

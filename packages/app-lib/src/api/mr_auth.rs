@@ -1,25 +1,25 @@
-use crate::state::BbsmcCredentials;
+use crate::state::modrinthCredentials;
 use serde::Deserialize;
 
 #[derive(Clone, Copy, Debug, Deserialize)]
 #[serde(rename_all = "kebab-case")]
-pub enum BbsmcAuthFlow {
+pub enum modrinthAuthFlow {
     SignIn,
     SignUp,
 }
 
 #[tracing::instrument]
-pub fn authenticate_begin_flow(flow: BbsmcAuthFlow) -> &'static str {
+pub fn authenticate_begin_flow(flow: modrinthAuthFlow) -> &'static str {
     match flow {
-        BbsmcAuthFlow::SignIn => crate::state::get_login_url(),
-        BbsmcAuthFlow::SignUp => crate::state::get_signup_url(),
+        modrinthAuthFlow::SignIn => crate::state::get_login_url(),
+        modrinthAuthFlow::SignUp => crate::state::get_signup_url(),
     }
 }
 
 #[tracing::instrument]
 pub async fn authenticate_finish_flow(
     code: &str,
-) -> crate::Result<BbsmcCredentials> {
+) -> crate::Result<modrinthCredentials> {
     let state = crate::State::get().await?;
 
     let creds = crate::state::finish_login_flow(
@@ -42,10 +42,10 @@ pub async fn authenticate_finish_flow(
 #[tracing::instrument]
 pub async fn logout() -> crate::Result<()> {
     let state = crate::State::get().await?;
-    let current = BbsmcCredentials::get_active(&state.pool).await?;
+    let current = modrinthCredentials::get_active(&state.pool).await?;
 
     if let Some(current) = current {
-        BbsmcCredentials::remove(&current.user_id, &state.pool).await?;
+        modrinthCredentials::remove(&current.user_id, &state.pool).await?;
     }
     state.friends_socket.disconnect().await?;
 
@@ -53,10 +53,10 @@ pub async fn logout() -> crate::Result<()> {
 }
 
 #[tracing::instrument]
-pub async fn get_credentials() -> crate::Result<Option<BbsmcCredentials>> {
+pub async fn get_credentials() -> crate::Result<Option<modrinthCredentials>> {
     let state = crate::State::get().await?;
     let current =
-        BbsmcCredentials::get_and_refresh(&state.pool, &state.api_semaphore)
+        modrinthCredentials::get_and_refresh(&state.pool, &state.api_semaphore)
             .await?;
     if current.is_none() {
         state.friends_socket.disconnect().await?;

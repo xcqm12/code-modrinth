@@ -1,5 +1,5 @@
 [package]
-name = "Bbsmc-content-management"
+name = "modrinth-content-management"
 edition.workspace = true
 rust-version.workspace = true
 repository.workspace = true

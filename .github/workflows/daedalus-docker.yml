@@ -105,14 +105,14 @@ jobs:
         env:
           DOCKER_METADATA_ANNOTATIONS_LEVELS: manifest,index
         with:
-          images: ghcr.io/Bbsmc/daedalus
+          images: ghcr.io/modrinth/daedalus
           labels: |
             org.opencontainers.image.title=daedalus
-            org.opencontainers.image.description=Bbsmc game metadata query client
+            org.opencontainers.image.description=modrinth game metadata query client
             org.opencontainers.image.licenses=MIT
           annotations: |
             org.opencontainers.image.title=daedalus
-            org.opencontainers.image.description=Bbsmc game metadata query client
+            org.opencontainers.image.description=modrinth game metadata query client
             org.opencontainers.image.licenses=MIT
 
       - name: Login to GitHub Packages

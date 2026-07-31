@@ -2,7 +2,7 @@
 
 Per section 5.1 of %RULES%, it is important that the metadata of your projects is accurate, including Environment Information.
 
-We've recently overhauled how environment metadata works on Bbsmc, you can now edit this in your project's [Version Settings](https://bbsmc.org.cn/project/%PROJECT_ID%/settings/versions).
+We've recently overhauled how environment metadata works on modrinth, you can now edit this in your project's [Version Settings](https://bbsmc.org.cn/project/%PROJECT_ID%/settings/versions).
 Please [read this blogpost](%NEW_ENVIRONMENTS_LINK%) for full details and information on how to ensure your project is labeled correctly.
 
 %CORRECT%

@@ -144,7 +144,7 @@ fn team_request(
     Ok((
         client
             .request(method, format!("{url}/v1/{team}{route}"))
-            .header(reqwest::header::USER_AGENT, "Bbsmc")
+            .header(reqwest::header::USER_AGENT, "modrinth")
             .bearer_auth(key),
         company.to_string(),
     ))

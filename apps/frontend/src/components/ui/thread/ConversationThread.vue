@@ -420,7 +420,7 @@ import {
 	SendIcon,
 	SpinnerIcon,
 	XIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	ButtonStyled,
 	Checkbox,
@@ -433,7 +433,7 @@ import {
 	NewModal,
 	OverflowMenu,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 
 import ThreadMessage from '~/components/ui/thread/ThreadMessage.vue'
 import { useImageUpload } from '~/composables/image-upload.ts'
@@ -486,7 +486,7 @@ const messages = defineMessages({
 	replyModalHelpCenterNote: {
 		id: 'conversation-thread.reply-modal.help-center-note',
 		defaultMessage:
-			'If you need to get in contact with the moderation team, please use the <help-center-link>Bbsmc Help Center</help-center-link> and click the blue bubble in the bottom right corner to contact support.',
+			'If you need to get in contact with the moderation team, please use the <help-center-link>modrinth Help Center</help-center-link> and click the blue bubble in the bottom right corner to contact support.',
 	},
 	replyModalConfirmationDescription: {
 		id: 'conversation-thread.reply-modal.confirmation.description',

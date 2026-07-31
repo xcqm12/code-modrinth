@@ -70,7 +70,7 @@ jobs:
           fi
 
   docker:
-    runs-on: ${{ needs.skip-if-clean.outputs.internal == 'true' && 'namespace-profile-Bbsmc-labrinth' || 'ubuntu-latest' }}
+    runs-on: ${{ needs.skip-if-clean.outputs.internal == 'true' && 'namespace-profile-modrinth-labrinth' || 'ubuntu-latest' }}
     needs: [skip-if-clean]
     if: ${{ needs.skip-if-clean.outputs.skip != 'true' }}
     env:
@@ -133,14 +133,14 @@ jobs:
           # https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry#adding-a-description-to-multi-arch-images
           DOCKER_METADATA_ANNOTATIONS_LEVELS: manifest,index
         with:
-          images: ghcr.io/Bbsmc/labrinth
+          images: ghcr.io/modrinth/labrinth
           labels: |
             org.opencontainers.image.title=labrinth
-            org.opencontainers.image.description=Bbsmc API
+            org.opencontainers.image.description=modrinth API
             org.opencontainers.image.licenses=AGPL-3.0-only
           annotations: |
             org.opencontainers.image.title=labrinth
-            org.opencontainers.image.description=Bbsmc API
+            org.opencontainers.image.description=modrinth API
             org.opencontainers.image.licenses=AGPL-3.0-only
 
       - name: Login to GitHub Packages

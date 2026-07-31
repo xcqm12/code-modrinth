@@ -98,7 +98,7 @@
 </template>
 
 <script setup lang="ts">
-import { ClassicPlayerModel, SlimPlayerModel, UnfoldHorizontalIcon } from '@Bbsmc/assets'
+import { ClassicPlayerModel, SlimPlayerModel, UnfoldHorizontalIcon } from '@modrinth/assets'
 import { TresCanvas } from '@tresjs/core'
 import * as THREE from 'three'
 import {

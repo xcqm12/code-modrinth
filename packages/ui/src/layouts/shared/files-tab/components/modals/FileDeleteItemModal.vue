@@ -28,7 +28,7 @@
 </template>
 
 <script setup lang="ts">
-import { TrashIcon, XIcon } from '@Bbsmc/assets'
+import { TrashIcon, XIcon } from '@modrinth/assets'
 import { ref } from 'vue'
 
 import Admonition from '#ui/components/base/Admonition.vue'

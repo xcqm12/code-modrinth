@@ -1,1 +1,1 @@
-- 1.9: Content giving a false impression of endorsement by Bbsmc or any other person or entity
+- 1.9: Content giving a false impression of endorsement by modrinth or any other person or entity

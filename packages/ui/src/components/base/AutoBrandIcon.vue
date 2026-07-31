@@ -10,7 +10,7 @@ import {
 	InstagramIcon,
 	KoFiIcon,
 	MastodonIcon,
-	BbsmcIcon,
+	modrinthIcon,
 	OpenCollectiveIcon,
 	PatreonIcon,
 	PayPalIcon,
@@ -26,7 +26,7 @@ import {
 	YouTubeGaming,
 	YouTubeIcon,
 	YouTubeShortsIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import { computed } from 'vue'
 
 const props = defineProps<{
@@ -131,8 +131,8 @@ const services = [
 		keywords: ['curseforge', 'cf', 'curse', 'curse forge'],
 	},
 	{
-		icon: BbsmcIcon,
-		keywords: ['Bbsmc', 'mod rinth', 'modrith', 'mr'],
+		icon: modrinthIcon,
+		keywords: ['modrinth', 'mod rinth', 'modrith', 'mr'],
 	},
 	{
 		icon: TwitterIcon,

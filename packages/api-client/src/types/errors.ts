@@ -24,10 +24,10 @@ export type ApiErrorData = {
 }
 
 /**
- * Bbsmc V1 error response format
+ * modrinth V1 error response format
  * Used by kyros + archon APIs
  */
-export type BbsmcErrorResponse = {
+export type modrinthErrorResponse = {
 	/**
 	 * Error code/identifier
 	 */
@@ -45,9 +45,9 @@ export type BbsmcErrorResponse = {
 }
 
 /**
- * Type guard to check if an object is a BbsmcErrorResponse
+ * Type guard to check if an object is a modrinthErrorResponse
  */
-export function isBbsmcErrorResponse(obj: unknown): obj is BbsmcErrorResponse {
+export function ismodrinthErrorResponse(obj: unknown): obj is modrinthErrorResponse {
 	if (typeof obj !== 'object' || obj === null) {
 		return false
 	}

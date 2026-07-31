@@ -177,7 +177,7 @@ async fn run_credentials(
             Ok(resp) if resp.status().is_success() => {
                 let result = fetch::post_json(
                     concat!(
-                        env!("Bbsmc_API_BASE_URL"),
+                        env!("modrinth_API_BASE_URL"),
                         "analytics/minecraft-server-play"
                     ),
                     json!({
@@ -231,8 +231,8 @@ fn server_play_project_id(link: &InstanceLink) -> Option<&String> {
             ..
         } => Some(project_id),
         InstanceLink::Unmanaged
-        | InstanceLink::BbsmcModpack { .. }
-        | InstanceLink::BbsmcHosting { .. }
+        | InstanceLink::modrinthModpack { .. }
+        | InstanceLink::modrinthHosting { .. }
         | InstanceLink::ImportedModpack { .. }
         | InstanceLink::SharedInstance { .. } => None,
     }
@@ -268,8 +268,8 @@ pub async fn try_update_playtime_by_instance_id(
         })?;
     let updated_recent_playtime = context.instance.recent_time_played;
     let res = if updated_recent_playtime > 0 {
-        let Bbsmc_pack_version_id = match &context.link {
-            InstanceLink::BbsmcModpack { version_id, .. }
+        let modrinth_pack_version_id = match &context.link {
+            InstanceLink::modrinthModpack { version_id, .. }
             | InstanceLink::ServerProjectModpack {
                 content_version_id: version_id,
                 ..
@@ -280,7 +280,7 @@ pub async fn try_update_playtime_by_instance_id(
             } => Some(version_id.clone()),
             InstanceLink::Unmanaged
             | InstanceLink::ServerProject { .. }
-            | InstanceLink::BbsmcHosting { .. }
+            | InstanceLink::modrinthHosting { .. }
             | InstanceLink::ImportedModpack { .. }
             | InstanceLink::SharedInstance { .. } => None,
         };
@@ -288,7 +288,7 @@ pub async fn try_update_playtime_by_instance_id(
             "seconds": updated_recent_playtime,
             "loader": context.applied_content_set.loader.as_str(),
             "game_version": &context.applied_content_set.game_version,
-            "parent": Bbsmc_pack_version_id,
+            "parent": modrinth_pack_version_id,
         });
         let mut hashmap: HashMap<String, serde_json::Value> = HashMap::new();
 
@@ -300,7 +300,7 @@ pub async fn try_update_playtime_by_instance_id(
         }
 
         fetch::post_json(
-            concat!(env!("Bbsmc_API_BASE_URL"), "analytics/playtime"),
+            concat!(env!("modrinth_API_BASE_URL"), "analytics/playtime"),
             serde_json::to_value(hashmap)?,
             &state.api_semaphore,
             &state.pool,

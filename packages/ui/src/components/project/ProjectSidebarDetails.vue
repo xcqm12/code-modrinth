@@ -93,15 +93,15 @@
 	</div>
 </template>
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
-import { BookTextIcon, CalendarIcon, HeartIcon, ScaleIcon, VersionIcon } from '@Bbsmc/assets'
-import { capitalizeString, renderString } from '@Bbsmc/utils'
+import type { Labrinth } from '@modrinth/api-client'
+import { BookTextIcon, CalendarIcon, HeartIcon, ScaleIcon, VersionIcon } from '@modrinth/assets'
+import { capitalizeString, renderString } from '@modrinth/utils'
 import { useQuery } from '@tanstack/vue-query'
 import { computed, ref, useTemplateRef } from 'vue'
 
 import { useFormatDateTime, useRelativeTime } from '../../composables'
 import { defineMessages, useVIntl } from '../../composables/i18n'
-import { injectBbsmcClient } from '../../providers'
+import { injectmodrinthClient } from '../../providers'
 import { commonMessages } from '../../utils/common-messages'
 import { Avatar, IntlFormatted } from '../base'
 import { NewModal } from '../modal'
@@ -109,7 +109,7 @@ import { NewModal } from '../modal'
 const LICENSE_STALE_TIME = 1000 * 60 * 10
 
 const { formatMessage } = useVIntl()
-const { labrinth } = injectBbsmcClient()
+const { labrinth } = injectmodrinthClient()
 const formatRelativeTime = useRelativeTime()
 const formatDateTime = useFormatDateTime({
 	timeStyle: 'short',

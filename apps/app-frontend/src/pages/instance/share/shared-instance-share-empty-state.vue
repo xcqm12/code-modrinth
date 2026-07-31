@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import { EmptyState } from '@Bbsmc/ui'
+import { EmptyState } from '@modrinth/ui'
 
 defineProps<{ heading: string; description?: string }>()
 </script>

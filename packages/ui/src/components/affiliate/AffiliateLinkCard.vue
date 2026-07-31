@@ -26,13 +26,13 @@
 				</ButtonStyled>
 			</div>
 		</div>
-		<CopyCode :text="`https://Bbsmc.gg?afl=${affiliate.id}`" />
+		<CopyCode :text="`https://modrinth.gg?afl=${affiliate.id}`" />
 	</div>
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
-import { AffiliateIcon, XCircleIcon } from '@Bbsmc/assets'
+import type { Labrinth } from '@modrinth/api-client'
+import { AffiliateIcon, XCircleIcon } from '@modrinth/assets'
 
 import { defineMessages, useVIntl } from '../../composables/i18n'
 import { AutoBrandIcon, ButtonStyled, CopyCode } from '../index'

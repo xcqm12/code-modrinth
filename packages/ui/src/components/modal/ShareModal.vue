@@ -8,7 +8,7 @@ import {
 	RedditIcon,
 	ShareIcon,
 	TwitterIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import QrcodeVue from 'qrcode.vue'
 import { computed, nextTick, ref } from 'vue'
 
@@ -23,7 +23,7 @@ const props = defineProps({
 	},
 	shareTitle: {
 		type: String,
-		default: 'Bbsmc',
+		default: 'modrinth',
 	},
 	shareText: {
 		type: String,

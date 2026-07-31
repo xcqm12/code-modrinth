@@ -11,7 +11,7 @@
 			:logged-in="loggedIn"
 			@continue="handleGuestPlanContinue"
 		/>
-		<BbsmcServersPurchaseModal
+		<modrinthServersPurchaseModal
 			v-if="customer && paymentMethods && regions"
 			ref="purchaseModal"
 			:publishable-key="props.stripePublishableKey"
@@ -228,25 +228,25 @@
 </template>
 
 <script setup lang="ts">
-import type { Archon, Labrinth } from '@Bbsmc/api-client'
-import { HammerIcon, LoaderCircleIcon, PlusIcon, SearchIcon } from '@Bbsmc/assets'
+import type { Archon, Labrinth } from '@modrinth/api-client'
+import { HammerIcon, LoaderCircleIcon, PlusIcon, SearchIcon } from '@modrinth/assets'
 import {
 	AutoLink,
 	ButtonStyled,
 	CopyCode,
 	defineMessages,
 	injectAuth,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	IntlFormatted,
-	BbsmcServersPurchaseModal,
+	modrinthServersPurchaseModal,
 	ResubscribeModal,
 	ServerListEmpty,
 	ServersGuestPlanModal,
 	StyledInput,
 	useServerBackupDownload,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { useIntervalFn } from '@vueuse/core'
 import dayjs from 'dayjs'
@@ -270,7 +270,7 @@ const props = defineProps<{
 const router = useRouter()
 const route = useRoute()
 const auth = injectAuth()
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const loggedIn = computed(() => !!auth.user.value)
 const { formatMessage } = useVIntl()
 
@@ -288,20 +288,20 @@ const messages = defineMessages({
 	errorQueueNotice: {
 		id: 'servers.manage.error.queue-notice',
 		defaultMessage:
-			"If you recently purchased your Bbsmc Hosting server, it is currently in a queue and will appear here as soon as it's ready. <warning>Do not attempt to purchase a new server.</warning>",
+			"If you recently purchased your modrinth Hosting server, it is currently in a queue and will appear here as soon as it's ready. <warning>Do not attempt to purchase a new server.</warning>",
 	},
 	errorSupportNotice: {
 		id: 'servers.manage.error.support-notice',
 		defaultMessage:
-			'If you require personalized support regarding the status of your server, please contact Bbsmc Support.',
+			'If you require personalized support regarding the status of your server, please contact modrinth Support.',
 	},
 	errorDetails: { id: 'servers.manage.error.details', defaultMessage: 'Error details:' },
 	contactSupportButton: {
 		id: 'servers.manage.contact-support-button',
-		defaultMessage: 'Contact Bbsmc Support',
+		defaultMessage: 'Contact modrinth Support',
 	},
 	reloadButton: { id: 'servers.manage.reload-button', defaultMessage: 'Reload' },
-	serversTitle: { id: 'servers.manage.servers-title', defaultMessage: 'Bbsmc Hosting' },
+	serversTitle: { id: 'servers.manage.servers-title', defaultMessage: 'modrinth Hosting' },
 	searchPlaceholder: {
 		id: 'servers.manage.search-placeholder',
 		defaultMessage: 'Search {count} {count, plural, one {server} other {servers}}...',
@@ -364,7 +364,7 @@ const messages = defineMessages({
 	},
 	resubscribeErrorText: {
 		id: 'servers.manage.resubscribe-error.text',
-		defaultMessage: 'An error occurred while resubscribing to your Bbsmc server.',
+		defaultMessage: 'An error occurred while resubscribing to your modrinth server.',
 	},
 })
 
@@ -400,7 +400,7 @@ function startNewServerPolling(initialServers: Archon.Servers.v0.Server[]) {
 }
 
 const guestPlanModal = ref<InstanceType<typeof ServersGuestPlanModal> | null>(null)
-const purchaseModal = ref<InstanceType<typeof BbsmcServersPurchaseModal> | null>(null)
+const purchaseModal = ref<InstanceType<typeof modrinthServersPurchaseModal> | null>(null)
 type UpgradeModalRef = ComponentPublicInstance<{ open: (id?: string) => void | Promise<void> }>
 const medalUpgradeModal = ref<UpgradeModalRef | null>(null)
 const resubscribeModal = ref<InstanceType<typeof ResubscribeModal> | null>(null)

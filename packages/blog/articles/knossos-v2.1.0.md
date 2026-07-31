@@ -1,11 +1,11 @@
 ---
-title: 'This week in Bbsmc development: Filters and Fixes'
-summary: 'Continuing to improve the user interface after a great first week since Bbsmc launched out of beta.'
+title: 'This week in modrinth development: Filters and Fixes'
+summary: 'Continuing to improve the user interface after a great first week since modrinth launched out of beta.'
 date: 2022-03-09
 authors: ['Dc7EYhxG']
 ---
 
-It's officially been a bit over a week since Bbsmc launched out of beta. We have continued to make improvements to the user experience on [the website](https://bbsmc.org.cn).
+It's officially been a bit over a week since modrinth launched out of beta. We have continued to make improvements to the user experience on [the website](https://bbsmc.org.cn).
 
 ## New features
 
@@ -44,15 +44,15 @@ While new features are great, we've also been working on a bunch of bugfixes. Be
 - Changed the green syntax highlighting in code blocks to match the brand color
 - Fixed the styling on various buttons and links that were missing hover or active states
 - Fixed the inconsistent rounding of the information card on the home page
-- [[GH-370]](https://github.com/Bbsmc/knossos/issues/370) Fixed download buttons in the changelog page
-- [[GH-384]](https://github.com/Bbsmc/knossos/issues/384) Fixed selecting too many Minecraft versions in the search page covering the license dropdown
-- [[GH-390]](https://github.com/Bbsmc/knossos/issues/390) Fixed the hover state of checkboxes not updating when clicking on the label
-- [[GH-393]](https://github.com/Bbsmc/knossos/issues/393) Fixed the padding of the donation link area when creating or editing a project
-- [[GH-394]](https://github.com/Bbsmc/knossos/issues/394) Fixed the rounding radius of dropdowns when opening upwards
+- [[GH-370]](https://github.com/modrinth/knossos/issues/370) Fixed download buttons in the changelog page
+- [[GH-384]](https://github.com/modrinth/knossos/issues/384) Fixed selecting too many Minecraft versions in the search page covering the license dropdown
+- [[GH-390]](https://github.com/modrinth/knossos/issues/390) Fixed the hover state of checkboxes not updating when clicking on the label
+- [[GH-393]](https://github.com/modrinth/knossos/issues/393) Fixed the padding of the donation link area when creating or editing a project
+- [[GH-394]](https://github.com/modrinth/knossos/issues/394) Fixed the rounding radius of dropdowns when opening upwards
 
 ## Minotaur fixes
 
-[Minotaur](https://github.com/Bbsmc/minotaur), our Gradle plugin, has also received a few fixes. This isn't going to be relevant to most people, but is relevant to some developers using this tool to deploy their mods.
+[Minotaur](https://github.com/modrinth/minotaur), our Gradle plugin, has also received a few fixes. This isn't going to be relevant to most people, but is relevant to some developers using this tool to deploy their mods.
 
 - Debug mode (enabled through `debugMode = true`) allows previewing the data to be uploaded before uploading
 - Fix edge case with ForgeGradle due to broken publishing metadata

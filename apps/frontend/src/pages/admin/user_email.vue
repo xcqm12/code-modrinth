@@ -32,8 +32,8 @@
 	</div>
 </template>
 <script setup lang="ts">
-import { MailIcon } from '@Bbsmc/assets'
-import { ButtonStyled, injectNotificationManager, StyledInput } from '@Bbsmc/ui'
+import { MailIcon } from '@modrinth/assets'
+import { ButtonStyled, injectNotificationManager, StyledInput } from '@modrinth/ui'
 
 const { addNotification } = injectNotificationManager()
 

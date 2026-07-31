@@ -1,7 +1,7 @@
-import { type Labrinth, BbsmcApiError } from '@Bbsmc/api-client'
+import { type Labrinth, modrinthApiError } from '@modrinth/api-client'
 import { SignJWT } from 'jose'
 
-import { useServerBbsmcClient } from '~/server/utils/api-client'
+import { useServermodrinthClient } from '~/server/utils/api-client'
 
 type IntercomTokenResponse = {
 	token: string
@@ -81,7 +81,7 @@ export default defineEventHandler(async (event): Promise<IntercomTokenResponse> 
 		})
 	}
 
-	const client = useServerBbsmcClient({
+	const client = useServermodrinthClient({
 		event,
 		authToken,
 	})
@@ -100,7 +100,7 @@ export default defineEventHandler(async (event): Promise<IntercomTokenResponse> 
 			created: currentUser.created,
 		}
 	} catch (error) {
-		if (error instanceof BbsmcApiError && error.statusCode === 401) {
+		if (error instanceof modrinthApiError && error.statusCode === 401) {
 			throw createError({
 				statusCode: 401,
 				message: 'Authentication required',

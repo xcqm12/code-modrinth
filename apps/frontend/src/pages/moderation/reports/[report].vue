@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { injectBbsmcClient } from '@Bbsmc/ui'
+import { injectmodrinthClient } from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 
 import ModerationReportCard from '~/components/ui/moderation/ModerationReportCard.vue'
 import { enrichReportBatch } from '~/helpers/moderation.ts'
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const reportId = String(useRouteId('report'))
 
 const { data: report } = useQuery({

@@ -8,9 +8,9 @@ use super::unknown_value;
 #[serde(rename_all = "snake_case")]
 pub enum ContentSourceKind {
     Local,
-    BbsmcModpack,
+    modrinthModpack,
     ServerProject,
-    BbsmcHosting,
+    modrinthHosting,
     ImportedModpack,
     SharedInstance,
 }
@@ -20,7 +20,7 @@ impl ContentSourceKind {
         matches!(
             self,
             Self::SharedInstance
-                | Self::BbsmcModpack
+                | Self::modrinthModpack
                 | Self::ImportedModpack
         )
     }
@@ -28,9 +28,9 @@ impl ContentSourceKind {
     pub fn as_str(self) -> &'static str {
         match self {
             Self::Local => "local",
-            Self::BbsmcModpack => "Bbsmc_modpack",
+            Self::modrinthModpack => "modrinth_modpack",
             Self::ServerProject => "server_project",
-            Self::BbsmcHosting => "Bbsmc_hosting",
+            Self::modrinthHosting => "modrinth_hosting",
             Self::ImportedModpack => "imported_modpack",
             Self::SharedInstance => "shared_instance",
         }
@@ -39,9 +39,9 @@ impl ContentSourceKind {
     pub fn from_str(value: &str) -> crate::Result<Self> {
         match value {
             "local" => Ok(Self::Local),
-            "Bbsmc_modpack" => Ok(Self::BbsmcModpack),
+            "modrinth_modpack" => Ok(Self::modrinthModpack),
             "server_project" => Ok(Self::ServerProject),
-            "Bbsmc_hosting" => Ok(Self::BbsmcHosting),
+            "modrinth_hosting" => Ok(Self::modrinthHosting),
             "imported_modpack" => Ok(Self::ImportedModpack),
             "shared_instance" => Ok(Self::SharedInstance),
             other => Err(unknown_value("content source kind", other)),

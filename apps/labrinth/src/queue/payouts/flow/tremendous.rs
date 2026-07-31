@@ -1,6 +1,6 @@
 use chrono::Utc;
 use eyre::eyre;
-use Bbsmc_util::decimal::Decimal2dp;
+use modrinth_util::decimal::Decimal2dp;
 use reqwest::Method;
 use rust_decimal::{Decimal, RoundingStrategy, dec};
 use serde::Deserialize;

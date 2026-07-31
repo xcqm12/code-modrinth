@@ -46,15 +46,15 @@
 </template>
 
 <script setup lang="ts">
-import type { Mclogs } from '@Bbsmc/api-client'
+import type { Mclogs } from '@modrinth/api-client'
 import { useStorage } from '@vueuse/core'
 import { computed, ref, watch } from 'vue'
 
 import ServerManageStats from '#ui/components/servers/ServerManageStats.vue'
-import { useBbsmcServersConsole } from '#ui/composables'
+import { usemodrinthServersConsole } from '#ui/composables'
 import { useServerPermissions } from '#ui/composables/server-permissions'
 import { ConsolePageLayout, provideConsoleManager } from '#ui/layouts/shared/console'
-import { injectBbsmcClient, injectBbsmcServerContext } from '#ui/providers'
+import { injectmodrinthClient, injectmodrinthServerContext } from '#ui/providers'
 
 const props = withDefaults(
 	defineProps<{
@@ -67,7 +67,7 @@ const props = withDefaults(
 	},
 )
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const {
 	server: _serverData,
 	serverId,
@@ -76,21 +76,21 @@ const {
 	stats,
 	powerState: serverPowerState,
 	powerStateDetails: _powerStateDetails,
-} = injectBbsmcServerContext()
-const BbsmcServersConsole = useBbsmcServersConsole()
+} = injectmodrinthServerContext()
+const modrinthServersConsole = usemodrinthServersConsole()
 const { canUsePowerActions, permissionDeniedMessage } = useServerPermissions()
 
 watch(
 	() => props.showAdvancedDebugInfo,
 	(enabled) => {
-		BbsmcServersConsole.setWsEventCaptureEnabled(enabled)
+		modrinthServersConsole.setWsEventCaptureEnabled(enabled)
 	},
 	{ immediate: true },
 )
 
 const crashAnalysis = ref<Mclogs.Insights.v1.InsightsResponse | null>(null)
 const DISMISS_DURATION_MS = 30 * 60 * 1000
-const dismissedUntil = useStorage(`Bbsmc-crash-dismissed-${serverId}`, 0)
+const dismissedUntil = useStorage(`modrinth-crash-dismissed-${serverId}`, 0)
 
 const isDismissed = () => Date.now() < dismissedUntil.value
 
@@ -120,7 +120,7 @@ const dismissCrash = () => {
 }
 
 provideConsoleManager({
-	logLines: BbsmcServersConsole.output,
+	logLines: modrinthServersConsole.output,
 	sendCommand: (cmd: string) => {
 		if (!canUsePowerActions.value) return
 		try {
@@ -139,12 +139,12 @@ provideConsoleManager({
 	loading: computed(
 		() =>
 			!isConnected.value ||
-			BbsmcServersConsole.isInitialLogHydrating.value ||
+			modrinthServersConsole.isInitialLogHydrating.value ||
 			isWsAuthIncorrect.value,
 	),
 	onClear: async () => {
 		if (!canUsePowerActions.value) return
-		BbsmcServersConsole.clear()
+		modrinthServersConsole.clear()
 		try {
 			await client.kyros.logs_v1.clear()
 		} catch (error) {
@@ -177,7 +177,7 @@ if (serverPowerState.value === 'crashed') {
 }
 
 const downloadLog4jDebug = () => {
-	const events = BbsmcServersConsole.getWsEventHistory()
+	const events = modrinthServersConsole.getWsEventHistory()
 	const blob = new Blob([JSON.stringify(events, null, 2)], { type: 'application/json' })
 	const url = URL.createObjectURL(blob)
 	const a = document.createElement('a')

@@ -112,8 +112,8 @@
 </template>
 
 <script setup lang="ts">
-import { CheckIcon, DownloadIcon, XIcon } from '@Bbsmc/assets'
-import { commonMessages } from '@Bbsmc/ui'
+import { CheckIcon, DownloadIcon, XIcon } from '@modrinth/assets'
+import { commonMessages } from '@modrinth/ui'
 import { computed, nextTick, onUnmounted, ref } from 'vue'
 
 import { defineMessages, useVIntl } from '../../composables/i18n'
@@ -126,11 +126,11 @@ const { formatMessage } = useVIntl()
 const messages = defineMessages({
 	openingApp: {
 		id: 'modal.open-in-app.title',
-		defaultMessage: 'Opening Bbsmc App',
+		defaultMessage: 'Opening modrinth App',
 	},
 	whyUseApp: {
 		id: 'modal.open-in-app.why-use',
-		defaultMessage: 'Why use the Bbsmc App',
+		defaultMessage: 'Why use the modrinth App',
 	},
 	benefitLaunch: {
 		id: 'modal.open-in-app.benefit.launch',
@@ -146,11 +146,11 @@ const messages = defineMessages({
 	},
 	openingAutomatically: {
 		id: 'modal.open-in-app.opening-automatically',
-		defaultMessage: 'The Bbsmc App will open automatically...',
+		defaultMessage: 'The modrinth App will open automatically...',
 	},
 	getApp: {
 		id: 'modal.open-in-app.get-app',
-		defaultMessage: 'Get Bbsmc App',
+		defaultMessage: 'Get modrinth App',
 	},
 })
 
@@ -184,7 +184,7 @@ const serverProject = ref<ServerProject>({
 	region: '',
 })
 const appLink = computed(() => {
-	return `Bbsmc://server/${serverProject.value.slug}`
+	return `modrinth://server/${serverProject.value.slug}`
 })
 
 function startCountdown() {

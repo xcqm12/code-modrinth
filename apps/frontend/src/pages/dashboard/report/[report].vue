@@ -8,7 +8,7 @@
 	/>
 </template>
 <script setup>
-import { defineMessages, useVIntl } from '@Bbsmc/ui'
+import { defineMessages, useVIntl } from '@modrinth/ui'
 
 import ReportView from '~/components/ui/report/ReportView.vue'
 
@@ -29,6 +29,6 @@ const auth = await useAuth()
 const reportId = useRouteId('report')
 
 useHead({
-	title: () => `${formatMessage(messages.reportTitle, { id: reportId })} - Bbsmc`,
+	title: () => `${formatMessage(messages.reportTitle, { id: reportId })} - modrinth`,
 })
 </script>

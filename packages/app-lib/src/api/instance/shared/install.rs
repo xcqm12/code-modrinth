@@ -121,7 +121,7 @@ pub(super) async fn shared_instance_install_preview_from_version(
         "" => "Shared instance".to_string(),
         name => name.to_string(),
     };
-    let mut content_version_ids = version.Bbsmc_ids.clone();
+    let mut content_version_ids = version.modrinth_ids.clone();
     let mut seen_content_version_ids = HashSet::new();
     content_version_ids
         .retain(|id| seen_content_version_ids.insert(id.clone()));
@@ -408,7 +408,7 @@ pub(super) async fn shared_attachment_matches_current_user(
         return Ok(false);
     };
 
-    Ok(linked_Bbsmc_user_id(state)
+    Ok(linked_modrinth_user_id(state)
         .await?
         .as_deref()
         .is_some_and(|current_user_id| current_user_id == linked_user_id))
@@ -424,7 +424,7 @@ pub(super) async fn has_shared_instance_recipients(
         return Ok(true);
     }
 
-    let current_user_id = linked_Bbsmc_user_id(state).await?;
+    let current_user_id = linked_modrinth_user_id(state).await?;
 
     Ok(users.user_ids.iter().any(|user_id| {
         Some(user_id.as_str()) != attachment.linked_user_id.as_deref()
@@ -524,12 +524,12 @@ pub(super) async fn shared_instance_install_data(
     }
 
     let name = shared_instance_name(name);
-    let linked_user_id = linked_Bbsmc_user_id(state).await?;
+    let linked_user_id = linked_modrinth_user_id(state).await?;
     let modpack = shared_instance_install_modpack(&version, state).await?;
     let modpack_version_id =
         modpack.as_ref().map(|modpack| modpack.version_id.as_str());
-    let Bbsmc_ids = version
-        .Bbsmc_ids
+    let modrinth_ids = version
+        .modrinth_ids
         .into_iter()
         .filter(|id| Some(id.as_str()) != modpack_version_id)
         .collect();
@@ -543,7 +543,7 @@ pub(super) async fn shared_instance_install_data(
         linked_user_id,
         name,
         version: version.version,
-        Bbsmc_ids,
+        modrinth_ids,
         external_files: version
             .external_files
             .into_iter()
@@ -556,11 +556,11 @@ pub(super) async fn shared_instance_install_data(
     })
 }
 
-pub(super) async fn linked_Bbsmc_user_id(
+pub(super) async fn linked_modrinth_user_id(
     state: &State,
 ) -> crate::Result<Option<String>> {
     Ok(
-        BbsmcCredentials::get_and_refresh(&state.pool, &state.api_semaphore)
+        modrinthCredentials::get_and_refresh(&state.pool, &state.api_semaphore)
             .await?
             .map(|credentials| credentials.user_id),
     )

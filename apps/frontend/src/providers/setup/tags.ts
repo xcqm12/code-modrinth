@@ -1,4 +1,4 @@
-import { provideTags } from '@Bbsmc/ui'
+import { provideTags } from '@modrinth/ui'
 import { computed } from 'vue'
 
 export function setupTagsProvider() {

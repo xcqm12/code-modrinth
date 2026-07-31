@@ -28,9 +28,9 @@ pub(super) const OCCLUDED_AREA_THRESHOLD: f64 = 0.5;
 const ADS_USER_AGENT: &str = concat!(
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 ",
     "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 ",
-    "BbsmcApp/",
+    "modrinthApp/",
     env!("CARGO_PKG_VERSION"),
-    " (Bbsmc App)",
+    " (modrinth App)",
 );
 
 #[cfg(windows)]
@@ -42,14 +42,14 @@ fn ads_user_agent_override_params() -> String {
             "brands": [
                 { "brand": "Chromium", "version": "128" },
                 { "brand": "Google Chrome", "version": "128" },
-                { "brand": "Bbsmc App", "version": env!("CARGO_PKG_VERSION") },
+                { "brand": "modrinth App", "version": env!("CARGO_PKG_VERSION") },
                 { "brand": "Not=A?Brand", "version": "99" },
             ],
             "fullVersion": "128.0.0.0",
             "fullVersionList": [
                 { "brand": "Chromium", "version": "128.0.0.0" },
                 { "brand": "Google Chrome", "version": "128.0.0.0" },
-                { "brand": "Bbsmc App", "version": env!("CARGO_PKG_VERSION") },
+                { "brand": "modrinth App", "version": env!("CARGO_PKG_VERSION") },
                 { "brand": "Not=A?Brand", "version": "99.0.0.0" },
             ],
             "platform": "Windows",
@@ -835,7 +835,7 @@ pub async fn open_ads_consent_preferences<R: Runtime>(
         state.consent_overlay_shown = false;
     }
 
-    webview.eval("window.BbsmcPrivacy?.adsReopenConsentPreferences?.()")?;
+    webview.eval("window.modrinthPrivacy?.adsReopenConsentPreferences?.()")?;
 
     Ok(())
 }
@@ -899,9 +899,9 @@ pub async fn perform_ads_consent_action<R: Runtime>(
     action: String,
 ) -> crate::api::Result<()> {
     let script = match action.as_str() {
-        "accept" => "window.BbsmcPrivacy?.adsConsentAction?.('accept')",
-        "reject" => "window.BbsmcPrivacy?.adsConsentAction?.('reject')",
-        "manage" => "window.BbsmcPrivacy?.adsConsentAction?.('manage')",
+        "accept" => "window.modrinthPrivacy?.adsConsentAction?.('accept')",
+        "reject" => "window.modrinthPrivacy?.adsConsentAction?.('reject')",
+        "manage" => "window.modrinthPrivacy?.adsConsentAction?.('manage')",
         _ => return Ok(()),
     };
 

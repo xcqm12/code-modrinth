@@ -1,7 +1,7 @@
 export const BASE62_CHARS = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
 export type Base62Char = (typeof BASE62_CHARS)[number]
 
-export type BbsmcId = string
+export type modrinthId = string
 
 export type Environment = 'required' | 'optional' | 'unsupported' | 'unknown'
 
@@ -50,12 +50,12 @@ export interface GalleryImage {
 }
 
 export interface ProjectV3 {
-	id: BbsmcId
+	id: modrinthId
 	slug?: string
 	project_types: string[]
 	games: string[]
-	team_id: BbsmcId
-	organization?: BbsmcId
+	team_id: modrinthId
+	organization?: modrinthId
 	name: string
 	summary: string
 	description: string
@@ -87,7 +87,7 @@ export interface ProjectV3 {
 	additional_categories: string[]
 	loaders: string[]
 
-	versions: BbsmcId[]
+	versions: modrinthId[]
 	icon_url?: string
 
 	link_urls: Record<
@@ -110,7 +110,7 @@ export interface ProjectV3 {
 	}[]
 
 	color?: number
-	thread_id: BbsmcId
+	thread_id: modrinthId
 	monetization_status: MonetizationStatus
 	side_types_migration_review_status: EnvironmentMigrationReviewStatus
 
@@ -118,7 +118,7 @@ export interface ProjectV3 {
 }
 
 export interface Project {
-	id: BbsmcId
+	id: modrinthId
 	project_type: ProjectType
 	slug: string
 	title: string
@@ -140,10 +140,10 @@ export interface Project {
 	client_side: Environment
 	server_side: Environment
 
-	team?: BbsmcId
-	team_id: BbsmcId
-	thread_id: BbsmcId
-	organization: BbsmcId
+	team?: modrinthId
+	team_id: modrinthId
+	thread_id: modrinthId
+	organization: modrinthId
 
 	issues_url: string | null
 	source_url: string | null
@@ -160,7 +160,7 @@ export interface Project {
 	game_versions: GameVersion[]
 	loaders: Platform[]
 
-	versions: BbsmcId[]
+	versions: modrinthId[]
 	gallery?: GalleryImage[]
 
 	license: {
@@ -191,7 +191,7 @@ export interface ProjectV3Partial {
 }
 
 export interface SearchResult {
-	id: BbsmcId
+	id: modrinthId
 	project_type: ProjectType
 	slug: string
 	title: string
@@ -224,10 +224,10 @@ export interface SearchResult {
 }
 
 export type Organization = {
-	id: BbsmcId
+	id: modrinthId
 	slug: string
 	name: string
-	team_id: BbsmcId
+	team_id: modrinthId
 	description: string
 	icon_url: string
 	color: number
@@ -237,7 +237,7 @@ export type Organization = {
 export type OrganizationPermissions = number
 
 export type OrganizationMember = {
-	team_id: BbsmcId
+	team_id: modrinthId
 	user: User
 	role: string
 	is_owner: boolean
@@ -249,7 +249,7 @@ export type OrganizationMember = {
 }
 
 export type Collection = {
-	id: BbsmcId
+	id: modrinthId
 	user: User
 	name: string
 	description: string
@@ -258,7 +258,7 @@ export type Collection = {
 	status: CollectionStatus
 	created: string
 	updated: string
-	projects: BbsmcId[]
+	projects: modrinthId[]
 }
 
 export type CollectionStatus = 'listed' | 'unlisted' | 'private' | 'unknown'
@@ -316,9 +316,9 @@ export interface Version {
 	loaders: Platform[]
 	featured: boolean
 	status: VersionStatus
-	id: BbsmcId
-	project_id: BbsmcId
-	author_id: BbsmcId
+	id: modrinthId
+	project_id: modrinthId
+	author_id: modrinthId
 	date_published: string
 	downloads: number
 	files: VersionFile[]
@@ -351,7 +351,7 @@ export interface User {
 	email?: string
 	bio?: string
 	payout_data?: PayoutData
-	id: BbsmcId
+	id: modrinthId
 	avatar_url: string
 	created: string
 	role: UserRole
@@ -378,7 +378,7 @@ export enum TeamMemberPermission {
 export type TeamMemberPermissions = number
 
 export interface TeamMember {
-	team_id: BbsmcId
+	team_id: modrinthId
 	user: User
 	role: string
 	permissions: TeamMemberPermissions
@@ -389,12 +389,12 @@ export interface TeamMember {
 }
 
 export type Report = {
-	id: BbsmcId
-	item_id: BbsmcId
+	id: modrinthId
+	item_id: modrinthId
 	item_type: 'project' | 'version' | 'user'
 	report_type: string
-	reporter: BbsmcId
-	thread_id: BbsmcId
+	reporter: modrinthId
+	thread_id: modrinthId
 	closed: boolean
 	created: string
 	body: string
@@ -600,8 +600,8 @@ export interface DelphiReport {
 		| 'malware_simplyloader'
 	file_path: string
 	// pending = not reviewed yet.
-	// approved = approved as malicious, removed from Bbsmc
-	// rejected = not approved as malicious, remains on Bbsmc?
+	// approved = approved as malicious, removed from modrinth
+	// rejected = not approved as malicious, remains on modrinth?
 	status: 'pending' | 'approved' | 'rejected'
 	content?: string
 }

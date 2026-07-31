@@ -265,8 +265,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Archon } from '@Bbsmc/api-client'
-import { CalendarIcon, DownloadIcon, IssuesIcon, PlusIcon, TrashIcon } from '@Bbsmc/assets'
+import type { Archon } from '@modrinth/api-client'
+import { CalendarIcon, DownloadIcon, IssuesIcon, PlusIcon, TrashIcon } from '@modrinth/assets'
 import { useMutation, useQueryClient } from '@tanstack/vue-query'
 import dayjs from 'dayjs'
 import type { Component } from 'vue'
@@ -290,8 +290,8 @@ import { useServerBackupsQueue } from '#ui/composables/server-backups-queue'
 import { useServerPermissions } from '#ui/composables/server-permissions'
 import { useBulkOperation } from '#ui/layouts/shared/content-tab/composables/bulk-operations'
 import {
-	injectBbsmcClient,
-	injectBbsmcServerContext,
+	injectmodrinthClient,
+	injectmodrinthServerContext,
 	injectNotificationManager,
 } from '#ui/providers'
 import { commonMessages } from '#ui/utils/common-messages'
@@ -360,9 +360,9 @@ const filterPillOptions = computed<FilterPillOption[]>(() => [
 	{ id: 'manual', label: formatMessage(messages.filterManual) },
 	{ id: 'auto', label: formatMessage(messages.filterAuto) },
 ])
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const queryClient = useQueryClient()
-const { server, worldId, busyReasons } = injectBbsmcServerContext()
+const { server, worldId, busyReasons } = injectmodrinthServerContext()
 
 const props = defineProps<{
 	isServerRunning: boolean

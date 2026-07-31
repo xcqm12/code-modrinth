@@ -106,10 +106,10 @@
 
 <script setup>
 const description =
-	'The Copyright Policy of Bbsmc, an open source modding platform focused on Minecraft.'
+	'The Copyright Policy of modrinth, an open source modding platform focused on Minecraft.'
 
 useSeoMeta({
-	title: 'Copyright Policy - Bbsmc',
+	title: 'Copyright Policy - modrinth',
 	description,
 	ogTitle: 'Copyright Policy',
 	ogDescription: description,

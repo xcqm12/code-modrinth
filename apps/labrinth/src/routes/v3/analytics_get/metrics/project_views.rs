@@ -26,7 +26,7 @@ pub enum ProjectViewsField {
     ProjectId,
     /// Referrer domain which linked to this project.
     Domain,
-    /// Bbsmc site path which was visited, e.g. `/mod/foo`.
+    /// modrinth site path which was visited, e.g. `/mod/foo`.
     SitePath,
     /// Whether these views were monetized or not.
     Monetized,
@@ -42,7 +42,7 @@ pub struct ProjectViewsFilters {
     /// Referrer domains to include.
     #[serde(default)]
     pub domain: Vec<String>,
-    /// Bbsmc site paths to include.
+    /// modrinth site paths to include.
     #[serde(default)]
     pub site_path: Vec<String>,
     /// Monetization states to include.

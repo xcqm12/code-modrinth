@@ -12,7 +12,7 @@
     "message": "全部接受"
   },
   "ads-consent.body": {
-    "message": "广告�?Bbsmc 得以运营，并为创作者报酬提供资金支持。我们的合作伙伴可能会在网站上存储或访问 Cookie，以便实现广告个性化和效果衡量�?
+    "message": "广告�?modrinth 得以运营，并为创作者报酬提供资金支持。我们的合作伙伴可能会在网站上存储或访问 Cookie，以便实现广告个性化和效果衡量�?
   },
   "ads-consent.manage": {
     "message": "管理偏好设置"
@@ -21,7 +21,7 @@
     "message": "全部拒绝"
   },
   "ads-consent.title": {
-    "message": "您的隐私以及广告如何支持 Bbsmc"
+    "message": "您的隐私以及广告如何支持 modrinth"
   },
   "analytics.action.add": {
     "message": "添加"
@@ -113,11 +113,11 @@
   "analytics.chart.controls.display": {
     "message": "显示"
   },
-  "analytics.chart.controls.Bbsmc-events": {
-    "message": "Bbsmc事件"
+  "analytics.chart.controls.modrinth-events": {
+    "message": "modrinth事件"
   },
-  "analytics.chart.controls.no-Bbsmc-events": {
-    "message": "图表中没�?Bbsmc 事件�?
+  "analytics.chart.controls.no-modrinth-events": {
+    "message": "图表中没�?modrinth 事件�?
   },
   "analytics.chart.controls.no-project-events": {
     "message": "图表中没有项目事件�?
@@ -147,7 +147,7 @@
     "message": "查看货币化分析详�?
   },
   "analytics.chart.legend.monetization-details.description": {
-    "message": "仅通过 Bbsmc 产生的浏览量和下载量计入货币化，且下载需要用户登录�?
+    "message": "仅通过 modrinth 产生的浏览量和下载量计入货币化，且下载需要用户登录�?
   },
   "analytics.chart.legend.monetization-details.title": {
     "message": "货币化分析详�?
@@ -228,10 +228,10 @@
     "message": "更新"
   },
   "analytics.download-source.app": {
-    "message": "Bbsmc App"
+    "message": "modrinth App"
   },
   "analytics.download-source.website": {
-    "message": "Bbsmc 网页"
+    "message": "modrinth 网页"
   },
   "analytics.downloads.suffix": {
     "message": "下载"
@@ -417,7 +417,7 @@
     "message": "下载�?
   },
   "analytics.stat.monetization-banner.body": {
-    "message": "只有通过 Bbsmc 产生的浏览与下载可计入收益，且必须通过防欺诈过滤。通过 Bbsmc 应用产生的下载还要求用户处于登录状态。由于所有项目的可收益下载比例相近，即使统计全部下载次数，你的收入也不会发生实质变化�?
+    "message": "只有通过 modrinth 产生的浏览与下载可计入收益，且必须通过防欺诈过滤。通过 modrinth 应用产生的下载还要求用户处于登录状态。由于所有项目的可收益下载比例相近，即使统计全部下载次数，你的收入也不会发生实质变化�?
   },
   "analytics.stat.monetization-banner.learn-more": {
     "message": "了解更多"
@@ -456,7 +456,7 @@
     "message": "{start} �?{end}"
   },
   "analytics.table.csv.filename": {
-    "message": "Bbsmc数据分析 {breakdown}明细 - {dateRange}"
+    "message": "modrinth数据分析 {breakdown}明细 - {dateRange}"
   },
   "analytics.table.csv.header.playtime-seconds": {
     "message": "游玩时长（秒�?
@@ -564,7 +564,7 @@
     "message": "Linux"
   },
   "app-marketing.download.linux-disclaimer": {
-    "message": "Bbsmc App �?Linux 版本在部分发行版系统和配置中<issues-link>存在一些已知问�?/issues-link>。若你当前的系统无法稳定运行 Bbsmc App，建议尝�?<prism-link>Prism Launcher</prism-link> 等其他启动器，这些启动器亦可便捷安装 Bbsmc 内容�?
+    "message": "modrinth App �?Linux 版本在部分发行版系统和配置中<issues-link>存在一些已知问�?/issues-link>。若你当前的系统无法稳定运行 modrinth App，建议尝�?<prism-link>Prism Launcher</prism-link> 等其他启动器，这些启动器亦可便捷安装 modrinth 内容�?
   },
   "app-marketing.download.mac": {
     "message": "Mac"
@@ -573,10 +573,10 @@
     "message": "下载选项"
   },
   "app-marketing.download.terms": {
-    "message": "下载 Bbsmc App 即表示你同意我们�?terms-link>服务条款</terms-link>�?privacy-link>隐私政策</privacy-link>�?
+    "message": "下载 modrinth App 即表示你同意我们�?terms-link>服务条款</terms-link>�?privacy-link>隐私政策</privacy-link>�?
   },
   "app-marketing.download.title": {
-    "message": "下载 Bbsmc App（Beta版）"
+    "message": "下载 modrinth App（Beta版）"
   },
   "app-marketing.download.windows": {
     "message": "Windows"
@@ -588,7 +588,7 @@
     "message": "关注项目"
   },
   "app-marketing.features.importing.description": {
-    "message": "轻松导入你在其他启动器上的所有配置，仅需数秒，即可快速上�?Bbsmc App�?
+    "message": "轻松导入你在其他启动器上的所有配置，仅需数秒，即可快速上�?modrinth App�?
   },
   "app-marketing.features.importing.gdlauncher-alt": {
     "message": "GDLauncher"
@@ -606,7 +606,7 @@
     "message": "作者：{author}"
   },
   "app-marketing.features.mod-management.description": {
-    "message": "Bbsmc 助你轻松一站式管理所有模组。安装、卸载、更新，只需轻轻一点�?
+    "message": "modrinth 助你轻松一站式管理所有模组。安装、卸载、更新，只需轻轻一点�?
   },
   "app-marketing.features.mod-management.installed-mods": {
     "message": "已安装模�?
@@ -630,7 +630,7 @@
     "message": "离线模式"
   },
   "app-marketing.features.open-source.description": {
-    "message": "Bbsmc 的启动器是完全开源的。你可以在我们的 <github-link>GitHub</github-link> 上查看源代码�?
+    "message": "modrinth 的启动器是完全开源的。你可以在我们的 <github-link>GitHub</github-link> 上查看源代码�?
   },
   "app-marketing.features.open-source.title": {
     "message": "开�?
@@ -642,7 +642,7 @@
     "message": "% CPU"
   },
   "app-marketing.features.performance.description": {
-    "message": "Bbsmc App 的性能优于许多主流模组管理器，内存占用仅为 150 MB�?
+    "message": "modrinth App 的性能优于许多主流模组管理器，内存占用仅为 150 MB�?
   },
   "app-marketing.features.performance.discord": {
     "message": "Discord"
@@ -662,8 +662,8 @@
   "app-marketing.features.performance.less-than-150mb": {
     "message": "< 150 MB"
   },
-  "app-marketing.features.performance.Bbsmc-app": {
-    "message": "Bbsmc App"
+  "app-marketing.features.performance.modrinth-app": {
+    "message": "modrinth App"
   },
   "app-marketing.features.performance.one-billion-percent": {
     "message": "10 �?%"
@@ -681,13 +681,13 @@
     "message": "性能卓越"
   },
   "app-marketing.features.play.description": {
-    "message": "使用 Bbsmc App，下载并畅玩你最爱的模组与整合包�?
+    "message": "使用 modrinth App，下载并畅玩你最爱的模组与整合包�?
   },
   "app-marketing.features.play.title": {
     "message": "畅玩心爱模组"
   },
   "app-marketing.features.sharing.description": {
-    "message": "基于 Bbsmc 上的海量资源，你可以轻松制作、分享并畅玩你的整合包�?
+    "message": "基于 modrinth 上的海量资源，你可以轻松制作、分享并畅玩你的整合包�?
   },
   "app-marketing.features.sharing.modpack": {
     "message": "整合�?
@@ -702,7 +702,7 @@
     "message": "前所未有的启动体�?
   },
   "app-marketing.features.website.description": {
-    "message": "Bbsmc App 与网站深度集成，让你可以在应用内访问所有喜欢的项目�?
+    "message": "modrinth App 与网站深度集成，让你可以在应用内访问所有喜欢的项目�?
   },
   "app-marketing.features.website.title": {
     "message": "网站集成"
@@ -711,19 +711,19 @@
     "message": "就此开�?
   },
   "app-marketing.hero.app-screenshot-alt": {
-    "message": "Bbsmc App 截图，显示已打开�?Cobblemon 整合包的“内容”页面�?
+    "message": "modrinth App 截图，显示已打开�?Cobblemon 整合包的“内容”页面�?
   },
   "app-marketing.hero.description": {
-    "message": "Bbsmc App 是一款独特、开源的启动器。有了它，你便能畅玩喜爱的模组，并时刻保持最新版本。各种实用功能，尽在这一个简洁小巧的程序中�?
+    "message": "modrinth App 是一款独特、开源的启动器。有了它，你便能畅玩喜爱的模组，并时刻保持最新版本。各种实用功能，尽在这一个简洁小巧的程序中�?
   },
   "app-marketing.hero.download-button": {
-    "message": "下载 Bbsmc App"
+    "message": "下载 modrinth App"
   },
-  "app-marketing.hero.download-Bbsmc-app": {
-    "message": "下载 Bbsmc App"
+  "app-marketing.hero.download-modrinth-app": {
+    "message": "下载 modrinth App"
   },
-  "app-marketing.hero.download-Bbsmc-app-for-os": {
-    "message": "下载适用�?{os} �?Bbsmc App"
+  "app-marketing.hero.download-modrinth-app-for-os": {
+    "message": "下载适用�?{os} �?modrinth App"
   },
   "app-marketing.hero.minecraft-screenshot-alt": {
     "message": "Cobblemon 整合包主菜单屏幕截图�?
@@ -792,7 +792,7 @@
     "message": "需提供出生日期"
   },
   "auth.create-account.date-of-birth.under13-helper": {
-    "message": "你还未满足在 Bbsmc 上创建账号的年龄需求�?
+    "message": "你还未满足在 modrinth 上创建账号的年龄需求�?
   },
   "auth.create-account.info-panel.source-code-link": {
     "message": "相关源代�?
@@ -807,7 +807,7 @@
     "message": "验证�?
   },
   "auth.create-account.subscribe.label": {
-    "message": "通过邮件订阅 Bbsmc 的最新资�?
+    "message": "通过邮件订阅 modrinth 的最新资�?
   },
   "auth.create-account.title": {
     "message": "创建账户"
@@ -879,7 +879,7 @@
     "message": "没有账号�?
   },
   "auth.sign-in.sign-in-with": {
-    "message": "登录到Bbsmc"
+    "message": "登录到modrinth"
   },
   "auth.sign-in.title": {
     "message": "登录"
@@ -891,7 +891,7 @@
     "message": "使用邮箱继续"
   },
   "auth.sign-up.legal-dislaimer": {
-    "message": "创建账户即表示你同意 Bbsmc �?terms-link>使用条款</terms-link>�?privacy-policy-link>隐私政策</privacy-policy-link>�?
+    "message": "创建账户即表示你同意 modrinth �?terms-link>使用条款</terms-link>�?privacy-policy-link>隐私政策</privacy-policy-link>�?
   },
   "auth.sign-up.show-fewer-options": {
     "message": "显示较少选项"
@@ -981,7 +981,7 @@
     "message": "你确定要删除该收藏夹吗？"
   },
   "collection.description": {
-    "message": "{description} - 前往 Bbsmc 查看 {username} 的收藏夹 {name}"
+    "message": "{description} - 前往 modrinth 查看 {username} 的收藏夹 {name}"
   },
   "collection.description.following": {
     "message": "此收藏夹为自动生成的，包含你关注的所有项目�?
@@ -1104,7 +1104,7 @@
     "message": "回复对话消息"
   },
   "conversation-thread.reply-modal.help-center-note": {
-    "message": "如果你需要联系管理团队，请使�?<help-center-link>Bbsmc Help Center</help-center-link>，然后点击右下角的蓝色气泡以联系支持�?
+    "message": "如果你需要联系管理团队，请使�?<help-center-link>modrinth Help Center</help-center-link>，然后点击右下角的蓝色气泡以联系支持�?
   },
   "conversation-thread.resubmit-modal.confirmation.description": {
     "message": "我已确认处理来自管理员的消息"
@@ -1515,7 +1515,7 @@
     "message": "税务表单未填写完�?
   },
   "dashboard.creator-tax-form-modal.security.description": {
-    "message": "Bbsmc 使用第三方提供商 Track1099 来安全地收集和存储你的税务表格�?security-link>在此了解更多�?/security-link>"
+    "message": "modrinth 使用第三方提供商 Track1099 来安全地收集和存储你的税务表格�?security-link>在此了解更多�?/security-link>"
   },
   "dashboard.creator-tax-form-modal.security.header": {
     "message": "安全措施"
@@ -1689,7 +1689,7 @@
     "message": "如需提取你全部的<b>{available}</b>可用余额，请填写下方表格。此操作仅需完成一次，系税务申报所需�?
   },
   "dashboard.creator-withdraw-modal.tax-form-required.body-with-limit": {
-    "message": "你必须填�?W-9 �?W-8 表格以供 Bbsmc 存档，确保我们符合税务法规要求�?
+    "message": "你必须填�?W-9 �?W-8 表格以供 modrinth 存档，确保我们符合税务法规要求�?
   },
   "dashboard.creator-withdraw-modal.tax-form-required.header": {
     "message": "需要填写税务表�?
@@ -1752,7 +1752,7 @@
     "message": "未验证的电子邮件"
   },
   "dashboard.creator-withdraw-modal.tremendous-details.unverified-email-message": {
-    "message": "你输入的收件邮箱未与你的 Bbsmc 账户关联。若奖励发送至错误邮箱地址，Bbsmc 将无法进行追回�?
+    "message": "你输入的收件邮箱未与你的 modrinth 账户关联。若奖励发送至错误邮箱地址，modrinth 将无法进行追回�?
   },
   "dashboard.creator-withdraw-modal.tremendous-details.usd-paypal-warning-header": {
     "message": "有更低的服务费可�?
@@ -1776,7 +1776,7 @@
     "message": "你已用尽<b>{withdrawLimit}</b>的提现额度。若需继续提现，请先完成税务表格填写�?
   },
   "dashboard.discord-roles.banner.body": {
-    "message": "你符合获�?{roles} 的条件。通过 Bbsmc 关联你的 Discord 账户，我们将自动同步这些身份�?
+    "message": "你符合获�?{roles} 的条件。通过 modrinth 关联你的 Discord 账户，我们将自动同步这些身份�?
   },
   "dashboard.discord-roles.banner.cta": {
     "message": "关联 Discord 账户"
@@ -1959,7 +1959,7 @@
     "message": "预计收入在公布前可能会有所调整�?
   },
   "dashboard.revenue.estimated-tooltip.msg2": {
-    "message": "点击了解 Bbsmc 如何处理你的收入�?
+    "message": "点击了解 modrinth 如何处理你的收入�?
   },
   "dashboard.revenue.estimated-with-date": {
     "message": "预计日期：{date}"
@@ -1980,7 +1980,7 @@
     "message": "已提�?
   },
   "dashboard.revenue.tos": {
-    "message": "通过将项目上传至 Bbsmc 并从账户中提取资金，即表示你同意我们�?terms-link>激励计划条�?/terms-link>。了解更多关�?info-link>激励计�?/info-link>的信息�?
+    "message": "通过将项目上传至 modrinth 并从账户中提取资金，即表示你同意我们�?terms-link>激励计划条�?/terms-link>。了解更多关�?info-link>激励计�?/info-link>的信息�?
   },
   "dashboard.revenue.transactions.btn.download-csv": {
     "message": "�?CSV 格式下载"
@@ -2169,7 +2169,7 @@
     "message": "重置后选择要安装的 modpack"
   },
   "discover.seo.description": {
-    "message": "使用Bbsmc即时、准确搜索数千个Minecraft {projectType}，并通过我们的过滤器帮助您快速找到最好的Minecraft {projectType}�?
+    "message": "使用modrinth即时、准确搜索数千个Minecraft {projectType}，并通过我们的过滤器帮助您快速找到最好的Minecraft {projectType}�?
   },
   "discover.seo.title": {
     "message": "搜索{projectType}"
@@ -2184,7 +2184,7 @@
     "message": "该收藏夹可能是私有的�?
   },
   "error.collection.404.list_item.3": {
-    "message": "此收藏夹可能由于违反我们�?tou-link>使用条款</tou-link>，而被 Bbsmc 管理团队移除�?
+    "message": "此收藏夹可能由于违反我们�?tou-link>使用条款</tou-link>，而被 modrinth 管理团队移除�?
   },
   "error.collection.404.list_title": {
     "message": "为什么？"
@@ -2211,10 +2211,10 @@
     "message": "因法律原因无法提供内�?
   },
   "error.generic.default.list_item.1": {
-    "message": "前往我们�?status-link>状态页�?/status-link>，查�?Bbsmc 服务是否中断�?
+    "message": "前往我们�?status-link>状态页�?/status-link>，查�?modrinth 服务是否中断�?
   },
   "error.generic.default.list_item.2": {
-    "message": "如果问题持续存在，不妨加入我们的<discord-link>Discord 服务�?/discord-link>来告�?Bbsmc 团队�?
+    "message": "如果问题持续存在，不妨加入我们的<discord-link>Discord 服务�?/discord-link>来告�?modrinth 团队�?
   },
   "error.generic.default.list_title": {
     "message": "请在几分钟后再试�?
@@ -2232,7 +2232,7 @@
     "message": "该组织的所有者可能更改了组织链接，或删除了该组织�?
   },
   "error.organization.404.list_item.3": {
-    "message": "此组织可能由于违反我们的<tou-link>使用条款</tou-link>，而被 Bbsmc 管理团队移除�?
+    "message": "此组织可能由于违反我们的<tou-link>使用条款</tou-link>，而被 modrinth 管理团队移除�?
   },
   "error.organization.404.list_title": {
     "message": "为什么？"
@@ -2247,7 +2247,7 @@
     "message": "该项目的所有者可能更改了项目链接，或将项目设为了私有，或删除了该项目�?
   },
   "error.project.404.list_item.3": {
-    "message": "此项目可能由于违反我们的<tou-link>使用条款</tou-link>，而被 Bbsmc 管理团队移除�?
+    "message": "此项目可能由于违反我们的<tou-link>使用条款</tou-link>，而被 modrinth 管理团队移除�?
   },
   "error.project.404.list_title": {
     "message": "为什么？"
@@ -2304,10 +2304,10 @@
     "message": "当你的服务器负载过高时，我们会暂时让它使用额外的 CPU 线程，帮你缓解延迟飙升与不稳定的问题。这有助于防�?TPS 掉到 20 以下，尽可能确保你获得最流畅的体验。由于只有在高负载期间，这些额外 CPU 线程才会短暂出现，所�?Spark 等性能分析工具可能不会显示出这些线程�?
   },
   "hosting-marketing.faq.cpu-kind": {
-    "message": "Bbsmc Hosting 服务器是在哪�?CPU 上运行的�?
+    "message": "modrinth Hosting 服务器是在哪�?CPU 上运行的�?
   },
   "hosting-marketing.faq.cpu-kind.answer": {
-    "message": "Bbsmc Hosting 服务器由 AMD Ryzen 7900 �?7950X3D 等效 CPU 提供动力，主频为 5+ GHz，并配备 DDR5 内存�?
+    "message": "modrinth Hosting 服务器由 AMD Ryzen 7900 �?7950X3D 等效 CPU 提供动力，主频为 5+ GHz，并配备 DDR5 内存�?
   },
   "hosting-marketing.faq.currency": {
     "message": "价格以哪一种货币计算？"
@@ -2316,19 +2316,19 @@
     "message": "所有价格均以美元（USD）标示�?
   },
   "hosting-marketing.faq.ddos-protection": {
-    "message": "Bbsmc Hosting 服务器有 DDoS 防护吗？"
+    "message": "modrinth Hosting 服务器有 DDoS 防护吗？"
   },
   "hosting-marketing.faq.ddos-protection.answer": {
-    "message": "有的。所�?Bbsmc Hosting 服务器均配备 DDoS 防护，部分区域防护容量高�?17 Tbps�?
+    "message": "有的。所�?modrinth Hosting 服务器均配备 DDoS 防护，部分区域防护容量高�?17 Tbps�?
   },
   "hosting-marketing.faq.heading": {
     "message": "常见问题"
   },
   "hosting-marketing.faq.how-fast": {
-    "message": "Bbsmc Hosting 服务器有多快�?
+    "message": "modrinth Hosting 服务器有多快�?
   },
   "hosting-marketing.faq.how-fast.answer.one": {
-    "message": "Bbsmc Hosting 服务器搭载了极为现代的高性能硬件，但要具体反映到你的服务器会有多快，还是很难预测的，因为实际性能受诸多因素影响，例如在你的服务器上运行的模组、数据包、插件，甚至用户行为模式都是影响的因素�?
+    "message": "modrinth Hosting 服务器搭载了极为现代的高性能硬件，但要具体反映到你的服务器会有多快，还是很难预测的，因为实际性能受诸多因素影响，例如在你的服务器上运行的模组、数据包、插件，甚至用户行为模式都是影响的因素�?
   },
   "hosting-marketing.faq.how-fast.answer.two": {
     "message": "大多数性能问题，往往是未优化的整合包、模组、数据包或插件导致服务器卡顿。由于我们的服务器配置非常高端，只要你针对服务器上运行的内容，选择合适的套餐方案，通常不会遇到太大问题�?
@@ -2337,10 +2337,10 @@
     "message": "我可以增加服务器的存储空间吗�?
   },
   "hosting-marketing.faq.increase-storage.answer": {
-    "message": "可以，你可以给你的服务器增加存储空间，而且无需额外费用。如果需要更多存储空间，请联�?Bbsmc 支持团队�?
+    "message": "可以，你可以给你的服务器增加存储空间，而且无需额外费用。如果需要更多存储空间，请联�?modrinth 支持团队�?
   },
   "hosting-marketing.faq.location": {
-    "message": "Bbsmc Hosting 的服务器位于哪里？我可以选择地区吗？"
+    "message": "modrinth Hosting 的服务器位于哪里？我可以选择地区吗？"
   },
   "hosting-marketing.faq.location.answer": {
     "message": "目前我们在北美、欧洲、东南亚及澳大利亚均设有服务器，供你在购买时选择。未来还会增加更多地区！如需更换服务器地区，请联系技术支持�?
@@ -2349,7 +2349,7 @@
     "message": "可以使用哪些版本�?Minecraft 和加载器�?
   },
   "hosting-marketing.faq.versions-loaders.answer.one": {
-    "message": "Bbsmc Hosting 服务器可以运行自 1.2.5 以来的任�?Minecraft Java 版版本，包括快照版本�?
+    "message": "modrinth Hosting 服务器可以运行自 1.2.5 以来的任�?Minecraft Java 版版本，包括快照版本�?
   },
   "hosting-marketing.faq.versions-loaders.answer.two": {
     "message": "我们还支持多种模组与插件加载器，包括用于模组�?Fabric、Quilt、Forge �?NeoForge，以及用于插件的 Paper �?Purpur。具体可用性取决于模组或插件加载器是否支持所选的 Minecraft 版本�?
@@ -2366,11 +2366,11 @@
   "hosting-marketing.hero.button.start-your-server": {
     "message": "开设你的服务器"
   },
-  "hosting-marketing.hero.host-with-Bbsmc": {
-    "message": "要开新服务器，就交给 Bbsmc Hosting"
+  "hosting-marketing.hero.host-with-modrinth": {
+    "message": "要开新服务器，就交给 modrinth Hosting"
   },
   "hosting-marketing.hero.hosting-description": {
-    "message": "Bbsmc Hosting 可让你以最便捷的方式，托管你专属的 Minecraft Java 版服务器。无缝安装并畅玩你心爱的模组和整合包，全�?Bbsmc 平台搞定�?
+    "message": "modrinth Hosting 可让你以最便捷的方式，托管你专属的 Minecraft Java 版服务器。无缝安装并畅玩你心爱的模组和整合包，全�?modrinth 平台搞定�?
   },
   "hosting-marketing.included.advanced-networking": {
     "message": "高级网络管理"
@@ -2388,10 +2388,10 @@
     "message": "自定�?URL"
   },
   "hosting-marketing.included.custom-url.description": {
-    "message": "使用自定�?<contrast>Bbsmc.gg</contrast> URL 分享你的服务器�?
+    "message": "使用自定�?<contrast>modrinth.gg</contrast> URL 分享你的服务器�?
   },
   "hosting-marketing.included.description": {
-    "message": "每台服务器均配备一系列专属功能，旨在提供唯�?Bbsmc 能够呈现的托管体验�?
+    "message": "每台服务器均配备一系列专属功能，旨在提供唯�?modrinth 能够呈现的托管体验�?
   },
   "hosting-marketing.included.file-manager": {
     "message": "易用的文件管理器"
@@ -2406,19 +2406,19 @@
     "message": "随时提供帮助"
   },
   "hosting-marketing.included.help.description": {
-    "message": "随时联系 Bbsmc 团队获取服务器相关帮助�?
+    "message": "随时联系 modrinth 团队获取服务器相关帮助�?
   },
   "hosting-marketing.included.powerful-console": {
     "message": "强大的控制台、服务器属性管理器及更多功�?
   },
   "hosting-marketing.included.powerful-console.description": {
-    "message": "Bbsmc Hosting 为你提供强大的服务器管理工具�?
+    "message": "modrinth Hosting 为你提供强大的服务器管理工具�?
   },
   "hosting-marketing.included.sftp-access": {
     "message": "SFTP 访问"
   },
   "hosting-marketing.included.sftp-access.description": {
-    "message": "通过 Bbsmc Hosting 内置�?SFTP 功能，直接访问你的服务器文件�?
+    "message": "通过 modrinth Hosting 内置�?SFTP 功能，直接访问你的服务器文件�?
   },
   "hosting-marketing.included.with-your-server": {
     "message": "随服务器一并提�?
@@ -2459,20 +2459,20 @@
   "hosting-marketing.server-for-everyone": {
     "message": "人人都能在这儿找到适合的服务器"
   },
-  "hosting-marketing.why.all-on-Bbsmc": {
-    "message": "�?Bbsmc 一站式管理"
+  "hosting-marketing.why.all-on-modrinth": {
+    "message": "�?modrinth 一站式管理"
   },
-  "hosting-marketing.why.all-on-Bbsmc.description": {
-    "message": "你的服务器、模组、玩家等内容均托管于 Bbsmc，无需反复切换平台�?
+  "hosting-marketing.why.all-on-modrinth.description": {
+    "message": "你的服务器、模组、玩家等内容均托管于 modrinth，无需反复切换平台�?
   },
   "hosting-marketing.why.consistently-fast": {
     "message": "快速始终如一"
   },
   "hosting-marketing.why.consistently-fast.description": {
-    "message": "我们的基础设施永不超载，这意味着通过 Bbsmc 托管的每台服务器始终能以全性能运行�?
+    "message": "我们的基础设施永不超载，这意味着通过 modrinth 托管的每台服务器始终能以全性能运行�?
   },
   "hosting-marketing.why.description": {
-    "message": "�?Bbsmc 平台上数千款整合包中挑选，或是自己整合模组。准备好了之后，随时可邀请好友一同畅玩�?
+    "message": "�?modrinth 平台上数千款整合包中挑选，或是自己整合模组。准备好了之后，随时可邀请好友一同畅玩�?
   },
   "hosting-marketing.why.heading": {
     "message": "找个整合包，立马就开服�?
@@ -2481,22 +2481,22 @@
     "message": "体验现代、可靠的托管服务"
   },
   "hosting-marketing.why.modern-reliable-hosting.description": {
-    "message": "Bbsmc Hosting 服务器采�?contrast>高性能 AMD CPU �?DDR5 内存</contrast>，且运行于定制软件上，确保你的服务器流畅运行�?
+    "message": "modrinth Hosting 服务器采�?contrast>高性能 AMD CPU �?DDR5 内存</contrast>，且运行于定制软件上，确保你的服务器流畅运行�?
   },
   "hosting-marketing.why.where-mods-are": {
     "message": "模组在哪，就在哪�?
   },
   "hosting-marketing.why.where-mods-are.description": {
-    "message": "Bbsmc Hosting 将模组与整合包的安装流程无缝集成到你的服务器中�?
+    "message": "modrinth Hosting 将模组与整合包的安装流程无缝集成到你的服务器中�?
   },
-  "hosting-marketing.why.why-Bbsmc-hosting": {
-    "message": "为什么选择 Bbsmc Hosting�?
+  "hosting-marketing.why.why-modrinth-hosting": {
+    "message": "为什么选择 modrinth Hosting�?
   },
   "hosting-marketing.why.your-favorite-mods": {
     "message": "你最喜欢的模组都在这�?
   },
   "hosting-marketing.why.your-favorite-mods.description": {
-    "message": "随心选择原版、Fabric、Forge、Quilt �?NeoForge。只要它�?Bbsmc，你的服务器就能运行它�?
+    "message": "随心选择原版、Fabric、Forge、Quilt �?NeoForge。只要它�?modrinth，你的服务器就能运行它�?
   },
   "hosting.plan.out-of-stock": {
     "message": "缺货"
@@ -2511,7 +2511,7 @@
     "message": "前往仪表�?
   },
   "landing.creator.feature.constantly-evolving.description": {
-    "message": "Bbsmc 团队将持续更新，为你提供优质的模组创作体�?
+    "message": "modrinth 团队将持续更新，为你提供优质的模组创作体�?
   },
   "landing.creator.feature.constantly-evolving.title": {
     "message": "持续进化"
@@ -2556,13 +2556,13 @@
     "message": "关注你喜欢的项目"
   },
   "landing.feature.launcher.description": {
-    "message": "Bbsmc 的开�?API 可供启动器添加与 Bbsmc 的深度集成。通过<link>我们的应用程�?/link>，以�?ATLauncher、MultiMC、Prism Launcher 等高人气启动器，都可使用 Bbsmc�?
+    "message": "modrinth 的开�?API 可供启动器添加与 modrinth 的深度集成。通过<link>我们的应用程�?/link>，以�?ATLauncher、MultiMC、Prism Launcher 等高人气启动器，都可使用 modrinth�?
   },
   "landing.feature.launcher.heading": {
     "message": "与你喜欢的启动器协同并行"
   },
   "landing.feature.search.description": {
-    "message": "Bbsmc 的搜索快如闪电，配合强大的筛选功能，心仪内容就在弹指一挥间�?
+    "message": "modrinth 的搜索快如闪电，配合强大的筛选功能，心仪内容就在弹指一挥间�?
   },
   "landing.feature.search.heading": {
     "message": "查找迅速，轻松锁定"
@@ -2595,10 +2595,10 @@
     "message": "ATLauncher"
   },
   "landing.launcher.graphic-alt": {
-    "message": "一个简化版�?Minecraft 窗口，其中包含以 Bbsmc 绿色显示�?Mojang Studios 徽标�?
+    "message": "一个简化版�?Minecraft 窗口，其中包含以 modrinth 绿色显示�?Mojang Studios 徽标�?
   },
-  "landing.launcher.Bbsmc-app-label": {
-    "message": "Bbsmc App"
+  "landing.launcher.modrinth-app-label": {
+    "message": "modrinth App"
   },
   "landing.launcher.prism-launcher-label": {
     "message": "Prism Launcher"
@@ -2694,13 +2694,13 @@
     "message": "访问账户设置"
   },
   "layout.banner.add-email.description": {
-    "message": "为确保账户安全，Bbsmc 需要你为账户关联一个电子邮箱地址�?
+    "message": "为确保账户安全，modrinth 需要你为账户关联一个电子邮箱地址�?
   },
   "layout.banner.build-fail.always-ignore": {
     "message": "总是忽略"
   },
   "layout.banner.build-fail.description": {
-    "message": "当前 Bbsmc 前端部署实例不能�?API 生成状态。这可能是由�?API 不可用或配置错误。请�?API 可用时重新构建。\n错误码：{errors}；当�?API URL �?{url}"
+    "message": "当前 modrinth 前端部署实例不能�?API 生成状态。这可能是由�?API 不可用或配置错误。请�?API 可用时重新构建。\n错误码：{errors}；当�?API URL �?{url}"
   },
   "layout.banner.build-fail.ignore": {
     "message": "忽略"
@@ -2709,16 +2709,16 @@
     "message": "构建期间�?API 生成状态时发生错误�?
   },
   "layout.banner.preview.description": {
-    "message": "如果你打算访�?Bbsmc 官方网站，请访问 {url}。此预览部署仅用�?Bbsmc 员工的测试目的，其构建基�?{ref}�?
+    "message": "如果你打算访�?modrinth 官方网站，请访问 {url}。此预览部署仅用�?modrinth 员工的测试目的，其构建基�?{ref}�?
   },
   "layout.banner.preview.title": {
-    "message": "这是 Bbsmc 网站的预览部署版本�?
+    "message": "这是 modrinth 网站的预览部署版本�?
   },
   "layout.banner.staging.description": {
-    "message": "测试环境�?Bbsmc 在生产环境所用数据库是完全分离的。本站用于测试和调试，且可能正运行着比生产环境更新的 Bbsmc 前端或后端的开发版�?
+    "message": "测试环境�?modrinth 在生产环境所用数据库是完全分离的。本站用于测试和调试，且可能正运行着比生产环境更新的 modrinth 前端或后端的开发版�?
   },
   "layout.banner.staging.title": {
-    "message": "你正在查看的�?Bbsmc 测试环境"
+    "message": "你正在查看的�?modrinth 测试环境"
   },
   "layout.banner.subscription-payment-failed.button": {
     "message": "更新财务信息"
@@ -2733,7 +2733,7 @@
     "message": "填写税务表格"
   },
   "layout.banner.tax.description": {
-    "message": "你今年在 Bbsmc 的提现金额已超过 {threshold}。为遵守税务规定，你需要填写一份税务申报表。在提交该表格前，你的提现操作将暂时冻结�?
+    "message": "你今年在 modrinth 的提现金额已超过 {threshold}。为遵守税务规定，你需要填写一份税务申报表。在提交该表格前，你的提现操作将暂时冻结�?
   },
   "layout.banner.tax.title": {
     "message": "需要填写税务表�?
@@ -2751,7 +2751,7 @@
     "message": "重新发送验证邮�?
   },
   "layout.banner.verify-email.description": {
-    "message": "为确保账户安全，Bbsmc 需要你验证与账户关联的电子邮箱地址�?
+    "message": "为确保账户安全，modrinth 需要你验证与账户关联的电子邮箱地址�?
   },
   "layout.footer.about": {
     "message": "关于"
@@ -2790,7 +2790,7 @@
     "message": "法律文件"
   },
   "layout.footer.legal-disclaimer": {
-    "message": "Minecraft 以及 我的世界 为美国微软公司的商标，本站与微软公司没有从属关系。本站与 Bbsmc 无从属关系，网站遵循 LGPL 协议开源�?
+    "message": "Minecraft 以及 我的世界 为美国微软公司的商标，本站与微软公司没有从属关系。本站与 modrinth 无从属关系，网站遵循 LGPL 协议开源�?
   },
   "layout.footer.legal.copyright-policy": {
     "message": "版权政策�?DMCA"
@@ -2807,8 +2807,8 @@
   "layout.footer.legal.terms-of-use": {
     "message": "使用条款"
   },
-  "layout.footer.Bbsmc-information": {
-    "message": "Bbsmc 信息"
+  "layout.footer.modrinth-information": {
+    "message": "modrinth 信息"
   },
   "layout.footer.open-source": {
     "message": "本站是一�?github-link>开源项�?/github-link>�?
@@ -2817,13 +2817,13 @@
     "message": "产品"
   },
   "layout.footer.products.app": {
-    "message": "Bbsmc App"
+    "message": "modrinth App"
   },
   "layout.footer.products.plus": {
-    "message": "Bbsmc+"
+    "message": "modrinth+"
   },
   "layout.footer.products.servers": {
-    "message": "Bbsmc Hosting"
+    "message": "modrinth Hosting"
   },
   "layout.footer.resources": {
     "message": "资源"
@@ -2862,7 +2862,7 @@
     "message": "切换菜单"
   },
   "layout.meta.description": {
-    "message": "�?Bbsmc 上下�?Minecraft 模组、插件、数据包、光影、资源包及整合包。通过我们现代化而易用的界面�?API，探索及发布项目�?
+    "message": "�?modrinth 上下�?Minecraft 模组、插件、数据包、光影、资源包及整合包。通过我们现代化而易用的界面�?API，探索及发布项目�?
   },
   "layout.meta.og-description": {
     "message": "浏览及发�?Minecraft 内容�?
@@ -2879,8 +2879,8 @@
   "layout.nav.discover": {
     "message": "发现"
   },
-  "layout.nav.get-Bbsmc-app": {
-    "message": "获取 Bbsmc App"
+  "layout.nav.get-modrinth-app": {
+    "message": "获取 modrinth App"
   },
   "layout.nav.home": {
     "message": "首页"
@@ -2888,11 +2888,11 @@
   "layout.nav.host-a-server": {
     "message": "租赁服务�?
   },
-  "layout.nav.Bbsmc-app": {
-    "message": "Bbsmc App"
+  "layout.nav.modrinth-app": {
+    "message": "modrinth App"
   },
-  "layout.nav.Bbsmc-home-page": {
-    "message": "Bbsmc 首页"
+  "layout.nav.modrinth-home-page": {
+    "message": "modrinth 首页"
   },
   "layout.nav.my-servers": {
     "message": "我的服务�?
@@ -2915,11 +2915,11 @@
   "layout.nav.search": {
     "message": "搜索"
   },
-  "layout.nav.upgrade-to-Bbsmc-plus": {
-    "message": "升级�?Bbsmc+"
+  "layout.nav.upgrade-to-modrinth-plus": {
+    "message": "升级�?modrinth+"
   },
   "layout.publish.email-verification-required.description": {
-    "message": "您必须先验证您的电子邮箱才能�?Bbsmc 上发布内容�?
+    "message": "您必须先验证您的电子邮箱才能�?modrinth 上发布内容�?
   },
   "layout.publish.email-verification-required.title": {
     "message": "需要验证电子邮�?
@@ -2934,19 +2934,19 @@
     "message": "共享内容实时同步更新"
   },
   "modal.shared-instance.open-in-app.get-app": {
-    "message": "获取 Bbsmc App"
+    "message": "获取 modrinth App"
   },
   "modal.shared-instance.open-in-app.managed-by": {
     "message": "管理�?
   },
   "modal.shared-instance.open-in-app.opening-automatically": {
-    "message": "即将自动打开 Bbsmc App…�?
+    "message": "即将自动打开 modrinth App…�?
   },
   "modal.shared-instance.open-in-app.title": {
-    "message": "正在打开 Bbsmc App"
+    "message": "正在打开 modrinth App"
   },
   "modal.shared-instance.open-in-app.why-use": {
-    "message": "为什么选择 Bbsmc 客户�?
+    "message": "为什么选择 modrinth 客户�?
   },
   "moderation.exclude-technical-review": {
     "message": "排除技术评�?
@@ -3372,7 +3372,7 @@
     "message": "重新提交审核"
   },
   "project-moderation-nags.resubmit-for-review-desc": {
-    "message": "你的项目已被 Bbsmc 工作人员{status, select, rejected {退回} withheld {暂缓} other {{status}}} 。在多数情况下，你可在处理工作人员反馈后重新提交审核�?
+    "message": "你的项目已被 modrinth 工作人员{status, select, rejected {退回} withheld {暂缓} other {{status}}} 。在多数情况下，你可在处理工作人员反馈后重新提交审核�?
   },
   "project-moderation-nags.submit-checklist-tooltip": {
     "message": "你必须完成发布前检查单中必需的步骤！"
@@ -3474,7 +3474,7 @@
     "message": "审核项目"
   },
   "project.actions.servers-promo.description": {
-    "message": "Bbsmc Hosting，让你轻松和朋友联机，毫无烦恼！"
+    "message": "modrinth Hosting，让你轻松和朋友联机，毫无烦恼！"
   },
   "project.actions.servers-promo.pricing": {
     "message": "起步价{price}<small> / 每月</small>"
@@ -3564,13 +3564,13 @@
     "message": "{title} 不支�?{platform} {gameVersion}"
   },
   "project.download.install-with-app": {
-    "message": "使用 Bbsmc App 安装"
+    "message": "使用 modrinth App 安装"
   },
   "project.download.manually": {
     "message": "手动下载"
   },
   "project.download.no-app": {
-    "message": "还没�?Bbsmc App 吗？"
+    "message": "还没�?modrinth App 吗？"
   },
   "project.download.no-game-versions-found": {
     "message": "未找到游戏版�?
@@ -3615,7 +3615,7 @@
     "message": "无法下载文件"
   },
   "project.environment.migration-no-permission.message": {
-    "message": "我们最近升级了 Bbsmc 的运行环境系统，引入了一些新选项。你没有权限修改这些设置，请通知项目其他成员核实运行环境元数据�?
+    "message": "我们最近升级了 modrinth 的运行环境系统，引入了一些新选项。你没有权限修改这些设置，请通知项目其他成员核实运行环境元数据�?
   },
   "project.environment.migration-no-permission.title": {
     "message": "运行环境元数据需要复�?
@@ -3624,7 +3624,7 @@
     "message": "了解更多关于此更改的内容"
   },
   "project.environment.migration.message": {
-    "message": "我们最近升级了 Bbsmc 的运行环境系统，引入了一些新选项。请验证元数据是否正确�?
+    "message": "我们最近升级了 modrinth 的运行环境系统，引入了一些新选项。请验证元数据是否正确�?
   },
   "project.environment.migration.review-button": {
     "message": "复核运行环境设置"
@@ -3651,10 +3651,10 @@
     "message": "你的项目是私人的，这意味着它只能由你本人或受你邀请的人访问�?
   },
   "project.moderation.admonition.approved.body.public": {
-    "message": "您的项目已发布，并且可以�?Bbsmc 上被发现�?
+    "message": "您的项目已发布，并且可以�?modrinth 上被发现�?
   },
   "project.moderation.admonition.approved.body.unlisted": {
-    "message": "你的项目状态为“未列出”，即只能通过直链访问，无法在 Bbsmc 被搜索到�?
+    "message": "你的项目状态为“未列出”，即只能通过直链访问，无法在 modrinth 被搜索到�?
   },
   "project.moderation.admonition.approved.body.visibility-message": {
     "message": "您可以在项目�?visibility-settings-link>可见性设�?/visibility-settings-link>中更改项目的可见性�?
@@ -3663,13 +3663,13 @@
     "message": "项目已被批准"
   },
   "project.moderation.admonition.draft.body": {
-    "message": "这是一个草稿项目，在提交审核并获得 Bbsmc 管理团队批准之前，其他人无法查看�?
+    "message": "这是一个草稿项目，在提交审核并获得 modrinth 管理团队批准之前，其他人无法查看�?
   },
   "project.moderation.admonition.draft.header": {
     "message": "草稿项目"
   },
   "project.moderation.admonition.draft.submit-for-review": {
-    "message": "一旦你完成了所有必需步骤，并确保你的项目符合 Bbsmc �?rules-link>内容规则</rules-link>，你就可以提交你的项目以供审核�?
+    "message": "一旦你完成了所有必需步骤，并确保你的项目符合 modrinth �?rules-link>内容规则</rules-link>，你就可以提交你的项目以供审核�?
   },
   "project.moderation.admonition.rejected.address-all-concerns": {
     "message": "在重新提交项目前，请解决所有审核关切和下方列出的问题�?
@@ -3681,10 +3681,10 @@
     "message": "如果反复提交你的项目而不预先处理管理问题，可能会导致账户被暂停�?
   },
   "project.moderation.admonition.under-review.body.1": {
-    "message": "你的项目已在排队等待 Bbsmc 管理团队的审核�?
+    "message": "你的项目已在排队等待 modrinth 管理团队的审核�?
   },
   "project.moderation.admonition.under-review.body.2": {
-    "message": "你的项目将先被扫描，然后由人工管理员来审核，以确保其符合 Bbsmc �?rules-link>内容规则</rules-link>�?terms-link>使用条款</terms-link>�?
+    "message": "你的项目将先被扫描，然后由人工管理员来审核，以确保其符合 modrinth �?rules-link>内容规则</rules-link>�?terms-link>使用条款</terms-link>�?
   },
   "project.moderation.admonition.under-review.body.3": {
     "message": "你仍然可以修改项目，这并不会影响你在队列中的位置�?
@@ -3696,7 +3696,7 @@
     "message": "我们计划在一周内审查提交内容，但某些项目可能会有延迟。这并不意味着你的提交有问题�?
   },
   "project.moderation.admonition.under-review.body.5": {
-    "message": "<emphasis>我们感谢您的耐心等待，同时我们的管理员正在努力保�?Bbsmc 的安全，并期待帮助您分享内容！�?/emphasis>"
+    "message": "<emphasis>我们感谢您的耐心等待，同时我们的管理员正在努力保�?modrinth 的安全，并期待帮助您分享内容！�?/emphasis>"
   },
   "project.moderation.admonition.under-review.header": {
     "message": "在审项目"
@@ -3717,10 +3717,10 @@
     "message": "内容管理员无法为大多数问题提供支持，并且发送到此对话的消息不会通知工作人员�?
   },
   "project.moderation.thread.help-center-note.2": {
-    "message": "如果你需要帮助或有其他疑问，请访�?<help-center-link>Bbsmc Help Center</help-center-link>，然后点击蓝色气泡以联系支持�?
+    "message": "如果你需要帮助或有其他疑问，请访�?<help-center-link>modrinth Help Center</help-center-link>，然后点击蓝色气泡以联系支持�?
   },
   "project.moderation.thread.private-description": {
-    "message": "这是�?Bbsmc 管理员的私人对话消息。他们可能会就此项目的问题向你发送消息�?
+    "message": "这是�?modrinth 管理员的私人对话消息。他们可能会就此项目的问题向你发送消息�?
   },
   "project.moderation.thread.title": {
     "message": "审核信息"
@@ -3798,7 +3798,7 @@
     "message": "未知的外部内�?
   },
   "project.settings.permissions.bad-proof.description": {
-    "message": "Bbsmc的管理团队已拒绝了你为外部内容提供的权限信息，请查看被拒绝的外部内容，并提供有效的证明或删除内容�?
+    "message": "modrinth的管理团队已拒绝了你为外部内容提供的权限信息，请查看被拒绝的外部内容，并提供有效的证明或删除内容�?
   },
   "project.settings.permissions.bad-proof.title": {
     "message": "有些证明被拒绝了"
@@ -3837,13 +3837,13 @@
     "message": "展开全部"
   },
   "project.settings.permissions.fail.description": {
-    "message": "您可能无权限在您的项目中分发外部内容，如果您要在 Bbsmc 上发布，请移除这些内容或是证明您有权限分发这些内容�?
+    "message": "您可能无权限在您的项目中分发外部内容，如果您要在 modrinth 上发布，请移除这些内容或是证明您有权限分发这些内容�?
   },
   "project.settings.permissions.fail.title": {
     "message": "某些内容无法被包�?
   },
   "project.settings.permissions.info-banner.description": {
-    "message": "如果你使用了�?Bbsmc 托管的内容，你需要告知我们这些内容的来源，并证明你有权分发这些文件。请查阅 <link>我们关于这一新系统的公告</link> 获取更多信息�?
+    "message": "如果你使用了�?modrinth 托管的内容，你需要告知我们这些内容的来源，并证明你有权分发这些文件。请查阅 <link>我们关于这一新系统的公告</link> 获取更多信息�?
   },
   "project.settings.permissions.info-banner.title": {
     "message": "了解有关分发权限的信�?
@@ -3855,7 +3855,7 @@
     "message": "没有与您的搜索结果相关的外部信息�?
   },
   "project.settings.permissions.not-allowed.description": {
-    "message": "由于这些外部内容违反了我们的内容规定，因此不能在 Bbsmc 上发布，且必须被删除�?
+    "message": "由于这些外部内容违反了我们的内容规定，因此不能在 modrinth 上发布，且必须被删除�?
   },
   "project.settings.permissions.pending-approval-count": {
     "message": "{count, plural, =0 {无需审核的署名} one {# 条署名待审核} other {# 条署名待审核}}"
@@ -4053,7 +4053,7 @@
     "message": "无法找到 {item}"
   },
   "report.for.violation": {
-    "message": "违反 Bbsmc <rules-link>规则</rules-link> �?<terms-link>使用条款</terms-link>"
+    "message": "违反 modrinth <rules-link>规则</rules-link> �?<terms-link>使用条款</terms-link>"
   },
   "report.for.violation.description": {
     "message": "例如：恶意软件、垃圾信息、冒犯、诈骗、误导、违法内容等�?
@@ -4098,7 +4098,7 @@
     "message": "你正在举报哪种类型的内容�?
   },
   "report.question.report-reason": {
-    "message": "该项目{item}违反�?Bbsmc 的哪条规则？"
+    "message": "该项目{item}违反�?modrinth 的哪条规则？"
   },
   "report.report-content": {
     "message": "向管理员举报内容"
@@ -4302,7 +4302,7 @@
     "message": "写入举报"
   },
   "scopes.sessionAccess.description": {
-    "message": "访问�?Bbsmc 发出的会�?
+    "message": "访问�?modrinth 发出的会�?
   },
   "scopes.sessionAccess.label": {
     "message": "访问会话"
@@ -4401,7 +4401,7 @@
     "message": "跟随服务�?
   },
   "servers.manage.content.title": {
-    "message": "内容 - {serverName} - Bbsmc"
+    "message": "内容 - {serverName} - modrinth"
   },
   "servers.notice.actions": {
     "message": "操作"
@@ -4458,13 +4458,13 @@
     "message": "正在导出…�?
   },
   "settings.account.data-export.description": {
-    "message": "申请获取你在 Bbsmc 上传的所有个人数据副本。此操作可能需要几分钟才能完成�?
+    "message": "申请获取你在 modrinth 上传的所有个人数据副本。此操作可能需要几分钟才能完成�?
   },
   "settings.account.data-export.title": {
     "message": "数据导出"
   },
   "settings.account.delete.confirm.description": {
-    "message": "这将**立即删除你的所有用户数据和关注**。此操作不会删除你的项目。删除账户操作不可撤销�?br><br>若你的账户需要帮助，请在 [Bbsmc Discord](https://discord.bbsmc.org.cn) 获取支持�?
+    "message": "这将**立即删除你的所有用户数据和关注**。此操作不会删除你的项目。删除账户操作不可撤销�?br><br>若你的账户需要帮助，请在 [modrinth Discord](https://discord.bbsmc.org.cn) 获取支持�?
   },
   "settings.account.delete.confirm.proceed": {
     "message": "删除该账�?
@@ -4740,7 +4740,7 @@
     "message": "你确定要删除该应用程序吗�?
   },
   "settings.applications.description.intro": {
-    "message": "应用程序可用于通过你的产品验证 Bbsmc 用户身份。更多信息请参阅<docs-link> Bbsmc �?API 文档</docs-link>�?
+    "message": "应用程序可用于通过你的产品验证 modrinth 用户身份。更多信息请参阅<docs-link> modrinth �?API 文档</docs-link>�?
   },
   "settings.applications.field.description": {
     "message": "描述"
@@ -4791,7 +4791,7 @@
     "message": "关于此应�?
   },
   "settings.authorizations.description": {
-    "message": "当您使用 Bbsmc 账户授权某个应用程序时，即表示您授予其访问您账户的权限。您可以随时在此处管理和审查对您账户的访问权限�?
+    "message": "当您使用 modrinth 账户授权某个应用程序时，即表示您授予其访问您账户的权限。您可以随时在此处管理和审查对您账户的访问权限�?
   },
   "settings.authorizations.head-title": {
     "message": "授权"
@@ -4806,16 +4806,16 @@
     "message": "您确定要撤销此申请吗�?
   },
   "settings.billing.charges.description": {
-    "message": "您过去所有支付给Bbsmc账户的款项都将列在这里："
+    "message": "您过去所有支付给modrinth账户的款项都将列在这里："
   },
   "settings.billing.charges.product.medal-trial": {
     "message": "Medal 服务器试�?
   },
   "settings.billing.charges.product.midas": {
-    "message": "Bbsmc Plus"
+    "message": "modrinth Plus"
   },
   "settings.billing.charges.product.pyro": {
-    "message": "Bbsmc托管服务"
+    "message": "modrinth托管服务"
   },
   "settings.billing.charges.title": {
     "message": "过去费用"
@@ -4833,13 +4833,13 @@
     "message": "�?
   },
   "settings.billing.midas.benefits.ad-free": {
-    "message": "�?bbsmc.org.cn �?Bbsmc 应用上无广告浏览"
+    "message": "�?bbsmc.org.cn �?modrinth 应用上无广告浏览"
   },
   "settings.billing.midas.benefits.badge": {
-    "message": "个人资料上显示Bbsmc+徽章"
+    "message": "个人资料上显示modrinth+徽章"
   },
   "settings.billing.midas.benefits.support": {
-    "message": "直接支持Bbsmc及其创作�?
+    "message": "直接支持modrinth及其创作�?
   },
   "settings.billing.midas.benefits.title": {
     "message": "福利"
@@ -4863,7 +4863,7 @@
     "message": "你的付款正在处理中。付款完成后福利将立即生效�?
   },
   "settings.billing.midas.upsell": {
-    "message": "成为Bbsmc Plus的订阅者吧�?
+    "message": "成为modrinth Plus的订阅者吧�?
   },
   "settings.billing.modal.cancel.action": {
     "message": "取消订阅"
@@ -4920,7 +4920,7 @@
     "message": "{shared} 个共�?CPU（爆发时最�?{bursts} CPU�?
   },
   "settings.billing.pyro.linked-server.not-found": {
-    "message": "我们未能找到与此订阅关联的服务器。可能存在以下几种情况：若你刚刚购买服务器，此为正常现象，服务器配置可能需要一小时左右；若你已购买一段时间，服务器可能已被停用。如有不符预期的情况，请提供以下信息联系 Bbsmc 支持团队�?
+    "message": "我们未能找到与此订阅关联的服务器。可能存在以下几种情况：若你刚刚购买服务器，此为正常现象，服务器配置可能需要一小时左右；若你已购买一段时间，服务器可能已被停用。如有不符预期的情况，请提供以下信息联系 modrinth 支持团队�?
   },
   "settings.billing.pyro.linked-server.server-id": {
     "message": "服务器ID：{id}"
@@ -4932,7 +4932,7 @@
     "message": "{gb} GB 内存"
   },
   "settings.billing.pyro.resubscribe.error.text": {
-    "message": "在重新订阅你�?Bbsmc 服务器时发生了错误�?
+    "message": "在重新订阅你�?modrinth 服务器时发生了错误�?
   },
   "settings.billing.pyro.resubscribe.error.title": {
     "message": "重新订阅时出�?
@@ -4959,10 +4959,10 @@
     "message": "{gb} GB 虚拟内存"
   },
   "settings.billing.pyro_subscription.description": {
-    "message": "管理你的 Bbsmc Servers 订阅�?
+    "message": "管理你的 modrinth Servers 订阅�?
   },
   "settings.billing.pyro_subscription.title": {
-    "message": "Bbsmc Servers 订阅"
+    "message": "modrinth Servers 订阅"
   },
   "settings.billing.renews": {
     "message": "下次续订 {date}"
@@ -4977,7 +4977,7 @@
     "message": "订阅"
   },
   "settings.billing.subscription.description": {
-    "message": "管理你的 Bbsmc 订阅�?
+    "message": "管理你的 modrinth 订阅�?
   },
   "settings.billing.subscription.title": {
     "message": "订阅"
@@ -5004,7 +5004,7 @@
     "message": "停用开发者模�?
   },
   "settings.display.banner.developer-mode.description": {
-    "message": "<strong>开发者模�?/strong>已激活。该模式可让你查�?Bbsmc 各种对象的内�?ID，对于使�?Bbsmc API 的开发者会有所帮助。点击页面底部的 Bbsmc 徽标 5 次可开关开发者模式�?
+    "message": "<strong>开发者模�?/strong>已激活。该模式可让你查�?modrinth 各种对象的内�?ID，对于使�?modrinth API 的开发者会有所帮助。点击页面底部的 modrinth 徽标 5 次可开关开发者模式�?
   },
   "settings.display.flags.description": {
     "message": "为当前设备开启或关闭特定功能�?
@@ -5067,16 +5067,16 @@
     "message": "高级渲染"
   },
   "settings.display.sidebar.external-links-new-tab.description": {
-    "message": "在新标签页中打开跳出 Bbsmc 的站外链接。但同一域名下的链接、Markdown 描述中的链接始终在当前标签页打开，广告和编辑页面上的链接则始终在新标签页打开�?
+    "message": "在新标签页中打开跳出 modrinth 的站外链接。但同一域名下的链接、Markdown 描述中的链接始终在当前标签页打开，广告和编辑页面上的链接则始终在新标签页打开�?
   },
   "settings.display.sidebar.external-links-new-tab.title": {
     "message": "在新标签页打开外部链接"
   },
   "settings.display.sidebar.hide-app-promos.description": {
-    "message": "隐藏主导航栏中的“获�?Bbsmc App”按钮。Bbsmc App 页面仍然可以通过登录页面或页脚访问�?
+    "message": "隐藏主导航栏中的“获�?modrinth App”按钮。modrinth App 页面仍然可以通过登录页面或页脚访问�?
   },
   "settings.display.sidebar.hide-app-promos.title": {
-    "message": "隐藏 Bbsmc App 推荐"
+    "message": "隐藏 modrinth App 推荐"
   },
   "settings.display.sidebar.left-aligned-content-sidebar.title": {
     "message": "内容页面侧边栏左对齐"
@@ -5103,7 +5103,7 @@
     "message": "创建个人访问令牌"
   },
   "settings.pats.description": {
-    "message": "个人访问令牌PAT可用于访�?Bbsmc �?API。这些令牌可随时创建和撤销。更多信息，请参�?<doc-link>Bbsmc API 文档</doc-link>�?
+    "message": "个人访问令牌PAT可用于访�?modrinth �?API。这些令牌可随时创建和撤销。更多信息，请参�?<doc-link>modrinth API 文档</doc-link>�?
   },
   "settings.pats.modal.create.action": {
     "message": "创建个人访问令牌"
@@ -5160,7 +5160,7 @@
     "message": "当前会话"
   },
   "settings.sessions.description": {
-    "message": "以下是目前登录了你的 Bbsmc 账号的所有设备。你可以为任一设备单独退出登录。\n\n如果发现陌生设备，请立即将其退出登录，并更改你�?Bbsmc 账号密码�?
+    "message": "以下是目前登录了你的 modrinth 账号的所有设备。你可以为任一设备单独退出登录。\n\n如果发现陌生设备，请立即将其退出登录，并更改你�?modrinth 账号密码�?
   },
   "settings.sessions.last-accessed-ago": {
     "message": "上次访问于{ago}"
@@ -5184,7 +5184,7 @@
     "message": "接受邀�?
   },
   "shared-instance.invite.inviter.unknown": {
-    "message": "一�?Bbsmc 用户"
+    "message": "一�?modrinth 用户"
   },
   "shared-instance.invite.joined-count": {
     "message": "{count, plural, other {已有 # 人加入}}"
@@ -5196,7 +5196,7 @@
     "message": "{name} 邀请你一起游�?
   },
   "shared-instance.invite.trust.description": {
-    "message": "此邀请由 Bbsmc 用户创建，并非来�?Bbsmc 官方。请仅接受来自信任好友的邀请�?
+    "message": "此邀请由 modrinth 用户创建，并非来�?modrinth 官方。请仅接受来自信任好友的邀请�?
   },
   "shared-instance.invite.trust.heading": {
     "message": "你认识这位用户吗�?
@@ -5208,7 +5208,7 @@
     "message": "此邀请不可用"
   },
   "ui.latest-news-row.latest-news": {
-    "message": "Bbsmc 的最新消�?
+    "message": "modrinth 的最新消�?
   },
   "ui.latest-news-row.view-all": {
     "message": "查看所有新�?
@@ -5220,7 +5220,7 @@
     "message": "已订阅！"
   },
   "ui.newsletter-button.tooltip": {
-    "message": "订阅 Bbsmc 新闻"
+    "message": "订阅 modrinth 新闻"
   },
   "version.all-versions": {
     "message": "所有版�?
@@ -5322,10 +5322,10 @@
     "message": "Maven 坐标�?
   },
   "version.section.content.dev-info.maven-description": {
-    "message": "Bbsmc 上的项目会自动通过 Maven 仓库提供，以便与 <gradle-link>Gradle</gradle-link> �?JVM 构建工具配合使用。要详细了解 Bbsmc Maven API�?article-link>请点击此�?/article-link>�?
+    "message": "modrinth 上的项目会自动通过 Maven 仓库提供，以便与 <gradle-link>Gradle</gradle-link> �?JVM 构建工具配合使用。要详细了解 modrinth Maven API�?article-link>请点击此�?/article-link>�?
   },
   "version.section.content.dev-info.maven-note": {
-    "message": "注意：如果可用，你应当使用创作者的 Maven 仓库，因为它会包�?Bbsmc Maven API 所不具备的传递依赖信息。如果混�?Bbsmc 与非 Bbsmc �?Maven 仓库来获取依赖项，你还可能遇到依赖项重复的问题，因为通过 Bbsmc Maven API 提供依赖时，组标识符会有所不同�?
+    "message": "注意：如果可用，你应当使用创作者的 Maven 仓库，因为它会包�?modrinth Maven API 所不具备的传递依赖信息。如果混�?modrinth 与非 modrinth �?Maven 仓库来获取依赖项，你还可能遇到依赖项重复的问题，因为通过 modrinth Maven API 提供依赖时，组标识符会有所不同�?
   },
   "version.section.content.dev-info.version-id": {
     "message": "版本 ID�?

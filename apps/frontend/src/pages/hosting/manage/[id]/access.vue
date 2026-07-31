@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import {
-	injectBbsmcClient,
-	injectBbsmcServerContext,
+	injectmodrinthClient,
+	injectmodrinthServerContext,
 	ServersManageAccessPage,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 
-const client = injectBbsmcClient()
-const { server, serverId } = injectBbsmcServerContext()
+const client = injectmodrinthClient()
+const { server, serverId } = injectmodrinthServerContext()
 const queryClient = useQueryClient()
 const flags = useFeatureFlags()
 const ACTION_LOG_PAGE_SIZE = 200
@@ -54,7 +54,7 @@ await Promise.allSettled([
 ])
 
 useHead({
-	title: computed(() => `Access - ${server.value?.name ?? 'Server'} - Bbsmc`),
+	title: computed(() => `Access - ${server.value?.name ?? 'Server'} - modrinth`),
 })
 
 function defaultActionLogDateFilter() {

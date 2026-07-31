@@ -32,7 +32,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 		<Text class="text-base">Hi <span class="no-auto-link">{user.name}</span>,</Text>
 
 		<Text class="text-base">
-			Bbsmc's moderation team has left a message on your project,
+			modrinth's moderation team has left a message on your project,
 			<VLink
 				href="https://bbsmc.org.cn/project/{project.id}/moderation"
 				class="text-green underline"
@@ -53,6 +53,6 @@ import StyledEmail from '../shared/StyledEmail.vue'
 			</Text>
 		</Section>
 
-		<Text class="text-base">Thank you for publishing on Bbsmc!</Text>
+		<Text class="text-base">Thank you for publishing on modrinth!</Text>
 	</StyledEmail>
 </template>

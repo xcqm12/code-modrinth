@@ -1,10 +1,10 @@
-# `@Bbsmc/assets`
+# `@modrinth/assets`
 
-This package contains various assets used across the Bbsmc platform, including icons, images, and branding materials.
+This package contains various assets used across the modrinth platform, including icons, images, and branding materials.
 
-Bbsmc uses the [Lucide icon set](https://lucide.dev/) for its icons, which are automatically imported and exported in the `index.ts` file. This file is generated through the `pnpm run fix` command, which also ensures that all icons are consistent and correctly formatted.
+modrinth uses the [Lucide icon set](https://lucide.dev/) for its icons, which are automatically imported and exported in the `index.ts` file. This file is generated through the `pnpm run fix` command, which also ensures that all icons are consistent and correctly formatted.
 
-The "Mr Rinth"/"Rinthbot" branding assets were created and given to Bbsmc by [Devin (integrav)](https://github.com/intergrav) and are used across the platform. These assets are also included in this package.
+The "Mr Rinth"/"Rinthbot" branding assets were created and given to modrinth by [Devin (integrav)](https://github.com/intergrav) and are used across the platform. These assets are also included in this package.
 
 ## Adding New Assets
 

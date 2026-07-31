@@ -54,7 +54,7 @@ export const Default: StoryObj = {
 			const showWarning = () => {
 				popupManager.addPopupNotification({
 					title: 'Update available',
-					text: "Bbsmc App v2.1.0 is available now! Since you're on a metered network, we didn't automatically download it.",
+					text: "modrinth App v2.1.0 is available now! Since you're on a metered network, we didn't automatically download it.",
 					type: 'warning',
 					autoCloseMs: null,
 					buttons: [
@@ -74,7 +74,7 @@ export const Default: StoryObj = {
 			const showInfo = () => {
 				popupManager.addPopupNotification({
 					title: 'Download complete',
-					text: 'Bbsmc App v2.1.0 has finished downloading. Reload to update now.',
+					text: 'modrinth App v2.1.0 has finished downloading. Reload to update now.',
 					type: 'info',
 					buttons: [
 						{
@@ -109,8 +109,8 @@ export const Default: StoryObj = {
 
 			const showBlocking = () => {
 				popupManager.addPopupNotification({
-					title: 'Your privacy and how ads support Bbsmc',
-					text: 'Ads make Bbsmc possible and fund creator rewards. Our partners may store unique identifiers to personalize ads and measure performance.',
+					title: 'Your privacy and how ads support modrinth',
+					text: 'Ads make modrinth possible and fund creator rewards. Our partners may store unique identifiers to personalize ads and measure performance.',
 					type: 'info',
 					autoCloseMs: null,
 					dismissible: false,

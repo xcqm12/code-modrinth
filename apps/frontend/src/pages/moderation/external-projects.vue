@@ -128,8 +128,8 @@
 	</div>
 </template>
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
-import { BinaryIcon, EditIcon, HashIcon, SearchIcon } from '@Bbsmc/assets'
+import type { Labrinth } from '@modrinth/api-client'
+import { BinaryIcon, EditIcon, HashIcon, SearchIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	Combobox,
@@ -138,21 +138,21 @@ import {
 	type ExternalLicenseStatus,
 	externalProjectLicenseStatusMessages,
 	ExternalProjectLookupCard,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	NewModal,
 	StyledInput,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 
 const { formatMessage } = useVIntl()
 
 const query = ref('')
 const isLoading = ref(false)
 const isSavingEdit = ref(false)
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const editModal = useTemplateRef<InstanceType<typeof NewModal>>('editModal')
 
-useHead({ title: 'External projects - Bbsmc' })
+useHead({ title: 'External projects - modrinth' })
 
 type ExternalProject = {
 	id: number

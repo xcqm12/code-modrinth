@@ -1,10 +1,10 @@
-import type { Labrinth } from '@Bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	createContext,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	type ProjectPageContext,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import type { ComputedRef, Ref } from 'vue'
 
@@ -277,7 +277,7 @@ export const [injectAnalyticsDashboardContext, provideAnalyticsDashboardContext]
 export function createAnalyticsDashboardContext(
 	options: CreateAnalyticsDashboardContextOptions,
 ): AnalyticsDashboardContextValue {
-	const client = injectBbsmcClient()
+	const client = injectmodrinthClient()
 	const { addNotification } = injectNotificationManager()
 	const queryClient = useQueryClient()
 	const route = useRoute()

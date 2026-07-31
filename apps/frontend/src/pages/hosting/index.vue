@@ -4,7 +4,7 @@
 		data-pyro
 		class="servers-hero relative isolate -mt-44 h-full min-h-screen pt-8"
 	>
-		<BbsmcServersPurchaseModal
+		<modrinthServersPurchaseModal
 			v-if="customer"
 			:key="`purchase-modal-${customer.id}`"
 			ref="purchaseModal"
@@ -38,7 +38,7 @@
 						{{ formatMessage(commonMessages.betaRelease) }}
 					</div>
 					<h1 class="relative m-0 max-w-3xl text-3xl font-bold !leading-[110%] md:text-6xl">
-						{{ formatMessage(messages.hostWithBbsmc) }}
+						{{ formatMessage(messages.hostWithmodrinth) }}
 					</h1>
 				</div>
 				<h2
@@ -110,7 +110,7 @@
 				<div
 					class="relative w-fit rounded-full bg-highlight-green px-3 py-1 text-sm font-bold text-brand backdrop-blur-lg"
 				>
-					{{ formatMessage(messages.whyBbsmcHosting) }}
+					{{ formatMessage(messages.whymodrinthHosting) }}
 				</div>
 				<h1 class="relative m-0 max-w-2xl text-4xl leading-[120%] md:text-7xl">
 					{{ formatMessage(messages.whyHeading) }}
@@ -185,9 +185,9 @@
 							<path d="M10 8h.01" />
 							<path d="M14 8h.01" />
 						</svg>
-						<h2 class="m-0 text-lg font-bold">{{ formatMessage(messages.allOnBbsmc) }}</h2>
+						<h2 class="m-0 text-lg font-bold">{{ formatMessage(messages.allOnmodrinth) }}</h2>
 						<h3 class="m-0 text-base font-normal text-secondary">
-							{{ formatMessage(messages.allOnBbsmcDescription) }}
+							{{ formatMessage(messages.allOnmodrinthDescription) }}
 						</h3>
 					</div>
 
@@ -285,7 +285,7 @@
 								class="ooh-shiny absolute right-4 top-4 flex items-center justify-center rounded-full bg-bg-raised p-4"
 							>
 								<span class="font-bold text-contrast">{{ currentText }}</span
-								>.Bbsmc.gg
+								>.modrinth.gg
 							</div>
 						</div>
 						<div class="relative flex flex-col gap-4 rounded-2xl bg-bg p-6 text-left md:p-12">
@@ -632,20 +632,20 @@ import {
 	TerminalSquareIcon,
 	TransferIcon,
 	VersionIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	ButtonStyled,
 	commonMessages,
 	defineMessages,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	IntlFormatted,
 	LoaderIcon,
-	BbsmcServersPurchaseModal,
+	modrinthServersPurchaseModal,
 	useFormatPrice,
 	useVIntl,
-} from '@Bbsmc/ui'
-import { monthsInInterval } from '@Bbsmc/ui/src/utils/billing.ts'
+} from '@modrinth/ui'
+import { monthsInInterval } from '@modrinth/ui/src/utils/billing.ts'
 import { useQuery } from '@tanstack/vue-query'
 import { computed } from 'vue'
 
@@ -656,7 +656,7 @@ import { products } from '~/generated/state.json'
 
 const route = useRoute()
 const router = useRouter()
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 
 const { setAffiliateCode, getAffiliateCode } = useAffiliates()
 
@@ -705,14 +705,14 @@ const messages = defineMessages({
 		defaultMessage:
 			'The selected product was found but lacks necessary data. Please contact support.',
 	},
-	hostWithBbsmc: {
-		id: 'hosting-marketing.hero.host-with-Bbsmc',
-		defaultMessage: 'Host your next server with Bbsmc Hosting',
+	hostWithmodrinth: {
+		id: 'hosting-marketing.hero.host-with-modrinth',
+		defaultMessage: 'Host your next server with modrinth Hosting',
 	},
 	hostingDescription: {
 		id: 'hosting-marketing.hero.hosting-description',
 		defaultMessage:
-			'Bbsmc Hosting is the easiest way to host your own Minecraft: Java Edition server. Seamlessly install and play your favorite mods and modpacks, all within the Bbsmc platform.',
+			'modrinth Hosting is the easiest way to host your own Minecraft: Java Edition server. Seamlessly install and play your favorite mods and modpacks, all within the modrinth platform.',
 	},
 	startANewServer: {
 		id: 'hosting-marketing.hero.button.start-a-new-server',
@@ -726,9 +726,9 @@ const messages = defineMessages({
 		id: 'hosting-marketing.hero.button.manage-your-servers',
 		defaultMessage: 'Manage your servers',
 	},
-	whyBbsmcHosting: {
-		id: 'hosting-marketing.why.why-Bbsmc-hosting',
-		defaultMessage: 'Why Bbsmc Hosting?',
+	whymodrinthHosting: {
+		id: 'hosting-marketing.why.why-modrinth-hosting',
+		defaultMessage: 'Why modrinth Hosting?',
 	},
 	whyHeading: {
 		id: 'hosting-marketing.why.heading',
@@ -737,7 +737,7 @@ const messages = defineMessages({
 	whyDescription: {
 		id: 'hosting-marketing.why.description',
 		defaultMessage:
-			"Choose from the thousands of modpacks on Bbsmc or create your own. Invite your friends when you're ready to play.",
+			"Choose from the thousands of modpacks on modrinth or create your own. Invite your friends when you're ready to play.",
 	},
 	whereModsAre: {
 		id: 'hosting-marketing.why.where-mods-are',
@@ -746,7 +746,7 @@ const messages = defineMessages({
 	whereModsAreDescription: {
 		id: 'hosting-marketing.why.where-mods-are.description',
 		defaultMessage:
-			'Bbsmc Hosting seamlessly integrates the mod and modpack installation process into your server.',
+			'modrinth Hosting seamlessly integrates the mod and modpack installation process into your server.',
 	},
 	yourFavoriteMods: {
 		id: 'hosting-marketing.why.your-favorite-mods',
@@ -755,16 +755,16 @@ const messages = defineMessages({
 	yourFavoriteModsDescription: {
 		id: 'hosting-marketing.why.your-favorite-mods.description',
 		defaultMessage:
-			"Choose between Vanilla, Fabric, Forge, Quilt and NeoForge. If it's on Bbsmc, it can run on your server.",
+			"Choose between Vanilla, Fabric, Forge, Quilt and NeoForge. If it's on modrinth, it can run on your server.",
 	},
-	allOnBbsmc: {
-		id: 'hosting-marketing.why.all-on-Bbsmc',
-		defaultMessage: 'Manage it all on Bbsmc',
+	allOnmodrinth: {
+		id: 'hosting-marketing.why.all-on-modrinth',
+		defaultMessage: 'Manage it all on modrinth',
 	},
-	allOnBbsmcDescription: {
-		id: 'hosting-marketing.why.all-on-Bbsmc.description',
+	allOnmodrinthDescription: {
+		id: 'hosting-marketing.why.all-on-modrinth.description',
 		defaultMessage:
-			'Your server, mods, players, and more are all on Bbsmc. No need to switch between platforms.',
+			'Your server, mods, players, and more are all on modrinth. No need to switch between platforms.',
 	},
 	modernReliableHosting: {
 		id: 'hosting-marketing.why.modern-reliable-hosting',
@@ -773,7 +773,7 @@ const messages = defineMessages({
 	modernReliableHostingDescription: {
 		id: 'hosting-marketing.why.modern-reliable-hosting.description',
 		defaultMessage:
-			'Bbsmc Hosting servers are hosted on <contrast>high-performance AMD CPUs with DDR5 RAM</contrast>, running on custom-built software to ensure your server performs smoothly.',
+			'modrinth Hosting servers are hosted on <contrast>high-performance AMD CPUs with DDR5 RAM</contrast>, running on custom-built software to ensure your server performs smoothly.',
 	},
 	consistentlyFast: {
 		id: 'hosting-marketing.why.consistently-fast',
@@ -782,7 +782,7 @@ const messages = defineMessages({
 	consistentlyFastDescription: {
 		id: 'hosting-marketing.why.consistently-fast.description',
 		defaultMessage:
-			'Our infrastructure is never overloaded, meaning each server hosted with Bbsmc always runs at its full performance.',
+			'Our infrastructure is never overloaded, meaning each server hosted with modrinth always runs at its full performance.',
 	},
 	includedWithYourServer: {
 		id: 'hosting-marketing.included.with-your-server',
@@ -795,7 +795,7 @@ const messages = defineMessages({
 	includedDescription: {
 		id: 'hosting-marketing.included.description',
 		defaultMessage:
-			'Included with every server is a suite of features designed to provide a hosting experience that only Bbsmc can offer.',
+			'Included with every server is a suite of features designed to provide a hosting experience that only modrinth can offer.',
 	},
 	customUrl: {
 		id: 'hosting-marketing.included.custom-url',
@@ -803,7 +803,7 @@ const messages = defineMessages({
 	},
 	customUrlDescription: {
 		id: 'hosting-marketing.included.custom-url.description',
-		defaultMessage: 'Share your server with a custom <contrast>Bbsmc.gg</contrast> URL.',
+		defaultMessage: 'Share your server with a custom <contrast>modrinth.gg</contrast> URL.',
 	},
 	backupsIncluded: {
 		id: 'hosting-marketing.included.backups-included',
@@ -827,7 +827,7 @@ const messages = defineMessages({
 	},
 	powerfulConsoleDescription: {
 		id: 'hosting-marketing.included.powerful-console.description',
-		defaultMessage: 'Bbsmc Hosting comes with powerful tools to manage your server.',
+		defaultMessage: 'modrinth Hosting comes with powerful tools to manage your server.',
 	},
 	help: {
 		id: 'hosting-marketing.included.help',
@@ -835,7 +835,7 @@ const messages = defineMessages({
 	},
 	helpDescription: {
 		id: 'hosting-marketing.included.help.description',
-		defaultMessage: 'Reach out to the Bbsmc team for help with your server at any time.',
+		defaultMessage: 'Reach out to the modrinth team for help with your server at any time.',
 	},
 	sftpAccess: {
 		id: 'hosting-marketing.included.sftp-access',
@@ -843,7 +843,7 @@ const messages = defineMessages({
 	},
 	sftpAccessDescription: {
 		id: 'hosting-marketing.included.sftp-access.description',
-		defaultMessage: "Access your server's files directly with SFTP built into Bbsmc Hosting.",
+		defaultMessage: "Access your server's files directly with SFTP built into modrinth Hosting.",
 	},
 	advancedNetworking: {
 		id: 'hosting-marketing.included.advanced-networking',
@@ -860,12 +860,12 @@ const messages = defineMessages({
 	},
 	faqCpuKind: {
 		id: 'hosting-marketing.faq.cpu-kind',
-		defaultMessage: 'What kind of CPUs do Bbsmc Hosting servers run on?',
+		defaultMessage: 'What kind of CPUs do modrinth Hosting servers run on?',
 	},
 	faqCpuKindAnswer: {
 		id: 'hosting-marketing.faq.cpu-kind.answer',
 		defaultMessage:
-			'Bbsmc Hosting servers are powered by AMD Ryzen 7900 and 7950X3D equivalent CPUs at 5+ GHz, paired with DDR5 memory.',
+			'modrinth Hosting servers are powered by AMD Ryzen 7900 and 7950X3D equivalent CPUs at 5+ GHz, paired with DDR5 memory.',
 	},
 	faqBurstThreads: {
 		id: 'hosting-marketing.faq.burst-threads',
@@ -878,16 +878,16 @@ const messages = defineMessages({
 	},
 	faqDDOSProtection: {
 		id: 'hosting-marketing.faq.ddos-protection',
-		defaultMessage: 'Do Bbsmc Hosting servers have DDoS protection?',
+		defaultMessage: 'Do modrinth Hosting servers have DDoS protection?',
 	},
 	faqDDOSProtectionAnswer: {
 		id: 'hosting-marketing.faq.ddos-protection.answer',
 		defaultMessage:
-			'Yes. All Bbsmc Hosting servers come with DDoS protection, with up to 17 Tbps capacity in some locations.',
+			'Yes. All modrinth Hosting servers come with DDoS protection, with up to 17 Tbps capacity in some locations.',
 	},
 	faqLocation: {
 		id: 'hosting-marketing.faq.location',
-		defaultMessage: 'Where are Bbsmc Hosting servers located? Can I choose a region?',
+		defaultMessage: 'Where are modrinth Hosting servers located? Can I choose a region?',
 	},
 	faqLocationAnswer: {
 		id: 'hosting-marketing.faq.location.answer',
@@ -901,16 +901,16 @@ const messages = defineMessages({
 	faqIncreaseStorageAnswer: {
 		id: 'hosting-marketing.faq.increase-storage.answer',
 		defaultMessage:
-			'Yes, storage can be increased on your server at no additional cost. If you need more storage, reach out to Bbsmc Support.',
+			'Yes, storage can be increased on your server at no additional cost. If you need more storage, reach out to modrinth Support.',
 	},
 	faqHowFast: {
 		id: 'hosting-marketing.faq.how-fast',
-		defaultMessage: 'How fast are Bbsmc Hosting servers?',
+		defaultMessage: 'How fast are modrinth Hosting servers?',
 	},
 	faqHowFastAnswer: {
 		id: 'hosting-marketing.faq.how-fast.answer.one',
 		defaultMessage:
-			"Bbsmc Hosting servers are hosted on very modern high-performance hardware, but it's tough to say how exactly that will translate into how fast your server will run because there are so many factors that affect it, such as the mods, data packs, or plugins you're running on your server, and even user behavior.",
+			"modrinth Hosting servers are hosted on very modern high-performance hardware, but it's tough to say how exactly that will translate into how fast your server will run because there are so many factors that affect it, such as the mods, data packs, or plugins you're running on your server, and even user behavior.",
 	},
 	faqHowFastAnswerTwo: {
 		id: 'hosting-marketing.faq.how-fast.answer.two',
@@ -932,7 +932,7 @@ const messages = defineMessages({
 	faqVersionsLoadersAnswer: {
 		id: 'hosting-marketing.faq.versions-loaders.answer.one',
 		defaultMessage:
-			'Bbsmc Hosting servers can run any version of Minecraft: Java Edition going all the way back to version 1.2.5, including snapshot versions.',
+			'modrinth Hosting servers can run any version of Minecraft: Java Edition going all the way back to version 1.2.5, including snapshot versions.',
 	},
 	faqVersionsLoadersAnswerTwo: {
 		id: 'hosting-marketing.faq.versions-loaders.answer.two',
@@ -999,9 +999,9 @@ const lowestPrice = computed(() => {
 	return amount ? amount / monthsInInterval[billingPeriod.value] : undefined
 })
 
-const title = 'Bbsmc Hosting'
+const title = 'modrinth Hosting'
 const description =
-	'Start your own Minecraft server directly on Bbsmc. Play your favorite mods, plugins, and datapacks —without the hassle of setup.'
+	'Start your own Minecraft server directly on modrinth. Play your favorite mods, plugins, and datapacks —without the hassle of setup.'
 
 useSeoMeta({
 	title,

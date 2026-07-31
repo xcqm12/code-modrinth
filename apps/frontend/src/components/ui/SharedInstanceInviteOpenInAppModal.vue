@@ -126,8 +126,8 @@
 </template>
 
 <script setup lang="ts">
-import { CheckIcon, DownloadIcon, XIcon } from '@Bbsmc/assets'
-import { Avatar, ButtonStyled, commonMessages, defineMessages, useVIntl } from '@Bbsmc/ui'
+import { CheckIcon, DownloadIcon, XIcon } from '@modrinth/assets'
+import { Avatar, ButtonStyled, commonMessages, defineMessages, useVIntl } from '@modrinth/ui'
 import { computed, nextTick, onUnmounted, ref } from 'vue'
 
 const { formatMessage } = useVIntl()
@@ -135,7 +135,7 @@ const { formatMessage } = useVIntl()
 const messages = defineMessages({
 	openingApp: {
 		id: 'modal.shared-instance.open-in-app.title',
-		defaultMessage: 'Opening Bbsmc App',
+		defaultMessage: 'Opening modrinth App',
 	},
 	managedBy: {
 		id: 'modal.shared-instance.open-in-app.managed-by',
@@ -143,7 +143,7 @@ const messages = defineMessages({
 	},
 	whyUseApp: {
 		id: 'modal.shared-instance.open-in-app.why-use',
-		defaultMessage: 'Why use the Bbsmc App',
+		defaultMessage: 'Why use the modrinth App',
 	},
 	benefitJoin: {
 		id: 'modal.shared-instance.open-in-app.benefit.join',
@@ -159,11 +159,11 @@ const messages = defineMessages({
 	},
 	openingAutomatically: {
 		id: 'modal.shared-instance.open-in-app.opening-automatically',
-		defaultMessage: 'The Bbsmc App will open automatically...',
+		defaultMessage: 'The modrinth App will open automatically...',
 	},
 	getApp: {
 		id: 'modal.shared-instance.open-in-app.get-app',
-		defaultMessage: 'Get Bbsmc App',
+		defaultMessage: 'Get modrinth App',
 	},
 })
 
@@ -194,7 +194,7 @@ let hideTimeout: ReturnType<typeof setTimeout> | null = null
 
 const circumference = 2 * Math.PI * 45
 const strokeDashoffset = computed(() => circumference * (1 - countdownProgress.value))
-const appLink = computed(() => `Bbsmc://share/${encodeURIComponent(instance.value.inviteId)}`)
+const appLink = computed(() => `modrinth://share/${encodeURIComponent(instance.value.inviteId)}`)
 
 function startCountdown() {
 	countdown.value = 3

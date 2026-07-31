@@ -128,7 +128,7 @@ vars! {
     SENTRY_ENVIRONMENT: String = "development";
     SENTRY_TRACES_SAMPLE_RATE: f32 = 0.1f32;
     SITE_URL: String = "http://localhost:3000";
-    CDN_URL: String = "file:///tmp/Bbsmc";
+    CDN_URL: String = "file:///tmp/modrinth";
     LABRINTH_ADMIN_KEY: String = "";
     LABRINTH_MEDAL_KEY: String = "";
     LABRINTH_EXTERNAL_NOTIFICATION_KEY: String = "";
@@ -211,7 +211,7 @@ vars! {
     SEARCH_INCREMENTAL_INDEX_BATCH_DELAY_SECONDS: u64 = 5u64;
     SEARCH_INCREMENTAL_INDEX_BATCH_MAX_SIZE: usize = 1000usize;
     TYPESENSE_URL: String = "http://localhost:8108";
-    TYPESENSE_API_KEY: String = "Bbsmc";
+    TYPESENSE_API_KEY: String = "modrinth";
     TYPESENSE_INDEX_PREFIX: String = "labrinth";
     TYPESENSE_IMPORT_BATCH_SIZE: usize = 5000usize;
     TYPESENSE_DELETE_BATCH_SIZE: usize = 10_000usize;
@@ -258,7 +258,7 @@ vars! {
     S3_PRIVATE_SECRET: String = "";
 
     // local
-    MOCK_FILE_PATH: String = "/tmp/Bbsmc";
+    MOCK_FILE_PATH: String = "/tmp/modrinth";
 
     GITHUB_CLIENT_ID: String = "none";
     GITHUB_CLIENT_SECRET: String = "none";
@@ -266,7 +266,7 @@ vars! {
     GITLAB_CLIENT_SECRET: String = "none";
     DISCORD_CLIENT_ID: String = "none";
     DISCORD_CLIENT_SECRET: String = "none";
-    DISCORD_COMMUNITY_BOT_HANDOFF_URL: String = "http://localhost:3000/Bbsmc/handoff";
+    DISCORD_COMMUNITY_BOT_HANDOFF_URL: String = "http://localhost:3000/modrinth/handoff";
     DISCORD_COMMUNITY_LINK_SECRET: String = "";
     MICROSOFT_CLIENT_ID: String = "none";
     MICROSOFT_CLIENT_SECRET: String = "none";
@@ -329,7 +329,7 @@ vars! {
     SMTP_HOST: String = "localhost";
     SMTP_PORT: u16 = 1025u16;
     SMTP_TLS: String = "none";
-    SMTP_FROM_NAME: String = "Bbsmc";
+    SMTP_FROM_NAME: String = "modrinth";
     SMTP_FROM_ADDRESS: String = "no-reply@mail.bbsmc.org.cn";
 
     SITE_VERIFY_EMAIL_PATH: String = "auth/verify-email";
@@ -421,5 +421,5 @@ vars! {
     SERVER_PING_TIMEOUT_MS: u64 = 3u64 * 1000;
     SERVER_PING_MAX_FAIL_COUNT: u64 = 3u64;
 
-    WEBAUTHN_RP_NAME: String = "Bbsmc";
+    WEBAUTHN_RP_NAME: String = "modrinth";
 }

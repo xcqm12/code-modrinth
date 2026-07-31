@@ -1,5 +1,5 @@
 <script setup lang="ts" generic="T extends string">
-import { MoonIcon, RadioButtonCheckedIcon, RadioButtonIcon, SunIcon } from '@Bbsmc/assets'
+import { MoonIcon, RadioButtonCheckedIcon, RadioButtonIcon, SunIcon } from '@modrinth/assets'
 
 import { defineMessages, useVIntl } from '../../composables/i18n'
 const { formatMessage } = useVIntl()
@@ -18,7 +18,7 @@ const colorTheme = defineMessages({
 	},
 	description: {
 		id: 'settings.display.theme.description',
-		defaultMessage: 'Select your preferred color theme for Bbsmc on this device.',
+		defaultMessage: 'Select your preferred color theme for modrinth on this device.',
 	},
 	system: {
 		id: 'settings.display.theme.system',

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
-import { SearchIcon } from '@Bbsmc/assets'
+import type { Labrinth } from '@modrinth/api-client'
+import { SearchIcon } from '@modrinth/assets'
 import { computed, ref, toValue } from 'vue'
 
 import ButtonStyled from '#ui/components/base/ButtonStyled.vue'
@@ -59,7 +59,7 @@ const messages = defineMessages({
 	},
 	offline: {
 		id: 'browse.offline',
-		defaultMessage: 'You are currently offline. Connect to the internet to browse Bbsmc!',
+		defaultMessage: 'You are currently offline. Connect to the internet to browse modrinth!',
 	},
 	noResults: {
 		id: 'browse.no-results',

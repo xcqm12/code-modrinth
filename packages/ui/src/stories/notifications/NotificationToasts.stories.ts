@@ -1,4 +1,4 @@
-import { CopyIcon, MinecraftServerIcon, UpdatedIcon } from '@Bbsmc/assets'
+import { CopyIcon, MinecraftServerIcon, UpdatedIcon } from '@modrinth/assets'
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
 
 import { NotificationToast } from '../../components/notifications'
@@ -50,7 +50,7 @@ export const FigmaExamples: Story = {
 					type="server-invite"
 					actor-name="Fetch"
 					:actor-avatar-url="avatarUrl"
-					entity-name="Bbsmc SMP"
+					entity-name="modrinth SMP"
 					@accept="noop"
 					@decline="noop"
 					@dismiss="noop"
@@ -105,7 +105,7 @@ export const ServerInvite: Story = {
 				type="server-invite"
 				actor-name="Fetch"
 				:actor-avatar-url="avatarUrl"
-				entity-name="Bbsmc SMP"
+				entity-name="modrinth SMP"
 				@accept="noop"
 				@decline="noop"
 				@dismiss="noop"
@@ -128,7 +128,7 @@ export const MissingAvatarFallback: Story = {
 			<NotificationToast
 				type="server-invite"
 				actor-name="Fetch"
-				entity-name="Bbsmc SMP"
+				entity-name="modrinth SMP"
 				@accept="noop"
 				@decline="noop"
 				@dismiss="noop"

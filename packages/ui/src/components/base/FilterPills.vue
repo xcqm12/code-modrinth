@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import { FilterIcon } from '@Bbsmc/assets'
+import { FilterIcon } from '@modrinth/assets'
 
 export interface FilterPillOption {
 	id: string

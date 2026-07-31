@@ -188,8 +188,8 @@
   "button.open-in-folder": {
     "defaultMessage": "Åbn mappe"
   },
-  "button.open-in-Bbsmc": {
-    "defaultMessage": "Åbn i Bbsmc"
+  "button.open-in-modrinth": {
+    "defaultMessage": "Åbn i modrinth"
   },
   "button.play": {
     "defaultMessage": "Spil"
@@ -1172,8 +1172,8 @@
   "omorphia.component.badge.label.moderator": {
     "defaultMessage": "Moderator"
   },
-  "omorphia.component.badge.label.Bbsmc-team": {
-    "defaultMessage": "Bbsmc Team"
+  "omorphia.component.badge.label.modrinth-team": {
+    "defaultMessage": "modrinth Team"
   },
   "omorphia.component.badge.label.pending": {
     "defaultMessage": "Afventer"
@@ -1674,7 +1674,7 @@
     "defaultMessage": "Dit projekt har flere miløjer"
   },
   "project.settings.environment.notice.review-options.description": {
-    "defaultMessage": "Vi har ændret miljø systemet på Bbsmc og nye muligheder er nu tilgængelige. Venligst sikre den korrekte mulighed er valgt nedenunder og så klik \"Bekræft\" og så du færdig!"
+    "defaultMessage": "Vi har ændret miljø systemet på modrinth og nye muligheder er nu tilgængelige. Venligst sikre den korrekte mulighed er valgt nedenunder og så klik \"Bekræft\" og så du færdig!"
   },
   "project.settings.environment.notice.review-options.title": {
     "defaultMessage": "Venligst gennemse mulighederne nedenunder"
@@ -1965,16 +1965,16 @@
     "defaultMessage": "Har du allerede en server?"
   },
   "servers.list-empty.learn-more-link": {
-    "defaultMessage": "Lær mere om Bbsmc Hosting"
+    "defaultMessage": "Lær mere om modrinth Hosting"
   },
-  "servers.list-empty.Bbsmc-hosting-label": {
-    "defaultMessage": "Bbsmc Hosting"
+  "servers.list-empty.modrinth-hosting-label": {
+    "defaultMessage": "modrinth Hosting"
   },
   "servers.list-empty.new-server-button": {
     "defaultMessage": "Ny server"
   },
   "servers.list-empty.no-servers-description": {
-    "defaultMessage": "Installer mods, inviter venner og spil alle sammen fra Bbsmc Appen."
+    "defaultMessage": "Installer mods, inviter venner og spil alle sammen fra modrinth Appen."
   },
   "servers.list-empty.no-servers-title": {
     "defaultMessage": "Ingen servere endnu"
@@ -2007,7 +2007,7 @@
     "defaultMessage": "Advarsel"
   },
   "servers.purchase.notification.success.text": {
-    "defaultMessage": "Dit Bbsmc Hosting køb blev gennemført."
+    "defaultMessage": "Dit modrinth Hosting køb blev gennemført."
   },
   "servers.purchase.notification.success.title": {
     "defaultMessage": "Køb gennemført"
@@ -2094,7 +2094,7 @@
     "defaultMessage": "Mørk"
   },
   "settings.display.theme.description": {
-    "defaultMessage": "Vælg dit foretrukne farvetema til Bbsmc på denne enhed."
+    "defaultMessage": "Vælg dit foretrukne farvetema til modrinth på denne enhed."
   },
   "settings.display.theme.light": {
     "defaultMessage": "Lys"

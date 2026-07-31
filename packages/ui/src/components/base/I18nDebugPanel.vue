@@ -7,7 +7,7 @@ import {
 	ScanEyeIcon,
 	SearchIcon,
 	XIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import { computed, nextTick, onBeforeUnmount, ref, watch } from 'vue'
 
 import { injectI18nDebug } from '../../composables/i18n-debug'

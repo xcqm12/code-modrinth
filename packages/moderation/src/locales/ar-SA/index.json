@@ -24,13 +24,13 @@
     "defaultMessage": "أضف معلومات ترخيص"
   },
   "nags.add-links-server.description": {
-    "defaultMessage": "أضف أي روابط ذات صلة خارج Bbsmc، مثل موقع إلكتروني، متجر، أو دعوة Discord."
+    "defaultMessage": "أضف أي روابط ذات صلة خارج modrinth، مثل موقع إلكتروني، متجر، أو دعوة Discord."
   },
   "nags.add-links-server.title": {
     "defaultMessage": "إضافة روابط خارجية"
   },
   "nags.add-links.description": {
-    "defaultMessage": "أضف أي روابط ذات صلة تستهدف خارج Bbsmc، مثل كود المصدر، أو متعقب المشكلات، أو دعوة Discord."
+    "defaultMessage": "أضف أي روابط ذات صلة تستهدف خارج modrinth، مثل كود المصدر، أو متعقب المشكلات، أو دعوة Discord."
   },
   "nags.add-links.title": {
     "defaultMessage": "إضافة روابط خارجية"

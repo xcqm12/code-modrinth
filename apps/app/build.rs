@@ -131,10 +131,10 @@ fn main() {
                 "mr-auth",
                 InlinedPlugin::new()
                     .commands(&[
-                        "Bbsmc_login",
+                        "modrinth_login",
                         "logout",
                         "get",
-                        "cancel_Bbsmc_login",
+                        "cancel_modrinth_login",
                     ])
                     .default_permission(
                         DefaultPermissionRule::AllowAllCommands,
@@ -214,11 +214,11 @@ fn main() {
                         "instance_install_project_with_dependencies",
                         "instance_switch_project_version_with_dependencies",
                         "instance_add_project_from_path",
-                        "instance_is_file_on_Bbsmc",
+                        "instance_is_file_on_modrinth",
                         "instance_toggle_disable_project",
                         "instance_remove_project",
-                        "instance_update_managed_Bbsmc_version",
-                        "instance_repair_managed_Bbsmc",
+                        "instance_update_managed_modrinth_version",
+                        "instance_repair_managed_modrinth",
                         "instance_run",
                         "instance_kill",
                         "instance_edit",

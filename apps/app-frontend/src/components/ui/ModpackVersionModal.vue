@@ -1,11 +1,11 @@
 <script setup>
-import { CheckIcon } from '@Bbsmc/assets'
-import { Badge, ButtonStyled } from '@Bbsmc/ui'
+import { CheckIcon } from '@modrinth/assets'
+import { Badge, ButtonStyled } from '@modrinth/ui'
 import { computed, ref } from 'vue'
 
 import { SwapIcon } from '@/assets/icons/index.js'
 import ModalWrapper from '@/components/ui/modal/ModalWrapper.vue'
-import { update_managed_Bbsmc_version } from '@/helpers/instance'
+import { update_managed_modrinth_version } from '@/helpers/instance'
 import { releaseColor } from '@/helpers/utils'
 
 const props = defineProps({
@@ -39,7 +39,7 @@ const inProgress = ref(false)
 const switchVersion = async (versionId) => {
 	modpackVersionModal.value.hide()
 	inProgress.value = true
-	await update_managed_Bbsmc_version(props.instance.id, versionId)
+	await update_managed_modrinth_version(props.instance.id, versionId)
 	inProgress.value = false
 	emit('finish-install')
 }

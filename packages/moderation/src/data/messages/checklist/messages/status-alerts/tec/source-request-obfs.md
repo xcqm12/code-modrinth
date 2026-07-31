@@ -1,4 +1,4 @@
 ## Source Code Requested
 
-To ensure the safety of all Bbsmc users, we ask that you provide the source code for this project and the process you used to obfuscate it before resubmission so that it can be reviewed by our Moderation Team.  
-We understand that you may not want to publish the source code for this project, so you are welcome to share it privately to the [Bbsmc Content Moderation Team](https://github.com/BbsmcModeration) on GitHub.
+To ensure the safety of all modrinth users, we ask that you provide the source code for this project and the process you used to obfuscate it before resubmission so that it can be reviewed by our Moderation Team.  
+We understand that you may not want to publish the source code for this project, so you are welcome to share it privately to the [modrinth Content Moderation Team](https://github.com/modrinthModeration) on GitHub.

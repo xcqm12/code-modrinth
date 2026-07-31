@@ -107,20 +107,20 @@
 </template>
 
 <script setup lang="ts">
-import { LogInIcon, RefreshCwIcon, SpinnerIcon, UserPlusIcon, XIcon } from '@Bbsmc/assets'
-import { ButtonStyled, defineMessages, IntlFormatted, NewModal, useVIntl } from '@Bbsmc/ui'
+import { LogInIcon, RefreshCwIcon, SpinnerIcon, UserPlusIcon, XIcon } from '@modrinth/assets'
+import { ButtonStyled, defineMessages, IntlFormatted, NewModal, useVIntl } from '@modrinth/ui'
 import { openUrl } from '@tauri-apps/plugin-opener'
 import { ref } from 'vue'
 
-import { cancelLogin, type BbsmcAuthFlow } from '@/helpers/mr_auth'
+import { cancelLogin, type modrinthAuthFlow } from '@/helpers/mr_auth'
 
 const props = defineProps<{
-	requestAuth: (flow: BbsmcAuthFlow) => Promise<boolean>
+	requestAuth: (flow: modrinthAuthFlow) => Promise<boolean>
 }>()
 
 const { formatMessage } = useVIntl()
 const modal = ref<InstanceType<typeof NewModal>>()
-const authenticating = ref<BbsmcAuthFlow | null>(null)
+const authenticating = ref<modrinthAuthFlow | null>(null)
 const reopeningBrowser = ref(false)
 let resolveShow: ((signedIn: boolean) => void) | undefined
 let authenticationId = 0
@@ -138,7 +138,7 @@ function show(event?: MouseEvent) {
 	})
 }
 
-function showSigningIn(flow: BbsmcAuthFlow = 'sign-in', event?: MouseEvent) {
+function showSigningIn(flow: modrinthAuthFlow = 'sign-in', event?: MouseEvent) {
 	const result = show(event)
 	authenticate(flow)
 	return result
@@ -149,7 +149,7 @@ function finish(signedIn: boolean) {
 	resolveShow = undefined
 }
 
-function authenticate(flow: BbsmcAuthFlow) {
+function authenticate(flow: modrinthAuthFlow) {
 	const id = ++authenticationId
 	authenticating.value = flow
 
@@ -210,53 +210,53 @@ function openSupport() {
 
 const messages = defineMessages({
 	header: {
-		id: 'modal.Bbsmc-account-required.header',
+		id: 'modal.modrinth-account-required.header',
 		defaultMessage: 'Account required',
 	},
 	signingInHeader: {
-		id: 'modal.Bbsmc-account-required.signing-in-header',
+		id: 'modal.modrinth-account-required.signing-in-header',
 		defaultMessage: 'Signing in',
 	},
 	signInHeading: {
-		id: 'modal.Bbsmc-account-required.sign-in-heading',
-		defaultMessage: 'Sign in to a Bbsmc account',
+		id: 'modal.modrinth-account-required.sign-in-heading',
+		defaultMessage: 'Sign in to a modrinth account',
 	},
 	description: {
-		id: 'modal.Bbsmc-account-required.description',
+		id: 'modal.modrinth-account-required.description',
 		defaultMessage:
-			"You'll need to sign into your Bbsmc account before you can use this feature.",
+			"You'll need to sign into your modrinth account before you can use this feature.",
 	},
 	createAccountButton: {
-		id: 'modal.Bbsmc-account-required.create-account-button',
+		id: 'modal.modrinth-account-required.create-account-button',
 		defaultMessage: 'Create an account',
 	},
 	signInButton: {
-		id: 'modal.Bbsmc-account-required.sign-in-button',
-		defaultMessage: 'Sign in to Bbsmc',
+		id: 'modal.modrinth-account-required.sign-in-button',
+		defaultMessage: 'Sign in to modrinth',
 	},
 	continueInBrowserHeading: {
-		id: 'modal.Bbsmc-account-required.continue-in-browser-heading',
+		id: 'modal.modrinth-account-required.continue-in-browser-heading',
 		defaultMessage: 'Continue in your browser',
 	},
 	browserDescription: {
-		id: 'modal.Bbsmc-account-required.browser-description',
+		id: 'modal.modrinth-account-required.browser-description',
 		defaultMessage:
 			'A new tab opened to sign in. Complete the sign in there, then return to the app.',
 	},
 	waitingForBrowser: {
-		id: 'modal.Bbsmc-account-required.waiting-for-browser',
+		id: 'modal.modrinth-account-required.waiting-for-browser',
 		defaultMessage: 'Waiting for browser confirmation...',
 	},
 	cancelButton: {
-		id: 'modal.Bbsmc-account-required.cancel-button',
+		id: 'modal.modrinth-account-required.cancel-button',
 		defaultMessage: 'Cancel',
 	},
 	openBrowserAgainButton: {
-		id: 'modal.Bbsmc-account-required.open-browser-again-button',
+		id: 'modal.modrinth-account-required.open-browser-again-button',
 		defaultMessage: 'Open browser again',
 	},
 	supportPrompt: {
-		id: 'modal.Bbsmc-account-required.support-prompt',
+		id: 'modal.modrinth-account-required.support-prompt',
 		defaultMessage: 'Having trouble signing in? <support>Get support</support>',
 	},
 })

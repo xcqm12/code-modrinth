@@ -1,6 +1,6 @@
 <template>
 	<div v-if="!instance.quarantined" class="flex flex-col gap-4">
-		<BbsmcAccountRequiredModal ref="accountRequiredModal" :request-auth="requestAuth" />
+		<modrinthAccountRequiredModal ref="accountRequiredModal" :request-auth="requestAuth" />
 		<InvitePlayersModal
 			ref="invitePlayersModal"
 			:header="formatMessage(messages.shareModalHeader, { name: instance.name })"
@@ -144,7 +144,7 @@
 </template>
 
 <script setup lang="ts">
-import { LogInIcon, SpinnerIcon, UserPlusIcon } from '@Bbsmc/assets'
+import { LogInIcon, SpinnerIcon, UserPlusIcon } from '@modrinth/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -155,11 +155,11 @@ import {
 	InvitePlayersModal,
 	type InvitePlayersUser,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { computed, ref, toRef, watch } from 'vue'
 
-import BbsmcAccountRequiredModal from '@/components/ui/modal/BbsmcAccountRequiredModal.vue'
+import modrinthAccountRequiredModal from '@/components/ui/modal/modrinthAccountRequiredModal.vue'
 import SharedInstancePublishModal from '@/components/ui/shared-instances/SharedInstancePublishModal.vue'
 import {
 	getSharedInstanceUnavailableReason,
@@ -167,7 +167,7 @@ import {
 	isSharedInstanceUnavailableError,
 } from '@/helpers/install'
 import { can_current_user_use_shared_instances, edit } from '@/helpers/instance'
-import type { BbsmcAuthFlow } from '@/helpers/mr_auth.ts'
+import type { modrinthAuthFlow } from '@/helpers/mr_auth.ts'
 import {
 	sharedInstanceErrorMessages,
 	useSharedInstanceErrors,
@@ -203,7 +203,7 @@ const sharedInstanceActionsLocked = actionsLocked
 const currentUserId = computed(() => auth.user.value?.id ?? null)
 const isSignedIn = computed(() => !!auth.session_token.value)
 const sharedInstancesApiUnavailable = ref(false)
-const accountRequiredModal = ref<InstanceType<typeof BbsmcAccountRequiredModal>>()
+const accountRequiredModal = ref<InstanceType<typeof modrinthAccountRequiredModal>>()
 const invitePlayersModal = ref<InstanceType<typeof InvitePlayersModal>>()
 const unlinkModal = ref<InstanceType<typeof ConfirmUnlinkModal>>()
 const removeMemberModal = ref<InstanceType<typeof SharedInstanceRemoveMemberModal>>()
@@ -418,7 +418,7 @@ function removeMember(row: ShareRow) {
 function userProfileLink(username: string) {
 	return !username || username.includes('@') ? undefined : `/user/${encodeURIComponent(username)}`
 }
-async function requestAuth(flow: BbsmcAuthFlow) {
+async function requestAuth(flow: modrinthAuthFlow) {
 	await auth.requestSignIn(`/instance/${encodeURIComponent(props.instance.id)}/share`, flow, {
 		showModal: false,
 	})

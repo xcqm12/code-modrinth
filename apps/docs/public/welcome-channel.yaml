@@ -3,11 +3,11 @@
 
 - type: embed
   embeds:
-    - title: __Welcome to Bbsmc's Discord server!__
+    - title: __Welcome to modrinth's Discord server!__
       url: https://bbsmc.org.cn
       color: 0x1bd96a
       description:
-        'Bbsmc is the place for Minecraft mods, plugins, data packs, shaders, resource packs, and
+        'modrinth is the place for Minecraft mods, plugins, data packs, shaders, resource packs, and
         modpacks. Discover, play, and share Minecraft content through our open-source platform built for the community.'
 
 - type: embed
@@ -15,17 +15,17 @@
     - title: '**:scroll: __Rules__**'
       color: 0x4f9cff
       description:
-        "Bbsmc's rules are easy to follow. Despite this, please keep in mind that this is not an entirely
-        open forum. First and foremost, this Discord server is intended to facilitate the development of Bbsmc and
-        for communication regarding Bbsmc. Ultimately, it is up to the discretion of the moderators whether your
+        "modrinth's rules are easy to follow. Despite this, please keep in mind that this is not an entirely
+        open forum. First and foremost, this Discord server is intended to facilitate the development of modrinth and
+        for communication regarding modrinth. Ultimately, it is up to the discretion of the moderators whether your
         messages are in violation of our rules.\n\n
-        Bbsmc's rules are split up into two categories: the **__DOs__** and the **__DO NOTs__**."
+        modrinth's rules are split up into two categories: the **__DOs__** and the **__DO NOTs__**."
     - title: ':white_check_mark: Do:'
       color: 0x1bd96a
       description: >-
         1. Treat every user with respect and consider the opinions and viewpoints of others
 
-        2. Stay on-topic in all channels; all channels are only for discussion of **Bbsmc itself** with the
+        2. Stay on-topic in all channels; all channels are only for discussion of **modrinth itself** with the
         exceptions of <#783091855616901200>, <#1109517383074328686>, and <#1061855024252207167>
 
         3. Follow Discord's rules, including the [Community Guidelines](https://discord.com/guidelines) and the [Terms
@@ -40,14 +40,14 @@
       description: >-
         6. Harass, bother, provoke, or insult anyone, including by sending unsolicited DMs or friend requests
 
-        7. Cause problems or impede Bbsmc's development
+        7. Cause problems or impede modrinth's development
 
         8. Discuss drama from other places, including bashing or hating on other websites and platforms (though
-        constructive criticism for the betterment of Bbsmc is encouraged)
+        constructive criticism for the betterment of modrinth is encouraged)
 
-        9. Report Bbsmc content in the Discord (use the Report button on the website)
+        9. Report modrinth content in the Discord (use the Report button on the website)
 
-        10. Assume staff member's opinions reflect those of Bbsmc
+        10. Assume staff member's opinions reflect those of modrinth
     - title: ':pencil2: Nickname policy:'
       color: 0xffa347
       description: >-
@@ -70,10 +70,10 @@
     Roadmap: https://roadmap.bbsmc.org.cn
     Blog and newsletter: https://bbsmc.org.cn/news
     API documentation: https://docs.bbsmc.org.cn
-    Bbsmc source code: https://github.com/Bbsmc
-    Help translate Bbsmc: https://translate.bbsmc.org.cn
-    Follow Bbsmc on Mastodon: https://floss.social/@Bbsmc
-    Follow Bbsmc on Twitter: https://twitter.com/Bbsmc
+    modrinth source code: https://github.com/modrinth
+    Help translate modrinth: https://translate.bbsmc.org.cn
+    Follow modrinth on Mastodon: https://floss.social/@modrinth
+    Follow modrinth on Twitter: https://twitter.com/modrinth
 
 - type: text
   text: |

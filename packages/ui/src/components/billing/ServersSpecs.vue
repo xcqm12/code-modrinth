@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { CpuIcon, DatabaseIcon, MemoryStickIcon, SparklesIcon, UnknownIcon } from '@Bbsmc/assets'
+import { CpuIcon, DatabaseIcon, MemoryStickIcon, SparklesIcon, UnknownIcon } from '@modrinth/assets'
 import { computed } from 'vue'
 
 import { defineMessages, useVIntl } from '../../composables/i18n'

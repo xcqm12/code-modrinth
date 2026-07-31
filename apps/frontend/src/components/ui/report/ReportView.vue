@@ -35,7 +35,7 @@
 	</div>
 </template>
 <script setup>
-import { injectBbsmcClient } from '@Bbsmc/ui'
+import { injectmodrinthClient } from '@modrinth/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { computed } from 'vue'
 
@@ -59,7 +59,7 @@ const props = defineProps({
 	},
 })
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const queryClient = useQueryClient()
 
 // Fetch raw report

@@ -6,7 +6,7 @@ import {
 	StyledInput,
 	Toggle,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, type Ref, ref, watch } from 'vue'
 
 import { edit } from '@/helpers/instance'

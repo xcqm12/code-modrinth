@@ -25,12 +25,12 @@
 </template>
 
 <script setup lang="ts">
-import { HistoryIcon, SaveIcon, SpinnerIcon } from '@Bbsmc/assets'
+import { HistoryIcon, SaveIcon, SpinnerIcon } from '@modrinth/assets'
 import { computed } from 'vue'
 
 import ButtonStyled from '#ui/components/base/ButtonStyled.vue'
 import FloatingActionBar from '#ui/components/base/FloatingActionBar.vue'
-import { injectBbsmcClient, injectBbsmcServerContext } from '#ui/providers'
+import { injectmodrinthClient, injectmodrinthServerContext } from '#ui/providers'
 
 const props = defineProps<{
 	isUpdating: boolean
@@ -41,9 +41,9 @@ const props = defineProps<{
 	serverId: string
 }>()
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 
-const { powerState } = injectBbsmcServerContext()
+const { powerState } = injectmodrinthServerContext()
 
 const isStopped = computed(() => powerState.value === 'stopped' || powerState.value === 'crashed')
 

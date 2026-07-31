@@ -27,9 +27,9 @@
 </template>
 
 <script setup lang="ts">
-import { NewspaperIcon } from '@Bbsmc/assets'
-import { articles as rawArticles } from '@Bbsmc/blog'
-import { ButtonStyled, defineMessages, NewsArticleCard, useVIntl } from '@Bbsmc/ui'
+import { NewspaperIcon } from '@modrinth/assets'
+import { articles as rawArticles } from '@modrinth/blog'
+import { ButtonStyled, defineMessages, NewsArticleCard, useVIntl } from '@modrinth/ui'
 import { computed, ref } from 'vue'
 
 const { formatMessage } = useVIntl()
@@ -54,7 +54,7 @@ const articles = ref(
 const messages = defineMessages({
 	latestNews: {
 		id: 'ui.latest-news-row.latest-news',
-		defaultMessage: 'Latest news from Bbsmc',
+		defaultMessage: 'Latest news from modrinth',
 	},
 	viewAll: {
 		id: 'ui.latest-news-row.view-all',

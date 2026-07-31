@@ -222,7 +222,7 @@ pub struct SharedInstanceInstallData {
     pub linked_user_id: Option<String>,
     pub name: String,
     pub version: i32,
-    pub Bbsmc_ids: Vec<String>,
+    pub modrinth_ids: Vec<String>,
     #[serde(default)]
     pub external_files: Vec<SharedInstanceExternalFileData>,
     pub modpack: Option<SharedInstanceInstallModpack>,

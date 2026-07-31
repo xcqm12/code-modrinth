@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ChevronRightIcon, SaveIcon, UndoIcon, XIcon } from '@Bbsmc/assets'
+import { ChevronRightIcon, SaveIcon, UndoIcon, XIcon } from '@modrinth/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -8,7 +8,7 @@ import {
 	injectNotificationManager,
 	StyledInput,
 	useVIntl,
-} from '@Bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, ref } from 'vue'
 
 import ModalWrapper from '@/components/ui/modal/ModalWrapper.vue'

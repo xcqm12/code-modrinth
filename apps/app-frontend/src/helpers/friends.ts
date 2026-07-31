@@ -1,10 +1,10 @@
-import type { User } from '@Bbsmc/utils'
+import type { User } from '@modrinth/utils'
 import { invoke } from '@tauri-apps/api/core'
 import type { Dayjs } from 'dayjs'
 import dayjs from 'dayjs'
 
 import { get_user_many } from '@/helpers/cache'
-import type { BbsmcCredentials } from '@/helpers/mr_auth'
+import type { modrinthCredentials } from '@/helpers/mr_auth'
 
 export const friendsQueryKey = (userId?: string | null) => ['friends', userId ?? null] as const
 
@@ -56,7 +56,7 @@ export type FriendCacheUser = {
 }
 
 export async function getFriendsWithUserData(
-	credentials: BbsmcCredentials | null,
+	credentials: modrinthCredentials | null,
 ): Promise<FriendWithUserData[]> {
 	if (!credentials) return []
 
@@ -155,7 +155,7 @@ export function normalizeFriendKey(value: string) {
 
 export async function transformFriends(
 	friends: UserFriend[],
-	credentials: BbsmcCredentials | null,
+	credentials: modrinthCredentials | null,
 ): Promise<FriendWithUserData[]> {
 	if (friends.length === 0 || !credentials) {
 		return []

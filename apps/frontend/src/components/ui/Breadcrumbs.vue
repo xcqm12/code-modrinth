@@ -15,7 +15,7 @@
 </template>
 
 <script setup>
-import { ChevronRightIcon } from '@Bbsmc/assets'
+import { ChevronRightIcon } from '@modrinth/assets'
 
 defineProps({
 	linkStack: {

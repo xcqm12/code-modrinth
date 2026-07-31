@@ -7,7 +7,7 @@ WORKDIR /app
 COPY . .
 
 # Remove workspace members that depend on private git repos (not needed for labrinth)
-# apps/app (theseus_gui) depends on private repos like Bbsmc/plugins-workspace
+# apps/app (theseus_gui) depends on private repos like modrinth/plugins-workspace
 RUN sed -i '/"apps\/app",/d; /"apps\/app-playground",/d' Cargo.toml
 
 RUN cargo build --profile release-labrinth -p labrinth

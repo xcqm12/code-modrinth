@@ -1,5 +1,5 @@
-import type { Labrinth } from '@Bbsmc/api-client'
-import { injectBbsmcClient, useVIntl } from '@Bbsmc/ui'
+import type { Labrinth } from '@modrinth/api-client'
+import { injectmodrinthClient, useVIntl } from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 import { computed, type ComputedRef } from 'vue'
 
@@ -31,7 +31,7 @@ export function useAnalyticsChartEvents(
 	selectedProjectEventIdSet: ComputedRef<Set<string>>,
 	visibleProjectEventIdSet: ComputedRef<Set<string>>,
 ) {
-	const client = injectBbsmcClient()
+	const client = injectmodrinthClient()
 	const { formatMessage } = useVIntl()
 	const { data: analyticsEvents } = useQuery({
 		queryKey: analyticsEventsQueryKey,
@@ -46,12 +46,12 @@ export function useAnalyticsChartEvents(
 	const hasChartEvents = computed(() =>
 		localAnalyticsChartEvents.value.some(isTimelineEventVisibleInCurrentGraph),
 	)
-	const visibleBbsmcChartEvents = computed<AnalyticsChartEvent[]>(() =>
+	const visiblemodrinthChartEvents = computed<AnalyticsChartEvent[]>(() =>
 		context.showChartEvents.value
 			? localAnalyticsChartEvents.value.map((event) => ({
 					...event,
 					markerIcon: 'info' as const,
-					groupKey: 'Bbsmc',
+					groupKey: 'modrinth',
 				}))
 			: [],
 	)
@@ -84,11 +84,11 @@ export function useAnalyticsChartEvents(
 			: [],
 	)
 	const visibleTimelineEvents = computed(() => [
-		...visibleBbsmcChartEvents.value,
+		...visiblemodrinthChartEvents.value,
 		...visibleProjectChartEvents.value,
 	])
 	const hasVisibleTimelineEvents = computed(
-		() => visibleBbsmcChartEvents.value.length > 0 || visibleProjectChartEvents.value.length > 0,
+		() => visiblemodrinthChartEvents.value.length > 0 || visibleProjectChartEvents.value.length > 0,
 	)
 
 	function isTimelineEventVisibleInCurrentGraph(event: AnalyticsChartEvent) {
@@ -116,7 +116,7 @@ export function useAnalyticsChartEvents(
 	return {
 		localAnalyticsChartEvents,
 		hasChartEvents,
-		visibleBbsmcChartEvents,
+		visiblemodrinthChartEvents,
 		localProjectChartEvents,
 		hasProjectEvents,
 		visibleProjectChartEvents,

@@ -13,7 +13,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 
 		<Text class="text-muted text-base">Hi <span class="no-auto-link">{user.name}</span>,</Text>
 		<Text class="text-muted text-base">
-			At your request, we've successfully updated your Bbsmc account's email to
+			At your request, we've successfully updated your modrinth account's email to
 			{emailchanged.new_email}.
 		</Text>
 		<Text class="text-muted text-base">

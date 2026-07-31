@@ -1,5 +1,5 @@
-import type { Labrinth, SharedInstances } from '@Bbsmc/api-client'
-import type { Thread, User, Version } from '@Bbsmc/utils'
+import type { Labrinth, SharedInstances } from '@modrinth/api-client'
+import type { Thread, User, Version } from '@modrinth/utils'
 
 export interface OwnershipTarget {
 	name: string

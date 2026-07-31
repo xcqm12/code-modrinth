@@ -97,7 +97,7 @@
 </template>
 
 <script setup lang="ts">
-import { SearchIcon, TrashIcon, XIcon } from '@Bbsmc/assets'
+import { SearchIcon, TrashIcon, XIcon } from '@modrinth/assets'
 import type { Terminal } from '@xterm/xterm'
 import { computed, isRef, nextTick, onBeforeUnmount, ref, watch } from 'vue'
 
@@ -110,7 +110,7 @@ import Combobox from '#ui/components/base/Combobox.vue'
 import StyledInput from '#ui/components/base/StyledInput.vue'
 import NewModal from '#ui/components/modal/NewModal.vue'
 import ShareModal from '#ui/components/modal/ShareModal.vue'
-import { injectBbsmcClient } from '#ui/providers'
+import { injectmodrinthClient } from '#ui/providers'
 import { injectModalBehavior } from '#ui/providers/modal-behavior'
 import { injectPageContext } from '#ui/providers/page-context'
 import { injectNotificationManager } from '#ui/providers/web-notifications.ts'
@@ -130,7 +130,7 @@ import { injectConsoleManager } from './providers'
 import type { LogLevel, LogLine } from './types'
 
 const ctx = injectConsoleManager()
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const modalBehavior = injectModalBehavior()
 const pageContext = injectPageContext(null)
 const { addNotification } = injectNotificationManager()
@@ -155,7 +155,7 @@ const deleteModal = ref<InstanceType<typeof NewModal> | null>(null)
 const isDeleting = ref(false)
 const searchQuery = ref('')
 const isFullscreen = ref(false)
-const fullscreenBodyClass = 'Bbsmc-console-fullscreen-active'
+const fullscreenBodyClass = 'modrinth-console-fullscreen-active'
 const fullscreenIntercomPadding = 20
 const fullscreenIntercomPaddingRequestId = Symbol('console-fullscreen')
 const isApp =
@@ -447,25 +447,25 @@ async function handleShare() {
 </script>
 
 <style>
-.Bbsmc-console-fullscreen-active .intercom-lightweight-app,
-.Bbsmc-console-fullscreen-active .intercom-lightweight-app-launcher,
-.Bbsmc-console-fullscreen-active .intercom-lightweight-app-messenger,
-.Bbsmc-console-fullscreen-active .intercom-launcher-frame,
-.Bbsmc-console-fullscreen-active .intercom-messenger-frame,
-.Bbsmc-console-fullscreen-active #intercom-container,
-.Bbsmc-console-fullscreen-active #intercom-frame,
-.Bbsmc-console-fullscreen-active iframe[name='intercom-launcher-frame'],
-.Bbsmc-console-fullscreen-active iframe[name='intercom-messenger-frame'] {
+.modrinth-console-fullscreen-active .intercom-lightweight-app,
+.modrinth-console-fullscreen-active .intercom-lightweight-app-launcher,
+.modrinth-console-fullscreen-active .intercom-lightweight-app-messenger,
+.modrinth-console-fullscreen-active .intercom-launcher-frame,
+.modrinth-console-fullscreen-active .intercom-messenger-frame,
+.modrinth-console-fullscreen-active #intercom-container,
+.modrinth-console-fullscreen-active #intercom-frame,
+.modrinth-console-fullscreen-active iframe[name='intercom-launcher-frame'],
+.modrinth-console-fullscreen-active iframe[name='intercom-messenger-frame'] {
 	z-index: 14 !important;
 }
 
-.Bbsmc-console-fullscreen-active .loading-indicator-container,
-.Bbsmc-console-fullscreen-active .app-contents::before {
+.modrinth-console-fullscreen-active .loading-indicator-container,
+.modrinth-console-fullscreen-active .app-contents::before {
 	z-index: 14 !important;
 }
 
-.Bbsmc-console-fullscreen-active .app-grid-navbar,
-.Bbsmc-console-fullscreen-active .app-grid-statusbar {
+.modrinth-console-fullscreen-active .app-grid-navbar,
+.modrinth-console-fullscreen-active .app-grid-statusbar {
 	z-index: 0 !important;
 }
 </style>

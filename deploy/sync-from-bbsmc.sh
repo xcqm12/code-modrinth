@@ -62,7 +62,7 @@ main() {
     export TARGET_API="${TARGET_API:-http://labrinth:8000/v2}"
     export TARGET_ADMIN_KEY="${LABRINTH_ADMIN_KEY:-}"
     export TARGET_AUTH_TOKEN="${TARGET_AUTH_TOKEN:-}"
-    export SYNC_DIR="${SYNC_DIR:-$SCRIPT_DIR/sync-data}"
+    export SYNC_DIR="${SYNC_DIR:-/data/sync}"
 
     log_info "Starting sync..."
     log_info "Cache TTL: ${CACHE_TTL:-259200}s (3 days), Max storage: ${MAX_STORAGE:-500M}"

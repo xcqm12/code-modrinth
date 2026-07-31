@@ -4,7 +4,7 @@
 			<Avatar
 				:src="user.avatar_url"
 				:alt="user.username"
-				:size="isBbsmcUser ? '64px' : '96px'"
+				:size="ismodrinthUser ? '64px' : '96px'"
 				:tint-by="user.username"
 				circle
 			/>
@@ -33,7 +33,7 @@
 			<slot name="summary" />
 		</template>
 
-		<template v-if="!isBbsmcUser" #metadata>
+		<template v-if="!ismodrinthUser" #metadata>
 			<PageHeaderMetadata>
 				<PageHeaderMetadataNumberItem
 					:icon="BoxIcon"
@@ -78,7 +78,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	AffiliateIcon,
 	BadgeCheckIcon,
@@ -93,7 +93,7 @@ import {
 	InfoIcon,
 	MoreVerticalIcon,
 	ReportIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import { computed } from 'vue'
 
 import AutoLink from '#ui/components/base/AutoLink.vue'
@@ -142,7 +142,7 @@ const messages = defineMessages({
 	},
 	officialAccount: {
 		id: 'profile.official-account',
-		defaultMessage: 'Official Bbsmc account',
+		defaultMessage: 'Official modrinth account',
 	},
 	profileJoinedLabel: {
 		id: 'profile.label.joined',
@@ -176,7 +176,7 @@ const props = withDefaults(
 		summary?: string | null
 		authUser?: AuthUser | null
 		editProfileLink?: string | (() => void)
-		isBbsmcUser?: boolean
+		ismodrinthUser?: boolean
 		isOfficialAccount?: boolean
 		showAffiliateBadge?: boolean
 		isAffiliate?: boolean
@@ -192,7 +192,7 @@ const props = withDefaults(
 		summary: null,
 		authUser: null,
 		editProfileLink: '/settings/profile',
-		isBbsmcUser: false,
+		ismodrinthUser: false,
 		isOfficialAccount: false,
 		showAffiliateBadge: false,
 		isAffiliate: false,

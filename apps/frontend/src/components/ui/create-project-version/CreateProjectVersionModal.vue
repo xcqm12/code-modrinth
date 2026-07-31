@@ -15,15 +15,15 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@Bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	DropArea,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	injectProjectPageContext,
 	MultiStageModal,
-} from '@Bbsmc/ui'
-import { acceptFileFromProjectType } from '@Bbsmc/utils'
+} from '@modrinth/ui'
+import { acceptFileFromProjectType } from '@modrinth/utils'
 import type { ComponentExposed } from 'vue-component-type-helpers'
 
 import {
@@ -45,7 +45,7 @@ const { newDraftVersion, editingVersion, handleNewFiles } = ctx
 
 const { projectV2 } = injectProjectPageContext()
 const { addNotification } = injectNotificationManager()
-const { labrinth } = injectBbsmcClient()
+const { labrinth } = injectmodrinthClient()
 
 async function openEditVersionModal(versionId: string, projectId: string, stageId?: string | null) {
 	try {

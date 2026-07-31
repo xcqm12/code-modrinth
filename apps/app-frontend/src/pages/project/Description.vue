@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import { Card, ProjectPageDescription } from '@Bbsmc/ui'
+import { Card, ProjectPageDescription } from '@modrinth/ui'
 
 defineProps({
 	project: {

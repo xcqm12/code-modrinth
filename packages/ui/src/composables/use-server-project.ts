@@ -1,14 +1,14 @@
-import type { Archon } from '@Bbsmc/api-client'
+import type { Archon } from '@modrinth/api-client'
 import { useQuery } from '@tanstack/vue-query'
 import { computed, type ComputedRef } from 'vue'
 
-import { injectBbsmcClient } from '#ui/providers'
+import { injectmodrinthClient } from '#ui/providers'
 
 // TODO: Remove and use v1
 export function useServerProject(
 	upstream: ComputedRef<Archon.Servers.v0.Server['upstream'] | null>,
 ) {
-	const client = injectBbsmcClient()
+	const client = injectmodrinthClient()
 
 	return useQuery({
 		queryKey: computed(() => ['servers', 'project', upstream.value?.project_id ?? null]),

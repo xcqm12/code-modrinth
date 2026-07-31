@@ -36,7 +36,7 @@
 </template>
 
 <script setup lang="ts">
-import { injectBbsmcClient, ServersManageRootLayout } from '@Bbsmc/ui'
+import { injectmodrinthClient, ServersManageRootLayout } from '@modrinth/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 
 import { reloadNuxtApp } from '#app'
@@ -48,7 +48,7 @@ const router = useRouter()
 const config = useRuntimeConfig()
 const serverId = route.params.id as string
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const queryClient = useQueryClient()
 
 if (serverId) {

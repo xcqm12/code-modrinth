@@ -16,12 +16,12 @@ import StyledEmail from '../shared/StyledEmail.vue'
 		<Text class="text-base"> Your projects just passed 20,000 total downloads, nice! </Text>
 
 		<Text class="text-base">
-			We want to invite you to Bbsmc's Creator Club, a space in our discord where you can chat
+			We want to invite you to modrinth's Creator Club, a space in our discord where you can chat
 			with other creators, share feedback with us, and stay plugged in.
 		</Text>
 
 		<Text class="text-base">
-			To join just link your Discord account through Bbsmc and we'll grant access automatically!
+			To join just link your Discord account through modrinth and we'll grant access automatically!
 		</Text>
 
 		<Section class="mb-4 mt-4">

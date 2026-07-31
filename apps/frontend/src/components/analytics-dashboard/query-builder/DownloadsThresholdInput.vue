@@ -19,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-import { useVIntl } from '@Bbsmc/ui'
+import { useVIntl } from '@modrinth/ui'
 
 import { analyticsMessages } from '../analytics-messages'
 

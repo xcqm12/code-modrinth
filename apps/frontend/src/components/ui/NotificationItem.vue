@@ -13,7 +13,7 @@
 	>
 		<template v-if="type === 'server_invite'">
 			<div class="flex flex-col gap-4">
-				<BbsmcServersIcon class="h-auto w-56 max-w-full text-[var(--color-heading)]" />
+				<modrinthServersIcon class="h-auto w-56 max-w-full text-[var(--color-heading)]" />
 				<div
 					class="flex flex-wrap items-center gap-x-1.5 gap-y-2 text-lg leading-tight text-[var(--color-heading)]"
 				>
@@ -387,29 +387,29 @@ import {
 	UserPlusIcon,
 	VersionIcon,
 	XIcon,
-} from '@Bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Avatar,
 	ButtonStyled,
 	Categories,
 	CopyCode,
 	DoubleIcon,
-	injectBbsmcClient,
+	injectmodrinthClient,
 	injectNotificationManager,
 	ProjectStatusBadge,
 	useFormatDateTime,
 	useRelativeTime,
-} from '@Bbsmc/ui'
-import { getUserLink, renderString } from '@Bbsmc/utils'
+} from '@modrinth/ui'
+import { getUserLink, renderString } from '@modrinth/utils'
 
 import { markAsRead } from '~/helpers/platform-notifications'
 import { getProjectLink, getVersionLink } from '~/helpers/projects'
 import { acceptTeamInvite, removeSelfFromTeam } from '~/helpers/teams'
 
-import BbsmcServersIcon from '../brand/BbsmcServersIcon.vue'
+import modrinthServersIcon from '../brand/modrinthServersIcon.vue'
 import ThreadSummary from './thread/ThreadSummary.vue'
 
-const client = injectBbsmcClient()
+const client = injectmodrinthClient()
 const { addNotification } = injectNotificationManager()
 const emit = defineEmits(['update:notifications'])
 const router = useRouter()

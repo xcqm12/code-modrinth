@@ -65,8 +65,8 @@ impl TryFrom<InstanceRow> for Instance {
 pub(crate) struct InstanceLinkRow {
     pub instance_id: String,
     pub link_kind: String,
-    pub Bbsmc_project_id: Option<String>,
-    pub Bbsmc_version_id: Option<String>,
+    pub modrinth_project_id: Option<String>,
+    pub modrinth_version_id: Option<String>,
     pub server_project_id: Option<String>,
     pub content_project_id: Option<String>,
     pub content_version_id: Option<String>,
@@ -88,14 +88,14 @@ impl TryFrom<InstanceLinkRow> for InstanceLink {
     fn try_from(row: InstanceLinkRow) -> crate::Result<Self> {
         match row.link_kind.as_str() {
             "unmanaged" => Ok(Self::Unmanaged),
-            "Bbsmc_modpack" => Ok(Self::BbsmcModpack {
+            "modrinth_modpack" => Ok(Self::modrinthModpack {
                 project_id: required(
-                    row.Bbsmc_project_id,
-                    "Bbsmc_project_id",
+                    row.modrinth_project_id,
+                    "modrinth_project_id",
                 )?,
                 version_id: required(
-                    row.Bbsmc_version_id,
-                    "Bbsmc_version_id",
+                    row.modrinth_version_id,
+                    "modrinth_version_id",
                 )?,
             }),
             "server_project" => Ok(Self::ServerProject {
@@ -118,7 +118,7 @@ impl TryFrom<InstanceLinkRow> for InstanceLink {
                     "content_version_id",
                 )?,
             }),
-            "Bbsmc_hosting" => Ok(Self::BbsmcHosting {
+            "modrinth_hosting" => Ok(Self::modrinthHosting {
                 server_id: parse_uuid(
                     row.hosting_server_id,
                     "hosting_server_id",
@@ -134,15 +134,15 @@ impl TryFrom<InstanceLinkRow> for InstanceLink {
                 )?,
             }),
             "imported_modpack" => Ok(Self::ImportedModpack {
-                project_id: row.Bbsmc_project_id,
-                version_id: row.Bbsmc_version_id,
+                project_id: row.modrinth_project_id,
+                version_id: row.modrinth_version_id,
                 name: row.imported_name,
                 version_number: row.imported_version_number,
                 filename: row.imported_filename,
             }),
             "shared_instance" => Ok(Self::SharedInstance {
-                modpack_project_id: row.Bbsmc_project_id,
-                modpack_version_id: row.Bbsmc_version_id,
+                modpack_project_id: row.modrinth_project_id,
+                modpack_version_id: row.modrinth_version_id,
             }),
             other => Err(crate::ErrorKind::InputError(format!(
                 "Unknown instance link kind {other}"
@@ -201,8 +201,8 @@ struct InstanceMetadataRow {
     content_set_created: Option<i64>,
     content_set_modified: Option<i64>,
     link_kind: String,
-    Bbsmc_project_id: Option<String>,
-    Bbsmc_version_id: Option<String>,
+    modrinth_project_id: Option<String>,
+    modrinth_version_id: Option<String>,
     server_project_id: Option<String>,
     content_project_id: Option<String>,
     content_version_id: Option<String>,
@@ -303,8 +303,8 @@ impl InstanceMetadataRow {
         let link = InstanceLinkRow {
             instance_id: instance_id.clone(),
             link_kind: self.link_kind,
-            Bbsmc_project_id: self.Bbsmc_project_id,
-            Bbsmc_version_id: self.Bbsmc_version_id,
+            modrinth_project_id: self.modrinth_project_id,
+            modrinth_version_id: self.modrinth_version_id,
             server_project_id: self.server_project_id,
             content_project_id: self.content_project_id,
             content_version_id: self.content_version_id,
@@ -555,8 +555,8 @@ macro_rules! query_instance_metadata {
                     cs.created AS "content_set_created?: i64",
                     cs.modified AS "content_set_modified?: i64",
                     COALESCE(link.link_kind, 'unmanaged') AS "link_kind!: String",
-                    link.Bbsmc_project_id AS "Bbsmc_project_id?: String",
-                    link.Bbsmc_version_id AS "Bbsmc_version_id?: String",
+                    link.modrinth_project_id AS "modrinth_project_id?: String",
+                    link.modrinth_version_id AS "modrinth_version_id?: String",
                     link.server_project_id AS "server_project_id?: String",
                     link.content_project_id AS "content_project_id?: String",
                     link.content_version_id AS "content_version_id?: String",
@@ -708,8 +708,8 @@ where
         SELECT
             instance_id,
             link_kind,
-            Bbsmc_project_id,
-            Bbsmc_version_id,
+            modrinth_project_id,
+            modrinth_version_id,
             server_project_id,
             content_project_id,
             content_version_id,
@@ -907,8 +907,8 @@ pub(crate) async fn upsert_instance_link(
     tx: &mut Transaction<'_, Sqlite>,
 ) -> crate::Result<()> {
     let columns = instance_link_columns(link)?;
-    let Bbsmc_project_id = columns.Bbsmc_project_id.as_deref();
-    let Bbsmc_version_id = columns.Bbsmc_version_id.as_deref();
+    let modrinth_project_id = columns.modrinth_project_id.as_deref();
+    let modrinth_version_id = columns.modrinth_version_id.as_deref();
     let server_project_id = columns.server_project_id.as_deref();
     let content_project_id = columns.content_project_id.as_deref();
     let content_version_id = columns.content_version_id.as_deref();
@@ -925,8 +925,8 @@ pub(crate) async fn upsert_instance_link(
 		INSERT INTO instance_links (
 			instance_id,
 			link_kind,
-			Bbsmc_project_id,
-			Bbsmc_version_id,
+			modrinth_project_id,
+			modrinth_version_id,
 			server_project_id,
 			content_project_id,
 			content_version_id,
@@ -940,8 +940,8 @@ pub(crate) async fn upsert_instance_link(
 		VALUES (?, ?, ?, ?, ?, ?, ?, ?, jsonb(?), ?, ?, ?, ?)
 		ON CONFLICT (instance_id) DO UPDATE SET
 			link_kind = excluded.link_kind,
-			Bbsmc_project_id = excluded.Bbsmc_project_id,
-			Bbsmc_version_id = excluded.Bbsmc_version_id,
+			modrinth_project_id = excluded.modrinth_project_id,
+			modrinth_version_id = excluded.modrinth_version_id,
 			server_project_id = excluded.server_project_id,
 			content_project_id = excluded.content_project_id,
 			content_version_id = excluded.content_version_id,
@@ -954,8 +954,8 @@ pub(crate) async fn upsert_instance_link(
 		",
         instance_id,
         columns.link_kind,
-        Bbsmc_project_id,
-        Bbsmc_version_id,
+        modrinth_project_id,
+        modrinth_version_id,
         server_project_id,
         content_project_id,
         content_version_id,
@@ -1107,8 +1107,8 @@ pub(crate) async fn delete_instance_by_id(
 
 struct InstanceLinkColumns {
     link_kind: &'static str,
-    Bbsmc_project_id: Option<String>,
-    Bbsmc_version_id: Option<String>,
+    modrinth_project_id: Option<String>,
+    modrinth_version_id: Option<String>,
     server_project_id: Option<String>,
     content_project_id: Option<String>,
     content_version_id: Option<String>,
@@ -1126,8 +1126,8 @@ fn instance_link_columns(
     match link {
         InstanceLink::Unmanaged => Ok(InstanceLinkColumns {
             link_kind: "unmanaged",
-            Bbsmc_project_id: None,
-            Bbsmc_version_id: None,
+            modrinth_project_id: None,
+            modrinth_version_id: None,
             server_project_id: None,
             content_project_id: None,
             content_version_id: None,
@@ -1138,13 +1138,13 @@ fn instance_link_columns(
             imported_version_number: None,
             imported_filename: None,
         }),
-        InstanceLink::BbsmcModpack {
+        InstanceLink::modrinthModpack {
             project_id,
             version_id,
         } => Ok(InstanceLinkColumns {
-            link_kind: "Bbsmc_modpack",
-            Bbsmc_project_id: Some(project_id.clone()),
-            Bbsmc_version_id: Some(version_id.clone()),
+            link_kind: "modrinth_modpack",
+            modrinth_project_id: Some(project_id.clone()),
+            modrinth_version_id: Some(version_id.clone()),
             server_project_id: None,
             content_project_id: None,
             content_version_id: None,
@@ -1157,8 +1157,8 @@ fn instance_link_columns(
         }),
         InstanceLink::ServerProject { project_id } => Ok(InstanceLinkColumns {
             link_kind: "server_project",
-            Bbsmc_project_id: None,
-            Bbsmc_version_id: None,
+            modrinth_project_id: None,
+            modrinth_version_id: None,
             server_project_id: Some(project_id.clone()),
             content_project_id: None,
             content_version_id: None,
@@ -1175,8 +1175,8 @@ fn instance_link_columns(
             content_version_id,
         } => Ok(InstanceLinkColumns {
             link_kind: "server_project_modpack",
-            Bbsmc_project_id: None,
-            Bbsmc_version_id: None,
+            modrinth_project_id: None,
+            modrinth_version_id: None,
             server_project_id: Some(server_project_id.clone()),
             content_project_id: Some(content_project_id.clone()),
             content_version_id: Some(content_version_id.clone()),
@@ -1187,14 +1187,14 @@ fn instance_link_columns(
             imported_version_number: None,
             imported_filename: None,
         }),
-        InstanceLink::BbsmcHosting {
+        InstanceLink::modrinthHosting {
             server_id,
             instance_ids,
             active_instance_id,
         } => Ok(InstanceLinkColumns {
-            link_kind: "Bbsmc_hosting",
-            Bbsmc_project_id: None,
-            Bbsmc_version_id: None,
+            link_kind: "modrinth_hosting",
+            modrinth_project_id: None,
+            modrinth_version_id: None,
             server_project_id: None,
             content_project_id: None,
             content_version_id: None,
@@ -1214,8 +1214,8 @@ fn instance_link_columns(
             filename,
         } => Ok(InstanceLinkColumns {
             link_kind: "imported_modpack",
-            Bbsmc_project_id: project_id.clone(),
-            Bbsmc_version_id: version_id.clone(),
+            modrinth_project_id: project_id.clone(),
+            modrinth_version_id: version_id.clone(),
             server_project_id: None,
             content_project_id: None,
             content_version_id: None,
@@ -1231,8 +1231,8 @@ fn instance_link_columns(
             modpack_version_id,
         } => Ok(InstanceLinkColumns {
             link_kind: "shared_instance",
-            Bbsmc_project_id: modpack_project_id.clone(),
-            Bbsmc_version_id: modpack_version_id.clone(),
+            modrinth_project_id: modpack_project_id.clone(),
+            modrinth_version_id: modpack_version_id.clone(),
             server_project_id: None,
             content_project_id: None,
             content_version_id: None,
