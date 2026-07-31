@@ -16,7 +16,9 @@
 				<div class="flex w-full flex-row items-center justify-evenly">
 					<Avatar size="md" :src="app.icon_url" />
 					<!-- <img class="profile-pic" :src="app.icon_url" alt="User profile picture" /> -->
-					<div class="flex select-none items-center justify-center text-[2rem] text-primary">â†?/div>
+					<div class="flex select-none items-center justify-center text-[2rem] text-primary">
+						&rarr;
+					</div>
 					<Avatar size="md" circle :src="auth.user?.avatar_url" />
 					<!-- <img class="profile-pic" :src="auth.user.avatar_url" alt="User profile picture" /> -->
 				</div>
