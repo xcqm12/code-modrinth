@@ -358,7 +358,7 @@ deploy() {
     free_web_ports
 
     # Create temporary swap for build stability on 8G servers
-    create_swap 4G
+    create_swap 8G
 
     # Build Docker images
     log_info "Building labrinth (Rust backend) Docker image..."

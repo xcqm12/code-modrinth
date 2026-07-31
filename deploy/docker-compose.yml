@@ -157,10 +157,10 @@ services:
       - redpanda-data:/var/lib/redpanda/data
     healthcheck:
       test: ['CMD', 'rpk', 'cluster', 'info', '-X', 'brokers=localhost:9092']
-      interval: 10s
-      timeout: 15s
+      interval: 15s
+      timeout: 30s
       retries: 10
-      start_period: 30s
+      start_period: 60s
     deploy:
       resources:
         limits:

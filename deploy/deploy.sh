@@ -240,7 +240,7 @@ deploy() {
     log_info "Starting deployment..."
 
     free_web_ports
-    create_swap 4G
+    create_swap 8G
 
     export COMPOSE_PARALLEL_LIMIT=1
     export DOCKER_BUILDKIT=1

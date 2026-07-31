@@ -61,11 +61,9 @@ export class ISO3166Module extends AbstractModule {
 		try {
 			const [countriesCSV, subdivisionsCSV] = await Promise.all([
 				$fetch<string>(`${ISO3166_REPO}/countries.csv`, {
-					// @ts-expect-error supports text
 					responseType: 'text',
 				}),
 				$fetch<string>(`${ISO3166_REPO}/subdivisions.csv`, {
-					// @ts-expect-error supports text
 					responseType: 'text',
 				}),
 			])
