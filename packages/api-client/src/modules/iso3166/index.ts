@@ -59,14 +59,12 @@ export class ISO3166Module extends AbstractModule {
 	 */
 	public async build(): Promise<ISO3166.State> {
 		try {
-			const [countriesCSV, subdivisionsCSV] = await Promise.all([
-				// @ts-expect-error responseType 'text' is accepted by ofetch runtime
-				$fetch<string>(`${ISO3166_REPO}/countries.csv`, {
-					responseType: 'text',
+			const [countriesCSV, subdivisionsCSV] = await Promise.all<string>([
+				$fetch<string, 'text'>(`${ISO3166_REPO}/countries.csv`, {
+					responseType: 'text' as const,
 				}),
-				// @ts-expect-error responseType 'text' is accepted by ofetch runtime
-				$fetch<string>(`${ISO3166_REPO}/subdivisions.csv`, {
-					responseType: 'text',
+				$fetch<string, 'text'>(`${ISO3166_REPO}/subdivisions.csv`, {
+					responseType: 'text' as const,
 				}),
 			])
 

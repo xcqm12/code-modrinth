@@ -1,6 +1,17 @@
 {
 	"extends": "@bbsmc/tooling-config/typescript/base.json",
 	"compilerOptions": {
-		"isolatedModules": false
+		"isolatedModules": false,
+		"target": "ES2020",
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"noEmit": true,
+		"lib": ["esnext", "dom"],
+		"allowSyntheticDefaultImports": true
 	}
 }
