@@ -11,9 +11,9 @@ use std::time::Duration;
 use xredis::RedisPool;
 
 pub const Bbsmc_GENERATED_PDF_TYPE: HeaderName =
-    HeaderName::from_static("Bbsmc-generated-pdf-type");
+    HeaderName::from_static("bbsmc-generated-pdf-type");
 pub const Bbsmc_PAYMENT_ID: HeaderName =
-    HeaderName::from_static("Bbsmc-payment-id");
+    HeaderName::from_static("bbsmc-payment-id");
 pub const PAYMENT_STATEMENTS_NAMESPACE: &str = "payment_statements:v3";
 const REDIS_TIMEOUT_MARGIN_MS: u64 = 250;
 
