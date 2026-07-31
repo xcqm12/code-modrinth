@@ -1,4 +1,4 @@
-import type { AbstractBbsmcClient } from '../core/abstract-client'
+import type { AbstractmodrinthClient } from '../core/abstract-client'
 import type { AbstractModule } from '../core/abstract-module'
 import { ArchonActionsV1Module } from './archon/actions/v1'
 import { ArchonBackupsV1Module } from './archon/backups/v1'
@@ -64,7 +64,7 @@ import { SharedInstancesInvitesV1Module } from './shared-instances/invites/v1'
 import { SharedInstancesModerationV1Module } from './shared-instances/moderation/v1'
 import { SharedInstancesUsersV1Module } from './shared-instances/users/v1'
 
-type ModuleConstructor = new (client: AbstractBbsmcClient) => AbstractModule
+type ModuleConstructor = new (client: AbstractmodrinthClient) => AbstractModule
 
 /**
  * To add a new module:
@@ -212,7 +212,7 @@ type ParseModule<T extends string, API extends string> = T extends `${API}_${inf
  *
  * Transforms flat registry into nested structure at the type level:
  * ```
- * { labrinth_projects_v2: ModuleClass } â†?{ labrinth: { projects_v2: ModuleInstance } }
+ * { labrinth_projects_v2: ModuleClass } ï¿½?{ labrinth: { projects_v2: ModuleInstance } }
  * ```
  */
 type GroupByAPI<Registry extends Record<string, ModuleConstructor>> = {

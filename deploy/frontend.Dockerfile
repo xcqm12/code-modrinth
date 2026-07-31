@@ -17,9 +17,10 @@ COPY apps/frontend apps/frontend
 
 RUN cp apps/frontend/.env.prod apps/frontend/.env
 
+ENV NODE_OPTIONS="--max-old-space-size=4096"
 RUN pnpm install --frozen-lockfile
 
-ARG NODE_OPTIONS="--max-old-space-size=7168"
+ARG NODE_OPTIONS="--max-old-space-size=6144"
 ARG BASE_URL=https://api.bbsmc.org.cn/v2/
 ARG BROWSER_BASE_URL=https://api.bbsmc.org.cn/v2/
 ARG PYRO_BASE_URL=https://archon.bbsmc.org.cn
@@ -27,6 +28,7 @@ ARG SHARED_INSTANCES_API_BASE_URL=https://shared-instances.bbsmc.org.cn
 
 ENV NODE_OPTIONS=${NODE_OPTIONS}
 ENV NITRO_PRESET=node_server
+ENV NITRO_PRERENDER_PARALLEL=2
 ENV BUILD_ENV=production
 ENV PREVIEW=true
 ENV BASE_URL=${BASE_URL}
