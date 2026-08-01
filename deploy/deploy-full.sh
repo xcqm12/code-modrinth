@@ -247,7 +247,7 @@ create_swap() {
     fi
 
     log_info "Creating temporary ${swap_size} swap file to prevent OOM during build..."
-    sudo fallocate -l "$swap_size" "$swap_file" 2>/dev/null || sudo dd if=/dev/zero of="$swap_file" bs=1M count=$((4096)) 2>/dev/null
+    sudo fallocate -l "$swap_size" "$swap_file" 2>/dev/null || sudo dd if=/dev/zero of="$swap_file" bs=1M count=$((16384)) 2>/dev/null
     sudo chmod 600 "$swap_file"
     sudo mkswap "$swap_file" >/dev/null 2>&1
     sudo swapon "$swap_file" 2>/dev/null || {
@@ -358,7 +358,7 @@ deploy() {
     free_web_ports
 
     # Create temporary swap for build stability on 8G servers
-    create_swap 8G
+    create_swap 16G
 
     # Free Docker build cache and stale images to prevent disk exhaustion (SIGBUS during linking)
     log_info "Pruning Docker build cache to free disk space..."
