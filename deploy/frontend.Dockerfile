@@ -4,7 +4,7 @@ FROM node:${NODE_VERSION} AS builder
 WORKDIR /app
 RUN corepack enable && corepack prepare pnpm@10.33.2 --activate
 
-COPY pnpm-lock.yaml pnpm-workspace.yaml package.json turbo.jsonc ./
+COPY pnpm-lock.yaml pnpm-workspace.yaml package.json turbo.jsonc .npmrc ./
 COPY packages/api-client packages/api-client
 COPY packages/assets packages/assets
 COPY packages/blog packages/blog
