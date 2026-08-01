@@ -133,25 +133,116 @@ ENVEOF
     fi
 }
 
-# ---- Setup SSL (prefer 宝塔 cert symlinks, fallback to self-signed) ----
+# ---- Setup SSL (certbot first, 宝塔 symlink fallback, self-signed last) ----
 setup_ssl() {
     log_info "Setting up SSL certificates..."
 
     mkdir -p ssl
     local bt_base="/www/server/panel/vhost/cert"
-    local has_real_certs=false
+    local primary_domain="${ALL_DOMAINS[0]}"
 
+    # First check if all domains are already covered by an existing SAN cert
+    if [[ -f "ssl/fullchain.pem" ]] && [[ -f "ssl/privkey.pem" ]]; then
+        local cert_domains
+        cert_domains=$(openssl x509 -in "ssl/fullchain.pem" -noout -text 2>/dev/null \
+            | grep -A1 'Subject Alternative Name' \
+            | grep -oP 'DNS:\K[^,]+' || echo "")
+        local all_covered=true
+        for d in "${ALL_DOMAINS[@]}"; do
+            if ! echo "$cert_domains" | grep -q "$d"; then
+                all_covered=false
+                break
+            fi
+        done
+        if [[ "$all_covered" == "true" ]]; then
+            log_ok "SSL certificates already exist and cover all domains"
+            return
+        fi
+        log_warn "Existing certificate does not cover all domains, re-obtaining..."
+    fi
+
+    # Check individual domain certs from 宝塔
+    local bt_certs_found=true
     for d in "${ALL_DOMAINS[@]}"; do
         mkdir -p "ssl/$d"
         if [[ -f "ssl/$d/fullchain.pem" ]]; then
             log_ok "SSL cert for $d already in ssl/$d"
-            has_real_certs=true
         elif [[ -d "$bt_base/$d" ]] && [[ -f "$bt_base/$d/fullchain.pem" ]]; then
             ln -sf "$bt_base/$d" "ssl/$d"
             log_ok "Linked 宝塔 cert for $d"
-            has_real_certs=true
         else
-            log_warn "No real SSL cert for $d - nginx entrypoint will generate self-signed placeholder"
+            bt_certs_found=false
+        fi
+    done
+
+    if [[ "$bt_certs_found" == "true" ]]; then
+        log_ok "All SSL certificates found via 宝塔 panel"
+        # Also create a combined cert for nginx default server
+        local first_domain="${ALL_DOMAINS[0]}"
+        if [[ -f "ssl/$first_domain/fullchain.pem" ]]; then
+            cp "ssl/$first_domain/fullchain.pem" "ssl/fullchain.pem"
+            cp "ssl/$first_domain/privkey.pem" "ssl/privkey.pem"
+        fi
+        return
+    fi
+
+    # Try certbot to obtain SAN certificate covering all domains
+    if command -v certbot >/dev/null 2>&1; then
+        log_info "Stopping Docker services to free port 80 for certbot..."
+        $DOCKER_COMPOSE -f "$COMPOSE_FILE" down --remove-orphans 2>/dev/null || true
+
+        log_info "Obtaining Let's Encrypt SAN certificate for: ${ALL_DOMAINS[*]}"
+        local certbot_args=""
+        for d in "${ALL_DOMAINS[@]}"; do
+            certbot_args="$certbot_args -d $d"
+        done
+
+        sudo certbot certonly --standalone --expand $certbot_args \
+            --non-interactive --agree-tos -m "admin@$primary_domain" || {
+            log_warn "Certbot multi-domain failed. Trying individual certificates..."
+            for d in "${ALL_DOMAINS[@]}"; do
+                log_info "Obtaining certificate for $d ..."
+                sudo certbot certonly --standalone -d "$d" \
+                    --non-interactive --agree-tos -m "admin@$primary_domain" || {
+                    log_warn "Failed to obtain cert for $d"
+                    continue
+                }
+            done
+        }
+
+        # Copy primary domain cert as the default (SAN cert covers all)
+        if [[ -f "/etc/letsencrypt/live/$primary_domain/fullchain.pem" ]]; then
+            sudo cp "/etc/letsencrypt/live/$primary_domain/fullchain.pem" "ssl/"
+            sudo cp "/etc/letsencrypt/live/$primary_domain/privkey.pem" "ssl/"
+            sudo chown -R "$(whoami):$(whoami)" "ssl/"
+            log_ok "SSL certificates obtained and copied to ssl/"
+
+            # Create per-domain symlinks for 域名级别证书
+            for d in "${ALL_DOMAINS[@]}"; do
+                if [[ -f "/etc/letsencrypt/live/$d/fullchain.pem" ]]; then
+                    mkdir -p "ssl/$d"
+                    sudo cp "/etc/letsencrypt/live/$d/fullchain.pem" "ssl/$d/"
+                    sudo cp "/etc/letsencrypt/live/$d/privkey.pem" "ssl/$d/"
+                elif [[ -f "ssl/fullchain.pem" ]]; then
+                    # Use the SAN cert for all domains if individual certs not available
+                    ln -sf "../fullchain.pem" "ssl/$d/fullchain.pem" 2>/dev/null || true
+                    ln -sf "../privkey.pem" "ssl/$d/privkey.pem" 2>/dev/null || true
+                fi
+            done
+        else
+            log_warn "No certificate found at /etc/letsencrypt/live/$primary_domain/"
+        fi
+    else
+        log_warn "certbot not found. Please install certbot or place certificates manually."
+        log_warn "  Expected: ssl/fullchain.pem, ssl/privkey.pem"
+    fi
+
+    # Final check
+    local has_real_certs=false
+    for d in "${ALL_DOMAINS[@]}"; do
+        if [[ -f "ssl/$d/fullchain.pem" ]] || [[ -f "ssl/fullchain.pem" ]]; then
+            has_real_certs=true
+            break
         fi
     done
 
@@ -161,8 +252,9 @@ setup_ssl() {
         log_warn "No real SSL certificates found. Only self-signed certs will be used."
         log_warn "The frontend build may fail (Node.js rejects self-signed certs)."
         log_warn "Either:"
-        log_warn "  1. Apply for certs in 宝塔 panel, then re-run this script"
-        log_warn "  2. Set API_URL=http://labrinth:8000/v2/ in .env and rebuild frontend"
+        log_warn "  1. Install certbot: sudo apt install certbot python3-certbot"
+        log_warn "  2. Apply for certs in 宝塔 panel, then re-run this script"
+        log_warn "  3. Set API_URL=http://labrinth:8000/v2/ in .env and rebuild frontend"
     fi
 }
 
