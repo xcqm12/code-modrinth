@@ -18,7 +18,8 @@ COPY apps/frontend apps/frontend
 RUN cp apps/frontend/.env.prod apps/frontend/.env
 
 ENV NODE_OPTIONS="--max-old-space-size=4096"
-RUN pnpm install --frozen-lockfile
+RUN pnpm install --frozen-lockfile --ignore-scripts
+RUN pnpm --filter @modrinth/api-client run build
 
 ARG NODE_OPTIONS="--max-old-space-size=6144"
 ARG BASE_URL=https://api.bbsmc.org.cn/v2/
