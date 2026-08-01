@@ -20,6 +20,17 @@ RUN cp apps/frontend/.env.prod apps/frontend/.env
 
 ENV NODE_OPTIONS="--max-old-space-size=4096"
 RUN pnpm install --frozen-lockfile --ignore-scripts
+
+# Fix: @nuxt/kit's loadNuxt uses exsolve which can't follow pnpm symlinks.
+# Replace the nuxt symlink with a real directory copy so exsolve can find it.
+RUN if [ -L apps/frontend/node_modules/nuxt ]; then \
+        NUXT_REAL=$(readlink -f apps/frontend/node_modules/nuxt) && \
+        rm apps/frontend/node_modules/nuxt && \
+        cp -r "$NUXT_REAL" apps/frontend/node_modules/nuxt; \
+    elif [ ! -d apps/frontend/node_modules/nuxt ]; then \
+        echo "ERROR: nuxt not found in apps/frontend/node_modules" && exit 1; \
+    fi
+
 RUN pnpm --filter @modrinth/api-client run build
 
 ARG NODE_OPTIONS="--max-old-space-size=6144"
