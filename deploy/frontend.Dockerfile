@@ -4,6 +4,9 @@ FROM node:${NODE_VERSION} AS builder
 WORKDIR /app
 RUN corepack enable && corepack prepare pnpm@10.33.2 --activate
 
+# git is needed by pnpm to install dependencies from git repositories
+RUN apk add --no-cache git
+
 COPY pnpm-lock.yaml pnpm-workspace.yaml package.json turbo.jsonc .npmrc ./
 COPY packages/api-client packages/api-client
 COPY packages/assets packages/assets
