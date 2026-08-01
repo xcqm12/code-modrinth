@@ -10,8 +10,8 @@ COPY . .
 # apps/app (theseus_gui) depends on private repos like modrinth/plugins-workspace
 RUN sed -i '/"apps\/app",/d; /"apps\/app-playground",/d' Cargo.toml
 
-# Limit parallelism to reduce peak memory usage during linking
-ENV CARGO_BUILD_JOBS=2
+# Sequential build (no parallelism) to minimize peak memory usage during linking
+ENV CARGO_BUILD_JOBS=1
 ENV CARGO_BUILD_INCREMENTAL=false
 
 # Clean any stale artifacts and build
