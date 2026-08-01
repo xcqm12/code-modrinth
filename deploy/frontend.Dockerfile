@@ -21,15 +21,24 @@ RUN cp apps/frontend/.env.prod apps/frontend/.env
 ENV NODE_OPTIONS="--max-old-space-size=4096"
 RUN pnpm install --frozen-lockfile --ignore-scripts
 
-# Fix: @nuxt/kit's loadNuxt uses exsolve which can't follow pnpm symlinks.
-# Replace the nuxt symlink with a real directory copy so exsolve can find it.
-RUN if [ -L apps/frontend/node_modules/nuxt ]; then \
-        NUXT_REAL=$(readlink -f apps/frontend/node_modules/nuxt) && \
-        rm apps/frontend/node_modules/nuxt && \
-        cp -r "$NUXT_REAL" apps/frontend/node_modules/nuxt; \
-    elif [ ! -d apps/frontend/node_modules/nuxt ]; then \
-        echo "ERROR: nuxt not found in apps/frontend/node_modules" && exit 1; \
+# Workaround: exsolve (used by @nuxt/kit's loadNuxt) uses Node's moduleResolve which
+# walks up node_modules from cwd. In pnpm's isolated mode, nuxt lives in .pnpm and
+# is NOT at /app/node_modules/nuxt, so resolution fails with "Cannot find any nuxt version".
+# Create a symlink at project root so moduleResolve finds it when walking up from apps/frontend.
+RUN if [ ! -e node_modules/nuxt ]; then \
+      NUXT_DIR=$(ls -d node_modules/.pnpm/nuxt@*/node_modules/nuxt 2>/dev/null | head -1); \
+      if [ -n "$NUXT_DIR" ]; then \
+        ln -sf "$NUXT_DIR" node_modules/nuxt; \
+        echo "Created symlink: node_modules/nuxt -> $NUXT_DIR"; \
+      else \
+        echo "WARNING: nuxt not found in .pnpm, resolution may fail"; \
+      fi; \
+    else \
+      echo "node_modules/nuxt already exists"; \
     fi
+
+# Also patch @nuxt/kit to search from project root as a fallback (busybox-sed compatible pattern)
+RUN find node_modules -path "*/@nuxt/kit/dist/index.mjs" -exec sed -i 's|from: .directoryToURL(opts.cwd).|from: [directoryToURL(opts.cwd), directoryToURL(resolve(opts.cwd, "../.."))]|g' {} \;
 
 RUN pnpm --filter @modrinth/api-client run build
 
