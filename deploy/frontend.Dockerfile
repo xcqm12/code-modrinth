@@ -21,21 +21,20 @@ RUN cp apps/frontend/.env.prod apps/frontend/.env
 ENV NODE_OPTIONS="--max-old-space-size=4096"
 RUN pnpm install --frozen-lockfile --ignore-scripts
 
-# Workaround: exsolve (used by @nuxt/kit's loadNuxt) uses Node's moduleResolve which
-# walks up node_modules from cwd. In pnpm's isolated mode, nuxt lives in .pnpm and
-# is NOT at /app/node_modules/nuxt, so resolution fails with "Cannot find any nuxt version".
-# Create a symlink at project root so moduleResolve finds it when walking up from apps/frontend.
-RUN if [ ! -e node_modules/nuxt ]; then \
-      NUXT_DIR=$(ls -d node_modules/.pnpm/nuxt@*/node_modules/nuxt 2>/dev/null | head -1); \
-      if [ -n "$NUXT_DIR" ]; then \
-        ln -sf "$NUXT_DIR" node_modules/nuxt; \
-        echo "Created symlink: node_modules/nuxt -> $NUXT_DIR"; \
+# Workaround: pnpm isolated mode places packages in .pnpm, not at direct paths.
+# exsolve (used by @nuxt/cli's loadKit) uses Node's moduleResolve which walks up
+# node_modules from cwd but cannot resolve through .pnpm structure.
+# Create symlinks at project root so moduleResolve finds them.
+RUN for pkg in nuxt @nuxt/kit; do \
+      PKG_DIR=$(ls -d node_modules/.pnpm/$(echo "$pkg" | tr '/' '+')@*/node_modules/$pkg 2>/dev/null | head -1); \
+      if [ -n "$PKG_DIR" ]; then \
+        mkdir -p node_modules/$(dirname $pkg) 2>/dev/null; \
+        ln -sf "$PKG_DIR" node_modules/$pkg; \
+        echo "Created symlink: node_modules/$pkg -> $PKG_DIR"; \
       else \
-        echo "WARNING: nuxt not found in .pnpm, resolution may fail"; \
+        echo "WARNING: $pkg not found in .pnpm, resolution may fail"; \
       fi; \
-    else \
-      echo "node_modules/nuxt already exists"; \
-    fi
+    done
 
 # Also patch @nuxt/kit to search from project root as a fallback (busybox-sed compatible pattern)
 RUN find node_modules -path "*/@nuxt/kit/dist/index.mjs" -exec sed -i 's|from: .directoryToURL(opts.cwd).|from: [directoryToURL(opts.cwd), directoryToURL(resolve(opts.cwd, "../.."))]|g' {} \;
