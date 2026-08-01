@@ -21,25 +21,8 @@ RUN cp apps/frontend/.env.prod apps/frontend/.env
 ENV NODE_OPTIONS="--max-old-space-size=4096"
 RUN pnpm install --frozen-lockfile --ignore-scripts
 
-# Workaround: pnpm isolated mode places packages in .pnpm, not at direct paths.
-# exsolve (used by @nuxt/cli's loadKit) uses Node's moduleResolve which walks up
-# node_modules from cwd but cannot resolve through .pnpm structure.
-# Use find to locate the actual package directories in .pnpm and create symlinks.
-# Search both root .pnpm and apps/frontend .pnpm.
-RUN for pkg in nuxt @nuxt/kit; do \
-      PKG_DIR=$(find node_modules/.pnpm apps/frontend/node_modules/.pnpm -maxdepth 3 -type d -path "*/node_modules/$pkg" 2>/dev/null | head -1); \
-      if [ -n "$PKG_DIR" ]; then \
-        mkdir -p "node_modules/$(dirname $pkg)" 2>/dev/null; \
-        ln -sf "$PKG_DIR" "node_modules/$pkg"; \
-        echo "Created symlink: node_modules/$pkg -> $PKG_DIR"; \
-      else \
-        echo "WARNING: $pkg not found in .pnpm, resolution may fail"; \
-      fi; \
-    done
-
-# Also patch @nuxt/cli's loadKit to accept an array of from paths as fallback
-# This makes it also search /app/node_modules/ when resolving @nuxt/kit
-RUN find node_modules -path "*/@nuxt/cli/dist/kit-*.mjs" -exec sed -i 's|from: tryResolveNuxt(rootDir) || rootDir|from: [tryResolveNuxt(rootDir) || rootDir, "/app/node_modules/"]|g' {} \;
+# @nuxt/kit is added as a devDependency in root package.json to ensure it's
+# hoisted to node_modules/@nuxt/kit, so @nuxt/cli's loadKit can resolve it.
 
 RUN pnpm --filter @modrinth/api-client run build
 
