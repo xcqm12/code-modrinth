@@ -21,7 +21,6 @@ standards/
 .husky/
 .prettierignore
 .editorconfig
-.npmrc
 .nvmrc
 .cargo/
 .claude/
