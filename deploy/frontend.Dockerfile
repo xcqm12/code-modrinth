@@ -18,7 +18,7 @@ COPY apps/frontend apps/frontend
 RUN cp apps/frontend/.env.prod apps/frontend/.env
 
 ENV NODE_OPTIONS="--max-old-space-size=4096"
-RUN pnpm install --frozen-lockfile --ignore-scripts
+RUN pnpm install --frozen-lockfile --ignore-scripts --config.node-linker=hoisted
 RUN pnpm --filter @modrinth/api-client run build
 # Create symlink so exsolve in @nuxt/kit can find nuxt from apps/frontend
 RUN mkdir -p apps/frontend/node_modules && ln -sf ../../../node_modules/nuxt apps/frontend/node_modules/nuxt
