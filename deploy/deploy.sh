@@ -57,9 +57,13 @@ preflight() {
 
 # ---- Git pull ----
 git_pull() {
-    if [[ -d .git ]]; then
+    local project_dir
+    project_dir="$(dirname "$SCRIPT_DIR")"
+    if [[ -d "$project_dir/.git" ]]; then
         log_info "Pulling latest code..."
-        git pull --ff-only 2>/dev/null || log_warn "git pull failed, continuing with local code"
+        git -C "$project_dir" pull --ff-only 2>/dev/null || log_warn "git pull failed, continuing with local code"
+    else
+        log_warn "Not a git repo ($project_dir), skipping pull"
     fi
 }
 
@@ -240,28 +244,51 @@ deploy() {
     log_info "Starting deployment..."
 
     free_web_ports
-    create_swap 8G
+    create_swap 16G
 
     export COMPOSE_PARALLEL_LIMIT=1
     export DOCKER_BUILDKIT=1
 
-    # Pull infrastructure images first
-    log_info "Pulling infrastructure images..."
-    $DOCKER_COMPOSE -f "$COMPOSE_FILE" pull postgres redis typesense clickhouse mail gotenberg redpanda nginx 2>/dev/null || true
+    # Free Docker build cache to prevent disk exhaustion
+    log_info "Pruning Docker build cache..."
+    docker builder prune -af 2>/dev/null || true
+    docker image prune -f 2>/dev/null || true
 
-    # Build labrinth (Rust)
-    log_info "Building labrinth (Rust, CARGO_BUILD_JOBS=2)..."
-    CARGO_BUILD_JOBS=2 $DOCKER_COMPOSE -f "$COMPOSE_FILE" build labrinth
+    # Pull infrastructure images (sequential)
+    log_info "Pulling infrastructure images (sequential)..."
+    for svc in postgres redis typesense clickhouse mail gotenberg redpanda nginx; do
+        log_info "  Pulling $svc..."
+        $DOCKER_COMPOSE -f "$COMPOSE_FILE" pull "$svc" 2>/dev/null || true
+    done
+
+    # Build labrinth (Rust, sequential)
+    log_info "Building labrinth (Rust, CARGO_BUILD_JOBS=1)..."
+    CARGO_BUILD_JOBS=1 $DOCKER_COMPOSE -f "$COMPOSE_FILE" build --no-cache labrinth
 
     # Build frontend (Nuxt)
     log_info "Building frontend (Nuxt)..."
-    $DOCKER_COMPOSE -f "$COMPOSE_FILE" build frontend
+    $DOCKER_COMPOSE -f "$COMPOSE_FILE" build --no-cache frontend
 
     remove_swap
 
-    # Start all services
-    log_info "Starting all services..."
-    $DOCKER_COMPOSE -f "$COMPOSE_FILE" up -d
+    # Start services sequentially (infrastructure -> backend -> frontend -> nginx)
+    log_info "Starting infrastructure services (sequential)..."
+    for svc in postgres redis typesense clickhouse mail gotenberg redpanda; do
+        log_info "  Starting $svc..."
+        $DOCKER_COMPOSE -f "$COMPOSE_FILE" up -d "$svc"
+        sleep 3
+    done
+
+    log_info "Starting backend (labrinth)..."
+    $DOCKER_COMPOSE -f "$COMPOSE_FILE" up -d labrinth
+    sleep 5
+
+    log_info "Starting frontend..."
+    $DOCKER_COMPOSE -f "$COMPOSE_FILE" up -d frontend
+    sleep 3
+
+    log_info "Starting nginx..."
+    $DOCKER_COMPOSE -f "$COMPOSE_FILE" up -d nginx
 
     log_ok "All services started!"
 }
