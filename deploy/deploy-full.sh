@@ -312,7 +312,7 @@ setup_ssl() {
         free_web_ports
 
         log_info "Obtaining Let's Encrypt SAN certificate for: ${DOMAINS[*]}"
-        sudo certbot certonly --standalone $certbot_args \
+        sudo certbot certonly --standalone --expand $certbot_args \
             --non-interactive --agree-tos -m "admin@$PRIMARY_DOMAIN" || {
             log_warn "Certbot multi-domain failed. Trying individual certificates..."
 
