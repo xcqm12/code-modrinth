@@ -379,13 +379,31 @@ deploy() {
     # Remove temporary swap after build
     remove_swap
 
-    # Pull infrastructure images
-    log_info "Pulling infrastructure images..."
-    $DOCKER_COMPOSE pull postgres redis typesense clickhouse mail gotenberg redpanda nginx
+    # Pull infrastructure images (sequential to avoid memory spikes)
+    log_info "Pulling infrastructure images (sequential)..."
+    for svc in postgres redis typesense clickhouse mail gotenberg redpanda nginx; do
+        log_info "  Pulling $svc..."
+        $DOCKER_COMPOSE pull "$svc" 2>/dev/null || true
+    done
 
-    # Start services
-    log_info "Starting all services..."
-    $DOCKER_COMPOSE up -d
+    # Start services sequentially (infrastructure -> backend -> frontend -> nginx)
+    log_info "Starting infrastructure services (sequential)..."
+    for svc in postgres redis typesense clickhouse mail gotenberg redpanda; do
+        log_info "  Starting $svc..."
+        $DOCKER_COMPOSE up -d "$svc"
+        sleep 3
+    done
+
+    log_info "Starting backend (labrinth)..."
+    $DOCKER_COMPOSE up -d labrinth
+    sleep 5
+
+    log_info "Starting frontend..."
+    $DOCKER_COMPOSE up -d frontend
+    sleep 3
+
+    log_info "Starting nginx..."
+    $DOCKER_COMPOSE up -d nginx
 
     log_ok "All services started!"
 }
