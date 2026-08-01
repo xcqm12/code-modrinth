@@ -26,6 +26,10 @@ log_error() { echo -e "${RED}[ERROR]${NC} $1"; }
 DOMAINS=("bbsmc.org.cn" "api.bbsmc.org.cn" "admin.bbsmc.org.cn")
 PRIMARY_DOMAIN="bbsmc.org.cn"
 
+# Pull latest code before deploying
+log_info "Pulling latest code from git..."
+git pull --ff-only || log_warn "git pull failed, continuing with current code"
+
 # ---- Pre-flight checks ----
 preflight() {
     log_info "Running pre-flight checks..."
