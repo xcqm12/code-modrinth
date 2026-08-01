@@ -13,6 +13,7 @@ COPY packages/ui packages/ui
 COPY packages/utils packages/utils
 COPY packages/tooling-config packages/tooling-config
 COPY patches patches
+ARG CACHE_BUSTER=20260801
 COPY apps/frontend apps/frontend
 
 RUN cp apps/frontend/.env.prod apps/frontend/.env
@@ -20,12 +21,6 @@ RUN cp apps/frontend/.env.prod apps/frontend/.env
 ENV NODE_OPTIONS="--max-old-space-size=4096"
 RUN pnpm install --frozen-lockfile --ignore-scripts
 RUN pnpm --filter @modrinth/api-client run build
-# Replace nuxt symlink with real directory copy so exsolve/moduleResolve can resolve it
-RUN if [ -L apps/frontend/node_modules/nuxt ] || [ -e apps/frontend/node_modules/nuxt ]; then \
-        cp -rL apps/frontend/node_modules/nuxt /tmp/nuxt_copy && \
-        rm -rf apps/frontend/node_modules/nuxt && \
-        mv /tmp/nuxt_copy apps/frontend/node_modules/nuxt; \
-    fi
 
 ARG NODE_OPTIONS="--max-old-space-size=6144"
 ARG BASE_URL=https://api.bbsmc.org.cn/v2/
