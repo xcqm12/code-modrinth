@@ -1,4 +1,4 @@
-﻿ARG NODE_VERSION=24-alpine
+ARG NODE_VERSION=24-alpine
 
 FROM node:${NODE_VERSION} AS builder
 WORKDIR /app
@@ -20,6 +20,8 @@ RUN cp apps/frontend/.env.prod apps/frontend/.env
 ENV NODE_OPTIONS="--max-old-space-size=4096"
 RUN pnpm install --frozen-lockfile --ignore-scripts
 RUN pnpm --filter @modrinth/api-client run build
+# Create symlink so exsolve in @nuxt/kit can find nuxt from apps/frontend
+RUN mkdir -p apps/frontend/node_modules && ln -sf ../../node_modules/nuxt apps/frontend/node_modules/nuxt
 
 ARG NODE_OPTIONS="--max-old-space-size=6144"
 ARG BASE_URL=https://api.bbsmc.org.cn/v2/
