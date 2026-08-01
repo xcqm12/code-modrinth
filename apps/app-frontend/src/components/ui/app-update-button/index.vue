@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<ButtonStyled color="brand" type="outlined" hover-color-fill="background">
 		<button
 			v-if="showUpdatePill"
@@ -24,8 +24,8 @@
 </template>
 
 <script setup lang="ts">
-import { DownloadIcon, RefreshCwIcon } from '@bbsmc/assets'
-import { ButtonStyled, defineMessages, useVIntl } from '@bbsmc/ui'
+import { DownloadIcon, RefreshCwIcon } from '@modrinth/assets'
+import { ButtonStyled, defineMessages, useVIntl } from '@modrinth/ui'
 import { computed, nextTick, onBeforeUnmount, ref, watch } from 'vue'
 
 import {

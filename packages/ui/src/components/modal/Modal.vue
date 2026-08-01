@@ -32,7 +32,7 @@
 </template>
 
 <script setup>
-import { XIcon } from '@bbsmc/assets'
+import { XIcon } from '@modrinth/assets'
 import { ref } from 'vue'
 
 const props = defineProps({

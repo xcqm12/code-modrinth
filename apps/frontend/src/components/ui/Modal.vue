@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div v-if="shown">
 		<div
 			:class="{
@@ -28,8 +28,8 @@
 </template>
 
 <script>
-import { XIcon } from '@bbsmc/assets'
-import { ButtonStyled } from '@bbsmc/ui'
+import { XIcon } from '@modrinth/assets'
+import { ButtonStyled } from '@modrinth/ui'
 
 export default {
 	components: {

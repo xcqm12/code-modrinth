@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<Admonition
 		type="info"
 		inline-actions
@@ -35,8 +35,8 @@
 </template>
 
 <script setup lang="ts">
-import { SpinnerIcon, UploadIcon } from '@bbsmc/assets'
-import { Admonition, ButtonStyled, useVIntl } from '@bbsmc/ui'
+import { SpinnerIcon, UploadIcon } from '@modrinth/assets'
+import { Admonition, ButtonStyled, useVIntl } from '@modrinth/ui'
 import { computed, ref } from 'vue'
 
 import SharedInstancePublishModal from '@/components/ui/shared-instances/SharedInstancePublishModal.vue'

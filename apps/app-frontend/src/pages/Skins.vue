@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import {
 	CheckIcon,
 	EditIcon,
@@ -8,7 +8,7 @@ import {
 	RotateCounterClockwiseIcon,
 	ShirtIcon,
 	SpinnerIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -20,8 +20,8 @@ import {
 	SkinPreviewRenderer,
 	Toggle,
 	useVIntl,
-} from '@bbsmc/ui'
-import { arrayBufferToBase64 } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import { arrayBufferToBase64 } from '@modrinth/utils'
 import { useQuery } from '@tanstack/vue-query'
 import { type DragDropEvent, getCurrentWebview } from '@tauri-apps/api/webview'
 import { computedAsync } from '@vueuse/core'

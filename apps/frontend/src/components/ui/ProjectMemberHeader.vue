@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div v-if="showInvitation" class="universal-card information invited my-4">
 		<h2>{{ getFormattedMessage(messages.invitationTitle) }}</h2>
 		<p v-if="currentMember?.project_role">
@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import { CheckIcon, XIcon } from '@bbsmc/assets'
+import { CheckIcon, XIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -31,8 +31,8 @@ import {
 	injectNotificationManager,
 	type MessageDescriptor,
 	useVIntl,
-} from '@bbsmc/ui'
-import type { Project, User, Version } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import type { Project, User, Version } from '@modrinth/utils'
 import { computed } from 'vue'
 
 import { acceptTeamInvite, removeTeamMember } from '~/helpers/teams.js'

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="normal-page no-sidebar">
 		<h1>File lookup</h1>
 		<div class="normal-page__content">
@@ -80,15 +80,15 @@
 </template>
 
 <script setup lang="ts">
-import { FileIcon, SpinnerIcon, UploadIcon } from '@bbsmc/assets'
+import { FileIcon, SpinnerIcon, UploadIcon } from '@modrinth/assets'
 import {
 	Admonition,
 	Avatar,
 	CopyCode,
 	injectNotificationManager,
 	useFormatBytes,
-} from '@bbsmc/ui'
-import type { Project, Version } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import type { Project, Version } from '@modrinth/utils'
 
 const { addNotification } = injectNotificationManager()
 

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import {
 	Admonition,
 	commonSettingsMessages,
@@ -8,7 +8,7 @@ import {
 	languageSelectorMessages,
 	LOCALES,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 
 const { formatMessage } = useVIntl()
 const { locale, setLocale } = injectI18n()

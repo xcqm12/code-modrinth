@@ -1,6 +1,6 @@
-<script setup lang="ts">
-import { MessageIcon } from '@bbsmc/assets'
-import { ButtonStyled, defineMessages, PagewideBanner, useVIntl } from '@bbsmc/ui'
+﻿<script setup lang="ts">
+import { MessageIcon } from '@modrinth/assets'
+import { ButtonStyled, defineMessages, PagewideBanner, useVIntl } from '@modrinth/ui'
 
 const { formatMessage } = useVIntl()
 

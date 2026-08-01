@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import {
 	CheckIcon,
 	CopyIcon,
@@ -6,8 +6,8 @@ import {
 	LogInIcon,
 	MessagesSquareIcon,
 	WrenchIcon,
-} from '@bbsmc/assets'
-import { Admonition, ButtonStyled, Collapsible, NewModal } from '@bbsmc/ui'
+} from '@modrinth/assets'
+import { Admonition, ButtonStyled, Collapsible, NewModal } from '@modrinth/ui'
 import { computed, ref } from 'vue'
 
 import { hide_ads_window, show_ads_window } from '@/helpers/ads.js'

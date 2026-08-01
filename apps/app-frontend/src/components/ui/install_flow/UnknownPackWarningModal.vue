@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<UnknownFileWarningModal
 		ref="modal"
 		:mode="externalFilesInModpack.length > 0 ? 'modpack' : 'mod'"
@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-import { UnknownFileWarningModal } from '@bbsmc/ui'
+import { UnknownFileWarningModal } from '@modrinth/ui'
 import { ref, useTemplateRef } from 'vue'
 
 import { get as getSettings, set as setSettings } from '@/helpers/settings'

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<MultiStageModal
 		ref="modal"
 		:stages="ctx.stageConfigs"
@@ -15,15 +15,15 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	DropArea,
 	injectmodrinthClient,
 	injectNotificationManager,
 	injectProjectPageContext,
 	MultiStageModal,
-} from '@bbsmc/ui'
-import { acceptFileFromProjectType } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import { acceptFileFromProjectType } from '@modrinth/utils'
 import type { ComponentExposed } from 'vue-component-type-helpers'
 
 import {

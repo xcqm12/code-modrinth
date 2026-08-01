@@ -1,5 +1,5 @@
-<script setup>
-import { BoxIcon, FolderOpenIcon, FolderSearchIcon, TrashIcon } from '@bbsmc/assets'
+﻿<script setup>
+import { BoxIcon, FolderOpenIcon, FolderSearchIcon, TrashIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	defineMessages,
@@ -8,7 +8,7 @@ import {
 	StyledInput,
 	Toggle,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { open } from '@tauri-apps/plugin-dialog'
 import { ref, watch } from 'vue'
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ExternalIcon } from '@bbsmc/assets'
+import { ExternalIcon } from '@modrinth/assets'
 
 import { AutoLink } from '../../base'
 

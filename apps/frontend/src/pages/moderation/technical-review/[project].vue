@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
-import { ArrowLeftIcon, LoaderCircleIcon } from '@bbsmc/assets'
-import { ButtonStyled, injectmodrinthClient } from '@bbsmc/ui'
+import type { Labrinth } from '@modrinth/api-client'
+import { ArrowLeftIcon, LoaderCircleIcon } from '@modrinth/assets'
+import { ButtonStyled, injectmodrinthClient } from '@modrinth/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 
 import MaliciousSummaryModal, {

@@ -1,4 +1,4 @@
-import type { modrinthId } from '@bbsmc/utils'
+﻿import type { modrinthId } from '@modrinth/utils'
 
 export type GameInstance = {
 	id: string

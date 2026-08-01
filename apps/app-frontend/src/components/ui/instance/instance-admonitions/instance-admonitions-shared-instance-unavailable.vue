@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<Admonition
 		type="warning"
 		:inline-actions="reason === 'quarantined'"
@@ -19,8 +19,8 @@
 </template>
 
 <script setup lang="ts">
-import { TrashIcon } from '@bbsmc/assets'
-import { Admonition, ButtonStyled, defineMessages, useVIntl } from '@bbsmc/ui'
+import { TrashIcon } from '@modrinth/assets'
+import { Admonition, ButtonStyled, defineMessages, useVIntl } from '@modrinth/ui'
 
 import type { SharedInstanceUnavailableReason } from '@/helpers/install'
 import {

@@ -1,4 +1,4 @@
-ARG NODE_VERSION=24-alpine
+﻿ARG NODE_VERSION=24-alpine
 
 FROM node:${NODE_VERSION} AS builder
 WORKDIR /app
@@ -36,7 +36,7 @@ ENV BROWSER_BASE_URL=${BROWSER_BASE_URL}
 ENV PYRO_BASE_URL=${PYRO_BASE_URL}
 ENV SHARED_INSTANCES_API_BASE_URL=${SHARED_INSTANCES_API_BASE_URL}
 
-RUN pnpm --filter @bbsmc/frontend build
+RUN pnpm --filter @modrinth/frontend build
 
 FROM node:${NODE_VERSION}
 WORKDIR /app

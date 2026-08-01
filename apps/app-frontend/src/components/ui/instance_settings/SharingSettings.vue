@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex flex-col gap-8">
 		<section class="flex flex-col gap-4">
 			<div class="flex flex-col gap-1">
@@ -80,7 +80,7 @@
 </template>
 
 <script setup lang="ts">
-import { SpinnerIcon, XIcon } from '@bbsmc/assets'
+import { SpinnerIcon, XIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	CopyCode,
@@ -90,7 +90,7 @@ import {
 	useFormatDateTime,
 	useRelativeTime,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/vue-query'
 import { computed, ref } from 'vue'
 

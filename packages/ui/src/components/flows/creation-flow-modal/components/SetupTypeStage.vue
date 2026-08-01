@@ -58,8 +58,8 @@
 </template>
 
 <script setup lang="ts">
-import { BoxesIcon, BoxIcon, BoxImportIcon, PackageIcon } from '@bbsmc/assets'
-import { defineMessages, useVIntl } from '@bbsmc/ui'
+import { BoxesIcon, BoxIcon, BoxImportIcon, PackageIcon } from '@modrinth/assets'
+import { defineMessages, useVIntl } from '@modrinth/ui'
 import { computed } from 'vue'
 
 import { useDebugLogger } from '#ui/composables/debug-logger'

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex flex-col gap-3 sm:gap-4">
 		<Admonition
 			v-if="selectedRail?.warningMessage"
@@ -242,7 +242,7 @@ import {
 	normalizeChildren,
 	StyledInput,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useDebounceFn } from '@vueuse/core'
 import { computed, ref, watch } from 'vue'
 

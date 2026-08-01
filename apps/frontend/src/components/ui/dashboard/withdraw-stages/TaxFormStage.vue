@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex flex-col gap-2.5 sm:gap-3">
 		<div class="flex flex-col gap-3">
 			<div class="flex w-full flex-col gap-1 sm:flex-row sm:justify-between sm:gap-0">
@@ -73,7 +73,7 @@
 </template>
 
 <script setup lang="ts">
-import { FileTextIcon } from '@bbsmc/assets'
+import { FileTextIcon } from '@modrinth/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -82,7 +82,7 @@ import {
 	normalizeChildren,
 	useFormatMoney,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { computed } from 'vue'
 
 import { getTaxThreshold, getTaxThresholdActual } from '@/providers/creator-withdraw.ts'

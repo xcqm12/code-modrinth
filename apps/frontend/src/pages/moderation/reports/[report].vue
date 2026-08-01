@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { injectmodrinthClient } from '@bbsmc/ui'
+import { injectmodrinthClient } from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 
 import ModerationReportCard from '~/components/ui/moderation/ModerationReportCard.vue'

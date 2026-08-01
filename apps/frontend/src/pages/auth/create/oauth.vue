@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div v-if="subtleLauncherRedirectUri">
 		<iframe
 			:src="subtleLauncherRedirectUri"
@@ -25,7 +25,7 @@ import {
 	injectmodrinthClient,
 	injectNotificationManager,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import type { LocationQueryValue } from 'vue-router'
 

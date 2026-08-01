@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="pb-20">
 		<section>
 			<Breadcrumbs
@@ -35,7 +35,7 @@
 	</div>
 </template>
 <script setup>
-import { injectmodrinthClient } from '@bbsmc/ui'
+import { injectmodrinthClient } from '@modrinth/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { computed } from 'vue'
 

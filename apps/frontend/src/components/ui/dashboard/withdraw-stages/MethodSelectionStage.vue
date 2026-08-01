@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex flex-col gap-4">
 		<Admonition v-if="shouldShowTaxLimitWarning" type="warning">
 			<IntlFormatted
@@ -78,7 +78,7 @@
 </template>
 
 <script setup lang="ts">
-import { SpinnerIcon, UnknownIcon } from '@bbsmc/assets'
+import { SpinnerIcon, UnknownIcon } from '@modrinth/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -90,7 +90,7 @@ import {
 	useDebugLogger,
 	useFormatMoney,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useGeolocation } from '@vueuse/core'
 
 import { useCountries, useFormattedCountries, useUserCountry } from '@/composables/country.ts'

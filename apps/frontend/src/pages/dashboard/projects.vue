@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div>
 		<NewModal ref="editLinksModal" :header="formatMessage(messages.editLinksHeader)">
 			<div class="universal-modal links-modal !p-0">
@@ -355,7 +355,7 @@ import {
 	TrashIcon,
 	TriangleAlertIcon,
 	XIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	ButtonStyled,
 	Checkbox,
@@ -370,8 +370,8 @@ import {
 	StyledInput,
 	Table,
 	useVIntl,
-} from '@bbsmc/ui'
-import { formatProjectType } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import { formatProjectType } from '@modrinth/utils'
 
 import ModalCreation from '~/components/ui/create/ProjectCreateModal.vue'
 import { getProjectTypeForUrl } from '~/helpers/projects.js'

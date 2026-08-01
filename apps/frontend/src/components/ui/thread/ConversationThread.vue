@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div>
 		<NewModal
 			ref="modalSubmit"
@@ -420,7 +420,7 @@ import {
 	SendIcon,
 	SpinnerIcon,
 	XIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	ButtonStyled,
 	Checkbox,
@@ -433,7 +433,7 @@ import {
 	NewModal,
 	OverflowMenu,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 
 import ThreadMessage from '~/components/ui/thread/ThreadMessage.vue'
 import { useImageUpload } from '~/composables/image-upload.ts'

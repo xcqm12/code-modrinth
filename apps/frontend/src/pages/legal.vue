@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="normal-page">
 		<div class="normal-page__sidebar">
 			<NavStack
@@ -32,7 +32,7 @@ import {
 	LockIcon,
 	ScaleIcon,
 	ShieldIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 
 import NavStack from '~/components/ui/NavStack.vue'
 

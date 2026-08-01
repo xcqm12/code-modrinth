@@ -1,4 +1,4 @@
-import type { AbstractmodrinthClient, Archon, Labrinth } from '@bbsmc/api-client'
+﻿import type { AbstractmodrinthClient, Archon, Labrinth } from '@modrinth/api-client'
 import {
 	addPendingServerContentInstalls,
 	type BrowseInstallPlan,
@@ -17,7 +17,7 @@ import {
 	removePendingServerContentInstall,
 	writePendingServerContentInstallBaseline,
 	writeStoredServerInstallQueue,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 import { computed, type ComputedRef, nextTick, type Ref, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'

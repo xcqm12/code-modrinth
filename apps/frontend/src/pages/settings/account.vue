@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div>
 		<ConfirmModal
 			ref="modal_confirm"
@@ -491,7 +491,7 @@ import {
 	TrashIcon,
 	UpdatedIcon,
 	XIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -504,7 +504,7 @@ import {
 	StyledInput,
 	Table,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import KeyIcon from 'assets/icons/auth/key.svg'
 import DiscordIcon from 'assets/icons/auth/sso-discord.svg'
 import GithubIcon from 'assets/icons/auth/sso-github.svg'

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<DropdownFilterBar
 		v-model="selectedFilterValue"
 		:categories="filterCategories"
@@ -196,7 +196,7 @@
 </template>
 
 <script setup lang="ts">
-import { BoxIcon, UserIcon } from '@bbsmc/assets'
+import { BoxIcon, UserIcon } from '@modrinth/assets'
 import {
 	buildDependentsSearchFilters,
 	DropdownFilterBar,
@@ -210,8 +210,8 @@ import {
 	type TabsValue,
 	truncatedTooltip,
 	useVIntl,
-} from '@bbsmc/ui'
-import { formatProjectType } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import { formatProjectType } from '@modrinth/utils'
 import { useQuery } from '@tanstack/vue-query'
 import type { ComponentPublicInstance } from 'vue'
 

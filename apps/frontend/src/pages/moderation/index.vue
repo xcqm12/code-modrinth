@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex flex-col gap-4">
 		<div class="flex flex-col justify-between gap-3 lg:flex-row">
 			<StyledInput
@@ -137,8 +137,8 @@
 	</div>
 </template>
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
-import { ListFilterIcon, ScaleIcon, SearchIcon, SortAscIcon, SortDescIcon } from '@bbsmc/assets'
+import type { Labrinth } from '@modrinth/api-client'
+import { ListFilterIcon, ScaleIcon, SearchIcon, SortAscIcon, SortDescIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	Combobox,
@@ -152,7 +152,7 @@ import {
 	StyledInput,
 	Toggle,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 import ConfettiExplosion from 'vue-confetti-explosion'
 

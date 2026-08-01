@@ -38,7 +38,7 @@
 </template>
 
 <script setup lang="ts">
-import { DownloadIcon } from '@bbsmc/assets/generated-icons'
+import { DownloadIcon } from '@modrinth/assets/generated-icons'
 
 import { defineMessages, useVIntl } from '../../../composables'
 import Avatar from '../../base/Avatar.vue'

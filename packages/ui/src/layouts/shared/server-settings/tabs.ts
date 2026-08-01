@@ -1,4 +1,4 @@
-import type { Archon } from '@bbsmc/api-client'
+import type { Archon } from '@modrinth/api-client'
 import {
 	CardIcon,
 	ListIcon,
@@ -7,7 +7,7 @@ import {
 	TextQuoteIcon,
 	VersionIcon,
 	WrenchIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import type { Component } from 'vue'
 
 export type ServerSettingsTabId =

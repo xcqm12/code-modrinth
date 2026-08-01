@@ -66,4 +66,4 @@ export interface ExtractDryRunResult {
 	conflicting_files: string[]
 }
 
-export type { UploadState } from '@bbsmc/api-client'
+export type { UploadState } from '@modrinth/api-client'

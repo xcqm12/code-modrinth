@@ -1,5 +1,5 @@
 {
-	"name": "@bbsmc/tooling-config",
+	"name": "@modrinth/tooling-config",
 	"version": "0.0.0",
 	"type": "module",
 	"private": true,

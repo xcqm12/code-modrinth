@@ -1,11 +1,11 @@
-import {
+﻿import {
 	annotateFullDocument,
 	clearAllAnnotations,
 	hideKeyTooltip,
 	I18N_DEBUG_KEY,
 	type I18nDebugContext,
 	initI18nDebugRuntime,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 
 export default defineNuxtPlugin({
 	name: 'i18n-debug',

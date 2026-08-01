@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<nav :aria-label="ariaLabel" class="w-full">
 		<ul
 			class="card-shadow m-0 mb-3 flex list-none flex-col items-start gap-1.5 rounded-2xl border border-solid border-surface-4 bg-surface-3 p-4"
@@ -68,7 +68,7 @@
 </template>
 
 <script setup lang="ts">
-import { ChevronRightIcon } from '@bbsmc/assets'
+import { ChevronRightIcon } from '@modrinth/assets'
 import { type Component, computed, useSlots } from 'vue'
 
 type NavStackBaseItem = {

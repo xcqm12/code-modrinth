@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex flex-col items-center gap-4">
 		<div class="flex w-full items-center justify-center gap-2.5">
 			<span class="text-xl font-semibold text-contrast sm:text-2xl">
@@ -131,7 +131,7 @@ import {
 	useFormatDateTime,
 	useFormatMoney,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, onMounted, ref } from 'vue'
 import ConfettiExplosion from 'vue-confetti-explosion'
 

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex gap-2">
 		<ButtonStyled circular>
 			<a
@@ -64,8 +64,8 @@ import {
 	MailIcon,
 	MastodonIcon,
 	TwitterIcon,
-} from '@bbsmc/assets'
-import { ButtonStyled } from '@bbsmc/ui'
+} from '@modrinth/assets'
+import { ButtonStyled } from '@modrinth/ui'
 
 const props = defineProps<{
 	title?: string

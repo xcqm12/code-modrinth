@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div
 		class="shadow-card mx-auto flex w-full max-w-[27rem] flex-col gap-6 rounded-2xl border border-solid border-button-bg bg-surface-3 !p-6"
 	>
@@ -98,7 +98,7 @@
 </template>
 
 <script setup lang="ts">
-import { RightArrowIcon } from '@bbsmc/assets'
+import { RightArrowIcon } from '@modrinth/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -108,7 +108,7 @@ import {
 	injectNotificationManager,
 	StyledInput,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, ref } from 'vue'
 
 import HCaptcha from '@/components/ui/auth/HCaptcha.vue'

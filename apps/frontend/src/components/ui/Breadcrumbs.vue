@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<nav class="breadcrumbs">
 		<template v-for="(link, index) in linkStack" :key="index">
 			<NuxtLink
@@ -15,7 +15,7 @@
 </template>
 
 <script setup>
-import { ChevronRightIcon } from '@bbsmc/assets'
+import { ChevronRightIcon } from '@modrinth/assets'
 
 defineProps({
 	linkStack: {

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<Admonition
 		v-if="shouldShowAlert"
 		:type="hasHitLimit ? 'critical' : 'warning'"
@@ -41,15 +41,15 @@
 </template>
 
 <script setup lang="ts">
-import { MessageIcon } from '@bbsmc/assets'
+import { MessageIcon } from '@modrinth/assets'
 import {
 	Admonition,
 	ButtonStyled,
 	defineMessages,
 	injectmodrinthClient,
 	useVIntl,
-} from '@bbsmc/ui'
-import { capitalizeString } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import { capitalizeString } from '@modrinth/utils'
 import { useQuery } from '@tanstack/vue-query'
 import { computed, watch } from 'vue'
 

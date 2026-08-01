@@ -74,7 +74,7 @@
 </template>
 
 <script setup lang="ts">
-import { CheckIcon, MinusIcon, XIcon } from '@bbsmc/assets'
+import { CheckIcon, MinusIcon, XIcon } from '@modrinth/assets'
 import { computed, ref } from 'vue'
 
 import Admonition from '#ui/components/base/Admonition.vue'

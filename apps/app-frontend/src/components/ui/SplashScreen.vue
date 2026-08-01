@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<Transition name="splash-fade" @after-leave="onAfterLeave">
 		<div v-if="!doneLoading" class="splash-screen dark">
 			<div class="app-logo-wrapper" data-tauri-drag-region>
@@ -78,7 +78,7 @@
 </template>
 
 <script setup>
-import { injectLoadingState } from '@bbsmc/ui'
+import { injectLoadingState } from '@modrinth/ui'
 import { ref, watch } from 'vue'
 
 import ProgressBar from '@/components/ui/ProgressBar.vue'

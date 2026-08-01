@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<CreatorWithdrawModal
 		ref="withdrawModal"
 		:balance="userBalance"
@@ -271,14 +271,14 @@
 </template>
 
 <script setup lang="ts">
-import { ArrowUpRightIcon, InProgressIcon, UnknownIcon } from '@bbsmc/assets'
+import { ArrowUpRightIcon, InProgressIcon, UnknownIcon } from '@modrinth/assets'
 import {
 	defineMessages,
 	injectmodrinthClient,
 	useFormatDateTime,
 	useFormatMoney,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 import dayjs from 'dayjs'
 import { Tooltip } from 'floating-vue'

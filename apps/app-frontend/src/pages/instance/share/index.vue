@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div v-if="!instance.quarantined" class="flex flex-col gap-4">
 		<modrinthAccountRequiredModal ref="accountRequiredModal" :request-auth="requestAuth" />
 		<InvitePlayersModal
@@ -144,7 +144,7 @@
 </template>
 
 <script setup lang="ts">
-import { LogInIcon, SpinnerIcon, UserPlusIcon } from '@bbsmc/assets'
+import { LogInIcon, SpinnerIcon, UserPlusIcon } from '@modrinth/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -155,7 +155,7 @@ import {
 	InvitePlayersModal,
 	type InvitePlayersUser,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { computed, ref, toRef, watch } from 'vue'
 

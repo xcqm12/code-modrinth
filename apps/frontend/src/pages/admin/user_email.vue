@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="normal-page no-sidebar">
 		<h1>User account request</h1>
 		<div class="normal-page__content">
@@ -32,8 +32,8 @@
 	</div>
 </template>
 <script setup lang="ts">
-import { MailIcon } from '@bbsmc/assets'
-import { ButtonStyled, injectNotificationManager, StyledInput } from '@bbsmc/ui'
+import { MailIcon } from '@modrinth/assets'
+import { ButtonStyled, injectNotificationManager, StyledInput } from '@modrinth/ui'
 
 const { addNotification } = injectNotificationManager()
 

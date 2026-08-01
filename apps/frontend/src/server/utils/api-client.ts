@@ -1,10 +1,10 @@
-import {
+﻿import {
 	type AuthConfig,
 	AuthFeature,
 	type FeatureConfig,
 	type NuxtClientConfig,
 	NuxtmodrinthClient,
-} from '@bbsmc/api-client'
+} from '@modrinth/api-client'
 import type { H3Event } from 'h3'
 
 async function getRateLimitKeyFromSecretsStore(): Promise<string | undefined> {

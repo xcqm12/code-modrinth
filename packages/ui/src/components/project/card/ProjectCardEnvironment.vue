@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
-import { ClientIcon, GlobeIcon, ServerIcon, UserIcon } from '@bbsmc/assets'
+import type { Labrinth } from '@modrinth/api-client'
+import { ClientIcon, GlobeIcon, ServerIcon, UserIcon } from '@modrinth/assets'
 import { computed } from 'vue'
 
 import { defineMessages, useVIntl } from '../../../composables'

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<PageHeader :title="organization.name" :summary="organization.description">
 		<template #leading>
 			<Avatar
@@ -67,7 +67,7 @@ import {
 	OrganizationIcon,
 	SettingsIcon,
 	UsersIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -82,7 +82,7 @@ import {
 	type TeleportOverflowMenuItem,
 	useFormatNumber,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { computed } from 'vue'
 
 const messages = defineMessages({

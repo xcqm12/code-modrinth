@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<NewModal ref="modal">
 		<template #title>
 			<span class="text-lg font-extrabold text-contrast">Schedule transfer</span>
@@ -193,7 +193,7 @@
 </template>
 
 <script setup lang="ts">
-import { PlusIcon, SendIcon, XIcon } from '@bbsmc/assets'
+import { PlusIcon, SendIcon, XIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	Chips,
@@ -204,7 +204,7 @@ import {
 	StyledInput,
 	TagItem,
 	Toggle,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import dayjs from 'dayjs'
 import { computed, ref } from 'vue'
 

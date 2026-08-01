@@ -82,8 +82,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Archon } from '@bbsmc/api-client'
-import { TrashIcon, XIcon } from '@bbsmc/assets'
+import type { Archon } from '@modrinth/api-client'
+import { TrashIcon, XIcon } from '@modrinth/assets'
 import { computed, nextTick, ref } from 'vue'
 
 import { defineMessages, useVIntl } from '../../../composables/i18n'

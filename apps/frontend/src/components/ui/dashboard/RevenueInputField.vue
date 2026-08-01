@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex flex-col gap-2">
 		<div class="flex items-center gap-2">
 			<div class="relative flex-1">
@@ -57,7 +57,7 @@ import {
 	StyledInput,
 	useFormatMoney,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, ref, watch } from 'vue'
 
 const props = withDefaults(

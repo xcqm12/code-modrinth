@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<NewModal ref="modal" :header="formatMessage(messages.title)">
 		<div class="min-w-md flex max-w-md flex-col gap-3">
 			<CreateLimitAlert v-model="hasHitLimit" type="org" />
@@ -77,7 +77,7 @@
 </template>
 
 <script setup lang="ts">
-import { PlusIcon, XIcon } from '@bbsmc/assets'
+import { PlusIcon, XIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -86,7 +86,7 @@ import {
 	NewModal,
 	StyledInput,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { ref } from 'vue'
 
 import { generateUrlSlug } from '~/utils/slugs'

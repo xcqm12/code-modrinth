@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
+﻿<script setup lang="ts">
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	commonMessages,
 	defineMessages,
@@ -10,8 +10,8 @@ import {
 	provideInstallationSettings,
 	useDebugLogger,
 	useVIntl,
-} from '@bbsmc/ui'
-import type { GameVersionTag, PlatformTag } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import type { GameVersionTag, PlatformTag } from '@modrinth/utils'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { computed, ref } from 'vue'
 

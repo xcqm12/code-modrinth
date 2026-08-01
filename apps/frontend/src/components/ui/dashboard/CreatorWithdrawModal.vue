@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<NewModal
 		ref="withdrawModal"
 		:closable="currentStage !== 'completion'"
@@ -103,7 +103,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	ArrowLeftRightIcon,
 	ChevronRightIcon,
@@ -112,7 +112,7 @@ import {
 	RightArrowIcon,
 	SpinnerIcon,
 	XIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -120,7 +120,7 @@ import {
 	injectNotificationManager,
 	NewModal,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, nextTick, onMounted, ref, useTemplateRef, watch } from 'vue'
 
 import {

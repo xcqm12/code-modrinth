@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div
 		:class="
 			type === 'server_invite'
@@ -387,7 +387,7 @@ import {
 	UserPlusIcon,
 	VersionIcon,
 	XIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -399,8 +399,8 @@ import {
 	ProjectStatusBadge,
 	useFormatDateTime,
 	useRelativeTime,
-} from '@bbsmc/ui'
-import { getUserLink, renderString } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import { getUserLink, renderString } from '@modrinth/utils'
 
 import { markAsRead } from '~/helpers/platform-notifications'
 import { getProjectLink, getVersionLink } from '~/helpers/projects'

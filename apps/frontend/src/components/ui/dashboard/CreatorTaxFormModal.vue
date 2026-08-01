@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<NewModal
 		ref="taxFormModal"
 		:header="formatMessage(messages.taxFormHeader)"
@@ -162,7 +162,7 @@ import {
 	RightArrowIcon,
 	SpinnerIcon,
 	XIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -174,7 +174,7 @@ import {
 	NewModal,
 	normalizeChildren,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 
 import { type FormRequestResponse, useAvalara1099 } from '@/composables/avalara1099'
 

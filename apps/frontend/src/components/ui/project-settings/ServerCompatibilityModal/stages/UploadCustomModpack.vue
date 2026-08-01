@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex w-full flex-col gap-6">
 		<DataLossWarningBanner />
 		<div class="flex w-full flex-col gap-4">
@@ -64,8 +64,8 @@
 </template>
 
 <script setup lang="ts">
-import { ArrowLeftRightIcon, FileIcon } from '@bbsmc/assets'
-import { ButtonStyled, Checkbox, DropzoneFileInput } from '@bbsmc/ui'
+import { ArrowLeftRightIcon, FileIcon } from '@modrinth/assets'
+import { ButtonStyled, Checkbox, DropzoneFileInput } from '@modrinth/ui'
 
 import { injectServerCompatibilityContext } from '~/providers/manage-server-compatibility-modal'
 

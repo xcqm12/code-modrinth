@@ -141,7 +141,7 @@
 </template>
 
 <script setup lang="ts">
-import { ClipboardCopyIcon, PlusIcon } from '@bbsmc/assets'
+import { ClipboardCopyIcon, PlusIcon } from '@modrinth/assets'
 import { computed, ref } from 'vue'
 
 import { defineMessages, useVIntl } from '../../../composables/i18n'

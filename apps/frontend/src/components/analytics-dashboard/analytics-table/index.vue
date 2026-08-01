@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="relative overflow-hidden rounded-2xl">
 		<AnalyticsLoadingBar :loading="isDataLoading" />
 		<Table
@@ -190,7 +190,7 @@
 </template>
 
 <script setup lang="ts">
-import { DownloadIcon, DropdownIcon, SearchIcon, UserIcon } from '@bbsmc/assets'
+import { DownloadIcon, DropdownIcon, SearchIcon, UserIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	OverflowMenu,
@@ -200,7 +200,7 @@ import {
 	Table,
 	useFormatNumber,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import type { LocationQuery } from 'vue-router'
 
 import {

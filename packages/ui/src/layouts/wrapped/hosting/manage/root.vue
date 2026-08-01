@@ -398,8 +398,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Archon, Labrinth } from '@bbsmc/api-client'
-import { getNodeWebSocketUrl, modrinthApiError, NuxtmodrinthClient } from '@bbsmc/api-client'
+import type { Archon, Labrinth } from '@modrinth/api-client'
+import { getNodeWebSocketUrl, modrinthApiError, NuxtmodrinthClient } from '@modrinth/api-client'
 import {
 	BoxesIcon,
 	CheckIcon,
@@ -421,7 +421,7 @@ import {
 	TriangleAlertIcon,
 	UsersIcon,
 	XIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { useStorage, useTimeoutFn } from '@vueuse/core'
 import DOMPurify from 'dompurify'

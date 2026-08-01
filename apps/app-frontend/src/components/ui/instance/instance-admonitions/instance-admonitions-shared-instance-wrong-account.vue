@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<Admonition type="warning" :header="formatMessage(headerMessage)">
 		<span class="flex flex-wrap items-center gap-x-1.5 gap-y-1">
 			<span>{{ formatMessage(messages.sharedInstanceWrongAccountSignInAs) }}</span>
@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import { Admonition, Avatar, useVIntl } from '@bbsmc/ui'
+import { Admonition, Avatar, useVIntl } from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 import { computed } from 'vue'
 

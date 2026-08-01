@@ -1,7 +1,7 @@
-<script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
-import { ServerStackIcon } from '@bbsmc/assets'
-import { injectmodrinthClient, ServersManagePageIndex } from '@bbsmc/ui'
+﻿<script setup lang="ts">
+import type { Labrinth } from '@modrinth/api-client'
+import { ServerStackIcon } from '@modrinth/assets'
+import { injectmodrinthClient, ServersManagePageIndex } from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 import { computed } from 'vue'
 

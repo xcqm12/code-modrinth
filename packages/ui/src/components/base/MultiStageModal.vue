@@ -118,8 +118,8 @@
 </template>
 
 <script lang="ts">
-import { ChevronRightIcon, SpinnerIcon } from '@bbsmc/assets'
-import { ButtonStyled, NewModal } from '@bbsmc/ui'
+import { ChevronRightIcon, SpinnerIcon } from '@modrinth/assets'
+import { ButtonStyled, NewModal } from '@modrinth/ui'
 import type { Component } from 'vue'
 import { computed, nextTick, ref, useTemplateRef, watch } from 'vue'
 

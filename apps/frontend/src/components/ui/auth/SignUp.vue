@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div
 		class="universal-card flex w-full max-w-[27rem] flex-col gap-6 border border-solid border-surface-5 !p-6"
 	>
@@ -157,7 +157,7 @@ import {
 	MicrosoftColorIcon,
 	RightArrowIcon,
 	SteamColorIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -165,7 +165,7 @@ import {
 	IntlFormatted,
 	StyledInput,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useStorage } from '@vueuse/core'
 import type { LocationQuery } from 'vue-router'
 

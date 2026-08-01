@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div v-if="downloadRows.length > 0 || recommendedRows.length > 0" class="flex flex-col gap-4">
 		<div v-if="downloadRows.length > 0" class="flex flex-col gap-2.5">
 			<div v-if="showTitle" class="flex flex-wrap items-center justify-between gap-2">
@@ -53,8 +53,8 @@
 </template>
 
 <script setup lang="ts">
-import { InfoIcon } from '@bbsmc/assets'
-import { Admonition, defineMessages, IntlFormatted, useVIntl } from '@bbsmc/ui'
+import { InfoIcon } from '@modrinth/assets'
+import { Admonition, defineMessages, IntlFormatted, useVIntl } from '@modrinth/ui'
 
 import { injectDownloadModalProvider } from './download-modal-provider'
 import DownloadDependency from './DownloadDependency.vue'

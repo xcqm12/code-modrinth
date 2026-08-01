@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div
 		class="flex flex-col gap-4 rounded-2xl border-[1px] border-solid border-blue bg-highlight-blue p-4"
 	>
@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import { ButtonStyled } from '@bbsmc/ui'
+import { ButtonStyled } from '@modrinth/ui'
 import { defineProps } from 'vue'
 
 export interface BatchScanProgress {

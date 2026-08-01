@@ -1,4 +1,4 @@
-import { providemodrinthClient } from '@bbsmc/ui'
+﻿import { providemodrinthClient } from '@modrinth/ui'
 
 import { createmodrinthClient } from '~/helpers/api.ts'
 

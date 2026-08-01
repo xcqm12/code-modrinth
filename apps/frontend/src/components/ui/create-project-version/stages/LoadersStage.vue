@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="space-y-6">
 		<LoaderPicker
 			v-model="draftVersion.loaders"
@@ -42,8 +42,8 @@
 </template>
 
 <script lang="ts" setup>
-import { getLoaderIcon, XIcon } from '@bbsmc/assets'
-import { ButtonStyled, FormattedTag, TagItem } from '@bbsmc/ui'
+import { getLoaderIcon, XIcon } from '@modrinth/assets'
+import { ButtonStyled, FormattedTag, TagItem } from '@modrinth/ui'
 
 import { injectManageVersionContext } from '~/providers/version/manage-version-modal'
 

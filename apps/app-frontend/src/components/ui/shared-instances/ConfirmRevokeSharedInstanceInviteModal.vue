@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<NewModal ref="modal" :header="formatMessage(messages.header)" fade="danger" max-width="500px">
 		<Admonition type="critical" :header="formatMessage(messages.admonitionHeader)">
 			<IntlFormatted :message-id="messages.admonitionBody" :values="{ code: inviteCode }">
@@ -28,7 +28,7 @@
 </template>
 
 <script setup lang="ts">
-import { XIcon } from '@bbsmc/assets'
+import { XIcon } from '@modrinth/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -37,7 +37,7 @@ import {
 	IntlFormatted,
 	NewModal,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { ref } from 'vue'
 
 const { formatMessage } = useVIntl()

@@ -129,7 +129,7 @@ import {
 	InviteBackgroundIllustration,
 	LoaderCircleIcon,
 	UserPlusIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Admonition,
 	Avatar,
@@ -137,7 +137,7 @@ import {
 	defineMessages,
 	injectmodrinthClient,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 import { computed, onServerPrefetch, useTemplateRef } from 'vue'
 

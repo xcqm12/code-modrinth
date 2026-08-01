@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<NewModal
 		ref="modal"
 		:header="formatMessage(messages.header)"
@@ -48,7 +48,7 @@
 </template>
 
 <script setup lang="ts">
-import { UserXIcon, XIcon } from '@bbsmc/assets'
+import { UserXIcon, XIcon } from '@modrinth/assets'
 import {
 	Admonition,
 	Avatar,
@@ -57,7 +57,7 @@ import {
 	defineMessages,
 	NewModal,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, ref } from 'vue'
 
 import { methodLabels, type ShareRow } from './shared-instance-share-types'

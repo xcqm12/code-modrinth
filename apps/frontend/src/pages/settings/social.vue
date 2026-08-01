@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<section v-if="auth.user" class="universal-card">
 		<AccountSocialSettings
 			:get-blocked-users="getBlockedUsers"
@@ -9,13 +9,13 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	AccountSocialSettings,
 	commonSettingsMessages,
 	injectmodrinthClient,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 
 definePageMeta({
 	middleware: 'auth',

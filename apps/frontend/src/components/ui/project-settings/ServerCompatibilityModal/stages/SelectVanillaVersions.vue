@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex w-full flex-col gap-6">
 		<DataLossWarningBanner />
 		<div class="flex w-full flex-col gap-4">
@@ -32,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import { Combobox } from '@bbsmc/ui'
+import { Combobox } from '@modrinth/ui'
 import { computed, watch } from 'vue'
 
 import McVersionPicker from '~/components/ui/create-project-version/components/McVersionPicker.vue'

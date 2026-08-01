@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	ContentItem,
 	ContentModpackCardCategory,
 	ContentModpackCardProject,
 	ContentModpackCardVersion,
 	ContentOwner,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 
 import {
 	get_content_items,

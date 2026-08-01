@@ -77,8 +77,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Archon } from '@bbsmc/api-client'
-import { GlobeIcon, PackageIcon, RightArrowIcon, SpinnerIcon, UsersIcon } from '@bbsmc/assets'
+import type { Archon } from '@modrinth/api-client'
+import { GlobeIcon, PackageIcon, RightArrowIcon, SpinnerIcon, UsersIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	defineMessages,
@@ -86,7 +86,7 @@ import {
 	injectNotificationManager,
 	useServerPermissions,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 import { computed, nextTick, onBeforeUnmount, onMounted, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'

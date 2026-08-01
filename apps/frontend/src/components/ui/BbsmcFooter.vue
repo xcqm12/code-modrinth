@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import {
 	BlueskyIcon,
 	DiscordIcon,
@@ -6,7 +6,7 @@ import {
 	MastodonIcon,
 	ToggleRightIcon,
 	TwitterIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	AutoLink,
 	ButtonStyled,
@@ -16,8 +16,8 @@ import {
 	IntlFormatted,
 	type MessageDescriptor,
 	useVIntl,
-} from '@bbsmc/ui'
-import { commonSettingsMessages } from '@bbsmc/ui/src/utils/common-messages.js'
+} from '@modrinth/ui'
+import { commonSettingsMessages } from '@modrinth/ui/src/utils/common-messages.js'
 
 import qilingmiaoLogo from '~/assets/images/qilingmiao.png'
 

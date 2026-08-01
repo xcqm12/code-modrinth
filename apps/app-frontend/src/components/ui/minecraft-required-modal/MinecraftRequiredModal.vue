@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<NewModal ref="modal" :header="formatMessage(messages.header)" max-width="544px" no-padding>
 		<div class="grid grid-cols-[1fr_auto] gap-2.5 h-[154px] px-7 pt-4 pb-1 pr-9">
 			<div class="flex flex-col gap-2.5 items-start justify-center h-min mt-5">
@@ -68,8 +68,8 @@
 </template>
 
 <script setup lang="ts">
-import { MessagesSquareIcon, SpinnerIcon } from '@bbsmc/assets'
-import { ButtonStyled, defineMessages, NewModal, useVIntl } from '@bbsmc/ui'
+import { MessagesSquareIcon, SpinnerIcon } from '@modrinth/assets'
+import { ButtonStyled, defineMessages, NewModal, useVIntl } from '@modrinth/ui'
 import { inject, type Ref, ref } from 'vue'
 
 import steveImage from '@/assets/steve-look-up-left.webp'

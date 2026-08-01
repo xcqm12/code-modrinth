@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div>
 		<form class="flex flex-col gap-2 sm:flex-row" @submit.prevent="executeSearch">
 			<StyledInput
@@ -120,8 +120,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
-import { HashIcon, ListIcon, SearchIcon, TrashIcon } from '@bbsmc/assets'
+import type { Labrinth } from '@modrinth/api-client'
+import { HashIcon, ListIcon, SearchIcon, TrashIcon } from '@modrinth/assets'
 import {
 	Badge,
 	ButtonStyled,
@@ -130,7 +130,7 @@ import {
 	injectNotificationManager,
 	Pagination,
 	StyledInput,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 
 import GlobalDetailLocalTraceCard from '~/components/ui/moderation/GlobalDetailLocalTraceCard.vue'
 

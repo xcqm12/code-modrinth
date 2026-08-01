@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex w-full flex-col gap-4 xl:flex-row xl:items-start xl:justify-between">
 		<div
 			class="flex min-h-[84px] w-full flex-col items-start justify-between gap-3 rounded-t-2xl border-0 border-b border-solid border-surface-5 bg-surface-3 p-4 sm:flex-row sm:items-center"
@@ -59,8 +59,8 @@
 </template>
 
 <script setup lang="ts">
-import { ChartAreaIcon, ChartColumnBigIcon, ChartSplineIcon } from '@bbsmc/assets'
-import { Tabs, type TabsTab, useVIntl } from '@bbsmc/ui'
+import { ChartAreaIcon, ChartColumnBigIcon, ChartSplineIcon } from '@modrinth/assets'
+import { Tabs, type TabsTab, useVIntl } from '@modrinth/ui'
 
 import {
 	DEFAULT_ANALYTICS_GRAPH_EVENTS_VISIBILITY,

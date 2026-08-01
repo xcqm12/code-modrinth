@@ -1,5 +1,5 @@
-import type { AbstractmodrinthClient, Labrinth } from '@bbsmc/api-client'
-import { injectmodrinthClient } from '@bbsmc/ui'
+﻿import type { AbstractmodrinthClient, Labrinth } from '@modrinth/api-client'
+import { injectmodrinthClient } from '@modrinth/ui'
 import { computed, proxyRefs, ref } from 'vue'
 
 import {

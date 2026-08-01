@@ -57,7 +57,7 @@
 </template>
 
 <script setup lang="ts">
-import { CheckIcon } from '@bbsmc/assets'
+import { CheckIcon } from '@modrinth/assets'
 import { computed } from 'vue'
 
 import AutoLink from '../../base/AutoLink.vue'

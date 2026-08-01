@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="rounded-2xl border border-solid border-surface-4 bg-surface-3">
 		<div class="flex flex-col gap-2 border-0 border-b border-solid border-surface-4 p-4">
 			<div class="flex flex-wrap justify-between gap-3">
@@ -78,8 +78,8 @@
 	</div>
 </template>
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
-import { BadgeCheckIcon, CheckIcon, IssuesIcon, XCircleIcon } from '@bbsmc/assets'
+import type { Labrinth } from '@modrinth/api-client'
+import { BadgeCheckIcon, CheckIcon, IssuesIcon, XCircleIcon } from '@modrinth/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -89,8 +89,8 @@ import {
 	PageHeaderMetadata,
 	PageHeaderMetadataItem,
 	useVIntl,
-} from '@bbsmc/ui'
-import { isOfficialAccount } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import { isOfficialAccount } from '@modrinth/utils'
 
 import { useScopes } from '~/composables/auth/scopes.ts'
 

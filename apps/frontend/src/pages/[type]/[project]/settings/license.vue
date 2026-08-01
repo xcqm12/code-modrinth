@@ -162,13 +162,13 @@ import {
 	UnsavedChangesPopup,
 	usePageLeaveSafety,
 	useSavable,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import {
 	type BuiltinLicense,
 	builtinLicenses,
 	formatProjectType,
 	TeamMemberPermission,
-} from '@bbsmc/utils'
+} from '@modrinth/utils'
 import { computed } from 'vue'
 
 const { projectV2: project, currentMember, patchProject } = injectProjectPageContext()

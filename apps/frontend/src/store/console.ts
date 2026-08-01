@@ -1,1 +1,1 @@
-export { usemodrinthServersConsole } from '@bbsmc/ui'
+﻿export { usemodrinthServersConsole } from '@modrinth/ui'

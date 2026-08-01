@@ -1,4 +1,4 @@
-import { CopyIcon, MinecraftServerIcon, UpdatedIcon } from '@bbsmc/assets'
+import { CopyIcon, MinecraftServerIcon, UpdatedIcon } from '@modrinth/assets'
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
 
 import { NotificationToast } from '../../components/notifications'

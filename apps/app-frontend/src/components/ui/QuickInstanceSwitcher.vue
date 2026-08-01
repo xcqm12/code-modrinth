@@ -1,6 +1,6 @@
-<script setup>
-import { SpinnerIcon } from '@bbsmc/assets'
-import { Avatar, defineMessages, injectNotificationManager, useVIntl } from '@bbsmc/ui'
+﻿<script setup>
+import { SpinnerIcon } from '@modrinth/assets'
+import { Avatar, defineMessages, injectNotificationManager, useVIntl } from '@modrinth/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 import { convertFileSrc } from '@tauri-apps/api/core'
 import dayjs from 'dayjs'

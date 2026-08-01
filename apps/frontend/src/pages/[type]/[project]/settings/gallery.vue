@@ -288,7 +288,7 @@ import {
 	TrashIcon,
 	UploadIcon,
 	XIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	ButtonStyled,
 	ConfirmModal,
@@ -298,7 +298,7 @@ import {
 	NewModal as Modal,
 	StyledInput,
 	useFormatDateTime,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 
 import { isPermission } from '~/utils/permissions.ts'
 

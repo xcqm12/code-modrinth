@@ -17,8 +17,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
-import { injectmodrinthClient, provideUserProfile, UserProfilePageLayout } from '@bbsmc/ui'
+import type { Labrinth } from '@modrinth/api-client'
+import { injectmodrinthClient, provideUserProfile, UserProfilePageLayout } from '@modrinth/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 
 import AdPlaceholder from '~/components/ui/AdPlaceholder.vue'

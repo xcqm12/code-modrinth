@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex flex-col gap-4 pb-20 lg:pl-4 lg:pt-1.5">
 		<h2 class="m-0 text-xl font-semibold text-contrast md:text-2xl">
 			{{ formatMessage(messages.reportsTitle) }}
@@ -7,7 +7,7 @@
 	</div>
 </template>
 <script setup>
-import { defineMessages, useVIntl } from '@bbsmc/ui'
+import { defineMessages, useVIntl } from '@modrinth/ui'
 
 import ReportsList from '~/components/ui/report/ReportsList.vue'
 

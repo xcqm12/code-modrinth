@@ -1,5 +1,5 @@
-{
-	"name": "@bbsmc/app",
+﻿{
+	"name": "@modrinth/app",
 	"scripts": {
 		"tauri": "tauri",
 		"build": "tauri build",
@@ -14,8 +14,8 @@
 		"@tauri-apps/cli": "2.5.0"
 	},
 	"dependencies": {
-		"@bbsmc/app-frontend": "workspace:*",
-		"@bbsmc/app-lib": "workspace:*",
-		"@bbsmc/daedalus": "workspace:*"
+		"@modrinth/app-frontend": "workspace:*",
+		"@modrinth/app-lib": "workspace:*",
+		"@modrinth/daedalus": "workspace:*"
 	}
 }

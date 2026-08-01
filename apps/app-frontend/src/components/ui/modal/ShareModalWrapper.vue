@@ -1,6 +1,6 @@
-<!-- @deprecated Use ShareModal from @bbsmc/ui directly. Ads/noblur now handled by injectModalBehavior. -->
+﻿<!-- @deprecated Use ShareModal from @modrinth/ui directly. Ads/noblur now handled by injectModalBehavior. -->
 <script setup lang="ts">
-import { ShareModal } from '@bbsmc/ui'
+import { ShareModal } from '@modrinth/ui'
 import { ref } from 'vue'
 
 defineProps({

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex touch-manipulation flex-col gap-4 pb-20 lg:pl-4 lg:pt-1.5">
 		<div class="flex flex-col gap-2">
 			<div class="flex items-center justify-between gap-2">
@@ -36,8 +36,8 @@
 </template>
 
 <script setup lang="ts">
-import { RefreshCwIcon } from '@bbsmc/assets'
-import { ButtonStyled, injectProjectPageContext, useVIntl } from '@bbsmc/ui'
+import { RefreshCwIcon } from '@modrinth/assets'
+import { ButtonStyled, injectProjectPageContext, useVIntl } from '@modrinth/ui'
 
 import {
 	createAnalyticsDashboardContext,

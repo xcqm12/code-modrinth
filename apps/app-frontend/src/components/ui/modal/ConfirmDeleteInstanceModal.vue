@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<NewModal ref="modal" :header="formatMessage(messages.header)" fade="danger" max-width="500px">
 		<Admonition type="critical" :header="formatMessage(messages.admonitionHeader)">
 			{{ formatMessage(messages.admonitionBody) }}
@@ -24,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-import { TrashIcon, XIcon } from '@bbsmc/assets'
+import { TrashIcon, XIcon } from '@modrinth/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -32,7 +32,7 @@ import {
 	defineMessages,
 	NewModal,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { ref } from 'vue'
 
 const { formatMessage } = useVIntl()

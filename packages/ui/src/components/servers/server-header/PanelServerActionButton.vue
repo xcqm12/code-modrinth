@@ -67,7 +67,7 @@ import {
 	SlashIcon,
 	StopCircleIcon,
 	UpdatedIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import { computed } from 'vue'
 
 import { ButtonStyled, type JoinedButtonAction, JoinedButtons } from '#ui/components'

@@ -1,5 +1,5 @@
-import type { Archon } from '@bbsmc/api-client'
-import { PackageIcon } from '@bbsmc/assets'
+import type { Archon } from '@modrinth/api-client'
+import { PackageIcon } from '@modrinth/assets'
 import type { Component } from 'vue'
 
 import AddonEvent from './AddonEvent.vue'

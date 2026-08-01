@@ -12,7 +12,7 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
 	args: {
-		text: 'npm install @bbsmc/ui',
+		text: 'npm install @modrinth/ui',
 	},
 }
 

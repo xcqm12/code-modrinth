@@ -32,7 +32,7 @@ import {
 	NoMessagesIllustration,
 	NoSearchResultIllustration,
 	NoTasksIllustration,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import type { Component } from 'vue'
 import { computed } from 'vue'
 

@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import {
 	ClipboardCopyIcon,
 	EyeIcon,
@@ -8,7 +8,7 @@ import {
 	SearchIcon,
 	StopCircleIcon,
 	TrashIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Accordion,
 	DropdownSelect,
@@ -16,7 +16,7 @@ import {
 	injectNotificationManager,
 	StyledInput,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useStorage } from '@vueuse/core'
 import dayjs from 'dayjs'
 import { computed, ref } from 'vue'

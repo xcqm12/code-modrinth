@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<AccountProfileSettings
 		ref="profileSettings"
 		:patch-user="patchUser"
@@ -10,8 +10,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
-import { AccountProfileSettings, injectAuth } from '@bbsmc/ui'
+import type { Labrinth } from '@modrinth/api-client'
+import { AccountProfileSettings, injectAuth } from '@modrinth/ui'
 import { inject, onBeforeUnmount, onMounted, ref } from 'vue'
 
 import {

@@ -40,7 +40,7 @@
 </template>
 
 <script setup lang="ts">
-import { PackageOpenIcon } from '@bbsmc/assets'
+import { PackageOpenIcon } from '@modrinth/assets'
 import { computed } from 'vue'
 
 import Admonition from '#ui/components/base/Admonition.vue'

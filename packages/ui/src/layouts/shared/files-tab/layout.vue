@@ -213,7 +213,7 @@ import {
 	RightArrowIcon,
 	SaveIcon,
 	TrashIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import type { Component } from 'vue'
 import { computed, onMounted, onUnmounted, ref, shallowRef, watch } from 'vue'
 

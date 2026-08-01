@@ -1,4 +1,4 @@
-import { defineMessages, getLoaderMessage, type VIntlFormatters } from '@bbsmc/ui'
+﻿import { defineMessages, getLoaderMessage, type VIntlFormatters } from '@modrinth/ui'
 
 import type {
 	AnalyticsBreakdownPreset,

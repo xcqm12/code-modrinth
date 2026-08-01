@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="relative h-full">
 		<canvas
 			ref="canvasRef"
@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import { useCompactNumber, useVIntl } from '@bbsmc/ui'
+import { useCompactNumber, useVIntl } from '@modrinth/ui'
 import {
 	BarController,
 	BarElement,

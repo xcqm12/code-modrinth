@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div>
 		<h2 v-if="modPackData" class="m-0 mb-2 text-lg font-extrabold">
 			Modpack permissions ({{ Math.min(modPackData.length, currentIndex + 1) }} /
@@ -142,8 +142,8 @@
 </template>
 
 <script setup lang="ts">
-import { LeftArrowIcon, RightArrowIcon } from '@bbsmc/assets'
-import { ButtonStyled, StyledInput } from '@bbsmc/ui'
+import { LeftArrowIcon, RightArrowIcon } from '@modrinth/assets'
+import { ButtonStyled, StyledInput } from '@modrinth/ui'
 import type {
 	ModerationFlameModpackItem,
 	ModerationJudgements,
@@ -152,7 +152,7 @@ import type {
 	ModerationModpackResponse,
 	ModerationPermissionType,
 	ModerationUnknownModpackItem,
-} from '@bbsmc/utils'
+} from '@modrinth/utils'
 import { useLocalStorage, useSessionStorage } from '@vueuse/core'
 import { computed, onMounted, ref, watch } from 'vue'
 

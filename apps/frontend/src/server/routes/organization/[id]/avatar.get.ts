@@ -1,4 +1,4 @@
-import { type Labrinth, modrinthApiError } from '@bbsmc/api-client'
+import { type Labrinth, modrinthApiError } from '@modrinth/api-client'
 
 import { useServermodrinthClient } from '~/server/utils/api-client'
 

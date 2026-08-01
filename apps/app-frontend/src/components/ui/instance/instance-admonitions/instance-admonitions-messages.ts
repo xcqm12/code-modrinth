@@ -1,4 +1,4 @@
-import { defineMessages } from '@bbsmc/ui'
+﻿import { defineMessages } from '@modrinth/ui'
 
 export const instanceAdmonitionsMessages = defineMessages({
 	sharedInstanceChangesHeader: {

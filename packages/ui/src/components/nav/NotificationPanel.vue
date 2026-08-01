@@ -118,7 +118,7 @@ import {
 	IssuesIcon,
 	XCircleIcon,
 	XIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 
 import { useModalStack } from '#ui/composables/modal-stack.ts'

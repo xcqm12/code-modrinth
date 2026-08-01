@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex items-center flex-wrap gap-2">
 		<template v-if="loadingServerPing">
 			<ServerOnlinePlayers
@@ -41,14 +41,14 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	Avatar,
 	ServerOnlinePlayers,
 	ServerPing,
 	ServerRecentPlays,
 	ServerRegion,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 
 defineProps<{
 	loadingServerPing?: boolean

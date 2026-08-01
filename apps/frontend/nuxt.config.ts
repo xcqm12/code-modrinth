@@ -1,4 +1,4 @@
-import serverSidedVue from '@vitejs/plugin-vue'
+﻿import serverSidedVue from '@vitejs/plugin-vue'
 import fs from 'fs/promises'
 import { defineNuxtConfig } from 'nuxt/config'
 import { fileURLToPath } from 'url'
@@ -33,7 +33,7 @@ const STAGING_modrinth_URL = 'https://staging.bbsmc.org.cn'
 export default defineNuxtConfig({
 	srcDir: 'src/',
 	alias: {
-		'@bbsmc/api-client': API_CLIENT_SOURCE,
+		'@modrinth/api-client': API_CLIENT_SOURCE,
 	},
 	app: {
 		head: {
@@ -94,7 +94,7 @@ export default defineNuxtConfig({
 		cacheDir: '../../node_modules/.vite/apps/knossos',
 		resolve: {
 			alias: {
-				'@bbsmc/api-client': API_CLIENT_SOURCE,
+				'@modrinth/api-client': API_CLIENT_SOURCE,
 			},
 			dedupe: ['vue'],
 		},

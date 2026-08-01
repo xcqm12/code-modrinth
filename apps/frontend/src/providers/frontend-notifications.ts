@@ -1,8 +1,8 @@
-import {
+﻿import {
 	AbstractWebNotificationManager,
 	type NotificationPanelLocation,
 	type WebNotification,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 
 import { useState } from '#app'
 

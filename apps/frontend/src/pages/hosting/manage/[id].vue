@@ -36,7 +36,7 @@
 </template>
 
 <script setup lang="ts">
-import { injectmodrinthClient, ServersManageRootLayout } from '@bbsmc/ui'
+import { injectmodrinthClient, ServersManageRootLayout } from '@modrinth/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 
 import { reloadNuxtApp } from '#app'

@@ -1,6 +1,6 @@
-<script setup>
-import { CheckIcon } from '@bbsmc/assets'
-import { Badge, ButtonStyled } from '@bbsmc/ui'
+﻿<script setup>
+import { CheckIcon } from '@modrinth/assets'
+import { Badge, ButtonStyled } from '@modrinth/ui'
 import { computed, ref } from 'vue'
 
 import { SwapIcon } from '@/assets/icons/index.js'

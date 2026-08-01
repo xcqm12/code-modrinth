@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex flex-col gap-6">
 		<McVersionPicker v-model="draftVersion.game_versions" :game-versions="gameVersions" />
 		<div v-if="draftVersion.game_versions.length" class="space-y-1">
@@ -33,8 +33,8 @@
 </template>
 
 <script lang="ts" setup>
-import { XIcon } from '@bbsmc/assets'
-import { ButtonStyled, TagItem } from '@bbsmc/ui'
+import { XIcon } from '@modrinth/assets'
+import { ButtonStyled, TagItem } from '@modrinth/ui'
 
 import { injectManageVersionContext } from '~/providers/version/manage-version-modal'
 

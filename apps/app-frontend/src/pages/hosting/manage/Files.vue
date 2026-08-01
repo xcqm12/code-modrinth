@@ -1,9 +1,9 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import {
 	injectmodrinthClient,
 	injectmodrinthServerContext,
 	ServersManageFilesPage,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useQueryClient } from '@tanstack/vue-query'
 
 const client = injectmodrinthClient()

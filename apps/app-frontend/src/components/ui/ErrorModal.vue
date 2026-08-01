@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import {
 	CheckIcon,
 	CopyIcon,
@@ -8,8 +8,8 @@ import {
 	UpdatedIcon,
 	WrenchIcon,
 	XIcon,
-} from '@bbsmc/assets'
-import { ButtonStyled, Collapsible, injectNotificationManager } from '@bbsmc/ui'
+} from '@modrinth/assets'
+import { ButtonStyled, Collapsible, injectNotificationManager } from '@modrinth/ui'
 import { computed, ref } from 'vue'
 
 import { ChatIcon } from '@/assets/icons'

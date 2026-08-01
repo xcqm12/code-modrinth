@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<NewModal ref="modal" :on-hide="handleModalHide">
 		<template #title>
 			<span class="text-lg font-extrabold text-contrast">
@@ -131,7 +131,7 @@
 </template>
 
 <script setup lang="ts">
-import { CheckIcon, SaveIcon, SpinnerIcon, UploadIcon, XIcon } from '@bbsmc/assets'
+import { CheckIcon, SaveIcon, SpinnerIcon, UploadIcon, XIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	CapeButton,
@@ -144,8 +144,8 @@ import {
 	SkinPreviewRenderer,
 	useScrollIndicator,
 	useVIntl,
-} from '@bbsmc/ui'
-import { arrayBufferToBase64 } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import { arrayBufferToBase64 } from '@modrinth/utils'
 import { computed, nextTick, ref, useTemplateRef, watch } from 'vue'
 
 import {

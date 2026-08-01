@@ -1,5 +1,5 @@
-<script setup>
-import { defineMessages, injectNotificationManager, useVIntl } from '@bbsmc/ui'
+﻿<script setup>
+import { defineMessages, injectNotificationManager, useVIntl } from '@modrinth/ui'
 import { ref } from 'vue'
 
 import JavaSelector from '@/components/ui/JavaSelector.vue'

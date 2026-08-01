@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex w-full gap-2 max-sm:flex-wrap">
 		<Combobox
 			:model-value="currentGameVersion || undefined"
@@ -132,8 +132,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
-import { TriangleAlertIcon } from '@bbsmc/assets'
+import type { Labrinth } from '@modrinth/api-client'
+import { TriangleAlertIcon } from '@modrinth/assets'
 import {
 	type CdnDownloadReason,
 	Checkbox,
@@ -143,8 +143,8 @@ import {
 	getTagMessage,
 	useDebugLogger,
 	useVIntl,
-} from '@bbsmc/ui'
-import type { DisplayProjectType } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import type { DisplayProjectType } from '@modrinth/utils'
 import dayjs from 'dayjs'
 import { computed, ref, watch } from 'vue'
 

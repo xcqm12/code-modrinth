@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<NewModal ref="modal" :on-show="onShow" :on-hide="onHide" width="544px" actions-divider>
 		<template #title>
 			<template v-if="project">
@@ -91,8 +91,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
-import { DownloadIcon, SpinnerIcon } from '@bbsmc/assets'
+import type { Labrinth } from '@modrinth/api-client'
+import { DownloadIcon, SpinnerIcon } from '@modrinth/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -107,8 +107,8 @@ import {
 	truncatedTooltip,
 	useDebugLogger,
 	useVIntl,
-} from '@bbsmc/ui'
-import type { DisplayProjectType } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import type { DisplayProjectType } from '@modrinth/utils'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import dayjs from 'dayjs'
 import JSZip from 'jszip'

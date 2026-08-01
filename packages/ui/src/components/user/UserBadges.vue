@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	AlphaBadge,
 	BetaBadge,
@@ -21,15 +21,15 @@ import {
 	PlusBadge,
 	PrideBadge,
 	StaffBadge,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	defineMessage,
 	defineMessages,
 	type MessageDescriptor,
 	useFormatNumber,
 	useVIntl,
-} from '@bbsmc/ui'
-import { UserBadge as BadgeBitflag } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import { UserBadge as BadgeBitflag } from '@modrinth/utils'
 import { type Component, computed } from 'vue'
 
 import UserBadge from './UserBadge.vue'

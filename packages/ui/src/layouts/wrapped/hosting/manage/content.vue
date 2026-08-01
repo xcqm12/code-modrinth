@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { type Archon, type Labrinth, modrinthApiError } from '@bbsmc/api-client'
-import { ClipboardCopyIcon } from '@bbsmc/assets'
+import { type Archon, type Labrinth, modrinthApiError } from '@modrinth/api-client'
+import { ClipboardCopyIcon } from '@modrinth/assets'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/vue-query'
 import { useIntervalFn } from '@vueuse/core'
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'

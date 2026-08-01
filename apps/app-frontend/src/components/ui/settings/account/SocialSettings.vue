@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<AccountSocialSettings
 		:get-blocked-users="get_blocked_users"
 		:get-users="getUsers"
@@ -7,8 +7,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
-import { AccountSocialSettings, injectmodrinthClient } from '@bbsmc/ui'
+import type { Labrinth } from '@modrinth/api-client'
+import { AccountSocialSettings, injectmodrinthClient } from '@modrinth/ui'
 
 import { get_blocked_users, unblock_user } from '@/helpers/users'
 

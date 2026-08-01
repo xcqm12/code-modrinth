@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<NewModal ref="modal">
 		<template #title>
 			<span class="text-lg font-extrabold text-contrast">Batch credit</span>
@@ -129,7 +129,7 @@
 </template>
 
 <script setup lang="ts">
-import { CheckIcon, PlusIcon, XIcon } from '@bbsmc/assets'
+import { CheckIcon, PlusIcon, XIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	Combobox,
@@ -139,8 +139,8 @@ import {
 	StyledInput,
 	TagItem,
 	Toggle,
-} from '@bbsmc/ui'
-import { DEFAULT_CREDIT_EMAIL_MESSAGE } from '@bbsmc/utils/utils.ts'
+} from '@modrinth/ui'
+import { DEFAULT_CREDIT_EMAIL_MESSAGE } from '@modrinth/utils/utils.ts'
 import { computed, ref } from 'vue'
 
 import { useBaseFetch } from '#imports'

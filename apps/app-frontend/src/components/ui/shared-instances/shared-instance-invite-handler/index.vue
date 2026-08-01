@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<modrinthAccountRequiredModal ref="accountRequiredModal" :request-auth="requestAuth" />
 	<SharedInstanceInstallModal ref="installModal" />
 	<SharedInstanceAlreadyInstalledModal
@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-import { injectAuth } from '@bbsmc/ui'
+import { injectAuth } from '@modrinth/ui'
 import { nextTick, ref } from 'vue'
 
 import modrinthAccountRequiredModal from '@/components/ui/modal/modrinthAccountRequiredModal.vue'

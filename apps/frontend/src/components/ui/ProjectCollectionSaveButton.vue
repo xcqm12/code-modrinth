@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<ButtonStyled size="large" circular>
 		<PopoutMenu
 			v-if="authUser"
@@ -51,7 +51,7 @@
 </template>
 
 <script setup lang="ts">
-import { BookmarkIcon, PlusIcon } from '@bbsmc/assets'
+import { BookmarkIcon, PlusIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	Checkbox,
@@ -59,7 +59,7 @@ import {
 	PopoutMenu,
 	StyledInput,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, ref } from 'vue'
 import type { RouteLocationRaw } from 'vue-router'
 

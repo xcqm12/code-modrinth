@@ -79,16 +79,16 @@
 							<span v-tooltip="formatDateTime(batch.created_at)">
 								Created {{ formatRelativeTime(batch.created_at) }}
 							</span>
-							<span>â€?/span>
+							<span>Â·</span>
 							<span v-tooltip="formatDateTime(batch.scheduled_at)">
 								Scheduled {{ formatRelativeTime(batch.scheduled_at) }}
 							</span>
 							<template v-if="batch.provision_options?.region">
-								<span>â€?/span>
+								<span>Â·</span>
 								<span>Region: {{ batch.provision_options.region }}</span>
 							</template>
 							<template v-if="batch.provision_options?.node_tags?.length">
-								<span>â€?/span>
+								<span>Â·</span>
 								<span>Tags: {{ batch.provision_options.node_tags.join(', ') }}</span>
 							</template>
 						</div>

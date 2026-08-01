@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="chips">
 		<button
 			v-for="item in items"
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { CheckIcon } from '@bbsmc/assets'
+import { CheckIcon } from '@modrinth/assets'
 
 export default {
 	components: {

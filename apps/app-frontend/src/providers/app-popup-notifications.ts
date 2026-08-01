@@ -1,4 +1,4 @@
-import { AbstractPopupNotificationManager, type PopupNotification } from '@bbsmc/ui'
+﻿import { AbstractPopupNotificationManager, type PopupNotification } from '@modrinth/ui'
 import { type Ref, ref } from 'vue'
 
 export class AppPopupNotificationManager extends AbstractPopupNotificationManager {

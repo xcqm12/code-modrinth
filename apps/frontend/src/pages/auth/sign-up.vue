@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<SignUpView
 		v-if="!isCreateAccountStep"
 		v-model:email="email"
@@ -28,7 +28,7 @@ import {
 	injectmodrinthClient,
 	injectNotificationManager,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 import { useStorage } from '@vueuse/core'
 import type { LocationQueryValue } from 'vue-router'

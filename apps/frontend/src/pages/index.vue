@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div>
 		<div class="landing-hero">
 			<modrinthIcon class="modrinth-icon text-brand" />
@@ -441,7 +441,7 @@ import {
 	LogInIcon,
 	modrinthIcon,
 	SearchIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -454,7 +454,7 @@ import {
 	StyledInput,
 	useRelativeTime,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { ref } from 'vue'
 
 import ATLauncherLogo from '~/assets/images/external/atlauncher.svg?component'

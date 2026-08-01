@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="page">
 		<div class="flex flex-col gap-2">
 			<RadialHeader class="top-box mb-2 flex flex-col items-center justify-center" color="orange">
@@ -283,7 +283,7 @@ import {
 	SpinnerIcon,
 	VersionIcon,
 	XCircleIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	AutoLink,
 	Avatar,
@@ -300,8 +300,8 @@ import {
 	RadioButtons,
 	StyledInput,
 	useVIntl,
-} from '@bbsmc/ui'
-import type { Project, Report, User, Version } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import type { Project, Report, User, Version } from '@modrinth/utils'
 
 import { useImageUpload } from '~/composables/image-upload.ts'
 

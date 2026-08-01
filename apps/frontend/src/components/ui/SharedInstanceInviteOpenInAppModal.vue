@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div v-if="open" class="fixed inset-0 z-[100] flex items-center justify-center">
 		<div
 			:class="visible ? 'opacity-100' : 'opacity-0'"
@@ -126,8 +126,8 @@
 </template>
 
 <script setup lang="ts">
-import { CheckIcon, DownloadIcon, XIcon } from '@bbsmc/assets'
-import { Avatar, ButtonStyled, commonMessages, defineMessages, useVIntl } from '@bbsmc/ui'
+import { CheckIcon, DownloadIcon, XIcon } from '@modrinth/assets'
+import { Avatar, ButtonStyled, commonMessages, defineMessages, useVIntl } from '@modrinth/ui'
 import { computed, nextTick, onUnmounted, ref } from 'vue'
 
 const { formatMessage } = useVIntl()

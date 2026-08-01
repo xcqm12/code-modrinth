@@ -1,5 +1,5 @@
-<script setup>
-import { XIcon } from '@bbsmc/assets'
+﻿<script setup>
+import { XIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -9,7 +9,7 @@ import {
 	NewModal,
 	StyledInput,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { save } from '@tauri-apps/plugin-dialog'
 import { readDir, stat } from '@tauri-apps/plugin-fs'
 import { ref } from 'vue'

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex flex-col gap-4">
 		<div class="flex flex-col gap-4">
 			<div class="flex items-center gap-2">
@@ -144,7 +144,7 @@ import {
 	UploadIcon,
 	UserPlusIcon,
 	XIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	AutoLink,
 	Avatar,
@@ -158,7 +158,7 @@ import {
 	useFormatDateTime,
 	useRelativeTime,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, ref, watch } from 'vue'
 
 import {

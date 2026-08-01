@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import { XIcon } from '@bbsmc/assets'
+﻿<script setup lang="ts">
+import { XIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -7,7 +7,7 @@ import {
 	IntlFormatted,
 	PagewideBanner,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 
 const { formatMessage } = useVIntl()
 const flags = useFeatureFlags()

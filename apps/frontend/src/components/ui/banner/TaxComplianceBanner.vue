@@ -1,12 +1,12 @@
-<script setup lang="ts">
-import { FileTextIcon } from '@bbsmc/assets'
+﻿<script setup lang="ts">
+import { FileTextIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	defineMessages,
 	PagewideBanner,
 	useFormatMoney,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { computed } from 'vue'
 
 import { getTaxThreshold } from '@/providers/creator-withdraw.ts'

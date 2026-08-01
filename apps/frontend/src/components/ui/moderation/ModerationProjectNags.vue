@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div v-if="visibleNags.length > 0" class="universal-card my-4">
 		<div class="flex max-w-full flex-wrap items-center gap-x-6 gap-y-4">
 			<div class="flex flex-auto flex-wrap items-center gap-x-6 gap-y-4">
@@ -82,7 +82,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	AsteriskIcon,
 	ChevronRightIcon,
@@ -91,10 +91,10 @@ import {
 	ScaleIcon,
 	SendIcon,
 	TriangleAlertIcon,
-} from '@bbsmc/assets'
-import type { Nag, NagContext, NagStatus } from '@bbsmc/moderation'
-import { nags } from '@bbsmc/moderation'
-import { ButtonStyled, defineMessages, type MessageDescriptor, useVIntl } from '@bbsmc/ui'
+} from '@modrinth/assets'
+import type { Nag, NagContext, NagStatus } from '@modrinth/moderation'
+import { nags } from '@modrinth/moderation'
+import { ButtonStyled, defineMessages, type MessageDescriptor, useVIntl } from '@modrinth/ui'
 import type { Component } from 'vue'
 import { computed } from 'vue'
 

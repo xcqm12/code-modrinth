@@ -1,6 +1,6 @@
-<script setup lang="ts">
-import { BookTextIcon, XIcon } from '@bbsmc/assets'
-import { ButtonStyled, commonMessages, PagewideBanner, useVIntl } from '@bbsmc/ui'
+﻿<script setup lang="ts">
+import { BookTextIcon, XIcon } from '@modrinth/assets'
+import { ButtonStyled, commonMessages, PagewideBanner, useVIntl } from '@modrinth/ui'
 
 const flags = useFeatureFlags()
 const { formatMessage } = useVIntl()

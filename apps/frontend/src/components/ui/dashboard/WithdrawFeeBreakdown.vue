@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<Transition
 		enter-active-class="transition-all duration-300 ease-out"
 		enter-from-class="opacity-0 max-h-0"
@@ -56,8 +56,8 @@
 </template>
 
 <script setup lang="ts">
-import { LoaderCircleIcon } from '@bbsmc/assets'
-import { defineMessages, useFormatMoney, useVIntl } from '@bbsmc/ui'
+import { LoaderCircleIcon } from '@modrinth/assets'
+import { defineMessages, useFormatMoney, useVIntl } from '@modrinth/ui'
 import { computed } from 'vue'
 
 const props = withDefaults(

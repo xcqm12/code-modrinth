@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
+﻿<script setup lang="ts">
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	BlendIcon,
 	ListFilterIcon,
@@ -7,7 +7,7 @@ import {
 	SearchIcon,
 	SortAscIcon,
 	SortDescIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Combobox,
 	type ComboboxOption,
@@ -18,7 +18,7 @@ import {
 	StyledInput,
 	Toggle,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useInfiniteQuery, useQueryClient } from '@tanstack/vue-query'
 import Fuse from 'fuse.js'
 import { nextTick, reactive } from 'vue'

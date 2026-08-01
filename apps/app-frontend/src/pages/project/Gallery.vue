@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="gallery">
 		<Card v-for="(image, index) in filteredGallery" :key="image.url" class="gallery-item">
 			<a @click="expandImage(image, index)">
@@ -89,8 +89,8 @@ import {
 	LeftArrowIcon,
 	RightArrowIcon,
 	XIcon,
-} from '@bbsmc/assets'
-import { ButtonStyled, Card, useFormatDateTime } from '@bbsmc/ui'
+} from '@modrinth/assets'
+import { ButtonStyled, Card, useFormatDateTime } from '@modrinth/ui'
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 
 import { hide_ads_window, show_ads_window } from '@/helpers/ads.js'

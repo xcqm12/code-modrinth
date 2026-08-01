@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type Archon, type Labrinth, pingWebSocketUrl } from '@bbsmc/api-client'
+import { type Archon, type Labrinth, pingWebSocketUrl } from '@modrinth/api-client'
 import {
 	CheckCircleIcon,
 	ChevronRightIcon,
@@ -7,7 +7,7 @@ import {
 	RightArrowIcon,
 	SpinnerIcon,
 	XIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import { useQueryClient } from '@tanstack/vue-query'
 import type Stripe from 'stripe'
 import { computed, nextTick, onBeforeUnmount, ref, toRef, useTemplateRef, watch } from 'vue'

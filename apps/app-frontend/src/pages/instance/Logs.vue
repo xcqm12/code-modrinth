@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex flex-col gap-4 h-full">
 		<ConsolePageLayout />
 	</div>
@@ -10,7 +10,7 @@ import {
 	injectmodrinthClient,
 	injectNotificationManager,
 	provideConsoleManager,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, onUnmounted, ref, shallowRef, triggerRef, watch, watchEffect } from 'vue'
 import { useRoute } from 'vue-router'
 

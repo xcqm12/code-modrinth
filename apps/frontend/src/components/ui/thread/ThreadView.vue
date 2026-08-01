@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div>
 		<div v-if="flags.developerMode" class="m-4 font-bold text-heading">
 			Thread ID:
@@ -75,8 +75,8 @@
 </template>
 
 <script setup lang="ts" generic="T">
-import { ChevronDownIcon, MessageIcon, ReplyIcon, SendIcon } from '@bbsmc/assets'
-import type { QuickReply } from '@bbsmc/moderation'
+import { ChevronDownIcon, MessageIcon, ReplyIcon, SendIcon } from '@modrinth/assets'
+import type { QuickReply } from '@modrinth/moderation'
 import {
 	ButtonStyled,
 	CopyCode,
@@ -84,8 +84,8 @@ import {
 	MarkdownEditor,
 	OverflowMenu,
 	type OverflowMenuOption,
-} from '@bbsmc/ui'
-import type { Thread, User } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import type { Thread, User } from '@modrinth/utils'
 import dayjs from 'dayjs'
 
 import { useImageUpload } from '~/composables/image-upload.ts'

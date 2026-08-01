@@ -8,7 +8,7 @@ import {
 	RedditIcon,
 	ShareIcon,
 	TwitterIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import QrcodeVue from 'qrcode.vue'
 import { computed, nextTick, ref } from 'vue'
 

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<NewModal ref="modal" :header="formatMessage(messages.header)" fade="warning" max-width="500px">
 		<p class="m-0 text-secondary">
 			<IntlFormatted :message-id="messages.body" :values="{ instanceName }">
@@ -34,7 +34,7 @@
 </template>
 
 <script setup lang="ts">
-import { DownloadIcon, RightArrowIcon, XIcon } from '@bbsmc/assets'
+import { DownloadIcon, RightArrowIcon, XIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -42,7 +42,7 @@ import {
 	IntlFormatted,
 	NewModal,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { ref } from 'vue'
 
 const { formatMessage } = useVIntl()

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<nuxt-link :to="link" class="thread-summary" :class="{ raised: raised }">
 		<div class="thread-title-row">
 			<span v-if="report" class="thread-title">Report thread</span>
@@ -24,7 +24,7 @@
 </template>
 
 <script setup>
-import { ChevronRightIcon } from '@bbsmc/assets'
+import { ChevronRightIcon } from '@modrinth/assets'
 
 import ThreadMessage from '~/components/ui/thread/ThreadMessage.vue'
 

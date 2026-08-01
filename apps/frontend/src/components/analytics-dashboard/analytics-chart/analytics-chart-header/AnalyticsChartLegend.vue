@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="relative">
 		<Transition
 			enter-active-class="transition-all duration-200 ease-out"
@@ -106,8 +106,8 @@
 </template>
 
 <script setup lang="ts">
-import { InfoIcon } from '@bbsmc/assets'
-import { useScrollIndicator, useVIntl } from '@bbsmc/ui'
+import { InfoIcon } from '@modrinth/assets'
+import { useScrollIndicator, useVIntl } from '@modrinth/ui'
 import { Dropdown } from 'floating-vue'
 
 import { analyticsChartMessages } from '../../analytics-messages'

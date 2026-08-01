@@ -284,8 +284,8 @@
 </template>
 
 <script setup>
-import { SaveIcon, TriangleAlertIcon } from '@bbsmc/assets'
-import { commonLinkDomains, isCommonUrl, isDiscordUrl, isLinkShortener } from '@bbsmc/moderation'
+import { SaveIcon, TriangleAlertIcon } from '@modrinth/assets'
+import { commonLinkDomains, isCommonUrl, isDiscordUrl, isLinkShortener } from '@modrinth/moderation'
 import {
 	ButtonStyled,
 	DropdownSelect,
@@ -293,7 +293,7 @@ import {
 	injectNotificationManager,
 	injectProjectPageContext,
 	StyledInput,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 
 const tags = useGeneratedState()
 

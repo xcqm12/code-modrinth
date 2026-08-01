@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex flex-col gap-6">
 		<DataLossWarningBanner />
 		<div class="flex flex-col gap-2">
@@ -64,7 +64,7 @@
 </template>
 
 <script setup lang="ts">
-import { getLoaderIcon } from '@bbsmc/assets'
+import { getLoaderIcon } from '@modrinth/assets'
 import {
 	Combobox,
 	FormattedTag,
@@ -73,7 +73,7 @@ import {
 	injectProjectPageContext,
 	ProjectCombobox,
 	TagItem,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 import { computed, ref, watch } from 'vue'
 

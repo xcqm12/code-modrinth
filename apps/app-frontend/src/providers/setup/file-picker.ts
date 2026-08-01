@@ -1,4 +1,4 @@
-import { provideFilePicker } from '@bbsmc/ui'
+﻿import { provideFilePicker } from '@modrinth/ui'
 import { convertFileSrc, invoke } from '@tauri-apps/api/core'
 import { open } from '@tauri-apps/plugin-dialog'
 import { readFile } from '@tauri-apps/plugin-fs'

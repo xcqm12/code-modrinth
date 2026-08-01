@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<template v-if="moderation">
 		<Chips v-model="reasonFilter" :items="reasons" />
 		<p v-if="reports.length === MAX_REPORTS" class="text-red">
@@ -24,7 +24,7 @@
 	<p v-if="filteredReports.length === 0">You don't have any active reports.</p>
 </template>
 <script setup>
-import { Chips, injectmodrinthClient } from '@bbsmc/ui'
+import { Chips, injectmodrinthClient } from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 import { computed, ref } from 'vue'
 

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="wrapper relative mb-3 flex w-full justify-center rounded-2xl">
 		<AutoLink
 			:to="currentAd.link"
@@ -26,7 +26,7 @@
 	</div>
 </template>
 <script setup>
-import { AutoLink } from '@bbsmc/ui'
+import { AutoLink } from '@modrinth/ui'
 
 const flags = useFeatureFlags()
 

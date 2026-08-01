@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div>
 		<OrganizationCreateModal ref="createOrgModal" />
 		<section class="universal-card">
@@ -52,8 +52,8 @@
 </template>
 
 <script setup>
-import { PlusIcon, UsersIcon } from '@bbsmc/assets'
-import { Avatar, ButtonStyled, defineMessages, injectmodrinthClient, useVIntl } from '@bbsmc/ui'
+import { PlusIcon, UsersIcon } from '@modrinth/assets'
+import { Avatar, ButtonStyled, defineMessages, injectmodrinthClient, useVIntl } from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 
 import OrganizationCreateModal from '~/components/ui/create/OrganizationCreateModal.vue'

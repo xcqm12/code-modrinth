@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<ReadyTransition :pending="loading">
 		<ContentPageLayout>
 			<template #modals>
@@ -89,8 +89,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
-import { ClipboardCopyIcon, FolderOpenIcon } from '@bbsmc/assets'
+import type { Labrinth } from '@modrinth/api-client'
+import { ClipboardCopyIcon, FolderOpenIcon } from '@modrinth/assets'
 import {
 	type BulkOperationStatus,
 	commonMessages,
@@ -114,7 +114,7 @@ import {
 	useDebugLogger,
 	useVIntl,
 	versionChangesGameVersion,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { convertFileSrc } from '@tauri-apps/api/core'
 import { getCurrentWebview } from '@tauri-apps/api/webview'

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex flex-col gap-2.5">
 		<div class="flex items-center justify-between">
 			<span class="font-semibold text-contrast">{{
@@ -33,8 +33,8 @@
 </template>
 
 <script setup lang="ts">
-import { EyeIcon } from '@bbsmc/assets'
-import { Avatar, ButtonStyled, defineMessages, formatLoader, useVIntl } from '@bbsmc/ui'
+import { EyeIcon } from '@modrinth/assets'
+import { Avatar, ButtonStyled, defineMessages, formatLoader, useVIntl } from '@modrinth/ui'
 import { computed, toRefs } from 'vue'
 
 import type { SharedInstanceInstallPreview } from '@/helpers/install'

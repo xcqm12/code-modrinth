@@ -88,16 +88,16 @@
 	</div>
 </template>
 <script setup>
-import { DownloadIcon, SpinnerIcon } from '@bbsmc/assets'
+import { DownloadIcon, SpinnerIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	injectmodrinthClient,
 	injectProjectPageContext,
 	Pagination,
 	useFormatDateTime,
-} from '@bbsmc/ui'
-import VersionFilterControl from '@bbsmc/ui/src/components/version/VersionFilterControl.vue'
-import { renderHighlightedString } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import VersionFilterControl from '@modrinth/ui/src/components/version/VersionFilterControl.vue'
+import { renderHighlightedString } from '@modrinth/utils'
 import { useQuery } from '@tanstack/vue-query'
 import { onMounted, watch } from 'vue'
 

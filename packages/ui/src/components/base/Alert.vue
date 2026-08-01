@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-import { CheckCircleIcon, InfoIcon, IssuesIcon, SpinnerIcon, XCircleIcon } from '@bbsmc/assets'
+import { CheckCircleIcon, InfoIcon, IssuesIcon, SpinnerIcon, XCircleIcon } from '@modrinth/assets'
 import { computed } from 'vue'
 
 const props = defineProps<{

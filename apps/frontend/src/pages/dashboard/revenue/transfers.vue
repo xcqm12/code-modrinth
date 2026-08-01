@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="mb-20 flex flex-col gap-4 lg:pl-8">
 		<div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
 			<span class="text-xl font-semibold text-contrast md:text-2xl">{{
@@ -88,7 +88,7 @@ import {
 	DownloadIcon,
 	GenericListIcon,
 	SpinnerIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	ButtonStyled,
 	Combobox,
@@ -98,8 +98,8 @@ import {
 	useFormatDateTime,
 	useFormatMoney,
 	useVIntl,
-} from '@bbsmc/ui'
-import { capitalizeString } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import { capitalizeString } from '@modrinth/utils'
 import { useQuery } from '@tanstack/vue-query'
 import dayjs from 'dayjs'
 

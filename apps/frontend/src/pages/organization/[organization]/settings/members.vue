@@ -242,7 +242,7 @@ import {
 	TransferIcon,
 	UserPlusIcon,
 	UserXIcon as UserRemoveIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Avatar,
 	Badge,
@@ -250,7 +250,7 @@ import {
 	Checkbox,
 	injectNotificationManager,
 	StyledInput,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { nextTick, ref } from 'vue'
 
 import ConfirmTransferOrgModal from '~/components/ui/ConfirmTransferOrgModal.vue'

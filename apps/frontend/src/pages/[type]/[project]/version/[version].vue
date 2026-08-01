@@ -479,7 +479,7 @@
 	</div>
 </template>
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	BoxIcon,
 	ChevronLeftIcon,
@@ -498,7 +498,7 @@ import {
 	SettingsIcon,
 	TrashIcon,
 	XIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -520,8 +520,8 @@ import {
 	useFormatDateTime,
 	useVIntl,
 	VersionPage,
-} from '@bbsmc/ui'
-import { isStaff } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import { isStaff } from '@modrinth/utils'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/vue-query'
 import { onServerPrefetch } from 'vue'
 

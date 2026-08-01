@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex flex-col">
 		<router-link
 			class="mb-4 flex w-fit items-center gap-2 rounded-lg px-2 py-0.5 pl-0 text-link"
@@ -77,7 +77,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	CheckIcon,
 	ChevronLeftIcon,
@@ -86,7 +86,7 @@ import {
 	MoreVerticalIcon,
 	ReportIcon,
 	VersionIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -95,7 +95,7 @@ import {
 	OverflowMenu,
 	useVIntl,
 	VersionPage,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, ref, shallowRef, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 

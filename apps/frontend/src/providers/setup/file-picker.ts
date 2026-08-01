@@ -1,4 +1,4 @@
-import { provideFilePicker } from '@bbsmc/ui'
+﻿import { provideFilePicker } from '@modrinth/ui'
 
 function pickFile(accept: string): Promise<{ file: File; previewUrl: string } | null> {
 	return new Promise((resolve) => {

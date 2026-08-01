@@ -1,8 +1,8 @@
-import {
+﻿import {
 	injectNotificationManager,
 	type InvitePlayersSearchUser,
 	type InvitePlayersUser,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, type Ref } from 'vue'
 
 import { useFriends } from '@/composables/use-friends'

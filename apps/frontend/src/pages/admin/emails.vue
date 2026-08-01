@@ -1,6 +1,6 @@
-<script setup lang="ts">
-import { CopyIcon, LibraryIcon, PlayIcon, SearchIcon } from '@bbsmc/assets'
-import { ButtonStyled, NewModal, StyledInput } from '@bbsmc/ui'
+﻿<script setup lang="ts">
+import { CopyIcon, LibraryIcon, PlayIcon, SearchIcon } from '@modrinth/assets'
+import { ButtonStyled, NewModal, StyledInput } from '@modrinth/ui'
 import { computed, onMounted, ref } from 'vue'
 
 import emails from '~/templates/emails'

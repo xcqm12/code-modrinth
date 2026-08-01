@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import { MoreVerticalIcon, TrashIcon, UserIcon, XIcon } from '@bbsmc/assets'
+﻿<script setup lang="ts">
+import { MoreVerticalIcon, TrashIcon, UserIcon, XIcon } from '@modrinth/assets'
 import {
 	Accordion,
 	Avatar,
@@ -7,7 +7,7 @@ import {
 	defineMessages,
 	OverflowMenu,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useTemplateRef } from 'vue'
 import { useRouter } from 'vue-router'
 

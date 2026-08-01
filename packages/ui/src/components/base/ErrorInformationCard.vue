@@ -76,7 +76,7 @@
 </template>
 
 <script setup lang="ts">
-import { CheckIcon, CopyIcon } from '@bbsmc/assets'
+import { CheckIcon, CopyIcon } from '@modrinth/assets'
 import type { Component } from 'vue'
 import { ref } from 'vue'
 

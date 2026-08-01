@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div
 		class="universal-card flex w-full max-w-[27rem] flex-col gap-6 border border-solid border-surface-5 !p-6"
 	>
@@ -94,7 +94,7 @@
 	</div>
 </template>
 <script setup lang="ts">
-import { KeyIcon, MailIcon, SendIcon } from '@bbsmc/assets'
+import { KeyIcon, MailIcon, SendIcon } from '@modrinth/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -104,7 +104,7 @@ import {
 	injectNotificationManager,
 	StyledInput,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 import type { LocationQueryValue } from 'vue-router'
 

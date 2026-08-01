@@ -1,9 +1,9 @@
 {
-	"extends": "@bbsmc/tooling-config/typescript/vue.json",
+	"extends": "@modrinth/tooling-config/typescript/vue.json",
 	"compilerOptions": {
 		"paths": {
 			"#ui/*": ["./src/*"],
-			"@bbsmc/api-client": ["../api-client/src/index.ts"]
+			"@modrinth/api-client": ["../api-client/src/index.ts"]
 		}
 	}
 }

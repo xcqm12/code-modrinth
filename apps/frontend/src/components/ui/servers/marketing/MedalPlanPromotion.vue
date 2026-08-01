@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div
 		id="medal"
 		class="medal-promotion flex w-full flex-col items-start gap-4 rounded-xl px-4 py-4 shadow-xl md:flex-row md:items-center md:justify-between md:gap-0 md:px-8 md:py-6"
@@ -32,14 +32,14 @@
 </template>
 
 <script lang="ts" setup>
-import { ExternalIcon } from '@bbsmc/assets'
+import { ExternalIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	defineMessages,
 	IntlFormatted,
 	MedalBackgroundImage,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 
 import MedalIcon from '~/assets/images/illustrations/medal_icon.svg?component'
 

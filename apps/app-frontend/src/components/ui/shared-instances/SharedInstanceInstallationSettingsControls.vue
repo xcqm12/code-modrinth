@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div v-if="canUnpublish" class="flex flex-col gap-2.5">
 		<span class="text-lg font-semibold text-contrast">{{ formatMessage(messages.title) }}</span>
 		<div>
@@ -85,7 +85,7 @@
 </template>
 
 <script setup lang="ts">
-import { SpinnerIcon, UnlinkIcon, XIcon } from '@bbsmc/assets'
+import { SpinnerIcon, UnlinkIcon, XIcon } from '@modrinth/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -94,7 +94,7 @@ import {
 	InlineBackupCreator,
 	NewModal,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { ref } from 'vue'
 
 const props = withDefaults(

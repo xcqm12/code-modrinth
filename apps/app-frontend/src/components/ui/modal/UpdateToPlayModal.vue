@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<ContentDiffModal
 		ref="diffModal"
 		:header="formatMessage(messages.updateToPlay)"
@@ -18,15 +18,15 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
-import { DownloadIcon } from '@bbsmc/assets'
+import type { Labrinth } from '@modrinth/api-client'
+import { DownloadIcon } from '@modrinth/assets'
 import {
 	commonMessages,
 	type ContentDiffItem,
 	ContentDiffModal,
 	defineMessages,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import dayjs from 'dayjs'
 import { computed, ref } from 'vue'
 

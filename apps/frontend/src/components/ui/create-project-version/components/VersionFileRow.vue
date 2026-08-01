@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div
 		class="flex items-center justify-between gap-2 rounded-xl bg-button-bg px-4 py-2 text-button-text"
 	>
@@ -65,11 +65,11 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
-import { ArrowLeftRightIcon, CheckIcon, XIcon } from '@bbsmc/assets'
-import { ButtonStyled, Combobox, injectProjectPageContext } from '@bbsmc/ui'
-import type { ComboboxOption } from '@bbsmc/ui/src/components/base/Combobox.vue'
-import { acceptFileFromProjectType } from '@bbsmc/utils'
+import type { Labrinth } from '@modrinth/api-client'
+import { ArrowLeftRightIcon, CheckIcon, XIcon } from '@modrinth/assets'
+import { ButtonStyled, Combobox, injectProjectPageContext } from '@modrinth/ui'
+import type { ComboboxOption } from '@modrinth/ui/src/components/base/Combobox.vue'
+import { acceptFileFromProjectType } from '@modrinth/utils'
 
 import {
 	fileTypeLabels,

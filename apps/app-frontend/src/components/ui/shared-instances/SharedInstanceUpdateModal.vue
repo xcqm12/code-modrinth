@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<ContentDiffModal
 		ref="modal"
 		:header="formatMessage(messages.updateToPlay)"
@@ -19,14 +19,14 @@
 </template>
 
 <script setup lang="ts">
-import { DownloadIcon } from '@bbsmc/assets'
+import { DownloadIcon } from '@modrinth/assets'
 import {
 	commonMessages,
 	type ContentDiffItem,
 	ContentDiffModal,
 	defineMessages,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, ref } from 'vue'
 
 import {

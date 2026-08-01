@@ -219,7 +219,7 @@ import {
 	SaveIcon,
 	TrashIcon,
 	UploadIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { computed, nextTick, ref } from 'vue'
 

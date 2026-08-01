@@ -1,4 +1,4 @@
-export type ShareMethod = 'direct' | 'link'
+﻿export type ShareMethod = 'direct' | 'link'
 export type MethodFilter = ShareMethod | 'all'
 export type ShareTableColumn = 'username' | 'lastPlayed' | 'joined' | 'method' | 'actions'
 
@@ -19,4 +19,4 @@ export const methodLabels: Record<ShareMethod, string> = {
 	link: 'Share link',
 }
 
-export { normalizeInviteKey } from '@bbsmc/ui'
+export { normalizeInviteKey } from '@modrinth/ui'

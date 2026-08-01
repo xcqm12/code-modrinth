@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<StackedAdmonitions v-bind="$attrs" :items="stackItems" class="w-full">
 		<template #item="{ item, dismissible }">
 			<InstanceAdmonitionsSharedInstanceStale
@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import { StackedAdmonitions } from '@bbsmc/ui'
+import { StackedAdmonitions } from '@modrinth/ui'
 import { computed, ref, watch } from 'vue'
 
 import type { SharedInstanceUnavailableReason } from '@/helpers/install'

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div
 		class="flex items-center justify-between gap-2 rounded-xl bg-button-bg px-4 py-2 text-button-text"
 	>
@@ -18,9 +18,9 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
-import { FileIcon, FilePlusIcon } from '@bbsmc/assets'
-import { TagItem } from '@bbsmc/ui'
+import type { Labrinth } from '@modrinth/api-client'
+import { FileIcon, FilePlusIcon } from '@modrinth/assets'
+import { TagItem } from '@modrinth/ui'
 
 import { fileTypeLabels } from '~/providers/version/manage-version-modal'
 

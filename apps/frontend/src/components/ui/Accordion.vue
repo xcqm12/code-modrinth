@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div>
 		<ButtonStyled v-if="!!slots.title" :type="type">
 			<button class="!w-full" @click="() => (isOpen ? close() : open())">
@@ -19,8 +19,8 @@
 </template>
 
 <script setup lang="ts">
-import { DropdownIcon } from '@bbsmc/assets'
-import { ButtonStyled } from '@bbsmc/ui'
+import { DropdownIcon } from '@modrinth/assets'
+import { ButtonStyled } from '@modrinth/ui'
 
 const props = withDefaults(
 	defineProps<{

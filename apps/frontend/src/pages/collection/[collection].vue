@@ -397,7 +397,7 @@ import {
 	UpdatedIcon,
 	UploadIcon,
 	XIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -428,8 +428,8 @@ import {
 	useRelativeTime,
 	useSavable,
 	useVIntl,
-} from '@bbsmc/ui'
-import { isAdmin, renderString } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import { isAdmin, renderString } from '@modrinth/utils'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import dayjs from 'dayjs'
 import { onServerPrefetch } from 'vue'

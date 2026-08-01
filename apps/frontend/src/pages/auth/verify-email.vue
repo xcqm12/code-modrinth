@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div
 		class="universal-card flex w-full max-w-[27rem] flex-col gap-6 border border-solid border-surface-5 !p-6"
 	>
@@ -86,7 +86,7 @@
 	</div>
 </template>
 <script setup lang="ts">
-import { RightArrowIcon, SettingsIcon } from '@bbsmc/assets'
+import { RightArrowIcon, SettingsIcon } from '@modrinth/assets'
 import {
 	Admonition,
 	ButtonStyled,
@@ -94,7 +94,7 @@ import {
 	defineMessages,
 	injectNotificationManager,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import type { LocationQueryValue } from 'vue-router'
 
 interface ApiErrorShape {

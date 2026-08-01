@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import {
 	DownloadIcon,
 	GameIcon,
@@ -6,8 +6,8 @@ import {
 	SpinnerIcon,
 	StopCircleIcon,
 	TimerIcon,
-} from '@bbsmc/assets'
-import { Avatar, ButtonStyled, injectNotificationManager, useRelativeTime } from '@bbsmc/ui'
+} from '@modrinth/assets'
+import { Avatar, ButtonStyled, injectNotificationManager, useRelativeTime } from '@modrinth/ui'
 import { convertFileSrc } from '@tauri-apps/api/core'
 import dayjs from 'dayjs'
 import { computed, onMounted, onUnmounted, ref } from 'vue'

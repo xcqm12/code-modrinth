@@ -1,4 +1,4 @@
-import type { Labrinth } from '@bbsmc/api-client'
+﻿import type { Labrinth } from '@modrinth/api-client'
 
 export default defineNuxtPlugin(async () => {
 	try {

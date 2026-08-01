@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
-import { SearchIcon } from '@bbsmc/assets'
+import type { Labrinth } from '@modrinth/api-client'
+import { SearchIcon } from '@modrinth/assets'
 import { computed, ref, toValue } from 'vue'
 
 import ButtonStyled from '#ui/components/base/ButtonStyled.vue'

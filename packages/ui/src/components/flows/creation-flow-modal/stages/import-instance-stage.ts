@@ -1,4 +1,4 @@
-import { DownloadIcon, LeftArrowIcon } from '@bbsmc/assets'
+import { DownloadIcon, LeftArrowIcon } from '@modrinth/assets'
 import { markRaw } from 'vue'
 
 import { commonMessages } from '#ui/utils/common-messages'

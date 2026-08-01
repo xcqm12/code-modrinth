@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="markdown-body">
 		<h1>Rewards Program Information</h1>
 		<p><em>Last modified: Feb 20, 2025</em></p>
@@ -167,7 +167,7 @@
 </template>
 
 <script lang="ts" setup>
-import { DatePicker, injectmodrinthClient, useFormatDateTime, useFormatMoney } from '@bbsmc/ui'
+import { DatePicker, injectmodrinthClient, useFormatDateTime, useFormatMoney } from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 import dayjs from 'dayjs'
 import { computed, ref } from 'vue'

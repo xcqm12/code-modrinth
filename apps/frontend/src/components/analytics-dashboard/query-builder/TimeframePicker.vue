@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<BaseTimeFramePicker
 		v-model:mode="selectedTimeframeMode"
 		v-model:preset="selectedTimeframe"
@@ -27,7 +27,7 @@ import {
 	TimeFramePicker as BaseTimeFramePicker,
 	type TimeFramePickerSelection,
 	type TimeFramePreset,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 
 import {
 	ANALYTICS_START_DATE_INPUT_VALUE,

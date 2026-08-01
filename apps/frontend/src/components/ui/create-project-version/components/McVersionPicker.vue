@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="space-y-2.5">
 		<div v-if="!noHeader" class="flex items-center justify-between">
 			<span class="font-semibold text-contrast">
@@ -66,9 +66,9 @@
 </template>
 
 <script lang="ts" setup>
-import type { Labrinth } from '@bbsmc/api-client'
-import { SearchIcon } from '@bbsmc/assets'
-import { ButtonStyled, Chips, StyledInput } from '@bbsmc/ui'
+import type { Labrinth } from '@modrinth/api-client'
+import { SearchIcon } from '@modrinth/assets'
+import { ButtonStyled, Chips, StyledInput } from '@modrinth/ui'
 import { useMagicKeys } from '@vueuse/core'
 import { computed, nextTick, onMounted, ref } from 'vue'
 

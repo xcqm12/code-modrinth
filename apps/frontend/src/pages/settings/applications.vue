@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="universal-card">
 		<ConfirmModal
 			ref="modal_confirm"
@@ -241,7 +241,7 @@
 	</div>
 </template>
 <script setup>
-import { EditIcon, PlusIcon, SaveIcon, TrashIcon, UploadIcon, XIcon } from '@bbsmc/assets'
+import { EditIcon, PlusIcon, SaveIcon, TrashIcon, UploadIcon, XIcon } from '@modrinth/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -259,7 +259,7 @@ import {
 	StyledInput,
 	useFormatDateTime,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 
 import Modal from '~/components/ui/Modal.vue'

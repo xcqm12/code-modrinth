@@ -29,7 +29,7 @@
 </template>
 
 <script setup lang="ts">
-import { CollapseIcon, ExpandIcon } from '@bbsmc/assets'
+import { CollapseIcon, ExpandIcon } from '@modrinth/assets'
 
 import ButtonStyled from './ButtonStyled.vue'
 

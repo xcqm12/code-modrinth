@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="w-full px-2 pt-2">
 		<UserProfilePageLayout
 			:user-id="userId"
@@ -13,8 +13,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
-import { provideUserProfile, UserProfilePageLayout } from '@bbsmc/ui'
+import type { Labrinth } from '@modrinth/api-client'
+import { provideUserProfile, UserProfilePageLayout } from '@modrinth/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { computed, inject, ref, watch } from 'vue'
 import { onBeforeRouteUpdate, useRoute } from 'vue-router'

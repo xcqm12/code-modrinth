@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div
 		class="flex h-11 items-center justify-between gap-2 rounded-xl bg-button-bg px-4 py-1 text-button-text"
 	>
@@ -35,9 +35,9 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
-import { XIcon } from '@bbsmc/assets'
-import { Avatar, ButtonStyled, TagItem } from '@bbsmc/ui'
+import type { Labrinth } from '@modrinth/api-client'
+import { XIcon } from '@modrinth/assets'
+import { Avatar, ButtonStyled, TagItem } from '@modrinth/ui'
 
 const emit = defineEmits<{
 	(e: 'fileTypeChange', type: string): void

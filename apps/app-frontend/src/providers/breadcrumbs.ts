@@ -1,4 +1,4 @@
-import { createContext } from '@bbsmc/ui'
+﻿import { createContext } from '@modrinth/ui'
 import {
 	type Component,
 	computed,

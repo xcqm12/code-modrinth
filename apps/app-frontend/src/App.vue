@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import {
 	AuthFeature,
 	modrinthApiError,
@@ -7,7 +7,7 @@ import {
 	PanelVersionFeature,
 	TaurimodrinthClient,
 	VerboseLoggingFeature,
-} from '@bbsmc/api-client'
+} from '@modrinth/api-client'
 import {
 	ArrowBigUpDashIcon,
 	ChevronLeftIcon,
@@ -25,7 +25,7 @@ import {
 	SettingsIcon,
 	ShirtIcon,
 	UserIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Admonition,
 	Avatar,
@@ -52,8 +52,8 @@ import {
 	useFormatBytes,
 	useHostingIntercom,
 	useVIntl,
-} from '@bbsmc/ui'
-import { renderString } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import { renderString } from '@modrinth/utils'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { getVersion } from '@tauri-apps/api/app'
 import { invoke } from '@tauri-apps/api/core'

@@ -93,9 +93,9 @@
 	</div>
 </template>
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
-import { BookTextIcon, CalendarIcon, HeartIcon, ScaleIcon, VersionIcon } from '@bbsmc/assets'
-import { capitalizeString, renderString } from '@bbsmc/utils'
+import type { Labrinth } from '@modrinth/api-client'
+import { BookTextIcon, CalendarIcon, HeartIcon, ScaleIcon, VersionIcon } from '@modrinth/assets'
+import { capitalizeString, renderString } from '@modrinth/utils'
 import { useQuery } from '@tanstack/vue-query'
 import { computed, ref, useTemplateRef } from 'vue'
 

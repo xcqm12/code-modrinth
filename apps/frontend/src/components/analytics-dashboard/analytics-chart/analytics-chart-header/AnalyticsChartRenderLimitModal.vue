@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<NewModal
 		ref="modal"
 		:header="formatMessage(analyticsChartMessages.renderLimitHeader, { count: tableProjectCount })"
@@ -28,7 +28,7 @@
 </template>
 
 <script setup lang="ts">
-import { ButtonStyled, NewModal, useVIntl } from '@bbsmc/ui'
+import { ButtonStyled, NewModal, useVIntl } from '@modrinth/ui'
 
 import { analyticsChartMessages } from '../../analytics-messages'
 

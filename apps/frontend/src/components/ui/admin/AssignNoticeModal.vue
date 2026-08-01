@@ -1,6 +1,6 @@
-<script setup lang="ts">
-import type { Archon } from '@bbsmc/api-client'
-import { PlusIcon, XIcon } from '@bbsmc/assets'
+﻿<script setup lang="ts">
+import type { Archon } from '@modrinth/api-client'
+import { PlusIcon, XIcon } from '@modrinth/assets'
 import {
 	Accordion,
 	ButtonStyled,
@@ -10,7 +10,7 @@ import {
 	ServerNotice,
 	StyledInput,
 	TagItem,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { ref } from 'vue'
 
 const { addNotification } = injectNotificationManager()

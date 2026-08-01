@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex w-full flex-col gap-3">
 		<Admonition
 			v-if="showMonetizationBanner"
@@ -38,8 +38,8 @@
 </template>
 
 <script setup lang="ts">
-import { RightArrowIcon } from '@bbsmc/assets'
-import { Admonition, ButtonStyled, useFormatNumber, useVIntl } from '@bbsmc/ui'
+import { RightArrowIcon } from '@modrinth/assets'
+import { Admonition, ButtonStyled, useFormatNumber, useVIntl } from '@modrinth/ui'
 import { useLocalStorage } from '@vueuse/core'
 
 import {

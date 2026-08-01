@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div
 		class="message px-4 py-3"
 		:class="{
@@ -159,8 +159,8 @@ import {
 	MoreHorizontalIcon,
 	ScaleIcon,
 	TrashIcon,
-} from '@bbsmc/assets'
-import { moderationSettings } from '@bbsmc/moderation'
+} from '@modrinth/assets'
+import { moderationSettings } from '@modrinth/moderation'
 import {
 	AutoLink,
 	Avatar,
@@ -169,8 +169,8 @@ import {
 	OverflowMenu,
 	useFormatDateTime,
 	useRelativeTime,
-} from '@bbsmc/ui'
-import { renderString } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import { renderString } from '@modrinth/utils'
 
 import { isStaff } from '~/helpers/users.js'
 

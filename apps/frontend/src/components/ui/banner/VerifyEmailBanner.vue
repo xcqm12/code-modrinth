@@ -1,12 +1,12 @@
-<script setup lang="ts">
-import { SettingsIcon } from '@bbsmc/assets'
+﻿<script setup lang="ts">
+import { SettingsIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	defineMessages,
 	injectNotificationManager,
 	PagewideBanner,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { FetchError } from 'ofetch'
 
 const { addNotification } = injectNotificationManager()

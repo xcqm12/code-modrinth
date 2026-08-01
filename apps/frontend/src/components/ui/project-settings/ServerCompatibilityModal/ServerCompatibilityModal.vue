@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<MultiStageModal
 		ref="modal"
 		:stages="ctx.stageConfigs"
@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import { injectProjectPageContext, MultiStageModal } from '@bbsmc/ui'
+import { injectProjectPageContext, MultiStageModal } from '@modrinth/ui'
 import type { ComponentExposed } from 'vue-component-type-helpers'
 
 import {

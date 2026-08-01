@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex w-full max-w-full flex-col gap-3">
 		<div class="grid gap-2.5">
 			<span class="font-semibold text-contrast">Project</span>
@@ -36,7 +36,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Combobox } from '@bbsmc/ui'
+import { Combobox } from '@modrinth/ui'
 import { computed } from 'vue'
 
 import DependencySelect from '~/components/ui/create-project-version/components/DependencySelect.vue'

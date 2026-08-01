@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import { PlusIcon, TrashIcon, XIcon } from '@bbsmc/assets'
+import { PlusIcon, TrashIcon, XIcon } from '@modrinth/assets'
 import { ref } from 'vue'
 
 import ButtonStyled from '#ui/components/base/ButtonStyled.vue'

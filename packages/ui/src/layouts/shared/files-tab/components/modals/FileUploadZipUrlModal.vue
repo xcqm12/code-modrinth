@@ -102,7 +102,7 @@ import {
 	SearchIcon,
 	SpinnerIcon,
 	XIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import { computed, nextTick, ref } from 'vue'
 
 import ButtonStyled from '#ui/components/base/ButtonStyled.vue'

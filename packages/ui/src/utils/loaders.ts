@@ -1,4 +1,4 @@
-import type { Archon } from '@bbsmc/api-client'
+import type { Archon } from '@modrinth/api-client'
 
 export type ServerLoader = Archon.Servers.v0.Loader | 'Bukkit'
 

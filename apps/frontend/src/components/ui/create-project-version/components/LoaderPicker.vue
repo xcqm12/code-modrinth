@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex flex-col gap-2.5">
 		<span class="font-semibold text-contrast">Loaders</span>
 
@@ -39,9 +39,9 @@
 </template>
 
 <script lang="ts" setup>
-import type { Labrinth } from '@bbsmc/api-client'
-import { getLoaderIcon } from '@bbsmc/assets'
-import { Chips, FormattedTag, TagItem } from '@bbsmc/ui'
+import type { Labrinth } from '@modrinth/api-client'
+import { getLoaderIcon } from '@modrinth/assets'
+import { Chips, FormattedTag, TagItem } from '@modrinth/ui'
 
 const selectedLoaders = defineModel<string[]>({ default: [] })
 

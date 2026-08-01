@@ -1,4 +1,4 @@
-import vue from '@vitejs/plugin-vue'
+﻿import vue from '@vitejs/plugin-vue'
 import { existsSync, readFileSync } from 'fs'
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
@@ -39,7 +39,7 @@ export default defineConfig({
 	resolve: {
 		alias: [
 			{
-				find: '@bbsmc/api-client',
+				find: '@modrinth/api-client',
 				replacement: apiClientSource,
 			},
 			{

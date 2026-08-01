@@ -1,11 +1,11 @@
-<template>
+﻿<template>
 	<Card>
 		<ProjectPageDescription :description="project.body" />
 	</Card>
 </template>
 
 <script setup>
-import { Card, ProjectPageDescription } from '@bbsmc/ui'
+import { Card, ProjectPageDescription } from '@modrinth/ui'
 
 defineProps({
 	project: {

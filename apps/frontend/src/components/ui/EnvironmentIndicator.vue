@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<span v-if="typeOnly" class="environment">
 		<InfoIcon aria-hidden="true" />
 		A {{ type }}
@@ -49,7 +49,7 @@
 </template>
 
 <script setup>
-import { ClientIcon, GlobeIcon, InfoIcon, ServerIcon } from '@bbsmc/assets'
+import { ClientIcon, GlobeIcon, InfoIcon, ServerIcon } from '@modrinth/assets'
 
 defineProps({
 	type: {

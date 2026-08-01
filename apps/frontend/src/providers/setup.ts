@@ -1,4 +1,4 @@
-import { provideNotificationManager } from '@bbsmc/ui'
+﻿import { provideNotificationManager } from '@modrinth/ui'
 
 import { FrontendNotificationManager } from './frontend-notifications'
 import { setupAuthProvider } from './setup/auth'

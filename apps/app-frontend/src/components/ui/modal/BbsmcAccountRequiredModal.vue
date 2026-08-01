@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<NewModal
 		ref="modal"
 		:header="formatMessage(authenticating ? messages.signingInHeader : messages.header)"
@@ -107,8 +107,8 @@
 </template>
 
 <script setup lang="ts">
-import { LogInIcon, RefreshCwIcon, SpinnerIcon, UserPlusIcon, XIcon } from '@bbsmc/assets'
-import { ButtonStyled, defineMessages, IntlFormatted, NewModal, useVIntl } from '@bbsmc/ui'
+import { LogInIcon, RefreshCwIcon, SpinnerIcon, UserPlusIcon, XIcon } from '@modrinth/assets'
+import { ButtonStyled, defineMessages, IntlFormatted, NewModal, useVIntl } from '@modrinth/ui'
 import { openUrl } from '@tauri-apps/plugin-opener'
 import { ref } from 'vue'
 

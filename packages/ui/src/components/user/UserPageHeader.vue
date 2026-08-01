@@ -78,7 +78,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	AffiliateIcon,
 	BadgeCheckIcon,
@@ -93,7 +93,7 @@ import {
 	InfoIcon,
 	MoreVerticalIcon,
 	ReportIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import { computed } from 'vue'
 
 import AutoLink from '#ui/components/base/AutoLink.vue'

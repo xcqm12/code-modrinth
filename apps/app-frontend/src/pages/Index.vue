@@ -1,7 +1,7 @@
-<script setup lang="ts">
-import { HomeIcon } from '@bbsmc/assets'
-import { injectNotificationManager } from '@bbsmc/ui'
-import type { SearchResult } from '@bbsmc/utils'
+﻿<script setup lang="ts">
+import { HomeIcon } from '@modrinth/assets'
+import { injectNotificationManager } from '@modrinth/ui'
+import type { SearchResult } from '@modrinth/utils'
 import dayjs from 'dayjs'
 import { computed, onUnmounted, ref } from 'vue'
 

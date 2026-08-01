@@ -65,7 +65,7 @@
 	</div>
 </template>
 <script setup lang="ts">
-import { ChevronLeftIcon, ChevronRightIcon, EllipsisVerticalIcon } from '@bbsmc/assets'
+import { ChevronLeftIcon, ChevronRightIcon, EllipsisVerticalIcon } from '@modrinth/assets'
 import { computed } from 'vue'
 
 import ButtonStyled from './ButtonStyled.vue'

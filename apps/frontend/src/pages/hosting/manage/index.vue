@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import { ServersManagePageIndex } from '@bbsmc/ui'
+﻿<script setup lang="ts">
+import { ServersManagePageIndex } from '@modrinth/ui'
 
 import { useGeneratedState } from '~/composables/generated'
 

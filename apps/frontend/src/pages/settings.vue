@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div>
 		<NormalPage sidebar="left">
 			<template #header>
@@ -116,15 +116,15 @@ import {
 	ShieldIcon,
 	ToggleRightIcon,
 	UserIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	commonMessages,
 	commonSettingsMessages,
 	defineMessages,
 	NormalPage,
 	useVIntl,
-} from '@bbsmc/ui'
-import { isStaff } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import { isStaff } from '@modrinth/utils'
 
 import NavStack from '~/components/ui/NavStack.vue'
 

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<NewModal ref="editModal" header="Edit external project">
 		<form class="flex flex-col gap-2" @submit.prevent="saveExternalProjectEdit">
 			<label class="font-semibold text-contrast" for="edit-form-title">Title</label>
@@ -128,8 +128,8 @@
 	</div>
 </template>
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
-import { BinaryIcon, EditIcon, HashIcon, SearchIcon } from '@bbsmc/assets'
+import type { Labrinth } from '@modrinth/api-client'
+import { BinaryIcon, EditIcon, HashIcon, SearchIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	Combobox,
@@ -142,7 +142,7 @@ import {
 	NewModal,
 	StyledInput,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 
 const { formatMessage } = useVIntl()
 

@@ -1,4 +1,4 @@
-import { provideAppBackup } from '@bbsmc/ui'
+﻿import { provideAppBackup } from '@modrinth/ui'
 import { type MaybeRefOrGetter, toValue } from 'vue'
 
 import { install_duplicate_instance, installJobInstanceId } from '@/helpers/install'

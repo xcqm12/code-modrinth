@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="pointer-events-none fixed inset-0 z-[-1]">
 		<div id="fixed-background-teleport" class="relative"></div>
 	</div>
@@ -771,7 +771,7 @@ import {
 	UserIcon,
 	UserSearchIcon,
 	XIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -787,9 +787,9 @@ import {
 	providePageContext,
 	useHostingIntercom,
 	useVIntl,
-} from '@bbsmc/ui'
-import TeleportOverflowMenu from '@bbsmc/ui/src/components/base/TeleportOverflowMenu.vue'
-import { isAdmin, isStaff, UserBadge } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import TeleportOverflowMenu from '@modrinth/ui/src/components/base/TeleportOverflowMenu.vue'
+import { isAdmin, isStaff, UserBadge } from '@modrinth/utils'
 import { useQuery } from '@tanstack/vue-query'
 
 import { getTaxThreshold } from '@/providers/creator-withdraw.ts'
@@ -1368,7 +1368,7 @@ const { cycle: changeTheme } = useTheme()
 
 <style lang="scss">
 @import '~/assets/styles/global.scss';
-// @import '@bbsmc/assets';
+// @import '@modrinth/assets';
 
 .layout {
 	min-height: 100vh;

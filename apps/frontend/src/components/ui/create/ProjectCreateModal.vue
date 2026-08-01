@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<NewModal
 		ref="modal"
 		:header="
@@ -129,8 +129,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
-import { OrganizationIcon, PlusIcon, XIcon } from '@bbsmc/assets'
+import type { Labrinth } from '@modrinth/api-client'
+import { OrganizationIcon, PlusIcon, XIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	Chips,
@@ -143,7 +143,7 @@ import {
 	NewModal,
 	StyledInput,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, defineAsyncComponent, h } from 'vue'
 
 import { generateUrlSlug } from '~/utils/slugs'

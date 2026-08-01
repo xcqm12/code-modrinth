@@ -68,8 +68,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Archon } from '@bbsmc/api-client'
-import { IssuesIcon, PlusIcon, XIcon } from '@bbsmc/assets'
+import type { Archon } from '@modrinth/api-client'
+import { IssuesIcon, PlusIcon, XIcon } from '@modrinth/assets'
 import { useMutation, useQueryClient } from '@tanstack/vue-query'
 import { computed, nextTick, ref } from 'vue'
 

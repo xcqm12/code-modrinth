@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div
 		class="h-full w-full pt-6"
 		:class="isContainedServerRoute ? 'box-border min-h-0 overflow-hidden' : ''"
@@ -47,15 +47,15 @@
 </template>
 
 <script setup lang="ts">
-import type { Archon, Labrinth } from '@bbsmc/api-client'
-import { ServerStackIcon } from '@bbsmc/assets'
+import type { Archon, Labrinth } from '@modrinth/api-client'
+import { ServerStackIcon } from '@modrinth/assets'
 import {
 	commonMessages,
 	injectAuth,
 	injectmodrinthClient,
 	ServersManageRootLayout,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { openUrl } from '@tauri-apps/plugin-opener'
 import { computed, ref, watch } from 'vue'

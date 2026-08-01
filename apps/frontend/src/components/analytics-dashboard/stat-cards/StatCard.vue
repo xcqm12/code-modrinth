@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<button
 		v-tooltip="disabled ? formatMessage(analyticsStatCardMessages.unavailableTooltip) : ''"
 		type="button"
@@ -107,8 +107,8 @@ import {
 	TimerIcon,
 	TrendingDownIcon,
 	TrendingUpIcon,
-} from '@bbsmc/assets'
-import { useVIntl } from '@bbsmc/ui'
+} from '@modrinth/assets'
+import { useVIntl } from '@modrinth/ui'
 
 import { analyticsStatCardMessages } from '../analytics-messages'
 

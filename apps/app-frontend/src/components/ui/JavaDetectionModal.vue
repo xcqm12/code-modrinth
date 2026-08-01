@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<ModalWrapper
 		ref="detectJavaModal"
 		:header="formatMessage(messages.title)"
@@ -49,14 +49,14 @@
 	</ModalWrapper>
 </template>
 <script setup>
-import { CheckIcon, PlusIcon, XIcon } from '@bbsmc/assets'
+import { CheckIcon, PlusIcon, XIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	defineMessages,
 	injectNotificationManager,
 	Table,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, ref } from 'vue'
 
 import ModalWrapper from '@/components/ui/modal/ModalWrapper.vue'

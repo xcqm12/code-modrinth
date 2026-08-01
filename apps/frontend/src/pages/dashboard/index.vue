@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div>
 		<section class="universal-card dashboard-header">
 			<Avatar :src="auth.user.avatar_url" size="md" circle :alt="auth.user.username" />
@@ -62,7 +62,7 @@
 	</div>
 </template>
 <script setup>
-import { ChevronRightIcon, HistoryIcon } from '@bbsmc/assets'
+import { ChevronRightIcon, HistoryIcon } from '@modrinth/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -70,7 +70,7 @@ import {
 	defineMessages,
 	injectmodrinthClient,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 
 import NotificationItem from '~/components/ui/NotificationItem.vue'

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex min-w-0 flex-col">
 		<div
 			class="z-10 grid h-11 grid-cols-[minmax(0,1fr)_min-content] items-center gap-1 text-primary"
@@ -97,7 +97,7 @@
 </template>
 
 <script setup lang="ts">
-import { DownloadIcon, PackageIcon } from '@bbsmc/assets'
+import { DownloadIcon, PackageIcon } from '@modrinth/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -106,7 +106,7 @@ import {
 	truncatedTooltip,
 	useFormatBytes,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { type Component, computed, ref } from 'vue'
 
 defineOptions({

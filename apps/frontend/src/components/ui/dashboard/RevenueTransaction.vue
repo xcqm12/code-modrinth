@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex flex-row gap-2 md:gap-3">
 		<div
 			class="flex h-10 min-h-10 w-10 min-w-10 items-center justify-center rounded-full border-[1px] border-solid border-button-bg bg-bg-raised !p-0 shadow-md md:h-12 md:min-h-12 md:w-12 md:min-w-12"
@@ -71,7 +71,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	ArrowDownIcon,
 	ArrowUpIcon,
@@ -79,7 +79,7 @@ import {
 	PayPalColorIcon,
 	VenmoColorIcon,
 	XIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	BulletDivider,
 	ButtonStyled,
@@ -88,8 +88,8 @@ import {
 	useFormatDateTime,
 	useFormatMoney,
 	useVIntl,
-} from '@bbsmc/ui'
-import { capitalizeString } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import { capitalizeString } from '@modrinth/utils'
 import { Tooltip } from 'floating-vue'
 
 import { useGeneratedState } from '~/composables/generated'

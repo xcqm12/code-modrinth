@@ -1,5 +1,5 @@
-/**
- * @deprecated Use `@bbsmc/api-client` via `injectmodrinthClient()` instead.
+﻿/**
+ * @deprecated Use `@modrinth/api-client` via `injectmodrinthClient()` instead.
  * This composable is kept for legacy code that hasn't been migrated yet.
  */
 

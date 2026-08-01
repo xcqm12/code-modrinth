@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div>
 		<section class="universal-card">
 			<Breadcrumbs
@@ -69,7 +69,7 @@
 	</div>
 </template>
 <script setup>
-import { CheckCheckIcon, HistoryIcon } from '@bbsmc/assets'
+import { CheckCheckIcon, HistoryIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	Chips,
@@ -78,8 +78,8 @@ import {
 	injectmodrinthClient,
 	Pagination,
 	useVIntl,
-} from '@bbsmc/ui'
-import { formatProjectType } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import { formatProjectType } from '@modrinth/utils'
 import { useQuery } from '@tanstack/vue-query'
 
 import Breadcrumbs from '~/components/ui/Breadcrumbs.vue'

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<Menu
 		theme="analytics-controls-menu"
 		placement="bottom-end"
@@ -159,8 +159,8 @@ import {
 	InfoIcon,
 	Settings2Icon,
 	TagCategoryFlagIcon,
-} from '@bbsmc/assets'
-import { Toggle, useVIntl } from '@bbsmc/ui'
+} from '@modrinth/assets'
+import { Toggle, useVIntl } from '@modrinth/ui'
 import { Menu } from 'floating-vue'
 
 import { analyticsChartMessages, analyticsMessages } from '../../analytics-messages'

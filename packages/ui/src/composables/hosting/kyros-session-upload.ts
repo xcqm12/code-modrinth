@@ -3,7 +3,7 @@ import type {
 	Kyros,
 	UploadProgress,
 	UploadState,
-} from '@bbsmc/api-client'
+} from '@modrinth/api-client'
 import type { Ref } from 'vue'
 
 import type { CancelUploadHandler } from '#ui/providers/server-context'

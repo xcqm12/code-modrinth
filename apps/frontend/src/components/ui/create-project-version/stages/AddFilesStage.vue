@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<Tabs
 		v-if="editingVersion"
 		value="add-files"
@@ -104,8 +104,8 @@ import {
 	Tabs,
 	type TabsTab,
 	useVIntl,
-} from '@bbsmc/ui'
-import { acceptFileFromProjectType } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import { acceptFileFromProjectType } from '@modrinth/utils'
 
 import { injectManageVersionContext } from '~/providers/version/manage-version-modal'
 

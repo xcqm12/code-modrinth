@@ -1,10 +1,10 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import {
 	defineMessages,
 	injectNotificationManager,
 	useVIntl,
 	type WebNotification,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { onBeforeUnmount, onMounted } from 'vue'
 
 type ConsentAction = 'accept' | 'reject' | 'manage'

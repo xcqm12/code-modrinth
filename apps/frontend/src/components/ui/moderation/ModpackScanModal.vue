@@ -1,12 +1,12 @@
-<script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
+﻿<script setup lang="ts">
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	FolderSearchIcon,
 	RotateCounterClockwiseIcon,
 	SpinnerIcon,
 	StarIcon,
 	TrashIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	ButtonStyled,
 	Combobox,
@@ -19,8 +19,8 @@ import {
 	Table,
 	type TableColumn,
 	useVIntl,
-} from '@bbsmc/ui'
-import { renderString } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import { renderString } from '@modrinth/utils'
 import { useQueryClient } from '@tanstack/vue-query'
 import { computed, ref, useTemplateRef } from 'vue'
 

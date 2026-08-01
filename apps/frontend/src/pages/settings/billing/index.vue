@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<ServersUpgradeModalWrapper ref="upgradeModal" />
 	<ResubscribeModal ref="pyroResubscribeModal" @resubscribe="handlePyroResubscribeConfirm" />
 	<section class="universal-card">
@@ -691,7 +691,7 @@ import {
 	TrashIcon,
 	UpdatedIcon,
 	XIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	AddPaymentMethodModal,
 	ButtonStyled,
@@ -711,8 +711,8 @@ import {
 	useFormatPrice,
 	useServerBackupDownload,
 	useVIntl,
-} from '@bbsmc/ui'
-import { calculateSavings, getCurrency } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import { calculateSavings, getCurrency } from '@modrinth/utils'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { useIntervalFn } from '@vueuse/core'
 import { computed, ref, watch } from 'vue'

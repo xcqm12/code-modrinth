@@ -103,7 +103,7 @@
 </template>
 
 <script setup lang="ts">
-import { BanIcon } from '@bbsmc/assets'
+import { BanIcon } from '@modrinth/assets'
 import { computed, nextTick, ref, useTemplateRef } from 'vue'
 
 import { defineMessages, useVIntl } from '../../composables/i18n'

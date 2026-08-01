@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div
 		v-if="accounts.length === 0"
 		class="flex flex-col gap-3 bg-button-bg border border-solid border-surface-5 rounded-xl p-3 mt-2"
@@ -91,7 +91,7 @@ import {
 	RadioButtonIcon,
 	SpinnerIcon,
 	TrashIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Accordion,
 	Avatar,
@@ -99,7 +99,7 @@ import {
 	defineMessages,
 	injectNotificationManager,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import type { Ref } from 'vue'
 import { computed, onUnmounted, ref } from 'vue'
 

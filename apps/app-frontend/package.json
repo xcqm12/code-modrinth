@@ -1,5 +1,5 @@
-{
-	"name": "@bbsmc/app-frontend",
+﻿{
+	"name": "@modrinth/app-frontend",
 	"private": true,
 	"version": "1.0.0-local",
 	"type": "module",
@@ -14,10 +14,10 @@
 		"test": "vue-tsc --noEmit"
 	},
 	"dependencies": {
-		"@bbsmc/api-client": "workspace:^",
-		"@bbsmc/assets": "workspace:*",
-		"@bbsmc/ui": "workspace:*",
-		"@bbsmc/utils": "workspace:*",
+		"@modrinth/api-client": "workspace:^",
+		"@modrinth/assets": "workspace:*",
+		"@modrinth/ui": "workspace:*",
+		"@modrinth/utils": "workspace:*",
 		"@sentry/vue": "^8.27.0",
 		"@sfirew/minecraft-motd-parser": "^1.1.6",
 		"@tanstack/vue-query": "5.90.7",
@@ -50,7 +50,7 @@
 	"devDependencies": {
 		"@eslint/compat": "^1.1.1",
 		"@formatjs/cli": "^6.2.12",
-		"@bbsmc/tooling-config": "workspace:*",
+		"@modrinth/tooling-config": "workspace:*",
 		"@nuxt/eslint-config": "^0.5.6",
 		"@taijased/vue-render-tracker": "^1.0.7",
 		"@vitejs/plugin-vue": "^6.0.3",

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<ContentDiffModal
 		ref="publishReviewModal"
 		:header="formatMessage(messages.header)"
@@ -41,7 +41,7 @@
 </template>
 
 <script setup lang="ts">
-import { FileCogIcon, UploadIcon } from '@bbsmc/assets'
+import { FileCogIcon, UploadIcon } from '@modrinth/assets'
 import {
 	Accordion,
 	type ContentDiffItem,
@@ -50,7 +50,7 @@ import {
 	FileTreeSelect,
 	type FileTreeSelectItem,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { computed, ref } from 'vue'
 
 import {

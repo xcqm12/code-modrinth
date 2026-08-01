@@ -22,7 +22,7 @@ importers:
       '@formatjs/icu-messageformat-parser':
         specifier: ^2.11.4
         version: 2.11.4
-      '@bbsmc/tooling-config':
+      '@modrinth/tooling-config':
         specifier: workspace:*
         version: link:packages/tooling-config
       '@tailwindcss/container-queries':
@@ -64,13 +64,13 @@ importers:
 
   apps/app:
     dependencies:
-      '@bbsmc/app-frontend':
+      '@modrinth/app-frontend':
         specifier: workspace:*
         version: link:../app-frontend
-      '@bbsmc/app-lib':
+      '@modrinth/app-lib':
         specifier: workspace:*
         version: link:../../packages/app-lib
-      '@bbsmc/daedalus':
+      '@modrinth/daedalus':
         specifier: workspace:*
         version: link:../../packages/daedalus
     devDependencies:
@@ -80,16 +80,16 @@ importers:
 
   apps/app-frontend:
     dependencies:
-      '@bbsmc/api-client':
+      '@modrinth/api-client':
         specifier: workspace:^
         version: link:../../packages/api-client
-      '@bbsmc/assets':
+      '@modrinth/assets':
         specifier: workspace:*
         version: link:../../packages/assets
-      '@bbsmc/ui':
+      '@modrinth/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-      '@bbsmc/utils':
+      '@modrinth/utils':
         specifier: workspace:*
         version: link:../../packages/utils
       '@sentry/vue':
@@ -183,7 +183,7 @@ importers:
       '@formatjs/cli':
         specifier: ^6.2.12
         version: 6.12.2(@vue/compiler-core@3.5.27)(vue@3.5.27(typescript@5.9.3))
-      '@bbsmc/tooling-config':
+      '@modrinth/tooling-config':
         specifier: workspace:*
         version: link:../../packages/tooling-config
       '@nuxt/eslint-config':
@@ -233,7 +233,7 @@ importers:
 
   apps/daedalus_client:
     dependencies:
-      '@bbsmc/daedalus':
+      '@modrinth/daedalus':
         specifier: workspace:*
         version: link:../../packages/daedalus
 
@@ -245,7 +245,7 @@ importers:
       '@astrojs/starlight':
         specifier: ^0.32.2
         version: 0.32.6(astro@5.17.1(@types/node@24.12.2)(db0@0.3.4)(ioredis@5.9.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.57.1)(sass@1.97.3)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))
-      '@bbsmc/assets':
+      '@modrinth/assets':
         specifier: workspace:*
         version: link:../../packages/assets
       astro:
@@ -269,22 +269,22 @@ importers:
       '@ltd/j-toml':
         specifier: ^1.38.0
         version: 1.38.0
-      '@bbsmc/api-client':
+      '@modrinth/api-client':
         specifier: workspace:*
         version: link:../../packages/api-client
-      '@bbsmc/assets':
+      '@modrinth/assets':
         specifier: workspace:*
         version: link:../../packages/assets
-      '@bbsmc/blog':
+      '@modrinth/blog':
         specifier: workspace:*
         version: link:../../packages/blog
-      '@bbsmc/moderation':
+      '@modrinth/moderation':
         specifier: workspace:*
         version: link:../../packages/moderation
-      '@bbsmc/ui':
+      '@modrinth/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-      '@bbsmc/utils':
+      '@modrinth/utils':
         specifier: workspace:*
         version: link:../../packages/utils
       '@sentry/nuxt':
@@ -390,7 +390,7 @@ importers:
       '@formatjs/cli':
         specifier: ^6.2.12
         version: 6.12.2(@vue/compiler-core@3.5.27)(vue@3.5.27(typescript@5.9.3))
-      '@bbsmc/tooling-config':
+      '@modrinth/tooling-config':
         specifier: workspace:*
         version: link:../../packages/tooling-config
       '@types/dompurify':
@@ -459,7 +459,7 @@ importers:
       '@microsoft/api-extractor':
         specifier: ^7.58.9
         version: 7.58.9(@types/node@24.12.2)
-      '@bbsmc/tooling-config':
+      '@modrinth/tooling-config':
         specifier: workspace:*
         version: link:../tooling-config
       '@tauri-apps/plugin-http':
@@ -479,7 +479,7 @@ importers:
 
   packages/assets:
     devDependencies:
-      '@bbsmc/tooling-config':
+      '@modrinth/tooling-config':
         specifier: workspace:*
         version: link:../tooling-config
       '@types/node':
@@ -497,7 +497,7 @@ importers:
 
   packages/blog:
     dependencies:
-      '@bbsmc/utils':
+      '@modrinth/utils':
         specifier: workspace:*
         version: link:../utils
       dayjs:
@@ -519,7 +519,7 @@ importers:
         specifier: ^0.6.2
         version: 0.6.2
     devDependencies:
-      '@bbsmc/tooling-config':
+      '@modrinth/tooling-config':
         specifier: workspace:*
         version: link:../tooling-config
       '@types/glob':
@@ -542,13 +542,13 @@ importers:
 
   packages/moderation:
     dependencies:
-      '@bbsmc/api-client':
+      '@modrinth/api-client':
         specifier: workspace:*
         version: link:../api-client
-      '@bbsmc/assets':
+      '@modrinth/assets':
         specifier: workspace:*
         version: link:../assets
-      '@bbsmc/utils':
+      '@modrinth/utils':
         specifier: workspace:*
         version: link:../utils
       vue:
@@ -558,10 +558,10 @@ importers:
       '@formatjs/cli':
         specifier: ^6.2.12
         version: 6.12.2(@vue/compiler-core@3.5.27)(vue@3.5.27(typescript@5.9.3))
-      '@bbsmc/tooling-config':
+      '@modrinth/tooling-config':
         specifier: workspace:*
         version: link:../tooling-config
-      '@bbsmc/ui':
+      '@modrinth/ui':
         specifier: workspace:*
         version: link:../ui
 
@@ -643,16 +643,16 @@ importers:
       '@intercom/messenger-js-sdk':
         specifier: ^0.0.14
         version: 0.0.14
-      '@bbsmc/api-client':
+      '@modrinth/api-client':
         specifier: workspace:*
         version: link:../api-client
-      '@bbsmc/assets':
+      '@modrinth/assets':
         specifier: workspace:*
         version: link:../assets
-      '@bbsmc/blog':
+      '@modrinth/blog':
         specifier: workspace:*
         version: link:../blog
-      '@bbsmc/utils':
+      '@modrinth/utils':
         specifier: workspace:*
         version: link:../utils
       '@tanstack/vue-query':
@@ -767,7 +767,7 @@ importers:
       '@formatjs/cli':
         specifier: ^6.2.12
         version: 6.12.2(@vue/compiler-core@3.5.27)(vue@3.5.27(typescript@5.9.3))
-      '@bbsmc/tooling-config':
+      '@modrinth/tooling-config':
         specifier: workspace:*
         version: link:../tooling-config
       '@storybook/addon-a11y':
@@ -870,10 +870,10 @@ importers:
         specifier: ^1.0.14
         version: 1.0.15
     devDependencies:
-      '@bbsmc/api-client':
+      '@modrinth/api-client':
         specifier: workspace:*
         version: link:../api-client
-      '@bbsmc/tooling-config':
+      '@modrinth/tooling-config':
         specifier: workspace:*
         version: link:../tooling-config
 

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<AddServerModal
 		ref="addServerModal"
 		:instance="instance"
@@ -145,7 +145,7 @@
 	</ReadyTransition>
 </template>
 <script setup lang="ts">
-import { CompassIcon, FilterIcon, PlusIcon, RefreshCwIcon, SearchIcon } from '@bbsmc/assets'
+import { CompassIcon, FilterIcon, PlusIcon, RefreshCwIcon, SearchIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	commonMessages,
@@ -158,7 +158,7 @@ import {
 	StyledInput,
 	useReadyState,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery, useQueryClient } from '@tanstack/vue-query'
 import { platform } from '@tauri-apps/plugin-os'
 import { computed, onBeforeUnmount, ref, watch } from 'vue'

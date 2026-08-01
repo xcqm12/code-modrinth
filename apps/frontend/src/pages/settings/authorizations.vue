@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex flex-col">
 		<ConfirmModal
 			ref="modal_confirm"
@@ -67,7 +67,7 @@ import {
 	injectmodrinthClient,
 	injectNotificationManager,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 
 import AuthorizationCard from '~/components/ui/AuthorizationCard.vue'

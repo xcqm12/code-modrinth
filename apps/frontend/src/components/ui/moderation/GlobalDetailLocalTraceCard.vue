@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="rounded-lg border border-divider bg-bg-raised p-3">
 		<div class="flex flex-wrap items-start justify-between gap-3">
 			<div class="min-w-0">
@@ -32,9 +32,9 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
-import { ChevronRightIcon, ExternalIcon } from '@bbsmc/assets'
-import { Badge, ButtonStyled } from '@bbsmc/ui'
+import type { Labrinth } from '@modrinth/api-client'
+import { ChevronRightIcon, ExternalIcon } from '@modrinth/assets'
+import { Badge, ButtonStyled } from '@modrinth/ui'
 
 const props = defineProps<{
 	trace: Labrinth.TechReview.Internal.GlobalIssueDetailTrace

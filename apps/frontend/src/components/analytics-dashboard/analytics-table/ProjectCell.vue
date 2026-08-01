@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="mr-2.5 flex min-w-0 items-center gap-2">
 		<span
 			v-if="!hideIcon"
@@ -42,8 +42,8 @@
 </template>
 
 <script setup lang="ts">
-import { BoxIcon, OrganizationIcon } from '@bbsmc/assets'
-import { useVIntl } from '@bbsmc/ui'
+import { BoxIcon, OrganizationIcon } from '@modrinth/assets'
+import { useVIntl } from '@modrinth/ui'
 
 import { analyticsMessages } from '../analytics-messages.ts'
 

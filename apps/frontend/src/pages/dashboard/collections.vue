@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="universal-card">
 		<CollectionCreateModal ref="modal_creation" />
 		<h2 class="text-2xl">{{ formatMessage(commonMessages.collectionsLabel) }}</h2>
@@ -141,7 +141,7 @@ import {
 	PlusIcon,
 	SearchIcon,
 	XIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	Avatar,
 	ButtonStyled,
@@ -152,7 +152,7 @@ import {
 	StyledInput,
 	useCompactNumber,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useQuery } from '@tanstack/vue-query'
 
 import CollectionCreateModal from '~/components/ui/create/CollectionCreateModal.vue'

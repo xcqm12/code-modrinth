@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<Tabs
 		v-if="editingVersion"
 		value="add-details"
@@ -71,7 +71,7 @@ import {
 	Tabs,
 	type TabsTab,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 
 import { useImageUpload } from '~/composables/image-upload.ts'
 import { injectManageVersionContext } from '~/providers/version/manage-version-modal'

@@ -1,4 +1,4 @@
-import starlight from '@astrojs/starlight'
+﻿import starlight from '@astrojs/starlight'
 import { defineConfig } from 'astro/config'
 import starlightOpenAPI, { openAPISidebarGroups } from 'starlight-openapi'
 
@@ -25,8 +25,8 @@ export default defineConfig({
 				replacesTitle: true,
 			},
 			customCss: [
-				'@bbsmc/assets/styles/variables.scss',
-				'@bbsmc/assets/styles/inter.scss',
+				'@modrinth/assets/styles/variables.scss',
+				'@modrinth/assets/styles/inter.scss',
 				'./src/styles/modrinth.css',
 			],
 			plugins: [

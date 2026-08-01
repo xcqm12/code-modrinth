@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { LeftArrowIcon, TagCategoryGamepad2Icon as Gamepad2Icon } from '@bbsmc/assets'
+import { LeftArrowIcon, TagCategoryGamepad2Icon as Gamepad2Icon } from '@modrinth/assets'
 import type { Component } from 'vue'
 import { computed, ref } from 'vue'
 import { useRouter } from 'vue-router'

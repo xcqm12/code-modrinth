@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex flex-col gap-3 sm:gap-4">
 		<div class="flex flex-col gap-2.5">
 			<label>
@@ -219,7 +219,7 @@ import {
 	formFieldPlaceholders,
 	StyledInput,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 // TODO: Switch to using Muralpay's improved endpoint when it's available.
 import iso3166 from 'iso-3166-2'
 

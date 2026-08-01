@@ -95,17 +95,17 @@
 	</div>
 </template>
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	ClientIcon,
 	getLoaderIcon,
 	MonitorSmartphoneIcon,
 	ServerIcon,
 	UserIcon,
-} from '@bbsmc/assets'
-import { FormattedTag, projectCompatibilityMessages, TagItem } from '@bbsmc/ui'
-import type { GameVersionTag, PlatformTag } from '@bbsmc/utils'
-import { getVersionsToDisplay } from '@bbsmc/utils'
+} from '@modrinth/assets'
+import { FormattedTag, projectCompatibilityMessages, TagItem } from '@modrinth/ui'
+import type { GameVersionTag, PlatformTag } from '@modrinth/utils'
+import { getVersionsToDisplay } from '@modrinth/utils'
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'
 

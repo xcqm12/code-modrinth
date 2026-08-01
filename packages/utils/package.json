@@ -1,5 +1,5 @@
 {
-	"name": "@bbsmc/utils",
+	"name": "@modrinth/utils",
 	"version": "0.0.0",
 	"private": true,
 	"main": "./index.ts",
@@ -9,8 +9,8 @@
 		"fix": "eslint . --fix && prettier --write ."
 	},
 	"devDependencies": {
-		"@bbsmc/tooling-config": "workspace:*",
-		"@bbsmc/api-client": "workspace:*"
+		"@modrinth/tooling-config": "workspace:*",
+		"@modrinth/api-client": "workspace:*"
 	},
 	"dependencies": {
 		"@codemirror/commands": "^6.3.2",

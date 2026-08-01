@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import type {
 	BooleanNodeBuilder,
 	ButtonNodeBuilder,
@@ -12,7 +12,7 @@ import type {
 	NodeStateWithChildren,
 	OverrideValue,
 	ValueNodeBuilder,
-} from '@bbsmc/moderation'
+} from '@modrinth/moderation'
 import {
 	evalSegment,
 	expandVariables,
@@ -24,7 +24,7 @@ import {
 	resolve,
 	resolveChildren,
 	setMessageProject,
-} from '@bbsmc/moderation'
+} from '@modrinth/moderation'
 import {
 	ButtonStyled,
 	Checkbox,
@@ -32,8 +32,8 @@ import {
 	injectProjectPageContext,
 	MarkdownEditor,
 	StyledInput,
-} from '@bbsmc/ui'
-import { renderHighlightedString, renderString } from '@bbsmc/utils'
+} from '@modrinth/ui'
+import { renderHighlightedString, renderString } from '@modrinth/utils'
 import { inject, nextTick, onMounted, reactive, watchEffect } from 'vue'
 
 import { NODE_META_KEY, STATE_KEY } from './checklist-context'

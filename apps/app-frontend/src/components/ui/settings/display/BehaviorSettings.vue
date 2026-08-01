@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import { Chips, defineMessages, Toggle, useVIntl } from '@bbsmc/ui'
+﻿<script setup lang="ts">
+import { Chips, defineMessages, Toggle, useVIntl } from '@modrinth/ui'
 import { ref, watch } from 'vue'
 
 import { get, set } from '@/helpers/settings.ts'

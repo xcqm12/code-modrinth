@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div v-if="visibleSuggestedDependencies.length" class="flex flex-col gap-2">
 		<template v-for="(dependency, index) in visibleSuggestedDependencies">
 			<SuggestedDependency
@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 
 import { injectManageVersionContext } from '~/providers/version/manage-version-modal'
 

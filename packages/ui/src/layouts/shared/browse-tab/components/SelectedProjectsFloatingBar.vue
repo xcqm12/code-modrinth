@@ -64,7 +64,7 @@
 </template>
 
 <script setup lang="ts">
-import { PlusIcon } from '@bbsmc/assets'
+import { PlusIcon } from '@modrinth/assets'
 import { computed } from 'vue'
 
 import Avatar from '#ui/components/base/Avatar.vue'

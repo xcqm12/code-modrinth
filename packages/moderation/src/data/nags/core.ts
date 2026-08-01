@@ -1,4 +1,4 @@
-import { defineMessage, formatProjectTypeSentence, useVIntl } from '@bbsmc/ui'
+import { defineMessage, formatProjectTypeSentence, useVIntl } from '@modrinth/ui'
 
 import type { Nag, NagContext } from '../../types/nags'
 

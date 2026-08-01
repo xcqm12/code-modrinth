@@ -1,4 +1,4 @@
-import {
+﻿import {
 	type AbstractFeature,
 	type AuthConfig,
 	AuthFeature,
@@ -10,7 +10,7 @@ import {
 	NuxtmodrinthClient,
 	PanelVersionFeature,
 	VerboseLoggingFeature,
-} from '@bbsmc/api-client'
+} from '@modrinth/api-client'
 import type { Ref } from 'vue'
 
 import { useFeatureFlags } from '~/composables/featureFlags.ts'

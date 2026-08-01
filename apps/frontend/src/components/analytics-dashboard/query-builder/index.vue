@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="md:pl-1">
 		<div class="flex flex-wrap items-center gap-2 md:hidden">
 			<MultiSelect
@@ -441,7 +441,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	BlocksIcon,
 	BoxIcon,
@@ -452,7 +452,7 @@ import {
 	FolderOpenIcon,
 	LayersIcon,
 	UserIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	ButtonStyled,
 	Combobox,
@@ -461,7 +461,7 @@ import {
 	type MultiSelectItem,
 	type MultiSelectOption,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 
 import {
 	buildDefaultAnalyticsQueryBuilderState,

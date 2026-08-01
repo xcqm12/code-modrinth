@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex flex-col gap-6">
 		<DataLossWarningBanner />
 		<div class="flex flex-col gap-4">
@@ -29,7 +29,7 @@
 </template>
 
 <script setup lang="ts">
-import { BoxIcon, PackageIcon, PackagePlusIcon } from '@bbsmc/assets'
+import { BoxIcon, PackageIcon, PackagePlusIcon } from '@modrinth/assets'
 
 import {
 	type CompatibilityType,

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex gap-2 items-center">
 		<ButtonStyled
 			v-if="hasActiveLoadingBars && !hasVisibleActiveDownloadToasts"
@@ -124,7 +124,7 @@ import {
 	StopCircleIcon,
 	TerminalSquareIcon,
 	UnplugIcon,
-} from '@bbsmc/assets'
+} from '@modrinth/assets'
 import {
 	ButtonStyled,
 	defineMessages,
@@ -133,7 +133,7 @@ import {
 	type PopupNotification,
 	type PopupNotificationProgressItem,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { convertFileSrc } from '@tauri-apps/api/core'
 import { Dropdown } from 'floating-vue'
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'

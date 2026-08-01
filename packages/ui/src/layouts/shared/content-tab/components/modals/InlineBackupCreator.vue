@@ -58,7 +58,7 @@
 </template>
 
 <script setup lang="ts">
-import { CheckCircleIcon, PlusIcon, SpinnerIcon, TriangleAlertIcon } from '@bbsmc/assets'
+import { CheckCircleIcon, PlusIcon, SpinnerIcon, TriangleAlertIcon } from '@modrinth/assets'
 import { computed, watch } from 'vue'
 
 import ButtonStyled from '#ui/components/base/ButtonStyled.vue'

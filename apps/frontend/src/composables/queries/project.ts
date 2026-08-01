@@ -1,4 +1,4 @@
-import type { AbstractmodrinthClient } from '@bbsmc/api-client'
+﻿import type { AbstractmodrinthClient } from '@modrinth/api-client'
 
 export const STALE_TIME = 1000 * 60 * 5 // 5 minutes
 export const STALE_TIME_LONG = 1000 * 60 * 10 // 10 minutes

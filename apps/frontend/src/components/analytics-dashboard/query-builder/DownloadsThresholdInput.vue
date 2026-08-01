@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex flex-wrap items-center gap-3">
 		<span class="shrink-0 whitespace-nowrap text-sm font-semibold text-primary">
 			{{ props.label }}
@@ -19,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-import { useVIntl } from '@bbsmc/ui'
+import { useVIntl } from '@modrinth/ui'
 
 import { analyticsMessages } from '../analytics-messages'
 

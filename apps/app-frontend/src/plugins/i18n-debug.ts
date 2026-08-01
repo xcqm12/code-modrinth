@@ -1,11 +1,11 @@
-import {
+﻿import {
 	annotateFullDocument,
 	clearAllAnnotations,
 	hideKeyTooltip,
 	I18N_DEBUG_KEY,
 	type I18nDebugContext,
 	initI18nDebugRuntime,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import type { App } from 'vue'
 import { reactive, ref, watch } from 'vue'
 

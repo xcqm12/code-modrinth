@@ -1,4 +1,4 @@
-import { defineMessages, injectNotificationManager, useVIntl } from '@bbsmc/ui'
+﻿import { defineMessages, injectNotificationManager, useVIntl } from '@modrinth/ui'
 
 import {
 	getErrorMessage,

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Labrinth } from '@bbsmc/api-client'
+import type { Labrinth } from '@modrinth/api-client'
 import {
 	CheckIcon,
 	InfoIcon,
@@ -9,8 +9,8 @@ import {
 	TrashIcon,
 	UploadIcon,
 	XIcon,
-} from '@bbsmc/assets'
-import { builtinLicenses } from '@bbsmc/utils'
+} from '@modrinth/assets'
+import { builtinLicenses } from '@modrinth/utils'
 import { useMutation, useQueryClient } from '@tanstack/vue-query'
 import { computed, ref, watch } from 'vue'
 

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="mx-auto max-w-[1280px] p-4 !py-8 sm:py-32">
 		<div class="my-8 flex items-center justify-between">
 			<h2 class="m-0 mx-auto text-3xl font-extrabold sm:text-4xl">
@@ -27,9 +27,9 @@
 </template>
 
 <script setup lang="ts">
-import { NewspaperIcon } from '@bbsmc/assets'
-import { articles as rawArticles } from '@bbsmc/blog'
-import { ButtonStyled, defineMessages, NewsArticleCard, useVIntl } from '@bbsmc/ui'
+import { NewspaperIcon } from '@modrinth/assets'
+import { articles as rawArticles } from '@modrinth/blog'
+import { ButtonStyled, defineMessages, NewsArticleCard, useVIntl } from '@modrinth/ui'
 import { computed, ref } from 'vue'
 
 const { formatMessage } = useVIntl()

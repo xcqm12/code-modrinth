@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 	<div class="flex flex-col gap-4 sm:gap-5">
 		<div v-if="isPayPal" class="flex flex-col gap-2.5">
 			<label>
@@ -102,7 +102,7 @@
 </template>
 
 <script setup lang="ts">
-import { CheckIcon, PayPalColorIcon, SaveIcon, XIcon } from '@bbsmc/assets'
+import { CheckIcon, PayPalColorIcon, SaveIcon, XIcon } from '@modrinth/assets'
 import {
 	ButtonStyled,
 	Checkbox,
@@ -114,7 +114,7 @@ import {
 	normalizeChildren,
 	StyledInput,
 	useVIntl,
-} from '@bbsmc/ui'
+} from '@modrinth/ui'
 import { useDebounceFn } from '@vueuse/core'
 import { computed, onMounted, ref, watch } from 'vue'
 
