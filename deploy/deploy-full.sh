@@ -360,6 +360,11 @@ deploy() {
     # Create temporary swap for build stability on 8G servers
     create_swap 8G
 
+    # Free Docker build cache and stale images to prevent disk exhaustion (SIGBUS during linking)
+    log_info "Pruning Docker build cache to free disk space..."
+    docker builder prune -af 2>/dev/null || true
+    docker image prune -f 2>/dev/null || true
+
     # Build Docker images
     log_info "Building labrinth (Rust backend) Docker image..."
     $DOCKER_COMPOSE build labrinth

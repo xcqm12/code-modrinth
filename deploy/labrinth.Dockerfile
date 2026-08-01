@@ -10,7 +10,12 @@ COPY . .
 # apps/app (theseus_gui) depends on private repos like modrinth/plugins-workspace
 RUN sed -i '/"apps\/app",/d; /"apps\/app-playground",/d' Cargo.toml
 
-RUN cargo build --profile release-labrinth -p labrinth
+# Limit parallelism to reduce peak memory usage during linking
+ENV CARGO_BUILD_JOBS=2
+ENV CARGO_BUILD_INCREMENTAL=false
+
+# Clean any stale artifacts and build
+RUN cargo clean && cargo build --profile release-labrinth -p labrinth
 
 FROM debian:bookworm-slim
 RUN apt-get update && apt-get install -y --no-install-recommends \
