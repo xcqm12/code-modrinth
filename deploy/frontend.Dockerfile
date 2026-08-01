@@ -24,20 +24,22 @@ RUN pnpm install --frozen-lockfile --ignore-scripts
 # Workaround: pnpm isolated mode places packages in .pnpm, not at direct paths.
 # exsolve (used by @nuxt/cli's loadKit) uses Node's moduleResolve which walks up
 # node_modules from cwd but cannot resolve through .pnpm structure.
-# Create symlinks at project root so moduleResolve finds them.
+# Use find to locate the actual package directories in .pnpm and create symlinks.
+# Search both root .pnpm and apps/frontend .pnpm.
 RUN for pkg in nuxt @nuxt/kit; do \
-      PKG_DIR=$(ls -d node_modules/.pnpm/$(echo "$pkg" | tr '/' '+')@*/node_modules/$pkg 2>/dev/null | head -1); \
+      PKG_DIR=$(find node_modules/.pnpm apps/frontend/node_modules/.pnpm -maxdepth 3 -type d -path "*/node_modules/$pkg" 2>/dev/null | head -1); \
       if [ -n "$PKG_DIR" ]; then \
-        mkdir -p node_modules/$(dirname $pkg) 2>/dev/null; \
-        ln -sf "$PKG_DIR" node_modules/$pkg; \
+        mkdir -p "node_modules/$(dirname $pkg)" 2>/dev/null; \
+        ln -sf "$PKG_DIR" "node_modules/$pkg"; \
         echo "Created symlink: node_modules/$pkg -> $PKG_DIR"; \
       else \
         echo "WARNING: $pkg not found in .pnpm, resolution may fail"; \
       fi; \
     done
 
-# Also patch @nuxt/kit to search from project root as a fallback (busybox-sed compatible pattern)
-RUN find node_modules -path "*/@nuxt/kit/dist/index.mjs" -exec sed -i 's|from: .directoryToURL(opts.cwd).|from: [directoryToURL(opts.cwd), directoryToURL(resolve(opts.cwd, "../.."))]|g' {} \;
+# Also patch @nuxt/cli's loadKit to accept an array of from paths as fallback
+# This makes it also search /app/node_modules/ when resolving @nuxt/kit
+RUN find node_modules -path "*/@nuxt/cli/dist/kit-*.mjs" -exec sed -i 's|from: tryResolveNuxt(rootDir) || rootDir|from: [tryResolveNuxt(rootDir) || rootDir, "/app/node_modules/"]|g' {} \;
 
 RUN pnpm --filter @modrinth/api-client run build
 
