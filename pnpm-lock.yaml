@@ -328,7 +328,7 @@ importers:
         version: 3.3.1
       floating-vue:
         specifier: ^5.2.2
-        version: 5.2.2(@nuxt/kit@3.21.0(magicast@0.5.1))(vue@3.5.27(typescript@5.9.3))
+        version: 5.2.2(@nuxt/kit@3.20.2(magicast@0.5.1))(vue@3.5.27(typescript@5.9.3))
       fuse.js:
         specifier: ^6.6.2
         version: 6.6.2
@@ -396,6 +396,9 @@ importers:
       '@modrinth/tooling-config':
         specifier: workspace:*
         version: link:../../packages/tooling-config
+      '@nuxt/kit':
+        specifier: '=3.20.2'
+        version: 3.20.2(magicast@0.5.1)
       '@types/dompurify':
         specifier: ^3.0.5
         version: 3.2.0
@@ -16357,6 +16360,14 @@ snapshots:
   flatted@3.3.3: {}
 
   flattie@1.1.1: {}
+
+  floating-vue@5.2.2(@nuxt/kit@3.20.2(magicast@0.5.1))(vue@3.5.27(typescript@5.9.3)):
+    dependencies:
+      '@floating-ui/dom': 1.1.1
+      vue: 3.5.27(typescript@5.9.3)
+      vue-resize: 2.0.0-alpha.1(vue@3.5.27(typescript@5.9.3))
+    optionalDependencies:
+      '@nuxt/kit': 3.20.2(magicast@0.5.1)
 
   floating-vue@5.2.2(@nuxt/kit@3.21.0(magicast@0.5.1))(vue@3.5.27(typescript@5.9.3)):
     dependencies:

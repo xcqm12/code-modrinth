@@ -25,8 +25,34 @@ RUN cp apps/frontend/.env.prod apps/frontend/.env
 ENV NODE_OPTIONS="--max-old-space-size=4096"
 RUN pnpm install --frozen-lockfile --ignore-scripts
 
-# @nuxt/kit is added as a devDependency in root package.json to ensure it's
-# hoisted to node_modules/@nuxt/kit, so @nuxt/cli's loadKit can resolve it.
+# Ensure @nuxt/kit and nuxt are accessible at root node_modules for @nuxt/cli's loadKit
+# pnpm with node-linker=hoisted should place them there, but fall back to .pnpm symlinks
+RUN echo "=== Verifying @nuxt/kit ===" && \
+    if [ -d /app/node_modules/@nuxt/kit ]; then \
+      echo "OK: @nuxt/kit found at /app/node_modules/@nuxt/kit"; \
+    else \
+      echo "WARNING: @nuxt/kit not in root, searching .pnpm..."; \
+      KIT_DIR=$(find /app/node_modules/.pnpm -path "*/node_modules/@nuxt/kit" -type d 2>/dev/null | head -1); \
+      if [ -n "$KIT_DIR" ]; then \
+        echo "Creating symlink: /app/node_modules/@nuxt/kit -> $KIT_DIR"; \
+        mkdir -p /app/node_modules/@nuxt && \
+        ln -sf "$KIT_DIR" /app/node_modules/@nuxt/kit; \
+      else \
+        echo "ERROR: @nuxt/kit not found anywhere!"; \
+        find /app -name "kit" -type d 2>/dev/null | head -10; \
+      fi; \
+    fi && \
+    echo "=== Verifying nuxt ===" && \
+    if [ -d /app/node_modules/nuxt ]; then \
+      echo "OK: nuxt found at /app/node_modules/nuxt"; \
+    else \
+      echo "WARNING: nuxt not in root, searching .pnpm..."; \
+      NUXT_DIR=$(find /app/node_modules/.pnpm -path "*/node_modules/nuxt" -type d 2>/dev/null | head -1); \
+      if [ -n "$NUXT_DIR" ]; then \
+        echo "Creating symlink: /app/node_modules/nuxt -> $NUXT_DIR"; \
+        ln -sf "$NUXT_DIR" /app/node_modules/nuxt; \
+      fi; \
+    fi
 
 RUN pnpm --filter @modrinth/api-client run build
 
