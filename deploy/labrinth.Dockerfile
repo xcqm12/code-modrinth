@@ -1,7 +1,9 @@
 FROM rust:1.95-slim-bookworm AS builder
 # Use mirror for faster/more reliable downloads
-RUN sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list.d/debian.sources 2>/dev/null; \
-    sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list 2>/dev/null
+RUN test -f /etc/apt/sources.list.d/debian.sources && \
+    sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list.d/debian.sources; \
+    test -f /etc/apt/sources.list && \
+    sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 RUN apt-get update && apt-get install -y --no-install-recommends \
     pkg-config libssl-dev libclang-dev clang lld cmake make libcurl4-openssl-dev libsasl2-dev \
     && rm -rf /var/lib/apt/lists/*
@@ -22,8 +24,10 @@ RUN cargo clean && cargo build --profile release-labrinth -p labrinth
 
 FROM debian:bookworm-slim
 # Use mirror for faster/more reliable downloads
-RUN sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list.d/debian.sources 2>/dev/null; \
-    sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list 2>/dev/null
+RUN test -f /etc/apt/sources.list.d/debian.sources && \
+    sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list.d/debian.sources; \
+    test -f /etc/apt/sources.list && \
+    sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates dumb-init curl \
     && rm -rf /var/lib/apt/lists/*
